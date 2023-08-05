@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+bino_gauss_probab/Binomialdistribution.py
+bino_gauss_probab/Gaussiandistribution.py
+bino_gauss_probab/Generaldistribution.py
+bino_gauss_probab/__init__.py
+bino_gauss_probab.egg-info/PKG-INFO
+bino_gauss_probab.egg-info/SOURCES.txt
+bino_gauss_probab.egg-info/dependency_links.txt
+bino_gauss_probab.egg-info/not-zip-safe
+bino_gauss_probab.egg-info/top_level.txt
