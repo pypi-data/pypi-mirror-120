@@ -1,0 +1,359 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Renku Python Library, CLI and Service &mdash; Renku 0.15.2.dev42-g8ea0d1bb-dirty documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+    <link rel="canonical" href="https://github.com/SwissDataScienceCenter/renku-python/introduction.html" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Installation" href="installation.html" />
+    <link rel="prev" title="Renku Python Library, CLI and Service" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Renku
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.15.2.dev42-g8ea0d1bb-dirty
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Renku Client</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="commands.html">Renku Command Line</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html">Renku Python API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="internals.html">Internals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html">Changes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license.html">License</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license.html#authors">Authors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="service.html">Renku Service</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://www.apache.org/licenses/LICENSE-2.0">License</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Renku</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Renku Python Library, CLI and Service</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/introduction.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="renku-python-library-cli-and-service">
+<h1>Renku Python Library, CLI and Service<a class="headerlink" href="#renku-python-library-cli-and-service" title="Permalink to this headline">¶</a></h1>
+<a class="reference external image-reference" href="https://github.com/SwissDataScienceCenter/renku-python/actions?query=workflow%3A%22Test%2C+Integration+Tests+and+Deploy%22+branch%3Amaster"><img alt="https://github.com/SwissDataScienceCenter/renku-python/workflows/Test,%20Integration%20Tests%20and%20Deploy/badge.svg" src="https://github.com/SwissDataScienceCenter/renku-python/workflows/Test,%20Integration%20Tests%20and%20Deploy/badge.svg" /></a>
+<a class="reference external image-reference" href="https://coveralls.io/r/SwissDataScienceCenter/renku-python"><img alt="https://img.shields.io/coveralls/SwissDataScienceCenter/renku-python.svg" src="https://img.shields.io/coveralls/SwissDataScienceCenter/renku-python.svg" /></a>
+<a class="reference external image-reference" href="https://github.com/SwissDataScienceCenter/renku-python/releases"><img alt="https://img.shields.io/github/tag/SwissDataScienceCenter/renku-python.svg" src="https://img.shields.io/github/tag/SwissDataScienceCenter/renku-python.svg" /></a>
+<a class="reference external image-reference" href="https://pypi.python.org/pypi/renku"><img alt="https://img.shields.io/pypi/dm/renku.svg" src="https://img.shields.io/pypi/dm/renku.svg" /></a>
+<a class="reference external image-reference" href="http://renku-python.readthedocs.io/en/latest/?badge=latest"><img alt="Documentation Status" src="http://readthedocs.org/projects/renku-python/badge/?version=latest" /></a>
+<a class="reference external image-reference" href="https://github.com/SwissDataScienceCenter/renku-python/blob/master/LICENSE"><img alt="https://img.shields.io/github/license/SwissDataScienceCenter/renku-python.svg" src="https://img.shields.io/github/license/SwissDataScienceCenter/renku-python.svg" /></a>
+<p>A Python library for the <a class="reference external" href="https://github.com/SwissDataScienceCenter/renku">Renku collaborative data science platform</a>. It includes a CLI and SDK
+for end-users as well as a service backend. It provides functionality for the
+creation and management of projects and datasets, and simple utilities to
+capture data provenance while performing analysis tasks.</p>
+<dl class="simple">
+<dt><strong>NOTE</strong>:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">renku-python</span></code> is the python library and core service for Renku - it <em>does
+not</em> start the Renku platform itself - for that, refer to the Renku docs on
+<a class="reference external" href="https://renku.readthedocs.io/en/latest/developer/setup.html">running the platform</a>.</p>
+</dd>
+</dl>
+<div class="toctree-wrapper compound">
+</div>
+<h2>Installation</h2><p>Renku releases and development versions are available from <a class="reference external" href="https://pypi.org/project/renku/">PyPI</a>. You can install it using any tool that
+knows how to handle PyPI packages. Our recommendation is to use <a class="reference external" href="https://github.com/pipxproject/pipx">:code:pipx</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We do not officially support Windows at this moment. The way Windows
+handles paths and symlinks interferes with some Renku functionality.
+We recommend using the Windows Subsystem for Linux (WSL) to use Renku
+on Windows.</p>
+</div>
+<div class="section" id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h2>
+<p>Renku depends on Git under the hood, so make sure that you have Git
+<a class="reference external" href="https://git-scm.com/downloads">installed on your system</a>.</p>
+<p>Renku also offers support to store large files in <a class="reference external" href="https://git-lfs.github.com/">Git LFS</a>, which is used by default and should be
+installed on your system. If you do not wish to use Git LFS, you can run
+Renku commands with the <cite>-S</cite> flag, as in <cite>renku -S &lt;command&gt;</cite>.  More
+information on Git LFS usage in renku can be found in the <a class="reference external" href="https://renku.readthedocs.io/en/latest/user/data.html">Data in Renku</a> section of the docs.</p>
+<p>Renku uses CWL to execute recorded workflows when calling <cite>renku update</cite>
+or <cite>renku rerun</cite>. CWL depends on NodeJs to execute the workflows, so installing
+<a class="reference external" href="https://nodejs.org/en/download/package-manager/">NodeJs</a> is required if
+you want to use those features.</p>
+<p>For development of the service, <a class="reference external" href="https://docker.com">Docker</a> is recommended.</p>
+<h3>pipx</h3><p>First, <a class="reference external" href="https://github.com/pipxproject/pipx#install-pipx">install pipx</a>
+and make sure that the <code class="docutils literal notranslate"><span class="pre">$PATH</span></code> is correctly configured.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ python3 -m pip install --user pipx
+$ python3 -m pipx ensurepath
+</pre></div>
+</div>
+<p>Once <code class="docutils literal notranslate"><span class="pre">pipx</span></code> is installed use following command to install <code class="docutils literal notranslate"><span class="pre">renku</span></code>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pipx install renku
+$ which renku
+~/.local/bin/renku
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">pipx</span></code> installs Renku into its own virtual environment, making sure that it
+does not pollute any other packages or versions that you may have already
+installed.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you install Renku as a dependency in a virtual environment and the
+environment is active, your shell will default to the version installed
+in the virtual environment, <em>not</em> the version installed by <code class="docutils literal notranslate"><span class="pre">pipx</span></code>.</p>
+</div>
+<p>To install a development release:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pipx install --pip-args pre renku
+</pre></div>
+</div>
+<h3>pip</h3><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install renku
+</pre></div>
+</div>
+<p>The latest development versions are available on PyPI or from the Git
+repository:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install --pre renku
+# - OR -
+$ pip install -e git+https://github.com/SwissDataScienceCenter/renku-python.git#egg=renku
+</pre></div>
+</div>
+<p>Use following installation steps based on your operating system and preferences
+if you would like to work with the command line interface and you do not need
+the Python library to be importable.</p>
+<h3>Windows</h3><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We don’t officially support Windows yet, but Renku works well in the Windows Subsystem for Linux (WSL).
+As such, the following can be regarded as a best effort description on how to get started with Renku on Windows.</p>
+</div>
+<p>Renku can be run using the Windows Subsystem for Linux (WSL). To install the WSL, please follow the
+<a class="reference external" href="https://docs.microsoft.com/en-us/windows/wsl/install-win10#manual-installation-steps">official instructions</a>.</p>
+<p>We recommend you use the Ubuntu 20.04 image in the WSL when you get to that step of the installation.</p>
+<p>Once WSL is installed, launch the WSL terminal and install the packages required by Renku with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo apt-get update &amp;&amp; sudo apt-get install git python3 python3-pip python3-venv pipx
+</pre></div>
+</div>
+<p>Since Ubuntu has an older version of git LFS installed by default which is known to have some bugs when cloning
+repositories, we recommend you manually install the newest version by following
+<a class="reference external" href="https://github.com/git-lfs/git-lfs/wiki/Installation#debian-and-ubuntu">these instructions</a>.</p>
+<p>Once all the requirements are installed, you can install Renku normally by running:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pipx install renku
+$ pipx ensurepath
+</pre></div>
+</div>
+<p>After this, Renku is ready to use. You can access your Windows in the various mount points in
+<code class="docutils literal notranslate"><span class="pre">/mnt/</span></code> and you can execute Windows executables (e.g. *.exe) as usual directly from the
+WSL (so <code class="docutils literal notranslate"><span class="pre">renku</span> <span class="pre">run</span> <span class="pre">myexecutable.exe</span></code> will work as expected).</p>
+<h3>Docker</h3><p>The containerized version of the CLI can be launched using Docker command.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ docker run -it -v &quot;$PWD&quot;:&quot;$PWD&quot; -w=&quot;$PWD&quot; renku/renku-python renku
+</pre></div>
+</div>
+<p>It makes sure your current directory is mounted to the same place in the
+container.</p>
+<h2>Getting Started</h2><p>Interaction with the platform can take place via the command-line
+interface (CLI).</p>
+<p>Start by creating for folder where you want to keep your Renku project:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>renku init my-renku-project
+<span class="gp">$ </span><span class="nb">cd</span> my-renku-project
+</pre></div>
+</div>
+<p>Create a dataset and add data to it:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>renku dataset create my-dataset
+<span class="gp">$ </span>renku dataset add my-dataset https://raw.githubusercontent.com/SwissDataScienceCenter/renku-python/master/README.rst
+</pre></div>
+</div>
+<p>Run an analysis:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>renku run wc &lt; data/my-dataset/README.rst &gt; wc_readme
+</pre></div>
+</div>
+<p>Trace the data provenance:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>renku log wc_readme
+</pre></div>
+</div>
+<p>These are the basics, but there is much more that Renku allows you to do with
+your data analysis workflows.</p>
+<p>For more information about using <cite>renku</cite>, refer to the <cite>renku –help</cite>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="installation.html" class="btn btn-neutral float-right" title="Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="index.html" class="btn btn-neutral float-left" title="Renku Python Library, CLI and Service" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2017-2021, Swiss Data Science Center.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

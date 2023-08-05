@@ -1,0 +1,262 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>renku.core.plugins.run &mdash; Renku 0.15.2.dev42-g8ea0d1bb-dirty documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+    <link rel="canonical" href="https://github.com/SwissDataScienceCenter/renku-python/_modules/renku/core/plugins/run.html" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../../index.html" class="icon icon-home"> Renku
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.15.2.dev42-g8ea0d1bb-dirty
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../introduction.html">Renku Client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../service.html">Renku Service</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://www.apache.org/licenses/LICENSE-2.0">License</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">Renku</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../../index.html">Module code</a> &raquo;</li>
+        
+      <li>renku.core.plugins.run</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for renku.core.plugins.run</h1><div class="highlight"><pre>
+<span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="c1">#</span>
+<span class="c1"># Copyright 2017-2021- Swiss Data Science Center (SDSC)</span>
+<span class="c1"># A partnership between École Polytechnique Fédérale de Lausanne (EPFL) and</span>
+<span class="c1"># Eidgenössische Technische Hochschule Zürich (ETHZ).</span>
+<span class="c1">#</span>
+<span class="c1"># Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span>
+<span class="c1"># you may not use this file except in compliance with the License.</span>
+<span class="c1"># You may obtain a copy of the License at</span>
+<span class="c1">#</span>
+<span class="c1">#     http://www.apache.org/licenses/LICENSE-2.0</span>
+<span class="c1">#</span>
+<span class="c1"># Unless required by applicable law or agreed to in writing, software</span>
+<span class="c1"># distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span>
+<span class="c1"># WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span>
+<span class="c1"># See the License for the specific language governing permissions and</span>
+<span class="c1"># limitations under the License.</span>
+<span class="sd">&quot;&quot;&quot;Plugin hooks for renku run customization.&quot;&quot;&quot;</span>
+<span class="kn">import</span> <span class="nn">pluggy</span>
+
+<span class="n">hookspec</span> <span class="o">=</span> <span class="n">pluggy</span><span class="o">.</span><span class="n">HookspecMarker</span><span class="p">(</span><span class="s2">&quot;renku&quot;</span><span class="p">)</span>
+
+
+<div class="viewcode-block" id="process_run_annotations"><a class="viewcode-back" href="../../../../plugins.html#renku.core.plugins.run.process_run_annotations">[docs]</a><span class="nd">@hookspec</span>
+<span class="k">def</span> <span class="nf">process_run_annotations</span><span class="p">(</span><span class="n">run</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Plugin Hook to add ``Annotation`` entry list to a ``ProcessRun``.</span>
+
+<span class="sd">    :param run: A ``ProcessRun`` object to get annotations for.</span>
+<span class="sd">    :returns: A list of ``renku.core.models.cwl.annotation.Annotation``</span>
+<span class="sd">              objects.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">pass</span></div>
+
+
+<div class="viewcode-block" id="cmdline_tool_annotations"><a class="viewcode-back" href="../../../../plugins.html#renku.core.plugins.run.cmdline_tool_annotations">[docs]</a><span class="nd">@hookspec</span>
+<span class="k">def</span> <span class="nf">cmdline_tool_annotations</span><span class="p">(</span><span class="n">tool</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Plugin Hook to add ``Annotation`` entry list to a ``WorkflowTool``.</span>
+
+<span class="sd">    :param run: A ``WorkflowTool`` object to get annotations for.</span>
+<span class="sd">    :returns: A list of ``renku.core.models.cwl.annotation.Annotation``</span>
+<span class="sd">              objects.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">pass</span></div>
+
+
+<div class="viewcode-block" id="pre_run"><a class="viewcode-back" href="../../../../plugins.html#renku.core.plugins.run.pre_run">[docs]</a><span class="nd">@hookspec</span>
+<span class="k">def</span> <span class="nf">pre_run</span><span class="p">(</span><span class="n">tool</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Plugin Hook that gets called at the start of a ``renku run`` call.</span>
+
+<span class="sd">    Can be used to setup plugins that get executed during the run.</span>
+
+<span class="sd">    :param run: A ``WorkflowTool`` object that will get executed by</span>
+<span class="sd">                ``renku run``.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">pass</span></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2017-2021, Swiss Data Science Center.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

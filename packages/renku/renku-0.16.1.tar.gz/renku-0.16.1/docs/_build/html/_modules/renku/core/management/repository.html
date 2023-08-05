@@ -1,0 +1,928 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>renku.core.management.repository &mdash; Renku 0.15.2.dev42-g8ea0d1bb-dirty documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+    <link rel="canonical" href="https://github.com/SwissDataScienceCenter/renku-python/_modules/renku/core/management/repository.html" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../../index.html" class="icon icon-home"> Renku
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.15.2.dev42-g8ea0d1bb-dirty
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../introduction.html">Renku Client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../service.html">Renku Service</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://www.apache.org/licenses/LICENSE-2.0">License</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">Renku</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../../index.html">Module code</a> &raquo;</li>
+        
+      <li>renku.core.management.repository</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for renku.core.management.repository</h1><div class="highlight"><pre>
+<span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="c1">#</span>
+<span class="c1"># Copyright 2018-2021 - Swiss Data Science Center (SDSC)</span>
+<span class="c1"># A partnership between École Polytechnique Fédérale de Lausanne (EPFL) and</span>
+<span class="c1"># Eidgenössische Technische Hochschule Zürich (ETHZ).</span>
+<span class="c1">#</span>
+<span class="c1"># Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span>
+<span class="c1"># you may not use this file except in compliance with the License.</span>
+<span class="c1"># You may obtain a copy of the License at</span>
+<span class="c1">#</span>
+<span class="c1">#     http://www.apache.org/licenses/LICENSE-2.0</span>
+<span class="c1">#</span>
+<span class="c1"># Unless required by applicable law or agreed to in writing, software</span>
+<span class="c1"># distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span>
+<span class="c1"># WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span>
+<span class="c1"># See the License for the specific language governing permissions and</span>
+<span class="c1"># limitations under the License.</span>
+<span class="sd">&quot;&quot;&quot;Client for handling a local repository.&quot;&quot;&quot;</span>
+<span class="kn">import</span> <span class="nn">hashlib</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">shutil</span>
+<span class="kn">import</span> <span class="nn">subprocess</span>
+<span class="kn">import</span> <span class="nn">uuid</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
+<span class="kn">from</span> <span class="nn">contextlib</span> <span class="kn">import</span> <span class="n">contextmanager</span>
+<span class="kn">from</span> <span class="nn">subprocess</span> <span class="kn">import</span> <span class="n">check_output</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Union</span>
+
+<span class="kn">import</span> <span class="nn">attr</span>
+<span class="kn">import</span> <span class="nn">filelock</span>
+<span class="kn">import</span> <span class="nn">yaml</span>
+<span class="kn">from</span> <span class="nn">jinja2</span> <span class="kn">import</span> <span class="n">Template</span>
+<span class="kn">from</span> <span class="nn">werkzeug.utils</span> <span class="kn">import</span> <span class="n">cached_property</span><span class="p">,</span> <span class="n">secure_filename</span>
+
+<span class="kn">from</span> <span class="nn">renku.core</span> <span class="kn">import</span> <span class="n">errors</span>
+<span class="kn">from</span> <span class="nn">renku.core.compat</span> <span class="kn">import</span> <span class="n">Path</span>
+<span class="kn">from</span> <span class="nn">renku.core.incubation.database</span> <span class="kn">import</span> <span class="n">Database</span>
+<span class="kn">from</span> <span class="nn">renku.core.management.command_builder</span> <span class="kn">import</span> <span class="n">inject</span>
+<span class="kn">from</span> <span class="nn">renku.core.management.config</span> <span class="kn">import</span> <span class="n">RENKU_HOME</span>
+<span class="kn">from</span> <span class="nn">renku.core.models.enums</span> <span class="kn">import</span> <span class="n">ConfigFilter</span>
+<span class="kn">from</span> <span class="nn">renku.core.models.projects</span> <span class="kn">import</span> <span class="n">Project</span>
+<span class="kn">from</span> <span class="nn">renku.core.models.provenance.activities</span> <span class="kn">import</span> <span class="n">ProcessRun</span><span class="p">,</span> <span class="n">WorkflowRun</span>
+<span class="kn">from</span> <span class="nn">renku.core.models.provenance.activity</span> <span class="kn">import</span> <span class="n">ActivityCollection</span>
+<span class="kn">from</span> <span class="nn">renku.core.models.provenance.provenance_graph</span> <span class="kn">import</span> <span class="n">ProvenanceGraph</span>
+<span class="kn">from</span> <span class="nn">renku.core.models.refs</span> <span class="kn">import</span> <span class="n">LinkReference</span>
+<span class="kn">from</span> <span class="nn">renku.core.models.workflow.dependency_graph</span> <span class="kn">import</span> <span class="n">DependencyGraph</span>
+<span class="kn">from</span> <span class="nn">renku.core.utils</span> <span class="kn">import</span> <span class="n">communication</span>
+<span class="kn">from</span> <span class="nn">renku.core.utils.migrate</span> <span class="kn">import</span> <span class="n">MigrationType</span>
+<span class="kn">from</span> <span class="nn">renku.core.utils.scm</span> <span class="kn">import</span> <span class="n">git_unicode_unescape</span>
+
+<span class="kn">from</span> <span class="nn">.git</span> <span class="kn">import</span> <span class="n">GitCore</span>
+
+<span class="n">DEFAULT_DATA_DIR</span> <span class="o">=</span> <span class="s2">&quot;data&quot;</span>
+
+<span class="n">INIT_APPEND_FILES</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;.gitignore&quot;</span><span class="p">]</span>
+<span class="n">INIT_KEEP_FILES</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;readme.md&quot;</span><span class="p">,</span> <span class="s2">&quot;readme.rst&quot;</span><span class="p">]</span>
+
+
+<div class="viewcode-block" id="default_path"><a class="viewcode-back" href="../../../../management.html#renku.core.management.repository.default_path">[docs]</a><span class="k">def</span> <span class="nf">default_path</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="s2">&quot;.&quot;</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Return default repository path.&quot;&quot;&quot;</span>
+    <span class="kn">from</span> <span class="nn">git</span> <span class="kn">import</span> <span class="n">InvalidGitRepositoryError</span>
+
+    <span class="kn">from</span> <span class="nn">renku.core.commands.git</span> <span class="kn">import</span> <span class="n">get_git_home</span>
+
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">get_git_home</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="n">path</span><span class="p">)</span>
+    <span class="k">except</span> <span class="n">InvalidGitRepositoryError</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">path</span></div>
+
+
+<div class="viewcode-block" id="path_converter"><a class="viewcode-back" href="../../../../management.html#renku.core.management.repository.path_converter">[docs]</a><span class="k">def</span> <span class="nf">path_converter</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Converter for path in PathMixin.&quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">Path</span><span class="p">(</span><span class="n">path</span><span class="p">)</span><span class="o">.</span><span class="n">resolve</span><span class="p">()</span></div>
+
+
+<div class="viewcode-block" id="PathMixin"><a class="viewcode-back" href="../../../../management.html#renku.core.management.repository.PathMixin">[docs]</a><span class="nd">@attr</span><span class="o">.</span><span class="n">s</span>
+<span class="k">class</span> <span class="nc">PathMixin</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Define a default path attribute.&quot;&quot;&quot;</span>
+
+    <span class="n">path</span> <span class="o">=</span> <span class="n">attr</span><span class="o">.</span><span class="n">ib</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="n">default_path</span><span class="p">,</span> <span class="n">converter</span><span class="o">=</span><span class="n">path_converter</span><span class="p">)</span>
+
+    <span class="nd">@path</span><span class="o">.</span><span class="n">validator</span>
+    <span class="k">def</span> <span class="nf">_check_path</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Check the path exists and it is a directory.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="n">value</span><span class="o">.</span><span class="n">exists</span><span class="p">()</span> <span class="ow">and</span> <span class="n">value</span><span class="o">.</span><span class="n">is_dir</span><span class="p">()):</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Define an existing directory.&quot;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="RepositoryApiMixin"><a class="viewcode-back" href="../../../../management.html#renku.core.management.repository.RepositoryApiMixin">[docs]</a><span class="nd">@attr</span><span class="o">.</span><span class="n">s</span>
+<span class="k">class</span> <span class="nc">RepositoryApiMixin</span><span class="p">(</span><span class="n">GitCore</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Client for handling a local repository.&quot;&quot;&quot;</span>
+
+    <span class="n">renku_home</span> <span class="o">=</span> <span class="n">attr</span><span class="o">.</span><span class="n">ib</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="n">RENKU_HOME</span><span class="p">)</span>
+    <span class="sd">&quot;&quot;&quot;Define a name of the Renku folder (default: ``.renku``).&quot;&quot;&quot;</span>
+
+    <span class="n">renku_path</span> <span class="o">=</span> <span class="n">attr</span><span class="o">.</span><span class="n">ib</span><span class="p">(</span><span class="n">init</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="sd">&quot;&quot;&quot;Store a ``Path`` instance of the Renku folder.&quot;&quot;&quot;</span>
+
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">attr</span><span class="o">.</span><span class="n">ib</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+    <span class="sd">&quot;&quot;&quot;Store a pointer to the parent repository.&quot;&quot;&quot;</span>
+
+    <span class="n">data_dir</span> <span class="o">=</span> <span class="n">attr</span><span class="o">.</span><span class="n">ib</span><span class="p">(</span>
+        <span class="n">default</span><span class="o">=</span><span class="n">DEFAULT_DATA_DIR</span><span class="p">,</span> <span class="n">kw_only</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">converter</span><span class="o">=</span><span class="k">lambda</span> <span class="n">value</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="k">if</span> <span class="n">value</span> <span class="k">else</span> <span class="n">DEFAULT_DATA_DIR</span>
+    <span class="p">)</span>
+    <span class="sd">&quot;&quot;&quot;Define a name of the folder for storing datasets.&quot;&quot;&quot;</span>
+
+    <span class="n">METADATA</span> <span class="o">=</span> <span class="s2">&quot;metadata.yml&quot;</span>
+    <span class="sd">&quot;&quot;&quot;Default name of Renku config file.&quot;&quot;&quot;</span>
+
+    <span class="n">LOCK_SUFFIX</span> <span class="o">=</span> <span class="s2">&quot;.lock&quot;</span>
+    <span class="sd">&quot;&quot;&quot;Default suffix for Renku lock file.&quot;&quot;&quot;</span>
+
+    <span class="n">WORKFLOW</span> <span class="o">=</span> <span class="s2">&quot;workflow&quot;</span>
+    <span class="sd">&quot;&quot;&quot;Directory for storing workflow in Renku.&quot;&quot;&quot;</span>
+
+    <span class="n">DEPENDENCY_GRAPH</span> <span class="o">=</span> <span class="s2">&quot;dependency.json&quot;</span>
+    <span class="sd">&quot;&quot;&quot;File for storing dependency graph.&quot;&quot;&quot;</span>
+
+    <span class="n">PROVENANCE_GRAPH</span> <span class="o">=</span> <span class="s2">&quot;provenance.json&quot;</span>
+    <span class="sd">&quot;&quot;&quot;File for storing ProvenanceGraph.&quot;&quot;&quot;</span>
+
+    <span class="n">DATABASE_PATH</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;metadata&quot;</span>
+    <span class="sd">&quot;&quot;&quot;Directory for metadata storage.&quot;&quot;&quot;</span>
+
+    <span class="n">ACTIVITY_INDEX</span> <span class="o">=</span> <span class="s2">&quot;activity_index.yaml&quot;</span>
+    <span class="sd">&quot;&quot;&quot;Caches activities that generated a path.&quot;&quot;&quot;</span>
+
+    <span class="n">DOCKERFILE</span> <span class="o">=</span> <span class="s2">&quot;Dockerfile&quot;</span>
+    <span class="sd">&quot;&quot;&quot;Name of the Dockerfile in the repo.&quot;&quot;&quot;</span>
+
+    <span class="n">TEMPLATE_CHECKSUMS</span> <span class="o">=</span> <span class="s2">&quot;template_checksums.json&quot;</span>
+
+    <span class="n">RENKU_PROTECTED_PATHS</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="s2">&quot;.dockerignore&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.git&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.git/*&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.gitattributes&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.gitignore&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.gitlab-ci.yml&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.renku&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.renku/*&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.renkulfsignore&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Dockerfile&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;environment.yml&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;requirements.txt&quot;</span><span class="p">,</span>
+    <span class="p">]</span>
+
+    <span class="n">_commit_activity_cache</span> <span class="o">=</span> <span class="n">attr</span><span class="o">.</span><span class="n">ib</span><span class="p">(</span><span class="n">factory</span><span class="o">=</span><span class="nb">dict</span><span class="p">)</span>
+
+    <span class="n">_activity_index</span> <span class="o">=</span> <span class="n">attr</span><span class="o">.</span><span class="n">ib</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+
+    <span class="n">_remote_cache</span> <span class="o">=</span> <span class="n">attr</span><span class="o">.</span><span class="n">ib</span><span class="p">(</span><span class="n">factory</span><span class="o">=</span><span class="nb">dict</span><span class="p">)</span>
+
+    <span class="n">_migration_type</span> <span class="o">=</span> <span class="n">attr</span><span class="o">.</span><span class="n">ib</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="n">MigrationType</span><span class="o">.</span><span class="n">ALL</span><span class="p">)</span>
+
+    <span class="n">_database</span> <span class="o">=</span> <span class="n">attr</span><span class="o">.</span><span class="n">ib</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__attrs_post_init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Initialize computed attributes.&quot;&quot;&quot;</span>
+        <span class="c1">#: Configure Renku path.</span>
+        <span class="n">path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">renku_home</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">path</span><span class="o">.</span><span class="n">is_absolute</span><span class="p">():</span>
+            <span class="n">path</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">path</span> <span class="o">/</span> <span class="n">path</span>
+
+        <span class="n">path</span><span class="o">.</span><span class="n">relative_to</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">renku_path</span> <span class="o">=</span> <span class="n">path</span>
+
+        <span class="n">data_dir</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_value</span><span class="p">(</span><span class="s2">&quot;renku&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">DATA_DIR_CONFIG_KEY</span><span class="p">,</span> <span class="n">config_filter</span><span class="o">=</span><span class="n">ConfigFilter</span><span class="o">.</span><span class="n">LOCAL_ONLY</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">data_dir</span> <span class="o">=</span> <span class="n">data_dir</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">data_dir</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_subclients</span> <span class="o">=</span> <span class="p">{}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_project</span> <span class="o">=</span> <span class="kc">None</span>
+
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">__attrs_post_init__</span><span class="p">()</span>
+
+        <span class="c1"># initialize submodules</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">repo</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">check_output</span><span class="p">([</span><span class="s2">&quot;git&quot;</span><span class="p">,</span> <span class="s2">&quot;submodule&quot;</span><span class="p">,</span> <span class="s2">&quot;update&quot;</span><span class="p">,</span> <span class="s2">&quot;--init&quot;</span><span class="p">,</span> <span class="s2">&quot;--recursive&quot;</span><span class="p">],</span> <span class="n">cwd</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">path</span><span class="p">))</span>
+            <span class="k">except</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">CalledProcessError</span><span class="p">:</span>
+                <span class="k">pass</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">latest_agent</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Returns latest agent version used in the repository.&quot;&quot;&quot;</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">project</span><span class="o">.</span><span class="n">agent_version</span>
+        <span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="k">if</span> <span class="s2">&quot;Project name not set&quot;</span> <span class="ow">in</span> <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">):</span>
+                <span class="k">return</span> <span class="kc">None</span>
+            <span class="k">raise</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">lock</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create a Renku config lock.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">filelock</span><span class="o">.</span><span class="n">FileLock</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">renku_path</span><span class="o">.</span><span class="n">with_suffix</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">LOCK_SUFFIX</span><span class="p">)),</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">migration_type</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Type of migration that is being executed on this client.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_migration_type</span>
+
+    <span class="nd">@migration_type</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">migration_type</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Set type of migration.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">MigrationType</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Invalid value for MigrationType: </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">value</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_migration_type</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">renku_metadata_path</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return a ``Path`` instance of Renku metadata file.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">renku_path</span><span class="o">.</span><span class="n">joinpath</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">METADATA</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">workflow_path</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return a ``Path`` instance of the workflow folder.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">renku_path</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">WORKFLOW</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">activity_index_path</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Path to the activity filepath cache.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">renku_path</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">ACTIVITY_INDEX</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">docker_path</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Path to the Dockerfile.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">path</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">DOCKERFILE</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">template_checksums</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return a ``Path`` instance to the template checksums file.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">renku_path</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">TEMPLATE_CHECKSUMS</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">provenance_graph_path</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Path</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Path to store activity files.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">renku_path</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">PROVENANCE_GRAPH</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">dependency_graph_path</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Path to the dependency graph file.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">renku_path</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">DEPENDENCY_GRAPH</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">database_path</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Path</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Path to the metadata storage directory.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">renku_path</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">DATABASE_PATH</span>
+
+<div class="viewcode-block" id="RepositoryApiMixin.cwl_prefix"><a class="viewcode-back" href="../../../../management.html#renku.core.management.repository.RepositoryApiMixin.cwl_prefix">[docs]</a>    <span class="nd">@cached_property</span>
+    <span class="k">def</span> <span class="nf">cwl_prefix</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return a CWL prefix.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">workflow_path</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>  <span class="c1"># for Python 3.5</span>
+        <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">workflow_path</span><span class="o">.</span><span class="n">resolve</span><span class="p">()</span><span class="o">.</span><span class="n">relative_to</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">path</span><span class="p">))</span></div>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">project</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return the Project instance.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">renku_metadata_path</span><span class="o">.</span><span class="n">exists</span><span class="p">()</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">_project</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_project</span> <span class="o">=</span> <span class="n">Project</span><span class="o">.</span><span class="n">from_yaml</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">renku_metadata_path</span><span class="p">,</span> <span class="n">client</span><span class="o">=</span><span class="bp">self</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_project</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">remote</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">remote_name</span><span class="o">=</span><span class="s2">&quot;origin&quot;</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return host, owner and name of the remote if it exists.&quot;&quot;&quot;</span>
+        <span class="kn">from</span> <span class="nn">renku.core.models.git</span> <span class="kn">import</span> <span class="n">GitURL</span>
+
+        <span class="n">original_remote_name</span> <span class="o">=</span> <span class="n">remote_name</span>
+
+        <span class="k">if</span> <span class="n">original_remote_name</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_remote_cache</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_remote_cache</span><span class="p">[</span><span class="n">original_remote_name</span><span class="p">]</span>
+
+        <span class="n">host</span> <span class="o">=</span> <span class="n">owner</span> <span class="o">=</span> <span class="n">name</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">remote_branch</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">repo</span><span class="o">.</span><span class="n">head</span><span class="o">.</span><span class="n">reference</span><span class="o">.</span><span class="n">tracking_branch</span><span class="p">()</span>
+            <span class="k">if</span> <span class="n">remote_branch</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">remote_name</span> <span class="o">=</span> <span class="n">remote_branch</span><span class="o">.</span><span class="n">remote_name</span>
+        <span class="k">except</span> <span class="ne">TypeError</span><span class="p">:</span>
+            <span class="k">pass</span>
+
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">url</span> <span class="o">=</span> <span class="n">GitURL</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">repo</span><span class="o">.</span><span class="n">remotes</span><span class="p">[</span><span class="n">remote_name</span><span class="p">]</span><span class="o">.</span><span class="n">url</span><span class="p">)</span>
+
+            <span class="c1"># Remove gitlab. unless running on gitlab.com.</span>
+            <span class="n">hostname_parts</span> <span class="o">=</span> <span class="n">url</span><span class="o">.</span><span class="n">hostname</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">hostname_parts</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">2</span> <span class="ow">and</span> <span class="n">hostname_parts</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;gitlab&quot;</span><span class="p">:</span>
+                <span class="n">hostname_parts</span> <span class="o">=</span> <span class="n">hostname_parts</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+            <span class="n">url</span> <span class="o">=</span> <span class="n">attr</span><span class="o">.</span><span class="n">evolve</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">hostname</span><span class="o">=</span><span class="s2">&quot;.&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">hostname_parts</span><span class="p">))</span>
+        <span class="k">except</span> <span class="ne">IndexError</span><span class="p">:</span>
+            <span class="n">url</span> <span class="o">=</span> <span class="kc">None</span>
+
+        <span class="k">if</span> <span class="n">url</span><span class="p">:</span>
+            <span class="n">host</span> <span class="o">=</span> <span class="n">url</span><span class="o">.</span><span class="n">hostname</span>
+            <span class="n">owner</span> <span class="o">=</span> <span class="n">url</span><span class="o">.</span><span class="n">owner</span>
+            <span class="n">name</span> <span class="o">=</span> <span class="n">url</span><span class="o">.</span><span class="n">name</span>
+
+        <span class="n">remote</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;host&quot;</span><span class="p">:</span> <span class="n">host</span><span class="p">,</span> <span class="s2">&quot;owner&quot;</span><span class="p">:</span> <span class="n">owner</span><span class="p">,</span> <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="n">name</span><span class="p">}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_remote_cache</span><span class="p">[</span><span class="n">original_remote_name</span><span class="p">]</span> <span class="o">=</span> <span class="n">remote</span>
+
+        <span class="k">return</span> <span class="n">remote</span>
+
+<div class="viewcode-block" id="RepositoryApiMixin.is_project_set"><a class="viewcode-back" href="../../../../management.html#renku.core.management.repository.RepositoryApiMixin.is_project_set">[docs]</a>    <span class="k">def</span> <span class="nf">is_project_set</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return if project is set for the client.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_project</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span></div>
+
+<div class="viewcode-block" id="RepositoryApiMixin.process_commit"><a class="viewcode-back" href="../../../../management.html#renku.core.management.repository.RepositoryApiMixin.process_commit">[docs]</a>    <span class="k">def</span> <span class="nf">process_commit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">commit</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">path</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Build an :class:`~renku.core.models.provenance.activities.Activity`.</span>
+
+<span class="sd">        :param commit: Commit to process. (default: ``HEAD``)</span>
+<span class="sd">        :param path: Process a specific CWL file.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="kn">from</span> <span class="nn">renku.core.models.provenance.activities</span> <span class="kn">import</span> <span class="n">Activity</span>
+
+        <span class="n">commit</span> <span class="o">=</span> <span class="n">commit</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">repo</span><span class="o">.</span><span class="n">head</span><span class="o">.</span><span class="n">commit</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">commit</span><span class="o">.</span><span class="n">parents</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">Activity</span><span class="p">(</span><span class="n">commit</span><span class="o">=</span><span class="n">commit</span><span class="p">,</span> <span class="n">client</span><span class="o">=</span><span class="bp">self</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">path</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">file_</span> <span class="ow">in</span> <span class="n">commit</span><span class="o">.</span><span class="n">stats</span><span class="o">.</span><span class="n">files</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+                <span class="c1"># Find a process (CommandLineTool or Workflow)</span>
+                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_workflow</span><span class="p">(</span><span class="n">file_</span><span class="p">):</span>
+                    <span class="k">if</span> <span class="n">path</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                        <span class="c1"># Regular activity since it edits multiple CWL files</span>
+                        <span class="k">return</span> <span class="n">Activity</span><span class="p">(</span><span class="n">commit</span><span class="o">=</span><span class="n">commit</span><span class="p">,</span> <span class="n">client</span><span class="o">=</span><span class="bp">self</span><span class="p">)</span>
+
+                    <span class="n">path</span> <span class="o">=</span> <span class="n">file_</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">path</span><span class="p">:</span>
+            <span class="c1"># search for activities a file could have been a part of</span>
+            <span class="n">paths</span> <span class="o">=</span> <span class="p">[</span><span class="n">git_unicode_unescape</span><span class="p">(</span><span class="n">p</span><span class="p">)</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">commit</span><span class="o">.</span><span class="n">stats</span><span class="o">.</span><span class="n">files</span><span class="o">.</span><span class="n">keys</span><span class="p">()]</span>
+            <span class="n">activities</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">activities_for_paths</span><span class="p">(</span><span class="n">paths</span><span class="p">,</span> <span class="n">file_commit</span><span class="o">=</span><span class="n">commit</span><span class="p">,</span> <span class="n">revision</span><span class="o">=</span><span class="s2">&quot;HEAD&quot;</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">activities</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">errors</span><span class="o">.</span><span class="n">CommitProcessingError</span><span class="p">(</span>
+                    <span class="s2">&quot;Found multiple activities that produced the same entity at commit </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">commit</span><span class="p">)</span>
+                <span class="p">)</span>
+            <span class="k">if</span> <span class="n">activities</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">activities</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">data</span> <span class="o">=</span> <span class="p">(</span><span class="n">commit</span><span class="o">.</span><span class="n">tree</span> <span class="o">/</span> <span class="n">path</span><span class="p">)</span><span class="o">.</span><span class="n">data_stream</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+            <span class="n">process</span> <span class="o">=</span> <span class="n">Activity</span><span class="o">.</span><span class="n">from_jsonld</span><span class="p">(</span><span class="n">yaml</span><span class="o">.</span><span class="n">safe_load</span><span class="p">(</span><span class="n">data</span><span class="p">),</span> <span class="n">client</span><span class="o">=</span><span class="bp">self</span><span class="p">,</span> <span class="n">commit</span><span class="o">=</span><span class="n">commit</span><span class="p">)</span>
+
+            <span class="k">return</span> <span class="n">process</span>
+
+        <span class="k">return</span> <span class="n">Activity</span><span class="p">(</span><span class="n">commit</span><span class="o">=</span><span class="n">commit</span><span class="p">,</span> <span class="n">client</span><span class="o">=</span><span class="bp">self</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="RepositoryApiMixin.is_workflow"><a class="viewcode-back" href="../../../../management.html#renku.core.management.repository.RepositoryApiMixin.is_workflow">[docs]</a>    <span class="k">def</span> <span class="nf">is_workflow</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Check if the path is a valid CWL file.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">path</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">cwl_prefix</span><span class="p">)</span> <span class="ow">and</span> <span class="n">path</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;.yaml&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="RepositoryApiMixin.find_previous_commit"><a class="viewcode-back" href="../../../../management.html#renku.core.management.repository.RepositoryApiMixin.find_previous_commit">[docs]</a>    <span class="k">def</span> <span class="nf">find_previous_commit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">paths</span><span class="p">,</span> <span class="n">revision</span><span class="o">=</span><span class="s2">&quot;HEAD&quot;</span><span class="p">,</span> <span class="n">return_first</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">full</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return a previous commit for a given path starting from ``revision``.</span>
+
+<span class="sd">        :param revision: revision to start from, defaults to ``HEAD``</span>
+<span class="sd">        :param return_first: show the first commit in the history</span>
+<span class="sd">        :param full: return full history</span>
+<span class="sd">        :raises KeyError: if path is not present in the given commit</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">kwargs</span> <span class="o">=</span> <span class="p">{}</span>
+
+        <span class="k">if</span> <span class="n">full</span><span class="p">:</span>
+            <span class="n">kwargs</span><span class="p">[</span><span class="s2">&quot;full_history&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
+
+        <span class="k">if</span> <span class="n">return_first</span><span class="p">:</span>
+            <span class="n">file_commits</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">repo</span><span class="o">.</span><span class="n">iter_commits</span><span class="p">(</span><span class="n">revision</span><span class="p">,</span> <span class="n">paths</span><span class="o">=</span><span class="n">paths</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">))</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">file_commits</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">repo</span><span class="o">.</span><span class="n">iter_commits</span><span class="p">(</span><span class="n">revision</span><span class="p">,</span> <span class="n">paths</span><span class="o">=</span><span class="n">paths</span><span class="p">,</span> <span class="n">max_count</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">))</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">file_commits</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">KeyError</span><span class="p">(</span><span class="s2">&quot;Could not find a file </span><span class="si">{0}</span><span class="s2"> in range </span><span class="si">{1}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">paths</span><span class="p">,</span> <span class="n">revision</span><span class="p">))</span>
+
+        <span class="k">return</span> <span class="n">file_commits</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span> <span class="k">if</span> <span class="n">return_first</span> <span class="k">else</span> <span class="mi">0</span><span class="p">]</span></div>
+
+<div class="viewcode-block" id="RepositoryApiMixin.workflow_names"><a class="viewcode-back" href="../../../../management.html#renku.core.management.repository.RepositoryApiMixin.workflow_names">[docs]</a>    <span class="nd">@cached_property</span>
+    <span class="k">def</span> <span class="nf">workflow_names</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return index of workflow names.&quot;&quot;&quot;</span>
+        <span class="n">names</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">ref</span> <span class="ow">in</span> <span class="n">LinkReference</span><span class="o">.</span><span class="n">iter_items</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">common_path</span><span class="o">=</span><span class="s2">&quot;workflows&quot;</span><span class="p">):</span>
+            <span class="n">names</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">ref</span><span class="o">.</span><span class="n">reference</span><span class="o">.</span><span class="n">relative_to</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">path</span><span class="p">))]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ref</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">names</span></div>
+
+<div class="viewcode-block" id="RepositoryApiMixin.submodules"><a class="viewcode-back" href="../../../../management.html#renku.core.management.repository.RepositoryApiMixin.submodules">[docs]</a>    <span class="nd">@cached_property</span>
+    <span class="k">def</span> <span class="nf">submodules</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return list of submodules it belongs to.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">parent</span><span class="p">:</span>
+            <span class="n">client</span><span class="p">,</span> <span class="n">submodule</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">parent</span>
+            <span class="k">return</span> <span class="n">client</span><span class="o">.</span><span class="n">submodules</span> <span class="o">+</span> <span class="p">[</span><span class="n">submodule</span><span class="o">.</span><span class="n">name</span><span class="p">]</span>
+        <span class="k">return</span> <span class="p">[]</span></div>
+
+<div class="viewcode-block" id="RepositoryApiMixin.subclients"><a class="viewcode-back" href="../../../../management.html#renku.core.management.repository.RepositoryApiMixin.subclients">[docs]</a>    <span class="k">def</span> <span class="nf">subclients</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parent_commit</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return mapping from submodule to client.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">parent_commit</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_subclients</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_subclients</span><span class="p">[</span><span class="n">parent_commit</span><span class="p">]</span>
+
+        <span class="k">try</span><span class="p">:</span>
+            <span class="kn">from</span> <span class="nn">git</span> <span class="kn">import</span> <span class="n">Submodule</span>
+
+            <span class="n">submodules</span> <span class="o">=</span> <span class="p">[</span><span class="n">submodule</span> <span class="k">for</span> <span class="n">submodule</span> <span class="ow">in</span> <span class="n">Submodule</span><span class="o">.</span><span class="n">iter_items</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">repo</span><span class="p">,</span> <span class="n">parent_commit</span><span class="o">=</span><span class="n">parent_commit</span><span class="p">)]</span>
+        <span class="k">except</span> <span class="p">(</span><span class="ne">RuntimeError</span><span class="p">,</span> <span class="ne">ValueError</span><span class="p">):</span>
+            <span class="c1"># There are no submodules associated with the given commit.</span>
+            <span class="n">submodules</span> <span class="o">=</span> <span class="p">[]</span>
+
+        <span class="n">subclients</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="k">for</span> <span class="n">submodule</span> <span class="ow">in</span> <span class="n">submodules</span><span class="p">:</span>
+            <span class="n">subpath</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">path</span> <span class="o">/</span> <span class="n">submodule</span><span class="o">.</span><span class="n">path</span><span class="p">)</span><span class="o">.</span><span class="n">resolve</span><span class="p">()</span>
+            <span class="n">is_renku</span> <span class="o">=</span> <span class="n">subpath</span> <span class="o">/</span> <span class="n">Path</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">renku_home</span><span class="p">)</span>
+
+            <span class="k">if</span> <span class="n">subpath</span><span class="o">.</span><span class="n">exists</span><span class="p">()</span> <span class="ow">and</span> <span class="n">is_renku</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+                <span class="n">subclients</span><span class="p">[</span><span class="n">submodule</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="n">subpath</span><span class="p">,</span> <span class="n">parent</span><span class="o">=</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">submodule</span><span class="p">))</span>
+
+        <span class="k">return</span> <span class="n">subclients</span></div>
+
+<div class="viewcode-block" id="RepositoryApiMixin.resolve_in_submodules"><a class="viewcode-back" href="../../../../management.html#renku.core.management.repository.RepositoryApiMixin.resolve_in_submodules">[docs]</a>    <span class="k">def</span> <span class="nf">resolve_in_submodules</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">commit</span><span class="p">,</span> <span class="n">path</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Resolve filename in submodules.&quot;&quot;&quot;</span>
+        <span class="n">original_path</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">path</span> <span class="o">/</span> <span class="n">path</span>
+        <span class="n">in_vendor</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">path</span><span class="p">)</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;.renku/vendors&quot;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">original_path</span><span class="o">.</span><span class="n">is_symlink</span><span class="p">()</span> <span class="ow">or</span> <span class="n">in_vendor</span><span class="p">:</span>
+            <span class="n">original_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">realpath</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">original_path</span><span class="p">))))</span>
+
+            <span class="k">for</span> <span class="n">submodule</span><span class="p">,</span> <span class="n">subclient</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">subclients</span><span class="p">(</span><span class="n">commit</span><span class="p">)</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">Path</span><span class="p">(</span><span class="n">submodule</span><span class="o">.</span><span class="n">path</span><span class="p">)</span> <span class="o">/</span> <span class="n">Path</span><span class="p">(</span><span class="s2">&quot;.git&quot;</span><span class="p">))</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+
+                    <span class="k">try</span><span class="p">:</span>
+                        <span class="n">subpath</span> <span class="o">=</span> <span class="n">original_path</span><span class="o">.</span><span class="n">relative_to</span><span class="p">(</span><span class="n">subclient</span><span class="o">.</span><span class="n">path</span><span class="p">)</span>
+                        <span class="k">return</span> <span class="p">(</span>
+                            <span class="n">subclient</span><span class="p">,</span>
+                            <span class="n">subclient</span><span class="o">.</span><span class="n">find_previous_commit</span><span class="p">(</span><span class="n">subpath</span><span class="p">,</span> <span class="n">revision</span><span class="o">=</span><span class="n">submodule</span><span class="o">.</span><span class="n">hexsha</span><span class="p">),</span>
+                            <span class="n">subpath</span><span class="p">,</span>
+                        <span class="p">)</span>
+                    <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+                        <span class="k">pass</span>
+
+        <span class="k">return</span> <span class="bp">self</span><span class="p">,</span> <span class="n">commit</span><span class="p">,</span> <span class="n">path</span></div>
+
+<div class="viewcode-block" id="RepositoryApiMixin.with_commit"><a class="viewcode-back" href="../../../../management.html#renku.core.management.repository.RepositoryApiMixin.with_commit">[docs]</a>    <span class="nd">@contextmanager</span>
+    <span class="k">def</span> <span class="nf">with_commit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">commit</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Yield the state of the repo at a specific commit.&quot;&quot;&quot;</span>
+        <span class="n">current_branch</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="n">current_commit</span> <span class="o">=</span> <span class="kc">None</span>
+
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">current_branch</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">repo</span><span class="o">.</span><span class="n">active_branch</span>
+        <span class="k">except</span> <span class="ne">TypeError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="c1"># not on a branch, detached head</span>
+            <span class="k">if</span> <span class="s2">&quot;HEAD is a detached&quot;</span> <span class="ow">in</span> <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">):</span>
+                <span class="n">current_commit</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">repo</span><span class="o">.</span><span class="n">head</span><span class="o">.</span><span class="n">commit</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Couldn&#39;t get active branch or commit&quot;</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">repo</span><span class="o">.</span><span class="n">git</span><span class="o">.</span><span class="n">checkout</span><span class="p">(</span><span class="n">commit</span><span class="p">)</span>
+
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">yield</span>
+        <span class="k">finally</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">current_branch</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">repo</span><span class="o">.</span><span class="n">git</span><span class="o">.</span><span class="n">checkout</span><span class="p">(</span><span class="n">current_branch</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">current_commit</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">repo</span><span class="o">.</span><span class="n">git</span><span class="o">.</span><span class="n">checkout</span><span class="p">(</span><span class="n">current_commit</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="RepositoryApiMixin.with_metadata"><a class="viewcode-back" href="../../../../management.html#renku.core.management.repository.RepositoryApiMixin.with_metadata">[docs]</a>    <span class="nd">@contextmanager</span>
+    <span class="k">def</span> <span class="nf">with_metadata</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">read_only</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Yield an editable metadata object.&quot;&quot;&quot;</span>
+        <span class="n">metadata_path</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">renku_metadata_path</span>
+
+        <span class="k">if</span> <span class="n">metadata_path</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+            <span class="n">metadata</span> <span class="o">=</span> <span class="n">Project</span><span class="o">.</span><span class="n">from_yaml</span><span class="p">(</span><span class="n">metadata_path</span><span class="p">,</span> <span class="n">client</span><span class="o">=</span><span class="bp">self</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">metadata</span> <span class="o">=</span> <span class="n">Project</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span> <span class="n">client</span><span class="o">=</span><span class="bp">self</span><span class="p">)</span>
+
+        <span class="k">yield</span> <span class="n">metadata</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">read_only</span><span class="p">:</span>
+            <span class="n">metadata</span><span class="o">.</span><span class="n">to_yaml</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="n">metadata_path</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="RepositoryApiMixin.process_and_store_run"><a class="viewcode-back" href="../../../../management.html#renku.core.management.repository.RepositoryApiMixin.process_and_store_run">[docs]</a>    <span class="k">def</span> <span class="nf">process_and_store_run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">command_line_tool</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">description</span><span class="p">,</span> <span class="n">keywords</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create Plan and Activity from CommandLineTool and store them.&quot;&quot;&quot;</span>
+        <span class="n">filename</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">{0}</span><span class="s2">_</span><span class="si">{1}</span><span class="s2">.yaml&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">uuid</span><span class="o">.</span><span class="n">uuid4</span><span class="p">()</span><span class="o">.</span><span class="n">hex</span><span class="p">,</span> <span class="n">secure_filename</span><span class="p">(</span><span class="s2">&quot;_&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">command_line_tool</span><span class="o">.</span><span class="n">baseCommand</span><span class="p">)))</span>
+
+        <span class="c1"># Store Run and ProcessRun as before</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">workflow_path</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">path</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">workflow_path</span> <span class="o">/</span> <span class="n">filename</span>
+
+        <span class="n">process_run</span> <span class="o">=</span> <span class="n">command_line_tool</span><span class="o">.</span><span class="n">generate_process_run</span><span class="p">(</span>
+            <span class="n">commit</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">repo</span><span class="o">.</span><span class="n">head</span><span class="o">.</span><span class="n">commit</span><span class="p">,</span> <span class="n">path</span><span class="o">=</span><span class="n">path</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="n">description</span><span class="p">,</span> <span class="n">keywords</span><span class="o">=</span><span class="n">keywords</span>
+        <span class="p">)</span>
+        <span class="n">process_run</span><span class="o">.</span><span class="n">to_yaml</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="n">path</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add_to_activity_index</span><span class="p">(</span><span class="n">process_run</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">update_graphs</span><span class="p">(</span><span class="n">process_run</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="RepositoryApiMixin.update_graphs"><a class="viewcode-back" href="../../../../management.html#renku.core.management.repository.RepositoryApiMixin.update_graphs">[docs]</a>    <span class="nd">@inject</span><span class="o">.</span><span class="n">autoparams</span><span class="p">()</span>
+    <span class="k">def</span> <span class="nf">update_graphs</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">activity</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ProcessRun</span><span class="p">,</span> <span class="n">WorkflowRun</span><span class="p">],</span> <span class="n">database</span><span class="p">:</span> <span class="n">Database</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Update Dependency and Provenance graphs from a ProcessRun/WorkflowRun.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">has_graph_files</span><span class="p">():</span>
+            <span class="k">return</span> <span class="kc">None</span>
+
+        <span class="n">dependency_graph</span> <span class="o">=</span> <span class="n">DependencyGraph</span><span class="o">.</span><span class="n">from_json</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dependency_graph_path</span><span class="p">)</span>
+        <span class="n">provenance_graph</span> <span class="o">=</span> <span class="n">ProvenanceGraph</span><span class="o">.</span><span class="n">from_json</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">provenance_graph_path</span><span class="p">)</span>
+
+        <span class="n">activity_collection</span> <span class="o">=</span> <span class="n">ActivityCollection</span><span class="o">.</span><span class="n">from_activity</span><span class="p">(</span><span class="n">activity</span><span class="p">,</span> <span class="n">dependency_graph</span><span class="p">)</span>
+
+        <span class="n">provenance_graph</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">activity_collection</span><span class="p">)</span>
+
+        <span class="c1"># TODO: remove this try except once we move to the database and have a migration.</span>
+        <span class="c1"># Currently needed for &#39;test_graph()&#39;</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">activity</span> <span class="ow">in</span> <span class="n">activity_collection</span><span class="o">.</span><span class="n">activities</span><span class="p">:</span>
+                <span class="n">database</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">activity</span><span class="p">)</span>
+                <span class="n">database</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">activity</span><span class="o">.</span><span class="n">association</span><span class="o">.</span><span class="n">plan</span><span class="p">)</span>
+
+            <span class="n">database</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+        <span class="k">except</span> <span class="ne">AssertionError</span><span class="p">:</span>
+            <span class="k">pass</span>
+
+        <span class="n">dependency_graph</span><span class="o">.</span><span class="n">to_json</span><span class="p">()</span>
+        <span class="n">provenance_graph</span><span class="o">.</span><span class="n">to_json</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="RepositoryApiMixin.has_graph_files"><a class="viewcode-back" href="../../../../management.html#renku.core.management.repository.RepositoryApiMixin.has_graph_files">[docs]</a>    <span class="k">def</span> <span class="nf">has_graph_files</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return true if dependency or provenance graph exists.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">database_path</span><span class="o">.</span><span class="n">exists</span><span class="p">()</span> <span class="ow">and</span> <span class="nb">any</span><span class="p">(</span><span class="n">f</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">database_path</span><span class="o">.</span><span class="n">iterdir</span><span class="p">()</span> <span class="k">if</span> <span class="n">f</span> <span class="o">!=</span> <span class="s2">&quot;root&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="RepositoryApiMixin.initialize_graph"><a class="viewcode-back" href="../../../../management.html#renku.core.management.repository.RepositoryApiMixin.initialize_graph">[docs]</a>    <span class="nd">@inject</span><span class="o">.</span><span class="n">autoparams</span><span class="p">()</span>
+    <span class="k">def</span> <span class="nf">initialize_graph</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">database</span><span class="p">:</span> <span class="n">Database</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create empty graph files.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">dependency_graph_path</span><span class="o">.</span><span class="n">write_text</span><span class="p">(</span><span class="s2">&quot;[]&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">provenance_graph_path</span><span class="o">.</span><span class="n">write_text</span><span class="p">(</span><span class="s2">&quot;[]&quot;</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">database_path</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">database_path</span> <span class="o">/</span> <span class="s2">&quot;.gitkeep&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">touch</span><span class="p">(</span><span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+        <span class="kn">from</span> <span class="nn">renku.core.models.provenance.activity</span> <span class="kn">import</span> <span class="n">Activity</span>
+        <span class="kn">from</span> <span class="nn">renku.core.models.workflow.plan</span> <span class="kn">import</span> <span class="n">Plan</span>
+
+        <span class="n">database</span><span class="o">.</span><span class="n">add_index</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;activities&quot;</span><span class="p">,</span> <span class="n">value_type</span><span class="o">=</span><span class="n">Activity</span><span class="p">,</span> <span class="n">attribute</span><span class="o">=</span><span class="s2">&quot;id&quot;</span><span class="p">)</span>
+        <span class="n">database</span><span class="o">.</span><span class="n">add_index</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;plans&quot;</span><span class="p">,</span> <span class="n">value_type</span><span class="o">=</span><span class="n">Plan</span><span class="p">,</span> <span class="n">attribute</span><span class="o">=</span><span class="s2">&quot;id&quot;</span><span class="p">)</span>
+
+        <span class="c1"># # NOTE: Access dataset&#39;s root to make sure that it is created in case there are no commits</span>
+        <span class="n">_</span> <span class="o">=</span> <span class="n">database</span><span class="o">.</span><span class="n">root</span></div>
+
+<div class="viewcode-block" id="RepositoryApiMixin.remove_graph_files"><a class="viewcode-back" href="../../../../management.html#renku.core.management.repository.RepositoryApiMixin.remove_graph_files">[docs]</a>    <span class="k">def</span> <span class="nf">remove_graph_files</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Remove all graph files.&quot;&quot;&quot;</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">dependency_graph_path</span><span class="o">.</span><span class="n">unlink</span><span class="p">()</span>
+        <span class="k">except</span> <span class="ne">FileNotFoundError</span><span class="p">:</span>
+            <span class="k">pass</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">provenance_graph_path</span><span class="o">.</span><span class="n">unlink</span><span class="p">()</span>
+        <span class="k">except</span> <span class="ne">FileNotFoundError</span><span class="p">:</span>
+            <span class="k">pass</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">shutil</span><span class="o">.</span><span class="n">rmtree</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">database_path</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">FileNotFoundError</span><span class="p">:</span>
+            <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="RepositoryApiMixin.init_repository"><a class="viewcode-back" href="../../../../management.html#renku.core.management.repository.RepositoryApiMixin.init_repository">[docs]</a>    <span class="k">def</span> <span class="nf">init_repository</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">force</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">user</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">initial_branch</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Initialize an empty Renku repository.&quot;&quot;&quot;</span>
+        <span class="kn">from</span> <span class="nn">git</span> <span class="kn">import</span> <span class="n">Repo</span>
+
+        <span class="kn">from</span> <span class="nn">renku.core.models.provenance.agents</span> <span class="kn">import</span> <span class="n">Person</span>
+
+        <span class="c1"># initialize repo and set user data</span>
+        <span class="n">kwargs</span> <span class="o">=</span> <span class="p">{}</span>
+
+        <span class="k">if</span> <span class="n">initial_branch</span><span class="p">:</span>
+            <span class="n">kwargs</span><span class="p">[</span><span class="s2">&quot;initial-branch&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">initial_branch</span>
+
+        <span class="n">path</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">absolute</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">repo</span> <span class="o">=</span> <span class="n">Repo</span><span class="o">.</span><span class="n">init</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">path</span><span class="p">),</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">user</span><span class="p">:</span>
+            <span class="n">config_writer</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">repo</span><span class="o">.</span><span class="n">config_writer</span><span class="p">()</span>
+            <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">user</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                <span class="n">config_writer</span><span class="o">.</span><span class="n">set_value</span><span class="p">(</span><span class="s2">&quot;user&quot;</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+            <span class="n">config_writer</span><span class="o">.</span><span class="n">release</span><span class="p">()</span>
+
+        <span class="c1"># verify if author information is available</span>
+        <span class="n">Person</span><span class="o">.</span><span class="n">from_git</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">repo</span><span class="p">)</span></div>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">path_activity_cache</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Cache of all activities and their generated paths.&quot;&quot;&quot;</span>
+        <span class="c1"># TODO: this is there for performance reasons. Remove once graph</span>
+        <span class="c1"># is stored as a flat, append-only list (Should be graph query</span>
+        <span class="c1"># in the future)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_activity_index</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_activity_index</span>
+
+        <span class="n">path</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">activity_index_path</span>
+
+        <span class="k">if</span> <span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+            <span class="k">with</span> <span class="n">path</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">stream</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_activity_index</span> <span class="o">=</span> <span class="n">yaml</span><span class="o">.</span><span class="n">safe_load</span><span class="p">(</span><span class="n">stream</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_activity_index</span> <span class="o">=</span> <span class="p">{}</span>
+
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_activity_index</span>
+
+<div class="viewcode-block" id="RepositoryApiMixin.add_to_activity_index"><a class="viewcode-back" href="../../../../management.html#renku.core.management.repository.RepositoryApiMixin.add_to_activity_index">[docs]</a>    <span class="k">def</span> <span class="nf">add_to_activity_index</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">activity</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Add an activity and it&#39;s generations to the cache.&quot;&quot;&quot;</span>
+        <span class="k">for</span> <span class="n">g</span> <span class="ow">in</span> <span class="n">activity</span><span class="o">.</span><span class="n">generated</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">g</span><span class="o">.</span><span class="n">path</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">path_activity_cache</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">path_activity_cache</span><span class="p">[</span><span class="n">g</span><span class="o">.</span><span class="n">path</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+            <span class="n">hexsha</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">commit</span><span class="o">.</span><span class="n">hexsha</span>
+            <span class="k">if</span> <span class="n">hexsha</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">path_activity_cache</span><span class="p">[</span><span class="n">g</span><span class="o">.</span><span class="n">path</span><span class="p">]:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">path_activity_cache</span><span class="p">[</span><span class="n">g</span><span class="o">.</span><span class="n">path</span><span class="p">][</span><span class="n">hexsha</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+
+            <span class="k">if</span> <span class="n">activity</span><span class="o">.</span><span class="n">path</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">path_activity_cache</span><span class="p">[</span><span class="n">g</span><span class="o">.</span><span class="n">path</span><span class="p">][</span><span class="n">hexsha</span><span class="p">]:</span>
+                <span class="k">continue</span>
+
+            <span class="bp">self</span><span class="o">.</span><span class="n">path_activity_cache</span><span class="p">[</span><span class="n">g</span><span class="o">.</span><span class="n">path</span><span class="p">][</span><span class="n">g</span><span class="o">.</span><span class="n">commit</span><span class="o">.</span><span class="n">hexsha</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">activity</span><span class="o">.</span><span class="n">path</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">path_activity_cache</span><span class="p">:</span>
+            <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">activity_index_path</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">stream</span><span class="p">:</span>
+                <span class="n">yaml</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">path_activity_cache</span><span class="p">,</span> <span class="n">stream</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="RepositoryApiMixin.activities_for_paths"><a class="viewcode-back" href="../../../../management.html#renku.core.management.repository.RepositoryApiMixin.activities_for_paths">[docs]</a>    <span class="k">def</span> <span class="nf">activities_for_paths</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">paths</span><span class="p">,</span> <span class="n">file_commit</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">revision</span><span class="o">=</span><span class="s2">&quot;HEAD&quot;</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get all activities involving a path.&quot;&quot;&quot;</span>
+        <span class="kn">from</span> <span class="nn">renku.core.models.provenance.activities</span> <span class="kn">import</span> <span class="n">Activity</span>
+
+        <span class="n">result</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+
+        <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">paths</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">p</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">path_activity_cache</span><span class="p">:</span>
+                <span class="n">parent_paths</span> <span class="o">=</span> <span class="p">[</span><span class="n">a</span> <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">path_activity_cache</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="k">if</span> <span class="n">p</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="n">a</span><span class="p">)]</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="n">parent_paths</span><span class="p">:</span>
+                    <span class="k">continue</span>
+                <span class="n">matching_activities</span> <span class="o">=</span> <span class="p">[</span>
+                    <span class="n">a</span>
+                    <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">path_activity_cache</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+                    <span class="k">for</span> <span class="n">ck</span><span class="p">,</span> <span class="n">cv</span> <span class="ow">in</span> <span class="n">v</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+                    <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">cv</span>
+                    <span class="k">if</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">parent_paths</span> <span class="ow">and</span> <span class="p">(</span><span class="ow">not</span> <span class="n">file_commit</span> <span class="ow">or</span> <span class="n">ck</span> <span class="o">==</span> <span class="n">file_commit</span><span class="o">.</span><span class="n">hexsha</span><span class="p">)</span>
+                <span class="p">]</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">matching</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">path_activity_cache</span><span class="p">[</span><span class="n">p</span><span class="p">]</span>
+                <span class="k">if</span> <span class="n">file_commit</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="n">file_commit</span><span class="o">.</span><span class="n">hexsha</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">matching</span><span class="p">:</span>
+                        <span class="k">continue</span>
+                    <span class="n">matching_activities</span> <span class="o">=</span> <span class="n">matching</span><span class="p">[</span><span class="n">file_commit</span><span class="o">.</span><span class="n">hexsha</span><span class="p">]</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">matching_activities</span> <span class="o">=</span> <span class="p">[</span><span class="n">a</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">matching</span><span class="o">.</span><span class="n">values</span><span class="p">()</span> <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">v</span><span class="p">]</span>
+
+            <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">matching_activities</span><span class="p">:</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">revision</span><span class="p">)</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_commit_activity_cache</span><span class="p">:</span>
+                    <span class="n">activity</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_commit_activity_cache</span><span class="p">[(</span><span class="n">a</span><span class="p">,</span> <span class="n">revision</span><span class="p">)]</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="k">try</span><span class="p">:</span>
+                        <span class="n">commit</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">find_previous_commit</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">revision</span><span class="o">=</span><span class="n">revision</span><span class="p">)</span>
+                    <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+                        <span class="k">continue</span>
+
+                    <span class="n">activity</span> <span class="o">=</span> <span class="n">Activity</span><span class="o">.</span><span class="n">from_yaml</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">path</span> <span class="o">/</span> <span class="n">a</span><span class="p">,</span> <span class="n">client</span><span class="o">=</span><span class="bp">self</span><span class="p">,</span> <span class="n">commit</span><span class="o">=</span><span class="n">commit</span><span class="p">)</span>
+
+                    <span class="bp">self</span><span class="o">.</span><span class="n">_commit_activity_cache</span><span class="p">[(</span><span class="n">a</span><span class="p">,</span> <span class="n">revision</span><span class="p">)]</span> <span class="o">=</span> <span class="n">activity</span>
+                <span class="n">result</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">activity</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="n">result</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="RepositoryApiMixin.get_template_files"><a class="viewcode-back" href="../../../../management.html#renku.core.management.repository.RepositoryApiMixin.get_template_files">[docs]</a>    <span class="k">def</span> <span class="nf">get_template_files</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">template_path</span><span class="p">,</span> <span class="n">metadata</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Gets paths in a rendered renku template.&quot;&quot;&quot;</span>
+        <span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">template_path</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s2">&quot;**/*&quot;</span><span class="p">):</span>
+            <span class="n">rel_path</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">relative_to</span><span class="p">(</span><span class="n">template_path</span><span class="p">)</span>
+            <span class="n">destination</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">path</span> <span class="o">/</span> <span class="n">rel_path</span>
+
+            <span class="n">destination</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">Template</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">destination</span><span class="p">))</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="n">metadata</span><span class="p">))</span>
+            <span class="k">yield</span> <span class="n">destination</span><span class="o">.</span><span class="n">relative_to</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">path</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="RepositoryApiMixin.import_from_template"><a class="viewcode-back" href="../../../../management.html#renku.core.management.repository.RepositoryApiMixin.import_from_template">[docs]</a>    <span class="k">def</span> <span class="nf">import_from_template</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">template_path</span><span class="p">,</span> <span class="n">metadata</span><span class="p">,</span> <span class="n">force</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Render template files from a template directory.&quot;&quot;&quot;</span>
+        <span class="n">checksums</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">template_path</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s2">&quot;**/*&quot;</span><span class="p">)):</span>
+            <span class="n">rel_path</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">relative_to</span><span class="p">(</span><span class="n">template_path</span><span class="p">)</span>
+            <span class="n">destination</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">path</span> <span class="o">/</span> <span class="n">rel_path</span>
+
+            <span class="k">try</span><span class="p">:</span>
+                <span class="c1"># TODO: notify about the expected variables - code stub:</span>
+                <span class="c1"># with file.open() as fr:</span>
+                <span class="c1">#     file_content = fr.read()</span>
+                <span class="c1">#     # look for the required keys</span>
+                <span class="c1">#     env = Environment()</span>
+                <span class="c1">#     parsed = env.parse(file_content)</span>
+                <span class="c1">#     variables = meta.find_undeclared_variables(parsed)</span>
+
+                <span class="c1"># parse file and process it</span>
+                <span class="n">template</span> <span class="o">=</span> <span class="n">Template</span><span class="p">(</span><span class="n">file</span><span class="o">.</span><span class="n">read_text</span><span class="p">())</span>
+                <span class="n">rendered_content</span> <span class="o">=</span> <span class="n">template</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="n">metadata</span><span class="p">)</span>
+                <span class="c1"># NOTE: the path could contain template variables, we need to template it</span>
+                <span class="n">destination</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">Template</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">destination</span><span class="p">))</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="n">metadata</span><span class="p">))</span>
+                <span class="n">templated_rel_path</span> <span class="o">=</span> <span class="n">destination</span><span class="o">.</span><span class="n">relative_to</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">path</span><span class="p">)</span>
+
+                <span class="k">if</span> <span class="n">destination</span><span class="o">.</span><span class="n">exists</span><span class="p">()</span> <span class="ow">and</span> <span class="nb">str</span><span class="p">(</span><span class="n">templated_rel_path</span><span class="p">)</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">in</span> <span class="n">INIT_APPEND_FILES</span><span class="p">:</span>
+                    <span class="n">communication</span><span class="o">.</span><span class="n">echo</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Appending to file </span><span class="si">{</span><span class="n">templated_rel_path</span><span class="si">}</span><span class="s2"> ...&quot;</span><span class="p">)</span>
+                    <span class="n">destination</span><span class="o">.</span><span class="n">write_text</span><span class="p">(</span><span class="n">destination</span><span class="o">.</span><span class="n">read_text</span><span class="p">()</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="n">rendered_content</span><span class="p">)</span>
+                <span class="k">elif</span> <span class="ow">not</span> <span class="n">destination</span><span class="o">.</span><span class="n">exists</span><span class="p">()</span> <span class="ow">or</span> <span class="nb">str</span><span class="p">(</span><span class="n">templated_rel_path</span><span class="p">)</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">INIT_KEEP_FILES</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="n">destination</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+                        <span class="n">communication</span><span class="o">.</span><span class="n">echo</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Overwriting file </span><span class="si">{</span><span class="n">templated_rel_path</span><span class="si">}</span><span class="s2"> ...&quot;</span><span class="p">)</span>
+                    <span class="k">else</span><span class="p">:</span>
+                        <span class="n">communication</span><span class="o">.</span><span class="n">echo</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Initializing file </span><span class="si">{</span><span class="n">templated_rel_path</span><span class="si">}</span><span class="s2"> ...&quot;</span><span class="p">)</span>
+
+                    <span class="n">destination</span><span class="o">.</span><span class="n">write_text</span><span class="p">(</span><span class="n">rendered_content</span><span class="p">)</span>
+
+                <span class="n">checksums</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">rel_path</span><span class="p">)]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_content_hash</span><span class="p">(</span><span class="n">destination</span><span class="p">)</span>
+            <span class="k">except</span> <span class="ne">IsADirectoryError</span><span class="p">:</span>
+                <span class="n">destination</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+            <span class="k">except</span> <span class="ne">TypeError</span><span class="p">:</span>
+                <span class="n">shutil</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">destination</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">template_checksums</span><span class="o">.</span><span class="n">parent</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">template_checksums</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">checksum_file</span><span class="p">:</span>
+            <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">checksums</span><span class="p">,</span> <span class="n">checksum_file</span><span class="p">)</span></div>
+
+    <span class="k">def</span> <span class="nf">_content_hash</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Calculate the sha256 hash of a file.&quot;&quot;&quot;</span>
+        <span class="n">sha256_hash</span> <span class="o">=</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">sha256</span><span class="p">()</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">path</span><span class="p">),</span> <span class="s2">&quot;rb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">byte_block</span> <span class="ow">in</span> <span class="nb">iter</span><span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">4096</span><span class="p">),</span> <span class="sa">b</span><span class="s2">&quot;&quot;</span><span class="p">):</span>
+                <span class="n">sha256_hash</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">byte_block</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">sha256_hash</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2017-2021, Swiss Data Science Center.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
