@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: smqtk-classifier
+Version: 0.18.0
+Summary: Algorithms, data structures and utilities around performing classificationof inputs.
+Home-page: https://github.com/Kitware/SMQTK-Classifier
+License: BSD-3-Clause
+Author: Kitware, Inc.
+Author-email: smqtk-developers@kitware.com
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: sklearn
+Requires-Dist: numpy (>=1.19.5,<2.0.0)
+Requires-Dist: scikit-learn (>=0.24.1,<0.25.0); extra == "sklearn"
+Requires-Dist: smqtk-core (>=0.18.0)
+Requires-Dist: smqtk-dataprovider (>=0.16.0)
+Requires-Dist: smqtk-descriptors (>=0.16.0)
+Project-URL: Documentation, https://smqtk-classifier.readthedocs.io/
+Project-URL: Repository, https://github.com/Kitware/SMQTK-Classifier
+Description-Content-Type: text/markdown
+
+# SMQTK - Classifier
+
+## Intent
+This package provides interfaces and implementations around the classification
+of inputs into some form of labeled probabilistic values.
+Additional data structure abstractions are defined here to standardize this
+behavior into common terms.
+
+## Documentation
+You can build the sphinx documentation locally for the most up-to-date
+reference:
+```bash
+# Install dependencies
+poetry install
+# Navigate to the documentation root.
+cd docs
+# Build the docs.
+poetry run make html
+# Open in your favorite browser!
+firefox _build/html/index.html
+```
+
