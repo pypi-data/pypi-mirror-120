@@ -1,0 +1,3 @@
+[console_scripts]
+raritygems = raritygems.__main__:main
+
