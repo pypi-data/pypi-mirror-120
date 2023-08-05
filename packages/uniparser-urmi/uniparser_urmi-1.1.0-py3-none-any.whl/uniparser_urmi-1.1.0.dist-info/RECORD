@@ -1,0 +1,14 @@
+uniparser_urmi/__init__.py,sha256=h6Hzfexbr05OwSr_dsRAIAc4q8uBxn6WEhgj4-jewe4,36
+uniparser_urmi/__main__.py,sha256=e_dw5u1Ck1u_1jp6d_HxQHqsopRfQw-u-7eHtiXQ9to,742
+uniparser_urmi/analyzer.py,sha256=R1R6mtjN7sqjHskuPcfylMEJTS8KqYV58mffXbCpzkk,3049
+uniparser_urmi/data_nodiacritics/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uniparser_urmi/data_nodiacritics/lexemes.txt,sha256=FMYhcseB_vqzzkzHS64wITlCnDKdnPXYs1K3vnbNESw,602632
+uniparser_urmi/data_nodiacritics/paradigms.txt,sha256=LIYg7XSHnogAITbLoeiOMTsflbjJjmz_xhDCx3hKdj8,88509
+uniparser_urmi/data_strict/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uniparser_urmi/data_strict/lexemes.txt,sha256=KOM8q1pCyNe-2bGBKWtMWpe1gOUK8vjVeK4pJLhQOPU,581067
+uniparser_urmi/data_strict/paradigms.txt,sha256=LIYg7XSHnogAITbLoeiOMTsflbjJjmz_xhDCx3hKdj8,88509
+uniparser_urmi-1.1.0.dist-info/LICENSE,sha256=LbriMrOVIoXETu5y88XeSsv-16ATXbALkHyVNWCNelc,1146
+uniparser_urmi-1.1.0.dist-info/METADATA,sha256=MQNHWYPchLlfOSw3wsJBJjZ1t5Rx8-Q_KAN7OnAEyaU,5426
+uniparser_urmi-1.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+uniparser_urmi-1.1.0.dist-info/top_level.txt,sha256=B8qpyQwOLklPuNulo46rnNWER_1JENckyjSNw2A7OTQ,15
+uniparser_urmi-1.1.0.dist-info/RECORD,,
