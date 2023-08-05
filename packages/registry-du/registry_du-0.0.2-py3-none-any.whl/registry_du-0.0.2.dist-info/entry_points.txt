@@ -1,0 +1,3 @@
+[console_scripts]
+registry-du = registry_du.registry_du:main
+
