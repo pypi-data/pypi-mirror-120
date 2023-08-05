@@ -1,0 +1,8 @@
+drf_handlers/__init__.py,sha256=Ul1K04PktpkG5XXx2z46uCNB2Zk6qYxPT0DOIZRX-9I,181
+drf_handlers/__version__.py,sha256=R6er5sQIzUeWQKhBiG_adcTAjcDOA-0WUTg4bvTTP14,372
+drf_handlers/formatter.py,sha256=gCErBVnKkPI5B9QCpnhTtYipUHTN__vcimgfu_4cR5A,4468
+drf_errors_formatter-1.0.1.dist-info/LICENSE,sha256=E3yDcoyNY1dM4WKuQxzBqjgD6PC6K_nAlfH1ciEZBnk,1103
+drf_errors_formatter-1.0.1.dist-info/METADATA,sha256=-gvdmIc8dfRG9cNaBjJRg2bVYBvGlOnHhbsIUyrMzF0,1249
+drf_errors_formatter-1.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+drf_errors_formatter-1.0.1.dist-info/top_level.txt,sha256=gIrf9arHdq4VFa6V4fgLzPOu0v6LA8xuRsvD2kecoZg,13
+drf_errors_formatter-1.0.1.dist-info/RECORD,,
