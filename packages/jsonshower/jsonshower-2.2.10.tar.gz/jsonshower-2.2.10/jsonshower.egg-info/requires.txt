@@ -1,0 +1,6 @@
+pandas
+fuzzysearch
+
+[pdfs]
+pdf-annotate
+pdf2image
