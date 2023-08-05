@@ -1,0 +1,7 @@
+README.md
+setup.py
+awesome_animator.egg-info/PKG-INFO
+awesome_animator.egg-info/SOURCES.txt
+awesome_animator.egg-info/dependency_links.txt
+awesome_animator.egg-info/requires.txt
+awesome_animator.egg-info/top_level.txt
