@@ -1,0 +1,13 @@
+drpg/__init__.py,sha256=TCCPou8WZcpB_Wf2K079r5vYX6zD8Velhhhucywd5NE,55
+drpg/__main__.py,sha256=0yDyaMZaiNxOf9g9X5-tbHKP3bChbSRVKrd-wZTz5gI,63
+drpg/api.py,sha256=QpoUvLeCUyk4Er9x7mLsp86MGoJe2kZXoBqMItTxapM,4070
+drpg/cmd.py,sha256=HqqeefNs0ZfMCbcBX0V0jGzf5BKu47VSBGVxIxTY3lM,3558
+drpg/config.py,sha256=EhW49-i_-2_arASetCKcQJzmM0W1UfmKGWc3pVZZh6I,212
+drpg/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drpg/sync.py,sha256=Pxkq-zImXwkbNQUIv_LUGvjKGVhddyeLUHnoYUklO0g,4149
+drpg-2021.9.0.dist-info/LICENSE,sha256=fiJj8soIG3zQdB1wSelEHmmsUl7TkJ8eddJAlalTqwE,1063
+drpg-2021.9.0.dist-info/METADATA,sha256=YKkj1plFms6j9fA0TaMiuwHCI0WTLkdHyr5_ZMgHzAQ,2415
+drpg-2021.9.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+drpg-2021.9.0.dist-info/entry_points.txt,sha256=465XREGzswHrZLkKmIdvLVFzolhzKGfiE7QknvrnthI,39
+drpg-2021.9.0.dist-info/top_level.txt,sha256=DMO85f1obGIbCsYu2nsF0bKLaioXsvHdosOx2vkCYFg,5
+drpg-2021.9.0.dist-info/RECORD,,
