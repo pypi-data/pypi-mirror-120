@@ -1,0 +1,6 @@
+include LICENSE.txt
+include README.md
+
+recursive-exclude * __pycache__
+recursive-exclude * .vscode
+recursive-exclude * *.py[co]

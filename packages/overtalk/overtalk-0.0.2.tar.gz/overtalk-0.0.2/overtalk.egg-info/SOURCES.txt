@@ -1,0 +1,10 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+overtalk.py
+setup.py
+overtalk.egg-info/PKG-INFO
+overtalk.egg-info/SOURCES.txt
+overtalk.egg-info/dependency_links.txt
+overtalk.egg-info/requires.txt
+overtalk.egg-info/top_level.txt
