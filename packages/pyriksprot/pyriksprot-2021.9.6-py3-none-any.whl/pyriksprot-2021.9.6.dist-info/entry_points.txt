@@ -1,0 +1,4 @@
+[console_scripts]
+parla_frequencies=scripts.parla_frequencies:main
+parla_transform=scripts.parla_transform:main
+
