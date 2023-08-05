@@ -1,0 +1,4 @@
+cryptography~=3.4.8
+mysql-connector-python~=8.0.26
+pandas~=1.1.5
+SQLAlchemy~=1.4.23
