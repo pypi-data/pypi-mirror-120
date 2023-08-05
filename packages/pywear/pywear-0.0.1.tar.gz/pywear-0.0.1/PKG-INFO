@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: pywear
+Version: 0.0.1
+Summary: Python package for human activity recognition
+Home-page: UNKNOWN
+Maintainer: Actigraph LLC
+Maintainer-email: sheraz@khansheraz.com
+License: BSD (3-clause)
+Platform: any
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+License-File: LICENSE.txt
+License-File: AUTHORS.rst
+
+======
+pywear
+======
+
+
+Add a short description here!
+
+
+Description
+===========
+
+A longer description of your project goes here...
+
+
+.. _pyscaffold-notes:
+
+Note
+====
+
+This project has been set up using PyScaffold 4.0.2. For details and usage
+information on PyScaffold see https://pyscaffold.org/.
+
+
