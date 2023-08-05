@@ -1,0 +1,9 @@
+keras
+pandas
+numpy
+scipy
+scanpy
+anndata
+louvain
+sklearn
+tensorflow
