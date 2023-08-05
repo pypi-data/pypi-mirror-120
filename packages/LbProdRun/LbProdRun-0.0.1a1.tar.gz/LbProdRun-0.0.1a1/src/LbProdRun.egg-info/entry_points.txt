@@ -1,0 +1,3 @@
+[console_scripts]
+lb-prod-run = LbProdRun.__main__:app
+
