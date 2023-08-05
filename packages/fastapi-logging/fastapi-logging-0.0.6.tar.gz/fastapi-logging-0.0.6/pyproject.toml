@@ -1,0 +1,10 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+    "starlette==0.14.2",
+    "starlette-context==0.3.3 ",
+    "google-auth==1.32.0",
+    "google-cloud-logging==2.3.1"
+]
+build-backend = "setuptools.build_meta"
