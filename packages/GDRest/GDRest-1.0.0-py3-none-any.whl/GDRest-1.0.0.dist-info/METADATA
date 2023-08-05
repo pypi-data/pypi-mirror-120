@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: GDRest
+Version: 1.0.0
+Summary: REST API for Geometry Dash, made with Python, gd.py and Starlette
+Home-page: https://github.com/Silverflower67/GDRest
+Author: Silverflower67
+Author-email: 
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: starlette (~=0.16.0)
+Requires-Dist: typesystem (~=0.2.5)
+Requires-Dist: httpx (~=1.0.0b0)
+Requires-Dist: uvicorn (~=0.15.0)
+Requires-Dist: setuptools (~=56.0.0)
+Requires-Dist: gd.py (~=1.0.0rc1)
+
+# GDREST
+_____
+A REST API for Geometry Dash, made with Python, gd.py and Starlette
+
+## Get started
+### Install
+Install GDRest using pip:  
+`pip install gdrest`  
+or directly from the repo:
+```commandline
+git clone https://github.com/Silverflower67/GDRest.git
+cd GDRest
+pip install -U .
+```
+
