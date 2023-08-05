@@ -1,0 +1,13 @@
+salesdredge/__init__.py,sha256=B_KvlI155RpfaXfEm9dMBy1YHHeS2jWqpRpqp8yGItQ,1119
+salesdredge/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+salesdredge/helpers.py,sha256=-4HqlUBypwa_QmMSbiuop2_fZ8zcuOgq1pbcq0We2bk,181
+salesdredge/crawler/__init__.py,sha256=qHemzAX6UKW3Zqb-ppiXq63WVmkjU_d1o2F6Ev-F_VY,2202
+salesdredge/crawler/helpers.py,sha256=2s6BtHMSXS8Os9AxCZVrKX4NGH6pAJiOrK6_lGfrbXA,1550
+salesdredge/crawler/indexer.py,sha256=-AhlPnmx-zmuVp4zlgY2Qw05XUkfKoxFZcAyN7MCh80,1377
+salesdredge/crawler/scraper.py,sha256=UAwx_wS2osBZKEnQOj5hlELBFh71ZgpMmsp36H0vDp0,3263
+salesdredge/report_builder/__init__.py,sha256=fNz028Gizn3_APaIYh-lTC1IXsxKgv9wZjQHc9RP9N4,51
+salesdredge-1.0.4.dist-info/METADATA,sha256=d_7vmXmfK4WPyU-VBMHCVnpKvjedThX5JJZokmu7qbE,1224
+salesdredge-1.0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+salesdredge-1.0.4.dist-info/entry_points.txt,sha256=3S5KyKXcx8hEIcSo7xJXcXxiQJKL8UNvsqW5DWIpURQ,59
+salesdredge-1.0.4.dist-info/top_level.txt,sha256=TNjNUngAj2LXc7sCfRrWlHrBsNo9i37iQZRG1cD0qwg,12
+salesdredge-1.0.4.dist-info/RECORD,,
