@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: libddog
+Version: 0.0.5
+Summary: Datadog automation tool
+Home-page: https://github.com/nearmap/libddog
+Author: Martin Matusiak
+Author-email: martin.matusiak@nearmap.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: click (>=8.0.0)
+Requires-Dist: datadog (>=0.41.0)
+Requires-Dist: parsimonious (>=0.8.0)
+Requires-Dist: python-dateutil (>=2.0.0)
+
+UNKNOWN
+
+
