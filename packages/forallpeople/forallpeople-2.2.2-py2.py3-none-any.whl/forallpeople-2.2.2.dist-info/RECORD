@@ -1,0 +1,17 @@
+forallpeople/__init__.py,sha256=1trp5E8b9Sk0uhuLfvzhvJFiZfFJ9KA9eUTvLBu6fTI,24009
+forallpeople/default.json,sha256=QFYb_rq4SPQuDClrCX88A6r-sXSKJhz4ipavVB-dxyQ,1169
+forallpeople/dimensions.py,sha256=x5XGJvSeBZdSmNPcL7U2o3tky7c5Ac5y3jp914w4jfE,783
+forallpeople/electrical.json,sha256=Hj6fNJ4LCve9m6aKDB6-broG_-Jmz0DPPnC67hvo8_g,747
+forallpeople/environment.py,sha256=rcSYKFGFKHMouQ-JhqcbrPt4_gTO1ukXe-NWJeE2RIE,7195
+forallpeople/physical_helper_functions.py,sha256=9hBHMp6C3DHio1ZpiPt3pYEiEZL9-q3gvdZL2Uz9SNQ,20126
+forallpeople/structural.json,sha256=uQ2HziW_62I3_QKXoFCOur7Fe6qDbwjQARGuRJX2ee0,3395
+forallpeople/test_definitions.json,sha256=M3C3IpzpZ59yVzXb_C7rm6Wp1u8E6yH0dnlLRHA3gX8,2073
+forallpeople/test_forallpeople.py,sha256=eidjh0RR1i39zPqQa6mMBvCPJFDZnWv38B2IhratGe4,15310
+forallpeople/test_tuplevector.py,sha256=f6cLl38PU9ym9gSkj82kXt5OokvMVcC6qDVvcxXpG1I,4573
+forallpeople/thermal.json,sha256=0MfSGRuONSO2E-YBbYT89bKQ26Y705yFLRleV-ZULPI,2176
+forallpeople/tuplevector.py,sha256=LIdiOFJ8KwmJKWh1Fw6Lecl-g4y_KMjAZuMAxk_CKss,10110
+forallpeople/us_customary.json,sha256=Hj6fNJ4LCve9m6aKDB6-broG_-Jmz0DPPnC67hvo8_g,747
+forallpeople-2.2.2.dist-info/LICENSE.TXT,sha256=Pd-b5cKP4n2tFDpdx27qJSIq0d1ok0oEcGTlbtL6QMU,11560
+forallpeople-2.2.2.dist-info/WHEEL,sha256=iTBNkFIR26Wnx2cg5455J1IIBEskRg4YJC9DJwgu-js,99
+forallpeople-2.2.2.dist-info/METADATA,sha256=aLLpOUBmdNRnUmXXJBHbK9jHa9eUzSXTlzff2JxHEWg,16639
+forallpeople-2.2.2.dist-info/RECORD,,
