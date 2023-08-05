@@ -1,0 +1,12 @@
+timeslime/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+timeslime/__main__.py,sha256=D-c9Wts6p0sR6ES-shgtXLmF1nVCS_53ixj0OJ9IsMU,52
+timeslime/cli.py,sha256=x6LMu_l8fEDBHaZ6GkCsmY9qMJlWIJsJ8oshpHRnxnw,4189
+timeslime/handler.py,sha256=ChxbdzDzrQHkeVQLI1AMsEt5EbVt7cNsoxVZISyZ2hg,8471
+timeslime/model.py,sha256=QWQqOrM-IAbFH_gVPvgJ1RhWjjS9JWW2yTcojyhy11U,271
+timeslime/serializer.py,sha256=yhvU3LUdtP7JCmbTNqIUTID6hzdE402Tx1N3vFI1QJk,1021
+timeslime-1.2.6.dist-info/LICENSE,sha256=LiRYlunBxa9UIPdfV7F9IRSRSISLC7bCz-DubILGtgs,1072
+timeslime-1.2.6.dist-info/METADATA,sha256=A8oXQuNhlDmXhggqA8q9nxCDrNkyZKsVm-8516ZYvos,2081
+timeslime-1.2.6.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+timeslime-1.2.6.dist-info/entry_points.txt,sha256=7i17KGeXCO0BSnIWyRwEfceSgacIX4J3L2gZQzsCUeA,55
+timeslime-1.2.6.dist-info/top_level.txt,sha256=kToBlgsTKvfE41ILjN4v6ZIQYLxFlROmu21LJPKmz8M,10
+timeslime-1.2.6.dist-info/RECORD,,
