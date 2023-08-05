@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: WhatsappInspect
+Version: 1.0.2
+Summary: A simple package for lettting user to track and analyze all the exported whatsapp chat data for differnt usage
+Home-page: UNKNOWN
+Author: Anindyadeep Sannigrahi
+Author-email: proanindyadeep@gmail.com
+License: UNKNOWN
+Description: A simple package for letting user to track and analyze all the exported whatsapp chat data for differnt usages. User can visualize as well as can retrive all sorts of analytical data from the raw text exported through whatsapp.
+Keywords: python,pandas,data,EDA,data analysis,whatsapp
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
