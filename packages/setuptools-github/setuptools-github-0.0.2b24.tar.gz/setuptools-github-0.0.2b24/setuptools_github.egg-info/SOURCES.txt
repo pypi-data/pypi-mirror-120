@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+setup.py
+setuptools_github.egg-info/PKG-INFO
+setuptools_github.egg-info/SOURCES.txt
+setuptools_github.egg-info/dependency_links.txt
+setuptools_github.egg-info/requires.txt
+setuptools_github.egg-info/top_level.txt
+src/setuptools/github/__init__.py
+src/setuptools/github/tools.py
