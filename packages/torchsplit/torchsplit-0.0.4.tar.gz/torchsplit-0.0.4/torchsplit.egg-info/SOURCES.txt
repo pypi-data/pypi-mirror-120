@@ -1,0 +1,9 @@
+README.md
+setup.py
+torchsplit/__init__.py
+torchsplit/split.py
+torchsplit.egg-info/PKG-INFO
+torchsplit.egg-info/SOURCES.txt
+torchsplit.egg-info/dependency_links.txt
+torchsplit.egg-info/requires.txt
+torchsplit.egg-info/top_level.txt
