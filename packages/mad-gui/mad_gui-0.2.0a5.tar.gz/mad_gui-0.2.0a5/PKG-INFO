@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: mad-gui
+Version: 0.2.0a5
+Summary: GUI for annotating and processing IMU data.
+Home-page: https://github.com/mad-lab-fau/mad-gui
+Author: Malte Ollenschlaeger
+Author-email: malte.ollenschlaeger@fau.de
+Requires-Python: >=3.7.1,<3.10
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: PySide2 (==5.15.1)
+Requires-Dist: pandas
+Requires-Dist: pyqtgraph (==0.11.0)
+Requires-Dist: typing-extensions (>=3.10.0,<4.0.0)
+Project-URL: Repository, https://github.com/mad-lab-fau/mad-gui
+Description-Content-Type: text/markdown
+
+# MaD GUI
+**M**achine Learning 
+**a**nd 
+**D**ata Analytics 
+**G**raphical 
+**U**ser 
+**I**nterface
+
+[![Documentation Status](https://readthedocs.org/projects/mad-gui/badge/?version=latest)](https://mad-gui.readthedocs.io/en/latest/?badge=latest)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+## What is it?
+The MaD GUI is a framework for processing time series data. Its use-cases include visualization, annotation (manual or automated), and algorithmic processing of visualized data and annotations. More information:
+
+ - [Documentation](https://mad-gui.readthedocs.io/en/latest/README.html) 
+ - [Github Repository](https://github.com/mad-lab-fau/mad-gui)
+ - [YouTube Playlist](https://www.youtube.com/watch?v=akxcuFOesC8&list=PLf4GpKhBjGcswKIkNeahNt5nDxt8oXPue)
+
