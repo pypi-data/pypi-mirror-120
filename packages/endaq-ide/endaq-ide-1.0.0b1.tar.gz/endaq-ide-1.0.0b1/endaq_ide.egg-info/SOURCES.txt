@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.py
+endaq/ide/__init__.py
+endaq/ide/files.py
+endaq/ide/gdrive.py
+endaq/ide/info.py
+endaq/ide/measurement.py
+endaq/ide/util.py
+endaq_ide.egg-info/PKG-INFO
+endaq_ide.egg-info/SOURCES.txt
+endaq_ide.egg-info/dependency_links.txt
+endaq_ide.egg-info/requires.txt
+endaq_ide.egg-info/top_level.txt
