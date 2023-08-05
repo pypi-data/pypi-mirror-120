@@ -1,0 +1,7 @@
+README.md
+setup.cfg
+setup.py
+fatequino_chatbot.egg-info/PKG-INFO
+fatequino_chatbot.egg-info/SOURCES.txt
+fatequino_chatbot.egg-info/dependency_links.txt
+fatequino_chatbot.egg-info/top_level.txt
