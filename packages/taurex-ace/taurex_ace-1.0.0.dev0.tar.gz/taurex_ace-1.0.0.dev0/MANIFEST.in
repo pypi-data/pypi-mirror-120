@@ -1,0 +1,1 @@
+recursive-include taurex_ace/external/ *.pyf *.dat *.therm
