@@ -1,0 +1,17 @@
+transistordatabase/__init__.py,sha256=JX0AWPrbOBL49U9SorhFt4V3eYnoY3Lzk4hl0nN3_yw,31
+transistordatabase/basic_tests.py,sha256=wws_pwBeWREwt9-lwwcT7doW89r1nayNePTo_z6NpO0,1216
+transistordatabase/databaseClasses.py,sha256=FK_JdyWbvEWE3BaAqAeOW9QYcgltnJvhCu9QGE5rPPw,213591
+transistordatabase/databaseClasses_test.py,sha256=TNdMxy4AJfUBnOwJ09I2k36NUc0SSqT1vjpbTf3gJFQ,8974
+transistordatabase/housing_types.txt,sha256=vXh8WNryhwhtR5rF6_6bA4c3Vq9AkLpQvo-FfghjJ9U,480
+transistordatabase/lea-upb.png,sha256=Sjn_fgRWbIGxdzCTckVgFgzJZ231DLNm-t0EigAdJwo,12458
+transistordatabase/module_manufacturers.txt,sha256=OB-_QRERCtVEwDMYxdc-XebvsgIgX8lkOFz20T5jrVk,127
+transistordatabase/templates/PLECS_Exporter_template_Diode.txt,sha256=Czevg21b8aWZeEMTPzicZcq2ygQj5_X6BVg8hJVNweE,2864
+transistordatabase/templates/PLECS_Exporter_template_Switch.txt,sha256=91EjyvHGfCu9j-fabdceUlAPa2l8ocRTS8a2Oj5Etks,2960
+transistordatabase/templates/VirtualDatasheet_BaseTemplate.html,sha256=5Ju3abbPicAU-BkKZiRSIGkr7Wb73C3TitrNE0OJYwg,3577
+transistordatabase/templates/VirtualDatasheet_TransistorTemplate.html,sha256=BbWoe2gPD-d6NoQqTAkvv1_TxO1pjVKM6uLezBDBB4U,9621
+transistordatabase-0.2.12.data/data/CHANGELOG.md,sha256=H8P8wzNeWBaN_IlDism7Og7ak5G99jkSPAC_N_TXPEU,6578
+transistordatabase-0.2.12.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+transistordatabase-0.2.12.dist-info/METADATA,sha256=InMxfomFW3VI5IKjmyE7X3QIt1yKoBhdp0b4EHjICww,24235
+transistordatabase-0.2.12.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+transistordatabase-0.2.12.dist-info/top_level.txt,sha256=FAoubEaXJW5W_xKcUSOJ0IQezIgQm-SvYS-FUKEQlcA,19
+transistordatabase-0.2.12.dist-info/RECORD,,
