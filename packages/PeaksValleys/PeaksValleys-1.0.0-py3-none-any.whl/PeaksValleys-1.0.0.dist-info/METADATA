@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: PeaksValleys
+Version: 1.0.0
+Summary: Detect peaks and valleys in a list of numbers
+Home-page: https://github.com/PeaksValleys
+Author: Ali Bahaari
+Author-email: alibahaari1997@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/AliBahaari/PeaksValleys/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# PeaksValleys
+
+Consider you have a list containing multiple numbers. By using ***PeaksValleys*** package, you can find and detect peaks and valleys.
+
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+  
+
