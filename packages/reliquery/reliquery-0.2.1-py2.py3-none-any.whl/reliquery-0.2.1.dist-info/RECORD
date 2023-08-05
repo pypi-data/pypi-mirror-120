@@ -1,0 +1,11 @@
+reliquery/__init__.py,sha256=hqrmw7OqGjQwW5LN3b5LslLbZihVRH52IQfQsdxtb9E,77
+reliquery/arrays.py,sha256=SIlmUD1sbXvzSCXgbKT7pFZBUAPvP6KXBAj1Tq2tZQE,1014
+reliquery/metadata.py,sha256=YPcg8IU9JNeNNegKS8KOaWOqegXYsZirtAkcjvO0LOs,7877
+reliquery/relic.py,sha256=f0fkngUaS858-zS48mAIJXd4cy7MAQvYmwAU8wYmWIk,5994
+reliquery/settings.py,sha256=DBnopvF1hzKEfbg7nnYvl9ze0j7p_G1cgFrbav-Iw_k,747
+reliquery/storage.py,sha256=M_UKsXYF_8CzaxWnRueF1Fpz_KzB83sTa8PwscvzouM,11607
+reliquery-0.2.1.dist-info/LICENSE,sha256=rSWMyCUzyGWHeIsrgE8AOv5kPO0LwVwQHmhABmlEfzE,227
+reliquery-0.2.1.dist-info/METADATA,sha256=n6gfFYG8MG5TLYqWTSO_RldwmsvhDivV1pW3_wdXjKU,399
+reliquery-0.2.1.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+reliquery-0.2.1.dist-info/top_level.txt,sha256=hn82E0BqxY02inIf7SLgy5gz23Uj_9dkGZMCkKO6A-Y,10
+reliquery-0.2.1.dist-info/RECORD,,
