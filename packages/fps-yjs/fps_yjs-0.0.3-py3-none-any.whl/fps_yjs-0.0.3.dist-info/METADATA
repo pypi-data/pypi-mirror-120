@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: fps-yjs
+Version: 0.0.3
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: fps
+Requires-Dist: fps-contents
+Requires-Dist: fps-kernels
+Requires-Dist: fps-auth
+
+UNKNOWN
+
