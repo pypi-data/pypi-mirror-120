@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+test/test_zipfile.py
+zipfile_dclimplode/__init__.py
+zipfile_dclimplode/_patcher.py
+zipfile_dclimplode/_zipfile.py
+zipfile_dclimplode.egg-info/PKG-INFO
+zipfile_dclimplode.egg-info/SOURCES.txt
+zipfile_dclimplode.egg-info/dependency_links.txt
+zipfile_dclimplode.egg-info/requires.txt
+zipfile_dclimplode.egg-info/top_level.txt
