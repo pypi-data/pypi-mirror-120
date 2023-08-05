@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: savvihub
+Version: 0.1.9
+Summary: A library and CLI for SavviHub
+Home-page: UNKNOWN
+Author: Savvihub Dev Team
+Author-email: contact@savvihub.com
+License: UNKNOWN
+Description: # `savvihub-python-sdk`
+        
+        ## Basic usage
+        
+        ```python
+        import savvihub
+        
+        savvihub.init(organization_name="my-organization")
+        savvihub.create_experiment(...)
+        ```
+        
+        ## Integrations
+        
+        ### Keras
+        
+        - Use ExperimentCallback
+        
+        ```python
+        import savvihub
+        from savvihub.integration.keras import ExperimentCallback
+        
+        savvihub.init()
+        
+        # Keras training code
+        model = Model()
+        model.compile(...)
+        
+        # Add integration
+        model.fit(x, y, epochs=5, callbacks=[ExperimentCallback()])
+        ```
+        
+        - Run experiment on Savvihub using Web UI or SDK
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
