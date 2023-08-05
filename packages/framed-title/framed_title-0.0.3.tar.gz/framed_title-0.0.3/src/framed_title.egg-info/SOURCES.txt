@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+examples/example_01.png
+examples/example_02.png
+examples/example_03.png
+examples/example_04.png
+src/framed_title.py
+src/framed_title.egg-info/PKG-INFO
+src/framed_title.egg-info/SOURCES.txt
+src/framed_title.egg-info/dependency_links.txt
+src/framed_title.egg-info/requires.txt
+src/framed_title.egg-info/top_level.txt
