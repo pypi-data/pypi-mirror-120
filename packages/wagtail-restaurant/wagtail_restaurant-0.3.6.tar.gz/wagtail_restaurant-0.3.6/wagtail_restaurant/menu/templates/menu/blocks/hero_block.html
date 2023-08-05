@@ -1,0 +1,11 @@
+{% load wagtailimages_tags %}
+{% image self.image original as img%}
+<div class="page__hero" style="background-image: url('{{ img.url }}');"></div>
+<div class="inner">
+	<div class="content">
+		<h1>{{ self.title }}</h1>
+		<em class="menu-dots"></em>
+		<h2>{{ self.sub_title }}</h2>
+		{{ self.description }}
+	</div>
+</div>
