@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: serial-dashboard
+Version: 0.1.0
+Summary: Bokeh-based serial dashboard.
+Home-page: https://github.com/justinbois/serial-dashboard
+Author: Justin Bois
+Author-email: bois@caltech.edu
+License: BSD
+Download-URL: https://github.com/justinbois/serial-dashboard/tarball/0.1.0
+Description: Bokeh-based serial dashboard.
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
