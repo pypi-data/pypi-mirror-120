@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: fbs-tutorial-shim-mac
+Version: 1.0.2
+Summary: fbs tutorial helper for Mac
+Home-page: https://github.com/mherrmann/fbs-tutorial-shim-mac
+Author: Michael Herrmann
+Author-email: michael+removethisifyouarehuman@herrmann.io
+License: GPLv3 or later
+Description: fbs tutorial helper for Mac
+        
+        See: https://github.com/mherrmann/fbs-tutorial-shim-mac
+Keywords: PyQt
+Platform: Mac
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
