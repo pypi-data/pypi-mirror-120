@@ -1,0 +1,96 @@
+Metadata-Version: 2.1
+Name: tokeks
+Version: 0.1.1
+Summary: UNKNOWN
+Home-page: https://github.com/ckarageorgkaneen/tokeks
+License: MIT
+Project-URL: Tracker, https://github.com/ckarageorgkaneen/tokeks/issues
+Project-URL: Source, https://github.com/ckarageorgkaneen/tokeks
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+[![PyPI version](https://badge.fury.io/py/tokeks.svg)](https://badge.fury.io/py/tokeks) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+# tokeks
+
+![](resources/aws_eks_icon.png)
+
+A zero-dependency Python library for getting the Kubernetes token of a AWS EKS cluster.
+
+**No** AWS CLI, third-party client or library (boto3, botocore, etc.) required.
+
+## Installation
+```bash
+pip install tokeks
+```
+
+## Usage prerequisites
+Assign your credentials to environment variables:
+```bash
+export AWS_ACCESS_KEY_ID="..."
+export AWS_SECRET_ACCESS_KEY="..."
+```
+
+## Library usage
+
+```python
+from tokeks import Tokeks
+tokeks = Tokeks(
+    access_key_id=os.environ['AWS_ACCESS_KEY_ID'],
+    secret_access_key=os.environ['AWS_SECRET_ACCESS_KEY'],
+    region_id='YOUR_REGION_ID',
+    cluster_id='YOUR_CLUSTER_ID')
+token = tokeks.get_token()
+```
+
+## CLI usage
+1. Go to project directory 
+
+2. Run script:
+```bash
+TOKEN=$(./getekstoken us-west-1 cluster-1)
+```
+
+3. Verify Kubernetes API access:
+```bash
+APISERVER=...
+curl -X GET $APISERVER/api --header "Authorization: Bearer $TOKEN" --insecure
+```
+
+If the response is something like:
+
+```json
+{
+  "kind": "APIVersions", 
+  "versions": [
+    "v1"
+  ],
+  "serverAddressByClientCIDRs": [
+    {
+      "clientCIDR": "0.0.0.0/0",
+      "serverAddress": "..."
+    }  
+  ]
+}
+```
+
+(and does not contain "Unauthorized"), you're good to go!
+
+### Inspired by:
+1. [API Authorization from Outside a Cluster](https://github.com/kubernetes-sigs/aws-iam-authenticator#api-authorization-from-outside-a-cluster)
+2. [eks-token](https://github.com/peak-ai/eks-token)
+
+
