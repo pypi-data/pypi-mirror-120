@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: atomtorss2
+Version: 1.0
+Summary: Atom to rss2 converter
+Home-page: https://github.com/flrt/atom_to_rss2
+Author: Frederic Laurent
+Author-email: frederic.laurent@gmail.com
+License: MIT
+Description: 
+        ATOM to RSS2
+        
+        Released under MIT Licence.
+        
+Keywords: Atom,feed,XML
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Communications
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
