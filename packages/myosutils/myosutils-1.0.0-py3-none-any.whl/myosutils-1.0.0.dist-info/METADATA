@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: myosutils
+Version: 1.0.0
+Summary: OS Utils Library
+Home-page: https://github.com/governorbaloyi/pypi-myosutils
+Author: Governor Baloyi
+Author-email: governor.baloyi@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Framework :: Pytest
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: pytest (>=3.7) ; extra == 'dev'
+
+# myosutils Library
+
+This is an example project demonstrating how to publish a python module to PyPI
+
+## Installation
+
+Run the following to install:
+
+```python
+pip install myosutils
+```
+
+## Usage
+
+```python
+from myosutils import raw_mode
+
+with raw_mode(sys.stdin):
+	...
+
+```
+## Developing Hello World
+
+To install helloworld, along with the tools you need to develop and run tests, run the following in your virtualenv:
+
+```bash
+$ pip install -e .[dev]
+```
+
