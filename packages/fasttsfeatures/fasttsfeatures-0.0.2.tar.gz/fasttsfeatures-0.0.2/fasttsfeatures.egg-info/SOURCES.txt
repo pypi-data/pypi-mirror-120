@@ -1,0 +1,16 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+fasttsfeatures/__init__.py
+fasttsfeatures/_nbdev.py
+fasttsfeatures/core.py
+fasttsfeatures.egg-info/PKG-INFO
+fasttsfeatures.egg-info/SOURCES.txt
+fasttsfeatures.egg-info/dependency_links.txt
+fasttsfeatures.egg-info/entry_points.txt
+fasttsfeatures.egg-info/not-zip-safe
+fasttsfeatures.egg-info/requires.txt
+fasttsfeatures.egg-info/top_level.txt
