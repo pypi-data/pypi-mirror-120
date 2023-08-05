@@ -1,0 +1,38 @@
+
+--------------------
+URGENCY: to do soon
+--------------------
+
+--------------
+URGENCY: high
+
+- Improve message dialog with URLs inside, i.e. using `wx.lib.agw.hyperlink`.
+  [ffplay_url_exe.py, Videomass version, youtube-dl update]
+- If the videomass version is higher than the official released one, the ID
+  should be beta
+--------------
+
+Need code refactoring
+
+-------------
+URGENCY: low
+-------------
+
+- Crop filter: Make combobox to choose other colors for the crop
+  rectangle selection.
+
+- Youtube-Downloader: With "default" option it downloads the best quality
+  precompiled video, which isn't the best quality overall. With "download
+  audio and video splitted" it downloads the best quality a/v streams.
+  ...but these are also default behaviors on youtube-dl ?!
+
+---------------
+URGENCY: medium
+----------------
+
+
+
+
+
+
+
