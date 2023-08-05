@@ -1,0 +1,3 @@
+[console_scripts]
+goddy = goddy:say_hi
+
