@@ -1,0 +1,10 @@
+setup.py
+fund_distributions/Binomialdistribution.py
+fund_distributions/Gaussiandistribution.py
+fund_distributions/Generaldistribution.py
+fund_distributions/__init__.py
+fund_distributions.egg-info/PKG-INFO
+fund_distributions.egg-info/SOURCES.txt
+fund_distributions.egg-info/dependency_links.txt
+fund_distributions.egg-info/not-zip-safe
+fund_distributions.egg-info/top_level.txt
