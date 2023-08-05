@@ -1,0 +1,12 @@
+/**
+ *
+ * Apply your custom CSS here
+ *
+*/
+
+.darkstyle{
+    filter: invert(0.88) brightness(150%) hue-rotate(10deg)
+}
+.darkstyle2{
+    filter: invert(0.90) brightness(150%) hue-rotate(180deg)
+}

@@ -1,0 +1,3 @@
+[console_scripts]
+easyfed_server = easyfed:fedserver
+

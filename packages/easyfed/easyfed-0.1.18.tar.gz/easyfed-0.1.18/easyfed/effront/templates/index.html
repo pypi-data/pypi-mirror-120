@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Xenon Boostrap Admin Panel" />
+	<meta name="author" content="" />
+	
+	<title>easyfed</title>
+
+
+	<link rel="stylesheet" href="/static/assets/css/fonts/linecons/css/linecons.css">
+	<link rel="stylesheet" href="/static/assets/css/fonts/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/static/assets/css/bootstrap.css">
+	<link rel="stylesheet" href="/static/assets/css/xenon-core.css">
+	<link rel="stylesheet" href="/static/assets/css/xenon-forms.css">
+	<link rel="stylesheet" href="/static/assets/css/xenon-components.css">
+	<link rel="stylesheet" href="/static/assets/css/xenon-skins.css">
+	<link rel="stylesheet" href="/static/assets/css/custom.css">
+
+	<script src="/static/assets/js/jquery-1.11.1.min.js"></script>
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	
+	
+</head>
+<body class="page-body login-page">
+
+
+	<div class="login-container">
+		<strong style="font-size: 40px;">Easy federated learning for any pytorch ML model</strong>
+		<br>
+		<br>
+		<strong style="font-size: 24px;width: 100%;">Clients:({{ clients_count }})</strong>
+		<br> 
+		<div class="row">
+			
+			{% for pt in clients %}
+			<div class="col-sm-3">
+				<a href="#" >
+				<div class="xe-widget xe-vertical-counter xe-vertical-counter-{{ pt.color }}" style="height:180px;" data-count=".num" data-from="0" data-to="{{ pt.count }}" data-decimal="," data-suffix="" data-duration="1">
+					
+					<div class="xe-label" style="padding:0;height:100px;color:white">
+
+						<strong>{{ pt.id }}.{{ pt.name }}</strong>
+						<span class="1num">{{ pt.loss }}</span>
+					</div>
+					
+					<div class="icon" style="background-color:#00000020;padding:6px">
+						<a href="javascript:void(0);"  onclick="deleteclient('{{ pt.key }}')">
+						<i class="fa fa-remove" style="color:#ffffff;"></i>
+					</a>
+					<input type="checkbox" {{ pt.checked }}  class="iswitch iswitch-blue" id="fast_mode" style="float:right;" onchange="changecheck('{{ pt.key }}',this.checked);">
+					</div>
+					
+					
+				</div>
+				</a>
+			</div>
+
+			{% endfor %}
+			
+		</div>
+		
+	</div>
+
+
+
+	<!-- Bottom Scripts -->
+	<script src="/static/assets/js/bootstrap.min.js"></script>
+	<script src="/static/assets/js/TweenMax.min.js"></script>
+	<script src="/static/assets/js/resizeable.js"></script>
+	<script src="/static/assets/js/joinable.js"></script>
+	<script src="/static/assets/js/xenon-api.js"></script>
+	<script src="/static/assets/js/xenon-toggles.js"></script>
+	<script src="/static/assets/js/jquery-validate/jquery.validate.min.js"></script>
+	<script src="/static/assets/js/toastr/toastr.min.js"></script>
+
+
+	<!-- JavaScripts initializations and stuff -->
+	<script src="/static/assets/js/xenon-custom.js"></script>
+	<script>
+
+	function changecheck(key,checked)
+	{
+
+        $.ajax
+    ({
+    type : "GET",
+    async : true,//异步执行
+    url : "/changeStatus",
+    data : {'key':key,'status':Number(checked)},//关键字
+    dataType : "json",//返回文本数据
+    success : function(result)
+    {
+     
+        if(result.result==1)
+        {
+			location.reload();
+        }
+    },
+    error : function(errorMsg) 
+    {
+
+    }
+
+	});
+	}
+	function deleteclient(key)
+	{
+		if(confirm('do you want to delete client?'))
+		{
+			$.ajax
+    ({
+    type : "GET",
+    async : true,//异步执行
+    url : "/deleteclient",
+    data : {'key':key},//关键字
+    dataType : "json",//返回文本数据
+    success : function(result)
+    {
+     
+        if(result.result==1)
+        {
+			location.reload();
+        }
+    },
+    error : function(errorMsg) 
+    {
+
+    }
+
+	});
+		}
+
+	}
+    function myreload()
+    {
+        location.reload()
+        // document.execCommand('Refresh')
+        
+    }
+    window.onload=function()
+    {
+		if({{clients_count }}>0)
+        setInterval("myreload()",20000)
+    }
+	</script>
+
+</body>
+</html>
