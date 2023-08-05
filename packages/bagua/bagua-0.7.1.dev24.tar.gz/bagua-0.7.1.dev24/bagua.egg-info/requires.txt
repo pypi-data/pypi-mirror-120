@@ -1,0 +1,13 @@
+bagua-core<0.5,>=0.4.1
+deprecation
+pytest-benchmark
+scikit-optimize
+numpy
+flask
+prometheus_client
+parallel-ssh
+pydantic
+requests
+gorilla
+gevent
+xxhash==v2.0.2
