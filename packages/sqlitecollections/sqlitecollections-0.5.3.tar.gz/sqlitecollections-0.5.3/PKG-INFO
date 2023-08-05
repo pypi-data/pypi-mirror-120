@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: sqlitecollections
+Version: 0.5.3
+Summary: Python collections that are backended by sqlite3 DB and are compatible with the built-in collections
+Home-page: https://github.com/osoken/sqlitecollections
+Author: osoken
+Author-email: osoken.devel@outlook.jp
+License: MIT
+Platform: UNKNOWN
+Provides-Extra: dev
+Provides-Extra: docs
+License-File: LICENSE
+
+Python collections that are backended by sqlite3 DB and are compatible with the built-in collections
+
