@@ -1,0 +1,4 @@
+beautifulsoup4~=4.9
+pysocks~=1.7
+requests~=2.25
+requests[socks]~=2.25

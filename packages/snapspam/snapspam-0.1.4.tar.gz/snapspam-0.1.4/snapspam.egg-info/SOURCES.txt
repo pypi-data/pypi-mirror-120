@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+snapspam/__init__.py
+snapspam/__main__.py
+snapspam/cli.py
+snapspam/lmk.py
+snapspam/sendit.py
+snapspam.egg-info/PKG-INFO
+snapspam.egg-info/SOURCES.txt
+snapspam.egg-info/dependency_links.txt
+snapspam.egg-info/entry_points.txt
+snapspam.egg-info/requires.txt
+snapspam.egg-info/top_level.txt
