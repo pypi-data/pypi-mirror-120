@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: Caribe
+Version: 0.0.1
+Summary: Trinidad dialect to standard english
+Home-page: UNKNOWN
+Author: Keston Smith
+Author-email: keston.smith@my.uwi.edu
+License: MIT
+Description: Version 0.0.1: Take Trinidadian dialect and converts it to standard english.
+        Future updates would include the conversion of other caribbean dialects to standard english
+        
+        CHANGELOG =======================================>
+        
+        Version 0.0.1 (16/09/2021)
+        
+        - Initial Release
+Keywords: converter
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
