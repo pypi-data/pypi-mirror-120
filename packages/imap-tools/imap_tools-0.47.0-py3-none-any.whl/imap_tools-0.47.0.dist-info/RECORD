@@ -1,0 +1,14 @@
+imap_tools/__init__.py,sha256=JjC0BFvuhtEX_QBNHOcZzKP5Nt4KdlZqgS2XeAhMAfg,466
+imap_tools/consts.py,sha256=gF_CRFWmyHfbkLffHHR09YihpOYvQoyMfO4SuLb-8n8,1300
+imap_tools/errors.py,sha256=kJrNtwKq8MLOyHWvlyRoeny0zI4dI5nIEJcI1qiDVTY,2002
+imap_tools/folder.py,sha256=UHbmrRFvuqcT7eCoL2MdPfd5IqgGCwfIBaDrBaGJLOg,6425
+imap_tools/imap_utf7.py,sha256=L2eFDYsaRk4HsSXah3pmFy0ID6-5EvF8lEwOhFuEtZY,2059
+imap_tools/mailbox.py,sha256=vi1N9ixZwFAIDt-H25q8A3LTHsCY8FPBLi-fy5jlcDA,14321
+imap_tools/message.py,sha256=AFVVeb6_3PhXJ9iua7dxU6IRiAV2LTKW_ci9Sjfy22g,9627
+imap_tools/query.py,sha256=LT85OoNlGRYCOXszPbQjPgLARgqysnulT1nDopiSat8,14226
+imap_tools/utils.py,sha256=1d83aLRd5PhGxOdqI9fnc1XbtHfcqNomB3-9KhY47Ts,6558
+imap_tools-0.47.0.dist-info/LICENSE,sha256=8PLDrrWnFVEiHHyGO2XYPUvP7dVsAGb2G615z1kRcck,11548
+imap_tools-0.47.0.dist-info/METADATA,sha256=g9tMEnPkQs8T7_U4RAkUgoMZAcvncQMJAc2nIjFb_tM,17969
+imap_tools-0.47.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+imap_tools-0.47.0.dist-info/top_level.txt,sha256=AS9xElvqoWkjbjpoTUbPOjyd7eV5Jv7KxKspzqz54AE,11
+imap_tools-0.47.0.dist-info/RECORD,,
