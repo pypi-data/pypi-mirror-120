@@ -1,0 +1,5 @@
+pandas
+
+[pdfs]
+pdf-annotate
+pdf2image
