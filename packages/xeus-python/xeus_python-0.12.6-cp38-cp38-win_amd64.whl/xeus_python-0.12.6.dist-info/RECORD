@@ -1,0 +1,12 @@
+xpython_launcher.py,sha256=mwzz7D_K0ZqjLoysdjDFbbon5xSwiMVtr8GEBwoNSJ8,400
+xeus_python-0.12.6.data/data/nlohmann_json.natvis,sha256=II6RZhXb2s047fVvgIhd-X4NC5u1hlE0hXTIqEZItLE,2004
+xeus_python-0.12.6.data/data/share/jupyter/kernels/xpython/kernel.json,sha256=Ap3Efl_b7ZXsklKlLrZHvtEySqrd_wkvR7mdGkDz-uk,230
+xeus_python-0.12.6.data/data/share/jupyter/kernels/xpython/logo-32x32.png,sha256=jbE1V2z-E-ol3NzZY_jYKnZyhSrY-Qb8WZgO1tj9Ipk,1379
+xeus_python-0.12.6.data/data/share/jupyter/kernels/xpython/logo-64x64.png,sha256=L2Wd22HYX7X7dyzLvff7nOZ5gyC2h4OvnViWCN-UIC0,3131
+xpython/__init__.py,sha256=CbW79f27_ZXHOjNBJEglG4Dn5GBijJvXJwmf5a2SbjI,39
+xpython/xpython_extension.cp38-win_amd64.pyd,sha256=C_dOeKPIdX28LRbaERqu6Pp9wdK09lEvP49Y6n7z6xs,2796544
+xeus_python-0.12.6.dist-info/LICENSE,sha256=WvdF-7mGwDyzMvBMaZQHGbNiSAlWm1n4fhmQyyvB_MM,1552
+xeus_python-0.12.6.dist-info/METADATA,sha256=_dsIt6uyC7QwRF7Li6Y2OBwIXPWWxRVyafh2jRAWyGs,332
+xeus_python-0.12.6.dist-info/WHEEL,sha256=pKDdDtWxqECKZ5id8xQESqlZ78kY0zCCwKt9WTell-k,94
+xeus_python-0.12.6.dist-info/top_level.txt,sha256=XtzggjVzmp4R-5T4I4R_gyLydIcRMhatWCkrCrsPDE0,25
+xeus_python-0.12.6.dist-info/RECORD,,
