@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: ch1p
+Version: 0.0.6
+Summary: UNKNOWN
+Home-page: https://github.com/gch1p/ch1p-py.git
+Author: Evgeny Zinoviev
+Author-email: me@ch1p.io
+License: BSD
+Project-URL: Bug Tracker, https://github.com/gch1p/ch1p-py/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ch1p-py
+
+Personal collection of small but usable code snippets used here and there in various scripts.
+
+## License
+
+BSD-2c
+
