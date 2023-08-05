@@ -1,0 +1,10 @@
+kfai_env/__init__.py,sha256=Jtn_8IP3X5ATFTBkjdm_cSoYXEPCTHHazq7AooPIOMs,129
+kfai_env/_version.py,sha256=ne8AzJ2DT0S6HwUQC6F2ooN1ccT-mPWNY2WJeujPUlI,497
+kfai_env/env.py,sha256=Olayh2n9mOQqlTdPUh3dV52KJ6sDwNsO7N0LJSzvxOo,2041
+kfai_env/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kfai_env/test/test_env.py,sha256=AuzQlWpj9i0EQRLxqspDlM-ASXYIypw1FVAAhbTRflE,894
+kungfuai_env-0.2.3.dist-info/LICENSE,sha256=vuBsVWOn62f4PtXFbUJ4f8hNzooC7fUaUq4YGEAnyxU,1030
+kungfuai_env-0.2.3.dist-info/METADATA,sha256=oy6y8xRM1Od1272mOFU_3nDyyvT0nerzFxDwJVOzVUQ,5429
+kungfuai_env-0.2.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+kungfuai_env-0.2.3.dist-info/top_level.txt,sha256=wDfixwCA9yMxutiwGTvu_4M5RC4R38tl_Gr41BB3z8I,9
+kungfuai_env-0.2.3.dist-info/RECORD,,
