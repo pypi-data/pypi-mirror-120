@@ -1,0 +1,15 @@
+neon_audio/__init__.py,sha256=aWFKMRcEiTUK6fWo9yrGr2Rfi1OLYI-BXZxqPeNEiao,2997
+neon_audio/__main__.py,sha256=cgGVxKgXBbb_dPAGfmAxcKd_mVZE0hWqlUlxTDuofoA,3733
+neon_audio/audioservice.py,sha256=mGKuD8w9SfL_nsXlsQozzo4az3i7je8kMy8eihguZYw,15341
+neon_audio/speech.py,sha256=8xw8OIoG0qUSXNjhBQno05y8yXUWjUYpKdrhgeJEftM,7852
+neon_audio/services/__init__.py,sha256=n7FbiOWEUYzpiOxbTdZCzKIeKCOzEipe76ImBKsonuM,1697
+neon_audio/services/simple/__init__.py,sha256=ozavpLgss7Qt6aBlTr_s_kgz8-ccGVBV3ZqndiraZcg,1704
+neon_audio/services/vlc/__init__.py,sha256=BQyTo4vAkMrWZsgcO22nwx_sg4Bm2SnGVsGqIgQOQvE,1701
+neon_audio/tts/__init__.py,sha256=BmBN2WKgxcBKs_pO2WecMQJTAEMqAaibHbfKnP-ukjw,28270
+neon_audio-0.2.1a4.dist-info/LICENSE.md,sha256=QQ4M8YTUIqWl6pnvw6nC3C3Yyr0u4QZ1FSiDJW-ehaE,1636
+neon_audio-0.2.1a4.dist-info/METADATA,sha256=9yraDwf6FszT-pElNnzOSpZ3krKbJ1d7LLxjsEwB97Y,1358
+neon_audio-0.2.1a4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+neon_audio-0.2.1a4.dist-info/entry_points.txt,sha256=uZ06LXu78Vf9zqYf3yqbJMkxneyXkv2V6VAXF7nl-WQ,64
+neon_audio-0.2.1a4.dist-info/top_level.txt,sha256=Kg84wdyfu-2NJHgLeX-MM9wrgJdmfbREtIC7uPQ_rts,11
+neon_audio-0.2.1a4.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+neon_audio-0.2.1a4.dist-info/RECORD,,
