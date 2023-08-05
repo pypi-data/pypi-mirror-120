@@ -1,0 +1,17 @@
+httpx>=0.19
+platformdirs
+pytablewriter[html]>=0.49
+python-dateutil
+python-slugify
+
+[numpy]
+numpy
+
+[pandas]
+pandas
+
+[tests]
+freezegun
+pytest
+pytest-cov
+respx>=0.11
