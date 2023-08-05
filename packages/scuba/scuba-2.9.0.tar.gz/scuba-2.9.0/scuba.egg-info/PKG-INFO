@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: scuba
+Version: 2.9.0
+Summary: Simplify use of Docker containers for building software
+Home-page: https://github.com/JonathonReinhart/scuba
+Author: Jonathon Reinhart
+Author-email: jonathon.reinhart@gmail.com
+License: MIT
+Keywords: docker
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Topic :: Software Development :: Build Tools
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Provides-Extra: argcomplete
+License-File: LICENSE.txt
+
+SCUBA  [![Build Status](https://github.com/JonathonReinhart/scuba/actions/workflows/build-test.yml/badge.svg)](https://github.com/JonathonReinhart/scuba/actions/workflows/build-test.yml) [![codecov.io](https://codecov.io/github/JonathonReinhart/scuba/coverage.svg?branch=master)](https://codecov.io/github/JonathonReinhart/scuba?branch=master) [![PyPI](https://img.shields.io/pypi/v/scuba.svg)](https://pypi.python.org/pypi/scuba) [![Docs](https://readthedocs.org/projects/scuba/badge/?version=latest)](https://scuba.readthedocs.io/)
+-----
+
+Simple Container-Utilizing Build Apparatus
+
+Scuba makes it easier to use Docker containers in everyday development. It is
+intended to be used by developers with `make` or `scons`-based build systems,
+where the entire build environment is encapsulated in a Docker container.
+
+For more information, [Read the Docs](https://scuba.readthedocs.io/).
+
+## License
+
+This software is released under the [MIT License](https://opensource.org/licenses/MIT).
+
+
