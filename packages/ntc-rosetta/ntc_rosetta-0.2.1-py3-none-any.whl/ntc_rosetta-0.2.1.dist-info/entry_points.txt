@@ -1,0 +1,3 @@
+[console_scripts]
+ntc_rosetta=ntc_rosetta.cli:run
+
