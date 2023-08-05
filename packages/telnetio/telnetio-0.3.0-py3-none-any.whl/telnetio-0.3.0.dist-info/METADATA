@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: telnetio
+Version: 0.3.0
+Summary: Sans-IO telnet parser
+Home-page: https://github.com/uSpike/telnetio
+License: MIT
+Author: Jordan Speicher
+Author-email: jordan@jspeicher.com
+Requires-Python: >=3.6.2,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: anyio
+Requires-Dist: anyio (>=3.2.0,<4.0.0); extra == "anyio"
+Requires-Dist: async_generator (>=1.10,<2.0); (python_version == "3.6") and (extra == "anyio")
+Requires-Dist: dataclasses (>=0.8,<0.9); python_version == "3.6"
+Description-Content-Type: text/markdown
+
+telnetio
+========
+
+A Sans-IO implementation of a telnet parser.
+
+Includes an `anyio` server implementation.  To install use the `anyio` extra, such as `pip install telnetio[anyio]`.
+
+```python
+import anyio
+from anyio.abc import AnyByteStream
+
+from telnetio import AnyioTelnetServer
+
+async def handler(stream: AnyByteStream) -> None:
+    async with stream, AnyioTelnetServer(stream) as telnet:
+        async for data in telnet:
+            await telnet.send(data)
+
+async def main() -> None:
+    listener = await anyio.create_tcp_listener(local_port=1234)
+    await listener.serve(handler)
+
+anyio.run(main)
+```
+
+See the `examples` directory for more examples.
+
