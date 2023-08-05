@@ -1,0 +1,9 @@
+cloudcomponents/cdk_wordpress/__init__.py,sha256=02_q2dP5Cmi6BlW1rdOT_8WCY9gnWfMXXOGTOLbXD1U,38515
+cloudcomponents/cdk_wordpress/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+cloudcomponents/cdk_wordpress/_jsii/__init__.py,sha256=DuMsL_Rc0s4DWni7V3iuiD6ZB4ymmk5eOpznF4lJJKY,933
+cloudcomponents/cdk_wordpress/_jsii/cdk-wordpress@1.42.0.jsii.tgz,sha256=DiPxnu57nxrFf1FAQaJgPXjEeyNBUi4DfKipIc7h1Q0,72210
+cloudcomponents.cdk_wordpress-1.42.0.dist-info/LICENSE,sha256=DC5mwzjdvc14vNIkGbMDFyOOJTkxI2b_1OtpeNA0A0A,1072
+cloudcomponents.cdk_wordpress-1.42.0.dist-info/METADATA,sha256=zD7FbrpmMU_bgU64aoIXcXQc9gB0btXrNhpg3awIJ1U,4199
+cloudcomponents.cdk_wordpress-1.42.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cloudcomponents.cdk_wordpress-1.42.0.dist-info/top_level.txt,sha256=B4EWas985OPzDPLZgw2jcOsscXpuQJyowJnB5pl9rpQ,16
+cloudcomponents.cdk_wordpress-1.42.0.dist-info/RECORD,,
