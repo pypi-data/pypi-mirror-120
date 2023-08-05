@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: git-t5
+Version: 0.2.0
+Summary: Open source machine learning framework for training T5 models on source code in JAX/Flax.
+Home-page: https://github.com/formermagic/git-t5
+License: MIT
+Keywords: nlp,machine-learning,machine-learning-library,transformers,t5,t5-jax,code-t5
+Author: mozharovsky
+Author-email: mozharovsky@live.com
+Maintainer: mozharovsky
+Maintainer-email: mozharovsky@live.com
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: datasets (>=1.11.0,<2.0.0)
+Requires-Dist: flax (>=0.3.4,<0.4.0)
+Requires-Dist: hydra-core (>=1.1.1,<2.0.0)
+Requires-Dist: jax (>=0.2.19,<0.3.0)
+Requires-Dist: more-itertools (>=8.8.0,<9.0.0)
+Requires-Dist: optax (>=0.0.9,<0.0.10)
+Requires-Dist: sacrebleu (>=1.5.1,<2.0.0)
+Requires-Dist: torch (>=1.9.0,<2.0.0)
+Requires-Dist: transformers (>=4.10.0,<5.0.0)
+Requires-Dist: typing-extensions (>=3.10.0.2,<4.0.0.0); python_version < "3.8"
+Requires-Dist: wandb (>=0.12.1,<0.13.0)
+Project-URL: Repository, https://github.com/formermagic/git-t5
+Description-Content-Type: text/markdown
+
+# git-t5
