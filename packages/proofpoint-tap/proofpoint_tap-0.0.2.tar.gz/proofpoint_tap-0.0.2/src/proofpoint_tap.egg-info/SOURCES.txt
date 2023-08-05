@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/proofpoint_tap/__init__.py
+src/proofpoint_tap/proofpoint_tap.py
+src/proofpoint_tap.egg-info/PKG-INFO
+src/proofpoint_tap.egg-info/SOURCES.txt
+src/proofpoint_tap.egg-info/dependency_links.txt
+src/proofpoint_tap.egg-info/requires.txt
+src/proofpoint_tap.egg-info/top_level.txt
