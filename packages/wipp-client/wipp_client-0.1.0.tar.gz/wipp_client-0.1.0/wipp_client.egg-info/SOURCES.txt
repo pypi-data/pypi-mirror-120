@@ -1,0 +1,8 @@
+README.md
+setup.py
+wipp_client/wipp.py
+wipp_client.egg-info/PKG-INFO
+wipp_client.egg-info/SOURCES.txt
+wipp_client.egg-info/dependency_links.txt
+wipp_client.egg-info/not-zip-safe
+wipp_client.egg-info/top_level.txt
