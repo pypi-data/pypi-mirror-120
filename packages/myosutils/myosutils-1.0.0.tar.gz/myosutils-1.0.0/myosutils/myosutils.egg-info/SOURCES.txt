@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+myosutils/myosutils.py
+myosutils/myosutils.egg-info/PKG-INFO
+myosutils/myosutils.egg-info/SOURCES.txt
+myosutils/myosutils.egg-info/dependency_links.txt
+myosutils/myosutils.egg-info/requires.txt
+myosutils/myosutils.egg-info/top_level.txt
+test/test_myosutils.py
