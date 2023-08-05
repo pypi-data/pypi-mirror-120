@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<registry>
+
+    <records prefix="plone.bundles/masterselectScript"
+            interface='Products.CMFPlone.interfaces.IBundleRegistry'>
+        <value key="resources"></value>
+        <value key="last_compilation">2021-06-18 00:00:00</value>
+        <value key="compile">False</value>
+        <value key="csscompilation"></value>
+    </records>
+
+</registry>

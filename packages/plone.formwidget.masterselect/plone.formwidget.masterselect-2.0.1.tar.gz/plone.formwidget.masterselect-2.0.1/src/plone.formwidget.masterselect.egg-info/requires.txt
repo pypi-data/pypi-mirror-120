@@ -1,0 +1,14 @@
+plone.supermodel
+plone.z3cform
+Products.CMFPlone
+setuptools
+z3c.form
+zope.component
+zope.schema
+
+[test]
+plone.app.dexterity
+plone.app.robotframework
+plone.app.testing[robot]>=4.2.2
+plone.registry
+Products.GenericSetup
