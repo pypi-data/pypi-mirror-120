@@ -1,0 +1,11 @@
+LICENCE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+asciiconv/__init__.py
+asciiconv/asciify.py
+asciiconv.egg-info/PKG-INFO
+asciiconv.egg-info/SOURCES.txt
+asciiconv.egg-info/dependency_links.txt
+asciiconv.egg-info/top_level.txt
