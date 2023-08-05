@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: sigfoxapiv2
+Version: 0.3.0
+Summary: Python wrapper for the v2 Sigfox API
+Home-page: https://github.com/barter4things/sigfoxapiv2
+Author: Matthew Hopson
+Author-email: matt.hopson@b4tgroup.co.uk
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
