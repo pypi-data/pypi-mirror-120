@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: aiops4b-NTTDataUK
+Version: 0.4
+Summary: Trend analysis and sales forecast
+Home-page: UNKNOWN
+Author: Julian Gonzalez Galvez
+Author-email: julian.gonzalez.galvez@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# AIOps4B
+The purpose of this project is to create a framework for business decision making. The objective will  be to  maintain  a  healthy  revenue  KPI  by analysing  historical  data,  understanding  the trends,  forecasting the  future  revenue  trend,  and  if  the forecast  indicates  a negative  trend, understand the root cause and recommend actions to fix the issue.
+
+Version 0.4 - Separated into 3 scripts: Prediction.py, Recommendation.py, and Dashboard.py.
+
