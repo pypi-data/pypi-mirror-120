@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+PyGenphi/Client.py
+PyGenphi/__init__.py
+PyGenphi.egg-info/PKG-INFO
+PyGenphi.egg-info/SOURCES.txt
+PyGenphi.egg-info/dependency_links.txt
+PyGenphi.egg-info/requires.txt
+PyGenphi.egg-info/top_level.txt
+PyGenphi/enum/AddressMode.py
+PyGenphi/enum/ArbitrageType.py
+PyGenphi/enum/Category.py
+PyGenphi/enum/Locator.py
+PyGenphi/enum/__init__.py
