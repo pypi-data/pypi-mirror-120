@@ -1,0 +1,3 @@
+[console_scripts]
+vdkcli = taurus.vdk.control.main:run
+
