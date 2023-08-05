@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/alamopy/__init__.py
+src/alamopy/example.py
+src/alamopy.egg-info/PKG-INFO
+src/alamopy.egg-info/SOURCES.txt
+src/alamopy.egg-info/dependency_links.txt
+src/alamopy.egg-info/top_level.txt
