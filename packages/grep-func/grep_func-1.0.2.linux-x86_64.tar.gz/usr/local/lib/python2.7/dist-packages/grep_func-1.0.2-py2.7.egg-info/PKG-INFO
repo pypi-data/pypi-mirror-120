@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: grep-func
+Version: 1.0.2
+Summary: A python package to grep 'functions' within modules
+Home-page: https://github.com/karry3775/grep_func
+License: UNKNOWN
+Description: Experimental module grep_func (Only for educational purposes)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+grep_func/__init__.py
+grep_func/grep_func.py
+grep_func.egg-info/PKG-INFO
+grep_func.egg-info/SOURCES.txt
+grep_func.egg-info/dependency_links.txt
+grep_func.egg-info/top_level.txt
