@@ -1,0 +1,11 @@
+LICENSE
+LICENSE.txt
+README.rst
+setup.cfg
+setup.py
+sirataxi/__init__.py
+sirataxi/taxi.py
+sirataxi.egg-info/PKG-INFO
+sirataxi.egg-info/SOURCES.txt
+sirataxi.egg-info/dependency_links.txt
+sirataxi.egg-info/top_level.txt
