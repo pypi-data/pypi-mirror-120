@@ -1,0 +1,3 @@
+djrest-wrapper>=0.1.8
+drf-writable-nested>=0.6.3
+PyJWT>=2.1.0
