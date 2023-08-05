@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: texttab
+Version: 0.5.1
+Summary: Create ASCII tables that are flexible. Colours, various border styles and custom column formatters are some of the features.
+Home-page: https://github.com/owenjklan/texttab
+Author: Owen Klan
+Author-email: owen.j.klan@gmail.com
+License: MIT
+Download-URL: https://github.com/owenjklan/texttab/archive/refs/tags/v0.5.1.tar.gz
+Description: UNKNOWN
+Keywords: command-line,ascii,tables,formatters,extensible
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
