@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pulumi_tools/__init__.py
+src/pulumi_tools.egg-info/PKG-INFO
+src/pulumi_tools.egg-info/SOURCES.txt
+src/pulumi_tools.egg-info/dependency_links.txt
+src/pulumi_tools.egg-info/top_level.txt
