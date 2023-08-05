@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: spinny
+Version: 1.1.0
+Summary: A simple spinner library.
+Home-page: https://github.com/techieji/spin
+Author: Pradhyum R
+Author-email: drpradhyum2016@outlook.com
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+
+# Spinny
+
+Ever wanted a simple solution to a simple problem? I've attempted to do that with a *very* simple
+spinner library. It's so small, that you don't even need to install it; you can just copy and paste
+it into your code file. Yes, I said *file*, not *base*. Why? It's about 10 lines long. And it
+uses only vanilla Python. It's based off of [this Stackoverflow answer](https://stackoverflow.com/a/39504463). It can
+be installed from PyPI [here](https://pypi.org/project/spinny/). 
+
+Jut saying, the code is golfed so that it's as short as I can make it. Although that makes it copy-and-pastable,
+it also makes it illegible. *Caveat emptor*.
+
+## How to use it
+
+See the example below (there's an error, you should import it using the phrase ``spinny``):
+
+![Spinner Example](example.gif)
+
+It also handles errors cleanly, printing out the cause of the error and stopping.
+
