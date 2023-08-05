@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+hi_urlparser.egg-info/PKG-INFO
+hi_urlparser.egg-info/SOURCES.txt
+hi_urlparser.egg-info/dependency_links.txt
+hi_urlparser.egg-info/not-zip-safe
+hi_urlparser.egg-info/top_level.txt
+hiurlparser/__init__.py
+hiurlparser/public_suffix_list.dat
+hiurlparser/public_suffix_list.py
