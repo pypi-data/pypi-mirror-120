@@ -1,0 +1,11 @@
+jsonshower/__init__.py,sha256=mbn8AIcssfOXfuxADjJfJRXjitt2G6RNKbzoG_LZ2p8,65
+jsonshower/_version.py,sha256=kSim4Rr9sZXObpHSC_oYpGcUZ2JeutZMQZLiMrhlTc0,23
+jsonshower/docs.py,sha256=evfxnem_L1g9GQe6yHd1DbCgz_vIUV8-z5ayDrpQ_aQ,4621
+jsonshower/errors.py,sha256=wLXQDImyh__-qJTwzD10MRUzhns8KewcKT7TRo5_ayk,368
+jsonshower/pdfs.py,sha256=REaPoBlsxHk9V31xyc7hVoT01TaA0HYetSBINaikR5w,1794
+jsonshower/string_replace.py,sha256=ZALkj2eY21uTiI47WkbedmV-p--P_ZArpqWUsesWWso,3850
+jsonshower/viewer.py,sha256=DQGBJHYOEF-8wn7Fdt0p4CpKf5QQute_CL48u0aKopY,12614
+jsonshower-2.2.12.dist-info/METADATA,sha256=2IG_J27qJULrNZCA3pbznAw2xDEDj48B-h2xP2WmWj0,437
+jsonshower-2.2.12.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+jsonshower-2.2.12.dist-info/top_level.txt,sha256=q3n_NJVzNElR3RPy9Ori0adrk28zz3mZ2oH-8l9V7lA,11
+jsonshower-2.2.12.dist-info/RECORD,,
