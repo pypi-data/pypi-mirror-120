@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: nessaid-readline
+Version: 0.3.0
+Summary: Nessaid's readkey tool
+Home-page: https://github.com/saithalavi/nessaid_readline
+Author: Saithalavi M
+Author-email: saithalavi@gmail.com
+License: MIT
+Project-URL: Documentation, https://github.com/saithalavi/nessaid_readline/blob/master/README.md
+Project-URL: Source, https://github.com/saithalavi/nessaid_readline
+Project-URL: Tracker, https://github.com/saithalavi/nessaid_readline/issues
+Keywords: readkey readchar
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3
+License-File: LICENSE
+Requires-Dist: asyncio
+
+Common library with minimal readline functionality for Windows, Linux and Mac systems.
+
+
