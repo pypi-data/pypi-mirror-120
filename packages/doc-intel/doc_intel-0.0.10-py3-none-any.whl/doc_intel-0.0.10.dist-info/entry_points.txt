@@ -1,0 +1,3 @@
+[console_scripts]
+text_obj = doc_intel.text_laundry:main
+
