@@ -1,0 +1,11 @@
+youtube-dl
+discord.py
+Pillow
+requests
+spotipy
+aiosqlite
+motor
+aiopg
+aiomysql
+discord_components
+pytz
