@@ -1,0 +1,10 @@
+cclogs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cclogs/extras.py,sha256=UksMWrKpnWWL2O7S6K85iz9_jUKWCoqoqwhoGF-q5EI,865
+cclogs/formatter.py,sha256=TfDsF73PwSP4s3tRb1WVnAAs4QgD1llJK1ZkfcUVAXM,2153
+cclogs/handler.py,sha256=HVZvv1Gw7VzYX6FncEQLaRnxC2-SNXAWC_Lw43WmDu4,890
+cclogs/utils.py,sha256=XsQeUH6CxXfppVHQAlob7Ea7ywIsqIFfiCniM-EOjYw,462
+cclogs-1.0.4.dist-info/LICENSE,sha256=DZIjyU1h_XA_9zx8D3_WsfhCURjAK6CNbXDW19xKdC8,1080
+cclogs-1.0.4.dist-info/METADATA,sha256=L4Er777lgpFfeW6EB_Z-vSEHfkA3NaCHoGAyN7QCn0o,2350
+cclogs-1.0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+cclogs-1.0.4.dist-info/top_level.txt,sha256=LiHJlCf7TiIVhmpn4HfkBPGeZYnTAsZRicv_KETVlq4,7
+cclogs-1.0.4.dist-info/RECORD,,
