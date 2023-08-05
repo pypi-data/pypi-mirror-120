@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: tablespoon
+Version: 0.1.0
+Summary: Time-series benchmarks methods that are Simple and Probabilistic
+Home-page: https://github.com/alexhallam/tablespoon
+Author: alexhallam
+Author-email: alexhallam6.28@gmail.com
+License: UNLICENSE MIT
+Download-URL: https://github.com/alexhallam/tablespoon/releases/tag/0.1.0
+Description: UNKNOWN
+Keywords: forecasting,forecast,probabilistic,naive,benchmark,seasonal naive,mean forecast
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.9
