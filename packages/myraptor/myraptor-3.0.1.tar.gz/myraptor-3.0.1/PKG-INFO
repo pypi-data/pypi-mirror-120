@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: myraptor
+Version: 3.0.1
+Summary: Prague public transport connection finder using RAPTOR algorithm
+Home-page: https://github.com/hanjak/connection_finder_prague_mhd
+Author: Hana Kosova
+Author-email: hanja.kosova@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: raptor connection finder
+Platform: UNKNOWN
