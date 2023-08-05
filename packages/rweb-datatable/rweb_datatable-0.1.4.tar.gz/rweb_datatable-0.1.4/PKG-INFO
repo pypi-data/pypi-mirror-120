@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: rweb_datatable
+Version: 0.1.4
+Summary: Server-side datatables rendered to HTML using htmx
+Home-page: https://github.com/stevemccartney/rweb_datatable
+Author: Steve McCartney
+Author-email: python+rweb_datatable@reconvergent.com
+License: Apache-2.0
+Description: # RWeb DataTable
+        
+        Server-side datatable for Python 3.
+        
+        Renderers:
+        - htmx
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Typing :: Typed
+Description-Content-Type: text/markdown
