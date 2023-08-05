@@ -1,0 +1,10 @@
+coqui_stt_ctcdecoder-0.10.0a25.dist-info/WHEEL,sha256=MDe8i83R2FMVEBzy19m2mhwSQo-2pZGvp_1N0nD5D2s,113
+coqui_stt_ctcdecoder-0.10.0a25.dist-info/LICENSE.paddlepaddle,sha256=4gg7gGIkh71vzcj8eB3Df3_2My1qgq8dpmBkpU4NwaU,11380
+coqui_stt_ctcdecoder-0.10.0a25.dist-info/top_level.txt,sha256=td_AfbOj9SFqzgd33WMaX1FJ5rqPndphVRywSkUFUPw,21
+coqui_stt_ctcdecoder-0.10.0a25.dist-info/COPYING,sha256=isrDXFkSVDyKtDpTuGa7KqZJr2ZTQyEd9NwOn9v0RlU,402
+coqui_stt_ctcdecoder-0.10.0a25.dist-info/RECORD,,
+coqui_stt_ctcdecoder-0.10.0a25.dist-info/METADATA,sha256=0LdSgvIBrVoaMVNw01j8lWp65b5nWX3RiM8ZVlJtKl0,226
+coqui_stt_ctcdecoder-0.10.0a25.dist-info/LICENSE.parlance,sha256=obf7yFJvKuFJjhEqm-rJs3gFwi6OUlT1jQLAV2SrHSo,1111
+coqui_stt_ctcdecoder/__init__.py,sha256=tV_WwVx_wylJiBlpsfvmENwUEZezfFb2wxskRI88Hyc,9498
+coqui_stt_ctcdecoder/swigwrapper.py,sha256=774HMX1lUollFnYQq-_7HuuYMu6jPrYCZOu9B_ob6rE,27560
+coqui_stt_ctcdecoder/_swigwrapper.cpython-36m-x86_64-linux-gnu.so,sha256=wxcbqpmnYfGBdnxG5DcPO4Og5SwbNLOigq1DS1FHYSM,7795168
