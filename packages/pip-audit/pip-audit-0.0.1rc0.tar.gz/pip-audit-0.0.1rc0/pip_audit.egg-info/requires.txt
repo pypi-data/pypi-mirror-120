@@ -1,0 +1,17 @@
+pip-api>=0.0.21
+packaging>=21.0.0
+dataclasses>=0.6
+
+[dev]
+bump
+flake8
+black
+isort
+pytest
+pytest-cov
+pretend
+coverage[toml]
+twine
+mypy
+types-dataclasses
+types-requests
