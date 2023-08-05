@@ -1,0 +1,5 @@
+[console_scripts]
+EopTool = EopTool:run
+HelmertTool = HelmertTool:run
+IcrfTool = IcrfTool:run
+
