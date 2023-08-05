@@ -1,0 +1,10 @@
+afpy/__init__.py,sha256=7MYDUR_FCDEOyAwO1cttWzzfwFoCOzgQ2bVcmGjCbj8,84
+afpy/cli.py,sha256=t_QUa0OplNBU6UbeUc0G9xvLPZNlN9iYiPgpv95lhww,258
+afpy/files.py,sha256=Ys_BXRTPsaiTsiW2W4qqnCLanI3jrmVg1rs3p2RE-iA,4068
+afpy/plot.py,sha256=QRqfM5DWs9mYjWmRSP17llONOmM_ytr3mErM8LXej1w,1635
+afpy/string.py,sha256=iqgrWDCNGmSRyWm1N-x4m0qWi75nJ3u9mDG7h7MqACs,223
+afpy-0.0.4.dist-info/LICENSE,sha256=dWbtl-u7x1h4waXgeQBae1NC0cO0_WBbxrEnpmk2pcE,1071
+afpy-0.0.4.dist-info/METADATA,sha256=x8Ss5H0CXvWkhsQnwhsMVuz5G7PU1YfkqA4l-xYU6hE,588
+afpy-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+afpy-0.0.4.dist-info/top_level.txt,sha256=nkScN4sd58zcDncMjr58KwFo7ElJTRMLOzcbPXCnKns,5
+afpy-0.0.4.dist-info/RECORD,,
