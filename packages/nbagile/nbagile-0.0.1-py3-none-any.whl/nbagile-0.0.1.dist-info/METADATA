@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: nbagile
+Version: 0.0.1
+Summary: Writing collaborative libraries with nbdev
+Home-page: https://github.com/muellerzr/nbagile/tree/master/
+Author: Zachary Mueller
+Author-email: muellerzr@gmail.com
+License: Apache Software License 2.0
+Keywords: jupyter notebook
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+Requires-Dist: pip
+Requires-Dist: packaging
+Requires-Dist: fastcore (==1.3.26)
+Requires-Dist: nbdev (==1.1.22)
+Requires-Dist: astunparse
+Provides-Extra: dev
+
+
+# nbagile
+> Making `nbdev` more Agile-Friendly
+
+
+## Install
+
+`pip install nbagile`
+
+## Goals:
+
+- [ ] When exporting source code using `docments`, attach and format the docstring to Numpy format
+- [ ] Export tests and throw them into a pytest-compatible file format
+- [ ] Make documentation run on Sphynx
+- [ ] Tests are exported to a `tests` folder, source code to a source code folder, and Markdown/Sphynx documentation to a `docs` folder
+- [ ] Individual notebooks can then be recreated from these three items
+
+
