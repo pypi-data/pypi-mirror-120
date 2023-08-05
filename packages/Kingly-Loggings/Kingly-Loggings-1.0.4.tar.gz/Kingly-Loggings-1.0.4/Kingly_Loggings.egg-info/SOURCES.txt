@@ -1,0 +1,8 @@
+README.md
+setup.py
+Kingly_Loggings.egg-info/PKG-INFO
+Kingly_Loggings.egg-info/SOURCES.txt
+Kingly_Loggings.egg-info/dependency_links.txt
+Kingly_Loggings.egg-info/not-zip-safe
+Kingly_Loggings.egg-info/requires.txt
+Kingly_Loggings.egg-info/top_level.txt
