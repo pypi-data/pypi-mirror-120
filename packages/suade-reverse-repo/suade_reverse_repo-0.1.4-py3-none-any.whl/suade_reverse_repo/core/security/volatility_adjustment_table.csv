@@ -1,0 +1,14 @@
+﻿asset_type,gov,maturity,vol_adjustment
+debt_sec,Y,< 1 year,0.00707
+debt_sec,Y,> 1 year < 5 years,0.02121
+debt_sec,Y,> 5 years,0.04243
+debt_sec,N,< 1 year,0.01414
+debt_sec,N,> 1 year < 5 years,0.04243
+debt_sec,N,> 5 years,0.08485
+securitisation_position,N,< 1 year,0.02828
+securitisation_position,N,> 1 year < 5 years,0.08485
+securitisation_position,N,> 5 years,0.16970
+equities_convertables,N,n/a,0.14143
+other_sec_comm,N,n/a,0.17678
+gold,N,n/a,0.10607
+cash,N,n/a,0.000
