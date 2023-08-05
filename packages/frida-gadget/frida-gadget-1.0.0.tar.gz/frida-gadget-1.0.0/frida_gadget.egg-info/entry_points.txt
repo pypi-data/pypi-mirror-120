@@ -1,0 +1,3 @@
+[console_scripts]
+frida-gadget = scripts.cli:run
+
