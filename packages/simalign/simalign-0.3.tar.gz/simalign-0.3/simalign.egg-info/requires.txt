@@ -1,0 +1,7 @@
+numpy
+torch
+scipy
+transformers
+regex
+networkx==2.4
+scikit_learn

@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+simalign/__init__.py
+simalign/simalign.py
+simalign/utils.py
+simalign.egg-info/PKG-INFO
+simalign.egg-info/SOURCES.txt
+simalign.egg-info/dependency_links.txt
+simalign.egg-info/not-zip-safe
+simalign.egg-info/requires.txt
+simalign.egg-info/top_level.txt
