@@ -1,0 +1,10 @@
+LICENSE
+README.md
+bor.py
+setup.py
+bor.egg-info/PKG-INFO
+bor.egg-info/SOURCES.txt
+bor.egg-info/dependency_links.txt
+bor.egg-info/entry_points.txt
+bor.egg-info/not-zip-safe
+bor.egg-info/top_level.txt
