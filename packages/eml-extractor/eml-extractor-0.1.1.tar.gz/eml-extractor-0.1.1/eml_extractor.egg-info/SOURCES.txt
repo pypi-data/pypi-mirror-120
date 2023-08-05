@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+eml_extractor.py
+pyproject.toml
+setup.cfg
+setup.py
+eml_extractor.egg-info/PKG-INFO
+eml_extractor.egg-info/SOURCES.txt
+eml_extractor.egg-info/dependency_links.txt
+eml_extractor.egg-info/entry_points.txt
+eml_extractor.egg-info/top_level.txt
