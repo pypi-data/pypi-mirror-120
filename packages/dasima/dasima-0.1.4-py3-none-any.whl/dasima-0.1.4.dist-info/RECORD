@@ -1,0 +1,10 @@
+clue_mq/__init__.py,sha256=CWttEit__RWLjqfcDNQJKxbrdOP3KiTY4M9v2lFv4Gg,852
+clue_mq/exchange.py,sha256=XJTsXmFnHfk8L1AGBqNWECNnrp1GfwZMUd4kCaD8r2U,1019
+clue_mq/worker.py,sha256=p9hx2afdTHxLEUoMB296G5thoHZBGovGOfSnts5OFZo,2578
+dasima/__init__.py,sha256=eAOgrtBDOpqzrKkcvgHHMbofN7jg9l2TkeVezEepNBY,1155
+dasima/exchange.py,sha256=1CGPs_cjkKx3CbiUXwACNyREmPqiEXyR-wGD3INcdNk,1160
+dasima/worker.py,sha256=p9hx2afdTHxLEUoMB296G5thoHZBGovGOfSnts5OFZo,2578
+dasima-0.1.4.dist-info/METADATA,sha256=It3EtUNsxvOV14BF8dxlYEzeS5DfyYJt3OcCojCUq_8,1948
+dasima-0.1.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dasima-0.1.4.dist-info/top_level.txt,sha256=eo6U-o4vFw0HWvpBAkyB0LHZ0XpfZQq2UgVqlwsSw5Y,7
+dasima-0.1.4.dist-info/RECORD,,
