@@ -1,0 +1,11 @@
+carto_reader/__init__.py,sha256=Zd6oIIPeTizQg9tyX6GtR7OrX-PyyNmICJeOHLTt9nA,30
+carto_reader/carto_data.py,sha256=2iLBdmfzhCP0RCdIhZQ8uTpcIih7CuorXfCpEs1ruwk,6728
+carto_reader/datasource.py,sha256=jqUCWZ_v9rxV_oyx4JzUHxqYtqiROODy1ixjzuzMF8o,949
+carto_reader/mesh.py,sha256=zfYKb70h1wr_qn-tqF6b_YuUmo3ZsaTNOEaHJ0cJrgo,7305
+carto_reader/points.py,sha256=U6hRT7Yh5yYm220PKvldtby33spmvG0QMCXcDmhq8kI,7131
+carto_reader/signals.py,sha256=SReQUwBGSBLu4IlvBLePa68MYhFhvzBFcazbl2aPrCs,3688
+carto_reader-0.0.1.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+carto_reader-0.0.1.dist-info/METADATA,sha256=hfHXwEmzq1Mz4bN52wdqfEdk5ECXGRw8gDYRG2YqYdg,4277
+carto_reader-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+carto_reader-0.0.1.dist-info/top_level.txt,sha256=Ontz0ALr1l_R9mxfIy2CkNU2PQtJkQLIccz51j67vWE,13
+carto_reader-0.0.1.dist-info/RECORD,,
