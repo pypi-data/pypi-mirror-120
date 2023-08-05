@@ -1,0 +1,8 @@
+README.md
+setup.py
+poms/__init__.py
+poms.egg-info/PKG-INFO
+poms.egg-info/SOURCES.txt
+poms.egg-info/dependency_links.txt
+poms.egg-info/requires.txt
+poms.egg-info/top_level.txt
