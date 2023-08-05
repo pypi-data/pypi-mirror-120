@@ -1,0 +1,10 @@
+tokenstream/__init__.py,sha256=izGW37hR7RhNNXdx5GRxJWeC6gQJUEtH8zLUeXEvrLI,334
+tokenstream/error.py,sha256=Nh8O2kelVe4nVn9d184E-jQ1726Vi4exJCRSV7Fp5sE,2622
+tokenstream/location.py,sha256=G8yGwsKaDnxSVnDTL8De96jt5SJr6zxDArijEDyd6uY,3349
+tokenstream/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tokenstream/stream.py,sha256=ZzQ1J70Ylyizh9yt7Lo-jAP5CwOMYJWZhyzDUZ0bnqE,35728
+tokenstream/token.py,sha256=MWiERP_AqQqSdXpoT9CTx3oi270spSRQfGRjJBt5yhA,2683
+tokenstream-1.1.0.dist-info/LICENSE,sha256=4gLu2TrJPEkFTd4RV8wz0Lncyd4YPBpVUZcolDL6588,1073
+tokenstream-1.1.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+tokenstream-1.1.0.dist-info/METADATA,sha256=Q5hnyiDbMCGM5C7CYmlgWM2T-vLTAJDjabvMbWgqsCs,8222
+tokenstream-1.1.0.dist-info/RECORD,,
