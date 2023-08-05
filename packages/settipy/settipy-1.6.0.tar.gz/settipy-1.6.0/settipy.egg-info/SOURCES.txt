@@ -1,0 +1,7 @@
+README.md
+settipy.py
+setup.py
+settipy.egg-info/PKG-INFO
+settipy.egg-info/SOURCES.txt
+settipy.egg-info/dependency_links.txt
+settipy.egg-info/top_level.txt
