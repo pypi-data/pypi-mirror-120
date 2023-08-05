@@ -1,0 +1,11 @@
+wf_core_data/__init__.py,sha256=waWpaE8vuaDm-kSo_wB8WQzEmx98hj-TP25bjMCl1Ig,340
+wf_core_data/airtable.py,sha256=1dP1Rdw0ynkKhdKtn_F6ZTaHt6u9_y_YoONIoF7Oa_c,14167
+wf_core_data/google_sheets.py,sha256=hFqVqvGPKNKUG9fSwC6ELrkvfsLIS9tBjJUJz5iNiLs,4953
+wf_core_data/transparent_classroom.py,sha256=zeGMQKJdaHTu8T9nrvwGg4UGnvT3RQMF74p8sLMBaU8,60674
+wf_core_data/utils.py,sha256=OBZDQM_K7d7Cn3vcK_AsMwcaXaqNgf0jWlBYYiQ4a88,1421
+wf_core_data/wf_database_pandas.py,sha256=UHLleNREqKgCs_J0L3NnQwaoAwHD9pd6UU4LZ-C4s-8,10986
+wf_core_data_python-0.8.1.dist-info/LICENSE,sha256=VV4EHqsjRsZIw9RC6SYL63Tm9kzPQsYaZn7a1cT9X3w,1088
+wf_core_data_python-0.8.1.dist-info/METADATA,sha256=t1BfaGhU-XlZZWzl9Hkdg0J7WM3-WUELllNizSq372w,923
+wf_core_data_python-0.8.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+wf_core_data_python-0.8.1.dist-info/top_level.txt,sha256=I6tHofNASQh_SmAR1ZeZk8K1YebUIIHP4aXkeTsq3ac,13
+wf_core_data_python-0.8.1.dist-info/RECORD,,
