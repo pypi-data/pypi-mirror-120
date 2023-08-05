@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: modpoll
+Version: 0.2.19
+Summary: A command line tool to communicate with modbus devices
+Home-page: https://helloysd.gitlab.io/modpoll
+License: MIT
+Author: Ying Shaodong
+Author-email: helloysd@foxmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: importlib-metadata (>=1.0,<2.0); python_version < "3.8"
+Requires-Dist: paho-mqtt (>=1.5.1,<2.0.0)
+Requires-Dist: pymodbus (>=2.5.2,<3.0.0)
+Project-URL: Repository, https://gitlab.com/helloysd/modpoll
+Description-Content-Type: text/markdown
+
+[![pipeline status](https://gitlab.com/helloysd/modpoll/badges/master/pipeline.svg)](https://gitlab.com/helloysd/modpoll/-/commits/master)
+[![coverage report](https://gitlab.com/helloysd/modpoll/badges/master/coverage.svg)](https://gitlab.com/helloysd/modpoll/-/commits/master)
+[License](https://img.shields.io/pypi/l/modpoll)
+[Download](https://img.shields.io/pypi/dm/modpoll)
+
+---
+
+## Modpoll
+
+A command line tool to communicate with modbus devices.
+
+> Learn more about `modpoll` usage at [documentation](https://helloysd.gitlab.io/modpoll) site. 
+
+
+### Installation
+
+This program is tested on python 3.6+.
+
+- Install with pip
+
+  The package is available in the Python Package Index, 
+
+  ```bash
+  pip install modpoll
+  ```
+
+- Upgrade to the latest version
+
+  It is recommended to upgrade if a new version is available,
+
+  ```bash
+  pip install -U modpoll
+  ```
+
+### Examples
+
+Please refer to [documentation](https://helloysd.gitlab.io/modpoll) site for more configures and examples.
+
