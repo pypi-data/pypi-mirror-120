@@ -1,0 +1,8 @@
+README.md
+setup.py
+Loggings.egg-info/PKG-INFO
+Loggings.egg-info/SOURCES.txt
+Loggings.egg-info/dependency_links.txt
+Loggings.egg-info/not-zip-safe
+Loggings.egg-info/requires.txt
+Loggings.egg-info/top_level.txt
