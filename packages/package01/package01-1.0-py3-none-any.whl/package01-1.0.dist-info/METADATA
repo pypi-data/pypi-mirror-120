@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: package01
+Version: 1.0
+Summary: 一个打包案例
+Home-page: UNKNOWN
+Author: laozhang
+Author-email: aaa@163.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+
+这是一个测试项目打包案例
+
