@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: bor
+Version: 0.0.1
+Summary: User-friendly, tiny source code searcher written by pure Python.
+Home-page: https://github.com/furkanonder/bor/
+Author: Furkan Onder
+Author-email: furkanonder@protonmail.com
+License: MIT
+Keywords: code searcher
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Utilities
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Unix 
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## Bor
+User-friendly, tiny source code searcher written by pure Python.
+
+## Example Usages
+
+Cat is equivalent in the regular expression as '^Cat$'
+```
+bor class Cat
+```
+Output:
+```
+Cat at /home/arf/bor/examples/test.py : 18
+```
+
+***
+
+.Cat is equivalent in the regular expression as 'Cat$'
+```
+bor class .Cat
+```
+Output:
+```
+Cat at /home/arf/bor/examples/test.py : 18
+BlueCat at /home/arf/bor/examples/test.py : 26
+```
+
+***
+
+get. is equivalent in the regular expression as '^get'
+```
+bor def get. examples/test.py
+```
+Output:
+```
+get_value at /home/arf/bor/examples/test.py : 5
+get_blue_value at /home/arf/bor/examples/test.py : 11
+get_purple_value at /home/arf/bor/examples/test.py : 14
+get_meow at /home/arf/bor/examples/test.py : 22
+```
+
+***
+
+.cat. is equivalent in the regular expression as 'cat+'
+```
+bor def .cat.
+```
+Output:
+```
+catch_me_if_you_can at /home/arf/bor/example/test.py : 8
+am_i_blue_cat at /home/arf/bor/example/test.py : 30
+where_is_the_cat at /home/arf/bor/example/test.py : 38
+```
+
+
