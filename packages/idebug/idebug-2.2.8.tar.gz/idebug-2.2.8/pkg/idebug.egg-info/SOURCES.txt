@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pkg/idebug/__init__.py
+pkg/idebug/v3.py
+pkg/idebug.egg-info/PKG-INFO
+pkg/idebug.egg-info/SOURCES.txt
+pkg/idebug.egg-info/dependency_links.txt
+pkg/idebug.egg-info/top_level.txt
