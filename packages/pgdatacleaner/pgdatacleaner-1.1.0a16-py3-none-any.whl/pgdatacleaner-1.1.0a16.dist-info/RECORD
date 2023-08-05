@@ -1,0 +1,7 @@
+pgdatacleaner/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pgdatacleaner/cleaner.py,sha256=XXaKjcCOlZJn_MuuPV4WOnVe-XKSceZ2GFaAbLfs0BY,9709
+pgdatacleaner/datadict.py,sha256=AIav5g3P3lW5aI2_6eO1pStbYFgexBOpMg9i1VFhRtw,2384
+pgdatacleaner-1.1.0a16.dist-info/entry_points.txt,sha256=kf6dK5WgIqtlCwEvqBr78Ag1YeoIHER6yWRdaqA7YBs,93
+pgdatacleaner-1.1.0a16.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+pgdatacleaner-1.1.0a16.dist-info/METADATA,sha256=YD40LpqwtpriVT4v9n_-zfhlJ-2CAk8zbSqBnmKPhV4,596
+pgdatacleaner-1.1.0a16.dist-info/RECORD,,

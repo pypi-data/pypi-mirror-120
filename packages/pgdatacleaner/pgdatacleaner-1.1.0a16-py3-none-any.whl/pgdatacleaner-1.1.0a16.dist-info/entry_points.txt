@@ -1,0 +1,4 @@
+[console_scripts]
+dataclean=pgdatacleaner.cleaner:main
+datadict=pgdatacleaner.datadict:main
+
