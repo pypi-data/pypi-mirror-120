@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: planpy
+Version: 0.0.7
+Summary: An open source library for project management
+Home-page: https://github.com/basanovase/planpy
+Author: Flynn
+Author-email: flynn.mclean@gmail.com
+License: MIT
+Description: <h1>planpy</h1>
+        
+        An open source library for project management. The intention for this project is pandas integration for report and visualisations in a GANT type format, alongside native reporting
+        
+        
+        <h2>Usage:</h2>
+        
+        
+        import planpy
+        
+        new_project = planpy.project("My new project")
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
