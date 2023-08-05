@@ -1,0 +1,10 @@
+colorama
+envoy.base.runner>=0.0.4
+envoy.base.utils>=0.0.8
+sphinx
+sphinx-copybutton
+sphinx-rtd-theme
+sphinx-tabs
+sphinxcontrib-httpdomain
+sphinxcontrib-serializinghtml
+sphinxext-rediraffe
