@@ -1,0 +1,6 @@
+include LICENSE
+include README.rst
+recursive-include sh/static *
+recursive-include sh/templates *
+recursive-include sh/templatetags *
+recursive-include sh/management *
