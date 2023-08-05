@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: lab-orchestrator-lib
+Version: 0.0.14
+Summary: Manages Labs in your Kubernetes Cluster
+Home-page: https://github.com/LabOrchestrator/LabOrchestratorLib
+Author: Marco Schlicht
+Author-email: git@privacymail.dev
+License: Mozilla Public License 2.0 (MPL 2.0)
+Project-URL: Bug Tracker, https://github.com/LabOrchestrator/LabOrchestratorLib/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyYAML (==5.4.1)
+Requires-Dist: requests (==2.26.0)
+Requires-Dist: lab-orchestrator-lib-auth (==0.0.2)
+Requires-Dist: setuptools (==51.0.0)
+
+# Lab Orchestrator Lib
+
+This package contains the lab orchestrator library.
+
+
