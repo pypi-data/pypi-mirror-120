@@ -1,0 +1,11 @@
+feincms3_language_sites/__init__.py,sha256=h2MzdhDpPx81bALFLNapdhrOTbwVshlqQYupDs90SQ0,62
+feincms3_language_sites/checks.py,sha256=dKi6Vgx514hrMDnWzNfAdqvfjL-cNZURkjBjkSD4WlA,1088
+feincms3_language_sites/middleware.py,sha256=IMM-GZ7ww1ReZRs_vexDNcnP2r5taCfX_LqZapCrhsM,1606
+feincms3_language_sites/models.py,sha256=NPh0EM6azEfYk-N_6rB52wMz7l4ACr7AC0c7bAz4bcI,3243
+feincms3_language_sites/locale/de/LC_MESSAGES/django.mo,sha256=xwW2HCcNCMdKLVYTf86Z6HrFEO4jfI58b444TvYIktw,1964
+feincms3_language_sites/locale/de/LC_MESSAGES/django.po,sha256=zt8JcbQj2xq5VgSItmb26-gI4Ot1QGGrgL11cLPKWYo,2507
+feincms3_language_sites-0.0.3.dist-info/LICENSE,sha256=FSwkgNk6-4kfC7UYFMgAEA45Q2-4aI3Vt3QP2LRrkjE,1548
+feincms3_language_sites-0.0.3.dist-info/METADATA,sha256=hTnob6ZQMfHR-qxuRcE9ER_tjJLWNoYSGMFCrjOQck4,4426
+feincms3_language_sites-0.0.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+feincms3_language_sites-0.0.3.dist-info/top_level.txt,sha256=7iE86UXOyTpMZNSpj2tfbfjcrr9L3wUmMIUHMrztJMI,24
+feincms3_language_sites-0.0.3.dist-info/RECORD,,
