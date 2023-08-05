@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "nornir_netmiko"
+version = "0.1.2"
+description = "Netmiko's plugins for Nornir"
+authors = ["Kirk Byers <ktbyers@twb-tech.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/ktbyers/nornir_netmiko"
+classifiers = [
+        "License :: OSI Approved :: Apache Software License",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+]
+
+[tool.poetry.plugins."nornir.plugins.connections"]
+"netmiko" = "nornir_netmiko.connections:Netmiko"
+
+[tool.poetry.dependencies]
+python = "^3.6.2"
+netmiko = "^3.4.0"
+
+[tool.poetry.dev-dependencies]
+black = { version = "21.9b0", allow-prereleases = true }
+mypy = "0.910"
+pylama = "7.7.1"
+pytest = "6.2.5"
+
+[build-system]
+requires = ["poetry>=1.1.8"]
+build-backend = "poetry.masonry.api"
