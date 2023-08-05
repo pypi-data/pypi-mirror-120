@@ -1,0 +1,8 @@
+hathi/__init__.py,sha256=i_cYknyKcPTND7ialk8uieb-GjKafwEPv2kGXeEsA7g,331
+hathi/__main__.py,sha256=uNXC_hmZH2wWmgicKk6W40dtjjnHB-JUksVxm9F2ZeY,12253
+hathi/filter_pass.py,sha256=37vieCBSlBc5vjQwA1INiLhFjwjaZXH3Vxabsq17gLc,944
+hathi-1.1.0.dist-info/entry_points.txt,sha256=PPJOkphu9hNbLhoIT0ynTUaGcNpuEIhlCJsS9L1yCjQ,45
+hathi-1.1.0.dist-info/LICENSE,sha256=KPiBkXwdQpuED_IrlMjXC6XQQwVQBISqisFppDTJOGQ,1069
+hathi-1.1.0.dist-info/WHEEL,sha256=2adPsdwavOXlr3i4h108dwQdqKgJbVa5zTEEuD11F08,99
+hathi-1.1.0.dist-info/METADATA,sha256=Yn_HPcH3caD9abSDPw0tvjalXXDHoCtT5DMoYNd2LxQ,1929
+hathi-1.1.0.dist-info/RECORD,,
