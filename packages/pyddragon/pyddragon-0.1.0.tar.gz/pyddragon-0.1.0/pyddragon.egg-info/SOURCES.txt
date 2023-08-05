@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+pyddragon/__init__.py
+pyddragon/ddragon.py
+pyddragon/request.py
+pyddragon.egg-info/PKG-INFO
+pyddragon.egg-info/SOURCES.txt
+pyddragon.egg-info/dependency_links.txt
+pyddragon.egg-info/top_level.txt
