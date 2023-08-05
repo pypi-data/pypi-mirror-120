@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: Thermobar
+Version: 0.0.5
+Summary: Thermobar
+Home-page: https://github.com/PennyWieser/Thermobar
+Author: Penny, Maurizio, Jordan, Eric
+Author-email: penny.wieser@gmail.com
+License: UNKNOWN
+Description: [![PyPI](https://badgen.net/pypi/v/Thermobar)](https://pypi.org/project/Thermobar/)
+        [![Build Status](https://github.com/PennyWieser/Thermobar/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/PennyWieser/Thermobar/actions/workflows/main.yml)
+        [![codecov](https://codecov.io/gh/PennyWieser/Thermobar/branch/main/graph/badge.svg)](https://codecov.io/gh/PennyWieser/Thermobar/branch/main)
+        
+        A python tool for thermobarometry. Work in progress, but contact Penny Wieser with any questions!
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
