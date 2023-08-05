@@ -1,0 +1,11 @@
+README.md
+setup.py
+src/vdk/internal/control_service_properties.py
+src/vdk/internal/properties_plugin.py
+src/vdk/internal/vdk_plugin_control_cli.py
+src/vdk_plugin_control_cli.egg-info/PKG-INFO
+src/vdk_plugin_control_cli.egg-info/SOURCES.txt
+src/vdk_plugin_control_cli.egg-info/dependency_links.txt
+src/vdk_plugin_control_cli.egg-info/entry_points.txt
+src/vdk_plugin_control_cli.egg-info/requires.txt
+src/vdk_plugin_control_cli.egg-info/top_level.txt
