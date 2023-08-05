@@ -1,0 +1,379 @@
+Metadata-Version: 2.1
+Name: django-appchance-sections
+Version: 0.2
+Summary: A Django application containing a set of abstract classes to implement a set of highly manageable sections with any content
+Home-page: https://bitbucket.org/appchance/appchance-sections/
+Author: Zbigniew Heintze
+Author-email: zheintze@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: djangorestframework (>=3.11.0)
+Requires-Dist: django-filter (>=2.4.0)
+
+Appchance Sections
+==================
+
+This application will allow you to implement flexible sections. It is not an out of the box mechanism and its
+implementation requires a bit of effort, but in return you get a solution that you can relatively easily adapt
+to your needs.
+
+Including: 
+ - the possibility of generic and dynamic content,
+ - convenient operation in the admin panel.
+
+This solution was designed for the Django Rest Framework.
+
+
+Not so quick start
+------------------
+
+The application `appchance_sections` contains only abstract models so you nead add new application
+
+```
+    python manage.py startapp mysections
+```
+
+add created app to settings.INSTALLED_APPS
+
+```
+    INSTALLED_APPS = [
+        ...
+        'mysections',
+    ]
+```
+
+and define real models.
+
+
+### 1. Real Section Model
+
+In mysections.models.py file define `Section` model. If you need you can add additional fields, but the default fields
+provide basic functionality.
+
+```
+    from appchance_sections.models import SectionAbstract
+    from django.db import models
+    
+    class Section(SectionAbstract):
+        pass
+```
+
+In your Django project settings file define `Section` model.
+
+```
+SECTION_MODEL = "mysections.Section"
+```
+
+In mysections.admin.py use `SectionAdminMixin` **which binds - most importantly - the modified form**.
+
+```
+    from appchance_sections.admin import SectionAdminMixin
+    from django.contrib import admin
+    from mysections.models import Section
+
+    @admin.register(Section)
+    class SectionAdmin(SectionAdminMixin):
+        pass
+```
+
+In mysections.apps.py **it is very important that you do not forget to import `appchance_sections.receivers`
+in the config**
+
+```
+    from django.apps import AppConfig
+    
+    class SectionsConfig(AppConfig):
+        name = "mysections"
+    
+        def ready(self):
+            from appchance_sections import receivers  # noqa F405
+```
+
+The last thing you have to do is add urls to urls.py
+
+```
+    from django.contrib import admin
+    from django.urls import include, path
+    
+    urlpatterns = [
+        path("admin/", admin.site.urls),
+        path("", include("appchance_sections.urls", namespace="sections")),
+    ]
+```
+
+### 2. Bind content
+
+Then we need some content that we could present in sections. We can add two types of content:
+ - dynamic
+ - generic
+
+At the beginning, I will show you how to define dynamic content and how to make this content possible to attach to
+the section.
+
+
+#### 2.1. Dynamic Content
+
+For example, we want to create a banner application and present banners as a section.
+
+Create new banners app - for example mybanners `python manage.py startapp mybanners`.
+
+In *mybanners.models.py* file
+
+```
+    from appchance_sections.models import DynamicContentAbstract
+    from django.db import models
+    
+
+    # This is standard model - nothing special
+    class Banner(models.Model):
+        name = models.CharField(max_length=255)
+        image = models.ImageFile(upload_to="/uploads")
+        url = models.CharField(max_length=255)
+    
+        def __str__(self):
+            return self.name
+    
+    
+    class BannerSection(DynamicContentAbstract):
+        URL = "mybanners:bannersection-detail"
+        WIDGETS = ["banner_slider", "banner_carousel"]
+        PLACEHOLDERS = ["home_top", "between_products"]
+        PREFIX = "banners"
+    
+    
+    class BannerInSection(models.Model):
+        banner_section = models.ForeignKey(BannerSection, related_name="banners", on_delete=models.CASCADE)
+        banner = models.ForeignKey(Banner, on_delete=models.CASCADE)
+        order = models.PositiveSmallIntegerField(default=0)
+    
+        def __str__(self):
+            return f"{self.banner_section.name} {self.banner.name}"
+```
+
+**Note**:
+ - The `BannerSection.URL` should be a valid url, so you will have to add ViewSet and link it to urls.py
+ - The `BannerSection.QUERY_PARAMS` allows you to add additional fixed query params to the url
+ - The `BannerSection.PREFIX` is not required but useful because it is visible when adding content to a section
+    in the Admin Panel
+ - The `BannerSection.WIDGETS` and `BannerSection.PLACEHOLDERS` - list of widgets and section presentation places
+    supported by the consument API
+ - The `BannerSection.FILTER_ATTRIBUTE` - If you implement a custom filter that will allow you to filter 
+    the list of banners assigned to a given section, this is where you enter the name of the query string parameter
+    that is used to pass the section ID
+
+You need `BannerSerializer` at first. It depends on your model. In this example it could look like this.
+
+In *mybanners.serializer.py*
+
+```
+    from mybanners.models import Banner
+    from rest_framework.serializers import ModelSerializer
+    
+    
+    class BannerSerializer(ModelSerializer):
+        class Meta:
+            model = Banner
+            fields = ["id", "name", "image", "url"]
+```
+
+In *mybanners.views.py*
+
+```
+    from mybanners.models import Banner, BannerSection
+    from mybanners.serializers import BannerSerializer
+    from rest_framework import mixins, viewsets
+    
+    from rest_framework.response import Response
+    
+    
+    class BannerViewSet(viewsets.ReadOnlyModelViewSet):
+        model = Banner
+        permission_classes = (AllowAny,)
+        queryset = Banner.objects.all()
+        serializer_class = BannerSerializer
+    
+    
+    class BannerSectionViewSet(mixins.RetrieveModelMixin, viewsets.GenericViewSet):
+    
+        model = BannerSection
+        queryset = BannerSection.objects.all()
+        serializer_class = BannerSerializer
+    
+        def retrieve(self, request, *args, **kwargs):
+            instance = self.get_object()
+            serializer = self.get_serializer(instance.banners, many=True)
+            return Response(serializer.data)
+```
+
+**Note that the `BannerSectionViewSet.list` returns a list of banners** because you get the `BannerSection`
+data when you request a list of sections from sections endpoint.
+
+
+**Note! Alternatively, you can implement views like this - filter list by section**
+
+```
+    import django_filters
+    from mybanners.models import Banner
+    from mybanners.serializers import BannerSerializer
+    from rest_framework import viewsets
+    
+    
+    class BannerListFilterSet(django_filters.FilterSet):
+        # do not forget set BannerSection.FILTER_ATTRIBUTE = "section"
+        section = django_filters.NumberFilter(method="get_by_section", field_name="section")
+    
+        class Meta:
+            model = Banner
+            fields = []
+    
+        def get_by_section(self, queryset, _field_name, value):
+            return (
+                queryset.filter(banners_in_section__banner__id=value).order_by("banners_in_section__order")
+                if value else queryset
+            )
+    
+    class BannerViewSet(viewsets.ReadOnlyModelViewSet):
+        model = Banner
+        permission_classes = (AllowAny,)
+        queryset = Banner.objects.all()
+        serializer_class = BannerSerializer
+        filter_class = BannerListFilterSet
+```
+
+In *mybanners.urls.py*
+
+```
+    from mybanners.views import BannerSectionViewSet, BannerViewSet
+    from rest_framework import routers
+    
+    router = routers.DefaultRouter()
+    router.register(r"banners", BannerViewSet)
+    router.register(r"banner-sections", BannerSectionViewSet)
+    
+    app_name = "banners"
+    urlpatterns = router.urls
+```
+
+and
+
+
+```
+    from django.contrib import admin
+    from django.urls import include, path
+    
+    urlpatterns = [
+        path("admin/", admin.site.urls),
+        path("", include("appchance_sections.urls", namespace="sections")),
+        path("", include("mybanners.urls", namespace="banners")),
+    ]
+```
+
+Now the `BannerSection` model needs to be registered also as dynamic content for the section.
+
+In *mybanners.sections.py* file define a registration function.
+
+```
+    from appchance_sections.utils import register_dynamic_content
+    from mybanners.models import BannerSection
+    
+    
+    def register_section_contents():
+        register_dynamic_content(content_class=BannerSection)
+```
+
+The `register_section_contents` function should be called when the banner application is ready
+
+So call it in *mybanners.apps.py*
+
+```
+    from django.apps import AppConfig
+    
+    
+    class BannersConfig(AppConfig):
+        name = "mybanners"
+    
+        def ready(self):
+            from mybanners.sections import register_section_contents
+            register_section_contents()
+```
+
+#### 2.2 Generic Content
+
+Sometimes you don't want to add items to a section manually. For example, you want to view a section with:
+
+- news
+- bestsellers calculated on the number of units sold in the last week
+- products on promotion marked with the `is_promotion` flag, etc.
+
+You can register such content using `register_section_content`
+
+In *mysections.sections.py*
+
+```
+    from appchance_sections.utils import register_section_content
+    
+    
+    def register_section_contents():
+        
+        placements = ["home_middle", "home_sidebar"]
+        
+        news_widgets = ["news_list"]
+        register_section_content(
+            slug="news",
+            name="News",
+            url="mynews:news-list",
+            widgets=news_widgets,
+            placements=placements
+        )
+    
+        product_widgets = ["product_grid_3x3", "product_flat_list"]
+    
+        register_section_content(
+            slug="bestsellers",
+            name="Bestsellers",
+            url="myproducts:product-list",
+            query_params={"bestseller": "true"},
+            widgets=product_widgets,
+            placements=placements
+        )
+    
+        register_section_content(
+            slug="promoted_products",
+            name="Promoted products",
+            url="myproducts:product-list",
+            query_params={"is_promotion": 1},
+            widgets=product_widgets,
+            placements=placements
+        )
+```
+
+The `register_section_contents` function should be called on start app
+
+For example you can call it in *mysections.apps.py*
+
+```
+    from django.apps import AppConfig
+    
+    class SectionsConfig(AppConfig):
+        name = "mysections"
+    
+        def ready(self):
+            from appchance_sections import receivers  # noqa F405
+            from mysection.sections import register_section_contents
+            register_section_contents()
+```
+
