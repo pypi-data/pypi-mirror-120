@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: TimeSeriesTests
+Version: 0.1
+Summary: Simple time series tests normality, stationarity, integration and causality tests
+Home-page: https://github.com/Jsong1836/Time-series-tests
+Author: junhyuck song
+Author-email: junhyuck.song@gmail.com
+License: MIT
+Download-URL: https://github.com/user/reponame/archive/v_01.tar.gz
+Keywords: timeseries,stationarity
+Platform: UNKNOWN
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: arch
+Requires-Dist: scipy
+
+UNKNOWN
+
