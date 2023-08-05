@@ -1,0 +1,3 @@
+[console_scripts]
+env-setup-rc = env_setup:rc
+
