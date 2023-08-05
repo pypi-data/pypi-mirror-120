@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+otter/__init__.py
+otter/__main__.py
+otter/helpers.py
+otter/styling.py
+otter/trace.py
+pyotter.egg-info/PKG-INFO
+pyotter.egg-info/SOURCES.txt
+pyotter.egg-info/dependency_links.txt
+pyotter.egg-info/requires.txt
+pyotter.egg-info/top_level.txt
