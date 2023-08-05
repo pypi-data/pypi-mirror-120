@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+src/agc_optims/__init__.py
+src/agc_optims/utils.py
+src/agc_optims.egg-info/PKG-INFO
+src/agc_optims.egg-info/SOURCES.txt
+src/agc_optims.egg-info/dependency_links.txt
+src/agc_optims.egg-info/requires.txt
+src/agc_optims.egg-info/top_level.txt
+src/agc_optims/clipper/__init__.py
+src/agc_optims/clipper/agc.py
+src/agc_optims/optim/__init__.py
+src/agc_optims/optim/adam_agc.py
+src/agc_optims/optim/adamw_agc.py
+src/agc_optims/optim/rmsprop_agc.py
+src/agc_optims/optim/sgd_agc.py
