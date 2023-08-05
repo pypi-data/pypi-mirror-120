@@ -1,0 +1,7 @@
+h1{
+    margin-bottom: 30px;
+}
+
+a.nav-link, a.nav-link.active{
+    color : black;
+}
