@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: growth-test
+Version: 0.1.1
+Summary: growth hacking tool test
+Home-page: https://github.com/ds-wook/growth-test
+Author: Wook Lee
+Author-email: leewook94@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# growth-test
+성장 해킹 개발 툴 test
+
+
