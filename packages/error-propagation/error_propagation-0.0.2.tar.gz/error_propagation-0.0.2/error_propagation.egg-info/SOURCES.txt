@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+error_propagation/__init__.py
+error_propagation/arrays_to_complex.py
+error_propagation/complex.py
+error_propagation.egg-info/PKG-INFO
+error_propagation.egg-info/SOURCES.txt
+error_propagation.egg-info/dependency_links.txt
+error_propagation.egg-info/top_level.txt
+error_propagation/finance/__init__.py
+error_propagation/finance/npv.py
