@@ -1,0 +1,3 @@
+[console_scripts]
+daluke = daluke.api.cli:main
+
