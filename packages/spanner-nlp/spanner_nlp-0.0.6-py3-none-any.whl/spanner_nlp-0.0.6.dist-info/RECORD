@@ -1,0 +1,7 @@
+spanner_nlp/StanfordCoreNLP.py,sha256=flovZNUe3R0e6rFgUEgEBSyQc3UkX8DAxgLExIamw8M,48727
+spanner_nlp/StanfordCoreNLPTest.py,sha256=ILx9QtNnfTPyQqOUoNVEHC0YkVIVoNnO2Z-T_Y3Digs,3926
+spanner_nlp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spanner_nlp-0.0.6.dist-info/METADATA,sha256=b8UqfDI0KfjPGWpXqe49TPVK-sWSPzE3feuPa79wK4Y,6499
+spanner_nlp-0.0.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+spanner_nlp-0.0.6.dist-info/top_level.txt,sha256=dD6vV29owoDfpqJxSt5kT4O989QRf5L2-oG8WRGpmiE,12
+spanner_nlp-0.0.6.dist-info/RECORD,,
