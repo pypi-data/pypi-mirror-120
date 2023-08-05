@@ -1,0 +1,15 @@
+asyncstdlib/__init__.py,sha256=28d8PJtKgtJghnpwr-VyKERu_nPDXyEVh6rZC2Gklvk,1314
+asyncstdlib/_core.py,sha256=dUvjQBKGxY_Kg9ZE5czSVoPAPb87UbmfV56jSqy_yWM,3779
+asyncstdlib/_lrucache.py,sha256=690HNuBJCzp8L3lY-sWKT9oIqr6BtmJY6Ad64i87WHc,10466
+asyncstdlib/_typing.py,sha256=uB_iIyzCvxbEyWWAOPP0IQuLKGTLEJ2vKl_jdd5hthM,1393
+asyncstdlib/_utility.py,sha256=k9IlwiWrblVQi__L5VtGXpYjGSC5aD52g9fwfL8mxKA,1132
+asyncstdlib/asynctools.py,sha256=vrQe7c0eZzQfujdQhvNkjiOvkli70X_U44PD_nhmUBs,11775
+asyncstdlib/builtins.py,sha256=EO3t1fDgX7l2QxWXOUxZu00AFc3vPP_3HKTs6s7dbj8,20290
+asyncstdlib/contextlib.py,sha256=qqlmD0IO5XZfeHXdFoUi0B0INYpmdG0kTFu3lETiXKg,15541
+asyncstdlib/functools.py,sha256=foVPqDuPL62kO13Yaoaip51so6cg6JGEifMlT_rAwKs,5074
+asyncstdlib/itertools.py,sha256=hRMZbd69E76Wm4RpXZVA3pPAB85q_B6-PiMjpQk4qtA,21059
+asyncstdlib/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+asyncstdlib-3.10.1.dist-info/LICENSE,sha256=oOrTZcLwhg12uCzTTJYo2WIOKQIm-UocoGCkAeD-q00,1075
+asyncstdlib-3.10.1.dist-info/WHEEL,sha256=EJXMfr9EmYk-U6pyWqa2B2QLIwRQV9ltzVJo4MsFY2s,99
+asyncstdlib-3.10.1.dist-info/METADATA,sha256=zKULQjC-UnCCkdjDBnEaWc7ldXycZsEacOCnTJosMSg,3194
+asyncstdlib-3.10.1.dist-info/RECORD,,
