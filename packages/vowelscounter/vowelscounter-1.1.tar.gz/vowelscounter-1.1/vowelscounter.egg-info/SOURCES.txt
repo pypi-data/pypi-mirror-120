@@ -1,0 +1,8 @@
+setup.py
+VowelCounter/Counter.py
+VowelCounter/Tests.py
+VowelCounter/__init__.py
+vowelscounter.egg-info/PKG-INFO
+vowelscounter.egg-info/SOURCES.txt
+vowelscounter.egg-info/dependency_links.txt
+vowelscounter.egg-info/top_level.txt
