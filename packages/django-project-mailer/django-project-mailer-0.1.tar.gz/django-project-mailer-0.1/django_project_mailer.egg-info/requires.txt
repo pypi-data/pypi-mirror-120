@@ -1,0 +1,9 @@
+Django>=2.2
+djangorestframework
+django-celery-results
+django-celery-beat
+django-celery
+Pillow
+rabbitmq
+redis
+redis-server
