@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: comotion-sdk
+Version: 0.0.13
+Summary: SDK for interacting with the Comotion Dash API
+Home-page: https://github.com/ComotionLabs/comotion-sdk
+Author: Comotion
+Author-email: tim@comotion.us
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/ComotionLabs/comotion-sdk/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# comotion-sdk
+
+comotion-sdk is the python SDK for interacting with the Comotion APIs.  Initial support is limited to Dash, but may expand in future.
+
+
+# Documentation
+
+Documentation for this module can be found [here](https://comotionlabs.github.io/comotion-sdk/).
+
+# Contributing
+
+In order to contribute to this project, fork this repo and submit a pull request to this project.
+
+
