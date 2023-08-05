@@ -1,0 +1,3 @@
+[console_scripts]
+pyapibp = pyapibp.entry:main
+
