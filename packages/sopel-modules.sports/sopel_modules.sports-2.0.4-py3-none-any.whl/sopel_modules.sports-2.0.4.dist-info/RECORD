@@ -1,0 +1,11 @@
+sopel_modules.sports-2.0.4-py3.9-nspkg.pth,sha256=GpO4OWqrcKGJyabPvvsBuBcrUk4pFr3K5HYvSnuQBi8,574
+sopel_modules/sports/__init__.py,sha256=BeSqwJZgDnGvF-6eIwFy2QGbdrrTP3JcaiGjZwEqoEk,190
+sopel_modules/sports/mlb.py,sha256=PMw4efHRInjfvrDNGkwp8JTB7OSAowge2lTVO9H_1_Q,3309
+sopel_modules/sports/nfl.py,sha256=V6zLZUcDgw96NidLGJiWT6V6SEtQfXIGZ8FMUyaSeRw,9958
+sopel_modules/sports/nhl.py,sha256=SF_5MctbNGYuBsx4xABjWSCQvmeR-81KxRvZ0kjAEu0,3818
+sopel_modules.sports-2.0.4.dist-info/LICENSE,sha256=8wpqv7JAw0nuh-mIlsWvpY5ZTxBuCmjinspNg2uVo3M,1068
+sopel_modules.sports-2.0.4.dist-info/METADATA,sha256=FUjmqEAGCk5sALiodsNFZr3Vw_G9OJhraN9bU32aOG0,3507
+sopel_modules.sports-2.0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+sopel_modules.sports-2.0.4.dist-info/namespace_packages.txt,sha256=1GJk87jnz3vpuDVQimAVoSTAzCNN7PNkycVbH0Q1pkg,14
+sopel_modules.sports-2.0.4.dist-info/top_level.txt,sha256=1GJk87jnz3vpuDVQimAVoSTAzCNN7PNkycVbH0Q1pkg,14
+sopel_modules.sports-2.0.4.dist-info/RECORD,,
