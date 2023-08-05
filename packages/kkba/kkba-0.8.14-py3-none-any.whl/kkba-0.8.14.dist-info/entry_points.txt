@@ -1,0 +1,3 @@
+[console_scripts]
+kkba = kkba.__main__:main
+
