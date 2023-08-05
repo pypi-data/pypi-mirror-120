@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: tqatest
+Version: 0.0.16
+Summary: Backend module for testing project
+Author: QA
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: fastapi[testclient] (>=0.68.1,<0.69.0)
+Requires-Dist: joblib (>=1.0.1,<2.0.0)
+Requires-Dist: loguru (>=0.4.0,<0.5.0)
+Requires-Dist: pydantic (>=1.3,<2.0)
+Requires-Dist: pytest (>=6.2.4,<7.0.0)
+Requires-Dist: requests (>=2.22.0,<3.0.0)
+Requires-Dist: uvicorn (>=0.11.1,<0.12.0)
+Description-Content-Type: text/markdown
+
+# backend-module
+
+Main backend module, which is used for developing web-app logic and deploying AI model.
+
+## Installation
+Run the following to install:
+```python
+pip install anscenter
+```
+
+## Usage
+```python
+from anscester.predict import MachineLearningModel
+
+# Generate model
+model = MachineLearningModel()
+
+# Using Example
+data_input = [1.0, 2.0, 3.0, 4.0]
+result = model.predict(data_input)
+print(result)
+```
+
+## Developing HelloG
+To install helloG, along with the tools you need to develop and run tests, run the following in your virtualenv:
+```bash
+$ pip install anscenter[dev]
+```
