@@ -1,0 +1,9 @@
+README.md
+setup.py
+PlotScrollNumpyArrays.egg-info/PKG-INFO
+PlotScrollNumpyArrays.egg-info/SOURCES.txt
+PlotScrollNumpyArrays.egg-info/dependency_links.txt
+PlotScrollNumpyArrays.egg-info/requires.txt
+PlotScrollNumpyArrays.egg-info/top_level.txt
+src/PlotScrollNumpyArrays/Plot_Scroll_Images.py
+src/PlotScrollNumpyArrays/__init__.py
