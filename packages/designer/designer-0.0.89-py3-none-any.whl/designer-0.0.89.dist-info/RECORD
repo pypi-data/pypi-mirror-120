@@ -1,0 +1,12 @@
+designer/Animation.py,sha256=rIXgLHjFXdfBp8sMeKuPe1RXUNHsmm2kZZh31Q8xwAE,6574
+designer/DesignerObject.py,sha256=4YoUvG4U-fUlex-OlidzaZq8PFmxd9KJV6UJWdPkUwU,19334
+designer/Director.py,sha256=nXIp3EKvtbNyQ1Rx1btJ7Wfg5I6ZrpgP7YhQ7yWtFTI,4503
+designer/__init__.py,sha256=4OM73LkO6YVZmVvH2539d9qqugqMXfn-VAFgpnypeZc,528
+designer/colors.py,sha256=kZsu5bx729SqNqvUQTj1RLOe8W91Sv3wCykWbi8qfE4,575
+designer/data/colors.json,sha256=6jYobwJeeIeUbUtNFfv1aYp6MMcrgpi5p7Cd2FZOmK8,4041
+designer-0.0.89.data/data/requirements.txt,sha256=cgLoVlKVTXSbEU3lZkN_stiKP0Bt_g0rnZq_FDVK0sE,1238
+designer-0.0.89.dist-info/LICENSE.txt,sha256=yi203SzW6a2yx0Uv3u-K804Fb-tn9QgKb8KSZ5-USFM,1075
+designer-0.0.89.dist-info/METADATA,sha256=u0SM8y0tr_d1qhOfmhQsZtbM2mKWnUfm1HSXUlMRttA,3570
+designer-0.0.89.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+designer-0.0.89.dist-info/top_level.txt,sha256=2BcbS1_i5w1D5mPuddpDecwM6D3aZb_BrifrAXfIG2k,9
+designer-0.0.89.dist-info/RECORD,,
