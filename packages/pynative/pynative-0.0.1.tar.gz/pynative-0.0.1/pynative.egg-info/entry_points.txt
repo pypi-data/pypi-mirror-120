@@ -1,0 +1,3 @@
+[console_scripts]
+pynative = pynative.pynative:main
+
