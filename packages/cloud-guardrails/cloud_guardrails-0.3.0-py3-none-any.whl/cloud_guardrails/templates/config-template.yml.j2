@@ -1,0 +1,60 @@
+####
+# match_only_keywords: Use this to only apply policies that match any of these keywords
+# exclude_keywords: Use this to skip policies that have any of these keywords in the display name
+# exclude_services: Specify services that you want to exclude entirely.
+# exclude_policies: Specify Azure Policy Definition displayNames that you want to exclude from the results, sorted by service
+####
+
+# Use this to only apply policies that match any of these keywords
+# Example: "encrypt", "SQL", "HTTP"
+match_only_keywords:
+  - ""
+{% for keyword in t.match_only_keywords %}
+  - "{{ keyword }}"
+{% endfor %}
+
+exclude_keywords:
+  - ""
+  - "virtual network service endpoint"
+  #- "private link"
+{% for keyword in t.exclude_keywords %}
+  - "{{ keyword }}"
+{% endfor %}
+
+# Specify services that you want to exclude entirely.
+# Uncomment the services mentioned below if you want to exclude them.
+exclude_services:
+  - ""
+  - "Guest Configuration"
+{% set existing_exclude_services = ["Guest Configuration"] %}
+{% for service in t.service_names %}{% if service not in existing_exclude_services %}  #- "{{ service }}"
+{% endif %}{% endfor %}
+
+# Specify Azure Policy Definition displayNames that you want to exclude from the results
+exclude_policies:
+  General:
+    - "Allow resource creation only in Asia data centers"
+    - "Allow resource creation only in European data centers"
+    - "Allow resource creation only in India data centers"
+    - "Allow resource creation only in United States data centers"
+  Tags:
+    - "Allow resource creation if 'department' tag set"
+    - "Allow resource creation if 'environment' tag value in allowed values"
+  API Management:
+    # This collides with the same one from App Platform
+    - "API Management services should use a virtual network"
+  App Platform:
+    # This collides with the same one from API Management
+    - "Azure Spring Cloud should use network injection"
+  Guest Configuration:
+    # This outputs a parameter called "Cert:" that breaks the parameter yaml format
+    - "Audit Windows machines that contain certificates expiring within the specified number of days"
+  Network:
+    # This one is overly cumbersome for most organizations
+    - "Network interfaces should not have public IPs"
+
+{% set existing_exclusions = ["General", "Tags", "API Management", "App Platform", "Guest Configuration"] %}
+{% for service in t.service_names %}{% if service not in existing_exclusions %}
+  {{ service }}:
+    - ""
+{% endif %}{% endfor %}
