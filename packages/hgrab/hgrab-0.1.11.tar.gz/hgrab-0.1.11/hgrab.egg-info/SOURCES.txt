@@ -1,0 +1,9 @@
+README.md
+setup.py
+hgrab/__init__.py
+hgrab/functions.py
+hgrab.egg-info/PKG-INFO
+hgrab.egg-info/SOURCES.txt
+hgrab.egg-info/dependency_links.txt
+hgrab.egg-info/requires.txt
+hgrab.egg-info/top_level.txt
