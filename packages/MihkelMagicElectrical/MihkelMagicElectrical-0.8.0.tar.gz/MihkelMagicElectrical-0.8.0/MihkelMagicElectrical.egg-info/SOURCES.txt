@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.py
+ElectricalMM/Electrical_MM.py
+ElectricalMM/__init__.py
+ElectricalMM/general_functions.py
+ElectricalMM/specific_electrical.py
+MihkelMagicElectrical.egg-info/PKG-INFO
+MihkelMagicElectrical.egg-info/SOURCES.txt
+MihkelMagicElectrical.egg-info/dependency_links.txt
+MihkelMagicElectrical.egg-info/requires.txt
+MihkelMagicElectrical.egg-info/top_level.txt
