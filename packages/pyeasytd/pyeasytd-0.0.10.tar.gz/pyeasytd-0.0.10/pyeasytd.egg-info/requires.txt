@@ -1,0 +1,4 @@
+PyMySQL>=0.9.3
+xlrd>=1.2.0
+zmail>=0.2.8
+requests>=2.22.0
