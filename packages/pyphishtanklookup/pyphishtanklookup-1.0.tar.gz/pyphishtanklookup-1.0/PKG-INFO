@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: pyphishtanklookup
+Version: 1.0
+Summary: Python CLI and module for PhishtankLookup
+Home-page: https://github.com/lookyloo/PyPhishtankLookup
+License: BSD-3-Clause
+Author: Raphaël Vinot
+Author-email: raphael.vinot@circl.lu
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet
+Classifier: Topic :: Security
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Project-URL: Repository, https://github.com/lookyloo/PyPhishtankLookup
+Description-Content-Type: text/markdown
+
+# PyPhishtank Lookup
+
+This is the client API for [Phishtank Lookup](https://github.com/Lookyloo/phishtank-lookup),
+not the official phishtank API.
+
+## Installation
+
+```bash
+pip install pyphishtanklookup
+```
+
+## Usage
+
+### Command line
+
+You can use the `phishtank-lookup` command to search in the database.
+
+### Library
+
+See [API Reference]()
+
