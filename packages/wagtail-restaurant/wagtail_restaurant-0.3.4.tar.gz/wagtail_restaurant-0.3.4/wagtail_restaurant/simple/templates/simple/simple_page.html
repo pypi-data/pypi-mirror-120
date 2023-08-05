@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load wagtailcore_tags wagtailimages_tags %}
+{% block content %}
+<section class="container page_content page__simple">
+	{% if page.hero %}
+		{% for block in page.hero %}
+			{% image block.value.image original as img__hero %}
+			<div class="page__hero" style="background-image: url('{{ img__hero.url }}');"></div>
+		{% endfor %}
+	{% endif %}
+	<div class="inner">
+		<div class="content">
+			<h1>{{ self.title }}</h1>
+			<div class="body">{{ self.body|richtext }}</div>
+			{% if page.gallery %}
+				<ul class="page_gallery">
+					{% for block in page.gallery %}
+						<li>{% include_block block %}</li>
+					{% endfor %}
+				</ul>
+			{% endif %}
+		</div>
+	</div>
+</section>
+{% endblock %} 
