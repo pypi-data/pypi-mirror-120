@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+nessaid_readline/__init__.py
+nessaid_readline/key.py
+nessaid_readline/readkey.py
+nessaid_readline/readline.py
+nessaid_readline.egg-info/PKG-INFO
+nessaid_readline.egg-info/SOURCES.txt
+nessaid_readline.egg-info/dependency_links.txt
+nessaid_readline.egg-info/requires.txt
+nessaid_readline.egg-info/top_level.txt
