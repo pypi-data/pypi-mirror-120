@@ -1,0 +1,9 @@
+seqlabel/__init__.py,sha256=Llx1JJakcR65G90-cjCxn9BZ14zOLkhxd6k5hjf_IWk,70
+seqlabel/core.py,sha256=lqw2SxxDPhtxAU1kCbdTv05MsshswbDxFYOuILu8VQk,5137
+seqlabel/entity_filters.py,sha256=l4ODRp_oMevjCEWWPyH6jMYcztS_XG0OnmqgB6yeGrk,1946
+seqlabel/matchers.py,sha256=unaGWkLYr4NKYjeGUPtcykCjz99iL8qi5qRlNeN-QpQ,1491
+seqlabel/serializers.py,sha256=oV8Mcq-Vs5JdyjOF4SWWnOz_nq76RWaUrx7YJz2fecA,3161
+seqlabel-0.2.3.dist-info/LICENSE,sha256=vIQYgVH2iqQi_fjeNutVY39MD2qohS4TNtQZDrs67LE,1075
+seqlabel-0.2.3.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+seqlabel-0.2.3.dist-info/METADATA,sha256=7_u29-xaSlXE-M1GbnoFwZFfkkGAhHKTHQGoAL49PG4,3512
+seqlabel-0.2.3.dist-info/RECORD,,
