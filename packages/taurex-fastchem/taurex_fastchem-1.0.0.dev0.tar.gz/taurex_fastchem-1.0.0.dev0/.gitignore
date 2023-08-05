@@ -1,0 +1,17 @@
+*.pyd
+build
+taurex_fastchem/external/fastchem.cpp
+*.pyc
+.vscode/settings.json
+
+output/
+
+*.o
+*.d
+*.so
+
+taurex_fastchem/data/input/*
+dist
+/*.egg-info
+
+*.DS_Store
