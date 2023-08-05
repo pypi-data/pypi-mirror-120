@@ -1,0 +1,4 @@
+RPi.GPIO
+
+[dev]
+pytest>=3.7
