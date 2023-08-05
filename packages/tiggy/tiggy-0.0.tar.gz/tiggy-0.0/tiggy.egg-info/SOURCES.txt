@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+tiggy/__init__.py
+tiggy.egg-info/PKG-INFO
+tiggy.egg-info/SOURCES.txt
+tiggy.egg-info/dependency_links.txt
+tiggy.egg-info/requires.txt
+tiggy.egg-info/top_level.txt
