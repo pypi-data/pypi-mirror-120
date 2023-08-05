@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: telecoin
+Version: 0.0.2
+Summary: Simple library to make payments via telegram bitcoin exchangers
+Home-page: https://github.com/marple-git/telecoin
+Keywords: telegram,aiogram,btc banker,banker,btc_change_bot,async
+Author: Marple
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Pyrogram (==1.2.9)
+Requires-Dist: aiohttp (==3.7.4.post0)
+Project-URL: Repository, https://github.com/marple-git/telecoin
+Description-Content-Type: text/markdown
+
+**Slava Fisting Anal**
