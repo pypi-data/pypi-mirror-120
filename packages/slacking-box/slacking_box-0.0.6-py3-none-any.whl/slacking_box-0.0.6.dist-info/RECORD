@@ -1,0 +1,14 @@
+slacking_box/__init__.py,sha256=1IjgGtessQrvaVYYqUQ4Y-Qg4DCwp_UNkfcNKqQXdaY,8014
+slacking_box/bbox.py,sha256=RDvlsYJB4IdiWFbpAWvGs8EZkPCcdW__Zstc9tcj7Gc,5255
+slacking_box/crawling.py,sha256=XxWkJi7d1KnL0i6qR9KnCF7IEz-8so6Ua0Kc7ctdl_k,7196
+slacking_box/cron.py,sha256=yEiXIUdmJIYnqCgEL0aSTFYJ8TuI9eZGTWF-q9n-r70,6155
+slacking_box/folder_split.py,sha256=kUxYzQ71cSKqZTNCmPJwppidx4y4NY8bI5JGafbkia4,10386
+slacking_box/greet.py,sha256=8UUek4CMFzxG8gjjKeE5N8wrh5FSKuVLKeCPExITtm8,903
+slacking_box/rich_print.py,sha256=1XB6qFfDMf3XtjFoowFK96lmM8AwDbmikDJBoSDk684,6765
+slacking_box/sprint.py,sha256=3BKKqX73sUZcxB_8sHD4k9GQFUFmzeVdzoLaYjWYlYc,8962
+slacking_box/video_tools.py,sha256=-aDjQx6O5b7AB2nzJ9jztbyekdCzI-OqgFBVNR0y3Os,2494
+slacking_box/z_time.py,sha256=qXzg2x0qPn0o9nglyg2gT7JWOzA4uZ9kX9e7OVo1ZGU,941
+slacking_box-0.0.6.dist-info/METADATA,sha256=VAE5tlrCHHsqvK4n6dN9SckJsoALgaeIgNKxXLWFI70,152
+slacking_box-0.0.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+slacking_box-0.0.6.dist-info/top_level.txt,sha256=UcYWuHHK_MQ6e_Hx8U-B9vHx8LxfqyUYhHXipPOXRtE,13
+slacking_box-0.0.6.dist-info/RECORD,,
