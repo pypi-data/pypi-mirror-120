@@ -1,0 +1,13 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+nbagile.egg-info/PKG-INFO
+nbagile.egg-info/SOURCES.txt
+nbagile.egg-info/dependency_links.txt
+nbagile.egg-info/entry_points.txt
+nbagile.egg-info/not-zip-safe
+nbagile.egg-info/requires.txt
+nbagile.egg-info/top_level.txt
