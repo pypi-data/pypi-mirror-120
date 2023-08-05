@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "tf-al"
+version = "0.0.5"
+description = "Active learning with tensorflow. Create custom and generic active learning loops. Export and share your experiments."
+authors = ["Maksim Sandybekov <maksim.sandybekov@live.de>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/ExLeonem/tf-al"
+keywords = [
+    "active learning",
+    "deep learning",
+    "tensorflow"
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+tensorflow = "^2"
+#tensorflow-datasets = "^4.4.0"
+scikit-learn = "^0.24.2"
+numpy = "^1"
+tqdm = "^4.62.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+pytest-cov = "^2.12.1"
+Sphinx = "^3.0.0"
+sphinx-book-theme = "^0.1.3"
+pydata-sphinx-theme = "^0.6.3"
+sphinxcontrib-applehelp = "^1.0.2"
+sphinxcontrib-devhelp = "^1.0.2"
+sphinxcontrib-htmlhelp = "^2.0.0"
+sphinxcontrib-jsmath = "^1.0.1"
+sphinxcontrib-qthelp = "^1.0.3"
+sphinxcontrib-serializinghtml = "^1.1.5"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
