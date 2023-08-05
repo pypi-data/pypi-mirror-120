@@ -1,0 +1,9 @@
+bokeh
+jupyter_server
+kubernetes
+maproxy
+tornado
+nbreport
+notebook
+pyvo
+requests
