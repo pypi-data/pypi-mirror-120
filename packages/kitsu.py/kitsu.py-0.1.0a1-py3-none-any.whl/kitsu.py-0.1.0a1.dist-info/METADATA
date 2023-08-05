@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: kitsu.py
+Version: 0.1.0a1
+Summary: A simple asynchronous python wrapper for the kitsu.io API
+Home-page: https://github.com/MrArkon/kitsu.py/
+License: MIT
+Author: MrArkon
+Maintainer: MrArkon
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aiohttp (>=3.7.4,<4.0.0)
+Requires-Dist: python-dateutil (>=2.8.2,<3.0.0)
+Project-URL: Repository, https://github.com/MrArkon/kitsu.py/
+Description-Content-Type: text/markdown
+
+<div align="center">
+  <h1>Kitsu.py</h1>
+  <a href="https://github.com/MrArkon/kitsu.py/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/MrArkon/kitsu.py.svg?style=for-the-badge" />
+  </a>
+  <a href="https://github.com/MrArkon/kitsu.py/network/members">
+    <img src="https://img.shields.io/github/forks/MrArkon/kitsu.py.svg?style=for-the-badge" />
+  </a>
+  <a href="https://github.com/MrArkon/kitsu.py/stargazers">
+    <img src="https://img.shields.io/github/stars/MrArkon/kitsu.py.svg?style=for-the-badge" />
+  </a>
+  <a href="https://github.com/MrArkon/kitsu.py/issues">
+    <img src="https://img.shields.io/github/issues/MrArkon/kitsu.py.svg?style=for-the-badge" />
+  </a>
+  <a href="https://github.com/MrArkon/kitsu.py/blob/master/LICENSE.txt">
+    <img src="https://img.shields.io/github/license/MrArkon/kitsu.py.svg?style=for-the-badge" />
+  </a>
+  </div>
+  <p align="center">
+    A simple & lightweight JSON client for the <a href="https://kitsu.io/">Kitsu.io</a> API
+    <br />
+    <br />
+    <a href="https://pypi.org/project/kitsu.py/">PyPi</a>
+    ·
+    <a href="https://github.com/MrArkon/kitsu.py/issues">Report Bugs</a>
+    ·
+    <a href="https://github.com/MrArkon/kitsu.py/issues">Request Feature</a>
+  </p>
+</p>
+
+## License
+
+This project is distributed under the MIT license.
+
