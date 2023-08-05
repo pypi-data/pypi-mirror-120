@@ -1,0 +1,11 @@
+app/__init__.py,sha256=prRDkSDnasLJuNdOwM1uIPErUQkhBH3XItaTxmcCq6M,62
+app/__main__.py,sha256=MB0bL7pr-7OwOp2l4orzicDgN2_r9hZqcdkLdVDL-LU,35
+app/__version__.py,sha256=acuR_XSJzp4OrQ5T8-Ac5gYe48mUwObuwjRmisFmZ7k,22
+app/cli.py,sha256=-DiT1BLVx0gvxwvfnZDrjR-0ISkI7F_HwksjapAMR8Y,1088
+app/enums.py,sha256=qU36rireS6fO75QT5bRf8LJDSLahtMMYsFXPp7APhDo,316
+app/rich_diff.py,sha256=dDH2zzyyFqVbjaIY1kNYcGUKgUT3G8Uy91kkbx0ehNY,1584
+rich_diff-1.0.4.dist-info/METADATA,sha256=2Q2Lwi4VYnuScTQ44s_74OBCEM806FNskrIRy7tCAB8,1193
+rich_diff-1.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+rich_diff-1.0.4.dist-info/entry_points.txt,sha256=v8Rk1ZgqiD0pcRVMVNKg-zxOsdt8XQ5UfN9lcjohHz0,39
+rich_diff-1.0.4.dist-info/top_level.txt,sha256=io9g7LCbfmTG1SFKgEOGXmCFB9uMP2H5lerm0HiHWQE,4
+rich_diff-1.0.4.dist-info/RECORD,,
