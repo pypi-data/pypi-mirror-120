@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: dv-data-generator
+Version: 0.3.4
+Summary: UNKNOWN
+Home-page: https://gitlab.com/dqna/dv-data-generator
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: requests (==2.26.0)
+Requires-Dist: httplib2 (==0.19.1)
+Requires-Dist: google-api-core (==1.27)
+Requires-Dist: google-api-python-client (==1.7.11)
+Requires-Dist: google-auth (==1.30)
+Requires-Dist: google-cloud-core (==1.3.0)
+Requires-Dist: google-resumable-media (==0.5.0)
+Requires-Dist: googleapis-common-protos (==1.51.0)
+Requires-Dist: google-auth-oauthlib (==0.4.1)
+Requires-Dist: oauth2client (==4.1.3)
+
+# DV360 data Generator
+
+To be able to retrieve different data reports from DV360 we use different API's. These API's are the DBM API and DV360 REST API. To make the code more maintanable we have turned the applied "builder" pattern into a package. This package can be used to retreive different types of reports or be extended to support reports, for different purposes.
+
+
+## Example
+
+To use the package and get our data from the platform, we must have a valid user oauth file. This can be created using the dqna authflow script.
+
+We need to init the director:
+
+```py
+director = DvDataDirector(credentials="../some-cerdentials-file.json")
+```
+
+After this we can get different reports, see the methods of `director`
+
+
+
+
+
