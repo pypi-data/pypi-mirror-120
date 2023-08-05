@@ -1,0 +1,10 @@
+README.md
+setup.py
+convexpanou/__init__.py
+convexpanou/conv.py
+convexpanou/conv2.py
+convexpanou.egg-info/PKG-INFO
+convexpanou.egg-info/SOURCES.txt
+convexpanou.egg-info/dependency_links.txt
+convexpanou.egg-info/requires.txt
+convexpanou.egg-info/top_level.txt
