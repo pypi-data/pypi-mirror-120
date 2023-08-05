@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: fps-jupyterlab
+Version: 0.0.4
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: fps
+Requires-Dist: jupyterlab
+Requires-Dist: fps-contents
+Requires-Dist: fps-kernels
+Requires-Dist: fps-auth
+
+UNKNOWN
+
