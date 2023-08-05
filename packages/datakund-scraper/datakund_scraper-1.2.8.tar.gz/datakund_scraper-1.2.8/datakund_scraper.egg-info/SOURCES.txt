@@ -1,0 +1,10 @@
+README.md
+setup.py
+datakund_scraper/__init__.py
+datakund_scraper/datakund_scraper.py
+datakund_scraper.egg-info/PKG-INFO
+datakund_scraper.egg-info/SOURCES.txt
+datakund_scraper.egg-info/dependency_links.txt
+datakund_scraper.egg-info/requires.txt
+datakund_scraper.egg-info/top_level.txt
+test/test.py
