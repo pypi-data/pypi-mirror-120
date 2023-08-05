@@ -1,0 +1,13 @@
+endaq-calc
+endaq-cloud
+endaq-ide
+
+[example]
+endaq-calc
+endaq-cloud
+endaq-ide
+
+[test]
+endaq-calc
+endaq-cloud
+endaq-ide

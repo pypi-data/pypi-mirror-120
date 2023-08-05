@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+endaq/__init__.py
+endaq.egg-info/PKG-INFO
+endaq.egg-info/SOURCES.txt
+endaq.egg-info/dependency_links.txt
+endaq.egg-info/requires.txt
+endaq.egg-info/top_level.txt
