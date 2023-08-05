@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: halib
+Version: 0.1.2
+Summary: Small library for common tasks
+Home-page: UNKNOWN
+Author: Hoang Van Ha
+Author-email: hoangvanhauit@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+Helper package for coding
+
++ version 0.1.2: add support to upload local to google drive
+
+
