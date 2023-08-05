@@ -1,0 +1,4 @@
+filelock
+requests[socks]>=2.12.0
+six
+tqdm
