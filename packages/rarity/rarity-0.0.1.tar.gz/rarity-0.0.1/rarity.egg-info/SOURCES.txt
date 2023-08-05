@@ -1,0 +1,5 @@
+setup.py
+rarity.egg-info/PKG-INFO
+rarity.egg-info/SOURCES.txt
+rarity.egg-info/dependency_links.txt
+rarity.egg-info/top_level.txt
