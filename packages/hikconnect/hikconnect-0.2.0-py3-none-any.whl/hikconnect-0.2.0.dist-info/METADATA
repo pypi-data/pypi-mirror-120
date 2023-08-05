@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: hikconnect
+Version: 0.2.0
+Summary: Communicate with Hikvision smart doorbells via Hik-Connect cloud.
+Home-page: https://pypi.org/project/hikconnect
+License: MIT
+Author: Tomas Bedrich
+Author-email: ja@tbedrich.cz
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Home Automation
+Classifier: Topic :: System :: Hardware
+Classifier: Topic :: System :: Networking
+Requires-Dist: httpx (>=0.19.0,<0.20.0)
+Project-URL: Documentation, https://hikconnect.readthedocs.io
+Project-URL: Repository, https://github.com/tomasbedrich/hikconnect
+Description-Content-Type: text/markdown
+
+
