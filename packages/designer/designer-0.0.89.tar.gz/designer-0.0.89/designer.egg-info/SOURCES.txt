@@ -1,0 +1,17 @@
+LICENSE.txt
+README.md
+pyproject.toml
+requirements.txt
+setup.cfg
+setup.py
+designer/Animation.py
+designer/DesignerObject.py
+designer/Director.py
+designer/__init__.py
+designer/colors.py
+designer.egg-info/PKG-INFO
+designer.egg-info/SOURCES.txt
+designer.egg-info/dependency_links.txt
+designer.egg-info/requires.txt
+designer.egg-info/top_level.txt
+designer/data/colors.json
