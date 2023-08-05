@@ -1,0 +1,3 @@
+[napari.plugin]
+napari-tissuumaps = napari_tissuumaps
+
