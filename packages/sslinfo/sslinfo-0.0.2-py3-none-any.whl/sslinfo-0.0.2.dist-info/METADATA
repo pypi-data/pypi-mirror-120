@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: sslinfo
+Version: 0.0.2
+Summary: Print the certificate information for a remote SSL/TLS enabled service
+Home-page: https://github.com/joaompinto/sslinfo
+Author: João Pinto
+Author-email: lamego.pinto@gmail.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyopenssl
+Requires-Dist: rich
+
+# sslinfo
+
+sslinfo is a small uility (developed in Python) to print the SSL certificate info for a remote service
+
+Expected to work on Windows, Linux and Mac .
+
+## Motivation
+
+Needed a quick way to verify remote TLS certificates
+
+
+## Requirements
+- Python3
+
+## How to install
+```sh
+pip instal sslinfo
+```
+
+## How to use
+```sh
+sslinfo www.sapo.pt
+```
+
+
