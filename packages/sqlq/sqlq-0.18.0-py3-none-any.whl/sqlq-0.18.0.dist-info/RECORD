@@ -1,0 +1,10 @@
+README.md,sha256=FMM51EOTx6wKU4xXcsGrxDTvoUSDqwBF7uEbEfvILiw,874
+requirements.txt,sha256=fg9TB1LpAseQJoOE4qh7BGhO1Zd0GgZyxezqdNVrsFI,127
+setup.py,sha256=ih42dobGMnGuFU0YWors8BDd0AbJdnASAhlMHgZctlc,1958
+sqlq/__init__.py,sha256=0ssZY_eeqMyD2LyiW_EEcJLU7UPAi1S4OMEVdHf-LGk,407
+sqlq/core.py,sha256=Uqkbeew8Zh_bucPMcI_g_3Pt8y-NJYpcXsubOfuepiw,11920
+sqlq-0.18.0.dist-info/LICENSE,sha256=E_tIpsMacuDitpZQsc6-iVT3tzRJhISS3P0islvZGvo,35182
+sqlq-0.18.0.dist-info/METADATA,sha256=foOl7kqdkHp8ZqXnRTBvXL5OSrAV8qndjlGMJLwaesw,1820
+sqlq-0.18.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+sqlq-0.18.0.dist-info/top_level.txt,sha256=Fh640qAvCUYiZM29fOssblqekh0zCL77OLvB1JChCSY,5
+sqlq-0.18.0.dist-info/RECORD,,
