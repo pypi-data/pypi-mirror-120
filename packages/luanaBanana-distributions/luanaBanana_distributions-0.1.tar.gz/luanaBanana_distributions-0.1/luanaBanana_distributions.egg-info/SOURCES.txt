@@ -1,0 +1,10 @@
+setup.py
+luanaBanana_distributions/Binomialdistribution.py
+luanaBanana_distributions/Gaussiandistribution.py
+luanaBanana_distributions/Generaldistribution.py
+luanaBanana_distributions/__init__.py
+luanaBanana_distributions.egg-info/PKG-INFO
+luanaBanana_distributions.egg-info/SOURCES.txt
+luanaBanana_distributions.egg-info/dependency_links.txt
+luanaBanana_distributions.egg-info/not-zip-safe
+luanaBanana_distributions.egg-info/top_level.txt
