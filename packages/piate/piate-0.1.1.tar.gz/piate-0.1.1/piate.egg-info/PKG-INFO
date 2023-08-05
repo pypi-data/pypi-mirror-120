@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: piate
+Version: 0.1.1
+Summary: Python Library to interact with the IATE database
+Home-page: https://www.github.com/drewsonne/piate
+Author: Drew J. Sonne
+Author-email: drew.sonne@gmail.com
+License: Apache
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# piate
+
+A python library and cli tool to interact with the [IATE (**I**nter**a**ctive **T**erminology for **E**urope)](https://iate.europa.eu/home) database. 
+
+# Installing
+
+```commandline
+pip install piate
+```
+
+## CLI tool
+You can 
+
+
+

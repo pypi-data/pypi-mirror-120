@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+piate/__init__.py
+piate.egg-info/PKG-INFO
+piate.egg-info/SOURCES.txt
+piate.egg-info/dependency_links.txt
+piate.egg-info/entry_points.txt
+piate.egg-info/requires.txt
+piate.egg-info/top_level.txt
