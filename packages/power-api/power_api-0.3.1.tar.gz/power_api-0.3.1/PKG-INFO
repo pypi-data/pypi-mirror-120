@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: power_api
+Version: 0.3.1
+Summary: Python API for Sixfab UPS HAT V2
+Home-page: https://github.com/sixfab/sixfab-power-python-api
+Author: Yasin Kaya
+Author-email: yasinkaya.121@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
