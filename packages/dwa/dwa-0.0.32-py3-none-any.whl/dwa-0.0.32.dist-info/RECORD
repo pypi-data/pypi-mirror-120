@@ -1,0 +1,17 @@
+README.md,sha256=l3bESBwVp325jwYUI-YZGRq_i9qlMzVdPSOgHHcadCk,740
+requirements.txt,sha256=YfddnX8P_c7oBxU7sjevOeEdhHFYKRP2IzpOZePvxaA,162
+setup.py,sha256=4tiJN7rszEBLPiV9WezjNzedw7cSvRjs2CnsqDjTeCw,1944
+dwa/__init__.py,sha256=N4JSqv_U_sCb-elN2TYs_0tT9ikG12pAUnXS5dmhN14,10274
+dwa/core.py,sha256=6iRzxnRFAeOMlt-U1x_cuAvIz7ukPfVKi4Y6zpnLpFg,3297
+dwa/handlers.py,sha256=bZYFk-nXdiSrJr3AQ7e-TXIze-5vmyB0OPpvOVzSXXI,14074
+dwa/utils.py,sha256=_foiwSzZZM3HQdBR1vlClsI9CYWdCHhJyOBlvzz_h3g,214
+dwa/workers.py,sha256=dPphOWNka4ju3cFjMZBZumIajuIMAjm31iRWDicyMjo,1515
+dwa/example/README.md,sha256=ItHbnbxm27CRWGLlJSk9kU-VRPj1bYeQwzh5G0K1Buw,281
+dwa/example/app.py,sha256=cHxEnnZQkOCYLR1O79jxO7wPrwjzA4xPFnQ_qtq-_T4,2863
+dwa/example/cookie_secret.txt,sha256=a5pDf1Ht3LwdL2YAgHBn8iCx0MSKQ10RavoW2M0BZME,11
+dwa/example/test.py,sha256=-2j9U-REtEeT9Gdodwz0oyLTV-UWmNzgb7R9uEP1sX8,43
+dwa-0.0.32.dist-info/LICENSE,sha256=E_tIpsMacuDitpZQsc6-iVT3tzRJhISS3P0islvZGvo,35182
+dwa-0.0.32.dist-info/METADATA,sha256=-KYeV-YYtRXm3kak5BBJIeMJ499yhcY_pzjdg02hmBU,1744
+dwa-0.0.32.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+dwa-0.0.32.dist-info/top_level.txt,sha256=PROr4qp_vDToaw2vU_wjar-TQNTrWJmJ8myvrg74N3w,4
+dwa-0.0.32.dist-info/RECORD,,
