@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: kraken_core_sdk
+Version: 2021.9.16.1631790913
+Summary: kraken core tools
+Home-page: https://github.com/kraken-cloud/kraken
+Author: wei.fu
+Author-email: mefuwei@163.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
