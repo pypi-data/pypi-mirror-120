@@ -1,0 +1,5 @@
+Click
+tensorflow==2.6.0
+scikit_learn
+numpy
+tqdm

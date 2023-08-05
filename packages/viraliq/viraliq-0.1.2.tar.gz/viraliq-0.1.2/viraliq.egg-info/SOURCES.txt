@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+viraliq.py
+viraliq.egg-info/PKG-INFO
+viraliq.egg-info/SOURCES.txt
+viraliq.egg-info/dependency_links.txt
+viraliq.egg-info/entry_points.txt
+viraliq.egg-info/requires.txt
+viraliq.egg-info/top_level.txt
