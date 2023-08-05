@@ -1,0 +1,12 @@
+README.md
+setup.py
+mlflow_oss_artifact/__init__.py
+mlflow_oss_artifact.egg-info/PKG-INFO
+mlflow_oss_artifact.egg-info/SOURCES.txt
+mlflow_oss_artifact.egg-info/dependency_links.txt
+mlflow_oss_artifact.egg-info/entry_points.txt
+mlflow_oss_artifact.egg-info/requires.txt
+mlflow_oss_artifact.egg-info/top_level.txt
+mlflow_oss_artifact/store/__init__.py
+mlflow_oss_artifact/store/artifact/__init__.py
+mlflow_oss_artifact/store/artifact/aliyun_oss_artifact_repo.py

@@ -1,0 +1,3 @@
+[mlflow.artifact_repository]
+oss = mlflow_oss_artifact.store.artifact.aliyun_oss_artifact_repo:AliyunOssArtifactRepository
+
