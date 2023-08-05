@@ -1,0 +1,13 @@
+pidi/__init__.py,sha256=UfDEdNej3qAeUnVHifW_emUcL7KiD9qce7AVVm1Os8Q,706
+pidi/__main__.py,sha256=AG6RdJQDHnlunNIQy_ePBgHHBsZCs8O5cTxMb5Rn90w,5085
+pidi/brainz.py,sha256=tXUpd0EqbXjDVQjq22eTcfjhSurcZ_JsvfnEenie1FA,1394
+pidi/client.py,sha256=qGicw4hGk2JfcO5nmw0hutV8t0x-bKuxnWJUQW25zeA,6995
+pidi/display.py,sha256=wWKmalzdNAIdNLb8Id5116zRaV2bu02B34RP1Jw_HwY,3345
+pidi/fifo.py,sha256=4pcf1g8sVI9aLCAzo1nhwFgCqpnAkDb0RSfJziEehfY,1490
+pidi/util.py,sha256=qo7FyDGx6GUk-_jRAXP82Q7Sw51b2uXSRrrPm7LO0WY,1368
+pidi-0.1.0.dist-info/LICENSE.txt,sha256=5ZwBUHwi-GaPoNLln3AANNgMzow-heMYhP13gLZHGdU,1077
+pidi-0.1.0.dist-info/METADATA,sha256=pInAbsVFD-N47X9IEjyxpu7erep2MGurjZS42bi2UIk,3974
+pidi-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pidi-0.1.0.dist-info/entry_points.txt,sha256=5OlpI6WZwwITaT97CHL8QHn0sYM4BrFV2kYmpiPKAts,45
+pidi-0.1.0.dist-info/top_level.txt,sha256=7K_7kfVyIz1shLyHNOZGOBpVqn3tBAjAQuzIFPakvhU,5
+pidi-0.1.0.dist-info/RECORD,,
