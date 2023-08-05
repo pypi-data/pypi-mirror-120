@@ -1,0 +1,10 @@
+experiment_manager/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+experiment_manager/dottable_config.py,sha256=RmYvsWbY17s00KS9fOes0YTIIW-WLRc_NUtYaf0CNUQ,9677
+experiment_manager/dottable_map.py,sha256=uGd01CX4FzDdfDz3U3ibo3jlblMuasGvnLTj9ZV4oeQ,2290
+experiment_manager/experiment_manager.py,sha256=VlX59a5cZEk8Lzs0Q8-SEfENhUcnzdIiLt65f574d2k,53492
+experiment_manager/neural_net_config.py,sha256=vKnVuHpm68UzHmFHESzWRSR0lJ3Q5dz8idrRPcpuxe8,18100
+ml_experiment_manager-0.1.7.dist-info/LICENSE,sha256=-t7CRCH1ihpqBIo4fficPE3LsbWpDu1J2-27sbkjYUM,1523
+ml_experiment_manager-0.1.7.dist-info/METADATA,sha256=6zo-bFLyzMnAvrUyfDLRXzSxDrsTVZBzApLWzClza7U,6684
+ml_experiment_manager-0.1.7.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+ml_experiment_manager-0.1.7.dist-info/top_level.txt,sha256=Sm3yTrpMIPnTgD7x0OGaJkHWO5PxPi4csHMQxWjSNrA,19
+ml_experiment_manager-0.1.7.dist-info/RECORD,,
