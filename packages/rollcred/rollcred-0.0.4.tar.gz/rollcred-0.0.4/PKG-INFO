@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: rollcred
+Version: 0.0.4
+Summary: UNKNOWN
+Home-page: https://github.com/New-Math-Data/rollcred.git
+Author: Traey Hatch
+Author-email: thatch@newmathdata.com
+License: UNKNOWN
+Description: AWS Creds Replace Library
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown

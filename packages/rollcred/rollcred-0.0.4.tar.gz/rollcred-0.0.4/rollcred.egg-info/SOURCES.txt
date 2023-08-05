@@ -1,0 +1,9 @@
+setup.py
+rollcred/__init__.py
+rollcred/main.py
+rollcred.egg-info/PKG-INFO
+rollcred.egg-info/SOURCES.txt
+rollcred.egg-info/dependency_links.txt
+rollcred.egg-info/entry_points.txt
+rollcred.egg-info/requires.txt
+rollcred.egg-info/top_level.txt
