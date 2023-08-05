@@ -1,0 +1,16 @@
+taurex_ace/__init__.py,sha256=f2aRDDSCWW3S9llk4ItbPkwJrjxSy8kzfdkuidT0cXM,58
+taurex_ace/chemistry/acechemistry.py,sha256=6nAUiLbXuv289Yw4NE0uQd1OGPCzW-guPHdFuzKq_vE,8771
+taurex_ace/chemistry/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+taurex_ace/external/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+taurex_ace/external/ace.cpython-36m-i386-linux-gnu.so,sha256=vXH85oOysWwlw-abHzZYSSokAdALXmRQfmWTZuyAARc,377408
+taurex_ace/external/Data/composes.dat,sha256=Dv6N5NjwevBcrJ7P6xQ8rSDMJPqBkjgjXxeGUYKvuHg,3990
+taurex_ace/external/Data/NASA.therm,sha256=r8pwY5J_JY8uEKTF2VmZVdrmlWicUq92aul49hyh35w,30467
+taurex_ace-1.0.0.dev0.dist-info/METADATA,sha256=XtezBbBeIJ-01sSGParMcncv101JEJh9mzUm_KTrsDY,3187
+taurex_ace-1.0.0.dev0.dist-info/entry_points.txt,sha256=FdhgNK4JptH2bUCdyh2lc-o1DD55kfR1tkB1jU5ERD0,35
+taurex_ace-1.0.0.dev0.dist-info/top_level.txt,sha256=Z6R6wF6wM6XfSITPP0aziTCspAFysGwqzw-76EUS_SI,11
+taurex_ace-1.0.0.dev0.dist-info/LICENSE,sha256=DoG5vq4CzCb_14BchqjUFZHgaNAUIIRJonAxSKw1v7s,1522
+taurex_ace-1.0.0.dev0.dist-info/WHEEL,sha256=u6WzkjP-sihYlEzJM_30ExNqLFdAsXBL_LPO02rTRPs,110
+taurex_ace-1.0.0.dev0.dist-info/RECORD,,
+taurex_ace.libs/libgfortran-3ae5e5c8.so.5.0.0,sha256=DAPJxrG1yja6tROnQeVPanpzDlL8KEAxWO6i-03b3b4,2061720
+taurex_ace.libs/libz-9f7255d3.so.1.2.3,sha256=4XNTSwxidfE5u042lZe5aN7zD6WPRGesxUOkMTCi3m8,79808
+taurex_ace.libs/libquadmath-af029652.so.0.0.0,sha256=07KXlPynJZ54VDX3M78bjjNmqdTBLcwVvnG2qGuboPI,591684
