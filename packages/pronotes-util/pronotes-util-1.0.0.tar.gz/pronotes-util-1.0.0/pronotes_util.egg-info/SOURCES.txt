@@ -1,0 +1,6 @@
+setup.py
+pronotes_util.egg-info/PKG-INFO
+pronotes_util.egg-info/SOURCES.txt
+pronotes_util.egg-info/dependency_links.txt
+pronotes_util.egg-info/requires.txt
+pronotes_util.egg-info/top_level.txt
