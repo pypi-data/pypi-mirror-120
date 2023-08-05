@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: asciiconv
+Version: 0.2.0
+Summary: Convert text to be ASCII compatiable and back
+Home-page: UNKNOWN
+Author: Synergetic00
+License: GPLv3
+Keywords: ascii
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# asciiconv
+ Convert any Unicode text to ASCII or visa-versa, with a bunch of other utilities that you might need when working with output systems that aren't compatiable
+
+
