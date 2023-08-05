@@ -1,0 +1,8 @@
+README.md
+setup.py
+multifilelogger/__init__.py
+multifilelogger/multifilelogging.py
+multifilelogger.egg-info/PKG-INFO
+multifilelogger.egg-info/SOURCES.txt
+multifilelogger.egg-info/dependency_links.txt
+multifilelogger.egg-info/top_level.txt
