@@ -1,0 +1,11 @@
+README.md
+setup.py
+pysocksproto/__init__.py
+pysocksproto/constants.py
+pysocksproto/exceptions.py
+pysocksproto/pysocksproto.py
+pysocksproto/tools.py
+pysocksproto.egg-info/PKG-INFO
+pysocksproto.egg-info/SOURCES.txt
+pysocksproto.egg-info/dependency_links.txt
+pysocksproto.egg-info/top_level.txt
