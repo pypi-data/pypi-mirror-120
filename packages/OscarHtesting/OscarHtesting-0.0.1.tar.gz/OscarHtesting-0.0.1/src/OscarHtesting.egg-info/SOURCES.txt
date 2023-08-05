@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/OscarHtesting.egg-info/PKG-INFO
+src/OscarHtesting.egg-info/SOURCES.txt
+src/OscarHtesting.egg-info/dependency_links.txt
+src/OscarHtesting.egg-info/top_level.txt
