@@ -1,0 +1,10 @@
+locust>=1.6
+psycogreen
+psycopg2-binary
+websocket-client
+python-dateutil
+pymongo
+confluent-kafka
+selenium==4.0.0.b4
+lxml
+opencensus-ext-azure
