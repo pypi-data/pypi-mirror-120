@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+urltool/__init__.py
+urltool/scanner.py
+urltool/shortener.py
+urltool.egg-info/PKG-INFO
+urltool.egg-info/SOURCES.txt
+urltool.egg-info/dependency_links.txt
+urltool.egg-info/top_level.txt

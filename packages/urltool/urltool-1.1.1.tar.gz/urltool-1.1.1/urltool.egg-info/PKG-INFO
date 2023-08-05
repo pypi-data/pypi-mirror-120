@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: urltool
+Version: 1.1.1
+Summary: A simple url_tools that made with python.
+Home-page: https://github.com/seeundev/urltool
+Author: Seeun Kim
+Author-email: seeun0917@naver.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3
+License-File: LICENSE
+
+UNKNOWN
+
