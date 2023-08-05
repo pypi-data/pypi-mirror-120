@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/coresptbr/__init__.py
+src/coresptbr/cores.py
+src/coresptbr.egg-info/PKG-INFO
+src/coresptbr.egg-info/SOURCES.txt
+src/coresptbr.egg-info/dependency_links.txt
+src/coresptbr.egg-info/top_level.txt
