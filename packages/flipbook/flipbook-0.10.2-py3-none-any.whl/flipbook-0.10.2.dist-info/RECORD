@@ -1,0 +1,16 @@
+compare_form_response_tables.py,sha256=P6LGiSUHp3eqlmmRk453co9ozVHOtFLopOL9rwbi4_I,7297
+flipbook/__init__.py,sha256=-5i_I8Ci8w0I__YQ3plnc3B9aZfjWM81tQT98m53av0,15150
+flipbook/__main__.py,sha256=IeejUnjI5JEQa3B_IqBh2lSNNgD5mOfDkpPe55CTksQ,64
+flipbook/data_page.py,sha256=-WhgtUdWnT7UIQTapzdG1M_NlKcMqfapY0OqZAS49uw,4834
+flipbook/main_list.py,sha256=BcHXBgjPK21OGtywkcYW5RZBAEVq7HqvEIwwXJ1NufE,1901
+flipbook/save.py,sha256=xPch6tylsPjBxz5PDCz6G4o7AL0V21PxHPZ2YBuHdk8,2859
+flipbook/utils.py,sha256=8xTUB1bGKTGxp4xyWzFvPOS2ntSO44m6Ug_ESCjWWK8,6548
+flipbook/icons/favicon.png,sha256=eMTTyV2OkiIBsokUj0wUT6982Y_bVsYW28I0GgiFVfA,3774
+flipbook/templates/data_page.html,sha256=cF8Xm0H5NRiZ0ovjyDLz-gM8md-hyi1m63K0CvBC7Lw,15914
+flipbook/templates/main_list.html,sha256=amqVaIOSGol3jLWxGITOZYp6WyKRtVpIEylojWE2Pyo,5775
+flipbook-0.10.2.dist-info/LICENSE,sha256=XqNpnoPe4XCanXeW_TQR2Blm3ADflhHf94uqvqQoito,1060
+flipbook-0.10.2.dist-info/METADATA,sha256=Ln_2R0xn4I9h4MzSNjNEzan_KGGahh1lmLz0jIM4Kkw,6291
+flipbook-0.10.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+flipbook-0.10.2.dist-info/entry_points.txt,sha256=JGXI98M9qR8ibzgZadh9zmksiQW4a7EyooD-rH3Y3gU,44
+flipbook-0.10.2.dist-info/top_level.txt,sha256=l8aPbvnoC84rZhKc9tyyws3Oua3kFVY3FQuTL6Xwu10,38
+flipbook-0.10.2.dist-info/RECORD,,
