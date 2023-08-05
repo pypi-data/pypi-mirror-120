@@ -1,0 +1,9 @@
+pandas
+
+[dev]
+flake8
+black
+isort
+bump2version
+pytest
+mypy
