@@ -1,0 +1,10 @@
+zivverscim/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zivverscim/exceptions.py,sha256=xkLjdrU6p8GXy9XCKlwgXc5YZxhiVgfO7LO379_hPM8,3663
+zivverscim/external_connection.py,sha256=ymwjAI_vgwYD4pMXD4mdR8bnyXSyv_Y8Evuy67l6yYQ,4363
+zivverscim/scim_connection_crud.py,sha256=UNnTsq-pjOAFgsF7sROYP_yDog5y0tmNaUZ0xbXD_uE,8662
+zivverscim/wrapper.py,sha256=07j1URqDUkPPskirXlaQVGdFEvBtD-RxTQCygT9V7EY,4090
+zivverscim-1.0.9.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+zivverscim-1.0.9.dist-info/METADATA,sha256=jz7_y-4WlnDFu6MWsnerN5Ut7Ecdm9Lxp8yeudiHuFE,7715
+zivverscim-1.0.9.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+zivverscim-1.0.9.dist-info/top_level.txt,sha256=4ngQvPaZZPl4OHhTfMmsRUtp_uDeCogpMNd7cMn1Am4,11
+zivverscim-1.0.9.dist-info/RECORD,,
