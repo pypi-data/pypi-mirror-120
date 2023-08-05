@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: saleor-social-auth
+Version: 0.1.0
+Summary: Social auth plugin (wx, alipay & etc.) for Saleor
+Home-page: https://github.com/ace-han/social_auth
+Author: Ace Han
+Author-email: ace.jl.han@gmail.com
+License: MIT
+Description: # social_auth
+        Social auth plugin (wx, alipay &amp; etc.) for Saleor
+        > More details will come as the development goes on...
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: openidconnect
+Provides-Extra: saml
+Provides-Extra: azuread
+Provides-Extra: all
