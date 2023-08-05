@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/fibonacci/__init__.py
+src/fibonacci/myfibo.py
+src/myfibonacci.egg-info/PKG-INFO
+src/myfibonacci.egg-info/SOURCES.txt
+src/myfibonacci.egg-info/dependency_links.txt
+src/myfibonacci.egg-info/top_level.txt

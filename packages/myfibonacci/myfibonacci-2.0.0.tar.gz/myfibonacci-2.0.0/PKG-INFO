@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: myfibonacci
+Version: 2.0.0
+Summary: Just testing my fibonacci numbers
+Home-page: UNKNOWN
+Author: Richard Sharp
+Author-email: richardsharp.34@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6, <4
+License-File: LICENSE
+
+This print lots of fibonacci numbers version 0.0.2
+
