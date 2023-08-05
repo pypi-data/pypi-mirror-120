@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pysingleton/__about__.py
+pysingleton/__init__.py
+pysingleton/singleton.py
+pysingleton/version.py
+python_singleton_metaclasses.egg-info/PKG-INFO
+python_singleton_metaclasses.egg-info/SOURCES.txt
+python_singleton_metaclasses.egg-info/dependency_links.txt
+python_singleton_metaclasses.egg-info/top_level.txt
