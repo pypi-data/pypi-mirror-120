@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: mygpio
+Version: 0.0.1
+Summary: GPIO Library which extends GPIO functions
+Home-page: UNKNOWN
+Author: Governor Baloyi
+Author-email: governor.baloyi@gmail.com
+License: UNKNOWN
+Description: # Hello World
+        
+        This is an example project demonstrating how to publish a python module to PyPI
+        
+        ## Installation
+        
+        Run the following to install:
+        
+        ```python
+        pip install mygpio
+        ```
+        
+        ## Usage
+        
+        ```python
+        from mygpio import [functions]
+        
+        # Generate "Hello, World!"
+        say_hello()
+        
+        # Generate "Hello, Everybody!"
+        say_hello("Everybody")
+        ```
+        ## Developing Hello World
+        
+        To install helloworld, along with the tools you need to develop and run tests, run the following in your virtualenv:
+        
+        ```bash
+        $ pip install -e .[dev]
+        ```
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Provides-Extra: dev
