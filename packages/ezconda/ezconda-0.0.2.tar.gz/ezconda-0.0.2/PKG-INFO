@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: ezconda
+Version: 0.0.2
+Summary: Manage conda environments, write environment files and create conda lock files
+Author: Sarthak Jariwala
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyYAML (>=5.4.1,<6.0.0)
+Requires-Dist: typer[all] (>=0.4.0,<0.5.0)
+Description-Content-Type: text/markdown
+
+# EZconda
+
+> Manage conda environments, write environment files and create conda lock files
+
+## Create new conda environment
+```bash
+ezconda create -n new-env
+```
+
+## Install packages into environment
+
+```bash
+ezconda install -n new-env python=3.9 numpy scipy matplotlib
+```
