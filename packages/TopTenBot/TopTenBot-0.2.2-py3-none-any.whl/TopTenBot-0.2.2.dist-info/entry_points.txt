@@ -1,0 +1,4 @@
+[console_scripts]
+top10bot = top_ten_bot.main.create_top_ten:main
+top10test = top_ten_bot.test.all_tests:main
+
