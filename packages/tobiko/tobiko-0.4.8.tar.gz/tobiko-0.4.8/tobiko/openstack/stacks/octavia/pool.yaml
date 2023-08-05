@@ -1,0 +1,70 @@
+heat_template_version: 2015-10-15
+
+description: A pool for a Load Balancer
+
+parameters:
+    lb_algorithm:
+        type: string
+        default: ROUND_ROBIN
+        description: Load balancing algorithm
+
+    pool_protocol:
+        type: string
+        default: HTTP
+        description: Protocol used by the pool members
+
+    listener_id:
+        type: string
+        description: ID of the listener
+
+    # healthmonitor params
+    hm_delay:
+        type: number
+        default: 10
+        description: >
+            The minimum time in seconds between regular connections of the
+            member.
+    hm_max_retries:
+        type: number
+        default: 4
+        description: >
+            Number of permissible connection failures before changing the member
+            status to INACTIVE.
+
+    hm_timeout:
+        type: number
+        default: 3
+        description: >
+            Maximum number of seconds for a monitor to wait for a connection
+            to be established before it times out.
+
+    hm_type:
+        type: string
+        default: HTTP
+        description: Type of health-monitor
+
+resources:
+    pool:
+        type: OS::Octavia::Pool
+        properties:
+            lb_algorithm: { get_param: lb_algorithm }
+            protocol: { get_param: pool_protocol }
+            listener: { get_param: listener_id }
+
+    monitor:
+        type: OS::Octavia::HealthMonitor
+        properties:
+            delay: { get_param: hm_delay }
+            type: { get_param: hm_type }
+            timeout: { get_param: hm_timeout }
+            max_retries: { get_param: hm_max_retries }
+            pool: { get_resource: pool }
+
+outputs:
+    pool_id:
+        description: Pool ID
+        value: { get_resource: pool }
+
+    monitor_id:
+        description: Healthmonitor ID
+        value: { get_resource: monitor }
