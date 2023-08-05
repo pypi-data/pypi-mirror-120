@@ -1,0 +1,9 @@
+coverage
+h5py
+joblib
+matplotlib
+numpy>=1.21.2
+scikit-image
+scikit-learn
+scipy
+tqdm
