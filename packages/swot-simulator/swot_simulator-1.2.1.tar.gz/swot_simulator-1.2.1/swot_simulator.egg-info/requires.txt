@@ -1,0 +1,8 @@
+python-dateutil
+distributed
+netCDF4
+numba
+numpy
+pyinterp
+scipy
+xarray
