@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: rich-diff
+Version: 1.0.4
+Summary: CLI based diff Viewer
+Home-page: https://github.com/sureshdsk/rich-diff
+Author: sureshdsk
+Author-email: dsk@sureshdsk.dev
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+
+# Rich Diff
+CLI based diff viewer
+
+[https://github.com/sureshdsk/rich-diff](https://github.com/sureshdsk/rich-diff)
+
+## Install
+```sh
+pip install rich-diff
+```
+
+## Usage
+
+```sh 
+$ rich-diff
+
+$ rich-diff unified-diff /path/to/file1 /path/to/file2
+
+$ rich-diff unified-diff data/user1.json data/user2.json
+$ rich-diff context-diff data/user1.json data/user2.json
+$ rich-diff ndiffdata/user1.json data/user2.json
+```
+
+## Screenshots
+![rich-diff commands](https://raw.githubusercontent.com/sureshdsk/rich-diff/main/screenshots/rich-diff1.png?raw=true)
+![rich-diff commands](https://raw.githubusercontent.com/sureshdsk/rich-diff/main/screenshots/rich-diff2.png?raw=true)
+![rich-diff commands](https://raw.githubusercontent.com/sureshdsk/rich-diff/main/screenshots/rich-diff3.png?raw=true)
+
+
+
