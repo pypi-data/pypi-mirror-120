@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "AioFilters"
+version = "1.0.0"
+description = "You must install Aiogram to use this library! You can see how to use it in GitHub Repository https://github.com/Bananchik204/AioFilters"
+authors = ["Furret <durovam0@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
