@@ -1,0 +1,3 @@
+[console_scripts]
+python_ta = python_ta.__main__:main
+
