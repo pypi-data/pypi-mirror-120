@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/SNOOTY/__init__.py
+src/SNOOTY_TS.egg-info/PKG-INFO
+src/SNOOTY_TS.egg-info/SOURCES.txt
+src/SNOOTY_TS.egg-info/dependency_links.txt
+src/SNOOTY_TS.egg-info/requires.txt
+src/SNOOTY_TS.egg-info/top_level.txt
