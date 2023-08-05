@@ -1,0 +1,10 @@
+pydevlpr/__init__.py,sha256=zBrXw7fgXCGqiHLulyGFT8ucrH1OJNqEOE-OXUZbpmU,118
+pydevlpr/DevlprClient.py,sha256=bFvedUiraLNbHTopm_D7lWzL09U3u_MTNwUkxscDuDk,6517
+pydevlpr/DevlprServer.py,sha256=h1vkN0ULZQ505PpjqNN8EzxjKWB7OQAL8zuO1z0lT4k,457
+pydevlpr/main.py,sha256=THp5gzMdmFoBD5d-GaZtgG8ihLlvxO2ZmDMbdgHeGrA,910
+pydevlpr/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydevlpr/typing.py,sha256=kjOeal1obRuq_STpYP36oCR6ppE3YSdbpCAJnhj8zbs,370
+pydevlpr-0.2.1.dist-info/LICENSE,sha256=MqipwhMA8b3CdqPi78LZX4Lp08Yw6jSoq4AxOH6V3_M,1062
+pydevlpr-0.2.1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+pydevlpr-0.2.1.dist-info/METADATA,sha256=72Su85Zvduv92b2xGLlkVqR1udJMWjx4OPZc3DPuRrU,3114
+pydevlpr-0.2.1.dist-info/RECORD,,
