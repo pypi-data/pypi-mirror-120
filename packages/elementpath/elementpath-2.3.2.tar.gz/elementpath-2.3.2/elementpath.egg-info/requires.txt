@@ -1,0 +1,10 @@
+
+[dev]
+tox
+coverage
+lxml
+xmlschema>=1.2.3
+Sphinx
+memory-profiler
+flake8
+mypy==0.910
