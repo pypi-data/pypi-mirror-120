@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+tf_livepatch_lr/__init__.py
+tf_livepatch_lr/livepatch_lr.py
+tf_livepatch_lr.egg-info/PKG-INFO
+tf_livepatch_lr.egg-info/SOURCES.txt
+tf_livepatch_lr.egg-info/dependency_links.txt
+tf_livepatch_lr.egg-info/requires.txt
+tf_livepatch_lr.egg-info/top_level.txt
+tf_livepatch_lr/test/livepatch_lr.py
