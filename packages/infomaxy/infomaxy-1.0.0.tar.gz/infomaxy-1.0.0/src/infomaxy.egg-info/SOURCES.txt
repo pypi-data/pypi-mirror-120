@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/infomaxy/__init__.py
+src/infomaxy/config.py
+src/infomaxy/version.py
+src/infomaxy.egg-info/PKG-INFO
+src/infomaxy.egg-info/SOURCES.txt
+src/infomaxy.egg-info/dependency_links.txt
+src/infomaxy.egg-info/top_level.txt
+src/infomaxy/api/__init__.py
+src/infomaxy/api/imd.py
+src/infomaxy/api/imutil.py
