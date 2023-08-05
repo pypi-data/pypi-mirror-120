@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: khandytool
+Version: 0.1.1
+Summary: khandytool, handy core in testing
+Home-page: https://github.com/kevin72500/khandytool
+Author: Ou Peng
+Author-email: kevin72500@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: faker (==8.12.1)
+Requires-Dist: jmespath (==0.9.5)
+Requires-Dist: loguru (==0.4.1)
+Requires-Dist: pymysql (==1.0.2)
+
+# CoreUtil
+## Purpose 
+This core mainly to personal use, and it just wraped some other packages. the perpose that is make some functions are easy to use quickly.
+- getTimeStamp
+- getFormatedTime
+- getFakerData
+- multiDimArrayTransfer2SingleDim
+- getSha1Password
+- getToken
+- Download example
+- dataFram example
+- crotine example
+
+
+
