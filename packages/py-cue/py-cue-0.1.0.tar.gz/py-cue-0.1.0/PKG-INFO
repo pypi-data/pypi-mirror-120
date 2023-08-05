@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: py-cue
+Version: 0.1.0
+Summary: Cue: Script Orchestration for Data Analysis
+Home-page: UNKNOWN
+Author: ktvng
+License: MIT
+Project-URL: Source Code, https://github.com/ktvng/cue
+Description: Cue lets your package your data analysis into simple actions which can be connected 
+        into a dynamic data analysis pipeline with coverage over even complex data sets.
+        
+Platform: UNKNOWN
+Requires-Python: >=3.8
