@@ -1,0 +1,11 @@
+xpython_launcher.py,sha256=mwzz7D_K0ZqjLoysdjDFbbon5xSwiMVtr8GEBwoNSJ8,400
+xpython/xpython_extension.cpython-38-x86_64-linux-gnu.so,sha256=i-3jMYgRB74lDcN8fGUPbn13sapZ89tIU2HfEPIBNcc,5390680
+xpython/__init__.py,sha256=CbW79f27_ZXHOjNBJEglG4Dn5GBijJvXJwmf5a2SbjI,39
+xeus_python-0.13.0.dist-info/RECORD,,
+xeus_python-0.13.0.dist-info/METADATA,sha256=b8GMZDnvSl7wlEtDK5ZC6fqcBNRgHAqP2uIccZQTESQ,332
+xeus_python-0.13.0.dist-info/LICENSE,sha256=WvdF-7mGwDyzMvBMaZQHGbNiSAlWm1n4fhmQyyvB_MM,1552
+xeus_python-0.13.0.dist-info/WHEEL,sha256=MnJ4gdit_2nVGKlGImT2QE9qvVAGgrOvPRC1n6x-9Tg,142
+xeus_python-0.13.0.dist-info/top_level.txt,sha256=XtzggjVzmp4R-5T4I4R_gyLydIcRMhatWCkrCrsPDE0,25
+xeus_python-0.13.0.data/data/share/jupyter/kernels/xpython/kernel.json,sha256=Oo2EoUELSzVC19FD8unCEHkfp2Awg557X2F0yoHU1ZU,217
+xeus_python-0.13.0.data/data/share/jupyter/kernels/xpython/logo-32x32.png,sha256=jbE1V2z-E-ol3NzZY_jYKnZyhSrY-Qb8WZgO1tj9Ipk,1379
+xeus_python-0.13.0.data/data/share/jupyter/kernels/xpython/logo-64x64.png,sha256=L2Wd22HYX7X7dyzLvff7nOZ5gyC2h4OvnViWCN-UIC0,3131
