@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pyotter
+Version: 0.1.0
+Summary: Otter post-processing tool
+Home-page: https://github.com/adamtuft/python-otter
+Author: Adam Tuft
+Author-email: adam.s.tuft@gmail.com
+License: https://github.com/adamtuft/python-otter/blob/main/LICENSE
+Platform: linux
+License-File: LICENSE
+Requires-Dist: python-igraph (==0.9.1)
+
+UNKNOWN
+
