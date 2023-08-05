@@ -1,0 +1,7 @@
+README.md
+setup.py
+wnhelloworldpackage/__init__.py
+wnhelloworldpackage.egg-info/PKG-INFO
+wnhelloworldpackage.egg-info/SOURCES.txt
+wnhelloworldpackage.egg-info/dependency_links.txt
+wnhelloworldpackage.egg-info/top_level.txt
