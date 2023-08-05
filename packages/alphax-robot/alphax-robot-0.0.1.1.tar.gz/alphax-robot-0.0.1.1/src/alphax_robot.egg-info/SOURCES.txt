@@ -1,0 +1,10 @@
+LICENCE.txt
+README.md
+pyproject.toml
+setup.py
+src/alphax/__init__.py
+src/alphax/robot.py
+src/alphax_robot.egg-info/PKG-INFO
+src/alphax_robot.egg-info/SOURCES.txt
+src/alphax_robot.egg-info/dependency_links.txt
+src/alphax_robot.egg-info/top_level.txt
