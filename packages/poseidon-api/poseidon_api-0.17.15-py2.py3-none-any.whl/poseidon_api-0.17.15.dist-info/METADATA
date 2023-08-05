@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: poseidon-api
+Version: 0.17.15
+Summary: RESTful API for querying Poseidon
+Home-page: https://github.com/IQTLabs/poseidon/tree/main/pkg/api
+Author: cglewis
+Author-email: clewis@iqt.org
+License: Apache-2
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Requires-Python: >=3.6
+Requires-Dist: bjoern (==3.1.0)
+Requires-Dist: falcon-cors (==1.1.7)
+Requires-Dist: falcon (==3.0.1)
+Requires-Dist: httpx (==0.19.0)
+Requires-Dist: natural (==0.2.0)
+
+UNKNOWN
+
+
