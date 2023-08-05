@@ -1,0 +1,16 @@
+celery<6,>=4
+pyramid>=1.9
+venusian>=1.0
+zope.interface>=3.8.0
+
+[linting]
+black==21.9b0
+flake8~=3.9.2
+isort~=5.9
+
+[testing]
+pyramid-tm~=2.4
+pytest~=6.1
+sqlalchemy~=1.4.15
+transaction~=3.0.1
+zope.sqlalchemy~=1.4
