@@ -1,0 +1,14 @@
+agc_optims/__init__.py,sha256=xy5icTVL_-T_uZleOq5SPoLjDLVLWIK0U8whN-ij6kI,21
+agc_optims/utils.py,sha256=Oz410S6TJdcHX5DQKbIwSC0DDqsq11O0_8hQOyIK31s,1027
+agc_optims/clipper/__init__.py,sha256=g0gNUjSzhnxKaJ0pka8eKiJHjLsnhZzdMb6f3_T5enE,24
+agc_optims/clipper/agc.py,sha256=kY-iyrlaS_ZtTkBV2mF4De9RntAAxRQSncly-8UkiTs,1916
+agc_optims/optim/__init__.py,sha256=woCa0lNj1HqWBFdsbULxFMOCGHuPVZMg4UzKxzCRIeo,132
+agc_optims/optim/adam_agc.py,sha256=uQaaw1NIc84qEu0G3KbZOvJxvT-kKmUglvMwTtEYhE8,8517
+agc_optims/optim/adamw_agc.py,sha256=rUQ6v-feNWhpEjn7i71Fx4ETMaJLZwXrLXQPylMVvuQ,8431
+agc_optims/optim/rmsprop_agc.py,sha256=z2I2r8faFOHRokg1huu-gUgfSDIWdeQD8KnD2eBcayw,8448
+agc_optims/optim/sgd_agc.py,sha256=tHWoij5jjfDDP2IYQf-po9h2iH1-SFWscjgOrAXxS4E,7938
+agc_optims-0.0.2.dist-info/LICENSE,sha256=wbc9HJK3Z3N8ol5A_nd4Oci_HHPEcyUdeDa_x1lhXro,1084
+agc_optims-0.0.2.dist-info/METADATA,sha256=I8wyIbkC1JcGWi5BcLVYlmeSiarViY6hfJwkhrdjKvM,5826
+agc_optims-0.0.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+agc_optims-0.0.2.dist-info/top_level.txt,sha256=DfnoJnK0AvjpVBcMqL3zuTkKbdY2WNFrbFcI7mtXiOQ,11
+agc_optims-0.0.2.dist-info/RECORD,,
