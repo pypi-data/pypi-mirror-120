@@ -1,0 +1,7 @@
+requests
+invoke
+dvc[s3]
+parquetranger
+colassigner
+pyyaml
+structlog
