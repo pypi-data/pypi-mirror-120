@@ -1,0 +1,14 @@
+Release/_impl.cp37-win_amd64.exp,sha256=_5K0n-w_Rld9WIoFcQXtXFndT5xStaYSmN5v4IHRvNw,737
+Release/_impl.cp37-win_amd64.lib,sha256=vOQ18oBau3Xbopfa9Y2TP0C7hEXQcjrqWrJOpjFELF4,1964
+stt/__init__.py,sha256=SL36p3tNT0hdu3bpXY4gqjiK2YVSA0ToJeXcbtSW4h0,13488
+stt/_impl.cp37-win_amd64.pyd,sha256=iOTKhm1Ok7k7rfDwjk_3JEGY4TO9YcSNTuuTp0k3D7Y,75264
+stt/client.py,sha256=BXCVLU4ILhrQYtaGEpmpgYtfIcKIyO955UmIoCwozWE,7020
+stt/impl.py,sha256=7nx1D04p8biiiZHbE4fSa-2iv-wJ8KSRSn2Kj-ILRKc,7409
+stt/lib/libkenlm.so,sha256=PNBg57Jfe_IXJBI0DD5IeX27_rYh40VIi7-dbliFdcs,340992
+stt/lib/libstt.so,sha256=WLNjX4Mr-oqLGsWYOHoYy-Gx0meXVpj3GWakKg5ts10,693760
+stt/lib/libtensorflowlite.so,sha256=s5rm9kWILjWPp6iFXJYv0kJfEDh4TNIHGVSJ3g5VFT8,14723584
+stt-0.10.0a25.dist-info/METADATA,sha256=9bEszvQSgCfuVs1kx0RyKiI5-uDPQhGr0Exup1Le_6k,1341
+stt-0.10.0a25.dist-info/WHEEL,sha256=OmDKD3JmZjhMu_YdpkiJDfFL1rf8n9nexhWCGhSBGVE,101
+stt-0.10.0a25.dist-info/entry_points.txt,sha256=-RJKAhqFH3le0allDtX9BNVyOHyAXMbyweoEXUinoRI,41
+stt-0.10.0a25.dist-info/top_level.txt,sha256=U36suN9i5BZ2UbKj5dzgbpHmkIEAvyge7wRwJVB24jk,4
+stt-0.10.0a25.dist-info/RECORD,,
