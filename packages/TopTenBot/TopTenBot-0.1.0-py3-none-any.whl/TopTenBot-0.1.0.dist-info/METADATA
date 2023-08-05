@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: TopTenBot
+Version: 0.1.0
+Summary: # TopTenBot  Utility for creating terrible, low quality Top 10 Videos. Or Top 20. Or Top 100. Or Top 10,000... 
+Home-page: https://github.com/Drakovek/dvk_manga
+Author: Drakovek
+Author-email: DrakovekMail@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: dvk-archive
+Requires-Dist: moviepy
+Requires-Dist: pillow
+Requires-Dist: youtube-dl
+Requires-Dist: youtube-search-python
+
+# TopTenBot
+
+Utility for creating terrible, low quality Top 10 Videos.
+Or Top 20.
+Or Top 100.
+Or Top 10,000...
+
+
