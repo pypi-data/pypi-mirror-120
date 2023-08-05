@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: shiprocket
+Version: 1.0.1
+Summary: Python APIs for shiprocket.in
+Home-page: https://github.com/pupattan/shiprocket
+Author: Pulak Pattanayak
+Author-email: pkbsdmp@gmail.com
+License: MIT
+Keywords: python shiprocket ecommerce shipping
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# shiprocket
+Python APIs for shiprocket.in 
+
+
