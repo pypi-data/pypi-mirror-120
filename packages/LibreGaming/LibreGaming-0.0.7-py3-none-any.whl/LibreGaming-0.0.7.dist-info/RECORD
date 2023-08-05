@@ -1,0 +1,11 @@
+LibreGaming/LibreGaming.py,sha256=3J_6rAyyMERqeBgVmTVrPC_FLkzugTGbX1m-b4bQIoQ,19859
+LibreGaming/__init__.py,sha256=qDOpOmMZAAvrgZPSY3Ya8WsAeKVBoDelRxqAm3EJAz0,63
+LibreGaming/__main__.py,sha256=t0s29_P54RgMFlSi0c5wULwbLvdrhLZGT-7FtP7S4LM,36
+LibreGaming/getPackageManager.sh,sha256=MV__HJCVcNf82d3DfNxO92g4W2hoiKZU5waV1SeWHBI,386
+LibreGaming/getRoot.sh,sha256=rjCsIWyA1VKhVxd3u36XSCkVnr2qImpC6QML2lqNufY,135
+LibreGaming-0.0.7.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+LibreGaming-0.0.7.dist-info/METADATA,sha256=t8zC6U1tNO8WiSvAswcfG3QJhhh2AToblJmBwJ-tPAE,7307
+LibreGaming-0.0.7.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+LibreGaming-0.0.7.dist-info/entry_points.txt,sha256=-09SjR99ps_ZpwSbptT7jNoNMY_f6MIuWa3HJiMZW6E,81
+LibreGaming-0.0.7.dist-info/top_level.txt,sha256=rXTCeFZzCiSA1kUvK2uhfoG-XqEzyrU2qhrsa35X0dM,12
+LibreGaming-0.0.7.dist-info/RECORD,,
