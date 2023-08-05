@@ -1,0 +1,12 @@
+commands/__init__.py,sha256=2NbDOHBaOA-DCPuz9Xn713sphtvyKu8hASu_zi59KBI,85
+commands/cloud.py,sha256=3RFsftARp1So9Bw5mZZumM9d-8btMOb6okfrd2ztPg0,16496
+commands/consolidate_and_vacuum.py,sha256=ReXfrTYpwk4BH14ICIp1iUuxZGqKvsQIRz3ZfJRkF1s,6141
+commands/convert_from.py,sha256=mmjXEznDIraGjgxG--f8cRDPZPdzlknZk70mHaWbo6I,13144
+commands/dump.py,sha256=G7kEzRjatXt0zfxVByD6J7NV653vCJiy68WBTKmPSAs,3746
+commands/root.py,sha256=L-Xd42I1CVSiYvsi_yHc30d8jlmGMMf1ocib_3IwtqA,330
+tiledb_cli-0.0.1.dist-info/LICENSE,sha256=8bEWVR3RZfbR1JW8FC543SlpAFbch-P13XKBLzVkAOs,1073
+tiledb_cli-0.0.1.dist-info/METADATA,sha256=1fjNsrg4N_vZql1pvK88avSjrA27Inghs25DzNwRkjc,4694
+tiledb_cli-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tiledb_cli-0.0.1.dist-info/entry_points.txt,sha256=hV-A38kDFUYGuFjIIFw0TH0fMbGd6bs-IbUxQUEP0ak,65
+tiledb_cli-0.0.1.dist-info/top_level.txt,sha256=6dNUbRvZAy7fLWNbD4YeUosLYwGk-SVew-Swd5CfFkg,9
+tiledb_cli-0.0.1.dist-info/RECORD,,
