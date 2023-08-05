@@ -1,0 +1,16 @@
+MANIFEST.in
+setup.py
+beniutils/__init__.py
+beniutils/bytes_utils.py
+beniutils/cmd.py
+beniutils/print_color.py
+beniutils/selenium.py
+beniutils/task.py
+beniutils.egg-info/PKG-INFO
+beniutils.egg-info/SOURCES.txt
+beniutils.egg-info/dependency_links.txt
+beniutils.egg-info/entry_points.txt
+beniutils.egg-info/requires.txt
+beniutils.egg-info/top_level.txt
+beniutils/data/task_build.zip
+beniutils/data/task_create.zip
