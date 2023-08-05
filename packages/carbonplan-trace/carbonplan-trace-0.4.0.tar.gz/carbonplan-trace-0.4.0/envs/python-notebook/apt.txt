@@ -1,0 +1,6 @@
+graphviz
+vim
+git
+nano
+bash-completion
+tzdata

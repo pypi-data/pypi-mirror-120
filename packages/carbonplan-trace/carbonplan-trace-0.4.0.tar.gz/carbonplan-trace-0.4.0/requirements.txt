@@ -1,0 +1,17 @@
+awswrangler
+carbonplan
+dask[complete]
+fsspec
+google-cloud-storage
+intake
+intake-geopandas
+intake-xarray
+h5py
+pandas
+prefect
+pytest
+rasterio
+scikit-learn
+utm
+xarray
+zarr
