@@ -1,0 +1,9 @@
+mypy_protobuf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_protobuf/extensions_pb2.py,sha256=ePOhnDsJl-OToubUWZVCqM8yeFsEm2iQApFpNexqfPo,2959
+mypy_protobuf/main.py,sha256=J3GuNySDiFGnyCon3U_YwapjixakReBm9j7XmonFxBo,38965
+mypy_protobuf-2.10.dist-info/LICENSE,sha256=CIjHyVlsmnBaaMbI1wMMLjdiMgpL49hVLVX9DS1RwWU,11348
+mypy_protobuf-2.10.dist-info/METADATA,sha256=owi2o1LfEw2HOgjVqFa6Kv-g0sxFzl_zq-4RtUBpoDw,492
+mypy_protobuf-2.10.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+mypy_protobuf-2.10.dist-info/entry_points.txt,sha256=rWUQwZWP7ZZnDz6EfncFVliV9eWukgT0hPpv-YY9Edw,108
+mypy_protobuf-2.10.dist-info/top_level.txt,sha256=tO9v4o6_pbRRPH26fTqRsfEMQEmg8RqweBWmjIw4ihU,14
+mypy_protobuf-2.10.dist-info/RECORD,,
