@@ -1,0 +1,9 @@
+findpydeps/__init__.py,sha256=J9mVnLBZ9hqA9wws8RQgkkw5u6_HMFFGCdrJkpR-UW8,55
+findpydeps/__main__.py,sha256=F_RWSJLa3dmtBCMzEbxSshQ1nMmowboCBVKFto9mDIc,104
+findpydeps/findpydeps.py,sha256=q84jkRb2rgCCm_yTd0X9yEUtpTPLLoNwe_4zPuSL9eA,27756
+findpydeps-0.2.2.dist-info/LICENSE,sha256=kKK_1wv3iAwsGhwoBGKK6BnPF_czIbFTwyxmAtqCaN0,1072
+findpydeps-0.2.2.dist-info/METADATA,sha256=ookkkAWPQNheOrzvzpt9XGXHzvkW5ThKuTBp4u3fzDs,2922
+findpydeps-0.2.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+findpydeps-0.2.2.dist-info/entry_points.txt,sha256=H2Ea8iRraqU8P-Y8ePyHiGB4x5s8xPOZlarZc0A9R0o,57
+findpydeps-0.2.2.dist-info/top_level.txt,sha256=qPexbpSD_JK-8aLZlW9iKowKvHvLxhxW69RWamohVGU,11
+findpydeps-0.2.2.dist-info/RECORD,,
