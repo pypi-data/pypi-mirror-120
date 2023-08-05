@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: scalum
+Version: 1.1.3
+Summary: 
+Author: Oguz Vuruskaner
+Author-email: ovuruska@outlook.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: numpy
