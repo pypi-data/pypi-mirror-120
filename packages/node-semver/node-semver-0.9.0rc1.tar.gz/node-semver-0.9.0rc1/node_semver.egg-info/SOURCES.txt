@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+examples/readme.py
+node_semver.egg-info/PKG-INFO
+node_semver.egg-info/SOURCES.txt
+node_semver.egg-info/dependency_links.txt
+node_semver.egg-info/entry_points.txt
+node_semver.egg-info/not-zip-safe
+node_semver.egg-info/requires.txt
+node_semver.egg-info/top_level.txt
+nodesemver/__init__.py
