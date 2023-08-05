@@ -1,0 +1,3 @@
+[console_scripts]
+hcpi = HCPInterface.cli.base:root
+
