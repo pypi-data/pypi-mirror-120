@@ -1,0 +1,12 @@
+feedendum/__init__.py,sha256=8FJw8fg5UWxoctjMX-AbCEaxMMsxFXg1FiFFNIik2bU,594
+feedendum/__version__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+feedendum/atom.py,sha256=-KDxp6Digh9qxErVNXGkTyEVJb8nbbSLKpNDD8TY6ss,4437
+feedendum/exceptions.py,sha256=KDps5hu_S1tt8m9mOoFkO3XHHkiCAO15NajOlWc9EiU,311
+feedendum/feed.py,sha256=280bvaL65DIqDh5z7o7KyLoLN3goz770oOF2vidXvKw,2340
+feedendum/rss.py,sha256=WkIENK8v3oQjLykTJmz34Php716JNcy7kAfZnSmLyKk,3857
+feedendum/utils.py,sha256=tY6ubNgz3gMSFxXKdNAgOwDIJsEbr15YGC3J4XrgoAk,3535
+feedendum-0.1.0.dist-info/LICENSE,sha256=bx5iLIKjgAdYQ7sISn7DsfHRKkoCUm1154sJJKhgqnU,35184
+feedendum-0.1.0.dist-info/METADATA,sha256=jelTStTUC8CImxLaKnpGoo0pF185UnwLgWgHUSheQ4w,1852
+feedendum-0.1.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+feedendum-0.1.0.dist-info/top_level.txt,sha256=C-kr52jzGfwy1QvhtEiPIa8ANCPhJZQMsNMvfsOOhAE,10
+feedendum-0.1.0.dist-info/RECORD,,
