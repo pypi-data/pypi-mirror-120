@@ -1,0 +1,11 @@
+click/plus/__init__.py,sha256=dUw9WtLiLyX5HSLL_Rm-Ld-vrSJyXCj9nQKF8HE0HtQ,1235
+click/plus/api.py,sha256=ol3o4akEZN7h2Res5y8qpr7IrD5pHsZuWg-lwnKT1-E,129
+click/plus/base.py,sha256=3dcoCifa93nGLjT8tx15u33toQ7HShg85eVivcC-67M,1940
+click/plus/goodies/__init__.py,sha256=BijO8TzgXzcDNXibqe9sgyp3VneaCAzwUNt2_GGVGeI,83
+click/plus/goodies/logger.py,sha256=0QzQs8c31FnLPJc9MC7gTrRmCoiT2texHvTbIpWmEG0,2374
+click/plus/goodies/report.py,sha256=iyzAB2oscdn_vfVTO8yyexTve_c-tQt6v3TMbWgI1B4,2772
+click_plus-0.0.3b43.dist-info/LICENSE,sha256=QUYIt1AieJUv6TEOa9fN_-h2E6uF4WCqCgvLvuvYdJs,1315
+click_plus-0.0.3b43.dist-info/METADATA,sha256=rQm67LI_rLqTfYOyqxsOzhLShu4jgBoesH_ZCBL_SRo,2183
+click_plus-0.0.3b43.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+click_plus-0.0.3b43.dist-info/top_level.txt,sha256=J1ZQogalYS4pphY_lPECoNMfw0HzTSrZglC4Yfwo4xA,6
+click_plus-0.0.3b43.dist-info/RECORD,,
