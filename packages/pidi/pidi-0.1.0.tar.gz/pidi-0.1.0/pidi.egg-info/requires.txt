@@ -1,0 +1,6 @@
+musicbrainzngs>=0.7.1
+python-mpd2>=3.0.4
+untangle>=1.1.1
+
+[mpv]
+python-mpv>=0.5.2
