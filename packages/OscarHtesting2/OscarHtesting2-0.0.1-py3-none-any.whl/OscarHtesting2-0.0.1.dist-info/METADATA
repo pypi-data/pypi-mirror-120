@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: OscarHtesting2
+Version: 0.0.1
+Summary: An improved time module
+Home-page: https://github.com/Oscar-Hogben/Timer-Module =
+
+Bug Tracker = https://github.com/Oscar-Hogben/Timer-Module/issues
+Author: Oscar Hogben
+Author-email: oscarhogben@gmail.com
+License: UNKNOWN
+Description: This is a test
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: markdown
