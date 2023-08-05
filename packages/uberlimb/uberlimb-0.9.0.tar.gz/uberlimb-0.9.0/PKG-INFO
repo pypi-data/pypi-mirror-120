@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: uberlimb
+Version: 0.9.0
+Summary: Generative art with CPPN networks.
+Home-page: https://cai.jetbrains.com
+License: Apache-2.0
+Author: Vladimir Sotnikov
+Author-email: vladimir.sotnikov@jetbrains.com
+Requires-Python: >=3.8,<3.9
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Provides-Extra: api
+Provides-Extra: runtime
+Provides-Extra: streamlit
+Requires-Dist: Pillow (>=8.3.1,<8.4.0); extra == "runtime"
+Requires-Dist: Wand (>=0.6.6,<0.7.0); extra == "runtime"
+Requires-Dist: fastapi (>=0.68.1,<0.69.0); extra == "api"
+Requires-Dist: ffmpeg-python (>=0.2.0,<0.3.0); extra == "runtime"
+Requires-Dist: numpy (>=1.19,<1.20); extra == "runtime"
+Requires-Dist: pydantic (>=1.8.2,<1.9.0)
+Requires-Dist: ray[serve] (>=1.6.0,<1.7.0); extra == "api"
+Requires-Dist: scikit-image (>=0.18.1,<0.19.0); extra == "runtime"
+Requires-Dist: streamlit (>=0.88.0,<0.89.0); extra == "streamlit"
+Requires-Dist: tensorflow (>=2.6,<2.7); extra == "runtime"
+Requires-Dist: tqdm (>=4.61.2,<5.0.0)
+Requires-Dist: uvicorn[standard] (>=0.15.0,<0.16.0); extra == "api"
+Description-Content-Type: text/markdown
+
+# ÜberLimb
+
+Generative art with CPPN networks.
+
+# Get started
+Install package with `pip install uberlimb[runtime]`
+
+```python
+from uberlimb.renderer import Renderer
+from uberlimb.parameters import RendererParams
+
+renderer = Renderer(RendererParams())
+renderer.render_frame().as_pillow().show()
+```
+
+Expected output:
+
+![](https://cai-misc.s3.eu-central-1.amazonaws.com/uberlimb/uberlimb_splash.png)
+
+# TODO
+- [ ] video pipeline
+- [ ] color schemes, both predefined and custom (will require varying
+  the number of output channels)
