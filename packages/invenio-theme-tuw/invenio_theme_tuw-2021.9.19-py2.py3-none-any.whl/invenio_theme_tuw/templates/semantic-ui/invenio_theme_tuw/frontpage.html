@@ -1,0 +1,176 @@
+{# -*- coding: utf-8 -*-
+
+Copyright (C) 2019 - 2021 CERN.
+Copyright (C) 2019 - 2021 Northwestern University.
+Copyright (C) 2020 - 2021 TU Wien.
+
+Invenio is free software; you can redistribute it and/or modify it
+under the terms of the MIT License; see LICENSE file for more details.
+#}
+{%- extends config.BASE_TEMPLATE %}
+
+{%- block page_header %}
+{% include config.THEME_HEADER_TEMPLATE %}
+{%- endblock %}
+
+
+{%- block page_hero %}
+<section class="frontpage" id="hero" style="flex-shrink: 0;">
+  <form action="{{ config.THEME_SEARCH_ENDPOINT }}">
+    <div class="ui action input" id="searchbar">
+      <label class="hidden" for="q">Search Query</label>
+      <input class="huge" id="q" name="q" placeholder="Type and press enter to search..." type="text">
+      <button class="ui icon button huge" type="submit" aria-label="submit query">
+        <i class="search icon"></i>
+      </button>
+    </div>
+  </form>
+</section>
+{%- endblock page_hero %}
+
+{%- block page_body %}
+<section id="welcome" class="ui container">
+
+  <h1>Welcome to TU Research Data</h1>
+  <p>
+    TU Research Data is an institutional repository of TU Wien to enable storing, sharing and publishing of digital objects, in
+    particular research data. It facilitates the funders' requirements for open access to research data and the FAIR
+    principles by making research
+    output findable, accessible, interoperable and re-usable. This service is developed by the <strong>TU
+    Wien
+    Center for Research Data Management</strong> and hosted by <strong>TU.it</strong>.
+  </p>
+  <p>
+    Please note that this service is still under development and has limited functionality. We will add more
+    functionality as development progresses.
+  </p>
+
+</section>
+
+<section id="features" class="ui container">
+  <h2 class="hidden">Features of TU Research Data</h2>
+  <div class="features-wrapper">
+    <a href="{{ url_for('invenio_app_rdm_records.deposit_create') }}">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="static/images/features/upload-file.png" alt="icon displaying a cloud and a arrow pointing upwards." />
+          </div>
+          <div class="flip-card-back">
+            Publish research outputs openly. A landing page provides information on your digital objects,
+            download links, license and persistent identifier.
+          </div>
+        </div>
+        <h3>Publish</h3>
+      </div>
+    </a>
+
+    <a href="{{ url_for('invenio_search_ui.search') }}">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="static/images/features/magnifying-glass.png" alt="icon displaying a magnifying glass" />
+          </div>
+          <div class="flip-card-back">
+            Search datasets published by other users.
+          </div>
+        </div>
+        <h3>Search</h3>
+      </div>
+    </a>
+
+    <a href="mailto:tudata@tuwien.ac.at?subject=About TU Research Data...">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="static/images/features/rating.png" alt="icon displaying a tick and three stars which should represent a user rating." />
+          </div>
+          <div class="flip-card-back">
+            Restrict access and share data by link, e.g. for peer-review of data underling publications.
+          </div>
+        </div>
+        <h3>Peer-Review</h3>
+      </div>
+    </a>
+
+    <a href="mailto:tudata@tuwien.ac.at?subject=About TU Research Data...">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="static/images/features/reuse.png" alt="icon displaying two green arrows arranged in a circle." />
+          </div>
+          <div class="flip-card-back">
+            Deposit your data to make it FAIR. The process can be automated with a use of APIs provided by
+            TU Research Data.
+          </div>
+        </div>
+        <h3>Reuse</h3>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section id="planned-features" class="ui container">
+  <h2>Planned features</h2>
+  <div class="features-wrapper">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front light">
+          <img src="/static/images/planned-features/online-community.png" alt="icon displaying a network of ideas and users." />
+        </div>
+        <div class="flip-card-back light">
+          <a>Create your "Communities" with a collection of datasets and supplementary materials to collaborate with
+            other users.</a>
+        </div>
+      </div>
+      <h3>Communities</h3>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front light">
+          <img src="/static/images/planned-features/git.png" alt="icon displaying the github logo">
+        </div>
+        <div class="flip-card-back light">
+          <a>Easily preserve your GitLab repository in TU Research Data and get a DOI for your code.</a>
+        </div>
+      </div>
+      <h3>TU Gitlab integration</h3>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front light">
+          <img src="/static/images/planned-features/analytics.png" alt="icon displaying a bar and pie chart.">
+        </div>
+        <div class="flip-card-back light">
+          <a>All uploads display standards compliant with usage statistics.</a>
+        </div>
+      </div>
+      <h3>Usage statistics</h3>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front light">
+          <img src="/static/images/planned-features/team.png" alt="icon displaying a group of three persons." />
+        </div>
+        <div class="flip-card-back light">
+          <a>Open TU Research Data for cross-university and international collaboration.</a>
+        </div>
+      </div>
+      <h3>Upload rights for external users</h3>
+    </div>
+  </div>
+</section>
+
+{%- endblock page_body %}
+{%- block page_footer %}
+{% include config.THEME_FOOTER_TEMPLATE %}
+{%- endblock page_footer %}
+
+{%- block javascript %}
+{{ super() }}
+{%- endblock javascript %}
+{%- block trackingcode %}{% include config.THEME_TRACKINGCODE_TEMPLATE %}
+{%- endblock %}
