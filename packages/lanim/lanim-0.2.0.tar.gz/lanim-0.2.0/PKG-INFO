@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: lanim
+Version: 0.2.0
+Summary: Functional animation library
+Home-page: https://github.com/decorator-factory/lanim
+License: MIT
+Author: decorator-factory
+Author-email: 42166884+decorator-factory@users.noreply.github.com
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Multimedia
+Requires-Dist: pillow (>=8.3.2,<9.0.0)
+Description-Content-Type: text/markdown
+
+# Lanim
+
+Lanim is a library for creating programmatic animations in Python. It's currently in a very early stage.
+
+![Promotional animation](https://decorator-factory.github.io/lanim/docs.gif)
+
+Not everything in the GIF is quite true yet, but soon:tm: it will!
+
+Check out the [documentation](https://decorator-factory.github.io/lanim/) for a tutorial
+
+
+# Showcase
+
+![Sequence of animations](https://decorator-factory.github.io/lanim/tutorial/how-does-lanim-work/plus-operator.gif)
+![Point moving across a plane](https://decorator-factory.github.io/lanim/tutorial/coordinates/moving-point.gif)
+
