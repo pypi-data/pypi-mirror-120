@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+altflags/__init__.py
+altflags/flags.py
+altflags.egg-info/PKG-INFO
+altflags.egg-info/SOURCES.txt
+altflags.egg-info/dependency_links.txt
+altflags.egg-info/top_level.txt

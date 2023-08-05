@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: altflags
+Version: 0.0.1b0
+Summary: Python alternative (binary) flags
+Home-page: UNKNOWN
+Author: Oddity
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## Python alternative flags
+
+### How to install
+`pip install altflags`
+
+### How to use
+```
+from altflags import Flags, flag
+
+class Permissions(Flags)
+    view_page = flag(0)
+    add_message = flag(1)
+
+user = Permission()
+
+user.view_page = True
+
+print(user.view_page)
+# 
+
+print(user.flags)
+# >>> 1
+
+user.add_message = True
+
+print(user.add_message)
+# >>> True
+
+print(user.flags)
+# >>> 3
+
+user.view_page = False
+
+print(user.view_page)
+# >>> False
+
+print(user.flags)
+# >>> 2
+
+print("{:0b}".format(user.flags))
+# >>> 10
+```
+
+### Flag method arguments
+The `n` argument in `altflags.flag(n)` is the bit position of the flag
+
