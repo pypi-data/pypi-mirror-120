@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: codeframe
+Version: 0.1.5
+Summary: Creates a simple package structure, git, PyPI, bumpversion, pytest and configfile ready
+Home-page: http://gitlab.com/jaromrax/codeframe
+Author: jaromrax
+Author-email: jaromrax@gmail.com
+License: GPL2
+Description: # Project codeframe
+        ** generated automatically **
+        
+        ## Module config.py
+        ** generated automatically
+        
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
