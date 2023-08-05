@@ -1,0 +1,3 @@
+[scriptengine.tasks]
+hpc.slurm.sbatch = scriptengine_hpc.slurm:Sbatch
+
