@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: drf-errors-formatter
+Version: 1.0.1
+Summary: Format errors in Django Rest Framework
+Home-page: https://github.com/thomas545/drf-errors-formatter
+Author: Thomas
+Author-email: imichael@pm.me
+License: MIT
+Keywords: django rest errors format-errors api
+Platform: UNKNOWN
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+DRF Errors formatter
+====================
+
+This is a exception handlers error formating for Django REST Framework 
+which allows you to format errors in all project.
+
+
+Requirements
+============
+
+- Python (3.6+)
+- Django (2.0+)
+- djangorestframework (3.8+)
+
+Installation
+============
+
+```
+pip install drf-errors-formatter
+```
+
+Usage
+=====
+/home/thomas/Desktop/drf-errors-formatter/drf_handlers/formatter.py
+Add formatter to DRF settings
+
+```
+REST_FRAMEWORK = {
+    'EXCEPTION_HANDLER': 'drf_handlers.formatter.errors_exception_handler'
+}
+
+```
+
+
+Authors
+=======
+2021, Thomas
+
