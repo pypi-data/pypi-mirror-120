@@ -1,0 +1,3 @@
+#!python
+from fastcd.jumper import main
+main()
