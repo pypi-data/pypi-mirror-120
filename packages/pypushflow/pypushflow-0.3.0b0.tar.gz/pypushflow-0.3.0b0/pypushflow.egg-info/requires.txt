@@ -1,0 +1,8 @@
+
+[mx]
+pymongo
+
+[test]
+pytest
+mongita
+black
