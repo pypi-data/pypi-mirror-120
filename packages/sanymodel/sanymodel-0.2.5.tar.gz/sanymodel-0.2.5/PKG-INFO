@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: sanymodel
+Version: 0.2.5
+Summary: tools for modeling and data processing
+Home-page: http://gitlab.sanywind.net/sanydata/sanymodel
+Author: zion
+Author-email: Zion.Gao@foxmail.com
+License: MIT Licence
+Keywords: pip,sanymodel,Gao
+Platform: any
+
+tools for modeling and data processing
+

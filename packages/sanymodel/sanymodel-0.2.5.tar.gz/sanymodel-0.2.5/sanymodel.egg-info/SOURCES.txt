@@ -1,0 +1,13 @@
+README.md
+setup.py
+sanymodel/__init__.py
+sanymodel/_version.py
+sanymodel/metaclass.py
+sanymodel/modeltools.py
+sanymodel.egg-info/PKG-INFO
+sanymodel.egg-info/SOURCES.txt
+sanymodel.egg-info/dependency_links.txt
+sanymodel.egg-info/requires.txt
+sanymodel.egg-info/top_level.txt
+sanymodel/test/__init__.py
+sanymodel/test/test.py
