@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: ssl-metrics-meta
+Version: 0.1
+Summary: SSL Metrics - Helper Project to Install All SSL Metrics Projects
+Home-page: https://ssl.cs.luc.edu/projects/metricsDashboard
+Author: Software and Systems Laboratory - Loyola University Chicago
+Author-email: ssl-metrics@ssl.luc.edu
+License: BSD
+Project-URL: Bug Tracker, https://github.com/SoftwareSystemsLaboratory/ssl-metrics-meta/issues
+Project-URL: GitHub Repository, https://github.com/SoftwareSystemsLaboratory/ssl-metrics-meta
+Keywords: git,github,software engineering,metrics,software systems laboratory,ssl,loyola,loyola university chicago,luc
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ssl-metrics-github-issues
+Requires-Dist: ssl-metrics-git-commits-loc
+
+# SSL Metrics
+
+> Helper package that will install all `ssl-metrics` packages at once
+
+[![Publish to PyPi](https://github.com/SoftwareSystemsLaboratory/ssl-metrics/actions/workflows/pypi.yml/badge.svg)](https://github.com/SoftwareSystemsLaboratory/ssl-metrics/actions/workflows/pypi.yml)
+
+## Table of Contents
+
+- [SSL Metrics](#ssl-metrics)
+  - [Table of Contents](#table-of-contents)
+  - [About](#about)
+  - [Included Projects](#included-projects)
+  - [How to Install](#how-to-install)
+    - [From pip](#from-pip)
+
+## About
+
+This project is simply a wrapper/ helper program that installs all of the other `ssl-metrics` projects.
+
+## Included Projects
+
+- [ssl-metrics-github-issues](https://github.com/SoftwareSystemsLaboratory/ssl-metrics-github-issues)
+- [ssl-metrics-git-commits-loc](https://github.com/SoftwareSystemsLaboratory/ssl-metrics-git-commits-loc)
+
+## How to Install
+
+### From pip
+
+1. Install `Python 3.9.6 +`
+2. (Recommended) Create a *virtual environment* with `python3.9 -m venv env` and *activate* it
+3. Run `pip install ssl-metrics`
+4. To run any of the installed packages, see their specific documentation pages for more information
+
+
