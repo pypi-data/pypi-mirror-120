@@ -1,0 +1,15 @@
+build.py,sha256=eT-IeIKBMwoOLBfRgwhigfdIqYAlVgI8g8ddZiLBLm8,394
+fdb_c.h,sha256=PoEaeNBQMy2IC8_J1caL1QeyozhVsE3MH3x_w6hurc8,37903
+fdb_c2.h,sha256=6BbK78DrQH9e1LEXRx4AaLMs5k6L6IG1kejXqnXnjMc,37832
+found/__init__.py,sha256=XiHaFnD7ahVHFL2CAiQb7B5tO_b8M7XxBPqi5GahRB4,3658
+found/_fdb.cpython-38-x86_64-linux-gnu.so,sha256=wFOzzcT1FzAAQG6AvD6vY4KZdY5EjVPJkycbrI1SImQ,299256
+found/base.py,sha256=nyoMvZKzEDrxpZjuVid65Ke9jnFwqLME_zdCgPnwU08,14151
+found/bstore.py,sha256=UpokClUm_sRynrHDxcGTjDLyVwtV7nx2QAkEsw3adf0,2155
+found/eavstore.py,sha256=SDQoicSeCBGEpgBf8dvfEPT1OqPEuyj0IOswkxvOJxs,2387
+found/nstore.py,sha256=CxAW9rvG_i_tCInhiGEJRjm8sVkS4KEohZu7QkGuz9I,5898
+found/pool.py,sha256=6EQ9Kxv1Qio7Li8xcK6QxOIUzcODQ-ZuIbk8hCpJPOk,1687
+found/pstore.py,sha256=wBDMs2HK57u4h_eaOq7dshtiW2rmecpSuh6BGmQcR4E,5228
+asyncio_foundationdb-0.10.2.dist-info/LICENSE,sha256=2JhTwLL5vk9UNSeML_Hwh3h046sCW5hawLwkUlUeZ-o,11424
+asyncio_foundationdb-0.10.2.dist-info/WHEEL,sha256=89B-8pO3exDMkQS_XEeT1e48Sc19tvwWQWuRigdAnSg,103
+asyncio_foundationdb-0.10.2.dist-info/METADATA,sha256=JlE-quVUHrMM73dCf11lIkfd8V6EOYOc6BNsub0VEjc,9687
+asyncio_foundationdb-0.10.2.dist-info/RECORD,,
