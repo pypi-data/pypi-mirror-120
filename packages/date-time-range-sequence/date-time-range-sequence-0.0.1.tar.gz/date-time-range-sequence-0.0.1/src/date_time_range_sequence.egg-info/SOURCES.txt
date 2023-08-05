@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/date_time_range_sequence/__init__.py
+src/date_time_range_sequence/main.py
+src/date_time_range_sequence.egg-info/PKG-INFO
+src/date_time_range_sequence.egg-info/SOURCES.txt
+src/date_time_range_sequence.egg-info/dependency_links.txt
+src/date_time_range_sequence.egg-info/top_level.txt
