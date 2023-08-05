@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: ClassixClustering
+Version: 0.0.9
+Summary: Fast and explainable clustering based on sorting
+Home-page: https://github.com/nla-group/CLASSIX.git
+Author: Stefan Guettel, Xinye Chen
+Author-email: stefan.guettel@manchester.ac.uk
+License: BSD 3-Clause
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# CLASSIX
+
+### CLASSIX: Beta test 
+
+[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+
+
+## Install
+To install the current release via PIP use:
+```
+pip install ClassixClustering
+```
+
+Download this repository:
+```
+$ git clone https://github.com/nla-group/CLASSIX.git
+```
+
+
+
