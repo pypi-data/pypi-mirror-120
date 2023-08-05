@@ -1,0 +1,3 @@
+PyYaml
+boto3
+pytest
