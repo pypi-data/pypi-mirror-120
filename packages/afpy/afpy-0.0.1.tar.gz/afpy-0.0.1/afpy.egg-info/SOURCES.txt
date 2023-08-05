@@ -1,0 +1,6 @@
+README.md
+setup.py
+afpy.egg-info/PKG-INFO
+afpy.egg-info/SOURCES.txt
+afpy.egg-info/dependency_links.txt
+afpy.egg-info/top_level.txt
