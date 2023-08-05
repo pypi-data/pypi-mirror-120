@@ -1,0 +1,108 @@
+Metadata-Version: 2.1
+Name: taurex-ace
+Version: 1.0.0.dev0
+Summary: ACE equilibrium chemical scheme wrapper built on TauREx
+Home-page: UNKNOWN
+Author: Ahmed Faris Al-Refaie
+Author-email: ahmed.al-refaie.12@ucl.ac.uk
+License: BSD
+Keywords: exoplanet,chemistrytaurex,plugin,taurex3,atmosphere,atmospheric
+Platform: UNKNOWN
+Provides: taurex_ace
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: taurex
+
+# TauREx-ACE plugin
+
+Python wrapper built using the [TauREx](https://github.com/ucl-exoplanets/TauREx3_public) framework for the FORTRAN equilibrium chemistry code developed by AgÃºndez et al. 2012.
+
+## Installation
+
+
+You can install one of the prebuilt binary wheels for Windows, macOS and manylinux through pip:
+```bash
+pip install taurex_ace
+```
+
+### Installing from source
+
+
+To install from source a valid C/C++ and FORTRAN compiler must be present. You can compile it by doing:
+```bash
+git clone https://github.com/ucl-exoplanets/taurex_ace.git
+cd taurex_ace
+pip install .
+```
+
+## Running in TauREx
+
+Once installed you can select the chemical model through the **chemistry_type** keyword under
+Chemistry.
+```
+[Chemistry]
+chemistry_type = ace
+metallicity = 1.0
+co_ratio = 0.5
+```
+
+### Input arguments:
+
+|Argument| Description| Type| Default | Required |
+---------|------------|-----|---------|----------|
+metallicity|Metallicity relative to solar| *float* | 1.0 (Solar) | |
+co_ratio | C/O ratio| *float* | 0.5| |
+therm_file | Path to thermalchemical data| *string*| Built-in | |
+spec_file | Path to species | *string*| Built-in | |
+
+### Retrieval Parameters:
+
+|Fitting Parameter| Description| 
+---------|------------|
+metallicity|Metallicity relative to solar|
+C_O_ratio | C/O ratio| *float* | 
+
+
+## Running in Python
+
+You can import the chemistry scheme in Python pretty easily
+
+```python
+>>> from taurex_ace import ACEChemistry
+
+>>> ace = ACEChemistry(metallicity=1.0, co_ratio=0.5)
+```
+You can either pass it into a TauREx forward model like so:
+```python
+>>> tm = TransmissionModel(chemistry=ace)
+```
+Or use it independently to compute volume mixing ratios by passing in
+temperature and pressure ( Pascal ) arrays:
+```python
+>>> nlayers = 100
+>>> T = numpy.linspace(400,1000,nlayers)
+>>> P = numpy.logspace(1,5, nlayers)
+>>> ace.initialize_chemistry(nlayers=nlayers, temperature_profile=T, pressure_profile=P)
+>>> ace.gases
+['CH3COOOH', 'C4H9O', 'C3H7O', ...,  'HNC', 'HON', 'NCN']
+>>> ace.mixProfile
+array([[6.49723780e-80, 6.79239790e-79, 6.61822622e-78, ...,
+        8.00944782e-41, 1.11751339e-40, 1.55179784e-40],
+       [7.10900373e-76, 4.67226720e-75, 2.90530077e-74, ...,
+        1.03852971e-43, 1.39343534e-43, 1.86266570e-43],
+       [1.13921670e-64, 5.82452085e-64, 2.83707624e-63, ...,
+        4.26299477e-37, 5.44908156e-37, 6.94256769e-37],
+       ...,
+       [3.29247294e-31, 1.02824750e-30, 3.09872209e-30, ...,
+        1.82127852e-13, 2.05020932e-13, 2.30210836e-13],
+       [4.53205427e-71, 4.23173486e-70, 3.69942916e-69, ...,
+        2.31456323e-32, 3.35359173e-32, 4.83724134e-32],
+       [8.04632748e-67, 7.90155245e-66, 7.23887996e-65, ...,
+        3.68586537e-29, 5.02545448e-29, 6.81862528e-29]])
+```
+
+
+
+
+
