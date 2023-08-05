@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/numchest.egg-info/PKG-INFO
+src/numchest.egg-info/SOURCES.txt
+src/numchest.egg-info/dependency_links.txt
+src/numchest.egg-info/top_level.txt
