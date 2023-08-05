@@ -1,0 +1,3 @@
+[console_scripts]
+tars = tars.cli:cli
+
