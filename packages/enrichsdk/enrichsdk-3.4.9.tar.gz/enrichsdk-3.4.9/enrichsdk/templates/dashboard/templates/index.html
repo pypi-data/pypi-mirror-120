@@ -1,0 +1,116 @@
+{% extends 'gui2/base.html' %}
+{% load static %}
+{% load dashboard_tags %}
+{% load humanize %}
+{% load fontawesome %}
+<!-- ============================= Address Bar Start =============================== -->
+{% block breadcrumbs %}
+<div id="address_content" style="display: none">
+    <ol class="breadcrumb" aria-label="breadcrumb">
+      <li class="breadcrumb-item"><a href="{% url 'dashboard:home' %}">Enrich</a></li>
+      <li class="breadcrumb-item"><a href="{% url 'dashboard:index' %}">Usecases</a></li>
+      <li class="breadcrumb-item"><a href="{% url 'dashboard:usecase_detail' usecase.org.name %}">{{usecase.org.name}}</a></li>
+      <li class="breadcrumb-item active">APPNAME</li>
+    </ol>
+</div>
+{% with knowledge="aml" %}{{ block.super }}{% endwith %}
+{% endblock breadcrumbs %}
+<!-- ============================= Address Bar End =============================== -->
+{% block nav_index %}
+<!--Header tab name-->
+    {% with nav_data="usecases" %}{{ block.super }}{% endwith %}
+{% endblock %}
+<!--============================= Help Content =============================== -->
+
+{% block help %}
+<div id="page_help_content" style="visibility: hidden">
+Help for this page
+</div>
+{{block.super}}
+{% endblock %}
+<!--============================= Help Content End =============================== -->
+{% block content %}
+
+<div class="container">
+  <div class="row mb-10">
+    <div class="col-md-8">
+      <div class="ptaa-box">
+        <div class="ptaa-content">
+          <h1>APPNAME </h1>
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="d-flex justify-content-end">
+        <!-- Include urls here -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <a name="runlog"></a>
+  <div class="section-content-container">
+    <div class="section-heading">
+      <h4>Run Log</h4>
+    </div>
+    <div class="section-content-body">
+      <p>Latest Log. </p>
+      <div class="code-block-preview">
+	<div class="code-block-panel-head d-flex align-items-center justify-content-between">
+          <p class="code-block-panel-heading" id="codeblockRunTitle">Run Log</p>
+          <div class="code-block-option d-flex align-items-center">
+            <div class="code-block-download">
+              <a href="javascript:saveTextAsFile(document.getElementById('codeblockRunTitle'),document.getElementById('copyRunText'));" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Download"><i class="icon-download-icon"></i></a>
+            </div>
+            <div class="code-block-copy">
+              <a href="javascript:clickToCopyPreview(copyRunText);" data-toggle="tooltip" data-placement="bottom" title="Copy">
+		<i class="icon-content-copy-icon"></i>
+              </a>
+            </div>
+        </div>
+	</div>
+	<div class="code-block-panel-body fixed-height" id="copyRunText"><pre>{{root|safe}}
+	    {{content|safe}}</pre></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-content-container">
+    <div class="section-heading">
+      <h4>Description</h4>
+    </div>
+    <div class="section-content-body">
+      <div class="table-responsive">
+	<table class="table table2" id="matches">
+	  <thead>
+	    <tr>
+	      {% for c in stat.columns %}
+              <th>{{c}}</th>
+	      {% endfor %}
+	    </tr>
+	  </thead>
+          <tbody>
+            {% for row in stat.data %}
+	    <tr>
+              {% for v in row %}
+              <td>
+		{% if forloop.counter0 in stat.searchable %}
+		<a href="{% url 'compapp:persona:details' %}?persona=Suspicious KYCs&table=Search&query={{v}}" target="_blank">{{v}}</a>
+		{% else %}
+		{{v}}
+		{% endif %}
+	      </td>
+	      {% endfor %}
+            </tr>
+            {% endfor %}
+          </tbody>
+	</table>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+{% endblock %}
