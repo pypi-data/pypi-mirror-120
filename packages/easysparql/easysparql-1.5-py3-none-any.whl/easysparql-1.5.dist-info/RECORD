@@ -1,0 +1,14 @@
+easysparql/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+easysparql/cacher.py,sha256=vTBeXWpOU8VBbMkGYOXk22sqBRn24r582jCRbwyqXkE,1990
+easysparql/easysparql.py,sha256=LRfXApREcCPinsDvgYMZJOBRDVu9yjs8Bf8fkSMvXRI,4437
+easysparql/easysparqlclass.py,sha256=TM8nGRkK22FG-FVhXMsm4h6MA0T6lijTJsbfmJZ47Wo,10514
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_cache.py,sha256=NLyCuW4j2DZ--4gXIQiWrEdxoxA0k_EywlemFLS83cI,1273
+tests/test_class.py,sha256=pLx5TAeWIRkg-5x54rJV7rrmw04p49G4B90npci6PYQ,2281
+tests/test_functions.py,sha256=Yw0h2cOp5bgbhk2MkZZZuouVHzOKB9EbHVE1b2uax4s,2271
+tests/tests.py,sha256=Yw0h2cOp5bgbhk2MkZZZuouVHzOKB9EbHVE1b2uax4s,2271
+easysparql-1.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+easysparql-1.5.dist-info/METADATA,sha256=puESLMbt21mtIAHZ__FLdz5yhWkrXvFXFj0yPV6WeFw,2364
+easysparql-1.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+easysparql-1.5.dist-info/top_level.txt,sha256=8EyLzrYpeiAUudhmkXPYl-qH3XHdWsORG8TRCOsKTyI,17
+easysparql-1.5.dist-info/RECORD,,
