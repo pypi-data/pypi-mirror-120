@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: simple-storage
+Version: 0.0.3
+Summary: File storage made easy
+Home-page: https://github.com/merixstudio/simple-storage
+Author: Merixstudio
+Author-email: code@merixstudioc.om
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/merixstudio/simple-storage/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: boto3
+Requires-Dist: boto3 (>=1.4.4) ; extra == 'boto3'
+
+Wrapper to multiple storages like file-system, AWS S3 etc.
+
