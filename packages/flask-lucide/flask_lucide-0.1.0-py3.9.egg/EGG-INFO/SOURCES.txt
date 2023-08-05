@@ -1,0 +1,13 @@
+.gitmodules
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/flask_lucide/__init__.py
+src/flask_lucide/extension.py
+src/flask_lucide.egg-info/PKG-INFO
+src/flask_lucide.egg-info/SOURCES.txt
+src/flask_lucide.egg-info/dependency_links.txt
+src/flask_lucide.egg-info/requires.txt
+src/flask_lucide.egg-info/top_level.txt
+test/test_feather.py
