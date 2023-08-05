@@ -1,0 +1,11 @@
+README.md
+setup.py
+afpy/__init__.py
+afpy/cli.py
+afpy/files.py
+afpy/plot.py
+afpy/string.py
+afpy.egg-info/PKG-INFO
+afpy.egg-info/SOURCES.txt
+afpy.egg-info/dependency_links.txt
+afpy.egg-info/top_level.txt
