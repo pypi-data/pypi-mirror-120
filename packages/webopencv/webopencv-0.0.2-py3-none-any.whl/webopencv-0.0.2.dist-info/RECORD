@@ -1,0 +1,13 @@
+webopencv/__init__.py,sha256=1_5A07Z23EjIiCfZr26eNcq2I3L43IYRImntFeAEG2U,376
+webopencv/aio.py,sha256=1xCPSBQvK1ycl3XC8xhmTLeQtiLKUZkE-6w_qHz8LRA,1785
+webopencv/app.py,sha256=4mdtzkRTyPLbp5EeyWYB5cT-XhjnfYzkxQ6e5getkvE,2668
+webopencv/flsk.py,sha256=PJGMpDlKK4B5ToNohy8U0kONwS9-FSttPyqgk0FX240,1365
+webopencv/transforms.py,sha256=SCfqqjj_m6lhknV9i481nyXVjGOfYN1FHkssem4xuUQ,1453
+webopencv/utils.py,sha256=EG8DBvZn1GXQtQNPQAlLsVd4XJesv3hxsknoWwCWpVg,93
+webopencv/static/client.js,sha256=zIflZPjP6rYguhwcZS1xcuzC4bRCSLnOgPxar9aqUlo,9608
+webopencv/templates/index.html,sha256=ck_KN6-qZOXrTwFkllIoSh807kMsT0AGY2uyGhFzev0,3287
+webopencv-0.0.2.dist-info/LICENSE,sha256=O9W_ndUluBVgfV2SwvadKweqnIVIT5_FF6JjEjHislY,1291
+webopencv-0.0.2.dist-info/METADATA,sha256=umEsLBu3Tw_lpL_NucsVj_zAO-xMJwds4kHpuqHozAg,4965
+webopencv-0.0.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+webopencv-0.0.2.dist-info/top_level.txt,sha256=9VfFNbSIV0QZXkVQgSnRRRt3Re3hcmYIAuXuOUK4824,10
+webopencv-0.0.2.dist-info/RECORD,,
