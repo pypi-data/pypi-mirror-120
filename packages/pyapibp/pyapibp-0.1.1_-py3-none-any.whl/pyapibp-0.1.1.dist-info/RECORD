@@ -1,0 +1,16 @@
+pyapibp/__init__.py,sha256=lsglsiGnSqB8TOc56_h12kLg06wDmtGO1YXuBRU8eqM,203
+pyapibp/_blueprints.py,sha256=TBXDeP7yDHCTbK5NGRvjKa6QW5IlQ7Xu3zefQY_n8Po,6372
+pyapibp/_questions.py,sha256=L34D-D7P8M6OL22oIW8KdP4TUnu6RJHOEbIdp0pp9WY,1183
+pyapibp/_style.py,sha256=YO23dI-72umY2bDDLzc8PdeAEKAwC7Xk3XDC9x6kwRM,248
+pyapibp/_validators.py,sha256=R7I4wGs2jkB1-s85SLrLs4swikNQIZ_LQwcNlHkbbbo,765
+pyapibp/entry.py,sha256=sR6ZC2rxEu-3fEJafpibgyVU3wY_vVz0Jq9NiuyWSRg,191
+pyapibp/pyapibp.py,sha256=ildd7-1zQ6AoBQNof5nw0ydcYnkQ7nabe8WLzXt7o_w,4711
+tests/__init__.py,sha256=lVL4VPz3c4kWCgjPtL4uuQLNmgwK92q1ffAsv5El02k,25
+tests/__main__.py,sha256=iuei8_CCUxQiT89xKf0Q7MZroTZDTw1udl23FdCdFqI,287
+pyapibp-0.1.1.dist-info/AUTHORS.rst,sha256=xy2apnbN02oUQ6fqXShoIcY6zlpx4r5wfqb-8hymqa8,152
+pyapibp-0.1.1.dist-info/LICENSE,sha256=jF8gYKRSIuhd1YaYsmh_l8otWaJL-WndBDttAkX0mAI,1089
+pyapibp-0.1.1.dist-info/METADATA,sha256=sYjbRC0Ure3YND8bG5FvWfoo2taIwC5zLMEc5Gkk20k,2644
+pyapibp-0.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pyapibp-0.1.1.dist-info/entry_points.txt,sha256=4XN-M59AHYVhOkUS48aYczza7zVQWEBylbOPlJHB3aI,48
+pyapibp-0.1.1.dist-info/top_level.txt,sha256=RK0XF8betYN6BsljhRcRpqE8dYuHiO21IA1E0XbQHaI,14
+pyapibp-0.1.1.dist-info/RECORD,,
