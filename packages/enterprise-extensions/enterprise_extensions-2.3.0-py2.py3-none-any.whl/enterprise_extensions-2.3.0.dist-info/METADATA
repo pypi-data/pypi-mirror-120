@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: enterprise-extensions
+Version: 2.3.0
+Summary: Extensions, model shortcuts, and utilities for the enterprise PTA analysis framework.
+Home-page: https://github.com/stevertaylor/enterprise_extensions
+Author: Stephen R. Taylor, Paul T. Baker, Jeffrey S. Hazboun, Sarah Vigeland
+Author-email: srtaylor@caltech.edu
+License: MIT
+Keywords: gravitational-wave,black-hole binary,pulsar-timing arrays
+Platform: UNKNOWN
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: numpy (>=1.16.3)
+Requires-Dist: scipy (>=1.2.0)
+Requires-Dist: ephem (>=3.7.6.0)
+Requires-Dist: healpy (>=1.14.0)
+Requires-Dist: scikit-sparse (>=0.4.5)
+Requires-Dist: pint-pulsar (>=0.8.2)
+Requires-Dist: libstempo (>=2.4.0)
+Requires-Dist: enterprise-pulsar (>=3.1.0)
+Requires-Dist: emcee
+Requires-Dist: ptmcmcsampler
+
+=====================
+enterprise_extensions
+=====================
+
+
+.. image:: https://img.shields.io/pypi/v/enterprise_extensions.svg
+        :target: https://pypi.python.org/pypi/enterprise_extensions
+
+.. image:: https://img.shields.io/travis/stevertaylor/enterprise_extensions.svg
+        :target: https://travis-ci.org/stevertaylor/enterprise_extensions
+
+.. image:: https://readthedocs.org/projects/enterprise-extensions/badge/?version=latest
+        :target: https://enterprise-extensions.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+
+
+
+A set of extension codes, utilities, and scripts for the enterprise PTA analysis framework.
+
+
+* Free software: MIT license
+* Documentation: https://enterprise-extensions.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+2.3.0 (2021-09-15)*
+Functionality added for NANOGrav 15yr dataset analyses.
+Outlier analysis software moved into separate package.
+
+2.2.0 (2021-08-10)
+Version with outlier analysis.
+
+0.9.1 (2021-05-06)
+0.9.0 (2019-09-20)
+------------------
+
+* First release on PyPI.
+
+
