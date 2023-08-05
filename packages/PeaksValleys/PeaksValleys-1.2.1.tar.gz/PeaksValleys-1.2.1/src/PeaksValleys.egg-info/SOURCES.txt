@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/PeaksValleys/PeaksValleys.py
+src/PeaksValleys/__init__.py
+src/PeaksValleys.egg-info/PKG-INFO
+src/PeaksValleys.egg-info/SOURCES.txt
+src/PeaksValleys.egg-info/dependency_links.txt
+src/PeaksValleys.egg-info/top_level.txt
