@@ -1,0 +1,12 @@
+homelette/__init__.py,sha256=3je9Fyn6fo4xRNSo-jO3wOaQnGdV_scrAFmbRxFE7y8,2004
+homelette/alignment.py,sha256=zTUPkYgXOEWamnC3sHULkrxFyUNRPwXe595Pi8wWurI,29498
+homelette/evaluation.py,sha256=UsVs5uK1SrkaaSArqWCCtmCkOHFuVAXlP6oA9rFABiM,27387
+homelette/organization.py,sha256=rNNxkbPe2o762HS8xi2QD5Y2jBuPFNuewCGXGUegVI4,15606
+homelette/routines.py,sha256=E580sv-_4L67PdZdgPQ_N1RoY_VUDQ9J_EeqpnGw9hI,46721
+homelette/extension/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+homelette/extension/extension_foldx.py,sha256=cSvR15tmybLlYf99WaQrTNhPnNc-O8-EqByE1ffy19w,19561
+homelette-1.2.dist-info/LICENSE,sha256=8peLdNzTQ9hLiNnmDvvk36jqTcUW-Y-AV-5UAm68bHw,1085
+homelette-1.2.dist-info/METADATA,sha256=vFImfrUfiqe-vYajawp3BE8QtCPiOy6cRqxM52ZyQJ8,2683
+homelette-1.2.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+homelette-1.2.dist-info/top_level.txt,sha256=uWfusfwKnk0wymAToaCuKbB7q7-zCUBHXt_ZJxkKwsA,10
+homelette-1.2.dist-info/RECORD,,
