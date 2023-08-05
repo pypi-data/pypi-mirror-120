@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: rabbitmq-worker
+Version: 0.0.4
+Summary: Library to create simple rabbitmq workers resilient to connection/channel shutdown and simple producers.
+Home-page: https://gitlab.com/enlaps-public/web/rabbitmq-worker
+Author: Enlaps Open Source
+Author-email: contact@enlaps.fr
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: pika (>=1.2.0)
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+
+UNKNOWN
+
+
