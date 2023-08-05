@@ -1,0 +1,22 @@
+bertdotconfig
+bertdotsshutil
+bertdotwebadapter
+jinja2
+keyring
+markdown
+pywebview==3.4
+requests
+setuptools
+
+[:sys_platform != "darwin"]
+pyinstaller==4.4
+
+[:sys_platform == "darwin"]
+py2app
+
+[tests]
+pytest
+pytest-cov
+coveralls
+flake8
+mypy
