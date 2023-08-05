@@ -1,0 +1,17 @@
+torch
+torchvision
+torchmetrics
+pytorch-metric-learning
+pytorch-ignite
+faiss-gpu
+record-keeper
+scikit-learn
+
+[dev]
+black
+isort
+nbqa
+mkdocs-material
+mkdocstrings
+mkdocs-section-index
+mkdocs-literate-nav
