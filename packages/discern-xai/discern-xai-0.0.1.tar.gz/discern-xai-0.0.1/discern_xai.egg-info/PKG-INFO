@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: discern-xai
+Version: 0.0.1
+Summary: DisCERN: Discovering Counterfactual Explanations using Relevance Features from Neighbourhoods
+Home-page: https://github.com/anjanaw/discern
+Author: Anjana Wijekoon
+Author-email: a.wijekoon1@rgu.ac.uk
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
