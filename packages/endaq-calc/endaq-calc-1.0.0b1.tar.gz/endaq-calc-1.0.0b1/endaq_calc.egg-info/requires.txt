@@ -1,0 +1,16 @@
+numpy
+pandas
+scipy
+
+[example]
+numpy
+pandas
+scipy
+
+[test]
+numpy
+pandas
+scipy
+pytest
+hypothesis
+sympy
