@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: sanic-redis
+Version: 0.3.0
+Summary: Adds redis support to sanic .
+Home-page: https://github.com/strahe/sanic-redis
+Author: octal
+Author-email: octal@posteo.net
+License: MIT
+Keywords: sanic,redis,aioredis
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Internet :: WWW/HTTP :: Session
+License-File: LICENSE
+
+sanic-redis is a sanic framework extension which adds support for the redis.
+
