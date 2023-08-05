@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+type_enforce/__init__.py
+type_enforce/core.py
+type_enforce/processors.py
+type_enforce/utils.py
+type_enforce.egg-info/PKG-INFO
+type_enforce.egg-info/SOURCES.txt
+type_enforce.egg-info/dependency_links.txt
+type_enforce.egg-info/top_level.txt
