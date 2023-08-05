@@ -1,0 +1,13 @@
+[package]
+name = "umbral-pre-python"
+authors = ["Bogdan Opanchuk <bogdan@opanchuk.net>"]
+version = "0.3.0"
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.14", features = ["extension-module"] }
+umbral-pre = { path = "../umbral-pre" }
+generic-array = "0.14"
