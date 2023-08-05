@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: salesdredge
+Version: 1.0.2
+Summary: This is the API for the Salesdredge.
+Home-page: http://www.salesdredge.com
+Author: Christopher Roos
+Author-email: roos.christopher@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+This is a test. 
+
+
+
