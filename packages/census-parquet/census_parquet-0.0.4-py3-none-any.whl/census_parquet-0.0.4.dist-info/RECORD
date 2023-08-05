@@ -1,0 +1,10 @@
+census_parquet/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+census_parquet/boundary_processing.py,sha256=kHnxK5lsfOTBPfDQQ2_yygZzTzEopyee0pVnciRsKH0,2534
+census_parquet/cli.py,sha256=K-q-CAj_aoAKFMdXlRj-XY8CSbWsIfSgAax217Atkoc,751
+census_parquet/process_blocks.py,sha256=X783xY8vzGXnS7cRvIeElFm-Wqfme__4CPtNbUF-azM,4477
+census_parquet-0.0.4.dist-info/LICENSE.txt,sha256=ozxGNTOU5eiOeqOku0WJkpA37tMkW-B4wgF-hhWsfyc,1065
+census_parquet-0.0.4.dist-info/METADATA,sha256=iWnssXaP_Qvw_YXJhQG2lp2DALHvgrjQRm1l1JZMQbw,2100
+census_parquet-0.0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+census_parquet-0.0.4.dist-info/entry_points.txt,sha256=glyyVCO5Icg8Nk9AvDMe6Cm4ofVertu1wnUTw7DfcsM,65
+census_parquet-0.0.4.dist-info/top_level.txt,sha256=xUTN9jEb6Y2vghu9E0_ibTkAZjvXoTagz1Jymo3Crxs,15
+census_parquet-0.0.4.dist-info/RECORD,,
