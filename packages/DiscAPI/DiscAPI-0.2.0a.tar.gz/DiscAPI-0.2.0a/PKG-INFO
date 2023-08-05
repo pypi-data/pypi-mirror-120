@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: DiscAPI
+Version: 0.2.0a
+Summary: A simple to use Python Library to make all kinds of discord bot.
+Home-page: https://github.com/Hiddenstorm/DiscAPI
+Author: HiddenStorm
+Author-email: schuck2345@gmail.com
+License: MIT
+Download-URL: https://github.com/Hiddenstorm/DiscAPI/archive/refs/tags/v0.2.0a.tar.gz
+Description: UNKNOWN
+Keywords: Python,Discord,Simple
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
