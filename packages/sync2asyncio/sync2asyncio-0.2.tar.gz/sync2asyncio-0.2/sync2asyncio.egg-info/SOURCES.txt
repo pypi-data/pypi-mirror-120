@@ -1,0 +1,8 @@
+README.md
+setup.py
+sync2asyncio/__init__.py
+sync2asyncio.egg-info/PKG-INFO
+sync2asyncio.egg-info/SOURCES.txt
+sync2asyncio.egg-info/dependency_links.txt
+sync2asyncio.egg-info/requires.txt
+sync2asyncio.egg-info/top_level.txt
