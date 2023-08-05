@@ -1,0 +1,3 @@
+[console_scripts]
+photocrawl=photocrawl.__main__:app
+
