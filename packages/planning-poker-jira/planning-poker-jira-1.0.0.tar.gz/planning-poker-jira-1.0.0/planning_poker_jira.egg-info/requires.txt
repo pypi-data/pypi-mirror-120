@@ -1,0 +1,3 @@
+django-searchable-encrypted-fields
+jira>=2.0.0
+planning-poker
