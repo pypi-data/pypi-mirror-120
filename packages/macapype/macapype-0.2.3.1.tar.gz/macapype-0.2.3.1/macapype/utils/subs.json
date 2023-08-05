@@ -1,0 +1,27 @@
+{
+    "T1w_roi_noise_corrected_debiased_BET_FLIRT-to_inia19-t1-brain": "space-inia19_desc-brain_T1w",
+
+    "BET_mask": "space-orig_desc-brain_mask",
+
+    "brain_bin_bin": "space-orig_desc-brain_mask",
+
+    "Segmentation_allineate": "space-template_desc-brain_dseg",
+    "Segmentation": "space-orig_desc-brain_dseg",
+    "indexed_mask": "space-orig_desc-brain_dseg",
+    "FLAIR_flirt_flirt": "space-inia19_FLAIR",
+
+    "T1w_":"",
+    "roi_":"",
+    "noise_corrected_":"",
+    "corrected_":"",
+    "maths_":"",
+    "masked_":"",
+    "debiased_":"",
+    "thresh_":"",
+    "fillh_":"",
+
+    "c3": "",
+    "avg_": "",
+    "padded_": ""
+
+}
