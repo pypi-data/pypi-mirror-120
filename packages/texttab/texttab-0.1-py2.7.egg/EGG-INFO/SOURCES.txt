@@ -1,0 +1,9 @@
+setup.py
+src/texttab/__init__.py
+src/texttab/const.py
+src/texttab/formatters.py
+src/texttab/table.py
+src/texttab.egg-info/PKG-INFO
+src/texttab.egg-info/SOURCES.txt
+src/texttab.egg-info/dependency_links.txt
+src/texttab.egg-info/top_level.txt
