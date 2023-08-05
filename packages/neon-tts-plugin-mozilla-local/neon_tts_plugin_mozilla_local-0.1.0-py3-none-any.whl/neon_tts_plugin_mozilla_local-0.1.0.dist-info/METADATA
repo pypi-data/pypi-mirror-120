@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: neon-tts-plugin-mozilla-local
+Version: 0.1.0
+Summary: A Mozilla TTS plugin for Neon
+Home-page: https://github.com/NeonGeckoCom/neon-tts-plugin-mozilla_local
+Author: Neongecko
+Author-email: developers@neon.ai
+License: NeonAI License v1.0
+Keywords: mycroft plugin tts
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: TTS (~=0.0.13)
+Requires-Dist: neon-utils (>=0.5.7)
+
+# NeonAI Mozilla TTS Plugin
+[Mycroft](https://mycroft-ai.gitbook.io/docs/mycroft-technologies/mycroft-core/plugins) compatible
+TTS Plugin for Local Mozilla Text-to-Speech. Note that using this module on a low-power device (i.e. Raspberry Pi)
+is not recommended.
+
+# Configuration:
+
+```yaml
+tts:
+    module: mozilla_local
+    mozilla_local: {"preferred_model": "tacotron2-DDC"}
+```
+
