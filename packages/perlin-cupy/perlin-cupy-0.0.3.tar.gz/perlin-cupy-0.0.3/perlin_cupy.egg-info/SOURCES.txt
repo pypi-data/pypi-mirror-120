@@ -1,0 +1,10 @@
+README.md
+setup.py
+perlin_cupy/__init__.py
+perlin_cupy/interpolant.py
+perlin_cupy/perlin2d.py
+perlin_cupy/perlin3d.py
+perlin_cupy.egg-info/PKG-INFO
+perlin_cupy.egg-info/SOURCES.txt
+perlin_cupy.egg-info/dependency_links.txt
+perlin_cupy.egg-info/top_level.txt
