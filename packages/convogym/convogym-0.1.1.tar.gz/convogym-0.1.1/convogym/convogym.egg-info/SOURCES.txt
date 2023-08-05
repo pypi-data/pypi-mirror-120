@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+README.rst
+setup.py
+convogym/convogym.egg-info/PKG-INFO
+convogym/convogym.egg-info/SOURCES.txt
+convogym/convogym.egg-info/dependency_links.txt
+convogym/convogym.egg-info/top_level.txt
