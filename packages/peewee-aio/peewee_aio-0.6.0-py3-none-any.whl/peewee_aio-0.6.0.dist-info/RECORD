@@ -1,0 +1,10 @@
+peewee_aio/__init__.py,sha256=izej4P0c1RF_H2wxsGSyNLm4phstS87_YI3ZpksM3lo,147
+peewee_aio/databases.py,sha256=oz1A9VJvA9UVo9dI8jr9n6H5WRT03gKMNUoeQfM7Bvw,1142
+peewee_aio/manager.py,sha256=mpjDp3qBFA5jnotEUQLByTPZ1idq9WJdVTazRYxhXLQ,12335
+peewee_aio/model.py,sha256=gJbyPdUnzxCerRPjMCvKr6_oOCl2_uK5GzlUgO3z6I8,5958
+peewee_aio/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+peewee_aio-0.6.0.dist-info/LICENSE,sha256=1VDKCJMQ1gz6nuFjADxWe1sswAR43DFf_6U9awL4gBo,1070
+peewee_aio-0.6.0.dist-info/METADATA,sha256=tUKkOL0LwV46XLt_X3q9mqxTJpdK0q1ddmUAF9cELn0,5012
+peewee_aio-0.6.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+peewee_aio-0.6.0.dist-info/top_level.txt,sha256=aXuJTz8pMUpsSVXlAGdthpjgssvRWEb-w7fqL6196RA,11
+peewee_aio-0.6.0.dist-info/RECORD,,
