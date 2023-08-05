@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: docassemble.wsunhelloworld
+Version: 0.0.1
+Summary: A docassemble extension.
+Home-page: https://docassemble.org
+Author: William Sun
+Author-email: wsun@corelogic.com
+License: The MIT License (MIT)
+Description: # docassemble.wsunhelloworld
+        
+        A docassemble extension.
+        
+        ## Author
+        
+        William Sun, wsun@corelogic.com
+        
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
