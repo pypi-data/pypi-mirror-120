@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+marco/__init__.py
+marco/categorical.py
+marco/grouped_frame.py
+marco/quantitative.py
+marco/quantitative_frame.py
+marco/ungrouped_frame.py
+marco.egg-info/PKG-INFO
+marco.egg-info/SOURCES.txt
+marco.egg-info/dependency_links.txt
+marco.egg-info/requires.txt
+marco.egg-info/top_level.txt

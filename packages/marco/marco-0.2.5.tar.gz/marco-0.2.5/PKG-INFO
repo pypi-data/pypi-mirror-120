@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: marco
+Version: 0.2.5
+Summary: Statistics class automation
+Home-page: https://github.com/afgalvan/marco
+Author: Andres Galvan
+Author-email: adfelipegalvan@gmail.com
+License: MIT
+Download-URL: https://github.com/afgalvan/marco/archive/v_01.tar.gz
+Keywords: statistics,pandas,numpy
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE
+
+UNKNOWN
+
