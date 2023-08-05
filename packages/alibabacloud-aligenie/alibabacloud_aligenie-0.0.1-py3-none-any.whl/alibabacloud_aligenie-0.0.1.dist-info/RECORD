@@ -1,0 +1,12 @@
+alibabacloud_aligenie/__init__.py,sha256=07NzQXBgNlnw5kSN6ZYxE9By-_RuH3Jyy58Z74sIio0,21
+alibabacloud_aligenie/iap_1_0/__init__.py,sha256=J-j-u0itpEFT6irdmWmixQqYMadNl1X91TxUmoiLHMI,22
+alibabacloud_aligenie/iap_1_0/client.py,sha256=NpqkqEyiOtutce76u-jlEjNZteP2KddxpxQJbzEKy30,9615
+alibabacloud_aligenie/iap_1_0/models.py,sha256=9Q7BN1GWYZIjPbwSIn9mjtfK6LiaijvASp_x0pc5cOQ,16321
+alibabacloud_aligenie/ssp_1_0/__init__.py,sha256=J-j-u0itpEFT6irdmWmixQqYMadNl1X91TxUmoiLHMI,22
+alibabacloud_aligenie/ssp_1_0/client.py,sha256=XnR5fau99uRhx9P0nL-P487xko2MVDJUNBNbFQ10Xjo,5189
+alibabacloud_aligenie/ssp_1_0/models.py,sha256=mpcyL1R3ruzAmLcaI4l9WT0KTATseAbpwQ_-nkkWCDY,8813
+alibabacloud_aligenie-0.0.1.dist-info/LICENSE,sha256=0CFItL6bHvxqS44T6vlLoW2R4Zaic304OO3WxN0oXF0,600
+alibabacloud_aligenie-0.0.1.dist-info/METADATA,sha256=kQLYpyKtUuYJSWd4zE1iA_wtkzkcTHtaAHhsMsXkWvg,2197
+alibabacloud_aligenie-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+alibabacloud_aligenie-0.0.1.dist-info/top_level.txt,sha256=7uUV0M00SpZ1Rdi0NBsvfJM_Zx1vfdhmW31gAUdUrDw,22
+alibabacloud_aligenie-0.0.1.dist-info/RECORD,,
