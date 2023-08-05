@@ -1,0 +1,7 @@
+PyQt5
+
+[:sys_platform == "darwin"]
+fbs_tutorial_shim_mac
+
+[:sys_platform == "win32"]
+fbs_tutorial_shim_windows
