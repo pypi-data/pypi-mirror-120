@@ -1,0 +1,3 @@
+[console_scripts]
+iic2343=iic2343.cli.core:dispatcher
+
