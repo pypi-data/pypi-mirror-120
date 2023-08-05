@@ -1,0 +1,7 @@
+pandas
+Unidecode
+unicodedata2
+clean-text
+Levenshtein
+PyMuPDF
+regex

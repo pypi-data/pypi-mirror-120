@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+doc_intel/__init__.py
+doc_intel/despace.py
+doc_intel/text_laundry.py
+doc_intel/words.txt
+doc_intel.egg-info/PKG-INFO
+doc_intel.egg-info/SOURCES.txt
+doc_intel.egg-info/dependency_links.txt
+doc_intel.egg-info/entry_points.txt
+doc_intel.egg-info/requires.txt
+doc_intel.egg-info/top_level.txt
