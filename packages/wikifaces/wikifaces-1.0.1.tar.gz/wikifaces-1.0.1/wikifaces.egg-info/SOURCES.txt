@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+wikifaces/__init__.py
+wikifaces/downloader.py
+wikifaces/utilities.py
+wikifaces.egg-info/PKG-INFO
+wikifaces.egg-info/SOURCES.txt
+wikifaces.egg-info/dependency_links.txt
+wikifaces.egg-info/requires.txt
+wikifaces.egg-info/top_level.txt
