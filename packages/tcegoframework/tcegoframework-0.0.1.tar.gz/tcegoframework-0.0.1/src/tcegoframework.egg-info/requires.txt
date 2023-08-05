@@ -1,0 +1,15 @@
+dill
+numpy
+pandas
+seaborn
+matplotlib
+clean-text
+unidecode
+torch
+tensorflow
+transformers
+scipy
+sklearn
+nltk
+openpyxl
+jaydebeapi
