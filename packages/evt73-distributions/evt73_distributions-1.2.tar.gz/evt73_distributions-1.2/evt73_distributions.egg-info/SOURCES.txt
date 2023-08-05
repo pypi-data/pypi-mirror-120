@@ -1,0 +1,10 @@
+setup.py
+evt73_distributions/Binomialdistribution.py
+evt73_distributions/Gaussiandistribution.py
+evt73_distributions/Generaldistribution.py
+evt73_distributions/__init__.py
+evt73_distributions.egg-info/PKG-INFO
+evt73_distributions.egg-info/SOURCES.txt
+evt73_distributions.egg-info/dependency_links.txt
+evt73_distributions.egg-info/not-zip-safe
+evt73_distributions.egg-info/top_level.txt
