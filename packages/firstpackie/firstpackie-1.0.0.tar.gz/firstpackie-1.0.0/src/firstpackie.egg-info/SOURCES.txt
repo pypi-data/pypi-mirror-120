@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+src/firstpackie.py
+src/firstpackie.egg-info/PKG-INFO
+src/firstpackie.egg-info/SOURCES.txt
+src/firstpackie.egg-info/dependency_links.txt
+src/firstpackie.egg-info/top_level.txt
