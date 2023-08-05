@@ -1,0 +1,15 @@
+hdroller/__init__.py,sha256=8QyIK_T-rwGiwIelNuBgsOutbMU2Me6fKkS2mcPTvdk,30
+hdroller/args.py,sha256=E5eiqkQHiV0mRD8HHiOMGPfv8DCxxK-brenxfl6-C7U,2189
+hdroller/convolution_series.py,sha256=MKDz2kMGdaGXXqy3Nun7cDSQvGs7455d1Vzqp2WtKg0,923
+hdroller/die.py,sha256=Trna4-v0R5U2I51LY9oFtV3o3A7Hhoye82Lcj-8BXhE,28116
+hdroller/die_repeater.py,sha256=8HWoroQIhBX_0sd4dvJZEIL3HjspRDpR9GCCaO2RJFM,5724
+hdroller/die_sort.py,sha256=4u_9gE-kovReTveqGrz-oO922xwfDebcmxd5xJ5xCxE,4109
+hdroller/matching_sets.py,sha256=SVKUHCCMZen5fkj2usNx0YnybIcUeWNF8Ne88nT-L3I,1059
+hdroller/math.py,sha256=94Rq0WxwtNqaxpONFBDjVWXpX85BtcSFvpe7317zuEE,1257
+hdroller/power_series.py,sha256=NYDMXHXqBK87C0MbUexa6Hp-tB2y6gAPC6zrZRj8xlM,527
+hdroller/tournament.py,sha256=CLrlis953ob7bS8TA_09qEVU9Pj5o7c9tVRQHmdbKMI,776
+hdroller-0.0.5.dist-info/LICENSE.md,sha256=tyhIA7Lt_CFkz-i5qTNoKO3yelbU5xxDvoiO79qy29k,6792
+hdroller-0.0.5.dist-info/METADATA,sha256=bnu4_UDOyRERhPjpGwbKdJSLYpMmeLJCTY05KDRMpO0,2630
+hdroller-0.0.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+hdroller-0.0.5.dist-info/top_level.txt,sha256=wiL4LFQhQepCCO0mAPNVWWREiiQ8UmW5Usm_QUT7TS0,9
+hdroller-0.0.5.dist-info/RECORD,,
