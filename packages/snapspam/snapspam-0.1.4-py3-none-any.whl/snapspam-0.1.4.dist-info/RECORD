@@ -1,0 +1,11 @@
+snapspam/__init__.py,sha256=FMvvaUAGMopu9UVGh2AFWYX1MFN8Emu-HEKTYP2YBlQ,141
+snapspam/__main__.py,sha256=hUfH669gAouOFKzXsfwZljVQr0ul1D_x_TkXoQE1eF8,99
+snapspam/cli.py,sha256=cmqfF6vg83QxRfjAXNNq6UmZWGohOuoYjWjW5Wp6so0,6782
+snapspam/lmk.py,sha256=gTTAPBZLf2wuFuX-xJqgj1zTVZQQCsnIAevGm8UTHA8,3598
+snapspam/sendit.py,sha256=n8m62ljEcJAjBMD4KQ_4SIUx9awtPb1_hhYFPbKdZC4,4092
+snapspam-0.1.4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+snapspam-0.1.4.dist-info/METADATA,sha256=J0SKltlkT6NCyQibJwgNspojKKflRcx4cNuFAH52qD4,2666
+snapspam-0.1.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+snapspam-0.1.4.dist-info/entry_points.txt,sha256=5qo7IInZY2768U88yGTRfsHApmxAUDnQUsAgMBEUKO0,48
+snapspam-0.1.4.dist-info/top_level.txt,sha256=ZI06hJPAenGN8sZwkbetdZFxNAq0ielm3yhi8VSzHRc,9
+snapspam-0.1.4.dist-info/RECORD,,
