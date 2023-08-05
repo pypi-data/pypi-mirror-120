@@ -1,0 +1,14 @@
+stockwell.libs/libfftw3-3a26e910.so.3.2.3,sha256=Zw48U-K7PTTdebRc2yO__Ni79DVmH91dhJFcvl6lImY,1062848
+stockwell/version.py,sha256=qKK4BMzdt84HiCorJPWqgEfa_DbJeuGx_bIPrDui2vc,22
+stockwell/__init__.py,sha256=nCtBUKDNvvXgXpzgkDiXpKsZ6GKrJW87sR41esky8LI,75
+stockwell/c_libs/st.c,sha256=931M7J1rfX0CforXjkfFv7u2OODGfqFTKeCTTzeEc4M,8194
+stockwell/c_libs/stmodule.c,sha256=x6bsl5rnhJ37NseCVuoj1WVhO3hGfuXBFQOfKJdWaP4,4194
+stockwell/c_libs/sinemodule.c,sha256=xAvVc6u4n7xu_BaLup6VJVh3ckHvxBgdGncNhl7UGVQ,2463
+stockwell/lib/sine.cpython-38-x86_64-linux-gnu.so,sha256=UNOBl94UlielBU7UBc6-PHhfuDoiM9eHWI2ck9FIoFs,43888
+stockwell/lib/st.cpython-38-x86_64-linux-gnu.so,sha256=gO5Z0T-Sf9Azd0ZUhFd6NBVtXQx5cnwDN9FkfCiJWN8,76088
+stockwell/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stockwell-1.0.3.dist-info/RECORD,,
+stockwell-1.0.3.dist-info/METADATA,sha256=P4LTdjoyR1P20UJOTQIt807ixgfCPD_Qjbg9HuPwx7w,4370
+stockwell-1.0.3.dist-info/LICENSE.txt,sha256=rWJoZt3vach8ZNdLq-Ee5djzCMFnJ1gIfBeJU5RIop4,21782
+stockwell-1.0.3.dist-info/WHEEL,sha256=4jt3s2SccH6o2ToOLXWl8IJUftjHelTzKdBcGG27rIE,148
+stockwell-1.0.3.dist-info/top_level.txt,sha256=3gtl9vn5edrQB9mJMSrf868Bc1ng57oQSw6LZwD6HKU,18
