@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: taurex_cuda
+Version: 1.0.0
+Summary: TauREx 3 accelerator plugin using nVidia CUDA
+Home-page: https://github.com/ucl-exoplanets/taurex-cuda_public/
+Author: Ahmed Faris Al-Refaie
+Author-email: ahmed.al-refaie.12@ucl.ac.uk
+License: BSD
+Description: # taurex-cuda
+        Plugin to compute forward models using nVidia gpus
+        
+        Documentation can be found [here](https://taurex-cuda_public.readthedocs.io/en/latest/)
+Keywords: exoplanet,retrieval,taurex,taurex3,cuda,gpu,atmosphere,atmospheric
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Unix
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Environment :: GPU
+Classifier: Environment :: GPU :: NVIDIA CUDA
+Provides: taurex_cuda
+Description-Content-Type: text/markdown
