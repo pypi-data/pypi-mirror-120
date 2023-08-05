@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pandoraPlugintools
+Version: 0.0.2
+Summary: A pluguin tool set of functions for pandorafms
+Home-page: https://github.com/projects-pandorafms/pandoraPlugintools
+Author: PandoraFMS projects department
+Author-email: <projects@pandorafms.com>
+License: UNKNOWN
+Keywords: python,pandora,pandorafms,plugintool,plugintools
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+License-File: LICENSE
+
+UNKNOWN
+
