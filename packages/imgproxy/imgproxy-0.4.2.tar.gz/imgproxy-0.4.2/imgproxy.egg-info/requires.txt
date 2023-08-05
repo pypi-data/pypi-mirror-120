@@ -1,0 +1,12 @@
+
+[:python_version < "3.8"]
+typing_extensions
+
+[build]
+bump2version
+twine
+wheel
+
+[tests]
+pytest
+pytest-mypy

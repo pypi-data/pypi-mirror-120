@@ -1,0 +1,9 @@
+README.md
+imgproxy.py
+setup.cfg
+setup.py
+imgproxy.egg-info/PKG-INFO
+imgproxy.egg-info/SOURCES.txt
+imgproxy.egg-info/dependency_links.txt
+imgproxy.egg-info/requires.txt
+imgproxy.egg-info/top_level.txt
