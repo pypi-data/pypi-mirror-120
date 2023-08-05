@@ -1,0 +1,11 @@
+vollseg/Augmentation2D.py,sha256=38dLCRSoZ0dVIWDGVS8vhIQSoza1HLAQ_gruhtuynUU,10479
+vollseg/Augmentation3D.py,sha256=NNhzLapGMOkaqLm704qbhm50SqHOGGbWcdIdYecqZlg,10971
+vollseg/OptimizeThreshold.py,sha256=ozdtMSJsmqEwXprLV3juIXl6azQcTUuKUnsT3Eki-ws,4871
+vollseg/SmartSeeds3D.py,sha256=bpiLd9x6xFClrSyZLTB52onQah9iVOATVuHnItcn2Mw,20637
+vollseg/__init__.py,sha256=p-r-oYEpNcaxQSVixpmZ7XY3jxPDM2kvzw8LQa0bB38,197
+vollseg/helpers.py,sha256=YmhtSpomPFW5lbwrOrKZL0NtoKF0Y70xvy-dJwdO624,41878
+vollseg-1.4.0.dist-info/LICENSE,sha256=EyR_ikpQYTDN96J7EVkGmy6biXSBu9Nv45wKDpcraqQ,1514
+vollseg-1.4.0.dist-info/METADATA,sha256=ogd-3aZtbAq038onE0y6XulKdDb5mBqeJsBC3p9T5m4,4593
+vollseg-1.4.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+vollseg-1.4.0.dist-info/top_level.txt,sha256=tCHlPBSzAO5j1mfjFhK3xyKf-ksqlFT8A5jCcmPk_xo,8
+vollseg-1.4.0.dist-info/RECORD,,
