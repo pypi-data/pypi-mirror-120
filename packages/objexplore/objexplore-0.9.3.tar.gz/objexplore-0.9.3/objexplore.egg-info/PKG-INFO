@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: objexplore
+Version: 0.9.3
+Summary: Interactive Python Object Explorer
+Home-page: https://github.com/kylepollina/objexplore
+Author: Kyle Pollina
+Author-email: kylepollina@pm.me
+License: UNKNOWN
+Description: # ObjExplore
+        An Interactive Python Object Explorer
+        
+        ![screenshot](images/screenshot.png)
+        
+        
+        ## Install
+        
+        ```
+        pip install objexplore
+        ```
+        
+        or
+        
+        ```
+        pip install git+https://github.com/kylepollina/objexplore
+        ```
+        
+        ## Usage
+        
+        ```python
+        from objexplore import explore
+        import pandas
+        explore(pandas)
+        ```
+        
+        ## Features
+        - Dictionary explorer TODO
+        - List/Set explorer TODO
+        - DataFrame explorer TODO
+        
+        ## Keybindings
+        TODO
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
