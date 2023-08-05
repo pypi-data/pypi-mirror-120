@@ -1,0 +1,15 @@
+stoic_trace_cockpit-2021.9.2.data/scripts/manage.py,sha256=8w4vcFQrTvFoQUbNwJRrjwb5FYuQdgIQJP5LU1vpx4A,665
+stoic_trace_cockpit-2021.9.2.data/scripts/release.py,sha256=eOBvypmEqyWdn2TIkrfOjpDAW7pu7IM-6SRAtHzM3QM,1388
+trace_cockpit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trace_cockpit/admin.py,sha256=Geyr9Y3j3BJfWescgub8iQIiCVfsy-YUjtVzw665tKc,2020
+trace_cockpit/html.py,sha256=f3QZpFKmn9leZKbhVjOlqVxxx4gzM61EL-D3nR5sD6A,1667
+trace_cockpit/htmlutils.py,sha256=aeuqtrNz5GrmgipeQygH0sRwSHBv3S1UrKNm_oSAIus,470
+trace_cockpit/middleware.py,sha256=lYa9VG_cEqp-ar9tYHjfCBFcy2UreM67MTP3qWY3pw0,596
+trace_cockpit/models.py,sha256=0iM7eNHJJ2wS3jUrn4OH0YSfMQ9viYLNqWUnR18nPnw,3581
+trace_cockpit/testutils.py,sha256=WZk87MLjOMA7TySH9iuytE3prO0K7NQLKPGXZHSVUvA,517
+trace_cockpit/trace_to_json.py,sha256=BnSnBbYi-gXpN463lF9ZL3kXq9sH0qKg5vXlej2mlrU,4004
+stoic_trace_cockpit-2021.9.2.dist-info/LICENSE,sha256=5QUY4YC5tstxs9E2oq3rSYRvs0fxouyoTLzWH328kdo,1072
+stoic_trace_cockpit-2021.9.2.dist-info/METADATA,sha256=p1aWijwLh8yWrwnPgeVCXeqYFbzbQSVPR5Ex7TuOWeY,4036
+stoic_trace_cockpit-2021.9.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+stoic_trace_cockpit-2021.9.2.dist-info/top_level.txt,sha256=f1V2IPTpytcaXibD6ZuY5TJwLagA90ac2bvomUDxat8,14
+stoic_trace_cockpit-2021.9.2.dist-info/RECORD,,
