@@ -1,0 +1,3 @@
+[console_scripts]
+vdk-heartbeat = taurus.vdk.heartbeat.main:run
+
