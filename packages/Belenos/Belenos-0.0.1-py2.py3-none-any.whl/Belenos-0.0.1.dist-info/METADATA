@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: Belenos
+Version: 0.0.1
+Summary: Adaptive Mesh Refinement (AMR) astrophysical simulation data post-processing package
+Home-page: https://belenos.readthedocs.io
+Author: Damien CHAPON
+Author-email: damien.chapon@cea.fr
+License: CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1, http://www.cecill.info)
+Download-URL: https://gitlab.com/coast-dev/belenos
+Project-URL: Source, https://drf-gitlab.cea.fr/coast-dev/belenos/
+Keywords: Astrophysics simulation analysis visualization AMR
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Version Control :: Git
+Classifier: Topic :: Documentation :: Sphinx
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Requires-Python: >=3.6, <4
+Requires-Dist: Pillow (>=6.2.1)
+Requires-Dist: h5py (>=2.10.0)
+Requires-Dist: numpy (>=1.16.4)
+Requires-Dist: pandas (>=0.24.2)
+
+TODO
+
+
