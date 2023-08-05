@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: sqlitecollections
+Version: 0.5.3
+Summary: Python collections that are backended by sqlite3 DB and are compatible with the built-in collections
+Home-page: https://github.com/osoken/sqlitecollections
+Author: osoken
+Author-email: osoken.devel@outlook.jp
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: mkdocs ; extra == 'docs'
+Requires-Dist: mkdocs-material ; extra == 'docs'
+Requires-Dist: mdx-include ; extra == 'docs'
+Requires-Dist: mkdocs-macros-plugin ; extra == 'docs'
+
+Python collections that are backended by sqlite3 DB and are compatible with the built-in collections
+
