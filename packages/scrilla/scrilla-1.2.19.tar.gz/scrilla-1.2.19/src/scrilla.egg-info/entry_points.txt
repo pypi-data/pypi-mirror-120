@@ -1,0 +1,4 @@
+[console_scripts]
+scrilla = scrilla.main:do_program
+scrilla-gui = scrilla.graphics:do_gui [pyqt5]
+
