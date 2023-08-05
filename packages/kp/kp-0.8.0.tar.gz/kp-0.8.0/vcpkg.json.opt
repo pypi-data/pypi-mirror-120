@@ -1,0 +1,10 @@
+{
+  "name": "example",
+  "version-string": "0.8.0",
+  "dependencies": [
+    "fmt",
+    "spdlog",
+    "vulkan-headers",
+    "gtest"
+  ]
+}
