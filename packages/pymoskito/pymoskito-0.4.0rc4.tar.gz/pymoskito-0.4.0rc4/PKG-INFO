@@ -1,0 +1,168 @@
+Metadata-Version: 2.1
+Name: pymoskito
+Version: 0.4.0rc4
+Summary: Python based modular simulation & postprocessing kickass toolbox
+Home-page: https://github.com/cklb/pymoskito
+Author: Stefan Ecklebe
+Author-email: stefan.ecklebe@tu-dresden.de
+License: GPLv3
+Description: =========
+        PyMoskito
+        =========
+        
+        .. image:: https://github.com/cklb/pymoskito/actions/workflows/ci.yaml/badge.svg
+            :target: https://github.com/cklb/pymoskito/actions/workflows/ci.yaml
+            :alt: Continuous Integration Tests
+        
+        .. image:: https://img.shields.io/pypi/v/pymoskito.svg
+            :target: https://pypi.python.org/pypi/pymoskito
+            :alt: Link to PyPi
+        
+        .. image:: https://readthedocs.org/projects/pymoskito/badge/?version=stable
+            :target: http://pymoskito.readthedocs.io/en/stable/
+            :alt: Documentation Status
+        
+        .. image:: https://zenodo.org/badge/49145679.svg
+           :target: https://zenodo.org/badge/latestdoi/49145679
+           :alt: DOI index 49145679
+        
+        PyMoskito stands for *Python based modular simulation & postprocessing kickass
+        toolbox* and is **Free software** (GPLv3)
+        
+        PyMoskito is targeted at students and researchers working in control
+        engineering. It takes care of all structure related programming a let's you
+        focus on the important things in life: **control design**.
+        
+        It features a modular control loop structure that already contains most of the
+        needed blocks a control engineer needs. Basically you implement your systems
+        dynamics as well as a fancy control law and you are ready to go.
+        On top PyMoskito also contains a GUI which let's you easily fine-tune the
+        parameters of your simulation.
+        
+        **Go ahead and give it a try!**
+        
+        Documentation can be found at https://pymoskito.readthedocs.org.
+        
+        PyMoskito at work
+        -----------------
+        The main application simulating the **Tandem Pendulum** system:
+        
+        .. image:: ./docs/pictures/pm_1.png
+           :alt: Image showing the awesome toolbox at work
+        
+        Still here? So PyMoskito features
+        ---------------------------------
+        * Quick setup due to lightweight dependencies
+        * Modular control loop structure allowing easy configuration
+        * Easy integration of own system models through open interface
+        * Automatic simulation of simulation regimes (i.e. for parameter ranges)
+        * Export of simulation results for dedicated post processing
+        * VTK based 3D visualization interface
+        * Playback functions for 3D visualization
+        * Ready-to-go graphs for all simulation signals
+        * Execution of external C++ code via *pybind11*
+        
+        Getting started
+        ---------------
+        
+        Install with pip::
+        
+            $ pip install pymoskito
+        
+        and run an example::
+        
+            $ python -m pymoskito.examples.pendulum
+        
+        
+        
+        
+        =======
+        History
+        =======
+        
+        
+        0.4.0 (2021-08-XX)
+        ------------------
+        
+        * Added support to compile and call external C and C++ functions
+          for hardware in the loop tests (Thanks to Jens)
+        * Add the possibility for the visualization the render the current model
+          parameters (#56)
+        * Various improvements regarding plot creation and handling
+        * Visualizers can now be changed during runtime
+        * Migrated CI pipeline to Github Actions
+        * Fix various coding style issues
+        * Fix issue in playback logic (#62)
+        * Dropped support for Python 3.6
+        
+        0.3.0 (2018-10-01)
+        ------------------
+        
+        * Added a new plot system
+        * Added a last simulation list
+        * Added more log messages 
+        * Removed latex as an requirement for the main GUI, only required for the Postprocessor
+        
+        0.2.3 (2018-05-14)
+        ------------------
+        
+        * Added sensible examples for Post- and Meta processors in the Ball and Beam
+          example
+        * Fixed Issue regarding the Disturbance Block
+        * Removed error-prone pseudo post processing
+        * Fixed problems due to changes in trajectory generators
+        
+        0.2.2 (2018-03-28)
+        ------------------
+        
+        * Added extensive beginners guide (thanks to Jonas) and tutorial section
+        * Added extended documentation for examples (again, thanks to Jonas)
+        
+        0.2.1 (2017-09-07)
+        ------------------
+        
+        * Fixed issue when installing via pip
+        * Fixed issue with metaprocessors and added example metaprocessor for ballbeam
+        * Downgraded requirements
+        
+        0.2.0 (2017-08-18)
+        ------------------
+        
+        * Second minor release with lots of new features.
+        * Completely overhauled graphical user interface with menus and shortcuts.
+        * PyMoskito now comes with three full-fledged examples from the world of
+          control theory, featuring the Ball and Beam- and a Tandem-Pendulum system.
+        * The main application now has a logger window which makes it easier to see what
+          is going on in the simulation circuit.
+        * Several bugs concerning encoding issues have been fixed
+        * Unittest have been added and the development now uses travis-ci
+        * Version change from PyQt4 to Pyt5
+        * Version change form Python 2.7 to 3.5+
+        * Changed version to GPLv3 and added appropriate references for the used images.
+        * Improved the export of simulation results
+        * Introduced persistent settings that make opening files less painful.
+        * Made vtk an optional dependency and added matplotlib based visualizers.
+        * Large improvements concerning the sphinx-build documentation
+        * Fixed issue concerning possible data types for simulation module properties
+        * Introduced new generic modules that directly work on scipy StateSpace objects.
+        
+        0.1.0 (2015-01-11)
+        ------------------
+        
+        * First release on PyPI.
+        
+        
+Keywords: pymoskito control simulation feedback feedforward
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/x-rst
+Provides-Extra: 3d
+Provides-Extra: cpp
+Provides-Extra: docs
+Provides-Extra: test
