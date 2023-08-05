@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: rich-diff
+Version: 1.0.1
+Summary: CLI based diff Viewer
+Home-page: https://github.com/sureshdsk/rich-diff
+Author: sureshdsk
+Author-email: dsk@sureshdsk.dev
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+
+# Rich Diff
+
+

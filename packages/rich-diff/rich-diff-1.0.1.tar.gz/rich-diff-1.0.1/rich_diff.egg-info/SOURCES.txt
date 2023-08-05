@@ -1,0 +1,13 @@
+setup.py
+../src/app/__init__.py
+../src/app/__main__.py
+../src/app/__version__.py
+../src/app/cli.py
+../src/app/enums.py
+../src/app/rich_diff.py
+rich_diff.egg-info/PKG-INFO
+rich_diff.egg-info/SOURCES.txt
+rich_diff.egg-info/dependency_links.txt
+rich_diff.egg-info/entry_points.txt
+rich_diff.egg-info/requires.txt
+rich_diff.egg-info/top_level.txt
