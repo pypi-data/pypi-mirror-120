@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: dp-celery
+Version: 5.0.5
+Summary: Distributed Task Queue.
+Home-page: http://celeryproject.org
+Author: Ask Solem
+Author-email: auvipy@gmail.com
+License: BSD
+Project-URL: Documentation, http://docs.celeryproject.org/en/latest/index.html
+Project-URL: Code, https://github.com/celery/celery
+Project-URL: Tracker, https://github.com/celery/celery/issues
+Project-URL: Funding, https://opencollective.com/celery
+Description: Customized celery.
+Keywords: task job queue distributed messaging actor
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Topic :: System :: Distributed Computing
+Classifier: Topic :: Software Development :: Object Brokering
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6,
+Provides-Extra: pymemcache
+Provides-Extra: cosmosdbsql
+Provides-Extra: zookeeper
+Provides-Extra: mongodb
+Provides-Extra: couchbase
+Provides-Extra: tblib
+Provides-Extra: pyro
+Provides-Extra: couchdb
+Provides-Extra: gevent
+Provides-Extra: pytest
+Provides-Extra: azureblockblob
+Provides-Extra: msgpack
+Provides-Extra: arangodb
+Provides-Extra: dynamodb
+Provides-Extra: lzma
+Provides-Extra: sqs
+Provides-Extra: sqlalchemy
+Provides-Extra: django
+Provides-Extra: brotli
+Provides-Extra: librabbitmq
+Provides-Extra: redis
+Provides-Extra: yaml
+Provides-Extra: auth
+Provides-Extra: cassandra
+Provides-Extra: s3
+Provides-Extra: zstd
+Provides-Extra: eventlet
+Provides-Extra: slmq
+Provides-Extra: elasticsearch
+Provides-Extra: memcache
+Provides-Extra: solar
+Provides-Extra: consul
