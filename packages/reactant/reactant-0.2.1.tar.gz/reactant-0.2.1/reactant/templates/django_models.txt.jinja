@@ -1,0 +1,27 @@
+from django.db import models
+
+
+{% for model in models %}
+class {{model.name}}(models.Model):  
+{% for field in model.fields %}
+    {{ field.name }} = models.{{ field.type }}(
+        {% for k, v in field.extras.items() %}
+            {% if loop.last %}
+                {% if k == "relation" %}
+                    {{ v }}
+                {% elif k == "on_delete" %}
+                    {{ k }}={{ v }}
+                {% else %}
+                    {{ k }}={% if v is string %}{{ v|tojson }}{% else %}{{ v }}{% endif %}
+                {% endif %}
+            {% else %}
+                {% if k == "relation" %}
+                    {{ v }},
+                {% else %}
+                    {{ k }}={% if v is string %}{{ v|tojson }},{% else %}{{ v }},{% endif %}
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+        )
+{% endfor %}
+{% endfor %}
