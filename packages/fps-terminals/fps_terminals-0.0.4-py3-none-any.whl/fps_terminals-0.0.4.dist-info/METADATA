@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: fps-terminals
+Version: 0.0.4
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: fps
+Requires-Dist: fps-auth
+Requires-Dist: websockets
+
+UNKNOWN
+
