@@ -1,0 +1,17 @@
+README.rst
+setup.py
+frida_gadget.egg-info/PKG-INFO
+frida_gadget.egg-info/SOURCES.txt
+frida_gadget.egg-info/dependency_links.txt
+frida_gadget.egg-info/entry_points.txt
+frida_gadget.egg-info/requires.txt
+frida_gadget.egg-info/top_level.txt
+scripts/__init__.py
+scripts/cli.py
+scripts/files/libfrida-gadget-12.6.10-android-arm.so
+scripts/files/libfrida-gadget-12.6.10-android-arm64.so
+scripts/files/libfrida-gadget-15.1.1-android-arm.so
+scripts/files/libfrida-gadget-15.1.1-android-arm64.so
+scripts/files/libfrida-gadget-15.1.1-android-x86.so
+test/__init__.py
+test/cli_test.py
