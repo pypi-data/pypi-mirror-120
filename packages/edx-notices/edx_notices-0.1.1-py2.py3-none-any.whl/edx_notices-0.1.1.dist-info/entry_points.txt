@@ -1,0 +1,3 @@
+[lms.djangoapp]
+notices = notices.apps:NoticesConfig
+
