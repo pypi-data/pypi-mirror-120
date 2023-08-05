@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: tgwrapper
+Version: 0.1.2
+Summary: Terragrunt wrapper for AWS infra deployment
+Home-page: https://github.com/smruti-21/tgwrapper
+Author: Smruti Sahoo
+Author-email: ssahoo@mobiquityinc.com
+License: MIT license
+Keywords: tgwrapper
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Requires-Dist: Jinja2 (==2.11.3)
+Requires-Dist: PyYAML (==5.4.1)
+Requires-Dist: dpath (==2.0.1)
+Requires-Dist: mergedeep (==1.3.4)
+Requires-Dist: pytest (==6.2.2)
+
+======================
+mob-terragrunt-wrapper
+======================
+
+
+.. image:: https://img.shields.io/pypi/v/tgwrapper.svg
+        :target: https://pypi.python.org/pypi/tgwrapper
+
+.. image:: https://img.shields.io/travis/smruti-21/tgwrapper.svg
+        :target: https://travis-ci.com/smruti-21/tgwrapper
+
+.. image:: https://readthedocs.org/projects/tgwrapper/badge/?version=latest
+        :target: https://tgwrapper.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+
+.. image:: https://pyup.io/repos/github/smruti-21/tgwrapper/shield.svg
+     :target: https://pyup.io/repos/github/smruti-21/tgwrapper/
+     :alt: Updates
+
+
+
+Terragrunt wrapper for AWS infra deployment
+
+
+* Free software: MIT license
+* Documentation(Not ready yet): https://tgwrapper.readthedocs.io
+
+How to install
+--------------
+
+.. code:: bash
+
+    $ pip3 install git+https://github.com/smruti-21/mob-terragrunt-wrapper.git@main
+
+Features
+--------
+
+* TODO
+
+
+=======
+History
+=======
+
+0.1.0 (2021-09-07)
+------------------
+
+* First release on PyPI.
+
+
