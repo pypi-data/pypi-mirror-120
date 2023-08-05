@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/rendition.egg-info/PKG-INFO
+src/rendition.egg-info/SOURCES.txt
+src/rendition.egg-info/dependency_links.txt
+src/rendition.egg-info/not-zip-safe
+src/rendition.egg-info/top_level.txt
