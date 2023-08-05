@@ -1,0 +1,28 @@
+name: Build & Release Docs to GH Pages
+
+on:
+  push:
+    branches: [ main ]
+
+concurrency:
+  group: docs-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-push-docs:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+
+    - name: Set up Python 3.9
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+
+    - name: Publish Latest Documentation
+      uses: ./.github/actions/publish_docs/
+      with:
+        alias_label: latest
