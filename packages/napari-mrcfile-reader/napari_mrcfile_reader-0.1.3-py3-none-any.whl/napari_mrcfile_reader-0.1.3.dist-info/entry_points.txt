@@ -1,0 +1,3 @@
+[napari.plugin]
+mrcfile-reader = napari_mrcfile_reader
+
