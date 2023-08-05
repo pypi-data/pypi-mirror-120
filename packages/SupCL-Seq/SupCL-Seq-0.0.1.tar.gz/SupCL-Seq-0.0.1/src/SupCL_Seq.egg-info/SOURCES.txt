@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+SupCLSeq.png
+pyproject.toml
+setup.cfg
+src/SupCL_Seq/SupCsTrainer.py
+src/SupCL_Seq/__init__.py
+src/SupCL_Seq.egg-info/PKG-INFO
+src/SupCL_Seq.egg-info/SOURCES.txt
+src/SupCL_Seq.egg-info/dependency_links.txt
+src/SupCL_Seq.egg-info/top_level.txt
