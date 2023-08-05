@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: eveindustrytools
+Version: 0.0.1
+Summary: provides a variety of functions useful for doing industry in eve online using evemarkettools
+Home-page: https://https://github.com/SustainedCruelty/eveindustrytools
+Author: Filip Jöde
+Author-email: joede.filip@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: EVE Online,API,EVE ESI,Swagger
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
