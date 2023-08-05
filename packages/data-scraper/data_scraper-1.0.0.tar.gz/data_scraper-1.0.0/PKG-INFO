@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: data_scraper
+Version: 1.0.0
+Summary: Web Scraping Library
+Home-page: UNKNOWN
+Author: DataKund
+Author-email: datakund@gmail.com
+License: Apache License 2.0
+Description: Data Scraper is a library that makes it easy to scrape information from any url. You don't have to inspect any web elements to find tags, xpath id etc.
+        It learns from the links of the web pages given by you & builds a scraper. Then you can use it to get JSON data out of other pages.
+        
+        ### Train Scraper
+        Training the scraper requires urls of 2 pages as input.
+        These pages should look similar but contain different data.
+        Then it finds the pattern in the 2 pages & returns scraper id.
+        This id can be used to fetch JSON data out of the other similar pages.
+        Training may take 2-3 minutes but once trained ,then scraper runs fast
+        ```sh
+        from data_scraper import *
+        link1='https://pypi.org/search/?q=request'
+        link2='https://pypi.org/search/?q=datakund'
+        response=scraper.train(link1,link2)
+        print(response)
+        #{'id':'QJP4LW2EBTQM45N',success:true}
+        open('PyPi Scraper.txt', 'w').write(response['id'])
+        ```
+        
+        
+        ### Run Scraper
+        Running the scraper requires 2 inputs .
+        First is the url which you want to scrape data from
+        Second is the 'id' of the scraper which was given in response of training
+        ```sh
+        from data_scraper import *
+        Id=open('PyPi Scraper.txt', 'r').read()
+        #This is id of scraper we got in training above
+        link3='https://pypi.org/search/?q=scraper'
+        response=scraper.run(link3,id=Id)
+        with open('./data.json','w') as data:
+        	data.write(json.dumps(response,indent=4))
+        ```
+        
+        ### Examples
+        Below are some of the examples of links using which you can train autoscraper:-
+        1. Pypi packages scraper [https://pypi.org/search/?q=firebase](https://pypi.org/search/?q=firebase)  [https://pypi.org/search/?q=datakund](https://pypi.org/search/?q=datakund)
+        2. Wordpress theme scraper [https://wordpress.org/themes/search/green/](https://wordpress.org/themes/search/green/)   [https://wordpress.org/themes/search/red/](https://wordpress.org/themes/search/red/)
+        3. Cryptocurrency details scraper [https://coinmarketcap.com/](https://coinmarketcap.com/)  [https://coinmarketcap.com/?page=2](https://coinmarketcap.com/?page=2)
+        4. PlayStore app details scraper[https://play.google.com/store/apps/details?id=com.whatsapp](https://play.google.com/store/apps/details?id=com.whatsapp)   [https://play.google.com/store/apps/details?id=org.telegram.messenger](https://play.google.com/store/apps/details?id=org.telegram.messenger)
+        
+        ### Queries/ Feedback
+        If you have some queries or feedback please contact us at following links
+        [Telegram](https://t.me/datakund)
+        [Email](abhishek@datakund.com)
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
