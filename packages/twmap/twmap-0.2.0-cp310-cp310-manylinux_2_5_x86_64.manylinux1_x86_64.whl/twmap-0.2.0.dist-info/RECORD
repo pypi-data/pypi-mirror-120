@@ -1,0 +1,5 @@
+twmap-0.2.0.dist-info/METADATA,sha256=zauGlzBasJJNHXZjwziwiHRd5Lx4DtfOHmfs6PVMnho,246
+twmap-0.2.0.dist-info/WHEEL,sha256=GF6WGxAS13q-m47hnDIYtYrKFN9FMjeDqa8F2NFFmo0,133
+twmap/__init__.py,sha256=g2qBPy_Wtlm50XMSRE-bnDeqHEiD1nStDlX8KcWy0AA,21
+twmap/twmap.cpython-310-x86_64-linux-gnu.so,sha256=IK6c6v9PzFidslSNUhI8FsIxe5uoFHSAutMC2sv6Mdk,5058880
+twmap-0.2.0.dist-info/RECORD,,
