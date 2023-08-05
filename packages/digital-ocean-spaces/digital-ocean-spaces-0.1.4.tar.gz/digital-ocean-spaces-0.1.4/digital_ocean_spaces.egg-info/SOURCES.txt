@@ -1,0 +1,10 @@
+LICENSE
+README.md
+__init__.py
+client.py
+setup.py
+digital_ocean_spaces.egg-info/PKG-INFO
+digital_ocean_spaces.egg-info/SOURCES.txt
+digital_ocean_spaces.egg-info/dependency_links.txt
+digital_ocean_spaces.egg-info/requires.txt
+digital_ocean_spaces.egg-info/top_level.txt
