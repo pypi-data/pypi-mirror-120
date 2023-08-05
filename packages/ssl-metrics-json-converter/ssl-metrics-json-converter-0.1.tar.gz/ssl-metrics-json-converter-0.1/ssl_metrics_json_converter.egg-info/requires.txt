@@ -1,0 +1,4 @@
+gtk
+pandas
+progress
+PyQT4
