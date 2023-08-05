@@ -1,0 +1,5 @@
+[console_scripts]
+yata = yata.cmd_tools:main
+yata_glo = yata.cmd_tools:glo
+yata_guide = yata.cmd_tools:guide
+
