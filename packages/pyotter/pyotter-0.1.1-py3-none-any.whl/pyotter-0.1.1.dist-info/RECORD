@@ -1,0 +1,11 @@
+otter/__init__.py,sha256=v2Pc5LZhgb9xu7oQo3ljb_U42EKG3lnLIwBqXA5IobI,251
+otter/__main__.py,sha256=BUMFgo0GENEGf3_SNgt3fEimXV3WoAAqiA7jNS_yHfI,15032
+otter/helpers.py,sha256=_JlLzAdLj6b9gunk969wgpbQV8JmaZV0ZsBM3E_CvhQ,4328
+otter/styling.py,sha256=-1w9dXwUgRT0YFDtFscwQag6svaUxw6_HS-R-CDSw4I,1156
+otter/trace.py,sha256=HOTTl1qnKfjkWAA2-PPBrGT75E6R5ZD5FbH-soeCv-c,12090
+pyotter-0.1.1.dist-info/LICENSE,sha256=8w4UAO25vSeIqikL8w1Y2ju_1KqXyImZnWI4x4o95UA,1517
+pyotter-0.1.1.dist-info/METADATA,sha256=0Y_fq16fBiBD9PT2_s-gdv9EwOSXDpS48c5BdP4OphE,2784
+pyotter-0.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pyotter-0.1.1.dist-info/dependency_links.txt,sha256=HrMIZll_OOKe9OaW7bwCwiQz2yUIc4QUclz1rbdoXKM,53
+pyotter-0.1.1.dist-info/top_level.txt,sha256=Wth72sCwBRUk3KZGknSKvLQDMFuJk6qiaAavMDOdG5k,6
+pyotter-0.1.1.dist-info/RECORD,,
