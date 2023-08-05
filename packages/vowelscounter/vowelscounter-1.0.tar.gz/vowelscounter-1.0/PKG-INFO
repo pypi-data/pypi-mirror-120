@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: vowelscounter
+Version: 1.0
+Summary: Vowel counter for given string
+Home-page: https://github.com/strymsg/python-simplemotds
+Author: Oscar Batista
+Author-email: oscarjr01.13@gtmail.com
+License: GPLv3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+
+UNKNOWN
+
