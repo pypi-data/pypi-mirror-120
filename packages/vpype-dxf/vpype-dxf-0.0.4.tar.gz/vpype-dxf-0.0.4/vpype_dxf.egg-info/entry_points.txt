@@ -1,0 +1,4 @@
+
+            [vpype.plugins]
+            dread=vpype_dxf.dread:dread
+        

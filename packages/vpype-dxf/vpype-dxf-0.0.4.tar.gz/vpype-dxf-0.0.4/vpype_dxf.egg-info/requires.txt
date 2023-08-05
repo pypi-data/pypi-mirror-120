@@ -1,0 +1,5 @@
+click
+vpype
+numpy
+ezdxf>=0.14.0
+svgelements>=1.4.0

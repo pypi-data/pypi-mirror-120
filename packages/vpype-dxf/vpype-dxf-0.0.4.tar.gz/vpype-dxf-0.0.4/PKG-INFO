@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: vpype-dxf
+Version: 0.0.4
+Summary: vpype dxf plugin
+Home-page: https://github.com/tatarize/vpype-dxf/
+Author: Tatarize
+Author-email: tatarize@gmail.com
+License: UNKNOWN
+Description: # vpype-dxf
+         vpype dxf loading plugin
+        
+        Adds command dread (dxf-read) that reads dxf files and into the vpype pipeline.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
