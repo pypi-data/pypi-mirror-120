@@ -1,0 +1,3 @@
+include requirements.txt README.md LICENSE
+graft webopencv/static
+graft webopencv/templates
