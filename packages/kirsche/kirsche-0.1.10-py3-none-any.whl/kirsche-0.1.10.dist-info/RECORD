@@ -1,0 +1,19 @@
+kirsche/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kirsche/command.py,sha256=Fp96KJ-yGO0qkuAraP0AxmiBO3JmGUvS976YM_Wf_eQ,6614
+kirsche/connect.py,sha256=LawMaystgPDsPuGIvghUtA4w1t_wNzkz9zt21LI8_4U,3681
+kirsche/dataset.py,sha256=AQ0_nED4GJRnoxyVJ7xI0dBMptcdCbeyKpvGOzXjOXc,8553
+kirsche/download.py,sha256=hkloHC8UR0jucxtvAYLcjlrAGwjOj7speTr2Se82vrw,2833
+kirsche/version.py,sha256=z0zCHFTcKSR0tJ6h5qrpNmRVP21QIPP8N0p7quCnnm0,23
+kirsche/utils/__init__ copy.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kirsche/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kirsche/utils/bib.py,sha256=9OJm31aaY0r8-JJXzRkLOaiJYDulCE84b5vwZ8t4mow,4325
+kirsche/utils/constants.py,sha256=mzDs0wAVwCOVlhLKEMbtoYxsoPjOaTeF7D8N6ky29Vw,109
+kirsche/utils/io.py,sha256=9Bsj7dL8YbYqOPlgJgYxQ6YOfT8NsRaksDlVYLl3e2U,597
+kirsche/utils/semanticscholar.py,sha256=Ej4EU9UxFsV4UBKtNKxzIzsp_IF62GemLe5yeKn9-74,854
+kirsche/utils/web.py,sha256=PSrma4xSoiTb4mwjORdLMOlrOOGdq8OE9fEAmSd8kag,7535
+kirsche-0.1.10.dist-info/LICENSE,sha256=D95s45OcQFyttDQ9qY8nbd6_ytzTDHTpmCOBy3W6d7Q,1063
+kirsche-0.1.10.dist-info/METADATA,sha256=bkGGRhVdnMjOxIO7_uoignCb8kC3JZ0iuC3kB2Mn-Es,1965
+kirsche-0.1.10.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+kirsche-0.1.10.dist-info/entry_points.txt,sha256=l1gr31fvfvYC-Tl04e64ByRwEgf2bf5Uw8API10QoyA,53
+kirsche-0.1.10.dist-info/top_level.txt,sha256=F8YSZwX8Y9xdfo8GM5VlfMqYgT08d1vuUNpJ5lrV0lQ,8
+kirsche-0.1.10.dist-info/RECORD,,
