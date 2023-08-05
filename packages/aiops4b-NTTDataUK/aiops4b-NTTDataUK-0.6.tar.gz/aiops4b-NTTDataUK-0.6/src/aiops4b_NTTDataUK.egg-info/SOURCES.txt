@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/aiops4b_NTTDataUK.egg-info/PKG-INFO
+src/aiops4b_NTTDataUK.egg-info/SOURCES.txt
+src/aiops4b_NTTDataUK.egg-info/dependency_links.txt
+src/aiops4b_NTTDataUK.egg-info/top_level.txt
+src/trend_intelligence/Dashboard.py
+src/trend_intelligence/Prediction.py
+src/trend_intelligence/Recommendation.py
+src/trend_intelligence/__init__.py
