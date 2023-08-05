@@ -1,0 +1,778 @@
+,license_plate,kreis_key,kreis_name
+0,AM,09361,Amberg
+1,AN,09561,Ansbach
+2,AB,09661,Aschaffenburg
+3,A,09761,Augsburg
+4,BAD,08211,Baden-Baden
+5,BA,09461,Bamberg
+6,BT,09462,Bayreuth
+7,B,11000,Berlin
+8,BI,05711,Bielefeld
+9,BO,05911,Bochum
+10,WAT,05911,Bochum
+11,BN,05314,Bonn
+12,BOT,05512,Bottrop
+13,BRB,12051,Brandenburg an der Havel
+14,BS,03101,Braunschweig
+15,HB,04011,Bremen
+16,HB,04012,Bremerhaven
+17,C,14511,Chemnitz
+18,CO,09463,Coburg
+19,NEC,09463,Coburg
+20,CB,12052,Cottbus
+21,DA,06411,Darmstadt
+22,DEL,03401,Delmenhorst
+23,DE,15001,Dessau-Roßlau
+24,RSL,15001,Dessau-Roßlau
+25,DO,05913,Dortmund
+26,DD,14612,Dresden
+27,DU,05112,Duisburg
+28,D,05111,Düsseldorf
+29,EMD,03402,Emden
+30,EF,16051,Erfurt
+31,ER,09562,Erlangen
+32,E,05113,Essen
+33,FL,01001,Flensburg
+34,FT,07311,Frankenthal
+35,FF,12053,Frankfurt
+36,F,06412,Frankfurt am Main
+37,FR,08311,Freiburg im Breisgau
+38,FÜ,09563,Fürth
+39,GE,05513,Gelsenkirchen
+40,G,16052,Gera
+41,HA,05914,Hagen
+42,HAL,15002,Halle
+43,HH,02000,Hamburg
+44,HAM,05915,Hamm
+45,HD,08221,Heidelberg
+46,HN,08121,Heilbronn
+47,HER,05916,Herne
+48,WAN,05916,Herne
+49,HO,09464,Hof
+50,IN,09161,Ingolstadt
+51,J,16053,Jena
+52,KL,07312,Kaiserslautern
+53,KA,08212,Karlsruhe
+54,KS,06611,Kassel
+55,KF,09762,Kaufbeuren
+56,KE,09763,Kempten
+57,KI,01002,Kiel
+58,KO,07111,Koblenz
+59,K,05315,Köln
+60,KR,05114,Krefeld
+61,LD,07313,Landau in der Pfalz
+62,LA,09261,Landshut
+63,L,14713,Leipzig
+64,LEV,05316,Leverkusen
+65,OP,05316,Leverkusen
+66,HL,01003,Lübeck
+67,LU,07314,Ludwigshafen am Rhein
+68,MD,15003,Magdeburg
+69,MZ,07315,Mainz
+70,MA,08222,Mannheim
+71,MM,09764,Memmingen
+72,MG,05116,Mönchengladbach
+73,MH,05117,Mülheim an der Ruhr
+74,M,09162,München
+75,MS,05515,Münster
+76,NMS,01004,Neumünster
+77,NW,07316,Neustadt an der Weinstraße
+78,N,09564,Nürnberg
+79,OB,05119,Oberhausen
+80,OF,06413,Offenbach am Main
+81,OL,03403,Oldenburg
+82,OS,03404,Osnabrück
+83,PA,09262,Passau
+84,PF,08231,Pforzheim
+85,PS,07317,Pirmasens
+86,P,12054,Potsdam
+87,R,09362,Regensburg
+88,RS,05120,Remscheid
+89,RO,09163,Rosenheim
+90,HRO,13003,Rostock
+91,SZ,03102,Salzgitter
+92,SC,09565,Schwabach
+93,SW,09662,Schweinfurt
+94,SN,13004,Schwerin
+95,SG,05122,Solingen
+96,SP,07318,Speyer
+97,SR,09263,Straubing
+98,S,08111,Stuttgart
+99,SHL,16054,Suhl
+100,TR,07211,Trier
+101,UL,08421,Ulm
+102,WEN,09363,Weiden in der Oberpfalz
+103,WE,16055,Weimar
+104,WI,06414,Wiesbaden
+105,WHV,03405,Wilhelmshaven
+106,WOB,03103,Wolfsburg
+107,WO,07319,Worms
+108,W,05124,Wuppertal
+109,WÜ,09663,Würzburg
+110,ZW,07320,Zweibrücken
+111,AC,05334,Aachen
+112,MON,05334,Aachen
+113,AW,07131,Ahrweiler
+114,AIC,09771,Aichach-Friedberg
+115,FDB,09771,Aichach-Friedberg
+116,UL,08425,Alb-Donau-Kreis
+117,ABG,16077,Altenburger Land
+118,SLN,16077,Altenburger Land
+119,AK,07132,Altenkirchen (Westerwald)
+120,SAW,15081,Altmarkkreis Salzwedel
+121,GA,15081,Altmarkkreis Salzwedel
+122,KLZ,15081,Altmarkkreis Salzwedel
+123,AÖ,09171,Altötting
+124,LF,09171,Altötting
+125,AZ,07331,Alzey-Worms
+126,AS,09371,Amberg-Sulzbach
+127,BUL,09371,Amberg-Sulzbach
+128,ESB,09371,Amberg-Sulzbach
+129,NAB,09371,Amberg-Sulzbach
+130,SUL,09371,Amberg-Sulzbach
+131,WST,03451,Ammerland
+132,ABI,15082,Anhalt-Bitterfeld
+133,AZE,15082,Anhalt-Bitterfeld
+134,BTF,15082,Anhalt-Bitterfeld
+135,KÖT,15082,Anhalt-Bitterfeld
+136,ZE,15082,Anhalt-Bitterfeld
+137,AN,09571,Ansbach
+138,DKB,09571,Ansbach
+139,FEU,09571,Ansbach
+140,ROT,09571,Ansbach
+141,AB,09671,Aschaffenburg
+142,ALZ,09671,Aschaffenburg
+143,A,09772,Augsburg
+144,SMÜ,09772,Augsburg
+145,WER,09772,Augsburg
+146,AUR,03452,Aurich
+147,NOR,03452,Aurich
+148,DÜW,07332,Bad Dürkheim
+149,KG,09672,Bad Kissingen
+150,BRK,09672,Bad Kissingen
+151,HAB,09672,Bad Kissingen
+152,KH,07133,Bad Kreuznach
+153,TÖL,09173,Bad Tölz-Wolfratshausen
+154,WOR,09173,Bad Tölz-Wolfratshausen
+155,BA,09471,Bamberg
+156,BAR,12060,Barnim
+157,BER,12060,Barnim
+158,EW,12060,Barnim
+159,BZ,14625,Bautzen
+160,BIW,14625,Bautzen
+161,HY,14625,Bautzen
+162,KM,14625,Bautzen
+163,BT,09472,Bayreuth
+164,EBS,09472,Bayreuth
+165,ESB,09472,Bayreuth
+166,KEM,09472,Bayreuth
+167,MÜB,09472,Bayreuth
+168,PEG,09472,Bayreuth
+169,BGL,09172,Berchtesgadener Land
+170,BGD,09172,Berchtesgadener Land
+171,LF,09172,Berchtesgadener Land
+172,REI,09172,Berchtesgadener Land
+173,HP,06431,Bergstraße
+174,WIL,07231,Bernkastel-Wittlich
+175,BKS,07231,Bernkastel-Wittlich
+176,BC,08426,Biberach
+177,BIR,07134,Birkenfeld
+178,BB,08115,Böblingen
+179,LEO,08115,Böblingen
+180,FN,08435,Bodenseekreis
+181,TT,08435,Bodenseekreis
+182,ÜB,08435,Bodenseekreis
+183,BK,15083,Börde
+184,BÖ,15083,Börde
+185,HDL,15083,Börde
+186,OC,15083,Börde
+187,OK,15083,Börde
+188,WMS,15083,Börde
+189,WZL,15083,Börde
+190,BOR,05554,Borken
+191,AH,05554,Borken
+192,BOH,05554,Borken
+193,FR,08315,Breisgau-Hochschwarzwald
+194,BLK,15084,Burgenlandkreis
+195,HHM,15084,Burgenlandkreis
+196,NEB,15084,Burgenlandkreis
+197,NMB,15084,Burgenlandkreis
+198,WSF,15084,Burgenlandkreis
+199,ZZ,15084,Burgenlandkreis
+200,CW,08235,Calw
+201,CE,03351,Celle
+202,CHA,09372,Cham
+203,KÖZ,09372,Cham
+204,ROD,09372,Cham
+205,WÜM,09372,Cham
+206,CLP,03453,Cloppenburg
+207,CO,09473,Coburg
+208,NEC,09473,Coburg
+209,COC,07135,Cochem-Zell
+210,ZEL,07135,Cochem-Zell
+211,COE,05558,Coesfeld
+212,LH,05558,Coesfeld
+213,CUX,03352,Cuxhaven
+214,DAH,09174,Dachau
+215,LDS,12061,Dahme-Spreewald
+216,KW,12061,Dahme-Spreewald
+217,LC,12061,Dahme-Spreewald
+218,LN,12061,Dahme-Spreewald
+219,DA,06432,Darmstadt-Dieburg
+220,DI,06432,Darmstadt-Dieburg
+221,DEG,09271,Deggendorf
+222,DH,03251,Diepholz
+223,SY,03251,Diepholz
+224,DLG,09773,Dillingen an der Donau
+225,WER,09773,Dillingen an der Donau
+226,DGF,09279,Dingolfing-Landau
+227,LAN,09279,Dingolfing-Landau
+228,HEI,01051,Dithmarschen
+229,MED,01051,Dithmarschen
+230,DON,09779,Donau-Ries
+231,NÖ,09779,Donau-Ries
+232,KIB,07333,Donnersbergkreis
+233,ROK,07333,Donnersbergkreis
+234,DN,05358,Düren
+235,JÜL,05358,Düren
+236,MON,05358,Düren
+237,SLE,05358,Düren
+238,EBE,09175,Ebersberg
+239,EIC,16061,Eichsfeld
+240,HIG,16061,Eichsfeld
+241,WBS,16061,Eichsfeld
+242,EI,09176,Eichstätt
+243,BIT,07232,Eifelkreis Bitburg-Prüm
+244,PRÜ,07232,Eifelkreis Bitburg-Prüm
+245,EE,12062,Elbe-Elster
+246,FI,12062,Elbe-Elster
+247,LIB,12062,Elbe-Elster
+248,EM,08316,Emmendingen
+249,EL,03454,Emsland
+250,EN,05954,Ennepe-Ruhr-Kreis
+251,WIT,05954,Ennepe-Ruhr-Kreis
+252,PF,08236,Enzkreis
+253,ED,09177,Erding
+254,ERH,09572,Erlangen-Höchstadt
+255,HÖS,09572,Erlangen-Höchstadt
+256,ERZ,14521,Erzgebirgskreis
+257,ANA,14521,Erzgebirgskreis
+258,ASZ,14521,Erzgebirgskreis
+259,AU,14521,Erzgebirgskreis
+260,MAB,14521,Erzgebirgskreis
+261,MEK,14521,Erzgebirgskreis
+262,STL,14521,Erzgebirgskreis
+263,SZB,14521,Erzgebirgskreis
+264,ZP,14521,Erzgebirgskreis
+265,ES,08116,Esslingen
+266,NT,08116,Esslingen
+267,EU,05366,Euskirchen
+268,SLE,05366,Euskirchen
+269,FO,09474,Forchheim
+270,EBS,09474,Forchheim
+271,PEG,09474,Forchheim
+272,FS,09178,Freising
+273,FDS,08237,Freudenstadt
+274,HCH,08237,Freudenstadt
+275,HOR,08237,Freudenstadt
+276,WOL,08237,Freudenstadt
+277,FRG,09272,Freyung-Grafenau
+278,GRA,09272,Freyung-Grafenau
+279,WOS,09272,Freyung-Grafenau
+280,FRI,03455,Friesland
+281,FD,06631,Fulda
+282,FFB,09179,Fürstenfeldbruck
+283,FÜ,09573,Fürth
+284,GAP,09180,Garmisch-Partenkirchen
+285,GER,07334,Germersheim
+286,GI,06531,Gießen
+287,GF,03151,Gifhorn
+288,GP,08117,Göppingen
+289,GR,14626,Görlitz
+290,LÖB,14626,Görlitz
+291,NOL,14626,Görlitz
+292,NY,14626,Görlitz
+293,WSW,14626,Görlitz
+294,ZI,14626,Görlitz
+295,GS,03153,Goslar
+296,BRL,03153,Goslar
+297,CLZ,03153,Goslar
+298,GTH,16067,Gotha
+299,GÖ,03159,Göttingen
+300,DUD,03159,Göttingen
+301,HMÜ,03159,Göttingen
+302,OHA,03159,Göttingen
+303,NOH,03456,Grafschaft Bentheim
+304,GRZ,16076,Greiz
+305,ZR,16076,Greiz
+306,GG,06433,Groß-Gerau
+307,GZ,09774,Günzburg
+308,KRU,09774,Günzburg
+309,GT,05754,Gütersloh
+310,HM,03252,Hameln-Pyrmont
+311,H,03241,Hannover
+312,WL,03353,Harburg
+313,HZ,15085,Harz
+314,HBS,15085,Harz
+315,QLB,15085,Harz
+316,WR,15085,Harz
+317,HAS,09674,Haßberge
+318,EBN,09674,Haßberge
+319,GEO,09674,Haßberge
+320,HOH,09674,Haßberge
+321,HVL,12063,Havelland
+322,NAU,12063,Havelland
+323,RN,12063,Havelland
+324,HK,03358,Heidekreis
+325,HDH,08135,Heidenheim
+326,HN,08125,Heilbronn
+327,HS,05370,Heinsberg
+328,ERK,05370,Heinsberg
+329,GK,05370,Heinsberg
+330,HE,03154,Helmstedt
+331,HF,05758,Herford
+332,HEF,06632,Hersfeld-Rotenburg
+333,ROF,06632,Hersfeld-Rotenburg
+334,RZ,01053,Herzogtum Lauenburg
+335,HBN,16069,Hildburghausen
+336,HI,03254,Hildesheim
+337,ALF,03254,Hildesheim
+338,HSK,05958,Hochsauerlandkreis
+339,HG,06434,Hochtaunuskreis
+340,USI,06434,Hochtaunuskreis
+341,HO,09475,Hof
+342,MÜB,09475,Hof
+343,NAI,09475,Hof
+344,REH,09475,Hof
+345,SAN,09475,Hof
+346,KÜN,08126,Hohenlohekreis
+347,ÖHR,08126,Hohenlohekreis
+348,HOL,03255,Holzminden
+349,HX,05762,Höxter
+350,WAR,05762,Höxter
+351,IK,16070,Ilm-Kreis
+352,ARN,16070,Ilm-Kreis
+353,IL,16070,Ilm-Kreis
+354,JL,15086,Jerichower Land
+355,BRG,15086,Jerichower Land
+356,GNT,15086,Jerichower Land
+357,KL,07335,Kaiserslautern
+358,KA,08215,Karlsruhe
+359,KS,06633,Kassel
+360,HOG,06633,Kassel
+361,WOH,06633,Kassel
+362,KEH,09273,Kelheim
+363,MAI,09273,Kelheim
+364,PAR,09273,Kelheim
+365,RID,09273,Kelheim
+366,ROL,09273,Kelheim
+367,KT,09675,Kitzingen
+368,KLE,05154,Kleve
+369,GEL,05154,Kleve
+370,KN,08335,Konstanz
+371,STO,08335,Konstanz
+372,BÜS,08335,Konstanz
+373,KC,09476,Kronach
+374,SAN,09476,Kronach
+375,KU,09477,Kulmbach
+376,EBS,09477,Kulmbach
+377,SAN,09477,Kulmbach
+378,KUS,07336,Kusel
+379,KYF,16065,Kyffhäuserkreis
+380,ART,16065,Kyffhäuserkreis
+381,SDH,16065,Kyffhäuserkreis
+382,LDK,06532,Lahn-Dill-Kreis
+383,DIL,06532,Lahn-Dill-Kreis
+384,WZ,06532,Lahn-Dill-Kreis
+385,LL,09181,Landsberg am Lech
+386,LA,09274,Landshut
+387,MAI,09274,Landshut
+388,MAL,09274,Landshut
+389,ROL,09274,Landshut
+390,VIB,09274,Landshut
+391,LER,03457,Leer
+392,L,14729,Leipzig
+393,BNA,14729,Leipzig
+394,GHA,14729,Leipzig
+395,GRM,14729,Leipzig
+396,MTL,14729,Leipzig
+397,WUR,14729,Leipzig
+398,LIF,09478,Lichtenfels
+399,STE,09478,Lichtenfels
+400,LM,06533,Limburg-Weilburg
+401,WEL,06533,Limburg-Weilburg
+402,LI,09776,Lindau (Bodensee)
+403,LIP,05766,Lippe
+404,LÖ,08336,Lörrach
+405,DAN,03354,Lüchow-Dannenberg
+406,LB,08118,Ludwigsburg
+407,VAI,08118,Ludwigsburg
+408,LUP,13076,Ludwigslust-Parchim
+409,HGN,13076,Ludwigslust-Parchim
+410,LBZ,13076,Ludwigslust-Parchim
+411,LWL,13076,Ludwigslust-Parchim
+412,PCH,13076,Ludwigslust-Parchim
+413,STB,13076,Ludwigslust-Parchim
+414,LG,03355,Lüneburg
+415,MKK,06435,Main-Kinzig-Kreis
+416,HU,06435,Main-Kinzig-Kreis
+417,GN,06435,Main-Kinzig-Kreis
+418,SLÜ,06435,Main-Kinzig-Kreis
+419,MSP,09677,Main-Spessart
+420,TBB,08128,Main-Tauber-Kreis
+421,MGH,08128,Main-Tauber-Kreis
+422,MTK,06436,Main-Taunus-Kreis
+423,MZ,07339,Mainz-Bingen
+424,BIN,07339,Mainz-Bingen
+425,MSH,15087,Mansfeld-Südharz
+426,EIL,15087,Mansfeld-Südharz
+427,HET,15087,Mansfeld-Südharz
+428,ML,15087,Mansfeld-Südharz
+429,SGH,15087,Mansfeld-Südharz
+430,MR,06534,Marburg-Biedenkopf
+431,BID,06534,Marburg-Biedenkopf
+432,MK,05962,Märkischer Kreis
+433,MOL,12064,Märkisch-Oderland
+434,FRW,12064,Märkisch-Oderland
+435,SEE,12064,Märkisch-Oderland
+436,SRB,12064,Märkisch-Oderland
+437,MYK,07137,Mayen-Koblenz
+438,MY,07137,Mayen-Koblenz
+439,MSE,13071,Mecklenburgische Seenplatte
+440,AT,13071,Mecklenburgische Seenplatte
+441,DM,13071,Mecklenburgische Seenplatte
+442,MC,13071,Mecklenburgische Seenplatte
+443,MST,13071,Mecklenburgische Seenplatte
+444,MÜR,13071,Mecklenburgische Seenplatte
+445,NZ,13071,Mecklenburgische Seenplatte
+446,RM,13071,Mecklenburgische Seenplatte
+447,WRN,13071,Mecklenburgische Seenplatte
+448,NB,13071,Mecklenburgische Seenplatte
+449,MEI,14627,Meißen
+450,GRH,14627,Meißen
+451,RG,14627,Meißen
+452,RIE,14627,Meißen
+453,MZG,10042,Merzig-Wadern
+454,ME,05158,Mettmann
+455,MB,09182,Miesbach
+456,MIL,09676,Miltenberg
+457,OBB,09676,Miltenberg
+458,MI,05770,Minden-Lübbecke
+459,FG,14522,Mittelsachsen
+460,BED,14522,Mittelsachsen
+461,DL,14522,Mittelsachsen
+462,FLÖ,14522,Mittelsachsen
+463,HC,14522,Mittelsachsen
+464,MW,14522,Mittelsachsen
+465,RL,14522,Mittelsachsen
+466,MÜ,09183,Mühldorf am Inn
+467,VIB,09183,Mühldorf am Inn
+468,WS,09183,Mühldorf am Inn
+469,M,09184,München
+470,AIB,09184,München
+471,WOR,09184,München
+472,MOS,08225,Neckar-Odenwald-Kreis
+473,BCH,08225,Neckar-Odenwald-Kreis
+474,NU,09775,Neu-Ulm
+475,ILL,09775,Neu-Ulm
+476,ND,09185,Neuburg-Schrobenhausen
+477,SOB,09185,Neuburg-Schrobenhausen
+478,NM,09373,Neumarkt in der Oberpfalz
+479,PAR,09373,Neumarkt in der Oberpfalz
+480,NK,10043,Neunkirchen
+481,NEA,09575,Neustadt an der Aisch-Bad Windsheim
+482,SEF,09575,Neustadt an der Aisch-Bad Windsheim
+483,UFF,09575,Neustadt an der Aisch-Bad Windsheim
+484,NEW,09374,Neustadt an der Waldnaab
+485,ESB,09374,Neustadt an der Waldnaab
+486,VOH,09374,Neustadt an der Waldnaab
+487,NR,07138,Neuwied
+488,NI,03256,Nienburg/Weser
+489,NF,01054,Nordfriesland
+490,NDH,16062,Nordhausen
+491,TDO,14730,Nordsachsen
+492,DZ,14730,Nordsachsen
+493,EB,14730,Nordsachsen
+494,OZ,14730,Nordsachsen
+495,TG,14730,Nordsachsen
+496,TO,14730,Nordsachsen
+497,NWM,13074,Nordwestmecklenburg
+498,GDB,13074,Nordwestmecklenburg
+499,GVM,13074,Nordwestmecklenburg
+500,WIS,13074,Nordwestmecklenburg
+501,HWI,13074,Nordwestmecklenburg
+502,NOM,03155,Northeim
+503,EIN,03155,Northeim
+504,GAN,03155,Northeim
+505,LAU,09574,Nürnberger Land
+506,ESB,09574,Nürnberger Land
+507,HEB,09574,Nürnberger Land
+508,N,09574,Nürnberger Land
+509,PEG,09574,Nürnberger Land
+510,OA,09780,Oberallgäu
+511,GM,05374,Oberbergischer Kreis
+512,OHV,12065,Oberhavel
+513,OSL,12066,Oberspreewald-Lausitz
+514,CA,12066,Oberspreewald-Lausitz
+515,SFB,12066,Oberspreewald-Lausitz
+516,ERB,06437,Odenwaldkreis
+517,LOS,12067,Oder-Spree
+518,BSK,12067,Oder-Spree
+519,EH,12067,Oder-Spree
+520,FW,12067,Oder-Spree
+521,OF,06438,Offenbach
+522,OL,03458,Oldenburg
+523,OE,05966,Olpe
+524,OG,08317,Ortenaukreis
+525,BH,08317,Ortenaukreis
+526,KEL,08317,Ortenaukreis
+527,LR,08317,Ortenaukreis
+528,WOL,08317,Ortenaukreis
+529,OS,03459,Osnabrück
+530,BSB,03459,Osnabrück
+531,MEL,03459,Osnabrück
+532,WTL,03459,Osnabrück
+533,AA,08136,Ostalbkreis
+534,GD,08136,Ostalbkreis
+535,OAL,09777,Ostallgäu
+536,FÜS,09777,Ostallgäu
+537,MOD,09777,Ostallgäu
+538,OHZ,03356,Osterholz
+539,OH,01055,Ostholstein
+540,OPR,12068,Ostprignitz-Ruppin
+541,KY,12068,Ostprignitz-Ruppin
+542,NP,12068,Ostprignitz-Ruppin
+543,WK,12068,Ostprignitz-Ruppin
+544,PB,05774,Paderborn
+545,BÜR,05774,Paderborn
+546,PA,09275,Passau
+547,PE,03157,Peine
+548,PAF,09186,Pfaffenhofen an der Ilm
+549,PI,01056,Pinneberg
+550,PLÖ,01057,Plön
+551,PM,12069,Potsdam-Mittelmark
+552,PR,12070,Prignitz
+553,RA,08216,Rastatt
+554,BH,08216,Rastatt
+555,RV,08436,Ravensburg
+556,SLG,08436,Ravensburg
+557,ÜB,08436,Ravensburg
+558,WG,08436,Ravensburg
+559,RE,05562,Recklinghausen
+560,CAS,05562,Recklinghausen
+561,GLA,05562,Recklinghausen
+562,REG,09276,Regen
+563,VIT,09276,Regen
+564,R,09375,Regensburg
+565,WN,08119,Rems-Murr-Kreis
+566,BK,08119,Rems-Murr-Kreis
+567,RD,01058,Rendsburg-Eckernförde
+568,ECK,01058,Rendsburg-Eckernförde
+569,RT,08415,Reutlingen
+570,BM,05362,Rhein-Erft-Kreis
+571,RÜD,06439,Rheingau-Taunus-Kreis
+572,SWA,06439,Rheingau-Taunus-Kreis
+573,SIM,07140,Rhein-Hunsrück-Kreis
+574,GOA,07140,Rhein-Hunsrück-Kreis
+575,GL,05378,Rheinisch-Bergischer Kreis
+576,NE,05162,Rhein-Kreis Neuss
+577,GV,05162,Rhein-Kreis Neuss
+578,EMS,07141,Rhein-Lahn-Kreis
+579,DIZ,07141,Rhein-Lahn-Kreis
+580,GOH,07141,Rhein-Lahn-Kreis
+581,HD,08226,Rhein-Neckar-Kreis
+582,RP,07338,Rhein-Pfalz-Kreis
+583,SU,05382,Rhein-Sieg-Kreis
+584,NES,09673,Rhön-Grabfeld
+585,KÖN,09673,Rhön-Grabfeld
+586,MET,09673,Rhön-Grabfeld
+587,RO,09187,Rosenheim
+588,AIB,09187,Rosenheim
+589,WS,09187,Rosenheim
+590,LRO,13072,Rostock
+591,BÜZ,13072,Rostock
+592,DBR,13072,Rostock
+593,GÜ,13072,Rostock
+594,ROS,13072,Rostock
+595,TET,13072,Rostock
+596,ROW,03357,Rotenburg (Wümme)
+597,BRV,03357,Rotenburg (Wümme)
+598,RH,09576,Roth
+599,HIP,09576,Roth
+600,PAN,09277,Rottal-Inn
+601,EG,09277,Rottal-Inn
+602,GRI,09277,Rottal-Inn
+603,VIB,09277,Rottal-Inn
+604,RW,08325,Rottweil
+605,SHK,16074,Saale-Holzland-Kreis
+606,EIS,16074,Saale-Holzland-Kreis
+607,SRO,16074,Saale-Holzland-Kreis
+608,SK,15088,Saalekreis
+609,MER,15088,Saalekreis
+610,MQ,15088,Saalekreis
+611,QFT,15088,Saalekreis
+612,SOK,16075,Saale-Orla-Kreis
+613,LBS,16075,Saale-Orla-Kreis
+614,PN,16075,Saale-Orla-Kreis
+615,SCZ,16075,Saale-Orla-Kreis
+616,SLF,16073,Saalfeld-Rudolstadt
+617,RU,16073,Saalfeld-Rudolstadt
+618,SB,10041,Saarbrücken
+619,VK,10041,Saarbrücken
+620,SLS,10044,Saarlouis
+621,HOM,10045,Saarpfalz-Kreis
+622,IGB,10045,Saarpfalz-Kreis
+623,PIR,14628,Sächsische Schweiz-Osterzgebirge
+624,DW,14628,Sächsische Schweiz-Osterzgebirge
+625,FTL,14628,Sächsische Schweiz-Osterzgebirge
+626,SEB,14628,Sächsische Schweiz-Osterzgebirge
+627,SLK,15089,Salzlandkreis
+628,ASL,15089,Salzlandkreis
+629,BBG,15089,Salzlandkreis
+630,SBK,15089,Salzlandkreis
+631,SFT,15089,Salzlandkreis
+632,SHG,03257,Schaumburg
+633,RI,03257,Schaumburg
+634,SL,01059,Schleswig-Flensburg
+635,SM,16066,Schmalkalden-Meiningen
+636,MGN,16066,Schmalkalden-Meiningen
+637,SHA,08127,Schwäbisch Hall
+638,BK,08127,Schwäbisch Hall
+639,CR,08127,Schwäbisch Hall
+640,HR,06634,Schwalm-Eder-Kreis
+641,FZ,06634,Schwalm-Eder-Kreis
+642,MEG,06634,Schwalm-Eder-Kreis
+643,ZIG,06634,Schwalm-Eder-Kreis
+644,SAD,09376,Schwandorf
+645,BUL,09376,Schwandorf
+646,NAB,09376,Schwandorf
+647,NEN,09376,Schwandorf
+648,OVI,09376,Schwandorf
+649,ROD,09376,Schwandorf
+650,VS,08326,Schwarzwald-Baar-Kreis
+651,SW,09678,Schweinfurt
+652,GEO,09678,Schweinfurt
+653,SE,01060,Segeberg
+654,SI,05970,Siegen-Wittgenstein
+655,BLB,05970,Siegen-Wittgenstein
+656,SIG,08437,Sigmaringen
+657,SLG,08437,Sigmaringen
+658,STO,08437,Sigmaringen
+659,ÜB,08437,Sigmaringen
+660,SO,05974,Soest
+661,LP,05974,Soest
+662,SÖM,16068,Sömmerda
+663,SON,16072,Sonneberg
+664,NH,16072,Sonneberg
+665,SPN,12071,Spree-Neiße
+666,FOR,12071,Spree-Neiße
+667,GUB,12071,Spree-Neiße
+668,SPB,12071,Spree-Neiße
+669,WND,10046,St. Wendel
+670,STD,03359,Stade
+671,STA,09188,Starnberg
+672,WOR,09188,Starnberg
+673,IZ,01061,Steinburg
+674,ST,05566,Steinfurt
+675,BF,05566,Steinfurt
+676,TE,05566,Steinfurt
+677,SDL,15090,Stendal
+678,HV,15090,Stendal
+679,OBG,15090,Stendal
+680,OD,01062,Stormarn
+681,SR,09278,Straubing-Bogen
+682,BOG,09278,Straubing-Bogen
+683,MAL,09278,Straubing-Bogen
+684,SÜW,07337,Südliche Weinstraße
+685,PS,07340,Südwestpfalz
+686,ZW,07340,Südwestpfalz
+687,TF,12072,Teltow-Fläming
+688,TIR,09377,Tirschenreuth
+689,KEM,09377,Tirschenreuth
+690,TS,09189,Traunstein
+691,LF,09189,Traunstein
+692,TR,07235,Trier-Saarburg
+693,SAB,07235,Trier-Saarburg
+694,TÜ,08416,Tübingen
+695,TUT,08327,Tuttlingen
+696,UM,12073,Uckermark
+697,ANG,12073,Uckermark
+698,PZ,12073,Uckermark
+699,SDT,12073,Uckermark
+700,TP,12073,Uckermark
+701,UE,03360,Uelzen
+702,UN,05978,Unna
+703,LH,05978,Unna
+704,LÜN,05978,Unna
+705,UH,16064,Unstrut-Hainich-Kreis
+706,LSZ,16064,Unstrut-Hainich-Kreis
+707,MHL,16064,Unstrut-Hainich-Kreis
+708,MN,09778,Unterallgäu
+709,VEC,03460,Vechta
+710,VER,03361,Verden
+711,VIE,05166,Viersen
+712,KK,05166,Viersen
+713,VB,06535,Vogelsbergkreis
+714,V,14523,Vogtlandkreis
+715,AE,14523,Vogtlandkreis
+716,OVL,14523,Vogtlandkreis
+717,PL,14523,Vogtlandkreis
+718,RC,14523,Vogtlandkreis
+719,VG,13075,Vorpommern-Greifswald
+720,ANK,13075,Vorpommern-Greifswald
+721,GW,13075,Vorpommern-Greifswald
+722,PW,13075,Vorpommern-Greifswald
+723,SBG,13075,Vorpommern-Greifswald
+724,UEM,13075,Vorpommern-Greifswald
+725,WLG,13075,Vorpommern-Greifswald
+726,HGW,13075,Vorpommern-Greifswald
+727,VR,13073,Vorpommern-Rügen
+728,GMN,13073,Vorpommern-Rügen
+729,NVP,13073,Vorpommern-Rügen
+730,RDG,13073,Vorpommern-Rügen
+731,RÜG,13073,Vorpommern-Rügen
+732,HST,13073,Vorpommern-Rügen
+733,DAU,07233,Vulkaneifel
+734,KB,06635,Waldeck-Frankenberg
+735,FKB,06635,Waldeck-Frankenberg
+736,WA,06635,Waldeck-Frankenberg
+737,WT,08337,Waldshut
+738,SÄK,08337,Waldshut
+739,WAF,05570,Warendorf
+740,BE,05570,Warendorf
+741,WAK,16063,Wartburgkreis
+742,SLZ,16063,Wartburgkreis
+743,EA,16063,Wartburgkreis
+744,WM,09190,Weilheim-Schongau
+745,SOG,09190,Weilheim-Schongau
+746,AP,16071,Weimarer Land
+747,APD,16071,Weimarer Land
+748,WUG,09577,Weißenburg-Gunzenhausen
+749,GUN,09577,Weißenburg-Gunzenhausen
+750,ESW,06636,Werra-Meißner-Kreis
+751,WIZ,06636,Werra-Meißner-Kreis
+752,WES,05170,Wesel
+753,DIN,05170,Wesel
+754,MO,05170,Wesel
+755,BRA,03461,Wesermarsch
+756,WW,07143,Westerwaldkreis
+757,FB,06440,Wetteraukreis
+758,BÜD,06440,Wetteraukreis
+759,WB,15091,Wittenberg
+760,GHC,15091,Wittenberg
+761,JE,15091,Wittenberg
+762,WTM,03462,Wittmund
+763,WF,03158,Wolfenbüttel
+764,WUN,09479,Wunsiedel im Fichtelgebirge
+765,MAK,09479,Wunsiedel im Fichtelgebirge
+766,REH,09479,Wunsiedel im Fichtelgebirge
+767,SEL,09479,Wunsiedel im Fichtelgebirge
+768,WÜ,09679,Würzburg
+769,OCH,09679,Würzburg
+770,BL,08417,Zollernalbkreis
+771,HCH,08417,Zollernalbkreis
+772,Z,14524,Zwickau
+773,GC,14524,Zwickau
+774,HOT,14524,Zwickau
+775,WDA,14524,Zwickau
+776,EA,16056,Eisenach
