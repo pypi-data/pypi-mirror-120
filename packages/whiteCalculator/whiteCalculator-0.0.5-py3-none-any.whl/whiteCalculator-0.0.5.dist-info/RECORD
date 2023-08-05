@@ -1,0 +1,11 @@
+whiteCalculator/ERRORS.py,sha256=_JPAVAlKKoADFUSfFAYtIrAmbDCEqq6KuTbM8L9yFGw,30
+whiteCalculator/__init__.py,sha256=YYQgrNrDuwj9_qOqFdCK6PUJfYJE4mB67Eo86eHWlxQ,399
+whiteCalculator/calculator.py,sha256=HUjLiJpoht2ww1G6eUGKXjOSuTMHJdl1MOLOff6r0PA,3879
+whiteCalculator/formula.py,sha256=nXZQYQwSzg1s6e73fVJW9eyOLiMO9s15D5-Z4GyoTIY,4653
+whiteCalculator/maths.py,sha256=1pi4hUU-SwCmhSJWs6PZsPybU1iUCTlIIQ-7iLRSnJ4,544
+whiteCalculator/timeout.py,sha256=nmyco0hSliLO8feLQ5Ike1sN5PSohYEv_CLCQYscYR0,479
+whiteCalculator-0.0.5.dist-info/LICENSE,sha256=4Zq9WxgtygnV2Upx1KRIHlwN3a0dW-0zN-O8Kh_1nkU,1067
+whiteCalculator-0.0.5.dist-info/METADATA,sha256=Vk2d11CIQ1lrUnQUu3GhtNTIJFUy8BTkuiapmVTvgxo,2768
+whiteCalculator-0.0.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+whiteCalculator-0.0.5.dist-info/top_level.txt,sha256=mjUZspWZkbSOQMM7xyXooGx_OjnVqcgY85gEombssnw,16
+whiteCalculator-0.0.5.dist-info/RECORD,,
