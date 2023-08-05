@@ -1,0 +1,71 @@
+name: CI
+
+on:
+  push:
+    branches: '*'
+  pull_request:
+    branches: '*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x, 14.x]
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2.4.0
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm install
+        working-directory: ./web
+      - run: npm run build --if-present
+        working-directory: ./web
+
+  test:
+    name: test-py${{ matrix.CONDA_ENV }}-${{matrix.CARBONPLAN_DATA}}
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        CONDA_ENV: [3.7, 3.8]
+        CARBONPLAN_DATA: [
+            # 'https://carbonplan.blob.core.windows.net/carbonplan-data',
+            'gs://carbonplan-data',
+          ]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Cache conda
+        uses: actions/cache@v2.1.6
+        env:
+          # Increase this value to reset cache if etc/example-environment.yml has not changed
+          CACHE_NUMBER: 0
+        with:
+          path: ~/conda_pkgs_dir
+          key: ${{ runner.os }}-conda-${{ env.CACHE_NUMBER }}-${{ hashFiles('ci/environment.yaml') }}
+      - uses: conda-incubator/setup-miniconda@v2
+        with:
+          auto-update-conda: true
+          mamba-version: '*'
+          channels: conda-forge,defaults
+          channel-priority: true
+          activate-environment: carbonplan-data
+          environment-file: ci/environment.yaml
+          python-version: ${{ matrix.python-version }}
+          auto-activate-base: false
+      - shell: bash -l {0}
+        env:
+          CARBONPLAN_DATA: ${{ matrix.CARBONPLAN_DATA }}
+        run: |
+          conda info
+          conda list
+          python -m pip install --no-deps -e .
+          pytest --verbose
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-python@v2.2.2
+      - uses: pre-commit/action@v2.0.3
