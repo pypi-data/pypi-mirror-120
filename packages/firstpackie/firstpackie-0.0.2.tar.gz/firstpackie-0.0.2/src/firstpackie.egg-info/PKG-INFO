@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: firstpackie
+Version: 0.0.2
+Summary: Say hello!
+Home-page: https://github.com/taslim-a-hussain/helloworld
+Author: Taslim A Hussain
+Author-email: taslim@outlook.co.nz
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Hello World
+This is an example project demonstrating how to publish a python module to PyPI.
+
+## Installation
+Run the following to install:
+```python
+pip install firstpackie
+```
+
+## Usage
+```python
+from firstpackie import say_hello
+
+# Generate "Hello, World!"
+say_hello()
+
+# Generate "Hello, Everybody!"
+say_hello('Everybody')
+```
+
