@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: staticmetrics
+Version: 0.0.1
+Summary: A useful tool for determing metrics from python projects and files.
+Home-page: https://github.com/franceme/staticmetrics
+Author: ('Myles Frantz',)
+License: Apache 2.0
+Description: # Python Project Metrics
+        
+        ## A simple project that determines various metrics from code projects.
+        
+Keywords: static analysis,metrics
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown

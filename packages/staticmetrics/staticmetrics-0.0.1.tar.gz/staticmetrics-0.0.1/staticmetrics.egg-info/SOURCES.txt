@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+staticmetrics.egg-info/PKG-INFO
+staticmetrics.egg-info/SOURCES.txt
+staticmetrics.egg-info/dependency_links.txt
+staticmetrics.egg-info/entry_points.txt
+staticmetrics.egg-info/requires.txt
+staticmetrics.egg-info/top_level.txt
