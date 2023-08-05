@@ -1,0 +1,10 @@
+README.md
+setup.py
+src/spanner_nlp/StanfordCoreNLP.py
+src/spanner_nlp/StanfordCoreNLPTest.py
+src/spanner_nlp/__init__.py
+src/spanner_nlp.egg-info/PKG-INFO
+src/spanner_nlp.egg-info/SOURCES.txt
+src/spanner_nlp.egg-info/dependency_links.txt
+src/spanner_nlp.egg-info/requires.txt
+src/spanner_nlp.egg-info/top_level.txt
