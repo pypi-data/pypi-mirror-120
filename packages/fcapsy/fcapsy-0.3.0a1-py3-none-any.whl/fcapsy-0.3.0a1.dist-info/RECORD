@@ -1,0 +1,11 @@
+fcapsy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fcapsy/basic_level.py,sha256=HYZ0B5IqmmBBKvQxfuhDWQql4n0YUbtj3I7PJmSkC3k,5689
+fcapsy/cohesion.py,sha256=tMuyK5VlKm4_PwdehxRu9H-7wd26iWU7RWbRR_ptjCk,2247
+fcapsy/similarity.py,sha256=VcH8XzzCFrvHpep87cO2jTTLTXQQVEiGMU2Fj3v-pXM,2029
+fcapsy/typicality.py,sha256=YtrRC3vqRwHP-qDs0BpWDDDvgbvO6ZFltRDvPFX9PIE,3238
+fcapsy-0.3.0a1.dist-info/AUTHORS.md,sha256=b7aF4S89sIdYFLQVaK_rjc-LhaK19jPdIs5RW4STDfo,49
+fcapsy-0.3.0a1.dist-info/LICENSE,sha256=psw867NDqCPwKgziIalRWTO7WcpJPioju3lMvszO84g,1071
+fcapsy-0.3.0a1.dist-info/METADATA,sha256=8mJxud73FZ0BMsgpjH2iMQfWjxDSrWCZXoQJpLfimy0,3150
+fcapsy-0.3.0a1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+fcapsy-0.3.0a1.dist-info/top_level.txt,sha256=VB6KQzSMl92G_P8mrH8tSz5NkKyOkZFI0DPqU82H_aM,7
+fcapsy-0.3.0a1.dist-info/RECORD,,
