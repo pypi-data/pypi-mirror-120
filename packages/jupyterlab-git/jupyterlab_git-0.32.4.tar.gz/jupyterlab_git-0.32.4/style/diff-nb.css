@@ -1,0 +1,62 @@
+/*-----------------------------------------------------------------------------
+| Copyright (c) Jupyter Development Team.
+| Distributed under the terms of the Modified BSD License.
+|----------------------------------------------------------------------------*/
+
+.jp-git-diff-root .jp-git-diff-header {
+  flex: 0 0 auto;
+}
+
+.jp-git-diff-root .nbdime-root {
+  border: var(--codemirror-border);
+}
+
+.jp-git-diff-root .jp-Notebook-diff .jp-Metadata-diff {
+  border: none;
+}
+
+.jp-git-diff-root .jp-Notebook-diff .CodeMirror-merge-r-chunk-end,
+.jp-git-diff-root .jp-Notebook-diff .CodeMirror-merge-l-chunk-end {
+  border-bottom: none;
+}
+
+.jp-git-diff-root .jp-Notebook-diff .CodeMirror-merge-r-chunk-start,
+.jp-git-diff-root .jp-Notebook-diff .CodeMirror-merge-l-chunk-start {
+  border-top: none;
+}
+
+.jp-git-diff-root .jp-Notebook-diff .CodeMirror-merge-r-chunk {
+  background-color: var(--jp-git-diff-deleted-color);
+}
+
+.jp-git-diff-root
+  .jp-Notebook-diff
+  .CodeMirror-merge-pane-remote
+  .CodeMirror-merge-r-chunk {
+  background-color: var(--jp-git-diff-added-color);
+}
+
+.jp-git-diff-root .jp-Notebook-diff .CodeMirror-merge-spacer {
+  background-color: transparent;
+}
+
+.jp-git-diff-root
+  .jp-Notebook-diff
+  .CodeMirror-merge-pane-remote
+  .CodeMirror-merge-spacer {
+  background-color: transparent;
+}
+
+.jp-git-diff-root .jp-Diff-added .CodeMirror,
+.jp-git-diff-root .jp-Diff-added .jp-Diff-renderedOutput,
+.jp-git-diff-root .jp-Cellrow-outputs .jp-Diff-twoway .jp-Diff-remote {
+  background-color: var(--jp-git-diff-added-color);
+  border: none;
+}
+
+.jp-git-diff-root .jp-Diff-deleted .CodeMirror,
+.jp-git-diff-root .jp-Diff-deleted .jp-Diff-renderedOutput,
+.jp-git-diff-root .jp-Cellrow-outputs .jp-Diff-twoway .jp-Diff-base {
+  background-color: var(--jp-git-diff-deleted-color);
+  border: none;
+}
