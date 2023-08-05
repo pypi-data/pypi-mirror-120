@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+src/spdy/__init__.py
+src/spdy/conn.py
+src/spdy/dictionary.py
+src/spdy_py.egg-info/PKG-INFO
+src/spdy_py.egg-info/SOURCES.txt
+src/spdy_py.egg-info/dependency_links.txt
+src/spdy_py.egg-info/not-zip-safe
+src/spdy_py.egg-info/top_level.txt
