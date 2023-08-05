@@ -1,0 +1,7 @@
+graft kasai
+include LICENSE
+include pyproject.toml
+include README.md
+include requirements.txt
+include setup.py
+global-exclude *.py[cod]

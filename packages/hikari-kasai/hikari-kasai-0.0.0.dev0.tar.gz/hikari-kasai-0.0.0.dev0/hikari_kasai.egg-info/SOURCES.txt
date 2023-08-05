@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+hikari_kasai.egg-info/PKG-INFO
+hikari_kasai.egg-info/SOURCES.txt
+hikari_kasai.egg-info/dependency_links.txt
+hikari_kasai.egg-info/requires.txt
+hikari_kasai.egg-info/top_level.txt
+kasai/__init__.py
+kasai/errors.py
