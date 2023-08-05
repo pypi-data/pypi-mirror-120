@@ -1,0 +1,9 @@
+README.md
+setup.py
+pycg_external_module/__init__.py
+pycg_external_module/ext.py
+pycg_external_module.egg-info/PKG-INFO
+pycg_external_module.egg-info/SOURCES.txt
+pycg_external_module.egg-info/dependency_links.txt
+pycg_external_module.egg-info/not-zip-safe
+pycg_external_module.egg-info/top_level.txt
