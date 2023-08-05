@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: david2entrez_converter
+Version: 0.11
+Summary: Convert the HGNC gene names to ENTREZ id available in the DAVID bioinformatics database.
+Home-page: https://github.com/user/b-k-pham
+Author: Benjamin Pham
+Author-email: bkpham@ucsd.edu
+License: MIT
+Download-URL: https://github.com/user/reponame/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: DAVID,Gene,Conversion
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
