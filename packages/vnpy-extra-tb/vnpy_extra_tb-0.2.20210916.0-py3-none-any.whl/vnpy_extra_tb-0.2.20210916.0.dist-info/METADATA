@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: vnpy-extra-tb
+Version: 0.2.20210916.0
+Summary: 该项目主要用于在vnpy框架下扩展部分 Trade Blazer (TB) 的函数包，以方便部分TB程序的迁移使用。
+Home-page: https://github.com/IBATS/vnpy_extra_tb
+Author: MG
+Author-email: mmmaaaggg@163.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: No Input/Output (Daemon)
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Topic :: Software Development
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: vnpy-extra (>=0.7.20210728.0)
+
+# vnpy_extra_tb
+该项目主要用于在vnpy框架下扩展部分 Trade Blazer (TB) 的函数包，以方便部分TB程序的迁移使用。
+
+### 1. 版本历史
+* 2021-09-16 v0.2.20210916.0
+  > refactor: transfer current_bar_daily and relative features to vnpy_extra.utils.enhancement.CtaSignal.
+
+* 2021-07-28 v0.2.20210728.0
+  > refactor: transfer strategy_obj param and relative features to vnpy_extra.utils.enhancement.CtaSignal.
+
+* 2021-06-16 v0.2.20210616.0
+  > fix: self.bg_daily is not None check.
+
+* 2021-05-10 v0.2.20210511.1
+  > fix: self.bg.win_bar is None. \
+  > fix: self.current_bar_daily is None. \ 
+  > fix: window=1 by default on bg_daily.
+
+* 2021-05-08 v0.2.20210508.0
+  > feat: add ohlcv _current properties for on-going bar value.
+
+* 2021-04-16 v0.2.20210416.0
+  > feat: add Daily ohlcv properties.\
+  > feat: _his -> _array.\
+  > feat: 将 Signal, ArrayManager 拆分成两个单独的模块
+
+* 2021-03-25 v0.1.20210325.0
+  >feat: new TBCtaSignal logic
+
+
