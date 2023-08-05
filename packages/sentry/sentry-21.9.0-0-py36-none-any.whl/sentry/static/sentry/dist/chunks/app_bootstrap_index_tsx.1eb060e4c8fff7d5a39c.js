@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([["app_bootstrap_index_tsx"],{"./app/bootstrap/index.tsx":(t,a,i)=>{i.r(a),i.d(a,{bootstrap:()=>o});const n=t=>(window.csrfCookieName=t.csrfCookieName,t);async function o(){const t=window.__initialData;return void 0===t?await async function(){const t=await fetch("/api/client-config/"),a=await t.json();return window.__initialData=a,n(a)}():n(t)}}}]);
+//# sourceMappingURL=../sourcemaps/app_bootstrap_index_tsx.f2951c0505e9bafd7de2f5e0e15ac47e.js.map
