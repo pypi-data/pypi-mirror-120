@@ -1,0 +1,7 @@
+frida~=14.2.18
+androguard~=3.3.5
+lxml~=4.6.2
+requests~=2.26.0
+colorama~=0.4.3
+appdirs~=1.4.4
+setuptools~=41.2.0
