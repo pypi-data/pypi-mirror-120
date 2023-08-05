@@ -1,0 +1,4 @@
+[console_scripts]
+savvihub = savvihub.cli._main:cli
+sv = savvihub.cli._main:cli
+
