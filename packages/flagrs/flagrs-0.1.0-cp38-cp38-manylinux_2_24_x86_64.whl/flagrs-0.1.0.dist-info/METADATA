@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: flagrs
+Version: 0.1.0
+Summary: Rust Number Theory
+Home-Page: https://gitlab.com/franksh/flagrs/
+Author: Frank S. Hestvik
+License: BSD-3-Clause
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Source Code, https://gitlab.com/franksh/flagrs/
+
+
+# flagrs
+
+Parts of my `flagmining` library rewritten as CPython extension code in Rust.
+
+Due to some lacking functionality in `rust-cpython==0.6.0` it depends on my own
+fork of said project.
+
