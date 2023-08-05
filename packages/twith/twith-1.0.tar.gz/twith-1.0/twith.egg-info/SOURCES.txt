@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+twith.py
+twith.egg-info/PKG-INFO
+twith.egg-info/SOURCES.txt
+twith.egg-info/dependency_links.txt
+twith.egg-info/requires.txt
+twith.egg-info/top_level.txt
