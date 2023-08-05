@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+kube/__init__.py
+kube/container.py
+prerequisites/__init__.py
+prerequisites/giove.py
+prerequisites/minerva.py
+syneto_clio.egg-info/PKG-INFO
+syneto_clio.egg-info/SOURCES.txt
+syneto_clio.egg-info/dependency_links.txt
+syneto_clio.egg-info/entry_points.txt
+syneto_clio.egg-info/requires.txt
+syneto_clio.egg-info/top_level.txt
