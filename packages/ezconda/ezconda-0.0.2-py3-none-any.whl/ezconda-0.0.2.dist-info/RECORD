@@ -1,0 +1,6 @@
+ezconda/__init__.py,sha256=DsAHdxLC16H2VjdFOU5tBx2xT9VnNQ-XbTS24fRCa_w,22
+ezconda/main.py,sha256=R7xhqVoG6wZ081SLKVqHxvMVIBTEjEp4AkJc1qquB-c,5393
+ezconda-0.0.2.dist-info/entry_points.txt,sha256=3Tm7YYlK5NnTzgjeom-WRtAg2Tl6K7ZZnK2tVSXsOko,44
+ezconda-0.0.2.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+ezconda-0.0.2.dist-info/METADATA,sha256=x-Octr1gn4w1w1V-CmBDHCmXgKK2OhMZNEWZPPnkym0,838
+ezconda-0.0.2.dist-info/RECORD,,
