@@ -1,0 +1,58 @@
+{
+    "title": "Model Artifact schema",
+    "type": "object",
+    "properties": {
+        "MODEL_ARTIFACT_VERSION": {"type":"string"},
+        "MODEL_PROVENANCE": {
+            "type": "object",
+            "title": "Model Provenance",
+            "properties": {
+                "TRAINING_REGION": {"type":"string"},
+                "TRAINING_COMPARTMENT_OCID": {"type":"string"},
+                "TRAINING_RESOURCE_OCID": {"type":"string"},
+                "PROJECT_OCID": {"type":"string"},
+                "TENANCY_OCID": {"type":"string"},
+                "USER_OCID": {"type":"string"},
+                "VM_IMAGE_INTERNAL_ID": {"type":"string"},
+                "TRAINING_CONDA_ENV": {
+                    "type": "object",
+                    "title": "Training Conda Env",
+                    "properties": {
+                        "TRAINING_ENV_SLUG": {"type":"string"},
+                        "TRAINING_ENV_TYPE": {"type":"string","enum": ["published", "data_science"]},
+                        "TRAINING_ENV_PATH": {"type":"string"},
+                        "TRAINING_PYTHON_VERSION": {"type":"string"}
+                    }
+                },
+                "TRAINING_CODE": {
+                    "type": "object",
+                    "title": "Training Code Info",
+                    "properties": {
+                        "GIT_REMOTE":{"type":"string"},
+                        "GIT_COMMIT":{"type":"string"},
+                        "GIT_BRANCH":{"type":"string"},
+                        "TRAINING_SCRIPT":{"type":"string"},
+                        "ARTIFACT_DIRECTORY":{"type":"string"}
+                    }
+                }
+            }
+        },
+        "MODEL_DEPLOYMENT": {
+            "type": "object",
+            "title": "Model Deployment",
+            "properties": {
+                "INFERENCE_CONDA_ENV": {
+                    "type": "object",
+                    "title": "Inference Conda Env",
+                    "properties": {
+                        "INFERENCE_ENV_SLUG": {"type":"string"},
+                        "INFERENCE_ENV_TYPE": {"type":"string", "enum": ["published", "data_science"]},
+                        "INFERENCE_ENV_PATH": {"type":"string"},
+                        "INFERENCE_PYTHON_VERSION": {"type":"string"}
+                    }
+                }
+            }
+        }
+    }
+
+}

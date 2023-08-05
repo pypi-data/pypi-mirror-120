@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: oracle-ads
+Version: 2.2.1rc0
+Summary: Oracle Accelerated Data Science SDK
+Home-page: https://docs.oracle.com/en-us/iaas/tools/ads-sdk/latest/index.html
+Author: Oracle Data Science
+License: Universal Permissive License 1.0
+Description: # Overview
+        
+        The Oracle Accelerated Data Science (ADS) SDK is a Python library that is included as part of the Oracle Cloud Infrastructure Data Science service. ADS offers a friendly user interface with objects and methods that describe the steps involved in the lifecycle of machine learning models, from data acquisition to model evaluation and interpretation.
+        
+Keywords: Oracle Cloud Infrastructure,OCI,Machine Learning,ML,Artificial Intelligence,AI,Data Science,Cloud,Oracle
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Universal Permissive License (UPL)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: boosted
+Provides-Extra: complete
