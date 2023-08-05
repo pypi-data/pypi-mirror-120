@@ -1,0 +1,14 @@
+django-appconf
+six>=1.9.0
+ipy
+
+[develop]
+tox
+django
+pytest-django
+pytest
+
+[test]
+pytest-django
+pytest-cov
+pytest
