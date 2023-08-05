@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: aiofilters
+Version: 1.0.0
+Summary: You must install Aiogram to use this library! You can see how to use it in GitHub Repository https://github.com/Bananchik204/AioFilters
+Author: Furret
+Author-email: durovam0@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
