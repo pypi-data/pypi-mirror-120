@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "PoetryUpvers"
+version = "0.1.0"
+description = "Semantic versioning on a pyproject.toml"
+authors = ["Michael Leopard <mleopard@gitlab.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "~3.8"
+semver = "^2.13.0"
+docopt = "^0.6.2"
+tomlkit = "^0.7.2"
+gitlab-ps-utils = "^0.1.4"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+ppuv = 'poetryupvers.main:run'
