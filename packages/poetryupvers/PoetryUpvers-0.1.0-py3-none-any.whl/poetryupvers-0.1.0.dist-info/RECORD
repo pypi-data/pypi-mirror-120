@@ -1,0 +1,10 @@
+poetryupvers/git.py,sha256=_RmN2uOilRzYSfQtR5b8soaeD-1SxRIaF25k8J5LcJg,1315
+poetryupvers/main.py,sha256=zYb1gP9DhBgqf0332FayK6iqpl1TpmGIpAqSgLE9CDc,1447
+poetryupvers/release_notes.py,sha256=YziJJZVyiAM_NtOxo0YycnQvdsNJBF0s6y-l4nTRAgA,2398
+poetryupvers/upvers.py,sha256=k8MxcMD0UInX29iuGlgcbgKA0u4Rk4zDqI7CoMUl1kU,4275
+poetryupvers/util.py,sha256=qLVCk51nJtRI8PW14gphozj6hmIGt5zk3Mug0xzNS_0,828
+poetryupvers-0.1.0.dist-info/entry_points.txt,sha256=I948Fcjhmvaztjw6xKCH7FRweYKlaP-UL0WgUEZYbHs,46
+poetryupvers-0.1.0.dist-info/LICENSE,sha256=flT1lJosMRIJGFAYarxkVv42Gfhog4oV9ojAe98CP5Q,1068
+poetryupvers-0.1.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+poetryupvers-0.1.0.dist-info/METADATA,sha256=wwzyWPdrNdfaGeK0_8WKC55X9Iy75LoJj7u1BpVqAWQ,520
+poetryupvers-0.1.0.dist-info/RECORD,,
