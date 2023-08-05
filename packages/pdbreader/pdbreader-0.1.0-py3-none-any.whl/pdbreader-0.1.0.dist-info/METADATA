@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: pdbreader
+Version: 0.1.0
+Summary: Simple reader for pdb (Protein Data Bank) files.
+Home-page: https://github.com/brisvag/pdbreader
+Author: Lorenzo Gaifas
+Author-email: brisvag@gmail.com
+License: GPL3
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+
+# PDB reader
+`pdbreader` is a simple python library for parsing PDB (Protein Data Bank) files. It uses pandas DataFrames as its main data structure.
+
+## Installation
+
+```
+pip install pdbreader
+```
+
+## Usage
+
+```python
+import pdbreader
+
+pdb = pdbreader.read_pdb(pdb_path)
+```
+
+The resulting `pdb` dictionary contains an entry for each record type (`ATOM`, `CONECT`, etc) in the form of pandas DataFrames.
+
+
