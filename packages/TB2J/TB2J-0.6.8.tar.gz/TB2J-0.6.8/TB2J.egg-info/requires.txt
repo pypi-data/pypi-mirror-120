@@ -1,0 +1,8 @@
+ase>=3.19
+matplotlib
+numpy
+p_tqdm
+packaging
+pathos
+scipy
+tqdm
