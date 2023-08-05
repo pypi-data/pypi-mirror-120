@@ -1,0 +1,9 @@
+setup.py
+goddy/__init__.py
+goddy/app.py
+goddy/shell.py
+goddy.egg-info/PKG-INFO
+goddy.egg-info/SOURCES.txt
+goddy.egg-info/dependency_links.txt
+goddy.egg-info/entry_points.txt
+goddy.egg-info/top_level.txt
