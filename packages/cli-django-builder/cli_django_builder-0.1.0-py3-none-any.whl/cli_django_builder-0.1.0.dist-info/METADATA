@@ -1,0 +1,156 @@
+Metadata-Version: 2.1
+Name: cli-django-builder
+Version: 0.1.0
+Summary: A command line interface to build Django application and RESTful application using DRF
+Home-page: https://gitlab.com/frier17/django_builder.git
+Author: https://gitlab.com/frier17/
+Author-email: frier17@a17s.co.uk
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+
+# Django Builder
+
+**A Django application for building project's application using the Django command line interface**
+
+The `cli-django-builder` application is designed to enable developers save time on development by providing automation or
+routine django application building process.
+
+The `cli-django-builder` application enables developers to save time by automating routine Django application building
+processes. This application integrates with the Django commands and provides the `build` command to create RESTful APIs
+using DRF, views, and templates from the command interface. Developers can also seed the existing database of their
+application using the `build` command.
+
+Add the name 'builder' to your Django `settings.py` `INSTALLED_APPS` to use this application.
+
+**This application assumes that model naming conventions as specified
+by [Django Framework](https://docs.djangoproject.com/en/dev/internals/contributing/writing-code/coding-style/) is
+adopted for the target application.**
+
+## Motivation
+
+Django framework provides a rich set of tools to build complex web projects. A project may comprise one or more
+applications working together as a unit. In many scenarios, developers end up repeating a set of tasks such as:
+
++ Create application
++ Create application models
++ Create application files such as views.py, serializers.py, urls.py and HTML templates. These tasks can be automated to
+  provide a skeletal system that the developer can then modify to meet target business logic. The `cli-django-builder`
+  automates tasks in line with the Django DRY philosophy.
+
+## Description
+
+`cli-django-builder` consists of a set of the `build` command and a set of command flags that specifies build configuration
+by data entered as texts.
+
+To use the `cli-django-builder`, add the application as a Django application in your project. Then using the Django command
+interface call the build command as a Django command:
+`$ python manage.py build views <view_name>`
+
+Ensure you are at the directory of the target application. Thus, if you wish to build a view file for the `employer`
+application, navigate to the `employer` directory before calling `build`.
+
+For the set of commands and flags available, see the table below.
+
+|Command    | Flag | Type | Description |
+|-----------|------- | --- | ---- |
+| build | -m, --models [Specify model name as text] | text | The model class name provided as string without quotes|
+| build | --model_form| text | The type of Django Rest Framework serializer that will be extended by the application in generating forms for models |
+| build | -a, --app | text | The name of the target Django application where the generated files will be stored and where the specified model was defined |
+| build | --fields | text | List of model fields for the model serializer. Defaults to all model fields |
+| build | --viewset | text | The type of Django Rest Framework viewset that will be extended by the application. Example, `ModelViewSet` |
+| build | --manager| text | The model field serving as default Model Manager for the named model |
+| build | --serializer | text | The type of rest_framework serializer that will be extended by the application or the model serializer defined in application. Example, `ModelSerializer` |
+| build | --persmissions | text | List of permissions provided as string. Used for specify access control for DRF api end points |
+| build | --router| text |  The type of rest_framework router that will be used for generating urls. Example, `DefaultRouter`|
+| build | --import| text | Flag to enable import of dependencies for target build. Example, this flag will import dependencies when creating `views.py` if such were specified. Default action flag for this function is set to TRUE |
+| build | --capture_type| text |  The data type to be captured in the Urlconf. Used only when building URLs example, `urls.py`|
+| build | --pk_field | text | The name of the view parameter or identifier used for selection of instance |
+| build | --make, make_file | text | Name of the file to generate. The name should be provided without the file extension. Example `api`, `views` will generate `api.py` and `views.py` for target app directory|
+| build | --exclude | text [Comma separated list of field names] | Flag to exclude selected model fields from view. Current build excludes model field names: `pk`, `id`, `uuid`, `slug`, `is_public`, `is_shareable` are removed|
+| dbseed| --model | text | Name of the target model for which seed data is to be generated |
+| dbseed| --records | integer | Number of records to generate |
+| dbseed| --app | text | Name of the target application for the listed model |
+| dbseed| --related | text | Comma separated list of related models provided as `<app>.<model>`. Command will throw error if target model is linked (has foreign key fields) to other models and related models are not specified |
+
+## Application Template Files
+Templates for generating application files can be modified. To view or modify a template file, edit the respective file in
+path `<django_builder_directory>/management/commands/templates/<template_file>.py`
+
+**WARNING!!**
+
+Modifying template files may break application logic or raise error. Ensure you know what you are doing when modifying files.
+
+## Dependencies
+
+The `django_buiild` requires `django` installed on target machine. The target Python for current implementation is
+Python 3.8
+
+## Build Status
+
+**Version: 0.1.0**
+
+Current development of `django_build` is version 0.1.0. This is considered the Alpha Edition. Future releases will
+support import of model specification as YAML or JSON files.
+
+## Features
+
+Current build features include:
+
++ Build model serializers as serializer.py
++ Build Django views as views.py
++ Build Django templates as <template_name>.html. Templates are created and stored in directory following the
+  convention: `templates/<app_name>/<template_name>.html`. The various template files that can be generated include:
+    + Entity/Model list template to list all entries of a given model. The list view can be generated as a paginated or
+      single-page list depending on the flags provided.
+    + Entity/Model update template to update a selected instance identified by a parameter such as <slug>.
+    + Entity/Model detail template to view detail of a given instance identified by a parameter such as <slug>.
+    + Entity/Model delete template to request user's confirmation before deleting an instance identified by <slug>.
+    + Entity/Model create a template to collect form data for creating a new record of a given entity.
+
+## Sample Usage
+
+`cli-django-builder` can be used to generate application files for DRF or simply generate files for a Django application.
+
+Sample test run:
+
+~~~
+$ python manage.py dbseed --app util --model BaseUser --records 5
+$ python manage.py build --make views --app util
+$ python manage.py build --make serializer --app util --model BaseUser 
+~~~
+
+## Contributing
+
+Please visit application repo for further information on extending project. Ideas and comments will be reasonably
+appreciated.
+
+## Author
+
+Current development is by Aniefiok Friday [@frier17](https://gitlab.com/frier17).
+
+## License
+
+MIT License
+
+https://mit-license.org/
+
+For details read license contract [here](https://mit-license.org/)
+
+Copyright 2021 @frier17
+
+Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License. You may
+obtain a copy of the License at
+
+       https://mit-license.org/
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "
+AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific
+language governing permissions and limitations under the License.
+

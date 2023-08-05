@@ -1,0 +1,8 @@
+django_builder/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_builder/apps.py,sha256=HtXtQEKqfZH4mvtjm-VSnG-zng4eor9VbF88kW8hWZ0,89
+django_builder/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cli_django_builder-0.1.0.dist-info/LICENSE,sha256=V2jyi7y3pPfV0gI79Uct7BuKSkDpX6fO2zcmiBA956Y,1093
+cli_django_builder-0.1.0.dist-info/METADATA,sha256=qsOxvoU2yObVAcdirQfg8AYogTY_hGVWtvhfCihDluY,8481
+cli_django_builder-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+cli_django_builder-0.1.0.dist-info/top_level.txt,sha256=P70lVf-tGK53H-ZNQazFR2N1B4bwtnjdb9pau4WCB1g,41
+cli_django_builder-0.1.0.dist-info/RECORD,,
