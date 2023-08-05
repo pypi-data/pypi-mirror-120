@@ -1,0 +1,11 @@
+infomaxy/__init__.py,sha256=mGJqf9xLgKyrGNjv7kHpJJDRipurZBIAhlh-FljbbvY,133
+infomaxy/config.py,sha256=FEpG9b9w9E_xnxNJ1O2eRfdOEqbxYbxXGDqQm7TqKv8,444
+infomaxy/version.py,sha256=ZhzQKWZ8RFrTIkj7z87B144DI95e8LMfA5w8NDWQDtg,23
+infomaxy/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+infomaxy/api/imd.py,sha256=lpjRIxVFwobo_v0zpq2gHQSnQlTfJvAomfygpi5IncU,4461
+infomaxy/api/imutil.py,sha256=PhLABMggygZFHt0-vjaVCckTEvEn33iGEYtJumK-SGw,108
+infomaxy-1.0.0.dist-info/LICENSE,sha256=c2KDOpP0zg7fPtx8NWG_EN6NYgDSVkVWhOYep1oV23c,1075
+infomaxy-1.0.0.dist-info/METADATA,sha256=FLGE8a-4U3dSVp-9NjQ_uHinDTg_S7fKcqSfP9NrTGA,529
+infomaxy-1.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+infomaxy-1.0.0.dist-info/top_level.txt,sha256=a7-XxQoaZHD6HLYkOUZxrHOTH2Ywbc5rddr-gn1bJy0,9
+infomaxy-1.0.0.dist-info/RECORD,,
