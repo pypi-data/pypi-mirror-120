@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/zivverscim/__init__.py
+src/zivverscim/exceptions.py
+src/zivverscim/external_connection.py
+src/zivverscim/scim_connection_crud.py
+src/zivverscim/wrapper.py
+src/zivverscim.egg-info/PKG-INFO
+src/zivverscim.egg-info/SOURCES.txt
+src/zivverscim.egg-info/dependency_links.txt
+src/zivverscim.egg-info/top_level.txt
