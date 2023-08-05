@@ -1,0 +1,17 @@
+numpy
+matplotlib
+seqeval
+torch>=1.8.0
+transformers>=4.3.3
+pelutils[ds]==0.6.7
+click>=7.0.0
+tqdm
+wget
+
+[full]
+danlp
+pyicu
+wikipedia2vec
+umap-learn
+scikit-learn
+scipy
