@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: volmdlr
+Version: 0.2.11
+Summary: A volume modeler computation-oriented. Include rendering bindings.
+Home-page: https://github.com/Dessia-tech/volmdlr
+Author: DessiA Technologies
+Author-email: root@dessia.tech
+License: Creative Commons Attribution-Share Alike license
+Keywords: volume,modeler,CAD
+Platform: UNKNOWN
+Classifier: Topic :: Scientific/Engineering
+Classifier: Development Status :: 3 - Alpha
+License-File: LICENSE
+Requires-Dist: packaging
+Requires-Dist: dessia-common (>=0.3.9)
+Requires-Dist: Cython
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: geomdl
+Requires-Dist: jsonschema
+Requires-Dist: networkx
+Requires-Dist: triangle
+Requires-Dist: plot-data (>=0.6.0)
+Requires-Dist: kaitaistruct
+Requires-Dist: binaryornot
+Requires-Dist: open3d
+
+# Volmdlr
+
+A python VOLume MoDeLeR computations-oriented with STEP support for import/export
+
+![badge](https://drone-opensource.dessia.tech/api/badges/Dessia-tech/volmdlr/status.svg?branch=master)
+
+![casing](https://raw.githubusercontent.com/Dessia-tech/volmdlr/master/doc/source/images/casing.jpg)
+
+## Installing
+
+.. code::
+
+  pip(3) install volmdlr
+
+## Documentation
+https://volmdlr.readthedocs.io/en/latest/
+
+## Contributors
+
+- [DessiA team](https://github.com/orgs/Dessia-tech/people)
+- [Mack Joly](https://www.linkedin.com/in/mack-joly-979824182/)
+
+
+
