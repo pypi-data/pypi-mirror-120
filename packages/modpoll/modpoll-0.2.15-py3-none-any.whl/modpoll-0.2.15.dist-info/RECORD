@@ -1,0 +1,10 @@
+modpoll/__init__.py,sha256=YVekGhDmyniPKkIU6_CMgPe0s9bC4XTrqwynwUA78lI,187
+modpoll/__main__.py,sha256=PguXkhdy3Ct16qB-_gGYY9tZkLHa8_sr6F8eCzU8m1Y,28
+modpoll/args.py,sha256=E1T91YTFH916EvdLPbjGeQQHEs4m-xIG3w14v8ZvTu0,2983
+modpoll/main.py,sha256=9PrOeAxZubaSlZ9D4-Ffrug6Jy8HLF89Lc-DyiILAyc,2122
+modpoll/modbus_task.py,sha256=92SersSFOjoiZWzp5HKfvQsSZco2EV7mu3v-vHvOlDM,14376
+modpoll/mqtt_task.py,sha256=2npAxoGcY12qDbe7xpTPMGIMgNhP-AbB1ZjXuGIDgBA,4416
+modpoll-0.2.15.dist-info/entry_points.txt,sha256=pJuwttRIufLwzxPMZqxC5859kyGOeZ0g85UZUEt3nnU,39
+modpoll-0.2.15.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+modpoll-0.2.15.dist-info/METADATA,sha256=G_YZ6dm364-2bIfnlSzoF-Ij6BsT0yXtHEYc-6fHUBc,1034
+modpoll-0.2.15.dist-info/RECORD,,
