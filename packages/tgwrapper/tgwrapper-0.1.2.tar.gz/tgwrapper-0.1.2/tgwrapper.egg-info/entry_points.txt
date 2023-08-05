@@ -1,0 +1,3 @@
+[console_scripts]
+tgwrapper = tgwrapper.tgwrapper:main
+
