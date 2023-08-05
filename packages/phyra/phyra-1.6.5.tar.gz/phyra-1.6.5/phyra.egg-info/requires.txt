@@ -1,0 +1,12 @@
+click
+PyGithub
+pyowm
+pytest
+ez_setup
+pytube
+setuptools
+tqdm
+google
+beautifulsoup4
+pyrogram
+wikipedia
