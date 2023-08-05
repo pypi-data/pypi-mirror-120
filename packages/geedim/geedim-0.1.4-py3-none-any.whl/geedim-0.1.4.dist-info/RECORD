@@ -1,0 +1,14 @@
+geedim/__init__.py,sha256=ayLx2poAH__Kk6fQFZqJzXoEU0VbOU2Csfg6Gm--izU,1749
+geedim/cli.py,sha256=50GCtkchlwh0fPtlwXW7xhOVwCtVV26mrTRfCJz_Jsg,13057
+geedim/collection.py,sha256=LonBEm-Yew3yLtfcoheEcdvw0FddmEl71K1sFRruvKE,11856
+geedim/export.py,sha256=KBETAWy7ce74VllrWn3OQx7UkY-6NTu0oBYj_nUWWIg,11833
+geedim/image.py,sha256=AnNURbRUCzlWQoOwpHMPlWjFn-pKJwFtpgGCY9bjgL0,28295
+geedim/info.py,sha256=YbznI5sMXH7EhZfVzvvls-4GE8ohVQ9Sam-K9PRMxc4,11006
+geedim/medoid.py,sha256=A8sTJBMZu4AXJKYTgxWNVrb_YquIiMdqHGqDFuMIpIo,11023
+geedim/version.py,sha256=aBEbDvx4LMg8A1TJJR6dEHu8rQODVin528hLS_EDvuA,22
+geedim-0.1.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+geedim-0.1.4.dist-info/METADATA,sha256=JkXx43q5hqjFqSm381Ny5cfC5YhVynUEL-ri8hL6RFg,13642
+geedim-0.1.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+geedim-0.1.4.dist-info/entry_points.txt,sha256=sVKBWFk-ptnPTc1sKDcmtnLeBNjgY1qYzvYE_oJDz4s,43
+geedim-0.1.4.dist-info/top_level.txt,sha256=pCw4cazY55JEtrlvhAbJUsjaWtmbfSZiPPXzlKMh5Xo,7
+geedim-0.1.4.dist-info/RECORD,,
