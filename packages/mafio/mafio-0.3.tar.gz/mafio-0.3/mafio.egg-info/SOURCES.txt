@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+mafio/__init__.py
+mafio/reader.py
+mafio/writer.py
+mafio.egg-info/PKG-INFO
+mafio.egg-info/SOURCES.txt
+mafio.egg-info/dependency_links.txt
+mafio.egg-info/top_level.txt
