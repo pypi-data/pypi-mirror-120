@@ -1,0 +1,3 @@
+[console_scripts]
+splive = splive.__main__:main
+

@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+splive/__init__.py
+splive/__main__.py
+splive/splive.py
+splive.egg-info/PKG-INFO
+splive.egg-info/SOURCES.txt
+splive.egg-info/dependency_links.txt
+splive.egg-info/entry_points.txt
+splive.egg-info/top_level.txt
