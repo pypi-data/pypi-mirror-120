@@ -1,0 +1,7 @@
+flask>=1.1
+Jinja2
+
+[dev]
+pytest>=3.7
+twine>=3.2
+check-manifest
