@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: nulltk
+Version: 0.0.10
+Summary: A helper library to make tkinter UI easier
+Home-page: https://github.com/nhammond129/nulltk
+Author: Nicholas Hammond
+Author-email: nhammond129@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/nhammond129/nulltk/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pillow
+Requires-Dist: opencv-python
+
+nulltk
+----
+`nulltk` is a wrapper for tkinter that extends its base functionality.
+Namely to provide some more widgets based on the original set and improve ease of styling.
+
+Installation:
+```
+pip install --upgrade nulltk
+```
+
+Development installation (recommended):
+```
+git clone git@github.com:nhammond129/nulltk.git
+pip install -e nulltk/
+```
+
+
+Dependencies
+----
+`nulltk` supports Python 3.7+, and used modules are listed in [`requirements.txt`](requirements.txt).
+
+Example Usage
+----
+See [`examples/`](examples) for usage.
+
+
