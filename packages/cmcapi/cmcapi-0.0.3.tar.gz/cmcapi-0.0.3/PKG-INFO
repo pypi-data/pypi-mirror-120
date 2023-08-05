@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: cmcapi
+Version: 0.0.3
+Summary: Coinmarketcap Wrapped API
+Home-page: https://github.com/xueyuanl/cmcapi
+Author: xueyuanl
+Author-email: p.xueyuanl@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/xueyuanl/cmcapi/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# CoinMarketCap API Wrapper in Python
+
+With cmcapi you can monitoring and watch the crypto market more conveniently, and this library has been tested with Python 3.7.x.
+Please also refer official API doc: [Coinmarketcap API](https://coinmarketcap.com/api/documentation/v1/#tag/cryptocurrency)
+
+# Usage
+`pip install cmcapi`
+
+### Example 
+```python
+pass
+
+```
+
+### API List
+
+
