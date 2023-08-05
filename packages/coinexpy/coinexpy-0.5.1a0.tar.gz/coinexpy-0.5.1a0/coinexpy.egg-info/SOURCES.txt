@@ -1,0 +1,13 @@
+LICENSE
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+coinexpy/__init__.py
+coinexpy/coinex.py
+coinexpy/requestclient.py
+coinexpy.egg-info/PKG-INFO
+coinexpy.egg-info/SOURCES.txt
+coinexpy.egg-info/dependency_links.txt
+coinexpy.egg-info/requires.txt
+coinexpy.egg-info/top_level.txt
