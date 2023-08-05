@@ -1,0 +1,17 @@
+snipper/__init__.py,sha256=UXPbnlB2-H7vFfPXghOdc81RgjnBk1MJCsxP-U4Fl28,64
+snipper/block_parsing.py,sha256=4-Hv77nhC7se1nZ4e1aTJsUYeobqXvlnK9rkdxds3gY,3661
+snipper/fix_bf.py,sha256=uZG_eS5J5XCNUo3bN9vAujPFsm6XMXRVa8jBarpVilc,2733
+snipper/fix_cite.py,sha256=bogRyby7Uvkivl-WHwbUX8oVCPy0LA1k2MTHermCE18,2793
+snipper/fix_i.py,sha256=qKQzniBAse5MkGk65deZmAvQyR8pqsQ9A4vaCMSlTJI,3516
+snipper/fix_o.py,sha256=lxMpkB3mRpy-6UY0DfM_q0aVf_wGw_1ludc1HgQRSpU,1389
+snipper/fix_r.py,sha256=PMYnN-dKmOL2etlLA_XE9QzknHLuROoydV25wrEe33w,208
+snipper/fix_s.py,sha256=noFTyv_-TnxS6kxFHvNcDNs8sD6BCPxQQGDSaLxyJSk,1830
+snipper/legacy.py,sha256=mpPy-K57-A89lqEi0y5A0VMhEAEsyReEZYUxe4Ls-Y0,2237
+snipper/load_citations.py,sha256=kjMeRFLhYSL4_j2bpvvjUXTKTdWn8F5qqHfNbgy0vhE,7546
+snipper/snip_dir.py,sha256=-Ss69Ye6NE7ABlyLyGjsXIOd_-cK1aeCA4q7akm2xf0,4167
+snipper/snipper_main.py,sha256=dfB8X0nv-SNVJA3J9OThSTbP9vVK-_SNeDe8jdt27qw,3911
+codesnipper-0.1.2.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+codesnipper-0.1.2.dist-info/METADATA,sha256=DoxX2EoE_CbLQdPXNL9yBeKrFc_fnBF_m_FimTR6HZo,15712
+codesnipper-0.1.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+codesnipper-0.1.2.dist-info/top_level.txt,sha256=s_Yd6KC-kf4pxDxca7ysVHlrl5tRTEw46uwC6pdrVaU,8
+codesnipper-0.1.2.dist-info/RECORD,,
