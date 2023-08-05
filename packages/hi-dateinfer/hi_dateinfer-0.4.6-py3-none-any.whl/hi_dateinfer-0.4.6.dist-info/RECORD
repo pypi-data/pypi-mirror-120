@@ -1,0 +1,12 @@
+hidateinfer/__init__.py,sha256=miNxQ_mTem-e5rMwPfWcQZIxynBHi0FbtEOr5RMijhw,109
+hidateinfer/date_elements.py,sha256=naCrnciDn1x7m1gzkOkrlsgDw8BRP4lK0cgzdzhIYx8,6215
+hidateinfer/infer.py,sha256=DPI8mzMgBKFUvOjirnpE91tKrflANQxtp4zBn7gIekU,11308
+hidateinfer/meta.yaml,sha256=SXWizuDG792WV_dzR30cCENxkk3KqKwZf-4V_jiBxcw,1000
+hidateinfer/ruleproc.py,sha256=wDPUh3JZ0Xnj5dT-xKEcLWyF_T6kWrqc-NE23ugseCI,7267
+hidateinfer/tests/examples.yaml,sha256=KddE_nIL6oFwm7JQxCrNerXAYVXU8kskrW7PskOgNGM,3072
+hidateinfer/tests/test_infer.py,sha256=b4ty2EO5-AEc-KC6cChefiWltGMxytQHpNdckP1vKhU,6851
+hi_dateinfer-0.4.6.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+hi_dateinfer-0.4.6.dist-info/METADATA,sha256=2aqowEFvYKp7FgOkLeQyqY3S_6Hdz7Dq4UsrOebVe3U,3200
+hi_dateinfer-0.4.6.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+hi_dateinfer-0.4.6.dist-info/top_level.txt,sha256=ggYZoW2N0Mn4IRJaHK9XBJJhW4ul-s6n2BEe4fro0qY,12
+hi_dateinfer-0.4.6.dist-info/RECORD,,
