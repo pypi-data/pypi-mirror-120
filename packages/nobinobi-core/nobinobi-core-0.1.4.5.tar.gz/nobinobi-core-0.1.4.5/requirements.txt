@@ -1,0 +1,8 @@
+# Additional requirements go here
+django==3.2.7
+django-model-utils==4.1.1
+# Additional requirements go here
+django-crispy-forms==1.12.0
+arrow==1.1.1
+django-bootstrap-datepicker-plus==3.0.5
+django-extensions==3.1.3
