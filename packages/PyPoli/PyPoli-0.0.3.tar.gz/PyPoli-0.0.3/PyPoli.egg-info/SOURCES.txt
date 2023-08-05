@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+PyPoli/Poli.py
+PyPoli/__init__.py
+PyPoli/play.py
+PyPoli.egg-info/PKG-INFO
+PyPoli.egg-info/SOURCES.txt
+PyPoli.egg-info/dependency_links.txt
+PyPoli.egg-info/requires.txt
+PyPoli.egg-info/top_level.txt
