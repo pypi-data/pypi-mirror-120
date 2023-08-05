@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: django-oscar-razorpay
+Version: 0.0.1
+Summary: Django oscar app for Razorpay
+Home-page: https://github.com/pupattan/django-oscar-razorpay
+Author: Pulak Pattanayak
+Author-email: pkbsdmp@gmail.com
+License: MIT
+Description: # django-oscar-razorpay
+Keywords: django django-oscar razorpay payment
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development
+Description-Content-Type: text/markdown

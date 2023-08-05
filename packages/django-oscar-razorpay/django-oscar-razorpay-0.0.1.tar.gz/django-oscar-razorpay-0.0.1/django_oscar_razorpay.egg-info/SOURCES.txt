@@ -1,0 +1,8 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+django_oscar_razorpay.egg-info/PKG-INFO
+django_oscar_razorpay.egg-info/SOURCES.txt
+django_oscar_razorpay.egg-info/dependency_links.txt
+django_oscar_razorpay.egg-info/top_level.txt
