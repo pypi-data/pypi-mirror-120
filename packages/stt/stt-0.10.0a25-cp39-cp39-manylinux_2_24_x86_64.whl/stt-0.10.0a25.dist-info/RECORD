@@ -1,0 +1,12 @@
+stt/__init__.py,sha256=vgvl-bJW2nm9o02MVdFGpVXEN6eoGhRRCnxTI_NwudI,13096
+stt/_impl.cpython-39-x86_64-linux-gnu.so,sha256=Roypp0jlwDfdWaowXcDVrsG1LShlEeUqYXpyXXm_WYc,364664
+stt/client.py,sha256=nXTqEs9BDuPIA9M8GN2ySL6LrIKavUnQvmC0bZIYms8,6810
+stt/impl.py,sha256=SFfRq0gR2KcHrxeaXga5FPZsU_osb6RlrRftcbJfWsg,7196
+stt/lib/libkenlm.so,sha256=tkqZzFMZx8jBzv-ZiemUBuXbNKGVj3GX7oEz54kmZMo,502344
+stt/lib/libstt.so,sha256=qLY3_WdQkTClOaPlR26hRvg18G50hwk1u8snIRiXpq8,1597520
+stt/lib/libtensorflowlite.so,sha256=xe60UhYUOQ_pjFLEjDdyBdjQLbbqoLIvPkd3EZDIUBw,3724960
+stt-0.10.0a25.dist-info/METADATA,sha256=43N3g0JdOpC7Expm4-FAtNu1OfIP_AVCZ5Yrn5MLdns,1341
+stt-0.10.0a25.dist-info/WHEEL,sha256=wzwAVzy3SxBtj4dxwvayEaQh_8SsJVLthrKeoYGieSk,112
+stt-0.10.0a25.dist-info/entry_points.txt,sha256=-RJKAhqFH3le0allDtX9BNVyOHyAXMbyweoEXUinoRI,41
+stt-0.10.0a25.dist-info/top_level.txt,sha256=U36suN9i5BZ2UbKj5dzgbpHmkIEAvyge7wRwJVB24jk,4
+stt-0.10.0a25.dist-info/RECORD,,
