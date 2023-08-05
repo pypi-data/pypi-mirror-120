@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: cin_term
+Version: 0.0.2
+Summary: cin_term is a terminal(only two to three commands) used for listing files and showing directory
+Home-page: UNKNOWN
+Author: Rigved Aneesh
+Author-email: rigved.bob@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: cin_term,terminal
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
