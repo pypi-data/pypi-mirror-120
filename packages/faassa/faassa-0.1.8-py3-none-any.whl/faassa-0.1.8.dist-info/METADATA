@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: faassa
+Version: 0.1.8
+Summary: Faas-storage-agent apis
+Home-page: UNKNOWN
+Author: why
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: grpcio (>=1.30.0)
+Requires-Dist: grpcio-tools (>=1.30.0)
+Requires-Dist: requests (>=2.2.0)
+
+UNKNOWN
+
+

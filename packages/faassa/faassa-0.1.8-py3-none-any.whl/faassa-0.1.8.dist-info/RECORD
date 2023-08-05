@@ -1,0 +1,13 @@
+faassa/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+faassa/api.py,sha256=33IYknOctdzpBe0JzUQCmFgjz2riUPyTkBk4Qj7Qzmc,4138
+faassa/demo_server.py,sha256=A3DfRNnwIsaSmY-gJN_UZD-GN9KpWyYjIVl-djl3rl8,2614
+faassa/faas_storage_agent_pb2.py,sha256=Oop4uDTlZjocc0C_7JI-aHNgFsqAU0Vqd3yDG7xdj5Y,12333
+faassa/faas_storage_agent_pb2_grpc.py,sha256=R5qnkZxRNnlz5ZcmAIZrNf1QwkJBgQ8tLZMT_8Vt1k0,11642
+faassa/test_server.py,sha256=MaKkJadlpCGY9rOXuTo39UEaQj0w93oSdpFEnL4zJpQ,2514
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_api.py,sha256=g2YjIdKg3dHynWY92utmrIX_WzMJcyfeLV0GnvxC83k,398
+faassa-0.1.8.dist-info/.gitignore,sha256=Ptcxtl0GFQwTji2tsL4Gl1UIiKa0frjEXsya26i46b0,37
+faassa-0.1.8.dist-info/METADATA,sha256=1WNgfdVwv7JvsTKzCpmFxllCVHPpSHJKBHdhe3ht5Y4,284
+faassa-0.1.8.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+faassa-0.1.8.dist-info/top_level.txt,sha256=qqOYkbV3OfwPFdMvlnjWK76vFn5kb-rzwlk9wA3oEW0,13
+faassa-0.1.8.dist-info/RECORD,,
