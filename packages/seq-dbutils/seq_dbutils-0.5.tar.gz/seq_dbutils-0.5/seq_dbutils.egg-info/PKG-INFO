@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: seq-dbutils
+Version: 0.5
+Summary: A package of MySQL database utilities
+Home-page: https://github.com/BDI-pathogens/seq_dbutils
+Author: Laura Thomson
+Author-email: laura.thomson@bdi.ox.ac.uk
+License: MIT
+Platform: any
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Operating System :: OS Independent
+Requires-Python: <3.10,>=3.6
+License-File: LICENSE
+
+UNKNOWN
+
