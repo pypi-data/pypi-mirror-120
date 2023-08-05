@@ -1,0 +1,14 @@
+stockwell/__init__.py,sha256=nCtBUKDNvvXgXpzgkDiXpKsZ6GKrJW87sR41esky8LI,75
+stockwell/stockwell.py,sha256=U0bNAfeb1J3T1Di5ffbhC1m0f1_fr8UsVb-iz8wVEvA,8839
+stockwell/version.py,sha256=3KXfAcA5rzzQXMtfwpHphgbJNZdA0XWaW96kdWVSZJw,22
+stockwell/c_libs/sinemodule.c,sha256=xAvVc6u4n7xu_BaLup6VJVh3ckHvxBgdGncNhl7UGVQ,2463
+stockwell/c_libs/st.c,sha256=931M7J1rfX0CforXjkfFv7u2OODGfqFTKeCTTzeEc4M,8194
+stockwell/c_libs/stmodule.c,sha256=x6bsl5rnhJ37NseCVuoj1WVhO3hGfuXBFQOfKJdWaP4,4194
+stockwell/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stockwell/lib/sine.cpython-37m-darwin.so,sha256=TBKGIPho_SNC8_1XojOsWU1bZOIricie2M4wQ48V_oY,10412
+stockwell/lib/st.cpython-37m-darwin.so,sha256=1NeZ9iWQ-PxLWba3VcC78b09RNYHOEf_mDF43nKBeSI,21516
+stockwell-1.0.1.dist-info/LICENSE.txt,sha256=rWJoZt3vach8ZNdLq-Ee5djzCMFnJ1gIfBeJU5RIop4,21782
+stockwell-1.0.1.dist-info/METADATA,sha256=XlTBBEpylL4bLEJP_vcW2KD_lDolv5EQsrKgx_9o2H0,3639
+stockwell-1.0.1.dist-info/WHEEL,sha256=WVG6A_oY5zUoNXUyvfLMOSXC-hqC5VZacUL1MeSOz70,110
+stockwell-1.0.1.dist-info/top_level.txt,sha256=3gtl9vn5edrQB9mJMSrf868Bc1ng57oQSw6LZwD6HKU,18
+stockwell-1.0.1.dist-info/RECORD,,
