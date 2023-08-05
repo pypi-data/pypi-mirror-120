@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: submit-code
+Version: 0.2.2
+Summary: Submit the code written on Jupiter
+Home-page: UNKNOWN
+Author: jiseung Oh
+Author-email: lodos1414@gmail.com
+License: UNKNOWN
+Keywords: code submit
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3
+Requires-Dist: firebase-admin
+
+UNKNOWN
+
