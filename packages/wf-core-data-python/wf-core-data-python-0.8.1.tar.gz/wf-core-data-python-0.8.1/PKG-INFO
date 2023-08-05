@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: wf-core-data-python
+Version: 0.8.1
+Summary: Python tools for working with Wildflower Schools core data
+Home-page: https://github.com/WildflowerSchools/wf-core-data-python
+Author: Theodore Quinn
+Author-email: ted.quinn@wildflowerschools.org
+License: UNKNOWN
+Description: # wf_core_data
+        
+        Python tools for working with Wildflower Schools core data
+        
+        ## Tasks
+        * Add method(s) to extract the current info for each student
+        * Add method(s) to suggest and review student dupes
+        * Generalize student ID generation to other objects (teachers, schools, hubs, etc.)
+        
+Keywords: database
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
