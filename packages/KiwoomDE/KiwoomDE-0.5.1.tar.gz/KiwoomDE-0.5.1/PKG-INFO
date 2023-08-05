@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: KiwoomDE
+Version: 0.5.1
+Summary: Kiwoom Data Engineering
+Home-page: https://github.com/innovata/KiwoomDE
+Author: innovata sambong
+Author-email: iinnovata@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+
+# Kiwoom Data Engineering
+
+
+### ============================================================
+### Overview.
+### ============================================================
+
+* KiwoomDE(DataEngineering)
+* KiwoomDSc(DataScientist)
+* KOA(KiwoomOpenAPI)
+
+1. KiwoomDE
+- KiwoomTrader와 KiwoomDSc에게 데이터베이스, 데이터분석 기능을 제공하는 핵심 패키지
+- 키움증권OpenAPI 에서 제공하는 데이터를 저장하는 데이터베이스 역할.
+- KiwoomTrader, KiwoomDSc 에게 DataStructure, DataIO 를 제공해야 한다.
+
+2. KiwoomTrader
+- KOA를 통해 키움서버와 직접적으로 통신하는 역할
+
+3. KiwoomDSc
+- KiwoomDE 패키지를 사용하여 데이터분석을 EndUser에게 ???
+
+
+### ============================================================
+### 사용법.
+### ============================================================
+
+
+##### ============================================================
+### 주의사항 !!
+##### ============================================================
+
+
+### ============================================================
+### Configuration
+### ============================================================
+
+
