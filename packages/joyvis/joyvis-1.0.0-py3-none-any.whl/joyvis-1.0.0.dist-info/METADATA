@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: joyvis
+Version: 1.0.0
+Summary: RDF Visualization for SPARQL Endpoint and local file
+Home-page: https://joyhong.tistory.com
+Author: joyhong
+Author-email: su4620@gmail.com
+License: MIT
+Project-URL: Source Code, https://github.com/joyhong85/JoyVis
+Platform: UNKNOWN
+Classifier: Framework :: Jupyter
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Version Control :: Git
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: pyvis
+Requires-Dist: rdflib (==5.0.0)
+Requires-Dist: SPARQLWrapper
+
+# JoyVis
+RDF Visualization
+
+## For SPARQL Endpoint
+~~~python
+from JoyVis import Vis
+
+v = Vis('http://localhost:3030/publicdata/query')
+nw = v.vis(limit=50)
+result = 'html/sample1.html'
+nw.show(result)
+~~~
+![sample1 result](https://joyhong85.github.io/img/sample1.png)
+
+## For Local File
+~~~python
+from JoyVis import Vis
+
+v = Vis(filepath='/Users/joyhong/sample_result.ttl')
+nw = v.vis_file(limit=200)
+result = 'html/sample8.html'
+nw.show(result)
+~~~
+![sample1 result](https://joyhong85.github.io/img/sample8.png)
+
+## For Jupyter Notebook
+~~~python
+from JoyVis import Vis
+
+v = Vis('http://localhost:3030/publicdata/query', notebook = True)
+nw = v.vis(limit=50)
+result = 'html/sample_notebook.html'
+nw.show(result)
+~~~
+## Requirements
+- pyvis
+- RDFLib
+- SPARQLWrapper
+
+
