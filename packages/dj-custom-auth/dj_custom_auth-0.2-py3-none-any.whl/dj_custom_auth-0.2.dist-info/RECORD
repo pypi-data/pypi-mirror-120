@@ -1,0 +1,17 @@
+auth_user/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+auth_user/admin.py,sha256=Gh656x6i5ZD7wC0cYRUsiqp3FH4zVSMjn42Vv6NAKLg,492
+auth_user/apps.py,sha256=a76lLs8MdIycrkCfZ3gK1Dwr7BpDmCrjKQrwd_BWmT0,459
+auth_user/models.py,sha256=hffKSQUJyPs8niYIRPuM848ULocW0XxbaEptmcCqbpw,2286
+auth_user/serializers.py,sha256=L8VQiYB13OISYpomSpQSzFYqFMT2BZ5wQuFiWpEGEpk,3426
+auth_user/tests.py,sha256=2uDafv3Ns6f7Vy1ekUtgYxCZEi1KRyesZDTAFhYcX-E,63
+auth_user/urls.py,sha256=4bHBSea07HxD_KcYokBG8olyHOJia2rhd59OPTXa5mg,329
+auth_user/utils.py,sha256=o0-jPr3KM4ujR_oltD-wqrOpsWr3dMeN7I2Jp1d7jHI,1515
+auth_user/views.py,sha256=l8ixP5NamiANbpq-SEQRBPuZv2w3eOVXK5V7ZEeblVk,2311
+auth_user/migrations/0001_initial.py,sha256=IMa2SH0jjGGAJ-DacyjtLZVEU_6W9azUwMyVFDJ5Vhw,5210
+auth_user/migrations/0002_auto_20210916_0820.py,sha256=_sJM9Fhl3Mlb7EEBFnv2Xti8kG2Zra_6pvvOqklU76s,653
+auth_user/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dj_custom_auth-0.2.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+dj_custom_auth-0.2.dist-info/METADATA,sha256=QCdwTbfh0u12cg7ynl_yzIfS-wVhVoO7s11u-aE6-cY,1742
+dj_custom_auth-0.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+dj_custom_auth-0.2.dist-info/top_level.txt,sha256=jG9a-A2KZINpwikLc29ksEU4Dw_R1uYsOoODXRSIlkw,10
+dj_custom_auth-0.2.dist-info/RECORD,,
