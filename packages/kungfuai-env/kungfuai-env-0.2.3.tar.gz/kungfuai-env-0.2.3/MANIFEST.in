@@ -1,0 +1,2 @@
+include versioneer.py
+include kfai_env/_version.py
