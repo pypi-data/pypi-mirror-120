@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: coinexpy
+Version: 0.5.1
+Summary: Python wrapper for Coinex APIs
+Home-page: https://github.com/imanmousaei/coinexpy
+Author: Iman Mousaei
+Author-email: imanmousaei1379@gmail.com
+License: MIT
+Download-URL: https://github.com/imanmousaei/coinexpy/archive/refs/tags/v0.5.1.tar.gz
+Keywords: coinex,api,wrapper,trade,crypto,bitcoin
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: LICENSE.txt
+
+# coinexpy - Python wrapper for Coinex APIs
+Through coinexpy you can simply buy or sell crypto in your [Coinex](https://www.coinex.com) account
+
+# Features
+* place limit order
+* place market order
+* get balance
+* get price
+
+# Install
+```bash
+pip install coinexpy
+```
+
+# Example
+You can create API key and get your access_id & secret_key [here](https://www.coinex.com/apikey)
+```python
+from coinexpy.coinex import Coinex
+
+
+coinex = Coinex('<your_access_id>', '<your_secret_key>')
+
+balance = coinex.get_balance()
+usdt_balance = coinex.get_available('USDT')
+btc_price = coinex.get_last_price('BTCUSDT')
+
+coinex.market_buy('BTCUSDT', 100)  # buy 100$ worth of bitcoin with market price
+coinex.market_sell('BTCUSDT', 100)  # sell 100$ worth of BTC
+
+coinex.limit_buy('BTCUSDT', 100, 50000) # place a limit buy order on bitcoin with amount=100$
+result = coinex.limit_sell('BTCUSDT', 100, 50000)
+
+coinex.cancel_order(result['id'], result['market'])
+```
+
+## Amount
+Field `amount` should be calculated with the 2nd currency in pair e.g. in BTCUSDT you should calculate amount in USDT
+
+# Donate
+For additional support you can always donate.
+
+My TRX address:
+```
+TKjj4ds7pyRKrLDPa71aCQ9y73kFQPKjX2
+```
+BCH:
+```
+qrxfzgu5prerumfmzm20jajkp6nvje092yx8n5g0k6
+```
+USDT TRC20:
+```
+TKjj4ds7pyRKrLDPa71aCQ9y73kFQPKjX2
+```
+
+# Contact
+If you need another function or found a bug in existing ones submit a new issue [Here](https://github.com/imanmousaei/coinexpy/issues/new).
+
+
