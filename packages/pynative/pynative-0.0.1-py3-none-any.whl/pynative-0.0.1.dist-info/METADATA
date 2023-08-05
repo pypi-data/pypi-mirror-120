@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pynative
+Version: 0.0.1
+Summary: Simple CLI for Native-Land API
+Home-page: UNKNOWN
+Author: Samapriya Roy
+Author-email: samapriya.roy@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: GIS
+Description-Content-Type: text/markdown
+Requires-Dist: requests (>=2.23.1)
+Requires-Dist: beautifulsoup4 (>=4.9.3)
+
+# pynative
+Simple CLI for native-land.ca API
+
+
