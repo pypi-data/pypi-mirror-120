@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.py
+endaq/cloud/API_wrapper.py
+endaq/cloud/__init__.py
+endaq/cloud/utilities.py
+endaq_cloud.egg-info/PKG-INFO
+endaq_cloud.egg-info/SOURCES.txt
+endaq_cloud.egg-info/dependency_links.txt
+endaq_cloud.egg-info/entry_points.txt
+endaq_cloud.egg-info/requires.txt
+endaq_cloud.egg-info/top_level.txt

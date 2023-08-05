@@ -1,0 +1,3 @@
+[console_scripts]
+endaq-cloud = endaq.cloud.API_wrapper:main
+
