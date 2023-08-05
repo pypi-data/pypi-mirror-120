@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: overtalk
+Version: 0.0.2
+Summary: Computes duration of overtalk in a stereo WAV file.
+Home-page: https://github.com/sszokoly/overtalk
+Author: Szabolcs Szokoly
+Author-email: szokoly@protonmail.com
+Maintainer: Szabolcs Szokoly
+Maintainer-email: sszokoly@protonmail.com
+License: MIT
+Keywords: VoIP telephony audio analysis overtalk
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Multimedia :: Sound/Audio :: Analysis
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: auditok
+
+# overtalk
+This module computes total overtalk time in seconds in a stereo WAV file, which occurs when both channels carry audio event. In addition, it also calculates total silence time, when none of the channels contain audio event and total talk time for both channels, when audio event was detected. It can also accept two mono WAV files. Consult https://auditok.readthedocs.io for supported keyword arguments. This is meant to analyze audio files of phone conversations, one channel carrying the audio of caller and the other of the callee.
+
+### example ###
+```
+>>> from overtalk import Overtalk
+>>> overtalk = Overtalk(
+        energy_threshold=50,
+        analysis_window=0.1,
+        min_dur=0.2,
+        max_dur=10,
+        max_silence=0.2
+    )
+>>> overtalk.load("sample.wav")
+>>> print(overtalk.overtalk)
+3.25
+```
+## Requirements
+
+- Python 3.x
+- Auditok
+
+## License
+
+MIT, see: LICENSE.txt
+
+## Author
+
+Szabolcs Szokoly <a href="mailto:sszokoly@pm.me">sszokoly@pm.me</a>
+
+
