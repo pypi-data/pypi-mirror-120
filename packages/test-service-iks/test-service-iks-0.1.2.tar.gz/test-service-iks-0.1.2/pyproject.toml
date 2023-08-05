@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "test-service-iks"
+version = "0.1.2"
+description = ""
+authors = ["Sakshi Singla <sakshi_singla@intuit.com>"]
+
+packages = [
+    {include = "test-service-iks"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Flask = "^2.0.1"
+
+[tool.poetry.dev-dependencies]
+black = "^21.9b0"
+pytest = "^6.2.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
