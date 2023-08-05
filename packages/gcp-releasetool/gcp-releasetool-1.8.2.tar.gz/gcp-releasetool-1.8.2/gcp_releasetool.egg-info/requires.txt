@@ -1,0 +1,12 @@
+requests
+attrs
+click<8.0.2,>=7.0.0
+cryptography
+google-auth
+jinja2
+keyring
+packaging
+protobuf
+pyjwt
+pyperclip
+python-dateutil
