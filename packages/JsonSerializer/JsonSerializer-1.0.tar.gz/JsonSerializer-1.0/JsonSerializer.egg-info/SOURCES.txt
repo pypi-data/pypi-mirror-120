@@ -1,0 +1,5 @@
+setup.py
+JsonSerializer.egg-info/PKG-INFO
+JsonSerializer.egg-info/SOURCES.txt
+JsonSerializer.egg-info/dependency_links.txt
+JsonSerializer.egg-info/top_level.txt
