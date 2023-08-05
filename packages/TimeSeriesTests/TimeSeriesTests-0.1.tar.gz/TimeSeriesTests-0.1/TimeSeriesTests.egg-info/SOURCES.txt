@@ -1,0 +1,8 @@
+README.txt
+setup.py
+TimeSeriesTests.egg-info/PKG-INFO
+TimeSeriesTests.egg-info/SOURCES.txt
+TimeSeriesTests.egg-info/dependency_links.txt
+TimeSeriesTests.egg-info/requires.txt
+TimeSeriesTests.egg-info/top_level.txt
+timeseriestests/timeseriestests.py
