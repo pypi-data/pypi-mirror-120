@@ -1,0 +1,7 @@
+README.md
+setup.py
+NumPlex/__init__.py
+NumPlex.egg-info/PKG-INFO
+NumPlex.egg-info/SOURCES.txt
+NumPlex.egg-info/dependency_links.txt
+NumPlex.egg-info/top_level.txt

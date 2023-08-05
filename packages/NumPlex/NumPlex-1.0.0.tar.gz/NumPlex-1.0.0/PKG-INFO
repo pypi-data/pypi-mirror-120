@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: NumPlex
+Version: 1.0.0
+Summary: Complex numbers compatable with numpy
+Home-page: https://replit.com/@DatM314/NumPlex
+Author: Physictype
+License: UNKNOWN
+Description: NumPlex Numpy Compatable Complex Library
+        * operators (+ - * / ~)
+        
+        Examples
+        	from numplex import complex, ctp, ctr
+        	print(complex(3,3)+complex(1,1))
+        	–––
+        	from numplex import complex, ctp, ctr
+        	print(ctr(complex(3,3)))
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
