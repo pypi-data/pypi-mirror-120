@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pymeteosource
+Version: 0.0.1
+Summary: Meteosource API wrapper library
+Home-page: https://www.meteosource.com/
+Author: Jan Dejdar
+Author-email: dejdar@meteocentrum.cz
+License: ???
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: pandas
