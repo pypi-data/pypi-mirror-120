@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: LobbyBot
+Version: 0.0.2
+Summary: 24/7 Fortnite Lobbybot With Online Dashboard
+Home-page: https://github.com/PirxcyFinal/pirxcybotv2
+Author: Pirxcy
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: sanic
+Requires-Dist: fortnitepy
+Requires-Dist: BenBotAsync
+Requires-Dist: PirxcyPinger
+
+24/7 Fortnite Lobbybot With Online Dashboard
+
+
