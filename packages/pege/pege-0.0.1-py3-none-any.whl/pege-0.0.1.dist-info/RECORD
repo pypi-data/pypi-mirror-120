@@ -1,0 +1,8 @@
+pege/__init__.py,sha256=rQO3flgO3bnnepDCF7WZNqBnvU7FxQcHRuIHayk1Zy8,93
+pege/egnn.py,sha256=pUBrw5N6PGH4jzSvdD0_A4MVj2NCW3PV3BZvtIWS-ZY,839
+pege/pege.pth,sha256=kyUMcD06eiFO9roZqmVXaRS8GMkAdq0PQo-1OikmaXs,712027
+pege/pege.py,sha256=f4aKRCxsk3qkzm-AACuTX06Dqv29GZ_nS-9BEx1Sdgs,1333
+pege/utils.py,sha256=YIE0bgvotBK0EgCyOet5syBeNlWXAonvaf2HwqJPunU,1989
+pege-0.0.1.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+pege-0.0.1.dist-info/METADATA,sha256=WEleGnuIX5NpJpdU6Oz9CFhc9fglKAterYGpbJHbXN4,1719
+pege-0.0.1.dist-info/RECORD,,
