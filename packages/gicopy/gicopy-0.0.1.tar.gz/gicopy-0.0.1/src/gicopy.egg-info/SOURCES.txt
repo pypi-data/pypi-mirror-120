@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/gicopy/__init__.py
+src/gicopy/example.py
+src/gicopy.egg-info/PKG-INFO
+src/gicopy.egg-info/SOURCES.txt
+src/gicopy.egg-info/dependency_links.txt
+src/gicopy.egg-info/top_level.txt
