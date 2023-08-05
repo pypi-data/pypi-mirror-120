@@ -1,0 +1,8 @@
+setup.py
+bin/cin_term
+cin_term/__init__.py
+cin_term/cin_term.py
+cin_term.egg-info/PKG-INFO
+cin_term.egg-info/SOURCES.txt
+cin_term.egg-info/dependency_links.txt
+cin_term.egg-info/top_level.txt
