@@ -1,0 +1,9 @@
+tiggy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tiggy/transformers/__init__.py,sha256=vSihxCEeStpE08AXq6QAHlvruODkk_cneH5Z9dglY88,45
+tiggy/transformers/transformer_layers.py,sha256=RV39iDv-AgUBmgTPStb4yS59fVra1T0y4EeiwbBls3M,2810
+tiggy/transformers/transformer_models.py,sha256=CgnObLjlL38Due00BOAPmlz_Xs6yyposobt_U5GGoPE,662
+tiggy-0.4.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+tiggy-0.4.dist-info/METADATA,sha256=v2UFboX0GGIP1yIdvUPMoI7ZAC4Fyh0GziNdXUHjtds,213
+tiggy-0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+tiggy-0.4.dist-info/top_level.txt,sha256=091NASUSFePmGuzNi33v5LWG7MhJsmzbgzFY3N7GyJk,6
+tiggy-0.4.dist-info/RECORD,,
