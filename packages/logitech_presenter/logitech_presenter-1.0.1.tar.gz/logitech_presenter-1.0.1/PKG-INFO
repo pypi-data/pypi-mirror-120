@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: logitech_presenter
+Version: 1.0.1
+Summary: Listens to the Logitech Presenter and fires callbacks appropriately.
+Author-email: Adam Allevato <adam.d.allevato@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: pynput
+Project-URL: Home, https://github.com/Kukanani/logitech-presenter
