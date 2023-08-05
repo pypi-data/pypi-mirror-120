@@ -1,0 +1,3 @@
+[console_scripts]
+lanceotron = lanceotron.cli:cli
+
