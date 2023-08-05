@@ -1,0 +1,6 @@
+entity_microservice/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+entity_microservice/app.py,sha256=5lHRm5vijurvXzGhLgNfAEeXFUqpZicdzrQRtEoIllo,171
+entity_microservice/health.py,sha256=q5zkM2mUQtVj0z9NGpOJsW5WPcxa_qAYLRPka3x87Eo,933
+entity_microservice-0.1.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+entity_microservice-0.1.0.dist-info/METADATA,sha256=QjL46K1r8QL_fqyy-2Jydg5E-xvryhaYdgSRFDyzzLI,381
+entity_microservice-0.1.0.dist-info/RECORD,,
