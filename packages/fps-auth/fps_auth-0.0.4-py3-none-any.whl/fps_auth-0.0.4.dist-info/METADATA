@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: fps-auth
+Version: 0.0.4
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: fps
+Requires-Dist: fastapi-users[sqlalchemy] (>=7.0.0)
+Requires-Dist: httpx-oauth
+Requires-Dist: aiosqlite
+
+UNKNOWN
+
