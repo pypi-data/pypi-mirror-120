@@ -1,0 +1,12 @@
+README.md,sha256=hbYl728TG9PWeXjke4jC8gmjfi3ISDrWhmB-b_BVlkc,826
+__test.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+requirements.txt,sha256=e3UL12I-b-AN_JIfxK7MRLefEat9hl75ZOzoaax6C2o,68
+setup.py,sha256=_j5h5ZPtZChljF9UfJ6YIX0vkck2iNnpWFpnLoeL1io,1939
+credsafe/__init__.py,sha256=IqYNnGkXSbA0pu2pK0LB9yAW0hdZNcWv0MJ7aCEAWG0,381
+credsafe/agent.py,sha256=9_ya5UJxu7Urxdzt5BtPYYLUgPnQ9RDnKGy_g2T2zVY,2374
+credsafe/broker.py,sha256=CozpsZpBj_4o28eXCB-PU0Tce0SDzAhyVz3BLz3Edmk,2283
+credsafe-0.8.0.dist-info/LICENSE,sha256=E_tIpsMacuDitpZQsc6-iVT3tzRJhISS3P0islvZGvo,35182
+credsafe-0.8.0.dist-info/METADATA,sha256=BVFB2xZGam7EjKFyNFQCHz6ZrS8W2iSJUr30hOuuX74,1645
+credsafe-0.8.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+credsafe-0.8.0.dist-info/top_level.txt,sha256=c_4W1zEGADWOXfo2t92jibj07Qbk1QObDVVymrg7TEA,9
+credsafe-0.8.0.dist-info/RECORD,,
