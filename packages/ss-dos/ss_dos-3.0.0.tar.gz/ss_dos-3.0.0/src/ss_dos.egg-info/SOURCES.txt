@@ -1,0 +1,8 @@
+pyproject.toml
+setup.py
+src/ss_dos/__init__.py
+src/ss_dos/ss_dos.py
+src/ss_dos.egg-info/PKG-INFO
+src/ss_dos.egg-info/SOURCES.txt
+src/ss_dos.egg-info/dependency_links.txt
+src/ss_dos.egg-info/top_level.txt
