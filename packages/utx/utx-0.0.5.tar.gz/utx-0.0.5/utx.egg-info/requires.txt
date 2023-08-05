@@ -1,0 +1,12 @@
+airtest~=1.2.2
+tenacity~=8.0.1
+allure-pytest~=2.9.43
+pocoui~=1.0.83
+tidevice~=0.4.18
+faker~=4.18.0
+jmespath~=0.10.0
+loguru~=0.5.3
+pytest-xdist~=2.3.0
+PyYAML~=5.4.1
+allure-python-commons~=2.9.43
+pytest-rerunfailures~=10.1
