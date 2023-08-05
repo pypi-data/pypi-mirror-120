@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: optapy
+Version: 8.11.0a0
+Summary: An AI constraint solver that optimizes planning and scheduling problems
+Home-page: https://github.com/optapy/optapy
+License: Apache License Version 2.0
+Project-URL: OptaPy Homepage, https://github.com/optapy/optapy
+Project-URL: OptaPlanner Homepage, https://www.optaplanner.org/
+Project-URL: OptaPlanner Documentation, https://www.optaplanner.org/learn/documentation.html
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries :: Java Libraries
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+file: README.md
+
