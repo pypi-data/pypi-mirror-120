@@ -1,0 +1,8 @@
+just_a_test_project/__init__.py,sha256=QDEBI72M7x3X9tzZbSG4m1hM0KYJD4lB7RJEtqABncI,35
+just_a_test_project/module1.py,sha256=hyOQsBkF54gzVSUJZxvPYVjiVVZwaoFJW8KXvjbBpic,223
+just_a_test_project/package1/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+just_a_test_project/package1/module_in_pkg.py,sha256=g-rSJnSPSxjo7NduUAEcmH3SIZsw4kuIuxhr_wX0wR0,382
+just_a_test_project/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+just_a_test_project-0.0.30.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+just_a_test_project-0.0.30.dist-info/METADATA,sha256=JWN3HuDw5van9fhIDGUowqJGVbUHsfGD754IzPPwINE,4043
+just_a_test_project-0.0.30.dist-info/RECORD,,
