@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: marrs
+Version: 1.0.2
+Summary: Python package for Android Java apps researchers, built on top of tools like frida and adb
+Home-page: https://github.com/oran1248/marrs
+Author: Oran Gilboa
+Author-email: oran.gilboa1@gmail.com
+License: GNU GPL v3
+Download-URL: https://github.com/oran1248/marrs/archive/refs/tags/1.0.2.tar.gz
+Description: Marrs is a Python package for Android Java apps researchers, built on top of tools like frida and adb. Using Marrs you can write Python code that modifies fields' value, calls methods, creates instances, hooks methods and more.
+Platform: UNKNOWN
+Requires-Python: >=3.7
