@@ -1,0 +1,4 @@
+include COPYRIGHT
+include README
+include CHANGELOG
+include coda/CODA.txt
