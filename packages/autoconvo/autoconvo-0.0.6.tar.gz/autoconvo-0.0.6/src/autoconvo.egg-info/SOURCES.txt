@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/autoconvo/__init__.py
+src/autoconvo/convo.py
+src/autoconvo.egg-info/PKG-INFO
+src/autoconvo.egg-info/SOURCES.txt
+src/autoconvo.egg-info/dependency_links.txt
+src/autoconvo.egg-info/requires.txt
+src/autoconvo.egg-info/top_level.txt
