@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/virgil/__init__.py
+src/virgil/__main__.py
+src/virgil.egg-info/PKG-INFO
+src/virgil.egg-info/SOURCES.txt
+src/virgil.egg-info/dependency_links.txt
+src/virgil.egg-info/entry_points.txt
+src/virgil.egg-info/top_level.txt
+src/virgil/core/__init__.py
+src/virgil/core/distributions.py
