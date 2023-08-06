@@ -1,0 +1,8 @@
+appdirs
+filelock
+idna
+ptlibs
+ptthreads
+requests
+tldextract
+treelib
