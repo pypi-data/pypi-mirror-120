@@ -1,0 +1,13 @@
+convtools/__init__.py,sha256=ES9NA7skvP6kfdM25nyjD8dmhbkVEVOWT2j_lsnkUBg,173
+convtools/aggregations.py,sha256=ZiAUrwC-LC2M4Fz3WMTBah9PmjPoWbaX4JqTBbyZJgU,42625
+convtools/base.py,sha256=FUNaw8Fw_z8xY5PLr6Kuw9op_O_DQIwhGf1U6Tw1lT8,72069
+convtools/conversion.py,sha256=7_8rArRTVioyBV0Y3UO_Mr0t5AncYaCoxs311xAfKnc,4585
+convtools/joins.py,sha256=KfswYrJ3ajIQCkYDK6c9dk38W7lw3cJdrFpVzOiM1fU,15072
+convtools/mutations.py,sha256=zwON_34-FV0cpgH6hKLwWKgChSfoXWY54qrVnYYcKgU,2853
+convtools/utils.py,sha256=P200pUUxD8O-1HhQfTrQ44WsJU8qIvg0BgpJAKeY2C0,3212
+convtools-0.15.4.dist-info/AUTHORS.rst,sha256=6WzZopOK8trir_ajZ8rRlMjmBwduAwtWgRPpBSD01DM,126
+convtools-0.15.4.dist-info/LICENSE.txt,sha256=AyYPIG7Vjlyoe3HpVwPgnJHETK4YsIeToQqp4W0PnUg,1115
+convtools-0.15.4.dist-info/METADATA,sha256=MFH1ojEVAo6V2CGVzl6Z5wSU9YKIyxKzG5iqyg_bN-0,20004
+convtools-0.15.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+convtools-0.15.4.dist-info/top_level.txt,sha256=guUgnBcRNpTJ3m_3T_KBW42ocEaiFi6hbhSl9ehY7tQ,10
+convtools-0.15.4.dist-info/RECORD,,
