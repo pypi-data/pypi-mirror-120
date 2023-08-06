@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: rqalpha-mod-log
+Version: 0.1.3
+Summary: RQAlpha Mod for logbook
+Home-page: https://github.com/lawrentchen/rqalpha-mod-log
+Author: LawrentChen
+Author-email: laurant.chen@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# log Mod
+
+RQAlpha log Mod，supporting logbook output
+
+## Enable/Disable log Mod
+
+```bash
+# Disable log Mod
+$ rqalpha mod disable log
+
+# Enable log Mod
+$ rqalpha mod enable log
+```
+
+## Mod Config
+
+Configs of log Mod are as followed.
+
+```python
+{
+    # Specify the log output file
+    "log_file": "./log.txt",
+    # Python open() method to read/write file
+    "log_mode": "a",
+}
+```
+
+## Extend command
+
+With this mod enabled, you can use follow function:
+
+
+- `rqalpha run` command can use `--log-file file_path` option to export the log to `file_path` location
+- `rqalpha run` command can use `--log-mode log_mode` option，which is the 'mode' param in  python built-in `open()` method，to determine how to read/write the output log file
+
