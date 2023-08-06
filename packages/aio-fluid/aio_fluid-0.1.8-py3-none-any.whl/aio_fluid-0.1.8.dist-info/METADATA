@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: aio-fluid
+Version: 0.1.8
+Summary: Tools for backend python services
+License: BSD
+Author: Luca
+Author-email: luca@quantmind.com
+Requires-Python: >=3.8,<3.10
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aio-kong (>=0.8.2,<0.9.0)
+Requires-Dist: aio-openapi (>=2.3.1,<3.0.0)
+Requires-Dist: aiobotocore (>=1.3.3,<2.0.0)
+Requires-Dist: aioconsole (>=0.3.1,<0.4.0)
+Requires-Dist: aiohttp_cors (>=0.7.0,<0.8.0)
+Requires-Dist: aioredis (>=2.0.0,<3.0.0)
+Requires-Dist: boto3 (>=1.17.0,<2.0.0)
+Requires-Dist: colorlog (>=5.0.1,<6.0.0)
+Requires-Dist: inflection (>=0.5.1,<0.6.0)
+Requires-Dist: prometheus-async (>=19.2.0,<20.0.0)
+Requires-Dist: pycountry (>=20.7.3,<21.0.0)
+Requires-Dist: python-json-logger (>=2.0.2,<3.0.0)
+Requires-Dist: python-slugify[unidecode] (>=5.0.2,<6.0.0)
+Requires-Dist: ujson (>=4.0.2,<5.0.0)
+Project-URL: Issues, https://github.com/quantmind/aio-fluid/issues
+Project-URL: Repository, https://github.com/quantmind/aio-fluid
+Description-Content-Type: text/markdown
+
+# Tools for backend python services
+
+[![PyPI version](https://badge.fury.io/py/aio-fluid.svg)](https://badge.fury.io/py/aio-fluid)
+[![build](https://github.com/quantmind/fluid/workflows/build/badge.svg)](https://github.com/quantmind/aio-fluid/actions?query=workflow%3Abuild)
+[![codecov](https://codecov.io/gh/quantmind/aio-fluid/branch/master/graph/badge.svg?token=81oWUoyEVp)](https://codecov.io/gh/quantmind/aio-fluid)
+
+## Installation
+
+This is a simple python package you can install via pip:
+
+```
+pip install aio-fluid
+```
+
