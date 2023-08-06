@@ -1,0 +1,3 @@
+[console_scripts]
+avotes-parser = evmscript_parser.cli:main
+
