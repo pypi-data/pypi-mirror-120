@@ -1,0 +1,16 @@
+ligo/em_bright/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+ligo/em_bright/categorize.py,sha256=uzDwRFUW5LduxmOhKXk6G3JFj1qu4rLqlRhcrwZ3w5k,5299
+ligo/em_bright/computeDiskMass.py,sha256=2AyF_u9Y34xeizAoQgPdH6tGacx2YlQXxld5mIBpZsI,9249
+ligo/em_bright/dag_writer.py,sha256=jkMXnXaT4rXDzFKvrUq3ipkH_AZJQCbJ5BztSLVXd4U,10984
+ligo/em_bright/data/equil_2H.dat,sha256=44jXx9IpuQjyx3wHYyazSnh8_S8WKRKSo6qKbxGMfU8,53263
+ligo/em_bright/data/knn_em_classifier.pkl,sha256=gR48hsFHGm1SJkVHKo4zy4r6AdvldFgL_nHo3puXiyo,20446445
+ligo/em_bright/data/knn_ns_classifier.pkl,sha256=ICiXcjGstt0EwonVqarmZY4MV3jNvOhkLeWiadFhkaY,20446445
+ligo/em_bright/em_bright.py,sha256=lC5tZH-XbINYkemnWgWuLBuZhupq_1uHaBWqJnsAIkI,5441
+ligo/em_bright/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ligo/em_bright/tests/test_em_bright.py,sha256=oRZlO5J_lG-yFzKuvCmD2o_jNwZckRV9-jhwV82hMIs,2892
+ligo/em_bright/utils.py,sha256=7ykeW_TynbbE8Z_P8wM4_Rsh1ADaZn6w1RHbNXdbtzw,14250
+ligo.em_bright-0.1.0.dist-info/entry_points.txt,sha256=rmsUaXK0JrkdUMfFVOy5ENVYC6Mt4fcUxKhGFKJZ3TA,254
+ligo.em_bright-0.1.0.dist-info/LICENSE,sha256=EvBA7MIkZ9dSRO9CLe__ma1DYuJv0v4wUPE_DVtyZ98,1072
+ligo.em_bright-0.1.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+ligo.em_bright-0.1.0.dist-info/METADATA,sha256=2X8uferNg5QX7dmc2zkM603NQkbxKQs862M0J6N6hf4,702
+ligo.em_bright-0.1.0.dist-info/RECORD,,
