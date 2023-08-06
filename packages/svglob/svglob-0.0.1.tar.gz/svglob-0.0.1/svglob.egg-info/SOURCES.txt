@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+svglob/__init__.py
+svglob/__main__.py
+svglob.egg-info/PKG-INFO
+svglob.egg-info/SOURCES.txt
+svglob.egg-info/dependency_links.txt
+svglob.egg-info/requires.txt
+svglob.egg-info/top_level.txt
