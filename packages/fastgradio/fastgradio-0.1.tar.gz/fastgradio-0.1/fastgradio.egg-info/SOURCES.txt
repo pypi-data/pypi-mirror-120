@@ -1,0 +1,10 @@
+README.md
+setup.py
+fastgradio/__init__.py
+fastgradio/demo.py
+fastgradio/mappings.py
+fastgradio.egg-info/PKG-INFO
+fastgradio.egg-info/SOURCES.txt
+fastgradio.egg-info/dependency_links.txt
+fastgradio.egg-info/requires.txt
+fastgradio.egg-info/top_level.txt

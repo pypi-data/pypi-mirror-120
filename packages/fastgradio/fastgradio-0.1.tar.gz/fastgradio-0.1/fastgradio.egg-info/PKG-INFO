@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: fastgradio
+Version: 0.1
+Summary: Python library for easily creating Gradio demos from Fastai learners.
+Home-page: https://github.com/aliabd/fastgradio
+Author: Ali Abdalla
+Author-email: ali.si3luwa@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: machine learning,fastai,gradio,demo,interface,visualization,reproducibility
+Platform: UNKNOWN
