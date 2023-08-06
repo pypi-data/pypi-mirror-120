@@ -1,0 +1,16 @@
+flask_mailing/__init__.py,sha256=P1chgbJGTp4Ldl4jeZvZ2Pdsvr4LiWpGnUnSRQobvmA,398
+flask_mailing/config.py,sha256=LNsDk7yA4lq1GSNH2r6p-obqY-LCrwe-9f0t5yhPyco,1770
+flask_mailing/connection.py,sha256=6Z6OZNqNHQHB76mhP4TitLx1_j3aEpq9LZcwUkoROtk,2089
+flask_mailing/errors.py,sha256=NN9R3RhQEC3fcgEzKr7bCt8dUc-GG83V7NHtZwFy-6I,449
+flask_mailing/mail.py,sha256=IxYr26Ox670Vhe9Kym91-aiYFhxunWT-Y0pwzG9DS8M,4854
+flask_mailing/msg.py,sha256=XheLWib6haGCCJVTZzdFeIHKUp1cq8Oq-TB2lo4qpYU,4055
+flask_mailing/schemas.py,sha256=qSHkYAh-yJelwacisjxCWCoxQ_8NBK8NGiqq-LMzL_o,3737
+flask_mailing/utils/__init__.py,sha256=GIam98KdmGPkaeAbr3aQlS_iRwIXGoeIufo2-wH6_IU,98
+flask_mailing/utils/email_check.py,sha256=W35g_ZxqpB_10tHJTrm2x3bbeUdJs0IJPHwiVrYLdKI,15080
+flask_mailing/utils/errors.py,sha256=3lh4h58zf3VzzWE_DZHOAkMjmVrl13HqRypO1NPlnfY,121
+Flask_Mailing-0.0.5.dist-info/LICENSE,sha256=xa7iQJXtZ8V5VLxQQXR-fa5IfG6f1kpQ6dCiYBLLepw,1070
+Flask_Mailing-0.0.5.dist-info/METADATA,sha256=NTuN_lpqbQCqwG5BBJYn3yveIH23sV0zyblcE7USXWY,5684
+Flask_Mailing-0.0.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+Flask_Mailing-0.0.5.dist-info/entry_points.txt,sha256=doMOsDhC2JSs61SBiR3CAB2HnfV8s6u9XV6rLUCyjBY,52
+Flask_Mailing-0.0.5.dist-info/top_level.txt,sha256=nQUQ0bobfMv647EaTLCqbjuBKQR2gLn2GY5TyUatmzE,14
+Flask_Mailing-0.0.5.dist-info/RECORD,,
