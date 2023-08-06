@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+PythMC.egg-info/PKG-INFO
+PythMC.egg-info/SOURCES.txt
+PythMC.egg-info/dependency_links.txt
+PythMC.egg-info/requires.txt
+PythMC.egg-info/top_level.txt
+pythmc/__init__.py
+pythmc/Chat/chat_parser.py
+pythmc/Chat/message.py
+pythmc/Chat/minecraft.py
+pythmc/Interactions/minecraft.py
+pythmc/assets/exceptions.py
+pythmc/assets/essentials/interactor.py
+pythmc/assets/essentials/keybinds.py
