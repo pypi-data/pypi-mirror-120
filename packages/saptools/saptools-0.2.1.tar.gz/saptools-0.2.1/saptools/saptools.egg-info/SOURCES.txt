@@ -1,0 +1,7 @@
+README.md
+setup.py
+saptools/saptools.egg-info/PKG-INFO
+saptools/saptools.egg-info/SOURCES.txt
+saptools/saptools.egg-info/dependency_links.txt
+saptools/saptools.egg-info/requires.txt
+saptools/saptools.egg-info/top_level.txt
