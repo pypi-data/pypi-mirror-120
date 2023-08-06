@@ -1,0 +1,36 @@
+[tool.poetry]
+name        = "kitsu.py"
+version     = "0.1.1"
+description = "A simple async python wrapper for the kitsu.io API."
+authors     = ["MrArkon <mrarkon@outlook.com>"]
+maintainers = ["MrArkon <mrarkon@outlook.com>"]
+license     = "MIT"
+readme      = "README.md"
+repository  = "https://github.com/MrArkon/kitsu.py/"
+packages    = [
+    { include = "kitsu" },
+    { include = "LICENSE"}
+]
+keywords    = ["kitsu", "async kitsu", "kitsu.py", "kitsu api wrapper"]
+classifiers = [
+    "Topic :: Internet",
+    "Topic :: Utilities",
+    "Topic :: Games/Entertainment",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",    
+    "Intended Audience :: Developers"
+]
+
+[tool.poetry.dependencies]
+python          = "^3.8"
+aiohttp         = "^3.7.4"
+python-dateutil = "^2.8.2"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/MrArkon/kitsu.py/issues"
+
+[build-system]
+requires      = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
