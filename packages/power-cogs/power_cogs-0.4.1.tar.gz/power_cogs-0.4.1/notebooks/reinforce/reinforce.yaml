@@ -1,0 +1,16 @@
+model_config:
+    hidden_dims: [64, 64]
+    normal_std: 0.01
+dataset_config:
+    env_name: "LunarLander-v2"
+    max_env_steps: 10000
+    gamma: 0.99
+    discount_rewards: true
+    normalize_rewards: true
+    random_policy: false
+    num_rollouts: 20
+    num_workers: 5
+optimizer_config:
+    lr: 0.002
+logging_config:
+    checkpoint_interval: 10
