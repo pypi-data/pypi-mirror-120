@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pypiapijson
+Version: 2.2
+Summary: A client for connect to pypi.org api to retrieve the python packages!
+Home-page: https://github.com/dumb-stuff/pypiapijson
+Author: Rukchad Wongprayoon
+Author-email: mooping3roblox@gmail.com
+License: MIT
+Project-URL: Documentation, https://pypiapijson.biomooping.tk
+Keywords: Tools
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp
+
+# Pypiapijson modules!
+
+[Docs](https://pypiapijson.biomooping.tk)
+#
+
+1.9.8 REWORK ON ANYTHING AAAAAAAAAAAAAAAAAa also add asyncs for asynchronous fetch
+
