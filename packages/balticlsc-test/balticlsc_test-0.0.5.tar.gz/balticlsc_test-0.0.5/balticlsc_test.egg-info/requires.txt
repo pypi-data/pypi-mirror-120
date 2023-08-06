@@ -1,0 +1,4 @@
+flask
+requests
+bson
+pymongo
