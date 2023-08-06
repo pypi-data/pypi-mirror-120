@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: confusion-test
+Version: 666.0.0
+Summary: Test package for dependency confusion vulnerability
+Home-page: UNKNOWN
+Author: COHERENT MINDS Team
+Author-email: dev@coherentminds.de
+License: UNKNOWN
+Project-URL: COHERENT MINDS, https://coherentminds.de/
+Description: <div align="center">
+        
+        [![coherent minds](https://img.shields.io/badge/minds-coherent-88cdd8.svg?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAACXBIWXMAAAK4AAACuAGk+2ZLAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAatJREFUKJFtkk1IVFEYhp/v3KvjiBMtNX8mCIwWboIQzGCgUEjwhwiCFsN0SdoZrdo5KzUXCndXizuLFuay0Aha6GJw4yiunJkWEUUguAnERpw8X4tGu3dm3tXLd97nnPccDkSVAJ4DG8BPYBJgbrt0+1W+lAgHTcjfBYrAMpACrtS8cRy6NM6X+e1iqh4cAdaB7roGV4HrVrQAdIqRT4s75Tvn4GUgB8RorlajclrzMYuuLG39iBsgXavVTIfAvj3T/tCsu9r6O+MCE6FhAdgDHOAmsAhUjSOPVf+HFB0R4DtwAEzXoIgWCuVhRDcAN4Tuu8Am8CybzZ70JJOPFO6JxZ79cWePB1K/TuV4LQoBiBhgOpfL2d6+5EeUFVE8hKdOS3X8xVBvBTTfeHUpGuDEwqzCaN3qjO/7McdteQLsRDC1H1wAq4xJ46432jsSrzvLux48HPx6rXRfRW4Zq5XKUduqALwJgiGDfAbam9TKY3jppdNbInLxthcHBUEwaJF3/PstDVLYdYUHmUzmWwQE8H0/Fu+4lBbVKYR+wEEoA+/F2ree5x2dZ/8CIW2FUo31n20AAAAASUVORK5CYII=)](https://coherentminds.de)
+        
+        </div>
+        
+        ---------------------------------------------------------------------
+        
+        # `confusion-test` - Test Package for Dependency Confusion Vulnerability
+        
+        ## Background
+        
+        Since you found this package, you might have already read about the so-called
+        dependency confusion vulnerability. If you have no idea what I am talking
+        about, first read
+        [this](https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610).
+        
+        The pip team is still discussing if this could and/or should be fixed within
+        pip itself or whether this is somebody else's problem.
+        
+        Whatever the outcome of this discussion might be, you might want to mitigate
+        this vulnerability *now*. Two tools (basically proxies which filter/route
+        requests to repositories) have been proposed:
+        
+        * [devpi](https://www.devpi.net/)
+        * [simpleindex](https://github.com/uranusjr/simpleindex)
+        
+        
+        ## What's the use of `confusion-test`?
+        
+        Whatever you use as a mitigation, you might wonder if it actually works, i.e.,
+        if you have package A in you private repository and someone else uploads
+        package A to PyPI using a higher version number, will you actually *not*
+        install the package from PyPI.
+        
+        You can use `confusion-test` for testing your mitigation. It is tiny and does
+        not have any dependencies (as version 1.x) or functionality.
+        
+        
+        ## How to use it
+        
+        1. Manually download the latest 1.x version of `confusion-test` from
+           [PyPI](https://test.pypi.org/simple/confusion-test/). _Do not download
+           a 666.x version!_
+        
+        2. Upload this file to your private repository. Here is how you would do it
+           with [twine](https://pypi.org/project/twine/):
+           ```
+           twine upload -r YOUR_PRIVATE_REPO confusion-test-1.*.tar.gz
+           ```
+        
+        3. Include `confusion-test` in your dependencies *without a version*.
+        
+        When you now install your dependencies, pip will try to install
+        `confusion-test` with the highest version it can find:
+        
+        * If pip installs version 1.x from you local repository, all is fine.
+        
+        * If pip installs version 666.x from PyPI, the parent process (most likely
+          pip) is being killed which should bring the installation process and your
+          build pipeline to a grinding halt.
+        
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: Security
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown

@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+confusion_test.egg-info/PKG-INFO
+confusion_test.egg-info/SOURCES.txt
+confusion_test.egg-info/dependency_links.txt
+confusion_test.egg-info/requires.txt
+confusion_test.egg-info/top_level.txt
