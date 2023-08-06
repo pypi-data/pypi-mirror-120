@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: yahp
+Version: 0.0.4
+Summary: Yet Another HyperParameter framework
+Home-page: https://github.com/mosaicml/hparams
+Author: MosaicML
+Author-email: team@mosaicml.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyYAML (==5.4.1)
+Requires-Dist: ruamel.yaml (==0.17.10)
+Provides-Extra: all
+Requires-Dist: coverage (>=5.5) ; extra == 'all'
+Requires-Dist: pytest (>=6.2.4) ; extra == 'all'
+Requires-Dist: junitparser (>=2.1.1) ; extra == 'all'
+Requires-Dist: yapf (>=0.31.0) ; extra == 'all'
+Requires-Dist: isort (>=5.9.3) ; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: coverage (>=5.5) ; extra == 'dev'
+Requires-Dist: pytest (>=6.2.4) ; extra == 'dev'
+Requires-Dist: junitparser (>=2.1.1) ; extra == 'dev'
+Requires-Dist: yapf (>=0.31.0) ; extra == 'dev'
+Requires-Dist: isort (>=5.9.3) ; extra == 'dev'
+
+# hparams
+hyperparameter management
+
+
