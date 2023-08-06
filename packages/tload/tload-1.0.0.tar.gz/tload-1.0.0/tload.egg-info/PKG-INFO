@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: tload
+Version: 1.0.0
+Summary: Simply Downloads File
+Home-page: UNKNOWN
+Author: Ansh Dadwal
+Author-email: anshdadwal298@gmail.com
+License: MIT
+Keywords: Downloader
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+This is a very simple DownloadLoader
+
+
+Change Log
+==========
+
+0.0.1 (19/04/2020)
+-------------------
+- First Release
+
+
