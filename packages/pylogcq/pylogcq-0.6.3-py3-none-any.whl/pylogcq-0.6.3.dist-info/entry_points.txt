@@ -1,0 +1,4 @@
+[console_scripts]
+cq = pylogcq.cq:main
+logconv = pylogcq.log_convert:main
+
