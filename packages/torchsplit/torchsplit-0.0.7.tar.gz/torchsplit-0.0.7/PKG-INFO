@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: torchsplit
+Version: 0.0.7
+Summary: A basic implementation to split labled data
+Home-page: https://github.com/Gorluxor/torchsplit
+Author: Aleksandar Cvejic
+Author-email: cvejicaca@gmail.com
+License: MIT
+Description: # Torchsplit
+        
+        Welcome to a life where you don't have to split labeled data yourself. 
+        
+        This library requires sklearn and pytorch to be installed. 
+        
+        
+Keywords: split,dataset,into,test,validation
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
