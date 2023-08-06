@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: logicexp
+Version: 0.0.3
+Summary: A package to help calculate the result of a logical expression
+Home-page: https://github.com/kirtish16/logicexp
+Author: Kirtish Surangalikar
+Author-email: kirtishSurangalikar@protonmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/kirtish16/logicexp/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# logicexp
+
+A package which can help in calculating the result of any logical expression consisting of various logical operations. 
+
+It would be very helpful when you have to calculate the result of a logical expression with given input values or to verify the correctness of your output. 
+
+
+## Examples of How To Use
+
+```Python
+from logicexp import Nand, Nor, Not, Or, Xor,Calculate
+
+print(Calculate(Xor(0,1)))
+# 1
+print(Calculate(Nor(1,0)))
+# 0
+print(Calculate(Or(Nand(1,1),Not(1))))
+# 0
+
+```
+
+## Function Description
+| Function | Description |
+| :------------: |:---------------|
+| Or | Represents Logical Or Operation |
+| And | Represents Logical And Operation |
+| Not | Represents Logical Not Operation |
+| Xor | Represents Logical Xor Operation |
+| Nand | Represents Logical Nand Operation |
+| Nor | Represents Logical Nor Operation |
+| Calculate | Calculates the result of logical expression |
+
+
