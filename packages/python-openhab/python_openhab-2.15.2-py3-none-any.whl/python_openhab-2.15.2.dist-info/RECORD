@@ -1,0 +1,14 @@
+openhab/__init__.py,sha256=X6NsWk2dDyiC3rTMV-sK6JuPZw3kM_BIE6Eyk7F016A,98
+openhab/client.py,sha256=ZMI8pJu_lryI9-OE-Pgf7WNi2en3ghG7tngDMXAbHYU,11169
+openhab/items.py,sha256=um67ScIVlsFoad8jNuaTnZSMy1zGrcq9S_caGVd4G70,15973
+openhab/oauth2_helper.py,sha256=-lhrYK7BEcmoMg1p-lluY2CfofNoiZ0UeFmpQxAv78Q,2773
+openhab/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openhab/types.py,sha256=oXdS-7UHXTMjl6jnmxa7kgCMcv1_YBzo34LuKsgRE6w,6800
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_basic.py,sha256=Ms8dkcul7J8_s16CRzvBPryAgmfdCWqqp3jwrFf8FOg,1198
+tests/test_oauth.py,sha256=eZabboGB3-VGPkYe3o_cXn2Ld_80NRQJ27JinRUYjyk,1763
+python_openhab-2.15.2.dist-info/LICENSE,sha256=iEtDSVe6aIMRlZDRzkl_1ESpyLcDC278TeglQBxnJb8,34501
+python_openhab-2.15.2.dist-info/METADATA,sha256=zf5wO2hzfeti-vlaFZVxhGO2wxxO-yjR_38pteg-IzE,5744
+python_openhab-2.15.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+python_openhab-2.15.2.dist-info/top_level.txt,sha256=m5d0ZGvuMBPyd81BONJW6I-kWCeHagriOKWruLGt1u8,14
+python_openhab-2.15.2.dist-info/RECORD,,
