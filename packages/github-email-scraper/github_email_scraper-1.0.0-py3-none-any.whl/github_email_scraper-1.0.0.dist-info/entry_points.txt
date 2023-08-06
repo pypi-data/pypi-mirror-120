@@ -1,0 +1,3 @@
+[console_scripts]
+github-email-scraper = github_email_scraper.github_email_scraper:main
+
