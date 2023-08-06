@@ -1,0 +1,9 @@
+requests==2.*
+slackclient==2.*
+python-dotenv==0.19.*
+
+[dev]
+coveralls==3.*
+flake8
+pytest==6.*
+pytest-cov==2.*
