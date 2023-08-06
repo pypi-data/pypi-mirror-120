@@ -1,0 +1,10 @@
+setup.py
+aeschliman/Binomialdistribution.py
+aeschliman/Gaussiandistribution.py
+aeschliman/Generaldistribution.py
+aeschliman/__init__.py
+aeschliman.egg-info/PKG-INFO
+aeschliman.egg-info/SOURCES.txt
+aeschliman.egg-info/dependency_links.txt
+aeschliman.egg-info/not-zip-safe
+aeschliman.egg-info/top_level.txt
