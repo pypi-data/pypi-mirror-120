@@ -1,0 +1,10 @@
+<ul>
+    {% for page in nav %}
+        <li><a href="{{ url_for("simple_flask_cms.page", path=page.path) }}">{{ page.title }}</a></li>
+        {% if page.subpages %}
+            {% with nav=page.subpages %}
+                {% include 'cms/example_templates/nav.html' %}
+            {% endwith %}
+        {% endif %}
+    {% endfor %}
+</ul>

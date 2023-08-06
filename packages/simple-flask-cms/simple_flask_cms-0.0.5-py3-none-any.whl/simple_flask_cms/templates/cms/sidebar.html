@@ -1,0 +1,14 @@
+<aside class="sidebar">
+    <h3>
+        Pages
+    </h3>
+    {% with pages=nav %}
+        {% include 'cms/recursive_nav.html' %}
+    {% endwith %}
+    <h3>
+        Special
+    </h3>
+    <ul>
+        <li><a href="{{ url_for('simple_flask_cms.list_images') }}">Images</a></li>
+    </ul>
+</aside>
