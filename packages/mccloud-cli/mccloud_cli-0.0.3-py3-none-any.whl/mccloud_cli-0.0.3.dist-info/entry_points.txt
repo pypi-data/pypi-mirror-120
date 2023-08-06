@@ -1,0 +1,3 @@
+
+[console_scripts]
+mccloud_cli = mccloud_cli.cli:cli

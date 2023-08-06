@@ -1,0 +1,11 @@
+mccloud_cli/__init__.py,sha256=aVwttYxirngZXltGv9Dc_EXZMg_WEUktWl9ue6Ug4iU,312
+mccloud_cli/_version.py,sha256=4GZKi13lDTD25YBkGakhZyEQZWTER_OWQMNPoH_UM2c,22
+mccloud_cli/cli.py,sha256=NuhLAYc980xbTJjHUpGmfMyEH17MfnT9BEEjsed2VAA,255
+mccloud_cli/jobs.py,sha256=Dewfbe2YwoP0I6N3QFm2NneNMLVOT6B1bbzJyTNQ6eg,5352
+mccloud_cli/urls.py,sha256=uSBjTcn2z1vDW74fYDFS6XUSlk2kbTtPDYH0Vzk6ADM,7828
+mccloud_cli-0.0.3.dist-info/LICENSE.txt,sha256=17GHjkdhAfLjV50Ipv6Exy8629sTj37pXbSuFKu1128,1093
+mccloud_cli-0.0.3.dist-info/METADATA,sha256=r5W1fwp8rQOroKeY9P5rKbqL8TF_97iba4Fkoptu5Is,2978
+mccloud_cli-0.0.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+mccloud_cli-0.0.3.dist-info/entry_points.txt,sha256=LwcChBs2AakDm9z5fiEh_DZ9zxTETjeijhrUSa6yPoE,52
+mccloud_cli-0.0.3.dist-info/top_level.txt,sha256=I_YLAv7IBOej4NJl0ViRxhYSV5jz0MUNkz8h3QKuIvU,12
+mccloud_cli-0.0.3.dist-info/RECORD,,
