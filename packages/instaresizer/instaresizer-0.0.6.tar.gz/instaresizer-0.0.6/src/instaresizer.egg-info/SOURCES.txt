@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/instaresizer/__init__.py
+src/instaresizer/instasize.py
+src/instaresizer.egg-info/PKG-INFO
+src/instaresizer.egg-info/SOURCES.txt
+src/instaresizer.egg-info/dependency_links.txt
+src/instaresizer.egg-info/requires.txt
+src/instaresizer.egg-info/top_level.txt
