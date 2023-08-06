@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: model-pkg-ruanhantao
+Version: 0.0.1
+Summary: A small example package
+Home-page: UNKNOWN
+Author: ruanhantao
+Author-email: 526822693@qq.com
+License: UNKNOWN
+Description: this is a package include different models.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
