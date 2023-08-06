@@ -1,0 +1,9 @@
+setup.py
+collatzconj/__init__.py
+collatzconj/me.py
+collatzconj/setup.py
+collatzconj/trp.py
+collatzconj.egg-info/PKG-INFO
+collatzconj.egg-info/SOURCES.txt
+collatzconj.egg-info/dependency_links.txt
+collatzconj.egg-info/top_level.txt
