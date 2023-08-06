@@ -1,0 +1,6 @@
+README.md
+setup.py
+jorg/jorg.egg-info/PKG-INFO
+jorg/jorg.egg-info/SOURCES.txt
+jorg/jorg.egg-info/dependency_links.txt
+jorg/jorg.egg-info/top_level.txt

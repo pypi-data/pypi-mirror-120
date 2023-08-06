@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: jorg
+Version: 0.0.0
+Summary: jorg tooling library
+Home-page: https://github.com/jorg-j
+Author: jorg-j
+Author-email: jorgensen.server@gmail.com
+License: MIT
+Description: # jorg library
+        
+        Placeholder 
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
