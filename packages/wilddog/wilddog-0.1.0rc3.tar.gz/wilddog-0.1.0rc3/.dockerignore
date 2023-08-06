@@ -1,0 +1,8 @@
+.github/
+.pytest_cache/
+.mypy_cache/
+.tox/
+tests/
+deployment/
+docs/
+.idea/

@@ -1,0 +1,17 @@
+title = "Wild Dog default staging configuration"
+
+[logging]
+level = "ERROR"
+log_file = "wilddog.log"
+
+[database]
+url = "postgresql://wilddog:wilddog@postgres:5432/wilddog"
+
+[api]
+secret_key = "super secret"
+
+[server]
+host = "0.0.0.0"
+port = 50705
+threads = 10
+scheme = "http"

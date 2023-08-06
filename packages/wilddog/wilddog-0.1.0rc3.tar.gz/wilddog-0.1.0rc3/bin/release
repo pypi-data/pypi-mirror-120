@@ -1,0 +1,29 @@
+#!/usr/bin/env python
+import logging
+from subprocess import check_call
+
+import click
+
+import wilddog
+
+logger = logging.getLogger("wilddog release script")
+
+
+@click.group()
+def s() -> None:
+    ...
+
+
+@s.command(name="changelog", help="create news feed")
+@click.option("--draft/--no-draft", is_flag=True, type=bool, default=True)
+def towncrier(draft: bool = False) -> None:
+    changelog(draft)
+
+
+def changelog(draft: bool = False) -> None:
+    addopts = [] if draft else ["--draft"]
+    check_call(["towncrier", "--yes", "--version", wilddog.VERSION] + addopts)
+
+
+if __name__ == '__main__':
+    s()

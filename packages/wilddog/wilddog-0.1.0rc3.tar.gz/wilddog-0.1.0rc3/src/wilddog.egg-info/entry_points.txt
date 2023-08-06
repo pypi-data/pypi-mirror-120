@@ -1,0 +1,3 @@
+[console_scripts]
+wilddog = wilddog.cli:script
+

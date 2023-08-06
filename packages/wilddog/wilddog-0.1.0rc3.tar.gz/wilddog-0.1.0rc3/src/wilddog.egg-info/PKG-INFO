@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: wilddog
+Version: 0.1.0rc3
+Summary: A generic NFT metadata service
+Home-page: https://github.com/Neemworks/wilddog
+Author: Neemworks Team
+Author-email: wilddog@nimworks.com
+License: Apache 2.0
+Project-URL: Bug Tracker, https://github.com/Neemworks/wilddog/issues
+Keywords: NFT,metadata
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: BSD
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: changelog
+Provides-Extra: dev
+Provides-Extra: docs
+Provides-Extra: lint
+License-File: LICENSE
+
+UNKNOWN
+

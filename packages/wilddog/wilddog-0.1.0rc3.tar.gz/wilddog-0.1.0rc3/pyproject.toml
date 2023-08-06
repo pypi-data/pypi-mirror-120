@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+local_scheme = "no-local-version"
+
+[tool.black]
+line-length = 98
+include = '\.pyi?$'
+
+
+[tool.coverage.run]
+branch = true
+context = "unit tests"
+source = ["wilddog"]
+
+[tool.coverage.html]
+title = "wilddog coverage report"
+directory = "docs/htmlcov"
+show_contexts = true
+
+[tool.isort]
+profile = "black"
+known_first_party = ["wilddog"]
+
+[tool.mypy]
+plugins = "sqlalchemy.ext.mypy.plugin"
+pretty = true
+ignore_missing_imports = true
+disallow_untyped_defs = true
+disallow_untyped_calls = true
+strict_optional = true
+no_implicit_optional = true
+check_untyped_defs = true
+
+[tool.towncrier]
+package = "wilddog"
+package_dir = "src"
+filename = "docs/changelog.rst"
+directory = "changelog"
+issue_format = "`#{issue} <https://github.com/Neemworks/wilddog/issues/{issue}>`_"
+underlines = ["-", "^"]
