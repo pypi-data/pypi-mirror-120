@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: airflow_kubernetes_job_operator_eks_auth
+Version: 1.0.1
+Summary: An airflow job operator that executes a task as a Kubernetes job on a cluster, given a job yaml configuration or an image uri.
+Home-page: https://github.com/duferdev/KubernetesJobOperator
+Author: Victor Dubé
+Author-email: 
+License: LICENSE
+Description: This is a fork from @ https://github.com/LamaAni/KubernetesJobOperator
+Platform: any
+Requires-Python: >=3.6
