@@ -1,0 +1,4 @@
+s3fs
+tensorflow
+pandas
+numpy
