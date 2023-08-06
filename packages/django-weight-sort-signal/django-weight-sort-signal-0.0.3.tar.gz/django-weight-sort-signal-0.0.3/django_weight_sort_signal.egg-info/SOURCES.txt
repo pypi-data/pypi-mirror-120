@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+django_weight_sort_signal/__init__.py
+django_weight_sort_signal/config.py
+django_weight_sort_signal/dispatcher.py
+django_weight_sort_signal.egg-info/PKG-INFO
+django_weight_sort_signal.egg-info/SOURCES.txt
+django_weight_sort_signal.egg-info/dependency_links.txt
+django_weight_sort_signal.egg-info/top_level.txt
