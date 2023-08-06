@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+monzo/__init__.py
+monzo/authentication.py
+monzo/exceptions.py
+monzo/helpers.py
+monzo/httpio.py
+monzo_api.egg-info/PKG-INFO
+monzo_api.egg-info/SOURCES.txt
+monzo_api.egg-info/dependency_links.txt
+monzo_api.egg-info/requires.txt
+monzo_api.egg-info/top_level.txt
