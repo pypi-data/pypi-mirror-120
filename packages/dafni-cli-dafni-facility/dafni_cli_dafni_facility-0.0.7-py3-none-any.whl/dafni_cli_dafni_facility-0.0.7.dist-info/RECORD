@@ -1,0 +1,9 @@
+dafni_cli/__init__.py,sha256=_2nmvo7lrjY_iPbhKXlwH70CZ_ODpbADih6EbcSfT8U,18
+dafni_cli/login.py,sha256=Qntv5OzrTDc4iLDdpyqQ1OoGAn3LAdKSc4gHE3_qTgo,633
+dafni_cli/nims.py,sha256=xDBgO_oTjxFWdjvMY62PDpl3JASF9L2_dxveyoBA4Yc,2900
+dafni_cli/urls.py,sha256=Hgy9zuU3fJcPMSMmwmREDxKVJ_pWZegD5p_1KL0dCBo,389
+dafni_cli_dafni_facility-0.0.7.dist-info/LICENSE,sha256=oiL-e1BWNs90N5bNvBHW6bwwyza-hp9XP8tGd3utzYE,1061
+dafni_cli_dafni_facility-0.0.7.dist-info/METADATA,sha256=Ko_l3zKvAOlpU-nTAhB3HPD05pKMr_z7UV7SgKGS0Jk,724
+dafni_cli_dafni_facility-0.0.7.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+dafni_cli_dafni_facility-0.0.7.dist-info/top_level.txt,sha256=M-rNlAYiFrLtPTY6_psVF6bbVpsit8ViMcM4OsGzfMc,10
+dafni_cli_dafni_facility-0.0.7.dist-info/RECORD,,
