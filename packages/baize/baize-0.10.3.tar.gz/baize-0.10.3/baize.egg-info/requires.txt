@@ -1,0 +1,6 @@
+
+[:python_version < "3.8"]
+typing-extensions<4.0.0,>=3.7.4
+
+[multipart]
+python-multipart<1.0.0,>=0.0.5
