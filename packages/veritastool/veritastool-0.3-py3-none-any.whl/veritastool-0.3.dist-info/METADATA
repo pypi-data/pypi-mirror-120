@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: veritastool
+Version: 0.3
+Summary: veritastool
+Home-page: UNKNOWN
+Author: MAS Veritas
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy (==1.21.2)
+Requires-Dist: scipy (==1.7.1)
+Requires-Dist: sklearn (==0.0)
+Requires-Dist: pandas (==1.3.2)
+Requires-Dist: ipywidgets (==7.6.4)
+Requires-Dist: IPython (==7.27.0)
+Requires-Dist: imblearn (==0.0)
+Requires-Dist: matplotlib (==3.4.3)
+
+UNKNOWN
+
