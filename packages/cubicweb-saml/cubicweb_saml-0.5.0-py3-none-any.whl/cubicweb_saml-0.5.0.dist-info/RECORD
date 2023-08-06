@@ -1,0 +1,15 @@
+cubicweb_saml/__init__.py,sha256=tznlQe87ehnkWQ4Z06gbGJUVZWtB7t5JjSSz8ed89S4,2175
+cubicweb_saml/__pkginfo__.py,sha256=OZfkKqrD8HIWTkVRV9kil_B67AT3U371mY5Q71lNvXA,1579
+cubicweb_saml/pconfig.py,sha256=cet_o23-ZtcyzOUs66l8c_c596Lv7VvE3L0u-ISAorA,4719
+cubicweb_saml/site_cubicweb.py,sha256=CycR9424BJwLTCrB4xT7RwZAWxixgpYS0w7ygyaEYyw,3306
+cubicweb_saml/utils.py,sha256=PJ0TJjdbAqnuoMHvLzAQ1qgImiSeucVzOoiH3m3_AQ4,13548
+cubicweb_saml/views.py,sha256=cMHZZWgME4MiJCd5vZjG2lnahcwmzNozSKICVThU2vU,5335
+cubicweb_saml/i18n/en.po,sha256=mqFaxjuqr-_VZS2jT-5YYtAjlnY4Th3uViU56DVepq0,299
+cubicweb_saml/i18n/es.po,sha256=mqFaxjuqr-_VZS2jT-5YYtAjlnY4Th3uViU56DVepq0,299
+cubicweb_saml/i18n/fr.po,sha256=j7HTF8p3nJiseJonrFO7oEGe2Ot858qNPc8HUsNE9RQ,339
+cubicweb_saml/migration/postcreate.py,sha256=AsjDZgImUjukHUtMSoVt4OSv97UxXM48rl-OyMoyAXs,1087
+cubicweb_saml-0.5.0.dist-info/METADATA,sha256=x1Lx-lcWKjDpgzUi658mGtBJrXR5GoINicaVDuWNyfc,2928
+cubicweb_saml-0.5.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+cubicweb_saml-0.5.0.dist-info/entry_points.txt,sha256=Wyogw221tmafwFW001n0nJbeAsJKWmWXAJVvelnd4cM,39
+cubicweb_saml-0.5.0.dist-info/top_level.txt,sha256=I3tBo_AvtfkO5FtZk2ZJGg3Qp2aWGndu7VV5PDBduxo,14
+cubicweb_saml-0.5.0.dist-info/RECORD,,
