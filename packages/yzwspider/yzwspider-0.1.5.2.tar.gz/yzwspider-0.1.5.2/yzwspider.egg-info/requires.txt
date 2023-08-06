@@ -1,0 +1,4 @@
+xlwt
+pymysql
+scrapy
+twisted
