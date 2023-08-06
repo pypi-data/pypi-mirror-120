@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/example_pkg_dawei.egg-info/PKG-INFO
+src/example_pkg_dawei.egg-info/SOURCES.txt
+src/example_pkg_dawei.egg-info/dependency_links.txt
+src/example_pkg_dawei.egg-info/top_level.txt
