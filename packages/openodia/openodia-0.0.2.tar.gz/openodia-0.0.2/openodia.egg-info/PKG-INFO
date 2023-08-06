@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: openodia
+Version: 0.0.2
+Summary: Open source Odia language tools
+Home-page: https://github.com/soumendrak/openodia
+Author: Soumendra Kumar Sahoo
+Author-email: proud_odia@outlook.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# openodia
+
+`openodia` is a Python package which contains various tools on Odia language.
+
