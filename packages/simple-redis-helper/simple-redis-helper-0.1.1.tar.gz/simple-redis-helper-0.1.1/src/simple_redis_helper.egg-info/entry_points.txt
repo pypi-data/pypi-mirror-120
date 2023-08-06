@@ -1,0 +1,6 @@
+[console_scripts]
+srh-broadcast = simple_redis_helper.broadcast:sys_main
+srh-listen = simple_redis_helper.listen:sys_main
+srh-load = simple_redis_helper.load:sys_main
+srh-save = simple_redis_helper.save:sys_main
+

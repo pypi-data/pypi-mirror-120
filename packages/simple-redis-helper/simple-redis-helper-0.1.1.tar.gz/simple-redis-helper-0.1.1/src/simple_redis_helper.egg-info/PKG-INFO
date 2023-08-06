@@ -1,0 +1,32 @@
+Metadata-Version: 1.1
+Name: simple-redis-helper
+Version: 0.1.1
+Summary: Command-line utilities to for sending/receiving data to/from a Redis backend.
+Home-page: https://github.com/fracpete/redis_helper
+Author: Peter Reutemann
+Author-email: fracpete@waikato.ac.nz
+License: MIT License
+Description: Little command-line library to send/receive data to/from a Redis backend.
+        
+        https://github.com/fracpete/redis_helper
+        
+        Changelog
+        =========
+        
+        0.1.1 (2021-09-22)
+        ------------------
+        
+        - `broadcast.py` now supports reading binary files and just using simple strings
+        
+        
+        0.1.0 (2021-09-14)
+        ------------------
+        
+        - initial release
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering
+Classifier: Programming Language :: Python :: 3
