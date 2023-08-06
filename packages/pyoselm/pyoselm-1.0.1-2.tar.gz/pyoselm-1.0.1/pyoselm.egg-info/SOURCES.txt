@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+pyoselm/__init__.py
+pyoselm/elm.py
+pyoselm/layer.py
+pyoselm/oselm.py
+pyoselm.egg-info/PKG-INFO
+pyoselm.egg-info/SOURCES.txt
+pyoselm.egg-info/dependency_links.txt
+pyoselm.egg-info/requires.txt
+pyoselm.egg-info/top_level.txt
+tests/unit/__init__.py
+tests/unit/test_elm.py
+tests/unit/test_layer.py
+tests/unit/test_oselm.py
