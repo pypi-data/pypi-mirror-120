@@ -1,0 +1,1 @@
+https://github.com/Uninett/nav/tarball/5.2.0#egg=nav-5.2.0
