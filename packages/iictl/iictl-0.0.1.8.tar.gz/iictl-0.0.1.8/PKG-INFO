@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: iictl
+Version: 0.0.1.8
+Summary: integrated instance control command line tool
+Home-page: https://github.com/est-ai/iictl
+Author: Kim Minjong
+Author-email: caffeinism@estsoft.com
+License: MIT
+Description: UNKNOWN
+Keywords: kubernetes
+Platform: UNKNOWN
