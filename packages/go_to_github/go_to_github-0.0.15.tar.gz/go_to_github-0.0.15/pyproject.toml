@@ -1,0 +1,20 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "go_to_github"
+description-file = "README.md"
+author = "Kate Wang"
+author-email = "kate.wang2018@gmail.com"
+home-page = "https://github.com/KateWang2016/go_to_github"
+classifiers = [ "License :: OSI Approved :: MIT License",]
+
+requires = ["lxml", "fake_user_agent", "requests"]
+
+requires-python = ">=3.7"
+
+keywords = "python, github, web connection, local host"
+
+[tool.flit.scripts]
+gotogithub = "go_to_github.main:main"
