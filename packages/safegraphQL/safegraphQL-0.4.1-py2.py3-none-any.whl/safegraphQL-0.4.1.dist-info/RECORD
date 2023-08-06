@@ -1,0 +1,11 @@
+safegraphql/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+safegraphql/__version__.py,sha256=9iGEzuh4fy9pQcggQaVyXU7cmqKT6-Xb9mRAboLsH-E,6
+safegraphql/client.py,sha256=_ce_TyPOyrsgTbf5lwyNVQVmxNhzFd5weWgpb7p_Mqc,32115
+safegraphql/error_types.py,sha256=G9U2vE5oSeadD0ggfyfXPDm6nD16eXmKmXEBSJV8Lu4,38
+safegraphql/trash.py,sha256=Y9QeTovQv1BuIkoNURrVRQL5kVhGBNClt9kIL1Spiwk,7482
+safegraphql/types.py,sha256=6yIBy4fDPpHg2p8VZjit8b0qVpU3-FwP3-2jcvZE6a8,6597
+safegraphQL-0.4.1.dist-info/LICENSE.txt,sha256=i7CzvpjWqbWS43tvCdYjD1QNmL7wXZnWkM4F-LMU8tU,1069
+safegraphQL-0.4.1.dist-info/METADATA,sha256=0ULw1qG1gybtd4AVTCXYqzXvY0r2VqfS9c1hVJStoak,29073
+safegraphQL-0.4.1.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+safegraphQL-0.4.1.dist-info/top_level.txt,sha256=RHH-1v5Zq77ZdwPtKKBwQiXVJe86_9mgXp_KmuzE1nI,12
+safegraphQL-0.4.1.dist-info/RECORD,,
