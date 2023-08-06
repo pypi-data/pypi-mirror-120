@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: poetry-workspace-plugin
+Version: 0.3.0
+Summary: Multi project workspace plugin for Poetry
+Author: Martin Liu
+Author-email: martin.xs.liu@gmail.com
+Requires-Python: >=3.6.2,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: poetry (>=1.2.0a2,<2.0.0)
+Description-Content-Type: text/markdown
+
+
