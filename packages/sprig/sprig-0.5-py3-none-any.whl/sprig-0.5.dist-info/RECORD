@@ -1,0 +1,14 @@
+sprig/__init__.py,sha256=ENCHWX0btTt3cWp_zuk2Xr_mTJ1B2u3edtFCF-146C4,97
+sprig/comb.py,sha256=J9SGvPFm9blxZWQOiVba4YADdtS_X6l0oZOxVOKWcYA,6051
+sprig/dictutils.py,sha256=vYwzHywBMQwCNxU44jgAY5cY86306cJhwXzg4Y4jybM,6357
+sprig/intervals.py,sha256=2Yt7pqpZvocwPeWXuc1aJJ9Vg_PjU52LCHY3bq1h6Jg,6793
+sprig/intervals_naive.py,sha256=W9ZDJkF5bf60LCi15bVBiZdVnjNwFy5VMpDzow6lJ30,1868
+sprig/iterutils.py,sha256=T4yOlEkUAB4wMasxf0TeVPSGwODqhg5qoeJN8ltV8L0,4204
+sprig/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sprig/streamutils.py,sha256=7RFxu_Fm1zMVkIVvuiBHeCThO4JO2qIwA4HAB2iiKt4,8095
+sprig/version.py,sha256=u5_JJhfHac91hfZPP9zFIESoaqpbEKF1u6FPialAtzQ,56
+sprig-0.5.dist-info/LICENSE,sha256=DqES3VcyLoEf0U13eOl8XNGU6gayEg9Gdkoh_pXCStE,1069
+sprig-0.5.dist-info/METADATA,sha256=OzfD2g8KY5TK8TcPJ242oipd4jttgzJX5bdIpA-my0E,748
+sprig-0.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+sprig-0.5.dist-info/top_level.txt,sha256=thImmtSSzwG-0yz1onkilBW1yXytK3j14c-n7C1ZHcw,6
+sprig-0.5.dist-info/RECORD,,
