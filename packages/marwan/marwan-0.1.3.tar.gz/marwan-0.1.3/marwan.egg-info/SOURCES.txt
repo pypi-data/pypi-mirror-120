@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+marwan/__init__.py
+marwan/main.py
+marwan.egg-info/PKG-INFO
+marwan.egg-info/SOURCES.txt
+marwan.egg-info/dependency_links.txt
+marwan.egg-info/entry_points.txt
+marwan.egg-info/top_level.txt
