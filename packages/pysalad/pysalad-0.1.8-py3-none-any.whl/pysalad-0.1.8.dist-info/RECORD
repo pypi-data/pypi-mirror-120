@@ -1,0 +1,13 @@
+pysalad-0.1.8.data/scripts/pysalad,sha256=Y06pC3RR6fd8l6ij5WoMKY9rtGBW9ByLbqus_IBDcRM,12353
+salad/__init__.py,sha256=u_07pbXcPZqpPR3p_F-Ed3IRi-mB8BDnsgUGUW9Sask,228
+salad/api.py,sha256=F7TjvUwnHUixxVr-l8rkXFZQLywkpERE0_uS60bp7Nc,11891
+salad/config.py,sha256=q5svPa-CjCP2cOuyPK0bEE6zHoLASrEMGUDQ8-OM9HQ,4254
+salad/jira.py,sha256=qtoRSR3wE6VJON4Ia1O0pokV6iXPQCCOZalkR4o4e_Y,954
+salad/template.py,sha256=USGJ_iIegwkUXiwqw-1GpW7iRcAAAIQzjUlkE_xzfhs,931
+salad/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+salad/test/test_api.py,sha256=pPS7Olox8lQxiU_dZ1ZxyVGtE3uZXNEurNVD-hShxf4,106
+pysalad-0.1.8.dist-info/LICENSE,sha256=aWDshU89h0-_kq1fRCM9L_oWWpaYiWUrPKBqf91bKxs,1068
+pysalad-0.1.8.dist-info/METADATA,sha256=vagqmlxeC5crMbtYYbwRnSWSAfkdhZlFgdCqT56pVno,4748
+pysalad-0.1.8.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pysalad-0.1.8.dist-info/top_level.txt,sha256=Gy961LnEdQ486VP3oFO0MLjA9bNM1Ba-6Lu0m2lXnMU,6
+pysalad-0.1.8.dist-info/RECORD,,

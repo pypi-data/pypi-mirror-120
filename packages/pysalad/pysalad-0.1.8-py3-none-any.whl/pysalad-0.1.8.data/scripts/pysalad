@@ -1,0 +1,360 @@
+#!python
+
+import calendar
+import argparse
+import json
+import sys
+import os
+from click import FLOAT, IntRange
+from click import STRING
+from functional import seq
+from datetime import datetime
+from datetime import timedelta
+import salad.api
+import salad.config
+import salad.jira
+from salad.template import CommentFormatter
+from configparser import NoOptionError, NoSectionError
+from pathlib import Path
+import click
+
+
+def date_or_today(value, index: int = None) -> datetime:
+    if value is not None and index is not None:
+        try:
+            value = value[index]
+        except IndexError:
+            value = None
+
+    if value is None:
+        return datetime.today()
+    else:
+        return datetime.strptime(str(value), '%Y-%m-%d')
+
+
+def get_or_input(value, message, input_type=STRING, index: int = None):
+    if value is not None and index is not None:
+        try:
+            value = value[index]
+        except IndexError:
+            value = None
+    if value is not None:
+        return value
+    else:
+        return click.prompt(f"{message}", type=input_type)
+
+
+def config_or_default(config, section, key, default=None):
+    try:
+        value = config.get(section, key)
+        if value is None:
+            return default
+        else:
+            return value
+    except NoOptionError or NoSectionError:
+        return default
+
+
+def config_or_input(config, section, key, message, input_type=STRING):
+    value = None
+
+    if section is not None and config.has_section(section):
+        value = config.get(section, key)
+
+    return get_or_input(value, message, input_type)
+
+
+def print_message(args, message: str):
+    if args.verbose:
+        print(message)
+
+
+def print_json(j):
+    print(json.dumps(j, indent=4, sort_keys=False))
+
+
+def sum_duration(x, y) -> float:
+    return x + y["duration"]
+
+
+def save_report(args, comment, order, day, duration):
+    with salad.api.Connection(args.user, args.password, args.url) as connection:
+        # get contract orders
+        contract_orders = connection.get_contract_orders()
+
+        # filer all sub-orders by contract orders (sub-orders of employee)
+        contract_suborders = connection.get_sub_orders() \
+            .filter(
+            lambda so:
+            contract_orders
+                .exists(
+                    lambda o:
+                        (o["order"]["number"] == so["order"]["number"]) and
+                        (o["sub_order"]["number"] == so["number"])
+                )
+        )
+
+        order = order.lower().strip()
+
+        matches = contract_suborders \
+            .filter(
+                lambda so:
+                    (order in so["id"]) or
+                    (order in so["short"].lower()) or
+                    (order in so["number"].lower()) or
+                    (order in so["order"]["number"].lower())
+            ).to_list()
+
+        if len(matches) == 0:
+            raise RuntimeError(f"no order for {order} found")
+
+        elif len(matches) > 1:
+            raise RuntimeError(f"more than one order for {order} found")
+
+        else:
+            hours = int((duration * 60) / 60)
+            minutes = int(duration * 60) - hours * 60
+            connection.create_report(matches[0], comment,
+                                     day.strftime("%Y-%m-%d"), hours, minutes)
+
+            print(f"saved Salat report")
+
+
+def command_show_report(args, conn: salad.api.Connection,
+                        begin: datetime, end: datetime):
+    begin_str = begin.strftime("%Y-%m-%d")
+    end_str = end.strftime("%Y-%m-%d")
+    print_message(args, f"get report from {begin_str} to {end_str}")
+
+    contract = conn.get_contract()
+    report = conn.get_report(contract, begin_str, end_str)
+
+    if args.summary:
+        summary = report \
+            .group_by(lambda x: x["date"]) \
+            .map(lambda x: {
+                "date": x[0],
+                "values": seq(x[1]).reduce(sum_duration, 0.0)
+            })
+        print_json(summary.to_list())
+    else:
+        print_json(report.to_list())
+
+
+def command_show(args):
+    if len(args.parameters) == 0:
+        raise RuntimeError(f"parameter missing")
+
+    with salad.api.Connection(args.user, args.password, args.url) as connection:
+        if args.parameters[0] == "contract":
+            print_json(connection.get_contract())
+
+        elif args.parameters[0] == "orders":
+            contract_orders = connection.get_contract_orders().to_list()
+            print_json(contract_orders)
+
+        elif args.parameters[0] == "employee":
+            print_json(connection.get_employee())
+
+        elif args.parameters[0] == "day":
+            day = date_or_today(args.parameters, 1)
+            command_show_report(args, connection, day, day)
+
+        elif args.parameters[0] == "yesterday":
+            day = date_or_today(args.parameters, 1)
+            yesterday = day - timedelta(days=1)
+            command_show_report(args, connection, yesterday, yesterday)
+
+        elif args.parameters[0] == "tomorrow":
+            day = date_or_today(args.parameters, 1)
+            tomorrow = day + timedelta(days=1)
+            command_show_report(args, connection, tomorrow, tomorrow)
+
+        elif args.parameters[0] == "week":
+            day = date_or_today(args.parameters, 1)
+            begin_of_week = day - timedelta(days=day.weekday())
+            end_of_week = day + timedelta(days=6 - day.weekday())
+            command_show_report(args, connection, begin_of_week, end_of_week)
+
+        elif args.parameters[0] == "month":
+            day = date_or_today(args.parameters, 1)
+            begin_of_month = day.replace(day=1)
+            end_of_month = day.replace(day=calendar.monthrange(day.year,
+                                                               day.month)[1])
+            command_show_report(args, connection, begin_of_month, end_of_month)
+
+        else:
+            raise RuntimeError(f"unknown type {args.parameters[0]}")
+
+
+def command_report_with_template(args, config):
+    template_name = get_or_input(args.parameters, "Template", STRING, 0)
+
+    if not config.has_section(template_name):
+        if len(config.sections()) > 0:
+            print(f"Unbekanntes Template {template_name}. "
+                  f"Vorhandene Templates:")
+            number = 0
+            for section in config.sections():
+                number = number + 1
+                click.echo(f"{number}) {section}")
+            template_number = click.prompt("Template auswählen "
+                                           "(0 für Report ohne Template)",
+                                           type=IntRange(0, number))
+
+            if template_number == 0:
+                command_report(args)
+                return
+            else:
+                template_name = config.sections()[template_number - 1]
+        else:
+            print(f"Unbekanntes Template {template_name}, erstelle "
+                  f"Report ohne Template")
+            command_report(args)
+
+    formatter = CommentFormatter()
+
+    comment = formatter.format_template(
+        config_or_input(config, template_name,
+                        "comment", "Kommentar"))
+    order = config_or_input(config, template_name,
+                            "order", "Auftrag", FLOAT)
+    duration = config_or_default(config, template_name, "duration")
+    duration = float(click.prompt(f"Dauer", type=FLOAT, default=duration))
+
+    save_report(
+         args,
+         comment,
+         order,
+         datetime.today(),
+         duration
+    )
+
+    jira_issue = config_or_default(config, template_name, "jira_issue")
+    jira_comment = config_or_default(config, template_name, "jira_comment")
+
+    if jira_issue is not None and jira_comment is not None:
+        if click.confirm("Jira Kommentar erstellen?", default=True):
+            formatter.set("comment", comment)
+            formatter.set("duration", duration)
+
+            with salad.jira.Connection(
+                    args.jira_user,
+                    args.jira_token,
+                    args.jira_url
+            ) as connection:
+                connection.comment(
+                    formatter.format_template(jira_issue),
+                    formatter.format_template(jira_comment)
+                )
+                print(f"saved Jira comment")
+
+
+def command_report(args):
+    comment = get_or_input(args.parameters, "Kommentar", STRING, 0)
+    duration = float(get_or_input(args.parameters, "Dauer", FLOAT, 1))
+    order = get_or_input(args.parameters, "Auftrag", STRING, 2)
+    day = date_or_today(args.parameters, 3)
+
+    if order is None and args.default_order is not None:
+        print(f"use default order \"{args.default_order}\"")
+        order = args.default_order
+
+    save_report(args, comment, order, day, duration)
+
+
+def command_config(args, config, file_name: str):
+    if len(args.parameters) == 0:
+        raise RuntimeError(f"parameter missing")
+
+    elif args.parameters[0] == "reset":
+        salad.config.reset(file_name)
+        print(f"config file removed")
+
+    elif args.parameters[0] == "show":
+        section = config.default_section \
+            if len(args.parameters) <= 1 \
+            else args.parameters[1]
+        salad.config.show(config, section)
+
+    elif args.parameters[0] == "save":
+        salad.config.save(args, config, file_name)
+
+    else:
+        raise RuntimeError(f"unknown type {args.parameters[0]}")
+
+
+def main():
+    args = argparse.ArgumentParser(description="Python Salat")
+    args.add_argument("command", type=str)
+    args.add_argument("parameters", metavar="parameters", type=str, nargs="*")
+
+    # connection parameters and user credentials
+    args.add_argument("--url", dest="url",
+                      help="Salat URL", type=str)
+    args.add_argument("--user", dest="user",
+                      help="Salat Username (Mitarbeiterkürzel)", type=str)
+    args.add_argument("--password", dest="password",
+                      help="Salat Passwort", type=str)
+    args.add_argument("--jira-token", dest="jira_token",
+                      help="Jira Personal Access Token", type=str)
+    args.add_argument("--jira-user", dest="jira_user",
+                      help="Jira Username (E-Mail Adresse)", type=str)
+    args.add_argument("--jira-url", dest="jira_url",
+                      help="Jira URL", type=str)
+
+    # template parameters
+    args.add_argument("--template-comment", dest="template_comment",
+                      help="Kommentar für Template", type=str)
+    args.add_argument("--template-order", dest="template_order",
+                      help="Auftrag für Template", type=str)
+    args.add_argument("--template-duration", dest="template_duration",
+                      help="Dauer für Template", type=float)
+    args.add_argument("--template-jira-issue", dest="template_jira_issue",
+                      help="Jira Issue", type=str)
+    args.add_argument("--template-jira-comment", dest="template_jira_comment",
+                      help="Jira Comment", type=str)
+    args.add_argument("--template", dest="template_name",
+                      help="Template Name", type=str)
+
+    # other parameters
+    args.add_argument("--summary", dest="summary", action="store_true",
+                      help="Summarize")
+    args.add_argument("--verbose", dest="verbose", action="store_true",
+                      help="Verbose")
+    args.add_argument("--config", dest="config",
+                      help="Name der Config Datei", type=str)
+
+    args.add_argument("--order", dest="default_order",
+                      help="Standard Auftrag", type=str)
+
+    args = args.parse_args()
+
+    config_file_name = args.config \
+        if args.config is not None \
+        else Path.home().joinpath(".salat")
+
+    config = salad.config.load(args, config_file_name)
+
+    try:
+        if args.command == "config":
+            command_config(args, config, config_file_name)
+        elif args.command == "show":
+            command_show(args)
+        elif args.command == "report":
+            if len(args.parameters) <= 1:
+                command_report_with_template(args, config)
+            else:
+                command_report(args)
+        else:
+            raise RuntimeError(f"unknown command {args.command}")
+
+        sys.exit(os.EX_OK)
+
+    except RuntimeError as error:
+        print(f"failed: {error}")
+        sys.exit(os.EX_USAGE)
+
+
+if __name__ == "__main__":
+    main()
