@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+GCBC_HelloWorld_1.0.0.egg-info/PKG-INFO
+GCBC_HelloWorld_1.0.0.egg-info/SOURCES.txt
+GCBC_HelloWorld_1.0.0.egg-info/dependency_links.txt
+GCBC_HelloWorld_1.0.0.egg-info/entry_points.txt
+GCBC_HelloWorld_1.0.0.egg-info/requires.txt
+GCBC_HelloWorld_1.0.0.egg-info/top_level.txt
+helloworld/__init__.py
+helloworld/helloworld.py
