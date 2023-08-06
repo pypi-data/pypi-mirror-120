@@ -1,0 +1,3 @@
+[console_scripts]
+unimi-dl = unimi_dl.cmd:main
+
