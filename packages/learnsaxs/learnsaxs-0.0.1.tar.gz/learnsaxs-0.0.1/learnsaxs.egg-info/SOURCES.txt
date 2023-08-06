@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+learnsaxs/__init__.py
+learnsaxs.egg-info/PKG-INFO
+learnsaxs.egg-info/SOURCES.txt
+learnsaxs.egg-info/dependency_links.txt
+learnsaxs.egg-info/requires.txt
+learnsaxs.egg-info/top_level.txt
