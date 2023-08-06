@@ -1,0 +1,8 @@
+setup.py
+kraken_core/__init__.py
+kraken_core/kraken_core.py
+kraken_core_sdk.egg-info/PKG-INFO
+kraken_core_sdk.egg-info/SOURCES.txt
+kraken_core_sdk.egg-info/dependency_links.txt
+kraken_core_sdk.egg-info/requires.txt
+kraken_core_sdk.egg-info/top_level.txt
