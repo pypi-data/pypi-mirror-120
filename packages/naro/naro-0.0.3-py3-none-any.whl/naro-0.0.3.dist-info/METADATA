@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: naro
+Version: 0.0.3
+Summary: A small example package
+Home-page: UNKNOWN
+Author: nash
+Author-email: nash403@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Naro Package
+
+This is a simple example package. You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
+
+pypa tutorial 이것을 따라서 그대로 입력한 것이다.
+setup.cfg 방식을 사용한다.
+패키지의 이름: naro
+테스트 시 네번째 번호을 계속 증가시키기로 한다.
+
+# 절차
+
+## 도구 업그레이드
+
+```
+python3 -m pip install --upgrade build twine
+```
+
+## 빌드
+
+```
+rm ./dist/*
+python3 -m build
+```
+
+## 업로드
+
+```
+python3 -m twine upload --repository testpypi dist/*
+```
+
+## 배치
+
+```
+python3 -m pip install --index-url https://test.pypi.org/simple/ --no-deps naro
+```
+
+
+
