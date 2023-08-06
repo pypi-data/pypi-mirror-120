@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: django-connect-mongo
+Version: 1.4.0
+Summary: we use this package to work with mongodb easier
+Home-page: UNKNOWN
+Author: hieucao192
+Author-email: hieucaohd@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
