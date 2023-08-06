@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: nisanyan-cli
+Version: 0.0.1
+Summary: CLI for nisanyansozluk.com (nis <word>)
+Home-page: https://github.com/agmmnn/nisanyan-cli
+Author: agmmnn
+License: Apache License Version 2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console
+Classifier: Topic :: Utilities
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+
+![screenshot](https://raw.githubusercontent.com/agmmnn/nisanyan-cli/master/ss.png)
+
+CLI for the Turkish etymological dictionary, [nisanyansozluk.com](https://www.nisanyansozluk.com/).
+
+## How to Install
+
+-   `pip install nisanyan-cli`
+
+## How to Use
+
+-   `nis <word>`
+
+_Note: Be aware when this code was published. If the site will be updated in the future this code may not work properly._
+
+## License
+
+CC0
+
+
