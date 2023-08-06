@@ -1,0 +1,106 @@
+---
+file-contents:
+  releasenotes/notes/conventional_commit-5cbbd021edc324c2.yaml:
+    other:
+    - "Conventional Commit message subject lines are now enforced. This affects\n\
+      CI. Additionally, if developers want to protect themselves from CI failing\n\
+      on this please make sure of the following\n\n* you have pre-commit installed\n\
+      * that you have run\n  pre-commit install --hook-type commit-msg\n"
+  releasenotes/notes/fix-onap-copyright-notice-89415a353ed2a2be.yaml:
+    fixes:
+    - "Remove redundant \"copyright\" word from ONAP copyright notice.\n(LF JIRA:\
+      \ RELENG-3929).\n\nRef:\n  https://wiki.onap.org/display/Meetings/TSC+2021-08-05\n"
+  releasenotes/notes/remove-pytest-dep-8a0d427bfcd1f5c3.yaml:
+    fixes:
+    - 'Pytest is no longer pulled in as a dependency of docs-conf.
+
+      '
+  releasenotes/notes/sphinx-3.2-8e24c17b03786cfd.yaml:
+    upgrade:
+    - 'Sphinx has been upgraded to 3.2.x.
+
+      '
+  releasenotes/notes/sphinx-update-6b451b2462799591.yaml:
+    upgrade:
+    - 'Sphinx version is updated from ~1.7.9 to ~1.8.5 which may or may not affect
+
+      project docs build. Refer to upstream release note as necessary.
+
+      https://www.sphinx-doc.org/en/master/changes.html
+
+      '
+  releasenotes/notes/support-sphinx-tabs-7a9e3e9ed2a7795a.yaml:
+    features:
+    - 'Add support for sphinx-tabs (https://github.com/djungelorm/sphinx-tabs).
+
+      '
+  releasenotes/notes/unpin-more-itertools-5dff9b6955769e99.yaml:
+    upgrade:
+    - 'If using Python 3.4 or newer, more-itertools is no longer pinned to the 5.x
+
+      release.
+
+      '
+  releasenotes/notes/update-onap-copyright-9debb4772e6d3339.yaml:
+    other:
+    - 'Change ONAP copyright notice. (LF JIRA: RELENG-3840).
+
+      '
+  releasenotes/notes/update-onap-copyright-notice-aa41dcab260a5e5b.yaml:
+    other:
+    - "Update ONAP copyright notice as approved by ONAP TSC.\n(LF JIRA: RELENG-3840).\n\
+      \nRef:\n  https://wiki.onap.org/display/Meetings/TSC+2021-08-05\n"
+  releasenotes/notes/update-sphinx-3.0.4-c023706bfba48a52.yaml:
+    upgrade:
+    - 'Updates Sphinx from ~2.3.1 to ~3.0.4 which may or may not affect
+
+      project docs build. Refer to upstream release note as necessary.
+
+      https://www.sphinx-doc.org/en/master/changes.html
+
+      '
+notes:
+- files:
+  - - releasenotes/notes/fix-onap-copyright-notice-89415a353ed2a2be.yaml
+    - !!binary |
+      NmYyOTA5NmJiNTAzNzgyNGI2YTg5ZDdlN2M1NGY3NDZmYjU1YWQxMA==
+  version: v0.7.3
+- files:
+  - - releasenotes/notes/update-onap-copyright-notice-aa41dcab260a5e5b.yaml
+    - !!binary |
+      OWJkYjg0ZDY4MTdhNzU5ODc1NDE3NTkxZDE5MTBhYWEyY2UxYmJkOQ==
+  version: v0.7.2
+- files:
+  - - releasenotes/notes/update-onap-copyright-9debb4772e6d3339.yaml
+    - !!binary |
+      ODlkNmQ1ZTg1YjRhN2ZjMzQyMjIzNzE2YWRiYTRlNGYxYWQyYzY0OQ==
+  version: v0.7.1
+- files:
+  - - releasenotes/notes/conventional_commit-5cbbd021edc324c2.yaml
+    - !!binary |
+      MmI5NDExZTg4MzFmMTdjZmMwYWQ0NmE5MTg4NmRmNGRjZmRmMDRhZA==
+  version: v0.7.0
+- files:
+  - - releasenotes/notes/remove-pytest-dep-8a0d427bfcd1f5c3.yaml
+    - !!binary |
+      Y2FhMGFjNmRkNzk5YjNmNzgyZDY5NTgwMDFjYmY4Mzk0YTI5ZTRmOA==
+  - - releasenotes/notes/sphinx-3.2-8e24c17b03786cfd.yaml
+    - !!binary |
+      YTk1ODJhNzhkYzRmYzQ4MzIwNWNjYjFjZGE0YTU4YTIxZjY5MGJjYQ==
+  - - releasenotes/notes/unpin-more-itertools-5dff9b6955769e99.yaml
+    - !!binary |
+      ZGUyYTg4ZDNmNzE3ZDQ5ODYzZDUyNGEyYTZiZTRmZTE4OWJhZTJmYg==
+  version: v0.6.0
+- files:
+  - - releasenotes/notes/support-sphinx-tabs-7a9e3e9ed2a7795a.yaml
+    - !!binary |
+      ZWIxZjFlZGJkNTk1YzhmZGJlMjVlOWI2OTMwMzBlOTVmZWMzODgxNg==
+  - - releasenotes/notes/update-sphinx-3.0.4-c023706bfba48a52.yaml
+    - !!binary |
+      ZDNjYzFjNDBmNmQwODI3Njg2ZDM0Mzg3ZDk5ZjBkNDUwZmY0Yjg0ZA==
+  version: v0.5.0
+- files:
+  - - releasenotes/notes/sphinx-update-6b451b2462799591.yaml
+    - !!binary |
+      Yzg2YmFhZGU5ZjNkMzhlOTY2NGJiNjE3YjllYTgwY2EwMWFjODk1ZQ==
+  version: v0.3.0
