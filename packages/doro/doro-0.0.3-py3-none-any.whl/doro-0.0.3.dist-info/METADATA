@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: doro
+Version: 0.0.3
+Summary: CLI based pomodoro app
+Home-page: https://github.com/sureshdsk/pymodoro
+Author: sureshdsk
+Author-email: dsk@idiotinside.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pyglet (==1.5.19)
+Requires-Dist: PyYAML (==5.4.1)
+Requires-Dist: rich (==10.7.0)
+Requires-Dist: typer (==0.3.2)
+
+# Doro - CLI based pomodoro app
+Doro is a CLI based pomodoro app and countdown timer application built using python.
+
+## Install
+```bash
+$ pip install doro
+```
+
+## Usage
+
+### Pomodoro
+#### Configuration
+Configure pomodoro session using `doro config`. Config will be stored at `~/.doro.yaml`
+```bash
+$ doro config
+
+# verify config
+$ cat ~/.doro.yaml
+```
+#### Start Pomodoro
+```bash
+$ doro start
+```
+
+### Countdown timer
+```bash
+$ doro countdown MINUTES
+
+# 15 minutes counter
+$ doro countdown 15
+
+# 90 minutes counter
+$ doro countdown 90
+```
+
+## Demo
+![pomodoro-demo](https://raw.githubusercontent.com/sureshdsk/doro/main/screenshots/doro-demo.gif?raw=true)
+![countdown-demo](https://raw.githubusercontent.com/sureshdsk/doro/main/screenshots/doro-demo2.gif?raw=true)
+
+
