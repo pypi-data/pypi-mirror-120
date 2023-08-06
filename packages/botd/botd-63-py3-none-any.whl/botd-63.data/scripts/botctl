@@ -1,0 +1,84 @@
+#!python
+# This file is placed in the Public Domain.
+
+__version__ = 63
+
+import os
+import readline
+import sys
+import termios
+import time
+
+from bot.obj import RunCfg, fmt, keys
+from bot.run import Client, Runtime, Table, spl
+from bot.irc import Cfg
+
+
+RunCfg.wd = "/var/lib/botd"
+
+command = "/usr/bin/systemd-run"
+arguments = "-q -t --property=Type=exec --no-ask-password --property=DynamicUser=yes --property=StateDirectory=botd botctl "
+
+
+Cfg.channel = "#botd"
+Cfg.nick = "botd"
+Cfg.username = "botd"
+Cfg.realname = "24/7 channel daemon"
+Cfg.users = False
+
+
+class Kernel(Runtime):
+
+    def error(self, txt):
+        print(txt)
+        sys.stdout.flush()
+        
+    def log(self, txt):
+        if RunCfg.verbose:
+            print(txt)
+            sys.stdout.flush()
+
+
+class CLI(Client):
+
+    def handle(self, clt, e):
+        k.put(e)
+        e.wait()
+
+    def raw(self, txt):
+        print(txt)
+        sys.stdout.flush()
+
+
+k = Kernel()
+
+import bot.all
+
+def exec(cmd, txt):
+    return os.execv(cmd, txt.split())
+
+
+def cmd(event):
+    event.reply(",".join(sorted(list(Table.modnames))))
+
+
+def ver(event):
+    event.reply("BOTD %s" % __version__)
+
+
+def main(): 
+    id = os.environ.get("INVOCATION_ID", None)
+    if not id:
+        arg = " ".join(sys.argv[1:])
+        if not arg:
+             return
+        return exec(command, command + " " + arguments + arg)
+    k.parse_cli()
+    k.skel()
+    k.privileges()
+    Table.add(cmd)
+    Table.add(ver)
+    if k.cfg.txt:
+        k.cmd(CLI(), k.cfg.otxt)
+
+main()
