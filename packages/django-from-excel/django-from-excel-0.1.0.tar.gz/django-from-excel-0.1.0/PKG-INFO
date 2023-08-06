@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: django-from-excel
+Version: 0.1.0
+Summary: Automatically builds Django models from an Excel file
+License: MIT
+Author: John Macy
+Author-email: 36553266+johncmacy@users.noreply.github.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Django (>=3.2.7,<4.0.0)
+Requires-Dist: openpyxl (>=3.0.8,<4.0.0)
+Requires-Dist: pandas (>=1.3.3,<2.0.0)
