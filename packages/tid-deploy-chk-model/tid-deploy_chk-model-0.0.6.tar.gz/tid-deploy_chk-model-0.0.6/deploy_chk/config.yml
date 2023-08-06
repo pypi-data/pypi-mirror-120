@@ -1,0 +1,64 @@
+# Package Overview
+package_name: deploy_chk
+
+# Data Files
+training_data_file: train_deploy_chk.csv
+test_data_file: test_deploy_chk.csv
+
+# Variables
+# The variable we are attempting to predict (sale price)
+target: Sales
+
+pipeline_name: pipeline_model
+pipeline_save_file: pipeline_model_output_v
+
+# set train/test split
+test_size: 0.2
+
+# to set the random seed
+random_state: 0
+
+alpha: 0.001
+
+# features
+features:
+  - Store
+  - DayOfWeek
+  - Date
+  - Open
+  - Promo
+  - StateHoliday
+  - SchoolHoliday
+  - StoreType
+  - Assortment
+  - CompetitionDistance
+  - CompetitionOpenSinceMonth
+  - CompetitionOpenSinceYear
+  - Promo2
+  - Promo2SinceWeek
+  - Promo2SinceYear
+  - PromoInterval
+
+# variables to drop
+drop_vars:
+  - CompetitionOpenSinceMonth
+  - CompetitionOpenSinceYear
+  - Promo2SinceWeek
+  - Promo2SinceYear
+  - PromoInterval
+  - Store
+  - Date
+
+# Date variables
+date_vars:
+  - Date
+
+# variables to map
+dummy_vars:
+  - DayOfWeek
+  - Date_year
+  - Date_month
+  - Date_date
+  - StateHoliday
+  - StoreType
+  - Assortment
