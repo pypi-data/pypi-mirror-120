@@ -1,0 +1,19 @@
+class ExampleProvider(StorageProvider):
+    def __init_subclass__(cls) -> None:
+        return super().__init_subclass__()
+    
+    def __init__(self):
+        """ setup the storage provider. """
+        pass
+    
+    def load(self):
+        """ load the state of the dictionary. """
+        pass
+
+    def commit(self, state):
+        """ commit the state of the dictionary. """
+        pass
+
+    def __del__(self):
+        """ teardown the storage provider. """
+        pass
