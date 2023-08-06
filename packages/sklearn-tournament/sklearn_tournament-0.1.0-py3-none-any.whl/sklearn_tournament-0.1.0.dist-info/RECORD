@@ -1,0 +1,12 @@
+AUTHORS.rst,sha256=aaKhufjzxwRtpJdEhmbU5qv2fiO_LDHCm4CXG3ZNMIc,150
+CONTRIBUTING.rst,sha256=D1iPuBdLjscINgNjAyanKUAIVBI5LmkuFg4W-swE7wo,4622
+HISTORY.rst,sha256=mq5ac5AsshsK48OPSDY6JippIkwYbH_T0bgTJfxEtdM,89
+LICENSE,sha256=-ZF-QQZGXVa1uLMMRhJuLMAU3aeWNIHDK3OxJx2XfgU,1515
+README.rst,sha256=angRGqpRBPzEKYOK9j7lay8XdxF907LXcGIHzUWkQw8,5085
+sklearn_tournament/__init__.py,sha256=n4EYcTSBs4D6EIgLfuZy2LYV2cgoJJQiZGECroxf4Gs,81
+sklearn_tournament/cli.py,sha256=hWKltG7CuuOn2WAaKU1X7xnPHNBK4gTpyW-bi1_ddd8,518
+sklearn_tournament-0.1.0.dist-info/entry_points.txt,sha256=2PVI2g7iQ3aSxCiiYxrsCp8XH_Xhjx3-E0fQhA_Vj9M,66
+sklearn_tournament-0.1.0.dist-info/LICENSE,sha256=-ZF-QQZGXVa1uLMMRhJuLMAU3aeWNIHDK3OxJx2XfgU,1515
+sklearn_tournament-0.1.0.dist-info/WHEEL,sha256=DRf8A_Psd1SF2kVqTQOOFU1Xzl3-A2qljAxBMTOusUs,83
+sklearn_tournament-0.1.0.dist-info/METADATA,sha256=77rOlcifgf63mvrWSMvfIY6tiC2SDOQHBcCYYu-KwhA,5996
+sklearn_tournament-0.1.0.dist-info/RECORD,,

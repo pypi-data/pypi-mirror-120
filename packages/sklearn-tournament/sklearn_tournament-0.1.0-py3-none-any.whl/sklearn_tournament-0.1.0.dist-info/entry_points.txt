@@ -1,0 +1,3 @@
+[console_scripts]
+sklearn_tournament=sklearn_tournament.cli:main
+
