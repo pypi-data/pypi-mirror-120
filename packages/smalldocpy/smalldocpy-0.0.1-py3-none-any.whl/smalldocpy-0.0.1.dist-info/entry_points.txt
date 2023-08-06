@@ -1,0 +1,4 @@
+
+[console_scripts]
+smalldoc=smalldoc.__main__:main
+    

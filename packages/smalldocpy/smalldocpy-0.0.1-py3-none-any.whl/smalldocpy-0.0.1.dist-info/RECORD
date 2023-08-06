@@ -1,0 +1,11 @@
+smalldoc/__init__.py,sha256=zO0PU2cZsN_8AGNqK7YasUTTGRDvg_h_qx63mdTba-Q,737
+smalldoc/main.py,sha256=EtaZznIqDi9xfR6JERfgbUtIhi6UoqoohC0Y2yxD_vk,1948
+smalldoc/parser.py,sha256=lKYuqDTVOiS3bgUumnthc2waxlCmd044x5V2YqmgDhc,6292
+smalldoc/writer.py,sha256=TUENgACwAa4b9_VCjjqgqk9KmGai0G8VCBmY-GOItg0,1215
+smalldocpy-0.0.1.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+smalldocpy-0.0.1.dist-info/METADATA,sha256=ZYRp1yCdkjAaCrTF7OQMux1fvhwKABzZAZa_ZwantQA,1986
+smalldocpy-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+smalldocpy-0.0.1.dist-info/dependency_links.txt,sha256=8US4GcU1oPZo00rmnNn0Qtl6KqZafTqqqz2Eg5jrBIA,30
+smalldocpy-0.0.1.dist-info/entry_points.txt,sha256=gVb1igdKp_Qvok9v7PiIVpSjTIXE8ds4fcbcSs2XtzE,55
+smalldocpy-0.0.1.dist-info/top_level.txt,sha256=unVsuA_VO3xghXk2Tm6ztXH6xgbh6YsB8Aeh1LsjVU4,9
+smalldocpy-0.0.1.dist-info/RECORD,,
