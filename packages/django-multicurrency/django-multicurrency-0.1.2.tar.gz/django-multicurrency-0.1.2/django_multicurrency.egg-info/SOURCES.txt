@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+django_multicurrency.egg-info/PKG-INFO
+django_multicurrency.egg-info/SOURCES.txt
+django_multicurrency.egg-info/dependency_links.txt
+django_multicurrency.egg-info/top_level.txt
+multicurrency/__init__.py
+multicurrency/admin.py
+multicurrency/apps.py
+multicurrency/exceptions.py
+multicurrency/fields.py
+multicurrency/models.py
+multicurrency/signals.py
+multicurrency/tests.py
+multicurrency/utils.py
