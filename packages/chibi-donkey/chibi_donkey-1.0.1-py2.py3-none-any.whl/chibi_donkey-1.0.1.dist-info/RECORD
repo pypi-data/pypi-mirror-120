@@ -1,0 +1,10 @@
+chibi_donkey/__init__.py,sha256=oaTqCDA7sJZIWNRfNG1peJDVuvM7FKLUDa1fgTjc7ho,3525
+chibi_donkey/donkey.py,sha256=QgBEklufHSHA-gdLvYdacYCMA1q20jttOetQygkMBvM,4406
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/donkey.py,sha256=l8ggeyUdFUweOFai1xnRhWZXSRTvESRsy2DZNjvYllM,3656
+tests/donkey_class.py,sha256=pF54UiVf-vpBhAFCfDi9B2zC-xR4HeXqe0-9L4RNuwk,3697
+chibi_donkey-1.0.1.dist-info/COPYING,sha256=RudnsVEdmZQaOoqv9dnFJJlbCzHdT1nkOVyLsTwXscM,481
+chibi_donkey-1.0.1.dist-info/METADATA,sha256=xW12-oWOtY41g6CQmFaIxgG5B-oiBAC-MlR5D1YhBiQ,1685
+chibi_donkey-1.0.1.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+chibi_donkey-1.0.1.dist-info/top_level.txt,sha256=gLn851_pe1Batl8gY3FvMfjF3H9f5EKvG7dX8WnT4ts,19
+chibi_donkey-1.0.1.dist-info/RECORD,,
