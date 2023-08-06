@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: m1l0-protobufs
+Version: 0.6.0
+Summary: M1L0 Protobufs
+Home-page: https://github.com/m1l0ai
+Author: Chee Yeo
+Author-email: ckyeo.1@gmail.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+### M1L0 Protobufs
+
+Protobufs for micro services used by the M1L0 framework
+
+Current list of protobufs:
+
+* protobufs/imagebuilder
+
+  Image builder service
+
+
+The python package contains the python client needed to interface with the grpc services.
+
+To use the client:
+```
+
+from m1l0_services.imagebuilder import image_builder_pb2
+from m1l0_services.imagebuilder import image_builder_pb2_grpc
+
+```
+
+### Publish
+
+https://packaging.python.org/tutorials/packaging-projects/
+
+### TODO:
+
+* Setup linter https://docs.buf.build/tour-3
+
+* Setup type checking: 
+
