@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: tj-feeder
+Version: 0.0.1
+Summary: Tool to generate daily input for Task Juggler
+Home-page: UNKNOWN
+Author: Caio Moraes
+Author-email: caiomoraes.cesar@gmail.com
+License: UNKNOWN
+Description: This package generates a daily input for TaskJuggler from a csv file (comma as separator) with headers: time_spent (XYmin or X.Yh), issue_name (name of task) and issue_description (optional description of task).
+Platform: UNKNOWN
