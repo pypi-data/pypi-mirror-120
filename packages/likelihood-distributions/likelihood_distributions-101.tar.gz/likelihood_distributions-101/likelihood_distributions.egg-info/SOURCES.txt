@@ -1,0 +1,10 @@
+setup.py
+likelihood_distributions/Binomialdistribution.py
+likelihood_distributions/Gaussiandistribution.py
+likelihood_distributions/Generaldistribution.py
+likelihood_distributions/__init__.py
+likelihood_distributions.egg-info/PKG-INFO
+likelihood_distributions.egg-info/SOURCES.txt
+likelihood_distributions.egg-info/dependency_links.txt
+likelihood_distributions.egg-info/not-zip-safe
+likelihood_distributions.egg-info/top_level.txt
