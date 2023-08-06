@@ -1,0 +1,21 @@
+    {% for method in test_case.test_methods %}
+    def {{method.description|snake_case}}(self):
+        raw_actual_response = self.client.generic(
+            "{{method.request.method}}",
+            "{{method.request.path}}",
+            {% if method.request.data %}json.dumps({{method.request.data}}),{% endif %}
+            content_type="{{method.request.content_type}}"
+        )
+        actual = Response.from_django_response(raw_actual_response)
+
+        raw_expected_response = {{method.expectation}}
+
+        result = verify_response(
+            "{{consumer_name}}",
+            "{{provider_name}}",
+            raw_expected_response,
+            actual,
+            version="{{pact_version}}"
+        )
+        result.assert_success()
+    {% endfor %}
