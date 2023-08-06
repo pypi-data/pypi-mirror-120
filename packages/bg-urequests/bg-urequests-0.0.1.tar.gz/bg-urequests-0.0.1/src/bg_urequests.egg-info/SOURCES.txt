@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+src/bg_urequests.egg-info/PKG-INFO
+src/bg_urequests.egg-info/SOURCES.txt
+src/bg_urequests.egg-info/dependency_links.txt
+src/bg_urequests.egg-info/top_level.txt
+src/urequests/__init__.py
+src/urequests/_version.py
+src/urequests/ureq.py

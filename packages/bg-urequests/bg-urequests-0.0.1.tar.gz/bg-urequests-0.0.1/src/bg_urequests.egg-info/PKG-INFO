@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: bg-urequests
+Version: 0.0.1
+Summary: Basic MicroPython HTTP request library
+Home-page: https://github.com/snebot-bg/urequests
+Author: snebot
+Author-email: snebot@bitgrup.com
+License: UNKNOWN
+Description: # urequests - Basic MicroPython HTTP request library
+        
+        ## Install
+        
+        ```shell
+        # Pypi
+        pip install bg-urequests
+        # Install to directory (useful for Pycom projects)
+        pip install bg-urequests -t lib
+        ```
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
