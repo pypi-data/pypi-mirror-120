@@ -1,0 +1,17 @@
+LICENSE
+README.md
+VERSION
+pyproject.toml
+setup.cfg
+musescore_scraper/MuseScraper.py
+musescore_scraper/__init__.py
+musescore_scraper/helper.py
+musescore_scraper/script.js
+musescore_scraper.egg-info/PKG-INFO
+musescore_scraper.egg-info/SOURCES.txt
+musescore_scraper.egg-info/dependency_links.txt
+musescore_scraper.egg-info/entry_points.txt
+musescore_scraper.egg-info/requires.txt
+musescore_scraper.egg-info/top_level.txt
+test/test_MuseScraper.py
+test/test_main.py
