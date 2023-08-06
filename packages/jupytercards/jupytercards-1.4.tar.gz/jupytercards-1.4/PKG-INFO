@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: jupytercards
+Version: 1.4
+Summary: Module to display dynamic quizzes in Jupyter notebooks and Jupyter Books. Uses JavaScript to provide
+Home-page: https://github.com/jmshea/jupytercards
+Author: John M. Shea
+Author-email: jshea@ieee.org
