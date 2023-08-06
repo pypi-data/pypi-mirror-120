@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: lycon2
+Version: 0.3.1
+Summary: A minimal and fast image library
+Home-page: https://github.com/PettingZoo-Team/lycon2
+Author: PettingZoo Team
+Author-email: justinkterry@gmail.com
+License: MIT + 3-clause BSD
+Keywords: Imaging
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Dist: numpy
+
+UNKNOWN
+
+
