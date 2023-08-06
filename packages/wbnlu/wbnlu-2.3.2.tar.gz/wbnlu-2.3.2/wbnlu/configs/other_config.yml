@@ -1,0 +1,93 @@
+# whether remove punctualtion
+REMOVE_PUNCTUALTION: false
+
+# whether remove all spaces
+REMOVE_ALL_SPACES: false
+
+# whether remove all but once spaces
+REMOVE_ALL_BUT_ONE_SPACES: true
+
+# whether remove unigram
+REMOVE_UNIGRAMS: false
+
+# whether remove emojis
+REMOVE_EMOJIS: true
+
+# whether remove hash tag
+REMOVE_HASHTAG: false
+
+# control the max length of text that will be processed. By default, it's 1000
+MAX_TEXT_LENGTH: 10000
+
+# whether take lower() text
+TEXT_LOWER: false
+
+# whether normalize text
+NOTMALIZE_TEXT: false
+
+# number of times query term must occur
+FREQ_CUT_OFF: 2
+
+# out of vocabulary freq threshold used by oov_finder
+OOV_FREQ_CUT_OFF: 2
+
+# whether generate rank based on frequency. by default False
+FREQUENCY_ONLY: false
+
+# Whether running in test mode, whose value must be 'False' or an integer, i.e. '2000' (recommended)
+TEST_MODE: 50000000
+
+# whether split text by space in wbnlp. This is used for analyzing query log only where white space is often a good indicator of word boundary
+SPLIT_WITH_SPACE: false
+
+# Input files for term selection
+TERM_SELECTION_FILE:
+  - sports_query_freq_2.txt
+  - sports_query_freq_3.txt
+  - sports_query_freq_4.txt
+  - sports_query_freq_5.txt
+  - sports_query_freq_6.txt
+
+
+# Note that the number of entrys must match the number of files listed in  TERM_SELECTION_FILE
+TERM_SELECTION_RANK_FACTOR:
+  - 0.5
+  - 0.6
+  - 0.6
+  - 0.6
+  - 0.4
+
+
+TERM_SELECTION_COUNT:
+  - 2000
+  - 2000
+  - 1000
+  - 500
+  - 500
+  #- 400
+
+TERM_SELECTION_TOTAL_FACTOR: 0.5
+
+# Whether selection terms afer filtering existing feature terms, used by select_terms.py
+FILTER_BY_FEATURE_TERM: yes
+
+# Filter By KG
+FILTER_BY_KB: yes
+
+# Whether filter by segmentation lexicon
+FILTER_BY_SEGMENTATION_DICT: no
+
+# Whether filter by any ascii character
+FILTER_BY_ASCII_CHAR: no
+
+# used by select_terms.py
+FILTER_BY_PATTERN: false
+
+# whether re-sort selected terms by freq
+SORT_BY_FREQ: true
+
+# whether aggregrate multiple short texts into a big one to compute tfidf, used by term_extractor.py
+AGGREGATED_TFIDF: false
+
+# whether use tf/idf model for individual message, used by term_extractor:
+USE_TFIDF: false

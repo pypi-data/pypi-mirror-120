@@ -1,0 +1,326 @@
+#暴跌	minus24h
+#大跌	minus24h
+成交	minus24h
+小跌	minus24h
+每日点评	minus24h
+收工点评	minus24h
+复盘	minus24h
+实时	minus12h
+收盘	minus24h
+收评	minus24h
+尾盘	minus24h
+跌幅	minus24h
+#涨幅	minus24h
+大涨	minus24h
+暴涨	minus24h
+全红	plus1h
+今日汇率	plus1h
+今晚	plus1h
+收红	plus1h
+今天走势	plus1h
+今天的财经热点	plus1h
+今天大盘	plus1h
+今天能不能	plus1h
+今天的下跌	plus1h
+今天的上涨	plus1h
+今天创业板	plus1h
+今天预计	plus1h
+今天市场	plus1h
+今天沪指	plus1h
+今天上午	plus1h
+今天下午	plus1h
+今天晚上	plus1h
+今天深夜	plus1h
+支撑今天	plus1h
+今天继续关注	plus1h
+今天将决定后市	plus1h
+今天会延续	plus1h
+今天领跌	plus1h
+晚上黄金	plus1h
+截止收盘	plus1h
+翻红	plus1h
+全绿	plus1h
+直播连线	plus1h
+有望	plus_w
+发布消息	minus24h_2
+财经数据	minus24h_2
+大跌	minus24h
+成交	minus24h
+大单流出	minus24h
+涨停	minus24h
+一直涨	minus_w
+20Q3	minus_w
+20Q4	minus_w
+20Q2	minus_w
+20Q1	minus_w
+Q1	minus_w
+Q2	minus_w
+Q3	minus_w
+Q4	minus_w
+印发	minus_w
+前几天	minus_w
+轮番上阵	minus_w
+早间	plus12h
+盘前情报	plus1h
+涨逾	plus12h
+上证盘前	plus1h
+#突破	plus12h
+早盘	plus1h
+成交暴增	plus12h
+开盘第一天	plus12h
+可能飙升	plus_w
+拟私有化	plus_w
+跟涨	plus1h
+开盘	plus1h
+全红	plus12h
+跳水	plus1h
+跟跌	plus1h
+午盘	plus1h
+开跌	plus1h
+低开	plus1h
+拉升	plus12h
+高开	plus1h
+惨跌	plus12h
+盘中	plus1h
+急拉	plus12h
+早上好	plus12h
+临近尾盘	plus1h
+早上	plus12h
+早晨	plus12h
+一早	plus12h
+一大早	plus12h
+清晨	plus12h
+凌晨	plus1h
+中午	plus1h
+午间	plus1h
+午后	plus1h
+#新高	plus12h
+开始放量	plus1h
+实时提示	plus1h
+普遍上涨	plus1h
+大盘又上涨	plus1h
+大盘又下跌	plus1h
+今天道琼斯	plus1h
+今天小涨	plus1h
+隔夜外盘	plus1h
+集体收涨	plus1h
+再创历史新高	plus1h
+正午	plus12h
+上午	plus12h
+晚上	minus12h
+夜晚	minus12h
+黄昏	minus12h
+深夜	minus12h
+夜里	minus12h
+午夜	minus12h
+晚间	minus12h
+零点	minus12h
+尾盘	minus12h
+收涨	plus1h
+收跌	plus1h
+今早两市	plus1h
+今日强势	plus1h
+盘中提示	plus1h
+期货上涨	plus1h
+期货飙升	plus1h
+盘中提醒	plus1h
+盘前提醒	plus1h
+开盘上涨	plus1h
+高开高走	plus1h
+上午小结	plus1h
+午评	plus1h
+#策略建议	forever
+基础课	forever2
+几点个人观点	forever2
+节前	minus24h
+收跌	minus24h
+成交额突破	minus24h_2
+北向资金	minus24h_2
+看门红	minus24h_2
+开门红	minus24h_2
+有望迎来	plus_w
+继续看好	plus_w
+买黄金	plus_w
+半年回顾	plus_w
+预计	plus_w
+新一轮上涨	plus_w
+#节后	plus24h
+晨会	minus24h_2
+板块点评	minus24h_2
+每日资讯	minus24h_2
+新高	minus24h_2
+#冻薪	minus24h_2
+#裁员	minus24h_2
+美股期指	minus24h_2
+轻微上涨	minus24h_2
+股市财经新闻	minus24h_2
+未来几个月	plus_w
+未来几周	plus_w
+减仓	minus24h_2
+加仓	minus24h_2
+现涨	minus24h_2
+今日	minus24h_2
+今天	minus24h_2
+#最新	minus24h_2
+趋势分析	forever2
+#操作策略	forever
+课堂	forever2
+预计未来	forever2
+未来走势	forever2
+研究发现	forever2
+撰文	minus_w
+公告	minus24h
+国家统计局	no_1h
+海关总署	no_1h
+美联储	no_1h
+农业部	no_1h
+国土资源部	no_1h
+证监会	no_1h
+上交所	no_1h
+银保监会	no_1h
+
+# 消息	tWeak
+# 即将	tWeak
+# 期间	tWeak
+# 时刻	tWeak
+# 开始	tWeak
+# 结束	tWeak
+# 未来	tWeak
+# 接下来	tWeak
+# 称	tWeak
+# 他	tWeak
+# 她	tWeak
+# 突然	tWeak
+# 忽然	tWeak
+# 回应	tWeak
+# 采访	tWeak
+# 评论	tWeak
+# 刚	tWeak
+# 然后	tWeak
+# 发布	tWeak
+# 下滑	tWeak
+# 放缓	tWeak
+#我	tWeak
+#你	tWeak
+# 这次	tWeak
+# 下次	tWeak
+# 上次	tWeak
+# 本次	tWeak
+# 那次	tWeak
+# 每日	tWeak
+# 当初	tWeak
+# 后来	tWeak
+# 正在	tWeak
+# 陷入	tWeak
+# 很晚	tWeak
+# 过后	tWeak
+# 紧急	tWeak
+# 恢复	tWeak
+# 现在	tWeak
+# 美元	tWeak
+# 人民币	tWeak
+# 见顶	tWeak
+# 这轮	tWeak
+# 当下	tWeak
+# 声称	tWeak
+# 见闻	tWeak
+# 发表	tWeak
+# 实时	tWeak
+# 接入	tWeak
+# 已有	tWeak
+# 已经	tWeak
+# 走势图	tWeak
+# K	tWeak
+# 下一步	tWeak
+# 转向	tWeak
+# 登陆	tWeak
+# 发言人	tWeak
+# 记者	tWeak
+# 最后	tWeak
+# 直播	tWeak
+# 本赛季	tWeak
+# 下赛季	tWeak
+# 季度	tWeak
+# 疫情	tWeak
+# 有望	tWeak
+# 座谈会	tWeak
+# 会议	tWeak
+# 日内	tWeak
+# 正式	tWeak
+# 倒计时	tWeak
+# 之时	tWeak
+# 宣布	tWeak
+# 一夜	tWeak
+# 消失	tWeak
+# 保监会	tWeak
+# 显示	tWeak
+# 天眼查	tWeak
+# 再跌	tWeak
+# 首批	tWeak
+# 控盘	tWeak
+# 解盘	tWeak
+# 指日可待	tWeak
+# 截至	tWeak
+# 新增	tWeak
+# 加油	tWeak
+# 下降	tWeak
+# 亏损	tWeak
+# 增长	tWeak
+# 调仓	tWeak
+# 重仓	tWeak
+# 新增	tWeak
+# 完成	tWeak
+# 助力	tWeak
+# 认为	tWeak
+# 今	tWeak
+# 以来	tWeak
+# 日线	tWeak
+# 短期	tWeak
+# 上涨	tWeak
+# 金价	tWeak
+# 黄金	tWeak
+# 关注	tWeak
+# 睡觉	tWeak
+# 美股	tWeak
+# 讨厌	tWeak
+# 标普	tWeak
+# 隔夜	tWeak
+# 停牌	tWeak
+# 动态	tWeak
+# 新高	tWeak
+# 新低	tWeak
+#Q2	tWeak
+# 财报	tWeak
+# 暴乱	tWeak
+# 抗议	tWeak
+# 示威	tWeak
+# 上调	tWeak
+# 去世	tWeak
+# 目标价	tWeak
+# 茅台	tWeak
+# 跟涨	tWeak
+# 警报	tWeak
+# 啦	tWeak
+# 喜欢	tWeak
+# 最新	tWeak
+# 冻结	tWeak
+# 增发	tWeak
+# 涨势	tWeak
+# 在即	tWeak
+# 涨幅	tWeak
+# 访	tWeak
+# 后市	tWeak
+# 持仓	tWeak
+# 巨亏	tWeak
+# 收尾	tWeak
+# 腰斩	tWeak
+# 吧	tWeak
+# 北上	tWeak
+# 流入	tWeak
+# 流出	tWeak
+# 上车	tWeak
+# 第二	tWeak
+# 误闯	tWeak
+# 下一期	tWeak
+# 下一集	tWeak
+# 下一季	tWeak

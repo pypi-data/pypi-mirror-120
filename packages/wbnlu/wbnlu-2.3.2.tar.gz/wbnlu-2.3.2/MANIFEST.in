@@ -1,0 +1,3 @@
+include wbnlu/configs/config_pattern.yml
+include wbnlu/configs/config_parameters.yml
+include data/beauty_features.txt

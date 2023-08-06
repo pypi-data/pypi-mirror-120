@@ -1,0 +1,39 @@
+jieba_pos: false
+
+channel:
+  beauty: true
+  sports: false
+  generic: false
+
+disable_nlp_tools:
+  #- tagger
+  - ner
+  - parser
+
+segment:
+  use_jieba: true
+  cut_all: false
+
+entities:
+  use_jieba: false
+  #only great than minsize
+  minsize: 2
+
+relation:
+  use_jieba: True
+  cut_all: False
+
+# whether to extract NP. Whether extract NP=true, pos must be 'true'
+EXTRACT_NP: false
+
+# whether load user dictionary
+USER_DICT: true
+
+# whether merge chunk into one token
+CHUNK_AS_TOKEN: false
+
+# stop-word switch
+use_stop_words: true
+
+# number of times query term must occur
+FREQ_CUT_OFF: 2

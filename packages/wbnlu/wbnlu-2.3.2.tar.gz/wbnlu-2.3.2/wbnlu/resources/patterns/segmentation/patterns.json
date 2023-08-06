@@ -1,0 +1,110 @@
+[
+  {
+  "总注释": "这部分为基于规则的分词模块。主要是合并某些没有正确分在一起的字词。"
+  },
+
+  {"c1c1":
+    [
+
+      [{"POS": "ADV", "LENGTH": {"==": 1}}, {"POS": "ADJ", "LENGTH": {"==":1}}],
+      [{"TAG": {"IN": ["NN", "NR"]}, "IS_PUNCT":false, "LENGTH": {"==":1}}, {"TAG": {"IN": ["NN"]}, "IS_PUNCT":false, "LENGTH": {"==":1}}]
+
+    ],
+
+    "注释": "c1 + c1 = c2",
+    "测试用例": "一部手机搞定的极简摄影; 回复@橙三岁想喝养乐多:宁是腿精吧；回复@TEr瑾:在家快待疯了瑾姐",
+    "TODO": "回复@C做个梦C:因为大粉带队; 社o:@呦是阿i; 丰盈细牡\uE125呈现粉嫩柔滑肤质;仅含12G,但小身材却包含大成分; 我佛辽; 历史观、民族观、国家观、文化观"
+  },
+
+  {"c2c1":
+    [
+      [{"TAG": {"IN": ["NN"]}, "TEXT": {"REGEX": "^[^一两三四这有你我再他不几无最]"}, "IS_PUNCT":false, "LENGTH": {"==": 2}}, {"TAG": {"IN": ["NN"]}, "TEXT": {"NOT_IN": ["们", "不"]},"IS_PUNCT":false, "LENGTH": {"==": 1}}]
+    ],
+
+    "注释": "c2 + c1 = c3",
+    "测试用例": "去除脓包型痘痘,夏天不再油腻!; 户外登山型SPF50,PA+++:弱酸性; 内含五行草与白术提炼精华; ",
+    "TODO": "更适合于亚洲人肌肤;啫喱状水润保湿霜;防水防二次感染。2015年3月新品济州岛"
+  },
+
+  {"c2c1_punct":
+    [
+      [{"TAG": {"IN": ["NN","JJ"]}, "TEXT": {"REGEX": "^[^一两三四这有你我再他不几无最]"}, "IS_PUNCT":false, "LENGTH": {"==": 2}}, {"TAG": {"IN": ["NN", "NR"]}, "TEXT": {"NOT_IN": ["们", "不"]}, "IS_PUNCT":false, "IS_DIGIT":false, "LENGTH": {"==": 1}}, {"TAG": {"NOT_IN": ["NN","NR", "NT", "VV"]}}]
+    ],
+
+    "注释": "c2 + c1 + punt= c3",
+    "测试用例": " 回复@荤菜粥:我也希望你开心 ",
+    "TODO": ""
+  },
+
+  {"punct_c1c2_punct":
+    [
+      [{"TEXT": {"IN": [" ", "、", "】", "(", "@", "!", "。", ",", "，", "；"]}}, {"TAG": {"IN": ["NN","NR"]}, "TEXT": {"REGEX": "^[^一两三四这你我再他不几无最]"}, "LENGTH": {"==": 1}}, {"TAG": {"IN": ["NN", "NR", "JJ"]}, "TEXT": {"NOT_IN": ["们", "不"]}, "IS_PUNCT":false, "IS_DIGIT":false, "LENGTH": {"==": 2}}, {"TEXT": {"IN": [" ", "、", "】", "(", "@", "!", "。", ",", "，", "；"]}}]
+    ],
+
+    "注释": "c1 + c2 = c3",
+    "测试用例": "【京东-多快好省】味滋源 方便食品 ",
+    "TODO": ""
+  },
+
+  {"(c1c1)":
+    [
+      [{"TEXT": "“"}, {"LENGTH": {"==": 1}}, {"LENGTH": {"<=": 2}}, {"TEXT": "”"}],
+      [{"TEXT": "“"}, {"LENGTH": {"<=": 2}}, {"LENGTH": {"==": 1}, "IS_PUNCT":false}, {"TEXT": "”"}],
+      [{"TEXT": "【"}, {"LENGTH": {"<=": 2}}, {"LENGTH": {"==": 1}}, {"TEXT": "】"}],
+      [{"TEXT": "【"}, {"LENGTH": {"==": 1}}, {"LENGTH": {"<=": 2}}, {"TEXT": "】"}],
+      [{"TEXT": "#"}, {"IS_PUNCT":false, "LENGTH": {"==": 1}}, {"IS_PUNCT":false, "LENGTH": {"==": 1}}, {"TEXT": "#"}],
+      [{"TEXT": "@"}, {"IS_PUNCT":false, "LENGTH": {"<=": 2}}, {"IS_PUNCT": false, "LENGTH": {"==": 1}, "OP": "?"}, {"IS_PUNCT": false, "LENGTH": {"==": 1}, "OP": "?"}, {"IS_PUNCT": true}],
+      [{"TEXT": "@"}, {"IS_PUNCT":false, "LENGTH": {"<=": 2}}, {"IS_PUNCT": false, "LENGTH": {"==": 1},"OP": "?"}, {"IS_PUNCT": false, "LENGTH": {"==": 1}, "OP": "?"}, {"IS_SPACE": true}],
+      [{"TEXT": "@"}, {"IS_ASCII": true}, {"IS_DIGIT": true}, {"TEXT": ":"}],
+      [{"TEXT": "@"}, {"IS_ASCII": true}, {"TEXT": "_"}, {"IS_ASCII": true, "IS_PUNCT":false}, {}],
+      [{"TEXT": "@"}, {"IS_ASCII": true}, {"TEXT": "_"}, {"IS_ASCII": true}, {"IS_ASCII": true, "IS_PUNCT":false}, {"TEXT": ":"}],
+      [{"TEXT": "@"}, {"IS_ASCII": true}, {"TEXT": "_"}, {"IS_ASCII": true}, {"TEXT": "_"}, {"IS_ASCII": true, "IS_PUNCT":false}, {}],
+      [{"TEXT": "@"}, {"IS_ASCII": true}, {"TEXT": "_"}, {"IS_ASCII": true}, {"TEXT": "_"}, {"IS_ASCII": true, "IS_PUNCT":false}, {"TEXT": ":"}]
+    ],
+
+    "注释": "[c1 + c1] = c2",
+    "测试用例": "打开【手淘】即可领券并下单; @小鹿茶;@老九门:; @masaki_aiba_com",
+    "TODO": ""
+  },
+
+  {"(c1c1_pub)":
+    [
+      [{"TEXT": "《"}, {"IS_PUNCT": false, "OP": "+"}, {"TEXT": {"IN":["·",":"]},"OP": "?"}, {"IS_PUNCT": false, "OP": "+"}, {"TEXT": "》"}],
+      [{"TEXT": "『"}, {"IS_PUNCT": false, "OP": "+"}, {"TEXT": {"IN":["·",":"]},"OP": "?"}, {"IS_PUNCT": false, "OP": "+"}, {"TEXT":  "』"}]
+    ],
+
+    "注释": "[c1 + c1] = c2, 书籍，出版物",
+    "测试用例": "按《国土安全》的剧本来的?; 听说『无耻家庭』明年是最后一季了",
+    "TODO": ""
+  },
+
+  {"@_token":
+    [
+      [{"TEXT": "@"}, {"IS_PUNCT": false}, {"TEXT": "_"}, {"IS_PUNCT": false}]
+
+    ],
+
+    "注释": "[c1 + c1] = c2",
+    "测试用例": "打开【手淘】即可领券并下单; @小鹿茶;@老九门:",
+    "TODO": ""
+  },
+
+  {"@tokenDigit":
+    [
+      [{"TEXT": "@"}, {"IS_PUNCT": false}, {"IS_DIGIT": true}]
+    ],
+
+    "注释": "[c1 + c1] = c2",
+    "测试用例": "打开【手淘】即可领券并下单; @小鹿茶;@老九门:",
+    "TODO": ""
+  },
+
+  {"c1c1is":
+    [
+      [{"LENGTH": {"==": 3}, "TEXT": {"REGEX": "是$"}}]
+    ],
+
+    "注释": "是 独立成词，不应成为任何其他词汇的一部分，尤其是三字符",
+    "测试用例": "蛋崽是我的最爱; 回复@鳯初瑶:nmsl; (H②23)"
+  }
+]

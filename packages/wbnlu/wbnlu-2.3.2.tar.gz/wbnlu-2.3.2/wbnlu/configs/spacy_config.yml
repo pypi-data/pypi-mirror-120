@@ -1,0 +1,30 @@
+
+channel:
+  beauty: true
+  sports: true
+  generic: true
+  timex: true
+
+# whether to use jieba as tokenizer
+use_jieba: true
+
+# whether use KB tag or KB tag name as entity's label
+tag_as_label: true
+
+# whether to tokenize words in nlp pipeline
+word_tok: true
+
+# whetehr use jieba's cut_all parameter for segmentation
+cut_all: true
+
+# whether use char or word for dictionary matching
+char_match: true
+
+# whether load user dictionary
+USER_DICT: true
+
+# whether turn on big-length entry file. By default "no", i.e. feature.prod.txt
+BIG_LENGTH_ENTRY_DICT: false
+
+# number of times query term must occur
+FREQ_CUT_OFF: 2

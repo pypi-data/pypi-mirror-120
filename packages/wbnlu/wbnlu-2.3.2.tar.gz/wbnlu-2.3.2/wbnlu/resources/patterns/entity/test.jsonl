@@ -1,0 +1,3 @@
+{"label": "ORG", "pattern": "苹果", "id": "apple"}
+{"label": "GPE", "pattern": [{"TEXT": "加州"}, {"TEXT": "旧金山"}], "id": "san-francisco"}
+{"label": "GPE", "pattern": [{"TEXT": "加利福尼亚"}, {"TEXT": "旧金山"}], "id": "san-francisco"}
