@@ -1,0 +1,13 @@
+infapy/__init__.py,sha256=gTmV9cBwBdwKyD4bPVpQpYZ0UVfeJHCRm1IJrB5wyMg,9197
+infapy/connections.py,sha256=k747Sk3mpInwk0nSomimT17FRQSW5zlSDEXgKr9V_mY,2150
+infapy/exceptions.py,sha256=oPifdYh8r3sl5jnceydHR7urZK6VEhHT9QnwuPTLHUg,1290
+infapy/cdi/__init__.py,sha256=tJpg7L36GauRam0jDDH7qU2OeYjnERyMpRiqxENIsEw,347
+infapy/v2/__init__.py,sha256=HSzpxSKc0wcbfGUfVrhznDEJWPdBkLBK52TW8gFXy5A,1151
+infapy/v2/getActivityLog.py,sha256=blBMabsJSvrQp7dJo-7YiQUziAI0BrGEi7_nWtw0m4M,1501
+infapy/v2/test.py,sha256=6gAmBvCjMb87ZzZABpgi9yHzNEIaxum_ap4oVhbJR44,179
+infapy/v3/__init__.py,sha256=0XaYLK02P9TP4idwKXkr9J2YgCd706fGwz_9FKc_Q58,229
+infapy-1.0.5.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+infapy-1.0.5.4.dist-info/METADATA,sha256=IxFidrQ7ivESORH2tIocZ0jL_OT6ysyOyeR0TJVkHGw,1314
+infapy-1.0.5.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+infapy-1.0.5.4.dist-info/top_level.txt,sha256=5rowfjOYv4T1cNSYOo_7NI9G0XxwSef-4GAVNehCwDk,7
+infapy-1.0.5.4.dist-info/RECORD,,
