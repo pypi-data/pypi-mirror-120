@@ -1,0 +1,15 @@
+include earthcraft_countries_api/json/dicts/country_name_to_iso3.json
+include earthcraft_countries_api/json/dicts/iso2_to_iso3.json
+include earthcraft_countries_api/json/dicts/iso3_to_borders.json
+include earthcraft_countries_api/json/dicts/iso3_to_calling_code.json
+include earthcraft_countries_api/json/dicts/iso3_to_capital.json
+include earthcraft_countries_api/json/dicts/iso3_to_full_name.json
+include earthcraft_countries_api/json/dicts/iso3_to_iso2.json
+include earthcraft_countries_api/json/dicts/iso3_to_languages.json
+include earthcraft_countries_api/json/dicts/iso3_to_name.json
+include earthcraft_countries_api/json/dicts/iso3_to_population.json
+include earthcraft_countries_api/json/dicts/iso3_to_un_gdp_nominal.json
+include earthcraft_countries_api/json/dicts/official_country_names.json
+include earthcraft_countries_api/json/lists/countries_iso2_list.json
+include earthcraft_countries_api/json/lists/countries_iso3_list.json
+include earthcraft_countries_api/json/lists/countries_name_list.json
