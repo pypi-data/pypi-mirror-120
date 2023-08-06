@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pyfarcore/pyfarcore.egg-info/PKG-INFO
+src/pyfarcore/pyfarcore.egg-info/SOURCES.txt
+src/pyfarcore/pyfarcore.egg-info/dependency_links.txt
+src/pyfarcore/pyfarcore.egg-info/top_level.txt
+src/pyfarcore/pyfarcore.egg-info/PKG-INFO
+src/pyfarcore/pyfarcore.egg-info/SOURCES.txt
+src/pyfarcore/pyfarcore.egg-info/dependency_links.txt
+src/pyfarcore/pyfarcore.egg-info/top_level.txt
