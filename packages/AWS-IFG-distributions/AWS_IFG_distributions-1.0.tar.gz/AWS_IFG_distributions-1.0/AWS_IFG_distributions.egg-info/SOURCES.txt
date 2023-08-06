@@ -1,0 +1,10 @@
+setup.py
+AWS_IFG_distributions/Binomialdistribution.py
+AWS_IFG_distributions/Gaussiandistribution.py
+AWS_IFG_distributions/Generaldistribution.py
+AWS_IFG_distributions/__init__.py
+AWS_IFG_distributions.egg-info/PKG-INFO
+AWS_IFG_distributions.egg-info/SOURCES.txt
+AWS_IFG_distributions.egg-info/dependency_links.txt
+AWS_IFG_distributions.egg-info/not-zip-safe
+AWS_IFG_distributions.egg-info/top_level.txt
