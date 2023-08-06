@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: mupemenet
+Version: 0.1
+Summary: mupemenet
+Home-page: https://kelwe-tech.com
+Author: Kelwe Technologies
+Author-email: jp@kelwe-tech.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: Pillow (==8.3.2)
+Requires-Dist: coloredlogs (==15.0.1)
+Requires-Dist: matplotlib (==3.4.3)
+Requires-Dist: numpy (==1.16.2)
+Requires-Dist: opencv-python (==4.5.3.56)
+Requires-Dist: pyeventbus3 (==0.10)
+Requires-Dist: smbus (==1.1.post2)
+Requires-Dist: tflite-runtime (==2.5.0.post1)
+Requires-Dist: tinydb (==4.5.1)
+Requires-Dist: urllib3 (==1.24.1)
+Requires-Dist: websockets (==10.0)
+
+UNKNOWN
+
+
