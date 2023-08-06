@@ -1,0 +1,14 @@
+mappertrac/__init__.py,sha256=8VCPnvSqyIVTVGMKupuTfZbTFsbulSXcNEN21bkPfRI,19
+mappertrac/cli.py,sha256=nnNc9Oeqt11ARQlyAFMQvtKrWrq6bbg6erOG7HS9rQw,5911
+mappertrac/subscripts/__init__.py,sha256=YnphykRfK19eYTQRIUQnZLIwoBGCXvW4Xl_swo2iDHY,109
+mappertrac/subscripts/s1_freesurfer.py,sha256=lyjd1jcza-9L143Ii3iQqUn5wIyidNjz79KGl9wMoY0,8749
+mappertrac/subscripts/s2_bedpostx.py,sha256=MV9oBfbGvBIToeeUoNeOwZWkeFg-KJ_759-m7ypPP-g,2800
+mappertrac/subscripts/s3_probtrackx.py,sha256=1wsLZzRzBIX4rmpjSfc2hiMPa3a1jlUV3Eux_KsS1eM,19751
+mappertrac/subscripts/utilities.py,sha256=yt8Fscz4mP325fdLwGFdSGahwTkUJbiqsPKZRJEL0hs,14153
+mappertrac-1.0.0.dist-info/LICENSE,sha256=5et72tHBhXXeIS71HyVVneTUvSP8o3QyCH42cSS_efU,1541
+mappertrac-1.0.0.dist-info/METADATA,sha256=CX5LauGLNmRtK43hq8cbP1W4BfrJl2o4WYms68CBpQ8,1043
+mappertrac-1.0.0.dist-info/NOTICE,sha256=9CR93geVKl_4ZrJORbXN0fzkEM2y4DglWhY1hn9ZwQw,1167
+mappertrac-1.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+mappertrac-1.0.0.dist-info/entry_points.txt,sha256=jHb5KFBwNli_dzERFHv59y-PdztYRDAsROwkhXXjeFY,52
+mappertrac-1.0.0.dist-info/top_level.txt,sha256=wW6NeUEx5w3bNJF_FcrVfqkNcOSq6xVD0-CyPOlyRgU,11
+mappertrac-1.0.0.dist-info/RECORD,,
