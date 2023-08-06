@@ -1,0 +1,13 @@
+ReParser==1.4.3
+aiohttp<4,>=3.7
+appdirs<1.5,>=1.4
+async-timeout<4,>=2
+protobuf<3.17,>=3.1.0
+
+[dev]
+aiohttp_socks<0.7,>=0.6
+
+[ui]
+ConfigArgParse<2,>=0.11.0
+readlike<0.2,>=0.1.2
+urwid<2.2,>=1.3.1
