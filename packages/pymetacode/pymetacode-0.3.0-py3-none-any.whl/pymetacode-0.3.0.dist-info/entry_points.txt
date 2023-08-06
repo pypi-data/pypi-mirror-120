@@ -1,0 +1,3 @@
+[console_scripts]
+pymeta = pymetacode.cli:cli
+
