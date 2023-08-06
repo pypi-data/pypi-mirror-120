@@ -1,0 +1,15 @@
+fair_research_login/__init__.py,sha256=8epmOvlblxxMWl8FjdaDd0AA2hkYagsPga_YMj5LwTo,1131
+fair_research_login/client.py,sha256=nyYlYr6xNVyU8FuI7q4D4SNrRlDd8yaLVqqDeO56NF0,22037
+fair_research_login/code_handler.py,sha256=e2BRdQ2u2OPr87fC4PB8CP74p7YLAQSDxQHMcC_jzZo,5258
+fair_research_login/exc.py,sha256=ndlW2nTvk9-WHdUBQmFSb_EAH3pK3wK2h4TAitpi9Ts,1266
+fair_research_login/local_server.py,sha256=TuBUL6F6HlQYE47dWA5yF1MJoUEFPC6FKWMHLID5wUU,12291
+fair_research_login/version.py,sha256=L-TFk_xvsYWXlS8IwTUfzqbNZoUKH3G1rd7VVpkjUyM,24
+fair_research_login/token_storage/__init__.py,sha256=33Tf8NanubH7p7r8QU2ZXCUZEfuRKt5rHdDP9vGKeLM,693
+fair_research_login/token_storage/configparser_token_storage.py,sha256=rtGB1BzmP-Py6VaEN3d0sIGUWTd5davEOqJCvHdWv9k,2026
+fair_research_login/token_storage/json_token_storage.py,sha256=bIKa9uYUZ17XJED-NyoMSDU52nbZ-vYFP2Vha4mkGMQ,763
+fair_research_login/token_storage/storage_tools.py,sha256=n86i_eSkFY_4WkFP3H8t9Ubzu-APEAIWpDXfWavMioM,8454
+fair_research_login-0.2.3b1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+fair_research_login-0.2.3b1.dist-info/METADATA,sha256=tuG-04nn9MFQkAWwvlVUvpDxGq3Y3u8up_u-tcvJnjw,3637
+fair_research_login-0.2.3b1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+fair_research_login-0.2.3b1.dist-info/top_level.txt,sha256=VvSj7loi2a8q7jRLvnCLNz2_shycDOKTvaSIy5NeYcc,20
+fair_research_login-0.2.3b1.dist-info/RECORD,,
