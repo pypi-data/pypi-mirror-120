@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/go_dutch/__init__.py
+src/go_dutch/group.py
+src/go_dutch.egg-info/PKG-INFO
+src/go_dutch.egg-info/SOURCES.txt
+src/go_dutch.egg-info/dependency_links.txt
+src/go_dutch.egg-info/top_level.txt
