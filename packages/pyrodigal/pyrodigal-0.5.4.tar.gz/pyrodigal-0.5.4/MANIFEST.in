@@ -1,0 +1,11 @@
+include COPYING
+include CHANGELOG.md
+include CONTRIBUTING.md
+include README.md
+
+recursive-include pyrodigal/tests      *.py *.txt
+recursive-include pyrodigal/tests/data *
+
+recursive-include Prodigal *.c *.h *.md VERSION LICENSE CHANGES Makefile
+recursive-include pyrodigal *.py *.pyi *.pyx *.pxd *.h py.typed
+recursive-exclude pyrodigal *.c
