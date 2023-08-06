@@ -1,0 +1,16 @@
+setup.cfg
+setup.py
+amino_rus.egg-info/PKG-INFO
+amino_rus.egg-info/SOURCES.txt
+amino_rus.egg-info/dependency_links.txt
+amino_rus.egg-info/requires.txt
+amino_rus.egg-info/top_level.txt
+амино/__init__.py
+амино/Клиент.py
+амино/МестныйКлиент.py
+амино/амино.py
+амино/данные.py
+амино/заголовки.py
+амино/исключения.py
+амино/объекты.py
+амино/устройство.py
