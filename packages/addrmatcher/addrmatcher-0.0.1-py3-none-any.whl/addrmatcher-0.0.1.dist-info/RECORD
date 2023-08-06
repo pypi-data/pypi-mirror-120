@@ -1,0 +1,10 @@
+addrmatcher/AU.py,sha256=FRYPCwWpQgE0yiceUwpy4Mb2YahBCPoDVdJceZFhpmo,1217
+addrmatcher/__init__.py,sha256=eu384lLK8gvc6uaIhQ9nPzfMfL0CPaTvW6MJ0-Uga2Y,135
+addrmatcher/hierarchy.py,sha256=AG0p7qyhW9rRrm__peNkJOlZj-GHKP5qw2SZNYNQEmY,9394
+addrmatcher/matcher.py,sha256=JV2YDVGhRISjS2T-uickKiJ1VyOHWilxGalt4cva0-U,10178
+addrmatcher/region.py,sha256=UW8eJZyRYW8w66qhSGORmj0Q_wXrg6R1_c56HiNfIS4,1577
+addrmatcher-0.0.1.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+addrmatcher-0.0.1.dist-info/METADATA,sha256=peK-VFpM_Jw2ghFFvJR_qSvWYpKF246KdAVRIqd9GbY,1709
+addrmatcher-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+addrmatcher-0.0.1.dist-info/top_level.txt,sha256=HvIFN0ZwhECKk8d8dbFGT7Y_8Uy1r-IjRxYLKyfZh4c,12
+addrmatcher-0.0.1.dist-info/RECORD,,
