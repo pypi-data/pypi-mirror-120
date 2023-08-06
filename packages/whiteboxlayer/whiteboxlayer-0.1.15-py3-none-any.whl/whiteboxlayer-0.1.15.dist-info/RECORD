@@ -1,0 +1,11 @@
+whiteboxlayer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+whiteboxlayer/layers.py,sha256=pJ-LGs0-KXNCce8_HS8ggRBw9-XK3te6vqo96IY5Gp8,8069
+whiteboxlayer/extensions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+whiteboxlayer/extensions/graph.py,sha256=d5hMCGR6VJI2RIj42zGr7gkkpq8odnFlXzyxjzhQBdU,7052
+whiteboxlayer/extensions/recurrent.py,sha256=nVPoEu-dwGQxNARlxdNXv-Jj1xSt6A3zO55rowu0EuA,3890
+whiteboxlayer/extensions/utility.py,sha256=4iO_on8QG9VIGFSvuuB6k4ak8E3m3yS-G_L-To09yJ8,1580
+whiteboxlayer-0.1.15.dist-info/LICENSE,sha256=rTyyQ4ukTjBMO7_jiDdHQsJChBIrrOZ60ThVrc04bQk,1067
+whiteboxlayer-0.1.15.dist-info/METADATA,sha256=8c0h3Y8VFUBzQJWHxlbPslxvjgoluW3HsKcR6uFdJLM,4384
+whiteboxlayer-0.1.15.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+whiteboxlayer-0.1.15.dist-info/top_level.txt,sha256=EvaxPA1_VGMycL60t7vZQX1GwKyGAOypWD_2PBvDp9k,14
+whiteboxlayer-0.1.15.dist-info/RECORD,,
