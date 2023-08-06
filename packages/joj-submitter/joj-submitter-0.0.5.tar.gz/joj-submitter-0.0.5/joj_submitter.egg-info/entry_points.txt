@@ -1,0 +1,3 @@
+[console_scripts]
+joj-submit = joj_submitter:main
+

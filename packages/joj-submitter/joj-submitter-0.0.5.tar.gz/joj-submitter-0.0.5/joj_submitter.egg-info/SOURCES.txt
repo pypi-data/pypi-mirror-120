@@ -1,0 +1,15 @@
+.gitignore
+.pre-commit-config.yaml
+LICENSE.txt
+README.md
+mypy.ini
+requirements.txt
+setup.py
+joj_submitter/__init__.py
+joj_submitter/__main__.py
+joj_submitter.egg-info/PKG-INFO
+joj_submitter.egg-info/SOURCES.txt
+joj_submitter.egg-info/dependency_links.txt
+joj_submitter.egg-info/entry_points.txt
+joj_submitter.egg-info/requires.txt
+joj_submitter.egg-info/top_level.txt
