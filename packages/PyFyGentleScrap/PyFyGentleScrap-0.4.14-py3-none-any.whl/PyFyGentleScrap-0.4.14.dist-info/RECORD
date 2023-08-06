@@ -1,0 +1,13 @@
+pyfygentlescrap/__init__.py,sha256=820GVLxs9ZOxGj_z5GAwH-Ejcocg1wGnX9oSn_o89WQ,832
+pyfygentlescrap/warnings.py,sha256=D5fMrW4Q0iioMEjv2bHjDyvVnUqoBpnczyiN1JNBedo,4522
+pyfygentlescrap/yahoo/__init__.py,sha256=5uqsePwp0zraDruoGHQJN_vXKIt9eQaydtKoLTTCYKk,36
+pyfygentlescrap/yahoo/yahoo_calendar.py,sha256=5HX1WZTTeo6L85GcB-M7lkFNim3Q_OyRKeHs7496Q0o,3830
+pyfygentlescrap/yahoo/yahoo_historical.py,sha256=NUbyz8DOHieq3pS4I-cjwzCfKATc20xXDYOEsuuI0fk,7733
+pyfygentlescrap/yahoo/yahoo_screener.py,sha256=ZmoHmoIBT5htnKu6rBP968liKfdJCfPOM0SpIVkDWg4,9752
+pyfygentlescrap/yahoo/yahoo_shared.py,sha256=qjpXlVwZvL9zU2_SydAn92vBduYivGnwTOlnfYW07W4,11710
+pyfygentlescrap/yahoo/yahoo_ticker.py,sha256=22bXMnBr3dxOY-heQ59HguTaOVuRq4dlhhK27uegn8k,4879
+PyFyGentleScrap-0.4.14.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+PyFyGentleScrap-0.4.14.dist-info/METADATA,sha256=hRdaIVQjW6XlJykmuyiaXB2wil7mj8QYhW3DdMC-si4,6615
+PyFyGentleScrap-0.4.14.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+PyFyGentleScrap-0.4.14.dist-info/top_level.txt,sha256=muVNV5Yzg7LQhKlB4JPvjMPti-XYNVPI_i5RKHMnYyg,16
+PyFyGentleScrap-0.4.14.dist-info/RECORD,,
