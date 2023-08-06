@@ -1,0 +1,3 @@
+[certbot.plugins]
+dns-infoblox = certbot_dns_infoblox.dns_infoblox:Authenticator
+
