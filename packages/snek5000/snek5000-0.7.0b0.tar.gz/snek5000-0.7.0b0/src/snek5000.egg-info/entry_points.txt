@@ -1,0 +1,4 @@
+[snek5000.solvers]
+kth = snek5000.solvers.kth
+nek = snek5000.solvers.base
+
