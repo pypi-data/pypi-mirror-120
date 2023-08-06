@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: MechElastic
+Version: 1.2.23
+Summary: A Python library to calculate elastic properties of materials. 
+Home-page: https://github.com/romerogroup/MechElastic
+Author: Sobhit Singh, Logan Lang, Viviana Dovale-Farelo, Uthpala Herath, Pedram Tavadze, François-Xavier Coudert, Aldo H. Romero
+Author-email: smsingh@mail.wvu.edu
+License: LICENSE.txt
+Download-URL: https://github.com/romerogroup/MechElastic/archive/1.2.23.tar.gz
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: spglib
+Requires-Dist: pathlib
+Requires-Dist: pyvista
+Requires-Dist: intersect
+Requires-Dist: networkx
+Requires-Dist: dicttoxml
+Requires-Dist: trimesh
+Requires-Dist: scikit-image
+Requires-Dist: requests
+
+UNKNOWN
+
+
