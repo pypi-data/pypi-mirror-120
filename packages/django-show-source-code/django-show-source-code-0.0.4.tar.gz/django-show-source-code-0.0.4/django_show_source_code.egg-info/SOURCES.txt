@@ -1,0 +1,17 @@
+MANIFEST.in
+setup.py
+django_show_source_code.egg-info/PKG-INFO
+django_show_source_code.egg-info/SOURCES.txt
+django_show_source_code.egg-info/dependency_links.txt
+django_show_source_code.egg-info/requires.txt
+django_show_source_code.egg-info/top_level.txt
+show_src_code/__init__.py
+show_src_code/apps.py
+show_src_code/includes.py
+show_src_code/modals.py
+show_src_code/source_code.py
+show_src_code/urls.py
+show_src_code/static/show_src_code/highlightjs.css
+show_src_code/static/show_src_code/highlightjs.js
+show_src_code/templatetags/__init__.py
+show_src_code/templatetags/src_code.py
