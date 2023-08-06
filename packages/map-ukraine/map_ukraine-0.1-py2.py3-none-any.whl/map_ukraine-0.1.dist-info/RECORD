@@ -1,0 +1,12 @@
+map_ukraine/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+map_ukraine/map.py,sha256=OwvTetNVH51DCe17vX_03CKdj4rzM1r6hMiQHUi70ZA,1982
+map_ukraine/map_data/UKR_admin0.csv,sha256=gwhGeoDU2ZXSZ4Gt5dT4c5l7_o9qZ3uuwwLe2ebTUYM,1319
+map_ukraine/map_data/UKR_admin0.geojson,sha256=NtKRfqFrPcllp6u-TKEYPB237xRlq9vbogiYLrHrewc,5102144
+map_ukraine/map_data/UKR_admin1.csv,sha256=srl-EGWMgYPCCRymqWSmKKKnLmSeFB_5KjIMjkeifa4,3022
+map_ukraine/map_data/UKR_admin1.geojson,sha256=lhCQek_7sM-q3qQAUGDQT6rlpuZ3Z-CaQpPkCfzM0D0,5965289
+map_ukraine/map_data/UKR_admin2.csv,sha256=UzCvuuzNDArhfXAeWhfHJP5Ou6wJweSaugkRpehDgts,58747
+map_ukraine/map_data/UKR_admin2.geojson,sha256=c4iG2AHMgvoF4Dibo-ZdsRjFnM64wqURcJAuD2T079s,10175876
+map_ukraine-0.1.dist-info/METADATA,sha256=VC2sVUOAb9yA4Dt-lxvYvlH_YmCdXmR7fRNnY2ga5vo,2466
+map_ukraine-0.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+map_ukraine-0.1.dist-info/top_level.txt,sha256=V9etzZZFzOQir5nH5DYF9vvsMSlUOHjaKJvYpYvs94g,12
+map_ukraine-0.1.dist-info/RECORD,,
