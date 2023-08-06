@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+minecraftstats/__init__.py
+minecraftstats/bedwarsstats.py
+minecraftstats/duelstats.py
+minecraftstats/errors.py
+minecraftstats/minecraftstats.py
+minecraftstats/utils.py
+minecraftstats.egg-info/PKG-INFO
+minecraftstats.egg-info/SOURCES.txt
+minecraftstats.egg-info/dependency_links.txt
+minecraftstats.egg-info/requires.txt
+minecraftstats.egg-info/top_level.txt
