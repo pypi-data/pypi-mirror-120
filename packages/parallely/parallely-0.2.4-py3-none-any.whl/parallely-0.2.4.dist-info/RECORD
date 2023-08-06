@@ -1,0 +1,12 @@
+LICENSE,sha256=UOZ1F5fFDe3XXvG4oNnkL1-Ecun7zpHzRxjp-XsMeAo,11324
+README.md,sha256=78viVxxL3yLq0V1Z_MgfdGW3o5M6oYy9JPVjODjlvh0,5445
+parallely/__init__.py,sha256=DZvBg_nySDp1MSU44nhBj0tdMRQKOgL0XRAdY_Sf3Dw,144
+parallely/base.py,sha256=BwuuleFBVnk2nNXDUEt2lthz4XnKmDFf95lVY3ka9Io,502
+parallely/coroutines.py,sha256=qLGJzf2yvYO7_ofsa8A9MiuOIo8963gWurJbB6ZzFA0,2526
+parallely/processes.py,sha256=OnXBjtJJJvuUrX7d3G-aXdlCHMAJJBXr5R6eOSdcNmY,1672
+parallely/threads.py,sha256=qWH9hnvoa1eu_TgEQbiDdkoZLHdEnWcDeYihGqSpsH8,1656
+parallely/utils.py,sha256=JbYRotnjfxonFOTCTjwaC_Pa1b11z7A6uqsQ4Kp4Zvs,1566
+parallely-0.2.4.dist-info/LICENSE,sha256=UOZ1F5fFDe3XXvG4oNnkL1-Ecun7zpHzRxjp-XsMeAo,11324
+parallely-0.2.4.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+parallely-0.2.4.dist-info/METADATA,sha256=JRQQY8dLQg0567ZIltGoL_RITGQJ6K23Hg3P-J_43ho,6348
+parallely-0.2.4.dist-info/RECORD,,
