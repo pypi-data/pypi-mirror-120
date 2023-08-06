@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: thtml
+Version: 1.0.0a3
+Summary: CLI tool for converting text to HTML
+Home-page: https://github.com/cariad/thtml
+Author: Cariad Eccleston
+Author-email: cariad@cariad.io
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ansiscape
+Requires-Dist: naughtty
+Requires-Dist: pyyaml
+
+# thtml
+
+[![CircleCI](https://circleci.com/gh/cariad/thtml/tree/main.svg?style=shield)](https://circleci.com/gh/cariad/thtml/tree/main)
+
+CLI tool and Python package for converting text to HTML
+
+
+<!-- markdownlint-disable MD033 -->
+<style type="text/css">
+  .thtml {
+    font-family: monospace;
+  }
+
+  .thtml .fg-red {
+    color: #f00;
+  }
+
+  .thtml .fg-green {
+    color: #0f0;
+  }
+</style>
+
+<!-- "nohighlight" prevents highlight.js taking over the styling -->
+
+<pre class="nohighlight thtml">
+  <code>
+    <span class="fg-red">Hello</span> <span class="fg-green">world!</span>
+  </code>
+</pre>
+<!-- markdownlint-enable MD033 -->
+
+
