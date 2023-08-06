@@ -1,0 +1,31 @@
+MANIFEST.in
+pyproject.toml
+setup.py
+deploy_chk/VERSION
+deploy_chk/__init__.py
+deploy_chk/config.yml
+deploy_chk/pipeline - Copy.py
+deploy_chk/pipeline.py
+deploy_chk/predict - Copy.py
+deploy_chk/predict.py
+deploy_chk/train_pipeline.py
+deploy_chk/train_pipeline_chk.py
+deploy_chk/config/__init__.py
+deploy_chk/config/core.py
+deploy_chk/datasets/__init__.py
+deploy_chk/datasets/test_deploy.csv
+deploy_chk/datasets/train_deploy_chk.csv
+deploy_chk/processing/__init__.py
+deploy_chk/processing/data_manager - Copy.py
+deploy_chk/processing/data_manager.py
+deploy_chk/processing/features.py
+deploy_chk/processing/validation.py
+deploy_chk/trained_models/pipeline_model_output_v0.0.3.pkl
+requirements/__init__.py
+requirements/requirements.txt
+requirements/test_requirements.txt
+tid_deploy_chk_model.egg-info/PKG-INFO
+tid_deploy_chk_model.egg-info/SOURCES.txt
+tid_deploy_chk_model.egg-info/dependency_links.txt
+tid_deploy_chk_model.egg-info/requires.txt
+tid_deploy_chk_model.egg-info/top_level.txt

@@ -1,0 +1,18 @@
+include *.txt
+include *.md
+include *.pkl
+recursive-include ./deploy_chk/*
+
+include deploy_chk/datasets/train_deploy_chk.csv
+include deploy_chk/datasets/test_deploy.csv
+include deploy_chk/trained_models/*.pkl
+include deploy_chk/VERSION
+include deploy_chk/config.yml
+
+include ./requirements/requirements.txt
+include ./requirements/test_requirements.txt
+exclude *.log
+exclude *.cfg
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
