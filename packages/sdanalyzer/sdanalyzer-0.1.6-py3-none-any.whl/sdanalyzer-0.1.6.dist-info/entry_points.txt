@@ -1,0 +1,3 @@
+[console_scripts]
+sdanalyzer = sdanalyzer.main:main
+

@@ -1,0 +1,260 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container-fluid jumbotron">
+    <div class="row">
+        <div class="col-xl-10 col-lg-10">
+            <h1>Apk: {{apk.package_name}}</h1>
+            <p>Phone: <a href="/phones/{{phone.id}}">{{phone.name}}</a></p>
+        </div>
+        <div class="col-xl-2 col-lg-2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 text-center">
+                        {% if apk.suspicious == True %}
+                            <h1><i class="fa fa-thumbs-down fa-2x text-danger"></i></h1>
+                        {% elif apk.suspicious == False %}
+                            <h1><i class="fa fa-thumbs-up fa-2x text-success"></i></h1>
+                        {% else %}
+                            <h1><i class="fa fa-question fa-2x"></i></h1>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4">
+                        <a href="/apk/{{apk.id}}/status?status=bad" style="color: inherit;"><i class="fa fa-thumbs-down"></i></a>
+                    </div>
+                    <div class="col-xl-4 col-lg-4">
+                        <a href="/apk/{{apk.id}}/status?status=none" style="color: inherit;"><i class="fa fa-question"></i></a>
+                    </div>
+                    <div class="col-xl-4 col-lg-4">
+                        <a href="/apk/{{apk.id}}/status?status=good" style="color: inherit;"><i class="fa fa-thumbs-up"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-12 col-lg-12">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">General Info</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#manifest" role="tab" aria-controls="profile" aria-selected="false">Manifest</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#urls" role="tab" aria-controls="contact" aria-selected="false">Urls</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#strings" role="tab" aria-controls="contact" aria-selected="false">Strings</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 mt-4 mb-4">
+                    <div class="card">
+                        <div class="card-header text-white bg-primary">
+                            General Information
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-xl-5 col-lg-5">
+                                    <table>
+                                        <tr>
+                                            <th style="min-width: 130px;">Package Name </th>
+                                            <td>{{apk.package_name}}
+                                                <span class="dropdown">
+  <button class="btn btn-xs btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="https://play.google.com/store/apps/details?id={{apk.package_name}}" target="blank_">Play Store</a>
+      <a class="dropdown-item" href="https://www.virustotal.com/gui/search/androguard%253A%2522{{apk.package_name}}%2522" target="blank_">VT</a>
+    <a class="dropdown-item" href="https://koodous.com/apks?search={{apk.package_name}}" target="_blank">Koodous</a>
+    <a class="dropdown-item" href="https://www.apklab.io/samples.html?filter={{apk.package_name}}" target="blank_">APKLab</a>
+  </span>
+</div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>App Name </th>
+                                            <td>{{apk.app_name}}</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Size </th>
+                                            <td>{{apk.size}}</td>
+                                        </tr>
+                                        <tr>
+                                            <th>VT: </th>
+                                            {% if apk.vt_check %}
+                                                {% if apk.vt_link %}
+
+                                                 {% if apk.vt_positives == 0 %}
+                                                 <td><a href="{{apk.vt_link}}" target="_blank"><span class="badge badge-success">{{apk.vt_positives}} / {{apk.vt_total}}</span></a></td>
+                            {% elif p.vt_positives < 5 %}
+                                <td><a href="{{apk.vt_link}}" target="_blank"><span class="badge badge-warning">{{apk.vt_positives}} / {{apk.vt_total}}</span></a></td>
+                            {% else %}
+                                <td><a href="{{apk.vt_link}}" target="_blank"><span class="badge badge-danger">{{apk.vt_positives}} / {{apk.vt_total}}</span></a></td>
+                            {% endif %}
+                                                {% else %}
+                                                <td><span class="badge badge-warning">Unknown</span></td>
+                                                {% endif %}
+                                            {% else %}
+                                                <td><span class="badge badge-danger">Failed</span>
+                                                    <a href="https://www.virustotal.com/gui/search/{{apk.sha256}}" target="_blank">Search</a>
+                                                </td>
+                                            {% endif %}
+                                        </tr>
+                                        <tr>
+                                            <th>Koudous </th>
+                                            <td><a href="https://koodous.com/apks/{{apk.sha256}}" target="_blank">Search</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th>APKLab </th>
+                                            <td><a href="https://www.apklab.io/samples.html?filter={{apk.sha256}}" target="_blank">Search</a></td>
+                                        </tr>
+                                        {% if apk.frosting %}
+                                        <tr>
+                                            <th>Google Play</th>
+                                            <td><i class="fa fa-play"></i></td>
+                                        </tr>
+                                        {% endif %}
+                                        <tr>
+                                            <th>Yara</th>
+                                            {% if apk.yara|length > 0 %}
+                                            <td>
+                                                {% for y in apk.yara %}
+                                                    <span class="badge badge-danger">{{y}}</span>
+                                            {% endfor %}
+                                            </td>
+                                            {% else %}
+                                            <td><span class="badge badge-success">Not detected</span></td>
+                                            {% endif %}
+                                        </tr>
+                                        {% if apk.split %}
+                                        <tr>
+                                            <th>Split APK</th>
+                                            <td>Yes - <a href="/apk/{{apk.id}}/split_main">Find Main</a></td>
+                                        </tr>
+                                        {% endif %}
+                                        <tr>
+                                            <th>Suspicious Level</th>
+                                            <td>{% if apk.suspicious_level == 1%}<span class="badge badge-success">Low</span>{%elif apk.suspicious_level == 2%}<span class="badge badge-warning">Medium</span>{%else%}<span class="badge badge-danger">High</span>{% endif %}</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="col-xl-7 col-lg-7">
+                                    <table>
+                                        <tr>
+                                            <th style="min-width: 80px;">MD5 </th>
+                                            <td>{{apk.md5}}</td>
+                                        </tr>
+                                        <tr>
+                                            <th>SHA1</th>
+                                            <td>{{apk.sha1}}</td>
+                                        </tr>
+                                        <tr>
+                                            <th>SHA256</th>
+                                            <td>{{apk.sha256}}</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Path</th>
+                                            <td style="word-wrap: break-word; width: 100%; max-width: 1px;">{{apk.path}}</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6">
+                    <div class="card">
+                        <div class="card-header text-white bg-primary">
+                            Certificate
+                                                <span class="dropdown float-xl-right float-lg-right">
+  <button class="btn btn-xs btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Search</button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="https://www.virustotal.com/gui/search/androguard%253A%2522{{apk.certificate_sha1}}%2522" target="blank_">VT</a>
+      <a class="dropdown-item" href="https://koodous.com/apks?search=cert:{{apk.certificate_sha1}}" target="_blank">Koodous</a>
+    <a class="dropdown-item" href="https://www.apklab.io/samples.html?filter=cert%3A{{apk.certificate_sha1}}" target="blank_">APKLab</a>
+  </span>
+</div>
+
+                        </div>
+                        <div class="card-body">
+                            <table>
+                                <tr><th style="min-width:90px;">Subject:</th><td>{{apk.certificate['subjectDN']}}</td></tr>
+                                <tr><th>Issuer: </th><td>{{apk.certificate['issuerDN']}}</td></tr>
+                                <tr><th>Sha1: </th><td> {{apk.certificate['sha1']}}</td></tr>
+                                <tr><th>Serial: </th><td> {{apk.certificate['serial']}}</td></tr>
+                                <tr><th>Not Before:</th><td> {{apk.certificate['not_before']}}</td></tr>
+                                <tr><th>Not After: </th><td>{{apk.certificate['not_after']}}</td></tr>
+                                {% if apk.certificate_trusted  %}
+                                <tr><th>Trusted:</th><td> {{apk.certificate_trusted_name}} <i class="fa fa-check-circle text-success"></i></td></tr>
+                                {% endif %}
+                            </table>
+                        </div>
+                    </div>
+                    <div class="card" style="margin-top:20px;">
+                        <div class="card-header text-white bg-primary">
+                            Dex Files
+                        </div>
+                        <div class="card-body">
+                            <table>
+                                {% for dex in apk.dexes %}
+                                <tr><th>{{dex}}</th><td>{{apk.dexes[dex]['sha256']}}</td></tr>
+                                {% endfor %}
+                            </table>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="card">
+                            <div class="card-header text-white bg-primary">
+                                Permissions <span class="badge badge-light float-xl-right float-lg-right">{{apk.permissions_suspicious}}</span>
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    {% for p in apk.permissions %}
+                                    {% if p in sp %}
+                                    <li><b>{{p}}</b></li>
+                                    {% else %}
+                                    <li>{{p}}</li>
+                                    {% endif %}
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="manifest" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="bg-light" >
+<pre><code class="xml">{{apk.manifest}}</code></pre>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="urls" role="tabpanel" aria-labelledby="contact-tab">
+            <div class="bg-light" >
+            <pre>
+{% for p in apk.urls %}{{p}}
+{% endfor %}
+            </pre>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="strings" role="tabpanel" aria-labelledby="contact-tab">
+            <div class="bg-light" >
+            <pre>
+{% for p in apk.strings %}{{p}}
+{% endfor %}
+            </pre>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</div>
+{% endblock %}
