@@ -1,0 +1,15 @@
+black>=19.10b0
+flake8<4.0,>=3.7
+flake8-blind-except<0.2,>=0.1.1
+flake8-broken-line<0.4,>=0.3
+flake8-bugbear<22.0,>=20.1
+flake8-comprehensions<4.0,>=3.1
+flake8-debugger<5.0,>=4.0
+flake8-docstrings<2.0,>=1.4
+flake8-quotes<4.0,>=3.0
+flake8-rst-docstrings<0.3.0,>=0.2.3
+flake8-string-format<0.4,>=0.3
+pep8-naming<0.13,>=0.11
+darglint<2.0,>=1.5
+isort<6.0,>=5.0
+nitpick<0.28,>=0.27
