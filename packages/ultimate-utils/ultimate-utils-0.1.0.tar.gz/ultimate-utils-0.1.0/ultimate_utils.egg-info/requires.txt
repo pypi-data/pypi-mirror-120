@@ -1,0 +1,16 @@
+dill
+networkx>=2.5
+scipy
+scikit-learn
+lark-parser
+torchtext
+tensorboard
+pandas
+progressbar2
+transformers
+requests
+aiohttp
+numpy
+plotly
+wandb
+matplotlib
