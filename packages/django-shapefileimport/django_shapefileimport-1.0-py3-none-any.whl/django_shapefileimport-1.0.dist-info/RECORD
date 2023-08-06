@@ -1,0 +1,13 @@
+shapefileimport/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shapefileimport/admin.py,sha256=v6ZCkTGcYVKH6ia06RnmAONy_wredD_26bqo9Sdsi3c,1190
+shapefileimport/apps.py,sha256=A9FgATMeK1b9DoiNhDAKsQT2f3h9N21m9KzfscBhu-0,162
+shapefileimport/models.py,sha256=qLPbC0UW6eG_l33BMjwqWOrhxt-r7psU36hc-5yNOiU,873
+shapefileimport/shapetasks.py,sha256=U9z_AcTxJqX3TgjCWAQnnHFZkN2685mkx6YpyvO3fyg,2869
+shapefileimport/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+shapefileimport/views.py,sha256=xc1IQHrsij7j33TUbo-_oewy3vs03pw_etpBWaMYJl0,63
+shapefileimport/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_shapefileimport-1.0.dist-info/LICENSE,sha256=xrmAOhPYw91pN2PEsAz8sujncIKQNidzi8gyCaL1jtc,1536
+django_shapefileimport-1.0.dist-info/METADATA,sha256=97nksxdQv-bi6XWqb3xTGuCbYny1OKKhSXNLSmds5sE,3789
+django_shapefileimport-1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+django_shapefileimport-1.0.dist-info/top_level.txt,sha256=e7uWHW4jfiNCnAAKfz-bFFgq5SIbmsqXK9_6Dxu1Jb4,16
+django_shapefileimport-1.0.dist-info/RECORD,,
