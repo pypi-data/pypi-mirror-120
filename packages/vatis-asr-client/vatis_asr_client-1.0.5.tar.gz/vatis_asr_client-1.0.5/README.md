@@ -1,0 +1,227 @@
+# Speech recognition client for Vatis API in Python
+
+Python implementation of the client for Vatis's ASR services
+
+# Getting started
+
+## Requirements
+* Python >= 3.6
+
+## Installation
+1. Create a free account on the [Vatis Platform](https://vatis.tech/)
+2. Obtain you're private [API key](https://vatis.tech/account/api-key)
+3. Install Vatis Live ASR client: `pip install "vatis_asr_client[remote]"`
+4. Add your private key as environment variable: `VATIS_LIVE_ASR_CLIENT_API_KEY=<YOUR_API_KEY>`
+5. (Optional) Configure other [environment variables](#environment-variables)
+
+## Usage
+
+1. Create a stream configuration object
+```pythonstub
+from vatis.live_asr.config.stream import StreamConfig, Language, SPEED_CONFIGURATION, SampleRate, Channel, \
+     DEFAULT_CONNECTION_CONFIG
+
+stream_config: StreamConfig = StreamConfig(
+        language=Language.ro_RO,
+        performance_config=SPEED_CONFIGURATION,
+        connection_config=DEFAULT_CONNECTION_CONFIG,
+        sample_rate=SampleRate.RATE_16000,
+        channels=Channel.ONE,
+    )
+``` 
+
+2. Create a LiveStream based on your configuration
+```pythonstub
+from vatis.live_asr.stream.factory import create_stream
+
+with create_stream(stream_config, stream_type='BLOCKING') as stream:
+    # ...
+
+```
+
+3. Add a listener for the events of your stream
+```pythonstub
+from vatis.live_asr.utils.observer import FormattedLiveStreamObserver
+
+stream.add_observer(FormattedLiveStreamObserver())
+```
+
+4. Create your custom data generator or use any of the predefined ones
+```pythonstub
+from vatis.live_asr.utils.generator import file_generator
+
+data_generator: Generator = file_generator('<your_wav_file_path>', stream_config)
+```
+
+5. Pass the generator to the stream and wait until it finishes
+```pythonstub
+stream.transcribe(data_generator)
+
+stream.wait_for_transcription()
+```
+
+## Examples
+
+1. Stream a file using a stream observer
+```python
+from typing import Generator
+
+from vatis.live_asr.config.stream import StreamConfig, Language, SPEED_CONFIGURATION, SampleRate, Channel, \
+    DEFAULT_CONNECTION_CONFIG
+from vatis.live_asr.logging import get_logger
+from vatis.live_asr.stream.factory import create_stream
+from vatis.live_asr.utils.generator import file_generator
+from vatis.live_asr.utils.observer import FormattedLiveStreamObserver
+
+logger = get_logger('main')
+
+
+if __name__ == '__main__':
+    stream_config: StreamConfig = StreamConfig(
+        language=Language.ro_RO,
+        performance_config=SPEED_CONFIGURATION,
+        connection_config=DEFAULT_CONNECTION_CONFIG,
+        sample_rate=SampleRate.RATE_16000,
+        channels=Channel.ONE,
+    )
+
+    with create_stream(stream_config, stream_type='BLOCKING') as stream:
+        stream.add_observer(FormattedLiveStreamObserver())
+
+        data_generator: Generator = file_generator('<your_wav_file_path>', stream_config)
+
+        stream.transcribe(data_generator)
+
+        stream.wait_for_transcription()
+
+```
+
+2. Streaming a file using a generator
+```python
+from typing import Generator
+
+from vatis.live_asr.config.stream import StreamConfig, Language, SPEED_CONFIGURATION, SampleRate, Channel, \
+    DEFAULT_CONNECTION_CONFIG
+from vatis.live_asr.logging import get_logger
+from vatis.live_asr.stream.factory import create_stream
+from vatis.live_asr.utils.generator import file_generator
+
+logger = get_logger('main')
+
+
+if __name__ == '__main__':
+    stream_config: StreamConfig = StreamConfig(
+        language=Language.ro_RO,
+        performance_config=SPEED_CONFIGURATION,
+        connection_config=DEFAULT_CONNECTION_CONFIG,
+        sample_rate=SampleRate.RATE_16000,
+        channels=Channel.ONE,
+    )
+
+    with create_stream(stream_config, stream_type='BLOCKING') as stream:
+        data_generator: Generator = file_generator('<your_wav_file_path>', stream_config)
+
+        stream.transcribe(data_generator)
+
+        for response in stream.create_generator():
+            logger.info(response.transcript)
+
+```
+
+3. Infinite stream from the microphone using stream observers
+```python
+from typing import Generator
+
+from vatis.live_asr.config.stream import StreamConfig, Language, SPEED_CONFIGURATION, SampleRate, Channel, \
+    DEFAULT_CONNECTION_CONFIG
+from vatis.live_asr.stream.factory import create_stream
+from vatis.live_asr.utils.generator import microphone_generator
+from vatis.live_asr.utils.observer import FormattedLiveStreamObserver
+
+if __name__ == '__main__':
+    stream_config: StreamConfig = StreamConfig(
+        language=Language.ro_RO,
+        performance_config=SPEED_CONFIGURATION,
+        connection_config=DEFAULT_CONNECTION_CONFIG,
+        sample_rate=SampleRate.RATE_16000,
+        channels=Channel.ONE,
+    )
+
+    with create_stream(stream_config, stream_type='BLOCKING') as stream:
+        stream.add_observer(FormattedLiveStreamObserver())
+
+        data_generator: Generator = microphone_generator(stream_config)
+
+        stream.transcribe(data_generator)
+
+        stream.wait_for_transcription()         
+
+```
+
+4. Stream from the microphone a specified amount of time using generators
+```python
+import sys
+from typing import Generator
+
+from vatis.asr_commons.live.headers import FINAL_FRAME_HEADER, FRAME_START_TIME_HEADER, FRAME_END_TIME_HEADER
+
+from vatis.live_asr.config.stream import StreamConfig, Language, SPEED_CONFIGURATION, SampleRate, Channel, \
+    DEFAULT_CONNECTION_CONFIG
+from vatis.live_asr.stream.factory import create_stream
+from vatis.live_asr.utils.generator import microphone_generator
+
+if __name__ == '__main__':
+    stream_config: StreamConfig = StreamConfig(
+        language=Language.ro_RO,
+        performance_config=SPEED_CONFIGURATION,
+        connection_config=DEFAULT_CONNECTION_CONFIG,
+        sample_rate=SampleRate.RATE_16000,
+        channels=Channel.ONE,
+    )
+
+    out = sys.stdout
+    time_limit: float = 0.5 * 60
+
+    def stop_condition(frame_count: int, starting_time: dict) -> bool:
+        transcribed_time = stream_config.performance_config.frame_len * frame_count
+
+        return transcribed_time >= time_limit
+
+    with create_stream(stream_config, stream_type='BLOCKING') as stream:
+        data_generator: Generator = microphone_generator(stream_config, stop_condition=stop_condition)
+
+        stream.transcribe(data_generator)
+
+        for packet in stream.create_generator():
+            if packet.get_header(FINAL_FRAME_HEADER, default=False):
+                out.write('FINAL  : {0:.2f} -> {1:.2f}: {2}\n'.format(
+                    packet.get_header(FRAME_START_TIME_HEADER),
+                    packet.get_header(FRAME_END_TIME_HEADER),
+                    packet.transcript
+                ))
+                out.flush()
+            else:
+                out.write('PARTIAL: {0:.2f} -> {1:.2f}: {2}\r'.format(
+                    packet.get_header(FRAME_START_TIME_HEADER),
+                    packet.get_header(FRAME_END_TIME_HEADER),
+                    packet.transcript
+                ))
+                out.flush()
+
+```
+
+## Environment variables
+
+| Variable | Type  | Default value | Description |
+| -------- | ----- | ------------- | ----------- |
+|VATIS_LIVE_ASR_CLIENT_DEBUG | bool | False | Debug flag for more logging|
+|VATIS_LIVE_ASR_CLIENT_RECONNECTION_ATTEMPTS | int | 6 | Maximum connection attempts to the ASR service|
+|VATIS_LIVE_ASR_CLIENT_REQUEST_TIMEOUT_SECONDS | float | 15 | Timeout of an attempt to make a request to the server|
+|VATIS_LIVE_ASR_CLIENT_RECONNECTION_DELAY_SECONDS | float | 5 | Delay between two reconnection attempts|
+|VATIS_LIVE_ASR_CLIENT_CONNECTION_TIMEOUT_SECONDS | float | 10 | Timeout of a connection attempt|
+|VATIS_LIVE_ASR_CLIENT_SERVICE_HOST | string | a5111be014375425f9cfe48e23715c8c-6ed9fe3966df7ef3.elb.eu-central-1.amazonaws.com | ASR service host name|
+|VATIS_LIVE_ASR_CLIENT_SERVICE_PORT | int | 80 | ASR service port number|
+|VATIS_LIVE_ASR_CLIENT_AUTHENTICATION_PROVIDER_URL | string | https://vatis.tech/api/v1/asr-client/auth | Authentication end-point|
+|VATIS_LIVE_ASR_CLIENT_API_KEY | string | <mandatory> | Private API key for ASR service access|
+|VATIS_LIVE_ASR_CLIENT_LOGS_FILE | string | logs/app.logs | Path for storing log files|
+|VATIS_LIVE_ASR_CLIENT_ENABLE_LOGS_FILE | bool | False | Flag for enabling logs storing inside files|
