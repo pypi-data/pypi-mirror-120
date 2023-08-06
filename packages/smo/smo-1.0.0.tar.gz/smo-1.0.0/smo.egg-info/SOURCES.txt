@@ -1,0 +1,14 @@
+.gitignore
+.pre-commit-config.yaml
+pyproject.toml
+setup.cfg
+setup.py
+.github/workflows/release.yml
+smo/__init__.py
+smo/background.py
+smo/smo.py
+smo.egg-info/PKG-INFO
+smo.egg-info/SOURCES.txt
+smo.egg-info/dependency_links.txt
+smo.egg-info/requires.txt
+smo.egg-info/top_level.txt

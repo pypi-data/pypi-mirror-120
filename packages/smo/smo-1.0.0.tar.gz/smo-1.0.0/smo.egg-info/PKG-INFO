@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: smo
+Version: 1.0.0
+Summary: Implementation of the Silver Mountain Operator (SMO) for the estimation of background distributions.
+Home-page: https://github.com/maurosilber/smo
+Author: Mauro Silberberg
+Author-email: maurosilber@gmail.com
+License: MIT
+Keywords: background,fluorescence,microscopy,imaging
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Provides-Extra: dev
+
+UNKNOWN
+
