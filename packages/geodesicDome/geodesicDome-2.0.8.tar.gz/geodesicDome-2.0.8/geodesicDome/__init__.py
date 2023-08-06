@@ -1,0 +1,3 @@
+from geodesic_dome import GeodesicDome
+import numba_geodesic_dome_private
+import numba_geodesic_dome
