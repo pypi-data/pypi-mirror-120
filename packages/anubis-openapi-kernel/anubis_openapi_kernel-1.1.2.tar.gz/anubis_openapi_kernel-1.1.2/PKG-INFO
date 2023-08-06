@@ -1,0 +1,40 @@
+Metadata-Version: 1.1
+Name: anubis_openapi_kernel
+Version: 1.1.2
+Summary: The anubis-openapi-kernel module of alibabaCloud Python SDK.
+Home-page: https://github.com/eleme/anubis-openapi-third/tree/main/kernel/python
+Author: Alibaba Cloud
+Author-email: alibaba-cloud-sdk-dev-team@list.alibaba-inc.com
+License: Apache License 2.0
+Description: ## ele me anubis openapi kernel for Python
+        
+        
+        ## 安装
+        
+        - **使用 pip 安装(推荐)**
+        
+        如未安装 `pip`, 请先至pip官网 [pip user guide](https://pip.pypa.io/en/stable/installing/ "pip User Guide") 安装pip .
+        
+        ```bash
+        # 安装 anubis-openapi-kernel
+        pip install anubis_openapi_kernel
+        ```
+        
+        
+        ## 许可证
+        [Apache-2.0](http://www.apache.org/licenses/LICENSE-2.0)
+        
+        Copyright (c) 2009-present, Alibaba Cloud All rights reserved.
+Keywords: alibabacloud,sdk,tea
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development
