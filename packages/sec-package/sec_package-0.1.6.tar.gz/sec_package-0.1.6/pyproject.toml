@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "sec_package"
+version = "0.1.6"
+description = ""
+authors = ["sven <sven.lauenroth@icloud.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+flake8 = "^3.9.2"
+black = "^21.9b0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
