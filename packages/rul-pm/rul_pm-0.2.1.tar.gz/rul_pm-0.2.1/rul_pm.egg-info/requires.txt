@@ -1,0 +1,15 @@
+pandas
+numpy
+tqdm
+scikit-learn
+seaborn
+xgboost
+gwpy
+mlflow
+emd
+numba
+dill
+mmh3
+temporis
+pyarrow
+fastparquet
