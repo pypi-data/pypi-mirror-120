@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+src/odpf/__init__.py
+src/odpf/stencil.py
+src/odpf/store.py
+src/stencil_python_client.egg-info/PKG-INFO
+src/stencil_python_client.egg-info/SOURCES.txt
+src/stencil_python_client.egg-info/dependency_links.txt
+src/stencil_python_client.egg-info/top_level.txt
+test/test_client.py
