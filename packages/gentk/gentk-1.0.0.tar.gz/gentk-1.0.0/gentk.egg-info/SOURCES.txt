@@ -1,0 +1,13 @@
+MANIFEST.in
+genex
+license.md
+readme.md
+setup.py
+gentk/__init__.py
+gentk.egg-info/PKG-INFO
+gentk.egg-info/SOURCES.txt
+gentk.egg-info/dependency_links.txt
+gentk.egg-info/requires.txt
+gentk.egg-info/top_level.txt
+gentk/client/__init__.py
+gentk/project/__init__.py

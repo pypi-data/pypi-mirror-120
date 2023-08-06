@@ -1,0 +1,118 @@
+#!/usr/bin/env python
+
+import argparse
+import jsonschema
+import json
+import sys
+import gentk
+
+# ----------------------------------------------------------------------------
+#
+# subcommand handlers 
+#
+# ----------------------------------------------------------------------------
+
+def dump(args):
+    with open("{}/project.json".format(args.project), "r") as pfile:
+        pdata = json.load(pfile) 
+
+        print("project: {}".format(pdata["project"]["name"]))
+        print("datasets:")
+        for d in pdata["datasets"]:
+            print("    {}:".format(d["name"]))
+
+def query(args):
+    client = gentk.client.client(args.url, args.port)
+    client.project = args.project 
+    if (args.type == 'array'):
+        print(client.get_array(args.values[0]))
+
+    elif (args.type == 'structure'):
+        print(client.get_structure(args.values[0]))
+
+    elif (args.type == 'genes'):
+        print(client.get_genes())
+
+    elif (args.type == 'genes-for-segment'):
+        print(client.get_genes_for_segment(args.values[0], args.values[1]))
+
+    elif (args.type == 'segments-for-gene'):
+        print(client.get_segments_for_gene(args.values[0], args.values[1]))
+
+    elif (args.type == 'segment-array'):
+        print(client.get_segment_array(args.values[0]))
+
+# ----------------------------------------------------------------------------
+#
+# parse command line options
+#
+# ----------------------------------------------------------------------------
+
+GENTK_VERSION = "0.5.4" 
+
+helptext = "\n\
+\n\
+examples: \n\
+\n\
+    gentk dump --project some/directory\n\
+       dump project information to stoud\n\
+\n\
+    gentk query --structure 0 --url 127.0.0.1 --port 8000\n\
+       query a server at url:port and print structure 0\n\
+\n\
+" 
+ 
+# normal option parsing 
+parser = argparse.ArgumentParser(  
+            description="gentk: command line tool for the gentk module", 
+            epilog=helptext, 
+            formatter_class=argparse.RawDescriptionHelpFormatter ) 
+
+parser.add_argument(    "--version", 
+                        action='version',
+                        version='{}'.format(GENTK_VERSION),
+                        help="print version of this script") 
+
+
+subparsers = parser.add_subparsers(title='subcommands',
+                                   description='valid subcommands',
+                                   help='additional help')
+
+#
+# dump
+#
+parser_dump = subparsers.add_parser('dump')
+parser_dump.add_argument(   "--project", 
+                            required=True,
+                            help="input project file") 
+parser_dump.set_defaults(func=dump)
+
+#
+# query
+#
+parser_query = subparsers.add_parser('query')
+
+parser_query.add_argument(  "--port", 
+                            required=True,
+                            help="server port") 
+ 
+parser_query.add_argument(  "--project", 
+                            required=True,
+                            help="project for this operation") 
+ 
+parser_query.add_argument(  '--type',
+                            nargs='?',
+                            choices=['array', 'genes', 'genes-for-segment', 'segment-array', 'segments-for-gene', 'structure'],
+                            help='type of query')
+
+parser_query.add_argument(  "--values", 
+                            nargs='+',
+                            help="values for the query") 
+ 
+parser_query.add_argument( "--url", 
+                            required=True,
+                            help="server url") 
+parser_query.set_defaults(func=query)
+
+args = parser.parse_args()
+args.func(args)
