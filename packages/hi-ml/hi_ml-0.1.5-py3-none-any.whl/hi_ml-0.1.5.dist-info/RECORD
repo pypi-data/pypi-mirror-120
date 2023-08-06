@@ -1,0 +1,14 @@
+health/data/__init__.py,sha256=ODk_z5Y1Nl07Sa_plfndpyO7pi4fTcJsR5Vf79uLScA,344
+health/data/placeholder.py,sha256=yfRpuQVJGdRtLMzXDMBHw1wpOBac7Du61DfCSvURzZA,421
+health/losses/__init__.py,sha256=ODk_z5Y1Nl07Sa_plfndpyO7pi4fTcJsR5Vf79uLScA,344
+health/networks/__init__.py,sha256=ODk_z5Y1Nl07Sa_plfndpyO7pi4fTcJsR5Vf79uLScA,344
+health/networks/blocks/__init__.py,sha256=ODk_z5Y1Nl07Sa_plfndpyO7pi4fTcJsR5Vf79uLScA,344
+health/networks/layers/__init__.py,sha256=ODk_z5Y1Nl07Sa_plfndpyO7pi4fTcJsR5Vf79uLScA,344
+health/networks/nets/__init__.py,sha256=ODk_z5Y1Nl07Sa_plfndpyO7pi4fTcJsR5Vf79uLScA,344
+health/utils/__init__.py,sha256=ODk_z5Y1Nl07Sa_plfndpyO7pi4fTcJsR5Vf79uLScA,344
+hi_ml-0.1.5.dist-info/LICENSE,sha256=ws_MuBL-SCEBqPBFl9_FqZkaaydIJmxHrJG2parhU4M,1141
+hi_ml-0.1.5.dist-info/METADATA,sha256=YLhgLQMx0YzjPaOqV5IcYs2c8aYqaiAH3zrhROWxmbQ,1955
+hi_ml-0.1.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+hi_ml-0.1.5.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+hi_ml-0.1.5.dist-info/top_level.txt,sha256=hcJGjdYCUg1nD-UQv14_kKVUQsGCei-ZxOU-apq2D5A,7
+hi_ml-0.1.5.dist-info/RECORD,,
