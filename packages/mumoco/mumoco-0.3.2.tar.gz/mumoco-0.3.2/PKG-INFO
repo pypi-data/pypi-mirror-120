@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: mumoco
+Version: 0.3.2
+Summary: This is tool helps to work with multiple conan modules simultaneously.
+Home-page: https://github.com/disroop/mumoco
+License: MIT
+Author: michel
+Author-email: michel.meyer@disroop.ch
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: cli-ui (>=0.15.0,<0.16.0)
+Requires-Dist: conan (>=1.36.0,<2.0.0)
+Requires-Dist: deserialize (>=1.8.1,<2.0.0)
+Project-URL: Issues, https://github.com/disroop/mumoco/issues
