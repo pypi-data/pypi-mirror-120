@@ -1,0 +1,8 @@
+whill/__init__.py,sha256=0JBRm8TLSOGWu6xu-fnipCHO9PL8K1ZaUdALuj2Dfgo,28
+whill/whill.py,sha256=3Mn7WGZMKGGmhE5FQATbO0gCKzJ2sCPR6LbNhTe7qdQ,8811
+whill/whill_data.py,sha256=D4Mik_X20_R_Ke-qOUAKGWVJsKqS5pA5rmEoARyfYl4,1775
+whill/whill_packet.py,sha256=3nJdtcnaeRHpEQnMeGHGzz3vQBX6qgTiGjma6YQCktw,2692
+whill-1.2.0.dist-info/LICENSE,sha256=cIwvM2BTq8ZMlNxbhTlzeCYiswTCau6Zzo_l0HM2SmI,1073
+whill-1.2.0.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+whill-1.2.0.dist-info/METADATA,sha256=hWbB7BR_jvUb5-KOr2PAVXtQ8AMkwyR0D1XhSxhAvFw,3605
+whill-1.2.0.dist-info/RECORD,,
