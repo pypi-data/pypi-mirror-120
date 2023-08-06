@@ -1,0 +1,8 @@
+bokeh
+deprecated
+kubernetes
+maproxy
+notebook
+pyvo
+requests
+tornado
