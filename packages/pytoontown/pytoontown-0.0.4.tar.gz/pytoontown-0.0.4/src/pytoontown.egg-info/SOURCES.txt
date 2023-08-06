@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pytoontown/__init__.py
+src/pytoontown/corporateclash.py
+src/pytoontown/toontownrewritten.py
+src/pytoontown.egg-info/PKG-INFO
+src/pytoontown.egg-info/SOURCES.txt
+src/pytoontown.egg-info/dependency_links.txt
+src/pytoontown.egg-info/top_level.txt
