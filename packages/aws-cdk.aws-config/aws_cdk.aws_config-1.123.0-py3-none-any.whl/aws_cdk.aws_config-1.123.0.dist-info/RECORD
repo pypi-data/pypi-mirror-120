@@ -1,0 +1,10 @@
+aws_cdk/aws_config/__init__.py,sha256=I9z8NYYVPQy8F0mNLVzoW3ApL8TrodkXyX1ZEEvQIkQ,378909
+aws_cdk/aws_config/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_config/_jsii/__init__.py,sha256=i3zRKgr8XIbU3nCDWXsp1uonVaUwHTuoGq94amL5498,493
+aws_cdk/aws_config/_jsii/aws-config@1.123.0.jsii.tgz,sha256=8-CTD9n0sGeCO_PhjNjcKgHf8TL0CAeQN40zqHw0wsg,138164
+aws_cdk.aws_config-1.123.0.dist-info/LICENSE,sha256=PPdRlpoLCV1CRrCV1eKpp3m0lNjchFAP4a9zfc8tRLo,11391
+aws_cdk.aws_config-1.123.0.dist-info/METADATA,sha256=YkifCl5eypubUqmSy_Oi-wjMwpyJT9s4k7tpHS1Gwp4,12321
+aws_cdk.aws_config-1.123.0.dist-info/NOTICE,sha256=xo56krus2e5ShfXqz_B7vuvGcMn_D0F7TjjpfTz8YMw,113
+aws_cdk.aws_config-1.123.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+aws_cdk.aws_config-1.123.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_config-1.123.0.dist-info/RECORD,,
