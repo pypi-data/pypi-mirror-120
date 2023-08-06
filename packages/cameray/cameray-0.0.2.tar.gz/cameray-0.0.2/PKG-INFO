@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: cameray
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: https://github.com/yslib/Cameray
+Author: Shuoliu Yang
+Author-email: visysl@outlook.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6, <=3.9
