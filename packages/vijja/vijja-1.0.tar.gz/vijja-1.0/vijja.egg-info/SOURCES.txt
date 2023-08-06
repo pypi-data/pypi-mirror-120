@@ -1,0 +1,10 @@
+CHANGELOG.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+vijja.egg-info/PKG-INFO
+vijja.egg-info/SOURCES.txt
+vijja.egg-info/dependency_links.txt
+vijja.egg-info/requires.txt
+vijja.egg-info/top_level.txt
