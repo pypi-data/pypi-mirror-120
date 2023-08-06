@@ -1,0 +1,8 @@
+stopover/__init__.py,sha256=5nXkW5VsIjLfSGgzIpCpr38KmGUGCg2zJLtfMum290o,109
+stopover/errors.py,sha256=COWx-dV17kOR-wWLf3vEF_K7VrtmLEeXXN6h_XQfKNQ,254
+stopover/stopover.py,sha256=JW9sYx0bhG8emL0czW62rLfp43TrgXwIFnNu1I4gNkI,9174
+stopover/utils.py,sha256=58BHDy8EgnTmAFCzMwYW7mjCIbsSZ7Gvk6j06jiENq8,668
+stopover-1.219.0.dist-info/METADATA,sha256=ufjvSNgY0gtPrw60rSQ4_E2mZQkqBnFGy0VVOjkwZ3U,817
+stopover-1.219.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+stopover-1.219.0.dist-info/top_level.txt,sha256=oQuDaVhvIi31Q6MupTKqJI1580RCbMgmCzTXQPej4Uo,9
+stopover-1.219.0.dist-info/RECORD,,
