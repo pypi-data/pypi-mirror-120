@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: pyolive
+Version: 0.1.6
+Summary: A olive worker package
+Home-page: UNKNOWN
+Author: Kiro Lee
+Author-email: kiroly@ingris.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
