@@ -1,0 +1,3 @@
+[console_scripts]
+dxy = dxy.__main__:main
+

@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+dxy/__init__.py
+dxy/__main__.py
+dxy.egg-info/PKG-INFO
+dxy.egg-info/SOURCES.txt
+dxy.egg-info/dependency_links.txt
+dxy.egg-info/entry_points.txt
+dxy.egg-info/top_level.txt
