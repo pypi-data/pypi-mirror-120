@@ -1,0 +1,11 @@
+nene/__init__.py,sha256=xoRV6e307QAirGbk0PpNdPK5hJpRjbD8D-KIr-2WXR4,283
+nene/_version.py,sha256=Ok7XR8wZrOp38SaOYinpYmIxf_sT0PLyMemjrG3VZsI,142
+nene/cli.py,sha256=ooGt5mbMw9xqUMsR1NaCU-9dO9cB6INv68Am0dfRiKo,6766
+nene/core.py,sha256=I43lqjdGvyKFtXmusJQRoOl2NzYmAc32yF-hj2WTxGk,8397
+nene-0.1.1.dist-info/LICENSE.txt,sha256=7H5BGrw9MUhQnTdvB2x5U8Wiqj5s1ywND76882IbQPI,1071
+nene-0.1.1.dist-info/METADATA,sha256=mp_dU9yyauhBzjCWyMm6hwG905vYm2GyK3OC3yTe4WE,4025
+nene-0.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+nene-0.1.1.dist-info/entry_points.txt,sha256=heiit7fGFgkpfGsgkECD8nrBaiqk70HkZ8Pm-u3PHaA,40
+nene-0.1.1.dist-info/top_level.txt,sha256=uFXz06isJ1E47C4tRfmshs0xRkilSPqTulhx0fxM8cc,5
+nene-0.1.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+nene-0.1.1.dist-info/RECORD,,
