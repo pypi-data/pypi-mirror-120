@@ -1,0 +1,7 @@
+pytest_watcher/__init__.py,sha256=KZ-kpuz8ItMf2TjvyXVvznDU5Se-31rW8bGKH0UjaHw,67
+pytest_watcher/__main__.py,sha256=T1I_TktTfhAby6q-z5IWn5fdEHeJpOjF6QmQAqa3noY,81
+pytest_watcher/watcher.py,sha256=Lw9k66SRFYDhHiVLPH9xjyYIBTBQ1iYIF5k7CQbU-9Q,2443
+pytest_watcher-0.1.0.dist-info/entry_points.txt,sha256=nLTHMJNP2mREwrmnUsIrOPYtnCGhNPFXu6skkQx3DOA,53
+pytest_watcher-0.1.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+pytest_watcher-0.1.0.dist-info/METADATA,sha256=Lf_NnbDIp3Gllubxq-ns-2-V2dPuD-9OfZ64CsjuVV4,288
+pytest_watcher-0.1.0.dist-info/RECORD,,
