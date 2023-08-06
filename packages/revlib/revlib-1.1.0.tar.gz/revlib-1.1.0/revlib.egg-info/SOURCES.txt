@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+revlib/__init__.py
+revlib.egg-info/PKG-INFO
+revlib.egg-info/SOURCES.txt
+revlib.egg-info/dependency_links.txt
+revlib.egg-info/top_level.txt
