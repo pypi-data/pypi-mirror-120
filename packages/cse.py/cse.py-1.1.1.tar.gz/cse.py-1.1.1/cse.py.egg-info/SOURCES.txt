@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+cse/__init__.py
+cse/cse.py
+cse.py.egg-info/PKG-INFO
+cse.py.egg-info/SOURCES.txt
+cse.py.egg-info/dependency_links.txt
+cse.py.egg-info/requires.txt
+cse.py.egg-info/top_level.txt
