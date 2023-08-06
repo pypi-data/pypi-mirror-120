@@ -1,0 +1,110 @@
+Metadata-Version: 2.1
+Name: kinjector
+Version: 1.0.0
+Summary: Inject/eject JSON/YAML data to/from KiCad files.
+Home-page: https://github.com/devbisme/kinjector
+Author: Dave Vandenbout
+Author-email: devb@xess.com
+License: MIT license
+Project-URL: Documentation, https://devbisme.github.io/kinjector
+Project-URL: Source, https://github.com/devbisme/kinjector
+Project-URL: Changelog, https://github.com/devbisme/kinjector/blob/master/HISTORY.rst
+Project-URL: Tracker, https://github.com/devbisme/kinjector/issues
+Keywords: kinjector
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Manufacturing
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+=========
+KinJector
+=========
+
+
+.. image:: https://img.shields.io/pypi/v/kinjector.svg
+        :target: https://pypi.python.org/pypi/kinjector
+
+
+Inject/eject JSON/YAML data to/from KiCad Board files.
+
+
+* Free software: MIT license
+* Documentation: https://devbisme.github.io/kinjector
+
+
+Features
+--------
+
+* Parameters in one or more JSON or YAML files can be injected into a 
+  KiCad PCB file.
+* Parameters from a KiCad PCB file can be extracted and stored in a
+  JSON or YAML file.
+* The currently-supported set of parameters can control the design rules, net classes,
+  assignment of netclasses to particular nets, plotting options,
+  and (X,Y)/orientation/top-bottom-side position of part footprints.
+* Subsets of parameters can be used to restrict the scope of effects upon the PCB.
+* A script is provided to allow injection/ejection of JSON/YAML data to/from
+  a KiCad PCB file. In addition, the ``kinjector`` module can be used within
+  other Python scripts to manipulate KiCad PCB files.
+
+
+=======
+History
+=======
+
+
+1.0.0 (2021-09-16)
+------------------
+
+* Decided this tool was mature to the point it could be called 1.0.0.
+
+
+0.0.6 (2020-02-14)
+------------------
+
+* yaml.load() will accept a KiCad board file as legal YAML, so place additional checks
+  to detect yaml files and prevent over-writing .kicad_pcb files with YAML. 
+
+
+0.0.5 (2019-06-19)
+------------------
+
+* Rearranged hierarchy of board data to more closely reflect KiCad board setup dialog.
+
+
+0.0.4 (2019-06-10)
+------------------
+
+* Added ability to inject/eject plot settings (but not drill settings).
+
+
+0.0.3 (2019-06-07)
+------------------
+
+* Added ability to inject/eject layer enables and visibility.
+
+
+0.0.2 (2019-05-29)
+------------------
+
+* Added ability to inject/eject part (X,Y), orientation, and PCB top/bottom-side.
+* Added ability to inject/eject board design rules.
+* Now works with both JSON and YAML file formats.
+* Unit tests added.
+* Command-line tool added.
+* Documentation added.
+
+
+0.0.1 (2019-05-15)
+------------------
+
+* First release on PyPI.
+
+
