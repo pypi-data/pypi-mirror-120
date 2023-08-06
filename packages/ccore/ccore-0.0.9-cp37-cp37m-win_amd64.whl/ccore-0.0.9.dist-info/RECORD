@@ -1,0 +1,9 @@
+ccore.cp37-win_amd64.pyd,sha256=PDQ-1eqlxS9vxO38Jjvut9WTB03adGb2SKaRj9aV2FY,564736
+Release/src/ccore.cp37-win_amd64.exp,sha256=Mt-Qqk8EGRiHv3js6ykaPwEsYCxomXeFmseV-CDSjSU,719
+Release/src/ccore.cp37-win_amd64.lib,sha256=_zMGNCheOobZYo946xHvjDy_lQmncw3OxO9BFs6u2E8,1964
+Release/src/ccore.obj,sha256=uZrPMp29_XB69DgL8TVr0QluX6ddXVTEPowaqnQpDjM,6357796
+ccore-0.0.9.dist-info/LICENSE,sha256=1n2I3fDhZtm9HNBhRCF7TgQwufdBDuBNbogtwcisFNA,1086
+ccore-0.0.9.dist-info/METADATA,sha256=KkubZj9u4rLNMrcVlyAhR_cPL6gekUv2RfliL5WXziY,1072
+ccore-0.0.9.dist-info/WHEEL,sha256=OmDKD3JmZjhMu_YdpkiJDfFL1rf8n9nexhWCGhSBGVE,101
+ccore-0.0.9.dist-info/top_level.txt,sha256=A-sTbnCU1SJBNagn4AdDpm8TvUXNld63CTbbqWPgZb0,6
+ccore-0.0.9.dist-info/RECORD,,
