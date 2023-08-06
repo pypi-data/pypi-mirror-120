@@ -1,0 +1,3 @@
+[console_scripts]
+curseforge-cli = curseforge_cli.cli:run_cli
+
