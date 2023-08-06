@@ -1,0 +1,3 @@
+[console_scripts]
+ome-hrm=hrm_omero.cli:main
+
