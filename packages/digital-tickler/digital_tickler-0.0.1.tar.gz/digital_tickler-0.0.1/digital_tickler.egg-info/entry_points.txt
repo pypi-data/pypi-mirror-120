@@ -1,0 +1,3 @@
+[console_scripts]
+digital_tickler = digital_tickler.digital_tickler:main
+
