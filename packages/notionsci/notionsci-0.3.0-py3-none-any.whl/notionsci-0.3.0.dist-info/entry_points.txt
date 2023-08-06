@@ -1,0 +1,3 @@
+[console_scripts]
+notionsci = notionsci.cli:cli
+

@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: notionsci
+Version: 0.3.0
+Summary: Collection of scientific app/tool syncs for Notion
+Home-page: https://github.com/EgorDm/notionsci
+Author: Egor Dmitriev
+Author-email: egordmitriev2@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: backports.zoneinfo
+Requires-Dist: click
+Requires-Dist: dataclass-dict-convert (==1.5.8)
+Requires-Dist: inquirer
+Requires-Dist: mistletoe
+Requires-Dist: notion
+Requires-Dist: notion-client
+Requires-Dist: pandas
+Requires-Dist: platformdirs
+Requires-Dist: pyyaml
+Requires-Dist: pyzotero
+Requires-Dist: ruamel.yaml
+Requires-Dist: simple-parsing
+Requires-Dist: tabulate
+Requires-Dist: tqdm
+
+<!-- markdownlint-disable -->
+<div align="center">
+    <h1>NotionSci</h1>
+    <p>
+        <b>Collection of scientific app/tool syncs for <a href="https://developers.notion.com">Notion API</a></b>
+    </p>
+    <p>
+        <a href="https://pypi.org/project/notionsci"><img src="https://img.shields.io/pypi/v/notionsci.svg" alt="PyPI"></a>
+        <a href="Pipfile"><img src="https://img.shields.io/pypi/pyversions/notionsci" alt="Supported Python Versions"></a>
+        <a href="LICENSE"><img src="https://img.shields.io/github/license/EgorDm/notionsci" alt="License"></a>
+        <a href="https://github.com/ambv/black"><img src="https://img.shields.io/badge/code%20style-black-black" alt="Code style"></a>
+        <br/>
+        <a href="https://github.com/EgorDm/notionsci/actions/workflows/test.yml"><img src="https://github.com/EgorDm/notionsci/actions/workflows/test.yml/badge.svg" alt="Test"></a>
+    </p>
+    <br/>
+</div>
+<!-- markdownlint-enable -->
+
+This cli is meant to allow syncing of scienfic/reasearch tools to notion. (Such as Zotero, ...) 
+
+<!-- markdownlint-disable -->
+## Installation
+<!-- markdownlint-enable -->
+```shell
+pip install notionsci
+```
+
+## Features
+* [Zotero Synchronization](zotero.md)
+    * [References Sync (One Way)](zotero.md#references-sync-one-way)
+    * [Collections Sync (One Way)](zotero.md#collections-sync-one-way)
+* [Useful Notion Tools](notion.md)
+    * [Page Duplication](notion.md#duplicating-pages)
+    * [Workspace Trash Cleaning](notion.md#cleaning-workspace-trash)
+
+## Quick Start
+> Before getting started, configure [Notion intergration](notion.md#setting-up-connection)
+> and [Zotero integration](zotero.md#setting-up-connection).
+
+Duplicate the [Zotero Library Template](https://efficacious-alarm-7cc.notion.site/Zotero-Library-908bf67ef61048b79a1a10dfa5826302)
+and synchronize the Zotero Collections with:
+
+```bash
+notionsci sync zotero collections <Url of your Zotero Collections page>
+```
+
+and the References with:
+
+```bash
+notionsci sync zotero refs <Url of your Zotero References page>
+```
+
+## [Documentation](https://egordm.github.io/notionsci/)
+
+
+
