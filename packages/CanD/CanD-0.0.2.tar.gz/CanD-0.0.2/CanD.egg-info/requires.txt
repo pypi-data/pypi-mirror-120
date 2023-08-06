@@ -1,0 +1,6 @@
+numpy
+scipy
+matplotlib
+paranoid-scientist>=0.2.1
+PyMuPDF>=1.16.0
+Pillow
