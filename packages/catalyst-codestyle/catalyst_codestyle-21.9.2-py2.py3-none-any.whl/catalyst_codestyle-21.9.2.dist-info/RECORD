@@ -1,0 +1,11 @@
+catalyst_codestyle-21.9.2.data/scripts/catalyst-check-codestyle,sha256=zH3R3y0qC4fLit2nBqbx6XGLVitaRfeCF47llg153VY,2172
+catalyst_codestyle-21.9.2.data/scripts/catalyst-make-codestyle,sha256=yLybMyoyZHwHfb0qIm460VovrKWQW-gqqDn2Kyg3jkI,1823
+codestyle/__init__.py,sha256=qz883Zaw3nFKv2fDVMng2TsY9FxY7ujvkYw3_RDTsUM,15
+codestyle/_flake8.py,sha256=ESwJCJgg87BNcw7dEK1rrJR9u-3aePdTErigZj-z0gs,2903
+codestyle/_isort.py,sha256=wIx9fLP0lBYhO71OTj_2MuIPYadxSSfVJxBBFWBtGO8,1720
+catalyst_codestyle-21.9.2.dist-info/LICENSE,sha256=nhJ7fcHpQ2hMZVYRT6Xnr_CjVfvPWk0KJuyWYk772pI,11392
+catalyst_codestyle-21.9.2.dist-info/METADATA,sha256=hcgbwjevu1TH0VB9MO1T6BHnnGRzjOu9LOIKB0gYTFI,4846
+catalyst_codestyle-21.9.2.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+catalyst_codestyle-21.9.2.dist-info/entry_points.txt,sha256=p2nzWwxpK_A1b0rYhT5QDmXbI7JQHhkbwqwnpjxBKHI,119
+catalyst_codestyle-21.9.2.dist-info/top_level.txt,sha256=xfmNCR3NWuoK0HjaryKGl33RBSqFColOMUzYMVeXwFI,10
+catalyst_codestyle-21.9.2.dist-info/RECORD,,
