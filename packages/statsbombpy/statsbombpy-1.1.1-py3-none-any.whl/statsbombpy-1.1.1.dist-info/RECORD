@@ -1,0 +1,11 @@
+statsbombpy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+statsbombpy/api_client.py,sha256=dYO8_GoXMz-0itMOfr3D7iQcyUJPCygo3GeUZrau02U,1984
+statsbombpy/config.py,sha256=P4gpib3_cYUr8AgOBCy-GNtOnlhVNVNUg8dYpeAvCyw,843
+statsbombpy/entities.py,sha256=bT0Lad75oC-Pt_CH4lEArUT2L2K7f25ND_f5fvm8hRo,875
+statsbombpy/helpers.py,sha256=WCkiE9syLibNXwt94Guwc56EHhaM7SATw0VqeHBeryQ,1875
+statsbombpy/public.py,sha256=vyLjxKkQB-qeJxglHdyHYFVkocCeTA0ehR9TgXBesSc,1092
+statsbombpy/sb.py,sha256=-qrZPkGBart5I9iV3GfgGUoSiqcm0hhtfI4ls1-mOUk,5582
+statsbombpy-1.1.1.dist-info/METADATA,sha256=O4BJm4Da04iNYnQNFd6NR0t-uCM5ZPFnbvfymZm4zDw,31882
+statsbombpy-1.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+statsbombpy-1.1.1.dist-info/top_level.txt,sha256=nzPQVngX6S6nHtJaw8YGHVR7NtDznKNA69B72lz7QWI,12
+statsbombpy-1.1.1.dist-info/RECORD,,
