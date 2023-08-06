@@ -1,0 +1,17 @@
+opentelemetry/sdk/extension/aws/version.py,sha256=FeppKvmCRPku2QhHLpt9wP3U3Z1gVFCNZEnpqc734PA,607
+opentelemetry/sdk/extension/aws/resource/__init__.py,sha256=5w_PVbfQtg7CvBSTV9aUGLZYR9KPyUfQM-Do-6YiFN4,1196
+opentelemetry/sdk/extension/aws/resource/_lambda.py,sha256=lVGTOIOZjSL3-r5kzA_6CBjKs60BP8lT48KtUGKLk54,2413
+opentelemetry/sdk/extension/aws/resource/beanstalk.py,sha256=EMol-mhVvgpxhF86U41mWx6Lz9dJ23iPNxeT2cUACDM,2627
+opentelemetry/sdk/extension/aws/resource/ec2.py,sha256=FevIImkZKgvvmePjP4208VxwKPVDqpSKUoHtZZv7T70,3393
+opentelemetry/sdk/extension/aws/resource/ecs.py,sha256=nb_AsXxv4XU5qoywCXDqD3MSptNz2VNfoyFR-OobUXI,2804
+opentelemetry/sdk/extension/aws/resource/eks.py,sha256=Iu6Q9_HS-zXe5BtgF8z7LEDH068xPDZ4jqW0cwKxbro,4562
+opentelemetry/sdk/extension/aws/trace/__init__.py,sha256=VSxxZn9RtQoyufRiIt2Lq_lMnD3KKjHkCe8-LM6Efv8,719
+opentelemetry/sdk/extension/aws/trace/aws_xray_id_generator.py,sha256=EWdQ5pucpjORfHZD5N5-o8PYio-yoipGbumqPYgsoY4,2605
+opentelemetry/sdk/extension/aws/trace/propagation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+opentelemetry/sdk/extension/aws/trace/propagation/aws_xray_format.py,sha256=fQwrqnToMmg6x-Ni_4RWOOkxlJJCv_3Llm64MPfhp70,10255
+opentelemetry_sdk_extension_aws-1.0.1.dist-info/LICENSE,sha256=h8jwqxShIeVkc8vOo9ynxGYW16f4fVPxLhZKZs0H5U8,11350
+opentelemetry_sdk_extension_aws-1.0.1.dist-info/METADATA,sha256=QTEL1IlIezrKDQYV2K761tOdzlVv-MB8nl6sehA1htY,4275
+opentelemetry_sdk_extension_aws-1.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+opentelemetry_sdk_extension_aws-1.0.1.dist-info/entry_points.txt,sha256=g-OcFKG5-_3z1bsAfnnIAzh05QakKWcUeCrSeiHfXUE,231
+opentelemetry_sdk_extension_aws-1.0.1.dist-info/top_level.txt,sha256=5p97iTMneNm1LAKDalzEVpYhvPZsaqJZzdLuD_upSaQ,14
+opentelemetry_sdk_extension_aws-1.0.1.dist-info/RECORD,,
