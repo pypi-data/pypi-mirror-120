@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/pyBodyTrack/__init__.py
+src/pyBodyTrack/faceTrack.py
+src/pyBodyTrack/handTrack.py
+src/pyBodyTrack/holisticTrack.py
+src/pyBodyTrack/poseTrack.py
+src/pybodytrack_serotonin.egg-info/PKG-INFO
+src/pybodytrack_serotonin.egg-info/SOURCES.txt
+src/pybodytrack_serotonin.egg-info/dependency_links.txt
+src/pybodytrack_serotonin.egg-info/top_level.txt
