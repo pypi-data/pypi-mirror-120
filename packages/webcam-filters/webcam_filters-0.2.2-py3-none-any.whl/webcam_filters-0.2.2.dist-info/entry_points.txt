@@ -1,0 +1,3 @@
+[console_scripts]
+webcam-filters=webcam_filters.__main__:main
+
