@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "embed-python-manager"
+version = "0.2.5"
+description = "Download and manage embedded python versions."
+authors = ["Likianta <likianta@foxmail.com>"]
+license = "MIT"
+
+[[tool.poetry.source]]
+name = "tsinghua"
+url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple/"
+default = true
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+lk-logger = ">=4.0.2"
+lk-utils = ">=2.0.0b0"
+pyyaml = "*"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=1.0"]
+build-backend = "poetry.masonry.api"
