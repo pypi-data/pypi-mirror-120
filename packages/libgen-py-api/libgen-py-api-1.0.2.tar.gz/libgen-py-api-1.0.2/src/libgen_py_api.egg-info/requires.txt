@@ -1,0 +1,4 @@
+flask
+requires
+bs4
+requests
