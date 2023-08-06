@@ -1,0 +1,9 @@
+click~=8.0
+matplotlib~=3.4
+pandas~=1.3
+pyyaml
+
+[tests]
+coverage
+pytest
+pytest-cov
