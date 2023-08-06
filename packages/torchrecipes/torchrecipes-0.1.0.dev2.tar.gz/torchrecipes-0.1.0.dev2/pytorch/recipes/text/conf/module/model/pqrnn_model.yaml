@@ -1,0 +1,14 @@
+# @package _group_
+_target_: pytext.contrib.pytext_lib.models.PQRNN
+# embedding_dim must be the same as for the transformer
+embedding_dim: 300
+hidden_size: 64
+output_size: 20
+dropout: 0.2
+fc_sizes:
+  - 256
+  - 128
+zoneout: 0
+window: 1
+output_gate: True
+num_layers: 4

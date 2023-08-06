@@ -1,0 +1,19 @@
+# @package _group_
+_target_: classy_vision.fb.models.build_model
+model_config:
+  name: vision_transformer
+  image_size: 224
+  patch_size: 16
+  hidden_dim: 768
+  mlp_dim: 3072
+  num_heads: 12
+  num_layers: 12
+  attention_dropout_rate: 0
+  dropout_rate: 0.1
+  heads:
+    - name: vision_transformer_head
+      unique_id: default_head
+      num_classes: 1000
+      fork_block: trunk_output
+      in_plane: 768
+      hidden_dim: 3072

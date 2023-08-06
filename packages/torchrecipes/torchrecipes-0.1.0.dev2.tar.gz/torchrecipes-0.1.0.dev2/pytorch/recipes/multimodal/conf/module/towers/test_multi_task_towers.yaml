@@ -1,0 +1,13 @@
+# @package _group_
+- input_fusion_name: ["fusion", "fusion"]
+  task_name: "task_1"
+  output_fusion:
+    _target_: faim.module.non_temporal.EmbeddingCosineMatrixFusion
+  loss:
+    _target_: torch.nn.CrossEntropyLoss
+- input_fusion_name: ["fusion", "fusion"]
+  task_name: "task_2"
+  output_fusion:
+    _target_: faim.module.non_temporal.EmbeddingCosineMatrixFusion
+  loss:
+    _target_: torch.nn.CrossEntropyLoss

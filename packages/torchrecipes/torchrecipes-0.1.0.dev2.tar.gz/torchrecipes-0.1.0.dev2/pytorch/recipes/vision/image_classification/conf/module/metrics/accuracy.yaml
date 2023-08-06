@@ -1,0 +1,4 @@
+# @package _group_
+- name: accuracy
+  config:
+    _target_: torchmetrics.Accuracy

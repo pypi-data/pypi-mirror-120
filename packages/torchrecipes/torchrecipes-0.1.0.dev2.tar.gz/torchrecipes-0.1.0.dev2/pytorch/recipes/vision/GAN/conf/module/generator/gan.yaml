@@ -1,0 +1,8 @@
+# @package _group_
+_target_: pytorch.recipes.vision.GAN.models.gan.Generator
+latent_dim: 32
+img_shape:
+  - 1
+  - 28
+  - 28
+hidden_dim: 256

@@ -1,0 +1,6 @@
+# @package _group_
+_target_: stl.lightning.callbacks.model_checkpoint.ModelCheckpoint
+save_top_k: -1
+save_last: true
+has_user_data: false
+ttl_days: 30

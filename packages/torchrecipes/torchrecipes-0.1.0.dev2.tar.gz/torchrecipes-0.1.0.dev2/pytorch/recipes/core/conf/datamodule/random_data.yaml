@@ -1,0 +1,4 @@
+# @package _group_
+_target_: pytorch.recipes.core.test_utils.test_module.TestDataModule
+size: 32
+length: 64

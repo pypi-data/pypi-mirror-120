@@ -1,0 +1,5 @@
+# @package _group_
+_target_: pytorchvideo.models.hub.resnet.slow_r50
+input_channel: 3
+model_num_class: 400
+dropout_rate: 0.5

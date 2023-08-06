@@ -1,0 +1,31 @@
+# @package _group_
+_target_: pytext.contrib.pytext_lib.transforms.fb_pqrnn_transform.PQRNNTransform
+# embedding_dim must be the same as for the model
+embedding_dim: 300
+lower: true
+add_eos_tag: true
+add_bos_tag: true
+sp_model_path: "manifold://nlp_technologies/tree/xlm/models/xlm_r/sp_model"
+use_fb_sentencepiece: true
+max_seq_len: 512
+label_names:
+- '0'
+- '1'
+- '2'
+- '3'
+- '4'
+- '5'
+- '6'
+- '7'
+- '8'
+- '9'
+- '10'
+- '11'
+- '12'
+- '13'
+- '14'
+- '15'
+- '16'
+- '17'
+- '18'
+- '19'

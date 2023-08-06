@@ -1,0 +1,7 @@
+# @package _group_
+_target_: pytorch.recipes.vision.GAN.models.infogan.Generator
+latent_dim: 62
+n_classes: 10
+code_dim: 2
+img_size: 32
+channels: 1

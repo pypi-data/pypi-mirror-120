@@ -1,0 +1,5 @@
+# @package _group_
+namespace: "aml"
+table_name: "test_eval_inference_hive_callback"
+oncall: "pt_lightning"
+output_columns: []

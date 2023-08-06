@@ -1,0 +1,13 @@
+# @package _group_
+- channel_name: "modality_1"
+  encoder_args:
+    _target_: faim.encoder.non_temporal.dense.MLPEncoder
+    channel_name: "modality_1"
+    input_dim: 128
+    mlp_dims: [128]
+- channel_name: "modality_2"
+  encoder_args:
+    _target_: faim.encoder.non_temporal.dense.MLPEncoder
+    channel_name: "modality_2"
+    input_dim: 256
+    mlp_dims: [128]

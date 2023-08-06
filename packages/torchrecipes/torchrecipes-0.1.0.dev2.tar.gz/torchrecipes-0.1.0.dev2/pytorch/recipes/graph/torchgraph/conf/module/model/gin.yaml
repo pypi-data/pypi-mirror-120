@@ -1,0 +1,15 @@
+# @package _group_
+_target_: pytorch.recipes.graph.torchgraph.module.models.gin.MultiRelationalGIN
+relation_types:
+  - 0
+node_input_dim: 500
+node_projection_dim: 30
+edge_input_dim: 0
+hidden_dim: 256
+output_dim: 3
+num_gnn_layers: 2
+gnn_depth: 1
+mask_rate: 0.5
+use_degree: 0
+bias: true
+mode: mean

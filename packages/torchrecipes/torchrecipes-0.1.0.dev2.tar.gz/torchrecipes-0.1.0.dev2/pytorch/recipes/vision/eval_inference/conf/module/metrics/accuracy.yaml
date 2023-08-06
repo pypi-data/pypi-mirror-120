@@ -1,0 +1,5 @@
+# @package _group_
+- name: accuracy_top1
+  config:
+    _target_: torchmetrics.Accuracy
+    top_k: 1

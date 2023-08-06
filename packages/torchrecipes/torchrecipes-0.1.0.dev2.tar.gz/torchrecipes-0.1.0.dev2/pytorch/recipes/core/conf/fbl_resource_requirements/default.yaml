@@ -1,0 +1,9 @@
+# @package _group_
+_target_: stl.lightning.utilities.fbl_resource_requirements.get_fbl_resource_requirements
+cpus_per_node: 48
+gpus_per_node: 8
+memory_per_node: 220g
+region: null
+capabilities:
+  - GPU_V100_32G_HOST
+percent_cpu: null

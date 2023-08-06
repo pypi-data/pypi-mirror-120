@@ -1,0 +1,16 @@
+# @package _group_
+_target_: pytext.contrib.pytext_lib.models.RobertaModel
+encoder_path: manifold://nlp_technologies/tree/xlm/models/xlm_r/checkpoint_base_1500k.pt
+dense_dim: 0
+embedding_dim: 768
+out_dim: 2
+vocab_size: 250002
+num_attention_heads: 12
+num_encoder_layers: 12
+output_dropout: 0.4
+decoder_dropout: 0.2
+bias: true
+decoder_hidden_dims:
+  - 1024
+decoder_layer_norm: true
+decoder_activation: GELU

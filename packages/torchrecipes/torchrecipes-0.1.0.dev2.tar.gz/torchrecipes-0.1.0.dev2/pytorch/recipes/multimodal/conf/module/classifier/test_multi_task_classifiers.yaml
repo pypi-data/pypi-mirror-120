@@ -1,0 +1,13 @@
+# @package _group_
+- input_fusion_name: "fusion"
+  task_name: "task_1"
+  in_features: 64
+  out_features: 2
+  loss:
+    _target_: torch.nn.CrossEntropyLoss
+- input_fusion_name: "fusion"
+  task_name: "task_2"
+  in_features: 64
+  out_features: 4
+  loss:
+    _target_: torch.nn.CrossEntropyLoss

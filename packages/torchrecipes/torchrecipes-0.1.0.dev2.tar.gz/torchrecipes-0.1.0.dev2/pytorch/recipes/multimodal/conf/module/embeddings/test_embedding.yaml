@@ -1,0 +1,6 @@
+# @package _group_
+- channel_name: "modality_1"
+  embedding_args:
+    _target_: faim.module.common.Embedding
+    num_embeddings: 250002
+    embedding_dim: 128

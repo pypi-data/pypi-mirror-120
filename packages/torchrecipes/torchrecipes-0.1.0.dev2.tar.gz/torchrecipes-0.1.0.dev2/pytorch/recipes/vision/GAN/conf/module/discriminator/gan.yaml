@@ -1,0 +1,6 @@
+# @package _group_
+_target_: pytorch.recipes.vision.GAN.models.gan.Discriminator
+img_shape:
+  - 1
+  - 28
+  - 28
