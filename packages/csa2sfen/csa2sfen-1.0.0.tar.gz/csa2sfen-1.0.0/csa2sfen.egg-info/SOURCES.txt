@@ -1,0 +1,9 @@
+README.rst
+__init__.py
+csa2sfen.py
+setup.py
+csa2sfen.egg-info/PKG-INFO
+csa2sfen.egg-info/SOURCES.txt
+csa2sfen.egg-info/dependency_links.txt
+csa2sfen.egg-info/requires.txt
+csa2sfen.egg-info/top_level.txt
