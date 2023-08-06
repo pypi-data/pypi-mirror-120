@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: aniposelib
+Version: 0.4.2
+Summary: An easy-to-use library for calibrating cameras in python, made for Anipose
+Home-page: https://github.com/lambdaloop/aniposelib
+Author: Pierre Karashchuk
+Author-email: krchtchk@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Description-Content-Type: text/markdown
+Requires-Dist: numba
+Requires-Dist: numpy
+Requires-Dist: opencv-contrib-python (~=3.4)
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: toml
+Requires-Dist: tqdm
+Provides-Extra: full
+Requires-Dist: checkerboard ; extra == 'full'
+
+# Anipose lib
+
+ [![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
+
+An easy-to-use library for calibrating cameras and triangulation in Python.
+
+This is the backend library for the [Anipose](https://github.com/lambdaloop/anipose) package.
+
+The [documentation](https://anipose.readthedocs.io/en/latest/aniposelib-tutorial.html) is located in Anipose repository.
+
+
+
