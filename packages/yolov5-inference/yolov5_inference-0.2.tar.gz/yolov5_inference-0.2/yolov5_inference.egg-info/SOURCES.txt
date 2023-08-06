@@ -1,0 +1,7 @@
+README.md
+setup.py
+yolov5_inference.egg-info/PKG-INFO
+yolov5_inference.egg-info/SOURCES.txt
+yolov5_inference.egg-info/dependency_links.txt
+yolov5_inference.egg-info/requires.txt
+yolov5_inference.egg-info/top_level.txt
