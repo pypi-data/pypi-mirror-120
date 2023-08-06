@@ -1,0 +1,9 @@
+README.md
+setup.py
+kdparser/__init__.py
+kdparser/jsonParser.py
+kdparser/xmlParser.py
+kdparser.egg-info/PKG-INFO
+kdparser.egg-info/SOURCES.txt
+kdparser.egg-info/dependency_links.txt
+kdparser.egg-info/top_level.txt
