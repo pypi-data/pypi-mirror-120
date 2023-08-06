@@ -1,0 +1,15 @@
+Pillow
+fastai
+fastcore
+matplotlib
+nbverbose
+numpy
+opencv-python
+packaging
+pandas
+pip
+tk
+torch
+wheel
+
+[dev]
