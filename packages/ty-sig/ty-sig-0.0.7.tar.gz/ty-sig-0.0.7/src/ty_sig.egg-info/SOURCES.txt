@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/ty_sig.egg-info/PKG-INFO
+src/ty_sig.egg-info/SOURCES.txt
+src/ty_sig.egg-info/dependency_links.txt
+src/ty_sig.egg-info/top_level.txt
+src/tysig/__init__.py
+src/tysig/tyerrors.py
+src/tysig/tysig.py
