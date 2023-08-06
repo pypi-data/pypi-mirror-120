@@ -1,0 +1,3 @@
+[console_scripts]
+licensegh=licensegh.cli:main
+
