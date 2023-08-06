@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: OneNeuron_pypi-Vani Bhatia
+Version: 0.0.2
+Summary: It's an implementation of perceptron class and function for preparing the data,saving the model,create and save the plot
+Home-page: https://github.com/Vani Bhatia/OneNeuron_pypi
+Author: USER_NAME
+Author-email: vanibhatia13@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Vani Bhatia/OneNeuron_pypi/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# OneNeuron_pypi
+OneNeuron_pypi
+
+[python official docs](https://packaging.python.org/tutorials/packaging-projects/)
+
+

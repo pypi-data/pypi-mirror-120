@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/OneNeuron_pypi_Vani_Bhatia.egg-info/PKG-INFO
+src/OneNeuron_pypi_Vani_Bhatia.egg-info/SOURCES.txt
+src/OneNeuron_pypi_Vani_Bhatia.egg-info/dependency_links.txt
+src/OneNeuron_pypi_Vani_Bhatia.egg-info/requires.txt
+src/OneNeuron_pypi_Vani_Bhatia.egg-info/top_level.txt
+src/oneNeuron/__init__.py
+src/oneNeuron/all_utils.py
+src/oneNeuron/perceptron.py
