@@ -1,0 +1,3 @@
+[console_scripts]
+pyat2 = pyat2.cli:main
+
