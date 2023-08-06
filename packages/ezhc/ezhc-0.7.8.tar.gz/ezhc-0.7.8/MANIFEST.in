@@ -1,0 +1,14 @@
+# necessary to push to PyPI
+# cf. https://tom-christie.github.io/articles/pypi/
+
+# subfolders
+recursive-include ezhc/api *.json
+recursive-include ezhc/samples df_*.csv
+recursive-include ezhc/script *
+recursive-exclude ezhc/script/themes/.ipynb_checkpoints *
+
+global-exclude *.py[co]
+
+# Misc
+include LICENSE
+include requirements.txt
