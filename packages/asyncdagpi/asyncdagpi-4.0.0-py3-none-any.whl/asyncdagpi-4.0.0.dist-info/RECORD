@@ -1,0 +1,12 @@
+asyncdagpi/__init__.py,sha256=0hPdIITKsRkW6LcPYcZdofYNFapMLMDvTZqh6vnHfmc,894
+asyncdagpi/client.py,sha256=U00qR5KrylPNuNDNd6mWMOxa1zeLbx_uO9WxF-eLMoc,6254
+asyncdagpi/errors.py,sha256=_96Rcpdi5eZsAiEtK0ObR-KXSPNQPcXH13HlARw7WJo,2582
+asyncdagpi/http.py,sha256=XJS7EAIedgWCS1B2tCw8IxlMczwVbyUZtqJAUfSJYaA,6338
+asyncdagpi/image.py,sha256=8buaVSC-WJeUN0uGabjtupVN3r3NZkbNtHjNXcLHqRA,1907
+asyncdagpi/image_features.py,sha256=4Ny-jQCRhVFw3zcl1uzjyJB3YCuZySLDcgfI1o6GUwQ,15779
+asyncdagpi/objects.py,sha256=ukufav5tLdlY-NyD6CwmNv7iJu4qhIkDbFRoyaDS-P8,7582
+asyncdagpi/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+asyncdagpi-4.0.0.dist-info/LICENSE,sha256=ir6fMUGwI75yyr8mQqP5lpT7hrZyBe4SNP58Jh8MzFA,1103
+asyncdagpi-4.0.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+asyncdagpi-4.0.0.dist-info/METADATA,sha256=pvQZvjqNkwp3dgLK5cnrJDJTj9KQ7D7n9XUeYQpqOGw,3578
+asyncdagpi-4.0.0.dist-info/RECORD,,
