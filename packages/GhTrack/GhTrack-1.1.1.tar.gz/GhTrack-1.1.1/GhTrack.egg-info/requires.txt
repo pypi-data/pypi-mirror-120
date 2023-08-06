@@ -1,0 +1,4 @@
+requests~=2.26.0
+PyYAML~=5.4.1
+sendgrid==6.8.1
+colorama==0.4.4

@@ -1,0 +1,13 @@
+settings:
+  auth:
+    twilioapi: ""
+  github:
+    token: ""
+  email:
+    to: zinalacina@gmail.com
+    from: zlacina@monbili.com
+    subject: "Subject of the pull request"
+    sendGridApi: ""
+  repo:
+    user: kubernetes
+    name: kubernetes
