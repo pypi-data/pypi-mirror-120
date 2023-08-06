@@ -1,0 +1,6 @@
+Django>=3.2
+requests
+lxml
+progress
+gitpython
+twine
