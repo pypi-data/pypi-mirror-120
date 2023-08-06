@@ -1,0 +1,8 @@
+README.md
+setup.py
+ops_vis/__init__.py
+ops_vis/ops_vis.py
+opsvis.egg-info/PKG-INFO
+opsvis.egg-info/SOURCES.txt
+opsvis.egg-info/dependency_links.txt
+opsvis.egg-info/top_level.txt
