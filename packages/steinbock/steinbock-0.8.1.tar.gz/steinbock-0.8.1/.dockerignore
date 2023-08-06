@@ -1,0 +1,14 @@
+/.github/
+/.vscode/
+/data/
+/dist/
+/docs/
+/site/
+/steinbock/version.py
+/.dockerignore
+/.gitignore
+/docker-compose.yml
+/Dockerfile
+/LICENSE
+/mkdocs.yml
+/README.md
