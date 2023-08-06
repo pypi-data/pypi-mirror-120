@@ -1,0 +1,17 @@
+finufft/finufftc.cp36-win_amd64.pyd,sha256=SfNB474oDClNIV4Ym31EsUlUEVVBgVFDowm5RnIRSA8,12800
+finufft/_finufft.py,sha256=ru28uHrHp1sKttoBCOpHOfMND9rBiTitNRisOowkqVQ,4637
+finufft/_interfaces.py,sha256=r3PT3ZxvewW00dN0_Y5tonMsJia9kRwxoqfva66FJSw,31364
+finufft/__init__.py,sha256=YxEToZl_XZ-VD3Kb2PI4Tjjp9FR40yZa7COMfdMOKHQ,1691
+finufft-2.0.3.post1.dist-info/DELVEWHEEL,sha256=ly7PtpVlHwrPbAZhuCtIjnmkN8DhH6aEIS6HQjTierY,8
+finufft-2.0.3.post1.dist-info/METADATA,sha256=wsVIkFCjwHurswCw9EKUehFtXrD2M5s0vJ-DabCRMLE,1704
+finufft-2.0.3.post1.dist-info/RECORD,,
+finufft-2.0.3.post1.dist-info/top_level.txt,sha256=ad5NTT1JZwZ0C796YFJysnelEZTKz2fkNKRJ9_wVqUs,8
+finufft-2.0.3.post1.dist-info/WHEEL,sha256=hjxCepQBXS-sq_JehIDt_m-XLDxE9ssXOignC0wRm1s,101
+finufft.libs/.load-order-finufft-2.0.3.post1,sha256=ZeD4ddoliVORIXi3RgruoQkGOVkxacTnRLsHZlQQ60k,122
+finufft.libs/libfftw3-3.dll,sha256=wmU6NMdeZcJI5m-EEp53_u0VgzbnC-uY29lIFH_jDhg,2236129
+finufft.libs/libfftw3f-3.dll,sha256=CSi1Kq9qhAO2bg0hxWGF1bcJ2Vziz-SKtZMf5AtkMbQ,2262753
+finufft.libs/libfinufft.dll,sha256=ZiOcaaqLl8E5S5iVo6KenXom1PWis1fdmq8EoP09EYs,774151
+finufft.libs/libgcc_s_seh-1.dll,sha256=XGdQXEBfcX1Z_yxYOhH1QwDcm_FXdxO1270AWIyVcyU,76288
+finufft.libs/libgomp-1.dll,sha256=pdDiblalTV7Lr8ZCMkd0uuJlLvXevRiIlNvImTXwU-8,157184
+finufft.libs/libstdc++-6.dll,sha256=A61VgoBn-tTSSTLrt6W0XkDJYlUjh3Wm4CsUeOOzHYc,1424384
+finufft.libs/libwinpthread-1.dll,sha256=Vnynrn7N-4eZsoxBrD0aLMRvTuLnLFEfAnxEJQSY6JM,56978
