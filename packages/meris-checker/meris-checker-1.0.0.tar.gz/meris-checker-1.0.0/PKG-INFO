@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: meris-checker
+Version: 1.0.0
+Summary: A script which checks the qrator database to see if any of your IPs is listed as part of the Meris botnet.
+Home-page: https://hg.sr.ht/~donspaulding/meris-checker/browse
+License: MIT
+Author: Don Spaulding
+Author-email: don@bloono.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://hg.sr.ht/~donspaulding/meris-checker/browse
