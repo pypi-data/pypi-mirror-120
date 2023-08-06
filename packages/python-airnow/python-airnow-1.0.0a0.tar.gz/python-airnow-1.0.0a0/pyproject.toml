@@ -1,0 +1,73 @@
+[tool.poetry]
+name = "python-airnow"
+version = "1.0.0-alpha.0"
+description = "A simple wrapper around the AirNow API"
+authors = ["Ronnie Llamado <llamado.ronnie@gmail.com>"]
+license = "MIT"
+packages = [
+    { include = "airnow", from = "src" },
+]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+requests = "^2.26.0"
+python-dateutil = "^2.8.2"
+Shapely = "^1.7.1"
+geopandas = "^0.9.0"
+pyhumps = "^3.0.2"
+
+[tool.poetry.dev-dependencies]
+tox = "^3.24.3"
+pytest = "^6.2.5"
+pytest-cov = "^2.12.1"
+responses = "^0.13.4"
+Sphinx = "^4.1.2"
+sphinx-rtd-theme = "^0.5.2"
+pre-commit = "^2.15.0"
+interrogate = "^1.4.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+force_single_line = true
+atomic = true
+include_trailing_comma = true
+lines_after_imports = 2
+lines_between_types = 1
+use_parentheses = true
+src_paths = ["poetry", "tests"]
+skip_glob = ["*/setup.py"]
+filter_files = true
+known_first_party = "poetry"
+
+[tool.black]
+line-length = 88
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  | tests/.*/setup.py
+)/
+'''
+
+[tool.interrogate]
+ignore-init-method = true
+ignore-init-module = true
+ignore-nested-functions = true
+ignore-regex = ["^__post_init__$"]
+fail-under = 50
+exclude = ["docs", "build", "tests"]
+color = true
