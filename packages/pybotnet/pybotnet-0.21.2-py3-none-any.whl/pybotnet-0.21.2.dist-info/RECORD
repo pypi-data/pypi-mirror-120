@@ -1,0 +1,10 @@
+pybotnet/__init__.py,sha256=jAJH1cj0OaDIMkS3vdrDAXn_s3XAD5dW0xq2lAsW3Iw,108
+pybotnet/pybotnet.py,sha256=pOs1gMsEZYnQQ6rvM0AFlM6-PW4HRwLm0XEP2SRN2cQ,4377
+pybotnet/scripts.py,sha256=4uViCF7w4GFMFiAgBJ7imNh0OdPwXaxdhprBw4isBcA,15100
+pybotnet/settings.py,sha256=eNmfkmZeb50OT9xbK_MSKWw-kJ9SFOpkODaX6Nl0dE8,522
+pybotnet/util.py,sha256=XLmCchnkVBayY6rk_u835bBlALFSmnZN7USP4g6q4oU,14668
+pybotnet-0.21.2.dist-info/LICENSE,sha256=IMF9i4xIpgCADf0U-V1cuf9HBmqWQd3qtI3FSuyW4zE,26526
+pybotnet-0.21.2.dist-info/METADATA,sha256=b013wOIkKlzvplHxu1O-ZbQFwrbCt42xkFd81O_3Qvk,6121
+pybotnet-0.21.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pybotnet-0.21.2.dist-info/top_level.txt,sha256=YeH--etttEzS0b7AKcGcBhOPqNdw0ADjGschFGCX_EU,9
+pybotnet-0.21.2.dist-info/RECORD,,
