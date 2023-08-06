@@ -1,0 +1,9 @@
+concrete_common-0.0.10-py3.9-nspkg.pth,sha256=49aY5UL-7inz-l1YHHT6jvcH4VoQTR2abblwztFBvQI,549
+concrete/common/__init__.py,sha256=NN_jhyBwES3fdqNeYp6P6PGM7d-w1OmgLYoZzSOUzmk,35
+concrete/common/file.py,sha256=GAdBLsHZulS_saKZe42CY9rOg4UChNJ1XNu3DLI3Ij4,141
+concrete_common-0.0.10.dist-info/LICENSE,sha256=eXiWHp2qyZ9Tx5PiKmVshKzyBvDdsMFo-w10EknTVVU,2666
+concrete_common-0.0.10.dist-info/METADATA,sha256=q7imXIZ6Rh7Yo636BlCwLYj74leAaEWFYRHbFlFBx7k,1176
+concrete_common-0.0.10.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+concrete_common-0.0.10.dist-info/namespace_packages.txt,sha256=MRgnRegRkyoRGjOp1ctJ_YQ2KBbT65-5Kv37ILn0kYo,9
+concrete_common-0.0.10.dist-info/top_level.txt,sha256=MRgnRegRkyoRGjOp1ctJ_YQ2KBbT65-5Kv37ILn0kYo,9
+concrete_common-0.0.10.dist-info/RECORD,,
