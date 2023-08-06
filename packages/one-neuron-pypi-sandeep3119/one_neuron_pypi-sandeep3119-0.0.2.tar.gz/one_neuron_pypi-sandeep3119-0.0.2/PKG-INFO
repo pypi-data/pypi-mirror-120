@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: one_neuron_pypi-sandeep3119
+Version: 0.0.2
+Summary: Its a implementation of a Perceptron
+Home-page: https://github.com/sandeep3119/one_neuron_pypi
+Author: sandeep3119
+Author-email: rana.sandeep3119@example.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/sandeep3119/one_neuron_pypi/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# one_neuron_pypi
+
+
+### Example
+```python
+from oneNeuron.perceptron import Perceptron
+## get x and y and use below command
+model= Perceptron(eta=eta,epochs=epochs)
+model.fit(X,y)
+```
+
