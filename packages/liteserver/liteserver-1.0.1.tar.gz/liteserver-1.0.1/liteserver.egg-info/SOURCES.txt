@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+liteserver/__init__.py
+liteserver/liteAccess.py
+liteserver/liteCNS.py
+liteserver/liteserver.py
+liteserver.egg-info/PKG-INFO
+liteserver.egg-info/SOURCES.txt
+liteserver.egg-info/dependency_links.txt
+liteserver.egg-info/requires.txt
+liteserver.egg-info/top_level.txt
