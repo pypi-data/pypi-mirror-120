@@ -1,0 +1,10 @@
+README.md
+setup.py
+WOdEv.egg-info/PKG-INFO
+WOdEv.egg-info/SOURCES.txt
+WOdEv.egg-info/dependency_links.txt
+WOdEv.egg-info/entry_points.txt
+WOdEv.egg-info/requires.txt
+WOdEv.egg-info/top_level.txt
+wodev/__init__.py
+wodev/wodev.py
