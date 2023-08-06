@@ -1,0 +1,6 @@
+[console_scripts]
+clickpy=clickpy:run
+cov=tests:coverage
+test=tests:run
+tests=tests:run
+
