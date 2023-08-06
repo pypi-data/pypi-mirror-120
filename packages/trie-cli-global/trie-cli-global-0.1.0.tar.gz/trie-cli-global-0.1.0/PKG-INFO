@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: trie-cli-global
+Version: 0.1.0
+Summary: A CLI that allows a user to update or see a data structure that is hosted globally. 
+Home-page: UNKNOWN
+Author: c25kenneth
+License: UNKNOWN
+Description: # trie-cli-global
+        
+        A CLI that allows a user to update or see a data structure that is hosted globally.
+        
+        ## Installation
+        
+        Use [pip](https://pip.pypa.io/en/stable/) to install trie-global.
+        
+        ```bash
+        pip install trie-global
+        ```
+        
+        ## Usage
+        
+        # To List Trie:
+        ```
+        trie-global list
+        ```
+        
+        # To add word to Trie:
+        ```
+        trie-global add YOUR_WORD
+        ```
+        
+        # To remove word from Trie:
+        ```
+        trie-global remove YOUR_WORD
+        ```
+        
+        # To check if word is from Trie:
+        ```
+        trie-global check YOUR_WORD
+        ```
+        
+        # To get recommendations from a prefix:
+        
+        ```
+        trie-global recommend YOUR_PREFIX
+        ```
+        
+        ## License
+        [MIT](https://choosealicense.com/licenses/mit/)
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Requires-Python: >=3.9.6
+Description-Content-Type: text/markdown
