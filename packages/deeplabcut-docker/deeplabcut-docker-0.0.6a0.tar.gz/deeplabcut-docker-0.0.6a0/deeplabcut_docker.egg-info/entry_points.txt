@@ -1,0 +1,3 @@
+[console_scripts]
+deeplabcut-docker = deeplabcut_docker:main
+
