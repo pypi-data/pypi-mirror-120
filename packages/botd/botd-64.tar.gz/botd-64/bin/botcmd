@@ -1,0 +1,97 @@
+#!/usr/bin/env python3
+# This file is placed in the Public Domain.
+
+__version__ = 64
+
+import os
+import readline
+import sys
+import termios
+import threading
+import time
+
+from bot.irc import Cfg as IRC
+from bot.obj import Cfg
+from bot.obj import fmt
+from bot.run import Client, Runtime, Table, spl
+from bot.run import Cfg as RunCfg
+
+Cfg.wd = "/var/lib/botd/"
+
+
+IRC.channel = "#botd"
+IRC.nick = "botd"
+IRC.username = "botd"
+IRC.realname = "24/7 channel daemon"
+IRC.users = False
+
+
+class CLI(Client):
+
+    def handle(self, clt, e):
+        k.put(e)
+        e.wait()
+
+    def raw(self, txt):
+        print(txt)
+        sys.stdout.flush()
+
+
+class Kernel(Runtime):
+
+    @staticmethod
+    def error(txt):
+        Kernel.log(txt)
+
+    @staticmethod
+    def log(txt):
+        if not txt:
+            return
+        print(txt)
+        sys.stdout.flush()
+
+
+k = Kernel()
+
+
+import bot.all
+
+
+def cmd(event):
+    event.reply(",".join(Table.modnames))
+
+
+def ver(event):
+    event.reply("BOTD %s" % __version__)
+
+
+def wrap(func):
+    try:
+        func()
+    except KeyboardInterrupt:
+        print("")
+    except PermissionError as ex:
+        print(ex)
+
+
+def main(): 
+    id = os.environ.get("INVOCATION_ID", None)
+    if not id:
+        k.error("botcmd runs under systemctl, use botctl.")
+        return
+    k.parse_cli()
+    if not k.prs.txt:
+        return
+    if k.cfg.verbose:
+        k.log("BOTCMD starting at %s" % (time.ctime(time.time())))
+        k.log(fmt(k.cfg, ["bork", "console", "daemon", "debug", "systemd", "verbose"]))
+        k.log(",".join(sorted(list(Table.modnames))))
+        k.log("workdir is %s" % Cfg.wd)
+    k.add(cmd)
+    k.add(ver)
+    k.privileges()
+    c = CLI()
+    k.cmd(c, k.prs.otxt)
+
+
+wrap(main)
