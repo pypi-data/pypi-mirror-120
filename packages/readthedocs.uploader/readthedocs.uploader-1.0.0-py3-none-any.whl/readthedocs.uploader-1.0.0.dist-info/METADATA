@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: readthedocs.uploader
+Version: 1.0.0
+Summary: Allows you to trigger documentation from readthedocs
+Home-page: UNKNOWN
+License: MIT License
+Keywords: python,documentation
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+
+Introduction
+============
+
+This package allows you to automatically trigger new builds on readthedocs from command line
+
+Installation
+============
+
+.. code-block::
+
+    pip install readthedocs-uploader
+
+
+
