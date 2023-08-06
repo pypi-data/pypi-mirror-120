@@ -1,0 +1,15 @@
+starlette
+cramjam<2.5,>=2.4.0
+
+[dev]
+pytest
+pytest-cov
+requests
+brotlipy
+pre-commit
+
+[test]
+pytest
+pytest-cov
+requests
+brotlipy

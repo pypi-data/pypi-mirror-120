@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+starlette_cramjam/__init__.py
+starlette_cramjam/middleware.py
+starlette_cramjam/version.py
+starlette_cramjam.egg-info/PKG-INFO
+starlette_cramjam.egg-info/SOURCES.txt
+starlette_cramjam.egg-info/dependency_links.txt
+starlette_cramjam.egg-info/not-zip-safe
+starlette_cramjam.egg-info/requires.txt
+starlette_cramjam.egg-info/top_level.txt
