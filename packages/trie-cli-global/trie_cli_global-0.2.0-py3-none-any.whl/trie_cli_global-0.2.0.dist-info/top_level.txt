@@ -1,0 +1,2 @@
+appFolder
+trie_global
