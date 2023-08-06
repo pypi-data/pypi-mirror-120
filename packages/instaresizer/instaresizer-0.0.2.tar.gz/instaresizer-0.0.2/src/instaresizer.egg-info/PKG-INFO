@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: instaresizer
+Version: 0.0.2
+Summary: Returns a PIL Image object of instagram compatible aspect ratio when supplied with an image URL or an image object.
+Home-page: https://github.com/roshanpty/instaresizer
+Author: Roshan Thomas
+Author-email: roshan@secvibe.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/roshanpty/instaresizer
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+### Instasize-1.0
+
+#### Description
+
+Takes in an image URL as an argument and returns PIL image object which resizes the original image to optimally fit instagram supported aspect ratio. 
+
+#### Usage
+
+##### Installation
+
+```
+pip install instaresizer
+```
+
+##### Example
+
+1. Importing the library
+```
+#!/usr/bin/env python3
+
+from instaresizer import instasize
+
+```
+2. Usage - resizing remote image file supplied via a URL. 
+```
+image_url = 'https://s3.amazonaws.com/images.seroundtable.com/30th-anniversary-of-the-world-wide-web-google-1552390014.gif'
+
+img = instasize.resize_remote(image_url)
+
+img.save('resized_file.png', 'PNG')
+```
+
+
