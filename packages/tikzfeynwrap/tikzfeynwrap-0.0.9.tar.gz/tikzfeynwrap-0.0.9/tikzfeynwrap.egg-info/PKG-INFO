@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: tikzfeynwrap
+Version: 0.0.9
+Summary: Simple Wrapper for latex docker container
+Home-page: https://github.com/npapapietro/tikzfeynwrap
+Author: Nathan Papapietro <npapapietro95@gmail.com>
+Author-email: npapapietro95@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+# TikzFeynWrapper
+
+Simple wrapper for LaTex docker image that builds feynman diagrams into svg.
+
+## Usage 
+
+See `test.ipynb` for basic usage.
+
+## Installation
+
+Run `pip install tikzfeynwrap`
+
