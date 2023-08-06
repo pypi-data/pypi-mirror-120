@@ -1,0 +1,10 @@
+numpy
+pysam
+matplotlib
+scipy
+
+[dev]
+bump2version
+pandas
+pytest
+pytest-cov
