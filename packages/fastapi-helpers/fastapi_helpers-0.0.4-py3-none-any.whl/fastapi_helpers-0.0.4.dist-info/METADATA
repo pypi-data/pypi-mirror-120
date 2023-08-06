@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: fastapi-helpers
+Version: 0.0.4
+Summary: An utils package for fastapi
+Home-page: https://github.com/finalsa/fastapi-utils
+Author: Luis Jimenez
+Author-email: luis@finalsa.com
+License: MIT
+Keywords: fastapi,sqlalchemy,ormar,pydantic
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: argon2-cffi (>=21.0.0)
+Requires-Dist: ormar (>=0.10.0)
+Requires-Dist: pydantic (>=1.8.2)
+Requires-Dist: fastapi (<=0.68.1,>=0.67.0)
+Requires-Dist: typing-extensions (<3.10.0.3,>=3.7)
+Requires-Dist: watchtower (>=1.0.6)
+Requires-Dist: boto3 (>=1.18.0)
+Provides-Extra: crypto
+Requires-Dist: cryptography ; extra == 'crypto'
+Provides-Extra: mysql
+Requires-Dist: aiomysql ; extra == 'mysql'
+Requires-Dist: pymysql ; extra == 'mysql'
+Provides-Extra: orjson
+Requires-Dist: orjson ; extra == 'orjson'
+Provides-Extra: postgresql
+Requires-Dist: asyncpg ; extra == 'postgresql'
+Requires-Dist: psycopg2-binary ; extra == 'postgresql'
+Provides-Extra: sqlite
+Requires-Dist: aiosqlite ; extra == 'sqlite'
+
+# fastapi-utils
+ 
+
+
