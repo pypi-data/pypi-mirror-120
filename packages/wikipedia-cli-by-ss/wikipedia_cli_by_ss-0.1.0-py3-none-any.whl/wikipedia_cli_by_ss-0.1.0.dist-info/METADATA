@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: wikipedia-cli-by-ss
+Version: 0.1.0
+Summary: A command-line application to retrieve random articles from Wikipedia.
+Home-page: https://github.com/SoheilSalmani/wikipedia-cli
+License: MIT
+Keywords: wikipedia,cli
+Author: Soheil Salmani
+Author-email: salmani.soheil@gmail.com
+Requires-Python: >=3.8,<3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=8.0.1,<9.0.0)
+Requires-Dist: desert (>=2020.11.18,<2021.0.0)
+Requires-Dist: marshmallow (>=3.13.0,<4.0.0)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Requires-Dist: types-requests (>=2.25.6,<3.0.0)
+Project-URL: Repository, https://github.com/SoheilSalmani/wikipedia-cli
+Description-Content-Type: text/markdown
+
+[![Tests](https://github.com/SoheilSalmani/wikipedia-cli/actions/workflows/tests.yml/badge.svg)](https://github.com/SoheilSalmani/wikipedia-cli/actions/workflows/tests.yml)
+[![codecov](https://codecov.io/gh/SoheilSalmani/wikipedia-cli/branch/master/graph/badge.svg?token=KG1NCKGY95)](https://codecov.io/gh/SoheilSalmani/wikipedia-cli)
+
+# Wikipedia CLI
+
+A command-line application to retrieve random articles from Wikipedia.
+

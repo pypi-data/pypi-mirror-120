@@ -1,0 +1,8 @@
+wikipedia_cli/__init__.py,sha256=KjC3DNP4RcwVWRr0murO2EC8IVWlEQyRkUfxfDnImMw,56
+wikipedia_cli/console.py,sha256=mgzjknBoc9Ltuqmamx6npIhp7PX1g28MsF5cEr71LyA,922
+wikipedia_cli/wikipedia.py,sha256=sHyeI_bZNc2QDIQAaFcEQQsRZv8_3qY4jLOj2rOASQA,1124
+wikipedia_cli_by_ss-0.1.0.dist-info/entry_points.txt,sha256=WEdRIBHS-bOGLBRdF2E6EiL92zCi8UPjLlju3lhcIQ0,60
+wikipedia_cli_by_ss-0.1.0.dist-info/LICENSE,sha256=UkEte8fOQVfqYou6rLiCngqcs8WPV_mRdhJryM8r_IU,1086
+wikipedia_cli_by_ss-0.1.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+wikipedia_cli_by_ss-0.1.0.dist-info/METADATA,sha256=AbtW8vjMUPdxoJb0VrhSt5Kpvjt7tLWYYBywEjmridc,1286
+wikipedia_cli_by_ss-0.1.0.dist-info/RECORD,,
