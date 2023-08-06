@@ -1,0 +1,12 @@
+imecilabt/gpulab/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+imecilabt/gpulab/cli/__main__.py,sha256=-kW7YejZmDPqYFsADZZzh5eCFE0OiMlzBbJP_Sbunp0,92056
+imecilabt/gpulab/cli/apiclient.py,sha256=e4r575ib_2web0azZKMmldEAJVmyl7jN0n6E_vvTMHE,10971
+imecilabt/gpulab/cli/cert_processor.py,sha256=AVAMfDkITJ-pDgzy5XiCNZWKqXuMYudwfwqzEqSiBKQ,1303
+imecilabt/gpulab/cli/ssh_config_manager.py,sha256=eH0k5EeKLPO8goXqSwkdKazaEnqc4l41v6UbPKID-RQ,6109
+imecilabt/gpulab/cli/util.py,sha256=XURt-owTmaiqBRUMXkdSMo1E7DVVQq9kxVUnT9iPhP4,827
+imecilabt_gpulab_cli-3.5.0.dist-info/LICENSE,sha256=0b_Hp0mVCSS9XSfe5hCsiTP5a63BSndL55bphrnc06o,32423
+imecilabt_gpulab_cli-3.5.0.dist-info/METADATA,sha256=TXfLt5pAaVK48WvrMh-Mo4oJ4cM9D2YWlkJ8eOiwvHU,2205
+imecilabt_gpulab_cli-3.5.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+imecilabt_gpulab_cli-3.5.0.dist-info/entry_points.txt,sha256=NGLBldPYPNPdHdJUoJ1IQCNR62WMWuln7-IQ-WhuZIk,67
+imecilabt_gpulab_cli-3.5.0.dist-info/top_level.txt,sha256=-_jKxqt4ekbEmdPVfRMUSeUSLPzfYim0ghAzY2xlNO4,10
+imecilabt_gpulab_cli-3.5.0.dist-info/RECORD,,
