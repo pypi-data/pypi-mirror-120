@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: cairo-nile
+Version: 0.0.1
+Summary: StarkNet/Cairo development toolbelt
+Home-page: https://github.com/martriay/nile
+Author: Martin Triay
+Author-email: martriay@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: click (==8.0.1)
+
+# ⛵ Nile
+
+_Navigate your [StarkNet](https://www.cairo-lang.org/docs/hello_starknet/index.html) projects written in [Cairo](cairo-lang.org)._
+
+## License
+Nile is released under the MIT License.
+
+
