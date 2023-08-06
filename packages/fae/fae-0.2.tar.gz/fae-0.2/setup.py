@@ -1,0 +1,30 @@
+from setuptools import setup
+
+setup(name='fae',
+      version='0.2',
+      description='Facial animation evaluation suite',
+      author='Dino Vougioukas',
+      author_email='dinovgk@gmail.com',
+      url='https://github.com/DinoMan/facial-animation-evaluation.git',
+      download_url='https://github.com/DinoMan/facial-animation-evaluation/archive/refs/tags/v0.2.tar.gz',
+      license='MIT',
+      packages=['fae'],
+      package_dir={'fae': 'fae'},
+      package_data={'fae': ['resources/*']},
+      install_requires=[
+          'torch',
+          'torchvision',
+          'numpy',
+          'opencv-python',
+          'jiwer',
+          'gdown',
+          'dtk',
+          'sewar',
+          'cpbd',
+          'face_recognition',
+          'bidict',
+          'omegaconf',
+          'progressbar2'
+      ],
+      entry_points={'console_scripts': ['get_fae_metrics = fae.evaluate:evaluate']},
+      zip_safe=False)

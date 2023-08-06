@@ -1,0 +1,3 @@
+[console_scripts]
+get_fae_metrics = fae.evaluate:evaluate
+
