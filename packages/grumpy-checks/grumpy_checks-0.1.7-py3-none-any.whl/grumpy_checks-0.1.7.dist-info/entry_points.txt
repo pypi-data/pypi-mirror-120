@@ -1,0 +1,6 @@
+[console_scripts]
+codecov=scripts:coverage_report
+document=scripts:documentation
+grumpy=grumpy_checks.application:main
+test=scripts:test
+
