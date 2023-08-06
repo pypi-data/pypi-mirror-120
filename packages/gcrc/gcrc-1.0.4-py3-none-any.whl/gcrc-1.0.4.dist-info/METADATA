@@ -1,0 +1,102 @@
+Metadata-Version: 2.1
+Name: gcrc
+Version: 1.0.4
+Summary: Google Container Registry Cleanup utility
+Home-page: https://github.com/lietu/gcrc
+License: BSD-3-Clause
+Author: Janne Enberg
+Author-email: janne.enberg@lietu.net
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: colorama (>=0.4.4,<0.5.0)
+Requires-Dist: pydantic[dotenv] (>=1.8.2,<2.0.0)
+Requires-Dist: python-dateutil (>=2.8.2,<3.0.0)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Requires-Dist: typer[colorama] (>=0.3.2,<0.4.0)
+Project-URL: Repository, https://github.com/lietu/gcrc
+Description-Content-Type: text/markdown
+
+# Google Container Registry Cleanup utility
+
+If you use a CI system to push images to Google Container Registry you will eventually run into a situation where you're paying more than you would like for the storage there.
+
+This tool helps you keep those costs reasonable, while allowing you to benefit from caches, keeping backups for rollbacks, etc.
+
+## Prerequisites and setup
+
+- [Python 3.9+](https://www.python.org/downloads/)
+- [Gcloud SDK](https://cloud.google.com/sdk/docs/install) with an authentication token that has admin access to the registry properly configured
+
+```bash
+pip install -U gcrc
+```
+
+## Usage
+
+Replace `gcr.io/project-name` with the specific GCR address to your repository, e.g. if your Google Cloud project is called `foo-bar` and it's in the EU zone this would likely be `eu.gcr.io/foo-bar`.
+
+### List all images
+
+Figures out the different images we can access in the Container Registry.
+
+```bash
+gcrc list-images gcr.io/project-name
+```
+
+### Show information on images
+
+Analyzes current images and any need for cleanup based on current configuration without actually deleting anything. Use to check that configuration seems correct.
+
+```bash
+gcrc image-info gcr.io/project-name
+```
+
+### Clean up images
+
+Look up images with unneeded tags and delete them from Google Container Registry
+
+```bash
+gcrc cleanup gcr.io/project-name
+```
+
+## Configuration
+
+The following environment variables can be used to adjust the configuration:
+
+```
+KEEP_TAGS_MIN=10
+```
+
+Keeps at least this many tags for every image.
+
+```
+KEEP_TAGS_DAYS=14
+```
+
+Keep everything from within this many days.
+
+```
+KEEP_EXTRA='["^latest$", "^(master|main)-"]'
+```
+
+List of regex matches for important images that we want to keep an extra `KEEP_TAGS_MIN` items of. Formatted as a JSON list of strings.
+
+The default is to keep `latest` and any tags starting with `master-` or `main-` for people who tag their images like `<branch>-<timestamp or commit hash or uuid>`.
+
+You can also put these in a `.env` -file, but environment variables take priority over `.env`.
+
+```
+# .env
+KEEP_TAGS_MIN=10
+KEEP_TAGS_DAYS=14
+KEEP_EXTRA='["^important-", "^latest$"]'
+```
+
+# Financial support
+
+This project has been made possible thanks to [Cocreators](https://cocreators.ee) and [Lietu](https://lietu.net). You can help us continue our open source work by supporting us on [Buy me a coffee](https://www.buymeacoffee.com/cocreators).
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/cocreators)
+

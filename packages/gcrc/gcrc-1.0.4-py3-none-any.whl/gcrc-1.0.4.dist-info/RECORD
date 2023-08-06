@@ -1,0 +1,10 @@
+gcrc/__main__.py,sha256=nXuHE991xWtncYwpfkbH1xGOAET_BAQGh_1DV_HG2Wo,52
+gcrc/gcloud.py,sha256=kUEV7DnVsdqUMKvRRaGwDzlp5lxzPmPlUB35p2pK0SI,1990
+gcrc/main.py,sha256=fpNxngOr6N_EqKc6S69eceZGhCtj3EIOuDFv5CVPAFU,4882
+gcrc/settings.py,sha256=76X3AEm8kaX032aBXmkmicTI7QUOQ6IwQEGar2aw7Dw,472
+gcrc/utils.py,sha256=mmNw23-ebMB-gmz5wtoo-dJ-_I5p4GbPwwMYGlmre1s,592
+gcrc-1.0.4.dist-info/entry_points.txt,sha256=ON30AaFwd3zhFNSiEWC_ECPfQGnWs5gRW1FiL61PL5U,38
+gcrc-1.0.4.dist-info/LICENSE.md,sha256=fEP2frnZglRWqISvXrkVKsuJvoaUs3mYEjx4wAzdN3s,1506
+gcrc-1.0.4.dist-info/WHEEL,sha256=DRf8A_Psd1SF2kVqTQOOFU1Xzl3-A2qljAxBMTOusUs,83
+gcrc-1.0.4.dist-info/METADATA,sha256=-SKQXrE5vaeR0TdmvqPyBH4GpDpGZgcKgVfQHkrZIOo,3264
+gcrc-1.0.4.dist-info/RECORD,,
