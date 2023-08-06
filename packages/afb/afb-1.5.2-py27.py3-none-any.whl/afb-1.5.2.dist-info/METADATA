@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: afb
+Version: 1.5.2
+Summary: Abstract factory broker for object graph construction.
+Home-page: https://github.com/dave-msk/afb
+Author: (David) Siu-Kei Muk
+Author-email: david.muk@protonmail.com
+License: Apache 2.0
+Download-URL: https://github.com/dave-msk/broker/archive/v1.5.2.tar.gz
+Keywords: afb,factory,abstract factory,config
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Object Brokering
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, <4
+Description-Content-Type: text/markdown
+Requires-Dist: pyyaml (<6.0.0,>=5.3.1)
+Requires-Dist: absl-py (<1.0.0,>=0.13.0)
+
+# Abstract Factory Broker
+
+Abstract Factory Broker (`afb`) is a library that facilitates abstract factory management. It introduces a mechanism for transforming configuration files into Python objects through a network of abstract factories, allowing flexible specification of execution behavior.
+
+## Setup
+
+This library supports Python 2.7, 3.5+.
+
+```bash
+$ pip install afb
+```
+
+## Documentations
+
+- [Mechanism](./docs/MECHANISM.md): Description on `afb`'s mechanism
+- [Usage Guide](./docs/USAGE.md): Description on usage details
+
+
