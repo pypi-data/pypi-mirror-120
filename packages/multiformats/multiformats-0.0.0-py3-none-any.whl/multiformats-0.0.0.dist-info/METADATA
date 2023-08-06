@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: multiformats
+Version: 0.0.0
+Summary: Python implementation of multiformats protocols.
+Home-page: https://github.com/hashberg-io/multiformats
+Author: hashberg
+Author-email: sg495@users.noreply.github.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: Typing :: Typed
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# `multiformats`: a Python implementation of [multiformat protocols](https://multiformats.io/).
+
+
