@@ -1,0 +1,15 @@
+libgen_py_api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+libgen_py_api/connection.py,sha256=ngxlkxNQeIPq1RujHKBmtCL9R4eMs9lPR28y2VXyar8,1230
+libgen_py_api/query.py,sha256=mvvAfjoQznXTd9azeLzW-7flfZt-F35Z_thS1Zow2I0,3609
+libgen_py_api/results.py,sha256=tqrRpy_j6YyjEtgWi1F1iMmtaOrBnh4-FJjrZZJNB2s,2724
+libgen_py_api/parsing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+libgen_py_api/parsing/parsing.py,sha256=H-bNV3RGMQFFQF-MdIXEo2dgLIFIqA8Tt9ip7EmFm38,9213
+libgen_py_api/parsing/parsing_adapter.py,sha256=MXb_WcO2km-QoRvAbLOrEsSUbVFZqeGDLzrxUaDZeJg,3740
+libgen_py_api/parsing/parsing_mirror.py,sha256=jU8S8eS7CPurcJtQGo9XZz_Qi2DYIEEQeh3C2YNSp94,4521
+libgen_py_api/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+libgen_py_api/utils/common_types.py,sha256=0KnrfMdbS9-3ltDLV34VG-ekWUpWBnI3TEENd_GaYzs,691
+libgen_py_api-1.0.3.dist-info/LICENSE.txt,sha256=I8qzyrAFmo-OV4w51wM9sqMpunJOZGmyJMrNnHy0s1k,1053
+libgen_py_api-1.0.3.dist-info/METADATA,sha256=WPRb-abI2sSJycwqlBHHdiXGimTdrdjdOOf3Y29h5nk,293
+libgen_py_api-1.0.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+libgen_py_api-1.0.3.dist-info/top_level.txt,sha256=CrJgARXbxbfCthsLIQayjQM6JEFlI3AbWluRuoZ9Xok,14
+libgen_py_api-1.0.3.dist-info/RECORD,,
