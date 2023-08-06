@@ -1,0 +1,13 @@
+unpackai/__init__.py,sha256=FtkEN1yObjwwuYBdwakSlFMIzZPbcN6Da3L-CKGySls,25
+unpackai/_nbdev.py,sha256=md3hoxPRc3xiJW2KlvnYSamwvpeT5FpW6dHYKnSLD78,818
+unpackai/cosine.py,sha256=jw-z-CYTWkPkJ7djb7tSuHWEuCpKCGTcn-sgVxDMRQw,1721
+unpackai/nlp.py,sha256=rZoUlbnNXXmJ4MNqc_qCSeZemkqVwKyqryyE5QgsZNo,11726
+unpackai/utils.py,sha256=2e9FRCH_vH0XVQcgGJXg8fCoJc1tpDo4N6lQnjWOpkI,1749
+unpackai/turk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unpackai/turk/image.py,sha256=9SiWxDFOu9f6tjk7t09PGRyj0rGHOT01UYbp9BmBuRg,12992
+unpackai-0.1.7.1.dist-info/LICENSE,sha256=43tWHMU6IUTVpfo-89YfRP2C_Aj46qRwrjzTQmCzzF4,1106
+unpackai-0.1.7.1.dist-info/METADATA,sha256=w0BEmWa1HZDMXG3Yh_ZNpqauA4ljA0kcdRREuAU1GIk,2412
+unpackai-0.1.7.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+unpackai-0.1.7.1.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+unpackai-0.1.7.1.dist-info/top_level.txt,sha256=pVDXybZ5T6O2ojEjMgvOZVIZ-_epea3YJp3EI8fuvGc,9
+unpackai-0.1.7.1.dist-info/RECORD,,
