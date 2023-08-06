@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: MLAutoRegressor-Rohanbagulwar
+Version: 0.0.2
+Summary: its an implimentation of automatic regression
+Home-page: https://github.com/Rohanbagulwar/MLAutoRegressor
+Author: Rohanbagulwar
+Author-email: rohanbagulwarrb@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Rohanbagulwar/MLAutoRegressor/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: joblib
+Requires-Dist: scikit-learn
+
+## Auto Regression 
+#### Created by Ketan Gangal and Rohan Bagulwar.
+
+This Library is created for making life of a data scientist easy. 
+Currently, it is created only for regression but in future updates classification will be added.
+
+```python
+print('hello')
+```
+
