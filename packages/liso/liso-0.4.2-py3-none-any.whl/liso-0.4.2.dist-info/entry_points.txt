@@ -1,0 +1,3 @@
+[console_scripts]
+liso-doocs-monitor = liso.experiment.doocs_app:monitor
+
