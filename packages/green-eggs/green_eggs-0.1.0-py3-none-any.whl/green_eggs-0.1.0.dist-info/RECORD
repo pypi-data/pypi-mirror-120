@@ -1,0 +1,17 @@
+green_eggs/__init__.py,sha256=yDYEUc75LoDe1AQb3xz-Q83SsZUjbQOkH6wn6rZvnTs,72
+green_eggs/api.py,sha256=u0r9I8xEZz0KtwQbIjNfj2Hmbgo1EdCsTdt5gbFwP-E,778238
+green_eggs/bot.py,sha256=wv4kZ74m5eMMaR0DI42CZza19rDeNA8nzhaAYL5Uz4M,8777
+green_eggs/channel.py,sha256=yHG0hYF1tfTy5HNdYhulYa8iBpx4_LTT0capyPXk3lY,5521
+green_eggs/client.py,sha256=nZBLMK4g_nbSPKf5RHs_GLpkZ82Ld1En2sRHbNVo_c4,16468
+green_eggs/commands/__init__.py,sha256=gKVFrIjaEApfNxuW5XoLosjJEZXEGBI6ZVh_NVdOqgw,468
+green_eggs/commands/registry.py,sha256=iIhf_uPRvdHlT1G21aYPg9DDMU8220AeyurBYIZK8S4,4229
+green_eggs/commands/triggers.py,sha256=AQsb4tlZ8gQWntWHE2IY1-acE04gTXRJPz3fc_foUeg,4519
+green_eggs/constants.py,sha256=yfNeHl7I11zUiw-89UKVOShPUp2JvnEzgwH3_2ICxRc,7239
+green_eggs/data_types.py,sha256=27m-3I-w_scYUE-OItPVgKzLHeNS7v8z28cayNCNm0I,19029
+green_eggs/exceptions.py,sha256=kWsWCxTKUNVCNkLP8Om4DdjqDGUVHGX67BtE3EJZKEM,80
+green_eggs/types.py,sha256=0-5iR-KAU-NZ3XesUtttqFu9ofWx9JQ-5tqXoXGwdMs,198
+green_eggs/utils.py,sha256=KRGMvwpNuwkp4egvcHMpmtzLsv5hFSbrBA-S3B8R1tI,2589
+green_eggs-0.1.0.dist-info/LICENSE,sha256=60WNzYz8tjDvfKigHXxr6YT9zrQ_2ip8U5JpuAM1vVo,749
+green_eggs-0.1.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+green_eggs-0.1.0.dist-info/METADATA,sha256=tO_b6MSq0KKG8vK2Uzf0Hd-Ea-qVCRG3bzoBS2YZ1EA,3107
+green_eggs-0.1.0.dist-info/RECORD,,
