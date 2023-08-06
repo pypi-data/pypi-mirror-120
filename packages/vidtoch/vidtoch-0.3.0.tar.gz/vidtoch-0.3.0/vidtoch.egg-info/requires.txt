@@ -1,0 +1,2 @@
+opencv-python
+imgtoch>=0.2.2
