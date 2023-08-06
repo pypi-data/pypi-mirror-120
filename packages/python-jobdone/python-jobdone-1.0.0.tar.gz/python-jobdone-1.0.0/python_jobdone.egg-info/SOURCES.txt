@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+jobdone/__init__.py
+jobdone/__main__.py
+jobdone/feed.py
+jobdone/viewer.py
+python_jobdone.egg-info/PKG-INFO
+python_jobdone.egg-info/SOURCES.txt
+python_jobdone.egg-info/dependency_links.txt
+python_jobdone.egg-info/entry_points.txt
+python_jobdone.egg-info/requires.txt
+python_jobdone.egg-info/top_level.txt
