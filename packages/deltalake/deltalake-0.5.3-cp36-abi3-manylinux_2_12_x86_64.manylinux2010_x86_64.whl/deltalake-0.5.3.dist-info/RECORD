@@ -1,0 +1,8 @@
+deltalake-0.5.3.dist-info/METADATA,sha256=cQVtU2D3GNWJyqhXEpPQRqqiF-am4HjNOI6HBkusCTQ,13962
+deltalake-0.5.3.dist-info/WHEEL,sha256=E_2SGvMmzsECdpn_6rnl62yFgpL3VTbxXmDWPZ4MEaQ,128
+deltalake/schema.py,sha256=BCNaIL8nQ8EBsD0oQgbNKXPlNJmsMh3QUy4-PRX0c9A,9750
+deltalake/__init__.py,sha256=hHFu-aSixWeIh9wBePMQd3rPX5ycYkkXlrAs9GgRpuQ,178
+deltalake/table.py,sha256=JmrccQZSwthbpqgXfvLbgtw0XtAg6EErlHSplrIHcUM,13880
+deltalake/data_catalog.py,sha256=yPEJsaTmC8Dy0Otjf54zXc7VdrtsEuptwlg3q58mwHE,146
+deltalake/deltalake.abi3.so,sha256=qv7lndBtLCK0NSR-TD1gLjxtyUBzFg6K_iXI409msig,18920528
+deltalake-0.5.3.dist-info/RECORD,,
