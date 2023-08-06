@@ -1,0 +1,14 @@
+LICENSE.md
+README.md
+setup.py
+tfquery/__init__.py
+tfquery/__main__.py
+tfquery/sql_handler.py
+tfquery/tfstate.py
+tfquery/tfstate_v3_migration.py
+tfquery/utils.py
+tfquery.egg-info/PKG-INFO
+tfquery.egg-info/SOURCES.txt
+tfquery.egg-info/dependency_links.txt
+tfquery.egg-info/entry_points.txt
+tfquery.egg-info/top_level.txt
