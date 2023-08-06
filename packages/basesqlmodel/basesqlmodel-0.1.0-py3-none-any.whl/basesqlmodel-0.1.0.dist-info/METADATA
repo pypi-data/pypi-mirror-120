@@ -1,0 +1,99 @@
+Metadata-Version: 2.1
+Name: basesqlmodel
+Version: 0.1.0
+Summary: A very simple CRUD class for SQLModel! :sparkles:
+Home-page: https://github.com/Kludex/basesqlmodel
+License: MIT
+Author: Marcelo Trylesinski
+Author-email: marcelotryle@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: fastapi (>=0.68.1,<0.69.0)
+Requires-Dist: sqlmodel (>=0.0.4,<0.0.5)
+Project-URL: Repository, https://github.com/Kludex/basesqlmodel
+Description-Content-Type: text/markdown
+
+<h1 align="center">
+    <strong>basesqlmodel</strong>
+</h1>
+<p align="center">
+    <a href="https://github.com/Kludex/basesqlmodel" target="_blank">
+        <img src="https://img.shields.io/github/last-commit/Kludex/basesqlmodel" alt="Latest Commit">
+    </a>
+        <img src="https://img.shields.io/github/workflow/status/Kludex/basesqlmodel/Test">
+        <img src="https://img.shields.io/codecov/c/github/Kludex/basesqlmodel">
+    <br />
+    <a href="https://pypi.org/project/basesqlmodel" target="_blank">
+        <img src="https://img.shields.io/pypi/v/basesqlmodel" alt="Package version">
+    </a>
+    <img src="https://img.shields.io/pypi/pyversions/basesqlmodel">
+    <img src="https://img.shields.io/github/license/Kludex/basesqlmodel">
+</p>
+
+A very simple CRUD class for SQLModel! :sparkles:
+
+## Installation
+
+``` bash
+pip install basesqlmodel
+```
+
+## Usage
+
+```python
+import asyncio
+
+from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine
+from sqlalchemy.orm import sessionmaker
+from sqlmodel import Field
+
+from basesqlmodel import Base
+
+engine = create_async_engine("sqlite+aiosqlite:///:memory:")
+SessionLocal = sessionmaker(engine, expire_on_commit=False, class_=AsyncSession)
+
+
+class Potato(Base, table=True):
+    id: int = Field(primary_key=True)
+    name: str
+
+
+async def main():
+    # Create tables
+    async with engine.begin() as conn:
+        await conn.run_sync(Base.metadata.create_all)
+
+    # Interact with the Potato table
+    async with SessionLocal() as session:
+        obj = await Potato.create(session, name="Potato")
+        print(f"Potato created: {repr(obj)}")
+
+        obj = await Potato.get(session, name="Potato")
+        print(f"Potato retrieved: {repr(obj)}")
+
+        await obj.update(session, name="Fake Potato")
+        print(f"Potato updated: {repr(obj)}")
+
+        await Potato.delete(session, name="Fake Potato")
+        print(f"Potato deleted: {repr(obj)}")
+
+        objs = await Potato.get_multi(session)
+        print(f"Confirm that the database is empty: {objs}")
+
+
+asyncio.run(main())
+```
+
+## License
+
+This project is licensed under the terms of the MIT license.
+
