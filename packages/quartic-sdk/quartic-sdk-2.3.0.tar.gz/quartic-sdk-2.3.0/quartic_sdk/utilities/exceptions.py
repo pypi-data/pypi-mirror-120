@@ -1,0 +1,3 @@
+
+class IncorrectTransformationException(Exception):
+    pass
