@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+zarnitsa/DataAugmenter.py
+zarnitsa/__init__.py
+zarnitsa.egg-info/PKG-INFO
+zarnitsa.egg-info/SOURCES.txt
+zarnitsa.egg-info/dependency_links.txt
+zarnitsa.egg-info/requires.txt
+zarnitsa.egg-info/top_level.txt
