@@ -1,0 +1,3 @@
+[console_scripts]
+grun=antlr4_grun.main:main
+
