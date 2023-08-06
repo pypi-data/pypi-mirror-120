@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: farmer-pytorch
+Version: 0.1.1
+Summary: deep learning tools: easy to run, easy to customize
+Home-page: https://github.com/aiorhiroki/farmer.pytorch
+License: MIT
+Author: aiorhiroki
+Author-email: 1234defgsigeru@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Pillow (>=8.3.2,<9.0.0)
+Requires-Dist: torch (>=1.9.1,<2.0.0)
+Project-URL: Repository, https://github.com/aiorhiroki/farmer.pytorch
+Description-Content-Type: text/markdown
+
+# Pytorch segmentation
+
+```bash
+docker build -t pyroch_seg:latest .
+
+docker run \
+    --gpus all \
+    -itd \
+    --ipc=host \
+    --shm-size=24g \
+    -v /mnt:/mnt \
+    --name cowboy \
+    pyroch_seg:latest
+```
+
