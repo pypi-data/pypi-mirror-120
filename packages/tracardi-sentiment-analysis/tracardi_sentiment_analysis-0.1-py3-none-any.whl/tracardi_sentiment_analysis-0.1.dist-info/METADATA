@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: tracardi-sentiment-analysis
+Version: 0.1
+Summary: It connects to the service that infers sentiment from a given sentence
+Home-page: UNKNOWN
+Author: Risto Kowaczewski
+Author-email: risto.kowaczewski@gmail.com
+License: UNKNOWN
+Keywords: tracardi,plugin
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: tracardi-plugin-sdk
+Requires-Dist: tracardi
+Requires-Dist: aiohttp
+
+# Plugin documentation
+
+Please provide documentation
+
