@@ -1,0 +1,12 @@
+pytz
+pandas>=1.1.5
+numpy
+scipy
+scipy
+SQLAlchemy
+psycopg2-binary
+isodate
+openturns
+properscoring
+altair>=4.0.0
+selenium
