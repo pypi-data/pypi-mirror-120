@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+adoniram.egg-info/PKG-INFO
+adoniram.egg-info/SOURCES.txt
+adoniram.egg-info/dependency_links.txt
+adoniram.egg-info/requires.txt
+adoniram.egg-info/top_level.txt
