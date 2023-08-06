@@ -1,0 +1,17 @@
+novelsave/__init__.py,sha256=bJg1LLo0-ZOMvZA-Hq3jAfuQGlw57r_u7Lvvg86FXSQ,77
+novelsave/__main__.py,sha256=WMPPUJD2m9LLGiHmbBdS6fNzkp8WffQuy-IxGlCp-FM,67
+novelsave/containers.py,sha256=ueI3vl2TBqwHp8a2hguu0xJx1mzIq8v6Lc_ZeITI0E8,3831
+novelsave/exceptions.py,sha256=fBRbYuMsx71Bj-OfO9KmKYphGsQiXm18u1P7NRiOeT0,719
+novelsave/settings.py,sha256=g6r0Lwd0EM0ESxLBrzCTMSEzdubg1xvCGqwuTJmmH9A,2344
+novelsave/infrastructure/migrations/README.md,sha256=MVlc9TYmr57RbhXET6QxgyCcwWP7w-vLkEsirENqiIQ,38
+novelsave/infrastructure/migrations/script.py.mako,sha256=ie8RZD226b2-MjOQiCOZk54MCsYDom6dcF85Uai6SWM,518
+static/web/bootstrap.min.css,sha256=J4NOid364PtmMwcORMNZ3ni-zZodJFA9qA5Z11STy04,155850
+static/web/bootstrap.min.js,sha256=HwdaCZJK9eulRA93OiGbHhYYRUjXOQLNxCqXi0-R69s,60095
+static/web/templates/index.html.mako,sha256=ca39YGCn6AsDmmF3QGVUcZabTsfSexrmgKQAhZXaO7o,3084
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+novelsave-0.7.4.dist-info/LICENSE,sha256=K1DoccQAfA7FV9Xgv6Q6Htx0wdjndkrrJSU_X9iNbmQ,11507
+novelsave-0.7.4.dist-info/METADATA,sha256=E6E-RYhUk7WfiqJUMvAXrweZhi5CUwtKJl5nK1c9tD8,5828
+novelsave-0.7.4.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+novelsave-0.7.4.dist-info/entry_points.txt,sha256=EeOrDWY5Ryef4ui1JE50Xh41YCTwOdSlpJ-7ztrjPjY,55
+novelsave-0.7.4.dist-info/top_level.txt,sha256=hCQWp1k8pPW2jwvAKFeh_mNljvo6g7v7L1HJl4NBFog,22
+novelsave-0.7.4.dist-info/RECORD,,
