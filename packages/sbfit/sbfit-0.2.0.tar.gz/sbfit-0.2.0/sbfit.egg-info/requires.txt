@@ -1,0 +1,8 @@
+numpy
+scipy
+numba
+emcee>=3.0
+astropy>=4.2
+matplotlib>=3.1
+corner
+pyregion>=2.0
