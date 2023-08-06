@@ -1,0 +1,12 @@
+naming>=0.6
+usd-core
+
+[docs]
+sphinx_autodoc_typehints
+sphinx_rtd_theme
+sphinx-toggleprompt
+sphinx-copybutton
+sphinx-togglebutton
+m2r2
+sphinx
+sphinx-hoverxref
