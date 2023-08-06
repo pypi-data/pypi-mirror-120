@@ -1,0 +1,8 @@
+python_redis_orm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+python_redis_orm/core.py,sha256=5gOlHjlkz5krGNYMF-NtooqbpefRhjKwLunwuvvH0sQ,45664
+python_redis_orm/tests/full_test.py,sha256=qZ3c2GqfXgN9MNMIXk3yaWjQEcuitAXG44UtjkMl_bY,28918
+python_redis_orm/utils.py,sha256=yl96v7SH8PiSgw76wyE5HrGGcUZWuj8uUrhaZ-hoHBw,2706
+python_redis_orm-0.5.1.dist-info/LICENSE,sha256=fbQYsi8reRqzJXWOemWUXskCjfGG4h94NastUhjhP4A,1088
+python_redis_orm-0.5.1.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+python_redis_orm-0.5.1.dist-info/METADATA,sha256=1g9EFdHamufgD2_GuC2WPf9tUZoY8rUstq2oDxj8l-8,38000
+python_redis_orm-0.5.1.dist-info/RECORD,,
