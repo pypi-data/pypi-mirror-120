@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pyoselm
+Version: 1.0.1
+Summary: A Python implementation of Online Sequential Extreme Machine Learning (OS-ELM) for online machine learning
+Home-page: https://github.com/leferrad/pyoselm
+Author: Leandro Ferrado
+Author-email: leferrad@gmail.com
+License: Apache License 2.0
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: numpy (>=1.5)
+Requires-Dist: scipy (>=0.19)
+Requires-Dist: scikit-learn (>=0.16)
+Provides-Extra: docs
+Requires-Dist: sphinx (==3.2.1) ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme (==0.5.0) ; extra == 'docs'
+Requires-Dist: msmb-theme (==1.2.0) ; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: pytest (==6.0.1) ; extra == 'tests'
+Requires-Dist: pytest-pep8 (==1.0.6) ; extra == 'tests'
+Requires-Dist: pytest-cov (==2.10.1) ; extra == 'tests'
+Requires-Dist: pytest-bdd (==3.4.0) ; extra == 'tests'
+
+UNKNOWN
+
