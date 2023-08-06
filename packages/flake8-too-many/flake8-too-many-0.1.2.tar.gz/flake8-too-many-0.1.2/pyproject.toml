@@ -1,0 +1,75 @@
+[tool.poetry]
+name = "flake8-too-many"
+version = "0.1.2"
+
+description = "A flake8 plugin that prevents you from writing \"too many\" bad codes."
+readme = "README.md"
+license = "MIT"
+
+authors = ["Queensferry <queensferry.me@gmail.com>"]
+
+repository = "https://github.com/queensferryme/flake8-too-many"
+homepage = "https://github.com/queensferryme/flake8-too-many"
+keywords = ["code quality", "flake8", "linting", "plugin"]
+
+classifiers = [
+    "Environment :: Console",
+    "Framework :: Flake8",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Quality Assurance",
+]
+
+[tool.poetry.dependencies]
+python = "^3.6.1"
+dataclasses = {version = "^0.8", python = "< 3.7"}
+flake8 = "^3.9.2"
+
+[tool.poetry.dev-dependencies]
+httpx = "^0.19.0"
+pre-commit = "^2.14.0"
+pytest = "^6.2.4"
+pytest-cov = "^2.12.1"
+
+[tool.poetry.plugins."flake8.extension"]
+TMN = "flake8_too_many:Checker"
+
+[tool.black]
+include = '\.pyi?$'
+target-version = ["py36", "py37", "py38", "py39"]
+
+[tool.coverage.run]
+include = ["flake8_too_many/*"]
+
+[tool.isort]
+balanced_wrapping = true
+combine_as_imports = true
+lines_after_imports = 2
+profile = "black"
+
+[tool.mypy]
+disallow_any_generics = true
+disallow_any_unimported = true
+disallow_incomplete_defs = true
+disallow_untyped_calls = true
+disallow_untyped_defs = true
+implicit_reexport = false
+local_partial_types = true
+pretty = true
+python_version = "3.6"
+show_error_codes = true
+strict_equality = true
+strict_optional = true
+warn_no_return = true
+warn_redundant_casts = true
+warn_return_any = true
+warn_unused_ignores = true
+warn_unreachable = true
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
