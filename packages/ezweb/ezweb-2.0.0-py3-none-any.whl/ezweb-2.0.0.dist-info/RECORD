@@ -1,0 +1,14 @@
+ezweb/__init__.py,sha256=IATjWUzX50m-Ti8RrN1Azfp_eAMZfETD-rlyGyayszA,44
+ezweb/objects/__init__.py,sha256=yCUT5hfPPtfhVPic9q7_0BaymBaJqRrsIFSUbArFoAg,84
+ezweb/objects/product.py,sha256=UQ3xarl_gux16dQ7CTEKswNvgkNjHUPn8yvLes0V1XE,15037
+ezweb/objects/soup.py,sha256=AD5QGAZnlp56gBdl8oxat1nYNerdnccutMiZEGSArZ0,15926
+ezweb/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ezweb/utils/http.py,sha256=JnSanWhxemDvAalhLU76JEZMA7x0Q1MvAhg6_rvxOqo,2820
+ezweb/utils/io.py,sha256=LXETU0f5BUxVUL7yYiLsH3_9dJ-Pnxd98BUV_29az38,661
+ezweb/utils/souphelper.py,sha256=UqKnMHEVxFHFhsOcIDGMISu-TpGwQ2PeOk1lCIVTz-8,14733
+ezweb/utils/text.py,sha256=aahWiQeG0h2rLhbteKf_PINBfo2y0NuJzDDdSFb5Y-U,1161
+ezweb-2.0.0.dist-info/LICENSE,sha256=7PvkYuKgJzyIgPzX9hQ8biSZvxGDhhqP-0tRLgM6KtQ,1091
+ezweb-2.0.0.dist-info/METADATA,sha256=UZCvkHrgPzyWXdUlFGCVWVDePDUC1duX0N2DtiQcdcM,4727
+ezweb-2.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+ezweb-2.0.0.dist-info/top_level.txt,sha256=gj_SfZBoVGnn41J_g763xX547jzoeSdbAGwGu5vLX1k,6
+ezweb-2.0.0.dist-info/RECORD,,
