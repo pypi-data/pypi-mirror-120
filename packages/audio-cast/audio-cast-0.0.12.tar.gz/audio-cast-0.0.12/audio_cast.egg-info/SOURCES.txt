@@ -1,0 +1,16 @@
+COPYING
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+audio_cast/__init__.py
+audio_cast/discover_devices.py
+audio_cast/discover_media.py
+audio_cast/endpoints.py
+audio_cast/player.py
+audio_cast.egg-info/PKG-INFO
+audio_cast.egg-info/SOURCES.txt
+audio_cast.egg-info/dependency_links.txt
+audio_cast.egg-info/requires.txt
+audio_cast.egg-info/top_level.txt
+audio_cast/data/sample.mp3
