@@ -1,0 +1,13 @@
+setup.py
+cliProcessor.egg-info/PKG-INFO
+cliProcessor.egg-info/SOURCES.txt
+cliProcessor.egg-info/dependency_links.txt
+cliProcessor.egg-info/entry_points.txt
+cliProcessor.egg-info/requires.txt
+cliProcessor.egg-info/top_level.txt
+mypackage/__init__.py
+mypackage/categorical.py
+mypackage/data_description.py
+mypackage/download.py
+mypackage/feature_scaling.py
+mypackage/imputation.py
