@@ -1,0 +1,3 @@
+[console_scripts]
+pystopwatch = pystopwatch.__main__:main
+
