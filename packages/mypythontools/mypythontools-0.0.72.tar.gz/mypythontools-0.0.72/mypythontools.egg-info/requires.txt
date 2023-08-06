@@ -1,0 +1,15 @@
+mylogging>=3.0.4
+EelForkExcludeFiles
+GitPython
+pandas
+phmdoctest
+plotly
+pyinstaller
+pytest
+pytest
+pytest-cov
+setuptools
+sphinx
+twine
+wheel
+nbmake
