@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: numwords
+Version: 1.0.0
+Summary: UNKNOWN
+Home-page: https://github.com/TheAnkurGoswami/NumWords
+Author: Ankur Goswami
+Author-email: ankurgoswami1401@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: typing
+
+
+NumWords module converts numbers from their numerical form to their international semantic form.
+Current input limit is 10<sup>66</sup>-1.
+
+Usage:
+
+```python
+import numwords
+numwords.numwords(12345)
+```
+```python
+>>> "Twelve Thousand Three Hundred Fourty Five"
+```
+
+
