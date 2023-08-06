@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: crdch-model
+Version: 1.1
+Summary: CRDC-H model in LinkML, developed by the Center for Cancer Data Harmonization (CCDH)
+Home-page: https://cancerdhc.github.io/ccdhmodel
+Author: Mark A. Miller
+Author-email: MAM@lbl.gov
+License: MIT
+Keywords: python,google-sheets,linkml
+Platform: UNKNOWN
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+License-File: AUTHORS.md
+
+CRDC-H model in LinkML, developed by the Center for Cancer Data Harmonization (CCDH). This Python package contains the dataclasses necessary to build and operate over data objects according to the CRDC-H model.
+
