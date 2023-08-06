@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: units-QBD
+Version: 0.0.7
+Summary: Tools for units SI.
+Home-page: https://github.com/QuantumBrainDisorder/units_QBD
+Author: Rabarbar Batman
+Author-email: 2rr@tuta.io
+License: GPLv3
+Project-URL: Source Code, https://github.com/QuantumBrainDisorder/units_QBD
+Project-URL: Bug Tracker, https://github.com/QuantumBrainDisorder/units_QBD/issues
+Keywords: units,physics,computing
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Classifier: Natural Language :: English
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+The package contain functions which are useful for operations at units of International System of Units SI.
+
