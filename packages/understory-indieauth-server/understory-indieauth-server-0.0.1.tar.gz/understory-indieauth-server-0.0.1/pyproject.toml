@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "understory-indieauth-server"
+version = "0.0.1"
+description = ""
+authors = ["Angelo Gladding <self@angelogladding.com>"]
+license = "CC0-1.0"
+packages = [
+    { include = "understory" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.9,<3.10"
+understory = "^0.0.71"
+indieauth = "^0.0.1"
+
+[tool.poetry.dev-dependencies]
+black = "^21.9b0"
+isort = "^5.9.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
