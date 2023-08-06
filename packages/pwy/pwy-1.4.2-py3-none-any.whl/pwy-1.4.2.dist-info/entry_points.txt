@@ -1,0 +1,3 @@
+[console_scripts]
+pwy = pwy.__main__:main
+
