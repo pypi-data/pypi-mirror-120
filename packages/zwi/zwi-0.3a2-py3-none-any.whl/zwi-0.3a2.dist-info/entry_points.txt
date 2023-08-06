@@ -1,0 +1,4 @@
+[console_scripts]
+zwi=zwi.scripts.zwi:main
+zwibok=zwi.scripts.zwibok:main
+
