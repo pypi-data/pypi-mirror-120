@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: ASvid
+Version: 0.0.1
+Summary: A useful module for image to video converision
+Home-page: https://github.com/Ashik-90/Speech-to-Sign-Language-Translator-Application
+Author: Ashikur Rahman
+Author-email: ash.rahman.cse@gmail.com
+License: ASHIK-SAMIN-KUET-BD
+Keywords: python,image,video,sign language
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: datetime
+Requires-Dist: cv2
+Requires-Dist: glob
+Requires-Dist: shutil
+Requires-Dist: os
+Requires-Dist: PIL
+Requires-Dist: speech-recognition
+
+This module provide functional support to convert image to video on the basis of spoken word, helpful for real time voice to video generation using images
+
+
