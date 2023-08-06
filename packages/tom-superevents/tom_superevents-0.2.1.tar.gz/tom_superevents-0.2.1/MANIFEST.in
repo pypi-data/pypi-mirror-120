@@ -1,0 +1,4 @@
+include LICENSE
+include README.md
+recursive-include tom_superevents/static *
+recursive-include tom_superevents/templates *
