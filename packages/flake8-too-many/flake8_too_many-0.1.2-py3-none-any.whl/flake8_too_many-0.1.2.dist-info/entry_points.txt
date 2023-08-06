@@ -1,0 +1,3 @@
+[flake8.extension]
+TMN=flake8_too_many:Checker
+
