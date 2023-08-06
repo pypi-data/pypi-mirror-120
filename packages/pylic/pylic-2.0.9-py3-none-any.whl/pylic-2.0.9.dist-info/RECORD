@@ -1,0 +1,14 @@
+pylic/__main__.py,sha256=vcUlBUEKisahEYcPa8OXOAs4zsIyF4pTMF5gLiMgQb4,39
+pylic/__version__.py,sha256=ur44nnx-d6p74cZfP2Y7gyzbUYvTxNXO-NwyMV2UvFc,18
+pylic/cli/app.py,sha256=ZtZCLWZE0B9CzUvvBNPP2gGPqaUrlQ6AEMXSP6CSjV0,743
+pylic/cli/commands/check.py,sha256=hybYVdnJmDQVYGb53F0HgHq9GjShEr5Ug6TKzaefyJE,2697
+pylic/cli/commands/help.py,sha256=X4folFUa17xm9kKpeXfoKNX-73r5li4QQhRyMrbNm_0,710
+pylic/cli/commands/list.py,sha256=nMYcTavatfxf9eh25LN1HS15tTOxOea0F8mhTQwiHeE,673
+pylic/license_checker.py,sha256=HTgnH4LmW8lGSzSWr20G_ONvxv3zrBsFWKlwOEfPVcg,3111
+pylic/licenses.py,sha256=IhRVZ8e-RnYeE-Iw2i8fP4XBDz6l1mG-BxYe6aC8RG4,1521
+pylic/toml.py,sha256=sPw67B4HGJcQeQpDBXzDCjCtBzAtu7ellTl4S580MeA,889
+pylic-2.0.9.dist-info/entry_points.txt,sha256=34hlFiTltOlCTTjTQO3xrMdsTHkWurv13iXC2BpDZR4,44
+pylic-2.0.9.dist-info/LICENSE,sha256=FvFrsOhVNQ8VeeqwWr6IAWCLT7jact6hudOlfngKVgE,1069
+pylic-2.0.9.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+pylic-2.0.9.dist-info/METADATA,sha256=Cjvbs_ywrHXWez0XXZ6198aaZAG4jKf9VYckPiNymeg,4346
+pylic-2.0.9.dist-info/RECORD,,
