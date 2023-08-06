@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: fastapi_helpers
+Version: 0.0.2
+Summary: An utils package for fastapi
+Home-page: https://github.com/finalsa/fastapi-utils
+Author: Luis Jimenez
+Author-email: luis@finalsa.com
+License: MIT
+Keywords: fastapi,sqlalchemy,ormar,pydantic
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: postgresql
+Provides-Extra: mysql
+Provides-Extra: sqlite
+Provides-Extra: orjson
+Provides-Extra: crypto
+License-File: LICENSE.md
+
+# fastapi-utils
+ 
+
+
