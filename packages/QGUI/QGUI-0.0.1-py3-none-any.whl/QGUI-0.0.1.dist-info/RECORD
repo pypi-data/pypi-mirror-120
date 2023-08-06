@@ -1,0 +1,16 @@
+qgui/__init__.py,sha256=-SevDCFlgkIppXZBUvaye89HR9o3NvCIf0L_2CVhpJ0,189
+qgui/bar_tools.py,sha256=IIXY4gBJIbj1ljTjD5RSJp7slEyvM-4rdHCiBy7-CKA,2297
+qgui/base.py,sha256=un3xxKdmrpwDRRf5HHAS9N9n20BCtgmej18oAch99oc,8399
+qgui/factory.py,sha256=5Pv0upopkUhG_7c1dMrI7gupCpbW1P5WdM3aF9ucAuA,3079
+qgui/manager.py,sha256=DEMzcmmxlAPScnfSyDqsrYSuHfjk24PF3dSZIoibKAw,834
+qgui/notebook_tools.py,sha256=aHPCb33i8xUE9ZPTCWW0Ve0kWjlkSArVgRHi1JE3VfA,6351
+qgui/os_tools.py,sha256=EZlvoHDLQ76SppNsaSJhGxsplUVxKWpQPgi6ZVxfG2Q,629
+qgui/resources/icon/double_down.png,sha256=CEwqhJan-S6WvvyoOM7xbc_jevDJvmxKVqMquxBHmBc,490
+qgui/resources/icon/double_up.png,sha256=p8nvZhK-YWl2cwwCwlEtVysec75Mp-0BDUvEXI3wUa0,476
+qgui/resources/icon/github.png,sha256=ZgRFBXHF20_bzs2eoMa2_PuEkgzXp_OJAz-UdSM04Sw,1902
+qgui/resources/icon/play_w.png,sha256=OKvl8Mo6GAP9NRbpOyOHGEy_qBwq8cFQwNm6BsiPrkw,262
+QGUI-0.0.1.dist-info/LICENSE,sha256=DwB1l65nYNc5u-n6uajfPWVim3FEJdPnlYlRfmYURgI,1067
+QGUI-0.0.1.dist-info/METADATA,sha256=7w_iHs1C4bcsR8GILfIM2Mty0pxwchDhYsXVgsL4XDs,282
+QGUI-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+QGUI-0.0.1.dist-info/top_level.txt,sha256=7JC2q3dfJwkejtYf_WLCgjQ3huCmTC0BcYTPo4wFVfo,5
+QGUI-0.0.1.dist-info/RECORD,,
