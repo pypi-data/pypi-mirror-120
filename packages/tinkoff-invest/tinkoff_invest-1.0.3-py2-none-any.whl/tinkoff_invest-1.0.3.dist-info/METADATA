@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: tinkoff-invest
+Version: 1.0.3
+Summary: Client library for Tinkoff broker
+Home-page: https://github.com/asakharov/tinkoff_invest
+Author: Alexey Sakharov
+Author-email: alexey.sakharov@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.8.0
+Requires-Dist: prettytable
+Requires-Dist: iso8601
+Requires-Dist: requests
+Requires-Dist: ujson
+Requires-Dist: urllib3
+Requires-Dist: websocket-client
+
+UNKNOWN
+
+
