@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: jsonsimpleconfig
+Version: 0.6
+Summary: The simple idea to prepare configuration for your application.
+Home-page: https://github.com/xmzxmz/jsonsimpleconfig
+License: MIT
+Keywords: json,configuration,jsc,simple,config
+Author: Marcin Zelek
+Author-email: marcin.zelek@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

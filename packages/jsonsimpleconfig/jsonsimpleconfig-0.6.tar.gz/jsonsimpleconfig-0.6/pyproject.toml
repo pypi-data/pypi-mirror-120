@@ -1,0 +1,91 @@
+[tool.poetry]
+name = "jsonsimpleconfig"
+version = "0.6"
+description = "The simple idea to prepare configuration for your application."
+license = "MIT"
+keywords = ["json", "configuration", "jsc", "simple", "config"]
+homepage = "https://github.com/xmzxmz/jsonsimpleconfig"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+packages = [
+    { include = "jsonsimpleconfig" },
+    { include = "jsccommon", from = "jsonsimpleconfig" },
+    { include = "jscdata", from = "jsonsimpleconfig" },
+    { include = "jscextractor", from = "jsonsimpleconfig" },
+    { include = "jschelper", from = "jsonsimpleconfig" },
+    { include = "jscparser", from = "jsonsimpleconfig" },
+    { include = "requirements.txt" },
+    { include = "poetry.lock" },
+]
+authors = [
+    "Marcin Zelek <marcin.zelek@gmail.com>"
+]
+
+[tool.poetry.scripts]
+"json2jsc" = "jsonsimpleconfig.json2jsc:main"
+"jsc2json" = "jsonsimpleconfig.jsc2json:main"
+"jsc_value" = "jsonsimpleconfig.jsc_value:main"
+"jsc_print" = "jsonsimpleconfig.jsc_print:main"
+"jscValue" = "jsonsimpleconfig.jsc_value:main"
+"jscPrint" = "jsonsimpleconfig.jsc_print:main"
+"json2csv" = "jsonsimpleconfig.json2csv:main"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+argparse = "*"
+pandas = "*"
+prospector = { extras = ["with_everything"], version = "*" }
+flake8 = "*"
+pycodestyle = "*"
+mypy = "*"
+pylint = "*"
+tox = { version = "*", extras = ["testing"] }
+black = "*"
+coverage = "*"
+pdoc3 = "*"
+mock = "*"
+pytest = "*"
+pytest-cov = "*"
+pytest-mock = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+target-version = ['py39']
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  | tests/.*/setup.py
+)/
+'''
+
+[tool.yapf]
+based_on_style = "pep8"
+column_limit = 119
+align_closing_bracket_with_visual_indent = false
+dedent_closing_brackets = true
+i18n_function_call = ['_']
+space_between_ending_comma_and_closing_bracket = false
+split_before_expression_after_opening_paren = true
+split_complex_comprehension = true
+blank_line_before_nested_class_or_def = true
