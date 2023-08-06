@@ -1,0 +1,11 @@
+ofxstatement_otp-0.1.0-py3.9-nspkg.pth,sha256=cbpcH5ryzbNH4THEm3mDxzXaPlFWmaWOt_gvvIpC6Mw,1806
+ofxstatement/plugins/otp.py,sha256=_JxawWdwEVuizXNrI3iRsBbR0B-EptjziGsNRfAu3mc,6099
+ofxstatement/plugins/otp_credit_legacy.py,sha256=RY192NQQz5r6QYkdodGz4tTzVGxHhPuQ4_1lAuh8chc,2056
+ofxstatement/plugins/otp_legacy.py,sha256=B5rJJgpYDtoeX8B7i2nB4_aGu_bqMfMFxzz11CPlC4Q,4755
+ofxstatement_otp-0.1.0.dist-info/METADATA,sha256=vvpY4oA_MlOvblI9u3N-JUVLxtx2brk_DYkh9jORUhs,2089
+ofxstatement_otp-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+ofxstatement_otp-0.1.0.dist-info/entry_points.txt,sha256=rzjKyb_ugPRdJrHQH01X1W-LpQ4Loeshc4h66K7Xvds,199
+ofxstatement_otp-0.1.0.dist-info/namespace_packages.txt,sha256=i29PY9ieDhHxwObljMcvZNQ_PHxIyAHVbzFlzcpcHn4,34
+ofxstatement_otp-0.1.0.dist-info/top_level.txt,sha256=QULlVVrNlYwAPeKqH5xw5QYTOH04LNlME6axewv7XDs,13
+ofxstatement_otp-0.1.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+ofxstatement_otp-0.1.0.dist-info/RECORD,,
