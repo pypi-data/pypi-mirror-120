@@ -1,0 +1,30 @@
+{'groupBox':'download',
+'label':'Link',
+'label_2':'Locate',
+'pushButton':'Download',
+'groupBox_2':'Speed',
+'label_3':'progress',
+'label_4':'info',
+'pushButton_2':'close',
+
+'label_5':'Version:',
+
+'groupBox_3':'Spyder Settings',
+'checkBox':'Don\'t use User-Agent',
+'groupBox_4':'Info Settings',
+'checkBox_2':'Don\'t show speed',
+'checkBox_3':'Don\'t show exceptions',
+'groupBox_5':'About',
+'groupBox_6':'Links',
+'pushButton_3':'Open fast link',
+'title':'\'s Downloader',
+
+'tab_win.tab':'Main',
+'tab_win.tab_2':'Settings',
+'tab_win2.tab':'About',
+'tab_win2.tab_2':'Log',
+'checkBox_4':'Use Chinese',
+
+'fastlink.label':'Fast Link',
+'fastlink.pushButton_2':'python moudle install',
+'fastlink.pushButton':'python script'}
