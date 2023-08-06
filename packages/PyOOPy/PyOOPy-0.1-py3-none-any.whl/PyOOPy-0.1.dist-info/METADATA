@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: PyOOPy
+Version: 0.1
+Summary: Object-oriented programming in Python
+Home-page: https://gitlab.com/baton96/PyOOP
+Author: Bartosz Paulewicz
+Author-email: podolce0@gmail.com
+License: MIT
+Download-URL: https://gitlab.com/baton96/PyOOP/-/archive/0.1.1/PyOOP-0.1.1.tar.gz
+Keywords: OOP,Object-oriented programming
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# PyOOPy :poop:
+**P**ython **O**bject-**O**riented **P**rogramming library
+
+## Installation
+```pip install PyOOPy```
+
+## Usage
+
+```python
+from dataclasses import dataclass
+from PyOOPy import PyOOPy
+
+
+@dataclass
+class Base(PyOOPy):
+    protected_field: PyOOPy.Protected = None
+    private_field: PyOOPy.Private = None
+    public_field: PyOOPy.Public = None
+
+    @PyOOPy.protected
+    def protected_method(self):
+        pass
+
+    @PyOOPy.private
+    def private_method(self):
+        pass
+
+    @PyOOPy.public
+    def public_method(self):
+        pass
+```
+
+## License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
