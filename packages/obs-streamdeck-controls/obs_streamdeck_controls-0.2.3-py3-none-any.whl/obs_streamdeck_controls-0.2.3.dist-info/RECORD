@@ -1,0 +1,15 @@
+obs_sd_controls/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+obs_sd_controls/cli_entry.py,sha256=JMFqgvW0v1KQO1mlWJ5OsApT_pURm6Irb8LiibtIwBc,6685
+obs_sd_controls/conf.py,sha256=kD3mGbNqCPkWFo3-Vyfr8GQUDsAGL38Ms5ZYy0IbLkE,102
+obs_sd_controls/config_mgmt.py,sha256=-C2stVqpuon-UoWvYXDLvaCFzOAgL4jLkTp9c6Uxq94,49776
+obs_sd_controls/obs_controls.py,sha256=XbCmdsE8-sfvpKiWeQOGe4PMPN-wyhXqXdNXTyZAgbw,8112
+obs_sd_controls/text_includes.py,sha256=tTIDpkSCyWb3HQAxHon01LoytLI24pxSgjmn97wPF9o,3248
+obs_sd_controls/thanks.html,sha256=mUeyPsab08jbgvNPm8eafqxP3LZ3aR6dzuNRCHcdE-A,255
+obs_sd_controls/thanks.js,sha256=PzodRJ8LA0FtXwseNzHDjhbIchgIfzhM0Vi7pjbjEqg,1008
+obs_sd_controls/twitch_controls.py,sha256=N9q3uYqZZWiAQ_f-ogliF9jeMU_CBlRHjdm-5e8nWdU,6529
+obs_streamdeck_controls-0.2.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+obs_streamdeck_controls-0.2.3.dist-info/METADATA,sha256=ioxlcau2LHfYR1T2SFB-KIXfPJYwz81EPll8Cc7d6Aw,6205
+obs_streamdeck_controls-0.2.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+obs_streamdeck_controls-0.2.3.dist-info/entry_points.txt,sha256=d8bgvFQozQjx6oEgZgxb2MMMAuPCttWUWyTAZxJT19g,71
+obs_streamdeck_controls-0.2.3.dist-info/top_level.txt,sha256=Vpek1v51KrNoTs8D36EaCTnVAmVguFjo7MFEfIoROnc,16
+obs_streamdeck_controls-0.2.3.dist-info/RECORD,,

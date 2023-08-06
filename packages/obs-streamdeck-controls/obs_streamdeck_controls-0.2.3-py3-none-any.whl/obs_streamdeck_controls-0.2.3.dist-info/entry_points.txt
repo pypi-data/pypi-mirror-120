@@ -1,0 +1,3 @@
+[console_scripts]
+obs-streamdeck-ctl = obs_sd_controls.cli_entry:main
+
