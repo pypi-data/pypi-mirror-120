@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "google-api-utils"
+version = "0.6.0"
+description = "Google API services for python"
+authors = ["LucasCiziks <lucas.ciziks@loft.com.br>"]
+readme="README.md"
+repository="https://github.com/loft-br/finance-google-utils"
+
+[tool.poetry.dependencies]
+python = "^3.7.1"
+oauth2client = "4.1.3"
+google-api-python-client = "2.4.0"
+pandas = "1.3.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
