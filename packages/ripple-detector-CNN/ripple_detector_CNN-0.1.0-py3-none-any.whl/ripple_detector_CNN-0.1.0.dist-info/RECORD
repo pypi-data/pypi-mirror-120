@@ -1,0 +1,14 @@
+ripple_detector_CNN/RippleDetectorCNN.py,sha256=SY9_9CkBwz1c6Anfi7PYRjKSgWun8mNhp7caSn94M94,6668
+ripple_detector_CNN/__init__.py,sha256=gUjX-R9qIeKRx4-tQRLYmol4iKIlr5Ngps5mw0UuLPE,503
+ripple_detector_CNN/define_ripple_candidates.py,sha256=ke6YDJoCk9iw-D3n1ci-MSxEv6EYjpf3WgktLEM2v-s,2130
+ripple_detector_CNN/ResNet1D/ResNet1D.py,sha256=HGVTo0n4gCxvKO8rrd48e47TN1Jb6ma4jQNnu-7ezF0,2243
+ripple_detector_CNN/ResNet1D/__init__.py,sha256=74fVVRnkLnn5W7SZgKeHjSJRJ9fw4vdYwOZXuBRctVM,143
+ripple_detector_CNN/ResNet1D/modules.py,sha256=yRWfcWkGaISV5vKEM2Y3O5vQRsnu6nqp42t_QIQezk0,4038
+ripple_detector_CNN/external/__init__.py,sha256=qYsHVcW37PZmbZ5UypBiWS2_x1JxnDTKDEMdlS43rOQ,71
+ripple_detector_CNN/external/modified_ripple_detection/__init__.py,sha256=-UcastfS2LdWYsX46wfRz01yLu0_VPG1rFjPNeUMBUw,71
+ripple_detector_CNN/external/modified_ripple_detection/core.py,sha256=mMbY-4ccgXJOZ67-xuUg0Fv35NAxBYPDScfWAhcE2OU,12301
+ripple_detector_CNN-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+ripple_detector_CNN-0.1.0.dist-info/METADATA,sha256=JJyOP5T3WF2-DmuHaNkqCCU351u2g0ijhezewgt2Ksw,923
+ripple_detector_CNN-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+ripple_detector_CNN-0.1.0.dist-info/top_level.txt,sha256=RfH5HUoA51B3iL52iI49BeHGnZO9IimiIqhUosyfrIs,20
+ripple_detector_CNN-0.1.0.dist-info/RECORD,,
