@@ -1,0 +1,13 @@
+LICENSE
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/DataTransfer/DataManager.py
+src/DataTransfer/__init__.py
+src/DataTransfer/data_transfer.py
+src/DataTransfer/main.py
+src/HALdata.egg-info/PKG-INFO
+src/HALdata.egg-info/SOURCES.txt
+src/HALdata.egg-info/dependency_links.txt
+src/HALdata.egg-info/top_level.txt
