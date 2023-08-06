@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: taskcluster-yml-validator
+Version: 0.0.7
+Summary: Validator for .taskcluster.yml files
+Home-page: https://github.com/marco-c/taskcluster_yml_validator
+Author: Marco Castelluccio
+Author-email: mcastelluccio@mozilla.com
+License: MPL2
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+
+UNKNOWN
+
