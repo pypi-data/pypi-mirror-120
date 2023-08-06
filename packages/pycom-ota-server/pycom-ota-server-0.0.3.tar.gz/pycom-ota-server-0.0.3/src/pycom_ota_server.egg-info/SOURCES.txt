@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.py
+src/ota_server/__init__.py
+src/ota_server/_version.py
+src/ota_server/firmware.py
+src/ota_server/server.py
+src/pycom_ota_server.egg-info/PKG-INFO
+src/pycom_ota_server.egg-info/SOURCES.txt
+src/pycom_ota_server.egg-info/dependency_links.txt
+src/pycom_ota_server.egg-info/requires.txt
+src/pycom_ota_server.egg-info/top_level.txt

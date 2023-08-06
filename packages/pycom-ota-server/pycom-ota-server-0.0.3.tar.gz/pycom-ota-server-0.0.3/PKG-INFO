@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: pycom-ota-server
+Version: 0.0.3
+Summary: Pycom OTA firmware server
+Home-page: https://github.com/snebot-bg/pycom-ota-server
+Author: snebot
+Author-email: snebot@bitgrup.com
+License: UNKNOWN
+Description: # Pycom OTA server
+        Host Pycom firmware files and serve to client devices.
+        
+        ## Directory structure
+        All firmware versions must be located inside the `firmware` directory. Any version format is allowed, but the Python LooseVersion is recommended. Firmware files must be named `appimg.bin` and be located inside the version directory.
+        ```
+        .
+        |
+        - main.py
+        - firmware.py
+        - firmware
+          |
+          - 0.0.1
+          | |
+          | - appimg.bin
+          |
+          - 0.0.2
+          | |
+          | - appimg.bin
+          |
+          - 0.0.2.dev-f673ba1
+        	|
+        	- appimg.bin
+        ```
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
