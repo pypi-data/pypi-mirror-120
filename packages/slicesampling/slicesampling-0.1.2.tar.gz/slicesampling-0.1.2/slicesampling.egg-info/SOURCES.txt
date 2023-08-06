@@ -1,0 +1,12 @@
+README.md
+setup.py
+slicesampling/__init__.py
+slicesampling/sampler.py
+slicesampling/univariate_sampler.py
+slicesampling/version.py
+slicesampling.egg-info/PKG-INFO
+slicesampling.egg-info/SOURCES.txt
+slicesampling.egg-info/dependency_links.txt
+slicesampling.egg-info/not-zip-safe
+slicesampling.egg-info/requires.txt
+slicesampling.egg-info/top_level.txt
