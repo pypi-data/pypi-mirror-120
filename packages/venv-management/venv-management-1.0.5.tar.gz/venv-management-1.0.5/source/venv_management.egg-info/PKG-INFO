@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: venv-management
+Version: 1.0.5
+Summary: A Python package for programmatic creation of Python virtual environments
+Home-page: https://github.com/sixty-north/venv-management
+Author: Sixty North AS
+Author-email: ekaterina@sixty-north.com
+License: MIT
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Provides-Extra: dev
+Provides-Extra: test
+License-File: LICENSE
+
+Venv Management
+
+A Python package for programmatic creation of Python virtual environments
+
+
