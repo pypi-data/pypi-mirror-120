@@ -1,0 +1,8 @@
+[console_scripts]
+music_bg=music_bg.__main__:main
+
+[mbg_processors]
+fit=music_bg.img_processors.fit:fit
+noop=music_bg.img_processors.noop:noop
+resize=music_bg.img_processors.resize:resize
+
