@@ -1,0 +1,7 @@
+bs4
+platformdirs
+prompt-toolkit>=3.0.9
+requests
+rich
+selenium
+typing-extensions>=3.10
