@@ -1,0 +1,8 @@
+setup.py
+my_packet/__init__.py
+my_packet/print_array.py
+my_packet.egg-info/PKG-INFO
+my_packet.egg-info/SOURCES.txt
+my_packet.egg-info/dependency_links.txt
+my_packet.egg-info/requires.txt
+my_packet.egg-info/top_level.txt
