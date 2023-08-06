@@ -1,0 +1,5 @@
+matplotlib>=3.4.2
+numpy<1.19.0,>=1.16.0
+pyStarDB==0.1.0b3
+pandas==1.1.4
+mrcfile<=1.1.2,>=1.0.0
