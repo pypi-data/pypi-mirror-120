@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: acesql
+Version: 0.1.6
+Summary: Access to ACE Databases
+Home-page: https://git.sonova.com/ACE/acedbpp.git
+Author: Cem Bakar
+Author-email: cem.bakar@sonova.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# acesql_pypi
+
+
+This is an project to allow users to have access to databases on ACE platform.
+
+## Usage
+```python
+from acesql import writeSQL
+## Parameters
+# df: spark dataframe which cantains the data
+# url: jdbc url - i.e: jdbc:sqlserver://url:portnumber
+# database: Name of the database to write - i.e.: ace-db
+# dbtable: schema and abd the name of the table - i.e.: dbo.dbs
+# username: Username of the database
+# password: Password of the user
+writeSQL(df, url, database, dbtable, username, password)
+```
+
+```python
+from acesql import readSQL
+# url: jdbc url - i.e: jdbc:sqlserver://url:portnumber
+# database: Name of the database to write - i.e.: ace-db
+# dbtable: schema and abd the name of the table - i.e.: dbo.dbs
+# username: Username of the database
+# password: Password of the user
+def readSQL(url, database, dbtable, username, password):
+```
+
+# Developing
+
+To onstall acesqlm along with the tools you need to develop and run tests, run the following in your vistualenv:
+```bash
+pip install -e .[dev]
+```
+
