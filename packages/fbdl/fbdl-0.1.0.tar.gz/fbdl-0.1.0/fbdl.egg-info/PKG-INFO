@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: fbdl
+Version: 0.1.0
+Summary: Functional Bus Description Language compiler front-end.
+Home-page: https://github.com/Functional-Bus-Description-Language/PyFBDL
+Author: Michał Kruszewski
+Author-email: mkru@protonmail.com
+License: GPLv3+
+Description: [![Tests](https://github.com/Functional-Bus-Description-Language/PyFBDL/actions/workflows/tests.yml/badge.svg?branch=master)](https://github.com/Functional-Bus-Description-Language/PyFBDL/actions?query=master)
+        
+        # PyFBDL
+        
+        Functional Bus Description Language compiler front-end written in Python.
+        
+        SPDX-License-Identifier: GPL-3.0-or-later
+        
+        https://spdx.org/licenses/GPL-3.0-or-later.html
+        
+        Copyright (c) 2021 Michał Kruszewski
+        
+Keywords: Bus Interface,Control and Status Registers,Co-simulation,Documentation Generation,Electronic Design Automation,Electronic Systems,Firmware Generation,FPGA,Hardware Design,HDL,Hierarchical Register Description,Memory,Register Addressing,Register Synthesis,RTL,Software Generation,SystemVerilog,VHDL
+Platform: UNKNOWN
+Classifier: Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Topic :: Utilities
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Description-Content-Type: text/markdown
