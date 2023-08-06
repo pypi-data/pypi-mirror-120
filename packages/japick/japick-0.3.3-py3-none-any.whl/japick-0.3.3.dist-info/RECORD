@@ -1,0 +1,10 @@
+japick/__init__.py,sha256=itCpPTd8UkgH8gTSkktufkO4PMKf9IGAVInOLJbNZsM,118
+japick/cleaner.py,sha256=DlZWIr9ZFygOrIkPaGwhTuloBEO5ysN44KAbhdY516Y,1309
+japick/lines.py,sha256=sMfuha46LRG9uC8pfyWBIZ6DoRqQHozXI8L1xReTn8I,1722
+japick/main.py,sha256=P1DihHIP3DO_wgMOOnWgEyvq51pmkOs3EbdJP86qXxk,528
+japick/paragraph.py,sha256=QMaLz5znzYqEspLQ7RJFilg_gnh-p4Ki83ON0MiUYW8,3395
+japick/syntax.py,sha256=4sPev2Gz4l8Xt0JtyeU6r94f7EoMupcKXLQyn-9_hQs,740
+japick-0.3.3.dist-info/METADATA,sha256=7sYvV-Xzw5PJoAeshvQeFpdmnCoz2Qbh3_c6qEQjKGs,381
+japick-0.3.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+japick-0.3.3.dist-info/top_level.txt,sha256=ozCNaKniZ5AkSOYHacf3z0OXnA04N1qbzmdJOLokALg,7
+japick-0.3.3.dist-info/RECORD,,
