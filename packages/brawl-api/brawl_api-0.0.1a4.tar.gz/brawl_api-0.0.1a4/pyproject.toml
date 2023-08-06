@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "brawl_api"
+version = "0.0.1-alpha4"
+description = "Python wrapper for the Brawl Stars API"
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/sebastianmarines/brawl_api"
+repository = "https://github.com/sebastianmarines/brawl_api"
+authors = ["Sebastian Marines <sebastian0marines@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+aiohttp = "^3.7.4"
+pydantic = "^1.8.2"
+requests = "^2.26.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+mypy = "^0.910"
+yapf = "^0.31.0"
+types-requests = "^2.25.6"
+ipykernel = "^6.4.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
