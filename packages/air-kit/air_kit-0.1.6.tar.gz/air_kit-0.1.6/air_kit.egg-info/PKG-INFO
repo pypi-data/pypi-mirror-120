@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: air-kit
+Version: 0.1.6
+Summary: air's kit
+Home-page: https://gitlab.com/air64/air_kit
+Author: air64
+Author-email: contact.air64@yandex.ru
+Maintainer: air64 <contact.air64@yandex.ru>
+Maintainer-email: contact.air64@yandex.ru
+License: MIT
+Project-URL: Gitlab, https://gitlab.com/air64/air_kit
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: telegram_bot
