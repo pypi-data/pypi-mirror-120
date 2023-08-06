@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: pyqrp
+Version: 0.7
+Summary: PYQRP: A Simple QRP File interpreter in Python
+Home-page: https://github.com/drpresq/pyqrp
+Author: George
+Author-email: drpresq@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: openpyxl
+Requires-Dist: xlrd
+Requires-Dist: pyautogui
+Provides-Extra: dev
+Requires-Dist: pytest (>=6.2.4) ; extra == 'dev'
+
+# PyQRP: A Simple QRP File interpreter in Python
+
+## Description
+
+PyQRP is a simple automation program that reads data from XL(X)S files and enters them into data fields into difficult to automate gui programs. 
+
+## Install
+
+### Linux
+
+#### From PIP
+```
+pip3 install pyqrp
+```
+
+#### From Source
+```
+git clone https://github.com/drpresq/pyqrp.git
+pip3 install ./pyqrp
+```
+
+### Windows
+
+#### From PIP
+```
+py -m pip install pyqrp
+```
+
+#### From Source
+```
+git clone https://github.com/drpresq/pyqrp.git
+py -m pip install ./pyqrp
+```
+
+
+## Usage
+
+### Linux
+```
+pyqrp
+```
+
+### Windows
+```
+py -m pyqrp
+```
+
+
+
