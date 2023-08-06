@@ -1,0 +1,3 @@
+[console_scripts]
+wodev = wodev.__main__:main
+
