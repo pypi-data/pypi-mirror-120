@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pydevlpr-protocol
+Version: 0.1.2
+Summary: The protocol used by the DELVPR Daemon to transfer data
+License: MIT
+Author: Ezra Boley
+Author-email: hello@getfantm.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: mypy (>=0.910,<0.911)
+Project-URL: Documentation, https://docs.getfantm.com
+Description-Content-Type: text/markdown
+
+# PyDEVLPR-Protocol
+
+This is the shared protocol used between the devlprd and pydevlpr. They communicate over a socket that formats messages very particularly.
