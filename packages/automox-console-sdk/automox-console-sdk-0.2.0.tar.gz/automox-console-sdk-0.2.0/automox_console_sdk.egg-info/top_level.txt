@@ -1,0 +1,2 @@
+automox_console_sdk
+test
