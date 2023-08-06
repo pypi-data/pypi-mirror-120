@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: naughtty
+Version: 1.0.0a1
+Summary: Python package and CLI tool for executing shell commands in a pseudo-terminal
+Home-page: https://github.com/cariad/naughtty
+Author: Cariad Eccleston
+Author-email: cariad@cariad.io
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# naughtty
+
+`naughtty` is a Python package and CLI tool for executing shell commands in a pseudo-terminal.
+
+NOTE: This package will probably only work in GNU/Linux due to reliance on pseudo-terminals. I haven't tested it in any other operating system.
+
+
