@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+pyotritonclient.egg-info/PKG-INFO
+pyotritonclient.egg-info/SOURCES.txt
+pyotritonclient.egg-info/dependency_links.txt
+pyotritonclient.egg-info/not-zip-safe
+pyotritonclient.egg-info/requires.txt
+pyotritonclient.egg-info/top_level.txt
