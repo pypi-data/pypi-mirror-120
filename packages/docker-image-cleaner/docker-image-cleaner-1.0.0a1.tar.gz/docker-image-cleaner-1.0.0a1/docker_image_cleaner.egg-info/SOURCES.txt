@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+docker_image_cleaner/__init__.py
+docker_image_cleaner/__main__.py
+docker_image_cleaner/cleaner.py
+docker_image_cleaner.egg-info/PKG-INFO
+docker_image_cleaner.egg-info/SOURCES.txt
+docker_image_cleaner.egg-info/dependency_links.txt
+docker_image_cleaner.egg-info/entry_points.txt
+docker_image_cleaner.egg-info/requires.txt
+docker_image_cleaner.egg-info/top_level.txt
