@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/logicexp/__init__.py
+src/logicexp.egg-info/PKG-INFO
+src/logicexp.egg-info/SOURCES.txt
+src/logicexp.egg-info/dependency_links.txt
+src/logicexp.egg-info/top_level.txt
