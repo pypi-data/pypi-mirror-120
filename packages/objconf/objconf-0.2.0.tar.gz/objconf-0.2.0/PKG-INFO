@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: objconf
+Version: 0.2.0
+Summary: Object configuration for Python projects
+Home-page: https://github.com/milosta/objconf
+Author: Miloslav Stanek
+Author-email: milostanek@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+License-File: LICENSE
+
+UNKNOWN
+
