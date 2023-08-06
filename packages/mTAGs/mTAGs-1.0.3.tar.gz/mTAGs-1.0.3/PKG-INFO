@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: mTAGs
+Version: 1.0.3
+Summary: mTAGs - taxonomic profiling using degenerate consensus reference sequences of ribosomal RNA gene.
+Home-page: https://github.com/SushiLab/mTAGs
+Author: Hans-Joachim Ruscheweyh
+Author-email: hansr@ethz.ch
+License: GPLv3
+Download-URL: https://github.com/SushiLab/mTAGs/archive/refs/tags/1.0.3.tar.gz
+Keywords: bioinformatics metagenomics ngs 16S
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
