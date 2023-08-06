@@ -1,0 +1,4 @@
+log21
+Pillow
+pycryptodome
+python-magic
