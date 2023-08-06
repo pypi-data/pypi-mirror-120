@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "redquery"
+version = "0.1.0"
+description = "Run SQL queries against AWS Redshift via its Data API."
+authors = ["Anatoly Scherbakov <altaisoft@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.10"
+documented = "^0.1.1"
+boto3 = "^1.18.43"
+mypy-boto3-redshift-data = "^1.18.43"
+typer = "^0.4.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+wemake-python-styleguide = "^0.15.3"
+flakehell = "^0.9.0"
+flake8 = "3.9.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+redquery = "redquery.cli:app"
+
+
+[tool.flakehell]
+base = "https://raw.githubusercontent.com/Recall-Masters/standards/main/pyproject.toml"
+
+[tool.flakehell.exceptions."redquery/cli.py"]
+wemake-python-styleguide = [
+    # Found complex default value - used for Typer
+    "-WPS404",
+]
