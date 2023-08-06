@@ -1,0 +1,7 @@
+README.md
+setup.py
+python_vtonimat.egg-info/PKG-INFO
+python_vtonimat.egg-info/SOURCES.txt
+python_vtonimat.egg-info/dependency_links.txt
+python_vtonimat.egg-info/requires.txt
+python_vtonimat.egg-info/top_level.txt
