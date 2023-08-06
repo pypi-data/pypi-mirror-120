@@ -1,0 +1,13 @@
+anchor/__init__.py,sha256=jpWheIqvqTuCqnC8AsX0tMIX6JINUQrPdD7Vr7U1Hn0,137
+anchor/command_line.py,sha256=PwNFjXdS1L3f89yLopm6W2O2Lg4cMfcQ3EUUbrnh1P0,398
+anchor/main.py,sha256=umI211ZBc-8-gF19_tSqIDwNof_U4ZbxVcPLneAbd_w,89172
+anchor/player.py,sha256=vn40QEVSzqZUqDZHqWzeAuw3hdVzUCD1a56k2QBmQpU,25206
+anchor/qrc_resources.py,sha256=XRlo8iapOwn3VvvqHYbT1Y_j349DYVmo8YyBXwsJ4u0,44749704
+anchor/widgets.py,sha256=9J7oV38eiioeFVbPPqx1e5h-AHCS_QwsGcPzeJODZT8,111638
+anchor/workers.py,sha256=VNaC_oNDAvnmMU2t6_lszhK-_n_Byef3CPxhZK854oE,2567
+Anchor_annotator-0.0.1a0.dist-info/LICENSE,sha256=jnyJBdXD4EhGQd1XJ5u2i9A8rvbrLvw6Fbbecd3EFC8,1097
+Anchor_annotator-0.0.1a0.dist-info/METADATA,sha256=rUuZzcIUMzEhDR9bb6hBO3srw8tjsqZZd9AH12IEBk4,1135
+Anchor_annotator-0.0.1a0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+Anchor_annotator-0.0.1a0.dist-info/entry_points.txt,sha256=-mUBOm4K4YuKdWMiQ9Ihg86WTalKAejBJ2vQPI2CvEk,59
+Anchor_annotator-0.0.1a0.dist-info/top_level.txt,sha256=wX6ZKxImGRZKFQjs3f6XYw_TfbAp6Xs3SmbLfLbFAJ0,7
+Anchor_annotator-0.0.1a0.dist-info/RECORD,,
