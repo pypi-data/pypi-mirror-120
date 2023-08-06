@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+sensorpad/__init__.py
+sensorpad/wrapper.py
+sensorpad.egg-info/PKG-INFO
+sensorpad.egg-info/SOURCES.txt
+sensorpad.egg-info/dependency_links.txt
+sensorpad.egg-info/top_level.txt
