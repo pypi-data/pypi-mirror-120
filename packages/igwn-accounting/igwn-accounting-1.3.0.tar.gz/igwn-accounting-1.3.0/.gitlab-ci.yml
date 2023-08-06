@@ -1,0 +1,314 @@
+include:
+  - project: computing/gitlab-ci-templates
+    file:
+      - debian.yml
+      - python.yml
+      - rhel.yml
+
+stages:
+  - dist
+  - source
+  - build
+  - test
+  - lint
+
+variables:
+  CONDOR_CONFIG: "/dev/null"
+
+.el7:
+  image: igwn/base:el7-testing
+  variables:
+    EPEL: "true"
+
+.el8:
+  image: igwn/base:el8-testing
+  variables:
+    EPEL: "true"
+
+.buster:
+  image: igwn/base:buster
+
+.bullseye:
+  image: igwn/base:bullseye
+  allow_failure: true
+
+# -- dist -------------------
+
+tarball:
+  extends:
+    # https://computing.docs.ligo.org/gitlab-ci-templates/python/#.python:build
+    - .python:build
+  stage: dist
+  needs: []
+  image: python:3
+
+# -- source packages --------
+
+.source:
+  stage: source
+  variables:
+    TARBALL: "igwn-accounting-*.tar.*"
+  needs:
+    - tarball
+
+.srpm:
+  extends:
+    # https://computing.docs.ligo.org/gitlab-ci-templates/rhel/#.rhel:srpm
+    - .rhel:srpm
+    - .source
+
+srpm:el7:
+  extends:
+    - .srpm
+    - .el7
+
+srpm:el8:
+  extends:
+    - .srpm
+    - .el8
+
+.dsc:
+  extends:
+    # https://computing.docs.ligo.org/gitlab-ci-templates/debian/#.debian:dsc
+    - .debian:dsc
+    - .source
+
+dsc:buster:
+  extends:
+    - .dsc
+    - .buster
+
+dsc:bullseye:
+  extends:
+    - .dsc
+    - .bullseye
+
+# -- binary packages --------
+
+.build:
+  stage: build
+
+.rpm:
+  extends:
+    # https://computing.docs.ligo.org/gitlab-ci-templates/rhel/#.rhel:rpm
+    - .rhel:rpm
+    - .build
+  variables:
+    SRPM: "igwn-accounting-*.src.rpm"
+
+.deb:
+  extends:
+    # https://computing.docs.ligo.org/gitlab-ci-templates/debian/#.debian:deb
+    - .debian:deb
+    - .build
+  variables:
+    DSC: "igwn-accounting_*.dsc"
+
+rpm:el7:
+  extends:
+    - .rpm
+    - .el7
+  needs:
+    - srpm:el7
+
+rpm:el8:
+  extends:
+    - .rpm
+    - .el8
+  needs:
+    - srpm:el8
+
+deb:buster:
+  extends:
+    - .deb
+    - .buster
+  needs:
+    - dsc:buster
+
+deb:bullseye:
+  extends:
+    - .deb
+    - .bullseye
+  needs:
+    - dsc:bullseye
+
+# -- test -------------------
+
+.test:
+  extends:
+    - .python:pytest
+  stage: test
+  variables:
+    # don't need the git repo
+    GIT_STRATEGY: none
+    # configure coverage
+    COVERAGE_TARGET: "igwn_accounting"
+    # configure pytest
+    PYTEST_OPTIONS: "-ra -v --pyargs igwn_accounting"
+    # use python3 always
+    PYTHON: python3
+  script:
+    # run pytest
+    - !reference [".python:pytest", script]
+    # run more tests
+    - python3 -m coverage run
+          --append
+          --source=igwn_accounting
+          --module
+          igwn_accounting.report --help
+
+.test-python:
+  extends:
+    - .test
+  needs:
+    - tarball
+  variables:
+    INSTALL_TARGET: "igwn-accounting*.tar.*"
+
+.test:el:
+  extends:
+    - .rhel:base
+    - .test
+  before_script:
+    # configure things from the template
+    - !reference [".rhel:base", before_script]
+    # configure EPEL
+    - yum -y -q install epel-release && yum -y -q install epel-rpm-macros
+    # install testing requirements and our test rpms
+    - PY3=$(rpm --eval '%{?python3_pkgversion:%{python3_pkgversion}}%{!?python3_pkgversion:3}')
+    - yum -y -q install
+          python${PY3}-coverage
+          python${PY3}-pytest
+          python${PY3}-pytest-cov
+    - yum -y -q install *.noarch.rpm
+
+.test:debian:
+  extends:
+    - .debian:base
+    - .test
+  before_script:
+    # set up apt
+    - !reference [".debian:base", before_script]
+    # install testing dependencies
+    - apt-get -y -q -q install
+          dpkg
+          python3-coverage
+          python3-pytest
+          python3-pytest-cov
+    - dpkg -i *.deb || { apt-get -y -q -f install; dpkg -i *.deb; }
+
+test:python3.5:
+  extends:
+    - .test-python
+  image: python:3.5
+
+test:python3.6:
+  extends:
+    - .test-python
+  image: python:3.6
+
+test:python3.7:
+  extends:
+    - .test-python
+  image: python:3.7
+
+test:python3.8:
+  extends:
+    - .test-python
+  image: python:3.8
+
+test:python3.9:
+  extends:
+    - .test-python
+  image: python:3.9
+
+test:rhel:el7:
+  extends:
+    - .test:el
+    - .el7
+  needs:
+    - rpm:el7
+
+test:rhel:el8:
+  extends:
+    - .test:el
+    - .el8
+  needs:
+    - rpm:el8
+
+test:debian:buster:
+  extends:
+    - .test:debian
+    - .buster
+  needs:
+    - deb:buster
+
+test:debian:bullseye:
+  extends:
+    - .test:debian
+    - .bullseye
+  needs:
+    - deb:bullseye
+
+# -- lint -------------------
+#
+# These jobs check the code
+# for quality issues
+#
+
+.lint:
+  stage: lint
+
+flake8:
+  extends:
+    # https://computing.docs.ligo.org/gitlab-ci-templates/python/#.python:flake8
+    - .python:flake8
+    - .lint
+  needs: []
+
+.rpmlint:
+  extends:
+    # https://computing.docs.ligo.org/gitlab-ci-templates/rhel/#.rhel:lint
+    - .rhel:lint
+    - .lint
+  variables:
+    GIT_STRATEGY: fetch
+    RPMLINT_OPTIONS: '--info --file .rpmlintrc'
+
+rpmlint:el7:
+  extends:
+    - .rpmlint
+    - .el7
+  needs:
+    - rpm:el7
+
+rpmlint:el8:
+  extends:
+    - .rpmlint
+    - .el8
+  needs:
+    - rpm:el8
+
+.lintian:
+  extends:
+    # https://computing.docs.ligo.org/gitlab-ci-templates/debian/#.debian:lint
+    - .debian:lint
+    - .lint
+  variables:
+    LINTIAN_OPTIONS: "--color always --suppress-tags new-package-should-close-itp-bug --fail-on-warnings --allow-root --pedantic"
+
+lintian:buster:
+  extends:
+    - .lintian
+    - .buster
+  needs:
+    - deb:buster
+
+lintian:bullseye:
+  extends:
+    - .lintian
+    - .bullseye
+  needs:
+    - deb:bullseye
+  variables:
+    LINTIAN_OPTIONS: "--color always --suppress-tags new-package-should-close-itp-bug,groff-message --fail-on warning --allow-root --pedantic"

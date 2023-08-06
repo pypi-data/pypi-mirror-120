@@ -1,0 +1,29 @@
+igwn-accounting (1.3.0-1) unstable; urgency=low
+
+  * Minor feature release
+
+ -- Duncan Macleod <duncan.macleod@ligo.org>  Mon, 20 Sep 2021 11:00:00 +0100
+
+igwn-accounting (1.2.1-1) unstable; urgency=low
+
+  * Patch release
+
+ -- Duncan Macleod <duncan.macleod@ligo.org>  Thu, 01 Apr 2021 14:30:00 +0100
+
+igwn-accounting (1.2.0-1) unstable; urgency=low
+
+  * Minor feature release
+
+ -- Duncan Macleod <duncan.macleod@ligo.org>  Tue, 30 Mar 2021 10:38:00 +0100
+
+igwn-accounting (1.1.0-1) unstable; urgency=low
+
+  * Minor feature release
+
+ -- Duncan Macleod <duncan.macleod@ligo.org>  Thu, 28 Jan 2021 15:12:00 +0000
+
+igwn-accounting (1.0.0-1) unstable; urgency=low
+
+  * Initial release
+
+ -- Duncan Macleod <duncan.macleod@ligo.org>  Tue, 19 Jan 2021 15:29:00 +0000
