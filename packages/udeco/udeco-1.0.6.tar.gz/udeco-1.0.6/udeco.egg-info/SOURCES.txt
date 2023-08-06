@@ -1,0 +1,14 @@
+README.md
+setup.py
+udeco/__init__.py
+udeco.egg-info/PKG-INFO
+udeco.egg-info/SOURCES.txt
+udeco.egg-info/dependency_links.txt
+udeco.egg-info/not-zip-safe
+udeco.egg-info/top_level.txt
+udeco/FileExtensionChecker/FileExtensionChecker.py
+udeco/FileExtensionChecker/__init__.py
+udeco/FunctionAnnotationChecker/FunctionAnnotationChecker.py
+udeco/FunctionAnnotationChecker/__init__.py
+udeco/TimeRecorder/TimeRecorder.py
+udeco/TimeRecorder/__init__.py
