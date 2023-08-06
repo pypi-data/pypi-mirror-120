@@ -1,0 +1,4 @@
+graft src/meshcatmods/viewer
+prune src/meshcatmods/viewer/node_modules
+graft src/meshcatmods/examples
+graft src/meshcatmods/tests/data
