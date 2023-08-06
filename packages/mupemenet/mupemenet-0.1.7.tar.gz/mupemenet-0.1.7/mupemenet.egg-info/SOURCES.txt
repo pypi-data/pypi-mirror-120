@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+mupemenet/App.py
+mupemenet/__init__.py
+mupemenet/__main__.py
+mupemenet/requirements.txt
+mupemenet.egg-info/PKG-INFO
+mupemenet.egg-info/SOURCES.txt
+mupemenet.egg-info/dependency_links.txt
+mupemenet.egg-info/entry_points.txt
+mupemenet.egg-info/requires.txt
+mupemenet.egg-info/top_level.txt

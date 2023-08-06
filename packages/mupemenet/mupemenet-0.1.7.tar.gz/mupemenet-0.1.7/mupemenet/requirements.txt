@@ -1,0 +1,10 @@
+tflite_runtime==2.5.0.post1
+numpy==1.16.2
+coloredlogs==15.0.1
+pyeventbus3==0.10
+urllib3==1.24.1
+matplotlib==3.4.3
+opencv_python==4.5.3.56
+websockets==10.0
+Pillow==8.3.2
+tinydb==4.5.1
