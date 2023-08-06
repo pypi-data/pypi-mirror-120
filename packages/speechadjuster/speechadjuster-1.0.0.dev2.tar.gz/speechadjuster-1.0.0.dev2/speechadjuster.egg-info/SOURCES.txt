@@ -1,0 +1,16 @@
+setup.cfg
+setup.py
+SpeechAdjuster/README.md
+SpeechAdjuster/__init__.py
+SpeechAdjuster/config.ini
+SpeechAdjuster/hyperknob.py
+SpeechAdjuster/results.py
+SpeechAdjuster/speechadjuster.py
+SpeechAdjuster/graphics/down.png
+SpeechAdjuster/graphics/up.png
+speechadjuster.egg-info/PKG-INFO
+speechadjuster.egg-info/SOURCES.txt
+speechadjuster.egg-info/dependency_links.txt
+speechadjuster.egg-info/entry_points.txt
+speechadjuster.egg-info/requires.txt
+speechadjuster.egg-info/top_level.txt

@@ -1,0 +1,4 @@
+[console_scripts]
+results = SpeechAdjuster.results:main
+speechadjuster = SpeechAdjuster.speechadjuster:main
+

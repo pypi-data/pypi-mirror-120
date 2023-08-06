@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: speechadjuster
+Version: 1.0.0.dev2
+Summary:  
+Home-page: https://github.com/osimantir/speechadjuster.git
+Author: Olympia Simantiraki
+Author-email: olina.simantiraki@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/osimantir/speechadjuster/archive/v1.0.0.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
