@@ -1,0 +1,12 @@
+six
+elasticsearch
+dataflows
+tableschema_elasticsearch>=2
+
+[develop]
+moto[server]
+pytest-cov
+pytest
+pylama
+mock
+tox
