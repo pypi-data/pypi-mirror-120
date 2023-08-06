@@ -1,0 +1,6 @@
+README.md
+setup.py
+bitclout.egg-info/PKG-INFO
+bitclout.egg-info/SOURCES.txt
+bitclout.egg-info/dependency_links.txt
+bitclout.egg-info/top_level.txt
