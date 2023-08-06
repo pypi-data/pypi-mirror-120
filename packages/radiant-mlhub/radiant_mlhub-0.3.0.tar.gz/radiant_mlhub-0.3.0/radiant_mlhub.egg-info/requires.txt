@@ -1,0 +1,4 @@
+requests~=2.25
+pystac~=1.1
+click<9.0.0,>=7.1.2
+tqdm~=4.56
