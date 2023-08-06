@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+slash_help/__init__.py
+slash_help/errors.py
+slash_help/slash_help.py
+slash_help.egg-info/PKG-INFO
+slash_help.egg-info/SOURCES.txt
+slash_help.egg-info/dependency_links.txt
+slash_help.egg-info/requires.txt
+slash_help.egg-info/top_level.txt
