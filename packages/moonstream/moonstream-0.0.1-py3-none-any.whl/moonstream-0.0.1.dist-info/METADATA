@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: moonstream
+Version: 0.0.1
+Summary: Moonstream: Open source blockchain analytics
+Home-page: https://github.com/bugout-dev/moonstream
+Author: Moonstream
+Author-email: engineering@moonstream.to
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: dataclasses ; python_version == "3.6"
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+Requires-Dist: types-requests ; extra == 'dev'
+Requires-Dist: types-dataclasses ; extra == 'dev'
+Provides-Extra: distribute
+Requires-Dist: setuptools ; extra == 'distribute'
+Requires-Dist: twine ; extra == 'distribute'
+Requires-Dist: wheel ; extra == 'distribute'
+
+# Moonstream Python client
+
+This is the Python client library for the Moonstream API.
+
+## Installation
+
+This library assumes you are using Python 3.6 or greater.
+
+Install using `pip`:
+
+```bash
+pip install moonstream
+```
+
+
