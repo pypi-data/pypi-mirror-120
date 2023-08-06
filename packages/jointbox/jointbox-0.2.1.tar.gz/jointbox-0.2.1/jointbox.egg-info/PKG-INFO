@@ -1,0 +1,26 @@
+Metadata-Version: 1.2
+Name: jointbox
+Version: 0.2.1
+Summary: Jointbox - a toolchain for managing JointBox devices
+Home-page: https://github.com/jointbox/jointbox-cli
+Author: Jointbox
+License: GPL-3.0-or-later
+Description: 
+        Jointbox CLI
+        ============
+        
+        A toolchain for managing JointBox devices.
+        
+Keywords: python cli iot smarthome homeassistant esphome
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Home Automation
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >3.6
