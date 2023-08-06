@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+mkdocs_expose_page_metadata/__init__.py
+mkdocs_expose_page_metadata/plugin.py
+mkdocs_expose_page_metadata.egg-info/PKG-INFO
+mkdocs_expose_page_metadata.egg-info/SOURCES.txt
+mkdocs_expose_page_metadata.egg-info/dependency_links.txt
+mkdocs_expose_page_metadata.egg-info/entry_points.txt
+mkdocs_expose_page_metadata.egg-info/requires.txt
+mkdocs_expose_page_metadata.egg-info/top_level.txt
