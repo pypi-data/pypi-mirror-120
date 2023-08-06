@@ -1,0 +1,228 @@
+---
+# A dictionary of controller name to Archon controller connection parameters.
+controllers:
+  sp1:
+    host: 10.7.45.26
+    port: 4242
+    parameters:
+      pixels: 2040
+      lines: 2040
+      overscan_pixels: 20
+      taps_per_detector: 4
+      framemode: split
+    detectors:
+      r1:
+        serial: STA29687
+        gain: 2.82
+        readnoise: 3
+        type: STA4850
+      b1:
+        serial: STA29602
+        gain: 2.81
+        readnoise: 3
+        type: STA4850
+      z1:
+        serial: STA27875
+        gain: 2.88
+        readnoise: 3
+        type: STA4850
+
+devices:
+  motor_controllers:
+    sp1:
+      shutter:
+        host: 10.7.45.28
+        port: 7776
+      hartmann_left:
+        host: 10.7.45.28
+        port: 7777
+      hartmann_right:
+        host: 10.7.45.28
+        port: 7778
+  lamps:
+    MI150:
+      host: 10.7.45.22
+      outlet: 4
+    FFS:
+      host: 10.7.45.29
+      outlet: 7
+    Argon:
+      host: 10.7.45.31
+      outlet: 1
+    Xenon:
+      host: 10.7.45.31
+      outlet: 2
+    HgAr:
+      host: 10.7.45.31
+      outlet: 3
+    LDLS:
+      host: 10.7.45.31
+      outlet: 4
+    Krypton:
+      host: 10.7.45.31
+      outlet: 5
+    Neon:
+      host: 10.7.45.31
+      outlet: 6
+    HgNe:
+      host: 10.7.45.31
+      outlet: 7
+  pressure:
+    r1:
+      host: 10.7.45.30
+      port: 1112
+      id: 253
+    b1:
+      host: 10.7.45.30
+      port: 1114
+      id: 253
+    z1:
+      host: 10.7.45.30
+      port: 1115
+      id: 253
+  wago:
+    controllers:
+      sp1:
+        address: 10.7.45.28
+        port: 502
+    modules:
+      ANALOG1:
+        model: 750-497
+        mode: input_register
+        channels: 8
+        description: E+E temperature and humidity sensors
+        devices:
+          RH1:
+            address: 40001
+            category: humidity
+            adaptor: rh_dwyer
+            units: percent
+          T1:
+            address: 40002
+            category: temperature
+            adaptor: t_dwyer
+            units: degC
+          RH2:
+            address: 40003
+            category: humidity
+            adaptor: rh_dwyer
+            units: percent
+          T2:
+            address: 40004
+            category: temperature
+            adaptor: t_dwyer
+            units: degC
+          RH3:
+            address: 40005
+            category: humidity
+            adaptor: rh_dwyer
+            units: percent
+          T3:
+            address: 40006
+            category: temperature
+            adaptor: t_dwyer
+            units: degC
+      ANALOG2:
+        model: 750-450
+        mode: input_register
+        channels: 4
+        description: Pt RTD sensors
+        devices:
+          RTD1:
+            address: 40009
+            category: temperature
+            adaptor: rtd
+            units: degC
+            description: Inside the controller box
+          RTD2:
+            address: 40010
+            category: temperature
+            adaptor: rtd
+            units: degC
+            description:
+          RTD3:
+            address: 40011
+            category: temperature
+            adaptor: rtd
+            units: degC
+            description:
+          RTD4:
+            address: 40012
+            category: temperature
+            adaptor: rtd
+            units: degC
+            description:
+      DO:
+        model: 750-530
+        mode: coil
+        channels: 8
+        description: Power relays
+        devices:
+          shutter:
+            address: 40513
+            type: relay
+            category: relays
+            relay_type: NC
+          hartmann_left:
+            address: 40515
+            type: relay
+            category: relays
+            relay_type: NO
+          hartmann_right:
+            address: 40516
+            type: relay
+            category: relays
+            relay_type: NO
+
+# This is the ACF configuration file to be loaded to the Archon including the
+# timing script. {archon_etc} gets completed with the path of the etc directory once
+# installed. If the path is not absolute, the root of the package is used as working
+# directory.
+archon:
+  config_file: 'lvm/config/archon/LVM_100MHz.acf'
+
+# Write a log for each exposure (requires files.lab_log to be set).
+write_log: true
+
+# The base directory where the data will be saved (and MJD subdirectory is always added)
+# and the format of the saved filename. Available placeholders are {observatory} which
+# is replaced with "apo" or "lco", {hemisphere} replaced with "n" if the observatory is
+# "apo" and "s" if "lco", {controller} which is replaced with the name of the Archon
+# controller defined above, {ccd} which is the name do the CCD (including the controller
+# identifier), and {exposure} which is a never-repeating sequence identifier. "split"
+# controls whether the CCD frames from each controller are saved as individual files
+# or as different HDU extensions inside the FITS file.
+files:
+  data_dir: '/data/spectro/lvm'
+  split: true
+  template: 'sdR-{hemisphere}-{ccd}-{exposure_no:08d}.fits.gz'
+
+exposure_list_sheet: 103BNxjlZ59Sob3jDO4EN1z6zp2q5YrYA6nTjGlZM6XY
+
+# Sensor configuration. Mainly for lab testing.
+sensors:
+  H5179:
+    host: 10.7.45.30
+    port: 1111
+
+# Additional header keywords to be obtained from the SYSTEM and STATUS commands.
+# The {sensor} placeholder will be filled out with the sensor value for the detector.
+# If the value of the header keyword is a list, it must be [value, comment]. It can
+# also be a mapping of detector name to [value, comment]. If a third element is used
+# it will be considered the floating point precision.
+header:
+  status:
+    CCDTEMP1:
+      r1: ['status.mod2/tempa', 'Temperature of the sensor (HEATERX 2)', 2]
+      b1: ['status.mod12/tempc', 'Temperature of the sensor (HEATERX 12)', 2]
+      z1: ['status.mod12/tempa', 'Temperature of the sensor (HEATERX 12)', 2]
+    CCDTEMP2:
+      r1: ['status.mod2/tempb', 'LN2 temperature (HEATERX 2)', 2]
+      b1: ['status.mod2/tempc', 'LN2 temperature (HEATERX 2)', 2]
+      z1: ['status.mod12/tempb', 'LN2 temperature (HEATERX 12)', 2]
+
+# Actor congiguration for the LVMActor class
+actor:
+  name: archon
+  host: localhost
+  port: 5672
