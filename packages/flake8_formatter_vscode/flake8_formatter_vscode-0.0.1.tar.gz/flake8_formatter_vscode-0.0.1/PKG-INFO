@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: flake8_formatter_vscode
+Version: 0.0.1
+Summary: Flake8 formatter.
+Keywords: flake8,formatter,vscode
+Author-email: Rodolphe Pelloux-Prayer <rodolphe@damsy.net>
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: flake8
+Requires-Dist: black ; extra == "dev"
+Requires-Dist: mypy ; extra == "dev"
+Requires-Dist: flake8 ; extra == "dev"
+Requires-Dist: pytest ; extra == "test"
+Requires-Dist: pytest-sugar ; extra == "test"
+Project-URL: Source, https://gitlab.com/RoPP/flake8-formatter-vscode
+Provides-Extra: dev
+Provides-Extra: test
+
+# flake8-formatter-vscode
+
+[![pypi][pypi-badge]](https://pypi.org/project/flake8-formatter-vscode/)
+[![black][black-badge]](https://github.com/psf/black)
+
+[pypi-badge]: https://badgen.net/pypi/v/flake8-formatter-vscode
+[black-badge]: https://badgen.net/badge/code%20style/black/black/
+
+## Installation
+
+Install from `pip` with:
+
+`pip install flake8-formatter-vscode` or `pip install --user flake8-formatter-vscode`
+
+## Usage
+
+To activate this formatter one will need to run:
+
+flake8 --format=vscode your_module.py
+
+Or set the configuration option inside `setup.cfg` or `.flake8` or `~/.config/flake8` file:
+
+[flake8]
+format = vscode
+
