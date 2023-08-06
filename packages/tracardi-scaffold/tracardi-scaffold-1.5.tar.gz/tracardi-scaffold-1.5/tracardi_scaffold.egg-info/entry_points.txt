@@ -1,0 +1,3 @@
+[console_scripts]
+mybinary = tracardi_plugin_scaffold.create_plugin:cli
+
