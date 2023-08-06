@@ -1,0 +1,15 @@
+crumbs/__init__.py,sha256=4GZKi13lDTD25YBkGakhZyEQZWTER_OWQMNPoH_UM2c,22
+crumbs/bpp.py,sha256=fQf7RUcriUqRJVw6aKnVBIgh1oOLLYQKLZy-3VJTxy8,279
+crumbs/fasta2phylip.py,sha256=SxBcaFENFWPsFW20JOxCkACx2hce_TcdvKFR4PhjQ1Q,339
+crumbs/get_failed_simulations_rowids.py,sha256=k8SbrBzVRtdhG5tO25z3AXqCwMPEuosnxMdOkVvybNE,1551
+crumbs/get_successful_simulations_rowids.py,sha256=AnqX6lTm26d3k2U_HpjNu2GOtQwTNORyIq7N9jd9K5M,1556
+crumbs/phylip2arlequin.py,sha256=PvLGMyD1UboUBTm2ybWZgXkrkfvwF_zATVy5aHfl6Zk,3850
+crumbs/retrieve_parameters.py,sha256=cbfj7-bon2LGWTVey_ndFM3YprhjPi9N9rYq76szFpI,824
+crumbs/sample.py,sha256=WeCJ1eiKD5834Fq4dfITfBhyrNWZcjGjUzA0S6yghgQ,1331
+crumbs/sequence.py,sha256=Ufu-3YTUp2G5KlBgsDCAdqKYpjGKp6MaGmB-oe77sbw,1871
+crumbs/simulate_phylip_sequences.py,sha256=lms3IrdPltnau4mkEh5Z65vRLGUse7Tt3_J9VOk9WF8,4626
+quetzal_crumbs-0.0.12.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+quetzal_crumbs-0.0.12.dist-info/METADATA,sha256=0v91Ko-aLwxrL7D2PLKmU-rzHzsMl-BbYVanSfZOVD4,2439
+quetzal_crumbs-0.0.12.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+quetzal_crumbs-0.0.12.dist-info/top_level.txt,sha256=l3c3J2z_MFKJW73ZMrHj8sF9XlsHdUpNm8how5Of7sY,7
+quetzal_crumbs-0.0.12.dist-info/RECORD,,
