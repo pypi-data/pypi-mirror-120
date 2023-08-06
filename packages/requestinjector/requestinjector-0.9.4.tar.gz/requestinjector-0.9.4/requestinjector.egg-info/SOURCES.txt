@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requestinjector.py
+setup.cfg
+setup.py
+requestinjector.egg-info/PKG-INFO
+requestinjector.egg-info/SOURCES.txt
+requestinjector.egg-info/dependency_links.txt
+requestinjector.egg-info/entry_points.txt
+requestinjector.egg-info/top_level.txt

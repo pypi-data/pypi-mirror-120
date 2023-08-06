@@ -1,0 +1,4 @@
+[console_scripts]
+requestinjector = requestinjector:tool_entrypoint
+ri = requestinjector:tool_entrypoint
+
