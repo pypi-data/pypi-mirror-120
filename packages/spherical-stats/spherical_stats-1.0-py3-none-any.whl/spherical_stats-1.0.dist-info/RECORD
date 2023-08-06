@@ -1,0 +1,13 @@
+spherical_stats/__init__.py,sha256=Nvtiz57TbV37BpyHS7eZxlR_DQL8Uwtbyq5zGR8gqDk,716
+spherical_stats/_acg.py,sha256=eutUuHMXI2MLeis4R3C6Iqtf4zw03gGGBd28w00slB8,4382
+spherical_stats/_coordinate_systems.py,sha256=1zOdkqaj14yuDr9cEd8i6oMlJybICNU9yb9HmGBYwbE,3301
+spherical_stats/_descriptive_stats.py,sha256=a9EOxkn4daNtpgYYvXsPTSYx-Ohs3Oa8VHoxOEfD-y0,2246
+spherical_stats/_esag.py,sha256=raJxBvBsav_S143_ko9UFLo5IWA2-FUjuZd9JAfX5pY,8991
+spherical_stats/_plot_utils.py,sha256=l5nM5zxD1A6wuhGCA7LvwUTv69AGB41Xu-KJhretoHk,3363
+spherical_stats/_utils.py,sha256=f7MHPpOfU7pRNX0Lmft1ZdDdh3eHkljgmWtsjkCJKNY,2346
+spherical_stats/tasmanianData.csv,sha256=urGwg0Q7p-VDBgDbqFZ1pZmqGoxuZTTKk00PK0gogbs,838
+spherical_stats-1.0.dist-info/LICENSE.txt,sha256=uO4tDv6-JW6EifdqDL5KHe0_RViu37jgWR-Tp7keZvU,1084
+spherical_stats-1.0.dist-info/METADATA,sha256=wYhlX82_5CoCSWQVJFb6xAPuNcfU-O2jy9EwSVqf_fU,1633
+spherical_stats-1.0.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+spherical_stats-1.0.dist-info/top_level.txt,sha256=HRE6JK8wCKlUNp9UQm_h5MzFbYy-HhQTjKVWbFmtFjE,16
+spherical_stats-1.0.dist-info/RECORD,,
