@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: fastapi-token-gen
+Version: 0.2.1
+Summary: Gen token for FastAPI
+Home-page: UNKNOWN
+Author: yangyaofei
+Author-email: yangyaofei@gmail.com
+License: MIT
+Platform: win32
+Platform: win64
+Platform: linux32
+Platform: linux64darwin
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: cryptography (==3.4.7)
+Requires-Dist: PyJWT (==2.1.0)
+Requires-Dist: fastapi (>=0.65.2)
+Requires-Dist: pydantic (>=1.8.2)
+Requires-Dist: typing (>=3.7.4.3)
+Requires-Dist: cidrize (>=2.0.0)
+
+UNKNOWN
+
+

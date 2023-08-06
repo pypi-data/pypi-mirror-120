@@ -1,0 +1,10 @@
+fastapi_token/__init__.py,sha256=HfjVOrpTnmZ-xVFCYSVmX50EXaBQeJteUHG-PD6iQs8,22
+fastapi_token/acl.py,sha256=lHxMfOxfGa0PBA1J3mJ3pAeeKwtGypRh98cSOfqnKr8,881
+fastapi_token/encrypt.py,sha256=gU_EyxcRkXd5uXHpPwJ3c_6XlaDXTVTGe8CaD1P8GRk,794
+fastapi_token/oauth2.py,sha256=g-YC8pH11_PmalnfFKy8kNIFAts_BwLjCNr_1avfpe8,13886
+fastapi_token/router.py,sha256=rSJ57OEe7CQaHHmOellCupaifJMWJYiLwnjgdCtdC90,2103
+fastapi_token/schemas.py,sha256=NwOUbXHbil7Wf2TOdwnOg5aU5mF46QyyNRgKGKD0W-c,1630
+fastapi_token_gen-0.2.1.dist-info/METADATA,sha256=xkk5pTKAfrnd21OxDSoG-UPpxBd9pKt-CA6plQrNbeo,530
+fastapi_token_gen-0.2.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+fastapi_token_gen-0.2.1.dist-info/top_level.txt,sha256=lTTT9VmlRa489c2HTE4dIkKTKuqKanAZFEPuBG6T6rc,14
+fastapi_token_gen-0.2.1.dist-info/RECORD,,
