@@ -1,0 +1,8 @@
+setup.py
+menuer/__init__.py
+menuer/menuer.py
+menuer.egg-info/PKG-INFO
+menuer.egg-info/SOURCES.txt
+menuer.egg-info/dependency_links.txt
+menuer.egg-info/requires.txt
+menuer.egg-info/top_level.txt
