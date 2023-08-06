@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+utils/__init__.py
+utils/js_helper/__init__.py
+utils/os_helper/__init__.py
+utils/os_helper/paths.py
+utils/request_session/__init__.py
+utils/thread_helpers/__init__.py
+utils/thread_helpers/animations.py
+utils_S.egg-info/PKG-INFO
+utils_S.egg-info/SOURCES.txt
+utils_S.egg-info/dependency_links.txt
+utils_S.egg-info/requires.txt
+utils_S.egg-info/top_level.txt
