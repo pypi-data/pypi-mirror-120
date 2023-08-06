@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: milkyway-sdk
+Version: 0.1.0
+Summary: 
+Author: Stargazer 838
+Author-email: stargazers838@gmail.com
+Requires-Python: ==3.8.10
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: cryptography (>=3.4.8,<4.0.0)
+Requires-Dist: python-dotenv (>=0.19.0,<0.20.0)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Requires-Dist: terra_sdk (>=1.0.0-b2,<2.0.0)
