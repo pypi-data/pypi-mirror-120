@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/dictnet/__init__.py
+src/dictnet/__main__.py
+src/dictnet/_dictnet.py
+src/dictnet/senset.py
+src/dictnet/util.py
+src/dictnet.egg-info/PKG-INFO
+src/dictnet.egg-info/SOURCES.txt
+src/dictnet.egg-info/dependency_links.txt
+src/dictnet.egg-info/requires.txt
+src/dictnet.egg-info/top_level.txt
+src/dictnet/cli/__init__.py
+src/dictnet/cli/_util.py
+src/dictnet/cli/download.py
