@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: yolov5-inference
+Version: 0.6
+Summary: code de inference yolov5
+Home-page: https://github.com/ultralytics/yolov5
+Author: cuongngm
+Author-email: cuonghip0908@gmail.com
+License: UNKNOWN
+Description: Package dung de inference model yolov5 voi custom object
+        # Install
+        ```bash
+        pip install yolov5-inference==0.6
+        ```
+        
+        # Use
+        ```bash
+        from yolov5_inference.infer import DetectObject
+        class_name = {0: 'text', 1: 'title', 2: 'list', 3: 'table', 4: 'figure'}
+        model = DetectObject(weights='../path/of/weights', classes=class_name)
+        img_path = '../path/of/img'
+        rs = model.detect(img_path)
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
