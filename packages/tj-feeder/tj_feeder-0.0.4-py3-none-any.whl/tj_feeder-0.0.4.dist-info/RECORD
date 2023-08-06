@@ -1,0 +1,8 @@
+tj_feeder/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tj_feeder/tj_feed.py,sha256=v08pWSNomt1sOOwFxodfi_1JAYN8bwHuo2nF9W2Bp0w,5064
+tj_feeder/data/cfg.json,sha256=594m1cFmhkjzGsCQEaHc9LLppmaiRd6dqQkpwxZ7kvc,74
+tj_feeder-0.0.4.dist-info/METADATA,sha256=9mvZWDh7xLfXeoFRrLUPnK_Txf65EJAR3VEN5jWhqEA,3007
+tj_feeder-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tj_feeder-0.0.4.dist-info/entry_points.txt,sha256=wDlPS0VD3kPMekUDT6H2DVo8RPMLkO2WfnlmZj1X2RU,52
+tj_feeder-0.0.4.dist-info/top_level.txt,sha256=qBFpeF7miMxS_KXDdHttum3MS5FYH31fCkvy-ZZS-hY,10
+tj_feeder-0.0.4.dist-info/RECORD,,
