@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: npaws
+Version: 0.1.42
+Summary: An SDK that provides functionalities for Neural Platform Project.
+Home-page: https://github.com/miquelescobar/npaws
+Author: Miquel Escobar
+Author-email: miquel.escobar@bsc.es
+License: UNKNOWN
+Description: # npaws
+        Softaware Development Kit for Neural Platform project.
+        
+        ## Installation
+        ```
+        pip install npaws
+        ```
+        
+Keywords: pip,neural,platform,npaws
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
