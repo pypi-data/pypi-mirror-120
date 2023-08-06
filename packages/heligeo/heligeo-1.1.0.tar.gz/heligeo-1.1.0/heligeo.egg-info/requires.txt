@@ -1,0 +1,6 @@
+numpy
+Shapely
+plotly
+requests
+dash
+pandas
