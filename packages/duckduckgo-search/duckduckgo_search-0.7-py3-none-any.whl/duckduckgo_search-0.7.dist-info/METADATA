@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: duckduckgo-search
+Version: 0.7
+Summary: Duckduckgo.com search results
+Home-page: https://github.com/deedy5/duckduckgo_search
+Author: deedy5
+Author-email: deedy-ru@ya.ru
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Internet :: WWW/HTTP :: Indexing/Search
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests (>=2.26.0)
+Requires-Dist: lxml (>=4.6.3)
+
+![Python >= 3.6](https://img.shields.io/badge/python->=3.6-red.svg) [![](https://badgen.net/github/release/deedy5/duckduckgo_search)](https://github.com/deedy5/duckduckgo_search/releases) [![](https://badge.fury.io/py/duckduckgo-search.svg)](https://pypi.org/project/duckduckgo-search) 
+## Duckduckgo_search
+
+Duckduckgo.com search results.
+
+### Dependencies
+```python
+lxml, requests
+```
+### Install
+```python
+pip install -U duckduckgo_search
+```
+
+### Usage
+
+*WARNING!*: set the delay between function calls to **2 seconds** to avoid site error. </br>
+If the function returns an error, wait 15 seconds. </br>
+
+```python
+from duckduckgo_search import ddg
+
+ddg(keywords, region='wt-wt', safesearch='Moderate', time=None, max_results=30, **kwargs):
+    ''' DuckDuckGo search
+    Query parameters, link: https://duckduckgo.com/params:
+    keywords: keywords for query;
+    safesearch: On (kp = 1), Moderate (kp = -1), Off (kp = -2);
+    region: country of results - wt-wt (Global), us-en, uk-en, ru-ru, etc.;
+    time: 'd' (day), 'w' (week), 'm' (month), 'y' (year), or 'year-month-date..year-month-date';    
+    max_results = 30 gives a number of results not less than 30,   
+    maximum DDG gives out about 200 results.
+    '''
+```
+### Returns
+```python
+[{'title': title of result,
+  'href': href of result,
+  'body': body of result,},
+ {'title': title of result,
+  'href': href of result,
+  'body': body of result,}, ...]
+```
+### Example
+```python
+keywords = 'google'
+results = ddg(keywords, region='wt-wt', safesearch='Moderate', time='y', max_results=2)
+print(results)
+```
+```python
+[
+ {
+ 'title': 'Google', 
+ 'href': 'http://www.l.google.com/', 
+ 'body': "Google has many special features to help you find exactly what you're looking for. Advertising Programs Business Solutions About Google."
+ }, 
+ {
+ 'title': 'Google - Home | Facebook', 
+ 'href': 'https://www.facebook.com/Google/', 
+ 'body': "Google, Mountain View, CA. 28M likes · 52,285 talking about this · 611 were here. Organizing the world's information and making it universally accessible... See actions taken by the people who manage and post content. Google Inc. is responsible for this Page."
+ },
+]
+```
+
+
