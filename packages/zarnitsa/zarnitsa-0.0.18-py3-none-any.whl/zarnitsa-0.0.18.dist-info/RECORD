@@ -1,0 +1,14 @@
+zarnitsa/DataAugmenter.py,sha256=uJDjXvL08S3p_B_Ydo507trrLA3_uh3gpAFrr137-Q4,611
+zarnitsa/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zarnitsa/nlp/DataAugmenterNLP.py,sha256=h1EG-mJusAo_mNHxoq5n-khmpFTi88UmEgriiyodNj8,8788
+zarnitsa/nlp/__init__.py,sha256=z-56xx6HaooZR3ditkvaua58rrk0XJeWzXseur1BMHs,47
+zarnitsa/series/DataAugmenterTimeSeries.py,sha256=hZDhr8dHBipQ_GJOsJXauYbvZop7RukSyk4HLGXN4Jo,5467
+zarnitsa/series/__init__.py,sha256=6GUyxVhwFZJggXBMcjlZOVxQEBzQAUQZ5SqPdpdyuWE,61
+zarnitsa/stats/DataAugmenterExternally.py,sha256=mSMQghAKOfhBcMGIgy3Vqgi7JAhvC8eGWtWMRxPa-h4,2105
+zarnitsa/stats/DataAugmenterInternally.py,sha256=zm4iUVJXsPxaatSGjmxzMjI_2yHEwcNI1rWdb-I_g_A,7035
+zarnitsa/stats/__init__.py,sha256=MwL8JKiRlTWVfi9Jd8KvQoyMQqGuASRBoUV-j3bu64Y,122
+zarnitsa-0.0.18.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+zarnitsa-0.0.18.dist-info/METADATA,sha256=1jSFzlpPOD1AujMwCCS3cQaJT0R2RZM78Yiii5Or3cg,568
+zarnitsa-0.0.18.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+zarnitsa-0.0.18.dist-info/top_level.txt,sha256=KLUCuCQCQ7k2mdx3Y6f-rHp5UGe0pLF4geAgeBSDXwk,9
+zarnitsa-0.0.18.dist-info/RECORD,,
