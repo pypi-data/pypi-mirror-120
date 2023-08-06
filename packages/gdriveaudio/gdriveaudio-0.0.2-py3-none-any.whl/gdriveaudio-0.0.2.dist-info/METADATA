@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: gdriveaudio
+Version: 0.0.2
+Summary: Play music files on Google Drive
+Home-page: https://github.com/kota7/gdriveaudio
+Author: Kota Mori
+Author-email: kmori05@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: google-api-python-client
+Requires-Dist: google-auth-httplib2
+Requires-Dist: google-auth-oauthlib
+Requires-Dist: tqdm
+
+UNKNOWN
+
+
