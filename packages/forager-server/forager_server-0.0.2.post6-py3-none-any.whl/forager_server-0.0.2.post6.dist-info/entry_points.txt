@@ -1,0 +1,3 @@
+[console_scripts]
+forager-server = forager.main:main
+

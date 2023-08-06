@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: forager-server
+Version: 0.0.2.post6
+Summary: A web-based data exploration system for rapid task definition.
+Home-page: UNKNOWN
+Author: Forager Research Team
+Author-email: faitpoms@gmail.com
+License: UNKNOWN
+Keywords: Interactive,Interpreter,Shell,Web
+Platform: Linux
+Platform: Mac OS X
+Platform: Windows
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.8
+Requires-Dist: uvicorn
+Requires-Dist: sanic
+Requires-Dist: Django (<4.0.0,>=3.1.1)
+Requires-Dist: Pillow
+Requires-Dist: django-cors-headers
+Requires-Dist: djangorestframework
+Requires-Dist: psycopg2-binary
+Requires-Dist: numpy
+Requires-Dist: django-sslserver (<0.23.0,>=0.22.0)
+Requires-Dist: pycocotools (<3.0.0,>=2.0.2)
+Requires-Dist: expiringdict
+Requires-Dist: requests (<3.0.0,>=2.26.0)
+Requires-Dist: dataclasses-json
+Requires-Dist: scikit-learn
+Requires-Dist: chest (<0.3.0,>=0.2.3)
+Requires-Dist: aiostream (<0.5.0,>=0.4.1)
+Requires-Dist: bidict (<0.22.0,>=0.21.2)
+Requires-Dist: scipy (<2.0.0,>=1.6.0)
+Requires-Dist: fastcluster (==1.1.28)
+Requires-Dist: torch (<2.0.0,>=1.9.0)
+Requires-Dist: torchvision (<0.11.0,>=0.10.0)
+Requires-Dist: aiohttp
+Requires-Dist: aiostream
+Requires-Dist: runstats
+Requires-Dist: ftfy
+Requires-Dist: regex
+Requires-Dist: tqdm
+Requires-Dist: torch
+Requires-Dist: torchvision
+
+
+Forager is a system for rapidly exploring a corpus of data, and
+annotating this data with user-defined tags.
+    
+
