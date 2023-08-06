@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "workflow_db": { "type": "string", "default": "~/.choppy/workflow.db" },
+    "log_dir": { "type": "string", "default": "~/.choppy" },
+    "log_level": {
+      "type": "string",
+      "enum": ["DEBUG", "INFO", "WARNING", "CRITICAL", "FATAL"],
+      "default": "INFO"
+    },
+    "app_root_dir": { "type": "string", "default": "~/.choppy/apps" },
+    "tmp_dir": { "type": "string", "default": "/tmp/choppy" },
+    "clean_cache": { "type": "string", "default": true },
+    "womtool_path": { "type": "string", "default": "" }
+  },
+  "additionalProperties": false,
+  "required": [
+    "workflow_db",
+    "log_dir",
+    "log_level",
+    "app_root_dir",
+    "tmp_dir",
+    "clean_cache"
+  ]
+}

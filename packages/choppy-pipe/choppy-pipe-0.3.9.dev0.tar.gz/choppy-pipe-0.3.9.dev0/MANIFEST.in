@@ -1,0 +1,12 @@
+include Makefile CHANGES.rst CONTRIBUTING.rst LICENSE AUTHORS config.py LICENSE.md
+
+recursive-include choppy *
+
+graft tests
+graft docs
+graft scripts
+graft conda.recipe
+
+global-exclude *.py[co] .DS_Store
+
+prune docs/_build
