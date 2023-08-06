@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+pyopenls9.egg-info/PKG-INFO
+pyopenls9.egg-info/SOURCES.txt
+pyopenls9.egg-info/dependency_links.txt
+pyopenls9.egg-info/top_level.txt
+src/RtMidi.cpp
+src/python.cpp
