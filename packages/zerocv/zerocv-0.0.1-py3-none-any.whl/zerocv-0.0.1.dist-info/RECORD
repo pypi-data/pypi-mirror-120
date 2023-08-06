@@ -1,0 +1,9 @@
+zerocv/__init__.py,sha256=VAuuKGRNzLYD28bfaKBgVT4ZvgenYmYtanVWYVOcT1Q,66
+zerocv/fps.py,sha256=42jfXHsSJs2P-wSdhoaYjTyE-07tqCzQ0UhcP1nwl8U,606
+zerocv/utils.py,sha256=ax-VfKLw5CJ3DueEyy6VCYT8yumUvcvhRiezkMEpG6Q,359
+zerocv/video.py,sha256=RO4WWKU1R1VgmutW0VJbB679wuHp0C-6gzuXWRa0nwQ,3465
+zerocv-0.0.1.dist-info/LICENSE.txt,sha256=fLNSkSiZK6m65g6aK6T12Zh4_MxPXR6uXETEbT-VfeE,1135
+zerocv-0.0.1.dist-info/METADATA,sha256=t23uYPEKhx0R5fk1ngrpiwLZJ4hdbFdMA1LwY_FOcOI,513
+zerocv-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+zerocv-0.0.1.dist-info/top_level.txt,sha256=CXiANMs9bvfY3p6XHeyJ57McQ0boTjEKHqldJbBIhYM,7
+zerocv-0.0.1.dist-info/RECORD,,

@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: zerocv
+Version: 0.0.1
+Summary: Computer Vision Helping Library
+Home-page: https://github.com/zerocv/zerocv.git
+Author: Moyalab
+Author-email: iammoyalab@gmail.com
+License: MIT
+Keywords: MediaPipe,ComputerVision
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+
+UNKNOWN
+
+
