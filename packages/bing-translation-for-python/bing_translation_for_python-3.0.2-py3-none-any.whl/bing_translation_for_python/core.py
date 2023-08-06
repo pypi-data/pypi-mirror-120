@@ -1,0 +1,153 @@
+import collections
+import os
+import re
+
+import requests
+
+from .public import errors
+from . import setting
+
+
+def file_check(func):
+    def run(path, *argv, **kwargs):
+        if os.access(path, os.F_OK) and os.access(path, os.R_OK):
+            return func(path, *argv, **kwargs)
+        raise FileNotFoundError(
+            F'没有找到配置文件，或文件不可访问： \n{path}'
+        )
+
+    return run
+
+
+def max_length_check(func):
+    def run(self, string, *arg, **args):
+        max_length = 500
+        if not isinstance(string, str):
+            length = len(' '.join(string))
+        else:
+            length = len(string.strip())
+
+        if length > max_length:
+            raise errors.MaxLengthOver("String length 500 over")
+
+        return func(self, string, *arg, **args)
+    return run
+
+
+# TODO 装饰器,针对keyerror
+
+
+SemanticItem = collections.namedtuple('SemanticItem', ['text', 'semantic'])
+
+
+def get_token():
+    try:
+        response = requests.get(setting.HOME_PAGE_URL)
+        string = re.search(
+            '(params_RichTranslateHelper =){1}.+?]{1}', response.text
+        ).group()
+
+        return {
+            'token': re.search(r'".{32}"', string).group().strip('"'),
+            'key': int(re.search(r'[0-9]{13}', string).group()),
+        }
+
+    except AttributeError:
+        raise errors.CannotFindToken
+
+
+class Text:
+    def __init__(self, to_lang, reper_text, token, key, fromlang='auto-detect'):
+        if reper_text.strip():
+            data = requests.post(
+                **{
+                    'url': setting.TRANSLATOR_ENGINE_URL,
+                    'headers': setting.HEADERS,
+                    'data': {
+                        'fromLang': fromlang,
+                        'to': to_lang,
+                        'text': reper_text,
+                        'token': token,
+                        'key': key,
+                    }
+                }).json()
+            self.__data__ = data
+            self.from_lang = data[0]['detectedLanguage']['language']
+            self.reper_text = reper_text
+            self.to_lang = to_lang
+
+        else:
+            raise errors.EmptyTextError(F'无效的字符串:"{reper_text}"')
+
+    def __repr__(self):
+        return self.text()
+
+    def json(self) -> dict:
+        return self.__data__
+
+    def text(self) -> str:
+        texts = []
+        for text_item in self.json()[0]['translations']:
+            texts.append(text_item['text'])
+
+        return ' '.join(texts)
+
+
+class Semantic:
+    """同义词"""
+
+    def __init__(self, text_obj: Text, token, key):
+        self.reper_text = text_obj.reper_text
+        self.from_lang = text_obj.from_lang
+        self.to_lang = text_obj.to_lang
+
+        try:
+            self.__data__ = requests.post(
+                **{
+                    'url': setting.SEMANTIC_URL,
+                    'headers': setting.HEADERS,
+                    'data': {
+                        'text': text_obj.reper_text,
+                        'from': text_obj.from_lang,
+                        'to': text_obj.to_lang,
+                        'token': token,
+                        'key': key,
+                    }
+                }
+            ).json()[0]['translations']
+
+        # 某些特殊的正确文本不能被服务器正确处理
+        # 设置一个空列表来规避错误
+        except KeyError:
+            self.__data__ = []
+
+    def __repr__(self):
+        return F'"{self.reper_text}"({self.from_lang})-->({self.to_lang})'
+
+    def text(self) -> str:
+        data = self.json()['semantic']
+        text = '\n'.join([F'{k}:{",".join(v)}' for k, v in data.items()])
+        return text
+
+    def json(self) -> dict:
+        semantics = {}
+        for i in self.__data__:
+            temp = []
+            for i_i in i['backTranslations']:
+                temp.append(i_i['displayText'])
+            semantics[i['displayTarget']] = temp
+        return {
+            'from': self.from_lang,
+            'semantic': semantics,
+            'to': self.to_lang
+        }
+
+    def __getitem__(self, key):
+        item = self.__data__[key]
+        return SemanticItem(
+            item['displayTarget'],
+            [i['displayText'] for i in item['backTranslations']]
+        )
+
+    def __len__(self):
+        return len(self.__data__)
