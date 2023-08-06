@@ -1,0 +1,3 @@
+[console_scripts]
+eotile = eotile.eotile_cli:main
+
