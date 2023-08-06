@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+zarnitsa/zarnitsa.egg-info/PKG-INFO
+zarnitsa/zarnitsa.egg-info/SOURCES.txt
+zarnitsa/zarnitsa.egg-info/dependency_links.txt
+zarnitsa/zarnitsa.egg-info/requires.txt
+zarnitsa/zarnitsa.egg-info/top_level.txt
