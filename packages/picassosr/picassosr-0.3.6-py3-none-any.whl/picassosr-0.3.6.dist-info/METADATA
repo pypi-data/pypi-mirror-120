@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: picassosr
+Version: 0.3.6
+Summary: UNKNOWN
+Home-page: https://github.com/jungmannlab/picasso
+Author: Joerg Schnitzbauer, Maximilian T. Strauss
+Author-email: joschnitzbauer@gmail.com, straussmaximilian@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE.txt
+Requires-Dist: PyQt5
+Requires-Dist: numpy (==1.19.2)
+Requires-Dist: h5py (==2.10.0)
+Requires-Dist: matplotlib (==3.3.2)
+Requires-Dist: numba (==0.51.2)
+Requires-Dist: scipy (==1.5.3)
+Requires-Dist: pyyaml (==5.3.1)
+Requires-Dist: scikit-learn (==0.23.2)
+Requires-Dist: colorama (==0.4.4)
+Requires-Dist: tqdm (==4.50.2)
+Requires-Dist: lmfit (==1.0.1)
+
+
+A collection of tools for painting super-resolution images (processing of Single-molecule localization microscopy (SMLM) data).
+Taylored for DNA-PAINT, supercharged with Numba.
+
+Features include:    
+    - Design: Design rectangular DNA origami
+    - Simulate: Simulate DNA-PAINT image acquistions
+    - Localize: Localize allows performing super-resolution reconstruction of image stacks.
+    - Render: Rendering of the super-resolution images and post-processing
+    - Average: Particle averaging
+
+
