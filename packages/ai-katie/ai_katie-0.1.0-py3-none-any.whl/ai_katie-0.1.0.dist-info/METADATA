@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: ai-katie
+Version: 0.1.0
+Summary: Utility things for Data Science and AI
+Home-page: https://github.com/danpeczek/ai-katie
+Author: danpeczek
+Author-email: danpeczek@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/danpeczek/ai-katie/issues
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Communications :: Email
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: torch
+Requires-Dist: numpy
+
+ai-katie
+========
+
+The utility for Data Science and AI using common libraries.
+Extended by myself when I'm running to problem that might happen more than once.
+
+- Github: https://github.com/danpeczek/ai-katie
+
++-----------------+
+|    **main**     |
++=================+
+| |Build Status|  |
++-----------------+
+
+Setup
+=====
+To setup to library you need at least Python 3.8 and pip installed.
+
+Also as the package uses PyTorch I strongly suggest to install the PyTorch
+in the distribution of your choice from: https://pytorch.org/get-started/locally/ before installing the library.
+
+When all dependencies are installed you can install the library by:
+
+    $ pip install ai-katie
+
+License
+-------
+
+`MIT LICENSE <./LICENSE>`__
+
+.. |Build Status| image:: https://app.travis-ci.com/danpeczek/ai-katie.svg?token=ECqr2qx7PpxzXbk67mZ9&branch=main
+
+
