@@ -1,0 +1,14 @@
+qhal/__about__.py,sha256=6t7ERRaiQ93Ch3YxnDo9DSp0vzL2IIgGn64lw-K9VY0,1780
+qhal/__init__.py,sha256=ymfStS5KzNqXWrmITAqflNan9I3tWmTrUUXPHQEkREw,405
+qhal/hal/__init__.py,sha256=_8Dn4YCgXIXxubKaBmRcsjyQktGjzDPY-MNlr2fyBAI,337
+qhal/hal/_commands.py,sha256=0gi1h9GSDYedeOcXy1SoNBpCaW_wHdDHus6AYEe7IGM,9141
+qhal/hal/_hardware_abstraction_layer_node.py,sha256=3WpLc3w-ZDkY5wi_vX3RB_CTUOQNILI39rp1APpDQsE,994
+qhal/hal/_utils.py,sha256=JqKiNxrM87bqs8S9dXeOKndctriEXag8-IDdq4LhUUQ,370
+qhal/quantum_simulators/__init__.py,sha256=yBZPR-fpzM_2OCVgl4K28AKKBEMQ-dzyNW_TMVvUnJY,127
+qhal/quantum_simulators/_interface_quantum_simulator.py,sha256=lJBK0bNWww16nKftIgnp5eRfG4X9FysNz_B9M-nubdA,742
+qhal/quantum_simulators/_projectq_quantum_simulator.py,sha256=M0Os1RyRIWLza9XJUHd9B-ASPnVyVkLpk2uyweb3uK0,10581
+qhal-0.1.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+qhal-0.1.3.dist-info/METADATA,sha256=N8uLzQ7nZPQmCpJy2Wb7q6rG1w_qs_FB5NuQqwK-nTA,685
+qhal-0.1.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+qhal-0.1.3.dist-info/top_level.txt,sha256=2ZKphO-MqHqa8edT9K7sCCWw04dNLzVyQP7hYPl-zvY,5
+qhal-0.1.3.dist-info/RECORD,,
