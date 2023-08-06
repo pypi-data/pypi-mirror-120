@@ -1,0 +1,3 @@
+[console_scripts]
+dspobjects = dspobjects.cli:main
+
