@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: auto-click
+Version: 0.0.11
+Summary: Python Auto-Click Library.
+Home-page: UNKNOWN
+Author: Jung Ji-Hyo
+Author-email: cord0318@gmail.com
+License: UNKNOWN
+Keywords: korea,autoclick,auto,jihyo,click,auto-click
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: click
+Requires-Dist: pynput
+
+# AutoClick 📱
+파이썬용 오토클릭 라이브러리입니다.
+
+* https://pypi.org/project/auto-click/
+- https://github.com/cord0318/python_auto_click
+
+# 다운로드 📥
+**이 모듈은 파이썬 모든 버젼에서 사용 가능합니다.**
+윈도우나 리눅스에서 다음과 같이 입력합니다.
+```
+pip install auto-click
+```
+오류가 나는 경우, python -m pip install --upgrade pip 로 pip를 업데이트 해주세요.
+
+# 사용법 🤖
+```python
+from autoclick import AutoClick
+AutoClick(right_key="<ctrl>+v", left_key="<ctrl>+x", delay=0.03)
+# Default Value: right_key="v", left_key="x", delay=0.04
+```
+
+# Update
+기능을 더 쉽게 만들었습니다.
+cmd 명령어 기능을 만들었습니다.
+
+
+# Tip
+**이제 오토클릭을 cmd에서 사용가능합니다!**
+```cmd
+auto --help
+```
+를 쳐서 사용가능합니다!
+
