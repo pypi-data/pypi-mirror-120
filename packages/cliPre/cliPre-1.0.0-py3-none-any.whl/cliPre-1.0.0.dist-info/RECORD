@@ -1,0 +1,11 @@
+mypackage/__init__.py,sha256=B8lyyy3FDevcKOHo4iIBjzx0TwLj8s6CEZ2Ux7wx2Uk,40
+mypackage/categorical.py,sha256=zMSnBY2OCoxPVjhugF0tx8LNtR9UEuulm0n_PAJWspw,4787
+mypackage/data_description.py,sha256=8xx5LosTzw3ADXvZQuUylrA0o0qcw4UrS5CkHGDa86U,1535
+mypackage/download.py,sha256=bXfDFdOl6m_NsVor6dcbVKoiWFzPPM8qePhy-LCQuaY,771
+mypackage/feature_scaling.py,sha256=fneOmB99Tf0WIAC7mPq1EXfD4zmWEOamKq9pvUb-1Y8,4361
+mypackage/imputation.py,sha256=yOf3vn2lJaU58LkTHDl0BAuNRDOx6EoDNiI0H0r33kA,6228
+mypackage/main.py,sha256=fmVN8gbH7HT9WoeqZSO2UT5jYgpbLOVV_lPLAEo0H-Q,2685
+cliPre-1.0.0.dist-info/METADATA,sha256=Hpi0CZtJupm3HA5PBluOcJsUxN1BrTOp5C-Oe_VkgP4,625
+cliPre-1.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+cliPre-1.0.0.dist-info/top_level.txt,sha256=ax2Dg5ulHxjedaMk72kLxMHSvJB80I9iLPYgNI4IQeA,10
+cliPre-1.0.0.dist-info/RECORD,,
