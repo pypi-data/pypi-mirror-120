@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "mdal"
+version = "0.1.5"
+description = "mdal(My Data Analytics Library)"
+authors = ["Yuya Nagai <ynny.opem@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/ynny-github/mdal"
+
+[tool.poetry.dependencies]
+python = ">=3.7, <3.10"
+scipy = "^1.7.1"
+matplotlib = "^3.4.2"
+scikit-posthocs = "^0.6.7"
+pmdarima = "^1.8.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+flake8 = "^3.9.2"
+autopep8 = "^1.5.7"
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry-dynamic-versioning]
+enable = false
