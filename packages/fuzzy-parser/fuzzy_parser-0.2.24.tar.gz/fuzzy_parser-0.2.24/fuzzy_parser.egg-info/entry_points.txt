@@ -1,0 +1,3 @@
+[console_scripts]
+fuzzy_dates = fuzzy_dates.__main__:main
+
