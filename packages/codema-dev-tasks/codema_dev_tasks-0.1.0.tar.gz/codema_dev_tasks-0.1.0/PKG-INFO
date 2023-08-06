@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: codema-dev-tasks
+Version: 0.1.0
+Summary: A collection of Python helper functions for use in ETL pipelines
+License: MIT
+Author: Rowan Molony
+Author-email: rowan.molony@codema.ie
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aiohttp (>=3.7.4,<4.0.0)
+Requires-Dist: fsspec (>=2021.8.1,<2022.0.0)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
