@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: free-sms-otp
+Version: 1.0.0
+Summary: Library that allows you to generate and check sms otp codes for free
+Home-page: https://github.com/QwertyQwertovich/free-sms-otp
+Author: Alexander Kharitonov
+Author-email: gametopsss@gmail.com
+License: MIT
+Description: see https://github.com/QwertyQwertovich/free-sms-otp
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
