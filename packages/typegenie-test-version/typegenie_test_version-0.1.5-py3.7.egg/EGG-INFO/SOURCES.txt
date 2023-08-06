@@ -1,0 +1,13 @@
+README.md
+setup.py
+src/typegenie/__cli__.py
+src/typegenie/__init__.py
+src/typegenie/api.py
+src/typegenie/autocomplete.py
+src/typegenie/lib.py
+src/typegenie_test_version.egg-info/PKG-INFO
+src/typegenie_test_version.egg-info/SOURCES.txt
+src/typegenie_test_version.egg-info/dependency_links.txt
+src/typegenie_test_version.egg-info/entry_points.txt
+src/typegenie_test_version.egg-info/requires.txt
+src/typegenie_test_version.egg-info/top_level.txt
