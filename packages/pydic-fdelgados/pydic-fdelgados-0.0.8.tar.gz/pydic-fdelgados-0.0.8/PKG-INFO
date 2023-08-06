@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pydic-fdelgados
+Version: 0.0.8
+Summary: A simple Dependency Injection Containerf
+Home-page: https://github.com/fdelgados/PyDic
+Author: Cisco Delgado
+Author-email: fdelgados@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# PyDic. Simple Dependency Injection Container
+
+
