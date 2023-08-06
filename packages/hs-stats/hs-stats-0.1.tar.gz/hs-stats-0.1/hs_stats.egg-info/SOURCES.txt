@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+hs-stats/Binomialdistribution.py
+hs-stats/Gaussiandistribution.py
+hs-stats/Generaldistribution.py
+hs-stats/__init__.py
+hs_stats.egg-info/PKG-INFO
+hs_stats.egg-info/SOURCES.txt
+hs_stats.egg-info/dependency_links.txt
+hs_stats.egg-info/not-zip-safe
+hs_stats.egg-info/top_level.txt
