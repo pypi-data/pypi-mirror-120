@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+get_mseed_data/__init__.py
+get_mseed_data/get_mseed.py
+get_mseed_data/get_mseed_utils.py
+get_mseed_data.egg-info/PKG-INFO
+get_mseed_data.egg-info/SOURCES.txt
+get_mseed_data.egg-info/dependency_links.txt
+get_mseed_data.egg-info/requires.txt
+get_mseed_data.egg-info/top_level.txt

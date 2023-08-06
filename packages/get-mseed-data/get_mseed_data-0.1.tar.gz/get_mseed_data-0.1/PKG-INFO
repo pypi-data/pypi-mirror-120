@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: get_mseed_data
+Version: 0.1
+Summary: Python code to download mseed data from differente services
+Home-page: https://github.com/awacero/get_mseed_data
+Author: Wilson Acero
+Author-email: acerowilson@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# get_mseed_data
+
+This code allows to choose between different MSEED servers (ARCLINK, SEEDLINK, ARCHIVE, FDSN) and download MSEED data using either end_time or window_size in seconds. 
+
+# Installation
+
+```bash
+$ pip install get_mseed_data
+```
+
+
