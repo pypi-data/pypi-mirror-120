@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+husampdf.egg-info/PKG-INFO
+husampdf.egg-info/SOURCES.txt
+husampdf.egg-info/dependency_links.txt
+husampdf.egg-info/top_level.txt
