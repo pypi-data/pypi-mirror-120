@@ -1,0 +1,17 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+transcv/__init__.py
+transcv/_nbdev.py
+transcv/detr.py
+transcv/visrectrans.py
+transcv.egg-info/PKG-INFO
+transcv.egg-info/SOURCES.txt
+transcv.egg-info/dependency_links.txt
+transcv.egg-info/entry_points.txt
+transcv.egg-info/not-zip-safe
+transcv.egg-info/requires.txt
+transcv.egg-info/top_level.txt
