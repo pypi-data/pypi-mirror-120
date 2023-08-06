@@ -1,0 +1,13 @@
+README.rst
+setup.py
+datainventory/__init__.py
+datainventory/_internal_store.py
+datainventory/common.py
+datainventory/inventory.py
+datainventory/media_store.py
+datainventory/model_store.py
+datainventory/table_store.py
+datainventory.egg-info/PKG-INFO
+datainventory.egg-info/SOURCES.txt
+datainventory.egg-info/dependency_links.txt
+datainventory.egg-info/top_level.txt
