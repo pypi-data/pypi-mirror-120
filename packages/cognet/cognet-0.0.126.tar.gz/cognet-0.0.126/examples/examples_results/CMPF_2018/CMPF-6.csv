@@ -1,0 +1,20 @@
+gssvar,s,q,r
+colcom,not fired,not fired,fired
+colmil,allowed,allowed,not allowed
+libmil,not remove,not remove,not remove
+gunlaw,favor,oppose,favor
+grass,nan,legal,legal
+reliten,not very strong,strong,no religion
+prayer,approve,disapprove,disapprove
+bible,book of fables,inspired word,book of fables
+abdefect,yes,yes,yes
+abnomore,yes,no,yes
+abhlth,yes,yes,yes
+absingle,no,no,yes
+abany,yes,yes,no
+pillok,strongly agree,agree,strongly agree
+polabuse,nan,no,yes
+rowngun,no,no,no
+abpoorw,wrong only sometimes,always wrong,not wrong at all
+godchnge,"believe now, always have","believe now, always have","believe now, always have"
+comfort,strongly agree,agree,strongly agree
