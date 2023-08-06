@@ -1,0 +1,4 @@
+[console_scripts]
+cm = pycodemon.main:main
+pycodemon = pycodemon.main:main
+
