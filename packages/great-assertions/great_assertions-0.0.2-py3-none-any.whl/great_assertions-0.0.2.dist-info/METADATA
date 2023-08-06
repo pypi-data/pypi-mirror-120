@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: great-assertions
+Version: 0.0.2
+Summary: Inspired by the library great-expectations
+Home-page: UNKNOWN
+Author: Sam Treweek
+Author-email: samtreweek@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## Great-Assertions
+
+[![serialbandicoot](https://circleci.com/gh/serialbandicoot/great-assertions.svg?style=svg)](<LINK>)
+
