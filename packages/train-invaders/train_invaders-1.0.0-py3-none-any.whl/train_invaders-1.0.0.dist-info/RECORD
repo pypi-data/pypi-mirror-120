@@ -1,0 +1,16 @@
+train_invaders/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+train_invaders/assets/aporia-logo.png,sha256=ysqbCHW1gn8iy-6sID7dFG1Y0P3hdtytUXICzcp0myk,1677
+train_invaders/assets/bg.png,sha256=cS4Dd_rQf-6bHVnQJOhdjDYIfYtC87KMut3Ua-46ozY,54208
+train_invaders/assets/heart.png,sha256=A6aIk-E4l8uej2niTTddkMD_HQHY1vQ-x3Wf_u5_4Js,724
+train_invaders/assets/success.png,sha256=vb2edSGRhcAQ8DOixSw4fzPV0LT_-yCCC1Twstlv3og,3295
+train_invaders/game.wasm,sha256=CikUMEf0-9HPx-rjTx3kOkNon5dd9vUNMUtsvFAh8PU,8622
+train_invaders/index.html,sha256=1EyGwNzdp3fBZ7EgpdX6dkmwyi5gCqPo7e8GcjuLwQI,1255
+train_invaders/index.js,sha256=lZMISnUnYeqOVVS51IaThjQ95v2IfqhrRDTjodzE23k,2142
+train_invaders/start.py,sha256=UQjFPsPeTcEfFR6i9NxE1EQcczdVTfcGHVeDexrXWEU,2465
+train_invaders/stop.py,sha256=pZMUV-aXTdl4nDaX6Lk0khid9Oq_fe4Q6IOKKlNS57Y,182
+train_invaders/styles.css,sha256=dPYMytP8T1jCe_NsF0m-9Hx8_6l824ssUIa8nnWz50Y,5045
+train_invaders/view.js,sha256=QRYWHeHoyBwbJQDJkVJ0fOk027-zv5yzm_zILKUkT1I,22683
+train_invaders-1.0.0.dist-info/LICENSE,sha256=UIp30ue1HZit7tMmSK0SS3swJBqOcLLnLJn5LY5YdNE,1036
+train_invaders-1.0.0.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+train_invaders-1.0.0.dist-info/METADATA,sha256=-qNkQae0UP-sbOhDepa9Wqk-I-x-m3Cd7G9YZ3csKR8,4937
+train_invaders-1.0.0.dist-info/RECORD,,
