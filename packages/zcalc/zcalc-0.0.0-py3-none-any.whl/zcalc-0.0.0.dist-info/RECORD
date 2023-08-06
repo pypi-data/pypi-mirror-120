@@ -1,0 +1,11 @@
+zcalc/__init__.py,sha256=OD4qwaN67NWGnjJ8GvgaWmdpATY60pokcTzHlOMuTPY,44
+zcalc/__main__.py,sha256=CnJWdkLUK2ghDSh8sfYINJXTfB6iRh94E0o_uYl1cfI,29
+zcalc/cmd.py,sha256=piRGU_nXgQHg9lZAi320ffzh4jUrKillaa9wmMtVk4Y,766
+zcalc/env.py,sha256=tztyGXrQPTl9HVk2tkGzL9tGwzTXYfSDZgYboX1tEuk,5930
+zcalc/lib.py,sha256=PjnpG_mwGnpGsED9ZlWHAbqUzWlWh5d05lztuFvXdYs,568
+zcalc-0.0.0.dist-info/LICENSE,sha256=iiGfAvTP6vtx7G44qVnhQlIHzKDvdj3Kkzlytz8R5wo,1054
+zcalc-0.0.0.dist-info/METADATA,sha256=67na3jeqzunh-u7YnJcgBhImpZIyKyu7nA5trDjbpw8,772
+zcalc-0.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+zcalc-0.0.0.dist-info/entry_points.txt,sha256=n54_4JJ5Vmr6H3IEBVm1rAgJGGyKAtvo54x0YWRLEZk,38
+zcalc-0.0.0.dist-info/top_level.txt,sha256=EQk5JMHiU9kTSY9Y9a_McEbis8K_VzRN6FHdO39SMtU,6
+zcalc-0.0.0.dist-info/RECORD,,
