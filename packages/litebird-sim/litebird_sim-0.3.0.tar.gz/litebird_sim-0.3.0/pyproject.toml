@@ -1,0 +1,91 @@
+[tool.black]
+line-length = 88
+exclude = '''
+/(
+    \.git
+  | \.mypy_cache
+  | \.venv
+  | _build
+  | build
+  | dist
+  | docs
+)/
+'''
+
+[tool.poetry]
+name = "litebird_sim"
+version = "0.3.0"
+description = "Simulation tools for the LiteBIRD experiment"
+authors = [
+	"The LiteBIRD Simulation Team",
+	"Ranajoy Banerji <ranajoy.cosmo@gmail.com>",
+	"Mathew Galloway <mathew.galloway@astro.uio.no>",
+	"Nicoletta Krachmalnicoff <nkrach@sissa.it>",
+	"Luca Pagano <luca.pagano@unife.it>",
+	"Davide Poletti <davide.poletti@sissa.it>",
+	"Martin Reinecke <martin@mpa-garching.mpg.de>",
+	"Maurizio Tomasi <maurizio.tomasi@unimi.it>",
+]
+readme = "README.md"
+license = "GPL3"
+include = [
+	"images/logo.png",
+        "static/report_template.html",
+        "static/sakura.css",
+        "templates/*.md",
+        "misc/pandoc-filter.lua",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.6.1,<3.9"  # <3.9 because of Numba 0.52
+numba = "0.52"
+numpy = "^1.18"
+astropy = "^4.0"
+flake8 = "^3.7"
+black = {version = "^18.3-alpha.0", allow-prereleases = true}
+tomlkit = "^0.5.8"
+
+mpi4py = {version = "^3.0", optional = true}
+
+sphinx = {version = "^2.3", optional = true}
+sphinx_rtd_theme = {version = "^0.4.3", optional = true}
+sphinxcontrib-bibtex = {version = "^2.4.0", optional = true}
+
+jupyter = {version = "^1.0", optional = true}
+jupyterlab = {version = "^1.2", optional = true}
+pytest = "^5.3"
+jinja2 = "^2.11"
+markdown = "^3.2"
+matplotlib = "^3.1"
+markdown-katex = {version = "^202006.1021"}
+katex = "^0.0.4"
+healpy = "^1.13.0"
+pyyaml = "^5.3.1"
+backports-datetime-fromisoformat = "^1.0.0"
+pybind11 = "^2.5.0"
+jplephem = "^2.14"
+PyGithub = "^1.53"
+requests = "^2.24.0"
+rich = "^6.2.0"
+
+# For some reason, these don't get installed if in extras.docs
+# -> added to the global dependencies
+sphinxcontrib-contentui = "^0.2.5"
+
+dataclasses = {version = "^0.7", python = ">=3.6, <3.7"}
+toast-cmb = "^2.3.12"
+ducc0 = "^0.8.0"
+pysm3 = "^3.3.0"
+"sphinxcontrib.asciinema" = "^0.2.1"
+asciimatics = "^1.12.0"
+pyperclip = "^1.8.1"
+pre-commit = "^2.15.0"
+
+[tool.poetry.extras]
+mpi = ["mpi4py"]
+docs = ["sphinx", "sphinx_rtd_theme", "sphinxcontrib-bibtex"]
+jupyter = ["jupyter"]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
