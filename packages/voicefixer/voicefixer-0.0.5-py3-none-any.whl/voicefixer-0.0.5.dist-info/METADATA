@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: voicefixer
+Version: 0.0.5
+Summary: This package is written for the restoration of degraded speech
+Home-page: https://github.com/haoheliu/voicefixer
+Author: Haohe Liu
+Author-email: haoheliu@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: librosa (>=0.8.1)
+Requires-Dist: matplotlib
+Requires-Dist: torch (>=1.8.0)
+Requires-Dist: torchaudio
+Requires-Dist: progressbar
+Requires-Dist: pytorch-lightning
+Requires-Dist: torchlibrosa (==0.0.7)
+
+
+# VoiceFixer
+*Voicefixer* aims at the restoration of human speech regardless how serious its degraded. It can handle noise, reveberation, low resolution (2kHz~44.1kHz) and clipping (0.1-1.0 threshold) effect within one model.
+
+![idea](pics/idea.png)
+![idea](pics/pipline.png)
+
+## Usage
+```python
+from voicefixer import VoiceFixer
+voicefixer = VoiceFixer()
+voicefixer.restore(input="", # input wav file path
+                   output="", # output wav file path
+                   cuda=False, # whether to use gpu acceleration
+                   mode = 0) # You can try out mode 0, 1, 2 to find out the best result
+
+
+from voicefixer import Vocoder
+# Universal Speaker Independent Vocoder
+vocoder = Vocoder(sample_rate=44100) # only support 44100 sample rate
+vocoder.oracle(fpath="", # input wav file path
+               out_path="") # output wav file path
+```
+
+
+
+![idea](pics/real_demos/tiedaoyoujidui.png)
+![idea](pics/real_demos/xigua.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
