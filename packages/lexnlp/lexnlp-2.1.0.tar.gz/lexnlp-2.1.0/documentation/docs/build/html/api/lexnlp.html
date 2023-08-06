@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>lexnlp package &mdash; LexNLP 2.1.0 documentation</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/custom_styles.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="author" title="About these documents" href="../about.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #F4F6F9" >
+            <a href="../index.html"><img src="../_static/lexnlp_logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                2.1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../about.html">About LexNLP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lexnlp.html">LexNLP package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changes.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license.html">License</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #F4F6F9" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">LexNLP</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>lexnlp package</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="lexnlp-package">
+<h1>lexnlp package<a class="headerlink" href="#lexnlp-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="lexnlp.config.html">lexnlp.config package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lexnlp.config.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="lexnlp.config.en.html">lexnlp.config.en package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.config.en.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.config.en.html#lexnlp-config-en-company-types-module">lexnlp.config.en.company_types module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.config.en.html#lexnlp-config-en-geoentities-config-module">lexnlp.config.en.geoentities_config module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.config.en.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="lexnlp.config.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lexnlp.config.html#lexnlp-config-stanford-module">lexnlp.config.stanford module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lexnlp.config.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="lexnlp.extract.html">lexnlp.extract package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lexnlp.extract.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="lexnlp.extract.common.html">lexnlp.extract.common package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.common.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="lexnlp.extract.common.annotations.html">lexnlp.extract.common.annotations package</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.annotations.html#submodules">Submodules</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.annotations.html#lexnlp-extract-common-annotations-act-annotation-module">lexnlp.extract.common.annotations.act_annotation module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.annotations.html#lexnlp-extract-common-annotations-amount-annotation-module">lexnlp.extract.common.annotations.amount_annotation module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.annotations.html#lexnlp-extract-common-annotations-citation-annotation-module">lexnlp.extract.common.annotations.citation_annotation module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.annotations.html#lexnlp-extract-common-annotations-company-annotation-module">lexnlp.extract.common.annotations.company_annotation module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.annotations.html#lexnlp-extract-common-annotations-condition-annotation-module">lexnlp.extract.common.annotations.condition_annotation module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.annotations.html#lexnlp-extract-common-annotations-constraint-annotation-module">lexnlp.extract.common.annotations.constraint_annotation module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.annotations.html#lexnlp-extract-common-annotations-copyright-annotation-module">lexnlp.extract.common.annotations.copyright_annotation module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.annotations.html#lexnlp-extract-common-annotations-court-annotation-module">lexnlp.extract.common.annotations.court_annotation module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.annotations.html#lexnlp-extract-common-annotations-court-citation-annotation-module">lexnlp.extract.common.annotations.court_citation_annotation module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.annotations.html#lexnlp-extract-common-annotations-cusip-annotation-module">lexnlp.extract.common.annotations.cusip_annotation module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.annotations.html#lexnlp-extract-common-annotations-date-annotation-module">lexnlp.extract.common.annotations.date_annotation module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.annotations.html#lexnlp-extract-common-annotations-definition-annotation-module">lexnlp.extract.common.annotations.definition_annotation module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.annotations.html#lexnlp-extract-common-annotations-distance-annotation-module">lexnlp.extract.common.annotations.distance_annotation module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.annotations.html#lexnlp-extract-common-annotations-duration-annotation-module">lexnlp.extract.common.annotations.duration_annotation module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.annotations.html#lexnlp-extract-common-annotations-geo-annotation-module">lexnlp.extract.common.annotations.geo_annotation module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.annotations.html#lexnlp-extract-common-annotations-law-annotation-module">lexnlp.extract.common.annotations.law_annotation module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.annotations.html#lexnlp-extract-common-annotations-money-annotation-module">lexnlp.extract.common.annotations.money_annotation module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.annotations.html#lexnlp-extract-common-annotations-percent-annotation-module">lexnlp.extract.common.annotations.percent_annotation module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.annotations.html#lexnlp-extract-common-annotations-phone-annotation-module">lexnlp.extract.common.annotations.phone_annotation module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.annotations.html#lexnlp-extract-common-annotations-phrase-position-finder-module">lexnlp.extract.common.annotations.phrase_position_finder module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.annotations.html#lexnlp-extract-common-annotations-ratio-annotation-module">lexnlp.extract.common.annotations.ratio_annotation module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.annotations.html#lexnlp-extract-common-annotations-regulation-annotation-module">lexnlp.extract.common.annotations.regulation_annotation module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.annotations.html#lexnlp-extract-common-annotations-ssn-annotation-module">lexnlp.extract.common.annotations.ssn_annotation module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.annotations.html#lexnlp-extract-common-annotations-text-annotation-module">lexnlp.extract.common.annotations.text_annotation module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.annotations.html#lexnlp-extract-common-annotations-trademark-annotation-module">lexnlp.extract.common.annotations.trademark_annotation module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.annotations.html#lexnlp-extract-common-annotations-url-annotation-module">lexnlp.extract.common.annotations.url_annotation module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.annotations.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="lexnlp.extract.common.copyrights.html">lexnlp.extract.common.copyrights package</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.copyrights.html#submodules">Submodules</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.copyrights.html#lexnlp-extract-common-copyrights-copyright-en-style-parser-module">lexnlp.extract.common.copyrights.copyright_en_style_parser module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.copyrights.html#lexnlp-extract-common-copyrights-copyright-parser-module">lexnlp.extract.common.copyrights.copyright_parser module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.copyrights.html#lexnlp-extract-common-copyrights-copyright-parsing-methods-module">lexnlp.extract.common.copyrights.copyright_parsing_methods module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.copyrights.html#lexnlp-extract-common-copyrights-copyright-pattern-found-module">lexnlp.extract.common.copyrights.copyright_pattern_found module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.copyrights.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="lexnlp.extract.common.date_parsing.html">lexnlp.extract.common.date_parsing package</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.date_parsing.html#submodules">Submodules</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.date_parsing.html#lexnlp-extract-common-date-parsing-datefinder-module">lexnlp.extract.common.date_parsing.datefinder module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.date_parsing.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="lexnlp.extract.common.definitions.html">lexnlp.extract.common.definitions package</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.definitions.html#submodules">Submodules</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.definitions.html#lexnlp-extract-common-definitions-common-definition-patterns-module">lexnlp.extract.common.definitions.common_definition_patterns module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.definitions.html#lexnlp-extract-common-definitions-definition-match-module">lexnlp.extract.common.definitions.definition_match module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.definitions.html#lexnlp-extract-common-definitions-universal-definition-parser-module">lexnlp.extract.common.definitions.universal_definition_parser module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.definitions.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="lexnlp.extract.common.durations.html">lexnlp.extract.common.durations package</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.durations.html#submodules">Submodules</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.durations.html#lexnlp-extract-common-durations-durations-parser-module">lexnlp.extract.common.durations.durations_parser module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.durations.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="lexnlp.extract.common.tests.html">lexnlp.extract.common.tests package</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.tests.html#submodules">Submodules</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.tests.html#lexnlp-extract-common-tests-definitions-text-annotator-module">lexnlp.extract.common.tests.definitions_text_annotator module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.tests.html#lexnlp-extract-common-tests-test-annotation-module">lexnlp.extract.common.tests.test_annotation module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.tests.html#lexnlp-extract-common-tests-test-datefinder-module">lexnlp.extract.common.tests.test_datefinder module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.tests.html#lexnlp-extract-common-tests-test-datefinder-tokenizer-module">lexnlp.extract.common.tests.test_datefinder_tokenizer module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.tests.html#lexnlp-extract-common-tests-test-dates-module">lexnlp.extract.common.tests.test_dates module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.tests.html#lexnlp-extract-common-tests-test-fact-extractor-module">lexnlp.extract.common.tests.test_fact_extractor module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.tests.html#lexnlp-extract-common-tests-test-phrase-position-finder-module">lexnlp.extract.common.tests.test_phrase_position_finder module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.tests.html#lexnlp-extract-common-tests-test-text-beautifier-module">lexnlp.extract.common.tests.test_text_beautifier module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.tests.html#lexnlp-extract-common-tests-test-universal-courts-parser-module">lexnlp.extract.common.tests.test_universal_courts_parser module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.common.tests.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.common.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.common.html#lexnlp-extract-common-annotation-locator-type-module">lexnlp.extract.common.annotation_locator_type module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.common.html#lexnlp-extract-common-annotation-type-module">lexnlp.extract.common.annotation_type module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.common.html#lexnlp-extract-common-base-path-module">lexnlp.extract.common.base_path module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.common.html#lexnlp-extract-common-dates-module">lexnlp.extract.common.dates module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.common.html#lexnlp-extract-common-fact-extracting-module">lexnlp.extract.common.fact_extracting module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.common.html#lexnlp-extract-common-language-dictionary-reader-module">lexnlp.extract.common.language_dictionary_reader module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.common.html#lexnlp-extract-common-pattern-found-module">lexnlp.extract.common.pattern_found module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.common.html#lexnlp-extract-common-special-characters-module">lexnlp.extract.common.special_characters module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.common.html#lexnlp-extract-common-text-beautifier-module">lexnlp.extract.common.text_beautifier module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.common.html#lexnlp-extract-common-text-pattern-collector-module">lexnlp.extract.common.text_pattern_collector module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.common.html#lexnlp-extract-common-universal-court-parser-module">lexnlp.extract.common.universal_court_parser module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.common.html#lexnlp-extract-common-year-parser-module">lexnlp.extract.common.year_parser module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.common.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="lexnlp.extract.de.html">lexnlp.extract.de package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.de.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="lexnlp.extract.de.tests.html">lexnlp.extract.de.tests package</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.de.tests.html#submodules">Submodules</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.de.tests.html#lexnlp-extract-de-tests-test-amounts-module">lexnlp.extract.de.tests.test_amounts module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.de.tests.html#lexnlp-extract-de-tests-test-citations-module">lexnlp.extract.de.tests.test_citations module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.de.tests.html#lexnlp-extract-de-tests-test-copyrights-module">lexnlp.extract.de.tests.test_copyrights module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.de.tests.html#lexnlp-extract-de-tests-test-court-citations-module">lexnlp.extract.de.tests.test_court_citations module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.de.tests.html#lexnlp-extract-de-tests-test-courts-module">lexnlp.extract.de.tests.test_courts module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.de.tests.html#lexnlp-extract-de-tests-test-dates-module">lexnlp.extract.de.tests.test_dates module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.de.tests.html#lexnlp-extract-de-tests-test-definitions-module">lexnlp.extract.de.tests.test_definitions module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.de.tests.html#lexnlp-extract-de-tests-test-durations-module">lexnlp.extract.de.tests.test_durations module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.de.tests.html#lexnlp-extract-de-tests-test-geoentities-module">lexnlp.extract.de.tests.test_geoentities module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.de.tests.html#lexnlp-extract-de-tests-test-laws-module">lexnlp.extract.de.tests.test_laws module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.de.tests.html#lexnlp-extract-de-tests-test-percents-module">lexnlp.extract.de.tests.test_percents module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.de.tests.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.de.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.de.html#lexnlp-extract-de-amounts-module">lexnlp.extract.de.amounts module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.de.html#lexnlp-extract-de-citations-module">lexnlp.extract.de.citations module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.de.html#lexnlp-extract-de-copyrights-module">lexnlp.extract.de.copyrights module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.de.html#lexnlp-extract-de-court-citations-module">lexnlp.extract.de.court_citations module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.de.html#lexnlp-extract-de-courts-module">lexnlp.extract.de.courts module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.de.html#lexnlp-extract-de-dates-module">lexnlp.extract.de.dates module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.de.html#lexnlp-extract-de-definitions-module">lexnlp.extract.de.definitions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.de.html#lexnlp-extract-de-durations-module">lexnlp.extract.de.durations module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.de.html#lexnlp-extract-de-geoentities-module">lexnlp.extract.de.geoentities module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.de.html#lexnlp-extract-de-language-tokens-module">lexnlp.extract.de.language_tokens module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.de.html#lexnlp-extract-de-laws-module">lexnlp.extract.de.laws module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.de.html#lexnlp-extract-de-percents-module">lexnlp.extract.de.percents module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.de.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="lexnlp.extract.en.html">lexnlp.extract.en package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.en.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="lexnlp.extract.en.addresses.html">lexnlp.extract.en.addresses package</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.addresses.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="lexnlp.extract.en.addresses.tests.html">lexnlp.extract.en.addresses.tests package</a><ul>
+<li class="toctree-l8"><a class="reference internal" href="lexnlp.extract.en.addresses.tests.html#submodules">Submodules</a></li>
+<li class="toctree-l8"><a class="reference internal" href="lexnlp.extract.en.addresses.tests.html#lexnlp-extract-en-addresses-tests-test-addresses-module">lexnlp.extract.en.addresses.tests.test_addresses module</a></li>
+<li class="toctree-l8"><a class="reference internal" href="lexnlp.extract.en.addresses.tests.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.addresses.html#submodules">Submodules</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.addresses.html#lexnlp-extract-en-addresses-address-features-module">lexnlp.extract.en.addresses.address_features module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.addresses.html#lexnlp-extract-en-addresses-addresses-module">lexnlp.extract.en.addresses.addresses module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.addresses.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="lexnlp.extract.en.contracts.html">lexnlp.extract.en.contracts package</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.contracts.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="lexnlp.extract.en.contracts.tests.html">lexnlp.extract.en.contracts.tests package</a><ul>
+<li class="toctree-l8"><a class="reference internal" href="lexnlp.extract.en.contracts.tests.html#submodules">Submodules</a></li>
+<li class="toctree-l8"><a class="reference internal" href="lexnlp.extract.en.contracts.tests.html#lexnlp-extract-en-contracts-tests-test-contracts-module">lexnlp.extract.en.contracts.tests.test_contracts module</a></li>
+<li class="toctree-l8"><a class="reference internal" href="lexnlp.extract.en.contracts.tests.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.contracts.html#submodules">Submodules</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.contracts.html#lexnlp-extract-en-contracts-detector-module">lexnlp.extract.en.contracts.detector module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.contracts.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="lexnlp.extract.en.entities.html">lexnlp.extract.en.entities package</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.entities.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="lexnlp.extract.en.entities.tests.html">lexnlp.extract.en.entities.tests package</a><ul>
+<li class="toctree-l8"><a class="reference internal" href="lexnlp.extract.en.entities.tests.html#submodules">Submodules</a></li>
+<li class="toctree-l8"><a class="reference internal" href="lexnlp.extract.en.entities.tests.html#lexnlp-extract-en-entities-tests-test-get-companies-module">lexnlp.extract.en.entities.tests.test_get_companies module</a></li>
+<li class="toctree-l8"><a class="reference internal" href="lexnlp.extract.en.entities.tests.html#lexnlp-extract-en-entities-tests-test-nltk-maxent-module">lexnlp.extract.en.entities.tests.test_nltk_maxent module</a></li>
+<li class="toctree-l8"><a class="reference internal" href="lexnlp.extract.en.entities.tests.html#lexnlp-extract-en-entities-tests-test-nltk-re-module">lexnlp.extract.en.entities.tests.test_nltk_re module</a></li>
+<li class="toctree-l8"><a class="reference internal" href="lexnlp.extract.en.entities.tests.html#lexnlp-extract-en-entities-tests-test-stanford-ner-module">lexnlp.extract.en.entities.tests.test_stanford_ner module</a></li>
+<li class="toctree-l8"><a class="reference internal" href="lexnlp.extract.en.entities.tests.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.entities.html#submodules">Submodules</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.entities.html#lexnlp-extract-en-entities-nltk-maxent-module">lexnlp.extract.en.entities.nltk_maxent module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.entities.html#lexnlp-extract-en-entities-nltk-re-module">lexnlp.extract.en.entities.nltk_re module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.entities.html#lexnlp-extract-en-entities-nltk-tokenizer-module">lexnlp.extract.en.entities.nltk_tokenizer module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.entities.html#lexnlp-extract-en-entities-stanford-ner-module">lexnlp.extract.en.entities.stanford_ner module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.entities.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="lexnlp.extract.en.preprocessing.html">lexnlp.extract.en.preprocessing package</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.preprocessing.html#submodules">Submodules</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.preprocessing.html#lexnlp-extract-en-preprocessing-span-tokenizer-module">lexnlp.extract.en.preprocessing.span_tokenizer module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.preprocessing.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="lexnlp.extract.en.tests.html">lexnlp.extract.en.tests package</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.tests.html#submodules">Submodules</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.tests.html#lexnlp-extract-en-tests-test-acts-module">lexnlp.extract.en.tests.test_acts module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.tests.html#lexnlp-extract-en-tests-test-amounts-module">lexnlp.extract.en.tests.test_amounts module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.tests.html#lexnlp-extract-en-tests-test-amounts-plain-module">lexnlp.extract.en.tests.test_amounts_plain module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.tests.html#lexnlp-extract-en-tests-test-citations-module">lexnlp.extract.en.tests.test_citations module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.tests.html#lexnlp-extract-en-tests-test-citations-plain-module">lexnlp.extract.en.tests.test_citations_plain module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.tests.html#lexnlp-extract-en-tests-test-conditions-module">lexnlp.extract.en.tests.test_conditions module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.tests.html#lexnlp-extract-en-tests-test-conditions-plain-module">lexnlp.extract.en.tests.test_conditions_plain module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.tests.html#lexnlp-extract-en-tests-test-constraints-module">lexnlp.extract.en.tests.test_constraints module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.tests.html#lexnlp-extract-en-tests-test-constraints-plain-module">lexnlp.extract.en.tests.test_constraints_plain module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.tests.html#lexnlp-extract-en-tests-test-copyright-module">lexnlp.extract.en.tests.test_copyright module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.tests.html#lexnlp-extract-en-tests-test-copyright-plain-module">lexnlp.extract.en.tests.test_copyright_plain module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.tests.html#lexnlp-extract-en-tests-test-courts-module">lexnlp.extract.en.tests.test_courts module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.tests.html#lexnlp-extract-en-tests-test-cusip-module">lexnlp.extract.en.tests.test_cusip module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.tests.html#lexnlp-extract-en-tests-test-dates-module">lexnlp.extract.en.tests.test_dates module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.tests.html#lexnlp-extract-en-tests-test-dates-plain-module">lexnlp.extract.en.tests.test_dates_plain module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.tests.html#lexnlp-extract-en-tests-test-definitions-module">lexnlp.extract.en.tests.test_definitions module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.tests.html#lexnlp-extract-en-tests-test-definitions-template-module">lexnlp.extract.en.tests.test_definitions_template module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.tests.html#lexnlp-extract-en-tests-test-dict-entities-module">lexnlp.extract.en.tests.test_dict_entities module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.tests.html#lexnlp-extract-en-tests-test-distance-module">lexnlp.extract.en.tests.test_distance module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.tests.html#lexnlp-extract-en-tests-test-distances-plain-module">lexnlp.extract.en.tests.test_distances_plain module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.tests.html#lexnlp-extract-en-tests-test-durations-module">lexnlp.extract.en.tests.test_durations module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.tests.html#lexnlp-extract-en-tests-test-durations-plain-module">lexnlp.extract.en.tests.test_durations_plain module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.tests.html#lexnlp-extract-en-tests-test-geoentities-module">lexnlp.extract.en.tests.test_geoentities module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.tests.html#lexnlp-extract-en-tests-test-geoentities-plain-module">lexnlp.extract.en.tests.test_geoentities_plain module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.tests.html#lexnlp-extract-en-tests-test-introductory-words-detector-module">lexnlp.extract.en.tests.test_introductory_words_detector module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.tests.html#lexnlp-extract-en-tests-test-money-module">lexnlp.extract.en.tests.test_money module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.tests.html#lexnlp-extract-en-tests-test-money-plain-module">lexnlp.extract.en.tests.test_money_plain module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.tests.html#lexnlp-extract-en-tests-test-parsing-speed-module">lexnlp.extract.en.tests.test_parsing_speed module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.tests.html#lexnlp-extract-en-tests-test-percent-plain-module">lexnlp.extract.en.tests.test_percent_plain module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.tests.html#lexnlp-extract-en-tests-test-percents-module">lexnlp.extract.en.tests.test_percents module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.tests.html#lexnlp-extract-en-tests-test-phone-plain-module">lexnlp.extract.en.tests.test_phone_plain module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.tests.html#lexnlp-extract-en-tests-test-pii-module">lexnlp.extract.en.tests.test_pii module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.tests.html#lexnlp-extract-en-tests-test-ratios-module">lexnlp.extract.en.tests.test_ratios module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.tests.html#lexnlp-extract-en-tests-test-ratios-plain-module">lexnlp.extract.en.tests.test_ratios_plain module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.tests.html#lexnlp-extract-en-tests-test-regulations-module">lexnlp.extract.en.tests.test_regulations module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.tests.html#lexnlp-extract-en-tests-test-regulations-plain-module">lexnlp.extract.en.tests.test_regulations_plain module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.tests.html#lexnlp-extract-en-tests-test-span-tokenizer-module">lexnlp.extract.en.tests.test_span_tokenizer module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.tests.html#lexnlp-extract-en-tests-test-ssn-plain-module">lexnlp.extract.en.tests.test_ssn_plain module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.tests.html#lexnlp-extract-en-tests-test-trademarks-module">lexnlp.extract.en.tests.test_trademarks module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.tests.html#lexnlp-extract-en-tests-test-trademarks-plain-module">lexnlp.extract.en.tests.test_trademarks_plain module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.tests.html#lexnlp-extract-en-tests-test-urls-module">lexnlp.extract.en.tests.test_urls module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.tests.html#lexnlp-extract-en-tests-test-urls-plain-module">lexnlp.extract.en.tests.test_urls_plain module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.en.tests.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.en.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.en.html#lexnlp-extract-en-acts-module">lexnlp.extract.en.acts module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.en.html#lexnlp-extract-en-amounts-module">lexnlp.extract.en.amounts module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.en.html#lexnlp-extract-en-citations-module">lexnlp.extract.en.citations module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.en.html#lexnlp-extract-en-conditions-module">lexnlp.extract.en.conditions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.en.html#lexnlp-extract-en-constraints-module">lexnlp.extract.en.constraints module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.en.html#lexnlp-extract-en-copyright-module">lexnlp.extract.en.copyright module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.en.html#lexnlp-extract-en-courts-module">lexnlp.extract.en.courts module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.en.html#lexnlp-extract-en-cusip-module">lexnlp.extract.en.cusip module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.en.html#lexnlp-extract-en-date-model-module">lexnlp.extract.en.date_model module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.en.html#lexnlp-extract-en-dates-module">lexnlp.extract.en.dates module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.en.html#lexnlp-extract-en-definition-parsing-methods-module">lexnlp.extract.en.definition_parsing_methods module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.en.html#lexnlp-extract-en-definitions-module">lexnlp.extract.en.definitions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.en.html#lexnlp-extract-en-dict-entities-module">lexnlp.extract.en.dict_entities module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.en.html#lexnlp-extract-en-distances-module">lexnlp.extract.en.distances module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.en.html#lexnlp-extract-en-durations-module">lexnlp.extract.en.durations module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.en.html#lexnlp-extract-en-en-language-tokens-module">lexnlp.extract.en.en_language_tokens module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.en.html#lexnlp-extract-en-geoentities-module">lexnlp.extract.en.geoentities module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.en.html#lexnlp-extract-en-introductory-words-detector-module">lexnlp.extract.en.introductory_words_detector module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.en.html#lexnlp-extract-en-money-module">lexnlp.extract.en.money module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.en.html#lexnlp-extract-en-percents-module">lexnlp.extract.en.percents module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.en.html#lexnlp-extract-en-pii-module">lexnlp.extract.en.pii module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.en.html#lexnlp-extract-en-ratios-module">lexnlp.extract.en.ratios module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.en.html#lexnlp-extract-en-regulations-module">lexnlp.extract.en.regulations module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.en.html#lexnlp-extract-en-trademarks-module">lexnlp.extract.en.trademarks module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.en.html#lexnlp-extract-en-urls-module">lexnlp.extract.en.urls module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.en.html#lexnlp-extract-en-utils-module">lexnlp.extract.en.utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.en.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="lexnlp.extract.es.html">lexnlp.extract.es package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.es.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="lexnlp.extract.es.tests.html">lexnlp.extract.es.tests package</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.es.tests.html#submodules">Submodules</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.es.tests.html#lexnlp-extract-es-tests-test-copyrights-module">lexnlp.extract.es.tests.test_copyrights module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.es.tests.html#lexnlp-extract-es-tests-test-courts-module">lexnlp.extract.es.tests.test_courts module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.es.tests.html#lexnlp-extract-es-tests-test-dates-module">lexnlp.extract.es.tests.test_dates module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.es.tests.html#lexnlp-extract-es-tests-test-definitions-module">lexnlp.extract.es.tests.test_definitions module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.es.tests.html#lexnlp-extract-es-tests-test-regulations-module">lexnlp.extract.es.tests.test_regulations module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.es.tests.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.es.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.es.html#lexnlp-extract-es-copyrights-module">lexnlp.extract.es.copyrights module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.es.html#lexnlp-extract-es-courts-module">lexnlp.extract.es.courts module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.es.html#lexnlp-extract-es-dates-module">lexnlp.extract.es.dates module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.es.html#lexnlp-extract-es-definitions-module">lexnlp.extract.es.definitions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.es.html#lexnlp-extract-es-language-tokens-module">lexnlp.extract.es.language_tokens module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.es.html#lexnlp-extract-es-regulations-module">lexnlp.extract.es.regulations module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.es.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="lexnlp.extract.ml.html">lexnlp.extract.ml package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.ml.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="lexnlp.extract.ml.classifier.html">lexnlp.extract.ml.classifier package</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.ml.classifier.html#submodules">Submodules</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.ml.classifier.html#lexnlp-extract-ml-classifier-base-token-sequence-classifier-model-module">lexnlp.extract.ml.classifier.base_token_sequence_classifier_model module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.ml.classifier.html#lexnlp-extract-ml-classifier-spacy-token-sequence-model-module">lexnlp.extract.ml.classifier.spacy_token_sequence_model module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.ml.classifier.html#lexnlp-extract-ml-classifier-token-sequence-model-module">lexnlp.extract.ml.classifier.token_sequence_model module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.ml.classifier.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="lexnlp.extract.ml.detector.html">lexnlp.extract.ml.detector package</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.ml.detector.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="lexnlp.extract.ml.detector.tests.html">lexnlp.extract.ml.detector.tests package</a><ul>
+<li class="toctree-l8"><a class="reference internal" href="lexnlp.extract.ml.detector.tests.html#submodules">Submodules</a></li>
+<li class="toctree-l8"><a class="reference internal" href="lexnlp.extract.ml.detector.tests.html#lexnlp-extract-ml-detector-tests-test-phrase-constructor-module">lexnlp.extract.ml.detector.tests.test_phrase_constructor module</a></li>
+<li class="toctree-l8"><a class="reference internal" href="lexnlp.extract.ml.detector.tests.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.ml.detector.html#submodules">Submodules</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.ml.detector.html#lexnlp-extract-ml-detector-artifact-detector-module">lexnlp.extract.ml.detector.artifact_detector module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.ml.detector.html#lexnlp-extract-ml-detector-detecting-settings-module">lexnlp.extract.ml.detector.detecting_settings module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.ml.detector.html#lexnlp-extract-ml-detector-phrase-constructor-module">lexnlp.extract.ml.detector.phrase_constructor module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.ml.detector.html#lexnlp-extract-ml-detector-sample-processor-module">lexnlp.extract.ml.detector.sample_processor module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.ml.detector.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="lexnlp.extract.ml.en.html">lexnlp.extract.ml.en package</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.ml.en.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="lexnlp.extract.ml.en.definitions.html">lexnlp.extract.ml.en.definitions package</a><ul>
+<li class="toctree-l8"><a class="reference internal" href="lexnlp.extract.ml.en.definitions.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l9"><a class="reference internal" href="lexnlp.extract.ml.en.definitions.tests.html">lexnlp.extract.ml.en.definitions.tests package</a><ul>
+<li class="toctree-l10"><a class="reference internal" href="lexnlp.extract.ml.en.definitions.tests.html#submodules">Submodules</a></li>
+<li class="toctree-l10"><a class="reference internal" href="lexnlp.extract.ml.en.definitions.tests.html#lexnlp-extract-ml-en-definitions-tests-test-layered-definition-detector-module">lexnlp.extract.ml.en.definitions.tests.test_layered_definition_detector module</a></li>
+<li class="toctree-l10"><a class="reference internal" href="lexnlp.extract.ml.en.definitions.tests.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l8"><a class="reference internal" href="lexnlp.extract.ml.en.definitions.html#submodules">Submodules</a></li>
+<li class="toctree-l8"><a class="reference internal" href="lexnlp.extract.ml.en.definitions.html#lexnlp-extract-ml-en-definitions-definition-phrase-detector-module">lexnlp.extract.ml.en.definitions.definition_phrase_detector module</a></li>
+<li class="toctree-l8"><a class="reference internal" href="lexnlp.extract.ml.en.definitions.html#lexnlp-extract-ml-en-definitions-definition-term-detector-module">lexnlp.extract.ml.en.definitions.definition_term_detector module</a></li>
+<li class="toctree-l8"><a class="reference internal" href="lexnlp.extract.ml.en.definitions.html#lexnlp-extract-ml-en-definitions-layered-definition-detector-module">lexnlp.extract.ml.en.definitions.layered_definition_detector module</a></li>
+<li class="toctree-l8"><a class="reference internal" href="lexnlp.extract.ml.en.definitions.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.extract.ml.en.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.ml.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.ml.html#lexnlp-extract-ml-environment-module">lexnlp.extract.ml.environment module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.extract.ml.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="lexnlp.extract.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="lexnlp.nlp.html">lexnlp.nlp package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lexnlp.nlp.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="lexnlp.nlp.en.html">lexnlp.nlp.en package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.nlp.en.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="lexnlp.nlp.en.segments.html">lexnlp.nlp.en.segments package</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.nlp.en.segments.html#submodules">Submodules</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.nlp.en.segments.html#lexnlp-nlp-en-segments-pages-module">lexnlp.nlp.en.segments.pages module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.nlp.en.segments.html#lexnlp-nlp-en-segments-paragraphs-module">lexnlp.nlp.en.segments.paragraphs module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.nlp.en.segments.html#lexnlp-nlp-en-segments-sections-module">lexnlp.nlp.en.segments.sections module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.nlp.en.segments.html#lexnlp-nlp-en-segments-sentences-module">lexnlp.nlp.en.segments.sentences module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.nlp.en.segments.html#lexnlp-nlp-en-segments-titles-module">lexnlp.nlp.en.segments.titles module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.nlp.en.segments.html#lexnlp-nlp-en-segments-utils-module">lexnlp.nlp.en.segments.utils module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.nlp.en.segments.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="lexnlp.nlp.en.tests.html">lexnlp.nlp.en.tests package</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.nlp.en.tests.html#submodules">Submodules</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.nlp.en.tests.html#lexnlp-nlp-en-tests-test-pages-module">lexnlp.nlp.en.tests.test_pages module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.nlp.en.tests.html#lexnlp-nlp-en-tests-test-paragraphs-module">lexnlp.nlp.en.tests.test_paragraphs module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.nlp.en.tests.html#lexnlp-nlp-en-tests-test-sections-module">lexnlp.nlp.en.tests.test_sections module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.nlp.en.tests.html#lexnlp-nlp-en-tests-test-sentences-module">lexnlp.nlp.en.tests.test_sentences module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.nlp.en.tests.html#lexnlp-nlp-en-tests-test-stanford-module">lexnlp.nlp.en.tests.test_stanford module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.nlp.en.tests.html#lexnlp-nlp-en-tests-test-stanford-missing-module">lexnlp.nlp.en.tests.test_stanford_missing module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.nlp.en.tests.html#lexnlp-nlp-en-tests-test-titles-module">lexnlp.nlp.en.tests.test_titles module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.nlp.en.tests.html#lexnlp-nlp-en-tests-test-tokens-module">lexnlp.nlp.en.tests.test_tokens module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.nlp.en.tests.html#lexnlp-nlp-en-tests-test-transforms-module">lexnlp.nlp.en.tests.test_transforms module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.nlp.en.tests.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="lexnlp.nlp.en.transforms.html">lexnlp.nlp.en.transforms package</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.nlp.en.transforms.html#submodules">Submodules</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.nlp.en.transforms.html#lexnlp-nlp-en-transforms-characters-module">lexnlp.nlp.en.transforms.characters module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.nlp.en.transforms.html#lexnlp-nlp-en-transforms-tokens-module">lexnlp.nlp.en.transforms.tokens module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.nlp.en.transforms.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.nlp.en.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.nlp.en.html#lexnlp-nlp-en-stanford-module">lexnlp.nlp.en.stanford module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.nlp.en.html#lexnlp-nlp-en-tokens-module">lexnlp.nlp.en.tokens module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.nlp.en.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="lexnlp.nlp.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="lexnlp.tests.html">lexnlp.tests package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lexnlp.tests.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lexnlp.tests.html#lexnlp-tests-dictionary-comparer-module">lexnlp.tests.dictionary_comparer module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lexnlp.tests.html#lexnlp-tests-lexnlp-tests-module">lexnlp.tests.lexnlp_tests module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lexnlp.tests.html#lexnlp-tests-typed-annotations-tests-module">lexnlp.tests.typed_annotations_tests module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lexnlp.tests.html#lexnlp-tests-upload-benchmarks-module">lexnlp.tests.upload_benchmarks module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lexnlp.tests.html#lexnlp-tests-utility-for-testing-module">lexnlp.tests.utility_for_testing module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lexnlp.tests.html#lexnlp-tests-values-comparer-module">lexnlp.tests.values_comparer module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lexnlp.tests.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="lexnlp.utils.html">lexnlp.utils package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lexnlp.utils.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="lexnlp.utils.lines_processing.html">lexnlp.utils.lines_processing package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.utils.lines_processing.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.utils.lines_processing.html#lexnlp-utils-lines-processing-line-processor-module">lexnlp.utils.lines_processing.line_processor module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.utils.lines_processing.html#lexnlp-utils-lines-processing-parsed-text-corrector-module">lexnlp.utils.lines_processing.parsed_text_corrector module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.utils.lines_processing.html#lexnlp-utils-lines-processing-parsed-text-quality-estimator-module">lexnlp.utils.lines_processing.parsed_text_quality_estimator module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.utils.lines_processing.html#lexnlp-utils-lines-processing-phrase-finder-module">lexnlp.utils.lines_processing.phrase_finder module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.utils.lines_processing.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="lexnlp.utils.tests.html">lexnlp.utils.tests package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.utils.tests.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.utils.tests.html#lexnlp-utils-tests-test-line-processor-module">lexnlp.utils.tests.test_line_processor module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.utils.tests.html#lexnlp-utils-tests-test-map-module">lexnlp.utils.tests.test_map module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.utils.tests.html#lexnlp-utils-tests-test-parse-df-module">lexnlp.utils.tests.test_parse_df module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.utils.tests.html#lexnlp-utils-tests-test-parsed-text-corrector-module">lexnlp.utils.tests.test_parsed_text_corrector module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.utils.tests.html#lexnlp-utils-tests-test-parsed-text-quality-estimator-module">lexnlp.utils.tests.test_parsed_text_quality_estimator module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.utils.tests.html#lexnlp-utils-tests-test-phrase-finder-module">lexnlp.utils.tests.test_phrase_finder module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.utils.tests.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="lexnlp.utils.unicode.html">lexnlp.utils.unicode package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.utils.unicode.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="lexnlp.utils.unicode.tests.html">lexnlp.utils.unicode.tests package</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.utils.unicode.tests.html#submodules">Submodules</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.utils.unicode.tests.html#lexnlp-utils-unicode-tests-test-unicode-lookup-module">lexnlp.utils.unicode.tests.test_unicode_lookup module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="lexnlp.utils.unicode.tests.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.utils.unicode.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.utils.unicode.html#lexnlp-utils-unicode-unicode-lookup-module">lexnlp.utils.unicode.unicode_lookup module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lexnlp.utils.unicode.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="lexnlp.utils.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lexnlp.utils.html#lexnlp-utils-decorators-module">lexnlp.utils.decorators module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lexnlp.utils.html#lexnlp-utils-iterating-helpers-module">lexnlp.utils.iterating_helpers module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lexnlp.utils.html#lexnlp-utils-map-module">lexnlp.utils.map module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lexnlp.utils.html#lexnlp-utils-parse-df-module">lexnlp.utils.parse_df module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lexnlp.utils.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="module-contents">
+<h2>Module contents<a class="headerlink" href="#module-contents" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2015-2021, ContraxSuite, LLC.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

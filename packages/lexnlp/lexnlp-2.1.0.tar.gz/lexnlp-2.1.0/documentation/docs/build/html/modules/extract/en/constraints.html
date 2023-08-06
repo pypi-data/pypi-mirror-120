@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>lexnlp.extract.en.constraints: Extracting constraint statements &mdash; LexNLP 2.1.0 documentation</title><link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/custom_styles.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="author" title="About these documents" href="../../../about.html" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #F4F6F9" >
+            <a href="../../../index.html"><img src="../../../_static/lexnlp_logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                2.1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../about.html">About LexNLP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lexnlp.html">LexNLP package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../changes.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../license.html">License</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #F4F6F9" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">LexNLP</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><code class="xref py py-mod docutils literal notranslate"><span class="pre">lexnlp.extract.en.constraints</span></code>: Extracting constraint statements</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="lexnlp-extract-en-constraints-extracting-constraint-statements">
+<span id="extract-en-constraints"></span><h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">lexnlp.extract.en.constraints</span></code>: Extracting constraint statements<a class="headerlink" href="#lexnlp-extract-en-constraints-extracting-constraint-statements" title="Permalink to this headline">¶</a></h1>
+<p>The <code class="xref py py-mod docutils literal notranslate"><span class="pre">lexnlp.extract.en.constraints</span></code> module contains methods that allow for the extraction
+of constraint statements from text.  Statements that are covered by default in this module are:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>after</p></li>
+<li><p>at least</p></li>
+<li><p>at most</p></li>
+<li><p>before</p></li>
+<li><p>equal to</p></li>
+<li><p>exactly</p></li>
+<li><p>first of</p></li>
+<li><p>greater</p></li>
+<li><p>greater of</p></li>
+<li><p>greater than</p></li>
+<li><p>greater than or equal to</p></li>
+<li><p>greatest of</p></li>
+<li><p>last of</p></li>
+<li><p>least of</p></li>
+<li><p>lesser</p></li>
+<li><p>lesser of</p></li>
+<li><p>lesser than</p></li>
+<li><p>less than</p></li>
+<li><p>less than or equal to</p></li>
+<li><p>maximum of</p></li>
+<li><p>maximum</p></li>
+<li><p>minimum of</p></li>
+<li><p>minimum</p></li>
+<li><p>more than</p></li>
+<li><p>more than or equal to</p></li>
+<li><p>no earlier than</p></li>
+<li><p>no later than</p></li>
+<li><p>no less than</p></li>
+<li><p>no more than</p></li>
+<li><p>not equal to</p></li>
+<li><p>not to exceed</p></li>
+<li><p>earlier than</p></li>
+<li><p>later than</p></li>
+<li><p>within</p></li>
+<li><p>exceed</p></li>
+<li><p>exceeds</p></li>
+<li><p>prior to</p></li>
+<li><p>highest</p></li>
+<li><p>least</p></li>
+<li><p>smallest among</p></li>
+</ul>
+</div></blockquote>
+<p>The full list of current unit test cases can be found here:
+<a class="reference external" href="https://github.com/LexPredict/lexpredict-lexnlp/tree/master/test_data/lexnlp/extract/en/tests/test_constraints">https://github.com/LexPredict/lexpredict-lexnlp/tree/master/test_data/lexnlp/extract/en/tests/test_constraints</a></p>
+<div class="section" id="extracting-constraints">
+<h2>Extracting constraints<a class="headerlink" href="#extracting-constraints" title="Permalink to this headline">¶</a></h2>
+<p>Example</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">lexnlp.extract.en.constraints</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;This will occur at most three times.&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">lexnlp</span><span class="o">.</span><span class="n">extract</span><span class="o">.</span><span class="n">en</span><span class="o">.</span><span class="n">constraints</span><span class="o">.</span><span class="n">get_constraints</span><span class="p">(</span><span class="n">text</span><span class="p">)))</span>
+<span class="go">[(&#39;at most&#39;, &#39;this will occur&#39;, &#39;&#39;)]</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">lexnlp.extract.en.conditions</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;The rate shall be no less than 50 bps.&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">lexnlp</span><span class="o">.</span><span class="n">extract</span><span class="o">.</span><span class="n">en</span><span class="o">.</span><span class="n">constraints</span><span class="o">.</span><span class="n">get_constraints</span><span class="p">(</span><span class="n">text</span><span class="p">)))</span>
+<span class="go">[(&#39;no less than&#39;, &#39;the rate shall be&#39;, &#39;&#39;)]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="customizing-constraint-statement-extraction">
+<h2>Customizing constraint statement extraction<a class="headerlink" href="#customizing-constraint-statement-extraction" title="Permalink to this headline">¶</a></h2>
+<p>Constraint statement extraction can be customized.  There are two key module
+variables that store the default configuration and one function used to create
+a matching instance:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><cite>CONSTRAINT_PHRASES</cite>: This <cite>List</cite> stores the “trigger” phrases that are used to identify constraint statements.  They are typically adverbial or prepositional phrases.</p></li>
+<li><p><cite>CONSTRAINT_PATTERN_TEMPLATE</cite>: This <cite>String</cite> stores the regular expression pattern that drives matching in this module.</p></li>
+</ul>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<dl class="simple">
+<dt>For more examples and information about natural language constraints, see the linguistic resources below:</dt><dd><ul class="simple">
+<li><p><a class="reference external" href="https://www.ijcai.org/Proceedings/16/Papers/111.pdf">https://www.ijcai.org/Proceedings/16/Papers/111.pdf</a></p></li>
+<li><p><a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S131915781200002X">https://www.sciencedirect.com/science/article/pii/S131915781200002X</a></p></li>
+</ul>
+</dd>
+</dl>
+</div>
+<p>The default behavior of this module can be customized by overriding the value of <cite>RE_CONSTRAINT</cite>
+with a new regular expression created using <cite>create_constraint_pattern</cite> above.  The example below
+demonstrates a simple addition of a new phrase:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Out of the box behavior</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">lexnlp.extract.en.constraints</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;The applicable rate shall be the smallest among thing A and thing B at time T.&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">lexnlp</span><span class="o">.</span><span class="n">extract</span><span class="o">.</span><span class="n">en</span><span class="o">.</span><span class="n">constraints</span><span class="o">.</span><span class="n">get_constraints</span><span class="p">(</span><span class="n">text</span><span class="p">)))</span>
+<span class="go">[]</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Customize the `RE_CONSTRAINT` variable by adding a new phrase</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">regex</span> <span class="k">as</span> <span class="nn">re</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">my_constraint_phrases</span> <span class="o">=</span> <span class="n">lexnlp</span><span class="o">.</span><span class="n">extract</span><span class="o">.</span><span class="n">en</span><span class="o">.</span><span class="n">constraints</span><span class="o">.</span><span class="n">CONSTRAINT_PHRASES</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">my_constraint_phrases</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;smallest among&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">CONSTRAINT_PATTERN</span> <span class="o">=</span> <span class="n">lexnlp</span><span class="o">.</span><span class="n">extract</span><span class="o">.</span><span class="n">en</span><span class="o">.</span><span class="n">constraints</span><span class="o">.</span><span class="n">create_constraint_pattern</span><span class="p">(</span><span class="n">lexnlp</span><span class="o">.</span><span class="n">extract</span><span class="o">.</span><span class="n">en</span><span class="o">.</span><span class="n">constraints</span><span class="o">.</span><span class="n">CONSTRAINT_PATTERN_TEMPLATE</span><span class="p">,</span> <span class="n">my_constraint_phrases</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lexnlp</span><span class="o">.</span><span class="n">extract</span><span class="o">.</span><span class="n">en</span><span class="o">.</span><span class="n">constraints</span><span class="o">.</span><span class="n">RE_CONSTRAINT</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">CONSTRAINT_PATTERN</span><span class="p">,</span> <span class="n">re</span><span class="o">.</span><span class="n">IGNORECASE</span> <span class="o">|</span> <span class="n">re</span><span class="o">.</span><span class="n">UNICODE</span> <span class="o">|</span> <span class="n">re</span><span class="o">.</span><span class="n">DOTALL</span> <span class="o">|</span> <span class="n">re</span><span class="o">.</span><span class="n">MULTILINE</span> <span class="o">|</span> <span class="n">re</span><span class="o">.</span><span class="n">VERBOSE</span><span class="p">)</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Run the `get_constraints` method again to test</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">lexnlp</span><span class="o">.</span><span class="n">extract</span><span class="o">.</span><span class="n">en</span><span class="o">.</span><span class="n">constraints</span><span class="o">.</span><span class="n">get_constraints</span><span class="p">(</span><span class="n">text</span><span class="p">)))</span>
+<span class="go">[(&#39;smallest among&#39;, &#39;the applicable rate shall be the&#39;, &#39;&#39;)]</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2015-2021, ContraxSuite, LLC.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
