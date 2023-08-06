@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+Eitaa_PyKit.egg-info/PKG-INFO
+Eitaa_PyKit.egg-info/SOURCES.txt
+Eitaa_PyKit.egg-info/dependency_links.txt
+Eitaa_PyKit.egg-info/top_level.txt
+eitaa/__init__.py
