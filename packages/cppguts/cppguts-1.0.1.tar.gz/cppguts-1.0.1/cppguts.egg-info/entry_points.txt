@@ -1,0 +1,4 @@
+[console_scripts]
+dumpcpp = cppguts.dumpcpp:main
+editcpp = cppguts.editcpp:main
+
