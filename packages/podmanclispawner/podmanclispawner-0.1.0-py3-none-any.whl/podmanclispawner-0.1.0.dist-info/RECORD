@@ -1,0 +1,11 @@
+podmanclispawner/__init__.py,sha256=NkKedHr_j-i28Ofst792XAhlm2_4YYWdDsMefNw1tiU,178
+podmanclispawner/podmanspawner.py,sha256=EUq4xIUdysWiv0zNNT_oWu7LVWuOMmLdh0OizMQOsck,8649
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=Vw9mR5O1RcBQD6moAAP92GhR9iai9Zcv23tahZxicoA,1829
+tests/test_spawner.py,sha256=lSqCxxI514uwONxXJW_7tKvABQM8U4xHvdoaOdR90cQ,2038
+podmanclispawner-0.1.0.dist-info/LICENSE,sha256=Kti9n2oM6s_n3yssGved2TMUYWQQQWdCljGADrB5cRg,1521
+podmanclispawner-0.1.0.dist-info/METADATA,sha256=CT8vNy7LpZCRHIiPc4qeDgTIxT7ffHpUHyNbV7GvZZI,1957
+podmanclispawner-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+podmanclispawner-0.1.0.dist-info/entry_points.txt,sha256=Rn_Awihkmh5sYWmipqo-eBvUedKh3LbGzlzt2MSc5J8,69
+podmanclispawner-0.1.0.dist-info/top_level.txt,sha256=QnznDJwbZPQfKKu-0oeYGrZvJulwFJHW7_7R2eIoVnE,23
+podmanclispawner-0.1.0.dist-info/RECORD,,
