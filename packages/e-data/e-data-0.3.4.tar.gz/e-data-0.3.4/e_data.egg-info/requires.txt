@@ -1,0 +1,8 @@
+aiopvpc==2.2.0
+bs4
+holidays
+pandas
+pyjwt
+python-dateutil
+requests
+tzlocal
