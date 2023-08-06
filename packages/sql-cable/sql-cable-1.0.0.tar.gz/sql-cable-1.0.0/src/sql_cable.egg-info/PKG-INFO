@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: sql-cable
+Version: 1.0.0
+Summary: SQL-Cable is package designed to make it easier to work with a flask app and sqlite3 database.
+Home-page: https://github.com/logtism/sql-cable
+Author: Logtism
+Author-email: nickhodder52@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/logtism/sql-cable/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# SQL-Cable
+
+## What is SQL-Cable?
+SQL-Cable is package designed to make it easier to work with a flask app and sqlite3 database.
+
+## How do I use SQL-Cable?
+You can read the [docs](https://sql-cable.readthedocs.io/en/latest/).
+
+
