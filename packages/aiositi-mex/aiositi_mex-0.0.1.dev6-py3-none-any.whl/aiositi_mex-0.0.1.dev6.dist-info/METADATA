@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: aiositi-mex
+Version: 0.0.1.dev6
+Summary: Cliente para enviar reportes a la CNBV.
+Home-page: https://github.com/cuenca-mx/siti-python
+Author: Cuenca
+Author-email: dev@cuenca.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests (<2.27,>=2.24)
+Requires-Dist: aiohttp (<3.7.5,>=3.7.0)
+Requires-Dist: pydantic (<1.9.0,>=1.6.0)
+Requires-Dist: pandas (<1.4.0,>=1.1.0)
+
+# siti-python
+Cliente para enviar reportes a la CNBV 
+
+
