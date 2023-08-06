@@ -1,0 +1,12 @@
+MANIFEST.in
+setup.py
+Cuckoo_node.egg-info/PKG-INFO
+Cuckoo_node.egg-info/SOURCES.txt
+Cuckoo_node.egg-info/dependency_links.txt
+Cuckoo_node.egg-info/entry_points.txt
+Cuckoo_node.egg-info/not-zip-safe
+Cuckoo_node.egg-info/requires.txt
+Cuckoo_node.egg-info/top_level.txt
+cuckoo/node/__init__.py
+cuckoo/node/data/.cuckoopackage
+cuckoo/node/rooter/__init__.py
