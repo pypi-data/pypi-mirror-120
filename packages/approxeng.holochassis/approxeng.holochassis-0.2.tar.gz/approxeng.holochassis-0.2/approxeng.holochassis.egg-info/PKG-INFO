@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: approxeng.holochassis
+Version: 0.2
+Summary: Python code for holonomic chassis dynamics
+Home-page: https://github.com/ApproxEng/approxeng.holochassis/
+Author: Tom Oinn
+Author-email: tomoinn@gmail.com
+License: ASL2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.4
+
+UNKNOWN
+
