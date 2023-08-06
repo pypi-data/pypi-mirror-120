@@ -1,0 +1,7 @@
+setup.py
+fairmaterials/__init__.py
+fairmaterials/fair.py
+fairmaterials.egg-info/PKG-INFO
+fairmaterials.egg-info/SOURCES.txt
+fairmaterials.egg-info/dependency_links.txt
+fairmaterials.egg-info/top_level.txt
