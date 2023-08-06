@@ -1,0 +1,6 @@
+mongo_model_base/__init__.py,sha256=05GhXfr-Uw4irllpx-0LiL-hYzLAuusFud10wLB3QIM,72
+mongo_model_base/mongoModels.py,sha256=LsQDoIppJAeszhOxzkbyUDAbnyz1AFJ4rzhRgWDaHo0,1639
+django_connect_mongo-1.7.0.dist-info/METADATA,sha256=G7m6sntswVMnw_-stgeZS7w1INkeSqpv2R-V5Tp3uUw,452
+django_connect_mongo-1.7.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+django_connect_mongo-1.7.0.dist-info/top_level.txt,sha256=5T5eFUsOI-89pcB-FA6H-d87grpg45dwjcohY1i86qI,17
+django_connect_mongo-1.7.0.dist-info/RECORD,,
