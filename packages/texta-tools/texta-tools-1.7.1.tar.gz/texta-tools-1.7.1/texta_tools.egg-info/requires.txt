@@ -1,0 +1,6 @@
+gensim==3.8.*
+joblib
+nltk>=3.5
+pytest
+regex
+requests
