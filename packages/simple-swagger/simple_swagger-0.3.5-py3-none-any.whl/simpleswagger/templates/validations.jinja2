@@ -1,0 +1,29 @@
+{{ header }}
+package {{package}}
+{%- from 'macros.jinja2' import validate %}
+
+import (
+    "regexp"
+)
+
+
+{%- for name, definition in swagger.definitions.items() %}
+    func (rec *{{ name }}) Validate() error {
+        {{ validate(definition, "(*rec)") }}
+        return nil
+    }
+{% endfor %}
+
+var (
+{%- for pattern, name in patterns_cache.items() %}
+    {{ name }} = regexp.MustCompile({{ pattern | tojson }})
+{%- endfor %}
+)
+
+type ValidationError struct {
+    Reason string
+}
+
+func (err *ValidationError) Error() string {
+    return "validation failed: " + err.Reason
+}
