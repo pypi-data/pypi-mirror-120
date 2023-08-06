@@ -1,0 +1,3 @@
+[console_scripts]
+pysnake = snake.__main__:main
+
