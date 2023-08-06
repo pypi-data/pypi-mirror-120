@@ -1,0 +1,5 @@
+command
+doge
+downloader-python
+exes
+pyim
