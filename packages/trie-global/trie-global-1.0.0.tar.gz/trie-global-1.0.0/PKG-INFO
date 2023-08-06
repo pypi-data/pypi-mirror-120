@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: trie-global
+Version: 1.0.0
+Summary: A Python Package that allows a user to change or view a global trie.
+Home-page: https://github.com/thequickbrownfoxjumpedoverthelazydog/trie-global-state-cli
+Author: c25kenneth
+License: UNKNOWN
+Description: # trie-global
+        
+        A package that allows a user to interact with a global trie data structure. 
+        
+        ## Usage
+        
+        run: ```trie-global+COMMAND+OPTIONAL_WORD``` 
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown

@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+trie_global.egg-info/PKG-INFO
+trie_global.egg-info/SOURCES.txt
+trie_global.egg-info/dependency_links.txt
+trie_global.egg-info/entry_points.txt
+trie_global.egg-info/requires.txt
+trie_global.egg-info/top_level.txt
