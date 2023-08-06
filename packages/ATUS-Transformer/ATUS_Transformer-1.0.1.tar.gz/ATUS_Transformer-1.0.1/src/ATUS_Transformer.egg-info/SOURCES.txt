@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/ATUS_Transformer.egg-info/PKG-INFO
+src/ATUS_Transformer.egg-info/SOURCES.txt
+src/ATUS_Transformer.egg-info/dependency_links.txt
+src/ATUS_Transformer.egg-info/top_level.txt
+src/atus_transformer/__init__.py
+src/atus_transformer/activityDictionary.py
