@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+duxueyuan.egg-info/PKG-INFO
+duxueyuan.egg-info/SOURCES.txt
+duxueyuan.egg-info/dependency_links.txt
+duxueyuan.egg-info/entry_points.txt
+duxueyuan.egg-info/top_level.txt
+square/Square1.py
+square/__init__.py
+square/__main__.py
