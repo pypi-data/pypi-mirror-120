@@ -1,0 +1,3 @@
+[console_scripts]
+taskcluster_yml_validator = taskcluster_yml_validator:main
+
