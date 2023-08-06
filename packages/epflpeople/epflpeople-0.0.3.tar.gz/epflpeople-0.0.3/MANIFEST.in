@@ -1,0 +1,2 @@
+global-include VERSION
+prune build

@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: epflpeople
+Version: 0.0.3
+Summary: EPFL People API wrapper for python
+Home-page: https://github.com/spaenleh/epfl-people-api
+Author: spaenleh
+Author-email: spaenleh@gmail.com
+License: UNKNOWN
+Project-URL: Github, https://github.com/spaenleh/epfl-people-api
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# epfl-people-api
+
+This package provides useful features to access the EPFL People API.
+
+This is an unofficial package.
+
+
+
