@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "pnq"
+version = "0.0.12"
+description = ""
+authors = ["sasano8 <y-sasahara@ys-method.com>"]
+license = "MIT"
+readme = "README.md"
+# repository = "https://github.com/sasano8/asy"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.9.0"
+mypy = "^0.812"
+pytest = "^6.2.2"
+pre-commit = "^2.12.0"
+isort = "^5.9.3"
+mkdocs = "^1.2.2"
+mkautodoc = "^0.1.0"
+mkdocs-material = "^7.2.2"
+pymdown-extensions = "^8.2"
+Jinja2 = "^3.0.1"
+black = "^21.9b0"
+
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+ [tool.black]
+extend-exclude = '''
+^/pnq/__queries__.py|
+^/pnq/actions.py
+'''
+
+[tool.pytest.ini_options]
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+]
+testpaths = [
+    "tests",
+]
