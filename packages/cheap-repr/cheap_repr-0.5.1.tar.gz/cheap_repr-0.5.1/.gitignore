@@ -1,0 +1,9 @@
+.eggs
+.tox
+*.egg-info
+*.pyc
+build
+dist
+.coverage
+
+/cheap_repr/version.py
