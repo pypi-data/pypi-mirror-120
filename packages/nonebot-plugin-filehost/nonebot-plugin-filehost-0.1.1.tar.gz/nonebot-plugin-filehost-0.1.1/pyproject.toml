@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "nonebot-plugin-filehost"
+version = "0.1.1"
+description = "A HTTP static file hosting plugin for NoneBot2, which provides an graceful solution for cross-machine file transfer."
+license = "MIT"
+authors = ["Mix <mnixry@users.noreply.github.com>"]
+readme = "README.md"
+repository = "https://github.com/mnixry/nonebot-plugin-filehost"
+packages = [{ include = './src/plugins/nonebot_plugin_filehost' }]
+
+[tool.poetry.dependencies]
+python = "^3.7.3"
+nonebot2 = "^2.0.0-alpha.15"
+aiofiles = "^0.7.0"
+
+[tool.poetry.dev-dependencies]
+nb-cli = "^0.5.0"
+flake8 = "^3.9.2"
+black = "^21.9b0"
+mypy = "^0.910"
+nonebot-plugin-test = "^0.3.0"
+nonebot-adapter-cqhttp = "^2.0.0-alpha.15"
+
+[nonebot.plugins]
+plugins = ["nonebot_plugin_test"]
+plugin_dirs = ["src/plugins"]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
