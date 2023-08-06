@@ -1,0 +1,8 @@
+CoreBluetooth/_CoreBluetooth.abi3.so,sha256=iv5E28CsV403ib-jSELo1AQwYxSiF5SIuVDGnEv7P7E,120310
+CoreBluetooth/__init__.py,sha256=lVGvJbBm0fUIWo8dYMjARhiWO42w_IGwFvafmC5cUmE,797
+CoreBluetooth/_metadata.py,sha256=d6MHxFH0cPOj4T4_RSakTZxDo82mWUkpPT-74hnUfTE,17055
+pyobjc_framework_CoreBluetooth-8.0b1.dist-info/LICENSE.txt,sha256=bQy16YGNJXQQ3BtHL_-Bhq4gzQT1ZN2et9H0-27d3aE,1249
+pyobjc_framework_CoreBluetooth-8.0b1.dist-info/METADATA,sha256=QFlCFpuYfZ8-DJY8UzXsOhFIxrCaB0faml2Dv8nf13c,2127
+pyobjc_framework_CoreBluetooth-8.0b1.dist-info/WHEEL,sha256=d-7HeWEmp7bzhJFAbiDvb71dBQkQBmQG23EHPreBDg4,113
+pyobjc_framework_CoreBluetooth-8.0b1.dist-info/top_level.txt,sha256=mrd_Sh1JLPW4g_20hfpKNneNXo-XHeaIG4n0zAvaIP0,14
+pyobjc_framework_CoreBluetooth-8.0b1.dist-info/RECORD,,
