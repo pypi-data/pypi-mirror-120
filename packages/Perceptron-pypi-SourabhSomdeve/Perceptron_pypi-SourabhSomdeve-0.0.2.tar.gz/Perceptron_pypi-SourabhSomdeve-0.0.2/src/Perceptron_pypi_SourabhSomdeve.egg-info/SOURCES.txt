@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/OneNeuron/Perceptron.py
+src/OneNeuron/__init__.py
+src/Perceptron_pypi_SourabhSomdeve.egg-info/PKG-INFO
+src/Perceptron_pypi_SourabhSomdeve.egg-info/SOURCES.txt
+src/Perceptron_pypi_SourabhSomdeve.egg-info/dependency_links.txt
+src/Perceptron_pypi_SourabhSomdeve.egg-info/requires.txt
+src/Perceptron_pypi_SourabhSomdeve.egg-info/top_level.txt
