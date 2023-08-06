@@ -1,0 +1,7 @@
+typer
+
+[infer]
+numpy
+
+[testing]
+pytest

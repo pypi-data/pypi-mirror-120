@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: widen
+Version: 0.0.1.dev0
+Summary: Package project for learning purposes.
+Home-page: https://github.com/lnunesai/Widen.git
+Author: Lucas Nunes
+Author-email: lnunesai@gmail.com
+License: MIT
+Keywords: widen learn
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: infer
+Provides-Extra: testing
+License-File: LICENSE.txt
+
+# Widen
+
+**Current Version:** **v0.0.1.dev0**
+
+
+Widen is a project for learning purposes.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install.
+
+```bash
+pip install widen
+```
+
+## Usage
+
+```bash
+widen --help
+```
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
