@@ -1,0 +1,1 @@
+CATEGORY_COL = "Somos Capos y Qué???"
