@@ -1,0 +1,39 @@
+import java.io
+import bioformats_jar._loci.poi.hssf.model
+import bioformats_jar._loci.poi.hssf.record
+import typing
+
+
+
+class ERFListener:
+    def processRecord(self, record: bioformats_jar._loci.poi.hssf.record.Record) -> bool: ...
+
+class EventRecordFactory:
+    @typing.overload
+    def __init__(self): ...
+    @typing.overload
+    def __init__(self, boolean: bool): ...
+    @staticmethod
+    def createRecord(recordInputStream: bioformats_jar._loci.poi.hssf.record.RecordInputStream) -> typing.List[loci.poi.hssf.record.Record]: ...
+    @staticmethod
+    def getAllKnownRecordSIDs() -> typing.List[int]: ...
+    def processRecords(self, inputStream: java.io.InputStream) -> None: ...
+    def registerListener(self, eRFListener: ERFListener, shortArray: typing.List[int]) -> None: ...
+
+class ModelFactoryListener:
+    def process(self, model: bioformats_jar._loci.poi.hssf.model.Model) -> bool: ...
+
+class ModelFactory(ERFListener):
+    def __init__(self): ...
+    def processRecord(self, record: bioformats_jar._loci.poi.hssf.record.Record) -> bool: ...
+    def registerListener(self, modelFactoryListener: ModelFactoryListener) -> None: ...
+    def run(self, inputStream: java.io.InputStream) -> None: ...
+
+
+class __module_protocol__(typing.Protocol):
+    # A module protocol which reflects the result of ``jp.JPackage("loci.poi.hssf.eventmodel")``.
+
+    ERFListener: typing.Type[ERFListener]
+    EventRecordFactory: typing.Type[EventRecordFactory]
+    ModelFactory: typing.Type[ModelFactory]
+    ModelFactoryListener: typing.Type[ModelFactoryListener]
