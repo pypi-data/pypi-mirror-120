@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: greta
+Version: 0.1.0
+Summary: A library for green computing: execute code at low carbon intensity
+Home-page: UNKNOWN
+Author: Tom Titcombe
+Author-email: UNKNOWN
+License: GPL-3
+Platform: UNKNOWN
+Requires-Dist: requests
+
+UNKNOWN
+
+
