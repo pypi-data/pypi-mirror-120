@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: rul-pm
+Version: 0.2.1
+Summary: Remaining useful life estimation utilities
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: tqdm
+Requires-Dist: scikit-learn
+Requires-Dist: seaborn
+Requires-Dist: xgboost
+Requires-Dist: gwpy
+Requires-Dist: mlflow
+Requires-Dist: emd
+Requires-Dist: numba
+Requires-Dist: dill
+Requires-Dist: mmh3
+Requires-Dist: temporis
+Requires-Dist: pyarrow
+Requires-Dist: fastparquet
+
+UNKNOWN
+
+
