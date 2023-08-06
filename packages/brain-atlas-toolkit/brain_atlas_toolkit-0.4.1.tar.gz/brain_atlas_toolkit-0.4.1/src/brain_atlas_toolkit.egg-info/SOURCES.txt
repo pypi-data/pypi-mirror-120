@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+src/brain_atlas_toolkit/__init__.py
+src/brain_atlas_toolkit/graph_tools.py
+src/brain_atlas_toolkit.egg-info/PKG-INFO
+src/brain_atlas_toolkit.egg-info/SOURCES.txt
+src/brain_atlas_toolkit.egg-info/dependency_links.txt
+src/brain_atlas_toolkit.egg-info/requires.txt
+src/brain_atlas_toolkit.egg-info/top_level.txt
+src/static/Digraph.gv
+src/static/Digraph.gv.png
