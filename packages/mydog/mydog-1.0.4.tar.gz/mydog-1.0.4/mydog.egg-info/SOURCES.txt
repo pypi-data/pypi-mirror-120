@@ -1,0 +1,10 @@
+README.md
+setup.py
+mydog/__init__.py
+mydog/mydog.py
+mydog.egg-info/PKG-INFO
+mydog.egg-info/SOURCES.txt
+mydog.egg-info/dependency_links.txt
+mydog.egg-info/entry_points.txt
+mydog.egg-info/requires.txt
+mydog.egg-info/top_level.txt
