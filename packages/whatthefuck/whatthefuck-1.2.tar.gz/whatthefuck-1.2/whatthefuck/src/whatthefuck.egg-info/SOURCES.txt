@@ -1,0 +1,8 @@
+LICENSE
+setup.cfg
+setup.py
+whatthefuck/src/whatthefuck.py
+whatthefuck/src/whatthefuck.egg-info/PKG-INFO
+whatthefuck/src/whatthefuck.egg-info/SOURCES.txt
+whatthefuck/src/whatthefuck.egg-info/dependency_links.txt
+whatthefuck/src/whatthefuck.egg-info/top_level.txt
