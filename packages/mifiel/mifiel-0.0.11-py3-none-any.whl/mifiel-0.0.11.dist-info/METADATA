@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: mifiel
+Version: 0.0.11
+Summary: Python API Client library for mifiel.com
+Author: Genaro Madrid
+Author-email: genmadrid@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: cookies (>=2.2.1,<3.0.0)
+Requires-Dist: nose2 (>=0.10.0,<0.11.0)
+Requires-Dist: requests (>=2.20.0)
+Requires-Dist: responses (>=0.9.0,<0.10.0)
+Requires-Dist: unittest2 (>=1.1.0,<2.0.0)
