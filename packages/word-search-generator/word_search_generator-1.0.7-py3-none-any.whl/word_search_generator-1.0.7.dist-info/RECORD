@@ -1,0 +1,15 @@
+word_search_generator/__init__.py,sha256=xiU0mOuzLuJyub54GPJXRPYShfyUNrgUDDVYzcXk8kw,8141
+word_search_generator/__main__.py,sha256=6vbkS4BiQdVV-0kJ3Ra4aKRK1WgVO3XjJDVFc6ED_gU,83
+word_search_generator/cli.py,sha256=Y2VWSEBfcW5MSdk-So1WeeKYmrPdOPvzDXpcKgA-XAU,3178
+word_search_generator/config.py,sha256=Lt_qintWdQOf2pEmUiUg3Tpa3AMAWhwe_t5imuT9qPk,644
+word_search_generator/export.py,sha256=bc1U_IAiQZ5o4WQwdDXlv0fX8KrK9TuUnAtBQ_xOlzo,4771
+word_search_generator/generate.py,sha256=aNXj5y9Knz7n7AbfyXTigkIndARihUR3ipe5atpk6cQ,6761
+word_search_generator/types.py,sha256=-AqvXNm2-1UzjpTsp0pMQGyZcUJIcPr-Fx9bEjezA90,339
+word_search_generator/utils.py,sha256=fayTiT0pW0ArqYLWjDOewDd9F8oyZGq4yB-mrjRG2fQ,16337
+word_search_generator-1.0.7.dist-info/LICENSE,sha256=C2CvwcvE_7wwfYhNS0lq3RGanvkrMqKw_qZGBkgYloI,1077
+word_search_generator-1.0.7.dist-info/METADATA,sha256=ade6Vv9F54NgOqppZOOeMEp5GgF_TXB-15wGF_AQvAU,9638
+word_search_generator-1.0.7.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+word_search_generator-1.0.7.dist-info/entry_points.txt,sha256=qsei0cq6qdFq9whMm8v7QzLJqaXE4yzVXYM3Gbxloak,64
+word_search_generator-1.0.7.dist-info/top_level.txt,sha256=RqehAhL-iKRWrXg34AUuwjbY0Njn27bQnfkA4LIMgVs,22
+word_search_generator-1.0.7.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+word_search_generator-1.0.7.dist-info/RECORD,,
