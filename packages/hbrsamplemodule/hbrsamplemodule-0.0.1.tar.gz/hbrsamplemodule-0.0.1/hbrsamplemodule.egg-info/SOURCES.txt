@@ -1,0 +1,8 @@
+setup.py
+extras/__init__.py
+extras/divide.py
+extras/multiply.py
+hbrsamplemodule.egg-info/PKG-INFO
+hbrsamplemodule.egg-info/SOURCES.txt
+hbrsamplemodule.egg-info/dependency_links.txt
+hbrsamplemodule.egg-info/top_level.txt
