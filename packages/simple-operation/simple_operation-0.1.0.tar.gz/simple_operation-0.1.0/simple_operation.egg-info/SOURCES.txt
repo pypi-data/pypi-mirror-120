@@ -1,0 +1,8 @@
+setup.py
+simple_operation/__init__.py
+simple_operation/common.py
+simple_operation/file_cleanup.py
+simple_operation.egg-info/PKG-INFO
+simple_operation.egg-info/SOURCES.txt
+simple_operation.egg-info/dependency_links.txt
+simple_operation.egg-info/top_level.txt
