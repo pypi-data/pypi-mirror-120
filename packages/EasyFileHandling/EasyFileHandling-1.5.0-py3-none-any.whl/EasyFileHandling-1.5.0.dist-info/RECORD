@@ -1,0 +1,15 @@
+EasyFileHandling/__init__.py,sha256=kwskvzP0Pjp6m_nJcdU8u36souo3C9aHCx7e_gW5Z7A,144
+EasyFileHandling/imagehandler.py,sha256=WxZ6ZQf5u6yIBhIqn7v_pKxxw-CoYuBya2HkV6iqdC4,4005
+EasyFileHandling/jsonHandler.py,sha256=YkqTOD-lwFQaSgLxaEaPz0ss5LWkzYUekww2wKH_5Gk,1197
+EasyFileHandling/main.py,sha256=lUalkEGoj1RKNi0XD70yfr13i41L075Pm60UlD5mDFs,6295
+EasyFileHandling/beta/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+EasyFileHandling/beta/main.py,sha256=HAlhXpQqfSrMYB5bSuiW1vyr-v1aJer0EIBt7_1A-D8,1075
+EasyFileHandling/errors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+EasyFileHandling/errors/error.py,sha256=1HA_besw7Jq2CXWMByHR9aM9I7QLr0MkvdWY_Cm6YAw,911
+EasyFileHandling/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+EasyFileHandling/tests/test_filehandler.py,sha256=op6_Y46ZjtH9WoxcSe3SuBuFZ11dzhJGAaTzgiRlN-o,1202
+EasyFileHandling-1.5.0.dist-info/LICENSE,sha256=9-sWr2NlyBZ3L5ZQXDXE_odmbdvK4bKipSvpWjjTQVo,1094
+EasyFileHandling-1.5.0.dist-info/METADATA,sha256=hfvQZyHbvz88bCG_4lgp4oFlQAfkJyXRh5Q7xBPG5iw,1903
+EasyFileHandling-1.5.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+EasyFileHandling-1.5.0.dist-info/top_level.txt,sha256=HblVKVvoxb_1-xz3vvFi8C32LNivZjKVHndvn9MbNCs,17
+EasyFileHandling-1.5.0.dist-info/RECORD,,
