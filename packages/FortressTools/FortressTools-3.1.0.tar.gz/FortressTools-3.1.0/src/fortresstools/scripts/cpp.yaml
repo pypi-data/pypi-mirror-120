@@ -1,0 +1,41 @@
+NewProject:
+  input:
+    name: "New project name"
+  env:
+    workspace: ${settings.workspace}
+  commands:
+    - name: Mkdir
+      executor: shell
+      args:
+        path: ${env.workspace}/${input.name}
+    - name: GitInitFromTemplate
+      executor: shell
+      args:
+        template: git@github.com:gembcior/cpp-template.git
+        path: ${env.workspace}/${input.name}
+    - name: CreateProjectConfig
+      executor: shell
+      args:
+        path: ${env.workspace}/${input.name}
+        settings: ${settings.all}
+
+Configure:
+  env:
+    path: ${settings.workspace}/${settings.name}
+  commands:
+    - name: CmakeGenerate
+      executor: shell
+      args:
+        source: ${env.path}
+        path: ${env.path}/build
+        generator: Unix Makefiles
+
+Build:
+  env:
+    path: ${settings.workspace}/${settings.name}
+  commands:
+    - name: CmakeBuild
+      executor: shell
+      args:
+        path: ${env.path}/build
+        target: all
