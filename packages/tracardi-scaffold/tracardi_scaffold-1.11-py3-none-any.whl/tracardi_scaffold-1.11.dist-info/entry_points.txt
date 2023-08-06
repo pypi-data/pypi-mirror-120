@@ -1,0 +1,3 @@
+[console_scripts]
+tracardi = tracardi_plugin_scaffold.create_plugin:cli
+
