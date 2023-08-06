@@ -1,0 +1,13 @@
+govee_api2/__init__.py,sha256=WVBhtmd0nuERQL4DCEhVQrIApAC05KIXeTjejVlIWms,132
+govee_api2/api.py,sha256=VjAGHB7l3llhNSBzs1XOZ_q9NRBFRbg0QtFTHYA7UE8,17087
+govee_api2/device.py,sha256=Ln_6liK3S5nGl0sPR4yPIEsH1sSQu18E0P8Q5_9npq8,10119
+govee_api2/device_factory.py,sha256=QbG0Rj3zaHXDwoDAGQJbAg-OxVsKPcuCMlpZWkaViLI,1346
+govee_api2/cert/AmazonRootCA1.pem,sha256=LEOVLungAP8qzE4u0Il8CnKtX6csPZNOgXQcvVTwW9E,1188
+govee_api2/cert/testiot.cert.pem,sha256=c4pRB9vSLT-7IujflN8jIbM5arESgeAnMtIUNSvLGjA,1224
+govee_api2/cert/testiot.cert.pkey,sha256=yylQ61WJilFASic2a9OSBbEGTcqT7VfSirrrUewYDQw,1853
+govee_api2-1.3.0.dist-info/AUTHORS.rst,sha256=rUXNIJA87acSgrpDWZBtEymU136D3WL7HCySv0h4WSo,162
+govee_api2-1.3.0.dist-info/LICENSE.rst,sha256=xCeQxKWFpVdZ6pH3Erb4xdUrBPaO-m-VgzLjCWI85dE,10896
+govee_api2-1.3.0.dist-info/METADATA,sha256=6Tp3PRxKkHC45MHRtIj_0nSqR2RtSgXanZdrx9xf-_A,3922
+govee_api2-1.3.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+govee_api2-1.3.0.dist-info/top_level.txt,sha256=K4neL_R3BzVN6wixKyCVTYJmXp7TSdTlbMG0_QdlNEo,11
+govee_api2-1.3.0.dist-info/RECORD,,
