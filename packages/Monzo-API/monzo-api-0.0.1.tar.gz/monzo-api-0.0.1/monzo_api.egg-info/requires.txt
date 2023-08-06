@@ -1,0 +1,5 @@
+
+[test]
+flake8
+isort
+mypy
