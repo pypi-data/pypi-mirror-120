@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: PyColor256
+Version: 1.0.0
+Summary: Um módulo com 256 cores com objetivo de facilitar a sua vida
+Home-page: https://github.com/MidD3Vil/PyColor256
+Author: Vinícius Coral
+Author-email: coralvinicius3110@gmail.com
+License: MIT
+Project-URL: Código fonte, https://github.com/MidD3Vil/PyColor256
+Project-URL: Download, https://github.com/MidD3Vil/PyColor256/archive/1.0.0.zip
+Keywords: color colors python module lib cor cores custom terminal
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Portuguese (Brazilian)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Internationalization
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+Um módulo com cores 8 bit (256) 100% em python com funções adicionais para personalizar o seu programa Criado por Vinícius Coral.
+

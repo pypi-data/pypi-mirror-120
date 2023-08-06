@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+PyColor256/PyColor256.py
+PyColor256/__init__.py
+PyColor256.egg-info/PKG-INFO
+PyColor256.egg-info/SOURCES.txt
+PyColor256.egg-info/dependency_links.txt
+PyColor256.egg-info/top_level.txt
