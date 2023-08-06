@@ -1,0 +1,12 @@
+test/__init__.py,sha256=EXVc-B9SRgXxZhfuj7ExthDLeZK3zIHv-cG5PXc98MI,26
+test/test_torip.py,sha256=39yvWGV74GwVearnRwQCMhVEJlh4RhrxRJGw4AacdcQ,1492
+torip/__init__.py,sha256=oTVA-3jCk1jylewSWfyXHKNMWP3ZIbnkT9-NQP-J9hw,28
+torip/exceptions.py,sha256=rkNCkzcKn1TmHa_ZXR-aK32rtoAd7j6MklbQkMB0Dj4,70
+torip/ipapis.py,sha256=W-Lun6vMylzuPGuQzt7sPzxo8Lq9Xs1YZd-on5p1qD4,3910
+torip/locator.py,sha256=-It7C45rcyvI1QIpEBaTqVcOPxEsgzXj0YVdkEsM83g,568
+torip/utilities.py,sha256=f0Gc-VoXJT_cXBUiV_aBAZOXxWAW_lMJF_YOutcWSt8,296
+torip-0.0.1.dist-info/LICENSE,sha256=D3xw58fco00HyZsN4a_aD5devP3g7Dg5Vgz2T9J01ho,1100
+torip-0.0.1.dist-info/METADATA,sha256=ST910JwvMu2NcXH1k_AYm1SeFogi6wX93EB5fZqybnY,1801
+torip-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+torip-0.0.1.dist-info/top_level.txt,sha256=xhTixB2O-wb0DK2L3j173q92kg9ApzoILUvoJ9Cuzc4,11
+torip-0.0.1.dist-info/RECORD,,
