@@ -1,0 +1,17 @@
+scipy
+numpy
+
+[dev]
+pre-commit
+
+[docs]
+sphinx
+sphinx-rtd-theme
+m2r
+sphinxcontrib.apidoc
+
+[testing]
+pytest
+pytest-cov
+pytest-mypy
+tox
