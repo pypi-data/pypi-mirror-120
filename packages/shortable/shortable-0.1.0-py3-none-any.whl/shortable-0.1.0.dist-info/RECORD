@@ -1,0 +1,10 @@
+shortable/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shortable/shortable.py,sha256=U9hKufntE2yhs3AG3OBG49nDLi_B2suOv5JXDBSPrnE,5041
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_shortable.py,sha256=nsum_65H_EFA5FycRykdEhj4F_1aoGVESZMioFCpfdM,5944
+shortable-0.1.0.dist-info/LICENSE.txt,sha256=pA1WHwYYkZ37rFoi9c2S6mwje4Z3otOMIk-MrVKzTGo,1093
+shortable-0.1.0.dist-info/METADATA,sha256=hUOuqh3EMpVhF-cTH03OR1k_kBP7cOIwGgInuOwqv3E,4674
+shortable-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+shortable-0.1.0.dist-info/entry_points.txt,sha256=DXFz3Y6Kb-ddn0n4HCiPGkYUL5C_bXwaWslJO-BuUPs,55
+shortable-0.1.0.dist-info/top_level.txt,sha256=lITd9fJN6eB33XZTNl4hd14uVcAkmzcUt437_zHdjdc,16
+shortable-0.1.0.dist-info/RECORD,,
