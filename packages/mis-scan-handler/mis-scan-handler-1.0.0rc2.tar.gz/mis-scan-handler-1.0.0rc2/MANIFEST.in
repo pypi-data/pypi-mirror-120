@@ -1,0 +1,2 @@
+include versioneer.py
+include mis_scan_handler/_version.py
