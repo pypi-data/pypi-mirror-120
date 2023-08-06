@@ -1,0 +1,12 @@
+pgpd/__init__.py,sha256=_d96kVKDS_VvTBLmYrdhcg6orq0IikIVfROgi1k4eVk,182
+pgpd/_accessor_dataframe.py,sha256=rRMP4ZJZ7Pfp00dwj9-HWfuNf81-N6iZ3BL1G_Z0GQU,4726
+pgpd/_accessor_series.py,sha256=9wnKi8R1R0b-5rFPw53bY4DBcFobIlX09zHhVBzUEtQ,25473
+pgpd/_array.py,sha256=sfct-C3lpuMOq6x5dbLxLxpy5hSDoW1u93IwmBpfcH0,37321
+pgpd/_delegated_dataframe.py,sha256=lPUnXUVDk9Z6FrxfY7uAkh_YcmICc7_12Tf7S7vkh9c,5146
+pgpd/_delegated_series.py,sha256=n74xtL9yWgzgwpzcCmvHePo7GnXLb34RTdENnAfA57k,16460
+pgpd/_util.py,sha256=QbI2w7Urdrw8m5pW4Er05Xit2gaMSLLLbGiGmwve94g,481
+pgpd/_version.py,sha256=mo1DZBEdnJWTj1xcgHBjRfi7wXEqAhL5uqLg6jL_ub0,497
+pgpd-2.0.0.dist-info/METADATA,sha256=iI6qwMqM-arI2RRBZ_CwbQlT0l7yaq4f3DP6DKSEdqA,8924
+pgpd-2.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pgpd-2.0.0.dist-info/top_level.txt,sha256=pbohea9l71AJpMHEceqioFqhM5RVT5jgGya3erHMP3E,5
+pgpd-2.0.0.dist-info/RECORD,,
