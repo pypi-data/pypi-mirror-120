@@ -1,0 +1,11 @@
+start      : freqscript ";" cadscript
+freqscript : freq_comp ("," freq_comp)*
+freq_comp  : INT "@" LEVEL
+cadscript  : section [";" section]
+section    : DURATION "(" segment ("," segment)* ")"
+segment    : DURATION "/" DURATION ["/" INT ("+" INT)*]
+
+DURATION   : "*" | INT* "." INT ~ 1..3 | INT+
+LEVEL      : "-"? (INT* "." INT | INT+)
+
+%import common.INT
