@@ -1,0 +1,15 @@
+nucos/__init__.py,sha256=zMP3zLigWWA9nUHXB-qhEvGNt7TNi3HDfpY8p-Ud2c8,1621
+nucos/lat_long.py,sha256=mZExUmVS1XiR6kpGi9xgFoQqWjsRFU7wnPRFYUEQgs8,13721
+nucos/unit_conversion.py,sha256=yYgiXBRnz5FvYIRDH096BHAL52IeComZjrTxvR_POOU,16962
+nucos/unit_data.py,sha256=qMToM3HXZDCKCY41gVRYK8qLmvFl6GX58rpfDF_Vb2A,21000
+nucos/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nucos/tests/test_dump.py,sha256=v1CEeVBIlwTUDiF9YRtWqajK5N27QRp-G54Gdpqw-gM,1910
+nucos/tests/test_lat_long.py,sha256=8kTrZYPHHUjzDQa4v-gUDNExaDizomCLTW-btkcWViI,9747
+nucos/tests/test_old_api.py,sha256=5i7J7LHRagHc2tDI6ViH3uI7iPUr_5rlH4preqK01Wo,629
+nucos/tests/test_unit_conversion.py,sha256=5qWOXUSBcrBR1p0GYRigtbteeKb623Axg25HSJSSDgs,22998
+unit_conversion/__init__.py,sha256=vNkoOa-tbySqlL8Cln7EMGxoFEMpcsVqVOXTld8t9mQ,930
+pynucos-3.0.0.dist-info/LICENSE,sha256=x56ZwS8uGNTSETcQkMTBE4LutghOLjsHe1yRZj0W8tA,1435
+pynucos-3.0.0.dist-info/METADATA,sha256=1BxxXrZW7iTzeIPL__hV-IuKhSZhJVLO5CP1FoSimuw,6477
+pynucos-3.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pynucos-3.0.0.dist-info/top_level.txt,sha256=Fh-q2YYYYJTZZVjQOiX1f0wNqw-3z1hnaIJSriqE34c,22
+pynucos-3.0.0.dist-info/RECORD,,
