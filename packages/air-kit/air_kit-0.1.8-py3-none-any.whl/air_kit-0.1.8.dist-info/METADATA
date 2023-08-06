@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: air-kit
+Version: 0.1.8
+Summary: air's kit
+Home-page: https://gitlab.com/air64/air_kit
+Author: air64
+Author-email: contact.air64@yandex.ru
+Maintainer: air64 <contact.air64@yandex.ru>
+Maintainer-email: contact.air64@yandex.ru
+License: MIT
+Project-URL: Gitlab, https://gitlab.com/air64/air_kit
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: python-dotenv (==0.13.0)
+Requires-Dist: pyyaml (==5.3.1)
+Provides-Extra: telegram_bot
+Requires-Dist: jinja2 (~=3.0.1) ; extra == 'telegram_bot'
+Requires-Dist: python-telegram-bot (~=13.7) ; extra == 'telegram_bot'
+
+UNKNOWN
+
+
