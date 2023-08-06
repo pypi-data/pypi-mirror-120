@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: trading-strategy-backtrader
+Version: 0.1
+Summary: BackTesting Engine (forked)
+Home-page: https://github.com/tradingstrategy-ai/qstrader
+Author: Mikko Ohtamaa
+Author-email: mikko@capitalgram.com
+License: GPLv3+
+Keywords: trading,development
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Topic :: Software Development
+Classifier: Topic :: Office/Business :: Financial
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: plotting
+Requires-Dist: matplotlib ; extra == 'plotting'
+
+# Trading Strategy Backtrader
+
+This is patched and bug fixed version for [Backtrader library](https://pypi.org/project/backtrader/). This package is a dependency for [trading-strategy](https://github.com/tradingstrategy-ai/client) package.
+
+The `backtrader` project was forked and the fork released on a different PyPi package name `trading-strategy-backtrader` because the original was unmaintained and unusable as a PyPi package dependency.
+
+[Show package information on PyPi](https://pypi.org/project/trading-strategy-backtrader/).
+
+[For more information see the original Backtrader website](https://www.backtrader.com/) and [Trading Strategy website](https://tradingstrategy.ai/).
+
+## Release
+
+How to release this package on PyPi.
+
+Update `setup.py` version.
+
+
+```shell
+rm -rf dist
+python3 -m pip install --upgrade build
+python3 -m build
+python3 -m pip install --upgrade twine
+python3 -m twine upload dist/*
+```
+
+[How to publish Python packages](https://packaging.python.org/tutorials/packaging-projects/)
+
+
