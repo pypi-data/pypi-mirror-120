@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+trompi/__init__.py
+trompi.egg-info/PKG-INFO
+trompi.egg-info/SOURCES.txt
+trompi.egg-info/dependency_links.txt
+trompi.egg-info/top_level.txt
