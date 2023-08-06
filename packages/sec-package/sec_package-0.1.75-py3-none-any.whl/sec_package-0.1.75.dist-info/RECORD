@@ -1,0 +1,5 @@
+sec_package/__init__.py,sha256=nnezdG6ggetMVX5xzITKKdxmqJ0YoH6F26ZqM25zEK4,10
+sec_package/filetoimport.py,sha256=bl8XM5zmbxyLiNUr8tzEwtO6AOmANlLEOmj01oLLq30,40
+sec_package-0.1.75.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+sec_package-0.1.75.dist-info/METADATA,sha256=sGChhmejuBFD85-rl8-Wy-_lIsYAmE2_388YjuPloSg,322
+sec_package-0.1.75.dist-info/RECORD,,
