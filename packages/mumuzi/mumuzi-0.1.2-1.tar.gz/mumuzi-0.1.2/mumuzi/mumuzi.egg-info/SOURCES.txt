@@ -1,0 +1,9 @@
+README.md
+setup.py
+mumuzi/mumuzi/__init__.py
+mumuzi/mumuzi/mumuzi.py
+mumuzi/mumuzi/py3base92.py
+mumuzi/mumuzi.egg-info/PKG-INFO
+mumuzi/mumuzi.egg-info/SOURCES.txt
+mumuzi/mumuzi.egg-info/dependency_links.txt
+mumuzi/mumuzi.egg-info/top_level.txt
