@@ -1,0 +1,10 @@
+pyonmttok/OpenNMTTokenizer.dll,sha256=7H6pnKiVbGRVxOM1EFTRvPmSrR9sq9XZr3JzlUD9ecs,1939456
+pyonmttok/__init__.py,sha256=tbcMTrSNaZH4N2zfPDtSweODokHeZ3wIauhqqR522Iw,791
+pyonmttok/_ext.cp36-win_amd64.pyd,sha256=ZQFRJhmtvLZ8h4yB-Dv00SyisB0g0U3BArcL2UeifVo,357888
+pyonmttok/icudt69.dll,sha256=3sOZo5fb817gXJwE7SnAiUuQ4s2Vtv3L_qZa619yABc,28667392
+pyonmttok/icuuc69.dll,sha256=8oG57vgwRH8DOa0wDnHitydXctxFv0aerjTAkh6Oleo,2196992
+pyonmttok/version.py,sha256=Mn-hOGFO_Ts1YQbbhD6bX-e5Udpk6iQGtRINhaGpihk,54
+pyonmttok-1.28.0.dist-info/METADATA,sha256=Zid5PoQiUndtvh_EdRNcJw2qGNoXPJHcFtPq2mvH21M,9783
+pyonmttok-1.28.0.dist-info/WHEEL,sha256=epucrC2yyYTysDCMzXuz8eGMTMKryzRfNOvMGdslbjc,101
+pyonmttok-1.28.0.dist-info/top_level.txt,sha256=wuxOdfXNXj98ECi-4TSLRm_bpRYIccmePnOKlVvxvfY,10
+pyonmttok-1.28.0.dist-info/RECORD,,
