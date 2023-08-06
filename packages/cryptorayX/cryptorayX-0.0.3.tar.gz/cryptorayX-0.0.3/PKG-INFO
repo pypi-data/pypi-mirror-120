@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: cryptorayX
+Version: 0.0.3
+Summary: Lightweight Python module to get Crypto currency price
+Home-page: https://github.com/mdfarhaan/cryptorayX
+Author: Mohammed Farhaan
+Author-email: farhaanm110@gmail.com
+License: MIT
+Description: Lightweight Python module to get Crypto currency price
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6

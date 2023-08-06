@@ -1,0 +1,11 @@
+Change Log
+==========
+
+0.0.1 (06/05/2021)
+- First Release
+
+0.0.2 (04/06/2021)
+- First Alpha Release
+
+0.0.3 (20/09/2031)
+- Fisrt Alpha 0.1 Release

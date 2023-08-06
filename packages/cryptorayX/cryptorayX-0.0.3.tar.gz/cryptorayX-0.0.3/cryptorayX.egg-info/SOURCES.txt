@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+cryptorayX.py
+setup.py
+cryptorayX.egg-info/PKG-INFO
+cryptorayX.egg-info/SOURCES.txt
+cryptorayX.egg-info/dependency_links.txt
+cryptorayX.egg-info/requires.txt
+cryptorayX.egg-info/top_level.txt
