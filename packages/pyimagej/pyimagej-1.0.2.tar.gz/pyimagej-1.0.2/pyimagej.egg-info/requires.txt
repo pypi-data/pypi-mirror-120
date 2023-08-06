@@ -1,0 +1,6 @@
+imglyb>=2.0.0
+jpype1
+matplotlib
+numpy
+scyjava>=1.3.0
+xarray
