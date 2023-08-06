@@ -1,0 +1,10 @@
+LICENSE
+README.md
+fake_traffic.py
+setup.py
+fake_traffic.egg-info/PKG-INFO
+fake_traffic.egg-info/SOURCES.txt
+fake_traffic.egg-info/dependency_links.txt
+fake_traffic.egg-info/not-zip-safe
+fake_traffic.egg-info/requires.txt
+fake_traffic.egg-info/top_level.txt
