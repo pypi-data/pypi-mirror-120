@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: easyrsa
+Version: 1.1.0
+Summary: Encrypt symmetric keys with RSA.
+Home-page: https://github.com/foxe6/easyrsa
+Author: f̣ộx̣ệ6
+Author-email: foxe6@protonmail.com
+License: AGPL-3.0
+Keywords: easy rsa
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Utilities
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pycryptodome (>=0.0.1)
+Requires-Dist: omnitools (>=0.0.1)
+
+# Easy RSA
+
+<badges>[![version](https://img.shields.io/pypi/v/easyrsa.svg)](https://pypi.org/project/easyrsa/)
+[![license](https://img.shields.io/pypi/l/easyrsa.svg)](https://pypi.org/project/easyrsa/)
+[![pyversions](https://img.shields.io/pypi/pyversions/easyrsa.svg)](https://pypi.org/project/easyrsa/)  
+[![donate](https://img.shields.io/badge/Donate-Paypal-0070ba.svg)](https://paypal.me/foxe6)
+[![powered](https://img.shields.io/badge/Powered%20by-UTF8-red.svg)](https://paypal.me/foxe6)
+[![made](https://img.shields.io/badge/Made%20with-PyCharm-red.svg)](https://paypal.me/foxe6)
+</badges>
+
+<i>Encrypt symmetric keys with RSA.</i>
+
+# Hierarchy
+
+```
+easyrsa
+'---- EasyRSA()
+    |---- gen_key_pair()
+    |---- encrypt()
+    |---- decrypt()
+    |---- sign()
+    |---- verify()
+    '---- max_msg_size()
+```
+
+# Example
+
+## python
+See `test`.
+
