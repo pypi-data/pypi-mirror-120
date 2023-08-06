@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+pug_watcher/__init__.py
+pug_watcher/main.py
+pug_watcher/pug_engine.py
+pug_watcher.egg-info/PKG-INFO
+pug_watcher.egg-info/SOURCES.txt
+pug_watcher.egg-info/dependency_links.txt
+pug_watcher.egg-info/entry_points.txt
+pug_watcher.egg-info/requires.txt
+pug_watcher.egg-info/top_level.txt
