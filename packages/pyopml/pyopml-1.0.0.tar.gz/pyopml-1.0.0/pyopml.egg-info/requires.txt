@@ -1,0 +1,6 @@
+lxml>=4.6
+
+[dev]
+twine
+Sphinx
+pytest

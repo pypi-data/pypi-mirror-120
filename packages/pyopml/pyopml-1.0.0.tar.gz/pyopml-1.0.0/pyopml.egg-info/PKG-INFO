@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: pyopml
+Version: 1.0.0
+Summary: Python package meant to read, manipulate and write OPML 2.0 files
+Home-page: https://github.com/EpocDotFr/pyopml
+Author: Maxime "Epoc" G.
+Author-email: contact.nospam@epoc.nospam.fr
+License: DBAD
+Description: 
+        # PyOPML
+        
+        Python package meant to read, manipulate and write [OPML 2.0](http://opml.org/spec2.opml) files.
+        
+        ![Python versions](https://img.shields.io/pypi/pyversions/pyopml.svg) ![Version](https://img.shields.io/pypi/v/pyopml.svg) ![Tests](https://github.com/EpocDotFr/pyopml/actions/workflows/tests.yml/badge.svg) ![License](https://img.shields.io/pypi/l/pyopml.svg)
+        
+        ## Documentation
+        
+        Everything you need to know is located [here](https://epocdotfr.github.io/pyopml/).
+        
+        ## Changelog
+        
+        See [here](https://github.com/EpocDotFr/pyopml/releases).
+        
+        ## Development
+        
+        **Getting source code, installing the package as well as its dev packages:**
+        
+          1. Clone the repository
+          2. From the root directory, run: `pip install -e .[dev]` on Linux or `pip install -e ".[dev]"` on Windows
+        
+        **Running tests:**
+        
+        From the root directory, run `pytest`. They will automatically be all discovered and ran.
+        
+        **Building docs:**
+        
+        From the `docs` directory, run `make.bat html` on Windows or `make html` on Linux.
+        
+        **Publishing the package:**
+        
+        From the root directory, run `python setup.py upload`. This will create a git tag and publish on PyPI.
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Provides-Extra: dev
