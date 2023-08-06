@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: meshcatmods
+Version: 0.1.2
+Summary: Forked version of meshcat-python for BCI Gym.
+Home-page: https://github.com/aplbrain/meshcat-python-mods
+Author: Robin Deits
+Author-email: mail@robindeits.com
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE.txt
+Requires-Dist: ipython (>=5)
+Requires-Dist: u-msgpack-python (>=2.4.1)
+Requires-Dist: numpy (>=1.14.0)
+Requires-Dist: tornado (>=4.0.0)
+Requires-Dist: pyzmq (>=17.0.0)
+Requires-Dist: pyngrok (>=4.1.6)
+
+UNKNOWN
+
