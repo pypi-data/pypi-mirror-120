@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: sp_tools
+Version: 0.0.1
+Summary: 为简化Python开发而生
+Home-page: https://gitee.com/kingons/sp_tools
+Author: dragons
+Author-email: 521274311@qq.com
+License: UNKNOWN
+Description: Python基础开发工具包
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries
