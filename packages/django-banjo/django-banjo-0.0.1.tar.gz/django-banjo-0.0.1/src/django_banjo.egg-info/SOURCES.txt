@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/django_banjo.egg-info/PKG-INFO
+src/django_banjo.egg-info/SOURCES.txt
+src/django_banjo.egg-info/dependency_links.txt
+src/django_banjo.egg-info/entry_points.txt
+src/django_banjo.egg-info/requires.txt
+src/django_banjo.egg-info/top_level.txt
