@@ -1,0 +1,8 @@
+gevent
+requests
+lxml
+dtanys
+decorator
+chardet
+parsel
+httpx
