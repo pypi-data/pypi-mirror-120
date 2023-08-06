@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: WeatherSPy
+Version: 1.2.1
+Summary: a weather library
+Home-page: UNKNOWN
+Author: stripe-python
+Author-email: 13513519246@139.com
+Maintainer: stripe-python
+Maintainer-email: 13513519246@139.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: fake-useragent
+Requires-Dist: beautifulsoup4
+
+# 下载
+```shell script
+pip install WeatherSPy -i https://pypi.org/project/
+```
+# 使用
+导入库:
+```python
+import WeatherSPy as ws
+```
+在命令行或终端输入:
+```shell script
+python -m WeatherSPy 北京
+```
+可以查看北京的天气信息。
+
+在python中:
+```python
+import WeatherSPy as ws
+beijing = ws.City('北京')
+weather = ws.get_weather(beijing)
+tomorrow = weather[1]  # 获取明日天气
+```
+
+
