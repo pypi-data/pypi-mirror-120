@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+awsutils/__init__.py
+awsutils/basic.py
+learncloudops_utils.egg-info/PKG-INFO
+learncloudops_utils.egg-info/SOURCES.txt
+learncloudops_utils.egg-info/dependency_links.txt
+learncloudops_utils.egg-info/requires.txt
+learncloudops_utils.egg-info/top_level.txt

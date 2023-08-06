@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: learncloudops-utils
+Version: 1.0.0
+Summary: Utilities for building Python apps in AWS
+Home-page: https://github.com/learncloudops/awsutils
+Author: learncloudops.com
+Author-email: matt@learncloudops.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+License-File: LICENSE
+
+# learncloudops-awsutils
+
+Useful object oriented abstractions of commonly used utilities for building Python serverless or container based projects in AWS.
+
+## Utlities
+
+TODO Document the utilities here.
+
