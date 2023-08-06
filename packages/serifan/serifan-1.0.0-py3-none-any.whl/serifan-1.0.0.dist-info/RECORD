@@ -1,0 +1,10 @@
+serifan/__init__.py,sha256=YqNdUhiEh-c0K47mYUfjsuLevm4MvvRh5GzygYwu9Ms,178
+serifan/comic.py,sha256=7RBOGzRqtX_79eY3lyY3VIU9qHPHvWGGzy_HDXJoGqg,1483
+serifan/comics_list.py,sha256=4sq3H_Yva7FVtAW391W1oROlZZ9dRJqPrcZYbGfHb0s,963
+serifan/exceptions.py,sha256=YyRxg_It_7Gm724BcCdczxAJrLpaHOkcPHFprcQrXys,279
+serifan/session.py,sha256=7zym5UdFYvJty1e7oRj23FVOUprYUper7-9f8oY3uR8,3855
+serifan/utils.py,sha256=lwp5GJTsOoNY1EgTZgQ-btVngWT5javFNaMOXJBjdQs,589
+serifan-1.0.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+serifan-1.0.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+serifan-1.0.0.dist-info/METADATA,sha256=KPoERjnSQMeu7AiETKiSa3plgim7PavIqZM19aJtn_U,2596
+serifan-1.0.0.dist-info/RECORD,,
