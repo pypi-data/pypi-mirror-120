@@ -1,0 +1,13 @@
+Metadata-Version: 1.0
+Name: ezfba
+Version: 2.3
+Summary: flutter build helper/ upload helper
+Home-page: UNKNOWN
+Author: madhavth
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: ez flutter builder cli  
+        for more info
+        ezfba -h
+        
+Platform: UNKNOWN

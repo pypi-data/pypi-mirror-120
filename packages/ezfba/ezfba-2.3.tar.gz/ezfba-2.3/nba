@@ -1,0 +1,137 @@
+#!/bin/bash
+
+set -e
+
+upload=0
+message=0
+author=""
+changes=""
+slack_url=""
+username=""
+
+for arg in "$@"; do
+
+    if [[ -z $1 ]]; then
+    break
+  fi
+
+    case $arg in
+			-u)
+				upload=1
+			;;
+
+      -a|--author)
+            author=$2
+            shift
+            ;;
+
+          -un)
+            username=$2
+            shift
+            ;;
+
+            -c|--changes)
+          changes=$2
+          shift
+                ;;
+
+                -sl|--slack)
+          upload=1
+                  slack_url=$2
+                  shift
+              ;;
+
+
+			-m)
+				message=1
+				echo "you will be notified after upload completes"
+				;;
+
+				-h|--help)
+					echo "available commands are:-"
+					echo "-u ===== upload built apk file"
+					echo "-m ===== send push notification to phone on completion"
+          echo "-sl|--slack ==== upload to slack"
+          echo "-c|--changes ==== description body for slack message"
+          echo "-un  ===== username for slack bot to post with"
+          echo "-a|--author ==== author to show on slack message"
+					exit 0
+		esac
+	done
+
+
+if [[ "$upload" == "0" ]]; then
+	echo "use -u to upload generated apk file"
+fi
+
+
+function check_if_app_folder()
+{
+	if [[ -f "gradlew" && -f "build.gradle" ]]; then
+		echo "building gradle android app"
+	else
+		echo "not a android app directory.. exiting"
+		exit 1
+	fi
+}
+
+check_if_app_folder
+
+./gradlew assembleRelease
+
+direc="app/build/outputs/apk/release"
+apk_path="app/build/outputs/apk/release/"
+release=0
+
+if [[ -f "$direc/app-release.apk" ]]; then
+  release=1
+  apk_path+="app-release.apk"
+elif [[ -f "$direc/app-release-unsigned.apk" ]]; then
+  apk_path+="app-release-unsigned.apk"
+else
+  echo "no generated file found .. exiting"
+  exit 1
+fi
+
+
+directory_name=${PWD##*/}
+
+git_branch=$(git branch --show-current)
+
+file="$git_branch.apk"
+
+no_under=${file/"_"/" "}
+no_dash="${no_under/"-"/" "}"
+
+#apk_path2=$(echo ${no_dash//[[:blank:]]/})
+apk_path2="$directory_name - $file"
+
+function slack_upload()
+{
+  url=$1
+    description=${changes:-"$git_branch"}
+    username=${username:-"Apk Uploader"}
+    upslack "$slack_url" "$directory_name" "$description" "$url" "$username" "$author"
+}
+
+if [[ $upload == "1" ]]; then
+	echo "uploaded file name is $apk_path2"
+fi
+
+cp $apk_path "$apk_path2"
+
+if [[ -f "$apk_path2" && $upload == "1" ]]; then
+	mtup "$apk_path2"
+
+  if [[ ! -z $slack_url ]]; then
+          slack_upload "$(python -m pyclip paste)"
+     fi
+
+	if [[ $message == "1" ]]; then
+		msg "uploaded successfully.. check terminal"
+	fi
+
+  rm "$apk_path2"
+
+  notify-send "success uploading" "successfully uploaded $apk_path2" &>/dev/null
+fi

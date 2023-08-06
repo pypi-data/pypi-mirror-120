@@ -1,0 +1,10 @@
+README.md
+ezfba
+nba
+setup.py
+upslack
+ezfba.egg-info/PKG-INFO
+ezfba.egg-info/SOURCES.txt
+ezfba.egg-info/dependency_links.txt
+ezfba.egg-info/requires.txt
+ezfba.egg-info/top_level.txt

@@ -1,0 +1,59 @@
+#!/bin/bash
+
+version="0.3"
+
+#USAGE -- upslack URL TITLE MESSAGE USERNAME
+if [[ $1 == "-h" ]]; then
+	echo "usage instruction"
+	echo "upslack URL TEXT TITLE MESSAGE [USERNAME] [AUTHOR]"
+	exit 0
+fi
+
+url="$1"
+text="$2"
+changes="$3"
+link="$4"
+username=${5:-"Apk Uploader"}
+author=${6:-"Author"}
+webhook=${7:-"$SLACK_WEBHOOK"}
+
+emoji=":robot_face:"
+color="#36a64f"
+
+if [[ -z $url ]]; then
+	echo "slack url needed to post message"
+	exit 1
+fi
+
+url_new=$(echo $url | sed 's#.*/##')
+
+echo "posting to $url_new"
+
+#json_data2='{"text":"'"${text}"'","channel" : "'"${url_new}"'", "username" : "'"${username}"'", "icon_emoji": "'"${emoji}"'", "attachments": ["text": "'"${title}"'", "color": "#3AA3E3", "attachment_type":"default", "actions": [{"name":"download","type":"button","value":"'"${message}"'"}]]}'
+
+if [[ -z "$webhook" ]]; then
+	echo "webhook url not found"
+	echo "save webhook as below in .zshrc and source .zshrc to apply"
+	echo "export SLACK_WEBHOOK=WEBHOOK_URL"
+	exit 1
+fi
+
+
+curl -X POST -H 'Content-type: application/json' --data '{
+        "username":"'"${username}"'",
+        "channel":"'"${url_new}"'",
+				"icon_emoji": "'"${emoji}"'",
+    		"attachments": [
+        {
+            "fallback": "Apk Build successs",
+            "color": "#36a64f",
+            "pretext": "'"${text}"'",
+            "author_name": "'"${author}"'",
+            "title": "Download apk",
+            "title_link": "'"${link}"'",
+            "text": "'"${changes}"'"
+        }
+    ]
+}' $webhook
+
+#curl -X POST -H 'Content-type: application/json' --data '{"text":"'"${text}"'","channel" : "'"${url_new}"'", "username" : "'"${username}"'", "icon_emoji": "'"${emoji}"'","attachments":[{"color":"'"${color}"'","fields":[{"title":"'"${title}"'", "value":"'"${message}"'","short":"false"}] }]}' $
