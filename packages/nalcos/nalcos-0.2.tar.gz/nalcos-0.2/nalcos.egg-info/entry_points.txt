@@ -1,0 +1,3 @@
+[console_scripts]
+nalcos = nalcos.nalcos:main
+

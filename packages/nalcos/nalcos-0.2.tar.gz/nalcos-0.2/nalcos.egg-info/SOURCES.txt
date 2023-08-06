@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+nalcos/__init__.py
+nalcos/_version.py
+nalcos/get_commits.py
+nalcos/get_similar_commits.py
+nalcos/nalcos.py
+nalcos/utils.py
+nalcos.egg-info/PKG-INFO
+nalcos.egg-info/SOURCES.txt
+nalcos.egg-info/dependency_links.txt
+nalcos.egg-info/entry_points.txt
+nalcos.egg-info/requires.txt
+nalcos.egg-info/top_level.txt
