@@ -1,0 +1,10 @@
+matadi/__about__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+matadi/__init__.py,sha256=NMVrdDohRIpCNlFi6KK3mYUUGj1d59LGqJvgvySjl0w,91
+matadi/apply.py,sha256=LYZvr6hUpyKXud5yowfQZVYWS0Y6J2aXTEf8oLz9tBY,1096
+matadi/material.py,sha256=3-293sJqDK_uc35xhhhIXQguFSFbcLnm9tFcTd9jSOM,2440
+matadi/math.py,sha256=CtO8Gdc8rsy0HJNw3r9y5R4LeFt8P82afH8MWsUIZrQ,396
+matadi-0.0.1.dist-info/LICENSE,sha256=DE2TT5DDmWy7IzJbzMuY3mny9HqgxmaholYzDaalBgQ,35141
+matadi-0.0.1.dist-info/METADATA,sha256=_2R7j3C9kZcnppIUGn9VJT4Xt_h6EKoivXEQP04j8LU,4776
+matadi-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+matadi-0.0.1.dist-info/top_level.txt,sha256=7zsmXgyFIc2gfWeRucYpoVTAfu6FDq16Te0l3f_MsGo,7
+matadi-0.0.1.dist-info/RECORD,,
