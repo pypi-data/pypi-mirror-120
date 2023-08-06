@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+NWHdistributions/Binomialdistribution.py
+NWHdistributions/Gaussiandistribution.py
+NWHdistributions/Generaldistribution.py
+NWHdistributions/__init__.py
+NWHdistributions.egg-info/PKG-INFO
+NWHdistributions.egg-info/SOURCES.txt
+NWHdistributions.egg-info/dependency_links.txt
+NWHdistributions.egg-info/not-zip-safe
+NWHdistributions.egg-info/top_level.txt
