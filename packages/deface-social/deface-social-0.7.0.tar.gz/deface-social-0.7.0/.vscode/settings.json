@@ -1,0 +1,14 @@
+{
+  "cSpell.words": [
+    "deps",
+    "isatty",
+    "mojibake",
+    "println",
+    "pyproject",
+    "pyvenv",
+    "Róisín",
+    "serde",
+    "tomli"
+  ],
+  "editor.rulers": [ 88 ]
+}

@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: deface-social
+Version: 0.7.0
+Summary: Liberate your posts from Facebook
+Author-email: Robert Grimm <apparebit@gmail.com>
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Utilities
+Requires-Dist: flit ; extra == "dev"
+Requires-Dist: furo ; extra == "doc"
+Requires-Dist: sphinx ; extra == "doc"
+Requires-Dist: sphinx-argparse-cli ; extra == "doc"
+Requires-Dist: sphinxext-opengraph ; extra == "doc"
+Requires-Dist: mypy ; extra == "test"
+Requires-Dist: pytest ; extra == "test"
+Requires-Dist: pytest-cov ; extra == "test"
+Project-URL: Changelog, https://apparebit.github.io/deface/changelog.html
+Project-URL: Documentation, https://apparebit.github.io/deface/
+Project-URL: Source, https://github.com/apparebit/deface
+Provides-Extra: dev
+Provides-Extra: doc
+Provides-Extra: test
+
+# deface: Liberate Your Posts From Facebook
+
+*deface* cleans and consolidates posts exported from Facebook. It helps you
+extricate your content from Facebook, so that you can extricate yourself from
+the social network. That matters because Facebook is an imminent threat to human
+rights and democracy all over the world. I made [the case against
+Facebook](https://youtu.be/iYJQSfQGDEE) as an invited talk at
+[Rebase](http://rebase-conf.org/2020/#technology-today-a-paucity-of-integrity-and-imagination)/[SPLASH](https://2020.splashcon.org)
+in November 2020.
+
+To install *deface*:
+
+```shell
+$ pip install deface-social
+```
+
+To run *deface*:
+
+```shell
+$ deface -h
+```
+
+Please see [the documentation](https://apparebit.github.io/deface/) for more
+information about *deface*, including on usage and background. *deface* has been
+released as open source under the [Apache 2.0 license](LICENSE).
+
