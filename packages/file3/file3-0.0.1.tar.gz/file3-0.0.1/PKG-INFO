@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: file3
+Version: 0.0.1
+Summary: Converting Files and Types (IntToBin, IntToHex, CharToASCII, CharToHex, BinStrToDecimal, HexToInt, IntToByte, StrToHex, StrToBytes, StrToASCII, StrToBin)n
+Home-page: https://github.com/israeljcunha/file3
+Author: Israel Cunha
+Author-email: ms.israel.cunha@gmail.com
+License: Python License
+Keywords: file files
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# file3
+Converting Files and Types (IntToBin, IntToHex, CharToASCII, CharToHex, BinStrToDecimal, HexToInt, IntToByte, StrToHex, StrToBytes, StrToASCII, StrToBin)
+
+## Install App
+
+    pip install file3
+ 
+## Config and Import Function
+
+from file3.Math import ConversionChar
+
+    ConversionChar.IntToBin
+    ConversionChar.IntToHex
+    ConversionChar.CharToASCII
+    ConversionChar.CharToHex
+    ConversionChar.BinStrToDecimal
+    ConversionChar.HexToInt
+    ConversionChar.IntToByte
+   
+from file3.math import ConversionString
+
+    ConversionString.StrToHex
+    ConversionString.StrToBytes
+    ConversionString.StrToASCII
+    ConversionString.StrToBin
+
+
