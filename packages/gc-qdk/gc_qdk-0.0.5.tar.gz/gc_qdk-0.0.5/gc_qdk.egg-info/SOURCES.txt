@@ -1,0 +1,9 @@
+setup.py
+gc_qdk/__init__.py
+gc_qdk/cfg.py
+gc_qdk/main.py
+gc_qdk.egg-info/PKG-INFO
+gc_qdk.egg-info/SOURCES.txt
+gc_qdk.egg-info/dependency_links.txt
+gc_qdk.egg-info/requires.txt
+gc_qdk.egg-info/top_level.txt
