@@ -1,0 +1,13 @@
+COPYING
+README.rst
+setup.cfg
+setup.py
+chibi_donkey/__init__.py
+chibi_donkey/donkey.py
+chibi_donkey.egg-info/PKG-INFO
+chibi_donkey.egg-info/SOURCES.txt
+chibi_donkey.egg-info/dependency_links.txt
+chibi_donkey.egg-info/top_level.txt
+tests/__init__.py
+tests/donkey.py
+tests/donkey_class.py
