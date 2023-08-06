@@ -1,0 +1,4 @@
+packaging>=14.3
+pandas
+pyarrow
+numpy
