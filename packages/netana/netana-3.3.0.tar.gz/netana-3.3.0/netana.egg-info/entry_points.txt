@@ -1,0 +1,3 @@
+[gui_scripts]
+netana = main:main
+

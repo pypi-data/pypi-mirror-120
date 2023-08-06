@@ -1,0 +1,5 @@
+
+include netana.desktop
+include change.log
+include license
+include netana*md5sums
