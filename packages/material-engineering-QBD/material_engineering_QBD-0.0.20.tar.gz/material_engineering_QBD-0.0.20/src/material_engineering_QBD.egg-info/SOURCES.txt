@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/material_engineering_QBD/__init__.py
+src/material_engineering_QBD/numeric.py
+src/material_engineering_QBD/tools.py
+src/material_engineering_QBD.egg-info/PKG-INFO
+src/material_engineering_QBD.egg-info/SOURCES.txt
+src/material_engineering_QBD.egg-info/dependency_links.txt
+src/material_engineering_QBD.egg-info/requires.txt
+src/material_engineering_QBD.egg-info/top_level.txt
