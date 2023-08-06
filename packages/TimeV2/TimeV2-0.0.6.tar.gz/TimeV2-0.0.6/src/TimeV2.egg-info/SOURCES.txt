@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/TimeV2/__init__.py
+src/TimeV2/time2.py
+src/TimeV2.egg-info/PKG-INFO
+src/TimeV2.egg-info/SOURCES.txt
+src/TimeV2.egg-info/dependency_links.txt
+src/TimeV2.egg-info/top_level.txt
