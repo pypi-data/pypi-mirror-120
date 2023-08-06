@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+pyicumessageformat/__init__.py
+pyicumessageformat/constants.py
+pyicumessageformat/parser.py
+pyicumessageformat.egg-info/PKG-INFO
+pyicumessageformat.egg-info/SOURCES.txt
+pyicumessageformat.egg-info/dependency_links.txt
+pyicumessageformat.egg-info/top_level.txt
+test/test_grammar.py
