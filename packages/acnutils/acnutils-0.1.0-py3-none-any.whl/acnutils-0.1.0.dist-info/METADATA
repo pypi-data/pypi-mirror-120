@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: acnutils
+Version: 0.1.0
+Summary: Various utilities used in AntiCompositeNumber's bots
+Home-page: https://github.com/AntiCompositeNumber/acnutils
+License: Apache-2.0
+Keywords: pywikibot,toolforge,wikimedia,wikipedia
+Author: AntiCompositeNumber
+Author-email: anticompositenumber+pypi@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content :: Wiki
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Dist: pywikibot (>=6.6.1,<7.0.0)
+Requires-Dist: toolforge (>=5.0.0,<6.0.0)
+Project-URL: Repository, https://github.com/AntiCompositeNumber/acnutils
+Description-Content-Type: text/x-rst
+
+acnutils
+========
+.. image:: https://img.shields.io/github/workflow/status/AntiCompositeNumber/AntiCompositeBot/Python%20application
+    :alt: GitHub Workflow Status
+.. image:: https://coveralls.io/repos/github/AntiCompositeNumber/acnutils/badge.svg?branch=master
+    :target: https://coveralls.io/github/AntiCompositeNumber/acnutils?branch=master
+    :alt: Coverage status
+.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
+    :alt: Code style: black
+    :target: https://github.com/psf/black
+
+
+A collection of various scripts used by AntiCompositeNumber's bots.
+
+Feel free to use this if you find it useful, however, no guarentees of stability are made.
+Pull requests are welcome, but may be declined if they would not be useful for my bots or tools.
+
+Poetry is used for dependency management and package building.
+
