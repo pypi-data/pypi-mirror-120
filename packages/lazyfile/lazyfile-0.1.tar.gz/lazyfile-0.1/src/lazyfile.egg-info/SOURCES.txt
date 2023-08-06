@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/lazyfile/__init__.py
+src/lazyfile/lazyfile.py
+src/lazyfile/sparsebytes.py
+src/lazyfile.egg-info/PKG-INFO
+src/lazyfile.egg-info/SOURCES.txt
+src/lazyfile.egg-info/dependency_links.txt
+src/lazyfile.egg-info/requires.txt
+src/lazyfile.egg-info/top_level.txt
