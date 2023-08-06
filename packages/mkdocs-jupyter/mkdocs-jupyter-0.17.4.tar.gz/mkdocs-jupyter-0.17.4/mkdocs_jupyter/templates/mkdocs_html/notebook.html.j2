@@ -1,0 +1,68 @@
+{# Ovewrites: https://github.com/jupyter/nbconvert/blob/master/share/jupyter/nbconvert/templates/lab/index.html.j2 #}
+
+{%- extends "lab/index.html.j2" -%}
+{% from "base/mathjax.html.j2" import mathjax %}
+
+{# CHANGE: Overwrite the header because lab/index.html outputs a complete HTML page #}
+{# We want just the notebook content not a full html page #}
+{%- block header -%}
+
+{% block jupyter_widgets %}
+  {%- if "widgets" in nb.metadata -%}
+    {{ jupyter_widgets(resources.jupyter_widgets_base_url, resources.html_manager_semver_range) }}
+  {%- endif -%}
+{% endblock jupyter_widgets %}
+
+{% for css in resources.inlining.css -%}
+  <style type="text/css">
+    {# CHANGE: replace CSS classes: .highlight -> .highlight-ipynb #}
+    {{ css | replace(".highlight ", ".highlight-ipynb " ) }}
+  </style>
+{% endfor %}
+
+{# CHANGE: Replace the default styles for our own #}
+{% block notebook_css %}
+{{ resources.include_css("mkdocs_html/styles/jupyter-lab.css") }}
+{% if resources.theme == 'dark' %}
+    {{ resources.include_css("static/theme-dark.css") }}
+{% else %}
+    {{ resources.include_css("static/theme-light.css") }}
+{% endif %}
+{%- endblock notebook_css %}
+
+{{ mathjax() }}
+{%- endblock header -%}
+
+{# CHANGE: Overwrite the footer because lab template outputs a complete HTML page #}
+{% block footer %}
+{% endblock footer %}
+
+{# CHANGE: Overwrite body header and footer to include a div wrapper #}
+{%- block body_header -%}
+<div class="jupyter-wrapper">
+{%- endblock body_header -%}
+
+{% block body_footer %}
+</div>
+{% endblock body_footer %}
+
+{# ADDED: We overwrite this to show the tags on the cell toolbar #}
+{% block input %}
+    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        {% set cell_tags = cell["metadata"].get("tags", [])%}
+        {% if cell_tags %}
+            <div class="celltoolbar">
+                {% for cell in cell_tags %}
+                <div class="button_container tags_button_container">
+                    <span class="tag-container">
+                        <span class="cell-tag">{{ cell }}</span>
+                    </span>
+                </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+        <div class="CodeMirror cm-s-jupyter">
+    {{ cell.source | highlight_code(metadata=cell.metadata) }}
+        </div>
+    </div>
+{% endblock input %}
