@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: collegroup-RH
+Version: 1.0.2
+Summary: UNKNOWN
+Home-page: https://github.com/collegroup/RH
+Author: Arthur Colle
+Author-email: arthur@collegroup.com
+License: MIT
+Download-URL: https://github.com/collegroup/RH/tarball/v1.0.2
+Keywords: Robinhood trade API
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 2.7
+License-File: LICENSE
+
+UNKNOWN
+
