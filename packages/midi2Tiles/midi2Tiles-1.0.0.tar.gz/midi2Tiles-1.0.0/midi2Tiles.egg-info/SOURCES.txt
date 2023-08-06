@@ -1,0 +1,7 @@
+README.md
+setup.py
+midi2Tiles.egg-info/PKG-INFO
+midi2Tiles.egg-info/SOURCES.txt
+midi2Tiles.egg-info/dependency_links.txt
+midi2Tiles.egg-info/requires.txt
+midi2Tiles.egg-info/top_level.txt
