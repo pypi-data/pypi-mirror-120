@@ -1,0 +1,5 @@
+from .text_loader import TextLoader
+from .alto_xml_loader import AltoXMLTextLoader
+from .pgp_xml_loader import PgpXmlTeiTextLoader
+from .string_text_loader import StringTextLoader
+from .newline_separated_text_loader import NewlineSeparatedTextLoader
