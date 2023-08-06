@@ -1,0 +1,5 @@
+btcpay_rest_client/__init__.py,sha256=3tgImRp1S0-FLVb7Ok6HGdTCVvJ0I7Ow7s-wiXn-1w8,38
+btcpay_rest_client/api.py,sha256=CWLq5s1yqQQ5T4-XWvtXM8FbWSN-yXCCUAmkWROg8yA,8576
+btcpay_rest_client-0.0.1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+btcpay_rest_client-0.0.1.dist-info/METADATA,sha256=OglffVVoGnhqXE_IjbBT2Z31sYJQGuyqySUXfUdnIO4,338
+btcpay_rest_client-0.0.1.dist-info/RECORD,,
