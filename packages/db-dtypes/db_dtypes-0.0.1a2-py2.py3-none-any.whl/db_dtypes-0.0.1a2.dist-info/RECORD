@@ -1,0 +1,10 @@
+db_dtypes/__init__.py,sha256=TEDCO3odwTXdpjHj2dnjTys6Utw-sfKGWYW-dyU-3lk,5526
+db_dtypes/core.py,sha256=oaL7gKXOasR-G5IysZmaRn_sqFIryagDkla5tMUNWCg,6400
+db_dtypes/pandas_backports.py,sha256=TyApdfeaJCaT7O4esCrSCtIP7-taQH6PY72N7pjAVq0,3667
+db_dtypes/version.py,sha256=yHjMNGhWjfDSl-C_7HnVZPk8ZCLKc0YfXBeMwMiDhqs,600
+db_dtypes-0.0.1a2.dist-info/AUTHORS,sha256=ZzwnqDCA5-5_W_beU6-64JXYg_8IyNUp7aHfvZHowmI,331
+db_dtypes-0.0.1a2.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+db_dtypes-0.0.1a2.dist-info/METADATA,sha256=v5e_Qp2W2YYqA2Sq2ncAr4L9j8j9tGND884vhdBhOcA,3560
+db_dtypes-0.0.1a2.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+db_dtypes-0.0.1a2.dist-info/top_level.txt,sha256=Lzrj78HENTzHjW4Xb-xOlAuHlAgu4z8nG9NrXPqZKJk,10
+db_dtypes-0.0.1a2.dist-info/RECORD,,
