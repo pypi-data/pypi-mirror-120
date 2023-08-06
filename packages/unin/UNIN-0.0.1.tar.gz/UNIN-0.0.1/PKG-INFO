@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: UNIN
+Version: 0.0.1
+Summary: Data manipulation package.
+Home-page: http://www.davidkundih.iz.hr
+Author: David Kundih
+Author-email: kundihdavid@gmail.com
+License: Apache Software License
+Keywords: data science,machine learning,artificial intelligence,AI,alunari,alunariTools
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+>>> UNIN Python Package <<<
+Name claim.
+
+CHANGELOG
+==========
+
+0.0.1 (22/09/2021)
+- initial release.
+
