@@ -1,0 +1,12 @@
+mcaapi/APItoken.py,sha256=__U1BcAdNCs1fjwIgIJZ4BCIUfpcGIyf56x8HmtMpzw,1458
+mcaapi/__init__.py,sha256=t7w0StiaGfhDpV8Q7q5ekr4hYTr5rnufYXSpUiGGW9U,76
+mcaapi/inputs.py,sha256=sG_56wPCpOYn0UxwtnQ6MviDXByRVY9pNjsdMATNtrA,155
+mcaapi/mcaapi.py,sha256=KI8ouUfw1pgGuouzOAELkRX4696vlGkfe_8tLf9o-8E,25591
+mcaapi/tests.py,sha256=a7LcKCJD_WtlQylW_ks0ynQ55yiNk-jk3pxuuRbuLug,1601
+mcaapi/datasets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mcaapi/datasets/residential_10k.csv,sha256=u0SKjSO81AZq4bsOclm6DwKUsZFu4J-Z0lioinsVEbE,1138185
+mcaapi/datasets/residential_10k.rst,sha256=rb_5qodSq4Fy2idm5nPlgjGdbvNiEl_MrkSpaGFIEPE,2910
+mcaapi-0.1.3.dist-info/METADATA,sha256=MvsBkaPvb1eLrx1SnTEAH6NtR5FOHZs7ZpQF1M4FIEw,10471
+mcaapi-0.1.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+mcaapi-0.1.3.dist-info/top_level.txt,sha256=h4NBO1WstkFrS_2UqaGUD57BKWVWya2hDFKD3aBlxmo,7
+mcaapi-0.1.3.dist-info/RECORD,,
