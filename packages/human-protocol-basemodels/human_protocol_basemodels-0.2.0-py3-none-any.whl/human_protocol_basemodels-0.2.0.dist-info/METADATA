@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: human-protocol-basemodels
+Version: 0.2.0
+Summary: Common data models shared by various components of the Human Protocol stack
+Home-page: https://github.com/humanprotocol/hmt-basemodels
+Author: HUMAN Protocol
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Requires-Dist: schematics (>=2.1.0)
+Requires-Dist: marshmallow (>=3.2.1)
+Requires-Dist: requests (>=2)
+Requires-Dist: typing-extensions (>=3.7.4.3)
+Requires-Dist: pydantic (>=1.6.1)
+
+UNKNOWN
+
+
