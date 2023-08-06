@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: whatthefuck
+Version: 1.2
+Summary: Frustration made me develop this script.
+Home-page: UNKNOWN
+Author: Shubham Rath
+Author-email: shubhamrath.iiitb@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# whatthefuck
+
+![GitHub](https://img.shields.io/github/license/sr6033/whatthefuck)
+![PyPI](https://img.shields.io/pypi/v/whatthefuck)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/whatthefuck)
+
+> Irritated of your broken code and tired of importing debugger? \
+Just `wtf` your code!
+---
+
+![](https://raw.githubusercontent.com/sr6033/whatthefuck/master/demo.gif)
+
+
