@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+distributions_of_learning/Binomialdistribution.py
+distributions_of_learning/Gaussiandistribution.py
+distributions_of_learning/Generaldistribution.py
+distributions_of_learning/__init__.py
+distributions_of_learning.egg-info/PKG-INFO
+distributions_of_learning.egg-info/SOURCES.txt
+distributions_of_learning.egg-info/dependency_links.txt
+distributions_of_learning.egg-info/not-zip-safe
+distributions_of_learning.egg-info/top_level.txt

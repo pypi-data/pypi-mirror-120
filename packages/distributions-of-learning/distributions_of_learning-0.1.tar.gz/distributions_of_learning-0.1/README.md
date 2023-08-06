@@ -1,0 +1,1 @@
+This package is a simple example from Udacity AWS-ML course.
