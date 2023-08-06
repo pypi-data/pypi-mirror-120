@@ -1,0 +1,206 @@
+Metadata-Version: 2.1
+Name: Yucebio-Wdladaptor
+Version: 0.1.0
+Summary: Yucebio Wdl适配器
+Home-page: UNKNOWN
+Author: huangqingjun
+Author-email: huangqingjun@yucebio.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: Yucebio-Config
+Requires-Dist: json5
+Requires-Dist: click
+Requires-Dist: requests
+Requires-Dist: pymongo
+Requires-Dist: batchcompute (>=2.1)
+
+# Yucebio Wdl适配器
+
+- 根据不同云平台的Cromwell基础设施将通用的workflow内容转换适合对应平台的版本
+- 已经支持的云
+    - Yucebio 本地SGE集群
+    - 阿里云批量计算平台
+    - 亚马逊云Batch平台
+- 提供命令行脚本 `yucebio_wdl`， 附带3个子命令，每个子命令支持若干二级子命令
+    - `yucebio_wdl adaptor`： 处理WDL，如转换、提交任务
+    - `yucebio_wdl config`:   查看或管理配置，如同步配置
+    - `yucebio_wdl monitor`:  作业监控，如获取已投递作业最新状态
+    - **所有子命令（和二级子命令）支持最小前缀匹配的简写模式，即根据子命令前缀自动识别要执行的命令**
+- 增加身份认证（基于gitlab）
+
+# 安装
+
+```bash
+# 初始化环境，如通过conda初始化python>=3.8的环境
+$ conda create -n python3.8 python=3.8
+
+# 安装依赖包
+$ pip install click icecream requests
+# 安装
+$ pip install Yucebio-Wdladaptor
+
+# 使用
+$ yucebio_wdl --help
+```
+
+# 使用
+
+**查看使用方式**
+```bash
+$ yucebio_wdl --help
+# Usage: yucebio_wdl [OPTIONS] COMMAND [ARGS]...
+
+# Options:
+#   --help  Show this message and exit.
+
+# Commands:
+#   adaptor  WDL适配器
+#   config   查看或管理配置
+#   monitor  作业监控
+#   version  显示版本信息
+```
+## 登录(`yucebio_wdl login`)
+> 为了准确识别当前操作人，从0.1.0版本开始，必须进行登录操作
+
+```bash
+$ yucebio_wdl login --help
+# Usage: yucebio_wdl login [OPTIONS]
+
+#   基于gitlab api v4实现登录认证。登录成功后可以根据需要执行初次配置同步
+
+# Options:
+#   -g, --gitlab_host TEXT  自建或公共Gitlab API地址
+#   -u, --username TEXT     用户名  [required]
+#   -o, --owner TEXT        投递分析任务时的属主信息(默认与用户名保持一致)
+#   -p, --password TEXT     密码
+#   -s, --sync              是否需要自动同步配置到本地  [default: False]
+#   --help                  Show this message and exit.
+```
+> 登录成功后，会尝试进行一次配置同步
+
+## 配置（`yucebio_wdl config`）
+> 基于Yucebio-Config，配置文件在~/.yucebioconfig/...
+
+**查看帮助**
+```bash
+$ yucebio_wdl config --help
+# Usage: yucebio_wdl cli [OPTIONS] COMMAND [ARGS]...
+
+#   查看或管理配置
+
+# Options:
+#   --help  Show this message and exit.
+
+# Commands:
+#   add-server     新增或更新更新Cromwell Server平台配置
+#   delete-server  查看Cromwell Server平台配置
+#   list-server    查看Cromwell Server平台配置
+#   sync           执行配置同步：上传或下载配置
+```
+
+**新增Cromwell Server配置项**
+```bash
+$ yucebio_wdl config add-server -p <platform> -a <any_name> -g <global_path> -s <simg_path> -h <host> -r runtime1,runtime2
+# -p --platform     需要设置的平台
+#  -a, --alias TEXT 配置别名，支持同一平台下的多个cromwell服务
+# -h --host         待设置平台的cromwell api地址，如 http://host:port
+# -g --global_path  公共文件路径，用于替换输入文件中的__GLOBAL__
+# -s --simg_path    singularity镜像路径，用于替换输入文件中的__SIMG__
+# -r --runtimes     当前平台需要支持的额外自定义runtime属性（未知的runtime将被移除）
+```
+
+
+## WDL处理(`yucebio_wdl adaptor`)
+**通用WDL转换，并投递到指定Cromwell Server**
+```bash
+$ yucebio_wdl adaptor convert -p <platform_alias> -i <json> [--submit|-s] [--runtimes|-r runtime1,runtime2] <WDL>
+# -i --input            JSON文件路径
+# -p --platform_alias   Cromwell Server配置项名称
+# -s --submit           是否直接投递任务【default:False】
+# -r --runtimes         转换过程中每个task都需要添加的自定义runtime属性，多个属性之间使用逗号分隔，每个属性都必须在JSON文件中存在对应的初始值。
+# WDL                   workflow文件路径
+```
+
+**更新阿里云可用实例类型**
+> 转换任务到阿里云平台时，需要将cpu和memory资源的使用情况转换成阿里云支持的cluster属性，为了提高效率，需要提前获取阿里云可用实例类型与资源对应关系
+
+> 第一次执行时必须提供ACCESS_KEY ID 和 SECRECT。第一次执行成功后，会自动保存到配置文件中
+
+```bash
+$ yucebio_wdl adaptor update-bcs-instance -i <ACCESS_KEY_ID> -s <ACCESS_KEY_SECRECT>
+# -i --access_id        阿里云ACCESS_KEY_ID
+# -s --access_secrect   阿里云ACCESS_KEY_SECRECT
+```
+
+## 任务管理(`yucebio_wdl monitor`)
+> 为了区分当前执行人员，需要提前配置好个人信息
+
+**使用说明**
+```bash
+$ yucebio_wdl monitor --help
+# Usage: yucebio_wdl monitor [OPTIONS] COMMAND [ARGS]...
+
+#   作业监控
+
+# Options:
+#   --help  Show this message and exit.
+
+# Commands:
+#   abort    终止作业，支持批量终止
+#   add-job  添加本人通过其他方式提交的任务
+#   config   配置数据持久化地址：当前仅支持mongo
+#   ls       查看本人提交的任务最新状态
+#   query    基于Cromwell API接口查询所有任务基本信息
+```
+
+
+
+# 附录
+
+## 各个平台可用自定义RUNTIME属性
+
+**通用属性**
+- cpu
+- memory
+
+**阿里云**
+- rescource_type 控制生成竞价型或按需型实例
+- systemDisk
+- cluster
+- mounts, vpc
+- continueOnReturnCode, failOnStderr
+
+**SGE**
+- owner： 指定sge任务属主
+- 'cpu', 'memory', "sge_queue", "sge_project", "mount", 'continueOnReturnCode'
+- simg
+
+**亚马逊**
+- cpu
+- memory
+- docker
+- disk
+
+## version log
+
+version 0.1.0
+- 配置项格式变更，支持配置项别名
+    - 配置cromwell server时，通过额外的别名参数，从而支持相同平台不同服务
+- 增加登录
+    - 基于gitlab实现登录
+- 配置同步
+    - 基于gitlab的代码片段实现
+- 查看个人已投递任务
+- 查询指定服务下的所有任务
+    - 基于cromwell api
+- 持久化个人任务结果
+    - 通过指定自定义mongo数据库，将本人的所有数据存储到指定数据库中，避免由于cromwell server导致历史数据丢失
+
