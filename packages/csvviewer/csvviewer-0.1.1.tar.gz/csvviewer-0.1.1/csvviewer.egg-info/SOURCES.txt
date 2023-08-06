@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+bin/csvviewer
+csvviewer/__init__.py
+csvviewer/csvviewer.py
+csvviewer.egg-info/PKG-INFO
+csvviewer.egg-info/SOURCES.txt
+csvviewer.egg-info/dependency_links.txt
+csvviewer.egg-info/requires.txt
+csvviewer.egg-info/top_level.txt
