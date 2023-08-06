@@ -1,0 +1,6 @@
+pandas
+nfp==0.3.3
+tqdm
+pooch
+joblib
+scikit-learn
