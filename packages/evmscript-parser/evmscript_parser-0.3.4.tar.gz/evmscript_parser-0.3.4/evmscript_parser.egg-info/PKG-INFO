@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: evmscript-parser
+Version: 0.3.4
+Summary: Parser for human-readable decoding of EVM scripts.
+Home-page: UNKNOWN
+Author: Dmitri Ivakhnenko
+Author-email: dmit.ivh@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+
+UNKNOWN
+
