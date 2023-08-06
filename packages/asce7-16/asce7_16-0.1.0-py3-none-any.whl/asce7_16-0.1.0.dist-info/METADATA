@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: asce7-16
+Version: 0.1.0
+Summary: Utilities for ASCE 7-16.
+Home-page: https://github.com/otaithleigh/asce7_16
+Author: Peter Talley
+Author-email: peterctalley@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+Requires-Dist: numpy
+Requires-Dist: requests
+
+ASCE 7-16 utilities
++++++++++++++++++++
+
+Functions and doodads for utilizing ASCE 7-16.
+
+
