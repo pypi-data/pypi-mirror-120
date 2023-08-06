@@ -1,0 +1,14 @@
+npaws/__init__.py,sha256=BUsnLuYABpMlo7vPJP4GKRRLoYqpCGMtgsQrgpUmOrM,70
+npaws/client.py,sha256=tWmgJeg0WgF73UncubUYejPPPDhrPFrZZx7VozgZCho,904
+npaws/config.py,sha256=dQOt3nCSoCcJGmLyiTGfZIZEVtjmJVoULNnkpaGzSxU,578
+npaws/services/__init__.py,sha256=UstiE7MxHHiajM0LeRQ_nRuHJIhhXtL5ZakgiikGyts,62
+npaws/services/batch.py,sha256=eC1nqBBzjBvCkY13PIK5QZ-2f-5ujuaLwUyXFTs1bKU,916
+npaws/services/ecs.py,sha256=YcX6Uw41GQ8pyiJi_rnHDAMQW1zbLkNtnqBBhL-5BQM,175
+npaws/services/rds.py,sha256=ns-tsJIRMhFg6jUI8tbjdeqaVgK-r8KL77HucgGrau0,14754
+npaws/services/s3.py,sha256=X3VRmVSrL85zuOfzyiDx4XTtmbEFbbIWSa5c-sAoHcI,5493
+npaws/services/sqs.py,sha256=SjG0vBmG2QD6Z4R-M1EzJzTzq_HYUmH0rNVGRa5boVY,2135
+npaws-0.1.43.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+npaws-0.1.43.dist-info/METADATA,sha256=oAL0XyqV8HpLtz8ffH7wfpBTvcYeuVkqrwCtVAro26o,725
+npaws-0.1.43.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+npaws-0.1.43.dist-info/top_level.txt,sha256=jsTX2gcCR07_drtkkQnUPjf9E9UtS1ZpG6h8grQi4C4,6
+npaws-0.1.43.dist-info/RECORD,,
