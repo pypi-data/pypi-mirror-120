@@ -1,0 +1,7 @@
+cython==0.29.24
+Async-Channel<2.1,>=2.0.12
+OctoBot-Commons<1.7,>=1.6.13
+OctoBot-Tentacles-Manager<2.7,>=2.6.0
+aiosqlite<0.17,>=0.16.0
+chardet<4.0
+aiohttp<3.8,>=3.7.4
