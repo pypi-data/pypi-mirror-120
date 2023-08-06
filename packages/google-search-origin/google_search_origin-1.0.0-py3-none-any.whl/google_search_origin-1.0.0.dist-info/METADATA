@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: google-search-origin
+Version: 1.0.0
+Summary: Google Search Origin is used to search efficacy on Google. It is also used to scrap URL from google
+Home-page: https://github.com/Sharkigamers/google_search_origin
+Author: Da2ny
+Author-email: da2nydeveloper@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Sharkigamers/google_search_origin/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+Google Search Origin encapsulate Request and BeautifulSoap libraries to collect data from the internet.It can generate url throught data passed as parameter. Its main functionnality would be for scraping
+
