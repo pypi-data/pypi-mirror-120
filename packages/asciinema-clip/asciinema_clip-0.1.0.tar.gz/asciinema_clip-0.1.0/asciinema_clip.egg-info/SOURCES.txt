@@ -1,0 +1,8 @@
+setup.py
+asciinema_clip/__init__.py
+asciinema_clip/clipper.py
+asciinema_clip.egg-info/PKG-INFO
+asciinema_clip.egg-info/SOURCES.txt
+asciinema_clip.egg-info/dependency_links.txt
+asciinema_clip.egg-info/top_level.txt
+bin/asciinema-clip
