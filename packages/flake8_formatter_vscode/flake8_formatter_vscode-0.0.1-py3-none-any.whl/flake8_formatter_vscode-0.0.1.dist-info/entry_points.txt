@@ -1,0 +1,3 @@
+[flake8.report]
+vscode=flake8_formatter_vscode:VscodePathFormatter
+
