@@ -1,0 +1,3 @@
+[console_scripts]
+run=password_manager.main:main
+
