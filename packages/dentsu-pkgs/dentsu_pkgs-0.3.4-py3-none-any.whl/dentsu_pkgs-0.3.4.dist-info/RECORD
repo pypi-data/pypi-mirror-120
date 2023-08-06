@@ -1,0 +1,10 @@
+dentsu_pkgs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dentsu_pkgs/aws_helpers.py,sha256=y1vXlbxWBe8Ire6KQ54jrrAFbfcxQ6uoLydwtBCiobc,1514
+dentsu_pkgs/glue_helpers.py,sha256=JAP2Zdyn61uJHafqK6SP49nSTtFEEyxWmq0toqgwkM4,7855
+dentsu_pkgs/googleads_helpers.py,sha256=v0fq01a6Q1xlagZOz_jOuCgjfixbVsB3h_8t7o9QOgM,1132
+dentsu_pkgs/misc_helpers.py,sha256=c5ifoO0sJjVxkrQA6EuwjtmE-Nzc8dqFf1NHMrQMTYk,2503
+dentsu_pkgs-0.3.4.dist-info/LICENSE,sha256=ncpeukms5ZdoX-57wIFZEE8AW27VwE6Xq_DE1O0Flbo,1063
+dentsu_pkgs-0.3.4.dist-info/METADATA,sha256=0MqVB7ZyzfdUWR0Evi_nlgSSwib10xZkZ_9u8MbCgRc,609
+dentsu_pkgs-0.3.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+dentsu_pkgs-0.3.4.dist-info/top_level.txt,sha256=Y5sBb_vnmMUDduerezm6Bpf8SMQk7_HqY-1xvOhLua8,12
+dentsu_pkgs-0.3.4.dist-info/RECORD,,
