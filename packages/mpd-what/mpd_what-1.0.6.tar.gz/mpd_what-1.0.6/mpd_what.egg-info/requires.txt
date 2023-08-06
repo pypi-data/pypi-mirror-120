@@ -1,0 +1,6 @@
+python-mpd2
+pyyaml
+pycurl
+latest-user-agents
+python-magic
+pylast
