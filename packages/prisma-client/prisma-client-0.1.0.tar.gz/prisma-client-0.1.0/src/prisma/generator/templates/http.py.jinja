@@ -1,0 +1,9 @@
+{% include '_header.py.jinja' %}
+# -- template http.py.jinja --
+{% if generator.config.interface == 'asyncio' %}
+from ._async_http import *
+{% elif generator.config.interface == 'sync' %}
+from ._sync_http import *
+{% else %}
+{{ 0 / 0 }}
+{% endif %}
