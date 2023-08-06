@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: ccloud-cli-api
+Version: 0.0.1
+Summary: Simple wrapper around CCLoud CLI
+License: GNU General Public License v2
+Author: johnpreston
+Author-email: john@compose-x.io
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: License :: Other/Proprietary License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/x-rst
+
+==============
+ccloud-cli-api
+==============
+
+
+.. image:: https://img.shields.io/pypi/v/ccloud_cli_api.svg
+        :target: https://pypi.python.org/pypi/ccloud_cli_api
+
+Simple wrapper around CCloud CLI to perform simple operation unavailable via API.
+
+
+* Free software: GNU General Public License v2
+* Documentation: https://ccloud-cli-api.readthedocs.io.
+
+
+Features
+--------
+
+* Allows to create API Keys for Service Account / Resource
+* List all clusters
+
+.. warning:: Requires ccloud installed to run subproccess commands.
+
+
