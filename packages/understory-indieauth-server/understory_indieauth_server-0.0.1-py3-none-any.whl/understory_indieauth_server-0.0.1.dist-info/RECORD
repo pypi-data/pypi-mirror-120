@@ -1,0 +1,15 @@
+understory/apps/indieauth_server/__init__.py,sha256=3cI5X0eb-OiTdnsYkcxeNKLX-T_JKsBgmbBoEz0WCTE,4084
+understory/apps/indieauth_server/templates/__init__.py,sha256=7VqCF73DzBHA5h0BuwQRDPj7farpoTCMWmsY99-GN44,103
+understory/apps/indieauth_server/templates/authorizations.html,sha256=--vBU4NU8Hykg0rv7u-dk5LFLa7drUyCOdIJXUcoKVg,1337
+understory/apps/indieauth_server/templates/claim.html,sha256=LlCWAc8MwjczycM9LP8Abo9O0ecKAEaZAvExjluCoFU,260
+understory/apps/indieauth_server/templates/claimed.html,sha256=MGggGTNbRCUgbhxgOgDF7w7FLtqeWlSB2S22g0ImuCY,411
+understory/apps/indieauth_server/templates/client.html,sha256=uMWX8HabsRs3NMzlZ4KBDU1-LmqPxGt0sy6RwEyM8FM,375
+understory/apps/indieauth_server/templates/clients.html,sha256=h1r4xcFyPthhEEyeXq4VpAfMzF8Qym0cPPWh1ZfsOPo,196
+understory/apps/indieauth_server/templates/root.html,sha256=kSU-L3l8kuKzak4D5wcCYqz0c05OfAuAEqu9vkkZJCc,2133
+understory/apps/indieauth_server/templates/signin.html,sha256=RpjlzsMS9cMhCu3-YdXAAQ7Fe_3jxCkSNYu0v0NB5Cg,951
+understory/apps/indieauth_server/templates/signout.html,sha256=-bELs1qzaJmlBKycwM9_4BmMkLS8GdOSPAgbhfycsBo,88
+understory/apps/indieauth_server/templates/unauthorized.html,sha256=Sy8WLNZm0cnmlB7HuuSKKE_waiBxuwzOSMehOKBiBvA,79
+understory_indieauth_server-0.0.1.dist-info/LICENSE,sha256=ogEPNDSH0_dhiv_lT3ifVIdgIzHAqNA_SemnxUfPBJk,7048
+understory_indieauth_server-0.0.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+understory_indieauth_server-0.0.1.dist-info/METADATA,sha256=EtHOVyGCLiuQvTcm8uBlILb4Z6ESMr0kPXPYlCnrLW0,450
+understory_indieauth_server-0.0.1.dist-info/RECORD,,
