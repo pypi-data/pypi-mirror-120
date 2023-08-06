@@ -1,0 +1,6 @@
+aiohttp
+backoff
+discord
+discord-menu
+pytz
+Red-DiscordBot
