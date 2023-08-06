@@ -1,0 +1,11 @@
+polyga/__init__.py,sha256=FaOShV3dCz3CN6aOO5Z4qa539DhuhIjP11pJkUooDX8,23
+polyga/analysis/__init__.py,sha256=H1g0lhNyLEb0r_jP-Wm3XZ57S992haEPySr2yqAuGvY,1869
+polyga/default_files/dna.csv,sha256=r-59ASSXK4zUFlgY3Bay3Mo_wFlDA3nYzMxXuTaTNOQ,7379
+polyga/models.py,sha256=JdpydjjWFoVeJ39-2uu8inzYYHz1fJYziSdv2DasdVY,1189
+polyga/polygod.py,sha256=tPnrM-D0ox4UMSBnn3Tzgw0AwPp4emk6sTsW9wZ4qzA,56562
+polyga/selection_schemes.py,sha256=z9-5Gc1OPlYJb0zWtDpfppCU1JxrrS76Inb7tFQrGWk,1786
+polyga/utils.py,sha256=GX8dvpxDbezXZPJvManQPuKo5-OuBn32KZk4lVTQ9s4,5598
+polyga-1.0.10.dist-info/LICENSE,sha256=MPEAAuKxGwiugGFelbpl7W-gnAR2WDLlHae03ka3mKw,1060
+polyga-1.0.10.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+polyga-1.0.10.dist-info/METADATA,sha256=Y08E6rN37grORn9UZUeTLQINTLhXYqi_phIVYQ7a-X8,685
+polyga-1.0.10.dist-info/RECORD,,
