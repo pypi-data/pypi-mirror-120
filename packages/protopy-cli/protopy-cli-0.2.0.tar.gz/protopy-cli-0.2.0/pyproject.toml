@@ -1,0 +1,41 @@
+[tool]
+[tool.poetry]
+name = "protopy-cli"
+version = "0.2.0"
+description = ""
+authors = ["bennylut"]
+readme = "README.md"
+packages = [{include = "protopy"}]
+
+[tool.poetry.dependencies]
+python = ">=3.6,<4.0"
+tomlkit = "^0.7.2"
+pygit2 = "^1.6.1"
+requests = "^2.26.0"
+
+[tool.poetry.dependencies.protopy_lib]
+sibling = true
+
+[tool.poetry.dependencies.typing-extensions]
+version = "^3.10.0.2"
+python = "<3.8"
+[tool.poetry.dependencies.dataclasses]
+version = ">=0.8"
+python = "~3.6"
+[tool.poetry.dependencies.importlib-resources]
+version = "^5"
+python = "<3.8"
+[tool.poetry.scripts]
+protopy = "protopy.application:main"
+
+[tool.relaxed-poetry]
+[tool.relaxed-poetry.properties]
+version = "0.2.0"
+
+[tool.relaxed-poetry.sub-projects]
+protopy_lib = "protopy_lib"
+
+[build-system]
+requires = ["relaxed-poetry-core>=0.0.8"]
+build-backend = "poetry.core.masonry.api"
+
