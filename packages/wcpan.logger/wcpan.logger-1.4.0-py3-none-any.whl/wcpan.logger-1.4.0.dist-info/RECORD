@@ -1,0 +1,9 @@
+wcpan.logger-1.4.0-py3.9-nspkg.pth,sha256=fuxepveoCjGwt2p3ADdm-LWmvFGIW-TpYa9CJjpohY4,534
+wcpan/logger/__init__.py,sha256=R-n7p40YqUjW487b8ltmP8Vtn3NlSnNUABwTzEZPCMg,126
+wcpan/logger/log.py,sha256=ICopRndT4HHAGQZTBdgviDnpG-yFaHkODRmkTO6GxY8,3420
+wcpan.logger-1.4.0.dist-info/LICENSE,sha256=PbRjHQadKBhXc46At21KaU4eES0XC0PVEWkc2xsiNAI,1102
+wcpan.logger-1.4.0.dist-info/METADATA,sha256=hd3V7nPuLxO114ZXCxgSvqoZmC9jv-0LbgmA6tPuPo4,819
+wcpan.logger-1.4.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+wcpan.logger-1.4.0.dist-info/namespace_packages.txt,sha256=QL-0JHAW3jlvYtxLqRkcp3PDnpgzhhNgn4cH9RG_C4Q,6
+wcpan.logger-1.4.0.dist-info/top_level.txt,sha256=QL-0JHAW3jlvYtxLqRkcp3PDnpgzhhNgn4cH9RG_C4Q,6
+wcpan.logger-1.4.0.dist-info/RECORD,,
