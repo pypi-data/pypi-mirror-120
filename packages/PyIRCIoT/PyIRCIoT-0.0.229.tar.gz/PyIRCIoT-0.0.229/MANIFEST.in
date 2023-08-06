@@ -1,0 +1,4 @@
+include LICENSE.txt README.md
+recursive-include PyIRCIoT
+global-include *.py *.sh ldict.json ChangeLog LICENSE *.txt
+global-exclude __pycache__ DEPLOY.sh

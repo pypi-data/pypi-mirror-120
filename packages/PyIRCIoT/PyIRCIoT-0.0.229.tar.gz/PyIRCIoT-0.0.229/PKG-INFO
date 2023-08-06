@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: PyIRCIoT
+Version: 0.0.229
+Summary: IRC-IoT is the universal protocol for building IoT
+Home-page: https://github.com/Markatrafik/PyIRCIoT
+Author: Alexey Woronov
+Author-email: alexey@woronov.ru
+License: MIT
+Description: # PyIRCIoT
+        
+        IRC-IoT is the universal protocol for building Internet of things (IoT)
+        
+        More info about IRC-IoT protocol you can find at http://irc-iot.org/?lang=en
+        
+        PyIRCIoT is a demonstration library for the implementation of the
+        functions of the IRC-IoT protocol
+        
+        There is also a project for porting this library to Java:
+         https://github.com/Markatrafik/JavaIRCIoT
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
