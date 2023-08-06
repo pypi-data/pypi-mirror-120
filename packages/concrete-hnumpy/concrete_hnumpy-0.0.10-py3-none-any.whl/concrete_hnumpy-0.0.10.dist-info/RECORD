@@ -1,0 +1,9 @@
+concrete_hnumpy-0.0.10-py3.9-nspkg.pth,sha256=49aY5UL-7inz-l1YHHT6jvcH4VoQTR2abblwztFBvQI,549
+concrete/hnumpy/__init__.py,sha256=S4cTi1XDaCSYU5NEmhE3V3eJoiD6wqkNOiWySVzrv_E,35
+concrete/hnumpy/file.py,sha256=5oCcCU06N65Sr-DtwiM4a-fwk8_S--QGjPnkDKX4xY8,141
+concrete_hnumpy-0.0.10.dist-info/LICENSE,sha256=eXiWHp2qyZ9Tx5PiKmVshKzyBvDdsMFo-w10EknTVVU,2666
+concrete_hnumpy-0.0.10.dist-info/METADATA,sha256=0LYs3_GSeGQj4jV2b0KeOuV7Avj_2IrMSX1Fvwn6-3E,1176
+concrete_hnumpy-0.0.10.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+concrete_hnumpy-0.0.10.dist-info/namespace_packages.txt,sha256=MRgnRegRkyoRGjOp1ctJ_YQ2KBbT65-5Kv37ILn0kYo,9
+concrete_hnumpy-0.0.10.dist-info/top_level.txt,sha256=MRgnRegRkyoRGjOp1ctJ_YQ2KBbT65-5Kv37ILn0kYo,9
+concrete_hnumpy-0.0.10.dist-info/RECORD,,
