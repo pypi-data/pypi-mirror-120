@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: torch-dftd
+Version: 0.3.0
+Summary: pytorch implementation of dftd2 & dftd3
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: ase (<4.0.0,>=3.18)
+Requires-Dist: pymatgen (>=2020.1.28)
+Provides-Extra: develop
+Requires-Dist: pysen[lint] (==0.9.1) ; extra == 'develop'
+
+UNKNOWN
+
+
