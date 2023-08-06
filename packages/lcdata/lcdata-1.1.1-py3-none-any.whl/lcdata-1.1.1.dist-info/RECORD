@@ -1,0 +1,17 @@
+lcdata/__init__.py,sha256=GHIUX9HUpxvqJxnXIondcCMp-Q00gna-NBBtL-5Lk3w,49
+lcdata/dataset.py,sha256=k-57bcu_bBd6zeBz3jgnZ3n8E8EnkU-jRfILw56CWaQ,22543
+lcdata/lightcurve.py,sha256=ny8_BNNsR1hVDWRk7gNsW1UXXukBzJS0lR__N4YrBgQ,7427
+lcdata/schema.py,sha256=pw-TsDOxUjAoy0O5UtBS9fi7r0ap-9lq7ZhrGjYaS18,11744
+lcdata/utils.py,sha256=uH8LT5ds3mcQVEN3UGgk0zMRygNOziTv_y0Aiksqvb4,4072
+lcdata/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lcdata/tests/test_dataset.py,sha256=8Pi1xloJQ5arBU3yPbbQ0SjUOZAj5IwZIZvNNGw30Yo,8573
+lcdata/tests/test_lightcurve.py,sha256=fd24HIQn18f4pnvHNxyIadn7tYlModZZNWuhSHPDZS8,1257
+lcdata/tests/test_schema.py,sha256=fu5fg4iPJBkxrh0ZoBQ5t7aHyKmUKoqk2g4C2EtvnLE,7406
+lcdata/tests/test_utils.py,sha256=YmEYL4MEZ6B--PllVq73-QD0PLCofnYOylFzv4dPVXg,425
+lcdata-1.1.1.data/scripts/lcdata_download_plasticc,sha256=j_vJZUeZqIuDc52TCTk_f4Hznl8RrOXzHU8h0c55qDc,3532
+lcdata-1.1.1.data/scripts/lcdata_download_ps1,sha256=Tzb404DG3hzqgYWh6yd6Y1Suh3XftHXvvVgP6w-iHTw,3695
+lcdata-1.1.1.dist-info/LICENSE,sha256=hkgM35Kb8MNY_WaDBUvGWlfA-qTHU611WKLhpkYMNx0,1067
+lcdata-1.1.1.dist-info/METADATA,sha256=ZApTGzLBo6dDn9MZ0fNfQKHiKAJUUMSLQozcEraco5w,2242
+lcdata-1.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+lcdata-1.1.1.dist-info/top_level.txt,sha256=9gPa2o6BOT6vGtpVjLtjUPOAaK5FoFKzfK5xD6C3zBE,7
+lcdata-1.1.1.dist-info/RECORD,,
