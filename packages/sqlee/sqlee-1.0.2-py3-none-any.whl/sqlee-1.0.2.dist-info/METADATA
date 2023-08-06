@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: sqlee
+Version: 1.0.2
+Summary: Database Powerd by Gitee
+Home-page: https://gitee.com/qu-c/sqlee
+Author: Entropy
+Author-email: fu050409@163.com
+License: MIT
+Project-URL: Bug Tracker, https://gitee.com/qu-c/sqlee/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: prompt-toolkit
+Requires-Dist: argparse
+
+
+# Sqlee
+Database Powerd by Gitee.
+
+
