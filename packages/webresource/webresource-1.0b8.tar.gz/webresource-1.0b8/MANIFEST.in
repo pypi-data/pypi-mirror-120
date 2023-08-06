@@ -1,0 +1,2 @@
+include *.rst
+include docs/source/overview.rst
