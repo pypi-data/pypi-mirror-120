@@ -1,0 +1,4 @@
+requests>=2.25.1
+
+[parser]
+pyhcl>=0.4.4
