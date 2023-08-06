@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: sbol2excel
+Version: 1.0.0a21
+Summary: convert sbol resources into excel
+Home-page: https://github.com/SynBioDex/SBOL-to-Excel
+Maintainer: Julian Abam
+Maintainer-email: abamaj@gmail.com
+License: BSD 3-clause
+Platform: UNKNOWN
+Requires-Dist: appdirs (==1.4.4)
+Requires-Dist: beautifulsoup4 (==4.9.3)
+Requires-Dist: bs4 (==0.0.1)
+Requires-Dist: certifi (==2021.5.30)
+Requires-Dist: chardet (==4.0.0)
+Requires-Dist: cssselect (==1.1.0)
+Requires-Dist: Deprecated (==1.2.12)
+Requires-Dist: et-xmlfile (==1.1.0)
+Requires-Dist: fake-useragent (==0.1.11)
+Requires-Dist: idna (==2.10)
+Requires-Dist: isodate (==0.6.0)
+Requires-Dist: lxml (==4.6.3)
+Requires-Dist: numpy (==1.20.3)
+Requires-Dist: openpyxl (==3.0.7)
+Requires-Dist: packaging (==20.9)
+Requires-Dist: pandas (==1.2.4)
+Requires-Dist: parse (==1.19.0)
+Requires-Dist: pyee (==8.1.0)
+Requires-Dist: pyparsing (==2.4.7)
+Requires-Dist: pyppeteer (==0.2.5)
+Requires-Dist: pyquery (==1.4.3)
+Requires-Dist: python-dateutil (==2.8.1)
+Requires-Dist: pytz (==2021.1)
+Requires-Dist: rdflib (==5.0.0)
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: requests-html (==0.10.0)
+Requires-Dist: sbol2 (==1.2)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: soupsieve (==2.2.1)
+Requires-Dist: tqdm (==4.61.1)
+Requires-Dist: urllib3 (==1.26.5)
+Requires-Dist: w3lib (==1.22.0)
+Requires-Dist: wrapt (==1.12.1)
+
+This library is a collection of functions used to convert an SBOL file into an Excel Template. It includes testing functions as well as a python package published on PyPi
+
