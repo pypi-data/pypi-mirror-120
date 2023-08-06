@@ -1,0 +1,8 @@
+src/__init__.py,sha256=4dCrvStS1OgE3Vlcv-qx5-TAo377yOMEToEqCi-PwY4,23
+src/run_cifar.py,sha256=kLQC8yV7nBMziSF_E0gp7HXT8p7Un10J3F7qKCjr2_I,3028
+test_pytorch_gpu-0.0.3.dist-info/LICENSE,sha256=-2nYQtE5kdSJ7WPSMGqAPAi9OexfldLH6YosSUWuRAQ,1094
+test_pytorch_gpu-0.0.3.dist-info/METADATA,sha256=jpWYn6mVDZJbp3L6eJMgCf4yrD9cnTlE6wkPjmknUaM,2246
+test_pytorch_gpu-0.0.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+test_pytorch_gpu-0.0.3.dist-info/entry_points.txt,sha256=lO7TQQaCYzk5BwaOnp7m7nS5D1sUJcHXUVcmhDUj80A,50
+test_pytorch_gpu-0.0.3.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+test_pytorch_gpu-0.0.3.dist-info/RECORD,,
