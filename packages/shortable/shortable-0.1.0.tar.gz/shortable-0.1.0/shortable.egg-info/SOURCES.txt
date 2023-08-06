@@ -1,0 +1,12 @@
+README.md
+setup.py
+shortable/__init__.py
+shortable/shortable.py
+shortable.egg-info/PKG-INFO
+shortable.egg-info/SOURCES.txt
+shortable.egg-info/dependency_links.txt
+shortable.egg-info/entry_points.txt
+shortable.egg-info/requires.txt
+shortable.egg-info/top_level.txt
+tests/__init__.py
+tests/test_shortable.py
