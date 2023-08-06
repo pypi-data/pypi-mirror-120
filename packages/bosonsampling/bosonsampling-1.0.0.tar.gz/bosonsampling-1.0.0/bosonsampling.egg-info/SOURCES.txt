@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+bosonsampling.egg-info/PKG-INFO
+bosonsampling.egg-info/SOURCES.txt
+bosonsampling.egg-info/dependency_links.txt
+bosonsampling.egg-info/requires.txt
+bosonsampling.egg-info/top_level.txt
