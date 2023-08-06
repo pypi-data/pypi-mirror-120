@@ -1,0 +1,3 @@
+[console_scripts]
+ecp = ecp.__main__:main
+
