@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ways-py
+Version: 0.0.2
+Summary: WAYS package for Python developed at University of Warwick and The Alan Turing Institute.
+License: MIT
+Author: Ed Chalstrey
+Author-email: echalstrey@turing.ac.uk
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: flake8 (>=3.9.2,<4.0.0)
+Requires-Dist: importlib-metadata (>=4.8.1,<5.0.0)
+Requires-Dist: mypy (>=0.910,<0.911)
+Requires-Dist: pytest (>=6.2.5,<7.0.0)
