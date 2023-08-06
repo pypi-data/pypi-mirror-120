@@ -1,0 +1,4 @@
+requests>=2.18.4
+click>=6.7
+cryptography
+imecilabt-gpulab-common<4,>=3.2.1
