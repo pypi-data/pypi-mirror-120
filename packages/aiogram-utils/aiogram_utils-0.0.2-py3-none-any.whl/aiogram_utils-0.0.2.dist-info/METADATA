@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: aiogram-utils
+Version: 0.0.2
+Summary: Misc utils for aiogram
+Home-page: https://github.com/LDmitriy7/aiogram_utils
+Author: LDmitriy7
+Author-email: ldm.work2019@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.7
+License-File: LICENSE.txt
+Requires-Dist: aiogram (==2.15)
+Requires-Dist: aiogram-utils (==0.0.1)
+Requires-Dist: aiohttp (==3.7.4.post0)
+Requires-Dist: async-timeout (==3.0.1)
+Requires-Dist: attrs (==21.2.0)
+Requires-Dist: Babel (==2.9.1)
+Requires-Dist: build (==0.7.0)
+Requires-Dist: certifi (==2021.5.30)
+Requires-Dist: chardet (==4.0.0)
+Requires-Dist: colorama (==0.4.4)
+Requires-Dist: idna (==3.2)
+Requires-Dist: mongoengine (==0.23.1)
+Requires-Dist: multidict (==5.1.0)
+Requires-Dist: packaging (==21.0)
+Requires-Dist: pep517 (==0.11.0)
+Requires-Dist: pymongo (==3.12.0)
+Requires-Dist: pyparsing (==2.4.7)
+Requires-Dist: pytz (==2021.1)
+Requires-Dist: tomli (==1.2.1)
+Requires-Dist: typing-extensions (==3.10.0.2)
+Requires-Dist: yarl (==1.6.3)
+
+# TODO
+
