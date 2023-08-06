@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: python-amazon-ad-api
+Version: 0.0.2
+Summary: Python wrapper for the Amazon Advertising API
+Home-page: https://github.com/denisneuf/ad_api
+Author: Daniel
+Author-email: info@leadtech.es
+License: MIT
+Project-URL: Bug Tracker, https://github.com/denisneuf/ad_api/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: six
+Requires-Dist: cachetools (~=4.2.2)
+Requires-Dist: pycryptodome
+Requires-Dist: python-dotenv
+Requires-Dist: pytz
+Requires-Dist: confuse
+
+# Advertising API for Python
+
+A Python library for connecting to Amazon's Advertising API.
+
