@@ -1,0 +1,11 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+imgtoch/__init__.py
+imgtoch/__utils__.py
+imgtoch.egg-info/PKG-INFO
+imgtoch.egg-info/SOURCES.txt
+imgtoch.egg-info/dependency_links.txt
+imgtoch.egg-info/requires.txt
+imgtoch.egg-info/top_level.txt
