@@ -1,0 +1,14 @@
+demerzel/__init__.py,sha256=WqMu2-wGPYZp7wkdRHUkCNKV8V3k9oCSEKrms5EHy6I,71
+demerzel/app.py,sha256=TkZcMbF3TEAoa3UkkbZctOPB5SEYgW431ls-LBCE6jE,5711
+demerzel/config.py,sha256=e5cWqCZ_Z8mIyfjMGXrW0lSD2CP_a0wgHQ7peXA6ou0,1303
+demerzel/consumer.py,sha256=Nxc9cX0HuYDmVN8Vy7c1WMKFyl9IAUFWqRoT-m7wpkY,4002
+demerzel/enums.py,sha256=uIP2WMLnPauOizI6j4WudNNAdHLDGM6wjX3Yh6dXoMw,323
+demerzel/producer.py,sha256=1uG9jRD7imuCS2mkPvcXgLUITUgU5Vui_SD9wxEQ56Y,2266
+demerzel/queues.py,sha256=LyK20u2xlvG6bJBsFU48VGpEM4tJTRVMcbqqsRkr91I,151
+demerzel/scheduler.py,sha256=p0OnPGZ2wDR_2Pg64VL36KFzyOq10hJyjTcJnBNrbxE,2699
+demerzel/task.py,sha256=UydcL3lZ0OyFhBDSdpAfIEwwu7xinh0xgXGNMPMJmtY,3773
+demerzel-0.2.1.dist-info/LICENSE,sha256=Mp7Aiv4h-mhWlMQjENIK-srvjLF-2Inl14c4f7PNTSc,1074
+demerzel-0.2.1.dist-info/METADATA,sha256=zs-lQp-YDjH3JAfdIz1uPvOeihMoxudFBQt1Qh1Fn7k,870
+demerzel-0.2.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+demerzel-0.2.1.dist-info/top_level.txt,sha256=OEWhYzPcZilNjPxXUxqXIt_ooAUzOyLBTzTjbHI_YfE,9
+demerzel-0.2.1.dist-info/RECORD,,
