@@ -1,0 +1,8 @@
+#!/usr/bin/env python3
+
+import spatialprofilingtoolbox as spt
+
+if __name__=='__main__':
+    p = spt.get_config_parameters_from_file()
+    i = spt.get_integrator(**p)
+    i.calculate()
