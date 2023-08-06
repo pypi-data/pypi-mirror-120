@@ -1,0 +1,10 @@
+click
+flask
+cachetools
+colorama
+requests
+tqdm
+google-cloud-storage
+packaging
+pyyaml
+syrupy
