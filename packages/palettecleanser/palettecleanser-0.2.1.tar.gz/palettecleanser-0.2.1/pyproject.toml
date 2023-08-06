@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "palettecleanser"
+version = "0.2.1"
+description = ""
+authors = ["Matt Muldowney <matt.muldowney@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/mmuldo/palette-cleanser"
+documentation = "https://github.com/mmuldo/palette-cleanser/wiki"
+keywords = ["dotfiles", "configuration", "customization", "colorscheme", "palette"]
+
+[tool.poetry.scripts]
+pclean = "palettecleanser.cli.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Jinja2 = "^3.0.1"
+numpy = "^1.21.1"
+PyYAML = "^5.4.1"
+tabulate = "^0.8.9"
+typer = {extras = ["all"], version = "^0.3.2"}
+pywal = "^3.3.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
