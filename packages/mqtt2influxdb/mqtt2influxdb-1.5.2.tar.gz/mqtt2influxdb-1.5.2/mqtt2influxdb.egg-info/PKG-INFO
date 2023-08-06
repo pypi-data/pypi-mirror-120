@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: mqtt2influxdb
+Version: 1.5.2
+Summary: MQTT to InfluxDB
+Home-page: https://github.com/hardwario/bch-mqtt2influxdb
+Author: HARDWARIO s.r.o.
+Author-email: karel.blavka@hardwario.com
+License: MIT
+Keywords: mqtt,influxdb,Hardwatio,TOWER,BigClown
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
+Classifier: Environment :: Console
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<a href="https://www.hardwario.com/"><img src="https://www.hardwario.com/ci/assets/hw-logo.svg" width="200" alt="HARDWARIO Logo" align="right"></a>
+
+# MQTT to InfluxDB
+
+[![Travis](https://img.shields.io/travis/hardwario/bch-mqtt2influxdb/master.svg)](https://travis-ci.org/hardwario/bch-mqtt2influxdb)
+[![Release](https://img.shields.io/github/release/hardwario/bch-mqtt2influxdb.svg)](https://github.com/hardwario/bch-mqtt2influxdb/releases)
+[![PyPI](https://img.shields.io/pypi/v/mqtt2influxdb.svg)](https://pypi.org/project/mqtt2influxdb/)
+[![License](https://img.shields.io/github/license/hardwario/bch-mqtt2influxdb.svg)](https://github.com/hardwario/bch-mqtt2influxdb/blob/master/LICENSE)
+[![Twitter](https://img.shields.io/twitter/follow/hardwario_en.svg?style=social&label=Follow)](https://twitter.com/hardwario_en)
+
+
+## Example
+
+```
+mqtt2influxdb -c /etc/hardwario/mqtt2influxdb.yaml --debug
+```
+
+## How to install & configure
+
+https://tower.hardwario.com/en/latest/tutorials/mqtt-to-influxdb/
+
+## Local development
+
+for Linux
+```
+git clone git@github.com:hardwario/bch-mqtt2influxdb.git
+cd bch-mqtt2influxdb
+./test.sh
+. .venv/bin/activate
+python3 setup.py develop
+mqtt2influxdb -h
+```
+
+## License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT/) - see the [LICENSE](LICENSE) file for details.
+
+---
+
+Made with &#x2764;&nbsp; by [**HARDWARIO s.r.o.**](https://www.hardwario.com/) in the heart of Europe.
+
+
