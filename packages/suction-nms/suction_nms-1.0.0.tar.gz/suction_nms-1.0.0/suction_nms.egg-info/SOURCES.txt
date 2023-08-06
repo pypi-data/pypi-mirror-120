@@ -1,0 +1,7 @@
+README.md
+setup.py
+suction_nms.cpp
+suction_nms.egg-info/PKG-INFO
+suction_nms.egg-info/SOURCES.txt
+suction_nms.egg-info/dependency_links.txt
+suction_nms.egg-info/top_level.txt
