@@ -1,0 +1,12 @@
+lantsa/__init__.py,sha256=CHViAJVkkvipQF5-PKoyBGxh3Ya8-Dh6kqih0tHymWg,341
+lantsa/_compat.py,sha256=h2_onHE-eFFr7cBqzWL6t-5leO-AeWlJlexVEsj6e2g,167
+lantsa/_initialize.py,sha256=NEl8Ctk1yKdLADlqRes42ElzIhbGPUUlspFZ-_a14Is,765
+lantsa/_lasso_landmarks.py,sha256=1HToyRISU8YLTayzIkTb_0mEApD-a_yGufMGOJ896LY,2555
+lantsa/_select_landmarks.py,sha256=l0HB5dk2eBaMsN5wdgFzK5d8TuqhcUL-QZFnzUseQ4k,4840
+lantsa/_select_learning_samples.py,sha256=LuQnPvJuFbtpbS1KzNPIth0GnFi8vz6tTIHHsGmtXUY,4546
+lantsa/_solve.py,sha256=ez0xcx21H19JMn2eQH2RF4aeNyrDHTVD-8K_wnVBOds,2567
+lantsa/_subspace_analysis.py,sha256=nM7zO1YniHmMW2f5V_pqlRsgRRH3shkfFob0-EMbeaY,7986
+lantsa/_transfer_labels.py,sha256=1VVVFq0J879rgltwmkuT6G8EAy3A0vFZ5Cciirksxk8,5379
+lantsa-0.4.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+lantsa-0.4.0.dist-info/METADATA,sha256=2RcGqdS1zPfDpwkDMaIXEZH_iJexINoKVMmUubv2SmA,2172
+lantsa-0.4.0.dist-info/RECORD,,
