@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: understory-text-editor
+Version: 0.0.2
+Summary: A text editor Micropub client for the Understory framework.
+License: AGPL-3.0-or-later
+Author: Angelo Gladding
+Author-email: self@angelogladding.com
+Requires-Python: >=3.9,<3.10
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: micropub (>=0.0.2,<0.0.3)
+Requires-Dist: understory (>=0.0.71,<0.0.72)
