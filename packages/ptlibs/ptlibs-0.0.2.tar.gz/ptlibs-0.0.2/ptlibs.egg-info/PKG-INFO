@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: ptlibs
+Version: 0.0.2
+Summary: Support library for penterepTools
+Home-page: https://www.penterep.com/
+Author: Penterep
+Author-email: d.kummel@penterep.com
+License: GPLv3+
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
