@@ -1,0 +1,9 @@
+aliyun_rocketmq_provider/__init__.py,sha256=SUZxsAJ7mS9KvsZTWxvOF2sgYt07uEJrq8Yd6GC84U0,349
+aliyun_rocketmq_provider/hooks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aliyun_rocketmq_provider/hooks/aliyun_rocketmq.py,sha256=IAgBNaJhmlmFX5pPxnPFKcBfS-DzXtSd_OwauRroSwM,1862
+airflow_providers_aliyun_rocketmq-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+airflow_providers_aliyun_rocketmq-0.1.1.dist-info/METADATA,sha256=BZh53pwEcZaCza7F09rCOoJbVwZ6C1R0Urfd0QE7KbI,1379
+airflow_providers_aliyun_rocketmq-0.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+airflow_providers_aliyun_rocketmq-0.1.1.dist-info/entry_points.txt,sha256=QOPLFbSCvJr-k3yO6y1G5Fg9elH78elCK0kKdnovdOc,95
+airflow_providers_aliyun_rocketmq-0.1.1.dist-info/top_level.txt,sha256=aHIDBhPYv78GshyB1ug1ykybReViMTeCH8kPLktiudg,25
+airflow_providers_aliyun_rocketmq-0.1.1.dist-info/RECORD,,
