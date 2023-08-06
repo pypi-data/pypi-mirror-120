@@ -1,0 +1,9 @@
+jrtimeman/__init__.py,sha256=7bBH1EiX5tPgIJNR9Jc66I0d0DJnp08gTDvm6c6a8ZY,43
+jrtimeman/base.py,sha256=BTWl7-aH63TjkhWFaiOcO22rzPzuUDxsBHCMRJ8IBGM,9089
+jrtimeman/credentials.py,sha256=8YJErO2Hpq5xsLRiUKkVtDl3A6tYIO0MyGck4iPzkpg,1908
+jrtimeman/errors.py,sha256=baEuGZOxSsz2tRHNZbVENTX9lmoETIrZFF67qhlEpcw,274
+jrtimeman/utils.py,sha256=cec3trJDlNtasaP9oOMEgyUCGZ40Sn6CUgWSbITHhKQ,727
+jrtimeman-0.2.13.dist-info/entry_points.txt,sha256=d-DgzOMENNfQ2VNMOztEgFpFxFffuOcwGl6KXc-ThuA,37
+jrtimeman-0.2.13.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+jrtimeman-0.2.13.dist-info/METADATA,sha256=yoXvpSDMZul24xHr6k0W-LSnF8-2E_n5L3Z7ml5cwm0,565
+jrtimeman-0.2.13.dist-info/RECORD,,
