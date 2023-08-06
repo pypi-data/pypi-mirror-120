@@ -1,0 +1,7 @@
+views_partitioning/__init__.py,sha256=daEdpEyAJIa8b2VkCqSKcw8PaExcB6Qro80XNes_sHA,2
+views_partitioning/data_partitioner.py,sha256=TjasvAU2VjHIzwJxpnF3hG4CcS-SkgYFKiP8lzCSREw,1800
+views_partitioning/legacy.py,sha256=ALmTzM84cRMlugYoXt1VsS2ykcRWiXoTjf-Hou-U6pA,794
+views_partitioning/validation.py,sha256=ehbTgBMsoq6Y7FtYxkXCyxiYLSo8j_MEggvcEFLc3_s,204
+views_partitioning-2.0.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+views_partitioning-2.0.0.dist-info/METADATA,sha256=-UMmv_4ViJuY7cGMVSwaWjIUJ4uZnlnpEI0_4cXckoE,381
+views_partitioning-2.0.0.dist-info/RECORD,,
