@@ -1,0 +1,9 @@
+pip
+packaging
+numpy
+pandas
+torch>1.8
+fastprogress
+fastcore
+
+[dev]
