@@ -1,0 +1,11 @@
+CHANGELOG.md
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+lib/0x_python.egg-info/PKG-INFO
+lib/0x_python.egg-info/SOURCES.txt
+lib/0x_python.egg-info/dependency_links.txt
+lib/0x_python.egg-info/entry_points.txt
+lib/0x_python.egg-info/requires.txt
+lib/0x_python.egg-info/top_level.txt
