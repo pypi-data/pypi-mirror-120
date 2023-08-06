@@ -1,0 +1,18 @@
+{
+  "template": "https://github.com/bbugyi200/cc-python",
+  "commit": "a085a6960103530bfc70b2e855be66bc0c41f479",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "github_username": "bbugyi200",
+      "git_org_name": "bbugyi200",
+      "git_repo_name": "python-dummy",
+      "package_name": "bugyi.dummy",
+      "package_description": "Dummy python project used to test the cc-python cookiecutter.",
+      "package_type": "application",
+      "_template": "https://github.com/bbugyi200/cc-python",
+      "package_path": "bugyi/dummy"
+    }
+  },
+  "directory": null
+}
