@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "edwardsserial"
+version = "0.3.2"
+description = "Python API implementing the serial protocoll from edwards vacuum."
+authors = ["Jan Petermann <jpeterma@physnet.uni-hamburg.de>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://gitlab.com/codingcoffeebean/edwardsserial"
+documentation = "https://codingcoffeebean.gitlab.io/edwardsserial/"
+repository = "https://gitlab.com/codingcoffeebean/edwardsserial"
+keywords = ["TIC", "edwards", "vacuum"]
+
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pyserial = "*"
+
+[tool.poetry.dev-dependencies]
+importlib-resources = "^1.4.0"
+recommonmark = "*"
+docutils = "!=0.16b0"
+sphinx-markdown-tables = "*"
+pytest = "*"
+pytest-cov = ">=2.5.1"
+pytest-subtests = "*"
+sphinx-rtd-theme = "*"
+mypy = "*"
+pylint = "*"
+sphinx = "*"
+black = "==19.10b0"
+pre-commit = "*"
+pydocstyle = "*"
+isort = "*"
+seed-isort-config = "*"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
