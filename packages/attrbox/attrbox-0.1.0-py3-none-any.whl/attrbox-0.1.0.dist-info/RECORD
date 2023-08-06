@@ -1,0 +1,10 @@
+attrbox/__about__.py,sha256=2KQrTbQ8V94ec3CZ18gkCEyjmOzlEJcW9vdoCIsmJIc,333
+attrbox/__init__.py,sha256=P-wu5CkYO-Z0-BAW8Y5ucmp-o7uacE10I21PQbXLo5M,631
+attrbox/attrdict.py,sha256=q4fKtmo7b89BQ4pIooCJewxXdOJngyB1tQMSbr3t4wQ,5117
+attrbox/attrlist.py,sha256=GmXvbRCZVrWfHUBJmw4NX-7BiKAtaZFVMnrGzuwT8YM,2372
+attrbox/jsend.py,sha256=662XHkG-0HCb-NeJcLpLviwBkNMV7vkNaWrnjztEmOs,2956
+attrbox-0.1.0.dist-info/LICENSE.md,sha256=Aw4H8ua-1rKDJ320DOyHu8BgUgrZbD8AcPnsvgg0MCU,1052
+attrbox-0.1.0.dist-info/METADATA,sha256=NmxYK8o724AS2zLLP0zFfMmdiePXsOaUF1-sB-CVWrA,2281
+attrbox-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+attrbox-0.1.0.dist-info/top_level.txt,sha256=j7kOlh_TNoJRnNbxXEE7Ky3wEyeEezCUKkSAuWIXB-M,8
+attrbox-0.1.0.dist-info/RECORD,,
