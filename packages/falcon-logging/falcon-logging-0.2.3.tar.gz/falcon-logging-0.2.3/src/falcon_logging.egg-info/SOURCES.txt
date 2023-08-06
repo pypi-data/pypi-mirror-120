@@ -1,0 +1,10 @@
+LICENCE
+README.md
+pyproject.toml
+setup.py
+src/falcon_logging/__init__.py
+src/falcon_logging/logging.py
+src/falcon_logging.egg-info/PKG-INFO
+src/falcon_logging.egg-info/SOURCES.txt
+src/falcon_logging.egg-info/dependency_links.txt
+src/falcon_logging.egg-info/top_level.txt
