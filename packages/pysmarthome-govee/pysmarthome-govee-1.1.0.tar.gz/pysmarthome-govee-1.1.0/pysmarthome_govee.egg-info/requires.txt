@@ -1,0 +1,2 @@
+govee_api2~=1.3.0
+pysmarthome~=3.0
