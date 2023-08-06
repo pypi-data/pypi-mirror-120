@@ -1,0 +1,12 @@
+sphinx_codeautolink/VERSION,sha256=atlhOkVXmNbZLl9fOQq0uqcFlryGntaxf1zdKyhjXwY,5
+sphinx_codeautolink/__init__.py,sha256=Wbo0jshy5WPSgpFt48tgK3ZRb9u-1WiFw8fKmMtqLzE,1292
+sphinx_codeautolink/parse.py,sha256=HW5I5ueziDL5_D9tuaehumgIGWTzlq-IIQrRbKdZ-t4,10363
+sphinx_codeautolink/extension/__init__.py,sha256=Jd5w_gcAl3dM9IKfd7H0xkMuqQzrPGI-aWcGM7f9J8Q,4964
+sphinx_codeautolink/extension/backref.py,sha256=wKap-jNsOmeIRfjSLf5M7r2jgraO2--w5b4AhYEPV9g,2463
+sphinx_codeautolink/extension/block.py,sha256=d6B449vsv2tkpIyknR7wtx531T5lthepN78zQagYvm8,8234
+sphinx_codeautolink/extension/directive.py,sha256=8TE6sIJ91gl6PJd0YBfrcaU-AHWPHviscVSCuIh17TA,3230
+sphinx_codeautolink-0.1.0.dist-info/LICENSE,sha256=FZEH_pk2_RDQO3lP4cXnIEEJsHPFhf2z1pKhYl9cwrE,1091
+sphinx_codeautolink-0.1.0.dist-info/METADATA,sha256=7HVooCdJLmiPMdaOl274OedbqMAKK6_M3OgAAUmzuac,3860
+sphinx_codeautolink-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+sphinx_codeautolink-0.1.0.dist-info/top_level.txt,sha256=hlkFlKnir2aFAJAy64sMaX1HpbzoRNLMKdMaTNegNqY,20
+sphinx_codeautolink-0.1.0.dist-info/RECORD,,
