@@ -1,0 +1,16 @@
+esparto/__init__.py,sha256=QuHSF5Jw2CYVaDQXM4980iMClRwhX_288Eyii6uZI-A,1113
+esparto/_adaptors.py,sha256=goeHuFAOHWHJb-EdtvGlhawwT_XK1xNXMjbu9_Uy7l8,3472
+esparto/_cdnlinks.py,sha256=Uv_ObSnpz_1LsLxhYI2lkhlcNbZtE9buw0zzHdLgwnA,5540
+esparto/_content.py,sha256=zSmiApvMqIhq1Ey9Pe3HOV9QAMGA_KYUCkFYQoVFjEg,16399
+esparto/_contentdeps.py,sha256=WWhP4ZLAojV4qyY02fx2H5JH92fU-2eughnZszABS10,2376
+esparto/_layout.py,sha256=gZROwvMcgb0FQBB_xCCkUfgeuGjhs-_eAi0YuXS2_ts,30481
+esparto/_options.py,sha256=X_1KOmlcQcgEY5TD6wTSGFs7kAxyRLuXeBA3U2mRyfg,5111
+esparto/_publish.py,sha256=LFYuK2T7e6VFYMT1ENKIWQ9gljkASKx2ljlBjGpyMDc,5605
+esparto/_utils.py,sha256=sYPhH3l2KIncvbIYEGq__TztR2l9KgE_uXtLdBky1oc,2784
+esparto/resources/css/bootstrap.min.css,sha256=L7Jps_P3c727L2stpzD9PBIFroDlyNSx9kQmDJ4InHM,161410
+esparto/resources/css/esparto.css,sha256=Jy98VVS-dYm5gVEJcaIKTZI02WIa-K337VfHQg0luBo,1052
+esparto/resources/jinja/base.html.jinja,sha256=Z_mekJxYNOL_38fIhTjN8pbQww69sOshJ4seHfOjNtY,1524
+esparto-2.0.0.dist-info/LICENSE,sha256=7UrIEdsaXx68WACPzB7sdn-hhW42Ey8EycNaAxhJtcM,1071
+esparto-2.0.0.dist-info/WHEEL,sha256=Q99itqWYDhV793oHzqzi24q7L7Kdiz6cb55YDfTXphE,84
+esparto-2.0.0.dist-info/METADATA,sha256=OIhxcl_ZzX0CiZYaxuA0FqMnYkBqZaljhMo68uCaRm8,4545
+esparto-2.0.0.dist-info/RECORD,,
