@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: pep249
+Version: 1.0.1
+Summary: Provide minimum implementation check and connection pool of PEP249.
+Home-page: https://github.com/abersheeran/pep249
+Author: abersheeran
+Author-email: me@abersheeran.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pep249
+
+Provide minimum implementation check and connection pool of PEP249.
+
+## Install
+
+```
+pip install pep249
+```
+
+## Usage
+
+### Connection Pool
+
+Sample using [phoenixdb](https://pypi.org/project/phoenixdb/) with connection pool:
+
+```python
+from pep249 import ConnectionPool
+
+conn_pool = ConnectionPool(
+    maxsize=12,
+    connection_factory=lambda: phoenixdb.connect(
+        "http://localhost:8765/", autocommit=True
+    ),
+)
+
+with conn_pool.connect() as connection:
+    ...
+```
+
+**Note**: The connection pool does not actively initialize the connection, it is initialized only when it is needed.
+
+### Minimum implementation check
+
+```python
+from pep249 import Connection, Cursor
+
+assert issubclass(YOUR_CONNECTION_CLASS, Connection)
+assert isinstance(YOUR_CONNECTION, Connection)
+
+assert issubclass(YOUR_CURSOR_CLASS, Cursor)
+assert isinstance(YOUR_CURSOR, Cursor)
+```
+
+

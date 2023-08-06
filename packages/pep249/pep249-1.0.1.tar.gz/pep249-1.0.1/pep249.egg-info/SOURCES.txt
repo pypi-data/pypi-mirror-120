@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pep249.py
+setup.py
+pep249.egg-info/PKG-INFO
+pep249.egg-info/SOURCES.txt
+pep249.egg-info/dependency_links.txt
+pep249.egg-info/top_level.txt
