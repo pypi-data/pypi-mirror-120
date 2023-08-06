@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+environment_settings/__init__.py
+environment_settings/environment_settings.py
+environment_settings.egg-info/PKG-INFO
+environment_settings.egg-info/SOURCES.txt
+environment_settings.egg-info/dependency_links.txt
+environment_settings.egg-info/requires.txt
+environment_settings.egg-info/top_level.txt
+tests/__init__.py
+tests/unittests/__init__.py
+tests/unittests/test_environment_settings.py
+tests/unittests/testconf/__init__.py
+tests/unittests/testconf/unittest.py
