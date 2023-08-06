@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: pointlessutils
+Version: 0.1.2
+Summary: Pointless utilities for python.
+Home-page: https://github.com/vcokltfre/pointlessutils
+License: MIT
+Author: vcokltfre
+Author-email: vcokltfre@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/vcokltfre/pointlessutils
+Description-Content-Type: text/markdown
+
+# Pointless Utils
+
+A collection of utilities that are (probably) pointless.
+
+## Decorators
+
+There are currently 5 pointless decorators available to use:
+
+- `@none` - Causes the function to always return `None`
+- `@true` - Causes the function to always return `True`
+- `@false` - Causes the function to always return `False`
+- `@maybe` - Causes the function to return a random choice of `True` or `False`
+- `@never` - The function will never return and will block indefinitely
+
+These decorators can be used on either normal or async functions. For example:
+
+```py
+@maybe
+def ex_1():
+    pass
+
+@maybe
+async def ex_2():
+    pass
+```
+
