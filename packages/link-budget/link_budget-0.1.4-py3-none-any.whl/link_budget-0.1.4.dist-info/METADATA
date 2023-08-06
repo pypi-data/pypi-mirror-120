@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: link-budget
+Version: 0.1.4
+Summary: Link budget calculator for satellite and radar systems
+Home-page: https://github.com/igorauad/link-budget
+Author: Igor Freire
+Author-email: igor@blockstream.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (>=1.19.4)
+Requires-Dist: itur (>=0.3.2)
+
+## link-budget
+
+A link budget calculator for satellite communications and radar systems.
+
+
+
