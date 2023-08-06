@@ -1,0 +1,3 @@
+[console_scripts]
+verlauf=verlauf.__main__:main
+

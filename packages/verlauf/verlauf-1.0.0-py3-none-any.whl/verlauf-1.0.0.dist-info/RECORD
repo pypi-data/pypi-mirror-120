@@ -1,0 +1,9 @@
+verlauf/__init__.py,sha256=RsZjRjMprNcDm97wqRRSk6rTLgTX8N0GyicZyZ8OsBQ,22
+verlauf/__main__.py,sha256=_ZA1k53xmnaF_LdwVF3UnHV4YDPERX09Y9XK05MFxJw,1379
+verlauf/gradients.py,sha256=RaW6z5kUVhcUQULcAmGjIhU6OBAo1eLo596fiNVTZ3s,1360
+verlauf/hex.py,sha256=GbUgn7rGuaqHGH_V4gbENuotM8j7dcS3KM2pf6XCycU,1887
+verlauf/utils.py,sha256=nSQ-fQKAs9cDBZZHvZA17j9tYwy16hobvzs-B_0cII8,913
+verlauf-1.0.0.dist-info/entry_points.txt,sha256=IVZCxj8igI9Jpfl08OQjPZ31iTvrtofY7gff5lYlbg4,49
+verlauf-1.0.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+verlauf-1.0.0.dist-info/METADATA,sha256=DpGT7esDryiP6nJ9PjbbRjsocqfap4uGUzIHmAq1ByU,1349
+verlauf-1.0.0.dist-info/RECORD,,
