@@ -1,0 +1,12 @@
+README.md
+setup.py
+datasette_notebook/__init__.py
+datasette_notebook/utils.py
+datasette_notebook.egg-info/PKG-INFO
+datasette_notebook.egg-info/SOURCES.txt
+datasette_notebook.egg-info/dependency_links.txt
+datasette_notebook.egg-info/entry_points.txt
+datasette_notebook.egg-info/requires.txt
+datasette_notebook.egg-info/top_level.txt
+datasette_notebook/templates/datasette_notebook/edit.html
+datasette_notebook/templates/datasette_notebook/view.html
