@@ -1,0 +1,11 @@
+classyjson.py,sha256=QgA5IwPlZ8b9AdyTEqk7Gzq6JFcPt6R83JGuOsod8KM,24652
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_classy.py,sha256=KoYYzEehFF349NbuYZ3T4U0euL2gvcZanjqW8zyBHVw,7235
+tests/test_dotdict.py,sha256=f7kUMSURwKLvWE0UAm2aVoHv_mmyNmH0uIkVA5Gf1FE,4393
+tests/test_load.py,sha256=Fulis0fPCc4riY8G6JNJk5smQQ-xuhr_I8uhLZR6Oic,1124
+tests/test_schema.py,sha256=j5LgDkv37h3GK_p1p2Y1PDe3PWCoEck1rUTz2PaDrk0,6804
+classyjson-0.1.2.dist-info/LICENSE,sha256=jTj-xiUPTPU3eumDqOdHHhl_hZoGZiyAQI7E5Aj_Lho,1072
+classyjson-0.1.2.dist-info/METADATA,sha256=s8-PpgHOey0Xc970QcXwJCtyHP8mabn9luiI1APJ2KI,1032
+classyjson-0.1.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+classyjson-0.1.2.dist-info/top_level.txt,sha256=M1-orGDedCG8htcjfVtnltA2mqfImPBWeugl2tnTXqs,17
+classyjson-0.1.2.dist-info/RECORD,,
