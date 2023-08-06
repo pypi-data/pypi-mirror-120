@@ -1,0 +1,8 @@
+global-exclude *.py[cod]
+include CHANGELOG.md
+include README.md
+include requirements.txt
+include run.py
+include run.sh
+include src/karen/data/basic_config.json
+include src/karen/data/basic_config_video.json
