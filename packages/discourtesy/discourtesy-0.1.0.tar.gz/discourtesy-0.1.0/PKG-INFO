@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: discourtesy
+Version: 0.1.0
+Summary: A minimal framework to handle Discord interactions.
+License: MIT
+Author: Robin Mahieu
+Author-email: robin.mahieu@protonmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyNaCl (>=1.4.0,<2.0.0)
+Requires-Dist: loguru (>=0.5.3,<0.6.0)
+Requires-Dist: starlette (>=0.16.0,<0.17.0)
+Requires-Dist: uvicorn (>=0.15.0,<0.16.0)
