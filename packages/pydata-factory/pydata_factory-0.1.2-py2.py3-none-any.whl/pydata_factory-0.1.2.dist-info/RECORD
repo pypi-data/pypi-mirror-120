@@ -1,0 +1,11 @@
+pydata_factory/__init__.py,sha256=xqbF-QTqj8pKb-DPzJAZ2VkejKzf8UXg4DxSD8LH4dI,44
+pydata_factory/class_factory.py,sha256=KxjirndXZ0V5KQSYFQapvgiRJrHWDZPIr3MeuyjFySM,2468
+pydata_factory/class_model.py,sha256=5L61Du3_dj2ZpC-1Cb99ImGDmH5m5mIp2h8nqQroDd8,1129
+pydata_factory/data.py,sha256=OGZqV4MrzOiyWfluhUPBkxIm-VxMjrj8siDT4D6x1p8,3844
+pydata_factory/schema.py,sha256=XGbwccHFshfMJFMoliPhBLCy2hZDwdxuO4D_DrGeugw,1993
+pydata_factory/utils.py,sha256=3l5FWRgPB2jVCRQWsT-31jovxL0BX99dysvZdnqHZVY,327
+pydata_factory-0.1.2.dist-info/LICENSE,sha256=DNQDE-e3N3fZz7ijOSGfd0Zy8ezBo99fr1CHz-1Whao,1072
+pydata_factory-0.1.2.dist-info/METADATA,sha256=Ahxm2xaeuicclaXRIHpeYeWfcEZqbbPtBd3cjAPO6PI,1619
+pydata_factory-0.1.2.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+pydata_factory-0.1.2.dist-info/top_level.txt,sha256=_6-CdtoLlQlLvfdqzw7c_w1T5xGD882iJD6QsABqPoA,15
+pydata_factory-0.1.2.dist-info/RECORD,,
