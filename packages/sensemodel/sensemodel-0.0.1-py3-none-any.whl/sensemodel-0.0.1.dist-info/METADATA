@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: sensemodel
+Version: 0.0.1
+Summary: modelhub sdk
+Home-page: UNKNOWN
+Author: Autolink
+Author-email: yewentao@sensetime.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# SenseModel
+
+This is a python sdk under construction.
+
+If you have any questions, please contact us: yewentao@sensetime.com
+
+漏 2018-2021 [SenseTime](https://www.sensetime.com/)
+
+
