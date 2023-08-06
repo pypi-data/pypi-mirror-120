@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: docker-image-cleaner
+Version: 1.0.0a1
+Summary: Cleanup old docker images to free up disk space and inodes
+Home-page: https://github.com/jupyterhub/docker-image-cleaner
+Author: Project Jupyter Contributors
+Author-email: jupyter@googlegroups.com
+License: BSD
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: docker
+Requires-Dist: kubernetes
+
+# Docker Image Cleaner
+
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/jupyterhub/docker-image-cleaner/Publish?logo=github)](https://github.com/jupyterhub/docker-image-cleaner/actions)
+[![Latest PyPI version](https://img.shields.io/pypi/v/docker-image-cleaner?logo=pypi)](https://pypi.python.org/pypi/docker-image-cleaner)
+
+A Python package (`docker-image-cleaner`) and associated Docker image
+(`quay.io/jupyterhub/docker-image-cleaner`) to clean up old docker images when a
+disk is running low on inodes or space.
+
+The script has initially been developed to help installations of BinderHub clean
+up space on nodes as it otherwise can run out of space and stop being able to
+build now docker images.
+
+
