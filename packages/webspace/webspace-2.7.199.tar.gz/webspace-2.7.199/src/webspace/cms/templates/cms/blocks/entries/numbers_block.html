@@ -1,0 +1,15 @@
+{% load wagtailcore_tags %}
+
+<div class="numbers-container">
+    {% for item in value %}
+        <div class="number">
+            <div class="number-nb">
+                <span class="counter-up">{{ item.value.number }}</span>
+                <span>{{ item.value.unit }}</span>
+            </div>
+            <div class="content">
+                {{ item.value.content.value|richtext }}
+            </div>
+        </div>
+    {% endfor %}
+</div>

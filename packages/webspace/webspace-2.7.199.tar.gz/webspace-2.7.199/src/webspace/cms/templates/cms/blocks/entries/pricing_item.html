@@ -1,0 +1,36 @@
+{% load wagtailcore_tags my %}
+<div class="pricing-item">
+    <div class="pricing-heading">
+        <h3>{{ value.header_title }}</h3>
+        <p>{{ value.header_description }}</p>
+        {% if value.price_promotion %}
+            <div>
+                <p class="pricing-promote">{{ value.price_promotion }}</p>
+            </div>
+        {% endif %}
+        <p class="price-container">
+            <span class="price">{{ value.price_month }}€</span>
+            {% if value.price_unit %}<span>{{ value.price_unit }}</span>{% endif %}
+        </p>
+
+        <div class="btn-container">
+            {% include_block value.button %}
+        </div>
+    </div>
+    <div class="pricing-footer">
+        <h4>{{ value.footer_title }}</h4>
+        <ul>
+            {% for feature in value.features %}
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                         aria-hidden="true">
+                        <path fill-rule="evenodd"
+                              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                              clip-rule="evenodd"></path>
+                    </svg>
+                    <span>{{ feature.title }}</span>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

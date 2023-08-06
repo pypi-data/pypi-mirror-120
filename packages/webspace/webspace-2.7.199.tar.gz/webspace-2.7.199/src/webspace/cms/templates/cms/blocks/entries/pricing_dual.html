@@ -1,0 +1,9 @@
+{% extends 'cms/blocks/_block.html' %}
+{% load wagtailcore_tags my %}
+
+{% block block_content %}
+    <div class="pricing x2">
+        {% include_block value.card_1 %}
+        {% include_block value.card_2 %}
+    </div>
+{% endblock %}
