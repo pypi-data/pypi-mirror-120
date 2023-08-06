@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+mdo_outlier_detector.egg-info/PKG-INFO
+mdo_outlier_detector.egg-info/SOURCES.txt
+mdo_outlier_detector.egg-info/dependency_links.txt
+mdo_outlier_detector.egg-info/requires.txt
+mdo_outlier_detector.egg-info/top_level.txt
