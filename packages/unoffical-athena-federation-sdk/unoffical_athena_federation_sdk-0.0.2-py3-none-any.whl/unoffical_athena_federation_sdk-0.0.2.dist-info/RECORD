@@ -1,0 +1,12 @@
+athena/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+athena/federation/__init__.py,sha256=8vHRd9WpxGTHQLkwZ-h9BtxlCIincLsQ8Qi8cInT3O0,58
+athena/federation/athena_data_source.py,sha256=qv3saMOMSNiwQYrhe3MBydRevIyArqXS0jRUvVfgZPg,2635
+athena/federation/data_catalog.py,sha256=1m2wsGeUMfBetQzjE4igAUDnIyiUbN30pVNwmlcwHq8,2835
+athena/federation/lambda_handler.py,sha256=0dANvb9pw0HUeNkW2G6CQjRe6RR9XumNSgHf6yYKHZA,4784
+athena/federation/models.py,sha256=k7ObZukH1aMnrLnJUSzvZTyM0y4rwQ06DR9CcGoz46M,5510
+athena/federation/sdk.py,sha256=mnT_hTXLCKblRzvx55lGQvM1OTqtduD1zB0ACnAUxKw,1965
+athena/federation/utils.py,sha256=Bhv4zw-6Hkxvwq4Agzofrru4uhgnYXlv0S4FwyXKCEg,1517
+unoffical_athena_federation_sdk-0.0.2.dist-info/METADATA,sha256=XSbf2bOMRr_E0oeIhS7CYBSfGkEBswskaiMvZ-hs80s,5856
+unoffical_athena_federation_sdk-0.0.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+unoffical_athena_federation_sdk-0.0.2.dist-info/top_level.txt,sha256=EN8_eWXgVxKOxXtKLSOsY8-K2CSa7JA1b03zO18n6II,7
+unoffical_athena_federation_sdk-0.0.2.dist-info/RECORD,,
