@@ -1,0 +1,8 @@
+numpy
+tifffile>2020.10.1
+imagecodecs
+lxml
+
+[dev]
+pytest>3.7
+mock
