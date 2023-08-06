@@ -1,0 +1,12 @@
+setup.py
+durc/__init__.py
+durc/controller.py
+durc/db.py
+durc/model.py
+durc/utils.py
+durc.egg-info/PKG-INFO
+durc.egg-info/SOURCES.txt
+durc.egg-info/dependency_links.txt
+durc.egg-info/not-zip-safe
+durc.egg-info/requires.txt
+durc.egg-info/top_level.txt
