@@ -1,0 +1,14 @@
+# For CLI
+typer==0.4.0
+click==8.0.1
+shellingham==1.4.0
+rich==10.10.0
+docker==5.0.2
+# ORM
+ormar==0.10.19
+databases==0.5.2
+aiosqlite==0.17.0
+# Passwords hashing
+cryptography==3.4.8
+# Backport for Python versions before 3.9
+importlib-resources==5.2.2 ; python_version < "3.9"
