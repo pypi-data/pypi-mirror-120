@@ -1,0 +1,7 @@
+LICENSE.txt
+README.md
+setup.py
+Feature_Analysis.egg-info/PKG-INFO
+Feature_Analysis.egg-info/SOURCES.txt
+Feature_Analysis.egg-info/dependency_links.txt
+Feature_Analysis.egg-info/top_level.txt
