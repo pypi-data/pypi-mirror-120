@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: oneNeuron_pypi-tirth1
+Version: 0.0.1
+Summary: implimentation of Perceptron
+Home-page: https://github.com/tirth1/oneNeuron_pypi
+Author: tirth1
+Author-email: tirth@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/tirth1/oneNeuron_pypi/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# oneNeuron_pypi
+
