@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: openmetadata-data-profiler
+Version: 0.2.0
+Summary: Data Profiler Library for OpenMetadata
+Home-page: https://open-metadata.org/
+Author: OpenMetadata Committers
+License: Apache License 2.0
+Project-URL: Documentation, https://docs.open-metadata.org/
+Project-URL: Source, https://github.com/open-metadata/data-profiler
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: altair (<5,>=4.0.0)
+Requires-Dist: Click (>=7.1.2)
+Requires-Dist: importlib-metadata (>=1.7.0)
+Requires-Dist: ipywidgets (>=7.5.1)
+Requires-Dist: jinja2 (>=2.10)
+Requires-Dist: jsonpatch (>=1.22)
+Requires-Dist: jsonschema (>=2.5.1)
+Requires-Dist: mistune (>=0.8.4)
+Requires-Dist: numpy (>=1.14.1)
+Requires-Dist: pandas (>=0.23.0)
+Requires-Dist: pyparsing (<3,>=2.4)
+Requires-Dist: python-dateutil (>=2.8.1)
+Requires-Dist: pytz (>=2015.6)
+Requires-Dist: requests (>=2.20)
+Requires-Dist: ruamel.yaml (>=0.16)
+Requires-Dist: scipy (>=0.19.0)
+Requires-Dist: termcolor (>=1.1.0)
+Requires-Dist: tqdm (>=4.59.0)
+Requires-Dist: tzlocal (>=1.2)
+Provides-Extra: airflow
+Requires-Dist: apache-airflow[s3] (>=1.9.0) ; extra == 'airflow'
+Requires-Dist: boto3 (>=1.7.3) ; extra == 'airflow'
+Provides-Extra: aws_secrets
+Requires-Dist: boto3 (>=1.8.7) ; extra == 'aws_secrets'
+Provides-Extra: azure_secrets
+Requires-Dist: azure-identity (>=1.0.0) ; extra == 'azure_secrets'
+Requires-Dist: azure-keyvault-secrets (>=4.0.0) ; extra == 'azure_secrets'
+Provides-Extra: gcp
+Requires-Dist: google-cloud (>=0.34.0) ; extra == 'gcp'
+Requires-Dist: google-cloud-storage (>=1.28.0) ; extra == 'gcp'
+Requires-Dist: google-cloud-secret-manager (>=1.0.0) ; extra == 'gcp'
+Requires-Dist: pybigquery (==0.4.15) ; extra == 'gcp'
+Provides-Extra: redshift
+Requires-Dist: psycopg2 (>=2.8) ; extra == 'redshift'
+Provides-Extra: s3
+Requires-Dist: boto3 (>=1.14) ; extra == 's3'
+Provides-Extra: snowflake
+Requires-Dist: snowflake-sqlalchemy (>=1.2) ; extra == 'snowflake'
+Provides-Extra: spark
+Requires-Dist: pyspark (>=2.3.2) ; extra == 'spark'
+Provides-Extra: sqlalchemy
+Requires-Dist: sqlalchemy (>=1.3.16) ; extra == 'sqlalchemy'
+
+# OpenMetadata Data Profiler
+
+This code is taken from Great Expectations. We are going to build a library
+based on great expectations for only data profile purpose. 
+
+
+Changelog
+=========
+
+
+
