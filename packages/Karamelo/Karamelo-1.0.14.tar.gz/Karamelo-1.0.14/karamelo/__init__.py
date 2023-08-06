@@ -1,0 +1,1 @@
+from .karamelo import dialog
