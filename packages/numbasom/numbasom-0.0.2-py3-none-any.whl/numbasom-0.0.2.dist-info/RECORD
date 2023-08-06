@@ -1,0 +1,10 @@
+numbasom/__init__.py,sha256=K3UF6Fd1JHK0Cq80fns9aGQ2C7lT_SzLFb4ZpkSGAms,61
+numbasom/_nbdev.py,sha256=KjCg7RTnqfwEjnbcSooQJS6GR-wf6bcEeWtNOwo7zzs,1118
+numbasom/core.py,sha256=4XFr2XVgvrkF6IJRbbpBmyZDJi0NEBRiGG3ab9tRwmA,13042
+numbasom/viz.py,sha256=YsWIrh6O6Po97tCcLd3LHeaD7dtadarrkh260HdfPAE,409
+numbasom-0.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+numbasom-0.0.2.dist-info/METADATA,sha256=wzKzH8Ni-50STK3hfo7TtsSfLDzl6BGUJtqH2Mdguog,3708
+numbasom-0.0.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+numbasom-0.0.2.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+numbasom-0.0.2.dist-info/top_level.txt,sha256=C1Cx18M5jU5iovMwYg_7eLT8aTAYp5_V1L8Ix_OPoRU,9
+numbasom-0.0.2.dist-info/RECORD,,
