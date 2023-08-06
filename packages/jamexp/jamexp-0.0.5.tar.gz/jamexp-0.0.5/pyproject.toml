@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "jamexp"
+version = "0.0.5"
+description = "Jam Experiment helper"
+authors = ["Qinsheng <qsh.zh27@gmail.com>"]
+license = "MIT"
+packages = [
+    {include = "jexp"},
+]
+
+[tool.poetry.dependencies]
+python = ">=3.7,<3.10"
+pre-commit = "^2.13.0"
+black = "^21.5b1"
+isort = "^5.8.0"
+typer = "^0.3.2"
+numpy = "^1.20.3"
+Pillow = "^8.2.0"
+loguru = "^0.5.3"
+GitPython = "^3.1.17"
+hydra-core = "^1.0.6"
+scipy = "^1.6.3"
+pylint = "^2.8.3"
+wandb = "^0.10.30"
+pyfzf = "^0.2.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+jstar="jexp.cli.star_file:main"
+jwdc="jexp.cli.jwb_clean:main"
+jhydc="jexp.cli.jhyd_clean:main"
+jpin="jexp.cli.jpin:main"
+jln="jexp.cli.jlink:link"
+junln="jexp.cli.jlink:unlink"
