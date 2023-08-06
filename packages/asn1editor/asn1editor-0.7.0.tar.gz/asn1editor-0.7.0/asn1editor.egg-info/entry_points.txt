@@ -1,0 +1,3 @@
+[console_scripts]
+asn1editor = asn1editor.__init__:_wx_python_editor
+
