@@ -1,0 +1,209 @@
+Metadata-Version: 2.1
+Name: websearch-python
+Version: 1.0.2
+Summary: Python module allowing you to do various searches for links on the Web.
+Home-page: https://github.com/iTeam-S/WebSearch
+Author: iTeam-$
+Author-email: contact@iteam-s.xyz
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/iTeam-S/WebSearch/issues
+Description: # WebSearch
+        
+        > Python module allowing you to do various searches for links on the Web.
+        
+        
+        [![Python application](https://github.com/iTeam-S/WebSearch/actions/workflows/python-test.yml/badge.svg)](https://github.com/iTeam-S/WebSearch/actions/workflows/python-test.yml)
+        [![Publish](https://github.com/iTeam-S/WebSearch/actions/workflows/pip-upload.yml/badge.svg)](https://github.com/iTeam-S/WebSearch/actions/workflows/pip-upload.yml)
+        
+        [![PyPI - Version](https://img.shields.io/pypi/v/websearch-python?style=for-the-badge)](https://pypi.org/project/websearch-python/)
+        [![PyPI - Downloads](https://img.shields.io/pypi/dm/websearch-python?label=DOWNLOADS&style=for-the-badge)](https://pypi.org/project/websearch-python/)
+        
+        
+        
+        ## Installation
+        
+        ```sh
+        pip3 install websearch-python
+        ```
+        
+        ## Use
+        
+        ### Quick Start
+        
+        ```python
+        from websearch import WebSearch as web
+        for page in web('iTeam-$').pages[:2]:
+           print(result)
+        ```
+        
+        ```
+        [RESULTS]
+        
+         https://iteam-s.mg/
+         https://github.com/iTeam-S
+        ```
+        __________________________
+        
+        ### Initialization
+        
+        ```python
+        from websearch import WebSearch
+        web = WebSearch('Gaetan Jonathan BAKARY')
+        ```
+        You can pass a `list` for mutliple keyword.
+        
+        ```python
+        web = WebSearch(['Gaetan Jonathan BAKARY', 'iTeam-S'])
+        ```
+        You can also specify a `website` as a reference.
+        
+        ```python
+        web = WebSearch('Gaetan Jonathan', site='iteam-s.mg')
+        ```
+        
+        
+        ### Webpages results
+        
+        ```python
+        from websearch import WebSearch
+        web = WebSearch('Gaetan Jonathan BAKARY')
+        webpages = web.pages
+        for wp in webpages[:5]:
+           print(wp)
+        ```
+        
+        ```
+        [RESULTS]
+        
+           https://mg.linkedin.com/in/gaetanj
+           https://portfolio.iteam-s.mg/?u=gaetan
+           https://github.com/gaetan1903
+           https://medium.com/@gaetan1903
+           https://gitlab.com/gaetan1903
+        ```
+        
+        
+        ### Images results
+        
+        ```python
+        from websearch import WebSearch
+        web = WebSearch('Gaetan Jonathan BAKARY')
+        webimages = web.images
+        for wp in webimages[:5]:
+           print(wp)
+        ```
+        
+        ```
+        [RESULTS]
+        
+           https://tse3.mm.bing.net/th?id=OIP.-K25y8TqkOi9UG_40Ti8bgAAAA
+           https://tse1.mm.bing.net/th?id=OIP.yJPVcDx6znFSOewLdQBbHgHaJA
+           https://tse3.mm.bing.net/th?id=OIP.7rO2T_nDAS0bXm4tQ4LKQAHaJA
+           https://tse2.mm.bing.net/th?id=OIP.IUIEkGQVzYRKaDA7WeeV7QHaEF
+           https://tse3.explicit.bing.net/th?id=OIP.OmvVnMIVu2ZdNZHZzJK_hgAAAA
+        ```
+        
+        
+        ### PDF results
+        
+        ```python
+        from websearch import WebSearch
+        web = WebSearch('Math 220')
+        pdfs = web.pdf
+        for pdf in pdfs[:5]:
+           print(pdf)
+        ```
+        
+        ```
+        [RESULTS]
+        
+           https://www.coconino.edu/resources/files/pdfs/registration/curriculum/course-outlines/m/mat/mat_220.pdf
+           https://www.jmu.edu/mathstat/Files/ALEKSmatrix.pdf
+           https://www.jjc.edu/sites/default/files/Academics/Math/M220%20Master%20Syllabus%20SP18.pdf
+           https://www.sonoma.edu/sites/www/files/2018-19cat-11math.pdf
+           https://www.svsd.net/cms/lib5/PA01001234/Centricity/Domain/1009/3.3-3.3B-Practice-KEY.pdf
+        ```
+        
+        To prevent the search for attachments with format verification, set `verif=False`, which is `True` by default.
+        
+        Format verification is presented [here](https://github.com/iTeam-S/WebSearch/pull/4)
+        
+        ```python
+        from websearch import WebSearch
+        web = WebSearch('Math 220', verif=False)
+        ```
+        
+        
+        ### DOCX results
+        ```python
+        from websearch import WebSearch:
+        web = WebSearch('python')
+        words = web.docx
+        for word in words[:3]:
+           print(word)
+        ```
+        
+        ```
+        [RESULTS]
+        
+           https://www.ocr.org.uk/Images/572953-j277-programming-techniques-python.docx
+           https://www.niu.edu/brown/_pdf/physics374_spring2021/l1-19-21.docx
+           https://ent2d.ac-bordeaux.fr/disciplines/mathematiques/wp-content/uploads/sites/3/2017/09/de-Scratch-%C3%A0-Python.docx
+        ```
+        
+        
+        ### XLSX results
+        ```python
+        from websearch import WebSearch:
+        web = WebSearch('datalist')
+        excels = web.xlsx
+        for excel in excels[:3]:
+           print(excel)
+        ```
+        
+        ```
+        [RESULTS]
+        
+           https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/979255/Detailed_Single_Data_List_-_2021-2022.xlsx
+           https://www.jaist.ac.jp/top/data/list-achievement-research-e.xlsx
+           https://img1.wsimg.com/blobby/go/bed8f8d7-d6c2-488d-9aa3-5910e18aa8d2/downloads/Datalist.xlsx
+        ```
+        
+        
+        ### PPTX results
+        ```python
+        from websearch import WebSearch:
+        web = WebSearch('Leadership')
+        powerpoints = web.pptx
+        for powerpoint in powerpoints[:3]:
+           print(powerpoint)
+        ```
+        
+        ```
+        [RESULTS]
+        
+           https://www.plainviewisd.org/cms/lib6/TX01918200/Centricity/Domain/853/Leadership%20Behav.%20Styles.pptx
+           https://www.yorksandhumberdeanery.nhs.uk/sites/default/files/leadership_activity_and_msf.pptx
+           https://www.itfglobal.org/sites/default/files/node/resources/files/Stage%203.1%20Powerpoint.pptx
+        ```
+        
+        
+        ## LICENSE
+        
+        MIT License
+        
+        Copyright (c) 2021 [iTeam-$](https://iteam-s.mg)
+        
+        
+        ___________________________________________________________________
+           
+         ## Contributors
+        ![contributors GitHub](https://contrib.rocks/image?repo=iTeam-S/WebSearch)
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
