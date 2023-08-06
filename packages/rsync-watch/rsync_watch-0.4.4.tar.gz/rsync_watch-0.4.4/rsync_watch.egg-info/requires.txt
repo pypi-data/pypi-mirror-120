@@ -1,0 +1,3 @@
+jflib>=0.4.2
+pycrypto>=2.0
+six
