@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+src/lab_orchestrator_ws_proxy/__init__.py
+src/lab_orchestrator_ws_proxy/__main__.py
+src/lab_orchestrator_ws_proxy.egg-info/PKG-INFO
+src/lab_orchestrator_ws_proxy.egg-info/SOURCES.txt
+src/lab_orchestrator_ws_proxy.egg-info/dependency_links.txt
+src/lab_orchestrator_ws_proxy.egg-info/requires.txt
+src/lab_orchestrator_ws_proxy.egg-info/top_level.txt
+src/lab_orchestrator_ws_proxy.egg-info/zip-safe

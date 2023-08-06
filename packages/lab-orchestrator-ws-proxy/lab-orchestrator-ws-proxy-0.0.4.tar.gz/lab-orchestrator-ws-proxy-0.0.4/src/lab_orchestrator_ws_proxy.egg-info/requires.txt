@@ -1,0 +1,2 @@
+lab-orchestrator-ws-proxy-lib==0.0.4
+setuptools==51.0.0
