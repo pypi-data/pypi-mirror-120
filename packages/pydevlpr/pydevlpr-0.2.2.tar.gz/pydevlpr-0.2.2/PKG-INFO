@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: pydevlpr
+Version: 0.2.2
+Summary: Frontend for connecting to devlprd and processing data from a FANTM DEVLPR
+Home-page: https://github.com/FANTM/pydevlpr
+License: MIT
+Author: Ezra Boley
+Author-email: hello@getfantm.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: devlprd (>=0.2.1,<0.3.0)
+Requires-Dist: pydevlpr-protocol (>=0.1.0,<0.2.0)
+Project-URL: Documentation, https://docs.getfantm.com
+Project-URL: Repository, https://github.com/FANTM/pydevlpr
+Description-Content-Type: text/markdown
+
+# pydevlpr
+
+## Overview
+
+Enables simple muscle to application connections. 
+Pydevlpr is the front-end for `devlprd <https://github.com/FANTM/devlprd>`_, and the third piece of the muscle-to-app pipeline.
+
+## Getting Started
+
+After installing pydevlpr, integrating it into a project is straightforward.
+First launch the `devlprd daemon <https://github.com/FANTM/devlprd>`_, and then use the ``add_callback(...)`` function to attach a handler to the incoming data.
+The callback you attach will get the incoming payload as its only parameter, and then the data is yours to handle.
+
+## Supported Topics
+
+This list will expand as the package matures, but when adding/removing callbacks use a data topic from this list as it maps directly to the daemon.
+
+* DataTopic.RAW_DATA_TOPIC - Data straight off the DEVLPR Arduino Shield. Range: 0-1023.
+* DataTopic.FLEX_TOPIC - 1 when there has been a flex, 0 when muscle is relaxed.
+
+## API
+
+*def stop() -> None:*
+
+> Stops listening to the server.
+
+*def add_callback(topic: str, pin: int, fn: Callable[[str], None], ws: websocket.server.WebSocketServerProtocol = None) -> None:*
+
+> Attaches a function to be called whenever a message is received at a particular topic and relating to a particular DEVLPR (as specified by the *pin* parameter).
+
+> - topic: str - Specifies the data stream, differentiating filtered vs. raw data.
+- pin: int - Connects the callback to a physical board. Each DEVLPR is connection to the Arduino via an analog pin, and the message from the daemon relates which pin this is.
+- fn: Callable[[str], None] - Function to be called when a message is received that is both the specified topic and pin. It expects to receive the payload of the incoming message.
+- ws: websocket.server.WebSocketServerProtocol - Websocket connection, by default set to None and uses pydevlprs global connection.
+Pass a connection in if it is going to be used in another context, or for testing.
+
+*def remove_callback(topic: str, pin: int, fn: Callable[[str], None]) -> None:*
+
+> Stops a function from being called whenever a new qualified packet is received.
+
+> - topic: str - The data stream the existing callback is attached to.
+- pin: int - The DEVLPR the callback is attached to.
+- fn: Callable[[str], None] - Function to remove from the callback list.
+
+
