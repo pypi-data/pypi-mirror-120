@@ -1,0 +1,6 @@
+setup.py
+pinkyway.egg-info/PKG-INFO
+pinkyway.egg-info/SOURCES.txt
+pinkyway.egg-info/dependency_links.txt
+pinkyway.egg-info/requires.txt
+pinkyway.egg-info/top_level.txt
