@@ -1,0 +1,10 @@
+pyCensus/__init__.py,sha256=BTR-IHmlktKfZCfCnKxY6_D5IGKDFphpm2FS2v9nVwU,43
+pyCensus/censusdata.py,sha256=pY9R9MCghiJ3QoXRZZzeaaIrON9-oOJVB3O5gduovl4,3867
+pyCensus/endpoints.py,sha256=-Pg0IDMayHe9VAykGIKlAyvH4_xfcLF4BMeoROdpxT0,2500
+pyCensus/search.py,sha256=xgfncXmvFt7SK-lBHqoY565BXZ5F0qdVtVkHZdVbIWs,4017
+pyCensus-0.0.1.dist-info/LICENSE.txt,sha256=Qv2ilebwoUtMJnRsZwRy729xS5JZQzLauJ0tQzkAkTA,1088
+pyCensus-0.0.1.dist-info/METADATA,sha256=TGkGaoDMFpPshxzHbIuhGCmY9pbQyZO8tKFxu-tK4gg,6651
+pyCensus-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pyCensus-0.0.1.dist-info/entry_points.txt,sha256=2wAUP3bm-6d3dAwE41gP485KH5WEyJYjD3QQop7awYM,202
+pyCensus-0.0.1.dist-info/top_level.txt,sha256=mkmfgVgJR6nmlc4r4eCPZ9iSHcR1ToUcvIhnZt8yuyw,9
+pyCensus-0.0.1.dist-info/RECORD,,
