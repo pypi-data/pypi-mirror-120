@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: olio
+Version: 0.0.1
+Summary: Utilities and models for Rossiter-McLaughlin analyses.
+Home-page: https://github.com/vedad/olio
+Author: Vedad Kunovac
+Author-email: vxh710@bham.ac.uk
+License: UNKNOWN
+Description: [![tests](https://github.com/vedad/olio/actions/workflows/tests.yml/badge.svg)](https://github.com/vedad/ell/actions/workflows/tests.yml)
+        
+        # olio
+        Surface velocity maps of limb darkened stars, commonly used modelling the
+        Rossiter-McLaughlin effect of transiting exoplanets with _Doppler shadow_
+        techniques.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
