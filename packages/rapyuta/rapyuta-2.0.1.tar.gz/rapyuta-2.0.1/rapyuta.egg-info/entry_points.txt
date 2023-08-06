@@ -1,0 +1,3 @@
+[console_scripts]
+rapyutest = rapyuta:iTest
+
