@@ -1,0 +1,82 @@
+from setux.core.package import CommonPackager
+from setux.logger import debug, info, error
+
+
+# pylint: disable=no-member
+
+
+class Distro(CommonPackager):
+    manager = 'yay'
+
+    pkgmap = dict(
+        yay      = 'yay-bin',
+        kicad    = 'kicad-git',
+        freecad  = 'freecad-git',
+        openscad = 'openscad-git',
+    )
+
+    @staticmethod
+    def is_supported(distro):
+        return distro.Package=='pacman'
+
+    def aur(self, pkg):
+        baz = '/data/aur'
+        dst = f'{baz}/{pkg}'
+        usr = grp = 'setux_yay' # must be sudoer nopasswd
+        self.distro.user_(usr).deploy()
+        self.target.script(f'''
+            pacman -Sy
+            pacman -R {pkg}
+            pacman -S --needed --noconfirm git base-devel
+            rm -rf {dst}
+            mkdir -p {baz}
+            chown -R {usr}:{grp} /data
+            cd {baz}
+            sudo -u {usr} git clone https://aur.archlinux.org/{pkg}.git
+            cd {dst}
+            sudo -u {usr} makepkg -si --noconfirm
+        ''', remove=False)
+
+    def _run(self, cmd):
+        user = 'setux_yay'
+        if not hasattr(self, '_user_done_'):
+            self.distro.user_.quiet = True
+            self.distro.user_(user).deploy() # sudoer nopasswd
+            self._user_done_ = True
+        ret, out, err = self.run(f'sudo -u {user} yay {cmd}')
+        return ret, out, err
+
+    def do_init(self):
+        ret, out, err = self._run('--version')
+        if ret!=0:
+            self.aur(self.pkgmap['yay'])
+
+    def do_install(self, pkg, ver=None):
+        ret, out, err = self._run(f'-S --needed --noconfirm {pkg}')
+        if err:
+            msg = '\n'.join(err)
+            debug(msg) if ret==0 else error(msg)
+
+    def do_remove(self, pkg):
+        self._run(f'-Rns --noconfirm {pkg}')
+
+    def do_cleanup(self):
+        self._run(f'-Yc')
+
+    def do_update(self):
+        self._run('-Syu --noconfirm')
+
+    def do_installed(self, pattern=None):
+        raise NotImplemented
+
+    def do_installable(self, pattern):
+        ret, out, err = self._run(f'-Ss {pattern}')
+        for line in out[::2]:
+            name, ver, *_ = line.split()
+            yield name.strip(), ver.strip()
+
+
+class Manjaro(Distro):
+    def do_init(self):
+        self.run(f'pacman -Sq --noconfirm yay')
+
