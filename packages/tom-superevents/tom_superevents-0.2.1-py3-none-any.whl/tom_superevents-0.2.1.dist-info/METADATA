@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: tom-superevents
+Version: 0.2.1
+Summary: Reusable TOMToolkit app to support gravitational wave superevent EM follow-up observations.
+Home-page: https://github.com/TOMToolkit/tom_superevents
+Author: TOM Toolkit Project
+Author-email: dcollom@lco.global, llindstrom@lco.global
+License: GPL-3.0 License
+Keywords: tomtoolkit,astronomy,astrophysics,cosmology,science
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.1
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Scientific/Engineering :: Physics
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: gracedb-sdk (~=0.1)
+Requires-Dist: python-dateutil (>=2.8)
+Requires-Dist: tomtoolkit (>=2.5)
+Requires-Dist: voevent-parse (~=1.0)
+Provides-Extra: test
+Requires-Dist: factory-boy (~=3.1.0) ; extra == 'test'
+Requires-Dist: pytest (>=3.0.3) ; extra == 'test'
+
+[![pypi](https://img.shields.io/pypi/v/tom-superevents.svg)](https://pypi.python.org/pypi/tom-superevents)
+[![run-tests](https://github.com/TOMToolkit/tom_superevents/actions/workflows/run-tests.yml/badge.svg)](https://github.com/TOMToolkit/tom_superevents/actions/workflows/run-tests.yml)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/cbcf7ce565d8450f86fff863ef061ff9)](https://www.codacy.com/gh/TOMToolkit/tom_superevents/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=TOMToolkit/tom_superevents&amp;utm_campaign=Badge_Grade)
+[![Coverage Status](https://coveralls.io/repos/github/TOMToolkit/tom_superevents/badge.svg?branch=main)](https://coveralls.io/github/TOMToolkit/tom_superevents?branch=main)
+
+# GW Superevent (or GRB, Neutrino) EM follow-up
+
+This reusable TOM Toolkit app provides support for gravitational wave (GW)
+superevent electromagnetic (EM) follow up observations.  
+
+## Installation
+
+1. Install the package into your TOM environment:
+    ```bash
+    pip install tom_superevents
+   ```
+
+2. In your project `settings.py`, add `tom_superevents` to your `INSTALLED_APPS` setting:
+
+    ```python
+    INSTALLED_APPS = [
+        ...
+        'tom_superevents',
+    ]
+    ```
+
+3. Include the tom_superevent URLconf in your project `urls.py`:
+   ```python
+   urlpatterns = [
+        ...
+        path('superevents/', include('tom_superevents.urls')),
+   ]
+   ```
+
+4. Copy ``tom_superevents/templates/tom_common/base.html`` into your project root's ``templates/tom_common/base.html``.
+
+5. Run ``python manage.py migrate`` to create the tom_superevent models.
+
+
+## Running the tests
+
+In order to run the tests, run the following in your virtualenv:
+
+`python tom_superevent/tests/run_tests.py`
+
+
+

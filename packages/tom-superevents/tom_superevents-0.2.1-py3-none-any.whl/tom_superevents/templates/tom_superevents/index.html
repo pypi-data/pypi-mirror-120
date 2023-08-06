@@ -1,0 +1,33 @@
+{% extends 'tom_common/index.html' %}
+<!-- tom_superevent/index.html -->
+{% block content %}
+<!-- block content -->
+<h1>Superevent Index</h1>
+{% if object_list %}
+  <table class="table">
+      <thead>
+      <tr>
+          <th scope="col">#</th>
+          <th scope="col">Superevent ID</th>
+          <th scope="col">Superevent Type</th>
+      </tr>
+      </thead>
+      <tbody>
+      {% for superevent in object_list %}
+      <tr>
+          <td scope="row">
+              <a href="{% url 'superevents:detail'  superevent.id %}">{{ superevent.id }}</a>
+          </td>
+          <td>
+              <a href="{{ superevent.superevent_url }}">{{ superevent.superevent_id }}</a>
+          </td>
+          <td>{{ superevent.superevent_type }}</td>
+      </tr>
+      {% endfor %}
+      </tbody>
+  </table>
+{% else %}
+    <p>No Superevents have been created. Create Superevents via the admin interface or REST API.</p>
+{% endif %}
+
+{% endblock content %}
