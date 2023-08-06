@@ -1,0 +1,11 @@
+stopover_server/__init__.py,sha256=p--HwJFXjEwVtMQm4qqL6__ozba81i4hyaxhzzX0r3o,93
+stopover_server/__main__.py,sha256=OZw2j_joh6hWGBWpMjipFopZHBvn4cDxYdUg-v1AJDc,2889
+stopover_server/broker.py,sha256=6PjgEEhKHIHJSGz7_S3HQPZvKk32gzAnLt18lfzGIa4,17606
+stopover_server/partition.py,sha256=8OHJ31komIVzpJaGAsV4gdSgcOY_v0vwB0PpFSNzG84,6472
+stopover_server/utils.py,sha256=ERKVD3Kire3PPuExb5Abexlj9ipllgw_t9KAtZU2Wg8,1301
+stopover_server/version.py,sha256=iITahkhJLLVJIo0UtRSm7_ayqW5sWred8clEUewNGU0,71
+stopover_server-2.219.1.dist-info/METADATA,sha256=O2OT5qsBaM8gylB7y67epLzrpk-ATCr6oQHn2vpM1EM,1012
+stopover_server-2.219.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+stopover_server-2.219.1.dist-info/entry_points.txt,sha256=pnKuSW8nrFgZ13KNp_pJVL3rb8XI3FzfofEGKMiqRv8,60
+stopover_server-2.219.1.dist-info/top_level.txt,sha256=XdKII4FS7ARkg5qa64sIAzkSVa8BRU-hjW5r0BY13T4,16
+stopover_server-2.219.1.dist-info/RECORD,,
