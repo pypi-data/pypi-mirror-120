@@ -1,0 +1,8 @@
+metovhooks/__init__.py,sha256=BJpSDMCiY65bVjuojGl5K9mUcxTZkab9cWeGJbH_CuA,228
+metovhooks/protect_branch.py,sha256=UkSHak89Ynq4b_34cKHBUWwq2h28V2rCoY4XRTWAspc,778
+metovhooks/require_version_bump.py,sha256=suRt06yMIVH0oUNcE1HIkrGZCEv0BXPiPCgbmpxaPbw,2227
+metovhooks-0.1.4.dist-info/METADATA,sha256=fQyeY132H5u9kRoDhBuiZcNxZjwlb2aswAj6bYTpk80,1787
+metovhooks-0.1.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+metovhooks-0.1.4.dist-info/entry_points.txt,sha256=gDpEfNQW7pErGGYgIL0g_too4DR_cMfpSARDwNXTONo,127
+metovhooks-0.1.4.dist-info/top_level.txt,sha256=6GQRgjb6PU3d2ZjSMx65YlWbF-3o3pdQWPbSYw-p8oM,11
+metovhooks-0.1.4.dist-info/RECORD,,
