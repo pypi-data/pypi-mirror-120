@@ -1,0 +1,3 @@
+[console_scripts]
+jointbox = jointbox_cli.cli:entrypoint
+
