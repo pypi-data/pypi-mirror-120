@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "urn"
+version = "0.1.3"
+description = "Urn is a micro RPC framework"
+authors = ["Imtiaz Mangerah <Imtiaz_Mangerah@a2d24.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+pytest-cov = "^2.12.1"
+
+[[tool.poetry.source]]
+name = "a2d24"
+url = "https://pypi.a2d24.dev/"
+secondary = true
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.coverage.run]
+source = ["urn"]

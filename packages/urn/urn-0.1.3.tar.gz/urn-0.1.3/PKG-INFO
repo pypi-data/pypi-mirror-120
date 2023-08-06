@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: urn
+Version: 0.1.3
+Summary: Urn is a micro RPC framework
+License: MIT
+Author: Imtiaz Mangerah
+Author-email: Imtiaz_Mangerah@a2d24.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
