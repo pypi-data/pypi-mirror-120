@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: tns-energo-api
+Version: 0.0.2
+Summary: TNS Energo API bindings for python
+Home-page: https://github.com/alryaz/tns-energo-api
+Author: Alexander Ryazanov
+Author-email: alryaz@xavux.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/alryaz/tns-energo-api/issues
+Description: TNS Energo API bindings for Python
+        ==================================
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
