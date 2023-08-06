@@ -1,0 +1,14 @@
+LICENSE.md
+README.md
+setup.py
+CordraPy_RDF.egg-info/PKG-INFO
+CordraPy_RDF.egg-info/SOURCES.txt
+CordraPy_RDF.egg-info/dependency_links.txt
+CordraPy_RDF.egg-info/requires.txt
+CordraPy_RDF.egg-info/top_level.txt
+cordra/__init__.py
+cordra/cordraClient.py
+cordra/cordraMethods.py
+cordra/cordraObject.py
+cordra/dataset.py
+cordra/utils.py
