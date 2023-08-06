@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: oneneuron-pypi-keithferns98
+Version: 0.0.1
+Summary: Perceptron package
+Home-page: https://github.com/keithferns98/oneneuron_pypi
+Author: User_Name
+Author-email: keithfernandes311@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/keithferns98/oneneuron_pypi/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# oneneuron_pypi
+oneneuron_pypi
+
+# Reference -
+[official python docs]('https://packaging.python.org/tutorials/packaging-projects/)
+
+[Github actions docs]('https://docs.github.com/en/actions/guides/building-and-testing-python#publishing-to-package-registries)
+
