@@ -1,0 +1,10 @@
+# SPDX-FileCopyrightText: 2021 Mulliken, LLC <joshua@mulliken.net>
+#
+# SPDX-License-Identifier: GPL-3.0-only
+
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
