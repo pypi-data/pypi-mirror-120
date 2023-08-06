@@ -1,0 +1,17 @@
+halib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+halib/csvfile.py,sha256=Eoeni0NIbNG3mB5ESWAvNwhJxOjmCaPd1qqYRHImbvk,1567
+halib/filesys.py,sha256=r1SftGKM7nyw6QbY5UmcueZLkXEIleSzhui7dQsosPw,2907
+halib/gdrive.py,sha256=Eg3T6jbSgMWAk7PieSKr5YO3g6SL9a4LW2MfDQStYC8,6243
+halib/gdrive_mkdir.py,sha256=r8uT8A_luvqjXVDQaqZ7tC2NNeOuQRHrGg8rEoCzb5I,1440
+halib/gdrive_test.py,sha256=CBklfRwBc0LrPsOJ-MxLxqqpCvB3Ym1Xz8f0WTlz914,1371
+halib/jsonfile.py,sha256=9XfdFS1wcTdBRmpAGzVu2dVCcJp8RCpsSY16f6KUNts,480
+halib/listop.py,sha256=8nV0bUjryGmBQLTXoUEEa_5FFpCdpoEfjm5T9QdfR_o,91
+halib/plot.py,sha256=3RmH9RDQN4DNrMVY-uDoNCId7eDfosLPD2Jz1zyqPHQ,439
+halib/projectmake.py,sha256=JIKBj18ipkBgLYYJW9oKkZzprRuHINGEV85ExHUWFWg,4032
+halib/textfile.py,sha256=EhVFrit-nRBJx18e6rtIqcE1cSbgsLnMXe_kdhi1EPI,399
+halib/videofile.py,sha256=_XqrNZOQhj1dBdWnQvsJCyDDViRI4344autI7uJnb6E,4721
+halib-0.1.4.dist-info/LICENSE.txt,sha256=qZssdna4aETiR8znYsShUjidu-U4jUT9Q-EWNlZ9yBQ,1100
+halib-0.1.4.dist-info/METADATA,sha256=uo9vpCnJU159x-Jut9g0Dy6j4aHBohHUDOXfnxZbcOE,692
+halib-0.1.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+halib-0.1.4.dist-info/top_level.txt,sha256=7AD6PLaQTreE0Fn44mdZsoHBe_Zdd7GUmjsWPyQ7I-k,6
+halib-0.1.4.dist-info/RECORD,,
