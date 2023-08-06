@@ -1,0 +1,10 @@
+aws_cdk/aws_sso/__init__.py,sha256=WIq6jxOrXANXTzhqhdtweBfeibIE51ILGFKBcTl4dyc,39350
+aws_cdk/aws_sso/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_sso/_jsii/__init__.py,sha256=yvPd6Nsj_W9munLisM1EF2tAJqS0hw53EtZzxijhDIQ,341
+aws_cdk/aws_sso/_jsii/aws-sso@1.123.0.jsii.tgz,sha256=mYbasxjKumt6vEcyNW8TFkhusscORKKvoZ5JV8ie41U,26346
+aws_cdk.aws_sso-1.123.0.dist-info/LICENSE,sha256=PPdRlpoLCV1CRrCV1eKpp3m0lNjchFAP4a9zfc8tRLo,11391
+aws_cdk.aws_sso-1.123.0.dist-info/METADATA,sha256=bgZeLmKZIV13wLeJxO7rSJah-7rql_buyfAGKdISVUI,1678
+aws_cdk.aws_sso-1.123.0.dist-info/NOTICE,sha256=xo56krus2e5ShfXqz_B7vuvGcMn_D0F7TjjpfTz8YMw,113
+aws_cdk.aws_sso-1.123.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+aws_cdk.aws_sso-1.123.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_sso-1.123.0.dist-info/RECORD,,
