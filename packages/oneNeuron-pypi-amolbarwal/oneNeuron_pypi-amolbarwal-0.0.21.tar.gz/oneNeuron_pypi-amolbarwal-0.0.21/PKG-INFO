@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: oneNeuron_pypi-amolbarwal
+Version: 0.0.21
+Summary: it is an implementation of single layer perceptron.
+Home-page: https://github.com/amolbarwal/oneNeuron_pypi
+Author: amolbarwal
+Author-email: abarwalcu@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/{USER_NAME}/{PROJECT_NAME}/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# oneNeuron_pypi
+
+
+# Reference-
+[Official python documentation](https://packaging.python.org/tutorials/packaging-projects/)
+
+[github docs for github actions](https://docs.github.com/en/actions/guides/building-and-testing-python#publishing-to-package-registries)
+
