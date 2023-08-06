@@ -1,0 +1,10 @@
+simple_flask_cms/__init__.py,sha256=G__f06_xcmL43SVb_A0IH2dBXVH3d3OnIjmjCwslOF4,88
+simple_flask_cms/cms.py,sha256=h5UUqZXUYepwkseOCgaT8N8dyQZCosDGyj249oc_5z4,6520
+simple_flask_cms/cms_blueprint.py,sha256=8eBx9oloo-jI_D-ebO-zdU-YNMUhZQOkRvi19AzYGTs,6345
+simple_flask_cms/config.py,sha256=I-Ddsfz09qvoxOTJGtNNZ72h5-T1839mLWLEQ6D6SHE,336
+simple_flask_cms/dataclasses.py,sha256=1zkSmnhSWi3q_ujcxLn5Mp5gyMLVfPrHLRN8WR3opRY,331
+simple_flask_cms/db.py,sha256=zrAEv_Ixv70UaKxZX3FYChExhJE5qNIX1f7gPQoBMmY,975
+simple_flask_cms-0.0.2.dist-info/METADATA,sha256=df2tzbl_dOiHq8QTojaJIVyL_pYdZfnpGzNDNQtd0DE,5032
+simple_flask_cms-0.0.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+simple_flask_cms-0.0.2.dist-info/top_level.txt,sha256=tLlUkOsPidzICzhk4ALzrGju2znIDQX-O5LYN6goJDw,17
+simple_flask_cms-0.0.2.dist-info/RECORD,,
