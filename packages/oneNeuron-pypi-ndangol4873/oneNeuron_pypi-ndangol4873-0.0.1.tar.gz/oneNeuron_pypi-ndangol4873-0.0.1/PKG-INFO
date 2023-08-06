@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: oneNeuron_pypi-ndangol4873
+Version: 0.0.1
+Summary: Its an implementation of perceptron
+Home-page: https://github.com/ndangol4873/oneNeuron_pypi 
+Author: ndangol4873
+Author-email: nareshkadambi@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/{USERNAME}/{PROJECT_NAME}/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# oneNeuron_pypi
+oneNeuron_pypi
+
+# Reference
+
+[Official Python docs](https://packaging.python.org/tutorials/packaging-projects/)
+
+
+# Reference
+[git hub official docs](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python#publishing-to-package-registries)
+
