@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pdm-version
+Version: 1.0.0
+Summary: Make `pdm version` like `poetry version`
+License: UNKNOWN
+Author-email: abersheeran <me@abersheeran.com>
+Requires-Python: >=3.7
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: homepage, https://github.com/abersheeran/pdm-version

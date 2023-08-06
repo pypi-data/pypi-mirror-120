@@ -1,0 +1,25 @@
+[project]
+name = "pdm-version"
+version = "1.0.0"
+description = "Make `pdm version` like `poetry version`"
+dependencies = [ "pdm~=1.8",]
+requires-python = ">=3.7"
+dynamic = [ "classifiers",]
+[[project.authors]]
+name = "abersheeran"
+email = "me@abersheeran.com"
+
+[build-system]
+requires = [ "pdm-pep517",]
+build-backend = "pdm.pep517.api"
+
+[project.license]
+text = "Apache2.0"
+
+[project.urls]
+homepage = "https://github.com/abersheeran/pdm-version"
+
+[tool.pdm]
+
+[project.entry-points.pdm]
+version = "pdm_version:version"
