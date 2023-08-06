@@ -1,0 +1,3 @@
+[console_scripts]
+rp2 = rp2.rp2_main:rp2_main
+
