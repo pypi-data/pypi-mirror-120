@@ -1,0 +1,13 @@
+ipylib/__init__.py,sha256=g27ralC89nfnXuJcvJqEwUrldHT5Zlf-ARuMbGDeSMs,97
+ipylib/ifile.py,sha256=54ZZLp43qtz3u935EFzmp7cWK65IBRqgKQZXUoOMYsc,4427
+ipylib/ijson.py,sha256=2RD_E-DtPAa_uc80SFCcA3_nvEZEDyfMyVQhMtFI_Nw,635
+ipylib/ilist.py,sha256=0xucN9abfUXxwZMCO6y0rwpkqgh3wgQiLVeicnPweBw,985
+ipylib/imath.py,sha256=61tUSLH1xvpQXsrVaQhZYSzz9uX0QWW9KNZCza-zV9A,1546
+ipylib/inumber.py,sha256=x-O_3T_xJVTV8u7E-e3puWU3ToSfhZdtIfEcKNmSZF4,3126
+ipylib/istr.py,sha256=rdKxCVSZkD8Eo5405bcL11qipW2UOJf_S6AHNeQSi8o,856
+ipylib/temp.py,sha256=LL4bd2EQlTjWZkwT3LFUYBRvoyvHlOjsKq6-ISO5jeU,253
+ipylib-0.0.0.dist-info/LICENSE,sha256=RBhg5hIyHCQyj9Hd6pdx4QVzRdIfplLdnbuNB0fm2H4,1093
+ipylib-0.0.0.dist-info/METADATA,sha256=IRZvXq5N-zZOBTujDPI11RBhjRlvhnmSaJlh-mWw2oE,478
+ipylib-0.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+ipylib-0.0.0.dist-info/top_level.txt,sha256=jr5uZICaiLejvy4oLSHZk3eOon5PPH3q0sfjxBlESX8,7
+ipylib-0.0.0.dist-info/RECORD,,
