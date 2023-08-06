@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "borderline"
+version = "0.3.0"
+description = "Tests that new imports within a module respect the public API boundary."
+authors = ["Christoph Klein <ckleinemail@gmail.com>"]
+license = "MIT"
+homepage = "https://github.com/ctk3b/borderline"
+repository = "https://github.com/ctk3b/borderline"
+readme = "README.md"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Topic :: Software Development :: Testing",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.6.2,<4.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+pdbpp = "^0.10.3"
+mypy = "^0.910"
+black = "^21.9b0"
+flake8 = "^3.9.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.black]
+line-length = 99
