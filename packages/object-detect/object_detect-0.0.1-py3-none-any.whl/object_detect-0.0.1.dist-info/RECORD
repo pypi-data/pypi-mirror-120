@@ -1,0 +1,7 @@
+object_detect/__init__.py,sha256=yNUCS_LsQQK9iIzfNRuIqkx2fh8dedkNDoBBYktpebU,3940
+object_detect/tiny-yolov3-11.onnx,sha256=9xXMLZl0DSLTEnd-INneKy7NwlAVW-j9N1LOfouCNSE,35511756
+object_detect/version.txt,sha256=axN4nkPlSFY0Uz3hamXYup00xMl1hYi2ZYBUNfgOsRU,5
+object_detect-0.0.1.dist-info/METADATA,sha256=sRzJC9rT8wxfxPRyLugJcojOJ1KrHGyOgPyopEf9SA0,319
+object_detect-0.0.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+object_detect-0.0.1.dist-info/top_level.txt,sha256=ulWFe_2qJ-Qip4BYEuMxQMNJVa1MXnc98Lcw60qYHcc,14
+object_detect-0.0.1.dist-info/RECORD,,

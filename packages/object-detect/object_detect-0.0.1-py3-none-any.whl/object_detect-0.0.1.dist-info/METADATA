@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: object-detect
+Version: 0.0.1
+Summary: Object Detect
+Home-page: https://github.com/deepdialog/ObjectDetect
+Author: deepdialog
+Author-email: mail@qhduan.com
+License: Private
+Keywords: cv,onnx
+Platform: any
+Requires-Dist: numpy
+Requires-Dist: onnxruntime
+Requires-Dist: pillow
+
+Object Detect
+
+
