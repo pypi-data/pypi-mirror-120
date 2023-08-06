@@ -1,0 +1,17 @@
+FillerCodeflow.PNG
+LICENSE.txt
+MANIFEST.in
+ParserCodeflow.PNG
+README.md
+requirements.txt
+setup.py
+SRCS/IdaiKuri/Filler.py
+SRCS/IdaiKuri/Parser.py
+SRCS/IdaiKuri.egg-info/PKG-INFO
+SRCS/IdaiKuri.egg-info/SOURCES.txt
+SRCS/IdaiKuri.egg-info/dependency_links.txt
+SRCS/IdaiKuri.egg-info/requires.txt
+SRCS/IdaiKuri.egg-info/top_level.txt
+TESTS/Test_Filler.py
+TESTS/Test_Parser.py
+TESTS/conftest.py
