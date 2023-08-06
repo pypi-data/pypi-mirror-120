@@ -1,0 +1,2 @@
+pysmarthome~=3.0
+yeelight
