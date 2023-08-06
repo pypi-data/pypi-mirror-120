@@ -1,0 +1,12 @@
+privex-helpers[setuppy]>=3.0
+privex-loghelper
+privex-db
+peeringdb>=1.2.1
+Django
+django-peeringdb>=2.9
+psycopg2
+PyYAML
+jinja2
+rich
+dicttoxml
+python-dotenv
