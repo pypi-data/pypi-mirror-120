@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: Energize
+Version: 0.1
+Summary: A Python library used to extract, build, and inject code into Electrons asar files.
+Home-page: https://github.com/Atom345/Energize
+Author: Bryan Lawless
+Author-email: UNKNOWN
+License: UNKNOWN
+Download-URL: https://github.com/Atom345/Energize/archive/refs/tags/v_0.1.tar.gz
+Description: UNKNOWN
+Keywords: energize,electron-asar,asar
+Platform: UNKNOWN
