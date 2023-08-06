@@ -1,0 +1,15 @@
+anyio<4,>=3.0.0
+databases>=0.5.0
+typesystem>=0.3.0
+
+[mysql]
+aiomysql
+
+[postgresql]
+asyncpg
+
+[postgresql+aiopg]
+aiopg
+
+[sqlite]
+aiosqlite
