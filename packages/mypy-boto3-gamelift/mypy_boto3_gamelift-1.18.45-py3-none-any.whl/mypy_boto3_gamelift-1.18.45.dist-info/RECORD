@@ -1,0 +1,17 @@
+mypy_boto3_gamelift/__init__.py,sha256=cEfOSXkW8mpNPaPQ10XD0-tR7H0z9mQpcdWhtjOcAak,5040
+mypy_boto3_gamelift/__init__.pyi,sha256=5oOZV0TP08dE37OXbpypXD_lPaC5iTTCI1coqUR2AYI,5039
+mypy_boto3_gamelift/__main__.py,sha256=13F3j5Ev7yggFkLVUpn69BXAEDatGC9a-XQct0DE6cI,901
+mypy_boto3_gamelift/client.py,sha256=herSJebauz42tF--wTVhrvMSGzjRTFDvRnmFJ5lgBMw,78714
+mypy_boto3_gamelift/client.pyi,sha256=GT6-Z6F9sN98umJ5h7mjXY7Y14qWIOGEBNhZqqoO90Q,78591
+mypy_boto3_gamelift/literals.py,sha256=td5qCcN7_I23-N6wzaF1VL40WeoS4RjL5qxSnouqpUw,16053
+mypy_boto3_gamelift/literals.pyi,sha256=rWKcQt29VKoKb_5bgb08lsDqXOI33XR4xop4JNCoCKw,16051
+mypy_boto3_gamelift/paginator.py,sha256=WoAyH1wfFFW1otdLpZng3r4bC42qZ4jyQIEB1KaWabI,24689
+mypy_boto3_gamelift/paginator.pyi,sha256=xD3oi45bVlrfANnx0O_sZWrJhA1xJ7TPhpqJyRd54VI,24667
+mypy_boto3_gamelift/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_gamelift/type_defs.py,sha256=-UZypenqg0lCBQmukujTNx6zNb-r2RvpCQQLHMAW92k,81634
+mypy_boto3_gamelift/type_defs.pyi,sha256=dkOeOXLmU8OaVVfMA9OsfZr6esRxT7CIyVa0ZiIAO6E,81553
+mypy_boto3_gamelift/version.py,sha256=JpYOnRz9sIdmOm6IoBt2otH-RvEiDlPJ2G2AGHvXgCA,61
+mypy_boto3_gamelift-1.18.45.dist-info/METADATA,sha256=-n3oAuhbA28EVHcV9XpdeTJ6vS40qwUAzOBM6B3KfOU,21686
+mypy_boto3_gamelift-1.18.45.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+mypy_boto3_gamelift-1.18.45.dist-info/top_level.txt,sha256=U59kV8yr1QVWJFrSu6EZd784He74v2ZZJoPrmo_XGRw,20
+mypy_boto3_gamelift-1.18.45.dist-info/RECORD,,
