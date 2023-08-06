@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pbcommon
+Version: 0.1.62
+Summary: Piggy Bank Common Code
+Home-page: https://github.com/pink-pigs/common
+Author: Hayden Smith
+Author-email: hayden.smith@gmail.com
+License: MIT
+Download-URL: https://github.com/pink-pigs/common/archive/refs/tags/v0.1.62.tar.gz
+Platform: UNKNOWN
+License-File: LICENSE.txt
+Requires-Dist: pytz (==2021.1)
+
+UNKNOWN
+

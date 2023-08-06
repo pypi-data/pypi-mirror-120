@@ -1,0 +1,1 @@
+SERVICES_QUEUE = 'services'
