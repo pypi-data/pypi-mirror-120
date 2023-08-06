@@ -1,0 +1,10 @@
+-c requirements.txt
+
+mypy
+pylint
+pytest
+pytest-cov
+hypothesis
+black
+sphinx
+sphinx_rtd_theme
