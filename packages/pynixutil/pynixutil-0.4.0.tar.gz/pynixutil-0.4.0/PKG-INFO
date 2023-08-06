@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pynixutil
+Version: 0.4.0
+Summary: Utility functions for working with Nix in Python
+Home-page: https://github.com/tweag/pynixutil
+License: MIT
+Author: adisbladis
+Author-email: adam.hose@tweag.io
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
