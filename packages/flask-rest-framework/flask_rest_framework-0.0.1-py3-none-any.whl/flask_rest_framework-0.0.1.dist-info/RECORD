@@ -1,0 +1,15 @@
+flask_restframework/__init__.py,sha256=9oX-5PwGpdCynjl4lY59NSxpaT6LImyJZbAhNSsuCC0,2291
+flask_restframework/authentication.py,sha256=SSBBO5I9J_AQ-M27rInBLbLHq55DKY7tkF07pCBC2lg,4610
+flask_restframework/exceptions.py,sha256=SowMUgYIu67r98o_T9lfNcsFz1jrAcLk85UicZdAx3Y,2515
+flask_restframework/middlewares.py,sha256=9AkZODTfjKN56hYpEMRRTuizybSPo8pDZSNkWN3-Bt0,413
+flask_restframework/paginations.py,sha256=8cCCRt1bF22S66MY0RvPiQVFtGrOT8E30_muxxDR7vY,3086
+flask_restframework/permissions.py,sha256=kkmkhPcuIAFOK2UtlqgYh1iqEwW7OiupXtPbyjTsyZU,1106
+flask_restframework/status.py,sha256=B85dLJEh3qU84eBleBPIF7rpUpiHLyjHsnzTWj73XtQ,2434
+flask_restframework/test.py,sha256=uWAprNwHm7zksfnri82uJlOUazt8nSAmP3mLqV2rnWI,483
+flask_restframework/test_init.py,sha256=uGytfcrInQAPvKabCdtbfECNx2jX3lJWtTLSFBa9QE0,310
+flask_restframework/user.py,sha256=s6vo6iYjqdfi6J_6_7MSIRu8qdGl67BuM76SpFQ202Y,211
+flask_restframework/views.py,sha256=z_I_2wrLNUGkpFn6VJPs1P46-gCOE52ARVqvVbAI-_w,3143
+flask_rest_framework-0.0.1.dist-info/METADATA,sha256=_h-bejj-rW-Oc_YxXUtoYE72nEYRjK8daN6G8geOZC0,588
+flask_rest_framework-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+flask_rest_framework-0.0.1.dist-info/top_level.txt,sha256=N52DOmxlk9xo4zA5y23OW8cyn8Bg_gNMKOEr1AirB-Q,20
+flask_rest_framework-0.0.1.dist-info/RECORD,,
