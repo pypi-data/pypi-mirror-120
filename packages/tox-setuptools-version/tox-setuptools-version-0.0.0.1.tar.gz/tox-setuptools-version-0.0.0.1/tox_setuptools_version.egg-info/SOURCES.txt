@@ -1,0 +1,14 @@
+CHANGELOG.md
+CONTRIBUTING.md
+LICENSE
+README.md
+setup.cfg
+setup.py
+tox_setuptools_version/__init__.py
+tox_setuptools_version/hooks.py
+tox_setuptools_version.egg-info/PKG-INFO
+tox_setuptools_version.egg-info/SOURCES.txt
+tox_setuptools_version.egg-info/dependency_links.txt
+tox_setuptools_version.egg-info/entry_points.txt
+tox_setuptools_version.egg-info/requires.txt
+tox_setuptools_version.egg-info/top_level.txt
