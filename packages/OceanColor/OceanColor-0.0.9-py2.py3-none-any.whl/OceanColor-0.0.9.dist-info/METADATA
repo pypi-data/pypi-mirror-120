@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: OceanColor
+Version: 0.0.9
+Summary: Deal with NASA Ocean Color data (search and download)
+Home-page: https://github.com/castelao/OceanColor
+Author: Guilherme Castelão
+Author-email: guilherme@castelao.net
+License: BSD license
+Keywords: NASA Ocean Color chlorophyll oceanography matchup
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: Click (>=7.1.1)
+Requires-Dist: numpy (>=1.17)
+Requires-Dist: h5netcdf (>=0.8)
+Requires-Dist: h5py (>=2.10)
+Requires-Dist: tables (>=3.6)
+Requires-Dist: netCDF4 (>=1.5)
+Requires-Dist: pandas (>=1.0)
+Requires-Dist: pyproj (>=2.6)
+Requires-Dist: requests (>=2.23)
+Requires-Dist: xarray (>=0.16)
+Provides-Extra: parallel
+Requires-Dist: loky (>=2.8) ; extra == 'parallel'
+
+================
+NASA Ocean Color
+================
+
+A library to search matchups on NASA Ocean Color data.
+
+From any given time, lat, lon, and acceptance window, it gets all data pixels
+available on NASA Ocean Color dataset. This was originally developed to matchup
+Chlorophyll measurements from Spray underwater glider on the California Coast,
+but it could be used for any given time, lat, lon, and acceptance window.
+
+* Free software: MIT license
+
+Alternatives
+------------
+
+* `pyModis <https://github.com/lucadelu/pyModis>`_
+
+
+=======
+History
+=======
+
+0.0.1 (2020-02-24)
+------------------
+
+* First release on PyPI.
+
+
