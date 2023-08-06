@@ -1,0 +1,10 @@
+oneNeuron/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oneNeuron/perceptron.py,sha256=gMUU9MdosGGyu2a1hDhEGc2oFf68vEEy3Xko72FqSbA,1574
+utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utils/all_utils.py,sha256=ZI2XSd0IJLmlLBQrD4E44C4CwsbOCa1U-IYF3VONdgM,2770
+utils/model.py,sha256=gMUU9MdosGGyu2a1hDhEGc2oFf68vEEy3Xko72FqSbA,1574
+oneNeuron_pypi_Gopichandyarra-0.0.2.dist-info/LICENSE,sha256=-skC5PIbd0_nqtAoLXGzZSrZS4obRzt8ZKisA8Q2Juk,1071
+oneNeuron_pypi_Gopichandyarra-0.0.2.dist-info/METADATA,sha256=VQgRklVxd-fEtPBB4UhbZSladPkcW9_NWCr30GQXE7U,927
+oneNeuron_pypi_Gopichandyarra-0.0.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+oneNeuron_pypi_Gopichandyarra-0.0.2.dist-info/top_level.txt,sha256=_XZ4fARX4dA9sWnggbzCTAHjkD8vm771ea31OgJO4KA,16
+oneNeuron_pypi_Gopichandyarra-0.0.2.dist-info/RECORD,,
