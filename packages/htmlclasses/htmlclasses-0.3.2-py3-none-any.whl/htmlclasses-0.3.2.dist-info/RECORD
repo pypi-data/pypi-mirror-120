@@ -1,0 +1,12 @@
+htmlclasses/__init__.py,sha256=P03FKzOp7SS5MTrYoKW1O_ouEdScqliIGpYK4PwW7Ko,778
+htmlclasses/htmlclasses.py,sha256=CONI-3KNg6R5dE2sFI3ArVa00_OrghHh_1zWb_hfu-U,3806
+htmlclasses/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+htmlclasses/lib/drawing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+htmlclasses/lib/drawing/core.py,sha256=8vpmLd2aYx_y-lljkSphldR1_q9nMWHXMA91GSB99eg,4423
+htmlclasses/lib/drawing/plot2d.py,sha256=H7qinwytcHtn8eNmBx3nHyTnRY5Jc80xKJ9ZldVMwVQ,13388
+htmlclasses/lib/svg.py,sha256=Q0HBhhjvIv-1nOKIEbMEcVVF5s9B-stjCVCCtS9rKdY,1183
+htmlclasses/serialize.py,sha256=48GohlumtkujiU68eMOOwYh_YkgSAXQDGP1yRuzzkIU,3167
+htmlclasses-0.3.2.dist-info/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+htmlclasses-0.3.2.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+htmlclasses-0.3.2.dist-info/METADATA,sha256=pCwQ72LghqdlVlLTZVtEZwRIDJPYA3IQ1hkw6yAccr4,2390
+htmlclasses-0.3.2.dist-info/RECORD,,
