@@ -1,0 +1,7 @@
+pre_commit_matlab/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pre_commit_matlab/matlab_reflow_comments.py,sha256=J-jQjS6GZhaoWDiqFYjvxKSGPUmxJnPrdbrrTh-r8_M,7368
+pre_commit_matlab-1.2.0.dist-info/entry_points.txt,sha256=BZ1fjgq5eGOPwMrX_2SszpoWViry8veiHcPvcR_dNs8,88
+pre_commit_matlab-1.2.0.dist-info/LICENSE,sha256=1vuKzfeLxTLSgvdtURRN-tlZ_KjW5YcfufzJOCvPnz8,1063
+pre_commit_matlab-1.2.0.dist-info/WHEEL,sha256=DRf8A_Psd1SF2kVqTQOOFU1Xzl3-A2qljAxBMTOusUs,83
+pre_commit_matlab-1.2.0.dist-info/METADATA,sha256=eYdx7UstJQC0-X9OE-B0JxzxjRvAQMb2eow-KB2AAvI,3985
+pre_commit_matlab-1.2.0.dist-info/RECORD,,
