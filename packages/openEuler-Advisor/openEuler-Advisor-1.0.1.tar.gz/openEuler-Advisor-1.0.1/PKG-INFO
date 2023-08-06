@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: openEuler-Advisor
+Version: 1.0.1
+Summary: collection of automatic tools for easily maintaining openEuler
+Home-page: https://gitee.com/openeuler/openEuler-Advisor
+Author: licihua
+Author-email: licihua@huawei.com
+License: Mulan PSL v2
+Description: UNKNOWN
+Platform: all
+Requires: python_rpm_spec (>=0.10)
+Requires: PyYAML (>=5.3.1)
+Requires: requests (>=2.24.0)
+Requires: rpmdevtools (>=8.3)
+Requires: bs4 (>=0.0.1)
+Requires: yum_utils (>=1.1.31)
