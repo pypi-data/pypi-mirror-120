@@ -1,0 +1,9 @@
+LICENSE,sha256=FUTUGTxwUcEDc-MIANPA2T01n5mF0gHu3Z3TJQQ4vyg,1059
+README.rst,sha256=5g0Nj-I7KDJljEhH75wkTUdRMFD3MA8OcUdqyMILDds,1319
+pyproject.toml,sha256=CCDO7VyI41E3gXAJqmvPSigeYh6CW8VjzqiKy6JBuxA,1547
+sendoff/__init__.py,sha256=-roMsgJAHTojP22aMWRvp1cVyJZKjarWS2UfJngbVPk,255
+sendoff/sdblock.py,sha256=CDfotv1VwNqow6Y0vjCe4J4C-gBRFnCR1-CxKqOVkmY,4512
+sendoff-0.1.0.dist-info/LICENSE,sha256=FUTUGTxwUcEDc-MIANPA2T01n5mF0gHu3Z3TJQQ4vyg,1059
+sendoff-0.1.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+sendoff-0.1.0.dist-info/METADATA,sha256=43BbnlNUP6Uja9_GYgARaXyB9m3hj08EQt83I_qMh-s,2018
+sendoff-0.1.0.dist-info/RECORD,,
