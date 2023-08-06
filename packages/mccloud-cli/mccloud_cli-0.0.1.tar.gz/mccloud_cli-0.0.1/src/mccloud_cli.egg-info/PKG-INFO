@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: mccloud-cli
+Version: 0.0.1
+Summary: A command line to assist McCloud users.
+Home-page: UNKNOWN
+Author: Chan Zuckerberg Science
+Author-email: mccloud@chanzuckerberg.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Requires-Python: >=3.6
+License-File: LICENSE.txt
+
+UNKNOWN
+
