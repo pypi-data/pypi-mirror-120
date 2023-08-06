@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/common/__init__.py
+src/common/yaml.py
+src/configuration/__init__.py
+src/google_search_origin.egg-info/PKG-INFO
+src/google_search_origin.egg-info/SOURCES.txt
+src/google_search_origin.egg-info/dependency_links.txt
+src/google_search_origin.egg-info/top_level.txt
