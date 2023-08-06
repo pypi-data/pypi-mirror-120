@@ -1,0 +1,3 @@
+[console_scripts]
+bugyi.lib = bugyi.lib.cli:main
+
