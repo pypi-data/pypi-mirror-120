@@ -1,0 +1,13 @@
+ell/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ell/limbdark.py,sha256=kgBGHOuXyNgWpA49f4Dtj9Ix7Z5z7cFFGrRqjdk0Sas,746
+ell/orbit.py,sha256=uH4EWo3J3SYI8EDRTQ97MfrGBAx9o1laL-_ntbS3QLM,2526
+ell/surface.py,sha256=uo-4w21Yn_CG58J1O3UsAeD8-DRtOu1WDw4vqsMY5HQ,5778
+olio/__init__.py,sha256=B6qu79p0HF8OeKvfw6gsVSLzOiossfx5itIvptUsJTY,45
+olio/limbdark.py,sha256=kgBGHOuXyNgWpA49f4Dtj9Ix7Z5z7cFFGrRqjdk0Sas,746
+olio/orbit.py,sha256=eCOfgiNyPZ2iUTuPPtpd2rHNzJl40Zd_JW8TDo2wdQA,2528
+olio/surface.py,sha256=IIk_UgEAR7iY_aIIp6kjgXf4UQeP6kOzUwedE89fZw8,5791
+olio-0.0.1.dist-info/LICENSE,sha256=LqdDYEtCPQRej_z1XiJx-80xVtqcghD8uKw8AipFIFw,1070
+olio-0.0.1.dist-info/METADATA,sha256=YOJChwzqThYWW2tm-2g-NymWD8e7T38KT_nNJUYQdRk,760
+olio-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+olio-0.0.1.dist-info/top_level.txt,sha256=V8yNR6Es8KEpoDGsKvqNmU20Pw8QprwZRqVf1tkcl4s,5
+olio-0.0.1.dist-info/RECORD,,
