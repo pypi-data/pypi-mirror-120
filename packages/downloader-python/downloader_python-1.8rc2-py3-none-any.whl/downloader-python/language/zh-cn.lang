@@ -1,0 +1,30 @@
+{'groupBox':'下载',
+'label':'网址：',
+'label_2':'位置：',
+'pushButton':'下载',
+'groupBox_2':'速度',
+'label_3':'进度',
+'label_4':'日志',
+'pushButton_2':'关闭',
+
+'label_5':'版本:',
+
+'groupBox_3':'下载设置',
+'checkBox':'不使用 User-Agent',
+'groupBox_4':'日志输出设置',
+'checkBox_2':'不显示速度',
+'checkBox_3':'不显示异常',
+'groupBox_5':'关于',
+'groupBox_6':'快捷方式',
+'pushButton_3':'打开快捷方式',
+'title':'的下载器',
+
+'tab_win.tab':'下载',
+'tab_win.tab_2':'设置',
+'tab_win2.tab':'关于',
+'tab_win2.tab_2':'日志',
+'checkBox_4':'使用中文',
+
+'fastlink.label':'快捷方式',
+'fastlink.pushButton_2':'安装 python 模块',
+'fastlink.pushButton':'python 脚本'}
