@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: justobjects
+Version: 0.1.0a2
+Summary: Simple object (de)serialization and validation library
+Home-page: https://github.com/kulgan/justobjects
+Author: Rowland Ogwara
+Author-email: r.ogwara@gmail.com
+License: Apache Software License 2.0
+Keywords: jsonschema,objects,just objects
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Internet
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: changelog
+Provides-Extra: dev
+Provides-Extra: docs
+Provides-Extra: lint
+License-File: LICENSE
+
+UNKNOWN
+
