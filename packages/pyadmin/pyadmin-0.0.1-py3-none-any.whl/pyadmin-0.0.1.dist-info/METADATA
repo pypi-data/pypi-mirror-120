@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pyadmin
+Version: 0.0.1
+Summary: a web database admin tool like phpmyadmin
+Home-page: https://www.py2cn.com
+Author: py2cn
+Author-email: aboutlong@qq.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://www.py2cn.com
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pyadmin
+
+一个类似于phpmyadmin的python网页版数据库管理工具
+
