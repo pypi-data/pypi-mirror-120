@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/daddario/__init__.py
+src/daddario.egg-info/PKG-INFO
+src/daddario.egg-info/SOURCES.txt
+src/daddario.egg-info/dependency_links.txt
+src/daddario.egg-info/top_level.txt
