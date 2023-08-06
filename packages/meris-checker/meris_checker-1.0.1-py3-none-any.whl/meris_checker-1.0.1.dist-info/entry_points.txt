@@ -1,0 +1,3 @@
+[console_scripts]
+meris-checker=meris_checker:main
+
