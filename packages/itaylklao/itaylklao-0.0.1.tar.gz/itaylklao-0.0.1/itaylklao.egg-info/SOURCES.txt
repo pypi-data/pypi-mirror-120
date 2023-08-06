@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+itaylklao.egg-info/PKG-INFO
+itaylklao.egg-info/SOURCES.txt
+itaylklao.egg-info/dependency_links.txt
+itaylklao.egg-info/top_level.txt
