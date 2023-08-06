@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: idarest
+Version: 0.0.23
+Summary: TBA
+Home-page: https://github.com/sfinktah/idarest
+Author: Christopher Anderson
+Author-email: sfinktah@github.spamtrak.org
+License: MIT
+Description: idarest
+        
+        Using idarest
+        ========================
+        
+        .. code-block:: python
+        
+            import idarest
+            
+            # example usage
+            
+            > b'result'
+        
+        Changelog
+        =========
+        
+        0.0.1: initial release (2021-09-23)
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
