@@ -1,0 +1,3 @@
+[console_scripts]
+mis-scan-handler = mis_scan_handler.main:app
+
