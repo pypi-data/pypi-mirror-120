@@ -1,0 +1,15 @@
+sphinxcontrib_httpdomain-1.8.0-py3.9-nspkg.pth,sha256=bvCbvTDhKUCTNtrCbu6HVe8TsYC4G4-hRkXeHdEJ6t4,574
+sphinxcontrib/httpdomain.py,sha256=zDfhxAwls2V3EWpcRYuzG1QtNZTythclftfrQAy-Wjo,28559
+sphinxcontrib/autohttp/__init__.py,sha256=HnQw4G58oW2WTwzZXqynRKeap6ZHq9Kh-U_tFYAxrik,249
+sphinxcontrib/autohttp/bottle.py,sha256=pviv1Td7jJUEe1iXuELNdR5ez1WGTzg3Dsm1sawmGCs,3435
+sphinxcontrib/autohttp/common.py,sha256=bBey9h2oHmayutbCuVMVgaDBTGkiJnGKG_7KSYwmvBQ,1020
+sphinxcontrib/autohttp/flask.py,sha256=AIfOQUERAAqaqVFF0yIXrI3h5847ymwiKlV8WILo7kQ,1239
+sphinxcontrib/autohttp/flask_base.py,sha256=ChwWSpGIK_f__TarRAKxwfFCrboCyPwdFq4QGihZVOc,9022
+sphinxcontrib/autohttp/flaskqref.py,sha256=ajbiKCo1tyPwt6s6nsuEL46w3hjobKouFFs4frAwqWc,2439
+sphinxcontrib/autohttp/tornado.py,sha256=w46uUaFOrBjD4m7sWcJuUm7qvBboMjlPCIbhpXFoSZo,4648
+sphinxcontrib_httpdomain-1.8.0.dist-info/LICENSE,sha256=Le5gJ9JUAw44Ldjp8PG0rCwYa9QJyFyivvgNOLTaKDw,1418
+sphinxcontrib_httpdomain-1.8.0.dist-info/METADATA,sha256=LdGs0K65Yo4dNBPR_YBiMUXuKBwwlQ0DNYhE-Tm_-Tc,1977
+sphinxcontrib_httpdomain-1.8.0.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+sphinxcontrib_httpdomain-1.8.0.dist-info/namespace_packages.txt,sha256=VJrV3_vaiKQVgVpR0I1iecxoO0drzGu-M0j40PVP2QQ,14
+sphinxcontrib_httpdomain-1.8.0.dist-info/top_level.txt,sha256=VJrV3_vaiKQVgVpR0I1iecxoO0drzGu-M0j40PVP2QQ,14
+sphinxcontrib_httpdomain-1.8.0.dist-info/RECORD,,
