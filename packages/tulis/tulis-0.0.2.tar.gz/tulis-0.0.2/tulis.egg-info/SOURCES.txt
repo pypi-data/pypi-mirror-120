@@ -1,0 +1,17 @@
+.gitignore
+LICENSE
+MANIFEST
+MANIFEST.in
+README.md
+catatan.jpg
+image (1).png
+setup.py
+nulis/IndieFlower.ttf
+nulis/__init__.py
+nulis/__init__.pyc
+nulis/before.jpg
+tulis.egg-info/PKG-INFO
+tulis.egg-info/SOURCES.txt
+tulis.egg-info/dependency_links.txt
+tulis.egg-info/requires.txt
+tulis.egg-info/top_level.txt
