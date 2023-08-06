@@ -1,0 +1,15 @@
+setup.py
+../LibraryTest/geodesicDome/__init__.py
+../LibraryTest/geodesicDome/geodesic_dome.py
+../LibraryTest/geodesicDome.egg-info/PKG-INFO
+../LibraryTest/geodesicDome.egg-info/SOURCES.txt
+../LibraryTest/geodesicDome.egg-info/dependency_links.txt
+../LibraryTest/geodesicDome.egg-info/requires.txt
+../LibraryTest/geodesicDome.egg-info/top_level.txt
+geodesicDome/__init__.py
+geodesicDome/geodesic_dome.py
+geodesicDome.egg-info/PKG-INFO
+geodesicDome.egg-info/SOURCES.txt
+geodesicDome.egg-info/dependency_links.txt
+geodesicDome.egg-info/requires.txt
+geodesicDome.egg-info/top_level.txt
