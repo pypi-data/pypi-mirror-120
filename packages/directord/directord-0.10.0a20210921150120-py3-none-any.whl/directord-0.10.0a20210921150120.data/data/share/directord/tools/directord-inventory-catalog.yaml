@@ -1,0 +1,12 @@
+directord_server:
+  targets:
+  - host: 127.0.0.1
+    port: 22
+    # username: centos  # If undefined the username is the same as the executing user.
+
+directord_clients:
+  args:
+    port: 22
+    # username: centos  # If undefined the username is the same as the executing user.
+  targets:
+  - host: 127.0.0.1
