@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: m3-gar-client
+Version: 0.0.2
+Summary: UI клиент для сервера ГАР m3-rest-gar
+Home-page: https://stash.bars-open.ru/projects/M3/repos/m3-gar-client
+Author: BARS Group
+Author-email: bars@bars-open.ru
+License: MIT
+Description: Пакет ``m3-gar-client`` предоставляет панель для ввода адресов Российской Федерации с
+        использованием `ГАР <https://fias.nalog.ru/>`_ (Государственного адресного реестра),
+        готовую к использованию в проектах на базе платформы
+        `M3 <http://m3.bars-open.ru/>`_ компании `БАРС Груп <http://bars.group>`_.
+        
+        Возможности
+        -----------
+        
+        * Работа с сервером ГАР `m3-rest-gar <https://stash.bars-open.ru/projects/M3/repos/m3-rest-gar>`_.
+        * Встраивание в интерфейс веб-приложений на базе ExtJS.
+        * Поиск адресов в ГАР по мере ввода наименований адресных объектов (субъектов
+          Федерации, населенных пунктов, улиц, зданий).
+        
+        Системные требования
+        --------------------
+        
+        * `Python <http://www.python.org/>`_ 2.7
+        * `Django <http://djangoproject.com/>`_ 1.4 --- 1.11
+        * `m3-core <https://pypi.python.org/pypi/m3-core>`_ 2.2
+        * `m3-ui <https://pypi.python.org/pypi/m3-ui>`_ 2.2
+        
+        Установка
+        ---------
+        
+        ..
+        
+          pip install m3-gar-client
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Web Environment
+Classifier: Natural Language :: Russian
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Django :: 1.4
+Classifier: Framework :: Django :: 1.5
+Classifier: Framework :: Django :: 1.6
+Classifier: Framework :: Django :: 1.7
+Classifier: Framework :: Django :: 1.8
+Classifier: Framework :: Django :: 1.9
+Classifier: Framework :: Django :: 1.10
+Classifier: Framework :: Django :: 1.11
+Provides-Extra: oauth2
