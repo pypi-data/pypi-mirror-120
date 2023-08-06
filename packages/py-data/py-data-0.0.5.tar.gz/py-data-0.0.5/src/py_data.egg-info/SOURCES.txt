@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/py_data/__init__.py
+src/py_data/py_data.py
+src/py_data.egg-info/PKG-INFO
+src/py_data.egg-info/SOURCES.txt
+src/py_data.egg-info/dependency_links.txt
+src/py_data.egg-info/top_level.txt
