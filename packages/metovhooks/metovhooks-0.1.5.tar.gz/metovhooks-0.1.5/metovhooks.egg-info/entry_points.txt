@@ -1,0 +1,4 @@
+[console_scripts]
+protect_branch = metovhooks.protect_branch:main
+require_version_bump = metovhooks.require_version_bump:main
+
