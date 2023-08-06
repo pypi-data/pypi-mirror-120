@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: apis-highlighter
+Version: 0.8.17
+Summary: Highlighter module for annotations in APIS framework
+License: MIT
+Author: Matthias Schlögl
+Author-email: m.schloegl@gmail.com
+Requires-Python: >=3.6,<3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: apis-core (>=0.16.14,<0.17.0)
