@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pyHand
+Version: 1.0.1
+Summary: pyHand
+Home-page: UNKNOWN
+Author: SujithSouryaYedida
+Author-email: sujithsourya.yedida@gmail.com
+License: UNKNOWN
+Keywords: handwritten,python,hand,text,SujithSouryaYedida,py,text to handwritten,write,written,pip
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: colorama
+Requires-Dist: pyfiglet
+Requires-Dist: pywhatkit
+
+A package which converts text to handwrittenwe need to first import the package - import pyHandthen to get to know the information regarding this package you need to use the following command - pyHand.info()for converting you text to handwritten you will use the following command - pyHand.write("Sample Text")then it will ask you to ive the file name : then you can find the handwritten text in png file with name you gave above@SujithSouryaYedida
+
