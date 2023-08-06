@@ -1,0 +1,76 @@
+{
+	"settings": {
+		"libraryFolder": null,
+		"skillsFolder": null,
+		"authentication": {
+			"key": null,
+			"username": "admin",
+			"password": "admin"
+		}
+	},
+	"container": {
+		"start": true,
+		"groupName": "living room",
+		"tcp_port": 8081,
+		"hostname": null,
+		"ssl": {
+			"cert_file": null,
+			"key_file": null
+		},
+		"devices": [
+			{
+				"uuid": null,
+				"type": "karen_listener.Listener",
+				"parameters": {
+					"speechModel": null,
+					"speechScorer": null,
+					"audioChannels": 1,
+					"audioSampleRate": 16000,
+					"vadAggressiveness": 1,
+					"speechRatio": 0.75,
+					"speechBufferSize": 50,
+					"speechBufferPadding": 350,
+					"audioDeviceIndex": null
+				}
+			},
+			{
+				"uuid": null,
+				"type": "karen_speaker.Speaker"
+			},
+			{
+				"uuid": null,
+				"type": "karen_watcher.Watcher",
+				"parameters": {
+					"classifierFile": null,
+					"recognizerFile": null,
+					"namesFile": null,
+					"trainingSourceFolder": null,
+					"videoDeviceIndex": null,
+					"framesPerSecond": 1.0,
+					"orientation": 0
+				}
+			},
+			{
+				"uuid": null,
+				"type": "karen_panel.PanelApp",
+				"isPanel": true,
+				"parameters": {
+					"screenSelection": null,
+					"fullScreen": false
+				}
+			}
+		]
+	},
+	"brain": {
+		"start": true,
+		"groupName": "core",
+		"tcp_port": 8080,
+		"hostname": null,
+		"startUPNP": true,
+		"ssl": {
+		    "use_ssl": false,
+			"cert_file": null,
+			"key_file": null
+		}
+	}
+}
