@@ -1,0 +1,12 @@
+tox<5,>=4.0.0a9
+
+[testing]
+flake8<4,>=3
+pytest<7,>=6.2.5
+pytest-cov<3,>=2
+pytest-mock<4,>=3
+pytest-randomly>=3
+
+[testing:platform_python_implementation == "CPython"]
+black
+mypy
