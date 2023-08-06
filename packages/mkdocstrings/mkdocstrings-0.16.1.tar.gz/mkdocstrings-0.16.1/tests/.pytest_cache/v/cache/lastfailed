@@ -1,0 +1,10 @@
+{
+  "test_extension.py::test_render_themes_templates_python[material]": true,
+  "test_extension.py::test_render_themes_templates_python[mkdocs]": true,
+  "test_extension.py::test_render_themes_templates_python[readthedocs]": true,
+  "test_themes.py": true,
+  "test_themes.py::test_render_themes_templates_python[handler0]": true,
+  "test_themes.py::test_render_themes_templates_python[handler1]": true,
+  "test_themes.py::test_render_themes_templates_python[handler2]": true,
+  "test_themes.py::test_render_themes_templates_python[plugin2-skipon2]": true
+}
