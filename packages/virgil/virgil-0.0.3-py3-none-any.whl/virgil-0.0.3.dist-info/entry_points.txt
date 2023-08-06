@@ -1,0 +1,3 @@
+[console_scripts]
+virgil = virgil.cli:cli
+
