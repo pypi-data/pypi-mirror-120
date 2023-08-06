@@ -1,0 +1,13 @@
+RSO/__init__.py,sha256=LGVQyDsWifdACo7qztwb8RWWHds1E7uQ-ZqD8SAjyw4,22
+RSO/base.py,sha256=3SZ2PG66r1DHrSneYvfiw3ONhmr3zKYvHGTyYm4Ve0c,1012
+RSO/index.py,sha256=ouiSiT3C_Nv_bStq17cmGNUeME6MyH4dv_7PQ6QSSUw,2480
+RSO/model.py,sha256=6q_TqYw62v4ECUWFwdWoYGwznVRu55aN2A-jrzD97ZY,1478
+RSO/aioredis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+RSO/aioredis/index.py,sha256=Bqim3zK6KqaeBeaRlLYov76kPFhCvAwGErCYxQ0po40,2903
+RSO/aioredis/model.py,sha256=yNEx8KadOMvDCaR6F1wHATAX9OKuNP4xZIGirUjmoBQ,1894
+redis_simple_orm-1.1.0.data/data/LICENSE,sha256=OfKyUdPdeNlNXv5rNbiAPTzn-2xT2jhM8vIvsI0lgb8,1064
+redis_simple_orm-1.1.0.dist-info/LICENSE,sha256=OfKyUdPdeNlNXv5rNbiAPTzn-2xT2jhM8vIvsI0lgb8,1064
+redis_simple_orm-1.1.0.dist-info/METADATA,sha256=V3hBOFgxdl9JNBIVP1HzEiJZnr8ejtK9y2QfrC56Aeo,7766
+redis_simple_orm-1.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+redis_simple_orm-1.1.0.dist-info/top_level.txt,sha256=OVcPkJ1KNp-eG63Oc07SpHnrlO0zs08-bNkMr9ip_0A,4
+redis_simple_orm-1.1.0.dist-info/RECORD,,
