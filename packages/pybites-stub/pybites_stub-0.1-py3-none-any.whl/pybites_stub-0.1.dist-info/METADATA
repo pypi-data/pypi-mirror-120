@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pybites-stub
+Version: 0.1
+Summary: Simple package to test automated PyPI upload upon git tag
+Author-email: Bob Belderbos <bob@pybit.es>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+
+# pybites-stub
+test package
+
