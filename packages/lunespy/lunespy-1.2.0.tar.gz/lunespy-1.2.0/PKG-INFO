@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: lunespy
+Version: 1.2.0
+Summary: Library for communication with nodes in mainnet or testnet of the lunes-blockchain network
+License: Apache License, Version 2.0, january 2004
+Author: Lunes Platform
+Author-email: lucas.oliveira@lunes.io
+Requires-Python: >=3.8,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: base58 (>=2.1.0,<3.0.0)
+Requires-Dist: pyblake2 (>=1.1.2,<2.0.0)
+Requires-Dist: python-axolotl-curve25519 (>=0.4.1.post2,<0.5.0)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
