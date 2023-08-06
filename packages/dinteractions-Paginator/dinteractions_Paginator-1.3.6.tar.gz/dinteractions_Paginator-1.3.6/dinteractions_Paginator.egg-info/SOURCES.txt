@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+dinteractions_Paginator/_Paginator.py
+dinteractions_Paginator/__init__.py
+dinteractions_Paginator/errors.py
+dinteractions_Paginator.egg-info/PKG-INFO
+dinteractions_Paginator.egg-info/SOURCES.txt
+dinteractions_Paginator.egg-info/dependency_links.txt
+dinteractions_Paginator.egg-info/requires.txt
+dinteractions_Paginator.egg-info/top_level.txt
