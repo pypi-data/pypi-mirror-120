@@ -1,0 +1,136 @@
+Metadata-Version: 2.1
+Name: collective.jsonmigrator
+Version: 2.0.0
+Summary: Tool for you to migrate from old Plone sites
+Home-page: https://github.com/collective/collective.jsonmigrator
+Author: Rok Garbas
+Author-email: rok@garbas.si
+License: BSD
+Project-URL: Source, https://github.com/collective/collective.jsonmigrator
+Project-URL: Tracker, https://github.com/collective/collective.jsonmigrator/issues
+Project-URL: PyPI, https://pypi.python.org/pypi/collective.jsonmigrator
+Description: =======================
+        collective.jsonmigrator
+        =======================
+        
+        JSON based migrations for Plone
+        
+        ``collective.jsonmigrator`` is a ready tool for you to migrate from old Plone
+        sites (2.0, 2.1, 2.5) to new Plone 4.0 (or higher). Its based extensivly
+        `collective.transmogrifier`_ and custom blueprints avaliable.
+        
+        What makes it different from other migration tools is that is `fully
+        documented`_ and proven to work on lots of migration projects.  (ATTENTION!
+        docs are outdated and come from the older collective.blueprint.jsonmigrator
+        project. Contributions are welcome.)
+        
+        Real beauty of it lays in ability to easily customize it and extend to support
+        all your custom content types that you are using.
+        
+        (Note that collective.jsonmigrator was previously named
+        `collective.blueprint.jsonmigrator`_).
+        
+        .. _`collective.transmogrifier`: http://pypi.python.org/pypi/collective.transmogrifier
+        .. _`fully documented`: http://readthedocs.org/docs/collectivejsonmigrator/en/latest/
+        .. _`collective.blueprint.jsonmigrator`: https://github.com/collective/collective.jsonmigrator/commit/747af7d0be1bf16f12822ef4841f40f5bb23a6b6
+        
+        
+        Contributors
+        ============
+        
+        - Rok Garbas, rok@garbas.si
+        
+        
+        Changelog
+        =========
+        
+        2.0.0 (2021-09-22)
+        ------------------
+        
+        - Add blueprint to import translations from plone.app.multilingual.
+          [wesleybl]
+        
+        - Don't encode property value in Python 3.
+          [wesleybl]
+        
+        - Allows use of blueprint collective.jsonmigrator.owner in dexterity objects.
+          [wesleybl]
+        
+        - Don't encode path in Python 3.
+          [wesleybl]
+        
+        - Explicitly depends on six.
+          [wesleybl]
+        
+        - Don't use simplejson.
+          [wesleybl]
+        
+        - Add support to Plone 5.1 and Plone 5.2.
+          [wesleybl]
+        
+        - No longer depend on zope.app.container.notifyContainerModified.
+          Use from zope.container.contained import notifyContainerModified instead.
+          [mathias.leimgruber]
+        
+        - Python 3 compatibility
+          [ksuess]
+        
+        
+        1.0.1 (2018-06-11)
+        ------------------
+        
+        - if certain properties (default page, others?) are unicode they cause site failures.
+          [sunew]
+        
+        
+        1.0 (2017-12-22)
+        ----------------
+        
+        - Set default value of config field for jsonmigrator-run view.
+          [bsuttor]
+        
+        - Fix workflow_history to also work with dexterity
+          [erral, djowett]
+        
+        
+        0.4 (2016-05-24)
+        ----------------
+        
+        - Do not require simplejson if we already have the native json module.
+          [ale-rt]
+        
+        
+        0.3 (2015-10-25)
+        ----------------
+        
+        - Move pipeline configurations into own directory pipelines.
+          [thet]
+        
+        - Restructure blueprints to be in blueprints directory and integrate orphaned
+          blueprints from collective.blueprint.jsonmigrator.
+          [thet]
+        
+        - PEP 8.
+          [thet, mauritsvanrees]
+        
+        - Log json decode error instead of crashing [marciomazza]
+        
+Keywords: plone transmogrifier
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Plone
+Classifier: Framework :: Plone :: Addon
+Classifier: Framework :: Plone :: 4.3
+Classifier: Framework :: Plone :: 5.1
+Classifier: Framework :: Plone :: 5.2
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: ==2.7, >=3.7
+Provides-Extra: test
