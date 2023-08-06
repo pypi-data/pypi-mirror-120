@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/dune_analytics/__init__.py
+src/dune_analytics_fix.egg-info/PKG-INFO
+src/dune_analytics_fix.egg-info/SOURCES.txt
+src/dune_analytics_fix.egg-info/dependency_links.txt
+src/dune_analytics_fix.egg-info/requires.txt
+src/dune_analytics_fix.egg-info/top_level.txt
