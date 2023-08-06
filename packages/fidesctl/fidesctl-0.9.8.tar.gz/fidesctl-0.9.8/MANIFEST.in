@@ -1,0 +1,6 @@
+include LICENSE
+include requirements.txt
+include dev-requirements.txt
+include versioneer.py
+include src/fidesctl/_version.py
+include src/alembic.ini
