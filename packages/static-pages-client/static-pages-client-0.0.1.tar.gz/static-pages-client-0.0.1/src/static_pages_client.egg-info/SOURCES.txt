@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/static_pages_client.egg-info/PKG-INFO
+src/static_pages_client.egg-info/SOURCES.txt
+src/static_pages_client.egg-info/dependency_links.txt
+src/static_pages_client.egg-info/top_level.txt
