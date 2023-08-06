@@ -1,0 +1,62 @@
+parameters:
+  lineagebundle:
+    notebooks:
+      layer_pattern: '^%daipe.root_module.name%/{layer}'
+      patterns: ['**/*.py']
+
+services:
+  lineagebundle.notebook.NotebookCreationFacade:
+
+  lineagebundle.notebook.NotebookParser:
+
+  lineagebundle.notebook.NotebooksLocator:
+    arguments:
+      - '%daipe.root_module.path%'
+      - '%lineagebundle.notebooks.patterns%'
+      - '@consolebundle.logger'
+
+  lineagebundle.notebook.LayerResolver:
+    arguments:
+      - '%lineagebundle.notebooks.layer_pattern%'
+
+  lineagebundle.notebook.dag.DagCreator:
+
+  lineagebundle.notebook.dag.Functions2DagMapper:
+
+  lineagebundle.notebook.decorator.DecoratorParserResolver:
+    arguments:
+      - !tagged 'lineage.decorator.parser'
+
+  lineagebundle.notebook.NotebookFunctionsLineageGenerator:
+    arguments:
+      - '%daipe.root_module.path%'
+
+  lineagebundle.publish.DatabasePublisher:
+
+  lineagebundle.publish.PipelinesHTMLParser:
+
+  lineagebundle.publish.NotebookDetailHTMLParser:
+
+  lineagebundle.LineageGenerator:
+
+  lineagebundle.LineageDatabaseInitCommand:
+    arguments:
+      - '@consolebundle.logger'
+    tags:
+      - 'console.command'
+
+  lineagebundle.LineageHTMLPublisherCommand:
+    arguments:
+      - '@consolebundle.logger'
+    tags:
+      - 'console.command'
+
+  lineagebundle.LineageDBPublisherCommand:
+    arguments:
+      - '@consolebundle.logger'
+    tags:
+      - 'console.command'
+
+  lineagebundle.pipeline.PipelinesLineageGenerator:
+
+  lineagebundle.pipeline.PipelinesEdgesPreparer:

@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: lineage-bundle
+Version: 1.0.2
+Summary: Lineage generation bundle
+Home-page: https://github.com/daipe-ai/lineage-bundle
+License: Proprietary
+Author: Datasentics
+Author-email: jiri.koutny@datasentics.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: SQLAlchemy (>=1.3,<2.0)
+Requires-Dist: console-bundle
+Requires-Dist: daipe-core (>=1.0,<2.0)
+Requires-Dist: networkx (>=2.6.3,<3.0.0)
+Requires-Dist: pyfony-bundles (>=0.4.0,<0.5.0)
+Requires-Dist: pyfony-sqlalchemy-bundle (>=1.0.0,<2.0.0)
+Project-URL: Repository, https://github.com/daipe-ai/lineage-bundle
+Description-Content-Type: text/markdown
+
+# Lineage bundle
+
+**This package is distributed under the "DataSentics SW packages Terms of Use." See [license](https://raw.githubusercontent.com/daipe-ai/lineage-bundle/master/LICENSE.txt)**
+
+Lineage bundle allows you to generate and publish lineage of notebooks and notebook functions of your __Daipe__ project.
+
+## Getting started
+
+### Add _lineage-bundle_ to your project
+```yaml
+poetry add lineage-bundle --dev
+```
+
+### Generate and publish lineage to a static HTML
+```bash
+console lineage:publish:html
+```
+
+## Optional:
+
+#### To use a databaase: add _sqlalchemybundle.yaml_ file to `[PROJECT_NAME]/_config/bundles/`
+```yaml
+parameters:
+  sqlalchemybundle:
+    connections:
+      default:
+        engine: mssql
+        server: '%env(DB_HOST)%'
+        database: '%env(DB_NAME)%'
+        username: '%env(DB_USER)%'
+        password: '%env(DB_PASS)%'
+        driver: '{ODBC Driver 17 for SQL Server}'
+```
+#### In _.env_ in your Daipe project
+
+```yaml
+APP_ENV=dev
+
+# Databricks
+DBX_TOKEN=
+# Lineage
+DB_HOST=address.of.mssql.server.com
+DB_NAME=db_name
+DB_USER=username
+DB_PASS=password
+```
+
+#### Initialize the database
+```bash
+console lineage:database:init
+```
+
+#### Generate and publish lineage to database
+```bash
+console lineage:publish:database
+```
+
+## Preview
+### Pipelines lineage
+![Example lineage](https://raw.githubusercontent.com/daipe-ai/lineage-bundle/master/static/lineage.png)
+### Functions lineage
+![Example lineage](https://raw.githubusercontent.com/daipe-ai/lineage-bundle/master/static/lineage-functions.png)
+
