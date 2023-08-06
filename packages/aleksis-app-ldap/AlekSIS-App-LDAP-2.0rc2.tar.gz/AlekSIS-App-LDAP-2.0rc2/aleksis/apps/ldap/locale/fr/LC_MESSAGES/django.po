@@ -1,0 +1,130 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-08 16:49+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: aleksis/apps/ldap/model_extensions.py:8
+#: aleksis/apps/ldap/model_extensions.py:9
+msgid "LDAP Distinguished Name"
+msgstr ""
+
+#: aleksis/apps/ldap/preferences.py:8
+msgid "LDAP"
+msgstr ""
+
+#: aleksis/apps/ldap/preferences.py:17
+msgid "Enable LDAP sync"
+msgstr ""
+
+#: aleksis/apps/ldap/preferences.py:26
+msgid "Create missing persons for LDAP users"
+msgstr ""
+
+#: aleksis/apps/ldap/preferences.py:35
+msgid "Sync LDAP user with person on login"
+msgstr ""
+
+#: aleksis/apps/ldap/preferences.py:44
+msgid "Create LDAP user on registration"
+msgstr ""
+
+#: aleksis/apps/ldap/preferences.py:52
+msgid "Comma-separated list of RDN fields for new user entries"
+msgstr ""
+
+#: aleksis/apps/ldap/preferences.py:61
+msgid "Enable ldap group sync"
+msgstr ""
+
+#: aleksis/apps/ldap/preferences.py:70
+msgid "Field for short name of group"
+msgstr ""
+
+#: aleksis/apps/ldap/preferences.py:80
+msgid "Regular expression to match LDAP value for group short name against"
+msgstr ""
+
+#: aleksis/apps/ldap/preferences.py:81 aleksis/apps/ldap/preferences.py:113
+msgid "e.g. class_(?P<class>.*); separate multiple patterns by |"
+msgstr ""
+
+#: aleksis/apps/ldap/preferences.py:91
+msgid "Replacement template to apply to group short name"
+msgstr ""
+
+#: aleksis/apps/ldap/preferences.py:92 aleksis/apps/ldap/preferences.py:124
+msgid "e.g. \\g<class>; separate multiple templates by |"
+msgstr ""
+
+#: aleksis/apps/ldap/preferences.py:102
+msgid "Field for name of group"
+msgstr ""
+
+#: aleksis/apps/ldap/preferences.py:112
+msgid "Regular expression to match LDAP value for group name against,"
+msgstr ""
+
+#: aleksis/apps/ldap/preferences.py:123
+msgid "Replacement template to apply to group name"
+msgstr ""
+
+#: aleksis/apps/ldap/preferences.py:134
+msgid "LDAP field with dn of group owner"
+msgstr ""
+
+#: aleksis/apps/ldap/preferences.py:144 aleksis/apps/ldap/util/ldap_sync.py:122
+msgid "LDAP sync matching fields"
+msgstr ""
+
+#: aleksis/apps/ldap/preferences.py:146
+msgid "Distinguished Name"
+msgstr ""
+
+#: aleksis/apps/ldap/preferences.py:147
+msgid "UID"
+msgstr ""
+
+#: aleksis/apps/ldap/preferences.py:158
+msgid "Change LDAP password on AlekSIS password change"
+msgstr ""
+
+#: aleksis/apps/ldap/preferences.py:167
+msgid "Use admin account (or auth account if unset) to change passwords"
+msgstr ""
+
+#: aleksis/apps/ldap/preferences.py:176
+msgid "DN of LDAP admin account (if other than LDAP auth account)"
+msgstr ""
+
+#: aleksis/apps/ldap/preferences.py:185
+msgid "Password of LDAP admin account (if other than LDAP auth account)"
+msgstr ""
+
+#: aleksis/apps/ldap/util/ldap_sync.py:87
+#, python-brace-format
+msgid "LDAP field for '{field.verbose_name}' on {model._meta.label}"
+msgstr ""
+
+#: aleksis/apps/ldap/util/ldap_sync.py:97
+msgid "Regular expression to match LDAP value for"
+msgstr ""
+
+#: aleksis/apps/ldap/util/ldap_sync.py:109
+#, python-brace-format
+msgid "Replacement template to apply to '{field.verbose_name}'"
+msgstr ""
