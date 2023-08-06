@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: kslurm
+Version: 0.2.1
+Summary: Helper scripts and wrappers for running commands on SLURM compute clusters.
+Home-page: https://github.com/pvandyken/kslurm
+License: MIT
+Keywords: slurm,compute cluster
+Author: Peter Van Dyken
+Author-email: pvandyk2@uwo.ca
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Dist: attrs (>=21.2.0,<22.0.0)
+Requires-Dist: colorama (>=0.4.4,<0.5.0)
+Requires-Dist: rich (>=10.9.0,<11.0.0)
+Requires-Dist: tabulate (>=0.8.9,<0.9.0)
+Requires-Dist: typing-extensions (>=3.10,<4.0)
+Project-URL: Repository, https://github.com/pvandyken/kslurm
+Description-Content-Type: text/markdown
+
+This project is in a draft state.
+
+Utility functions to make working with SLURM easier. 
+
+# Installation
+Cluster utils is meant to be run in a SLURM environment, and thus will only install on linux. Open a shell and run the following command:
+
+```
+curl -sSL https://raw.githubusercontent.com/pvandyken/kslurm/master/install_kslurm.py | python -
+```
+
+If you wish to uninstall, run the same command with --uninstall added to the end.
+
+# Features
+Currently offers two commands:
+* kbatch: for batch submission jobs (no immediate output)
+* krun: for interactive submission
+
+Both support a regex-based argument parsing, meaning that instead of writing a SLURM file or supplying confusing --command-arguments, you can request resources with an intuitive syntax:
+
+```
+krun 4 3:00 15G gpu 
+```
+This command will request interactive session with __4__ cores, for __3hr__, using __15GB__ of memory, and a gpu.
+
+You could also add a command to run immediately:
+```
+krun jupyter-lab '$(hostname)' --no-browser
+```
+
+You can directly submit commands to kbatch without a script file:
+
+```
+kbatch 00:30 1000MB cp very/big/file.mp4 another/location
+```
+
+Both kbatch and krun default to 1 core, for 3hr, with 4G of memory.
+
+You can also run a predefined job template using -j _template_. Run either command with -J to get a list of all templates. Any template values can be overriden simply by providing the appropriate argument.
+
+
