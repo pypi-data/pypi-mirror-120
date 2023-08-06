@@ -1,0 +1,6 @@
+[console_scripts]
+scilib-cnki-import=scilib.scripts.cnki_import:run
+scilib-db-trans=scilib.scripts.db_trans:run
+scilib-gender-benchmark=scilib.gender.benchmark.benchmark:run
+scilib-wos-import=scilib.scripts.wos_import:run
+
