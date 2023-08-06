@@ -1,0 +1,761 @@
+<center><a href="nepsolve.c">Actual source code: nepsolve.c</a></center><br>
+
+<html>
+<head> <link rel="canonical" href="https://slepc.upv.es/documentation/current/src/nep/interface/nepsolve.c.html" />
+<title></title>
+<meta name="generator" content="c2html 0.9.4">
+<meta name="date" content="2021-09-20T09:44:08+00:00">
+</head>
+
+<body bgcolor="#FFFFFF">
+   <div id="version" align=right><b>slepc-3.15.2 2021-09-20</b></div>
+   <div id="bugreport" align=right><a href="mailto:slepc-maint@upv.es?subject=Typo or Error in Documentation &body=Please describe the typo or error in the documentation: slepc-3.15.2 v3.15.2 src/nep/interface/nepsolve.c.html "><small>Report Typos and Errors</small></a></div>
+<pre width="80">
+<a name="line1">  1: </a><font color="#B22222">/*</font>
+<a name="line2">  2: </a><font color="#B22222">   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</font>
+<a name="line3">  3: </a><font color="#B22222">   SLEPc - Scalable Library for Eigenvalue Problem Computations</font>
+<a name="line4">  4: </a><font color="#B22222">   Copyright (c) 2002-2021, Universitat Politecnica de Valencia, Spain</font>
+
+<a name="line6">  6: </a><font color="#B22222">   This file is part of SLEPc.</font>
+<a name="line7">  7: </a><font color="#B22222">   SLEPc is distributed under a 2-clause BSD license (see LICENSE).</font>
+<a name="line8">  8: </a><font color="#B22222">   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</font>
+<a name="line9">  9: </a><font color="#B22222">*/</font>
+<a name="line10"> 10: </a><font color="#B22222">/*</font>
+<a name="line11"> 11: </a><font color="#B22222">   <a href="../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a> routines related to the solution process</font>
+
+<a name="line13"> 13: </a><font color="#B22222">   References:</font>
+
+<a name="line15"> 15: </a><font color="#B22222">       [1] C. Campos and J.E. Roman, "<a href="../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a>: a module for the parallel solution</font>
+<a name="line16"> 16: </a><font color="#B22222">           of nonlinear eigenvalue problems in SLEPc", ACM Trans. Math. Soft.</font>
+<a name="line17"> 17: </a><font color="#B22222">           (to appear), arXiv:1910.11712, 2021.</font>
+<a name="line18"> 18: </a><font color="#B22222">*/</font>
+
+<a name="line20"> 20: </a>#include <A href="../../../include/slepc/private/nepimpl.h.html">&lt;slepc/private/nepimpl.h&gt;</A>
+<a name="line21"> 21: </a>#include <A href="../../../include/slepc/private/bvimpl.h.html">&lt;slepc/private/bvimpl.h&gt;</A>
+<a name="line22"> 22: </a><font color="#A020F0">#include &lt;petscdraw.h&gt;</font>
+
+<a name="line24"> 24: </a>static PetscBool  cited = PETSC_FALSE;
+<a name="line25"> 25: </a>static const char citation[] =
+<a name="line26"> 26: </a>  <font color="#666666">"@Article{slepc-nep,\n"</font>
+<a name="line27"> 27: </a>  <font color="#666666">"   author = \"C. Campos and J. E. Roman\",\n"</font>
+<a name="line28"> 28: </a>  <font color="#666666">"   title = \"{<a href="../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a>}: a module for the parallel solution of nonlinear eigenvalue problems in {SLEPc}\",\n"</font>
+<a name="line29"> 29: </a>  <font color="#666666">"   journal = \"{ACM} Trans. Math. Software\",\n"</font>
+<a name="line30"> 30: </a>  <font color="#666666">"   note = \"To appear\",\n"</font>
+<a name="line31"> 31: </a>  <font color="#666666">"   url = \"https://arxiv.org/abs/1910.11712\",\n"</font>
+<a name="line32"> 32: </a>  <font color="#666666">"   year = \"2021\"\n"</font>
+<a name="line33"> 33: </a>  <font color="#666666">"}\n"</font>;
+
+<a name="line35"> 35: </a><strong><font color="#4169E1"><a name="NEPComputeVectors"></a>PetscErrorCode NEPComputeVectors(<a href="../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a> nep)</font></strong>
+<a name="line36"> 36: </a>{
+
+<a name="line40"> 40: </a>  NEPCheckSolved(nep,1);
+<a name="line41"> 41: </a>  <font color="#4169E1">if</font> (nep-&gt;state==NEP_STATE_SOLVED &amp;&amp; nep-&gt;ops-&gt;computevectors) {
+<a name="line42"> 42: </a>    (*nep-&gt;ops-&gt;computevectors)(nep);
+<a name="line43"> 43: </a>  }
+<a name="line44"> 44: </a>  nep-&gt;state = NEP_STATE_EIGENVECTORS;
+<a name="line45"> 45: </a>  <font color="#4169E1">return</font>(0);
+<a name="line46"> 46: </a>}
+
+<a name="line48"> 48: </a><font color="#B22222">/*@</font>
+<a name="line49"> 49: </a><font color="#B22222">   <a href="../../../docs/manualpages/NEP/NEPSolve.html#NEPSolve">NEPSolve</a> - Solves the nonlinear eigensystem.</font>
+
+<a name="line51"> 51: </a><font color="#B22222">   Collective on nep</font>
+
+<a name="line53"> 53: </a><font color="#B22222">   Input Parameter:</font>
+<a name="line54"> 54: </a><font color="#B22222">.  nep - eigensolver context obtained from <a href="../../../docs/manualpages/NEP/NEPCreate.html#NEPCreate">NEPCreate</a>()</font>
+
+<a name="line56"> 56: </a><font color="#B22222">   Options Database Keys:</font>
+<a name="line57"> 57: </a><font color="#B22222">+  -nep_view - print information about the solver used</font>
+<a name="line58"> 58: </a><font color="#B22222">.  -nep_view_vectors binary - save the computed eigenvectors to the default binary viewer</font>
+<a name="line59"> 59: </a><font color="#B22222">.  -nep_view_values - print computed eigenvalues</font>
+<a name="line60"> 60: </a><font color="#B22222">.  -nep_converged_reason - print reason for convergence, and number of iterations</font>
+<a name="line61"> 61: </a><font color="#B22222">.  -nep_error_absolute - print absolute errors of each eigenpair</font>
+<a name="line62"> 62: </a><font color="#B22222">-  -nep_error_relative - print relative errors of each eigenpair</font>
+
+<a name="line64"> 64: </a><font color="#B22222">   Level: beginner</font>
+
+<a name="line66"> 66: </a><font color="#B22222">.seealso: <a href="../../../docs/manualpages/NEP/NEPCreate.html#NEPCreate">NEPCreate</a>(), <a href="../../../docs/manualpages/NEP/NEPSetUp.html#NEPSetUp">NEPSetUp</a>(), <a href="../../../docs/manualpages/NEP/NEPDestroy.html#NEPDestroy">NEPDestroy</a>(), <a href="../../../docs/manualpages/NEP/NEPSetTolerances.html#NEPSetTolerances">NEPSetTolerances</a>()</font>
+<a name="line67"> 67: </a><font color="#B22222">@*/</font>
+<a name="line68"> 68: </a><strong><font color="#4169E1"><a name="NEPSolve"></a>PetscErrorCode <a href="../../../docs/manualpages/NEP/NEPSolve.html#NEPSolve">NEPSolve</a>(<a href="../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a> nep)</font></strong>
+<a name="line69"> 69: </a>{
+<a name="line71"> 71: </a>  PetscInt       i;
+
+<a name="line75"> 75: </a>  <font color="#4169E1">if</font> (nep-&gt;state&gt;=NEP_STATE_SOLVED) <font color="#4169E1">return</font>(0);
+<a name="line76"> 76: </a>  PetscCitationsRegister(citation,&amp;cited);
+<a name="line77"> 77: </a>  PetscLogEventBegin(NEP_Solve,nep,0,0,0);
+
+<a name="line79"> 79: </a>  <font color="#B22222">/* call setup */</font>
+<a name="line80"> 80: </a>  <a href="../../../docs/manualpages/NEP/NEPSetUp.html#NEPSetUp">NEPSetUp</a>(nep);
+<a name="line81"> 81: </a>  nep-&gt;nconv = 0;
+<a name="line82"> 82: </a>  nep-&gt;its = 0;
+<a name="line83"> 83: </a>  <font color="#4169E1">for</font> (i=0;i&lt;nep-&gt;ncv;i++) {
+<a name="line84"> 84: </a>    nep-&gt;eigr[i]   = 0.0;
+<a name="line85"> 85: </a>    nep-&gt;eigi[i]   = 0.0;
+<a name="line86"> 86: </a>    nep-&gt;errest[i] = 0.0;
+<a name="line87"> 87: </a>    nep-&gt;perm[i]   = i;
+<a name="line88"> 88: </a>  }
+<a name="line89"> 89: </a>  <a href="../../../docs/manualpages/NEP/NEPViewFromOptions.html#NEPViewFromOptions">NEPViewFromOptions</a>(nep,NULL,<font color="#666666">"-nep_view_pre"</font>);
+<a name="line90"> 90: </a>  <a href="../../../docs/manualpages/RG/RGViewFromOptions.html#RGViewFromOptions">RGViewFromOptions</a>(nep-&gt;rg,NULL,<font color="#666666">"-rg_view"</font>);
+
+<a name="line92"> 92: </a>  <font color="#B22222">/* call solver */</font>
+<a name="line93"> 93: </a>  (*nep-&gt;ops-&gt;solve)(nep);
+<a name="line94"> 94: </a>  <font color="#4169E1">if</font> (!nep-&gt;reason) SETERRQ(PetscObjectComm((PetscObject)nep),PETSC_ERR_PLIB,<font color="#666666">"Internal error, solver returned without setting converged reason"</font>);
+<a name="line95"> 95: </a>  nep-&gt;state = NEP_STATE_SOLVED;
+
+<a name="line97"> 97: </a>  <font color="#B22222">/* Only the first nconv columns contain useful information */</font>
+<a name="line98"> 98: </a>  <a href="../../../docs/manualpages/BV/BVSetActiveColumns.html#BVSetActiveColumns">BVSetActiveColumns</a>(nep-&gt;V,0,nep-&gt;nconv);
+<a name="line99"> 99: </a>  <font color="#4169E1">if</font> (nep-&gt;twosided) { <a href="../../../docs/manualpages/BV/BVSetActiveColumns.html#BVSetActiveColumns">BVSetActiveColumns</a>(nep-&gt;W,0,nep-&gt;nconv); }
+
+<a name="line101">101: </a>  <font color="#4169E1">if</font> (nep-&gt;refine==<a href="../../../docs/manualpages/NEP/NEPRefine.html#NEPRefine">NEP_REFINE_SIMPLE</a> &amp;&amp; nep-&gt;rits&gt;0 &amp;&amp; nep-&gt;nconv&gt;0) {
+<a name="line102">102: </a>    NEPComputeVectors(nep);
+<a name="line103">103: </a>    NEPNewtonRefinementSimple(nep,&amp;nep-&gt;rits,nep-&gt;rtol,nep-&gt;nconv);
+<a name="line104">104: </a>    nep-&gt;state = NEP_STATE_EIGENVECTORS;
+<a name="line105">105: </a>  }
+
+<a name="line107">107: </a>  <font color="#B22222">/* sort eigenvalues according to nep-&gt;which parameter */</font>
+<a name="line108">108: </a>  <a href="../../../docs/manualpages/sys/SlepcSortEigenvalues.html#SlepcSortEigenvalues">SlepcSortEigenvalues</a>(nep-&gt;sc,nep-&gt;nconv,nep-&gt;eigr,nep-&gt;eigi,nep-&gt;perm);
+<a name="line109">109: </a>  PetscLogEventEnd(NEP_Solve,nep,0,0,0);
+
+<a name="line111">111: </a>  <font color="#B22222">/* various viewers */</font>
+<a name="line112">112: </a>  <a href="../../../docs/manualpages/NEP/NEPViewFromOptions.html#NEPViewFromOptions">NEPViewFromOptions</a>(nep,NULL,<font color="#666666">"-nep_view"</font>);
+<a name="line113">113: </a>  <a href="../../../docs/manualpages/NEP/NEPConvergedReasonViewFromOptions.html#NEPConvergedReasonViewFromOptions">NEPConvergedReasonViewFromOptions</a>(nep);
+<a name="line114">114: </a>  <a href="../../../docs/manualpages/NEP/NEPErrorViewFromOptions.html#NEPErrorViewFromOptions">NEPErrorViewFromOptions</a>(nep);
+<a name="line115">115: </a>  <a href="../../../docs/manualpages/NEP/NEPValuesViewFromOptions.html#NEPValuesViewFromOptions">NEPValuesViewFromOptions</a>(nep);
+<a name="line116">116: </a>  <a href="../../../docs/manualpages/NEP/NEPVectorsViewFromOptions.html#NEPVectorsViewFromOptions">NEPVectorsViewFromOptions</a>(nep);
+
+<a name="line118">118: </a>  <font color="#B22222">/* Remove the initial subspace */</font>
+<a name="line119">119: </a>  nep-&gt;nini = 0;
+
+<a name="line121">121: </a>  <font color="#B22222">/* Reset resolvent information */</font>
+<a name="line122">122: </a>  MatDestroy(&amp;nep-&gt;resolvent);
+<a name="line123">123: </a>  <font color="#4169E1">return</font>(0);
+<a name="line124">124: </a>}
+
+<a name="line126">126: </a><font color="#B22222">/*@</font>
+<a name="line127">127: </a><font color="#B22222">   <a href="../../../docs/manualpages/NEP/NEPProjectOperator.html#NEPProjectOperator">NEPProjectOperator</a> - Computes the projection of the nonlinear operator.</font>
+
+<a name="line129">129: </a><font color="#B22222">   Collective on nep</font>
+
+<a name="line131">131: </a><font color="#B22222">   Input Parameters:</font>
+<a name="line132">132: </a><font color="#B22222">+  nep - the nonlinear eigensolver context</font>
+<a name="line133">133: </a><font color="#B22222">.  j0  - initial index</font>
+<a name="line134">134: </a><font color="#B22222">-  j1  - final index</font>
+
+<a name="line136">136: </a><font color="#B22222">   Notes:</font>
+<a name="line137">137: </a><font color="#B22222">   This is available for split operator only.</font>
+
+<a name="line139">139: </a><font color="#B22222">   The nonlinear operator T(lambda) is projected onto span(V), where V is</font>
+<a name="line140">140: </a><font color="#B22222">   an orthonormal basis built internally by the solver. The projected</font>
+<a name="line141">141: </a><font color="#B22222">   operator is equal to sum_i V'*A_i*V*f_i(lambda), so this function</font>
+<a name="line142">142: </a><font color="#B22222">   computes all matrices Ei = V'*A_i*V, and stores them in the extra</font>
+<a name="line143">143: </a><font color="#B22222">   matrices inside <a href="../../../docs/manualpages/DS/DS.html#DS">DS</a>. Only rows/columns in the range [j0,j1-1] are computed,</font>
+<a name="line144">144: </a><font color="#B22222">   the previous ones are assumed to be available already.</font>
+
+<a name="line146">146: </a><font color="#B22222">   Level: developer</font>
+
+<a name="line148">148: </a><font color="#B22222">.seealso: <a href="../../../docs/manualpages/NEP/NEPSetSplitOperator.html#NEPSetSplitOperator">NEPSetSplitOperator</a>()</font>
+<a name="line149">149: </a><font color="#B22222">@*/</font>
+<a name="line150">150: </a><strong><font color="#4169E1"><a name="NEPProjectOperator"></a>PetscErrorCode <a href="../../../docs/manualpages/NEP/NEPProjectOperator.html#NEPProjectOperator">NEPProjectOperator</a>(<a href="../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a> nep,PetscInt j0,PetscInt j1)</font></strong>
+<a name="line151">151: </a>{
+<a name="line153">153: </a>  PetscInt       k;
+<a name="line154">154: </a>  Mat            G;
+
+<a name="line160">160: </a>  NEPCheckProblem(nep,1);
+<a name="line161">161: </a>  NEPCheckSplit(nep,1);
+<a name="line162">162: </a>  <a href="../../../docs/manualpages/BV/BVSetActiveColumns.html#BVSetActiveColumns">BVSetActiveColumns</a>(nep-&gt;V,j0,j1);
+<a name="line163">163: </a>  <font color="#4169E1">for</font> (k=0;k&lt;nep-&gt;nt;k++) {
+<a name="line164">164: </a>    <a href="../../../docs/manualpages/DS/DSGetMat.html#DSGetMat">DSGetMat</a>(nep-&gt;ds,DSMatExtra[k],&amp;G);
+<a name="line165">165: </a>    <a href="../../../docs/manualpages/BV/BVMatProject.html#BVMatProject">BVMatProject</a>(nep-&gt;V,nep-&gt;A[k],nep-&gt;V,G);
+<a name="line166">166: </a>    <a href="../../../docs/manualpages/DS/DSRestoreMat.html#DSRestoreMat">DSRestoreMat</a>(nep-&gt;ds,DSMatExtra[k],&amp;G);
+<a name="line167">167: </a>  }
+<a name="line168">168: </a>  <font color="#4169E1">return</font>(0);
+<a name="line169">169: </a>}
+
+<a name="line171">171: </a><font color="#B22222">/*@</font>
+<a name="line172">172: </a><font color="#B22222">   <a href="../../../docs/manualpages/NEP/NEPApplyFunction.html#NEPApplyFunction">NEPApplyFunction</a> - Applies the nonlinear function T(lambda) to a given vector.</font>
+
+<a name="line174">174: </a><font color="#B22222">   Collective on nep</font>
+
+<a name="line176">176: </a><font color="#B22222">   Input Parameters:</font>
+<a name="line177">177: </a><font color="#B22222">+  nep    - the nonlinear eigensolver context</font>
+<a name="line178">178: </a><font color="#B22222">.  lambda - scalar argument</font>
+<a name="line179">179: </a><font color="#B22222">.  x      - vector to be multiplied against</font>
+<a name="line180">180: </a><font color="#B22222">-  v      - workspace vector (used only in the case of split form)</font>
+
+<a name="line182">182: </a><font color="#B22222">   Output Parameters:</font>
+<a name="line183">183: </a><font color="#B22222">+  y   - result vector</font>
+<a name="line184">184: </a><font color="#B22222">.  A   - Function matrix</font>
+<a name="line185">185: </a><font color="#B22222">-  B   - optional preconditioning matrix</font>
+
+<a name="line187">187: </a><font color="#B22222">   Note:</font>
+<a name="line188">188: </a><font color="#B22222">   If the nonlinear operator is represented in split form, the result</font>
+<a name="line189">189: </a><font color="#B22222">   y = T(lambda)*x is computed without building T(lambda) explicitly. In</font>
+<a name="line190">190: </a><font color="#B22222">   that case, parameters A and B are not used. Otherwise, the matrix</font>
+<a name="line191">191: </a><font color="#B22222">   T(lambda) is built and the effect is the same as a call to</font>
+<a name="line192">192: </a><font color="#B22222">   <a href="../../../docs/manualpages/NEP/NEPComputeFunction.html#NEPComputeFunction">NEPComputeFunction</a>() followed by a MatMult().</font>
+
+<a name="line194">194: </a><font color="#B22222">   Level: developer</font>
+
+<a name="line196">196: </a><font color="#B22222">.seealso: <a href="../../../docs/manualpages/NEP/NEPSetSplitOperator.html#NEPSetSplitOperator">NEPSetSplitOperator</a>(), <a href="../../../docs/manualpages/NEP/NEPComputeFunction.html#NEPComputeFunction">NEPComputeFunction</a>(), <a href="../../../docs/manualpages/NEP/NEPApplyAdjoint.html#NEPApplyAdjoint">NEPApplyAdjoint</a>()</font>
+<a name="line197">197: </a><font color="#B22222">@*/</font>
+<a name="line198">198: </a><strong><font color="#4169E1"><a name="NEPApplyFunction"></a>PetscErrorCode <a href="../../../docs/manualpages/NEP/NEPApplyFunction.html#NEPApplyFunction">NEPApplyFunction</a>(<a href="../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a> nep,PetscScalar lambda,Vec x,Vec v,Vec y,Mat A,Mat B)</font></strong>
+<a name="line199">199: </a>{
+<a name="line201">201: </a>  PetscInt       i;
+<a name="line202">202: </a>  PetscScalar    alpha;
+
+
+<a name="line213">213: </a>  <font color="#4169E1">if</font> (nep-&gt;fui==NEP_USER_INTERFACE_SPLIT) {
+<a name="line214">214: </a>    VecSet(y,0.0);
+<a name="line215">215: </a>    <font color="#4169E1">for</font> (i=0;i&lt;nep-&gt;nt;i++) {
+<a name="line216">216: </a>      <a href="../../../docs/manualpages/FN/FNEvaluateFunction.html#FNEvaluateFunction">FNEvaluateFunction</a>(nep-&gt;f[i],lambda,&amp;alpha);
+<a name="line217">217: </a>      MatMult(nep-&gt;A[i],x,v);
+<a name="line218">218: </a>      VecAXPY(y,alpha,v);
+<a name="line219">219: </a>    }
+<a name="line220">220: </a>  } <font color="#4169E1">else</font> {
+<a name="line221">221: </a>    <a href="../../../docs/manualpages/NEP/NEPComputeFunction.html#NEPComputeFunction">NEPComputeFunction</a>(nep,lambda,A,B);
+<a name="line222">222: </a>    MatMult(A,x,y);
+<a name="line223">223: </a>  }
+<a name="line224">224: </a>  <font color="#4169E1">return</font>(0);
+<a name="line225">225: </a>}
+
+<a name="line227">227: </a><font color="#B22222">/*@</font>
+<a name="line228">228: </a><font color="#B22222">   <a href="../../../docs/manualpages/NEP/NEPApplyAdjoint.html#NEPApplyAdjoint">NEPApplyAdjoint</a> - Applies the adjoint nonlinear function T(lambda)^* to a given vector.</font>
+
+<a name="line230">230: </a><font color="#B22222">   Collective on nep</font>
+
+<a name="line232">232: </a><font color="#B22222">   Input Parameters:</font>
+<a name="line233">233: </a><font color="#B22222">+  nep    - the nonlinear eigensolver context</font>
+<a name="line234">234: </a><font color="#B22222">.  lambda - scalar argument</font>
+<a name="line235">235: </a><font color="#B22222">.  x      - vector to be multiplied against</font>
+<a name="line236">236: </a><font color="#B22222">-  v      - workspace vector (used only in the case of split form)</font>
+
+<a name="line238">238: </a><font color="#B22222">   Output Parameters:</font>
+<a name="line239">239: </a><font color="#B22222">+  y   - result vector</font>
+<a name="line240">240: </a><font color="#B22222">.  A   - Function matrix</font>
+<a name="line241">241: </a><font color="#B22222">-  B   - optional preconditioning matrix</font>
+
+<a name="line243">243: </a><font color="#B22222">   Level: developer</font>
+
+<a name="line245">245: </a><font color="#B22222">.seealso: <a href="../../../docs/manualpages/NEP/NEPSetSplitOperator.html#NEPSetSplitOperator">NEPSetSplitOperator</a>(), <a href="../../../docs/manualpages/NEP/NEPComputeFunction.html#NEPComputeFunction">NEPComputeFunction</a>(), <a href="../../../docs/manualpages/NEP/NEPApplyFunction.html#NEPApplyFunction">NEPApplyFunction</a>()</font>
+<a name="line246">246: </a><font color="#B22222">@*/</font>
+<a name="line247">247: </a><strong><font color="#4169E1"><a name="NEPApplyAdjoint"></a>PetscErrorCode <a href="../../../docs/manualpages/NEP/NEPApplyAdjoint.html#NEPApplyAdjoint">NEPApplyAdjoint</a>(<a href="../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a> nep,PetscScalar lambda,Vec x,Vec v,Vec y,Mat A,Mat B)</font></strong>
+<a name="line248">248: </a>{
+<a name="line250">250: </a>  PetscInt       i;
+<a name="line251">251: </a>  PetscScalar    alpha;
+
+
+<a name="line262">262: </a>  VecConjugate(x);
+<a name="line263">263: </a>  <font color="#4169E1">if</font> (nep-&gt;fui==NEP_USER_INTERFACE_SPLIT) {
+<a name="line264">264: </a>    VecSet(y,0.0);
+<a name="line265">265: </a>    <font color="#4169E1">for</font> (i=0;i&lt;nep-&gt;nt;i++) {
+<a name="line266">266: </a>      <a href="../../../docs/manualpages/FN/FNEvaluateFunction.html#FNEvaluateFunction">FNEvaluateFunction</a>(nep-&gt;f[i],lambda,&amp;alpha);
+<a name="line267">267: </a>      MatMultTranspose(nep-&gt;A[i],x,v);
+<a name="line268">268: </a>      VecAXPY(y,alpha,v);
+<a name="line269">269: </a>    }
+<a name="line270">270: </a>  } <font color="#4169E1">else</font> {
+<a name="line271">271: </a>    <a href="../../../docs/manualpages/NEP/NEPComputeFunction.html#NEPComputeFunction">NEPComputeFunction</a>(nep,lambda,A,B);
+<a name="line272">272: </a>    MatMultTranspose(A,x,y);
+<a name="line273">273: </a>  }
+<a name="line274">274: </a>  VecConjugate(x);
+<a name="line275">275: </a>  VecConjugate(y);
+<a name="line276">276: </a>  <font color="#4169E1">return</font>(0);
+<a name="line277">277: </a>}
+
+<a name="line279">279: </a><font color="#B22222">/*@</font>
+<a name="line280">280: </a><font color="#B22222">   <a href="../../../docs/manualpages/NEP/NEPApplyJacobian.html#NEPApplyJacobian">NEPApplyJacobian</a> - Applies the nonlinear Jacobian T'(lambda) to a given vector.</font>
+
+<a name="line282">282: </a><font color="#B22222">   Collective on nep</font>
+
+<a name="line284">284: </a><font color="#B22222">   Input Parameters:</font>
+<a name="line285">285: </a><font color="#B22222">+  nep    - the nonlinear eigensolver context</font>
+<a name="line286">286: </a><font color="#B22222">.  lambda - scalar argument</font>
+<a name="line287">287: </a><font color="#B22222">.  x      - vector to be multiplied against</font>
+<a name="line288">288: </a><font color="#B22222">-  v      - workspace vector (used only in the case of split form)</font>
+
+<a name="line290">290: </a><font color="#B22222">   Output Parameters:</font>
+<a name="line291">291: </a><font color="#B22222">+  y   - result vector</font>
+<a name="line292">292: </a><font color="#B22222">-  A   - Jacobian matrix</font>
+
+<a name="line294">294: </a><font color="#B22222">   Note:</font>
+<a name="line295">295: </a><font color="#B22222">   If the nonlinear operator is represented in split form, the result</font>
+<a name="line296">296: </a><font color="#B22222">   y = T'(lambda)*x is computed without building T'(lambda) explicitly. In</font>
+<a name="line297">297: </a><font color="#B22222">   that case, parameter A is not used. Otherwise, the matrix</font>
+<a name="line298">298: </a><font color="#B22222">   T'(lambda) is built and the effect is the same as a call to</font>
+<a name="line299">299: </a><font color="#B22222">   <a href="../../../docs/manualpages/NEP/NEPComputeJacobian.html#NEPComputeJacobian">NEPComputeJacobian</a>() followed by a MatMult().</font>
+
+<a name="line301">301: </a><font color="#B22222">   Level: developer</font>
+
+<a name="line303">303: </a><font color="#B22222">.seealso: <a href="../../../docs/manualpages/NEP/NEPSetSplitOperator.html#NEPSetSplitOperator">NEPSetSplitOperator</a>(), <a href="../../../docs/manualpages/NEP/NEPComputeJacobian.html#NEPComputeJacobian">NEPComputeJacobian</a>()</font>
+<a name="line304">304: </a><font color="#B22222">@*/</font>
+<a name="line305">305: </a><strong><font color="#4169E1"><a name="NEPApplyJacobian"></a>PetscErrorCode <a href="../../../docs/manualpages/NEP/NEPApplyJacobian.html#NEPApplyJacobian">NEPApplyJacobian</a>(<a href="../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a> nep,PetscScalar lambda,Vec x,Vec v,Vec y,Mat A)</font></strong>
+<a name="line306">306: </a>{
+<a name="line308">308: </a>  PetscInt       i;
+<a name="line309">309: </a>  PetscScalar    alpha;
+
+
+<a name="line319">319: </a>  <font color="#4169E1">if</font> (nep-&gt;fui==NEP_USER_INTERFACE_SPLIT) {
+<a name="line320">320: </a>    VecSet(y,0.0);
+<a name="line321">321: </a>    <font color="#4169E1">for</font> (i=0;i&lt;nep-&gt;nt;i++) {
+<a name="line322">322: </a>      <a href="../../../docs/manualpages/FN/FNEvaluateDerivative.html#FNEvaluateDerivative">FNEvaluateDerivative</a>(nep-&gt;f[i],lambda,&amp;alpha);
+<a name="line323">323: </a>      MatMult(nep-&gt;A[i],x,v);
+<a name="line324">324: </a>      VecAXPY(y,alpha,v);
+<a name="line325">325: </a>    }
+<a name="line326">326: </a>  } <font color="#4169E1">else</font> {
+<a name="line327">327: </a>    <a href="../../../docs/manualpages/NEP/NEPComputeJacobian.html#NEPComputeJacobian">NEPComputeJacobian</a>(nep,lambda,A);
+<a name="line328">328: </a>    MatMult(A,x,y);
+<a name="line329">329: </a>  }
+<a name="line330">330: </a>  <font color="#4169E1">return</font>(0);
+<a name="line331">331: </a>}
+
+<a name="line333">333: </a><font color="#B22222">/*@</font>
+<a name="line334">334: </a><font color="#B22222">   <a href="../../../docs/manualpages/NEP/NEPGetIterationNumber.html#NEPGetIterationNumber">NEPGetIterationNumber</a> - Gets the current iteration number. If the</font>
+<a name="line335">335: </a><font color="#B22222">   call to <a href="../../../docs/manualpages/NEP/NEPSolve.html#NEPSolve">NEPSolve</a>() is complete, then it returns the number of iterations</font>
+<a name="line336">336: </a><font color="#B22222">   carried out by the solution method.</font>
+
+<a name="line338">338: </a><font color="#B22222">   Not Collective</font>
+
+<a name="line340">340: </a><font color="#B22222">   Input Parameter:</font>
+<a name="line341">341: </a><font color="#B22222">.  nep - the nonlinear eigensolver context</font>
+
+<a name="line343">343: </a><font color="#B22222">   Output Parameter:</font>
+<a name="line344">344: </a><font color="#B22222">.  its - number of iterations</font>
+
+<a name="line346">346: </a><font color="#B22222">   Note:</font>
+<a name="line347">347: </a><font color="#B22222">   During the i-th iteration this call returns i-1. If <a href="../../../docs/manualpages/NEP/NEPSolve.html#NEPSolve">NEPSolve</a>() is</font>
+<a name="line348">348: </a><font color="#B22222">   complete, then parameter "its" contains either the iteration number at</font>
+<a name="line349">349: </a><font color="#B22222">   which convergence was successfully reached, or failure was detected.</font>
+<a name="line350">350: </a><font color="#B22222">   Call <a href="../../../docs/manualpages/NEP/NEPGetConvergedReason.html#NEPGetConvergedReason">NEPGetConvergedReason</a>() to determine if the solver converged or</font>
+<a name="line351">351: </a><font color="#B22222">   failed and why.</font>
+
+<a name="line353">353: </a><font color="#B22222">   Level: intermediate</font>
+
+<a name="line355">355: </a><font color="#B22222">.seealso: <a href="../../../docs/manualpages/NEP/NEPGetConvergedReason.html#NEPGetConvergedReason">NEPGetConvergedReason</a>(), <a href="../../../docs/manualpages/NEP/NEPSetTolerances.html#NEPSetTolerances">NEPSetTolerances</a>()</font>
+<a name="line356">356: </a><font color="#B22222">@*/</font>
+<a name="line357">357: </a><strong><font color="#4169E1"><a name="NEPGetIterationNumber"></a>PetscErrorCode <a href="../../../docs/manualpages/NEP/NEPGetIterationNumber.html#NEPGetIterationNumber">NEPGetIterationNumber</a>(<a href="../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a> nep,PetscInt *its)</font></strong>
+<a name="line358">358: </a>{
+<a name="line362">362: </a>  *its = nep-&gt;its;
+<a name="line363">363: </a>  <font color="#4169E1">return</font>(0);
+<a name="line364">364: </a>}
+
+<a name="line366">366: </a><font color="#B22222">/*@</font>
+<a name="line367">367: </a><font color="#B22222">   <a href="../../../docs/manualpages/NEP/NEPGetConverged.html#NEPGetConverged">NEPGetConverged</a> - Gets the number of converged eigenpairs.</font>
+
+<a name="line369">369: </a><font color="#B22222">   Not Collective</font>
+
+<a name="line371">371: </a><font color="#B22222">   Input Parameter:</font>
+<a name="line372">372: </a><font color="#B22222">.  nep - the nonlinear eigensolver context</font>
+
+<a name="line374">374: </a><font color="#B22222">   Output Parameter:</font>
+<a name="line375">375: </a><font color="#B22222">.  nconv - number of converged eigenpairs</font>
+
+<a name="line377">377: </a><font color="#B22222">   Note:</font>
+<a name="line378">378: </a><font color="#B22222">   This function should be called after <a href="../../../docs/manualpages/NEP/NEPSolve.html#NEPSolve">NEPSolve</a>() has finished.</font>
+
+<a name="line380">380: </a><font color="#B22222">   Level: beginner</font>
+
+<a name="line382">382: </a><font color="#B22222">.seealso: <a href="../../../docs/manualpages/NEP/NEPSetDimensions.html#NEPSetDimensions">NEPSetDimensions</a>(), <a href="../../../docs/manualpages/NEP/NEPSolve.html#NEPSolve">NEPSolve</a>()</font>
+<a name="line383">383: </a><font color="#B22222">@*/</font>
+<a name="line384">384: </a><strong><font color="#4169E1"><a name="NEPGetConverged"></a>PetscErrorCode <a href="../../../docs/manualpages/NEP/NEPGetConverged.html#NEPGetConverged">NEPGetConverged</a>(<a href="../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a> nep,PetscInt *nconv)</font></strong>
+<a name="line385">385: </a>{
+<a name="line389">389: </a>  NEPCheckSolved(nep,1);
+<a name="line390">390: </a>  *nconv = nep-&gt;nconv;
+<a name="line391">391: </a>  <font color="#4169E1">return</font>(0);
+<a name="line392">392: </a>}
+
+<a name="line394">394: </a><font color="#B22222">/*@</font>
+<a name="line395">395: </a><font color="#B22222">   <a href="../../../docs/manualpages/NEP/NEPGetConvergedReason.html#NEPGetConvergedReason">NEPGetConvergedReason</a> - Gets the reason why the <a href="../../../docs/manualpages/NEP/NEPSolve.html#NEPSolve">NEPSolve</a>() iteration was</font>
+<a name="line396">396: </a><font color="#B22222">   stopped.</font>
+
+<a name="line398">398: </a><font color="#B22222">   Not Collective</font>
+
+<a name="line400">400: </a><font color="#B22222">   Input Parameter:</font>
+<a name="line401">401: </a><font color="#B22222">.  nep - the nonlinear eigensolver context</font>
+
+<a name="line403">403: </a><font color="#B22222">   Output Parameter:</font>
+<a name="line404">404: </a><font color="#B22222">.  reason - negative value indicates diverged, positive value converged</font>
+
+<a name="line406">406: </a><font color="#B22222">   Notes:</font>
+
+<a name="line408">408: </a><font color="#B22222">   Possible values for reason are</font>
+<a name="line409">409: </a><font color="#B22222">+  <a href="../../../docs/manualpages/NEP/NEPConvergedReason.html#NEPConvergedReason">NEP_CONVERGED_TOL</a> - converged up to tolerance</font>
+<a name="line410">410: </a><font color="#B22222">.  <a href="../../../docs/manualpages/NEP/NEPConvergedReason.html#NEPConvergedReason">NEP_CONVERGED_USER</a> - converged due to a user-defined condition</font>
+<a name="line411">411: </a><font color="#B22222">.  <a href="../../../docs/manualpages/NEP/NEPConvergedReason.html#NEPConvergedReason">NEP_DIVERGED_ITS</a> - required more than max_it iterations to reach convergence</font>
+<a name="line412">412: </a><font color="#B22222">.  <a href="../../../docs/manualpages/NEP/NEPConvergedReason.html#NEPConvergedReason">NEP_DIVERGED_BREAKDOWN</a> - generic breakdown in method</font>
+<a name="line413">413: </a><font color="#B22222">.  <a href="../../../docs/manualpages/NEP/NEPConvergedReason.html#NEPConvergedReason">NEP_DIVERGED_LINEAR_SOLVE</a> - inner linear solve failed</font>
+<a name="line414">414: </a><font color="#B22222">-  <a href="../../../docs/manualpages/NEP/NEPConvergedReason.html#NEPConvergedReason">NEP_DIVERGED_SUBSPACE_EXHAUSTED</a> - run out of space for the basis in an</font>
+<a name="line415">415: </a><font color="#B22222">   unrestarted solver</font>
+
+<a name="line417">417: </a><font color="#B22222">   Can only be called after the call to <a href="../../../docs/manualpages/NEP/NEPSolve.html#NEPSolve">NEPSolve</a>() is complete.</font>
+
+<a name="line419">419: </a><font color="#B22222">   Level: intermediate</font>
+
+<a name="line421">421: </a><font color="#B22222">.seealso: <a href="../../../docs/manualpages/NEP/NEPSetTolerances.html#NEPSetTolerances">NEPSetTolerances</a>(), <a href="../../../docs/manualpages/NEP/NEPSolve.html#NEPSolve">NEPSolve</a>(), <a href="../../../docs/manualpages/NEP/NEPConvergedReason.html#NEPConvergedReason">NEPConvergedReason</a></font>
+<a name="line422">422: </a><font color="#B22222">@*/</font>
+<a name="line423">423: </a><strong><font color="#4169E1"><a name="NEPGetConvergedReason"></a>PetscErrorCode <a href="../../../docs/manualpages/NEP/NEPGetConvergedReason.html#NEPGetConvergedReason">NEPGetConvergedReason</a>(<a href="../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a> nep,<a href="../../../docs/manualpages/NEP/NEPConvergedReason.html#NEPConvergedReason">NEPConvergedReason</a> *reason)</font></strong>
+<a name="line424">424: </a>{
+<a name="line428">428: </a>  NEPCheckSolved(nep,1);
+<a name="line429">429: </a>  *reason = nep-&gt;reason;
+<a name="line430">430: </a>  <font color="#4169E1">return</font>(0);
+<a name="line431">431: </a>}
+
+<a name="line433">433: </a><font color="#B22222">/*@C</font>
+<a name="line434">434: </a><font color="#B22222">   <a href="../../../docs/manualpages/NEP/NEPGetEigenpair.html#NEPGetEigenpair">NEPGetEigenpair</a> - Gets the i-th solution of the eigenproblem as computed by</font>
+<a name="line435">435: </a><font color="#B22222">   <a href="../../../docs/manualpages/NEP/NEPSolve.html#NEPSolve">NEPSolve</a>(). The solution consists in both the eigenvalue and the eigenvector.</font>
+
+<a name="line437">437: </a><font color="#B22222">   Logically Collective on nep</font>
+
+<a name="line439">439: </a><font color="#B22222">   Input Parameters:</font>
+<a name="line440">440: </a><font color="#B22222">+  nep - nonlinear eigensolver context</font>
+<a name="line441">441: </a><font color="#B22222">-  i   - index of the solution</font>
+
+<a name="line443">443: </a><font color="#B22222">   Output Parameters:</font>
+<a name="line444">444: </a><font color="#B22222">+  eigr - real part of eigenvalue</font>
+<a name="line445">445: </a><font color="#B22222">.  eigi - imaginary part of eigenvalue</font>
+<a name="line446">446: </a><font color="#B22222">.  Vr   - real part of eigenvector</font>
+<a name="line447">447: </a><font color="#B22222">-  Vi   - imaginary part of eigenvector</font>
+
+<a name="line449">449: </a><font color="#B22222">   Notes:</font>
+<a name="line450">450: </a><font color="#B22222">   It is allowed to pass NULL for Vr and Vi, if the eigenvector is not</font>
+<a name="line451">451: </a><font color="#B22222">   required. Otherwise, the caller must provide valid Vec objects, i.e.,</font>
+<a name="line452">452: </a><font color="#B22222">   they must be created by the calling program with e.g. MatCreateVecs().</font>
+
+<a name="line454">454: </a><font color="#B22222">   If the eigenvalue is real, then eigi and Vi are set to zero. If PETSc is</font>
+<a name="line455">455: </a><font color="#B22222">   configured with complex scalars the eigenvalue is stored</font>
+<a name="line456">456: </a><font color="#B22222">   directly in eigr (eigi is set to zero) and the eigenvector in Vr (Vi is</font>
+<a name="line457">457: </a><font color="#B22222">   set to zero). In any case, the user can pass NULL in Vr or Vi if one of</font>
+<a name="line458">458: </a><font color="#B22222">   them is not required.</font>
+
+<a name="line460">460: </a><font color="#B22222">   The index i should be a value between 0 and nconv-1 (see <a href="../../../docs/manualpages/NEP/NEPGetConverged.html#NEPGetConverged">NEPGetConverged</a>()).</font>
+<a name="line461">461: </a><font color="#B22222">   Eigenpairs are indexed according to the ordering criterion established</font>
+<a name="line462">462: </a><font color="#B22222">   with <a href="../../../docs/manualpages/NEP/NEPSetWhichEigenpairs.html#NEPSetWhichEigenpairs">NEPSetWhichEigenpairs</a>().</font>
+
+<a name="line464">464: </a><font color="#B22222">   Level: beginner</font>
+
+<a name="line466">466: </a><font color="#B22222">.seealso: <a href="../../../docs/manualpages/NEP/NEPSolve.html#NEPSolve">NEPSolve</a>(), <a href="../../../docs/manualpages/NEP/NEPGetConverged.html#NEPGetConverged">NEPGetConverged</a>(), <a href="../../../docs/manualpages/NEP/NEPSetWhichEigenpairs.html#NEPSetWhichEigenpairs">NEPSetWhichEigenpairs</a>(), <a href="../../../docs/manualpages/NEP/NEPGetLeftEigenvector.html#NEPGetLeftEigenvector">NEPGetLeftEigenvector</a>()</font>
+<a name="line467">467: </a><font color="#B22222">@*/</font>
+<a name="line468">468: </a><strong><font color="#4169E1"><a name="NEPGetEigenpair"></a>PetscErrorCode <a href="../../../docs/manualpages/NEP/NEPGetEigenpair.html#NEPGetEigenpair">NEPGetEigenpair</a>(<a href="../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a> nep,PetscInt i,PetscScalar *eigr,PetscScalar *eigi,Vec Vr,Vec Vi)</font></strong>
+<a name="line469">469: </a>{
+<a name="line470">470: </a>  PetscInt       k;
+
+<a name="line478">478: </a>  NEPCheckSolved(nep,1);
+<a name="line479">479: </a>  <font color="#4169E1">if</font> (i&lt;0) SETERRQ(PetscObjectComm((PetscObject)nep),PETSC_ERR_ARG_OUTOFRANGE,<font color="#666666">"The index cannot be negative"</font>);
+<a name="line480">480: </a>  <font color="#4169E1">if</font> (i&gt;=nep-&gt;nconv) SETERRQ(PetscObjectComm((PetscObject)nep),PETSC_ERR_ARG_OUTOFRANGE,<font color="#666666">"The index can be nconv-1 at most, see <a href="../../../docs/manualpages/NEP/NEPGetConverged.html#NEPGetConverged">NEPGetConverged</a>()"</font>);
+
+<a name="line482">482: </a>  NEPComputeVectors(nep);
+<a name="line483">483: </a>  k = nep-&gt;perm[i];
+
+<a name="line485">485: </a>  <font color="#B22222">/* eigenvalue */</font>
+<a name="line486">486: </a><font color="#A020F0">#if defined(PETSC_USE_COMPLEX)</font>
+<a name="line487">487: </a>  <font color="#4169E1">if</font> (eigr) *eigr = nep-&gt;eigr[k];
+<a name="line488">488: </a>  <font color="#4169E1">if</font> (eigi) *eigi = 0;
+<a name="line489">489: </a><font color="#A020F0">#else</font>
+<a name="line490">490: </a>  <font color="#4169E1">if</font> (eigr) *eigr = nep-&gt;eigr[k];
+<a name="line491">491: </a>  <font color="#4169E1">if</font> (eigi) *eigi = nep-&gt;eigi[k];
+<a name="line492">492: </a><font color="#A020F0">#endif</font>
+
+<a name="line494">494: </a>  <font color="#B22222">/* eigenvector */</font>
+<a name="line495">495: </a>  BV_GetEigenvector(nep-&gt;V,k,nep-&gt;eigi[k],Vr,Vi);
+<a name="line496">496: </a>  <font color="#4169E1">return</font>(0);
+<a name="line497">497: </a>}
+
+<a name="line499">499: </a><font color="#B22222">/*@</font>
+<a name="line500">500: </a><font color="#B22222">   <a href="../../../docs/manualpages/NEP/NEPGetLeftEigenvector.html#NEPGetLeftEigenvector">NEPGetLeftEigenvector</a> - Gets the i-th left eigenvector as computed by <a href="../../../docs/manualpages/NEP/NEPSolve.html#NEPSolve">NEPSolve</a>().</font>
+
+<a name="line502">502: </a><font color="#B22222">   Logically Collective on nep</font>
+
+<a name="line504">504: </a><font color="#B22222">   Input Parameters:</font>
+<a name="line505">505: </a><font color="#B22222">+  nep - eigensolver context</font>
+<a name="line506">506: </a><font color="#B22222">-  i   - index of the solution</font>
+
+<a name="line508">508: </a><font color="#B22222">   Output Parameters:</font>
+<a name="line509">509: </a><font color="#B22222">+  Wr   - real part of left eigenvector</font>
+<a name="line510">510: </a><font color="#B22222">-  Wi   - imaginary part of left eigenvector</font>
+
+<a name="line512">512: </a><font color="#B22222">   Notes:</font>
+<a name="line513">513: </a><font color="#B22222">   The caller must provide valid Vec objects, i.e., they must be created</font>
+<a name="line514">514: </a><font color="#B22222">   by the calling program with e.g. MatCreateVecs().</font>
+
+<a name="line516">516: </a><font color="#B22222">   If the corresponding eigenvalue is real, then Wi is set to zero. If PETSc is</font>
+<a name="line517">517: </a><font color="#B22222">   configured with complex scalars the eigenvector is stored directly in Wr</font>
+<a name="line518">518: </a><font color="#B22222">   (Wi is set to zero). In any case, the user can pass NULL in Wr or Wi if one of</font>
+<a name="line519">519: </a><font color="#B22222">   them is not required.</font>
+
+<a name="line521">521: </a><font color="#B22222">   The index i should be a value between 0 and nconv-1 (see <a href="../../../docs/manualpages/NEP/NEPGetConverged.html#NEPGetConverged">NEPGetConverged</a>()).</font>
+<a name="line522">522: </a><font color="#B22222">   Eigensolutions are indexed according to the ordering criterion established</font>
+<a name="line523">523: </a><font color="#B22222">   with <a href="../../../docs/manualpages/NEP/NEPSetWhichEigenpairs.html#NEPSetWhichEigenpairs">NEPSetWhichEigenpairs</a>().</font>
+
+<a name="line525">525: </a><font color="#B22222">   Left eigenvectors are available only if the twosided flag was set, see</font>
+<a name="line526">526: </a><font color="#B22222">   <a href="../../../docs/manualpages/NEP/NEPSetTwoSided.html#NEPSetTwoSided">NEPSetTwoSided</a>().</font>
+
+<a name="line528">528: </a><font color="#B22222">   Level: intermediate</font>
+
+<a name="line530">530: </a><font color="#B22222">.seealso: <a href="../../../docs/manualpages/NEP/NEPGetEigenpair.html#NEPGetEigenpair">NEPGetEigenpair</a>(), <a href="../../../docs/manualpages/NEP/NEPGetConverged.html#NEPGetConverged">NEPGetConverged</a>(), <a href="../../../docs/manualpages/NEP/NEPSetWhichEigenpairs.html#NEPSetWhichEigenpairs">NEPSetWhichEigenpairs</a>(), <a href="../../../docs/manualpages/NEP/NEPSetTwoSided.html#NEPSetTwoSided">NEPSetTwoSided</a>()</font>
+<a name="line531">531: </a><font color="#B22222">@*/</font>
+<a name="line532">532: </a><strong><font color="#4169E1"><a name="NEPGetLeftEigenvector"></a>PetscErrorCode <a href="../../../docs/manualpages/NEP/NEPGetLeftEigenvector.html#NEPGetLeftEigenvector">NEPGetLeftEigenvector</a>(<a href="../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a> nep,PetscInt i,Vec Wr,Vec Wi)</font></strong>
+<a name="line533">533: </a>{
+<a name="line535">535: </a>  PetscInt       k;
+
+<a name="line542">542: </a>  NEPCheckSolved(nep,1);
+<a name="line543">543: </a>  <font color="#4169E1">if</font> (!nep-&gt;twosided) SETERRQ(PetscObjectComm((PetscObject)nep),PETSC_ERR_ARG_WRONGSTATE,<font color="#666666">"Must request left vectors with <a href="../../../docs/manualpages/NEP/NEPSetTwoSided.html#NEPSetTwoSided">NEPSetTwoSided</a>"</font>);
+<a name="line544">544: </a>  <font color="#4169E1">if</font> (i&lt;0 || i&gt;=nep-&gt;nconv) SETERRQ(PetscObjectComm((PetscObject)nep),PETSC_ERR_ARG_OUTOFRANGE,<font color="#666666">"Argument 2 out of range"</font>);
+<a name="line545">545: </a>  NEPComputeVectors(nep);
+<a name="line546">546: </a>  k = nep-&gt;perm[i];
+<a name="line547">547: </a>  BV_GetEigenvector(nep-&gt;W,k,nep-&gt;eigi[k],Wr,Wi);
+<a name="line548">548: </a>  <font color="#4169E1">return</font>(0);
+<a name="line549">549: </a>}
+
+<a name="line551">551: </a><font color="#B22222">/*@</font>
+<a name="line552">552: </a><font color="#B22222">   <a href="../../../docs/manualpages/NEP/NEPGetErrorEstimate.html#NEPGetErrorEstimate">NEPGetErrorEstimate</a> - Returns the error estimate associated to the i-th</font>
+<a name="line553">553: </a><font color="#B22222">   computed eigenpair.</font>
+
+<a name="line555">555: </a><font color="#B22222">   Not Collective</font>
+
+<a name="line557">557: </a><font color="#B22222">   Input Parameter:</font>
+<a name="line558">558: </a><font color="#B22222">+  nep - nonlinear eigensolver context</font>
+<a name="line559">559: </a><font color="#B22222">-  i   - index of eigenpair</font>
+
+<a name="line561">561: </a><font color="#B22222">   Output Parameter:</font>
+<a name="line562">562: </a><font color="#B22222">.  errest - the error estimate</font>
+
+<a name="line564">564: </a><font color="#B22222">   Notes:</font>
+<a name="line565">565: </a><font color="#B22222">   This is the error estimate used internally by the eigensolver. The actual</font>
+<a name="line566">566: </a><font color="#B22222">   error bound can be computed with <a href="../../../docs/manualpages/NEP/NEPComputeError.html#NEPComputeError">NEPComputeError</a>().</font>
+
+<a name="line568">568: </a><font color="#B22222">   Level: advanced</font>
+
+<a name="line570">570: </a><font color="#B22222">.seealso: <a href="../../../docs/manualpages/NEP/NEPComputeError.html#NEPComputeError">NEPComputeError</a>()</font>
+<a name="line571">571: </a><font color="#B22222">@*/</font>
+<a name="line572">572: </a><strong><font color="#4169E1"><a name="NEPGetErrorEstimate"></a>PetscErrorCode <a href="../../../docs/manualpages/NEP/NEPGetErrorEstimate.html#NEPGetErrorEstimate">NEPGetErrorEstimate</a>(<a href="../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a> nep,PetscInt i,PetscReal *errest)</font></strong>
+<a name="line573">573: </a>{
+<a name="line577">577: </a>  NEPCheckSolved(nep,1);
+<a name="line578">578: </a>  <font color="#4169E1">if</font> (i&lt;0 || i&gt;=nep-&gt;nconv) SETERRQ(PetscObjectComm((PetscObject)nep),PETSC_ERR_ARG_OUTOFRANGE,<font color="#666666">"Argument 2 out of range"</font>);
+<a name="line579">579: </a>  *errest = nep-&gt;errest[nep-&gt;perm[i]];
+<a name="line580">580: </a>  <font color="#4169E1">return</font>(0);
+<a name="line581">581: </a>}
+
+<a name="line583">583: </a><font color="#B22222">/*</font>
+<a name="line584">584: </a><font color="#B22222">   NEPComputeResidualNorm_Private - Computes the norm of the residual vector</font>
+<a name="line585">585: </a><font color="#B22222">   associated with an eigenpair.</font>
+
+<a name="line587">587: </a><font color="#B22222">   Input Parameters:</font>
+<a name="line588">588: </a><font color="#B22222">     adj    - whether the adjoint T^* must be used instead of T</font>
+<a name="line589">589: </a><font color="#B22222">     lambda - eigenvalue</font>
+<a name="line590">590: </a><font color="#B22222">     x      - eigenvector</font>
+<a name="line591">591: </a><font color="#B22222">     w      - array of work vectors (two vectors in split form, one vector otherwise)</font>
+<a name="line592">592: </a><font color="#B22222">*/</font>
+<a name="line593">593: </a><strong><font color="#4169E1"><a name="NEPComputeResidualNorm_Private"></a>PetscErrorCode NEPComputeResidualNorm_Private(<a href="../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a> nep,PetscBool adj,PetscScalar lambda,Vec x,Vec *w,PetscReal *norm)</font></strong>
+<a name="line594">594: </a>{
+<a name="line596">596: </a>  Vec            y,z=NULL;
+
+<a name="line599">599: </a>  y = w[0];
+<a name="line600">600: </a>  <font color="#4169E1">if</font> (nep-&gt;fui==NEP_USER_INTERFACE_SPLIT) z = w[1];
+<a name="line601">601: </a>  <font color="#4169E1">if</font> (adj) {
+<a name="line602">602: </a>    <a href="../../../docs/manualpages/NEP/NEPApplyAdjoint.html#NEPApplyAdjoint">NEPApplyAdjoint</a>(nep,lambda,x,z,y,nep-&gt;function,nep-&gt;function_pre);
+<a name="line603">603: </a>  } <font color="#4169E1">else</font> {
+<a name="line604">604: </a>    <a href="../../../docs/manualpages/NEP/NEPApplyFunction.html#NEPApplyFunction">NEPApplyFunction</a>(nep,lambda,x,z,y,nep-&gt;function,nep-&gt;function_pre);
+<a name="line605">605: </a>  }
+<a name="line606">606: </a>  VecNorm(y,NORM_2,norm);
+<a name="line607">607: </a>  <font color="#4169E1">return</font>(0);
+<a name="line608">608: </a>}
+
+<a name="line610">610: </a><font color="#B22222">/*@</font>
+<a name="line611">611: </a><font color="#B22222">   <a href="../../../docs/manualpages/NEP/NEPComputeError.html#NEPComputeError">NEPComputeError</a> - Computes the error (based on the residual norm) associated</font>
+<a name="line612">612: </a><font color="#B22222">   with the i-th computed eigenpair.</font>
+
+<a name="line614">614: </a><font color="#B22222">   Collective on nep</font>
+
+<a name="line616">616: </a><font color="#B22222">   Input Parameter:</font>
+<a name="line617">617: </a><font color="#B22222">+  nep  - the nonlinear eigensolver context</font>
+<a name="line618">618: </a><font color="#B22222">.  i    - the solution index</font>
+<a name="line619">619: </a><font color="#B22222">-  type - the type of error to compute</font>
+
+<a name="line621">621: </a><font color="#B22222">   Output Parameter:</font>
+<a name="line622">622: </a><font color="#B22222">.  error - the error</font>
+
+<a name="line624">624: </a><font color="#B22222">   Notes:</font>
+<a name="line625">625: </a><font color="#B22222">   The error can be computed in various ways, all of them based on the residual</font>
+<a name="line626">626: </a><font color="#B22222">   norm computed as ||T(lambda)x||_2 where lambda is the eigenvalue and x is the</font>
+<a name="line627">627: </a><font color="#B22222">   eigenvector.</font>
+
+<a name="line629">629: </a><font color="#B22222">   Level: beginner</font>
+
+<a name="line631">631: </a><font color="#B22222">.seealso: <a href="../../../docs/manualpages/NEP/NEPErrorType.html#NEPErrorType">NEPErrorType</a>, <a href="../../../docs/manualpages/NEP/NEPSolve.html#NEPSolve">NEPSolve</a>(), <a href="../../../docs/manualpages/NEP/NEPGetErrorEstimate.html#NEPGetErrorEstimate">NEPGetErrorEstimate</a>()</font>
+<a name="line632">632: </a><font color="#B22222">@*/</font>
+<a name="line633">633: </a><strong><font color="#4169E1"><a name="NEPComputeError"></a>PetscErrorCode <a href="../../../docs/manualpages/NEP/NEPComputeError.html#NEPComputeError">NEPComputeError</a>(<a href="../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a> nep,PetscInt i,<a href="../../../docs/manualpages/NEP/NEPErrorType.html#NEPErrorType">NEPErrorType</a> type,PetscReal *error)</font></strong>
+<a name="line634">634: </a>{
+<a name="line636">636: </a>  Vec            xr,xi=NULL;
+<a name="line637">637: </a>  PetscInt       j,nwork,issplit=0;
+<a name="line638">638: </a>  PetscScalar    kr,ki,s;
+<a name="line639">639: </a>  PetscReal      er,z=0.0,errorl,nrm;
+<a name="line640">640: </a>  PetscBool      flg;
+
+<a name="line647">647: </a>  NEPCheckSolved(nep,1);
+
+<a name="line649">649: </a>  <font color="#B22222">/* allocate work vectors */</font>
+<a name="line650">650: </a><font color="#A020F0">#if defined(PETSC_USE_COMPLEX)</font>
+<a name="line651">651: </a>  nwork = 2;
+<a name="line652">652: </a><font color="#A020F0">#else</font>
+<a name="line653">653: </a>  nwork = 3;
+<a name="line654">654: </a><font color="#A020F0">#endif</font>
+<a name="line655">655: </a>  <font color="#4169E1">if</font> (nep-&gt;fui==NEP_USER_INTERFACE_SPLIT) {
+<a name="line656">656: </a>    issplit = 1;
+<a name="line657">657: </a>    nwork++;  <font color="#B22222">/* need an extra work vector for NEPComputeResidualNorm_Private */</font>
+<a name="line658">658: </a>  }
+<a name="line659">659: </a>  <a href="../../../docs/manualpages/NEP/NEPSetWorkVecs.html#NEPSetWorkVecs">NEPSetWorkVecs</a>(nep,nwork);
+<a name="line660">660: </a>  xr = nep-&gt;work[issplit+1];
+<a name="line661">661: </a><font color="#A020F0">#if !defined(PETSC_USE_COMPLEX)</font>
+<a name="line662">662: </a>  xi = nep-&gt;work[issplit+2];
+<a name="line663">663: </a><font color="#A020F0">#endif</font>
+
+<a name="line665">665: </a>  <font color="#B22222">/* compute residual norms */</font>
+<a name="line666">666: </a>  <a href="../../../docs/manualpages/NEP/NEPGetEigenpair.html#NEPGetEigenpair">NEPGetEigenpair</a>(nep,i,&amp;kr,&amp;ki,xr,xi);
+<a name="line667">667: </a><font color="#A020F0">#if !defined(PETSC_USE_COMPLEX)</font>
+<a name="line668">668: </a>  <font color="#4169E1">if</font> (ki) SETERRQ(PetscObjectComm((PetscObject)nep),1,<font color="#666666">"Not implemented for complex eigenvalues with real scalars"</font>);
+<a name="line669">669: </a><font color="#A020F0">#endif</font>
+<a name="line670">670: </a>  NEPComputeResidualNorm_Private(nep,PETSC_FALSE,kr,xr,nep-&gt;work,error);
+<a name="line671">671: </a>  VecNorm(xr,NORM_2,&amp;er);
+
+<a name="line673">673: </a>  <font color="#B22222">/* if two-sided, compute left residual norm and take the maximum */</font>
+<a name="line674">674: </a>  <font color="#4169E1">if</font> (nep-&gt;twosided) {
+<a name="line675">675: </a>    <a href="../../../docs/manualpages/NEP/NEPGetLeftEigenvector.html#NEPGetLeftEigenvector">NEPGetLeftEigenvector</a>(nep,i,xr,xi);
+<a name="line676">676: </a>    NEPComputeResidualNorm_Private(nep,PETSC_TRUE,kr,xr,nep-&gt;work,&amp;errorl);
+<a name="line677">677: </a>    *error = PetscMax(*error,errorl);
+<a name="line678">678: </a>  }
+
+<a name="line680">680: </a>  <font color="#B22222">/* compute error */</font>
+<a name="line681">681: </a>  <font color="#4169E1">switch</font> (type) {
+<a name="line682">682: </a>    <font color="#4169E1">case</font> <a href="../../../docs/manualpages/NEP/NEPErrorType.html#NEPErrorType">NEP_ERROR_ABSOLUTE</a>:
+<a name="line683">683: </a>      <font color="#4169E1">break</font>;
+<a name="line684">684: </a>    <font color="#4169E1">case</font> <a href="../../../docs/manualpages/NEP/NEPErrorType.html#NEPErrorType">NEP_ERROR_RELATIVE</a>:
+<a name="line685">685: </a>      *error /= PetscAbsScalar(kr)*er;
+<a name="line686">686: </a>      <font color="#4169E1">break</font>;
+<a name="line687">687: </a>    <font color="#4169E1">case</font> <a href="../../../docs/manualpages/NEP/NEPErrorType.html#NEPErrorType">NEP_ERROR_BACKWARD</a>:
+<a name="line688">688: </a>      <font color="#4169E1">if</font> (nep-&gt;fui!=NEP_USER_INTERFACE_SPLIT) {
+<a name="line689">689: </a>        <a href="../../../docs/manualpages/NEP/NEPComputeFunction.html#NEPComputeFunction">NEPComputeFunction</a>(nep,kr,nep-&gt;function,nep-&gt;function);
+<a name="line690">690: </a>        MatHasOperation(nep-&gt;function,MATOP_NORM,&amp;flg);
+<a name="line691">691: </a>        <font color="#4169E1">if</font> (!flg) SETERRQ(PetscObjectComm((PetscObject)nep),PETSC_ERR_ARG_WRONG,<font color="#666666">"The computation of backward errors requires a matrix norm operation"</font>);
+<a name="line692">692: </a>        MatNorm(nep-&gt;function,NORM_INFINITY,&amp;nrm);
+<a name="line693">693: </a>        *error /= nrm*er;
+<a name="line694">694: </a>        <font color="#4169E1">break</font>;
+<a name="line695">695: </a>      }
+<a name="line696">696: </a>      <font color="#B22222">/* initialization of matrix norms */</font>
+<a name="line697">697: </a>      <font color="#4169E1">if</font> (!nep-&gt;nrma[0]) {
+<a name="line698">698: </a>        <font color="#4169E1">for</font> (j=0;j&lt;nep-&gt;nt;j++) {
+<a name="line699">699: </a>          MatHasOperation(nep-&gt;A[j],MATOP_NORM,&amp;flg);
+<a name="line700">700: </a>          <font color="#4169E1">if</font> (!flg) SETERRQ(PetscObjectComm((PetscObject)nep),PETSC_ERR_ARG_WRONG,<font color="#666666">"The computation of backward errors requires a matrix norm operation"</font>);
+<a name="line701">701: </a>          MatNorm(nep-&gt;A[j],NORM_INFINITY,&amp;nep-&gt;nrma[j]);
+<a name="line702">702: </a>        }
+<a name="line703">703: </a>      }
+<a name="line704">704: </a>      <font color="#4169E1">for</font> (j=0;j&lt;nep-&gt;nt;j++) {
+<a name="line705">705: </a>        <a href="../../../docs/manualpages/FN/FNEvaluateFunction.html#FNEvaluateFunction">FNEvaluateFunction</a>(nep-&gt;f[j],kr,&amp;s);
+<a name="line706">706: </a>        z = z + nep-&gt;nrma[j]*PetscAbsScalar(s);
+<a name="line707">707: </a>      }
+<a name="line708">708: </a>      *error /= z*er;
+<a name="line709">709: </a>      <font color="#4169E1">break</font>;
+<a name="line710">710: </a><strong><font color="#FF0000">    default:</font></strong>
+<a name="line711">711: </a>      SETERRQ(PetscObjectComm((PetscObject)nep),PETSC_ERR_ARG_OUTOFRANGE,<font color="#666666">"Invalid error type"</font>);
+<a name="line712">712: </a>  }
+<a name="line713">713: </a>  <font color="#4169E1">return</font>(0);
+<a name="line714">714: </a>}
+
+<a name="line716">716: </a><font color="#B22222">/*@</font>
+<a name="line717">717: </a><font color="#B22222">   <a href="../../../docs/manualpages/NEP/NEPComputeFunction.html#NEPComputeFunction">NEPComputeFunction</a> - Computes the function matrix T(lambda) that has been</font>
+<a name="line718">718: </a><font color="#B22222">   set with <a href="../../../docs/manualpages/NEP/NEPSetFunction.html#NEPSetFunction">NEPSetFunction</a>().</font>
+
+<a name="line720">720: </a><font color="#B22222">   Collective on nep</font>
+
+<a name="line722">722: </a><font color="#B22222">   Input Parameters:</font>
+<a name="line723">723: </a><font color="#B22222">+  nep    - the <a href="../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a> context</font>
+<a name="line724">724: </a><font color="#B22222">-  lambda - the scalar argument</font>
+
+<a name="line726">726: </a><font color="#B22222">   Output Parameters:</font>
+<a name="line727">727: </a><font color="#B22222">+  A   - Function matrix</font>
+<a name="line728">728: </a><font color="#B22222">-  B   - optional preconditioning matrix</font>
+
+<a name="line730">730: </a><font color="#B22222">   Notes:</font>
+<a name="line731">731: </a><font color="#B22222">   <a href="../../../docs/manualpages/NEP/NEPComputeFunction.html#NEPComputeFunction">NEPComputeFunction</a>() is typically used within nonlinear eigensolvers</font>
+<a name="line732">732: </a><font color="#B22222">   implementations, so most users would not generally call this routine</font>
+<a name="line733">733: </a><font color="#B22222">   themselves.</font>
+
+<a name="line735">735: </a><font color="#B22222">   Level: developer</font>
+
+<a name="line737">737: </a><font color="#B22222">.seealso: <a href="../../../docs/manualpages/NEP/NEPSetFunction.html#NEPSetFunction">NEPSetFunction</a>(), <a href="../../../docs/manualpages/NEP/NEPGetFunction.html#NEPGetFunction">NEPGetFunction</a>()</font>
+<a name="line738">738: </a><font color="#B22222">@*/</font>
+<a name="line739">739: </a><strong><font color="#4169E1"><a name="NEPComputeFunction"></a>PetscErrorCode <a href="../../../docs/manualpages/NEP/NEPComputeFunction.html#NEPComputeFunction">NEPComputeFunction</a>(<a href="../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a> nep,PetscScalar lambda,Mat A,Mat B)</font></strong>
+<a name="line740">740: </a>{
+<a name="line742">742: </a>  PetscInt       i;
+<a name="line743">743: </a>  PetscScalar    alpha;
+
+<a name="line747">747: </a>  NEPCheckProblem(nep,1);
+<a name="line748">748: </a>  <font color="#4169E1">switch</font> (nep-&gt;fui) {
+<a name="line749">749: </a>  <font color="#4169E1">case</font> NEP_USER_INTERFACE_CALLBACK:
+<a name="line750">750: </a>    <font color="#4169E1">if</font> (!nep-&gt;computefunction) SETERRQ(PetscObjectComm((PetscObject)nep),PETSC_ERR_USER,<font color="#666666">"Must call <a href="../../../docs/manualpages/NEP/NEPSetFunction.html#NEPSetFunction">NEPSetFunction</a>() first"</font>);
+<a name="line751">751: </a>    PetscLogEventBegin(NEP_FunctionEval,nep,A,B,0);
+<a name="line752">752: </a>    PetscStackPush(<font color="#666666">"<a href="../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a> user Function function"</font>);
+<a name="line753">753: </a>    (*nep-&gt;computefunction)(nep,lambda,A,B,nep-&gt;functionctx);
+<a name="line754">754: </a>    PetscStackPop;
+<a name="line755">755: </a>    PetscLogEventEnd(NEP_FunctionEval,nep,A,B,0);
+<a name="line756">756: </a>    <font color="#4169E1">break</font>;
+<a name="line757">757: </a>  <font color="#4169E1">case</font> NEP_USER_INTERFACE_SPLIT:
+<a name="line758">758: </a>    MatZeroEntries(A);
+<a name="line759">759: </a>    <font color="#4169E1">for</font> (i=0;i&lt;nep-&gt;nt;i++) {
+<a name="line760">760: </a>      <a href="../../../docs/manualpages/FN/FNEvaluateFunction.html#FNEvaluateFunction">FNEvaluateFunction</a>(nep-&gt;f[i],lambda,&amp;alpha);
+<a name="line761">761: </a>      MatAXPY(A,alpha,nep-&gt;A[i],nep-&gt;mstr);
+<a name="line762">762: </a>    }
+<a name="line763">763: </a>    <font color="#4169E1">if</font> (A != B) SETERRQ(PetscObjectComm((PetscObject)nep),1,<font color="#666666">"Not implemented"</font>);
+<a name="line764">764: </a>    <font color="#4169E1">break</font>;
+<a name="line765">765: </a>  }
+<a name="line766">766: </a>  <font color="#4169E1">return</font>(0);
+<a name="line767">767: </a>}
+
+<a name="line769">769: </a><font color="#B22222">/*@</font>
+<a name="line770">770: </a><font color="#B22222">   <a href="../../../docs/manualpages/NEP/NEPComputeJacobian.html#NEPComputeJacobian">NEPComputeJacobian</a> - Computes the Jacobian matrix T'(lambda) that has been</font>
+<a name="line771">771: </a><font color="#B22222">   set with <a href="../../../docs/manualpages/NEP/NEPSetJacobian.html#NEPSetJacobian">NEPSetJacobian</a>().</font>
+
+<a name="line773">773: </a><font color="#B22222">   Collective on nep</font>
+
+<a name="line775">775: </a><font color="#B22222">   Input Parameters:</font>
+<a name="line776">776: </a><font color="#B22222">+  nep    - the <a href="../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a> context</font>
+<a name="line777">777: </a><font color="#B22222">-  lambda - the scalar argument</font>
+
+<a name="line779">779: </a><font color="#B22222">   Output Parameters:</font>
+<a name="line780">780: </a><font color="#B22222">.  A   - Jacobian matrix</font>
+
+<a name="line782">782: </a><font color="#B22222">   Notes:</font>
+<a name="line783">783: </a><font color="#B22222">   Most users should not need to explicitly call this routine, as it</font>
+<a name="line784">784: </a><font color="#B22222">   is used internally within the nonlinear eigensolvers.</font>
+
+<a name="line786">786: </a><font color="#B22222">   Level: developer</font>
+
+<a name="line788">788: </a><font color="#B22222">.seealso: <a href="../../../docs/manualpages/NEP/NEPSetJacobian.html#NEPSetJacobian">NEPSetJacobian</a>(), <a href="../../../docs/manualpages/NEP/NEPGetJacobian.html#NEPGetJacobian">NEPGetJacobian</a>()</font>
+<a name="line789">789: </a><font color="#B22222">@*/</font>
+<a name="line790">790: </a><strong><font color="#4169E1"><a name="NEPComputeJacobian"></a>PetscErrorCode <a href="../../../docs/manualpages/NEP/NEPComputeJacobian.html#NEPComputeJacobian">NEPComputeJacobian</a>(<a href="../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a> nep,PetscScalar lambda,Mat A)</font></strong>
+<a name="line791">791: </a>{
+<a name="line793">793: </a>  PetscInt       i;
+<a name="line794">794: </a>  PetscScalar    alpha;
+
+<a name="line798">798: </a>  NEPCheckProblem(nep,1);
+<a name="line799">799: </a>  <font color="#4169E1">switch</font> (nep-&gt;fui) {
+<a name="line800">800: </a>  <font color="#4169E1">case</font> NEP_USER_INTERFACE_CALLBACK:
+<a name="line801">801: </a>    <font color="#4169E1">if</font> (!nep-&gt;computejacobian) SETERRQ(PetscObjectComm((PetscObject)nep),PETSC_ERR_USER,<font color="#666666">"Must call <a href="../../../docs/manualpages/NEP/NEPSetJacobian.html#NEPSetJacobian">NEPSetJacobian</a>() first"</font>);
+<a name="line802">802: </a>    PetscLogEventBegin(NEP_JacobianEval,nep,A,0,0);
+<a name="line803">803: </a>    PetscStackPush(<font color="#666666">"<a href="../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a> user Jacobian function"</font>);
+<a name="line804">804: </a>    (*nep-&gt;computejacobian)(nep,lambda,A,nep-&gt;jacobianctx);
+<a name="line805">805: </a>    PetscStackPop;
+<a name="line806">806: </a>    PetscLogEventEnd(NEP_JacobianEval,nep,A,0,0);
+<a name="line807">807: </a>    <font color="#4169E1">break</font>;
+<a name="line808">808: </a>  <font color="#4169E1">case</font> NEP_USER_INTERFACE_SPLIT:
+<a name="line809">809: </a>    MatZeroEntries(A);
+<a name="line810">810: </a>    <font color="#4169E1">for</font> (i=0;i&lt;nep-&gt;nt;i++) {
+<a name="line811">811: </a>      <a href="../../../docs/manualpages/FN/FNEvaluateDerivative.html#FNEvaluateDerivative">FNEvaluateDerivative</a>(nep-&gt;f[i],lambda,&amp;alpha);
+<a name="line812">812: </a>      MatAXPY(A,alpha,nep-&gt;A[i],nep-&gt;mstr);
+<a name="line813">813: </a>    }
+<a name="line814">814: </a>    <font color="#4169E1">break</font>;
+<a name="line815">815: </a>  }
+<a name="line816">816: </a>  <font color="#4169E1">return</font>(0);
+<a name="line817">817: </a>}
+
+</pre>
+</body>
+
+</html>
