@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: sshdb
+Version: 0.0.1
+Summary: Linux command-line ssh data conection manager
+Home-page: https://github.com/Taurus95/sshdb
+Author: taurus95
+Author-email: andres.ch@protonmail.com
+License: GPLv3
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+License-File: LICENSE.md
+Requires-Dist: PyInputPlus
+Requires-Dist: termcolor
+Requires-Dist: tabulate
+
+UNKNOWN
+
