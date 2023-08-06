@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "bibliometa-vis"
+version = "0.1.1"
+description = "An extension package for Bibliometa that provides visualization functions"
+authors = ["Andreas Lüschow <lueschow@sub.uni-goettingen.de>"]
+license = "MIT License"
+readme = "README.md"
+homepage = "https://bibliometa-vis.readthedocs.io"
+repository = "https://github.com/alueschow/bibliometa-vis"
+
+[tool.poetry.dependencies]
+python = ">=3.8, <3.10"
+shapely = "^1.7.1"
+geopandas = "^0.9.0"
+cython = "^0.29.24"
+matplotlib = "^3.4.3"
+networkx = "^2.6.2"
+loguru = "^0.5.3"
+bibliometa = "^0.1.3"
+cartopy = "^0.20.0"
+
+[tool.poetry.dev-dependencies]
+sphinx = "^4.1.2"
+sphinx-rtd-theme = "^0.5.2"
+flake8 = "^3.9.2"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
