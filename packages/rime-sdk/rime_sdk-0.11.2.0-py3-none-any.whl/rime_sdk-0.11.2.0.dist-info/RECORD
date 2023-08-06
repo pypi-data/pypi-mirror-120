@@ -1,0 +1,14 @@
+rime_sdk/__init__.py,sha256=nIpP1u-5_N9NrGq_foR3WCJWdovLJfDZbpolF_f7SaM,271
+rime_sdk/client.py,sha256=YUAO6D_9GbfabA40lN07Yf_fx1aZrPG7X2TskYFvnRc,13443
+rime_sdk/internal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rime_sdk/internal/throttle_queue.py,sha256=8AS4pvlJfMUcE3KHWZu7DFElgjKralMwOZey_37fVFI,2690
+rime_sdk/protos/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rime_sdk/protos/model_testing_pb2.py,sha256=Aurv-7UtJiq-ijVw4qGbzwy5KLycbIWZpFMuUuHySNg,25072
+rime_sdk/protos/model_testing_pb2_grpc.py,sha256=OPD-xZZf458L94G-DLhlji7kSpG372E5bx5mO0KG7fE,7410
+rime_sdk/protos/results_upload_pb2.py,sha256=ysEKOfsF6e1_NqMAlm3vdovk0Rdgj7YGEZSg4-xAmJ0,50438
+rime_sdk/protos/results_upload_pb2_grpc.py,sha256=L9uxOnpqhFD2JBm305ozRUXznmbQTocaiktwSlJbEOc,5882
+rime_sdk-0.11.2.0.dist-info/LICENSE,sha256=H-JzfJjaUo4aHPNdcf_ndUvyC0njOij8REplwCItMmA,565
+rime_sdk-0.11.2.0.dist-info/METADATA,sha256=TFp8c2cJfcKcrRy2XLfyWkQHnEYr5OQbYTj_wbJ0xYg,7125
+rime_sdk-0.11.2.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+rime_sdk-0.11.2.0.dist-info/top_level.txt,sha256=jbj1XXjqDSfEprIz45zYS3o1g7yJhdMdaIbqQbgSV4Y,9
+rime_sdk-0.11.2.0.dist-info/RECORD,,
