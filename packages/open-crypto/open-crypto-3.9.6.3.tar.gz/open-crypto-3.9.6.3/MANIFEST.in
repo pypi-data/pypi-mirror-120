@@ -1,0 +1,3 @@
+global-include *.yaml 
+include crypto_api/*.py
+exclude crypto_high_frequency.wiki
