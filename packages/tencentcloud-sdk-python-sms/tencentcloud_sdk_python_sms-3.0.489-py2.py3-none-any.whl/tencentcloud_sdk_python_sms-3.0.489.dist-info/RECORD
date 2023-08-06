@@ -1,0 +1,14 @@
+tencentcloud/__init__.py,sha256=kB4IAPq2Ce1UN4jjv7BTpLl-3sY3aIhB7QcCXSAGBJo,630
+tencentcloud/sms/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tencentcloud/sms/v20190711/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tencentcloud/sms/v20190711/errorcodes.py,sha256=3EE4bBCiyqyy8lXEYnAgjR_3wNn8aYbyQ6C3D5mIO9A,15476
+tencentcloud/sms/v20190711/models.py,sha256=z7rvpjUa0A40jnW7zuijfKdkzcng5bW1QFvSqXOuJNY,59608
+tencentcloud/sms/v20190711/sms_client.py,sha256=KA3PdX97bktCuLAAgtTb7ePESzKZH77Cs163c1kZ5ao,30913
+tencentcloud/sms/v20210111/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tencentcloud/sms/v20210111/errorcodes.py,sha256=l5KZW-vdQTaNiUhUE739a7amExN4T9wa36M6WfUTBEw,16210
+tencentcloud/sms/v20210111/models.py,sha256=WXcY7q3bv_4Pk9RUKZq8X33y3_VvnNVJyXTtO-NF3aw,60576
+tencentcloud/sms/v20210111/sms_client.py,sha256=iS0NBchJvI1RZoT5GgvpHHVwX61wPbxakmSwxlkz0tU,30017
+tencentcloud_sdk_python_sms-3.0.489.dist-info/METADATA,sha256=eGVTRpOfptzD_NE1J3JVOHjQKZ6e7FkAounJdA2sTqY,1432
+tencentcloud_sdk_python_sms-3.0.489.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+tencentcloud_sdk_python_sms-3.0.489.dist-info/top_level.txt,sha256=g-8OyzoqI6O6LiS85zkeNzhB-osEnRIPZMdyRd_0eL0,13
+tencentcloud_sdk_python_sms-3.0.489.dist-info/RECORD,,
