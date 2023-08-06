@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+telewrapper/__init__.py
+telewrapper/core.py
+telewrapper.egg-info/PKG-INFO
+telewrapper.egg-info/SOURCES.txt
+telewrapper.egg-info/dependency_links.txt
+telewrapper.egg-info/requires.txt
+telewrapper.egg-info/top_level.txt
+telewrapper/../.gitignore
+telewrapper/../LICENSE
+telewrapper/../README.md
+telewrapper/../requirements.txt
+test/test.py
