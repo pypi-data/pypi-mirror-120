@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: wacky-rl
+Version: 0.0.6
+Summary: Create custom reinforcement learning agents with wacky-rl.
+Home-page: https://github.com/maik97/wacky-rl
+Author: Maik Schürmann
+Author-email: maik.schuermann97@gmail.com
+License: MIT
+Download-URL: https://github.com/maik97/wacky-rl/archive/refs/tags/v0.0.6.tar.gz
+Keywords: rl,actor_critic,reinforcement-learning,ppo,a2c,sac,dqn,keras,tensorflow,python
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE
+
+UNKNOWN
+
