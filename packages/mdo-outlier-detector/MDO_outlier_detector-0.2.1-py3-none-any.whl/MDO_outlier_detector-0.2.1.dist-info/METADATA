@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: MDO-outlier-detector
+Version: 0.2.1
+Summary: 
+            Detection of outlier with mahanalobis distance
+            which have access of the parameters (means and precision matrice) with algo GMM or Bayesian GMM provide by sklearn            
+Home-page: https://github.com/JonathanNdambaPro/MDO
+Author: JonathanNdambaPro
+Author-email: jonathan.ndamba.pro@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Requires-Dist: pandas (<1.1.0,>=1.0.5)
+Requires-Dist: scikit-learn (<0.24.0,>=0.23.1)
+Requires-Dist: sklearn (==0.0)
+
+UNKNOWN
+
+
