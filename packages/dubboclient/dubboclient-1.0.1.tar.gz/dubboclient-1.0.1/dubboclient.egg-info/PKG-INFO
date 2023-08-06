@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: dubboclient
+Version: 1.0.1
+Summary: A client tool for testing the Dubbo API
+Home-page: https://github.com/likgjava/dubboclient
+Author: outman
+Author-email: likg.java@163.com
+License: MIT Licence
+Description: A client tool based on the telnetlib library for testing the Dubbo API
+Keywords: pip,dubboclient,DubboClient,dubbo
+Platform: any
