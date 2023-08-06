@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: django-git-changelog
+Version: 0.1.0
+Summary: List all git commits in the backend and create E-Mails with change informations
+Home-page: UNKNOWN
+Author: Snake-Soft
+Author-email: info@snake-soft.com
+License: GPL3
+Description: ====================
+        Changelog for Django
+        ====================
+        
+        This needs some work to be used in productive.
+        
+        
+        Installation
+        ------------
+        
+        Install using pip:
+        
+        .. code-block:: bash
+        
+        	pip install django-changelog
+        
+        
+        .. code-block:: python
+        
+           # settings.py
+           INSTALLED_APPS = [
+               # ...
+               'changelog.apps.ChangelogConfig',
+               # ...
+           ]
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.1
+Classifier: Framework :: Django :: 3.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: test
