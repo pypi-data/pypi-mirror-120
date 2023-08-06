@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+matadi/__about__.py
+matadi/__init__.py
+matadi/apply.py
+matadi/material.py
+matadi/math.py
+matadi.egg-info/PKG-INFO
+matadi.egg-info/SOURCES.txt
+matadi.egg-info/dependency_links.txt
+matadi.egg-info/requires.txt
+matadi.egg-info/top_level.txt
