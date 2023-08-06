@@ -1,0 +1,122 @@
+[tool]
+[tool.poetry]
+name = "relaxed-poetry"
+version = "0.3.0"
+description = "Fork of Poetry (Python dependency management and packaging tool), attempts to be faster and less strict."
+authors = [
+    "bennylut"
+]
+license = "MIT"
+readme = "README.md"
+packages = [
+    {include = "poetry"},
+]
+include = [
+    { path = "tests", format = ["sdist"] }
+]
+homepage = "https://github.com/bennylut/relaxed-poetry"
+repository = "https://github.com/bennylut/relaxed-poetry"
+documentation = "https://github.com/bennylut/relaxed-poetry"
+keywords = ["packaging", "dependency", "poetry", "relaxed-poetry"]
+classifiers = [
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+, "License :: OSI Approved :: MIT License"]
+
+[tool.poetry.build]
+generate-setup-file = false
+
+[tool.poetry.dependencies]
+python = ">=3.6,<4.0"
+relaxed-poetry-core = ">=0.2.1"
+cleo = "^1.0.0a4"
+crashtest = "^0.3.0"
+requests = "^2.18"
+cachy = "^0.3.0"
+requests-toolbelt = "^0.9.1"
+pkginfo = "^1.5"
+html5lib = "^1.0"
+shellingham = "^1.1"
+tomlkit = ">=0.7.0,<1.0.0"
+pexpect = "^4.7.0"
+packaging = "^20.4"
+virtualenv = ">=20.4.3,<20.4.5"
+keyring = ">=21.2.0"
+entrypoints = "^0.3"
+protopy-lib = ">=0.2.0"
+
+[tool.poetry.dependencies.cachecontrol]
+version = "^0.12.4"
+extras = ["filecache"]
+[tool.poetry.dependencies.importlib-metadata]
+version = "^1.6.0"
+python = "<3.8"
+[tool.poetry.dependencies.dataclasses]
+version = "^0.8"
+python = "~3.6"
+[tool.poetry.dev-dependencies]
+pytest = "^6.2"
+pytest-cov = "^2.8"
+pytest-mock = "^3.5"
+tox = "^3.0"
+pytest-sugar = "^0.9"
+httpretty = "^1.0"
+deepdiff = "^5.0"
+
+[tool.poetry.dev-dependencies.pre-commit]
+version = "^2.6"
+python = "^3.6.1"
+[tool.poetry.dev-dependencies.zipp]
+version = "^3.4"
+python = "<3.8"
+[tool.poetry.scripts]
+poetry = "poetry.console.application:main"
+
+[tool.relaxed-poetry]
+[tool.relaxed-poetry.properties]
+relaxed-poetry-core-dep = ">=0.2.1"
+protopy-lib-dep = ">=0.2.0"
+
+[tool.isort]
+profile = "black"
+force_single_line = true
+atomic = true
+include_trailing_comma = true
+lines_after_imports = 2
+lines_between_types = 1
+use_parentheses = true
+src_paths = ["poetry", "tests"]
+skip_glob = ["*/setup.py"]
+filter_files = true
+known_first_party = "poetry"
+
+[tool.black]
+line-length = 88
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  | tests/.*/setup.py
+)/
+'''
+
+[tool.coverage]
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "if TYPE_CHECKING:"
+]
+
+[build-system]
+requires = ["relaxed-poetry-core>=0.0.7"]
+build-backend = "poetry.core.masonry.api"
+
