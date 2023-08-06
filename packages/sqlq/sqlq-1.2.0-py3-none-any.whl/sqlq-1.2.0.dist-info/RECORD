@@ -1,0 +1,11 @@
+.gitignore,sha256=y4OnrjuOuhhyLpsafUd3HLgHi4kM1muEZqhLtiwHjUI,54
+LICENSE,sha256=E_tIpsMacuDitpZQsc6-iVT3tzRJhISS3P0islvZGvo,35182
+README.md,sha256=gCSw0CWYcf36djrYjr-VbpIc4BzjsHmPH9qaEm5Q_Ls,893
+requirements.txt,sha256=7UaCA8lpd92Hn2AFMjAItdHcJigSzh9Fhswy_Wes6Hw,124
+sqlq/__init__.py,sha256=e1TVOqn8pu4Kjc7Xz9X8-WOeuXtWl_SSZ6j9bKp2WlY,406
+sqlq/core.py,sha256=e0-N9mE-wKHkFZ068QPaXYfvXbmEpwkViMhGoovhVok,12173
+sqlq-1.2.0.dist-info/LICENSE,sha256=E_tIpsMacuDitpZQsc6-iVT3tzRJhISS3P0islvZGvo,35182
+sqlq-1.2.0.dist-info/METADATA,sha256=zcPCD5V-k_-dwdx17Jp_9n45exhW5k7K6lQJTJ9Acvs,1835
+sqlq-1.2.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+sqlq-1.2.0.dist-info/top_level.txt,sha256=Fh640qAvCUYiZM29fOssblqekh0zCL77OLvB1JChCSY,5
+sqlq-1.2.0.dist-info/RECORD,,
