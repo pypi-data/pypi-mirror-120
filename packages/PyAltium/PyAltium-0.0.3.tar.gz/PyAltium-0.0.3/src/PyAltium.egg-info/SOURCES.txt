@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/PyAltium.egg-info/PKG-INFO
+src/PyAltium.egg-info/SOURCES.txt
+src/PyAltium.egg-info/dependency_links.txt
+src/PyAltium.egg-info/top_level.txt
+src/pyaltium/__init__.py
+src/pyaltium/helpers.py
+src/pyaltium/types.py
