@@ -1,0 +1,8 @@
+#!python
+import sys
+from splintegrate import splintegrate
+
+inFile = sys.argv[1]
+outDir = 'split_output'
+splint = splintegrate.splint(inFile=inFile,outDir=outDir)
+splint.split()
