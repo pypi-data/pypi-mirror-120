@@ -1,0 +1,3 @@
+[console_scripts]
+metasearch = metasearch.__init__:launch
+
