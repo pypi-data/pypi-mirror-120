@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pyescrypt
+Version: 0.1.0
+Summary: Python bindings for yescrypt: memory-hard, NIST-compliant password hashing
+Home-page: https://https://github.com/0xcb/pyescrypt
+Author: Colt Blackmore
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: cffi (>=1.0.0)
+
+UNKNOWN
+
