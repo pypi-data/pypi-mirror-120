@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "nadypy"
+version = "5.2.1"
+description = "A client library for accessing a Nadybot's API"
+authors = ["Jens Reidel <adrian@travitia.xyz>"]
+readme = "README.md"
+packages = [{ include = "nadypy" }]
+include = ["CHANGELOG.md", "nadypy/py.typed"]
+license = "MIT"
+homepage = "https://github.com/Nadybot/nadypy"
+repository = "https://github.com/Nadybot/nadypy"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+httpx = ">=0.15.4,<0.20.0"
+attrs = ">=20.1.0,<22.0.0"
+python-dateutil = "^2.8.0"
+pyopenssl = "^20.0.1"
+
+[tool.flake8]
+max-line-length = 120
+per-file-ignores = ["nadypy/models/__init__.py:F401", "nadypy/__init__.py:F401"]
+
+[tool.black]
+line-length = 120
+target_version = ['py36', 'py37', 'py38']
+exclude = '''
+(
+  /(
+    | \.git
+    | \.venv
+    | \.mypy_cache
+  )/
+)
+'''
+
+[tool.isort]
+line_length = 120
+multi_line_output = 3
+include_trailing_comma = true
+
+[build-system]
+requires = ["poetry>=1.0"]
+build-backend = "poetry.masonry.api"

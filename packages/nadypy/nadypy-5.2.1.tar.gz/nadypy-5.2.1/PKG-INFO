@@ -1,0 +1,105 @@
+Metadata-Version: 2.1
+Name: nadypy
+Version: 5.2.1
+Summary: A client library for accessing a Nadybot's API
+Home-page: https://github.com/Nadybot/nadypy
+License: MIT
+Author: Jens Reidel
+Author-email: adrian@travitia.xyz
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: attrs (>=20.1.0,<22.0.0)
+Requires-Dist: httpx (>=0.15.4,<0.20.0)
+Requires-Dist: pyopenssl (>=20.0.1,<21.0.0)
+Requires-Dist: python-dateutil (>=2.8.0,<3.0.0)
+Project-URL: Repository, https://github.com/Nadybot/nadypy
+Description-Content-Type: text/markdown
+
+# nadypy
+
+A client library for accessing a [Nadybot](https://github.com/Nadybot/Nadybot)'s API.
+
+## Installation
+
+From PyPi:
+
+```shell
+pip install nadypy
+```
+
+From GitHub:
+
+```shell
+pip install git+https://github.com/Nadybot/nadypy.git
+```
+
+## Usage
+
+First, create a client:
+
+```python
+from nadypy import Client
+
+client = Client(base_url="http://localhost:8080/api")
+```
+
+If the endpoints you're going to hit require authentication (this currently applies to **all** endpoints), use either a `BasicAuthClient` or a `SignedAuthClient` instead.
+
+`BasicAuthClient` uses credentials acquired via `!webauth`, which are not valid permanently:
+
+```python
+from nadypy import BasicAuthClient
+
+client = BasicAuthClient(base_url="http://localhost:8080/api", username="Character", password="password")
+```
+
+`SignedAuthClient` uses private keys as explained [here](https://github.com/Nadybot/Nadybot/wiki/REST-API):
+
+```python
+from nadypy import SignedAuthClient
+
+signed_auth_client = SignedAuthClient(
+    "http://localhost:8080/api",
+    key_id="bd879e20",
+    private_key="""\
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEINca+XgCZoLXuu6p77cphsIxMiSaG09tBH6SV9AgEH4ioAoGCCqGSM49
+AwEHoUQDQgAEPnzqwJq/el8kyNSPmYhQJ0L2qrMFtM3XDbAHrTQlXbFN2G8NmMBp
+i52oubVjuTSHol1BQf4Haftbt0oBvHGUIw==
+-----END EC PRIVATE KEY-----
+""",
+)
+```
+
+Now call your endpoint and use your models:
+
+```python
+from typing import Optional
+
+from nadypy.models import SystemInformation
+from nadypy.api.system import get_sysinfo
+from nadypy.types import Response
+
+sysinfo: Optional[SystemInformation] = get_sysinfo.sync(client=client)
+# or if you need more info (e.g. status_code)
+response: Response[SystemInformation] = get_sysinfo.sync_detailed(client=client)
+```
+
+Or do the same thing with an async version:
+
+```python
+from typing import Optional
+
+from nadypy.models import SystemInformation
+from nadypy.api.system import get_sysinfo
+from nadypy.types import Response
+
+sysinfo: Optional[SystemInformation] = await get_sysinfo.asyncio(client=client)
+# or if you need more info (e.g. status_code)
+response: Response[SystemInformation] = await get_sysinfo.asyncio_detailed(client=client)
+```
+
