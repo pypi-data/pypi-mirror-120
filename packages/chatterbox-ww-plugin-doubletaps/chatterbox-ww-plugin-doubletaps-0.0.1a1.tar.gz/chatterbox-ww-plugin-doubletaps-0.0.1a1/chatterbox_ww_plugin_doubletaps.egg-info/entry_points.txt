@@ -1,0 +1,3 @@
+[mycroft.plugin.wake_word]
+chatterbox-ww-plugin-doubletaps=chatterbox_wake_word_plugin_doubletap:DoubleTapsHotwordPlugin
+

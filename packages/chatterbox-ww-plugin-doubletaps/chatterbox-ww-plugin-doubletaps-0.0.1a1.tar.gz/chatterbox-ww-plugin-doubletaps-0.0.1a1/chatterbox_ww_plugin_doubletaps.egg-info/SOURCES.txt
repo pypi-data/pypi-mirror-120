@@ -1,0 +1,11 @@
+MANIFEST.in
+setup.py
+chatterbox_wake_word_plugin_doubletaps/__init__.py
+chatterbox_wake_word_plugin_doubletaps/res/double_tap.tflite
+chatterbox_ww_plugin_doubletaps.egg-info/PKG-INFO
+chatterbox_ww_plugin_doubletaps.egg-info/SOURCES.txt
+chatterbox_ww_plugin_doubletaps.egg-info/dependency_links.txt
+chatterbox_ww_plugin_doubletaps.egg-info/entry_points.txt
+chatterbox_ww_plugin_doubletaps.egg-info/requires.txt
+chatterbox_ww_plugin_doubletaps.egg-info/top_level.txt
+chatterbox_ww_plugin_doubletaps.egg-info/zip-safe
