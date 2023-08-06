@@ -1,0 +1,7 @@
+README.md
+setup.py
+EasyVectorsPy/__init__.py
+EasyVectorsPy.egg-info/PKG-INFO
+EasyVectorsPy.egg-info/SOURCES.txt
+EasyVectorsPy.egg-info/dependency_links.txt
+EasyVectorsPy.egg-info/top_level.txt
