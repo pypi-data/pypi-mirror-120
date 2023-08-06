@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.py
+dexter/__init__.py
+dexter/display.py
+dexter/framelist.py
+dexter/framemap.py
+dexter/optimizer.py
+dexter/readmultiple.py
+dexter.egg-info/PKG-INFO
+dexter.egg-info/SOURCES.txt
+dexter.egg-info/dependency_links.txt
+dexter.egg-info/top_level.txt
