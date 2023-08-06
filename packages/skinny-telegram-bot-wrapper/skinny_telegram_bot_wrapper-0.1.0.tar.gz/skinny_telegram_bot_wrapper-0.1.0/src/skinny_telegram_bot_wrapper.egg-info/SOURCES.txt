@@ -1,0 +1,8 @@
+LICENSE.txt
+README.txt
+setup.py
+src/skinny_telegram_bot_wrapper.egg-info/PKG-INFO
+src/skinny_telegram_bot_wrapper.egg-info/SOURCES.txt
+src/skinny_telegram_bot_wrapper.egg-info/dependency_links.txt
+src/skinny_telegram_bot_wrapper.egg-info/requires.txt
+src/skinny_telegram_bot_wrapper.egg-info/top_level.txt
