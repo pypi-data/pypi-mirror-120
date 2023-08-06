@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: django-user-email
+Version: 0.2.0
+Summary: Custom, simple Django User model with email as username
+Home-page: https://github.com/khasbilegt/django-user-email
+License: MIT
+Keywords: django,model,user,email,username,custom
+Author: Khasbilegt.TS
+Author-email: khasbilegt.ts@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Django (>=3.2.7,<4.0.0)
+Project-URL: Repository, https://github.com/khasbilegt/django-user-email
+Description-Content-Type: text/markdown
+
+<h1 align="center">
+  django-user-email
+</h1>
+
+<p align="center">
+  <a href="#installation">Installation</a> •
+  <a href="#contributing">Contributing</a> •
+  <a href="#license">License</a>
+</p>
+
+<p align="center">Custom, simple Django User model with email as username</p>
+
+## Installation
+
+1. Use the package manager [pip](https://pip.pypa.io/en/stable/) to install numiner.
+
+```bash
+$ pip install django-user-email
+```
+
+2. Register the app to your settings
+
+```python
+INSTALLED_APPS = (
+    ...
+    'user_email',
+)
+```
+
+3. Since it's a custom User model Django needs to know the path of the model
+
+```bash
+AUTH_USER_MODEL = 'user_email.User'
+```
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+
+[MIT License](https://choosealicense.com/licenses/mit/)
+
