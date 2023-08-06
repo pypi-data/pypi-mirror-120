@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: django_image_sourceset
+Version: 0.3
+Summary: Create a sourceset for an django image
+Home-page: https://gitlab.com/gudi89/django_image_sourceset
+Author: Martin Gutmair
+Author-email: martin@gutmair.de
+License: MIT
+Download-URL: https://gitlab.com/gudi89/django_image_sourceset/-/archive/0.3/django_image_sourceset-0.3.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Utilities
