@@ -1,0 +1,3 @@
+[console_scripts]
+comic_html_view_generator=comic_html_view_generator.chvg:main
+
