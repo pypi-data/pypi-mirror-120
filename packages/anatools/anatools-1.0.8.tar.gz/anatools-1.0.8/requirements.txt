@@ -1,0 +1,13 @@
+# AnaClient
+pyrebase4
+jwt
+docker
+sphinx
+pytest
+pyyaml
+
+# Annotations
+pascal_voc_writer
+jinja2
+numpy
+pillow
