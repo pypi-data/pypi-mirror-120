@@ -1,0 +1,14 @@
+redisdb_exchange_plugin/__init__.py,sha256=PaHq5L1wxP1ZqA4tV2HhRITq5VQjOtsH7I-PW4w2BpQ,671
+redisdb_exchange_plugin/connection.py,sha256=k1HnI2tFVmjx4FGyQx1-AQUHL7ttMNy7nNu9UsUrWUg,2961
+redisdb_exchange_plugin/consumer.py,sha256=3W9W-HHQRpNwrqoXlU_2bgWLlknxMyZyLyVm6Lh1NhA,7806
+redisdb_exchange_plugin/exceptions.py,sha256=JITAlkumuKxUHVo4xxa5e0YTVlvQ5-waQkyvIh6y_I8,925
+redisdb_exchange_plugin/exchange.py,sha256=ANiwfsBHdbLd0RkNdVFKq1h9P1aWUSAijKH1w-2b8oc,3463
+redisdb_exchange_plugin/publisher.py,sha256=q2Lhoemmg_C4CjuIeIdZ4wgWe7JerMoEn5tRbJNKMIk,1809
+tests/__init__.py,sha256=qg_xkeaf03H09HFnKlerE3I2siF8RaBa4EIP25WXuF0,654
+tests/pytests/__init__.py,sha256=qg_xkeaf03H09HFnKlerE3I2siF8RaBa4EIP25WXuF0,654
+tests/pytests/tests.py,sha256=U5-c_XPzktIU-szgKorFXdFjScobGBziaI67oL-G5hw,1956
+fastybird_redisdb_exchange_plugin-0.0.3.dist-info/LICENSE.md,sha256=xazLvYVG6Uw0rtJK_miaYXYn0Y7tWmxIJ35I21fCOFE,11356
+fastybird_redisdb_exchange_plugin-0.0.3.dist-info/METADATA,sha256=TKOPlBoYSiZ9xI9cCr1-_vzmJybqtCIr8d8-Dh0BcdY,4106
+fastybird_redisdb_exchange_plugin-0.0.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+fastybird_redisdb_exchange_plugin-0.0.3.dist-info/top_level.txt,sha256=Rxkg9p5k8cNPB3qWqUb71iJxW_Cf9Zb4OL9M6mkHp_E,30
+fastybird_redisdb_exchange_plugin-0.0.3.dist-info/RECORD,,
