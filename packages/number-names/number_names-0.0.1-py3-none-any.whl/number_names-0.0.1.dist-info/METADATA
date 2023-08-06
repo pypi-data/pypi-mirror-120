@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: number_names
+Version: 0.0.1
+Summary: This module provides functions for getting the English names of numbers.
+Author: Tom Fryers
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+
+# Number Names
+
+`number_names` converts numbers to their English names.
+
