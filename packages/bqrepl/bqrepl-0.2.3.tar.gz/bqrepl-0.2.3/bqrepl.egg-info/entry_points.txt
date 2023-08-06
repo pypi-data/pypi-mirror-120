@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        bqrepl=bqrepl.main:cli
+    
