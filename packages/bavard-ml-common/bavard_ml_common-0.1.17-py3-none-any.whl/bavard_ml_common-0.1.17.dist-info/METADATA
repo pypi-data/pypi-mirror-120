@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: bavard-ml-common
+Version: 0.1.17
+Summary: Machine learning and Python web service utilities
+Author: Bavard AI, Inc.
+Author-email: dev@bavard.ai
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: ml
+Requires-Dist: fastapi (>=0.63.0,<0.64.0)
+Requires-Dist: google-cloud-error-reporting (>=1.1.1,<2.0.0)
+Requires-Dist: google-cloud-pubsub (>=2.2.0,<3.0.0)
+Requires-Dist: google-cloud-storage (>=1.35.1,<2.0.0)
+Requires-Dist: loguru (>=0.5.1,<0.6.0)
+Requires-Dist: numpy (>=1.15.4,<2.0.0); extra == "ml"
+Requires-Dist: pydantic (>=1.7.3,<2.0.0)
+Requires-Dist: requests (>=2.21.0,<3.0.0)
+Requires-Dist: scikit-learn (>=0.24.2,<0.25.0); extra == "ml"
