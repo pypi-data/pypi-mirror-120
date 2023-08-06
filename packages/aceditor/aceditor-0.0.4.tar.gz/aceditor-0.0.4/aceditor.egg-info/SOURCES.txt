@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+aceditor/__init__.py
+aceditor.egg-info/PKG-INFO
+aceditor.egg-info/SOURCES.txt
+aceditor.egg-info/dependency_links.txt
+aceditor.egg-info/requires.txt
+aceditor.egg-info/top_level.txt
+aceditor/../.gitignore
+aceditor/../LICENSE
+aceditor/../README.md
+aceditor/../requirements.txt
