@@ -1,0 +1,7 @@
+m-singleton
+pymongo
+Flask
+flask_cors
+requests
+unidecode
+elasticsearch<6.0.0,>=5.0.0

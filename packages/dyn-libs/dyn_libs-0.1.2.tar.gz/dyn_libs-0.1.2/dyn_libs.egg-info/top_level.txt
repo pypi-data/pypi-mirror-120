@@ -1,0 +1,8 @@
+mobio/libs/dyn
+mobio/libs/dyn/common
+mobio/libs/dyn/controllers
+mobio/libs/dyn/filters
+mobio/libs/dyn/helpers
+mobio/libs/dyn/models
+mobio/libs/dyn/models/elastic
+mobio/libs/dyn/models/mongo
