@@ -1,0 +1,32 @@
+<tool id="basic_marker_table" name="basic_marker_table" version="0.0.1" profile="21.09">
+
+    <description>generate batch wide marker table from one representative slide_pxscene</description>
+
+    <requirements>
+        <requirement type="package">jinxif</requirement>
+    </requirements>
+
+    <command detect_errors="exit_code"><![CDATA[
+        mkdir input &&
+        mkdir output &&
+
+        #for $tiff in $tiff_reg:
+            ln -s $tiff input/ &&
+	#end for
+
+	python $__tool_directory__/mpleximage_05_0_basic_marker_table_slidepxscene.py $batch
+    ]]></command>
+
+    <inputs>
+        <param name="batch" type="text" value="batch-id" label="batch_identifier_input"/>
+        <param name="tiff_reg" type="data_collection" format="tiff" collection_type="list"  label="tiff_reg_files_input"/>
+    </inputs>
+
+    <outputs>
+        <collection type="list"  name="basic_marker_table_batch_output">
+            <discover_datasets pattern="__designation_and_ext__" directory="output" format="csv" visible="false"/>
+        </collection>
+    </outputs>
+
+    <help>the beatles ~ help!</help>
+</tool>

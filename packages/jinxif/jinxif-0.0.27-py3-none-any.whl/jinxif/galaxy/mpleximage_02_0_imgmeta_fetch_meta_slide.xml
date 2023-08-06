@@ -1,0 +1,39 @@
+<tool id="imgmeta_fetch_metadata" name="imgmeta_fetch_metadata" version="0.0.1" profile="21.09">
+
+    <description>fetch image metadata</description>
+
+    <requirements>
+        <requirement type="package">jinxif</requirement>
+    </requirements>
+
+    <command detect_errors="exit_code"><![CDATA[
+        mkdir input_original &&
+        mkdir input_splitscene &&
+        mkdir output_exposuretime &&
+        mkdir output_sceneposition &&
+
+        #for $czi in $czi_original:
+            ln -s $czi input_original/ &&
+	#end for
+    
+	#for $czi in $czi_splitscene:
+            ln -s $czi input_splitscene/ &&
+	#end for
+
+	python $__tool_directory__/mpleximage_02_0_imgmeta_fetch_meta_slide.py
+    ]]></command>
+
+    <inputs>
+        <param name="czi_original" type="data_collection" format="tiff" collection_type="list"  label="input_czi_original_files" />
+        <param name="czi_splitscene" type="data_collection" format="tiff" collection_type="list"  label="input_czi_splitscene_files" />
+    </inputs>
+
+    <outputs>
+        <collection type="list" name="metaimages">
+            <discover_datasets pattern="__designation_and_ext__" directory="output_exposuretime" format="csv" visible="true" />
+            <discover_datasets pattern="__designation_and_ext__" directory="output_sceneposition" format="csv" visible="true" />
+        </collection>
+    </outputs>
+
+    <help>the beatles ~ help!</help>
+</tool>

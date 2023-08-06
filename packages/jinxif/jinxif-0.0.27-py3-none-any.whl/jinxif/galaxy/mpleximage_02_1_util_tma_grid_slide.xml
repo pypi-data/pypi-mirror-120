@@ -1,0 +1,29 @@
+<tool id="util_tma_grid_slide" name="util_tma_grid_slide" version="0.0.1" profile="21.09">
+
+    <description>fetch image metadata</description>
+
+    <requirements>
+        <requirement type="package">jinxif</requirement>
+    </requirements>
+
+    <command detect_errors="exit_code"><![CDATA[
+	    ln -s $csv_sceneposition "${slide}_ScenePositions_xy.csv" &&
+
+	python $__tool_directory__/mpleximage_02_1_util_tma_grid_slide.py $slide -y $core_yaxis -x $core_xaxis
+    ]]></command>
+
+    <inputs>
+	    <param name="csv_sceneposition" type="data" format="csv" label="input_csv_sceneposition_files" />
+	    <param name="slide" type="text" value="galaxy" label="slide id" />
+	    <param name="core_yaxis" type="integer" value="0" label="number of core rows" />
+	    <param name="core_xaxis" type="integer" value="0" label="number of core columns" />
+    </inputs>
+
+    <outputs>
+        <collection type="list" name="metaimages">
+            <discover_datasets pattern="__designation_and_ext__" visible="false" />
+        </collection>
+    </outputs>
+
+    <help>the beatles ~ help!</help>
+</tool>
