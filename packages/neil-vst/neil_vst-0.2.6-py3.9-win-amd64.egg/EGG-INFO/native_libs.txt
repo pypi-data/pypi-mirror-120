@@ -1,0 +1,5 @@
+neil_vst/logger.cp39-win_amd64.pyd
+neil_vst/vst_chain_worker.cp39-win_amd64.pyd
+neil_vst/vst_exceptions.cp39-win_amd64.pyd
+neil_vst/vst_host.cp39-win_amd64.pyd
+neil_vst/vst_plugin.cp39-win_amd64.pyd
