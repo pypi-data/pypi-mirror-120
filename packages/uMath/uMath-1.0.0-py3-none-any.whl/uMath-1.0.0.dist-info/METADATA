@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: uMath
+Version: 1.0.0
+Summary: It provides some useful math functions
+Home-page: https://github.com/UsmanMaan324/uMath
+Author: Usman Ali
+Author-email: usmanalianjum04@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# U-MATH #
+It provides sum useful math functions
+
+## Installation
+```Pip install uMath```
+
+## How to use it?
+import the uMath in your python.py file and use dot to use the math function
+
+## License
+© 2021 Usman Ali
+
+This repository is licensed under the MIT license. See LICENSE for details.
+
