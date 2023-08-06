@@ -1,0 +1,12 @@
+docker: ghcr.io/autamus/tasmanian
+url: https://github.com/orgs/autamus/packages/container/package/tasmanian
+maintainer: '@vsoch'
+description: The Toolkit for Adaptive Stochastic Modeling and Non-Intrusive ApproximatioN
+  is a robust library for high dimensional integration and interpolation as well as
+  parameter calibration.  https://tasmanian.ornl.gov
+latest:
+  "7.5": sha256:b7418b0cb21bf60156ed27c0cc97b2aa6e96dcab9bca6d8e3fcbe3dccc3af356
+tags:
+  "7.5": sha256:b7418b0cb21bf60156ed27c0cc97b2aa6e96dcab9bca6d8e3fcbe3dccc3af356
+aliases:
+  tasgrid: /opt/view/bin/tasgrid

@@ -1,0 +1,17 @@
+docker: ghcr.io/autamus/qhull
+url: https://github.com/orgs/autamus/packages/container/package/qhull
+maintainer: '@vsoch'
+description: Snappy (previously known as Zippy) is a fast data compression and decompression
+  library written in C++ by Google based on ideas from LZ77 and open-sourced in 2011.
+latest:
+  "2020.1": sha256:7542005a700fc3c8efe39b784ff5228d80e9323c9feb036accbc9e4dc75d7930
+tags:
+  "2020.1": sha256:7542005a700fc3c8efe39b784ff5228d80e9323c9feb036accbc9e4dc75d7930
+  latest: sha256:7542005a700fc3c8efe39b784ff5228d80e9323c9feb036accbc9e4dc75d7930
+aliases:
+  qconvex: /opt/view/bin/qconvex
+  qdelaunay: /opt/view/bin/qdelaunay
+  qhalf: /opt/view/bin/qhalf
+  qhull: /opt/view/bin/qhull
+  qvoronoi: /opt/view/bin/qvoronoi
+  rbox: /opt/view/bin/rbox

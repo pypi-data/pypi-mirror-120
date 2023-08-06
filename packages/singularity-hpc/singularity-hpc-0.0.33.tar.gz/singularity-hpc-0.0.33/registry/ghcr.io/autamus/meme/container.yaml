@@ -1,0 +1,14 @@
+docker: ghcr.io/autamus/meme
+url: https://github.com/orgs/autamus/packages/container/package/meme
+maintainer: '@vsoch'
+description: The MEME suite provides online tools for discovering and using protein
+  and DNA sequence motifs.
+latest:
+  5.3.0: sha256:e46634545d9e3a1a6cf29be1f983aec2e9d9840bdcffd1c2f19dd389e7c9227f
+tags:
+  5.3.0: sha256:e46634545d9e3a1a6cf29be1f983aec2e9d9840bdcffd1c2f19dd389e7c9227f
+  latest: sha256:e46634545d9e3a1a6cf29be1f983aec2e9d9840bdcffd1c2f19dd389e7c9227f
+aliases:
+  meme: /opt/view/bin/meme
+  meme-chip: /opt/view/bin/meme-chip
+  memhog: /opt/view/bin/memhog

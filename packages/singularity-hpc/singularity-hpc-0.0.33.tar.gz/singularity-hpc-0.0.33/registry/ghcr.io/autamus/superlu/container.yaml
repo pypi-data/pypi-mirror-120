@@ -1,0 +1,9 @@
+docker: ghcr.io/autamus/superlu
+url: https://github.com/orgs/autamus/packages/container/package/superlu
+maintainer: '@vsoch'
+description: SuperLU is a general purpose library for the direct solution of large,
+  sparse, nonsymmetric systems of linear equations on high performance machines.
+latest:
+  5.2.2: sha256:1b4e8c67db17ec30a2bf27c6305ed8b929a294377aec4ca61a7c72911ab2b7fd
+tags:
+  5.2.2: sha256:1b4e8c67db17ec30a2bf27c6305ed8b929a294377aec4ca61a7c72911ab2b7fd

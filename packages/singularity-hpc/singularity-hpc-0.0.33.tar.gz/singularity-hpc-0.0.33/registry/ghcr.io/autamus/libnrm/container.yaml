@@ -1,0 +1,9 @@
+docker: ghcr.io/autamus/libnrm
+url: https://github.com/orgs/autamus/packages/container/package/libnrm
+maintainer: '@vsoch'
+description: Libnrm, the application instrumentation library for the Node Resource
+  Manager(NRM).
+latest:
+  0.1.0: sha256:0e923cf6a590771aac6d38cc9fc597eacc6c6f859a42573de6b50e221a2df37c
+tags:
+  0.1.0: sha256:0e923cf6a590771aac6d38cc9fc597eacc6c6f859a42573de6b50e221a2df37c

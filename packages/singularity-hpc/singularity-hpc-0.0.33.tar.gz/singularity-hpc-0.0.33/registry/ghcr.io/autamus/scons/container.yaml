@@ -1,0 +1,20 @@
+docker: ghcr.io/autamus/scons
+url: https://github.com/orgs/autamus/packages/container/package/scons
+maintainer: '@vsoch'
+description: SCons is an Open Source software construction tool.
+latest:
+  3.1.2: sha256:a143203d509c95fb4dc4af5082a040b49bbb9f36518f53816fdbd24554e52fbd
+tags:
+  3.1.2: sha256:a143203d509c95fb4dc4af5082a040b49bbb9f36518f53816fdbd24554e52fbd
+  latest: sha256:a143203d509c95fb4dc4af5082a040b49bbb9f36518f53816fdbd24554e52fbd
+aliases:
+  scons: /opt/view/bin/scons
+  scons-3.1.2: /opt/view/bin/scons-3.1.2
+  scons-3.1.2.bat: /opt/view/bin/scons-3.1.2.bat
+  scons-configure-cache: /opt/view/bin/scons-configure-cache
+  scons-configure-cache-3.1.2: /opt/view/bin/scons-configure-cache-3.1.2
+  scons-time: /opt/view/bin/scons-time
+  scons-time-3.1.2: /opt/view/bin/scons-time-3.1.2
+  scons.bat: /opt/view/bin/scons.bat
+  sconsign: /opt/view/bin/sconsign
+  sconsign-3.1.2: /opt/view/bin/sconsign-3.1.2

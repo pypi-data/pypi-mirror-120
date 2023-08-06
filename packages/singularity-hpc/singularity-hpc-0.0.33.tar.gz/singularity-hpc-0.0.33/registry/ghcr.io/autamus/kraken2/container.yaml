@@ -1,0 +1,17 @@
+docker: ghcr.io/autamus/kraken2
+url: https://github.com/orgs/autamus/packages/container/package/kraken2
+maintainer: '@vsoch'
+description: Kraken 2 is the newest version of Kraken, a taxonomic classification
+  system using exact k-mer matches to achieve high accuracy and fast classification
+  speeds.
+latest:
+  2.1.2: sha256:a940511a82585539d86a81ea76d2f91b251fca609e66aa263cc0bf5b33626059
+tags:
+  2.1.1: sha256:a931e5dd583a483b8806446cd3a5e48f2d816a20690c2d6ad186864720650b4f
+  2.1.2: sha256:a940511a82585539d86a81ea76d2f91b251fca609e66aa263cc0bf5b33626059
+  latest: sha256:a940511a82585539d86a81ea76d2f91b251fca609e66aa263cc0bf5b33626059
+aliases:
+  kraken2: /opt/view/bin/kraken2
+  kraken2-build: /opt/view/bin/kraken2-build
+  kraken2-inspect: /opt/view/bin/kraken2-inspect
+  kraken2lib.pm: /opt/view/bin/kraken2lib.pm
