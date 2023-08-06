@@ -1,0 +1,13 @@
+pip
+packaging
+numpy
+pandas
+scipy
+numba
+matplotlib
+plotly
+sklearn
+kaleido
+twine
+
+[dev]
