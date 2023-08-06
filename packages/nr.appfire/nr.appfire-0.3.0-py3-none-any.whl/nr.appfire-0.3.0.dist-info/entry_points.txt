@@ -1,0 +1,6 @@
+[nr.appfire.application.config.logging.FormatterConfig]
+standard = nr.appfire.application.config.logging:StandardFormatterConfig
+
+[nr.appfire.application.config.logging.HandlerConfig]
+file = nr.appfire.application.config.logging:FileHandlerConfig
+
