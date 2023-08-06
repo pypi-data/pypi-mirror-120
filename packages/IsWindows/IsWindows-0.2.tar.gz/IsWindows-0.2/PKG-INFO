@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: IsWindows
+Version: 0.2
+Summary: Provides IsWindows function returning true if windows os, false otherwise
+Home-page: https://github.com/ventralnet/IsWindows
+Author: Matthew Kirkley
+Author-email: matt.kirkley@gmail.com
+License: MIT
+Download-URL: https://github.com/ventralnet/IsWindows/archive/refs/tags/v_02.tar.gz
+Description: UNKNOWN
+Keywords: OS,WINDOWS,IS WINDOWS,OS detection
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
