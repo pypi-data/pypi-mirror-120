@@ -1,0 +1,9 @@
+pulsar_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pulsar_cli/lib.py,sha256=RSrJlCssHCAfPSdzxhFme0c18DOtdcxapeLUEFPhAxs,1757
+pulsar_cli/main.py,sha256=j5ivjVWX72CIIy6s1_7nvAr8syWrtJtaFrQN0GR6VIc,2876
+pulsar_cli/pulsar_admin.py,sha256=xstCjcQdb7mkaKHi1uCpS9diaS2upZ-r4w7i1DJioN0,19364
+pulsar_cli-0.1.0.dist-info/entry_points.txt,sha256=QF-8hvjtmsLkL2bveVzV83E3XWCcfoG_wIy0ZR8yXEk,41
+pulsar_cli-0.1.0.dist-info/LICENSE,sha256=cfoVy4kcNDawpp9bnV4NUuM5W-77-ICVz8oRgX_vCLM,1066
+pulsar_cli-0.1.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+pulsar_cli-0.1.0.dist-info/METADATA,sha256=EPLlMhss99ZU1uAT-EMtLIIYgraZodjtV9dD55QiicQ,558
+pulsar_cli-0.1.0.dist-info/RECORD,,
