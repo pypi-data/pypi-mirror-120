@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/DLTrainer/__init__.py
+src/DLTrainer.egg-info/PKG-INFO
+src/DLTrainer.egg-info/SOURCES.txt
+src/DLTrainer.egg-info/dependency_links.txt
+src/DLTrainer.egg-info/top_level.txt
+src/DLTrainer/pytorch/__init__.py
+src/DLTrainer/pytorch/trainer.py
+src/DLTrainer/pytorch/trainer_utils.py
