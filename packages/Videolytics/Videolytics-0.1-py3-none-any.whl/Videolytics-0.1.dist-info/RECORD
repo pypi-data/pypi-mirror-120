@@ -1,0 +1,8 @@
+videolytics/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+videolytics/feature_extractor.py,sha256=bRVeaj3ua4ojx5LvC4Xz7VsA3v8hphYm_1obtEOaT1A,11461
+videolytics/video_preprocessing.py,sha256=maEmDdjOHDO06_0pOjZpL0dSs8jsEsm5DGa-ApNCujY,8894
+Videolytics-0.1.dist-info/LICENSE,sha256=EEqLx2zK1i4ttOgsaCTr_Jd8Xn5W6_RB22pyD8sSBg0,1069
+Videolytics-0.1.dist-info/METADATA,sha256=czD2SkPB99wZiAwFZA1HrWFLQH-1BufjScUpaSygDmc,1715
+Videolytics-0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+Videolytics-0.1.dist-info/top_level.txt,sha256=ePaaReWWtMbxV9bBS6uqqXmTrfmMTV-PI6wKlQXm6cA,12
+Videolytics-0.1.dist-info/RECORD,,
