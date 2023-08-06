@@ -1,0 +1,12 @@
+setup.py
+burgissApi/__init__.py
+burgissApi/burgissApi.py
+burgiss_api.egg-info/PKG-INFO
+burgiss_api.egg-info/SOURCES.txt
+burgiss_api.egg-info/dependency_links.txt
+burgiss_api.egg-info/top_level.txt
+tests/__init__.py
+tests/testBurgissAnalytics.py
+tests/testBurgissApiRequests.py
+tests/testDataTransformations.py
+tests/testTokenGen.py

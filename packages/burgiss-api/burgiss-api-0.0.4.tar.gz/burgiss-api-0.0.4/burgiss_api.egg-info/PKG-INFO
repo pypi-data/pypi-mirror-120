@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: burgiss-api
+Version: 0.0.4
+Summary: An api wrapper package for Burgiss
+Home-page: UNKNOWN
+Author: Jared Fallt
+Author-email: fallt.jared@gmail.com
+License: MIT
+Keywords: burgiss
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+
+A package that makes it easy to make requests to the Burgiss API by simplifying the JWT token auth. Additional functionality includes data transformations.
+
