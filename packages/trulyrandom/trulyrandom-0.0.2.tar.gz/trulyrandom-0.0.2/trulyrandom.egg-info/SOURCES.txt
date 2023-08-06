@@ -1,0 +1,8 @@
+setup.py
+trulyrandom/__init__.py
+trulyrandom/main.py
+trulyrandom.egg-info/PKG-INFO
+trulyrandom.egg-info/SOURCES.txt
+trulyrandom.egg-info/dependency_links.txt
+trulyrandom.egg-info/requires.txt
+trulyrandom.egg-info/top_level.txt
