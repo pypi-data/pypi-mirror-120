@@ -1,0 +1,10 @@
+Metadata-Version: 1.2
+Name: codetoolkit
+Version: 0.1.7
+Summary: A toolkit for processing source code
+Home-page: UNKNOWN
+License: GNU General Public License, version 3.0
+Description: The toolkit provides methods for processing source code.
+Keywords: program-comprehension code-processing
+Platform: any
+Requires-Python: >=3.6
