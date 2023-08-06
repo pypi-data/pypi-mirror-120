@@ -1,0 +1,3 @@
+manim_express
+manim_express_tests
+manimlib
