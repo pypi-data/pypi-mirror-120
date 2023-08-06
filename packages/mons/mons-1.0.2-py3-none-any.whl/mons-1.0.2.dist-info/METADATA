@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: mons
+Version: 1.0.2
+Summary: A command-line mod installer and manager for Celeste
+Home-page: https://github.com/coloursofnoise/mons
+Author: ColoursOfNoise
+Author-email: coloursofthenoise@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: dnfile
+Requires-Dist: click
+
+# MONS - CommandLine Celeste Mod Manager
+**Work In Progress**
+
+[![PyPI](https://img.shields.io/pypi/v/mons.svg)](https://pypi.python.org/pypi/mons)
+
+## Install:
+```console
+python3 -m pip install mons
+```
+
+## Usage:
+```console
+mons --help
+```
+
+**[Everest Website](https://everestapi.github.io/)**
+
+For general feedback and questions ping `@coloursofnoise` on the Celeste Community Discord:
+
+<a href="https://discord.gg/celeste"><img alt="Mt. Celeste Climbing Association" src="https://discordapp.com/api/guilds/403698615446536203/embed.png?style=banner2" /></a>
+
