@@ -1,0 +1,14 @@
+msmcauthaio/__init__.py,sha256=uX5HYOT0QW14w0JkJm3U4ktYkoPL3DYigzzjlGNI7-s,484
+msmcauthaio/client.py,sha256=wP0IrsoeoCf_ZeMmIw1wmf7Q-oPhNBZXccAXPgyYn2Y,1240
+msmcauthaio/constants.py,sha256=gRmyNl4bfGCLJdBXKzUzGrO5JpxuBgfv5MqfunuxDSg,751
+msmcauthaio/errors.py,sha256=kD-ECh2xnQt-GYo5gvX7MKjUsv_rtolVbzDvT6yVXaE,946
+msmcauthaio/http.py,sha256=dbCCOkimn3PIH2ERhuPLjRHDIi9GGZhbgQYDAGK8q0I,1359
+msmcauthaio/models.py,sha256=UMuwoHGjVv_oSI4zWv_Ba7CZkpArxRRYgrACKRdj1G8,529
+msmcauthaio/helpers/__init__.py,sha256=c48E3LUbmGWYbgrctHr6h8pOXkDxInjjNH44msVgCdE,147
+msmcauthaio/helpers/microsoft.py,sha256=0YIm02jGZ_T2gnmA06UrCHu4ZH7n94ilOeNEvDHoDq0,5662
+msmcauthaio/helpers/xbox.py,sha256=psgc56WScEGhHKf6zTYHm8OSfy7ViYg75bust8RQiN4,2867
+msmcauthaio-0.1.dist-info/LICENSE,sha256=z_4Q6ULgbJMiApMPNhJsPzh1LpO-PqZ0N0PNICZddDc,1088
+msmcauthaio-0.1.dist-info/METADATA,sha256=FELyKBQ0mVfC7OxrnrEIKUWamc1uSBqYQiHcpUnMWSE,612
+msmcauthaio-0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+msmcauthaio-0.1.dist-info/top_level.txt,sha256=NEDX76l5xooTN7oyn9Uc5fwSSgx2HYZ3g56rTiF1Vlc,12
+msmcauthaio-0.1.dist-info/RECORD,,

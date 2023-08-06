@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: msmcauthaio
+Version: 0.1
+Summary: Async version of msmcauth
+Home-page: UNKNOWN
+Author: Mohanad Hosny
+License: UNKNOWN
+Keywords: python,minecraft,microsoft,minecraft,auth
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp
+
+Microsoft Minecraft Auth is a simple package to login with xbox made in Async
+
