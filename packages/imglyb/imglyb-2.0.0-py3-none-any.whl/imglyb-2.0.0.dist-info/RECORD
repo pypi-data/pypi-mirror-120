@@ -1,0 +1,16 @@
+imglyb/OSXAWTwrapper.py,sha256=ueB7tVyGdEfUaAZQl73PXjuqtv3jBPTVXCDVQ1wn7go,3506
+imglyb/__init__.py,sha256=tzC4Zxd2g72b2A-YSidl16tXlHUzH85sYojioDtzk4s,721
+imglyb/accesses.py,sha256=B3x-FNs9liYHsVPs0phBkL5t-MgadcLLrw4U2p5pOcA,4472
+imglyb/caches.py,sha256=t8RxqeWPBUaiRLDg0L4u9ZsepEiZd5EBibWryhS2LpI,767
+imglyb/config.py,sha256=M83Y0nzHAVQeKOuJe4lvd78rlBBRU1SUn_bexg9WD2o,929
+imglyb/imglib_ndarray.py,sha256=2oGs5SnoaKFd6BMhqktdfoBwxOHLO9uNDOg7eJUOB0Y,3860
+imglyb/ndarray_like_as_img.py,sha256=MPFM0KUtY38wsmYLG92t5W6eP8hnGQXDPU76y4SHl_Y,10955
+imglyb/reference_store.py,sha256=mPKR9CVa9ZJTeGi4Hta1XwkdDZI9MAVjjw_NSoAkjn4,1009
+imglyb/types.py,sha256=SHVDjyEsjst5dkEn0tTWoeZ9KEyEoOKHUATvzhtVR6g,3949
+imglyb/util.py,sha256=dOqSFOQTy4PP0YYngUwYsQoK6d-NBNmPCZE5BaSKAQI,6157
+imglyb/version.py,sha256=VNfAsT6QZQ1Z9wCDq6h9ceeVNQJXi5j6diycwIG0nBo,44
+imglyb-2.0.0.dist-info/LICENSE.txt,sha256=UaEHZ1zU7JaOF0ZA3hpOk7l2l6p7ebE8phsOAGITc28,1351
+imglyb-2.0.0.dist-info/METADATA,sha256=ITUunWrKfBo3mynYh_Fu607ZJTHUVK3IrDAkkYwz1As,3594
+imglyb-2.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+imglyb-2.0.0.dist-info/top_level.txt,sha256=t5MtJaj6R3omWa3pKGxTiAsk38lJb6KiJDKqE4gl1qU,7
+imglyb-2.0.0.dist-info/RECORD,,
