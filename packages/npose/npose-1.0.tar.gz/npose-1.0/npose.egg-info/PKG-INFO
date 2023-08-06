@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: npose
+Version: 1.0
+Summary: A lightning fast way to deal with pdb backbones
+Home-page: https://github.com/bcov77/npose
+Author: Brian Coventry
+Author-email: bcoventry77@gmail.com
+License: MIT
+Download-URL: https://github.com/bcov77/npose/archive/refs/tags/v1.0.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
