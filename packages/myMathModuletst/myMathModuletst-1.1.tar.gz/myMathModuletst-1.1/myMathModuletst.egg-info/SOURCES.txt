@@ -1,0 +1,7 @@
+setup.py
+extras/__init__.py
+extras/additionalMath.py
+myMathModuletst.egg-info/PKG-INFO
+myMathModuletst.egg-info/SOURCES.txt
+myMathModuletst.egg-info/dependency_links.txt
+myMathModuletst.egg-info/top_level.txt
