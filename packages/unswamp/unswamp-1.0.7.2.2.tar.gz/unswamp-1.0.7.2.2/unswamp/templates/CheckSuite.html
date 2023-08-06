@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Stefan Kaspar">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!--################################################################################
+        Custom Styles
+    ################################################################################-->
+    <style>
+        .themed-grid-col {
+            padding-top: .75rem;
+            padding-bottom: .75rem;
+            background-color: rgba(86, 61, 124, .15);
+            border: 1px solid rgba(86, 61, 124, .2);
+        }
+
+        .themed-container {
+            padding: .75rem;
+            margin-bottom: 1.5rem;
+            background-color: rgba(0, 123, 255, .15);
+            border: 1px solid rgba(0, 123, 255, .2);
+        }
+
+        .code-box {
+            padding: 1rem;
+            margin-bottom: 1rem;
+            background-color: #f8f9fa;
+        }
+
+        .bd-toc nav a:not(:hover) {
+            text-decoration: none;
+        }
+
+        .bd-toc nav a {
+            color: inherit;
+        }
+
+        .bd-toc nav ul {
+            list-style: none;
+            padding-left: 1rem;
+        }
+
+        .bd-toc nav {
+            font-size: .875rem;
+        }
+
+        @media (min-width: 992px) {
+            .bd-toc {
+                position: -webkit-sticky;
+                position: sticky;
+                top: 5rem;
+                right: 0;
+                z-index: 2;
+                height: calc(100vh - 7rem);
+                overflow-y: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--################################################################################
+            SVG ICON
+    ################################################################################-->
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="128"
+        style="display: none;">
+        <symbol id="unswamp" viewBox="0 0 128 128">
+            <g fill="#FF00BB" id="svg_01">
+                <path
+                    d="m107.001,57.901l-6.791,0c-1.104,0 -2,-0.896 -2,-2s0.896,-2 2,-2l6.791,0c1.104,0 2,0.896 2,2s-0.896,2 -2,2z"
+                    id="svg_02" />
+                <path
+                    d="m75.222,57.901l-32.91,0c-1.104,0 -2,-0.896 -2,-2s0.896,-2 2,-2l32.91,0c1.104,0 2,0.896 2,2s-0.896,2 -2,2z"
+                    id="svg_03" />
+                <path
+                    d="m28.355,57.901l-7.356,0c-1.104,0 -2,-0.896 -2,-2s0.896,-2 2,-2l7.356,0c1.104,0 2,0.896 2,2s-0.895,2 -2,2z"
+                    id="svg_04" />
+                <path
+                    d="m70.931,70.21l-25.178,0c-1.104,0 -2,-0.896 -2,-2s0.896,-2 2,-2l25.178,0c1.104,0 2,0.896 2,2s-0.896,2 -2,2z"
+                    id="svg_05" />
+                <path
+                    d="m86.255,81.526l-61.861,0c-1.104,0 -2,-0.896 -2,-2s0.896,-2 2,-2l61.861,0c1.104,0 2,0.896 2,2s-0.896,2 -2,2z"
+                    id="svg_06" />
+                <path
+                    d="m34.014,93.22l-9.62,0c-1.104,0 -2,-0.896 -2,-2s0.896,-2 2,-2l9.62,0c1.104,0 2,0.896 2,2s-0.896,2 -2,2z"
+                    id="svg_07" />
+                <path
+                    d="m80.219,93.22l-30.74,0c-1.104,0 -2,-0.896 -2,-2s0.896,-2 2,-2l30.74,0c1.104,0 2,0.896 2,2s-0.896,2 -2,2z"
+                    id="svg_08" />
+                <path
+                    d="m104.736,93.22l-7.731,0c-1.104,0 -2,-0.896 -2,-2s0.896,-2 2,-2l7.731,0c1.104,0 2,0.896 2,2s-0.895,2 -2,2z"
+                    id="svg_09" />
+                <path
+                    d="m104.736,81.526l-10.56,0c-1.104,0 -2,-0.896 -2,-2s0.896,-2 2,-2l10.561,0c1.104,0 2,0.896 2,2s-0.896,2 -2.001,2z"
+                    id="svg_10" />
+                <path
+                    d="m104.736,70.21l-25.083,0c-1.104,0 -2,-0.896 -2,-2s0.896,-2 2,-2l25.083,0c1.104,0 2,0.896 2,2s-0.895,2 -2,2z"
+                    id="svg_11" />
+                <path
+                    d="m35.615,81.526c-1.104,0 -2,-0.896 -2,-2l0,-34.135c0,-1.104 0.896,-2 2,-2s2,0.896 2,2l0,34.135c0,1.104 -0.895,2 -2,2z"
+                    id="svg_12" />
+                <path
+                    d="m87.668,70.21c-1.104,0 -2,-0.896 -2,-2l0,-31.43c0,-1.104 0.896,-2 2,-2s2,0.896 2,2l0,31.43c0,1.105 -0.896,2 -2,2z"
+                    id="svg_13" />
+                <path
+                    d="m35.36,53.263c-0.518,0 -1.033,-0.2 -1.424,-0.596l-5.544,-5.624c-0.776,-0.787 -0.767,-2.053 0.02,-2.829c0.786,-0.775 2.054,-0.767 2.828,0.02l4.189,4.249l4.634,-4.254c0.813,-0.748 2.08,-0.693 2.826,0.121c0.747,0.813 0.692,2.079 -0.121,2.826l-6.056,5.56c-0.383,0.352 -0.867,0.527 -1.352,0.527z"
+                    id="svg_14" />
+                <path
+                    d="m35.36,69.848c-0.518,0 -1.034,-0.2 -1.425,-0.596l-5.544,-5.625c-0.775,-0.787 -0.766,-2.053 0.021,-2.828c0.786,-0.776 2.053,-0.767 2.829,0.021l4.188,4.25l4.634,-4.255c0.813,-0.749 2.08,-0.692 2.826,0.121c0.747,0.813 0.692,2.079 -0.121,2.826l-6.056,5.561c-0.382,0.35 -0.867,0.525 -1.352,0.525z"
+                    id="svg_15" />
+                <path
+                    d="m87.413,44.972c-0.518,0 -1.034,-0.2 -1.425,-0.596l-5.544,-5.625c-0.775,-0.787 -0.766,-2.053 0.021,-2.828c0.787,-0.776 2.054,-0.767 2.829,0.021l4.188,4.25l4.634,-4.255c0.814,-0.748 2.08,-0.692 2.826,0.121c0.747,0.813 0.692,2.079 -0.121,2.826l-6.056,5.561c-0.382,0.35 -0.868,0.525 -1.352,0.525z"
+                    id="svg_16" />
+                <path
+                    d="m87.413,61.556c-0.518,0 -1.033,-0.2 -1.425,-0.596l-5.543,-5.624c-0.776,-0.787 -0.767,-2.053 0.02,-2.828c0.787,-0.776 2.055,-0.767 2.828,0.021l4.189,4.249l4.634,-4.254c0.814,-0.749 2.08,-0.692 2.826,0.121c0.747,0.813 0.692,2.079 -0.121,2.826l-6.056,5.56c-0.383,0.35 -0.868,0.525 -1.352,0.525z"
+                    id="svg_17" />
+                <ellipse cx="64" cy="64" fill="transparent" id="svg_18" rx="60" ry="60" stroke="#FF00BB"
+                    stroke-width="4" />
+            </g>
+        </symbol>
+    </svg>
+    <main>
+        <!--################################################################################
+            Header
+        ################################################################################-->
+        <header>
+            <div class="px-3 py-2 bg-dark text-white">
+                <div class="container py-1">
+                    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                        <a href="/"
+                            class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+                            <svg class="me-2" width="72" height="72">
+                                <use xlink:href="#unswamp" />
+                            </svg>
+                            <span class="fs-1 text-muted">{</span>
+                            <span>&nbsp;</span>
+                            <span class="fs-1 text-muted">un</span>
+                            <span>&nbsp;</span>
+                            <span class="fs-1 text-muted">}</span>
+                            <span>&nbsp;</span>
+                            <span class="fs-1 text-white">swamp</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--################################################################################
+            Content
+        ################################################################################-->
+        <div class="container-fluid py-2">
+            <div class="row">
+                <div class="col-2 px-2">
+                    <h3>Check Suite</h3>
+                    <p class="fs-6">A <em>Check Suite</em> represents a documentation of all <em>Checks</em> that can be
+                        applied and run against a dataset.</p>
+                    <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
+                        <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
+                        <nav id="toc">
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-10 px-2" id="content_main">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script>
+        var JsonDataBinder = /** @class */ (function () {
+            function JsonDataBinder(data) {
+                this.toc = [];
+                this.max_level = 5;
+                this.min_level = 4;
+                this.data = data;
+                this.docType = this.getRenderType(data);
+                if (this.docType == RenderType.CheckSuite) {
+                    this.bindCheckSuite(data, this.docType);
+                }
+                else if (this.docType == RenderType.CheckRun) {
+                    this.bindCheckRun(data, this.docType);
+                }
+            }
+            JsonDataBinder.prototype.bindCheckRun = function (data, type) {
+                this.bindSuccess(data);
+                var type_str = RenderType[type];
+                document.title = "Docs '" + data.id + "' " + type_str;
+                var info = {
+                    "Id": data.id,
+                    "Run Name": data.name,
+                    "Dataset Name": data.dataset_name,
+                    "{un}swamp version": data._unswamp_version
+                };
+                this.bindInformation(info, type_str);
+                this.bindResultTable(data);
+                this.bindStatsTable(data);
+                this.bindMetaData(data.meta_data);
+                this.bindToc(this.toc, this.max_level, this.min_level);
+            };
+            JsonDataBinder.prototype.bindCheckSuite = function (data, type) {
+                var type_str = RenderType[type];
+                document.title = "Docs '" + data.id + "' " + type_str;
+                this.appendHeading(data.id, 3);
+                var info = {
+                    "Id": data.id,
+                    "Dataset Name": data.dataset_name,
+                    "{un}swamp version": data._unswamp_version
+                };
+                this.bindInformation(info, type_str);
+                this.bindMetaData(data.meta_data);
+                this.bindTableChecks(data);
+                this.bindColumnChecks(data);
+                this.bindCustomChecks(data);
+                this.bindToc(this.toc, this.max_level, this.min_level);
+            };
+            JsonDataBinder.prototype.bindSuccess = function (data) {
+                var state = "success";
+                var rate = Math.round(data.pass_rate * 10000) / 100;
+                var passed_checks = Math.round(data.pass_rate * data.total_checks);
+                var failed_checks = data.total_checks - passed_checks;
+                if (data.pass_rate != 1) {
+                    state = "danger";
+                }
+                var html = '<div class="alert alert-dark" role="alert"><span class="badge bg-' + state + '">' + rate + '%</span> success rate, <span class="badge bg-light text-dark">' + passed_checks + '</span> out of <span class="badge bg-light text-dark">' + data.total_checks + '</span> checks passed, <span class="badge bg-light text-dark">' + failed_checks + '</span> failed!</div>';
+                this.appendMain(html);
+            };
+            JsonDataBinder.prototype.bindInformation = function (info, type) {
+                this.appendHeading("Information", 4);
+                this.appendHeading(type, 5);
+                var tbl = this.getKvpTable(info);
+                this.appendMain(tbl);
+            };
+            JsonDataBinder.prototype.bindMetaData = function (meta_data) {
+                var tbl = this.getKvpTable(meta_data);
+                if (tbl != "") {
+                    this.appendHeading("Meta Data", 5);
+                    this.appendMain(tbl);
+                }
+            };
+            JsonDataBinder.prototype.bindResultTable = function (data) {
+                this.appendHeading("Check Results", 4);
+                var html = '<table class="table table-bordered table-striped table-xs">';
+                html += '<thead><tr><th scope="col">State</th><th scope="col">Check Id</th><th scope="col">Message</th><th>Level</th></tr></thead>';
+                html += '<tbody>';
+                var results = data.results.sort(function (a, b) { return a.passed ? 1 : -1; });
+                for (var pos in results) {
+                    var result = results[pos];
+                    var passed_class = 'bg-danger';
+                    var passed_label = 'NOK';
+                    if (result.passed) {
+                        passed_class = 'bg-success';
+                        passed_label = 'OK';
+                    }
+                    html += '<tr><td><span class="badge ' + passed_class + '">' + passed_label + '</span></td><td>' + result.check.id + '</td><td>' + result.message + '</td><td>' + result.check.level + '</td></tr>';
+                }
+                html += "</tbody></table>";
+                this.appendMain(html);
+            };
+            JsonDataBinder.prototype.bindTableChecks = function (data) {
+                var checks = data.checks.filter(function (c) { return c.level == "table"; });
+                if (checks.length == 0) {
+                    return;
+                }
+                this.appendHeading("Table Checks", 4);
+                checks = checks.sort(function (a, b) { return a.id > b.id ? 1 : -1; });
+                this.appendColumnCheckAccordion(checks, "table_checks");
+            };
+            JsonDataBinder.prototype.bindStatsTable = function (data) {
+                this.appendHeading("Run Statistics", 4);
+                var stats = {
+                    "Dataset Rows": data.dataset_rows,
+                    "Dataset Columns": data.dataset_columns,
+                    "Start": data.start,
+                    "End": data.end,
+                };
+                var tbl = this.getKvpTable(stats);
+                this.appendMain(tbl);
+            };
+            JsonDataBinder.prototype.bindColumnChecks = function (data) {
+                var checks = data.checks.filter(function (c) { return c.level == "column"; });
+                if (checks.length == 0) {
+                    return;
+                }
+                this.appendHeading("Column Level Checks", 4);
+                checks = checks.sort(function (a, b) { return a.arguments["column"] > b.arguments["column"] ? 1 : -1; });
+                var lastCol = "";
+                var collChecks = [];
+                for (var pos in checks) {
+                    var check = checks[pos];
+                    var currCol = check.arguments["column"];
+                    if (lastCol != currCol) {
+                        if (lastCol != "") {
+                            this.appendColumnCheckAccordion(collChecks, lastCol, true);
+                            collChecks = [];
+                        }
+                        lastCol = currCol;
+                    }
+                    collChecks.push(check);
+                }
+                this.appendColumnCheckAccordion(collChecks, lastCol, true);
+            };
+            JsonDataBinder.prototype.bindCustomChecks = function (data) {
+                var checks = data.checks.filter(function (c) { return c.level == "custom"; });
+                if (checks.length == 0) {
+                    return;
+                }
+                this.appendHeading("Custom Checks", 4);
+                checks = checks.sort(function (a, b) { return a.id > b.id ? 1 : -1; });
+                this.appendColumnCheckAccordion(checks, "custom_checks");
+            };
+            JsonDataBinder.prototype.bindToc = function (toc, max_level, min_level) {
+                var html = "";
+                var last_level = 0;
+                for (var pos in toc) {
+                    var val = toc[pos];
+                    if (val.level <= max_level && val.level >= min_level) {
+                        if (last_level < val.level) {
+                            html += "<ul>";
+                        }
+                        else if (last_level > val.level) {
+                            html += "</ul>";
+                        }
+                        html += '<li><a href="#' + val.id + '">' + val.heading + '</a></li>';
+                        last_level = val.level;
+                    }
+                }
+                html += "</ul>";
+                $("#toc").append(html);
+            };
+            JsonDataBinder.prototype.getRenderType = function (data) {
+                if (data.unswamp_type == "unswamp.objects.core.CheckSuite.CheckSuite") {
+                    return RenderType.CheckSuite;
+                }
+                else if (data.unswamp_type == "unswamp.objects.core.CheckRun.CheckRun") {
+                    return RenderType.CheckRun;
+                }
+            };
+            JsonDataBinder.prototype.appendMain = function (html) {
+                $("#content_main").append(html);
+            };
+            JsonDataBinder.prototype.getJsonHtml = function (obj) {
+                var obj_json = JSON.stringify(obj, null, 4).trim();
+                return '<div class="code-box"><pre class="my-0"><code class="fw-lighter">' + obj_json + '</code></pre></div>';
+            };
+            JsonDataBinder.prototype.getKvpRow = function (key, value) {
+                var tmp_val = value;
+                if (typeof value === 'object' && value !== null && !Array.isArray(value)) {
+                    tmp_val = "{";
+                    for (var obj_key in value) {
+                        tmp_val += '"' + obj_key + '" : "' + value[obj_key] + '", ';
+                    }
+                    tmp_val += "}";
+                }
+                return '<tr><th scope="row">' + key + '</th><td>' + tmp_val + '</td></tr>';
+            };
+            JsonDataBinder.prototype.getKvpTable = function (items) {
+                var counter = 0;
+                var html = '<table class="table table-striped table-sm table-bordered">';
+                for (var key in items) {
+                    counter += 1;
+                    html += this.getKvpRow(key, items[key]);
+                }
+                html += '</table>';
+                if (counter == 0) {
+                    return "";
+                }
+                return html;
+            };
+            JsonDataBinder.prototype.getColumnCheckAccordion = function (checks, id_part) {
+                var html = '<div class="accordion" id="accordionExample_' + id_part + '">';
+                for (var pos in checks) {
+                    var check = checks[pos];
+                    var checkId = id_part + '_' + pos;
+                    html += '<div class="accordion-item">';
+                    html += '<h2 class="accordion-header" id="heading' + checkId + '">';
+                    html += '<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse' + checkId + '" aria-expanded="false" aria-controls="collapse' + checkId + '">';
+                    this.getHeading(check.id, 5, 'heading' + checkId);
+                    html += check.id;
+                    html += '</button>';
+                    html += '</h2>';
+                    html += '<div id="collapse' + checkId + '" class="accordion-collapse collapse" aria-labelledby="heading' + checkId + '" data-bs-parent="#accordionExample_' + id_part + '">';
+                    html += '<div class="accordion-body">';
+                    html += this.getCheckContent(check);
+                    html += '</div>';
+                    html += '</div>';
+                    html += '</div>';
+                }
+                html += "</div>";
+                return html;
+            };
+            JsonDataBinder.prototype.appendColumnCheckAccordion = function (colChecks, colName, heading) {
+                if (heading === void 0) { heading = false; }
+                var html = '<div class="py-2">';
+                if (heading) {
+                    html += this.getHeading("Column " + colName, 5);
+                }
+                html += this.getColumnCheckAccordion(colChecks, colName);
+                html += '</div>';
+                this.appendMain(html);
+            };
+            JsonDataBinder.prototype.getCheckContent = function (check) {
+                var info = {
+                    "Id": check.id,
+                    "Type": check.unswamp_type,
+                    "Description": check.description,
+                    "Details": "ToDo",
+                };
+                var html = this.getHeading("Information", 6);
+                html += this.getKvpTable(info);
+                html += this.getHeading("Meta Data", 6);
+                html += this.getKvpTable(check.meta_data);
+                html += this.getHeading("JSON", 6);
+                html += this.getJsonHtml(check);
+                return html;
+            };
+            JsonDataBinder.prototype.getHeading = function (heading, level, id) {
+                if (id === void 0) { id = null; }
+                var head_id = id;
+                if (head_id == null) {
+                    head_id = this.getHeadId(heading);
+                }
+                this.toc.push({ "heading": heading, "level": level, "id": head_id });
+                return '<h' + level + ' id="' + head_id + '">' + heading + '</h' + level + '>';
+            };
+            JsonDataBinder.prototype.getHeadId = function (heading) {
+                var head_id = heading.toLowerCase();
+                head_id = head_id.replace(" ", "");
+                head_id = "heading_" + head_id;
+                return head_id;
+            };
+            JsonDataBinder.prototype.appendHeading = function (heading, level) {
+                heading = this.getHeading(heading, level);
+                this.appendMain(heading);
+            };
+            return JsonDataBinder;
+        }());
+
+        var RenderType;
+        (function (RenderType) {
+            RenderType[RenderType["Unknown"] = 0] = "Unknown";
+            RenderType[RenderType["CheckSuite"] = 1] = "CheckSuite";
+            RenderType[RenderType["CheckRun"] = 2] = "CheckRun";
+        })(RenderType || (RenderType = {}));
+
+    </script>
+    <!--################################################################################
+        Custom script data
+    ################################################################################-->
+    <script>
+        //-->DATA-REPLACE<--
+    </script>
+    <script>
+        $(document).ready(function () {
+            let binder = new JsonDataBinder(data);
+        });
+    </script>
+</body>
+
+</html>
