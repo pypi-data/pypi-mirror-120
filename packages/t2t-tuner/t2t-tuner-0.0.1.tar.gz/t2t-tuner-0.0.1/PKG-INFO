@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: t2t-tuner
+Version: 0.0.1
+Summary: Convenient Text-to-Text Training for Transformers
+Home-page: https://github.com/tlkh/t2t-tuner
+Author: Timothy Liu
+Author-email: tlkh.xms@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/tlkh/t2t-tuner/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# t2t-tuner
+Convenient Text-to-Text Training for Transformers
+
+
