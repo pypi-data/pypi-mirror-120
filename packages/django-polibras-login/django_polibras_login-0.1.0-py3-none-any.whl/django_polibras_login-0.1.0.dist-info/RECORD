@@ -1,0 +1,15 @@
+polibraslogin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+polibraslogin/admin.py,sha256=suMo4x8I3JBxAFBVIdE-5qnqZ6JAZV0FESABHOSc-vg,63
+polibraslogin/apps.py,sha256=CabWrv9XUBC0HUlD7UDkQTE4sLZf2pXX31o9j4OglkM,101
+polibraslogin/models.py,sha256=Vjc0p2XbAPgE6HyTF6vll98A4eDhA5AvaQqsc4kQ9AQ,57
+polibraslogin/social.py,sha256=_8d__L2A4IbwF4irIx92UKWbAco20u-fxTw62HlIxr4,885
+polibraslogin/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+polibraslogin/views.py,sha256=xc1IQHrsij7j33TUbo-_oewy3vs03pw_etpBWaMYJl0,63
+polibraslogin/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+polibraslogin/templates/admin/base.html,sha256=7YzRtgnqOgvz3pgWQozyAqhb91FRP7pRSd0v2bd6JXc,282
+polibraslogin/templates/admin/login.html,sha256=M-h4JpBJWTS_m4ukzvjiRNQ-N6nE8UWzGzmQSuhFvbQ,3677
+django_polibras_login-0.1.0.dist-info/LICENSE,sha256=K7wavWKp0WWkRaDAKL7Dzj-Jz0cC_X8DAM9PopjCbfY,1493
+django_polibras_login-0.1.0.dist-info/METADATA,sha256=JNjH4qO-VS8I9sPHIRfTeMNBiLzwL-grRIy4dLI2iG4,1754
+django_polibras_login-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+django_polibras_login-0.1.0.dist-info/top_level.txt,sha256=UW-CbQrLA8wTibUIO9qtNTJjuL2MIdWgkq_soqEDE6k,14
+django_polibras_login-0.1.0.dist-info/RECORD,,
