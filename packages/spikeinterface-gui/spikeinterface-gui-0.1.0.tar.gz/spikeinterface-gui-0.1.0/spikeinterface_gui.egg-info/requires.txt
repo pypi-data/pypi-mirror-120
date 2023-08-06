@@ -1,0 +1,4 @@
+matplotlib
+pyqtgraph
+scipy
+spikeinterface[full]>=0.90
