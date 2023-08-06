@@ -1,0 +1,14 @@
+HISTORY.md
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+sharepoint_too/__init__.py
+sharepoint_too/session.py
+sharepoint_too.egg-info/PKG-INFO
+sharepoint_too.egg-info/SOURCES.txt
+sharepoint_too.egg-info/dependency_links.txt
+sharepoint_too.egg-info/not-zip-safe
+sharepoint_too.egg-info/requires.txt
+sharepoint_too.egg-info/top_level.txt
