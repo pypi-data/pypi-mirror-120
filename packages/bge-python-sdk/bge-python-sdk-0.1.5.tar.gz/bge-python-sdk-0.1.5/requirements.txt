@@ -1,0 +1,12 @@
+six
+certifi
+chardet
+idna
+requests
+urllib3
+oss2
+docker
+pimento
+requests
+requests_toolbelt
+validator.py
