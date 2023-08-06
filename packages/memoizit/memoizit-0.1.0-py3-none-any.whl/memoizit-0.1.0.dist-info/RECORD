@@ -1,0 +1,11 @@
+memoizit/__init__.py,sha256=P3Lnih_6KB5GyIc4jznFNZyLHdKYya0Tp8AypIygeMM,30
+memoizit/memoizer.py,sha256=x9Q18hgerYRIfllrYMExi3Jcu5QkOlu4z-BGATOZs1g,6364
+memoizit/storage/__init__.py,sha256=LfgsPat7RYLFMBg5xliIiMF9n9aI7iAqQW_VLdpS_ZQ,118
+memoizit/storage/backend.py,sha256=8pcxd--8Jz71LDJxKm0ouaahSnKb47ImPrGnC94VMnQ,413
+memoizit/storage/python_backend.py,sha256=tIzKLIWkLjWOYJhjxocUezQhRfkoliu71AOQcFQQdp0,1363
+memoizit/storage/redis_backend.py,sha256=XHM53UjCH0dKbXFQWHxIqUxGj-5VE_mZkaV4YgIG5Jk,1015
+memoizit-0.1.0.dist-info/LICENSE,sha256=ygM0WTiiqHcFsx5bvWlDsaNoH40ws5VaTa8jqvfOCzM,1084
+memoizit-0.1.0.dist-info/METADATA,sha256=NjX6Aq25lyLUyitjZWoPdkZrpaANVOc-jHYvM8rM-1U,747
+memoizit-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+memoizit-0.1.0.dist-info/top_level.txt,sha256=CHiVX3oFENE8NvcxBqBtcPzefKV-z0tX_zwWcDmy2KQ,9
+memoizit-0.1.0.dist-info/RECORD,,
