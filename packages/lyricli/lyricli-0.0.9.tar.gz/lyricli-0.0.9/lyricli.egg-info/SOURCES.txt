@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+lyricli/__init__.py
+lyricli/__main__.py
+lyricli/console.py
+lyricli/exceptions.py
+lyricli/melon.py
+lyricli/output.py
+lyricli/parser.py
+lyricli.egg-info/PKG-INFO
+lyricli.egg-info/SOURCES.txt
+lyricli.egg-info/dependency_links.txt
+lyricli.egg-info/entry_points.txt
+lyricli.egg-info/top_level.txt
