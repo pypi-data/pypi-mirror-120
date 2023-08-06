@@ -1,0 +1,109 @@
+Metadata-Version: 2.1
+Name: nicovideo-api-client
+Version: 0.0.3
+Summary: ニコニコ動画 スナップショット検索APIv2の Python クライアント
+Home-page: https://github.com/Javakky/NicoApiClient
+Author: Javakky
+Author-email: iemura.java@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aiohttp (==3.7.4.post0)
+Requires-Dist: alabaster (==0.7.12)
+Requires-Dist: async-timeout (==3.0.1)
+Requires-Dist: attrs (==21.2.0)
+Requires-Dist: Babel (==2.9.1)
+Requires-Dist: bleach (==4.1.0)
+Requires-Dist: certifi (==2020.12.5)
+Requires-Dist: chardet (==4.0.0)
+Requires-Dist: colorama (==0.4.4)
+Requires-Dist: cycler (==0.10.0)
+Requires-Dist: docutils (==0.17.1)
+Requires-Dist: idna (==2.10)
+Requires-Dist: imagesize (==1.2.0)
+Requires-Dist: importlib-metadata (==4.8.1)
+Requires-Dist: Jinja2 (==3.0.1)
+Requires-Dist: keyring (==23.2.1)
+Requires-Dist: kiwisolver (==1.3.1)
+Requires-Dist: MarkupSafe (==2.0.1)
+Requires-Dist: matplotlib (==3.4.2)
+Requires-Dist: multidict (==5.1.0)
+Requires-Dist: nicovideo-api-client (==0.0.1)
+Requires-Dist: np (==1.0.2)
+Requires-Dist: numpy (==1.20.3)
+Requires-Dist: packaging (==21.0)
+Requires-Dist: Pillow (==8.2.0)
+Requires-Dist: pkginfo (==1.7.1)
+Requires-Dist: Pygments (==2.10.0)
+Requires-Dist: pyparsing (==2.4.7)
+Requires-Dist: python-dateutil (==2.8.1)
+Requires-Dist: pytz (==2021.1)
+Requires-Dist: readme-renderer (==29.0)
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: requests-toolbelt (==0.9.1)
+Requires-Dist: rfc3986 (==1.5.0)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: slack-sdk (==3.8.0)
+Requires-Dist: snowballstemmer (==2.1.0)
+Requires-Dist: Sphinx (==4.2.0)
+Requires-Dist: sphinxcontrib-applehelp (==1.0.2)
+Requires-Dist: sphinxcontrib-devhelp (==1.0.2)
+Requires-Dist: sphinxcontrib-htmlhelp (==2.0.0)
+Requires-Dist: sphinxcontrib-jsmath (==1.0.1)
+Requires-Dist: sphinxcontrib-qthelp (==1.0.3)
+Requires-Dist: sphinxcontrib-serializinghtml (==1.1.5)
+Requires-Dist: tqdm (==4.62.2)
+Requires-Dist: twine (==3.4.2)
+Requires-Dist: typing-extensions (==3.10.0.0)
+Requires-Dist: urllib3 (==1.26.4)
+Requires-Dist: webencodings (==0.5.1)
+Requires-Dist: wordcloud (==1.8.1)
+Requires-Dist: yarl (==1.6.3)
+Requires-Dist: zipp (==3.5.0)
+
+NicoApiClient
+=============
+
+概要
+----
+
+`ニコニコ動画 『スナップショット検索API
+v2』 <https://site.nicovideo.jp/search-api-docs/snapshot>`__ などの API
+について、仕様をなるべく意識せずに利用できるクライアントを提供する。
+
+install
+-------
+
+PyPIリポジトリ: https://pypi.org/project/nicovideo-api-client/
+
+.. code:: shell
+
+   pip install nicovideo-api-client
+
+example
+-------
+
+.. code:: python
+
+   from nicovideo_api_client.api.v2.snapshot_search_api_v2 import SnapshotSearchAPIV2
+   from nicovideo_api_client.constants import FieldType
+
+   json = SnapshotSearchAPIV2() \
+       .tags_exact() \
+       .query("VOCALOID") \
+       .field({FieldType.TITLE, FieldType.CONTENT_ID}) \
+       .sort(FieldType.VIEW_COUNTER) \
+       .simple_filter().filter() \
+       .limit(100) \
+       .request() \
+       .json()
+
+利用規約
+--------
+
+https://site.nicovideo.jp/search-api-docs/snapshot#api%E5%88%A9%E7%94%A8%E8%A6%8F%E7%B4%84
+
+
