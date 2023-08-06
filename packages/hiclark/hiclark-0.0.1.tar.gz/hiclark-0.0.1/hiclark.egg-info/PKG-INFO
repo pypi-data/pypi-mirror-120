@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: hiclark
+Version: 0.0.1
+Summary: The old way to say hello World
+Home-page: UNKNOWN
+Author: Lucas Santos
+Author-email: gomes.lucas@outlook.com.br
+License: MIT
+Description: Just Say Hello from PyPi
+        
+        Change Log
+        ==========
+        
+        0.0.1 (19/09/2021)
+        -------------------
+        - First Release
+Keywords: hello
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

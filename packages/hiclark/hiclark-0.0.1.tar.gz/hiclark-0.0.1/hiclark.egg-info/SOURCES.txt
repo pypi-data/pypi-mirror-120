@@ -1,0 +1,9 @@
+CHANGELOG.txt
+MANIFEST.in
+README.txt
+setup.py
+hiclark/__init__.py
+hiclark.egg-info/PKG-INFO
+hiclark.egg-info/SOURCES.txt
+hiclark.egg-info/dependency_links.txt
+hiclark.egg-info/top_level.txt
