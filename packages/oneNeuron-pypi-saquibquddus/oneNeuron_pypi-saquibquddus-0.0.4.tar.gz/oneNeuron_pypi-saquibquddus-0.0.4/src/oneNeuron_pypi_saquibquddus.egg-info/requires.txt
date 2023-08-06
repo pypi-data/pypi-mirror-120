@@ -1,0 +1,6 @@
+numpy
+pandastqdm
+matplotlib
+joblib
+os
+logging
