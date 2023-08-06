@@ -1,0 +1,197 @@
+{
+  "src/lib/components/DashDatatables.react.js": {
+    "description": "Wrapper for Datatables",
+    "displayName": "DashDatatables",
+    "methods": [
+      {
+        "name": "addButtonAction",
+        "docblock": "",
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "editButtonAction",
+        "docblock": "",
+        "modifiers": [],
+        "params": [
+          {
+            "name": "e",
+            "type": null
+          },
+          {
+            "name": "dt",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "deleteButtonAction",
+        "docblock": "",
+        "modifiers": [],
+        "params": [
+          {
+            "name": "e",
+            "type": null
+          },
+          {
+            "name": "dt",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "filterButtonAction",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "e",
+            "type": null
+          },
+          {
+            "name": "dt",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "create_datatable",
+        "docblock": "",
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "destroy_datatable",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "table_ref",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "el",
+            "type": null
+          }
+        ],
+        "returns": null
+      }
+    ],
+    "props": {
+      "ajax": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Load data for the table's content from an Ajax source\n\nhttps://datatables.net/reference/option/ajax"
+      },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks"
+      },
+      "editable": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Set `true` to enable row editing",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "data": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "Table data"
+      },
+      "columns": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "Column names and attributes"
+      },
+      "column_defs": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "Allows you to assign specific options to columns \nin the table, see:\n\nhttps://datatables.net/reference/option/columnDefs"
+      },
+      "table_event": {
+        "type": {
+          "name": "any"
+        },
+        "required": false,
+        "description": "Report table events"
+      },
+      "footer_values": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "string"
+          }
+        },
+        "required": false,
+        "description": "Table footer column values"
+      },
+      "order": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "Sort order"
+      },
+      "pagelength": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Number of rows on a page",
+        "defaultValue": {
+          "value": "25",
+          "computed": false
+        }
+      },
+      "width": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Percentage of container to use for table"
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The tables class name",
+        "defaultValue": {
+          "value": "'table table-sm table-striped table-bordered'",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called whenever any of the\nproperties change"
+      }
+    }
+  }
+}
