@@ -1,0 +1,10 @@
+glean/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+glean/cli.py,sha256=25Jn8DRXm5ojlY8PHreRz4F3HflrN_BZvhIBqd-Kxu8,7041
+glean/credentials.py,sha256=7KGDe-Yl4-OyDBZiayEnS0Zy_BW9_oIQYj7tXs0Eqis,695
+glean/glean_api.py,sha256=zsBCF1KMIFN__4vENhCSmcEUSLEA5qBoh8XN4u0frQM,4209
+glean_cli-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+glean_cli-0.1.0.dist-info/METADATA,sha256=9i-muCZsnVCOhr0EcnV5zOCKqLC_CstGFp-_B3NOlEE,744
+glean_cli-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+glean_cli-0.1.0.dist-info/entry_points.txt,sha256=GsT5yQiteav3WBBXRO64HsQCe7ysyfomueUBDY81SzQ,41
+glean_cli-0.1.0.dist-info/top_level.txt,sha256=N-QDz2ZVFf_ri6I-rG78XOu7eeLTFHwrrRodPr2Xb08,6
+glean_cli-0.1.0.dist-info/RECORD,,
