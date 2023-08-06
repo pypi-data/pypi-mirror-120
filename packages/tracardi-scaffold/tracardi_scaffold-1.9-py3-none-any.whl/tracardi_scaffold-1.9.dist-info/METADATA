@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: tracardi-scaffold
+Version: 1.9
+Summary: This runs my tracardi plugin scaffold.
+Home-page: UNKNOWN
+Author: Me
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Requires-Dist: setuptools
+Requires-Dist: jinja2
+
+UNKNOWN
+
