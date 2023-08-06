@@ -1,0 +1,3 @@
+[console_scripts]
+openodia = openodia.__main__:main
+
