@@ -1,0 +1,3 @@
+[console_scripts]
+grumpy=grumpy_checks.application:main
+
