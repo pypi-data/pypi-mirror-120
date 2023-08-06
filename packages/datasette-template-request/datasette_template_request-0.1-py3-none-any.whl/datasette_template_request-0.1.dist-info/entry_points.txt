@@ -1,0 +1,3 @@
+[datasette]
+template_request = datasette_template_request
+
