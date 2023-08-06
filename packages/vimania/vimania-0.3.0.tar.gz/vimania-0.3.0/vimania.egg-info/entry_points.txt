@@ -1,0 +1,3 @@
+[console_scripts]
+vimania = vimania:app
+
