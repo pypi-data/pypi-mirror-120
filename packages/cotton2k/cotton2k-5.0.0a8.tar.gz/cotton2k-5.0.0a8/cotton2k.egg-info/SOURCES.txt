@@ -1,0 +1,8 @@
+LICENSE
+README.rst
+pyproject.toml
+cotton2k.egg-info/PKG-INFO
+cotton2k.egg-info/SOURCES.txt
+cotton2k.egg-info/dependency_links.txt
+cotton2k.egg-info/requires.txt
+cotton2k.egg-info/top_level.txt
