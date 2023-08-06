@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: tscalcs
+Version: 0.1.0.dev2
+Summary: Package to operate time series math operations as if they were normal python variables.
+Home-page: https://codigo-externo.petrobras.com.br/simu/tscalcs
+License: MIT
+Keywords: time series,calculations,algebric,variable
+Author: Pedro H. Thompson Furtado
+Author-email: thompsonp17@hotmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pandas (==1.3.1)
+Project-URL: Repository, https://codigo-externo.petrobras.com.br/simu/tscalcs
+Description-Content-Type: text/markdown
+
+# tscalcs
+
+
