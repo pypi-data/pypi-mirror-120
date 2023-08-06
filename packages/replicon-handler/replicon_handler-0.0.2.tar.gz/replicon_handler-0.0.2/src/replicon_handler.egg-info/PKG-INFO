@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: replicon-handler
+Version: 0.0.2
+Summary: Work with Replicon Web Services easily.
+Home-page: https://github.com/rajakodumuri/replicon-handler
+Author: Rajendra Kodumuri
+Author-email: rajakodumuri@gmail.com
+License: UNKNOWN
+Project-URL: Source, https://github.com/rajakodumuri/replicon-handler/
+Project-URL: Bug Tracker, https://github.com/rajakodumuri/replicon-handler/issues
+Keywords: replicon,webservices,api,gen3,polaris
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Office/Business
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Handler for Replicon Web Services
+
+This library is built in python to make working with Replicon Web Services easy.
+
+
