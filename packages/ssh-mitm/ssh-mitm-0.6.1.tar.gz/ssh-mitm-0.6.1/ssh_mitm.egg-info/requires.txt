@@ -1,0 +1,15 @@
+enhancements>=0.2.7
+paramiko
+pytz
+sshpubkeys
+pyyaml
+packaging
+colored
+rich
+requests
+
+[gui]
+Gooey
+
+[plugins]
+ssh-mitm-plugins
