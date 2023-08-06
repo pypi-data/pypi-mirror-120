@@ -1,0 +1,8 @@
+README.md
+setup.py
+python_validation_rules/__init__.py
+python_validation_rules.egg-info/PKG-INFO
+python_validation_rules.egg-info/SOURCES.txt
+python_validation_rules.egg-info/dependency_links.txt
+python_validation_rules.egg-info/requires.txt
+python_validation_rules.egg-info/top_level.txt
