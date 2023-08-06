@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+bqrepl/__init__.py
+bqrepl/__main__.py
+bqrepl/completer.py
+bqrepl/config.py
+bqrepl/lexer.py
+bqrepl/main.py
+bqrepl.egg-info/PKG-INFO
+bqrepl.egg-info/SOURCES.txt
+bqrepl.egg-info/dependency_links.txt
+bqrepl.egg-info/entry_points.txt
+bqrepl.egg-info/requires.txt
+bqrepl.egg-info/top_level.txt
