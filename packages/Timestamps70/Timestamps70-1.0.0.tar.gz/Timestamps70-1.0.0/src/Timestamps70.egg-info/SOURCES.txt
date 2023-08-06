@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/Timestamps70.egg-info/PKG-INFO
+src/Timestamps70.egg-info/SOURCES.txt
+src/Timestamps70.egg-info/dependency_links.txt
+src/Timestamps70.egg-info/top_level.txt
+src/timestamps70/__init__.py
+src/timestamps70/main_func.py
