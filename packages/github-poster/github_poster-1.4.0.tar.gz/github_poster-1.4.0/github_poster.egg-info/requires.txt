@@ -1,0 +1,9 @@
+PyGithub
+gpxpy
+stravalib
+svgwrite
+pendulum
+colour
+sdf_fork
+twint_fork
+garminconnect
