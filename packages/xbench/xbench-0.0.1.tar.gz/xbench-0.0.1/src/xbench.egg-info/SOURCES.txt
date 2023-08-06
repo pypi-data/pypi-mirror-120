@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/xbench/__init__.py
+src/xbench/example.py
+src/xbench/version.py
+src/xbench.egg-info/PKG-INFO
+src/xbench.egg-info/SOURCES.txt
+src/xbench.egg-info/dependency_links.txt
+src/xbench.egg-info/top_level.txt
