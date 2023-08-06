@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: commandapp
+Version: 0.1.0
+Summary: tool to create a commandline application easily
+Home-page: https://github.com/PlayerG9/PyCommandApp
+Author: PlayerG9
+License: UNKNOWN
+Project-URL: Author Github, https://github.com/PlayerG9
+Project-URL: Bug Tracker, https://github.com/PlayerG9/PyCommandApp/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PyCommandApp
+tool to create a commandline application easily
+
+
+# usage
+`python3 -m pip install commandapp` (not implemented yes)
+```python
+from commandapp import CommandApp
+
+app = CommandApp()
+
+
+@app.register
+def hello(name: str):
+    print("Hello {}".format(name))
+
+
+@app.register(name="print")
+def cmd_print(text: str):
+    print(text)
+
+
+app.run()
+```
+
+
