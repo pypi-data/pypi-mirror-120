@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: aqualogicwireless
+Version: 1.0.9
+Summary: Library for interfacing with a Hayward/Goldline AquaLogic/ProLogic pool controller.
+Home-page: https://github.com/swiftlee/aqualogic
+Author: Sean Wilson / Jonathan Conlin
+Author-email: horizonman34@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Embedded Systems
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+License-File: LICENSE.txt
+Requires-Dist: pyserial
+Requires-Dist: aiohttp
+
+A python library to interface with Hayward/Goldline AquaLogic/ProLogic pool controllers. Note that the Goldline protocol uses RS-485 so a hardware interface that can provide the library with reader and writer file objects is required. The simplest solution for this is an RS-485 to Ethernet adapter connected via a socket.
+
