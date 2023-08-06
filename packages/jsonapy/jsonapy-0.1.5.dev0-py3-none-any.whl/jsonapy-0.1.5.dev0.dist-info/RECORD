@@ -1,0 +1,9 @@
+jsonapy/__init__.py,sha256=dUTTmm6JIUVlGND8BQFLZmLrnbdm3dD_mKJNOcdZ5sI,4889
+jsonapy/base.py,sha256=rdNQdSzAluyzTQcOVhoCOGb6ZxZGH0n6pEXS_dDmnPo,32068
+jsonapy/document.py,sha256=JxG-dNm2WNJtcaapvfizAv5INdOBTRJeS2C3-eld_0Q,2174
+jsonapy/functions.py,sha256=4l-j725O9K7qQq3gNE6dEAreaCNFCzfJ-4z9G-l0aAk,2820
+jsonapy/utils.py,sha256=mj-VeRiRT0Y_TI5IibkckxUaRCSIFB-euMoM8swsDqQ,4401
+jsonapy-0.1.5.dev0.dist-info/LICENSE,sha256=Kb4BStRdOG_nYiHkuyzC9XywnvpEGDm1E3Sc6RSi-WA,1094
+jsonapy-0.1.5.dev0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+jsonapy-0.1.5.dev0.dist-info/METADATA,sha256=3wzqduoTl10E3RvWMe-XtDtHgVgx_5rOIL4ATSOsHqE,2621
+jsonapy-0.1.5.dev0.dist-info/RECORD,,
