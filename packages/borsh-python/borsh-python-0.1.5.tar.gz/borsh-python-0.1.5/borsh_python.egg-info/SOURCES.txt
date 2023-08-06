@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+borsh/__init__.py
+borsh/types/__init__.py
+borsh_python.egg-info/PKG-INFO
+borsh_python.egg-info/SOURCES.txt
+borsh_python.egg-info/dependency_links.txt
+borsh_python.egg-info/top_level.txt
