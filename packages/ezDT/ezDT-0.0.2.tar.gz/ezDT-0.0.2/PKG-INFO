@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: ezDT
+Version: 0.0.2
+Summary: Simple datetime functions
+Home-page: https://github.com/jblarson/ezDT
+Author: JB Larson
+License: UNKNOWN
+Description: # ezDT
+        
+        simple python functions for the datetime & time built-in packages
+        
+        
+        today()
+        returns todays date in '%Y-%m-%d %H:%M:%S' format
+        
+        
+        unixToDatetime(epochTime)
+        convert unix epoch time to datetime
+        
+        
+        datetimeToUnix(ogDatetime)
+        convert datetime to unix epoch time
+        
+        
+        addDays(ogDatetime, nDays):
+        add days to a datetime
+        
+        subtractDays(ogDatetime, nDays):
+        subtract days from a datetime
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
