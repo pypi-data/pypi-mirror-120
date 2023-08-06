@@ -1,0 +1,3 @@
+[console_scripts]
+treeplotter = treeplotter.cli:treeplotter
+

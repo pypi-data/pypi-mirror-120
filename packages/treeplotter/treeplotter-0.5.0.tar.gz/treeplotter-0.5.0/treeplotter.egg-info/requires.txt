@@ -1,0 +1,9 @@
+click
+jsonpickle
+jinja2
+Wand
+
+[dev]
+flake8
+pre-commit
+pytest
