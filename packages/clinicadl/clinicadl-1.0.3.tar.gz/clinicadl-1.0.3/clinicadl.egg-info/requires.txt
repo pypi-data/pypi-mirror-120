@@ -1,0 +1,7 @@
+numpy>=1.17
+clinica==0.4.1
+torch>=1.8
+tensorboard
+toml
+click>=7.0
+pynvml
