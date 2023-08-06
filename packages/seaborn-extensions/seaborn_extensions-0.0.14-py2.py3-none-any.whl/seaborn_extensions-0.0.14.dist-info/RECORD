@@ -1,0 +1,17 @@
+seaborn_extensions/__init__.py,sha256=dDn5-OO9wJ95B2BxWyE37ksRO2OogYnc6UazKOm12yE,1361
+seaborn_extensions/_version.py,sha256=71Tw8stu19MsLPyF1q_DF5mb_BefzOTPYggLlSLvCms,23
+seaborn_extensions/annotated_clustermap.py,sha256=rHShexpWR3CfXJTgl2lz76ww1AYykpkUXEREXHo-mPo,12803
+seaborn_extensions/py.typed,sha256=W_1Ms4LRtcbhey0Pf45eQgbQ-4PznGJJN8Dy783xr24,60
+seaborn_extensions/swarmboxenplot.py,sha256=x-VPBLPHR3dvbWfiCh6Y_efO1LKBOCE-yZgXnBC3GiI,14037
+seaborn_extensions/types.py,sha256=A5f7ausg7FE2z26NAAQvqUZU88gT0zr3t3gGV5wcE9g,519
+seaborn_extensions/utils.py,sha256=W3aI6BkzfFC-xXJICLNqA4iTJMx0HqbSSbXaJClmepQ,7181
+seaborn_extensions/volcano.py,sha256=z2vkxntEp_7lbkjgHkv4T9PUXVue96ihNkDDBINkeoY,2550
+seaborn_extensions/volcano2.py,sha256=rXiEX0P5d-S9EfsChq9qFxrk9YTI-M4D0oVwfi2WGBs,1773
+tests/__init__.py,sha256=TIn-TY2DoeeJXjtM12KNJ8TIQJKsAIAp7a0xyacS3TE,48
+tests/test_swarmboxenplot.py,sha256=Pkw435Z-CzENXbDQnncREgQBDNdujWvsCpnpe3A-0SM,7308
+seaborn_extensions-0.0.14.dist-info/AUTHORS.rst,sha256=rgHozROiY0qzXkUJJn0GHvmRSzCEkYAeoFBzZ-YbQZo,160
+seaborn_extensions-0.0.14.dist-info/LICENSE,sha256=bVKiDL22SRebI9tVlCWzQWaS7yGNbm6yefdQPhCRAkw,1556
+seaborn_extensions-0.0.14.dist-info/METADATA,sha256=PfdI1Z7lkAiK9fkO31Bcgv6BdA8hKRBs4mt19y9Ep5o,2868
+seaborn_extensions-0.0.14.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+seaborn_extensions-0.0.14.dist-info/top_level.txt,sha256=b4STBUjmxEigPEjHIiEklR2ommaYxLzEha_BROb8Q50,25
+seaborn_extensions-0.0.14.dist-info/RECORD,,
