@@ -1,0 +1,10 @@
+os2mo_init/__init__.py,sha256=BKqejtKKZdSJh1vPErwV4I9IEwL-b-uFvGz-sfWh4gs,277
+os2mo_init/__main__.py,sha256=RKvz8UyC0VdpVTWZ2b4WksP4MG8cI2EMLcUF3tivsN8,456
+os2mo_init/cli.py,sha256=t1x7tcgnaGrpMynJ1e-Hg6rkqxgC5s_TncVRZCOjyAY,3003
+os2mo_init/defaults.py,sha256=m8b-rIoEHR-D1MOFNviJcC-U6R57RkKGtTz_7mtStAs,2637
+os2mo_init/initialisers.py,sha256=Pgt9EDnGVh_ASIGt7xUNkpKVZZeJbyioV0Q0pny9wa8,2299
+os2mo_init/util.py,sha256=X-RO7yFq928TzH1l2sIMI7lVHOR5X_1pIIzz7D1QvUg,970
+os2mo_init-0.0.3.dist-info/LICENSES/MPL-2.0.txt,sha256=Xez-I9f_ECXfYKKwVpbPA25xYMNwv4McfGeH_1Y9DOI,15177
+os2mo_init-0.0.3.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+os2mo_init-0.0.3.dist-info/METADATA,sha256=Te1QqNQ7YYj-gW9H8d7pmyJ0f-lBN3xbWbyNEdGuYlo,2980
+os2mo_init-0.0.3.dist-info/RECORD,,
