@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: atmos-cloud-sim-uj-utils
+Version: 0.1
+Summary: utility routines used in PySDM and PyMPDATA examples and tests
+Home-page: UNKNOWN
+Author: https://github.com/atmos-cloud-sim-uj/utils/graphs/contributors
+Author-email: sylwester.arabas@uj.edu.pl
+License: GPL-3.0
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# utils
+utility routines used in PySDM and PyMPDATA examples and tests
+
+
