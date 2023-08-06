@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "bomb-boom"
+version = "1.42.0"
+description = "Bomb package"
+authors = ["Nikita Barinov <diadorer@yandex.ru>"]
+
+packages = [
+    { include = "bomb", from = "." },
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+cleo = "^0.8.1"
+typer = "^0.4.0"
+semver = "^2.13.0"
+click = "^8.0.1"
+colorama = "^0.4.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
