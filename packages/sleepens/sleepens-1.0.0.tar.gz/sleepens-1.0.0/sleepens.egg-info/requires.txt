@@ -1,0 +1,7 @@
+numpy
+sklearn
+joblib
+tqdm
+xlrd
+xlwt
+sonpy
