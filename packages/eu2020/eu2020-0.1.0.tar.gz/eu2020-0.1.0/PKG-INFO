@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: eu2020
+Version: 0.1.0
+Summary: Textová hra Evropská Unie 2020
+Home-page: https://github.com/berk76/eu2020
+Author: Jaroslav Beran
+Author-email: jaroslav.beran@gmail.com
+License: GPL-3.0
+Project-URL: Bug Tracker, https://github.com/berk76/eu2020/issues
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# Textová hra Evropská Unie
+
+## Instalace
+
+```
+pip install eu2020
+```
+
+nebo 
+
+```
+python setup.py install
+```
+
+## Spuštění
+
+```
+eu2020
+```
+
+nebo
+
+```
+python -m eu2020
+```
+
+
