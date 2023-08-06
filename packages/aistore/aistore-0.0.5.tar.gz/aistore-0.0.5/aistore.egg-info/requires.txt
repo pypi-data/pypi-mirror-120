@@ -1,0 +1,11 @@
+requests
+
+[pytorch]
+torch
+torchvision
+
+[tf]
+braceexpand
+humanfriendly
+tensorflow
+tensorflow_addons
