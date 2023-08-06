@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pyPlotPecube
+Version: 1.2.1
+Summary: package that provides tools to plot forward and NA Pecube Results
+Home-page: https://github.com/robertxa/Pecube-Plot-Xav
+Author: Xavier Robert
+Author-email: xavier.robert@ird.fr
+License: GPL-V3.0
+Download-URL: https://github.com/robertxa/Pecube-Plot-Xav/archive/master.zip
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+License-File: LICENCE.txt
+
+UNKNOWN
+
