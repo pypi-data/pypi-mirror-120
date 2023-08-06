@@ -1,0 +1,39 @@
+{% load wagtailcore_tags %}
+{% block content %}
+	<div>
+		{% for block in settings.company.CompanyInfo.company_settings %}
+			<h2>{{block.value.company_legal_name}}</h2>
+		{% endfor %}
+		{% for block in settings.company.CompanyInfo.company_settings %}
+			<h3>{{ self.company_authority }}</h3>
+		{% endfor %}
+		{% for block in settings.company.CompanyInfo.company_address %}
+			<p class="address">
+				{{block.value.street}} {{block.value.post_code}} {{block.value.city}} / {{block.value.region}}
+			</p>
+		{% endfor %}
+
+		<p class="contact">
+		{% for block in settings.company.CompanyInfo.company_contact %}
+			{% if block.value.phone %}
+				<strong>Tel:</strong>{{block.value.phone}}</br>
+			{% endif %}
+
+			{% if block.value.email %}
+					<strong>E-Mail:</strong>{{block.value.email}}</br>
+			{% endif %}
+			
+		{% endfor %}
+		<strong>Vertretungsberechtigte Gesellschafter:</strong>{{ self.company_authority }}</br>
+		</p>
+	</div>
+
+	<div>
+		<p>
+		<strong>Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:</strong> {{ self.tax_id }}</br>
+		Plattform der EU-Kommission zur Online-Streitbeilegung: http://ec.europa.eu/consumers/odr</br>
+		<strong>Haftungsausschluss:</strong>{{ self.non_warranty }}
+		</p>
+		<div class="body">{{ self.description|richtext }}</div>
+	</div>
+{% endblock %} 
