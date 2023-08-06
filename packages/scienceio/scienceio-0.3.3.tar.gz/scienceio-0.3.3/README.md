@@ -1,0 +1,55 @@
+# ScienceIO
+
+The official ScienceIO Python SDK for the BioNLP API.
+
+This package is available via [Pypi:scienceIO](https://pypi.org/project/scienceio/).
+
+<!-- ## To install
+
+- Get code
+- Run `python setup.py bdist_wheel` to build
+- Install with `pip install dist/scienceio-0.1.1-py3-none-any.whl` -->
+
+## Usage and examples
+
+1. Install ScienceIO
+
+   ```python
+   pip install scienceio
+   ```
+
+3. Register:
+
+   ```python
+   from scienceio import ScienceIO
+   ScienceIO.register(
+       first_name="Demo name",
+       last_name="Demo lastname",
+       email="your@email.com"
+   )
+   ```
+   
+   You will be sent an email asking you to verify your account. As part of the process you will be asked to create a password.
+
+
+2. Create a directory `.scio` in your home directory (Mac users, your home directory is `/Users/{username}`. Linux users, your home directory is `/home/{username}`. Windows users, your home directory is `C:\\Users\{username})` Inside this directory, create a text file called `config` containing your credentials:
+
+   ```
+   [SETTINGS]
+   email=your@email.com
+   ```
+
+4. Query the BioNLP API:
+
+   ```python
+   scio = ScienceIO()
+   query_text = (
+     'The COVID-19 pandemic has shown a markedly low proportion of '
+     'cases among children 1–4. Age disparities in observed cases could be '
+     'explained by children having lower susceptibility to infection, lower '
+     'propensity to show clinical symptoms or both.'
+   )
+ 
+   results = scio.annotate(query_text)
+   print(results)
+   ```

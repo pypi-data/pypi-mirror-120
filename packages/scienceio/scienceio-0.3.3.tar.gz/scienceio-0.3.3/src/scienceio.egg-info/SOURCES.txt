@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/scienceio/__init__.py
+src/scienceio/scienceio.py
+src/scienceio.egg-info/PKG-INFO
+src/scienceio.egg-info/SOURCES.txt
+src/scienceio.egg-info/dependency_links.txt
+src/scienceio.egg-info/requires.txt
+src/scienceio.egg-info/top_level.txt
