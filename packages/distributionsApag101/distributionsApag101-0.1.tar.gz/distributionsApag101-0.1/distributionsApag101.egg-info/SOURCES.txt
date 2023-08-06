@@ -1,0 +1,13 @@
+README.md
+license.txt
+setup.cfg
+setup.py
+distributions/Binomialdistribution.py
+distributions/Gaussiandistribution.py
+distributions/Generaldistribution.py
+distributions/__init__.py
+distributionsApag101.egg-info/PKG-INFO
+distributionsApag101.egg-info/SOURCES.txt
+distributionsApag101.egg-info/dependency_links.txt
+distributionsApag101.egg-info/not-zip-safe
+distributionsApag101.egg-info/top_level.txt
