@@ -1,0 +1,17 @@
+tiggy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tiggy/envs/__init__.py,sha256=H1lEcXfaxI464cfJZeBFWsPGxRWJnX1guIQtemAzxDs,34
+tiggy/envs/tic_tac_toe.py,sha256=4jWhwFk_XROJP1exnSMNJqqAF2GFoGOczETY4ncZOqs,1536
+tiggy/rl_framework/__init__.py,sha256=CXimcvx9IDQxdowkmiEM-HfWGD2KbwTOy74pFLoghuA,28
+tiggy/rl_framework/trainer.py,sha256=VYv2sGmkgcYEYqwrzCeTXcQTBS8JdkeZhJQctb4dhFk,3042
+tiggy/rl_models/__init__.py,sha256=oGXaZoTGbl7ruPQrBZqjJvp9BwFiVMKj7Ye381_X5tc,25
+tiggy/rl_models/models.py,sha256=aouwGdVeO6dqNCZbn_fXVmnfytAEXqWPFrx6Deaq6s8,1011
+tiggy/rl_utils/__init__.py,sha256=pG-YPVG0gJIJ6s4xcAz9S_CnUxpUcz33wl9eNUSgxGk,20
+tiggy/rl_utils/utils.py,sha256=Z5SrlIxcVlzck9nm7A7Xrmv1zV3Yle1107Kyel04yfU,1468
+tiggy/transformers/__init__.py,sha256=d6IIoP2MKrbb8cNQKvMXmWaZe8DsyQS_kA-nd4Ip5fI,58
+tiggy/transformers/transformer_layers.py,sha256=JFkzjnUE5-elPiJBVh-67JWNlmf1i3oGbHWqSP0_pk4,3920
+tiggy/transformers/transformer_models.py,sha256=FR-H-n92Kfs0oPwrf8a5qwqyCh9NpSh3qaglB4bSbz0,2323
+tiggy-0.5.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+tiggy-0.5.dist-info/METADATA,sha256=CDXvcOx1bJgRYMOml9BSOJkulj3wo4ZhBOTkOrrFn9k,234
+tiggy-0.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+tiggy-0.5.dist-info/top_level.txt,sha256=091NASUSFePmGuzNi33v5LWG7MhJsmzbgzFY3N7GyJk,6
+tiggy-0.5.dist-info/RECORD,,
