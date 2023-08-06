@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: 4chan-biz-mentions
+Version: 0.2.0
+Summary: Count the times a word is mentionned, can be used to track a shitcoin
+Home-page: https://boards.4channel.org/biz/catalog
+Author: Arthur RICHARD
+Author-email: arthur.richard@protonmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# 4chan-biz-mentions
+
+HF tracking your shitcoin, loser
+
+## Install
+
+```sh
+pip install 4chan-biz-mentions
+```
+
+## Usage
+
+```sh
+> python3 -m 4chan_biz_mentions moon eth avax ada sol btc ankr algo fag nigger fud bullish scam gay pump nft
+sol mentionned 44 times
+eth mentionned 39 times
+fag mentionned 29 times
+pump mentionned 22 times
+scam mentionned 19 times
+moon mentionned 12 times
+nigger mentionned 12 times
+fud mentionned 8 times
+ada mentionned 7 times
+avax mentionned 6 times
+btc mentionned 5 times
+algo mentionned 3 times
+bullish mentionned 3 times
+nft mentionned 3 times
+gay mentionned 2 times
+ankr mentionned 0 times
+```
+
+[shithub](http://github.com/arthuRHD)
+
+
