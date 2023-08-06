@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: hyde-lang
+Version: 0.0.4
+Summary: A Python-based interpretation of Lox
+Home-page: https://github.com/ty-porter/hyde
+Author: Tyler Porter
+Author-email: tyler.b.porter@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: hyde,programming languages
+Platform: ANY
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
