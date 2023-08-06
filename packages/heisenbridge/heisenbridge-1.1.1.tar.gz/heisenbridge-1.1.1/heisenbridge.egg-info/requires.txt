@@ -1,0 +1,13 @@
+aiohttp<3.8,>=3.6
+irc<20.0,>=19.0.0
+pyyaml<5.5,>=5.3
+
+[dev]
+black
+flake8
+mypy
+pre-commit
+reorder-python-imports
+
+[test]
+pytest
