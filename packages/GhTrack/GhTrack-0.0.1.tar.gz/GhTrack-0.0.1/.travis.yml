@@ -1,0 +1,34 @@
+language: python
+
+python:
+  - "3.9"
+
+install:
+  - pip3 install -r requirements.txt
+  - pip3 install -r requirements_docs.txt
+  - pip3 install -e .
+
+script:
+  - python -m unittest
+
+after_success:
+  - cd docs && make html
+  - cd ..
+
+deploy:
+  - provider: pages
+    skip-cleanup: true
+    keep-history: true
+    on:
+      branch: main
+    github-token: $GITHUB_TOKEN
+    local-dir: docs/_build/html
+    committer-from-gh: true
+  - provider: pypi
+    skip-cleanup: true
+    keep-history: true
+    #  username: $PYPI_USER
+    username: "__token__"
+    password: $PYPI_TOKEN
+    on:
+      branch: main
