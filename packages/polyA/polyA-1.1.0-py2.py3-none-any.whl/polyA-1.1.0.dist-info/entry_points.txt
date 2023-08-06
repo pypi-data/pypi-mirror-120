@@ -1,0 +1,4 @@
+[console_scripts]
+cm_to_stockholm=polyA.converters:cm_to_stockholm
+polyA=polyA.__main__:main
+
