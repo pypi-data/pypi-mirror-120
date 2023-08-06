@@ -1,0 +1,7 @@
+dataclasses-json
+requests_toolbelt
+
+[dev]
+pytest
+twine
+wheel
