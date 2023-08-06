@@ -1,0 +1,541 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Bags &mdash; combi 0.1.0 documentation</title>
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/sidebar.js"></script>
+    <link rel="top" title="combi 0.1.0 documentation" href="index.html" />
+    <link rel="next" title="Other classes" href="other_classes.html" />
+    <link rel="prev" title="CombSpace and Comb" href="comb_space_and_comb.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="other_classes.html" title="Other classes"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="comb_space_and_comb.html" title="CombSpace and Comb"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">combi 0.1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="bags">
+<span id="id1"></span><h1>Bags<a class="headerlink" href="#bags" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p><a class="reference external" href="https://www.youtube.com/watch?v=3WCvULMRUq8">&#8220;This sort of thing is my bag, baby!&#8221;</a></p>
+<p class="attribution">&mdash;Austin Powers</p>
+</div></blockquote>
+<p>Combi provides 4 bag classes for you to choose from according to your needs:</p>
+<ul class="simple">
+<li><a class="reference internal" href="#Bag" title="Bag"><tt class="xref py py-class docutils literal"><span class="pre">Bag</span></tt></a> - The simplest bag class</li>
+<li><a class="reference internal" href="#FrozenBag" title="FrozenBag"><tt class="xref py py-class docutils literal"><span class="pre">FrozenBag</span></tt></a> - An immutable (and thus hashable) bag class</li>
+<li><a class="reference internal" href="#OrderedBag" title="OrderedBag"><tt class="xref py py-class docutils literal"><span class="pre">OrderedBag</span></tt></a> - A bag class where items are ordered by insertion order</li>
+<li><a class="reference internal" href="#FrozenOrderedBag" title="FrozenOrderedBag"><tt class="xref py py-class docutils literal"><span class="pre">FrozenOrderedBag</span></tt></a> - An immutable, ordered bag class</li>
+</ul>
+<div class="section" id="bag">
+<h2><a class="reference internal" href="#Bag" title="Bag"><tt class="xref py py-class docutils literal"><span class="pre">Bag</span></tt></a><a class="headerlink" href="#bag" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Bag">
+<em class="property">class </em><tt class="descname">Bag</tt><big>(</big><em>iterable={}</em><big>)</big><a class="headerlink" href="#Bag" title="Permalink to this definition">¶</a></dt>
+<dd><p>The <a class="reference internal" href="#Bag" title="Bag"><tt class="xref py py-class docutils literal"><span class="pre">Bag</span></tt></a> class is an implementation of the mathematical concept of a
+<a class="reference external" href="https://en.wikipedia.org/wiki/Multiset">multiset</a>; meaning something like a set, except that every item could
+appear multiple times, and crucially, we only save the <em>count</em> of the item
+in memory instead of saving multiple copies of the same item, which would be
+a waste of memory.</p>
+<p>You may know the <tt class="xref py py-class docutils literal"><span class="pre">collections.Counter</span></tt> class from Python&#8217;s standard
+library; the bag classes provided by Combi are very similar, except that
+they are more strictly defined as multisets, meaning that counts must be
+positive integers. (Zeros are allowed in input but they are weeded out.) By
+contrast, <tt class="xref py py-class docutils literal"><span class="pre">collections.Counter</span></tt> allows any value as an item&#8217;s count.</p>
+<p>This restriction makes the bag classes more powerful than
+<tt class="xref py py-class docutils literal"><span class="pre">collections.Counter</span></tt> because it allows more methods to be defined.
+More arithmetical operations are defined, comparison between bags is
+supported, and more.</p>
+<p>When you create a bag, it will be populated with the <tt class="docutils literal"><span class="pre">iterable</span></tt> argument.
+If <tt class="docutils literal"><span class="pre">iterable</span></tt> is a plain sequence, its items will be added one-by-one:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">Bag</span><span class="p">(</span><span class="s">&#39;abracadabra&#39;</span><span class="p">)</span>
+<span class="go">Bag({&#39;c&#39;: 1, &#39;b&#39;: 2, &#39;d&#39;: 1, &#39;a&#39;: 5, &#39;r&#39;: 2})</span>
+</pre></div>
+</div>
+<p>If <tt class="docutils literal"><span class="pre">iterable</span></tt> is a mapping, its values will be taken as item counts:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">Bag</span><span class="p">({</span><span class="s">&#39;meow&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s">&#39;woof&#39;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,})</span>
+<span class="go">Bag({&#39;meow&#39;: 2, &#39;woof&#39;: 5})</span>
+</pre></div>
+</div>
+<p><a class="reference internal" href="#Bag" title="Bag"><tt class="xref py py-class docutils literal"><span class="pre">Bag</span></tt></a> can be accessed similarly to a <tt class="xref py py-class docutils literal"><span class="pre">dict</span></tt> or <tt class="xref py py-class docutils literal"><span class="pre">Counter</span></tt>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">my_bag</span> <span class="o">=</span> <span class="n">Bag</span><span class="p">(</span><span class="s">&#39;abracadabra&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">my_bag</span><span class="p">[</span><span class="s">&#39;b&#39;</span><span class="p">]</span>
+<span class="go">2</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;x&#39;</span> <span class="ow">in</span> <span class="n">my_bag</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">my_bag</span><span class="p">[</span><span class="s">&#39;x&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">7</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">my_bag</span>
+<span class="go">Bag({&#39;r&#39;: 2, &#39;x&#39;: 7, &#39;b&#39;: 2, &#39;a&#39;: 5, &#39;d&#39;: 1, &#39;c&#39;: 1})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;x&#39;</span> <span class="ow">in</span> <span class="n">my_bag</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">my_bag</span><span class="p">[</span><span class="s">&#39;y&#39;</span><span class="p">]</span> <span class="c"># If it&#39;s not in the bag, the count is zero:</span>
+<span class="go">0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">count</span> <span class="ow">in</span> <span class="n">my_bag</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+<span class="gp">... </span>    <span class="k">print</span><span class="p">((</span><span class="n">key</span><span class="p">,</span> <span class="n">count</span><span class="p">))</span>
+<span class="gp">...</span>
+<span class="go">(&#39;r&#39;, 2)</span>
+<span class="go">(&#39;x&#39;, 7)</span>
+<span class="go">(&#39;b&#39;, 2)</span>
+<span class="go">(&#39;a&#39;, 5)</span>
+<span class="go">(&#39;d&#39;, 1)</span>
+<span class="go">(&#39;c&#39;, 1)</span>
+</pre></div>
+</div>
+<dl class="attribute">
+<dt id="Bag.elements">
+<tt class="descname">elements</tt><a class="headerlink" href="#Bag.elements" title="Permalink to this definition">¶</a></dt>
+<dd><p>An iterator over the elements in the bag. If an item has a count of 7 in
+the bag, it will repeat 7 times in <tt class="docutils literal"><span class="pre">bag.elements</span></tt>. Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">bag</span> <span class="o">=</span> <span class="n">Bag</span><span class="p">({</span><span class="s">&#39;a&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s">&#39;b&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s">&#39;c&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">bag</span><span class="o">.</span><span class="n">elements</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="k">print</span><span class="p">(</span><span class="n">element</span><span class="p">)</span>
+<span class="go">a</span>
+<span class="go">c</span>
+<span class="go">c</span>
+<span class="go">c</span>
+<span class="go">b</span>
+<span class="go">b</span>
+</pre></div>
+</div>
+<p>If you&#8217;re using <tt class="xref py py-class docutils literal"><span class="pre">OrderedBag</span></tt> or
+<tt class="xref py py-class docutils literal"><span class="pre">FrozenOrderedBag</span></tt>, the items will be
+yielded by their canonical order (usually insertion order), otherwise
+they&#8217;ll be yielded in arbitrary order, just like dicts and sets.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Bag.n_elements">
+<tt class="descname">n_elements</tt><a class="headerlink" href="#Bag.n_elements" title="Permalink to this definition">¶</a></dt>
+<dd><p>The number of elements in the bag, i.e. the sum of all the counts.
+Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">bag</span> <span class="o">=</span> <span class="n">Bag</span><span class="p">({</span><span class="s">&#39;a&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s">&#39;b&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s">&#39;c&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">bag</span><span class="o">.</span><span class="n">n_elements</span>
+<span class="go">6</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Bag.clear">
+<tt class="descname">clear</tt><big>(</big><big>)</big><a class="headerlink" href="#Bag.clear" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clear the bag, making it empty.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Bag.copy">
+<tt class="descname">copy</tt><big>(</big><big>)</big><a class="headerlink" href="#Bag.copy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a shallow copy of the bag.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Bag.get">
+<tt class="descname">get</tt><big>(</big><em>key</em>, <em>default=None</em><big>)</big><a class="headerlink" href="#Bag.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a key&#8217;s count with a default fallback, just like <tt class="xref py py-meth docutils literal"><span class="pre">dict.get()</span></tt>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Bag.keys">
+<tt class="descname">keys</tt><big>(</big><big>)</big><a class="headerlink" href="#Bag.keys" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get an iterator over the keys in a bag:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">bag</span> <span class="o">=</span> <span class="n">Bag</span><span class="p">({</span><span class="s">&#39;a&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s">&#39;b&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s">&#39;c&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">tuple</span><span class="p">(</span><span class="n">bag</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+<span class="go">(&#39;b&#39;, &#39;c&#39;, &#39;a&#39;)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Bag.values">
+<tt class="descname">values</tt><big>(</big><big>)</big><a class="headerlink" href="#Bag.values" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get an iterator over the counts in a bag:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">bag</span> <span class="o">=</span> <span class="n">Bag</span><span class="p">({</span><span class="s">&#39;a&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s">&#39;b&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s">&#39;c&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">tuple</span><span class="p">(</span><span class="n">bag</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+<span class="go">(2, 3, 1)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Bag.items">
+<tt class="descname">items</tt><big>(</big><big>)</big><a class="headerlink" href="#Bag.items" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get an iterator over the items in a bag, i.e. keys with counts:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">bag</span> <span class="o">=</span> <span class="n">Bag</span><span class="p">({</span><span class="s">&#39;a&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s">&#39;b&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s">&#39;c&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">tuple</span><span class="p">(</span><span class="n">bag</span><span class="o">.</span><span class="n">items</span><span class="p">())</span>
+<span class="go">((&#39;b&#39;, 2), (&#39;c&#39;, 3), (&#39;a&#39;, 1))</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Bag.most_common">
+<tt class="descname">most_common</tt><big>(</big><span class="optional">[</span><em>n</em><span class="optional">]</span><big>)</big><a class="headerlink" href="#Bag.most_common" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a tuple of the <tt class="docutils literal"><span class="pre">n</span></tt> most common elements and their counts from the
+most common to the least. If n is not specified, <a class="reference internal" href="#Bag.most_common" title="Bag.most_common"><tt class="xref py py-meth docutils literal"><span class="pre">most_common()</span></tt></a>
+returns all elements in the bag. Elements with equal counts are ordered
+arbitrarily:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">Bag</span><span class="p">(</span><span class="s">&#39;abracadabra&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">most_common</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="go">((&#39;a&#39;, 5), (&#39;r&#39;, 2), (&#39;b&#39;, 2))</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Bag.pop">
+<tt class="descname">pop</tt><big>(</big><em>key</em><span class="optional">[</span>, <em>default</em><span class="optional">]</span><big>)</big><a class="headerlink" href="#Bag.pop" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the count of <tt class="docutils literal"><span class="pre">key</span></tt> and remove it from the bag, optionally with a
+default fallback.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Bag.popitem">
+<tt class="descname">popitem</tt><big>(</big><big>)</big><a class="headerlink" href="#Bag.popitem" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove a key from the bag, and get a tuple <tt class="docutils literal"><span class="pre">(key,</span> <span class="pre">count)</span></tt>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Bag.setdefault">
+<tt class="descname">setdefault</tt><big>(</big><em>key</em>, <em>default=None</em><big>)</big><a class="headerlink" href="#Bag.setdefault" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the count of <cite>key</cite>, optionally with a default fallback. If <cite>key</cite> is
+missing, its count in the bag will be set to the default.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Bag.update">
+<tt class="descname">update</tt><big>(</big><em>mapping</em><big>)</big><a class="headerlink" href="#Bag.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update the bag with a mapping of key to count.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Bag.get_contained_bags">
+<tt class="descname">get_contained_bags</tt><big>(</big><big>)</big><a class="headerlink" href="#Bag.get_contained_bags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get all bags that are subsets of this bag.</p>
+<p>This means all bags that have counts identical or smaller for each key.</p>
+<p>Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">bag</span> <span class="o">=</span> <span class="n">Bag</span><span class="p">({</span><span class="s">&#39;a&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s">&#39;b&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s">&#39;c&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">contained_bags</span> <span class="o">=</span> <span class="n">bag</span><span class="o">.</span><span class="n">get_contained_bags</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">len</span><span class="p">(</span><span class="n">contained_bags</span><span class="p">)</span>
+<span class="go">24</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">contained_bags</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span>
+<span class="go">Bag({&#39;c&#39;: 2, &#39;b&#39;: 1})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">contained_bags</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">bag</span> <span class="c"># Contained bag is contained.</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="frozenbag">
+<h2><a class="reference internal" href="#FrozenBag" title="FrozenBag"><tt class="xref py py-class docutils literal"><span class="pre">FrozenBag</span></tt></a><a class="headerlink" href="#frozenbag" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="FrozenBag">
+<em class="property">class </em><tt class="descname">FrozenBag</tt><big>(</big><em>iterable={}</em><big>)</big><a class="headerlink" href="#FrozenBag" title="Permalink to this definition">¶</a></dt>
+<dd><p><a class="reference internal" href="#FrozenBag" title="FrozenBag"><tt class="xref py py-class docutils literal"><span class="pre">FrozenBag</span></tt></a> is a multiset just like <a class="reference internal" href="#Bag" title="Bag"><tt class="xref py py-class docutils literal"><span class="pre">Bag</span></tt></a>, except it&#8217;s
+immutable. After it&#8217;s created, it can&#8217;t be modified. It&#8217;s a subclass over
+<a class="reference internal" href="#Bag" title="Bag"><tt class="xref py py-class docutils literal"><span class="pre">Bag</span></tt></a>.</p>
+<p>In which cases would you want to use <a class="reference internal" href="#FrozenBag" title="FrozenBag"><tt class="xref py py-class docutils literal"><span class="pre">FrozenBag</span></tt></a> rather than
+<a class="reference internal" href="#Bag" title="Bag"><tt class="xref py py-class docutils literal"><span class="pre">Bag</span></tt></a>?</p>
+<ul class="simple">
+<li>If you want to have your bag as a key in a <tt class="xref py py-class docutils literal"><span class="pre">set</span></tt>, <tt class="xref py py-class docutils literal"><span class="pre">dict</span></tt>,
+or any other kind of hashtable. (A normal bag can&#8217;t be used for this
+because it&#8217;s mutable and thus not hashable.)</li>
+<li>If you want to make it clear in your program that a certain bag should
+never be changed after it&#8217;s created.</li>
+</ul>
+<dl class="method">
+<dt id="FrozenBag.get_mutable">
+<tt class="descname">get_mutable</tt><big>(</big><big>)</big><a class="headerlink" href="#FrozenBag.get_mutable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a mutable version of this frozen bag. Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">frozen_bag</span> <span class="o">=</span> <span class="n">FrozenBag</span><span class="p">(</span><span class="s">&#39;abracadabra&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">frozen_bag</span>
+<span class="go">FrozenBag({&#39;d&#39;: 1, &#39;c&#39;: 1, &#39;b&#39;: 2, &#39;a&#39;: 5, &#39;r&#39;: 2})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">frozen_bag</span><span class="o">.</span><span class="n">get_mutable</span><span class="p">()</span>
+<span class="go">Bag({&#39;d&#39;: 1, &#39;c&#39;: 1, &#39;b&#39;: 2, &#39;a&#39;: 5, &#39;r&#39;: 2})</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="orderedbag">
+<h2><a class="reference internal" href="#OrderedBag" title="OrderedBag"><tt class="xref py py-class docutils literal"><span class="pre">OrderedBag</span></tt></a><a class="headerlink" href="#orderedbag" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="OrderedBag">
+<em class="property">class </em><tt class="descname">OrderedBag</tt><big>(</big><em>iterable={}</em><big>)</big><a class="headerlink" href="#OrderedBag" title="Permalink to this definition">¶</a></dt>
+<dd><p><a class="reference internal" href="#OrderedBag" title="OrderedBag"><tt class="xref py py-class docutils literal"><span class="pre">OrderedBag</span></tt></a> is a multiset just like <a class="reference internal" href="#Bag" title="Bag"><tt class="xref py py-class docutils literal"><span class="pre">Bag</span></tt></a>, except it&#8217;s also
+ordered. Items have a defined order, which is by default the order in which
+they were inserted. <a class="reference internal" href="#OrderedBag" title="OrderedBag"><tt class="xref py py-class docutils literal"><span class="pre">OrderedBag</span></tt></a> is a subclass over <a class="reference internal" href="#Bag" title="Bag"><tt class="xref py py-class docutils literal"><span class="pre">Bag</span></tt></a>.</p>
+<p>Another way to think of it is that <a class="reference internal" href="#OrderedBag" title="OrderedBag"><tt class="xref py py-class docutils literal"><span class="pre">OrderedBag</span></tt></a> is to <a class="reference internal" href="#Bag" title="Bag"><tt class="xref py py-class docutils literal"><span class="pre">Bag</span></tt></a>
+what <tt class="xref py py-class docutils literal"><span class="pre">collections.OrderedDict</span></tt> is to <tt class="xref py py-class docutils literal"><span class="pre">dict</span></tt>.</p>
+<p>Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">ordered_bag</span> <span class="o">=</span> <span class="n">OrderedBag</span><span class="p">(</span><span class="s">&#39;abbcccdddd&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">tuple</span><span class="p">(</span><span class="n">ordered_bag</span><span class="o">.</span><span class="n">elements</span><span class="p">)</span> <span class="c"># Items ordered by insertion order:</span>
+<span class="go">(&#39;a&#39;, &#39;b&#39;, &#39;b&#39;, &#39;c&#39;, &#39;c&#39;, &#39;c&#39;, &#39;d&#39;, &#39;d&#39;, &#39;d&#39;, &#39;d&#39;)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">tuple</span><span class="p">(</span><span class="n">ordered_bag</span><span class="o">.</span><span class="n">items</span><span class="p">())</span>
+<span class="go">((&#39;a&#39;, 1), (&#39;b&#39;, 2), (&#39;c&#39;, 3), (&#39;d&#39;, 4))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ordered_bag</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s">&#39;b&#39;</span><span class="p">)</span>
+<span class="go">1</span>
+</pre></div>
+</div>
+<dl class="attribute">
+<dt id="OrderedBag.reversed">
+<tt class="descname">reversed</tt><a class="headerlink" href="#OrderedBag.reversed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a version of this ordered bag with order reversed. Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">ordered_bag</span> <span class="o">=</span> <span class="n">OrderedBag</span><span class="p">(</span><span class="s">&#39;abbcccdddd&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ordered_bag</span>
+<span class="go">OrderedBag(OrderedDict([(&#39;a&#39;, 1), (&#39;b&#39;, 2), (&#39;c&#39;, 3), (&#39;d&#39;, 4)]))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ordered_bag</span><span class="o">.</span><span class="n">reversed</span>
+<span class="go">OrderedBag(OrderedDict([(&#39;d&#39;, 4), (&#39;c&#39;, 3), (&#39;b&#39;, 2), (&#39;a&#39;, 1)]))</span>
+</pre></div>
+</div>
+<p>This does <em>not</em> change the existing bag, but creates a new one.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="OrderedBag.index">
+<tt class="descname">index</tt><big>(</big><em>key</em><big>)</big><a class="headerlink" href="#OrderedBag.index" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the index number (i.e. position) of <tt class="docutils literal"><span class="pre">key</span></tt> in the ordered bag.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="OrderedBag.move_to_end">
+<tt class="descname">move_to_end</tt><big>(</big><em>key</em>, <em>last=True</em><big>)</big><a class="headerlink" href="#OrderedBag.move_to_end" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move a key to the end of the order. Specify <cite>last=False</cite> to move it to
+the start instead.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="OrderedBag.sort">
+<tt class="descname">sort</tt><big>(</big><em>key=None</em>, <em>reverse=False</em><big>)</big><a class="headerlink" href="#OrderedBag.sort" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sort the keys, changing the order in-place.</p>
+<p>The optional <tt class="docutils literal"><span class="pre">key</span></tt> argument, (not to be confused with the bag keys,) is
+a key function. If it&#8217;s not passed in, default Python ordering will be
+used.</p>
+<p>If <tt class="docutils literal"><span class="pre">reverse=True</span></tt> is used, the keys will be sorted in reverse order.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="frozenorderedbag">
+<h2><a class="reference internal" href="#FrozenOrderedBag" title="FrozenOrderedBag"><tt class="xref py py-class docutils literal"><span class="pre">FrozenOrderedBag</span></tt></a><a class="headerlink" href="#frozenorderedbag" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="FrozenOrderedBag">
+<em class="property">class </em><tt class="descname">FrozenOrderedBag</tt><big>(</big><em>iterable={}</em><big>)</big><a class="headerlink" href="#FrozenOrderedBag" title="Permalink to this definition">¶</a></dt>
+<dd><p><a class="reference internal" href="#FrozenOrderedBag" title="FrozenOrderedBag"><tt class="xref py py-class docutils literal"><span class="pre">FrozenOrderedBag</span></tt></a> is a multiset just like <a class="reference internal" href="#Bag" title="Bag"><tt class="xref py py-class docutils literal"><span class="pre">Bag</span></tt></a>, except it&#8217;s
+immutable <em>and</em> ordered. You can think of it as a combination of
+<a class="reference internal" href="#FrozenBag" title="FrozenBag"><tt class="xref py py-class docutils literal"><span class="pre">FrozenBag</span></tt></a> and <a class="reference internal" href="#OrderedBag" title="OrderedBag"><tt class="xref py py-class docutils literal"><span class="pre">OrderedBag</span></tt></a>.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="comparisons-between-bags">
+<span id="bags-comparisons"></span><h2>Comparisons between bags<a class="headerlink" href="#comparisons-between-bags" title="Permalink to this headline">¶</a></h2>
+<p>One of the advantages of <a class="reference internal" href="#Bag" title="Bag"><tt class="xref py py-class docutils literal"><span class="pre">Bag</span></tt></a> over <tt class="xref py py-class docutils literal"><span class="pre">collections.Counter</span></tt> is that
+<a class="reference internal" href="#Bag" title="Bag"><tt class="xref py py-class docutils literal"><span class="pre">Bag</span></tt></a> provides comparison methods between bags, that act similarly to
+comparisons between Python&#8217;s built-in sets. This makes it easy to see whether
+one bag is contained by another. Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">sandwich</span> <span class="o">=</span> <span class="n">Bag</span><span class="p">({</span><span class="s">&#39;bread&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s">&#39;cheese&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s">&#39;tomato&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s">&#39;burger&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">vegan_sandwich</span> <span class="o">=</span> <span class="n">Bag</span><span class="p">({</span><span class="s">&#39;bread&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s">&#39;tomato&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">vegan_sandwich</span> <span class="o">&lt;</span> <span class="n">sandwich</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">salad</span> <span class="o">=</span> <span class="n">Bag</span><span class="p">({</span><span class="s">&#39;tomato&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s">&#39;bell pepper&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">salad</span> <span class="o">&lt;</span> <span class="n">sandwich</span> <span class="c"># False because there&#39;s no bell pepper in our sandwich</span>
+<span class="go">False</span>
+</pre></div>
+</div>
+<p>A bag is smaller-or-equal to another bag if it&#8217;s &#8220;contained&#8221; in it, meaning
+that every key in the contained bag also exists in the containing bag, and with
+a count that&#8217;s bigger or equal to its count in the contained bag.</p>
+<p>A bag is strictly smaller than another bag if the above holds, and there&#8217;s at
+least one key for which the count in the containing bag is strictly bigger than
+its count in the contained bag.</p>
+<p>Please note that unlike most comparisons in Python, this is a <a class="reference external" href="https://en.wikipedia.org/wiki/Partially_ordered_set">partial order</a>
+rather than a total one, meaning that for some pairs of bags, neither <tt class="docutils literal"><span class="pre">x</span> <span class="pre">&gt;=</span>
+<span class="pre">y</span></tt> nor <tt class="docutils literal"><span class="pre">y</span> <span class="pre">&gt;=</span> <span class="pre">x</span></tt> holds true. This is similar to set comparison in Python.</p>
+</div>
+<div class="section" id="arithmetic-operations-on-bags">
+<span id="bags-operations"></span><h2>Arithmetic operations on bags<a class="headerlink" href="#arithmetic-operations-on-bags" title="Permalink to this headline">¶</a></h2>
+<p>Another advantage of <a class="reference internal" href="#Bag" title="Bag"><tt class="xref py py-class docutils literal"><span class="pre">Bag</span></tt></a> over <tt class="xref py py-class docutils literal"><span class="pre">collections.Counter</span></tt> is that
+<a class="reference internal" href="#Bag" title="Bag"><tt class="xref py py-class docutils literal"><span class="pre">Bag</span></tt></a> provides a <em>wealth</em> of arithmetic operations (addition,
+subtraction, etc.) between bags, and between bags and integers.</p>
+<p>The basic arithmetic operations do what you expect them to, operating on the
+counts of items:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">sandwich</span> <span class="o">=</span> <span class="n">Bag</span><span class="p">({</span><span class="s">&#39;bread&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s">&#39;cheese&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s">&#39;tomato&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s">&#39;burger&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">salad</span> <span class="o">=</span> <span class="n">Bag</span><span class="p">({</span><span class="s">&#39;tomato&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s">&#39;bell pepper&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">single_tomato</span> <span class="o">=</span> <span class="n">Bag</span><span class="p">({</span><span class="s">&#39;tomato&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sandwich</span> <span class="o">+</span> <span class="n">single_tomato</span> <span class="c"># Addition</span>
+<span class="go">Bag({&#39;cheese&#39;: 1, &#39;bread&#39;: 2, &#39;tomato&#39;: 3, &#39;burger&#39;: 1})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sandwich</span> <span class="o">-</span> <span class="n">single_tomato</span> <span class="c"># Subtraction</span>
+<span class="go">Bag({&#39;cheese&#39;: 1, &#39;bread&#39;: 2, &#39;tomato&#39;: 1, &#39;burger&#39;: 1})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sandwich</span> <span class="o">*</span> <span class="mi">3</span> <span class="c"># Multiplication</span>
+<span class="go">Bag({&#39;cheese&#39;: 3, &#39;bread&#39;: 6, &#39;tomato&#39;: 6, &#39;burger&#39;: 3})</span>
+</pre></div>
+</div>
+<p>As for division: You can divide one bag by another to get an integer saying how
+many times the second bag would go into the first. You can also divide a bag by
+an integer, which will divide all the counts by that integer, rounding down.
+All bag division is done with the floor-division operator <tt class="docutils literal"><span class="pre">//</span></tt>, because it&#8217;s
+always rounded-down. Examples:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">sandwich</span> <span class="o">//</span> <span class="n">single_tomato</span> <span class="c"># Floor-division by another bag</span>
+<span class="go">2</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sandwich</span> <span class="o">//</span> <span class="mi">2</span> <span class="c"># Floor-division by integer</span>
+<span class="go">Bag({&#39;bread&#39;: 1, &#39;tomato&#39;: 1})</span>
+</pre></div>
+</div>
+<p>The more advanced operations are also supported:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">sandwich</span> <span class="o">%</span> <span class="n">salad</span> <span class="c"># Modulo by bag</span>
+<span class="go">Bag({&#39;bread&#39;: 2, &#39;cheese&#39;: 1, &#39;burger&#39;: 1, &#39;tomato&#39;: 2})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">divmod</span><span class="p">(</span><span class="n">sandwich</span><span class="p">,</span> <span class="n">salad</span><span class="p">)</span> <span class="c"># Divmod by bag</span>
+<span class="go">(0, Bag({&#39;tomato&#39;: 2, &#39;cheese&#39;: 1, &#39;bread&#39;: 2, &#39;burger&#39;: 1}))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">salad</span> <span class="o">%</span> <span class="mi">2</span> <span class="c"># Modulo by integer</span>
+<span class="go">Bag({&#39;bell pepper&#39;: 1})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">divmod</span><span class="p">(</span><span class="n">salad</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="c"># Divmod by integer</span>
+<span class="go">(Bag({&#39;tomato&#39;: 1}), Bag({&#39;bell pepper&#39;: 1}))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">salad</span> <span class="o">**</span> <span class="mi">3</span> <span class="c"># Exponentiation</span>
+<span class="go">Bag({&#39;tomato&#39;: 8, &#39;bell pepper&#39;: 1})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">pow</span><span class="p">(</span><span class="n">salad</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span> <span class="c"># Exponentiation with modulo</span>
+<span class="go">Bag({&#39;tomato&#39;: 3, &#39;bell pepper&#39;: 1})</span>
+</pre></div>
+</div>
+<p>And... Did someone say logical operations? Like in Python sets, these do
+<a class="reference external" href="http://en.wikipedia.org/wiki/Union_(set_theory)">union</a> and <a class="reference external" href="http://en.wikipedia.org/wiki/Intersection_(set_theory)">intersection</a>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">sandwich</span> <span class="o">|</span> <span class="n">salad</span> <span class="c"># Logical or, a.k.a. set union</span>
+<span class="go">Bag({&#39;bread&#39;: 2, &#39;cheese&#39;: 1, &#39;burger&#39;: 1, &#39;tomato&#39;: 2, &#39;bell pepper&#39;: 1})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sandwich</span> <span class="o">&amp;</span> <span class="n">salad</span> <span class="c"># Logical and, a.k.a. set intersection</span>
+<span class="go">Bag({&#39;tomato&#39;: 2})</span>
+</pre></div>
+</div>
+<p>As a final note about arithmetic operations, augmented assignment is supported
+for all operations, so you can elegantly mutate bags in-place like this:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">sandwich</span> <span class="o">+=</span> <span class="n">Bag</span><span class="p">({</span><span class="s">&#39;bacon&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s">&#39;egg&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sandwich</span>
+<span class="go">Bag({&#39;cheese&#39;: 1, &#39;bacon&#39;: 2, &#39;bread&#39;: 2, &#39;egg&#39;: 1, &#39;burger&#39;: 1, &#39;tomato&#39;: 2})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sandwich</span> <span class="o">**=</span> <span class="mi">2</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sandwich</span>
+<span class="go">Bag({&#39;cheese&#39;: 1, &#39;bacon&#39;: 4, &#39;bread&#39;: 4, &#39;egg&#39;: 1, &#39;burger&#39;: 1, &#39;tomato&#39;: 4})</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference internal" href="#">Bags</a><ul>
+<li><a class="reference internal" href="#bag"><tt class="docutils literal"><span class="pre">Bag</span></tt></a></li>
+<li><a class="reference internal" href="#frozenbag"><tt class="docutils literal"><span class="pre">FrozenBag</span></tt></a></li>
+<li><a class="reference internal" href="#orderedbag"><tt class="docutils literal"><span class="pre">OrderedBag</span></tt></a></li>
+<li><a class="reference internal" href="#frozenorderedbag"><tt class="docutils literal"><span class="pre">FrozenOrderedBag</span></tt></a></li>
+<li><a class="reference internal" href="#comparisons-between-bags">Comparisons between bags</a></li>
+<li><a class="reference internal" href="#arithmetic-operations-on-bags">Arithmetic operations on bags</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="comb_space_and_comb.html"
+                                  title="previous chapter"><tt class="docutils literal"><span class="pre">CombSpace</span></tt> and <tt class="docutils literal"><span class="pre">Comb</span></tt></a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="other_classes.html"
+                                  title="next chapter">Other classes</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="_sources/bags.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+          <div id="searchbox" style="display: none">
+            <h3>Quick search</h3>
+            <form class="search" action="search.html" method="get">
+              <input type="text" name="q" size="18" />
+              <input type="submit" value="Go" />
+              <input type="hidden" name="check_keywords" value="yes" />
+              <input type="hidden" name="area" value="default" />
+            </form>
+            <p class="searchtip" style="font-size: 90%">
+            Enter search terms or a module, class or function name.
+            </p>
+          </div>
+          <script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="other_classes.html" title="Other classes"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="comb_space_and_comb.html" title="CombSpace and Comb"
+             >previous</a> |</li>
+        <li><a href="index.html">combi 0.1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+      &copy; Copyright 2009-2015, Ram Rachum. <br />
+      This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License, with attribution to "Ram Rachum at <a href="http://ram.rachum.com">ram.rachum.com</a>" including link to <a href="http://ram.rachum.com">ram.rachum.com</a>.<br />
+To view a copy of this license, visit: <a href="http://creativecommons.org/licenses/by-sa/3.0/">http://creativecommons.org/licenses/by-sa/3.0/</a><br />
+      
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.
+    </div>
+        <!-- Begin Google Analytics -->
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-1136525-7']);
+            _gaq.push(['_trackPageview']);
+            
+            (function(){
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+        <!-- End Google Analytics -->
+</html>

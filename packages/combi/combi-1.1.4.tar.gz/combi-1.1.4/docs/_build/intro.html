@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Getting started with Combi &mdash; combi 0.1.0 documentation</title>
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/sidebar.js"></script>
+    <link rel="top" title="combi 0.1.0 documentation" href="index.html" />
+    <link rel="next" title="PermSpace and Perm" href="perm_space_and_perm.html" />
+    <link rel="prev" title="The Combi Documentation" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="perm_space_and_perm.html" title="PermSpace and Perm"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="The Combi Documentation"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">combi 0.1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="getting-started-with-combi">
+<span id="intro"></span><h1>Getting started with Combi<a class="headerlink" href="#getting-started-with-combi" title="Permalink to this headline">¶</a></h1>
+<p>Combi is a Pythonic package for <a class="reference external" href="https://en.wikipedia.org/wiki/Combinatorics">combinatorics</a>.</p>
+<p>Combi lets you explore spaces of <a class="reference external" href="https://en.wikipedia.org/wiki/Permutation">permutations</a> and <a class="reference external" href="https://en.wikipedia.org/wiki/Combination">combinations</a> as if they
+were Python sequences, but without generating all the permutations/combinations
+in advance. It lets you specify a lot of special conditions on these spaces. It
+also provides a few more classes that might be useful in combinatorics
+programming.</p>
+<p>Let’s look at the simplest example of using Combi. Check out this $5 padlock
+in the picture:</p>
+<img alt="_images/padlock.jpg" class="align-right" src="_images/padlock.jpg" />
+<p>I use this padlock for my gym locker, so people won’t steal my stuff when
+I’m swimming in the pool. It has 8 buttons, and to open it you have to press
+down a secret combination of 4 buttons. I wonder though, how easy is it to
+crack?</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">combi</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">padlock_space</span> <span class="o">=</span> <span class="n">CombSpace</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">),</span> <span class="mi">4</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">padlock_space</span>
+<span class="go">&lt;CombSpace: range(1, 9), n_elements=4&gt;</span>
+</pre></div>
+</div>
+<p><tt class="docutils literal"><span class="pre">padlock_space</span></tt> is the space of all possible combinations for our padlock. At
+this point, the combinations weren’t really generated; if we’ll ask for a
+combination from the space, it’ll be generated on-demand:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">padlock_space</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span>
+<span class="go">&lt;Comb, n_elements=4: (1, 2, 4, 7)&gt;</span>
+</pre></div>
+</div>
+<p>As you can see, <tt class="docutils literal"><span class="pre">padlock_space</span></tt> behaves like a sequence. We can get a
+combination by index number. We can also do other sequence-y things, like
+getting the index number of a combination, or slicing it, or getting the length
+using <tt class="xref py py-func docutils literal"><span class="pre">len()</span></tt>. This is a huge benefit because then we can explore these
+spaces in a declarative rather than imperative style of programming. (i.e. we
+don’t have to think about generating the permutations, we simply assume that
+the permutation space exists and we’re taking items from it at leisure.)
+Let’s try looking at the length of <tt class="docutils literal"><span class="pre">padlock_space</span></tt>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="nb">len</span><span class="p">(</span><span class="n">padlock_space</span><span class="p">)</span>
+<span class="go">70</span>
+</pre></div>
+</div>
+<p>Only 70 combinations. That’s pretty lame... At 3 seconds to try a
+combination, this means this padlock is crackable in under 4 minutes. Not very
+secure.</p>
+<p>In the example above, I used <a class="reference internal" href="comb_space_and_comb.html#CombSpace" title="CombSpace"><tt class="xref py py-class docutils literal"><span class="pre">CombSpace</span></tt></a>, which is a space of
+combinations. It’s a thin subclass over <a class="reference internal" href="perm_space_and_perm.html#PermSpace" title="PermSpace"><tt class="xref py py-class docutils literal"><span class="pre">PermSpace</span></tt></a>, which is a space
+of permutations. A combination is like a permutation, except order doesn’t
+matter.</p>
+<p>Now, because the permutations/combinations are generated on-demand, I can do
+something like this:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">huge_perm_space</span> <span class="o">=</span> <span class="n">PermSpace</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">huge_perm_space</span>
+<span class="go">&lt;PermSpace: 0..999&gt;</span>
+</pre></div>
+</div>
+<p>This is a perm space of all permutations of the numbers between 0 and 999. It
+is ginormous. The number of permutations is around 10**2500 (a number that far
+exceeds the number of particles in the universe.) I’m not even going to show
+its length in the shell session because the length number alone would fill the
+entire page. And yet you can fetch any permutation from this space by index
+number in a fraction of a second:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">huge_perm_space</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span>
+<span class="go">&lt;Perm: (0, 1, 2, 3, 4, ... 997, 996, 999, 998)&gt;</span>
+</pre></div>
+</div>
+<p>Note that the permutation <tt class="docutils literal"><span class="pre">huge_perm_space[7]</span></tt> is a sequence by itself, where every item is a number in <tt class="docutils literal"><span class="pre">range(1000)</span></tt>.</p>
+<p>Combi lets you specify a myriad of options on the the spaces that you create.
+For example, you can make some elements be fixed:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">fixed_perm_space</span> <span class="o">=</span> <span class="n">PermSpace</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="n">fixed_map</span><span class="o">=</span><span class="p">{</span><span class="mi">3</span><span class="p">:</span> <span class="mi">3</span><span class="p">,})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fixed_perm_space</span>
+<span class="go">&lt;PermSpace: 0..3, fixed_map={3: 3}&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">tuple</span><span class="p">(</span><span class="n">fixed_perm_space</span><span class="p">)</span>
+<span class="go">(&lt;Perm: (0, 1, 2, 3)&gt;,</span>
+<span class="go"> &lt;Perm: (0, 2, 1, 3)&gt;,</span>
+<span class="go"> &lt;Perm: (1, 0, 2, 3)&gt;,</span>
+<span class="go"> &lt;Perm: (1, 2, 0, 3)&gt;,</span>
+<span class="go"> &lt;Perm: (2, 0, 1, 3)&gt;,</span>
+<span class="go"> &lt;Perm: (2, 1, 0, 3)&gt;)</span>
+</pre></div>
+</div>
+<p>This limits the space and makes it smaller. This is useful when you’re making
+explorations on a huge <a class="reference internal" href="perm_space_and_perm.html#PermSpace" title="PermSpace"><tt class="xref py py-class docutils literal"><span class="pre">PermSpace</span></tt></a> and want to inspect only a smaller
+subset of it that would be easier to handle.</p>
+<p>There are many more variations that you could have on a <a class="reference internal" href="perm_space_and_perm.html#PermSpace" title="PermSpace"><tt class="xref py py-class docutils literal"><span class="pre">PermSpace</span></tt></a> or a
+<a class="reference internal" href="comb_space_and_comb.html#CombSpace" title="CombSpace"><tt class="xref py py-class docutils literal"><span class="pre">CombSpace</span></tt></a>. You can specify a custom domain and a custom range to a
+space. You can constrain it to permutations of a certain degree (e.g.
+<tt class="docutils literal"><span class="pre">degrees=1</span></tt> to limit to transformations only.) You can do <a class="reference external" href="https://en.wikipedia.org/wiki/Permutation#k-permutations_of_n">k-permutations</a>
+by specifying the length of the desired permutations as <tt class="docutils literal"><span class="pre">n_elements</span></tt>. You can
+have the permutation objects be of a custom subclass that you define, so you
+could provide extra methods on them that fit your use case. You can provide
+sequences that have some items appear multiple times and Combi would be smart
+about it and consider multiple occurrences of the same item to be
+interchangable. You can also toggle that behavior so it would treat them as
+unique. It’s very customizable :) For more information on doing that, please
+refer to the documentation for <a class="reference internal" href="perm_space_and_perm.html#PermSpace" title="PermSpace"><tt class="xref py py-class docutils literal"><span class="pre">PermSpace</span></tt></a> and <a class="reference internal" href="comb_space_and_comb.html#CombSpace" title="CombSpace"><tt class="xref py py-class docutils literal"><span class="pre">CombSpace</span></tt></a>.</p>
+<p><a class="reference internal" href="perm_space_and_perm.html#PermSpace" title="PermSpace"><tt class="xref py py-class docutils literal"><span class="pre">PermSpace</span></tt></a> and <a class="reference internal" href="comb_space_and_comb.html#CombSpace" title="CombSpace"><tt class="xref py py-class docutils literal"><span class="pre">CombSpace</span></tt></a> are the flagship classes of Combi;
+but it also provides a few more useful features. See <a class="reference internal" href="index.html#index-features"><em>features</em></a> and <a class="reference internal" href="index.html#index-contents"><em>documentation contents</em></a> for more
+info.</p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="index.html"
+                                  title="previous chapter">The Combi Documentation</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="perm_space_and_perm.html"
+                                  title="next chapter"><tt class="docutils literal"><span class="pre">PermSpace</span></tt> and <tt class="docutils literal"><span class="pre">Perm</span></tt></a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="_sources/intro.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+          <div id="searchbox" style="display: none">
+            <h3>Quick search</h3>
+            <form class="search" action="search.html" method="get">
+              <input type="text" name="q" size="18" />
+              <input type="submit" value="Go" />
+              <input type="hidden" name="check_keywords" value="yes" />
+              <input type="hidden" name="area" value="default" />
+            </form>
+            <p class="searchtip" style="font-size: 90%">
+            Enter search terms or a module, class or function name.
+            </p>
+          </div>
+          <script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="perm_space_and_perm.html" title="PermSpace and Perm"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="The Combi Documentation"
+             >previous</a> |</li>
+        <li><a href="index.html">combi 0.1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+      &copy; Copyright 2009-2015, Ram Rachum. <br />
+      This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License, with attribution to "Ram Rachum at <a href="http://ram.rachum.com">ram.rachum.com</a>" including link to <a href="http://ram.rachum.com">ram.rachum.com</a>.<br />
+To view a copy of this license, visit: <a href="http://creativecommons.org/licenses/by-sa/3.0/">http://creativecommons.org/licenses/by-sa/3.0/</a><br />
+      
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.
+    </div>
+        <!-- Begin Google Analytics -->
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-1136525-7']);
+            _gaq.push(['_trackPageview']);
+            
+            (function(){
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+        <!-- End Google Analytics -->
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Other classes &mdash; combi 0.1.0 documentation</title>
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/sidebar.js"></script>
+    <link rel="top" title="combi 0.1.0 documentation" href="index.html" />
+    <link rel="prev" title="Bags" href="bags.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="bags.html" title="Bags"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">combi 0.1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="other-classes">
+<span id="id1"></span><h1>Other classes<a class="headerlink" href="#other-classes" title="Permalink to this headline">¶</a></h1>
+<p>These are smaller, simpler classes that are included in <tt class="docutils literal"><span class="pre">combi</span></tt>.</p>
+<div class="section" id="mapspace">
+<h2><a class="reference internal" href="#MapSpace" title="MapSpace"><tt class="xref py py-class docutils literal"><span class="pre">MapSpace</span></tt></a><a class="headerlink" href="#mapspace" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="MapSpace">
+<em class="property">class </em><tt class="descname">MapSpace</tt><big>(</big><em>function</em>, <em>sequence</em><big>)</big><a class="headerlink" href="#MapSpace" title="Permalink to this definition">¶</a></dt>
+<dd><p>A space of a function applied to a sequence.</p>
+<p>This is similar to Python&#8217;s built-in <tt class="xref py py-func docutils literal"><span class="pre">map()</span></tt>, except that it behaves
+like a sequence rather than an iterable. (Though it&#8217;s also iterable.) You
+can access any item by its index number.</p>
+<p>Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">map_space</span> <span class="o">=</span> <span class="n">MapSpace</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">**</span> <span class="mi">2</span><span class="p">,</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">map_space</span>
+<span class="go">MapSpace(&lt;function &lt;lambda&gt; at 0x00000000030C1510&gt;, range(0, 7))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">len</span><span class="p">(</span><span class="n">map_space</span><span class="p">)</span>
+<span class="go">7</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">map_space</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+<span class="go">9</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">tuple</span><span class="p">(</span><span class="n">map_space</span><span class="p">)</span>
+<span class="go">(0, 1, 4, 9, 16, 25, 36)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="productspace">
+<h2><a class="reference internal" href="#ProductSpace" title="ProductSpace"><tt class="xref py py-class docutils literal"><span class="pre">ProductSpace</span></tt></a><a class="headerlink" href="#productspace" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="ProductSpace">
+<em class="property">class </em><tt class="descname">ProductSpace</tt><big>(</big><em>sequences</em><big>)</big><a class="headerlink" href="#ProductSpace" title="Permalink to this definition">¶</a></dt>
+<dd><p>A product space between sequences.</p>
+<p>This is similar to Python&#8217;s <tt class="xref py py-func docutils literal"><span class="pre">itertools.product()</span></tt>, except that
+it behaves like a sequence rather than an iterable. (Though it&#8217;s also
+iterable.) You can access any item by its index number.</p>
+<p>Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">product_space</span> <span class="o">=</span> <span class="n">ProductSpace</span><span class="p">((</span><span class="s">&#39;abc&#39;</span><span class="p">,</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">)))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">product_space</span>
+<span class="go">&lt;ProductSpace: 3 * 4&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">product_space</span><span class="o">.</span><span class="n">length</span>
+<span class="go">12</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">product_space</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span>
+<span class="go">(&#39;c&#39;, 2)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">tuple</span><span class="p">(</span><span class="n">product_space</span><span class="p">)</span>
+<span class="go">((&#39;a&#39;, 0), (&#39;a&#39;, 1), (&#39;a&#39;, 2), (&#39;a&#39;, 3), (&#39;b&#39;, 0), (&#39;b&#39;, 1), (&#39;b&#39;, 2),</span>
+<span class="go"> (&#39;b&#39;, 3), (&#39;c&#39;, 0), (&#39;c&#39;, 1), (&#39;c&#39;, 2), (&#39;c&#39;, 3))</span>
+</pre></div>
+</div>
+<dl class="method">
+<dt id="ProductSpace.index">
+<tt class="descname">index</tt><big>(</big><em>given_sequence</em><big>)</big><a class="headerlink" href="#ProductSpace.index" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the index number of <tt class="docutils literal"><span class="pre">given_sequence</span></tt> in this product space.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="chainspace">
+<h2><a class="reference internal" href="#ChainSpace" title="ChainSpace"><tt class="xref py py-class docutils literal"><span class="pre">ChainSpace</span></tt></a><a class="headerlink" href="#chainspace" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="ChainSpace">
+<em class="property">class </em><tt class="descname">ChainSpace</tt><big>(</big><em>sequences</em><big>)</big><a class="headerlink" href="#ChainSpace" title="Permalink to this definition">¶</a></dt>
+<dd><p>A space of sequences chained together.</p>
+<p>This is similar to Python&#8217;s <tt class="xref py py-func docutils literal"><span class="pre">itertools.chain()</span></tt>, except that items can be fetched
+by index number rather than just iteration.</p>
+<p>Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">chain_space</span> <span class="o">=</span> <span class="n">ChainSpace</span><span class="p">((</span><span class="s">&#39;abc&#39;</span><span class="p">,</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chain_space</span>
+<span class="go">&lt;ChainSpace: 3+3&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chain_space</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+<span class="go">2</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">tuple</span><span class="p">(</span><span class="n">chain_space</span><span class="p">)</span>
+<span class="go">(&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, 1, 2, 3)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chain_space</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="go">4</span>
+</pre></div>
+</div>
+<dl class="method">
+<dt id="ChainSpace.index">
+<tt class="descname">index</tt><big>(</big><em>item</em><big>)</big><a class="headerlink" href="#ChainSpace.index" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the index number of <tt class="docutils literal"><span class="pre">item</span></tt> in this space.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="selectionspace">
+<h2><a class="reference internal" href="#SelectionSpace" title="SelectionSpace"><tt class="xref py py-class docutils literal"><span class="pre">SelectionSpace</span></tt></a><a class="headerlink" href="#selectionspace" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="SelectionSpace">
+<em class="property">class </em><tt class="descname">SelectionSpace</tt><big>(</big><em>sequence</em><big>)</big><a class="headerlink" href="#SelectionSpace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Space of possible selections of any number of items from <tt class="docutils literal"><span class="pre">sequence</span></tt>.</p>
+<p>For example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="nb">tuple</span><span class="p">(</span><span class="n">SelectionSpace</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">)))</span>
+<span class="go">(set(), {1}, {0}, {0, 1})</span>
+</pre></div>
+</div>
+<p>The selections (which are sets) can be for any number of items, from zero to
+the length of the sequence.</p>
+<p>Of course, this is a smart object that doesn&#8217;t really create all these sets
+in advance, but rather on demand. So you can create a
+<a class="reference internal" href="#SelectionSpace" title="SelectionSpace"><tt class="xref py py-class docutils literal"><span class="pre">SelectionSpace</span></tt></a> like this:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">selection_space</span> <span class="o">=</span> <span class="n">SelectionSpace</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="o">**</span><span class="mi">4</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>And take a random selection from it:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">selection_space</span><span class="o">.</span><span class="n">take_random</span><span class="p">()</span>
+<span class="go">{0, 3, 4, ..., 9996, 9997}</span>
+</pre></div>
+</div>
+<p>Even though the length of this space is around 10 ** 3010, which is much
+bigger than the number of particles in the universe.</p>
+<dl class="method">
+<dt id="SelectionSpace.index">
+<tt class="descname">index</tt><big>(</big><em>selection</em><big>)</big><a class="headerlink" href="#SelectionSpace.index" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find the index number of set <tt class="docutils literal"><span class="pre">selection</span></tt> in this
+<a class="reference internal" href="#SelectionSpace" title="SelectionSpace"><tt class="xref py py-class docutils literal"><span class="pre">SelectionSpace</span></tt></a>.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference internal" href="#">Other classes</a><ul>
+<li><a class="reference internal" href="#mapspace"><tt class="docutils literal"><span class="pre">MapSpace</span></tt></a></li>
+<li><a class="reference internal" href="#productspace"><tt class="docutils literal"><span class="pre">ProductSpace</span></tt></a></li>
+<li><a class="reference internal" href="#chainspace"><tt class="docutils literal"><span class="pre">ChainSpace</span></tt></a></li>
+<li><a class="reference internal" href="#selectionspace"><tt class="docutils literal"><span class="pre">SelectionSpace</span></tt></a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="bags.html"
+                                  title="previous chapter">Bags</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="_sources/other_classes.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+          <div id="searchbox" style="display: none">
+            <h3>Quick search</h3>
+            <form class="search" action="search.html" method="get">
+              <input type="text" name="q" size="18" />
+              <input type="submit" value="Go" />
+              <input type="hidden" name="check_keywords" value="yes" />
+              <input type="hidden" name="area" value="default" />
+            </form>
+            <p class="searchtip" style="font-size: 90%">
+            Enter search terms or a module, class or function name.
+            </p>
+          </div>
+          <script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="bags.html" title="Bags"
+             >previous</a> |</li>
+        <li><a href="index.html">combi 0.1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+      &copy; Copyright 2009-2015, Ram Rachum. <br />
+      This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License, with attribution to "Ram Rachum at <a href="http://ram.rachum.com">ram.rachum.com</a>" including link to <a href="http://ram.rachum.com">ram.rachum.com</a>.<br />
+To view a copy of this license, visit: <a href="http://creativecommons.org/licenses/by-sa/3.0/">http://creativecommons.org/licenses/by-sa/3.0/</a><br />
+      
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.
+    </div>
+        <!-- Begin Google Analytics -->
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-1136525-7']);
+            _gaq.push(['_trackPageview']);
+            
+            (function(){
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+        <!-- End Google Analytics -->
+</html>
