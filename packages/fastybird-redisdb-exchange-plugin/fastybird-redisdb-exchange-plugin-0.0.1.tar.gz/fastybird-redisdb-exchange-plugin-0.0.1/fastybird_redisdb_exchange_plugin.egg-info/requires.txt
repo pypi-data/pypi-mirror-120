@@ -1,0 +1,3 @@
+fastybird-modules-metadata
+redis
+setuptools
