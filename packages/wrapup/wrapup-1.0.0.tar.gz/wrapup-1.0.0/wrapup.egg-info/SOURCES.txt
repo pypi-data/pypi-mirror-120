@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+setup.py
+wrapup/__init__.py
+wrapup/checker.py
+wrapup/filepath.py
+wrapup/helpers.py
+wrapup/master.py
+wrapup/python_file_error.py
+wrapup/workers.py
+wrapup.egg-info/PKG-INFO
+wrapup.egg-info/SOURCES.txt
+wrapup.egg-info/dependency_links.txt
+wrapup.egg-info/top_level.txt
