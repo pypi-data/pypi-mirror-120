@@ -1,0 +1,10 @@
+simple_icd_10_cm/__init__.py,sha256=Z1KTvT112WEfhmGoTFyloLMte55xISt0t0CQAeUysRk,31
+simple_icd_10_cm/simple_icd_10_cm.py,sha256=1MkIKrihT9d8PRruVswuN8aIma5JMmr3x3cBN9tEcYs,19739
+simple_icd_10_cm/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simple_icd_10_cm/data/icd10cm-order-Jan-2021.txt,sha256=AkyM2quBXJh_PUNUR1gEeZLve1Z3ySNpsaBKxpuDtIw,14261470
+simple_icd_10_cm/data/icd10cm_tabular_2021.xml,sha256=Q2kF6UcAGMhmeyXN9kb2ovTwyV266r2GkrUwd123Gv0,9253467
+simple_icd_10_cm-1.1.2.dist-info/LICENSE,sha256=X5pg6rNf0l8XnjBcfACSn967xArTypbeS16l0P6Yur4,1094
+simple_icd_10_cm-1.1.2.dist-info/METADATA,sha256=_kdqT-2CDxshW3JovjC2QHvVqtznuw6roItw44I5AUg,31593
+simple_icd_10_cm-1.1.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+simple_icd_10_cm-1.1.2.dist-info/top_level.txt,sha256=6SUf2VHvXP1HmldCp4mtErBEUJHSI0FH39s9aYDAmx4,17
+simple_icd_10_cm-1.1.2.dist-info/RECORD,,
