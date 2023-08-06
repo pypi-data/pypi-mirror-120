@@ -1,0 +1,12 @@
+MANIFEST.in
+setup.py
+simple_flask_cms/__init__.py
+simple_flask_cms/cms_blueprint.py
+simple_flask_cms/config.py
+simple_flask_cms/dataclasses.py
+simple_flask_cms/db.py
+simple_flask_cms.egg-info/PKG-INFO
+simple_flask_cms.egg-info/SOURCES.txt
+simple_flask_cms.egg-info/dependency_links.txt
+simple_flask_cms.egg-info/requires.txt
+simple_flask_cms.egg-info/top_level.txt
