@@ -1,0 +1,11 @@
+README.md
+setup.py
+search_comparator/__init__.py
+search_comparator/comparator.py
+search_comparator/query.py
+search_comparator/rbo.py
+search_comparator/results.py
+search_comparator.egg-info/PKG-INFO
+search_comparator.egg-info/SOURCES.txt
+search_comparator.egg-info/dependency_links.txt
+search_comparator.egg-info/top_level.txt
