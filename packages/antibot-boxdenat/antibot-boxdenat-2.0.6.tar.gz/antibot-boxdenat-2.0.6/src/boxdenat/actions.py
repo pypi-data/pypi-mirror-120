@@ -1,0 +1,10 @@
+class BoxActions:
+    create_order = 'box:create_order'
+    add_box = 'box:add_box'
+    clear_box = 'box:clear_box'
+    add_dessert = 'box:add_dessert'
+    clear_dessert = 'box:clear_dessert'
+    order_confirm = 'box:order_confirm'
+    order_cancel = 'box:order_cancel'
+    order_edit = 'box:order_edit'
+    free_box = 'box:free_box'
