@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: mention_bot
+Version: 2.0
+Summary: A generic infrastructure to create a Twitter bot that acts on mentions of it
+Home-page: https://github.com/yuvalgarti/generic-mention-bot
+Author: Yuval Garti
+Author-email: yuvalgarti@gmail.comm
+License: MIT
+Download-URL: https://github.com/yuvalgarti/generic-mention-bot/archive/refs/tags/v2.0.tar.gz
+Description: UNKNOWN
+Keywords: Twitter,Bot
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.9
