@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/PathogenTrack/PathogenTrack.py
+src/PathogenTrack/__init__.py
+src/PathogenTrack.egg-info/PKG-INFO
+src/PathogenTrack.egg-info/SOURCES.txt
+src/PathogenTrack.egg-info/dependency_links.txt
+src/PathogenTrack.egg-info/entry_points.txt
+src/PathogenTrack.egg-info/requires.txt
+src/PathogenTrack.egg-info/top_level.txt
