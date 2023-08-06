@@ -1,0 +1,3 @@
+include CHANGELOG.md
+include sumocr/sumo_config/.sumo.cfg
+prune tests*
