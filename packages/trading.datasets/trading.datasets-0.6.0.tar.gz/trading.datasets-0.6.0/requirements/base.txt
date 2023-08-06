@@ -1,0 +1,8 @@
+ccxt~=1.51.51
+aws.paramstore~=1.0.1
+datetimerange~=1.1.0
+fuzzywuzzy~=0.18.0
+pandas~=1.2.4
+fastparquet~=0.7.1
+aws-psycopg2~=1.2.1
+python-Levenshtein~=0.12.2
