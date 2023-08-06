@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+run_script.py
+setup.py
+src/analytic.py
+src/webanalytictool.egg-info/PKG-INFO
+src/webanalytictool.egg-info/SOURCES.txt
+src/webanalytictool.egg-info/dependency_links.txt
+src/webanalytictool.egg-info/requires.txt
+src/webanalytictool.egg-info/top_level.txt
