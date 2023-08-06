@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: hiresprv
+Version: 3.0.5
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Mihseh Kong, John Good, BJ Fulton
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Requires-Python: >= 3.6
+Requires-Dist: ijson
+Requires-Dist: requests
+
+UNKNOWN
+
+
