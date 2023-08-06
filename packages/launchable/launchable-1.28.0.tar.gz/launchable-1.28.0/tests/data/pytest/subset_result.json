@@ -1,0 +1,32 @@
+{
+  "testPaths":[
+    [
+      {
+        "type":"file",
+        "name":"tests/test_funcs1.py"
+      }
+    ],
+    [
+      {
+        "type":"file",
+        "name":"tests/test_funcs2.py"
+      }
+    ],
+    [
+      {
+        "type":"file",
+        "name":"tests/funcs3_test.py"
+      }
+    ],
+    [
+      {
+        "type":"file",
+        "name":"tests/fooo/func4_test.py"
+      }
+    ]
+  ],
+  "session":{
+    "id":"16"
+  },
+  "target":0.1
+}
