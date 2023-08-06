@@ -1,0 +1,6 @@
+pydantic
+geojson
+requests
+tethysts>=0.2.16
+rasterio
+numexpr
