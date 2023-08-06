@@ -1,0 +1,4 @@
+requests
+PyNaCl
+pyblake2>=1.1.0
+base58<=0.2.5,>=0.2.0
