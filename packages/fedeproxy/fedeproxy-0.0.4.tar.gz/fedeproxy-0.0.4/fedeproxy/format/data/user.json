@@ -1,0 +1,26 @@
+{
+    "title": "User",
+    "description": "Forge user.",
+    
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "url": {
+	    "description": "URL of the user.",
+            "type": "string",
+	    "format": "uri"
+        },
+        "username": {
+	    "description": "Unique name.",
+            "type": "string"
+        }
+    },
+    "required": [
+        "url",
+        "username"
+    ],
+
+    "$schema": "https://json-schema.org/draft/2020-12/schema#",
+    "$id": "http://example.com/user.json",
+    "$$target": "user.json"
+}

@@ -1,0 +1,65 @@
+{
+    "title": "Identities",
+    "description": "Identities of a user accross multiple forges.",
+
+    "type": "array",
+    "items": {
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+	    "url": {
+		"description": "URL of the user.",
+		"type": "string",
+		"format": "uri"
+	    },
+	    "public": {
+		"description": "Public key.",
+		"type": "string"
+	    },
+	    "private": {
+		"description": "Private key.",
+		"anyOf": [
+		    {
+			"type": "string"
+		    },
+		    {
+			"type": "null"
+		    }
+		]
+	    },
+	    "owned": {
+		"description": "True if fedeproxy created the user, false otherwise.",
+		"type": "boolean"
+	    },
+	    "token": {
+		"description": "API token to act on behalf of the user.",
+		"anyOf": [
+		    {
+			"type": "string"
+		    },
+		    {
+			"type": "null"
+		    }
+		]
+	    },
+	    "emails": {
+		"description": "emails controlled by the user.",
+		"type": "array",
+		"items": {
+		    "type": "string"
+		}
+	    }
+	},
+	"required": [
+	    "url",
+	    "public",
+	    "private",
+	    "owned",
+	    "token",
+	    "emails"
+	]
+    },
+    "$schema": "https://json-schema.org/draft/2020-12/schema#",
+    "$id": "http://example.com/identities.json",
+    "$$target": "identities.json"
+}

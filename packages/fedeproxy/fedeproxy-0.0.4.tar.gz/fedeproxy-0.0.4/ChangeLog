@@ -1,0 +1,199 @@
+CHANGES
+=======
+
+0.0.4
+-----
+
+* version 0.0.4
+* forge: add title attribute to the forge API
+* forge: gitlab: don't hardcode supported DVCS
+* tests: dvcs: check Gitea too
+* forge: gitlab: allow to create hg project
+* dvcs: hg: handle authentication
+* tests: upgrade gitea 1.15.2
+* tests: the create issue fixture needs the id
+* tests: create synthetic issue payloads
+* tests: reorganize live hook tests
+* tests: forge\_factory is now a dict
+* tests: move Gitea/GitLab params to separate files
+* fedeproxy: refactor identities and how they are used
+* identity: implement lookup
+* forge: gitlab: implement admin user creation
+* forge: define is\_authenticated
+* forge: gitlab: is\_admin may not exist
+* forge: gitlab: set the default branch
+* fedeproxy: register GitLab hooks
+* tests: no need for two gitea/gitlab right now
+* tests: add serials variable to setup-gitlab
+* forge: add missing is\_admin abstract method
+* activitypub: complete the tests for the commit message
+* forge: add the convert\_url\_to\_username method
+* fedeproxy: save identities outside of a DVCS
+* fedeproxy: improve debug with better names for classes
+* activitypub: forgefed: be more specific about the type of @context
+* pipenv: update
+* forge: gitlab: fix state when importing an issue
+* tests: forge: ensure created issue matches import
+* forge: return the created/updated instance
+* forge: gitea: implement issue
+* forge: gitea: implement issues
+* forge: implement Projects
+* bump version 0.0.4
+
+0.0.3
+-----
+
+* version 0.0.3
+* tests: upgrade heptapod 0.24.0
+* tests: upgrade gitea 1.15.0
+* rework documentation
+* do not needlessly call apt-get
+* forge: gitlab: implement list milestones
+* remove bookwyrm leftovers
+* dvcs: make sure the branch name never starts with a digit
+* fedeproxy: use testbranch instead of master
+* gitlab: use heptapod image for testing
+* activitypub: implement commit
+* tests: register marker
+* forge: gitea: implement list milestones
+* dvcs: refactor fixtures for reusability
+* forge: implement is\_dvcs\_supported
+* dvcs: move fixtures to conftest
+* dvcs: implement reset
+* dvcs: implement url\_hashed
+* dvcs: implement fetch
+* activitypub: refactor signature verification decorator
+* activitypub: refactor helper class
+* dvcs: add factory and hash property
+* activitypub: implement signature verification decorator
+* remove pipenv-to-requirements no longer required
+* activitypub: requests wrapper that signs POST
+* tests: activitypub: refactor inbox test
+* activitypub: add public key to user/Person
+* identities: fix IndentitiesPublic base class
+* fedeproxy: add the base directory to the constructor
+* activitypub: use dataclasses-json instead of home made
+* activitypub: add context to Person
+* activitypub: implement user endpoint
+* activitypub: django middleware creates fedeproxy from settings
+* jschon: upgrade
+* api: move node tests next to views
+* forge: move collections format out
+* fedeproxy: save own forge and users
+* forge: implement Users
+* forge: restructure the class hierarchy
+* format: define schema for identities
+* activitypub: remove unused types
+* activitypub: stub implementation, django based
+* django: link to the fedeproxy instance in each request
+* upgrade django 3.2.6
+* tests: create a fedeproxy fixture
+* tests: rework the make\_user/make\_project fixtures
+* tests: rework the forge fixture
+* identity: add public/private keypair
+* update release notes
+* add flake8 to pre-commit
+* nodeinfo: first implementation
+* remove ping and members
+* bump version 0.0.3
+
+0.0.2
+-----
+
+* version 0.0.2
+* tests: fedeproxy: re-use fixtures
+* tests: forge: use the forge fixture for dvcs
+* move fixtures up in the hierarchy so they can be reused
+* define milestone interface and Gitea implementation
+* https://lab.enough.community/fedeproxy/fedeproxy is the canonical name
+* add release notes
+* forge: implement load/save
+* tests: improve forge fixtures
+* forge: do not implement export
+* forge: gitlab: use python-gitlab
+* forge: create forge.Issues
+* format: define issues
+* pipenv: remove duplicate
+* remove requirement.txt and install tox-pipenv
+* forge: add identities
+* forge: define forge.User
+* tests: reorganize the content of test\_forge.py
+* tests: cleanup unused fixtures and marks
+* dvcs: add support for mercurial
+* forge: gitea: implement fork
+* tests: gitea: keep token
+* tests: do not include interfaces in coverage report
+* fedeproxy: export project to the dvcs
+* forge: move export function to project
+* forge: project: add namespace/project properties
+* forge: add project factory
+* forge: add dvcs factory
+* dvcs: add the commit method
+* tests: simplify gitea installation
+* dvcs: cloning a non-existing branch creates it
+* dvcs: repository init is idempotent
+* tests: more robust gitea fixture
+* forge: bind dvcs to Project
+* dvcs: git: directory is a property
+* dvcs: do not implement a name logic in Git
+* forge: add checkout project
+* forge: base class for Gitea / GitLab
+* forge: create Project and Issue classes
+* forge: do not create projects with root tokens
+* forge: define username property
+* forge: implement token authentication
+* tests: DRY: parametrize forge fixture
+* forge: make the url property readonly
+* forge: delete the project that was created
+* forge: export without root permissions
+* forge: issue create test using non-root user
+* forge: finalize user creation for gitlab / gitea
+* forge: create user with a password
+* interfaces: add authenticate forge method
+* tests: move forge tests based on interfaces to test\_forge.py
+* interface: add missing forge user\_delete method
+* bump version 0.0.2
+* GitLab is the only forge with a project export feature
+
+0.0.1
+-----
+
+* version 0.0.1
+* do not commit AUTHORS
+* release instructions
+* tests: run gitlab & gitea tests
+* architecture: add support for gitea
+* tests: simplify gitlab setup
+* interface: add user to forge interface
+* tests: gitea internal URL port
+* tests: setup two gitea instances
+* tests: rework the gitlab main function
+* s/FEDEPROXY\_IP/MY\_IP/
+* reorganize the codebase
+* create the dvcs interface
+* create the forge interface
+* implement class for high level git operations
+* black: normalize strings
+* batch pre-commit run
+* add pre-commit configuration
+* bootstrap direnv
+* upgrade gitlab to 13.12.3
+* setup-gitlab needs IP
+* run two gitlab servers for testing
+* test ci
+* test ci
+* gitlab: issue create/get/delete
+* gitlab: set the user for a project
+* gitlab: create/get/delete user
+* gitlab: it's a tar.gz not a zip
+* gitlab: skip another race condition in project creation
+* gitlab: implement project export
+* get retry from fedeproxy
+* implement gitlab project get/create/delete
+* test gitlab
+* not enough RAM
+* reduce the memory requirements by running a single worker
+* run only one GitLab
+* localhost does not exist in the CI
+* create two GitLab instances for testing purposes
+* initial
