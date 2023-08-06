@@ -1,0 +1,11 @@
+MANIFEST.in
+README.rst
+setup.py
+version.py
+routemaster_statsd/__init__.py
+routemaster_statsd.egg-info/PKG-INFO
+routemaster_statsd.egg-info/SOURCES.txt
+routemaster_statsd.egg-info/dependency_links.txt
+routemaster_statsd.egg-info/not-zip-safe
+routemaster_statsd.egg-info/requires.txt
+routemaster_statsd.egg-info/top_level.txt
