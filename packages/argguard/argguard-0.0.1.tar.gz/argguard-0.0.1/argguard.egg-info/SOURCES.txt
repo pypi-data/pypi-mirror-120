@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+argguard/__init__.py
+argguard/argguard.py
+argguard.egg-info/PKG-INFO
+argguard.egg-info/SOURCES.txt
+argguard.egg-info/dependency_links.txt
+argguard.egg-info/top_level.txt
+tests/__init__.py
+tests/argguard_test.py
