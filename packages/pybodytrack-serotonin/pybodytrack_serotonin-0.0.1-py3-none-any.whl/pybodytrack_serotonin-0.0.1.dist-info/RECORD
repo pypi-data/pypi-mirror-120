@@ -1,0 +1,10 @@
+pyBodyTrack/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyBodyTrack/faceTrack.py,sha256=0kHMLuwmHiHoiDLSUwoMCzsXLSl494H6EZNeeKyHJIU,2856
+pyBodyTrack/handTrack.py,sha256=l-X-7GkvBLhdEmpAyz8-fDzlRBgScM5xwVl7Asn8E5w,1745
+pyBodyTrack/holisticTrack.py,sha256=9oIai9LDJhWlpFLvYz_WcGX1zYTyqlcXS-d-VhnMNC4,1937
+pyBodyTrack/poseTrack.py,sha256=_kuykmwAnwPmM7Q-Ct660771AeEfCvTcSITeMWT9eX4,1660
+pybodytrack_serotonin-0.0.1.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+pybodytrack_serotonin-0.0.1.dist-info/METADATA,sha256=Sv28IiDdB-flBmv-5aRvgU2q-hH329MSbY3u0T81toU,785
+pybodytrack_serotonin-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pybodytrack_serotonin-0.0.1.dist-info/top_level.txt,sha256=pE_6sawknwuqyKSUvPO8tnc_MvcMSwY9y2NlZk72zp0,12
+pybodytrack_serotonin-0.0.1.dist-info/RECORD,,
