@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: jetnet
+Version: 0.0.1.post1
+Summary: One jet library to rule them all.
+Home-page: http://github.com/rkansal47/JetNet
+Author: Raghav Kansal
+Author-email: rkansal@cern.ch
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (>=1.21.0)
+Requires-Dist: torch (>=1.8.0)
+Requires-Dist: energyflow (>=1.3.0)
+Requires-Dist: scipy (>=1.6.2)
+Requires-Dist: awkward (>=1.4.0)
+Requires-Dist: coffea (>=0.7.0)
+Requires-Dist: requests
+Requires-Dist: tqdm
+
+# JetNet
+
+*One jet library to rule them all.*
+
+A library for developing and reproducing jet-based machine learning projects. Currently under development.
+
+
