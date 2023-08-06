@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+requirements.txt
+setup.cfg
+setup.py
+src/irmlearn/__init__.py
+src/irmlearn/__version__.py
+src/irmlearn/irm.py
+src/irmlearn/utils.py
+src/irmlearn.egg-info/PKG-INFO
+src/irmlearn.egg-info/SOURCES.txt
+src/irmlearn.egg-info/dependency_links.txt
+src/irmlearn.egg-info/requires.txt
+src/irmlearn.egg-info/top_level.txt
