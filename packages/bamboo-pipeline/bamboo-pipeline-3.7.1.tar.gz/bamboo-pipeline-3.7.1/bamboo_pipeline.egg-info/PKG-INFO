@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: bamboo-pipeline
+Version: 3.7.1
+Summary: bamboo-pipeline
+Home-page: https://github.com/TencentBlueKing/bamboo-engine/runtime/bamboo-pipeline
+Author: Blueking
+Author-email: contactus_bk@tencent.com
+License: UNKNOWN
+Description: runtime for bamboo-engine base on Django and Celery
+Platform: UNKNOWN
