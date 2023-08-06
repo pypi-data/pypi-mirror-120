@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: anylogic-alpyne
+Version: 0.1.0
+Summary: Run AnyLogic models exported from the RL Experiment
+Home-page: https://github.com/t-wolfeadam/Alpyne
+Author: Tyler Wolfe-Adam
+Author-email: t.wolfeadam@anylogic.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: gym
+Requires-Dist: numpy
+
+# ALPyne
+
+The **A**ny**L**ogic-**Py**thon con**ne**ctor
+
+Allows you to interactively run models exported via the RL experiment.
+
+## Installation
+
+TODO
+
+## Usage
+
+TODO
+
