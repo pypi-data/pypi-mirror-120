@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+spacy_loggers/__init__.py
+spacy_loggers/util.py
+spacy_loggers/wandb.py
+spacy_loggers.egg-info/PKG-INFO
+spacy_loggers.egg-info/SOURCES.txt
+spacy_loggers.egg-info/dependency_links.txt
+spacy_loggers.egg-info/entry_points.txt
+spacy_loggers.egg-info/requires.txt
+spacy_loggers.egg-info/top_level.txt
+spacy_loggers.egg-info/zip-safe
+spacy_loggers/tests/__init__.py
+spacy_loggers/tests/test_registry.py
