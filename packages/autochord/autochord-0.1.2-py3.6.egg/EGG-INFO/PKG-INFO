@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: autochord
+Version: 0.1.2
+Summary: Automatic Chord Recognition library
+Home-page: https://github.com/cjbayron/autochord
+Author: Christopher John Bayron
+Author-email: cjdbayron@gmail.com
+License: UNKNOWN
+Description: # autochord
+        
+        <p align="center">
+          <img src="images/title.png" width="400"/>
+        </p>
+        
+        Automatic Chord Recognition tools
+        
+        ## About
+        
+        `autochord` is:
+        
+        &#10004; a Python library for automatic chord recognition (using TensorFlow)
+        
+        &#10004; a Javascript app for visualization of chord transcriptions
+        
+        ## Usage
+        
+        ```
+        $ pip install autochord
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
