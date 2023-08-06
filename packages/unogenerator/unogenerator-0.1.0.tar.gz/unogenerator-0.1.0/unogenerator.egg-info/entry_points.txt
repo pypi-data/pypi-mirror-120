@@ -1,0 +1,3 @@
+[console_scripts]
+unogenerator_demo = unogenerator.demo:main
+
