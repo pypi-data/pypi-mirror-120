@@ -1,0 +1,112 @@
+Metadata-Version: 2.1
+Name: osducli
+Version: 0.0.12
+Summary: OSDU command line
+Home-page: https://github.com/equinor/osdu-cli
+Author: Equinor ASA
+Author-email: mhew@equinor.com
+License: MIT
+Project-URL: Issue Tracker, https://github.com/equinor/osdu-cli/issues
+Keywords: osdu
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.8
+Requires-Dist: click
+Requires-Dist: jmespath
+Requires-Dist: osdu-sdk (==0.0.4)
+Requires-Dist: requests
+Requires-Dist: tabulate
+Requires-Dist: msal
+
+# OSDU Command Line Interface (osducli)
+=======================================
+
+Command-line interface for interacting with OSDU.
+
+Usage
+=====
+
+The first time you use the CLI you should run the configure command to provide connection information and other important configuration.
+
+.. code-block:: bash
+
+  osducli config update
+
+Once configured use the CLI as shown below. Omitting a command will display a list of available options.
+
+.. code-block:: bash
+
+  osducli <command>
+
+For more information, specify the `-h` flag:
+
+.. code-block:: bash
+
+  osducli -h
+  osducli <command> -h
+
+Change Log
+==========
+
+0.0.12
+------
+
+- Fix config permissions
+
+0.0.11
+------
+
+- schema commands
+- dataload batching imporvements
+
+0.0.10
+------
+
+- refeactor code to use click instead of knack
+
+0.0.9
+-----
+
+- entitlements commands
+
+0.0.8
+-----
+
+- use osdu-sdk 0.0.2
+
+0.0.7
+-----
+
+- Uses osdu-sdk for backend code
+
+0.0.6
+-----
+
+- Refactor of connection code
+
+0.0.3
+-----
+
+- Bulk upload commands (file upload still missing)
+- Interactive login
+- Config improvements
+- Additional testing
+
+0.0.2
+-----
+
+- Cleanup and diverse fixes
+
+0.0.1
+-----
+
+- Initial release.
+
+
