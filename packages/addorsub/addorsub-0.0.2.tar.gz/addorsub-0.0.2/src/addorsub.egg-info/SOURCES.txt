@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/add/__init__.py
+src/add/addone.py
+src/addorsub.egg-info/PKG-INFO
+src/addorsub.egg-info/SOURCES.txt
+src/addorsub.egg-info/dependency_links.txt
+src/addorsub.egg-info/top_level.txt
+src/sub/__init__.py
+src/sub/subone.py
