@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ptthreads
+Version: 0.0.2
+Summary: ptthreads
+Home-page: https://www.penterep.com/
+Author: Penterep
+Author-email: info@penterep.com
+License: GPLv3+
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
+Requires-Dist: ptlibs
+
+UNKNOWN
+
+
