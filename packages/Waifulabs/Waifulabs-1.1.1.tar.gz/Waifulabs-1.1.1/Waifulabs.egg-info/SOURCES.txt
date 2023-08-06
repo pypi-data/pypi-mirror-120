@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+Waifulabs.egg-info/PKG-INFO
+Waifulabs.egg-info/SOURCES.txt
+Waifulabs.egg-info/dependency_links.txt
+Waifulabs.egg-info/requires.txt
+Waifulabs.egg-info/top_level.txt
+waifulabs/__init__.py
+waifulabs/asynchronous.py
+waifulabs/exception.py
+waifulabs/func.py
+waifulabs/sync.py
+waifulabs/waifu.py
