@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: heuristic
+Version: 0.0.1
+Summary: Optimization package with wide flexibility for logical understanding
+Home-page: UNKNOWN
+Author: João Vitor Coelho Estrela
+Author-email: jvitorestrella@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Education
+Requires-Python: >=3.6
