@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "belette"
+version = "0.1.0-dev2" # Updated automatically during continuous integration
+description = "Generates licensing information for dependencies for Conan projects"
+authors = ["Alazar Technologies Inc. <support@alazartech.com>"]
+license = "MIT"
+include = ["belette/licenses", "belette/templates"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+conan = "^1.35.1"
+docopt = "^0.6.2"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.4"
+deptools = "==1.5.0"
+
+[tool.poetry.scripts]
+belette = 'belette.belette:main'
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
