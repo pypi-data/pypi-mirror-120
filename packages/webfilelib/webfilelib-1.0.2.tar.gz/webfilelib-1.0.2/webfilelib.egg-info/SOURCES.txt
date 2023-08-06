@@ -1,0 +1,9 @@
+setup.py
+webfilelib/__init__.py
+webfilelib/api.py
+webfilelib/downloader.py
+webfilelib/uploader.py
+webfilelib.egg-info/PKG-INFO
+webfilelib.egg-info/SOURCES.txt
+webfilelib.egg-info/dependency_links.txt
+webfilelib.egg-info/top_level.txt
