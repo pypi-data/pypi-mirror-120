@@ -1,0 +1,147 @@
+Metadata-Version: 2.1
+Name: tasklit
+Version: 0.0.3
+Summary: A task scheduling app build on streamlit.
+Home-page: https://github.com/straussmaximilian/tasklit
+Author: Maximilian Strauss, Artem Vorobyev
+Author-email: straussmaximilian@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: SQLAlchemy (==1.4.22)
+Requires-Dist: streamlit (==0.88.0)
+Requires-Dist: psutil (==5.8.0)
+Provides-Extra: develop
+Requires-Dist: altair (==4.1.0) ; extra == 'develop'
+Requires-Dist: appnope (==0.1.2) ; extra == 'develop'
+Requires-Dist: argon2-cffi (==20.1.0) ; extra == 'develop'
+Requires-Dist: astor (==0.8.1) ; extra == 'develop'
+Requires-Dist: astroid (==2.7.2) ; extra == 'develop'
+Requires-Dist: attrs (==21.2.0) ; extra == 'develop'
+Requires-Dist: backcall (==0.2.0) ; extra == 'develop'
+Requires-Dist: backports.zoneinfo (==0.2.1) ; extra == 'develop'
+Requires-Dist: base58 (==2.1.0) ; extra == 'develop'
+Requires-Dist: bleach (==4.0.0) ; extra == 'develop'
+Requires-Dist: blinker (==1.4) ; extra == 'develop'
+Requires-Dist: cachetools (==4.2.2) ; extra == 'develop'
+Requires-Dist: certifi (==2021.5.30) ; extra == 'develop'
+Requires-Dist: cffi (==1.14.6) ; extra == 'develop'
+Requires-Dist: charset-normalizer (==2.0.4) ; extra == 'develop'
+Requires-Dist: click (==7.1.2) ; extra == 'develop'
+Requires-Dist: coverage (==5.5) ; extra == 'develop'
+Requires-Dist: debugpy (==1.4.1) ; extra == 'develop'
+Requires-Dist: decorator (==5.0.9) ; extra == 'develop'
+Requires-Dist: defusedxml (==0.7.1) ; extra == 'develop'
+Requires-Dist: entrypoints (==0.3) ; extra == 'develop'
+Requires-Dist: gitdb (==4.0.7) ; extra == 'develop'
+Requires-Dist: GitPython (==3.1.18) ; extra == 'develop'
+Requires-Dist: greenlet (==1.1.1) ; extra == 'develop'
+Requires-Dist: idna (==3.2) ; extra == 'develop'
+Requires-Dist: ipykernel (==6.2.0) ; extra == 'develop'
+Requires-Dist: ipython (==7.26.0) ; extra == 'develop'
+Requires-Dist: ipython-genutils (==0.2.0) ; extra == 'develop'
+Requires-Dist: ipywidgets (==7.6.3) ; extra == 'develop'
+Requires-Dist: isort (==5.9.3) ; extra == 'develop'
+Requires-Dist: jedi (==0.18.0) ; extra == 'develop'
+Requires-Dist: Jinja2 (==3.0.1) ; extra == 'develop'
+Requires-Dist: jsonschema (==3.2.0) ; extra == 'develop'
+Requires-Dist: jupyter-client (==6.1.12) ; extra == 'develop'
+Requires-Dist: jupyter-core (==4.7.1) ; extra == 'develop'
+Requires-Dist: jupyterlab-pygments (==0.1.2) ; extra == 'develop'
+Requires-Dist: jupyterlab-widgets (==1.0.0) ; extra == 'develop'
+Requires-Dist: lazy-object-proxy (==1.6.0) ; extra == 'develop'
+Requires-Dist: MarkupSafe (==2.0.1) ; extra == 'develop'
+Requires-Dist: matplotlib-inline (==0.1.2) ; extra == 'develop'
+Requires-Dist: mccabe (==0.6.1) ; extra == 'develop'
+Requires-Dist: mistune (==0.8.4) ; extra == 'develop'
+Requires-Dist: nbclient (==0.5.4) ; extra == 'develop'
+Requires-Dist: nbconvert (==6.1.0) ; extra == 'develop'
+Requires-Dist: nbformat (==5.1.3) ; extra == 'develop'
+Requires-Dist: nest-asyncio (==1.5.1) ; extra == 'develop'
+Requires-Dist: notebook (==6.4.3) ; extra == 'develop'
+Requires-Dist: numpy (==1.21.2) ; extra == 'develop'
+Requires-Dist: packaging (==21.0) ; extra == 'develop'
+Requires-Dist: pandas (==1.3.2) ; extra == 'develop'
+Requires-Dist: pandocfilters (==1.4.3) ; extra == 'develop'
+Requires-Dist: parso (==0.8.2) ; extra == 'develop'
+Requires-Dist: pexpect (==4.8.0) ; extra == 'develop'
+Requires-Dist: pickleshare (==0.7.5) ; extra == 'develop'
+Requires-Dist: Pillow (==8.3.1) ; extra == 'develop'
+Requires-Dist: platformdirs (==2.2.0) ; extra == 'develop'
+Requires-Dist: prometheus-client (==0.11.0) ; extra == 'develop'
+Requires-Dist: prompt-toolkit (==3.0.19) ; extra == 'develop'
+Requires-Dist: protobuf (==3.17.3) ; extra == 'develop'
+Requires-Dist: psutil (==5.8.0) ; extra == 'develop'
+Requires-Dist: ptyprocess (==0.7.0) ; extra == 'develop'
+Requires-Dist: pyarrow (==5.0.0) ; extra == 'develop'
+Requires-Dist: pycparser (==2.20) ; extra == 'develop'
+Requires-Dist: pydeck (==0.6.2) ; extra == 'develop'
+Requires-Dist: Pygments (==2.10.0) ; extra == 'develop'
+Requires-Dist: pylint (==2.10.2) ; extra == 'develop'
+Requires-Dist: pyparsing (==2.4.7) ; extra == 'develop'
+Requires-Dist: pyrsistent (==0.18.0) ; extra == 'develop'
+Requires-Dist: python-dateutil (==2.8.2) ; extra == 'develop'
+Requires-Dist: pytz (==2021.1) ; extra == 'develop'
+Requires-Dist: pyzmq (==22.2.1) ; extra == 'develop'
+Requires-Dist: requests (==2.26.0) ; extra == 'develop'
+Requires-Dist: Send2Trash (==1.8.0) ; extra == 'develop'
+Requires-Dist: six (==1.16.0) ; extra == 'develop'
+Requires-Dist: smmap (==4.0.0) ; extra == 'develop'
+Requires-Dist: SQLAlchemy (==1.4.22) ; extra == 'develop'
+Requires-Dist: streamlit (==0.88.0) ; extra == 'develop'
+Requires-Dist: terminado (==0.11.0) ; extra == 'develop'
+Requires-Dist: testpath (==0.5.0) ; extra == 'develop'
+Requires-Dist: toml (==0.10.2) ; extra == 'develop'
+Requires-Dist: toolz (==0.11.1) ; extra == 'develop'
+Requires-Dist: tornado (==6.1) ; extra == 'develop'
+Requires-Dist: traitlets (==5.0.5) ; extra == 'develop'
+Requires-Dist: tzlocal (==3.0) ; extra == 'develop'
+Requires-Dist: urllib3 (==1.26.6) ; extra == 'develop'
+Requires-Dist: validators (==0.18.2) ; extra == 'develop'
+Requires-Dist: wcwidth (==0.2.5) ; extra == 'develop'
+Requires-Dist: webencodings (==0.5.1) ; extra == 'develop'
+Requires-Dist: widgetsnbextension (==3.5.1) ; extra == 'develop'
+Requires-Dist: wrapt (==1.12.1) ; extra == 'develop'
+
+[![codecov](https://codecov.io/gh/straussmaximilian/tasklit/branch/main/graph/badge.svg?token=BW3L9GQ7M1)](https://codecov.io/gh/straussmaximilian/tasklit)
+![tests](https://github.com/straussmaximilian/tasklit/actions/workflows/run_unittests_and_linting.yml/badge.svg?branch=main)
+
+
+# tasklit
+A browser-based task scheduling app build on streamlit.
+![Demo](assets/demo.gif)
+
+## How to use?
+
+Too lazy to write cronjobs? Working on a headless system and want to have a GUI?
+`Tasklit` is a simple task scheduling application that allows you to schedule different processes via browser interface.
+
+### Get started
+
+* create an environment `conda create --name tasklit python=3.8`
+* install with `pip install tasklit`
+* run with `tasklit`
+* visit the website (default is `http://localhost:8501` or network ip)
+* Submit a new task. Example to run a test script on your desktop on a Mac system: `python \Users\username\Desktop\myscript.py`
+
+For local development:
+* Clone the repository locally: `git clone https://github.com/straussmaximilian/tasklit.git`
+* install with `pip install .` or `pip install -e .` for the editable version
+* for pinned requirments install the development-requirements: `pip install .[develop]`
+
+## Limitations
+* Only task execution, no logic based on return values
+
+## Planned
+* Notifications (Email, Slack, Teams)
+
+## Acknowledgements
+The PyPi workflow and installation routine is largely copied form the [AlphaTims](https://github.com/MannLabs/alphatims)- repository.
+
+## Tests
+* Run tests via
+  ```coverage run -m unittest discover tests```
+* Check test coverage via ```coverage report -m```
+
+
