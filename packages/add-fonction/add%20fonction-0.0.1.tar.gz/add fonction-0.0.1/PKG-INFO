@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: add fonction
+Version: 0.0.1
+Summary: A very basic calculator
+Home-page: UNKNOWN
+Author: si-ahmed idris
+Author-email: i_siahmed@esi.dz
+License: MIT
+Keywords: calculator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.md
+
+This is a simple example package. You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
+
+    dz  zd  dzdzaefaf
+
