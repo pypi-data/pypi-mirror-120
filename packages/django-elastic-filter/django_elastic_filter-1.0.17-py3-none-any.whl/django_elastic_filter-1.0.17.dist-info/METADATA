@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: django-elastic-filter
+Version: 1.0.17
+Summary: Django Elastic Filter for Models
+Home-page: https://github.com/realsaeedhassani/django-elastic-filter
+Author: Saeed Hassani Borzadaran
+Author-email: hassanisaeed19@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/realsaeedhassani/django-elastic-filter/issues/new
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Django (>=2.2)
+
+# Django Elastic Filter
+
+## Install:
+`pip install django_elastic_filter` 
+
+## Usage:
+```python
+# import package
+from django_elastic_filter.elastic_filter import ElasticFilter
+from django_elastic_filter.dynamic import generate_serializer
+
+elastic_filter = ElasticFilter('fields', 'user_id', request)
+elastic_filter_fields = elastic_filter.get_scope_other_fields()
+elastic_serializer = generate_serializer(Stockholder,
+                                         elastic_filter_fields['fields'],
+                                         elastic_filter_fields['rest'],
+                                         request,
+                                         {
+                                             'info': 'users.models.Natural',
+                                         })
+serializer = elastic_serializer(stockholders, many=True)
+```
+
