@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+bytesep/__init__.py
+bytesep/inference.py
+bytesep/inference_many.py
+bytesep/losses.py
+bytesep/train.py
+bytesep/utils.py
+bytesep.egg-info/PKG-INFO
+bytesep.egg-info/SOURCES.txt
+bytesep.egg-info/dependency_links.txt
+bytesep.egg-info/not-zip-safe
+bytesep.egg-info/requires.txt
+bytesep.egg-info/top_level.txt

@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: bytesep
+Version: 0.0.1
+Summary: Music source separation
+Home-page: https://github.com/bytedance/music_source_separation
+Author: ByteDance
+License: Apache 2.0
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
