@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+data_enum/__init__.py
+data_enum.egg-info/PKG-INFO
+data_enum.egg-info/SOURCES.txt
+data_enum.egg-info/dependency_links.txt
+data_enum.egg-info/requires.txt
+data_enum.egg-info/top_level.txt
+tests/__init__.py
+tests/test_data_enum.py
