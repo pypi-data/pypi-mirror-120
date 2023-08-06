@@ -1,0 +1,6 @@
+click
+ffmpeg-python
+opencv-python
+pyaudio
+srt
+video-to-ascii
