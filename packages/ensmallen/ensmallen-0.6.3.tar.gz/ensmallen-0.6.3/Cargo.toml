@@ -1,0 +1,52 @@
+[dependencies]
+ctrlc = "3.1.7"
+env_logger = "0.8.1"
+markdown = "0.3"
+numpy = "0.13.1"
+rayon = "1.5.0"
+strsim = "0.10.0"
+
+[dependencies.graph]
+path = "local_dependencies/graph"
+
+[dependencies.pyo3]
+features = ["extension-module"]
+version = "0.13.2"
+
+[dependencies.rand]
+features = ["small_rng"]
+version = "0.7"
+
+[dependencies.roaring]
+branch = "master"
+git = "https://github.com/zommiommy/roaring-rs"
+
+[dependencies.tags]
+path = "local_dependencies/tags"
+
+[dependencies.vec_rand]
+branch = "master"
+git = "https://github.com/zommiommy/vec_rand"
+
+[lib]
+crate-type = ["cdylib"]
+name = "ensmallen"
+
+[package]
+authors = ["Luca Cappelletti <cappelletti.luca94@gmail.com>", "Tommaso Fontana <tommaso.fontana.96@gmail.com>"]
+edition = "2018"
+exclude = ["pytests/*", "Python-*", "./*.py"]
+keywords = ["python", "rust", "graph", "random", "walk"]
+license = "MIT"
+name = "ensmallen"
+readme = "README.md"
+repository = "https://github.com/LucaCappelletti94/ensmallen"
+version = "0.6.3"
+[package.metadata.maturin]
+requires-dist = ["toml~=0.10.0", "downloaders", "compress_json", "environments_utils", "userinput", "tqdm", "pandas"]
+requires-python = ">=3.6"
+[profile.release]
+debug = false
+lto = "fat"
+opt-level = 3
+overflow-checks = true
