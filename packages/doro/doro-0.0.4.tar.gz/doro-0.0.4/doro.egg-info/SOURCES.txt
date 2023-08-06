@@ -1,0 +1,16 @@
+setup.py
+../src/app/__init__.py
+../src/app/__main__.py
+../src/app/__version__.py
+../src/app/cli.py
+../src/app/config.py
+../src/app/constants.py
+../src/app/pomodoro.py
+../src/app/progress.py
+../src/app/sounds/__init__.py
+doro.egg-info/PKG-INFO
+doro.egg-info/SOURCES.txt
+doro.egg-info/dependency_links.txt
+doro.egg-info/entry_points.txt
+doro.egg-info/requires.txt
+doro.egg-info/top_level.txt
