@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pyrocess
+Version: 0.0.1
+Summary: Multiprocessing wrapper for Python
+Home-page: UNKNOWN
+Author: Eder Lima
+Author-email: lima.eder101@gmail.com
+License: MIT
+Keywords: python,async,multiprocessing
+Platform: UNKNOWN
+
+# Pyrocess
+
+
