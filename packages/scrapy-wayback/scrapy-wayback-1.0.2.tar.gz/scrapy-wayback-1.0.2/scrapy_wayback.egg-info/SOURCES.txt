@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+scrapy_wayback.egg-info/PKG-INFO
+scrapy_wayback.egg-info/SOURCES.txt
+scrapy_wayback.egg-info/dependency_links.txt
+scrapy_wayback.egg-info/not-zip-safe
+scrapy_wayback.egg-info/requires.txt
+scrapy_wayback.egg-info/top_level.txt
+waybackmiddleware/__init__.py
+waybackmiddleware/middleware.py
+waybackmiddleware/response.py
