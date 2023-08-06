@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: jetnet
+Version: 0.0.1rc2
+Summary: One jet library to rule them all.
+Home-page: http://github.com/rkansal47/JetNet
+Author: Raghav Kansal
+Author-email: rkansal@cern.ch
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# JetNet
+
+*One jet library to rule them all.*
+
+A library for developing and reproducing jet-based machine learning projects. Currently under development.
+
+
