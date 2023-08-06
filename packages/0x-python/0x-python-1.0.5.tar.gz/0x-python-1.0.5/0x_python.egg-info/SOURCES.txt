@@ -1,0 +1,14 @@
+CHANGELOG.md
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+0x_python.egg-info/PKG-INFO
+0x_python.egg-info/SOURCES.txt
+0x_python.egg-info/dependency_links.txt
+0x_python.egg-info/entry_points.txt
+0x_python.egg-info/requires.txt
+0x_python.egg-info/top_level.txt
+lib/ZeroEx.py
+lib/__init__.py
+lib/test_0x.py
