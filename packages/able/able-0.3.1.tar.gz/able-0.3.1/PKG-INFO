@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: able
+Version: 0.3.1
+Summary: Able stands for Allthenticate's Bluetooth Low Energy (Library) and serves to be a platform agnostic python library for communication with centrals as a BLE Peripheral.
+Home-page: https://gitlab.com/allthenticate/software/able
+Author: Bernie Conrad
+Author-email: bernie@allthenticate.net
+Requires-Python: >=3.6.2,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: dbus-next (>=0.2.2,<0.3.0); sys_platform == "linux"
+Requires-Dist: pyobjc (>=7.3,<8.0); sys_platform == "darwin"
+Project-URL: Repository, https://gitlab.com/allthenticate/software/able
