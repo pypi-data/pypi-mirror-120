@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+openodia.egg-info/PKG-INFO
+openodia.egg-info/SOURCES.txt
+openodia.egg-info/dependency_links.txt
+openodia.egg-info/entry_points.txt
+openodia.egg-info/top_level.txt
