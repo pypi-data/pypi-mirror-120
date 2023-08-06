@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/Perceptron_PyPi_package_Jap_patel.egg-info/PKG-INFO
+src/Perceptron_PyPi_package_Jap_patel.egg-info/SOURCES.txt
+src/Perceptron_PyPi_package_Jap_patel.egg-info/dependency_links.txt
+src/Perceptron_PyPi_package_Jap_patel.egg-info/requires.txt
+src/Perceptron_PyPi_package_Jap_patel.egg-info/top_level.txt
+src/perceptron/__init__.py
+src/perceptron/perceptron.py
