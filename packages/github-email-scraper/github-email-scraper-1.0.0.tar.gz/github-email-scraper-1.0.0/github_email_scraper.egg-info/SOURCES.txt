@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+github_email_scraper/__init__.py
+github_email_scraper/github_email_scraper.py
+github_email_scraper.egg-info/PKG-INFO
+github_email_scraper.egg-info/SOURCES.txt
+github_email_scraper.egg-info/dependency_links.txt
+github_email_scraper.egg-info/entry_points.txt
+github_email_scraper.egg-info/requires.txt
+github_email_scraper.egg-info/top_level.txt
