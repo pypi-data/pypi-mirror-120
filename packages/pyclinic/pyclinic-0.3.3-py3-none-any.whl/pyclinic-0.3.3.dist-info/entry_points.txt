@@ -1,0 +1,3 @@
+[console_scripts]
+pyclinic=pyclinic.cli:cli
+
