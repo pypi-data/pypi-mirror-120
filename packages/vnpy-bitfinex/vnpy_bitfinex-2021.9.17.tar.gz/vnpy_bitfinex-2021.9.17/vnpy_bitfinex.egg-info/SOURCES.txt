@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+vnpy_bitfinex/__init__.py
+vnpy_bitfinex/bitfinex_gateway.py
+vnpy_bitfinex.egg-info/PKG-INFO
+vnpy_bitfinex.egg-info/SOURCES.txt
+vnpy_bitfinex.egg-info/dependency_links.txt
+vnpy_bitfinex.egg-info/not-zip-safe
+vnpy_bitfinex.egg-info/requires.txt
+vnpy_bitfinex.egg-info/top_level.txt
