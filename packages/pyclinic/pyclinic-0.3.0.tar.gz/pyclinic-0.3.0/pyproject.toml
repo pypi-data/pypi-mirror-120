@@ -1,0 +1,48 @@
+[tool.poetry]
+name = "pyclinic"
+version = "0.3.0"
+description = "A python library to test services like RESTful APIs"
+authors = ["Carlos Kidman <carlos@qap.dev>"]
+keywords = ["restful", "api", "testing", "postman"]
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/ElSnoMan/pyclinic"
+repository = "https://github.com/ElSnoMan/pyclinic"
+include = ["LICENSE"]
+
+[tool.poetry.scripts]
+pyclinic = 'pyclinic.cli:cli'
+
+[tool.poetry.dependencies]
+python = "^3.7.1"
+requests = "^2.26.0"
+pydantic = "^1.8.2"
+datamodel-code-generator = "^0.11.8"
+jsonpath-ng = "^1.5.3"
+click = "^8.0.1"
+rich = "^10.7.0"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.9.2"
+black = "^21.7b0"
+poethepoet = "^0.10.0"
+ipykernel = "^6.0.3"
+pytest-cov = "^2.12.1"
+Faker = "^8.11.0"
+pytest = "^6.2.4"
+
+[tool.black]
+line-length = 120 # override the default of 88
+
+[tool.poe.tasks]
+test = { "cmd" = "pytest tests --cov=. --cov-report term-missing", "help" = "Run all tests and get Code Coverage Report" }
+test-postman = { "cmd" = "pytest tests/test_postman.py", "help" = "Run only tests against Postman" }
+lint = [{ "ref" = "_lint-syntax" }, { "ref" = "_lint-full" }]
+
+# private tasks
+_lint-syntax = { "cmd" = "flake8 ./pyclinic ./tests --select=E9,F63,F7,F82 --show-source", "help" = "Lint for syntax error and undefined names" }
+_lint-full = { "cmd" = "flake8 ./pyclinic ./tests --exit-zero --max-complexity=10", "help" = "Lint for style, complexity, and everything else" }
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
