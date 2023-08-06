@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/Perceptron/__init__.py
+src/Perceptron/perceptron.py
+src/Percptron_rohandhanraj.egg-info/PKG-INFO
+src/Percptron_rohandhanraj.egg-info/SOURCES.txt
+src/Percptron_rohandhanraj.egg-info/dependency_links.txt
+src/Percptron_rohandhanraj.egg-info/requires.txt
+src/Percptron_rohandhanraj.egg-info/top_level.txt
