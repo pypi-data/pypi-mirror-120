@@ -1,0 +1,14 @@
+karnak/fetcher/karnak_sqs_fetcher.py,sha256=HY9JUP3rf4enQXJl-_eko6UJBuhaxHOubwEQXA58GjI,38564
+karnak/fetcher/sqs_fetcher.py,sha256=nnaUHoW7Hv3iyQhbc4aRwDb0VSaJqnLqCioQ7fB-u3o,19732
+karnak/util/argparse.py,sha256=_qzgP1DvUhlaQ-MEAjVTO_Tqvn1niRCM2I7SL9QsFxk,951
+karnak/util/athena.py,sha256=aiYzqaq-Sp7W7S4g3NhH1Dtuz3N85iKFSVQ6fxgudTM,4647
+karnak/util/log.py,sha256=KXwAy7_TeTrRskR6PuleSC0gIp58LwN_gB5D20qjkWY,2475
+karnak/util/path.py,sha256=QiFJbCkSIKWkxXdXYvqG-8JpXKoeqemzEMG4xLuOsqo,625
+karnak/util/profiling.py,sha256=Z2s0TtgDxG8_WgdTbOZpY9FgNI85lDHrc-lr36aA-_E,5323
+karnak/util/aws/sqs.py,sha256=rAdeAEcDcIqrs09ouMSTq8YWjLXmc4ACNgHD7NDKrHg,4112
+tests/util/athena/run_athena_select.py,sha256=MMxxzs-qhXJuOe3OFQJWifhw9u_5LlvzEOln0Pq4Us0,955
+karnak-0.1.27.dist-info/LICENSE,sha256=4M2c90jCYvZC9PotaItvu3gvjJOx4i7Q27nU-xmcN3Q,1058
+karnak-0.1.27.dist-info/METADATA,sha256=AfYCYc9wJG0FfKZUZ8E1ONd5Jd55M4m-zCmykoSIjqw,1398
+karnak-0.1.27.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+karnak-0.1.27.dist-info/top_level.txt,sha256=kVMSkV_ODqTeqUoAGu3HABZtTYjtlL-H0gmhqeOhzec,13
+karnak-0.1.27.dist-info/RECORD,,
