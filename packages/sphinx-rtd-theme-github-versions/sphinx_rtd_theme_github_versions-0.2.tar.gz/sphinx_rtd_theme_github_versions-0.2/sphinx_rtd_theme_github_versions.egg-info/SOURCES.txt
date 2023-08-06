@@ -1,0 +1,14 @@
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+sphinx_rtd_theme_github_versions/__init__.py
+sphinx_rtd_theme_github_versions/_version_git.py
+sphinx_rtd_theme_github_versions/layout.html
+sphinx_rtd_theme_github_versions/theme.conf
+sphinx_rtd_theme_github_versions.egg-info/PKG-INFO
+sphinx_rtd_theme_github_versions.egg-info/SOURCES.txt
+sphinx_rtd_theme_github_versions.egg-info/dependency_links.txt
+sphinx_rtd_theme_github_versions.egg-info/entry_points.txt
+sphinx_rtd_theme_github_versions.egg-info/requires.txt
+sphinx_rtd_theme_github_versions.egg-info/top_level.txt
