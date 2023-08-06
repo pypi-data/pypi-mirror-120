@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: dsgrid-legacy-efs-api
+Version: 0.3.0
+Summary: Python API for accessing demand-side grid model (dsgrid) data produced for the Electrification Futures Study (EFS)
+Home-page: https://github.com/dsgrid/dsgrid-legacy-efs-api
+Author: NREL
+Author-email: elaine.hale@nrel.gov
+License: BSD-3
+Description: dsgrid-legacy-efs-api
+        =====================
+        
+        [![PyPI](https://img.shields.io/pypi/v/dsgrid-legacy-efs-api.svg)](https://pypi.python.org/pypi/dsgrid-legacy-efs-api/) [![Documentation](https://img.shields.io/badge/docs-ready-blue.svg)](https://dsgrid.github.io/dsgrid-legacy-efs-api)
+        
+        dsgrid-legacy-efs-api is a Python API for accessing demand-side grid model (dsgrid) data produced for the [Electrification Futures Study (EFS)](https://www.nrel.gov/analysis/electrification-futures.html)
+        
+        ## Installation
+        
+        To get the basic package, run:
+        
+        ```
+        pip install dsgrid-legacy-efs-api
+        ```
+        
+        If you would like to run the example notebooks, install the required extra dependencies:
+        
+        ```
+        pip install dsgrid-legacy-efs-api[ntbks]
+        ```
+        
+        and also clone the repository. Then you should be able to run the .ipynb files 
+        in the dsgrid-legacy-efs-api/notebooks folder.
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: export
+Provides-Extra: ntbks
