@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+pythoncgi/__init__.py
+pythoncgi/core.py
+pythoncgi.egg-info/PKG-INFO
+pythoncgi.egg-info/SOURCES.txt
+pythoncgi.egg-info/dependency_links.txt
+pythoncgi.egg-info/requires.txt
+pythoncgi.egg-info/top_level.txt
+pythoncgi/../.gitignore
+pythoncgi/../LICENSE
+pythoncgi/../README.md
+pythoncgi/../requirements.txt
