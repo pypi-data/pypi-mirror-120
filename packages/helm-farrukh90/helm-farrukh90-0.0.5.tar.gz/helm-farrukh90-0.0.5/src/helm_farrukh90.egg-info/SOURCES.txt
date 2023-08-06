@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/helm_farrukh90.egg-info/PKG-INFO
+src/helm_farrukh90.egg-info/SOURCES.txt
+src/helm_farrukh90.egg-info/dependency_links.txt
+src/helm_farrukh90.egg-info/top_level.txt
+src/repo/__init__.py
+src/repo/ticket1.py
+src/setup/__init__.py
+src/setup/ticket1.py
