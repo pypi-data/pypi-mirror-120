@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: grids
+Version: 0.15
+Summary: Tools for extracting time series subsets from n-dimensional arrays in several storage formats.
+Home-page: UNKNOWN
+Author: Riley Hales
+License: BSD 3-Clause Clear
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Provides-Extra: pygrib
+License-File: LICENSE
+
+# grids - The Grids Python Tool for Querying Spatiotemporal Multidimensional Datasets
+
+[![Documentation Status](https://readthedocs.org/projects/tsgrids/badge/?version=latest)](https://grids.rileyhales.com/en/latest/?badge=latest)
+[![GitHub repo size](https://img.shields.io/github/repo-size/rileyhales/grids?style=plastic)](https://github.com/rileyhales/grids)
+     
+A python tool for extracting time series subsets from multi-dimensional data arrays developed by Riley Hales as part of a Master's Thesis in Civil and Environmental Engineering at Brigham Young University.
+
+## Citing `grids`
+If you use this code, please cite the following academic journal article and source code doi's:
+- https://doi.org/10.3390/w13152066
+- https://doi.org/10.5281/zenodo.5225437
+
+## Documentation and Demos
+[Read documentation on ReadTheDocs](https://grids.rileyhales.com)
+
+[Use a live demo notebook on Google Collaboratory](https://gist.github.com/rileyhales/79761303df16127e0195e11425fc2d9d)
+
+
