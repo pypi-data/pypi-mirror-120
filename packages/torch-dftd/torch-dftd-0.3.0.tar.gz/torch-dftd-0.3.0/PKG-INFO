@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: torch-dftd
+Version: 0.3.0
+Summary: pytorch implementation of dftd2 & dftd3
+Home-page: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: develop

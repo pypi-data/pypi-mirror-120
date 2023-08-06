@@ -1,0 +1,5 @@
+ase<4.0.0,>=3.18
+pymatgen>=2020.1.28
+
+[develop]
+pysen[lint]==0.9.1
