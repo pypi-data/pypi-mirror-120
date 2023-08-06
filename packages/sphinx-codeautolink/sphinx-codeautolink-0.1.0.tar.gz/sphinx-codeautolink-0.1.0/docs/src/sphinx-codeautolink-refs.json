@@ -1,0 +1,218 @@
+{
+    "404": {},
+    "about": {},
+    "examples": {
+        "sphinx_codeautolink.setup": [
+            {
+                "document": "examples",
+                "ref_id": "basic-use",
+                "headings": [
+                    "Examples",
+                    "Basic use"
+                ]
+            },
+            {
+                "document": "examples",
+                "ref_id": "implicit-imports",
+                "headings": [
+                    "Examples",
+                    "Implicit imports"
+                ]
+            },
+            {
+                "document": "examples",
+                "ref_id": "implicit-imports",
+                "headings": [
+                    "Examples",
+                    "Implicit imports"
+                ]
+            },
+            {
+                "document": "examples",
+                "ref_id": "concatenating-examples",
+                "headings": [
+                    "Examples",
+                    "Concatenating examples"
+                ]
+            }
+        ],
+        "sphinx_codeautolink.parse.parse_names": [
+            {
+                "document": "examples",
+                "ref_id": "basic-use",
+                "headings": [
+                    "Examples",
+                    "Basic use"
+                ]
+            },
+            {
+                "document": "examples",
+                "ref_id": "basic-use",
+                "headings": [
+                    "Examples",
+                    "Basic use"
+                ]
+            },
+            {
+                "document": "examples",
+                "ref_id": "implicit-imports",
+                "headings": [
+                    "Examples",
+                    "Implicit imports"
+                ]
+            }
+        ],
+        "sphinx_codeautolink.parse.Name": [
+            {
+                "document": "examples",
+                "ref_id": "basic-use",
+                "headings": [
+                    "Examples",
+                    "Basic use"
+                ]
+            },
+            {
+                "document": "examples",
+                "ref_id": "basic-use",
+                "headings": [
+                    "Examples",
+                    "Basic use"
+                ]
+            },
+            {
+                "document": "examples",
+                "ref_id": "implicit-imports",
+                "headings": [
+                    "Examples",
+                    "Implicit imports"
+                ]
+            }
+        ],
+        "numpy.linspace": [
+            {
+                "document": "examples",
+                "ref_id": "intersphinx-integration",
+                "headings": [
+                    "Examples",
+                    "Intersphinx integration"
+                ]
+            }
+        ],
+        "numpy.pi": [
+            {
+                "document": "examples",
+                "ref_id": "intersphinx-integration",
+                "headings": [
+                    "Examples",
+                    "Intersphinx integration"
+                ]
+            }
+        ],
+        "matplotlib.pyplot.plot": [
+            {
+                "document": "examples",
+                "ref_id": "intersphinx-integration",
+                "headings": [
+                    "Examples",
+                    "Intersphinx integration"
+                ]
+            }
+        ],
+        "numpy.sin": [
+            {
+                "document": "examples",
+                "ref_id": "intersphinx-integration",
+                "headings": [
+                    "Examples",
+                    "Intersphinx integration"
+                ]
+            }
+        ],
+        "matplotlib.pyplot.show": [
+            {
+                "document": "examples",
+                "ref_id": "intersphinx-integration",
+                "headings": [
+                    "Examples",
+                    "Intersphinx integration"
+                ]
+            }
+        ]
+    },
+    "index": {
+        "sphinx_codeautolink.setup": [
+            {
+                "document": "index",
+                "ref_id": "sphinx-codeautolink",
+                "headings": [
+                    "sphinx-codeautolink"
+                ]
+            }
+        ],
+        "sphinx_codeautolink.parse.parse_names": [
+            {
+                "document": "index",
+                "ref_id": "sphinx-codeautolink",
+                "headings": [
+                    "sphinx-codeautolink"
+                ]
+            }
+        ],
+        "sphinx_codeautolink.parse.Name": [
+            {
+                "document": "index",
+                "ref_id": "sphinx-codeautolink",
+                "headings": [
+                    "sphinx-codeautolink"
+                ]
+            }
+        ],
+        "numpy.linspace": [
+            {
+                "document": "index",
+                "ref_id": "sphinx-codeautolink",
+                "headings": [
+                    "sphinx-codeautolink"
+                ]
+            }
+        ],
+        "numpy.pi": [
+            {
+                "document": "index",
+                "ref_id": "sphinx-codeautolink",
+                "headings": [
+                    "sphinx-codeautolink"
+                ]
+            }
+        ],
+        "matplotlib.pyplot.plot": [
+            {
+                "document": "index",
+                "ref_id": "sphinx-codeautolink",
+                "headings": [
+                    "sphinx-codeautolink"
+                ]
+            }
+        ],
+        "numpy.sin": [
+            {
+                "document": "index",
+                "ref_id": "sphinx-codeautolink",
+                "headings": [
+                    "sphinx-codeautolink"
+                ]
+            }
+        ],
+        "matplotlib.pyplot.show": [
+            {
+                "document": "index",
+                "ref_id": "sphinx-codeautolink",
+                "headings": [
+                    "sphinx-codeautolink"
+                ]
+            }
+        ]
+    },
+    "reference": {},
+    "release_notes": {}
+}
