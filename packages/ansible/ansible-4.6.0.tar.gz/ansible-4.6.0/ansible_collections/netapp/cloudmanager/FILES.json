@@ -1,0 +1,621 @@
+{
+ "files": [
+  {
+   "name": ".",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "requirements.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "aaff48dee8012c4d4002fe11b7addd01d4439dbc4a06620a65e7ad75d9cead37",
+   "format": 1
+  },
+  {
+   "name": "plugins",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/doc_fragments",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/doc_fragments/netapp.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c63776a22080363d9fa7d6bd7b0a01a2dd75017635c8d5ce6e6da40cd179da75",
+   "format": 1
+  },
+  {
+   "name": "plugins/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c82ee692702ec1dd604cdbc38ff252114e5204e1b0627045a66c9451e7a918ac",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/netapp.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f26986d140ce0cb75dc4d7904c1441c51b1ac71f4741a93745b5dd36c16968d3",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/netapp_module.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "89ba20d1f8fab7e553a195177914561e29fe29d057247fec9b662e152f7c87fd",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/na_cloudmanager_cvo_gcp.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "55f7e6dda95b562b5573c09daa181d24e051653da46f0d2a1b95da882ea5fd1f",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/na_cloudmanager_cvo_azure.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "683f9d3768473df580311c731f040d4003838935817ca08953b4ca7e8864d068",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/na_cloudmanager_aggregate.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ad788fb2299e5fc6da5953636e829f1101e48bc7ebc960a52c63fcce6ecbefce",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/na_cloudmanager_cifs_server.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6b0d0c7a95c93e7ca3c93cb153fa3739cac5fa6ae49a0e24e67ba52e9da5484d",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/na_cloudmanager_nss_account.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2dbd66df9fdfd5c9eefb68ace3d157e2eef61e32109dd86942ba5be9c8ee140c",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/na_cloudmanager_connector_aws.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "81a31376d64cd8860d8a8dfe525dcd6d35f883fe02e51a611141ca1d60659a2d",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/na_cloudmanager_connector_azure.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cdfcfffaf9ef536843accbf97f6c62c2014bcbab66e038e4d778d0d2529b20e0",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/na_cloudmanager_snapmirror.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "af02f832f1fbbea91793d433ceb976d9c06ffb9179585eacf3257249e6eca1dd",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/na_cloudmanager_cvo_aws.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3a0290347d491bb0f69b346da6a3efa60a8b12d868dd390673558386026c3b1",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/na_cloudmanager_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5c2f6e6b65624ad4c0a55f5496490ca2fdccfb74e625b632625484db130439b3",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/na_cloudmanager_connector_gcp.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "819a71de2c8f4d62b3463f1f1d36f9a670afc431b375c47f89844c851eb56b83",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/na_cloudmanager_volume.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fd3114f2a28f8aad4e705f2f1509f84fea2f46f7d031ace22bb28e504bda8963",
+   "format": 1
+  },
+  {
+   "name": "tests",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/unit",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/unit/compat",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/unit/compat/unittest.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cba95d18c5b39c6f49714eacf1ac77452c2e32fa087c03cf01aacd19ae597b0f",
+   "format": 1
+  },
+  {
+   "name": "tests/unit/compat/builtins.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0ca4cac919e166b25e601e11acb01f6957dddd574ff0a62569cb994a5ecb63e1",
+   "format": 1
+  },
+  {
+   "name": "tests/unit/compat/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "tests/unit/compat/mock.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0af958450cf6de3fbafe94b1111eae8ba5a8dbe1d785ffbb9df81f26e4946d99",
+   "format": 1
+  },
+  {
+   "name": "tests/unit/requirements.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0cc9e01e535ca73595768ad9f9b55a86e07495aaef89c9f6e84bd1cf97e9b8b9",
+   "format": 1
+  },
+  {
+   "name": "tests/unit/plugins",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/unit/plugins/module_utils",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/unit/plugins/module_utils/test_netapp.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "41258667a6b7a834cda3df8688fd0c5f93689238ae70acb86476bda713a5111d",
+   "format": 1
+  },
+  {
+   "name": "tests/unit/plugins/modules",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/unit/plugins/modules/test_na_cloudmanager_cifs_server.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "547a343b3df62fd75fe9767b07521a35bea8f1a3a3ab948816437062d2464c93",
+   "format": 1
+  },
+  {
+   "name": "tests/unit/plugins/modules/test_na_cloudmanager_info.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0775d790769164573afbe9f30096478b3bab364238f68bea63e0ede4e5fabc74",
+   "format": 1
+  },
+  {
+   "name": "tests/unit/plugins/modules/test_na_cloudmanager_nss_account.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "241d9092f1a0d76644c0dac23bf8966b431b765d29d2738abbbc1fb9f901922a",
+   "format": 1
+  },
+  {
+   "name": "tests/unit/plugins/modules/test_na_cloudmanager_connector_gcp.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ed374713b3f283ff9eb3dedbc622aa53e67e825421002af1132d271f7247f82e",
+   "format": 1
+  },
+  {
+   "name": "tests/unit/plugins/modules/test_na_cloudmanager_volume.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4655b1ce86e3892a070c6883f7b933f4ef6a4354e56651bdc0deea9ccfa00081",
+   "format": 1
+  },
+  {
+   "name": "tests/unit/plugins/modules/test_na_cloudmanager_cvo_gcp.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bb3d533a361e76cbe3de608b4dd99431e2866bdffd2b36e30ff3b1f5ff2cef4a",
+   "format": 1
+  },
+  {
+   "name": "tests/unit/plugins/modules/test_na_cloudmanager_aggregate.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f7d1cdec724a51f758c077093cbea56e11c505e8b5cfe3ff30f461fceb5d6a15",
+   "format": 1
+  },
+  {
+   "name": "tests/unit/plugins/modules/test_na_cloudmanager_connector_azure.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e7a44b93c4915808825bcd0303a26ce6ad89f009389bf0f5c17ebf90c2343544",
+   "format": 1
+  },
+  {
+   "name": "tests/unit/plugins/modules/test_na_cloudmanager_cvo_azure.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9890282e199bd2b121d444723b67c5580888045889b0a7ddc8be832327d365d0",
+   "format": 1
+  },
+  {
+   "name": "tests/unit/plugins/modules/test_na_cloudmanager_cvo_aws.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "180842f08398a1d4d56b04298140b5861103d29fa3edd62e4c5a7467e1230677",
+   "format": 1
+  },
+  {
+   "name": "tests/unit/plugins/modules/test_na_cloudmanager_connector_aws.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6d4f095d76b1f0232d5f56ad6ef17b834cb8c8baaf84001b7aee5d5def4be9cd",
+   "format": 1
+  },
+  {
+   "name": "tests/unit/requirements-azure.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "551b05366d802821dc9869616601ddb67ffd2a9231aab37f32f4812ca81afcb0",
+   "format": 1
+  },
+  {
+   "name": "meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "meta/runtime.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "df18179bb2f5447a56ac92261a911649b96821c0b2c08eea62d5cc6b0195203f",
+   "format": 1
+  },
+  {
+   "name": "changelogs",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "changelogs/fragments",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "changelogs/fragments/DEVOPS-4205.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "66baa4e18249a32876ebe811915dbe67ef1ed0bef7c2f139b6de2252b55e739b",
+   "format": 1
+  },
+  {
+   "name": "changelogs/fragments/DEVOPS-4065.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "094ddd1061505ce3f998eb6e88b6711261ee2aa27cedd49567010fb1ca37888e",
+   "format": 1
+  },
+  {
+   "name": "changelogs/fragments/DEVOPS-4136.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e31cf34c68e72a5a332e9e072356a3a9a7b1ec6ecbecb3a0348f925d076ec8d8",
+   "format": 1
+  },
+  {
+   "name": "changelogs/fragments/DEVOPS-3975.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6d054ac4f644b1df01315550caf3147bd203e40eb8b89719dafcc198b9baa155",
+   "format": 1
+  },
+  {
+   "name": "changelogs/fragments/DEVOPS-3922.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "77324f4e6a616a46a6ebe8c946f460402085308a341e4c00c8ec3007784470cf",
+   "format": 1
+  },
+  {
+   "name": "changelogs/fragments/DEVOPS-3909.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4d7b5abb05c691646e6f19d2518a5cb45a8627d53a8699eb01b0ceb0a14eafd1",
+   "format": 1
+  },
+  {
+   "name": "changelogs/fragments/DEVOPS-3948.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e49f738c3d4bf82c3e7aa8cb0a24e048d0604c4ad42cd859cad0ba7e997370b9",
+   "format": 1
+  },
+  {
+   "name": "changelogs/fragments/DEVOPS-3913.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "82b14dfb837c6a93e4cd4607f5d85d2d306e886f307a0db2d358c79fd41c2385",
+   "format": 1
+  },
+  {
+   "name": "changelogs/fragments/DEVOPS-3912.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2fdc080b861bdf15100f087943826a3e90d89305ac9e08bd003edbd3d689215f",
+   "format": 1
+  },
+  {
+   "name": "changelogs/fragments/DEVOPS-3965.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "970ab4ad82b69749b11887cd16c8124ff22cc0da582e35a2a7ce166ecb9ef5f0",
+   "format": 1
+  },
+  {
+   "name": "changelogs/fragments/DEVOPS-3911.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e76a7d85e3758bb4dc408749d27c941ef40b50798e7b828cdaadf56f8210ab2a",
+   "format": 1
+  },
+  {
+   "name": "changelogs/fragments/DEVOPS-3946.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "af2f9ff445807a9fb42a800476523197177f1672df2e49c8046190f3f2b0d43b",
+   "format": 1
+  },
+  {
+   "name": "changelogs/fragments/DEVOPS-3803.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0003d0beb209eeae803209ba732ee929d512296f21c9bef59414fa19cb90c62f",
+   "format": 1
+  },
+  {
+   "name": "changelogs/fragments/DEVOPS-4201.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c3a29e73f83aba3c999cef2cac0f6ca68f782dd1b329fa0da0b599c2d1955731",
+   "format": 1
+  },
+  {
+   "name": "changelogs/fragments/DEVOPS-3985.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "dd94e353c355e752fa0aad037737434e0ed7f75baa28807262acfe2a82ae672d",
+   "format": 1
+  },
+  {
+   "name": "changelogs/fragments/DEVOPS-3984.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "517de92be276ebc5969fbe0607ec28b2c3beef28277ed801d0d3e79f173abd39",
+   "format": 1
+  },
+  {
+   "name": "changelogs/fragments/DEVOPS-4200.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "691f2cee49e9b38de09ed9610de8ab36752cb1dbc3ca24c5a668747548de6cdf",
+   "format": 1
+  },
+  {
+   "name": "changelogs/fragments/DEVOPS-3947.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "11588e2084d79a358eaa4af53302a36e97c6c1ad9af8c49ea55e60acfac5848b",
+   "format": 1
+  },
+  {
+   "name": "changelogs/fragments/DEVOPS-3910.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "23c0a4cbd8fe7a4792b4f8805235d3f29184264269f5b31fc4f7571a7f156d58",
+   "format": 1
+  },
+  {
+   "name": "changelogs/fragments/DEVOPS-4105.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d205ac596e3e955783b7f67cb24a366d712a4843caa3445398018ba1f13a8787",
+   "format": 1
+  },
+  {
+   "name": "changelogs/fragments/DEVOPS-3967.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f325180ed56fc1c530271a04fd115bae3ec32fb3df279f0f08bf40e8324c0c72",
+   "format": 1
+  },
+  {
+   "name": "changelogs/fragments/DEVOPS-4164.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "18bd434037808c9aa267775f708f5b0c256b46661549fb45a77f660ad9c6831d",
+   "format": 1
+  },
+  {
+   "name": "changelogs/fragments/DEVOPS-4021.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8b86b7ef5fb28e98b22b7838fd746b4efb3684723e22d7e989559c9f0c9c0a38",
+   "format": 1
+  },
+  {
+   "name": "changelogs/fragments/DEVOPS-3844.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d3f27181c95c1242f5b8e3c91db76276634007240dc007e24fa16617a231fa19",
+   "format": 1
+  },
+  {
+   "name": "changelogs/fragments/DEVOPS-3995.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "794848f5493e7b8f795351792f2b0faf3fd26bdec6ca61032d8ccbcc91949c67",
+   "format": 1
+  },
+  {
+   "name": "changelogs/fragments/DEVOPS-4118.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "09bc1877922fbe266d127a44cd170cbaf7c76da75b99d74f8744e68e659bf730",
+   "format": 1
+  },
+  {
+   "name": "changelogs/config.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "394b4a5fd0611f8e0391646242d99fb4d5262aed1a2c673b0e83a35532b3fa81",
+   "format": 1
+  },
+  {
+   "name": "changelogs/.plugin-cache.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eb03e7663ad8fcecf456cbbb056a207f3dc4cc5eb5e45897e917eb154ef13ff3",
+   "format": 1
+  },
+  {
+   "name": "changelogs/changelog.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f9f70f2e03ea9166c93ca1cc5c25816a2ea1020131339b0ca7d594042a7fbb38",
+   "format": 1
+  },
+  {
+   "name": "README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c26fb60c286393e0f586d4b0511fbc8a2c40982860651c187733f4df9a8cdc33",
+   "format": 1
+  },
+  {
+   "name": "COPYING",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+   "format": 1
+  },
+  {
+   "name": ".github",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": ".github/workflows",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": ".github/workflows/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "056a4f23da6606b82234ca49464d6e42807d824026b362529cd1e4765fcf18b7",
+   "format": 1
+  },
+  {
+   "name": ".github/ISSUE_TEMPLATE",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": ".github/ISSUE_TEMPLATE/feature_request.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5e4ed8909f732d6bd64277ad63b19ba377db566b749048de9fff2834bc88f0d0",
+   "format": 1
+  },
+  {
+   "name": ".github/ISSUE_TEMPLATE/bug_report.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f309598150491c76f6fd83a5da0c0964b7835117b5909128b0d64661c33025fc",
+   "format": 1
+  },
+  {
+   "name": "CHANGELOG.rst",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "db2e23776312519a4ab42bca6a739e27db31fe3c23e995938834409942a6b8de",
+   "format": 1
+  }
+ ],
+ "format": 1
+}
