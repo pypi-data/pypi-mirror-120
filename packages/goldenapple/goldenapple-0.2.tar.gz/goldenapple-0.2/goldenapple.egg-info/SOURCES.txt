@@ -1,0 +1,8 @@
+setup.py
+goldenapple/__init__.py
+goldenapple/__main__.py
+goldenapple.egg-info/PKG-INFO
+goldenapple.egg-info/SOURCES.txt
+goldenapple.egg-info/dependency_links.txt
+goldenapple.egg-info/not-zip-safe
+goldenapple.egg-info/top_level.txt
