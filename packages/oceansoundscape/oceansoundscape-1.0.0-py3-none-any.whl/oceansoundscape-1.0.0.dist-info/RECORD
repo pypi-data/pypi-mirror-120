@@ -1,0 +1,15 @@
+oceansoundscape/__init__.py,sha256=aWV3pdfuAE3EycwUT1qhQXitK3igLTz6sXaMhAIuNFc,92
+oceansoundscape/raven/__init__.py,sha256=rceA4WA6HGLUpdV1U6wBrq7jirNXUbesmCHLFTAy4Jk,52
+oceansoundscape/raven/parser.py,sha256=HQUCxx6AVw0HgyP5C23bV8_dTbnETsKlzoWFeWiu0vc,5687
+oceansoundscape/spectrogram/__init__.py,sha256=ldXc3PDrN4IN2bNDwMjb_lw1FyU_u4-ikf7JT4nvx1I,63
+oceansoundscape/spectrogram/colormap.py,sha256=97x2dt2YeByzWOXqXI0fsxdXZAg2M7d7vg3GLuO4F4c,3100
+oceansoundscape/spectrogram/conf.py,sha256=DzGCskM_0Gp9hd0ym4YTp0CRC9Vmbw0owzh6ebA4bqM,1436
+oceansoundscape/spectrogram/denoise.py,sha256=satMtziII1t_ccF9MIPvu82z66PycYOuL_bd6vErkDw,3722
+oceansoundscape/spectrogram/signal.py,sha256=zzBSpge75L0hTNvrF2qxJ3aW1890IcZO8jBcKfyn8vs,1423
+oceansoundscape/spectrogram/utils.py,sha256=g0yWFvJiVu7FEn_9rLo8idLrP1cXKgDHKmMHc2r5Afo,2664
+oceansoundscape/testdata/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oceansoundscape-1.0.0.dist-info/LICENSE,sha256=CuBIWlvTemPmNgNZZBfk6w5lMzT6bH-TLKOg6F1K8ic,35148
+oceansoundscape-1.0.0.dist-info/METADATA,sha256=U6RJaVJlrSNk870RirXLZhFeiBrk4NLM2vT3azn92L0,1140
+oceansoundscape-1.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+oceansoundscape-1.0.0.dist-info/top_level.txt,sha256=my4_aWcGIxPPP1bb87_yLQsEtPZAMr2DV7IcBw-cnvw,91
+oceansoundscape-1.0.0.dist-info/RECORD,,
