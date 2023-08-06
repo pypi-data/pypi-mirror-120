@@ -1,0 +1,9 @@
+README.md
+setup.py
+sellix_py_api_wrapper/__init__.py
+sellix_py_api_wrapper/sellix_api.py
+sellix_py_api_wrapper.egg-info/PKG-INFO
+sellix_py_api_wrapper.egg-info/SOURCES.txt
+sellix_py_api_wrapper.egg-info/dependency_links.txt
+sellix_py_api_wrapper.egg-info/requires.txt
+sellix_py_api_wrapper.egg-info/top_level.txt
