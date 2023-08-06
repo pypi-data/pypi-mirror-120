@@ -1,0 +1,12 @@
+burgissApi/__init__.py,sha256=SMP_Jtdj6_hD59CLrlyWhndU1T10ODqB_NNHV-jsRvA,27
+burgissApi/burgissApi.py,sha256=lif5xJQPAvBd39aqKFXZOBj93LrJnr-khugHlCdebX0,14784
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test.py,sha256=42WnALmSZcRe7Nr6vcOnj_2Y5Pvp_6sjlBxiKXv7lDs,1968
+tests/testBurgissAnalytics.py,sha256=odDu_LL1oZAit7nuPW8j2HSv1k5ufWhBsS92GCwX-Z4,2343
+tests/testBurgissApiRequests.py,sha256=zCmAKsn-SrSryPuNQ1hqJqJBKWG5s_I0gJDnu9rP0TE,1519
+tests/testDataTransformations.py,sha256=Mezrx9b79sknVjz_G0PQKr35eeeA9dgaSszHSCZl-BU,872
+tests/testTokenGen.py,sha256=WvFnkIRRKtrBDSwRKiO4ALYYWjp1L_q4cjG5w3dL9Bs,316
+burgiss_api-0.0.4.dist-info/METADATA,sha256=gASKUdOUiMtPKpDNTbbLbEbrUlIlJceVmGOrK1Jrt3M,568
+burgiss_api-0.0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+burgiss_api-0.0.4.dist-info/top_level.txt,sha256=-v40LikFITcxEr_TKPZI4yfftx9pUJwNW5ajRKcstIE,17
+burgiss_api-0.0.4.dist-info/RECORD,,
