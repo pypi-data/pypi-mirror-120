@@ -1,0 +1,6 @@
+coloredlogs
+docopt
+GitPython
+packaging
+pre_commit_hooks
+toml
