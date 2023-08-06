@@ -1,0 +1,8 @@
+LICENSE
+README.md
+macaddr.py
+setup.py
+macaddr.egg-info/PKG-INFO
+macaddr.egg-info/SOURCES.txt
+macaddr.egg-info/dependency_links.txt
+macaddr.egg-info/top_level.txt
