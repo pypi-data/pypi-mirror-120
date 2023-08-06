@@ -1,0 +1,12 @@
+pip
+packaging
+pandas
+numpy
+pyarrow
+python-dotenv
+requests
+s3fs
+boto3
+tqdm
+
+[dev]

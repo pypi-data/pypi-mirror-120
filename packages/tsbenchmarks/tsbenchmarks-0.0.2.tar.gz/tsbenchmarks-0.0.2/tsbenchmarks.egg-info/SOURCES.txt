@@ -1,0 +1,16 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+tsbenchmarks/__init__.py
+tsbenchmarks/_nbdev.py
+tsbenchmarks/core.py
+tsbenchmarks.egg-info/PKG-INFO
+tsbenchmarks.egg-info/SOURCES.txt
+tsbenchmarks.egg-info/dependency_links.txt
+tsbenchmarks.egg-info/entry_points.txt
+tsbenchmarks.egg-info/not-zip-safe
+tsbenchmarks.egg-info/requires.txt
+tsbenchmarks.egg-info/top_level.txt
