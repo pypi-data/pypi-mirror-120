@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: grumpy-checks
+Version: 0.1.7
+Summary: 
+Author: Jamie
+Author-email: jamie@jumpingrivers.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: cleo (>=0.8.1,<0.9.0)
+Requires-Dist: flake8 (>=3.9.2,<4.0.0)
+Requires-Dist: pydocstyle (>=6.1.1,<7.0.0)
+Requires-Dist: rich (>=10.9.0,<11.0.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)

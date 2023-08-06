@@ -1,0 +1,15 @@
+run_flake8
+
+, ./scripts.py:18:1: E302 expected 2 blank lines, found 1
+./scripts.py:32:1: E302 expected 2 blank lines, found 1
+./scripts.py:47:1: E302 expected 2 blank lines, found 1
+./scripts.py:49:1: W293 blank line contains whitespace
+./scripts.py:60:6: W292 no newline at end of file
+./grumpy_checks/utils.py:21:16: E201 whitespace after '('
+./grumpy_checks/utils.py:22:9: E128 continuation line under-indented for visual indent
+./grumpy_checks/utils.py:22:9: E125 continuation line with same indent as next logical line
+./tests/test_news.py:3:1: F401 'grumpy_checks.news._read_news' imported but unused
+./tests/test_news.py:7:1: F401 'unittest.mock.patch' imported but unused
+
+
+
