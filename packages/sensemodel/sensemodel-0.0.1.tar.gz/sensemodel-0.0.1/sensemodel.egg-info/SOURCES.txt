@@ -1,0 +1,7 @@
+README.md
+setup.py
+sensemodel/__init__.py
+sensemodel.egg-info/PKG-INFO
+sensemodel.egg-info/SOURCES.txt
+sensemodel.egg-info/dependency_links.txt
+sensemodel.egg-info/top_level.txt
