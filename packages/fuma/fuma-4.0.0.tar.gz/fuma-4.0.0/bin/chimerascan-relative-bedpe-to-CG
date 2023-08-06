@@ -1,0 +1,61 @@
+#!/usr/bin/env python
+
+"""[License: GNU General Public License v3 (GPLv3)]
+ 
+ This file is part of FuMa.
+ 
+ FuMa is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+ 
+ FuMa is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+ Documentation as defined by:
+ <http://epydoc.sourceforge.net/manual-fields.html#fields-synonyms>
+"""
+
+
+import logging,sys,os,os.path,argparse,datetime,textwrap,re
+logging.basicConfig(level=(logging.DEBUG),format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",stream=sys.stdout)
+
+import fuma
+from fuma.Readers import ReadChimeraScanAbsoluteBEDPE
+
+
+class GeneFeatures:
+	def __init__(self,filename):
+		self.filename = filename
+		self.index = {}
+		self.parse()
+	def parse(self):
+		with open(self.filename) as fh:
+			for line in fh:
+				line = line.strip()
+				if(len(line) > 0):
+					self.add_feature(line)
+	def add_feature(self,line):
+		params = line.split("\t",5)
+		self.index[params[0]] = [params[1],int(params[3]),int(params[4]),params[2]]
+
+
+
+
+if __name__ == "__main__":
+	parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter,epilog="")
+	parser.add_argument('-V','--version', action='version', version=textwrap.dedent("%(prog)s "+fuma.__version__+"\n\n\t                        7\n\t                     .:OMNZ7Z$I,..78\n\t                    788:.:,.....DMD:\n\t                   8DO$,. .~,...I8,\n\t                  $DZI,..:ZO$?$D$$\n\t                .88$..=7..=D=:,DIO?\n\t                8DZ,..?NMO...$?.DD\n\t    .         ~8Z......ZM+..87O=88\n\t   .7$7      ONM~....,.,=.?MMNM~.:ZZ\n\t .:NO+II.   ,NNN7.....O$..:DMN,..,O8\n\t  OMI.:I.  .ONNNN....NN8OOO$..... NN\n\t .$NI..:.  .$8Z$Z,.+DDO.7DN~..Z8.~D=\n\t ..Z=...~.  ONDZ..:7OO,.+DD,..8MMM$\n\t  .7+...Z,..I8O?+?++I?..78,..,ONMM\n\t  ..O=..Z7?==,..7I++?...,O$..ZNMZ\n\t   . 8Z7..:++.....~Z7:=..$NDZ?I:\n\t    .?D~...++,..~:IO7,??.OMM\n\t     .,...=?,....,7$...7ON8\n\t      ,?.. 7I,...:I7=,IDMD\n\t     .=?.  Z$:...:+=+?8MO\n\t   .?ZI,..=+,... ..IODMN\n\t   .7Z$?...   IZ$IZDMMN\n\t   .$I,.    ,ZZ8DNNNMI\n\t  .=$=. .. ON8+~7?..=\n\t  .==,. ,?DMD:.:$$~+?\n\t   Z~.. .ONN=..+$$I+?\n\t  .Z:.  =DD:..?Z??7I\n\t  .Z:,?8MM. .+8OOOO:\n\t  .$DDNMM   7DMMND\n\t  ...~~..    .ID\n\nCopyright (C) 2013-"+str(datetime.datetime.now().year)+" Youri Hoogstrate.\nLicense GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law."))
+	parser.add_argument("-g","--gene-annotation",help="gene_features.txt file used by chimersacan",nargs=1)
+	parser.add_argument("-o","--output",help="output filename; '-' for stdout",default="-")
+	parser.add_argument('input', nargs=1, help='Chimerascan\'s relative BEDPE file (e.g. discordant_reads.srt.bedpe or tmp_chimeras.sorted3p.bedpe)')
+	args = parser.parse_args()
+	
+	gene_features = GeneFeatures(args.gene_annotation[0])
+	bedpe = ReadChimeraScanAbsoluteBEDPE(args.input[0],"Conversion of "+args.input[0])#"discordant_reads.srt.bedpe" or "tmp_chimeras.sorted3p.bedpe"
+	bedpe.convert_to_absolute_coordinates(gene_features,args.output)
+

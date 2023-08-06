@@ -1,0 +1,239 @@
+#!/usr/bin/env python
+
+"""[License: GNU General Public License v3 (GPLv3)]
+ 
+ This file is part of FuMa.
+ 
+ FuMa is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+ 
+ FuMa is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+ Documentation as defined by:
+ <http://epydoc.sourceforge.net/manual-fields.html#fields-synonyms>
+"""
+
+import logging,sys,os,os.path,argparse,textwrap,datetime
+
+import fuma
+
+from fuma.ParseBED import ParseBED
+from fuma.OverlapComplex import OverlapComplex
+from fuma.ComparisonTriangle import ComparisonTriangle
+
+from fuma.Readers import *
+
+from fuma.CompareFusionsBySpanningGenes import CompareFusionsBySpanningGenes
+
+from fuma.CLI import CLI
+
+
+if __name__ == "__main__":
+	args = CLI()
+	
+	logging.basicConfig(level=(logging.DEBUG if args.verbose else logging.INFO),format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",stream=sys.stdout)
+	
+	gene_annotations = {}
+	if(args.add_gene_annotation):
+		for gene_annotation in args.add_gene_annotation:
+			gene_annotation = gene_annotation.split(":",1)
+			gene_annotations[gene_annotation[0]] = ParseBED(gene_annotation[1],gene_annotation[0],args.long_gene_size)
+	
+	samples = {}
+	sample_names = []
+	for sample in args.add_sample:
+		sample_name, input_format, sample_filename = sample.split(":",2)
+		
+		if(sample_name in sample_names):
+			raise Exception("non-unique sample alias: "+sample_name)
+		elif(sample_name.find("~") > -1):
+			raise Exception("a sample alias may not include the '~' char: "+sample_name)
+		else:
+			sample_names.append(sample_name)
+			input_format_stripped = input_format.lower().replace("-","").replace("_","").replace(" ","")
+			
+			# Complete Genomics
+			if(input_format_stripped in ["cg","completegenomics"]):
+				try:
+					samples[sample_name] = ReadCGhighConfidenceJunctionsBeta(sample_filename,sample_name)
+				except Exception as e:
+					raise Exception("Sample '"+sample_name+ "' could not be parsed as filetype: "+input_format+"\n\n"+str(e))
+			
+			# Chimerascan BEDPE
+			elif(input_format_stripped in ["chimerascan"]):
+				try:
+					samples[sample_name] = ReadChimeraScanAbsoluteBEDPE(sample_filename,sample_name)
+				except Exception as e:
+					raise Exception("Sample '"+sample_name+ "' could not be parsed as filetype: "+input_format+"\n\n"+str(e))
+			
+			# Defuse
+			elif(input_format_stripped in ["defuse"]):
+				try:
+					samples[sample_name] = ReadDefuse(sample_filename,sample_name)
+				except Exception as e:
+					raise Exception("Sample '"+sample_name+ "' could not be parsed as filetype: "+input_format+"\n\n"+str(e))
+			
+			# TopHat Fusion
+			elif(input_format_stripped in ["tophatfusionpostpotentialfusion"]):
+				try:
+					samples[sample_name] = ReadTophatFusionPostPotentialFusion(sample_filename,sample_name)
+				except Exception as e:
+					raise Exception("Sample '"+sample_name+ "' could not be parsed as filetype: "+input_format+"\n\n"+str(e))
+			elif(input_format_stripped in ["tophatfusionpostresult"]):
+				try:
+					samples[sample_name] = ReadTophatFusionPostResult(sample_filename,sample_name)
+				except Exception as e:
+					raise Exception("Sample '"+sample_name+ "' could not be parsed as filetype: "+input_format+"\n\n"+str(e))
+			elif(input_format_stripped in ["tophatfusionpostresulthtml"]):
+				try:
+					samples[sample_name] = ReadTophatFusionPostResultHtml(sample_filename,sample_name)
+				except Exception as e:
+					raise Exception("Sample '"+sample_name+ "' could not be parsed as filetype: "+input_format+"\n\n"+str(e))
+			elif(input_format_stripped in ["tophatfusionpre"]):
+				try:
+					samples[sample_name] = ReadTophatFusionPre(sample_filename,sample_name)
+				except Exception as e:
+					raise Exception("Sample '"+sample_name+ "' could not be parsed as filetype: "+input_format+"\n\n"+str(e))
+			
+			# FusionCatcher
+			elif(input_format_stripped in ["fusioncatcherfinal","fusioncatcherfinallist","fusioncatcherfinallistcandidatefusiongenes"]):
+				try:
+					samples[sample_name] = ReadFusionCatcherFinalList(sample_filename,sample_name)
+				except Exception as e:
+					raise Exception("Sample '"+sample_name+ "' could not be parsed as filetype: "+input_format+"\n\n"+str(e))
+			
+			# FusionMap
+			elif(input_format_stripped in ["fusionmap"]):
+				try:
+					samples[sample_name] = ReadFusionMap(sample_filename,sample_name)
+				except Exception as e:
+					raise Exception("Sample '"+sample_name+ "' could not be parsed as filetype: "+input_format+"\n\n"+str(e))
+			
+			# Chimera's prettyPrint() output
+			elif(input_format_stripped in ["chimera"]):
+				try:
+					samples[sample_name] = ReadChimeraPrettyPrint(sample_filename,sample_name)
+				except Exception as e:
+					raise Exception("Sample '"+sample_name+ "' could not be parsed as filetype: "+input_format+"\n\n"+str(e))
+			
+			# SOAPFuse '.final.Fusion.specific.for.genes.txt'
+			elif(input_format_stripped in ["soapfusefinalgene"]):
+				try:
+					samples[sample_name] = ReadSOAPFuseGenes(sample_filename,sample_name)
+				except Exception as e:
+					raise Exception("Sample '"+sample_name+ "' could not be parsed as filetype: "+input_format+"\n\n"+str(e))
+			
+			# SOAPFuse '.final.Fusion.specific.for.trans.txt'
+			elif(input_format_stripped in ["soapfusefinaltranscript"]):
+				try:
+					samples[sample_name] = ReadSOAPFuseTranscripts(sample_filename,sample_name)
+				except Exception as e:
+					raise Exception("Sample '"+sample_name+ "' could not be parsed as filetype: "+input_format+"\n\n"+str(e))
+			
+			# EricScript '.results.total.txt'
+			elif(input_format_stripped in ["ericscript"]):
+				try:
+					samples[sample_name] = ReadEricScriptResultsTotal(sample_filename,sample_name)
+				except Exception as e:
+					raise Exception("Sample '"+sample_name+ "' could not be parsed as filetype: "+input_format+"\n\n"+str(e))
+			
+			# Jaffa '.results.total.txt'
+			elif(input_format_stripped in ["jaffa"]):
+				try:
+					samples[sample_name] = ReadJaffaResults(sample_filename,sample_name)
+				except Exception as e:
+					raise Exception("Sample '"+sample_name+ "' could not be parsed as filetype: "+input_format+"\n\n"+str(e))
+			
+			# ARRIBA
+			elif(input_format_stripped in ["arriba"]):
+				try:
+					samples[sample_name] = ReadArribaResults(sample_filename,sample_name)
+				except Exception as e:
+					raise Exception("Sample '"+sample_name+ "' could not be parsed as filetype: "+input_format+"\n\n"+str(e))
+			
+			# 1-2-3-SV
+			elif(input_format_stripped in ["123sv"]):
+				try:
+					samples[sample_name] = Read123SVDeNovo(sample_filename,sample_name)
+				except Exception as e:
+					raise Exception("Sample '"+sample_name+ "' could not be parsed as filetype: "+input_format+"\n\n"+str(e))
+			
+			# RNA-STAR & STAR-Fusion
+			elif(input_format_stripped in ["rnastarchimeric"]):
+				try:
+					samples[sample_name] = ReadRNASTARChimeric(sample_filename,sample_name)
+				except Exception as e:
+					raise Exception("Sample '"+sample_name+ "' could not be parsed as filetype: "+input_format+"\n\n"+str(e))
+			elif(input_format_stripped in ["starfusionfinal"]):
+				try:
+					samples[sample_name] = ReadRNASTARFusionFinal(sample_filename,sample_name)
+				except Exception as e:
+					raise Exception("Sample '"+sample_name+ "' could not be parsed as filetype: "+input_format+"\n\n"+str(e))
+			
+			# Oncofuse
+			elif(input_format_stripped in ["oncofuse"]):
+				try:
+					samples[sample_name] = ReadOncofuse(sample_filename,sample_name)
+				except Exception as e:
+					raise Exception("Sample '"+sample_name+ "' could not be parsed as filetype: "+input_format+"\n\n"+str(e))
+			
+			# Trinity / GMAP
+			elif(input_format_stripped in ["trinitygmap"]):
+				try:
+					samples[sample_name] = ReadTrinityGMAP(sample_filename,sample_name)
+				except Exception as e:
+					raise Exception("Sample '"+sample_name+ "' could not be parsed as filetype: "+input_format+"\n\n"+str(e))
+			
+			# --- 
+			elif(input_format_stripped in ["illuminahiseq","illuminahiseqvcf"]):
+				try:
+					samples[sample_name] = ReadIlluminaHiSeqVCF(sample_filename,sample_name)
+				except Exception as e:
+					raise Exception("Sample '"+sample_name+ "' could not be parsed as filetype: "+input_format+"\n\n"+str(e))
+			
+			else:
+				raise Exception("unsupported/unknown data format: "+input_format)
+	
+	if(args.link_sample_to_annotation):
+		for link in args.link_sample_to_annotation:
+			sample_name, reference_name = link.split(":",1)
+			
+			if sample_name not in samples:
+				raise Exception("unknown sample: "+sample_name)
+			
+			if reference_name not in gene_annotations:
+				raise Exception("unknown annotation: "+reference_name)
+			
+			samples[sample_name].annotate_genes(gene_annotations[reference_name])
+			samples[sample_name].remove_duplicates(args)
+	
+	if(args.format == "summary"):
+		o = OverlapComplex()
+		
+		for sample_name in sample_names:
+			o.add_experiment(samples[sample_name])
+		
+		o.overlay_fusions(True,False,args)
+		o.export_summary(args.output)
+	else:
+		o = ComparisonTriangle(args)
+		
+		for sample_name in sample_names:
+			o.add_experiment(samples[sample_name])
+		
+		o.overlay_fusions()
+		
+		#if(args.output == "-"):
+		#	o.overlay_fusions(False,sys.stdout,args)# Exports content of the datasets
+		#else:
+		#	fh = open(args.output,"w")
+		#	o.overlay_fusions(True,fh,args)# Exports content of the datasets << check if sparse can be enabled?
+		#	fh.close()
