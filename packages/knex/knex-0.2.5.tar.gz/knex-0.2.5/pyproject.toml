@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "knex"
+version = "0.2.5"
+description = "Python library for building composable text parsers"
+readme = "README-pypi.md"
+repository = "https://github.com/clay584/knex"
+homepage = "https://clay584.github.io/knex/"
+documentation = "https://clay584.github.io/knex/"
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: POSIX",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Topic :: Text Processing :: General",
+    "Intended Audience :: Information Technology"
+    ]
+authors = ["Clay Curtis <clay584@gmail.com>"]
+license = "GNU GPLv3"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+regex = "^2021.8.28"
+textfsm = "^1.1.2"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.9.2"
+bandit = "^1.7.0"
+semgrep = "^0.64.0"
+black = "^21.8b0"
+pytest = "^6.2.5"
+mypy = "^0.910"
+pytest-cov = "^2.12.1"
+bump2version = "^1.0.1"
+pre-commit = "^2.15.0"
+safety-db = "^2021.7.17"
+mkdocs = "^1.2.2"
+mkdocs-material = "^7.2.8"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
