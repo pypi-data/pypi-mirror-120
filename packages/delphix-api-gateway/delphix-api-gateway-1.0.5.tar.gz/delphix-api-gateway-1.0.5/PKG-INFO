@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: delphix-api-gateway
+Version: 1.0.5
+Summary: Delphix API Gateway
+Home-page: UNKNOWN
+Author: Delphix Support
+Author-email: support@delphix.com
+License: UNKNOWN
+Keywords: OpenAPI,OpenAPI-Generator,Delphix API Gateway
+Platform: UNKNOWN
+Requires-Python: >=3.6
+
+    Delphix API Gateway API  # noqa: E501
+    
+
