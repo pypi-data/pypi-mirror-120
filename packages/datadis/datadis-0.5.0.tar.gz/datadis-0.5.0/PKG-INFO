@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: datadis
+Version: 0.5.0
+Summary: Datadis API client
+Author: Alvaro Tinoco
+Author-email: alvarotinocomarmol@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Datadis
+API client for https://datadis.es
+
+[![Semantic Release](https://github.com/MrMarble/datadis/actions/workflows/release.yml/badge.svg)](https://github.com/MrMarble/datadis/actions/workflows/release.yml)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/datadis)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=MrMarble_datadis&metric=alert_status)](https://sonarcloud.io/dashboard?id=MrMarble_datadis)
+
+
