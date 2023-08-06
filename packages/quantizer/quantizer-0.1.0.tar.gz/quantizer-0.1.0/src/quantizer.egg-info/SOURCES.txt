@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/quantizer/__init__.py
+src/quantizer/sequencer.py
+src/quantizer/utils.py
+src/quantizer/wavetable.py
+src/quantizer.egg-info/PKG-INFO
+src/quantizer.egg-info/SOURCES.txt
+src/quantizer.egg-info/dependency_links.txt
+src/quantizer.egg-info/top_level.txt
