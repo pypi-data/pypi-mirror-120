@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: fgroups
+Version: 0.0
+Summary: Finite Groups Computations
+Home-page: https://pypi.org/project/finite-groups/
+Author: Cris Torres
+Author-email: cristobal_javier@hotmail.com
+License: UNKNOWN
+Platform: all
+
+Use `finite-groups <https://pypi.org/project/finite-groups/>`_ instead.
+

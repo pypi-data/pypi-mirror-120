@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+fgroups.egg-info/PKG-INFO
+fgroups.egg-info/SOURCES.txt
+fgroups.egg-info/dependency_links.txt
+fgroups.egg-info/not-zip-safe
+fgroups.egg-info/requires.txt
+fgroups.egg-info/top_level.txt
