@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/hbrsamplemodule/__init__.py
+src/hbrsamplemodule/add.py
+src/hbrsamplemodule/subtract.py
+src/hbrsamplemodule.egg-info/PKG-INFO
+src/hbrsamplemodule.egg-info/SOURCES.txt
+src/hbrsamplemodule.egg-info/dependency_links.txt
+src/hbrsamplemodule.egg-info/top_level.txt
+src/hbrsamplemodule/extras/__init__.py
+src/hbrsamplemodule/extras/divide.py
+src/hbrsamplemodule/extras/multiply.py
