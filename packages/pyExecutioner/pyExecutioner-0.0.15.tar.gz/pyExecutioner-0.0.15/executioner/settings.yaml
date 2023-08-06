@@ -1,0 +1,22 @@
+workspace: "playground"
+languages:
+  python3:
+    fileFormat: "{filename}.py"
+    compileCommand: "python3 -m py_compile {source}"
+    executeCommand: "python3 '{compiled_file}'"
+    compiledFormat: "{source}"
+    disposible:
+      - "{source_name}.py"
+      - "__pycache__/{source_name}.cpython-38.pyc"
+    timeLimit: "10"
+    memLimit: "100"
+  C:
+    fileFormat: "{filename}.c"
+    compileCommand: "gcc {source} -o {source}.out"
+    executeCommand: "./{compiled_file}"
+    compiledFormat: "{source}.out"
+    disposible:
+      - "{source_name}.c"
+      - "{source_name}.c.out"
+    timeLimit: "5"
+    memLimit: "100"
