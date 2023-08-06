@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="shortcut icon" href="./css/calendar.png" />
+    <link rel="stylesheet" href="./css/calendar.css">
+    <link rel="stylesheet" href="./css/currday.css">
+</head>
+<body>
+    <div id="overlay" onclick="x()"></div>
+    
+    <div class="calendar-container">
+        <div class="calendar-header" onclick="menu()">
+            <h1 id="month"> Month<button>▾</button></h1>
+            <p id="year">YEAR</p>
+            
+        </div>
+        <div class="calendar" id="calendar">
+            
+            <span class="day-name">Mon</span>
+            <span class="day-name">Tue</span>
+            <span class="day-name">Wed</span>
+            <span class="day-name">Thu</span>
+            <span class="day-name">Fri</span>
+            <span class="day-name">Sat</span>
+            <span class="day-name">Sun</span>
+
+            <div class="day day--disabled">30</div>
+            <div class="day day--disabled">31</div>
+            <div class="day">1</div>
+            <div class="day">2</div>
+            <div class="day">3</div>
+            <div class="day">4</div>
+            <div class="day">5</div>
+            <div class="day">6</div>
+            <div class="day">7</div>
+            <div class="day">8</div>
+            <div class="day">9</div>
+            <div class="day">10</div>
+            <div class="day">11</div>
+            <div class="day">12</div>
+            <div class="day">13</div>
+            <div class="day">14</div>
+            <div class="day">15</div>
+            <div class="day">16</div>
+            <div class="day">17</div>
+            <div class="day">18</div>
+            <div class="day">19</div>
+            <div class="day">20</div>
+            <div class="day">21</div>
+            <div class="day">22</div>
+            <div class="day">23</div>
+            <div class="day">24</div>
+            <div class="day">25</div>
+            <div class="day">26</div>
+            <div class="day">27</div>
+            <div class="day">28</div>
+            <div class="day">29</div>
+            <div class="day">30</div>
+            <div class="day">31</div>
+            <div class="day day--disabled">1</div>
+            <div class="day day--disabled">2</div>
+
+            <div id="dividing_day-event" style="display: none;"></div>
+
+            <section class="task task--primary" id="adkfs">
+                Product Checkup 1
+                <div class="task__detail">
+                    <h2>Product Checkup 1</h2>
+                    <p>15-17th November</p>
+                </div>
+            </section>
+
+            <!-- <section class="task task--warning">Projects</section>
+            <section class="task task--danger">Design Sprint</section>
+            <section class="task task--primary">
+                Product Checkup 1
+                <div class="task__detail">
+                    <h2>Product Checkup 1</h2>
+                    <p>15-17th November</p>
+                </div>
+            </section>
+            <section class="task task--info">Product Checkup 2</section> -->
+            <section id="option" class="nonshow">
+                <div id="selectMonth" class="dropdown-content">
+                    <h1>Month</h1>
+                    <a onclick="selectedM(this)" id="smonthActive" href="#">January</a>
+                    <a onclick="selectedM(this)" id="smonth" href="#">February</a>
+                    <a onclick="selectedM(this)" id="smonth" href="#">March</a>
+                    <a onclick="selectedM(this)" id="smonth" href="#">April</a>
+                    <a onclick="selectedM(this)" id="smonth" href="#">May</a>
+                    <a onclick="selectedM(this)" id="smonth" href="#">June</a>
+                    <a onclick="selectedM(this)" id="smonth" href="#">July</a>
+                    <a onclick="selectedM(this)" id="smonth" href="#">August</a>
+                    <a onclick="selectedM(this)" id="smonth" href="#">September</a>
+                    <a onclick="selectedM(this)" id="smonth" href="#">October</a>
+                    <a onclick="selectedM(this)" id="smonth" href="#">November</a>
+                    <a onclick="selectedM(this)" id="smonth" href="#">December</a>
+                </div>
+                <div id="selectYear" class="dropdown-content">
+                    <h1>Year</h1>
+                    <a onclick="selectedY(this)" id="syearActive" href="#">2021</a>
+                    <a onclick="selectedY(this)" id="syear" href="#">2022</a>
+                    <a onclick="selectedY(this)" id="syear" href="#">2021</a>
+                    <a onclick="selectedY(this)" id="syear" href="#">2022</a>
+                    <a onclick="selectedY(this)" id="syear" href="#">2023</a>
+                    <a onclick="selectedY(this)" id="syear" href="#">2024</a>
+                    <a onclick="selectedY(this)" id="syear" href="#">2025</a>
+                    <a onclick="selectedY(this)" id="syear" href="#">2026</a>
+                    <a onclick="selectedY(this)" id="syear" href="#">2027</a>
+                    <a onclick="selectedY(this)" id="syear" href="#">2028</a>
+                    <a onclick="selectedY(this)" id="syear" href="#">2029</a>
+                    <a onclick="selectedY(this)" id="syear" href="#">2030</a>
+                </div>            
+            </section>
+            <section id="addbox" class="nonshow" >
+                <h1 id="addinto">Add into </h1>
+                <form id="form-event-add" method="post" onsubmit="return false;">
+                    <div class="form-element">
+                        <label for="Event_name" class="form-label">Event name</label>
+                        <input autofocus id="Event_name" type="text" name="event_name">
+                    </div>
+                    <div class="form-element">
+                        <label for="event_detail" class="form-label">Event Detail</label>
+                        <textarea id="event_detail" type="text" cols="40" rows="5" name="event_detail"></textarea>
+                    </div>
+                    <div class="form-element form-submit">
+                        <button onclick="submitEvent(this)" id="summit" class="btn" type="submit" name="submit">Add</button>
+                        <button onclick="x()" id="unsubmit" class="btn" name="cancel">Cansel</button>
+                    </div>
+                </form>
+            </section>
+            
+            <section id="detail" class="nonshow" >
+                <h1>Event Details.</h1>
+                <form id="form-event-update" method="post" onsubmit="return false;">
+                    <div class="form-element">
+                        <label for="Event_name" class="form-label">Event name</label>
+                        <input autofocus id="Event_name" type="text" name="event_name">
+                    </div>
+                    <div class="form-element">
+                        <label for="event_detail" class="form-label">Event Detail</label>
+                        <textarea id="event_detail" type="text" cols="40" rows="5" name="event_detail"></textarea>
+                    </div>
+                    <div class="form-element form-submit">
+                        <button onclick="submitEventUpdate(this)" id="summit" class="btn" type="submit" name="submit">Update</button>
+                        <button onclick="deleteSelectedEvent()" id="delete" class="btn delete" name="cancel">Delete</button>
+                    </div>
+                </form>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- <button id = "btn">add day</button>
+    <button id = "btn2">clear day</button>
+
+    <p id="rr" onclick="f(this)">akdf;akjdfafjdsjfasfj</p> -->
+
+
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="/eel.js"></script>
+
+
+
+</body>
+</html>

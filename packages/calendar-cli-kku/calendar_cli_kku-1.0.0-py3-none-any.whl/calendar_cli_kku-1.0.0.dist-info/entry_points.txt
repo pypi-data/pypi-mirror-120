@@ -1,0 +1,6 @@
+[console_scripts]
+calendar = calendarcli.__main__:main
+calendar-cli = calendarcli.__main__:main
+ccal = calendarcli.__main__:main
+gcal = calendarcli.calendargui.__main__:main
+

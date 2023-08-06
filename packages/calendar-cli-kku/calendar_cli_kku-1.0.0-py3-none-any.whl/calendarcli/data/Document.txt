@@ -1,0 +1,43 @@
+ 
+   _____                                          _   _      _               _____      _                _            
+  / ____|                                        | | | |    (_)             / ____|    | |              | |           
+ | |     ___  _ __ ___  _ __ ___   __ _ _ __   __| | | |     _ _ __   ___  | |     __ _| | ___ _ __   __| | __ _ _ __ 
+ | |    / _ \| '_ ` _ \| '_ ` _ \ / _` | '_ \ / _` | | |    | | '_ \ / _ \ | |    / _` | |/ _ \ '_ \ / _` |/ _` | '__|
+ | |___| (_) | | | | | | | | | | | (_| | | | | (_| | | |____| | | | |  __/ | |___| (_| | |  __/ | | | (_| | (_| | |   
+  \_____\___/|_| |_| |_|_| |_| |_|\__,_|_| |_|\__,_| |______|_|_| |_|\___|  \_____\__,_|_|\___|_| |_|\__,_|\__,_|_|   
+
+======================================================================================================================
+                                                                                                            
+Command line Carlendar(ccal) is for calendar management
+
+ccal          : To show the calendar on this mounth.
+
+[--help, -h]  : Help option to print document of this program. There is how to use program.
+
+[--add, -a]   : Add option to add event to your calendar that require event name
+                and you can add date to your event by below option.
+                If you do not add date to your event program will add current date
+              [--event=<enter your event>, -e <enter your event>]   : To add event name **require
+              [--date="<yyy-mm-dd>, -d <yyy-mm-dd>]                 : To add date to event (Current date by default)
+
+[--update=<event>]  : To update event with new data
+                    [--date=<xxxx-xx-xx>, -d <xxxx-xx-xx>]    : New date
+                    [--event=<event>, -e <event>]             : New event
+[--update=<ID>]  : To update event with new data
+                    [--date=<xxxx-xx-xx>, -d <xxxx-xx-xx>]    : New date
+                    [--event=<event>, -e <event>]             : New event
+
+[--delete=<event>, -d<event>]  : To delete event named <event>
+[--delete=<ID>, -d<ID>]        : To delete event by id
+
+[--list]      : To show all events on this month
+              [--modify, -m]                  : To secect one of list and modify data or delete
+              [-n <How many month>]           : To print many month
+[-ls]         : To show all event on this month
+[-lm]         : To secect one of list and modify data or delete
+[-l<1-12>]     : To show all event in <0-9> month
+
+--confirm     : To confirm commit and turn of "Enter to continue" function.
+
+[--user.name=<name>] : To add your name to program environment.
+
