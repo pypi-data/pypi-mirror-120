@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: smartcast
+Version: 0.2.0
+Summary: Recursively cast json to python dataclasses, typing, and class. Also provides reverse.
+Home-page: https://github.com/qhpea/smartcast
+Author: QHPEA
+Author-email: oss@qhpea.org
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/qhpea/smartcast/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7,<3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Smart Cast
+
+Recursively cast json to python `dataclasses`, `typing`, and `class`
+
+# Features
+Supports
+- `List[TV]`
+- `Dict[TK, TV]`
+- `Optional[TV]`
+- `Union`
+- `dict`
+- `list`
+- `dataclass`
+- `int`
+- `str`
+- `float`
+- `boolean`
+- `datetime`
+
+# useage
+```python
+from smartcast import normal, cast
+from typing import List, Optional, Union
+import json
+from dataclasses import dataclass
+from enum import Enum, auto
+
+
+class Option(Enum):
+    A = auto()
+    B = auto()
+
+
+@dataclass
+class Config:
+    value: Option
+
+
+def test_simple():
+    value = Config(Option.A)
+    nobj = normal(value)
+    jstr = json.dumps(nobj)
+    jobj = json.loads(jstr)
+    revalue = cast(jobj, Config)
+    assert value == revalue
+
+```
+
