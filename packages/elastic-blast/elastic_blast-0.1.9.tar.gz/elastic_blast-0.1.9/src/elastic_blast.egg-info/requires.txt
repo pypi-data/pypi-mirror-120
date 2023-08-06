@@ -1,0 +1,8 @@
+setuptools
+importlib-resources
+importlib-metadata
+pex
+boto3
+awslimitchecker
+tenacity
+types-pkg-resources
