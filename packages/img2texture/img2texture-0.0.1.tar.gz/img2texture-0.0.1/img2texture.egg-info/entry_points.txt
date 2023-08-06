@@ -1,0 +1,3 @@
+[console_scripts]
+img2texture = img2texture:cli
+
