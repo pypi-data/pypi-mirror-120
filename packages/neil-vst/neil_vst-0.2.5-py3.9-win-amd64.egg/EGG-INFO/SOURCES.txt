@@ -1,0 +1,13 @@
+README.md
+setup.py
+neil_vst/__init__.py
+neil_vst/logger.c
+neil_vst/vst_chain_worker.c
+neil_vst/vst_exceptions.c
+neil_vst/vst_host.c
+neil_vst/vst_plugin.c
+neil_vst.egg-info/PKG-INFO
+neil_vst.egg-info/SOURCES.txt
+neil_vst.egg-info/dependency_links.txt
+neil_vst.egg-info/requires.txt
+neil_vst.egg-info/top_level.txt
