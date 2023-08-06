@@ -1,0 +1,10 @@
+finufft.libs/libgomp-f7e03b3e.so.1.0.0,sha256=zbIl_S4-7kPHDUQOH1n_ENyLfww1WJv0eKBvWVHOPkI,93080
+finufft.libs/libfinufft-9134baeb.so,sha256=mt2wg143W0PH_KEXAHmIu12HQ26XOn61PMLIqYUC7Is,4429376
+finufft-2.0.3.post1.dist-info/METADATA,sha256=zrdkVj4zc-X6MfL_lCZu7MhJaLs36_rnEKwRiFljgxc,1697
+finufft-2.0.3.post1.dist-info/WHEEL,sha256=kRpTOiUzoWO2GDfCevceK0ME-mjr5hdBNCWO78h60mA,112
+finufft-2.0.3.post1.dist-info/top_level.txt,sha256=ad5NTT1JZwZ0C796YFJysnelEZTKz2fkNKRJ9_wVqUs,8
+finufft-2.0.3.post1.dist-info/RECORD,,
+finufft/_finufft.py,sha256=co99EGIjTzLqnfIjhprQB1OjlQIzD06jH0_6tZugdbE,4499
+finufft/finufftc.cpython-36m-x86_64-linux-gnu.so,sha256=CReDD5O7tD_C789DHPbx12QW0Ea0rdm2QYzO0czgvYg,17440
+finufft/__init__.py,sha256=Cxl299-y2e554HS-kVByhmufH-gyGo_ArTKYsL5xC9o,887
+finufft/_interfaces.py,sha256=LASp9VZ4ccJcMr6s8ifUpL72Xn8JLt_uxBN_mZt8vE0,30494
