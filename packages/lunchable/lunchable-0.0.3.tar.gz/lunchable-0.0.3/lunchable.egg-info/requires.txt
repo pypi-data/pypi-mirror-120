@@ -1,0 +1,12 @@
+requests
+pydantic
+
+[dev]
+tox
+pytest
+coverage
+pytest-vcr
+flake8
+
+[splitlunch]
+splitwise
