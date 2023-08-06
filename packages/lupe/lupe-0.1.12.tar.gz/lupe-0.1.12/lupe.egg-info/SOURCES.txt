@@ -1,0 +1,7 @@
+setup.py
+lupe/__init__.py
+lupe/core.py
+lupe.egg-info/PKG-INFO
+lupe.egg-info/SOURCES.txt
+lupe.egg-info/dependency_links.txt
+lupe.egg-info/top_level.txt
