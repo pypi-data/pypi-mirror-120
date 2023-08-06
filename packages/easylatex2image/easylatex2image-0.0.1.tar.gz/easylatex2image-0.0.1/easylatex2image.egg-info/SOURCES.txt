@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+easylatex2image/__init__.py
+easylatex2image/core.py
+easylatex2image.egg-info/PKG-INFO
+easylatex2image.egg-info/SOURCES.txt
+easylatex2image.egg-info/dependency_links.txt
+easylatex2image.egg-info/requires.txt
+easylatex2image.egg-info/top_level.txt
