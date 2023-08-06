@@ -1,0 +1,11 @@
+envuitest/__init__.py,sha256=m2Wt9OeQPBxJtGpez7c8szXB3Ah31vyovkpcA5FSHPc,427
+envuitest/env_msapi.py,sha256=nvu4fknp7LM2fnyfJkRWfm7QhI3twT2EwTS0-0H0wy4,4452
+envuitest/grid.py,sha256=jZCxwOL4M-JNdKnW5ugYua8xPXMN3VjyawUejYWYqig,1481
+envuitest/pandas_compare.py,sha256=KHVaxq7u2zdDL7-kwI2op7KGutfANBV_cIzda_WXxqY,2521
+envuitest/salesforce.py,sha256=SNT8sJayiE51v9F1Ol2HViWeYZ5JXHWSgF1XbcMLZ4k,1578
+envuitest/utils.py,sha256=qJNZ8-P77R7eRqfOxBAN_YYfzkEVExZ7lV2HqGMt7lw,8495
+envuitest-0.0.7.dist-info/LICENSE,sha256=HDbMJ7oItmxTn3jVtZFi6jUFAHovset5jzAPUderjOc,1073
+envuitest-0.0.7.dist-info/METADATA,sha256=oHRmt1p2j9qo7MrjH8Jh6apuhNFMQlPMHj9cPqDnXpg,1531
+envuitest-0.0.7.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+envuitest-0.0.7.dist-info/top_level.txt,sha256=h7roBxdak48salEfLcAfzkcxIW7eR2Mk7h4gFWDioH4,10
+envuitest-0.0.7.dist-info/RECORD,,
