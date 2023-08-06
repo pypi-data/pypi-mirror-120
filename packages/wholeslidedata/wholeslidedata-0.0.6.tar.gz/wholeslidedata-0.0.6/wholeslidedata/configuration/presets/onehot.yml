@@ -1,0 +1,6 @@
+default:
+  batch_shape:
+    
+  patch_label_sampler:
+    attribute:  SegmenationPatchLabelSampler
+      
