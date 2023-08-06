@@ -1,0 +1,9 @@
+README.md
+setup.py
+code/bumpkin/__init__.py
+code/bumpkin/__main__.py
+code/bumpkin/bumpkin.py
+code/standard_bumpkin.egg-info/PKG-INFO
+code/standard_bumpkin.egg-info/SOURCES.txt
+code/standard_bumpkin.egg-info/dependency_links.txt
+code/standard_bumpkin.egg-info/top_level.txt
