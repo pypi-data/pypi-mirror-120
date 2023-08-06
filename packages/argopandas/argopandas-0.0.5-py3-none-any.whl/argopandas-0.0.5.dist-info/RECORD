@@ -1,0 +1,16 @@
+argopandas/__init__.py,sha256=ra4pmLC7S2EB1AaVAiH1a0Yw_DSaxQlWzj_dy6sbxNc,4158
+argopandas/_geo.py,sha256=8Zeb1rlIOGx-UlBsYBnTT1IpXsu3INAm38mk2L25eMQ,2557
+argopandas/_interactive.py,sha256=Y0o8Gl62VcanHeB1R1fsn59VzcAPzao157Lpj7IRJwk,6715
+argopandas/downloader.py,sha256=0yDM52R90Gsqys7O5GUkVfgQ_lagmH4dzt0ZMoFt7MY,6564
+argopandas/float.py,sha256=YsadHd0gvy1Buctxb7CvwrhZJb8P1mDeJMLCRO6x9eg,2898
+argopandas/global_index.py,sha256=U3UEGNQb93r4QdaAB3_TtCBrNAqz3-1L-I104uATFyQ,13162
+argopandas/index.py,sha256=wBLM1AYbVdHZUenGDDsLrLNj1OsFHNNkxjgwu9svcjA,17263
+argopandas/mirror.py,sha256=HWPStdfTuuke516y8NrpI4qIahBIwbDL3jmfpDQnksY,7558
+argopandas/netcdf.py,sha256=zRh7299Udyfkv87T6nBpi_TEjSb9KlYgM-GNZut428U,10928
+argopandas/path.py,sha256=wAobCbJsfhlhInkDiqC9t3P2icT62QNyP5f-dZ6-JXo,5247
+argopandas/progress.py,sha256=UOOjnRRos84ku5H1EKhQe22PZaCtg7Y7bAVd2x3xy14,4351
+argopandas-0.0.5.dist-info/LICENSE,sha256=HVEoiKrr7e-JmgSkXeKbn2WKp0QazpAqp7f8Ayg9ZSI,1060
+argopandas-0.0.5.dist-info/METADATA,sha256=gI8Kf8uMBfRP0TTR7_iJn6rndysz--jRhxVnshep7SA,9526
+argopandas-0.0.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+argopandas-0.0.5.dist-info/top_level.txt,sha256=iSeEhsDRJFH7TdtP7RwOD34gun4lzEmmhHw5DBqIFCU,11
+argopandas-0.0.5.dist-info/RECORD,,
