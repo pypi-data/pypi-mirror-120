@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+hub_shm/__init__.py
+hub_shm/cpp.py
+hub_shm/posixshmem.c
+hub_shm/py36_clinic.py
+hub_shm/py37_clinic.py
+hub_shm/shared_memory.py
+hub_shm.egg-info/PKG-INFO
+hub_shm.egg-info/SOURCES.txt
+hub_shm.egg-info/dependency_links.txt
+hub_shm.egg-info/top_level.txt
