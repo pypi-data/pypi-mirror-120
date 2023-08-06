@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/onenuron/__init__.py
+src/onenuron/perceptron.py
+src/percetron_pypi_sandeepjena7.egg-info/PKG-INFO
+src/percetron_pypi_sandeepjena7.egg-info/SOURCES.txt
+src/percetron_pypi_sandeepjena7.egg-info/dependency_links.txt
+src/percetron_pypi_sandeepjena7.egg-info/requires.txt
+src/percetron_pypi_sandeepjena7.egg-info/top_level.txt
