@@ -1,0 +1,10 @@
+docker-compose.local.env
+*egg-info/*
+build/*
+*eggs/*
+dist/*
+.idea/*
+docs/build/*
+coverage.xml
+.coverage
+version.py
