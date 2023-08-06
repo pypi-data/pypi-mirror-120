@@ -1,0 +1,11 @@
+ipython
+future
+intelhex
+pyserial
+psutil
+hidapi
+requests
+
+[dev]
+sphinx
+sphinx_rtd_theme
