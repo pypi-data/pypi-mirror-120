@@ -1,0 +1,15 @@
+palettecleanser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+palettecleanser/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+palettecleanser/cli/main.py,sha256=Tet91IeJ8UqcFWz1Ymt8iVptA6Z9SHSFzvYXtz2L_jU,285
+palettecleanser/cli/palette.py,sha256=tz4h4iWgxBMu7QZ1jyLQaMO7rvoQkBmfPhcbd2K-YO8,4151
+palettecleanser/cli/template.py,sha256=VEDqV_FanDiA0AaTsgwfgsiOv3wKy2z3v8QaQMMndqc,2059
+palettecleanser/cli/theme.py,sha256=eIny34zDxKrcFIyWp6C8dqLRaAp-vyempY_jjPCua-0,5731
+palettecleanser/config.py,sha256=YfeB4mZKEpXVYTTq59_cgAsuA_jBIzS9kuy9cKb8U1s,657
+palettecleanser/palette.py,sha256=MR15EEWJw5gL2QiApqjF1IIXZcgS3c8C0_B3mdhKYQ0,9998
+palettecleanser/template.py,sha256=JKt4uNLReW0NKoPOWBp5CMpuanQ6bGoxU5f82XVIZt0,9853
+palettecleanser/theme.py,sha256=FJDyQaGGJ7iK0XjAPimg_68VNTzd2RMtQO0dSoNpbrA,5310
+palettecleanser-0.2.1.dist-info/entry_points.txt,sha256=H8BXEjFoh8V9FU8T4rPsKrZxk_z5atdpuozid-iKW-E,55
+palettecleanser-0.2.1.dist-info/LICENSE,sha256=x9TNR9ry91bhUWSaS1VkJ219FxeVguYD81idWHpZztg,1081
+palettecleanser-0.2.1.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+palettecleanser-0.2.1.dist-info/METADATA,sha256=hy--fNwD-ADv6YMnToutCBU3fyYggrVFeVvJod5jMKA,2174
+palettecleanser-0.2.1.dist-info/RECORD,,
