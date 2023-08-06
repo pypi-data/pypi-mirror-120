@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+morse_code_translator/__init__.py
+morse_code_translator/dictionary.py
+morse_code_translator/enums.py
+morse_code_translator/translator.py
+morse_code_translator2.egg-info/PKG-INFO
+morse_code_translator2.egg-info/SOURCES.txt
+morse_code_translator2.egg-info/dependency_links.txt
+morse_code_translator2.egg-info/top_level.txt
