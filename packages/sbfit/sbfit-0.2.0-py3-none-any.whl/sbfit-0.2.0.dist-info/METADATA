@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: sbfit
+Version: 0.2.0
+Summary: Astronomical X-ray sources surface brightness profile fitting package
+Home-page: https://gitlab.sron.nl/asg/x-ray-extended/sbfit
+Author: Xiaoyuan Zhang
+Author-email: x.zhang@sron.nl
+License: MIT License
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: numba
+Requires-Dist: emcee (>=3.0)
+Requires-Dist: astropy (>=4.2)
+Requires-Dist: matplotlib (>=3.1)
+Requires-Dist: corner
+Requires-Dist: pyregion (>=2.0)
+
+# SBFit
+
+Sbfit is an astronomical X-ray sources surface brightness fitting package. 
+
+## Documentation
+See [sbfit.readthedocs.io](https://sbfit.readthedocs.io) for full documentation.
+
+
+
