@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/visdas/__init__.py
+src/visdas/array_visualizer.py
+src/visdas.egg-info/PKG-INFO
+src/visdas.egg-info/SOURCES.txt
+src/visdas.egg-info/dependency_links.txt
+src/visdas.egg-info/top_level.txt
