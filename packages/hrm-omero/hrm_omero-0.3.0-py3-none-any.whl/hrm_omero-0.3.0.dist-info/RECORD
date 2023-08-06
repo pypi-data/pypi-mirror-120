@@ -1,0 +1,12 @@
+hrm_omero/__init__.py,sha256=3gLQYhpDckuISdGEvXNp7fRIqwVuGLPI12IkMyZQrbk,114
+hrm_omero/cli.py,sha256=PhJmnHumOye2Di9T1S15Ak8U5ZWAH3QYySvj3yQarJU,6456
+hrm_omero/formatting.py,sha256=qZg1cq5C6krhvHZdVzR7mHUZ_Ef5txGGD0A-xGb96eI,1103
+hrm_omero/hrm.py,sha256=4UCrcDDm_0xcpYn1-opoFeK9PQ0rwELIxReWVCkMc0c,5232
+hrm_omero/omero.py,sha256=W1GylAF9P_1TNt2E5Zlt-7r_mJCrJTKSS2CG-MdObZc,1698
+hrm_omero/transfer.py,sha256=LAPKZN0DodnVSdhXShzV4FnE9PdJpbZDiHZ1FJjCQrw,8997
+hrm_omero/tree.py,sha256=D9SO-oQ5X43V1GzehmQg2inLlG2Vg3Mp2AhxjQm80ak,4468
+hrm_omero-0.3.0.dist-info/entry_points.txt,sha256=s964MDzjGaA1zRcS7VZp2wUD5rw2_6N42iQvqE_VbeE,46
+hrm_omero-0.3.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+hrm_omero-0.3.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+hrm_omero-0.3.0.dist-info/METADATA,sha256=mvHwTtmPIU7EcDLcSdyiGj2g-X6pU1e1DNt0t5shG7w,6105
+hrm_omero-0.3.0.dist-info/RECORD,,
