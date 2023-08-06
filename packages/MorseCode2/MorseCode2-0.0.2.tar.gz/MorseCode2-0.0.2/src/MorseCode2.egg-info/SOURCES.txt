@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/MorseCode/__init__.py
+src/MorseCode/morsecode.py
+src/MorseCode2.egg-info/PKG-INFO
+src/MorseCode2.egg-info/SOURCES.txt
+src/MorseCode2.egg-info/dependency_links.txt
+src/MorseCode2.egg-info/top_level.txt
