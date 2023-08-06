@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+trie_global.py
+appFolder/__init__.py
+appFolder/app.py
+appFolder/trieProject.py
+trie_cli_global.egg-info/PKG-INFO
+trie_cli_global.egg-info/SOURCES.txt
+trie_cli_global.egg-info/dependency_links.txt
+trie_cli_global.egg-info/entry_points.txt
+trie_cli_global.egg-info/requires.txt
+trie_cli_global.egg-info/top_level.txt
