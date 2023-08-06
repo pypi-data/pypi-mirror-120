@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: unfrs
+Version: 0.1.1
+Summary: Calculate the Unique Numeric Fingerprint for Tabular Data
+Author: Lissa Hyacinth <lissahyacinth@gmail.com>
+Author-email: Lissa Hyacinth <lissahyacinth@gmail.com>
+License: GPL-2.0-or-later
+Project-URL: Source Code, https://github.com/lissahyacinth/unfrs
