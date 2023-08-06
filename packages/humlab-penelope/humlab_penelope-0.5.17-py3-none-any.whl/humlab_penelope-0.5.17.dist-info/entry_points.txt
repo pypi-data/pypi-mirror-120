@@ -1,0 +1,6 @@
+[console_scripts]
+co-occurrence=penelope.scripts.co_occurrence:main
+pos-tag=penelope.scripts.pos-tag:main
+topic-model=penelope.scripts.topic_model:main
+vectorize=penelope.scripts.vectorize:main
+
