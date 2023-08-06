@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: mkdocs-page-pdf
+Version: 0.0.5
+Summary: Generate a PDF file for each MkDocs page
+Home-page: https://github.com/brospars/mkdocs-page-pdf
+Author: brospars
+Author-email: 
+License: MIT
+Keywords: mkdocs pdf pyppeteer chrome headless page
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: mkdocs (>=1.1)
+Requires-Dist: pyppeteer (>=0.2)
+Requires-Dist: asyncio (>=1.5)
+Requires-Dist: nest-asyncio (>=1.5)
+
+# Mkdocs Page to PDF
+
+An Mkdocs plugin to generate a PDF file for each MkDocs page.
+
+## How to use
+
+Install the package with pip:
+
+```shell
+pip install mkdocs-page-pdf
+```
+
+Enable the plugin in your mkdocs.yml:
+
+```yaml
+plugins:
+  # - ...
+    - pdf-export # should be last
+```
+
+### Options
+
+Options are directly induced from [pyppeteer options](https://pyppeteer.github.io/pyppeteer/reference.html?highlight=pdf#pyppeteer.page.Page.pdf) :
+
+* ``scale`` (float): Scale of the webpage rendering, defaults to ``1``.
+* ``displayHeaderFooter`` (bool): Display header and footer.
+  Defaults to ``False``.
+* ``headerTemplate`` (str): HTML template for the print header. Should
+  be valid HTML markup with following classes.
+  * ``date``: formatted print date
+  * ``title``: document title
+  * ``url``: document location
+  * ``pageNumber``: current page number
+  * ``totalPages``: total pages in the document
+* ``footerTemplate`` (str): HTML template for the print footer. Should use the same template as ``headerTemplate``.
+* ``printBackground`` (bool): Print background graphics. Defaults to``False``.
+* ``landscape`` (bool): Paper orientation. Defaults to ``False``.
+* ``pageRanges`` (string): Paper ranges to print, e.g., '1-5,8,11-13'. Defaults to empty string, which means all pages.
+* ``format`` (str): Paper format. Defaults to ``A4``.
+* ``margin`` (dict): Paper margins.
+  * ``top`` (str): Top margin, accepts values labeled with units, defaults to ``20px``.
+  * ``right`` (str): Right margin, accepts values labeled with units, defaults to ``20px``.
+  * ``bottom`` (str): Bottom margin, accepts values labeled with units, defaults to ``20px``.
+  * ``left`` (str): Left margin, accepts values labeled with units, defaults to ``20px``.
+
+
+
+
