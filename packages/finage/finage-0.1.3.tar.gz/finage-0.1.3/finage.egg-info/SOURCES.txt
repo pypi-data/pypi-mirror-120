@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+finage/__init__.py
+finage/client.py
+finage.egg-info/PKG-INFO
+finage.egg-info/SOURCES.txt
+finage.egg-info/dependency_links.txt
+finage.egg-info/requires.txt
+finage.egg-info/top_level.txt
+test/test_client.py
