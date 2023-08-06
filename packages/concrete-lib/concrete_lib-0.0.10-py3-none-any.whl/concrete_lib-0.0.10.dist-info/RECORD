@@ -1,0 +1,9 @@
+concrete_lib-0.0.10-py3.9-nspkg.pth,sha256=49aY5UL-7inz-l1YHHT6jvcH4VoQTR2abblwztFBvQI,549
+concrete/lib/__init__.py,sha256=B0p9TQ897UmsQD56DmuI_M6f5TuzfG3i1K6oZMUqAMI,32
+concrete/lib/file.py,sha256=j-ta9yatGDmo6-d3Y_JrYSbTdXYqHudrKWO24561y4g,138
+concrete_lib-0.0.10.dist-info/LICENSE,sha256=eXiWHp2qyZ9Tx5PiKmVshKzyBvDdsMFo-w10EknTVVU,2666
+concrete_lib-0.0.10.dist-info/METADATA,sha256=Z9AQaiKsXWT5XAkgxzgRh3adYCh72663j-gys0E-OCk,1161
+concrete_lib-0.0.10.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+concrete_lib-0.0.10.dist-info/namespace_packages.txt,sha256=MRgnRegRkyoRGjOp1ctJ_YQ2KBbT65-5Kv37ILn0kYo,9
+concrete_lib-0.0.10.dist-info/top_level.txt,sha256=MRgnRegRkyoRGjOp1ctJ_YQ2KBbT65-5Kv37ILn0kYo,9
+concrete_lib-0.0.10.dist-info/RECORD,,
