@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: unencryptedsocket
+Version: 1.2.0
+Summary: Simple socket server-client for interprocess communications without security
+Home-page: https://github.com/foxe6/unencryptedsocket
+Author: f̣ộx̣ệ6
+Author-email: foxe6@protonmail.com
+License: AGPL-3.0
+Keywords: unencrypted rpc socket server client
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Utilities
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: omnitools (>=0.0.1)
+
+# Unencrypted Socket
+
+<badges>[![version](https://img.shields.io/pypi/v/unencryptedsocket.svg)](https://pypi.org/project/unencryptedsocket/)
+[![license](https://img.shields.io/pypi/l/unencryptedsocket.svg)](https://pypi.org/project/unencryptedsocket/)
+[![pyversions](https://img.shields.io/pypi/pyversions/unencryptedsocket.svg)](https://pypi.org/project/unencryptedsocket/)  
+[![donate](https://img.shields.io/badge/Donate-Paypal-0070ba.svg)](https://paypal.me/foxe6)
+[![powered](https://img.shields.io/badge/Powered%20by-UTF8-red.svg)](https://paypal.me/foxe6)
+[![made](https://img.shields.io/badge/Made%20with-PyCharm-red.svg)](https://paypal.me/foxe6)
+</badges>
+
+<i>Simple socket server-client for interprocess communications without security</i>
+
+# Hierarchy
+
+```
+unencryptedsocket
+|---- SS()
+|   |---- start()
+|   '---- stop()
+'---- SC()
+    '---- request()
+```
+
+# Example
+
+## python
+See `test`.
+
+

@@ -1,0 +1,13 @@
+.gitignore,sha256=y4OnrjuOuhhyLpsafUd3HLgHi4kM1muEZqhLtiwHjUI,54
+LICENSE,sha256=E_tIpsMacuDitpZQsc6-iVT3tzRJhISS3P0islvZGvo,35182
+README.md,sha256=yp9docvtCb5DbEPlhe2y54TSzX-ehi1qm63YUTBU6_Q,902
+requirements.txt,sha256=jSt1eue7y2SnHqTL2Bpk6YqYiSKJY0tujIFBV9SORiI,20
+unencryptedsocket/__init__.py,sha256=YxXXf2_xLS1hdfB3dklQBqCw7tGX3JYVWJiH0dqHCiM,427
+unencryptedsocket/client.py,sha256=vm0IjnOw2_GeOww5gtXKlyty_7Kq3SXakT30P2PJioU,849
+unencryptedsocket/server.py,sha256=CcQYG5TLI1o8jJdjZi9_6wCRKKZ9Xf3eIGmrtj5SL58,2482
+unencryptedsocket/utils.py,sha256=enkUtgImUqS8VMFri4ge_nI2syT3sWfx9KTspGUSAQg,416
+unencryptedsocket-1.2.0.dist-info/LICENSE,sha256=E_tIpsMacuDitpZQsc6-iVT3tzRJhISS3P0islvZGvo,35182
+unencryptedsocket-1.2.0.dist-info/METADATA,sha256=YaRwsLYMpQw5yPoDlUaEgtbp6gEqN5U5DP4swIktAYQ,1672
+unencryptedsocket-1.2.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+unencryptedsocket-1.2.0.dist-info/top_level.txt,sha256=Hl4Hy-hZzbVyi9XUOMsVtiRWU1FHvQAAMJDJWANuco4,18
+unencryptedsocket-1.2.0.dist-info/RECORD,,
