@@ -1,0 +1,9 @@
+py_mcws/__init__.py,sha256=AAsmKawyWSc37ek5ZPWjYGUMJ-JGR9HNBDGR7yxI1wE,63
+py_mcws/discordbot.py,sha256=O-qSWXUt-aKF4DXwN3o1fMb3w1E4oes4QLmHbQNQ3Ls,324
+py_mcws/scoreboard.py,sha256=1xLapb_aUInz0e8B4Mprhttdf1ttfFvcPOiF07VBouE,959
+py_mcws/server.py,sha256=oacJY6_m-CHgkZpJa4E0dOlyJ1PFJNR2JJWENvjwnGQ,3203
+py_mcws-1.0.0.dist-info/LICENSE,sha256=HuT5VNmMiSASbYLJmm2soatSbxOEk8bL89gDcka-gcw,1069
+py_mcws-1.0.0.dist-info/METADATA,sha256=RpCCy5pW0MinkDo5vOZhv5LaVsGjq3tT1QzuGWyOfQg,1585
+py_mcws-1.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+py_mcws-1.0.0.dist-info/top_level.txt,sha256=Q6otdvo1nFOwBGHKM1iYEqs3WSOC_ICcRLGd5ucjxtg,8
+py_mcws-1.0.0.dist-info/RECORD,,
