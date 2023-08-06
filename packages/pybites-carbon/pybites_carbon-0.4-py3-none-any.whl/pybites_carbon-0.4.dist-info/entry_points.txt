@@ -1,0 +1,3 @@
+[console_scripts]
+carbon=carbon.__main__:main
+
