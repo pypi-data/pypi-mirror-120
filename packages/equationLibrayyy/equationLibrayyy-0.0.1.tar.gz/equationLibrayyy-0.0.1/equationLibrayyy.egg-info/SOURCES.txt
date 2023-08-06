@@ -1,0 +1,7 @@
+README.txt
+setup.py
+equationLibrayyy.egg-info/PKG-INFO
+equationLibrayyy.egg-info/SOURCES.txt
+equationLibrayyy.egg-info/dependency_links.txt
+equationLibrayyy.egg-info/requires.txt
+equationLibrayyy.egg-info/top_level.txt

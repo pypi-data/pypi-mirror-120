@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: equationLibrayyy
+Version: 0.0.1
+Summary: An equation solver
+Home-page: UNKNOWN
+Author: Gaurav Thakur
+Author-email: gaurav.thakur1998@gmail.com
+License: MIT
+Description: This is a library coded in Python which helps users to solve various equations and return the roots.
+        
+        Change Log
+        ==========
+        
+        0.0.1 (17/09/2021)
+        -------------------
+        - First Release
+Keywords: equation_solver
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
