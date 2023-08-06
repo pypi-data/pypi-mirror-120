@@ -1,0 +1,23 @@
+[Desktop Entry]
+Categories=Office;
+Comment=Fast Forward Job Hunting
+Encoding=UTF-8
+
+Exec=zamestnani
+
+GenericName=Fast Forward Job Hunting
+Icon=arrow-right-double
+Keywords=job;employment;kde;gtk;gnome;
+MimeType=
+Name=Fast Forward Job Hunting
+NoDisplay=False
+
+Path=
+
+#Path[$e]=
+StartupNotify=True
+#Terminal=True
+Terminal=False
+TerminalOptions=
+Type=Application
+Version=0.0.1
