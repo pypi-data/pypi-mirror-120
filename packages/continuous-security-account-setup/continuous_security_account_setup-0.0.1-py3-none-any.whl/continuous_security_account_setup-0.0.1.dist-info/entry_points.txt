@@ -1,0 +1,3 @@
+[console_scripts]
+create_org = continuous_security_account_setup.create_org:main
+

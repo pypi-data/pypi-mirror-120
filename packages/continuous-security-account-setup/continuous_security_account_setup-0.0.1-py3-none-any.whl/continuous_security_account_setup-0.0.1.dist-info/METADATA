@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: continuous-security-account-setup
+Version: 0.0.1
+Summary: Account setup for the Continuous Security project
+Home-page: UNKNOWN
+Author: Eric Kascic
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE.md
+Requires-Dist: boto3
+Requires-Dist: polling2
+
+UNKNOWN
+
