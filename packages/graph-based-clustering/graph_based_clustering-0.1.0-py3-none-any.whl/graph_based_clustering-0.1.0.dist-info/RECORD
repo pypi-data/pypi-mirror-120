@@ -1,0 +1,12 @@
+graph_based_clustering/__init__.py,sha256=IN-pWEv-xUYeUWcdIv4M1Nos9nbHlgvzuHEfx9iwWcg,206
+graph_based_clustering/check.py,sha256=ASlRU0cMFDjUERVlSdFGf6eGVEH8NA6JfR7u9g9oPic,1986
+graph_based_clustering/main.py,sha256=NTMdVT3FKTWBugJ5YQUucSVWCWw34kEyrBdJe4nzcGQ,4543
+graph_based_clustering/utils.py,sha256=YbQsbKX9LKPOkSPkik_DpXq7tDu331QUVGUFBKI_wdY,2477
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_graph_clustering.py,sha256=0qqprOHFhyw1zZ1VOSAogC5SGQxfskrOkXapjCYBH94,5996
+tests/utils.py,sha256=mwF1yQbYb5aNrUuUObE1StZdTo_z99Om_3othfQs6hA,1771
+graph_based_clustering-0.1.0.dist-info/LICENSE,sha256=UTO8B5JAGoD8oqf96ZayDSm05U9AiFyHQLTdfgBXJLQ,1071
+graph_based_clustering-0.1.0.dist-info/METADATA,sha256=MR3sUwN5fMnLStqCD2yrKI8lAjKrI0o2VliC3i9rwdY,5788
+graph_based_clustering-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+graph_based_clustering-0.1.0.dist-info/top_level.txt,sha256=V4a90QRCXnTEt2GTPj_rflKfoQkMK8pfzgf3v0CksWY,29
+graph_based_clustering-0.1.0.dist-info/RECORD,,
