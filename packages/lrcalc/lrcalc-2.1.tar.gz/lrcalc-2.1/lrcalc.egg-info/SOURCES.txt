@@ -1,0 +1,12 @@
+COPYING
+LICENSE
+MANIFEST.in
+README.rst
+liblrcalc.pxd
+lrcalc.pyx
+pyproject.toml
+setup.py
+lrcalc.egg-info/PKG-INFO
+lrcalc.egg-info/SOURCES.txt
+lrcalc.egg-info/dependency_links.txt
+lrcalc.egg-info/top_level.txt
