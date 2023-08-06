@@ -1,0 +1,9 @@
+argguard/__init__.py,sha256=-GoHvWQ0avzvRW0Fx93sM5lGbwATQzxoMBDxm32meXU,31
+argguard/argguard.py,sha256=FFf5kh7ZBuQRbY4kgL7TEHMzk1ME3TLthEJyDRvrZPs,681
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/argguard_test.py,sha256=zqOvO9QmhvzE50BmdoNowMDrj6dw_pl0HMLjZheMEug,748
+argguard-0.0.1.dist-info/LICENSE,sha256=AF77kIyotQBeAxckQ-2HUmNr7q-PsLk679hLZtKTqxA,1072
+argguard-0.0.1.dist-info/METADATA,sha256=jcb0CexNWvIy8Z8omKnJ9mo0PAFe6Eq7M5wiXqmYCzk,2731
+argguard-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+argguard-0.0.1.dist-info/top_level.txt,sha256=hDpMPE2mWUdCF2BBs4u1-dAGlrHpgnkrRnJyjaOBqu4,15
+argguard-0.0.1.dist-info/RECORD,,
