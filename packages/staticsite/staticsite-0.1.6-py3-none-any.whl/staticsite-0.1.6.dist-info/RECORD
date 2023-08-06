@@ -1,0 +1,9 @@
+staticsite/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+staticsite/__main__.py,sha256=e5ohi8fxpxS232niYA8W2_JJfR7kELFr3dE4VyhU6xg,1867
+staticsite/builder.py,sha256=51ixuydEGWAOVBeZ2jkubw5P2BQ7tBG2uwD-53VULck,1845
+staticsite/discovery.py,sha256=TPSPQE6QtWTGSui-3o0RONt-OVic2JFqykOMcMqaMio,654
+staticsite/plugins.py,sha256=oDaPA3h8KBGjWdwpBdgw_UQ9UuE9J77q888hikqksUo,73
+staticsite/watcher.py,sha256=hTq83Aqkcpes8s5HrnTf9tAgIK6vf6k26nYZUk_4SAE,1038
+staticsite-0.1.6.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+staticsite-0.1.6.dist-info/METADATA,sha256=4w-CW5uoAuJQdyl3-ZtOEqe-asSgjUojFoMWmkVjj0c,1059
+staticsite-0.1.6.dist-info/RECORD,,
