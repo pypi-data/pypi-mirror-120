@@ -1,0 +1,12 @@
+psutil
+pandas
+matplotlib
+resource
+mplcursors
+sklearn
+pandas
+pami
+sklearn_extensions
+tk
+setuptools
+numpy
