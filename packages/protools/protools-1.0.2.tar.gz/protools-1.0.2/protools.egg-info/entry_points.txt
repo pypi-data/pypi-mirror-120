@@ -1,0 +1,3 @@
+[console_scripts]
+protools = protools.cli:main
+
