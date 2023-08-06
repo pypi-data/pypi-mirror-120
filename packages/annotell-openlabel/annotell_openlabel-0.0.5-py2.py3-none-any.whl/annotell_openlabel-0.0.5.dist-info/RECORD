@@ -1,0 +1,16 @@
+annotell_openlabel-0.0.5-py3.9-nspkg.pth,sha256=QpBPPgWNKzm0ysnHOq_yHjdpWnH3BJrz1TQeNgOzolw,549
+annotell/openlabel/__init__.py,sha256=ykyqsX18JIts5XzR2eQcJVW6UhzCh_a0zwurzqmmdtg,125
+annotell/openlabel/models/__init__.py,sha256=mSUBFESAVirPK30s7BV3q6D1sjQgPPehFgxgtWbdb7o,89
+annotell/openlabel/models/data_types.py,sha256=aKIXvnjTSHZ3qAFb-bhZifCNLtLuh4FZ6uOZT8oZF1I,767
+annotell/openlabel/models/datamodel.py,sha256=y_I-bTOukXLLMaLE7xdrUt2bO6Pt9kGpfxORUsne8sw,7826
+annotell/openlabel/models/datatypelist.py,sha256=yLV9AT_zmvDhtXKmm7e0q86bNiGFjwq042fAUz9bC8Q,2255
+annotell/openlabel/models/openlabel_base.py,sha256=iOayKxjz-Oy6EusixVoFxAnzT2fMeAI2rSLuT1lFgqg,4376
+annotell/openlabel/models/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+annotell/openlabel/models/utils/data_type_parsing.py,sha256=mkBfyS7dBlOj-sxgeR5X0JIM3ewAzCBRAK3lPBIb7SI,769
+annotell/openlabel/models/utils/deserialize.py,sha256=Nr0-BCioOISgGz0Dcl67UM7EA3n6No4IUBNgVEW6GCo,3441
+annotell/openlabel/models/utils/frame_interval.py,sha256=a6ojJ5cdNuoYcaYH4M6rAtl0JXqX58pvkjTqqyAq020,1244
+annotell_openlabel-0.0.5.dist-info/METADATA,sha256=_vBuiRUFm1QQPABn5MUu48XW6eeIratDuVUr30ZKx-g,708
+annotell_openlabel-0.0.5.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+annotell_openlabel-0.0.5.dist-info/namespace_packages.txt,sha256=ovwDyo5ajMsAZxqAovd0d4s8ZFftRtmvbKk1zN8Z0go,9
+annotell_openlabel-0.0.5.dist-info/top_level.txt,sha256=ovwDyo5ajMsAZxqAovd0d4s8ZFftRtmvbKk1zN8Z0go,9
+annotell_openlabel-0.0.5.dist-info/RECORD,,
