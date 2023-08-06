@@ -1,0 +1,11 @@
+MANIFEST.in
+README.rst
+setup.py
+new-package-1801/__init__.py
+new-package-1801/example.py
+new_package_1801.egg-info/PKG-INFO
+new_package_1801.egg-info/SOURCES.txt
+new_package_1801.egg-info/dependency_links.txt
+new_package_1801.egg-info/not-zip-safe
+new_package_1801.egg-info/requires.txt
+new_package_1801.egg-info/top_level.txt
