@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: telewrapper
+Version: 0.0.5
+Summary: Telegram API wrapper based on Telethon.
+Home-page: https://github.com/foxe6/telewrapper
+Author: f̣ộx̣ệ6
+Author-email: foxe6@protonmail.com
+License: AGPL-3.0
+Keywords: telegram telethon telewrapper bot api
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Utilities
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: omnitools (>=0.0.1)
+Requires-Dist: telethon (>=0.0.1)
+
+# Telewrapper
+
+<badges>[![version](https://img.shields.io/pypi/v/telewrapper.svg)](https://pypi.org/project/telewrapper/)
+[![license](https://img.shields.io/pypi/l/telewrapper.svg)](https://pypi.org/project/telewrapper/)
+[![pyversions](https://img.shields.io/pypi/pyversions/telewrapper.svg)](https://pypi.org/project/telewrapper/)  
+[![donate](https://img.shields.io/badge/Donate-Paypal-0070ba.svg)](https://paypal.me/foxe6)
+[![powered](https://img.shields.io/badge/Powered%20by-UTF8-red.svg)](https://paypal.me/foxe6)
+[![made](https://img.shields.io/badge/Made%20with-PyCharm-red.svg)](https://paypal.me/foxe6)
+</badges>
+
+<i>Telegram API wrapper based on Telethon.</i>
+
+# Hierarchy
+
+```
+telewrapper
+|---- TeleUrlBtn()
+|---- TeleBtn()
+|---- Telewrapper()
+|   |---- stop_loop()
+|   |---- start_loop()
+|   |---- new_cmd_event()
+|   '---- new_msg_event()
+|---- TeleCmd_start()
+'---- TeleMsg_Echo()
+```
+
+# Example
+
+## python
+See `test`.
+

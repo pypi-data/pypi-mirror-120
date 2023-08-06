@@ -1,0 +1,11 @@
+.gitignore,sha256=y4OnrjuOuhhyLpsafUd3HLgHi4kM1muEZqhLtiwHjUI,54
+LICENSE,sha256=E_tIpsMacuDitpZQsc6-iVT3tzRJhISS3P0islvZGvo,35182
+README.md,sha256=XZXBlkm98Zuq8JYKIiLHrVAgU40cnDQKZF9dNXxGRX4,933
+requirements.txt,sha256=ZljPmnVWkgSGfQhfJw8b6KCwForDWhM6n-qamgEuelo,35
+telewrapper/__init__.py,sha256=drYoZBKWrFFo_j7XYPCmhNpp0VApkm7S_vFoUyzvKbY,411
+telewrapper/core.py,sha256=BdloMWeKxNPJD7vVgo2bHH48bEHhhtmQ4OWDdncswI4,7565
+telewrapper-0.0.5.dist-info/LICENSE,sha256=E_tIpsMacuDitpZQsc6-iVT3tzRJhISS3P0islvZGvo,35182
+telewrapper-0.0.5.dist-info/METADATA,sha256=cYkX-s2Cdoc64qYKq6wv-5L0In788zU767hPswyXQ4g,1689
+telewrapper-0.0.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+telewrapper-0.0.5.dist-info/top_level.txt,sha256=JqVKoK1zX3IH7oBo2kzH_9Eb-fzY_3wJByoa1EprpcQ,12
+telewrapper-0.0.5.dist-info/RECORD,,
