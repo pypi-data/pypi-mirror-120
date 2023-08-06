@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: dsw
+Version: 0.1.14
+Summary: Tools used by Deep Sky Wonder
+Home-page: https://github.com/DeepSkyWonder/dsw
+Author: Cameron McEwing
+Author-email: tech.mechanic@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib
+Requires-Dist: ipython
+Requires-Dist: rebound (>=3.17.4)
+Requires-Dist: numpy
+Requires-Dist: astropy (>=4.3.1)
+
+# dsw
+
+A collection of tools used by Deep Sky Wonder.
+
+Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
+
+This work is licensed under a
+[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
+
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-image]][cc-by-nc-sa]
+
+[cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
+[cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
+[cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
+
+Requires:
+
+- rebound >= 3.17.4
+- astropy >= 4.3.1
+- python >= 3.7
+
+
