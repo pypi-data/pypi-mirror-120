@@ -1,0 +1,8 @@
+pyxnat>=1.1.0.2
+pyyaml
+pycap
+nibabel
+fpdf2
+
+[docs]
+Sphinx>=1.4
