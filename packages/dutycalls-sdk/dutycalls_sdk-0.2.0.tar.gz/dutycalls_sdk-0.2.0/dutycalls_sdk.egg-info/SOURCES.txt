@@ -1,0 +1,10 @@
+README.md
+setup.py
+dutycalls/__init__.py
+dutycalls/client.py
+dutycalls/errors.py
+dutycalls_sdk.egg-info/PKG-INFO
+dutycalls_sdk.egg-info/SOURCES.txt
+dutycalls_sdk.egg-info/dependency_links.txt
+dutycalls_sdk.egg-info/requires.txt
+dutycalls_sdk.egg-info/top_level.txt
