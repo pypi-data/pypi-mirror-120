@@ -1,0 +1,3 @@
+[console_scripts]
+pytest_watcher=pytest_watcher:run
+
