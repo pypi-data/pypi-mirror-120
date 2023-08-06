@@ -1,0 +1,8 @@
+README.md
+setup.py
+imperial.egg-info/PKG-INFO
+imperial.egg-info/SOURCES.txt
+imperial.egg-info/dependency_links.txt
+imperial.egg-info/requires.txt
+imperial.egg-info/top_level.txt
+imperial.egg-info/zip-safe

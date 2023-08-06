@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: imperial
+Version: 1.0.0
+Summary: A mirror package for imperial.py. Please install that instead.
+Home-page: https://github.com/imperialbin/imperial.py
+Author: Hexiro
+License: UNKNOWN
+Description: 
+        ### This is a mirror package!
+        It is recommended to install `imperial.py` instead.
+        If you're interested in claiming the name `imperial` on PyPi, just contact me and i'll give it to you.
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
