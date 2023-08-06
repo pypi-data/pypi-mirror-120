@@ -1,0 +1,3 @@
+[console_scripts]
+cap2 = cap2.cli:main
+
