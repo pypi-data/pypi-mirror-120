@@ -1,0 +1,3 @@
+sympy
+numpy
+Python-Alexandria>=2.0.0
