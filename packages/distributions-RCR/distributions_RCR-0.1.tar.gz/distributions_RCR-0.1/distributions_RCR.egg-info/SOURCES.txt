@@ -1,0 +1,10 @@
+setup.py
+distributions_RCR/Binomialdistribution.py
+distributions_RCR/Gaussiandistribution.py
+distributions_RCR/Generaldistribution.py
+distributions_RCR/__init__.py
+distributions_RCR.egg-info/PKG-INFO
+distributions_RCR.egg-info/SOURCES.txt
+distributions_RCR.egg-info/dependency_links.txt
+distributions_RCR.egg-info/not-zip-safe
+distributions_RCR.egg-info/top_level.txt
