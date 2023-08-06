@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: mkdocs-page-pdf
+Version: 0.0.3
+Summary: Generate a PDF file for each MkDocs page
+Home-page: https://github.com/brospars/mkdocs-page-pdf
+Author: brospars
+Author-email: 
+License: MIT
+Keywords: mkdocs pdf pyppeteer chrome headless page
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: mkdocs (>=1.1)
+Requires-Dist: pyppeteer (>=0.2)
+Requires-Dist: asyncio (>=1.5)
+Requires-Dist: nest-asyncio (>=1.5)
+
+# Mkdocs Page to PDF
+
+An Mkdocs plugin to generate a PDF file for each MkDocs page.
+
+## How to use
+
+Install the package with pip:
+
+```shell
+pip install mkdocs-page-pdf
+```
+
+Enable the plugin in your mkdocs.yml:
+
+```yaml
+plugins:
+  # - ...
+    - pdf-export # should be last
+```
+
+
+
+
