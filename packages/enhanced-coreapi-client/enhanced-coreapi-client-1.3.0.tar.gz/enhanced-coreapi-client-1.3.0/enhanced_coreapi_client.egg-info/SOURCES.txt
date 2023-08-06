@@ -1,0 +1,14 @@
+CHANGELOG.rst
+MANIFEST.in
+README.rst
+VERSION
+setup.cfg
+setup.py
+enhanced_coreapi_client/__init__.py
+enhanced_coreapi_client/models.py
+enhanced_coreapi_client.egg-info/PKG-INFO
+enhanced_coreapi_client.egg-info/SOURCES.txt
+enhanced_coreapi_client.egg-info/dependency_links.txt
+enhanced_coreapi_client.egg-info/requires.txt
+enhanced_coreapi_client.egg-info/top_level.txt
+enhanced_coreapi_client.egg-info/zip-safe

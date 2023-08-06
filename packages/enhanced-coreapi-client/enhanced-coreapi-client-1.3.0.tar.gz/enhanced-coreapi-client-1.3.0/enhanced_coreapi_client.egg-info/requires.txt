@@ -1,0 +1,4 @@
+coreapi>=2.3
+
+[dev]
+ipython
