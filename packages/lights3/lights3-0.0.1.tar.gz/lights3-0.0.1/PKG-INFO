@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: lights3
+Version: 0.0.1
+Summary: Lightweight S3 toolkit
+Home-page: https://github.com/micaleel/lights3
+Author: Khalil Muhammad
+Author-email: micaleel@gmail.com
+License: MIT
+Description: # lights3
+        
+        Yet another S3 Toolkit
+Keywords: AWS,S3
+Platform: UNKNOWN
+Requires-Python: >=3
+Description-Content-Type: text/markdown

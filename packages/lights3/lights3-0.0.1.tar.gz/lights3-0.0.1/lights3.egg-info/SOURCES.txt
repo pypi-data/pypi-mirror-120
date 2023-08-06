@@ -1,0 +1,11 @@
+README.md
+setup.py
+lights3/__init__.py
+lights3/__main__.py
+lights3/lights3.py
+lights3.egg-info/PKG-INFO
+lights3.egg-info/SOURCES.txt
+lights3.egg-info/dependency_links.txt
+lights3.egg-info/entry_points.txt
+lights3.egg-info/requires.txt
+lights3.egg-info/top_level.txt
