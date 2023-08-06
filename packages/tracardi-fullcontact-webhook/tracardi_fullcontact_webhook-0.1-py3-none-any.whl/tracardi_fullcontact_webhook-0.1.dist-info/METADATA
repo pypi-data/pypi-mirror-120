@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: tracardi-fullcontact-webhook
+Version: 0.1
+Summary: This plugin gets data about the provided e-mail fro FullContact service.
+Home-page: UNKNOWN
+Author: Risto Kowaczewski
+Author-email: risto.kowaczewski@gmail.com
+License: UNKNOWN
+Keywords: tracardi,plugin
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: tracardi-plugin-sdk
+Requires-Dist: tracardi
+Requires-Dist: tracardi-dot-notation
+Requires-Dist: pydantic
+Requires-Dist: python-fullcontact
+
+# Plugin documentation
+
+Please provide documentation
+
