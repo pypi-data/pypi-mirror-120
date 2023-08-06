@@ -1,0 +1,14 @@
+README.md
+setup.py
+sotaque_brasileiro/__init__.py
+sotaque_brasileiro/constants.py
+sotaque_brasileiro/feature.py
+sotaque_brasileiro/io.py
+sotaque_brasileiro/preprocessing.py
+sotaque_brasileiro/utils.py
+sotaque_brasileiro/visualization.py
+sotaque_brasileiro.egg-info/PKG-INFO
+sotaque_brasileiro.egg-info/SOURCES.txt
+sotaque_brasileiro.egg-info/dependency_links.txt
+sotaque_brasileiro.egg-info/requires.txt
+sotaque_brasileiro.egg-info/top_level.txt
