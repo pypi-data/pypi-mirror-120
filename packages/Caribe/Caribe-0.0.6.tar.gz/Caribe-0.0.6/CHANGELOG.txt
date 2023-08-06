@@ -1,0 +1,30 @@
+CHANGELOG =======================================>
+
+Version 0.0.1 (16/09/2021)
+
+- Initial Release
+
+Version 0.0.2 (16/09/2021)
+
+- Minor bugs fixed
+- More words added
+
+Version 0.0.3 (16/09/2021)
+
+- Minor bugs fixed
+- More words added
+- phase decode method created
+
+Version 0.0.4 (17/09/2021)
+
+- More words added
+- caribe corrector method created
+
+Version 0.0.5 (17/09/2021)
+
+- Minor Dependency issues resolved
+
+Version 0.0.6 (17/09/2021)
+
+- More Words and phrases added
+ 
