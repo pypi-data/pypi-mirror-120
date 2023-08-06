@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ezfba
+Version: 2.3
+Summary: flutter build helper/ upload helper
+Home-page: UNKNOWN
+Author: madhavth
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: mtup
+Requires-Dist: notifyd
+Requires-Dist: notipy
+
+ez flutter builder cli  
+for more info
+ezfba -h
+
+

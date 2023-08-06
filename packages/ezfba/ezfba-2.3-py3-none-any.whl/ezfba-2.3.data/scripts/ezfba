@@ -1,0 +1,246 @@
+#!/bin/bash
+
+set -e
+
+version="2.3"
+task="assembleDebug"
+upload=0
+message=0
+skip_build=0
+goto_directory=0
+slack_url=""
+changes=""
+username=""
+native="0"
+webhook_url=""
+direc=""
+
+function usage()
+{
+  echo "----------------------------------------------------"
+  echo "madhavth flutter/native android app builder/uploader"
+  echo "----------------------------------------------------"
+  echo ""
+  echo "available commands are:-"
+  echo "-u ===== upload built apk file"
+  echo "-m ===== send push notification to phone on completion"
+  echo "-s ===== skips building flutter apk"
+  echo "-g ===== open build directory"
+  echo "-n|--native ==== native android app"
+  echo "-rl === native release apk (defaults to debug build)"
+  echo "--apk-path ==== set apk path"
+  echo ""
+  echo ""
+  echo "slack commands:-"
+  echo "-sl|--slack ==== slack url for conversation"
+  echo "-c|--changes ==== description body for slack message"
+  echo "-un  ===== username for slack bot to post with"
+  echo "-a|--author ==== author to show on slack message"
+  echo "-p ==== pretext"
+  echo "-wh [WEBHOOK_URL]"
+
+exit 0
+}
+
+author=""
+
+while [[ $# -gt 0 ]]; do
+
+  if [[ -z $1 ]]; then
+    usage
+  fi
+
+    case $1 in
+			-u)
+				upload=1
+			;;
+
+      -rl)
+        task="assembleRelease"
+        ;;
+
+        --apk-path)
+          direc="$2"
+          shift
+          ;;
+
+      -wh)
+        webhook_url="$2"
+        shift
+        ;;
+
+      -a|--author)
+        author=$2
+        shift
+        ;;
+
+	-n|--native)
+	native="1"
+	;;
+
+      -un)
+        username=$2
+        shift
+        ;;
+
+		-c|--changes)
+      changes=$2
+      shift
+			;;
+
+			-sl|--slack)
+        upload=1
+				slack_url=$2
+				shift
+			;;
+
+			-s)
+				skip_build=1
+			;;
+
+			-m)
+				message=1
+				;;
+
+				-h|--help)
+					usage
+				;;
+
+			-g|--gotodirectory)
+				xdg-open build/app/outputs/flutter-apk
+				;;
+
+      -p)
+        directory_name="$2"
+        shift
+      ;;
+
+		esac
+    shift
+	done
+
+
+if [[ "$upload" == "0" ]]; then
+	echo "use -u to upload generated apk file"
+fi
+
+if [[ -z $directory_name ]]; then
+  directory_name=${PWD##*/}
+fi
+
+git_branch=$(git branch --show-current)
+
+function slack_upload()
+{
+  url=$1
+	description=${changes:-"$git_branch"}
+	username=${username:-"Apk Uploader"}
+	upslack "$slack_url" "$directory_name" "$description" "$url" "$username" "$author" $webhook_url
+}
+
+
+
+function check_if_flutter_folder()
+{
+	if [[ ! -f "pubspec.yaml" ]]; then
+		echo "not a flutter app.. exiting"
+		exit 1
+	fi
+}
+
+function check_if_app_folder()
+{
+    if [[ -f "gradlew" && -f "build.gradle" ]]; then
+        echo "building gradle android app"
+    else
+        echo "not a android app directory.. exiting"
+        exit 1
+    fi
+}
+
+
+apk_path="build/app/outputs/flutter-apk/app-release.apk"
+
+if [[ "$native" == "0" ]]; then
+	check_if_flutter_folder
+else
+	check_if_app_folder
+fi
+
+
+if [[ "$skip_build" == "0" ]]; then
+
+	if [[ "$native" == "0" ]]; then
+    echo "building flutter app"
+  flutter build apk --release
+	else
+    echo "building native app"
+	./gradlew $task
+	fi
+else
+	echo "skipping build apk part"
+fi
+
+function setDirecPathIfEmpty()
+{
+  if [[ -z "$direc" ]]; then
+    direc="$1"
+  fi
+}
+
+
+if [[ "$native" == "1" ]]; then
+  if [[ "$task" == "assembleDebug" ]]; then
+    setDirecPathIfEmpty "app/build/outputs/apk/debug"
+  else
+    setDirecPathIfEmpty "app/build/outputs/apk/release"
+  fi
+
+apk_path=""
+release=0
+
+if [[ "$task" == "assembleDebug" && -f "$direc/app-debug.apk" ]]; then
+  apk_path="$direc/app-debug.apk"
+elif [[ -f "$direc/app-release.apk" ]]; then
+  release=1
+  apk_path="$direc/app-release.apk"
+elif [[ -f "$direc/app-release-unsigned.apk" ]]; then
+  apk_path="$direc/app-release-unsigned.apk"
+else
+  echo "no generated file found .. exiting"
+  echo "set apk path by using --apk-path command"
+  exit 1
+fi
+fi
+
+
+file="$git_branch.apk"
+
+#no_under=${file/"_"/" "}
+#no_dash="${no_under/"-"/" "}"
+apk_path2="$directory_name - $file"
+#apk_path2=$(echo "$directory_name - ${no_dash//[[:blank:]]/}")
+
+
+if [[ $upload == "1" ]]; then
+	echo "uploaded file name is $apk_path2"
+fi
+
+cp "$apk_path" "$apk_path2"
+
+if [[ -f "$apk_path2" && $upload == "1" ]]; then
+	mtup "$apk_path2"
+
+
+	if [[ ! -z $slack_url ]]; then
+				slack_upload "$(python -m pyclip paste)"
+	fi
+
+	if [[ $message == "1" ]]; then
+		msg "uploaded successfully.. check terminal"
+	fi
+
+  rm "$apk_path2"
+
+  notifyd "successfully uploaded" "$apk_path2" &>/dev/null
+fi
