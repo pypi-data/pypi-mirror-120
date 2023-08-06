@@ -1,0 +1,10 @@
+setup.py
+steazydistributions/Binomialdistribution.py
+steazydistributions/Gaussiandistribution.py
+steazydistributions/Generaldistribution.py
+steazydistributions/__init__.py
+steazydistributions.egg-info/PKG-INFO
+steazydistributions.egg-info/SOURCES.txt
+steazydistributions.egg-info/dependency_links.txt
+steazydistributions.egg-info/not-zip-safe
+steazydistributions.egg-info/top_level.txt
