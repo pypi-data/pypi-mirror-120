@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: ppddpg-colab-moreira
+Version: 0.0.1
+Summary: Environment and parameters of a DDPG agent for Portfolio Management
+Home-page: https://github.com/mauro-moreira/ddpgportfolio-colab
+Author: Mauro Moreira de Paula
+Author-email: mauromoreirapaula@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# DDPG Portfolio Management
+
+Package for setting up parameters and classes for training and testing the network.
+More details can be found [here](https://github.com/mauro-moreira/ddpgportfolio-colab).
+
