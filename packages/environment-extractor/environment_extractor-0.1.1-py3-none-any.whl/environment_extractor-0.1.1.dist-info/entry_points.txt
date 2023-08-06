@@ -1,0 +1,3 @@
+[console_scripts]
+environment_extractor = environment_extractor.environment_extractor:main
+

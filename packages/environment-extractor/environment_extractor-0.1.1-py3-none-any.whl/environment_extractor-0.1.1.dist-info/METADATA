@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: environment-extractor
+Version: 0.1.1
+Summary: Utility to create an environment.yml file from imports.
+Home-page: UNKNOWN
+Author: Joshua Brooke
+Author-email: joshua.brooke@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+Requires-Dist: stdlib-list
+
+Utility to create an environment.yml file from imports.
+
+Example:
+
+        $ environment_extractor --dir C:\Users\user\Documents\project --ignored_libs "twine lightgbm" --name new_env --channels "pytorch defaults" --extra_libs "fiona geopandas"
+
+Installation:
+
+	$ git clone https://github.com/Joshua-Brooke/Environment_extractor
+	$ cd environment_extractor
+	$ pip install .
+	or
+	$ pip install environment_extractor
+
+
