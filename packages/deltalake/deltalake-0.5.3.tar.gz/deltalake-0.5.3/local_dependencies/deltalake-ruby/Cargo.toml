@@ -1,0 +1,18 @@
+[dependencies]
+lazy_static = "1"
+rutie = "0.8.2"
+
+[dependencies.deltalake]
+path = "../deltalake"
+
+[dependencies.tokio]
+features = ["rt-multi-thread"]
+version = "1"
+
+[lib]
+crate-type = ["cdylib"]
+
+[package]
+authors = ["R Tyler Croy <rtyler@brokenco.de>"]
+name = "deltalake-ruby"
+version = "0.1.0"
