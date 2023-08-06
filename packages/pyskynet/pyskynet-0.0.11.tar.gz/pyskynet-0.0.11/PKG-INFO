@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pyskynet
+Version: 0.0.11
+Summary: PySkynet is a library for using skynet in python.
+Home-page: https://github.com/bytedance/pyskynet
+Author: cz
+Author-email: chenze.3057@bytedance.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.5
+License-File: LICENSE
+
+UNKNOWN
+
