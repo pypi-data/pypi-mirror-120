@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+transferfile/__init__.py
+transferfile/ftp.py
+transferfile/rsync.py
+transferfile/scp.py
+transferfile/sftp.py
+transferfile/transfile_interface.py
+transferfile.egg-info/PKG-INFO
+transferfile.egg-info/SOURCES.txt
+transferfile.egg-info/dependency_links.txt
+transferfile.egg-info/requires.txt
+transferfile.egg-info/top_level.txt
