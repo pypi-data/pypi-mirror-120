@@ -1,0 +1,3 @@
+[mkdocs.plugins]
+page-to-pdf = mkdocs_page_pdf.plugin:PageToPdfPlugin
+
