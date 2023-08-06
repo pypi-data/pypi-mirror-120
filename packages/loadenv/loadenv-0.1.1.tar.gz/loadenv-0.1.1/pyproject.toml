@@ -1,0 +1,26 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "loadenv"
+version = "0.1.1"
+authors = [{name = "Jeremiah Paige", email = "ucodery@gmail.com"}]
+requires-python = ">=3.6"
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: MIT License"]
+keywords = ["env", "envvar", "environ", "environment", "environment variable"]
+dynamic = ["description"]
+
+[project.optional-dependencies]
+test = [
+    "tox",
+]
+
+[project.urls]
+Home = "https://github.com/ucodery/loadenv"
+
+[tool.portray.mkdocs.theme]
+name = "material"
+palette = {primary = "blue grey", accent = "pink"}
