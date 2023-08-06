@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/MinecraftDataHelper/Items.py
+src/MinecraftDataHelper/Recipes.py
+src/MinecraftDataHelper/__init__.py
+src/MinecraftDataHelper/tags.py
+src/mcdatahelper.egg-info/PKG-INFO
+src/mcdatahelper.egg-info/SOURCES.txt
+src/mcdatahelper.egg-info/dependency_links.txt
+src/mcdatahelper.egg-info/top_level.txt
