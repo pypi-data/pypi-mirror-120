@@ -1,0 +1,3 @@
+[console_scripts]
+nissaga = nissaga.cli:main
+
