@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: edwardsserial
+Version: 0.3.2
+Summary: Python API implementing the serial protocoll from edwards vacuum.
+Home-page: https://gitlab.com/codingcoffeebean/edwardsserial
+License: MIT
+Keywords: TIC,edwards,vacuum
+Author: Jan Petermann
+Author-email: jpeterma@physnet.uni-hamburg.de
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pyserial
+Project-URL: Documentation, https://codingcoffeebean.gitlab.io/edwardsserial/
+Project-URL: Repository, https://gitlab.com/codingcoffeebean/edwardsserial
+Description-Content-Type: text/markdown
+
+# TIC
+
+Python object-oriented wrapper for the TIC Turbo- and Instrument Controller from Edwards (https://shop.edwardsvacuum.com/products/d39722000/view.aspx).
