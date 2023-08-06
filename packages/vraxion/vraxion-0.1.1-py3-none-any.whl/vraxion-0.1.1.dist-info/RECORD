@@ -1,0 +1,10 @@
+vraxion/__init__.py,sha256=nMXg9GFsk8gCcyBnh1MAeUPvo4Zcuv3sdwGHZrxfpPE,36
+vraxion/__version__.py,sha256=8oAxKUG747GUokmxjkrWejyJa5yPNEsoJDlXxoedxTw,21
+vraxion/api.py,sha256=tQNO_ei__yLutj61ld50uFvupLbZT9aAbcDSDJ7aDuU,3901
+vraxion/middleware.py,sha256=RB00KdBrBbmyEP1sVnwzs5ptzsETR973Ncfx4HTVgAg,1135
+vraxion/orm.py,sha256=0tw8OHIUnbwKxt52iouvnO0ReHRHeBcuCDb6wSna5Vc,6682
+vraxion/response.py,sha256=ZaJunCSHa0TVNkqaCG_jvhrnuJ_whHV9RzJDw27zlV0,945
+vraxion-0.1.1.dist-info/METADATA,sha256=wUtog9PH_eME6bJfVFPMc8Sy3Bx0pgsOQzT55xj0tMA,640
+vraxion-0.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+vraxion-0.1.1.dist-info/top_level.txt,sha256=DEgqZQJyy-3QkgwvnFfzlUZNOgbPICA0VFnatlxmtAg,8
+vraxion-0.1.1.dist-info/RECORD,,
