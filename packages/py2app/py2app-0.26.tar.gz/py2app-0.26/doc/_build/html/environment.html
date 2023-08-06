@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
+
+    <title>Environment in launched applications &#8212; py2app 0.26 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/nature.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Frequently Asked Questions" href="faq.html" />
+    <link rel="prev" title="Dependencies" href="dependencies.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="faq.html" title="Frequently Asked Questions"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="dependencies.html" title="Dependencies"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">py2app 0.26 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Environment in launched applications</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="environment-in-launched-applications">
+<h1>Environment in launched applications<a class="headerlink" href="#environment-in-launched-applications" title="Permalink to this headline">¶</a></h1>
+<section id="environment-variables-added-by-py2app">
+<h2>Environment variables added by py2app<a class="headerlink" href="#environment-variables-added-by-py2app" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">RESOURCEPATH</span></code></p>
+<p>Filesystem path for the “Resources” folder inside the application bundle</p>
+</li>
+</ul>
+</section>
+<section id="system-environment">
+<h2>System environment<a class="headerlink" href="#system-environment" title="Permalink to this headline">¶</a></h2>
+<p>When the application is launched normally (double clicking in the Finder,
+using the <code class="docutils literal notranslate"><span class="pre">open(1)</span></code> command) the application will be launched with a minimal
+shell environment, which does not pick up changes to the environment in the
+user’s shell profile.</p>
+<p>The “emulate_shell_environment” option will run a login shell in the background
+to fetch exported environment varialbles and inject them into your application.</p>
+<p>It is also possible to inject extra variables into the environment by using
+the <code class="docutils literal notranslate"><span class="pre">LSEnvironment</span></code> key in the Info.plist file, for example like so:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">setup</span><span class="p">(</span>
+    <span class="n">name</span><span class="o">=</span><span class="s1">&#39;BasicApp&#39;</span><span class="p">,</span>
+    <span class="n">app</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;main.py&#39;</span><span class="p">],</span>
+    <span class="n">options</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">py2app</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+        <span class="n">plist</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+            <span class="n">LSEnvironment</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+                <span class="n">LANG</span><span class="o">=</span><span class="s1">&#39;nl_NL.latin1&#39;</span><span class="p">,</span>
+                <span class="n">LC_CTYPE</span><span class="o">=</span><span class="s1">&#39;nl_NL.UTF-8&#39;</span><span class="p">,</span>
+                <span class="n">EXTRA_VAR</span><span class="o">=</span><span class="s1">&#39;hello world&#39;</span><span class="p">,</span>
+                <span class="n">KNIGHT</span><span class="o">=</span><span class="s1">&#39;ni!&#39;</span><span class="p">,</span>
+            <span class="p">)</span>
+           <span class="p">)</span>
+    <span class="p">)),</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Environment in launched applications</a><ul>
+<li><a class="reference internal" href="#environment-variables-added-by-py2app">Environment variables added by py2app</a></li>
+<li><a class="reference internal" href="#system-environment">System environment</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="dependencies.html"
+                        title="previous chapter">Dependencies</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="faq.html"
+                        title="next chapter">Frequently Asked Questions</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/environment.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="faq.html" title="Frequently Asked Questions"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="dependencies.html" title="Dependencies"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">py2app 0.26 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Environment in launched applications</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2010, Ronald Oussoren, Bob Ippolito.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.2.0.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+py2app/recipes/sip.py:55:11: T000 Todo note found.
+py2app/recipes/qt5.py:41:101: B950 line too long (100 > 80 characters)
+py2app/recipes/qt6.py:21:21: F821 undefined name 'os'
+py2app/recipes/qt6.py:28:101: B950 line too long (100 > 80 characters)
+py2app/recipes/tkinter.py:34:9: F401 '_tkinter' imported but unused
+

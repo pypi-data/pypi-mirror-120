@@ -1,0 +1,37 @@
+src/main.m:390:48: warning: pointer type mismatch ('void *' and 'void (*)(PyObject *)' (aka 'void (*)(int *)')) [-Wpointer-type-mismatch]
+    LOOKUP_DEFINEADDRESS(Py_DecRef, (tmpSymbol ? NSAddressOfSymbol(tmpSymbol) : &DefaultDecRef));
+                                               ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~   ~~~~~~~~~~~~~~
+src/main.m:373:37: note: expanded from macro 'LOOKUP_DEFINEADDRESS'
+    NAME ## Ptr NAME = (NAME ## Ptr)ADDRESS
+                                    ^~~~~~~
+src/main.m:417:5: error: unknown type name 'Py_DecodeLocalePtr'; did you mean 'Py_DecodeLocale'?
+    OPT_LOOKUP(Py_DecodeLocale);
+    ^
+src/main.m:384:2: note: expanded from macro 'OPT_LOOKUP'
+        NAME ## Ptr NAME = NULL; \
+        ^
+<scratch space>:13:1: note: expanded from here
+Py_DecodeLocalePtr
+^
+src/main.m:77:20: note: 'Py_DecodeLocale' declared here
+typedef wchar_t* (*Py_DecodeLocale)(const char *s, ssize_t* size);
+                   ^
+src/main.m:417:5: error: use of undeclared identifier 'Py_DecodeLocalePtr'; did you mean 'Py_DecodeLocale'?
+    OPT_LOOKUP(Py_DecodeLocale);
+    ^
+src/main.m:386:13: note: expanded from macro 'OPT_LOOKUP'
+           NAME = (NAME ## Ptr)NSAddressOfSymbol(tmpSymbol); \
+                   ^
+<scratch space>:14:1: note: expanded from here
+Py_DecodeLocalePtr
+^
+src/main.m:417:16: note: 'Py_DecodeLocale' declared here
+    OPT_LOOKUP(Py_DecodeLocale);
+               ^
+src/main.m:417:5: error: expected ';' after expression
+    OPT_LOOKUP(Py_DecodeLocale);
+    ^
+src/main.m:386:25: note: expanded from macro 'OPT_LOOKUP'
+           NAME = (NAME ## Ptr)NSAddressOfSymbol(tmpSymbol); \
+                               ^
+
