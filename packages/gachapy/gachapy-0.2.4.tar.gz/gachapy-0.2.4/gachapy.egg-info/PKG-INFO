@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: gachapy
+Version: 0.2.4
+Summary: A gacha engine built in Python for developing gacha games
+Home-page: https://github.com/jakejack13/gachapy
+Author: Jacob Kerr
+Author-email: jck268@cornell.edu
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/jakejack13/gachapy/issues
+Project-URL: Documentation, https://gachapy.readthedocs.io/
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# GachaPy
+
+A Python engine for gacha games  
+
+##### Install through pip
+```pip install gachapy```
+[gachapy PyPi page](https://pypi.org/project/gachapy/)
+
+##### Documentation
+[gachapy documentation](https://gachapy.readthedocs.io/)
+
