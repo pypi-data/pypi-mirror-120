@@ -1,0 +1,94 @@
+{
+  "name": "@jupyrdf/jupyterlab-graph-lsp",
+  "version": "0.1.0",
+  "description": "Graph Language Server extensions for jupyterlab-lsp",
+  "keywords": [
+    "code-intelligence",
+    "graphql",
+    "intellisense",
+    "jupyter",
+    "jupyterlab-extension",
+    "jupyterlab",
+    "language-server-protocol",
+    "linting",
+    "lsp",
+    "sparql",
+    "turtle"
+  ],
+  "homepage": "https://github.com/jupyrdf/graph-lsp",
+  "bugs": {
+    "url": "https://github.com/jupyrdf/graph-lsp/issues"
+  },
+  "license": "BSD-3-Clause",
+  "author": "Graph-LSP Development Team",
+  "files": [
+    "{lib,style,src}/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf,css,json,ts,tsx,txt,md}",
+    "LICENSE"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jupyrdf/graph-lsp.git"
+  },
+  "scripts": {
+    "bootstrap": "jlpm --prefer-offline --ignore-optional --ignore-scripts && jlpm clean && jlpm schema && jlpm lint && jlpm build",
+    "build": "jlpm build:ts && jlpm build:ext",
+    "build:ts": "tsc -b",
+    "build:ext": "jupyter labextension build .",
+    "clean": "rimraf ./lib",
+    "watch:lib": "jlpm build:ts --watch --preserveWatchOutput",
+    "watch:ext": "jupyter labextension watch .",
+    "lint": "jlpm prettier",
+    "lint:prettier": "prettier --write --list-different \"*.{json,yml,md}\" \"{src,style,py_src,.github,examples,docs}/**/*.{ts,tsx,js,jsx,css,json,md,yml}\""
+  },
+  "dependencies": {
+    "@jupyterlab/application": "^3.0.0",
+    "@jupyterlab/codemirror": "^3.0.0",
+    "@krassowski/jupyterlab-lsp": "^3.7.0",
+    "codemirror-graphql": "^1.0.0",
+    "graphql": "^15.5.0"
+  },
+  "peerDependencies": {
+    "codemirror": "~5.57.0"
+  },
+  "devDependencies": {
+    "@jupyterlab/builder": "^3.0.0",
+    "@types/codemirror": "^0.0.74",
+    "@typescript-eslint/eslint-plugin": "^4.8.1",
+    "@typescript-eslint/parser": "^4.8.1",
+    "codemirror": "~5.57.0",
+    "prettier": "^2.1.2",
+    "rimraf": "^3.0.2",
+    "sparql-language-server": "^4.0.0",
+    "stardog-graphql-language-server": "^2.0.0",
+    "turtle-language-server": "^3.0.0",
+    "typescript": "~4.2.3"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "printWidth": 88,
+    "proseWrap": "always"
+  },
+  "jupyterlab": {
+    "extension": "lib/plugin.js",
+    "outputDir": "./jupyterlab_graph_lsp/labextension",
+    "sharedPackages": {
+      "graphql": {
+        "bundled": true
+      },
+      "@krassowski/jupyterlab-lsp": {
+        "bundled": false,
+        "singleton": true
+      },
+      "codemirror": {
+        "bundled": false,
+        "singleton": true
+      }
+    },
+    "_build": {
+      "load": "static/remoteEntry.19665cb59293a0e2a591.js",
+      "extension": "./extension"
+    }
+  }
+}

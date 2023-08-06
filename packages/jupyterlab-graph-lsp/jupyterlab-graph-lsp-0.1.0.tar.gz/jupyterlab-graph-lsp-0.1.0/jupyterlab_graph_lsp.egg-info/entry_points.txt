@@ -1,0 +1,5 @@
+[jupyter_lsp_spec_v1]
+sparql-language-server = jupyterlab_graph_lsp.specs:sparql
+stardog-graphql-language-server = jupyterlab_graph_lsp.specs:graphql
+turtle-language-server = jupyterlab_graph_lsp.specs:turtle
+
