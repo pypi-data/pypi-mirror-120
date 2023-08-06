@@ -1,0 +1,4 @@
+[console_scripts]
+nude-cli = nude.__main__:cli
+nude-gui = nude.__main__:gui
+

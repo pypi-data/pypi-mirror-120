@@ -1,0 +1,57 @@
+# Nude
+
+Turn clothed women nude
+
+> Disclaimer: This project is intended for educational purposes exclusively and not toward personal intentions. If not used properly, it will remain the individual's responsibility alone.
+
+## Install
+
+On Linux (Ubuntu) you would have to run `sudo apt-get install python3-tk -y` if you want to use the GUI
+
+### Via GitHub
+
+`pip3 install git+https://github.com/donno2048/nude`
+
+### Via [PyPI](https://pypi.org/project/nude/)
+
+`pip3 install nude`
+
+## Usage
+
+### With CLI
+
+Run `nude-cli -i <INPUT> -o <OUTPUT>` in the terminal
+
+(Replace `<INPUT>` with the input file and `<OUTPUT>` with the name for the output file)
+
+In the CLI there are more features (that the GUI doesn't have yet) that can be viewed using `nude-cli -h`
+
+### With GUI
+
+Run `nude-gui` in the terminal
+
+## Additional instructions
+
+1. The image should not have more than one person in it
+
+1. No object except clothes should cover them
+
+1. The person should be a female
+
+1. Skirts and dresses are not recommended as they make it harder to separate legs
+
+### Example
+
+<img src="./assets/sj.jpeg" width="250"/>
+
+Is not ideal because she wairs a dress
+
+<img src="./assets/bikini.png" width="250"/>
+
+Is ideal
+
+<details>
+<summary>Output 🔞</summary>
+<img src="./assets/out.jpeg" width="250"/>
+<img src="./assets/out.png" width="250"/>
+</details>

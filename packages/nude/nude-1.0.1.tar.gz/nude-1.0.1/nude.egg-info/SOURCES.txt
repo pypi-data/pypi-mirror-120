@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+nude/__init__.py
+nude/__main__.py
+nude/fake.png
+nude/setup.py
+nude.egg-info/PKG-INFO
+nude.egg-info/SOURCES.txt
+nude.egg-info/dependency_links.txt
+nude.egg-info/entry_points.txt
+nude.egg-info/requires.txt
+nude.egg-info/top_level.txt
