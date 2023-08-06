@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        stonkmaster=stonkmaster.main:main
+    
