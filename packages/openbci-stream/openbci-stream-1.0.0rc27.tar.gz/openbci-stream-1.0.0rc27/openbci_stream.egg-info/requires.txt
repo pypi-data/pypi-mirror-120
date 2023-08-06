@@ -1,0 +1,14 @@
+ntplib
+tables
+numpy
+rawutil
+mne
+requests
+colorama
+scipy
+kafka_python
+rpyc
+netifaces
+nmap
+pyserial
+systemd_service
