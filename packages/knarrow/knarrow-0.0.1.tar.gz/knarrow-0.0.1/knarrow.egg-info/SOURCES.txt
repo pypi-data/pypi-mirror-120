@@ -1,0 +1,6 @@
+README.md
+setup.py
+knarrow.egg-info/PKG-INFO
+knarrow.egg-info/SOURCES.txt
+knarrow.egg-info/dependency_links.txt
+knarrow.egg-info/top_level.txt
