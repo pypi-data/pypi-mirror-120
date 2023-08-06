@@ -1,0 +1,10 @@
+setup.py
+ihs_probability/Binomialdistribution.py
+ihs_probability/Gaussiandistribution.py
+ihs_probability/Generaldistribution.py
+ihs_probability/__init__.py
+ihs_probability.egg-info/PKG-INFO
+ihs_probability.egg-info/SOURCES.txt
+ihs_probability.egg-info/dependency_links.txt
+ihs_probability.egg-info/not-zip-safe
+ihs_probability.egg-info/top_level.txt
