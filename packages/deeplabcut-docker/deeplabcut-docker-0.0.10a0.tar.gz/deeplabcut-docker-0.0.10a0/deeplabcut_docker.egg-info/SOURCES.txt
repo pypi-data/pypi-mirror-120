@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+PYPI_README.md
+README.md
+deeplabcut_docker.sh
+pyproject.toml
+setup.cfg
+./deeplabcut_docker.py
+deeplabcut_docker.egg-info/PKG-INFO
+deeplabcut_docker.egg-info/SOURCES.txt
+deeplabcut_docker.egg-info/dependency_links.txt
+deeplabcut_docker.egg-info/entry_points.txt
+deeplabcut_docker.egg-info/top_level.txt
