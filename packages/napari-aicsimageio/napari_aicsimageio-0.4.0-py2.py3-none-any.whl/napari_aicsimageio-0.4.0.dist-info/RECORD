@@ -1,0 +1,10 @@
+napari_aicsimageio/__init__.py,sha256=iIsNDb4lFkuvqvNENLGt6soCLrZ3eW6kteSIPJx6s5Q,322
+napari_aicsimageio/core.py,sha256=Buk4XpidW6tZ_SEC3674Hrcd8tN6CY6i_QG9kmbxN_c,8438
+napari_aicsimageio/in_memory.py,sha256=Pqz41zCVwYYCksRPkmboCvEq2k47VAX8OWe2Kbvn8Zk,433
+napari_aicsimageio/out_of_memory.py,sha256=wvAjuivTPFRbkbTHXWs80RvtVfLFxhYcQXPfIXKsL7o,434
+napari_aicsimageio-0.4.0.dist-info/LICENSE,sha256=Fi9VtEl2oLvXpIqI8MfhnRAKApVNFec0wJlkI5VB5DM,1477
+napari_aicsimageio-0.4.0.dist-info/METADATA,sha256=q7yBjT9v7_lU_CQt6p7VNXLmwNjitEXs52UvYk218tc,6824
+napari_aicsimageio-0.4.0.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+napari_aicsimageio-0.4.0.dist-info/entry_points.txt,sha256=aoHlP57WSWMaHqcG_D2MvpivbV5UBbXcYEY1Uc779LY,131
+napari_aicsimageio-0.4.0.dist-info/top_level.txt,sha256=WY9HvZFaahLRblxeC2HwtJ1o90kEj2GY90mQeHRbyVg,19
+napari_aicsimageio-0.4.0.dist-info/RECORD,,
