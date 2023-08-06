@@ -1,0 +1,6 @@
+
+[dev]
+coveralls==3.*
+flake8
+pytest==6.*
+pytest-cov==2.*
