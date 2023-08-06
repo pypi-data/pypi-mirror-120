@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/bdist_pyinstaller/__init__.py
+src/bdist_pyinstaller/bdist_pyinstaller.py
+src/bdist_pyinstaller.egg-info/PKG-INFO
+src/bdist_pyinstaller.egg-info/SOURCES.txt
+src/bdist_pyinstaller.egg-info/dependency_links.txt
+src/bdist_pyinstaller.egg-info/entry_points.txt
+src/bdist_pyinstaller.egg-info/not-zip-safe
+src/bdist_pyinstaller.egg-info/requires.txt
+src/bdist_pyinstaller.egg-info/top_level.txt
