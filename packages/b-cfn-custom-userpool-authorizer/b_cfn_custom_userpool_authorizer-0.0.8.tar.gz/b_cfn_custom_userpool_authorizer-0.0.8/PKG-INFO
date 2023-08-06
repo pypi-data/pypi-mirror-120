@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: b_cfn_custom_userpool_authorizer
+Version: 0.0.8
+Summary: Package that enables deployment of AWS CDK stacks in parallel.
+Home-page: https://github.com/biomapas/B.CfnCustomUserPoolAuthorizer.git
+License: Apache License 2.0
+Description: 
+        
+        # Release history
+        
+        ### 0.0.8
+        * Fix testing configuration.
+        
+        ### 0.0.7
+        * Success! Authorizer can now successfully authorize tokens.
+        
+        ### 0.0.6
+        * First attempt to verify cognito user pool JWT token.
+        
+        ### 0.0.5
+        * Still work in progress. Requests and tests work. 
+        * Checking the actual access token - in progress.
+        
+        ### 0.0.3
+        * Work in progress. Added integration testing files.
+        
+        ### 0.0.1
+        * Initial build.
+        
+Keywords: AWS Cognito UserPool Authorizer
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
