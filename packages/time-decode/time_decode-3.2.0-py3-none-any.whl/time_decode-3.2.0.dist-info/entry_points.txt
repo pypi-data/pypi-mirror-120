@@ -1,0 +1,3 @@
+[console_scripts]
+time-decode = time_decode.time_decode:main
+
