@@ -1,0 +1,114 @@
+Metadata-Version: 2.1
+Name: raya
+Version: 0.6.4
+Summary: Raya - Unlimited Robotics Python Library
+Home-page: UNKNOWN
+Author: Camilo Camacho
+Author-email: camilo@unlimited-robotics.com
+License: MIT
+Keywords: robotics,unlimited-robotics,gary
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.21.1)
+Requires-Dist: asgiref (>=3.4.1)
+Requires-Dist: opencv-python (>=4.5.3.56)
+
+# Raya - Unlimited Robotics Python Library
+
+Documentation: https://documentation.unlimited-robotics.com/
+
+## Release Notes
+
+### v0.6.4
+
+* New `arms` controller.
+
+### v0.6.2
+
+* `raya.utils` tools added
+  * `raya.utils.image.show_image`
+  * `raya.utils.image.save_image`
+
+### v0.6.0
+
+* 'Interactions' controller added
+* New sensors: Heading and Pose.
+
+### v0.5.4
+
+* 5 tries to connect witih DDS-Robot Bridge
+
+### v0.5.2
+
+* Static library bug fixed
+
+### v0.5.0
+
+* Navigation controller added
+* Sensors tree changed, see the Doc360 page.
+
+### v0.4.2
+
+PyPI package ready.
+
+### v0.4.1
+
+Restful controller exceptions to Python interface:
+
+* RayaRestfulException
+* RayaNotInRestfulMode
+* RayaInRestfulMode
+* RayaRestfulNotRegisteredApp
+* RayaRestfulCommandAlreadyRegistered
+* RayaRestfulNotRegisteredCommand
+
+### v0.4.0
+
+UR DDS-Robot Bridge compatible version: `0.2.0`
+
+DDS Interface compatible version: `0.2.0`
+
+* Added dds_domain and dev_mode to raya_app constructor and create_raya_app function (also to enable_restful_mode function)
+* Added log and create_logger to the RayaApplicationBase class
+* Added entry_point to the library
+* `RayaApplicationBase` is now imported from `raya.application_base`
+* Customizable logger folder in application mode
+* Method callbacks do not need to be a tuple anymore. `self.callback_name` instead `(self, "callback_name")` when creating listeners.
+* Restful communication
+
+### v0.3.2
+
+UR DDS-Robot Bridge compatible version: `0.1.0`
+
+DDS Interface compatible version: `0.1.2`
+
+* `CamerasController.take_snapshot()`, added `compressed` (boolean) parameter to return jpeg compressed image.
+* `CamerasController.create_frame_listener()`, added `compressed` (boolean) parameter to send jpeg compressed image to the callback.
+
+### v0.3.0
+
+UR DDS-Robot Bridge compatible version: `0.1.0`
+
+DDS Interface compatible version: `0.1.2`
+
+* `SensorsController.create_threshold_listener()` changed parameter name `min_value` to `lower_bound`.
+* `SensorsController.create_threshold_listener()` changed parameter name `max_value` to `higher_bound`.
+* `SensorsController.create_threshold_listener()` added parameter inside_range.
+* `SensorsController.create_threshold_listener() / create_boolean_listener()` changed parameter name `sensor_paths` to `sensors_paths`.
+* `SensorsController.create_threshold_listener() / create_boolean_listener()` parameter `sensors_paths` is now a list of paths (strings), instead of comma separated paths.
+* `SensorsController.delete_threshold_listener()` changed to `SensorsController.delete_listener()`, and now deletes any kind of sensors listener.
+* `LidarController.check_obstacle() / create_obstacle_listener()` changed parameter name `min_angle` to `lower_angle`.
+* `LidarController.check_obstacle() / create_obstacle_listener()` changed parameter name `max_angle` to `higher_angle`.
+* `LidarController.check_obstacle() / create_obstacle_listener()` changed parameter name `min_distance` to `lower_distance`.
+* `LidarController.check_obstacle() / create_obstacle_listener()` changed parameter name `max_distance` to `higher_distance`.
+* `LidarController.delete_obstacle_listener()` changed to `LidarController.delete_listener()`, and now deletes any kind of lidar listener.
+
+### v0.2.1
+
+UR DDS-Robot Bridge compatible version: `0.1.0`
+
+DDS Interface compatible version: `0.1.2`
+
+* Verification of dds_interface version between bridge and raya
+
+
