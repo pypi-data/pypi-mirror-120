@@ -1,0 +1,3 @@
+[console_scripts]
+galaxies_datasets=galaxies_datasets.__main__:app
+
