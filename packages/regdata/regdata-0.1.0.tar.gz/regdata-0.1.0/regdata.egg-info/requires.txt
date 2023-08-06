@@ -1,0 +1,8 @@
+torch
+tensorflow
+numpy
+scikit-learn
+pandas
+pytest
+pytest-cov
+coveralls
