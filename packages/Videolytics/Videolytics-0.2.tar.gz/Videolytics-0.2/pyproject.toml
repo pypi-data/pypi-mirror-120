@@ -1,0 +1,14 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+    "tqdm",
+    "h5py",
+    "numpy",
+    "ffmpeg",
+    "ffmpy3",
+    "opencv-python"
+
+
+]
+build-backend = "setuptools.build_meta"

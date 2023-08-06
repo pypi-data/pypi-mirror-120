@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/Videolytics.egg-info/PKG-INFO
+src/Videolytics.egg-info/SOURCES.txt
+src/Videolytics.egg-info/dependency_links.txt
+src/Videolytics.egg-info/top_level.txt
+src/videolytics/__init__.py
+src/videolytics/feature_extractor.py
+src/videolytics/video_preprocessing.py
