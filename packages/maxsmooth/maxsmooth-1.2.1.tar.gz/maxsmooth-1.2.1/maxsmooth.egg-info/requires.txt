@@ -1,0 +1,10 @@
+numpy
+scipy
+cvxopt
+matplotlib
+progressbar
+
+[docs]
+sphinx
+sphinx_rtd_theme
+numpydoc
