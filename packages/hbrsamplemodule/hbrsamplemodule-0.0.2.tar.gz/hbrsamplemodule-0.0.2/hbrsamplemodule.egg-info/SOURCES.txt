@@ -1,0 +1,11 @@
+setup.py
+hbrsamplemodule/__init__.py
+hbrsamplemodule/add.py
+hbrsamplemodule/subtract.py
+hbrsamplemodule.egg-info/PKG-INFO
+hbrsamplemodule.egg-info/SOURCES.txt
+hbrsamplemodule.egg-info/dependency_links.txt
+hbrsamplemodule.egg-info/top_level.txt
+hbrsamplemodule/extras/__init__.py
+hbrsamplemodule/extras/divide.py
+hbrsamplemodule/extras/multiply.py
