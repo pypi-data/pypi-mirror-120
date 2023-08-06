@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: tues
+Version: 2.1.0
+Summary: Easy remote command execution
+Home-page: https://github.com/wontfix-org/tues/
+Author: Michael van Bracht
+Author-email: michael@wontfix.org
+License: MIT
+Description: README.md
+Platform: any
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
