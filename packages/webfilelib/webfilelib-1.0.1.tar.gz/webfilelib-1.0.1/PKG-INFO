@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: webfilelib
+Version: 1.0.1
+Summary: 上传你的文件到云上
+Home-page: UNKNOWN
+Author: Ruoyu Wang
+Author-email: wangruoyu666@outlook.com
+License: UNKNOWN
+Project-URL: Source, https://github.com/ruanima/dingtalk-log-handler
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.5
+
+UNKNOWN
+
