@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: neural-mmo
+Version: 1.5.2.1
+Summary: Neural MMO is a massively multiagent environment for artificial intelligence research inspired by Massively Multiplayer Online (MMO) role-playing games
+Home-page: https://github.com/jsuarez5341/neural-mmo
+Author: Joseph Suarez
+Author-email: sealsuarez@gmail.com
+License: MIT
+Description: ![figure](docs/source/resource/image/splash.png)
+        
+        # ![icon](docs/source/resource/icon/icon_pixel.png) Welcome to the Platform!
+        
+        [![Discord Chat](https://img.shields.io/discord/657211973435392011.svg)](https://discord.gg/BkMmFUC)
+        <a href="https://twitter.com/jsuarez5341?ref_src=twsrc%5Etfw" target="_blank">
+          <img src="http://jpillora.com/github-twitter-button/img/tweet.png"
+               alt="tweet button" title="Follow"></img>
+        </a>
+        
+        Neural MMO is a massively multiagent environment for artificial intelligence research inspired by Massively Multiplayer Online (MMO) role-playing games. The project is under active development with major updates every 3-6 months. This README is a stub -- all of our [Documentation](https://jsuarez5341.github.io "Neural MMO Documentation") is hosted by github.io.
+        
+        [![Demo Video](http://img.youtube.com/vi/d1mj8yzjr-w/0.jpg)](http://www.youtube.com/watch?v=d1mj8yzjr-w "Neural MMO v1.5 Demo")
+        
+Keywords: Neural MMO,MMO
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: rllib
