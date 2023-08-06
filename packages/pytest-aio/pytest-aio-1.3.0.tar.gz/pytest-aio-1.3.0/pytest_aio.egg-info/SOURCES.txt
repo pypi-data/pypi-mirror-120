@@ -1,0 +1,14 @@
+README.rst
+setup.cfg
+setup.py
+pytest_aio/__init__.py
+pytest_aio/plugin.py
+pytest_aio/py.typed
+pytest_aio/runners.py
+pytest_aio/utils.py
+pytest_aio.egg-info/PKG-INFO
+pytest_aio.egg-info/SOURCES.txt
+pytest_aio.egg-info/dependency_links.txt
+pytest_aio.egg-info/entry_points.txt
+pytest_aio.egg-info/requires.txt
+pytest_aio.egg-info/top_level.txt
