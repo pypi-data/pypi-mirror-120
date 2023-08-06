@@ -1,0 +1,22 @@
+{
+  "clustering/test_abstract.py": true,
+  "clustering/test_factory.py": true,
+  "clustering/test_hierarchical.py": true,
+  "clustering/test_kmeans.py": true,
+  "clustering/test_spectral.py": true,
+  "constraints/test_abstract.py": true,
+  "constraints/test_binary.py": true,
+  "constraints/test_factory.py": true,
+  "sampling/test_abstract.py": true,
+  "sampling/test_closest_in_different_clusters.py": true,
+  "sampling/test_factory.py": true,
+  "sampling/test_farhest_in_same_cluster.py": true,
+  "sampling/test_random.py": true,
+  "sampling/test_random_in_same_cluster.py": true,
+  "test_docs.py::test_docs_usage": true,
+  "utils/test_checking.py": true,
+  "utils/test_frequency.py": true,
+  "utils/test_graph.py": true,
+  "utils/test_preprocessing.py": true,
+  "utils/test_vectorization.py": true
+}
