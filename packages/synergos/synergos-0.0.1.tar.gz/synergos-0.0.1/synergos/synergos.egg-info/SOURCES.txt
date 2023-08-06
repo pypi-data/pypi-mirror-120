@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+example1.py
+requirements.txt
+setup.py
+synergos/__init__.py
+synergos/functions/__init__.py
+synergos/functions/hello.py
+synergos/synergos.egg-info/PKG-INFO
+synergos/synergos.egg-info/SOURCES.txt
+synergos/synergos.egg-info/dependency_links.txt
+synergos/synergos.egg-info/requires.txt
+synergos/synergos.egg-info/top_level.txt
+synergos/transformers/__init__.py
+tests/test_helloworld.py
