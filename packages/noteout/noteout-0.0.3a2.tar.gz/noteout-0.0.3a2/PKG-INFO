@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: noteout
+Version: 0.0.3a2
+Summary: Notebook parsing filters for Pandoc
+Home-page: https://github.com/matthew-brett/noteout
+Author: Matthew Brett
+Author-email: matthew.brett@gmail.com
