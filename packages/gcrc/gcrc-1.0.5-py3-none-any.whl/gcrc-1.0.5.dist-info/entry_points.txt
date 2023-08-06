@@ -1,0 +1,3 @@
+[console_scripts]
+gcrc=gcrc.main:app
+
