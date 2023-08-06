@@ -1,0 +1,3 @@
+[console_scripts]
+trie-cli-global = trie_global:main
+
