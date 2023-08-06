@@ -1,0 +1,11 @@
+rocketpy/Environment.py,sha256=5HTK940NPSuNht9OvaWoEkI7qFTJ7qWPbtBLT7zBwq4,143383
+rocketpy/Flight.py,sha256=S4qjiVbiki9y8Xihdko5rWYlEIzkLWBu0r-FNPPmHr0,150306
+rocketpy/Function.py,sha256=W0Sp8Tpd8N9BwsrxmwgNam-EOpT2Zpoiah7pX5YVy_I,88272
+rocketpy/Rocket.py,sha256=AL8ZmTcfDpkGVNb5IMhBXhHgyKW69xbZE3BdN9oRlV4,40263
+rocketpy/SolidMotor.py,sha256=vbNRFXxAzhTJ0K5W9rsf8j6HmGC18jvbO1TyzGATJWQ,29417
+rocketpy/__init__.py,sha256=TEUKqIFdukcMUwq0UbcPwZ77EqNArQXVnru6OvfditM,1446
+rocket.py-0.9.8.dist-info/LICENSE,sha256=yW57cdzzKVxFFK-hmx40XzI86tgd3DNmluc5e4GTShM,1079
+rocket.py-0.9.8.dist-info/METADATA,sha256=xYT4R6PW3KZidKVfJhYr5mtZh85VaumxVmQueiuEaGc,11848
+rocket.py-0.9.8.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+rocket.py-0.9.8.dist-info/top_level.txt,sha256=RnNaRRe3dIPwwuaamN5QLOgTRBe3nI84kiOvspb0wQE,9
+rocket.py-0.9.8.dist-info/RECORD,,
