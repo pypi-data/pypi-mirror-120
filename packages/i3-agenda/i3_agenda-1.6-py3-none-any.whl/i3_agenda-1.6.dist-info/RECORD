@@ -1,0 +1,11 @@
+i3_agenda/API.py,sha256=MqoFWY8UEEz80vqRBhcv3Wt8lhyCm5BHZM7Kru_PzOs,3914
+i3_agenda/__init__.py,sha256=SpLVmA5kPT3mZ2mwgKDc4yeTI6DtBAyKJ1Mzmtn1-Ks,1518
+i3_agenda/cache_utils.py,sha256=fhRPaHxcV_xqje4Nolhtm8GIi5NZGAUTnIi8h5jjF1I,1242
+i3_agenda/config.py,sha256=OlFa1bm0GiKROItHklWEWCpSVixIPGUesJBPQZih61o,2449
+i3_agenda/event.py,sha256=7NikemROGC3-pkno5OCybJL_lpSWU5reIsChtn4e3tc,4398
+i3_agenda-1.6.dist-info/LICENSE.txt,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+i3_agenda-1.6.dist-info/METADATA,sha256=iCz8GGCPgsD9aogwm84WjNXKETNgr47xh8NiHbZhz6Y,9059
+i3_agenda-1.6.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+i3_agenda-1.6.dist-info/entry_points.txt,sha256=Q1ZgJJMnJ09raHjcNO49cEYGLGY24rz-D4TNHlf4PKE,55
+i3_agenda-1.6.dist-info/top_level.txt,sha256=yo5zKjT6ZI20EcQkm8n9ZNK_wkqwOsXFxOJkIVH6Bk4,10
+i3_agenda-1.6.dist-info/RECORD,,
