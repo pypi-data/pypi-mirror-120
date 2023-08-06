@@ -1,0 +1,5 @@
+Click
+pysradb
+pysam
+pyfastx
+pandas==1.2.0
