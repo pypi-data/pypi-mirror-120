@@ -1,0 +1,11 @@
+entities_data/__init__.py,sha256=HnxuG3kI0_DjoEE-MAWlTUIRhmHPwoxFzfr1PQ7q_wY,13957
+entities_data/sentence_utils.py,sha256=Wf3erz_WCMe0mm-HeHLt7FVZB999_qAXyglrrdDCosU,2133
+entities_data/stratified_split.py,sha256=7jvGwOlfqLyUsBzrWZKc3upU-RZ7TrFmZmDkrAhA2i4,5869
+entities_data/version.py,sha256=9qOVvDFyV7XnDRnLUDmjB7jNR6W3OQM0jPjt7XLAOsY,19
+entities_data/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+entities_data/data/en/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ner_dataset-0.0.1.dist-info/LICENSE,sha256=ONPtAcX1r99Gwa3pVDJBnh89JT1ICaBaqyKv7NTfIPs,1132
+ner_dataset-0.0.1.dist-info/METADATA,sha256=4yCN4kjShbIhZnyjv6kIkPGA2n5-kIM1gqKCOLnMmRg,2341
+ner_dataset-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ner_dataset-0.0.1.dist-info/top_level.txt,sha256=f8D96HNvt-IWZiZNJen-8RY04lbtMjxZdN80GM4MwLY,14
+ner_dataset-0.0.1.dist-info/RECORD,,
