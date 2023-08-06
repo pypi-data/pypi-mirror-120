@@ -1,0 +1,14 @@
+deface/__init__.py,sha256=AQElxVQ0BTVCakK-cUH8kewftvTySVIX-jey1TNAE8Y,734
+deface/__main__.py,sha256=eH2LjkRq3JV4Se6MxUwH_eCo8IypjkoyTKm6wPEI2G0,612
+deface/cli.py,sha256=1kmpb3UMi5vP5QJFNg1YTrEnj65gKVEWTrol8DPccTQ,5352
+deface/error.py,sha256=iLKbW12_y11TjHklFAoFG5FNSXEHee0RbbDbHg_dHDs,989
+deface/ingest.py,sha256=HTpv18UifHJBK08wXspG8Dk8yephQFhvIHrZF77Squ8,12655
+deface/logger.py,sha256=wozi0_NVn8R2eVIYI1cvLWD0983G0QEmpdh10_5HSPw,4431
+deface/model.py,sha256=_5fdWMqL06MJUZGKRt8PZtP_CyN8pqwyIKiXaYRY9M0,21280
+deface/serde.py,sha256=uX1ob1FFdjNl1npvi4g6_ciWC8GatzMi7MTE2vAOYFg,3308
+deface/validator.py,sha256=28H68hy6u9Tf9Mc4n9lleukmbrqI71nH5tsWf0rYKno,7904
+deface_social-0.7.0.dist-info/entry_points.txt,sha256=LH8dxFjCR-ySaJdyon3fZNeSCWwddHFpAiEkxx5GWVQ,42
+deface_social-0.7.0.dist-info/LICENSE,sha256=psuoW8kuDP96RQsdhzwOqi6fyWv0ct8CR6Jr7He_P_k,10173
+deface_social-0.7.0.dist-info/WHEEL,sha256=VUbF57hf4yRZWWrOOjp25Fr4BQX9EtnVSbnP2vNxHDM,81
+deface_social-0.7.0.dist-info/METADATA,sha256=5Fp_VcEOkcaAzcCWi6vfIh94G7dC858keJKwMiGtZ9E,1962
+deface_social-0.7.0.dist-info/RECORD,,
