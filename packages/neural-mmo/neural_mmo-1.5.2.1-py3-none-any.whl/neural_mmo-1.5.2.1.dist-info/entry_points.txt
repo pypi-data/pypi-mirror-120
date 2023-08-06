@@ -1,0 +1,3 @@
+[console_scripts]
+neural-mmo-forge = neural_mmo.Forge:main
+
