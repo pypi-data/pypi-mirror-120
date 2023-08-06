@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: dask-lsf
+Version: 0.0.1
+Summary: Run code on lsf farm using dask
+Home-page: https://github.com/akarshanarora/dask_lsf
+Author: Akarshan Arora
+Author-email: akarshanarora@gmail.com
+License: Apache Software License 2.0
+Keywords: dask_lsf
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+
+========
+dask_lsf
+========
+
+
+.. image:: https://img.shields.io/pypi/v/dask_lsf.svg
+        :target: https://pypi.python.org/pypi/dask_lsf
+
+.. image:: https://img.shields.io/travis/akarshanarora/dask_lsf.svg
+        :target: https://travis-ci.com/akarshanarora/dask_lsf
+
+.. image:: https://readthedocs.org/projects/dask-lsf/badge/?version=latest
+        :target: https://dask-lsf.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+
+
+
+Run code on lsf farm using dask
+
+
+* Free software: Apache Software License 2.0
+* Documentation: https://dask-lsf.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
