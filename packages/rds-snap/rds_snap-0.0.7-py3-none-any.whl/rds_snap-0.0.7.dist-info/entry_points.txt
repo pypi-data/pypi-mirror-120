@@ -1,0 +1,3 @@
+[console_scripts]
+rds-snap = rds_snap.__main__:main
+
