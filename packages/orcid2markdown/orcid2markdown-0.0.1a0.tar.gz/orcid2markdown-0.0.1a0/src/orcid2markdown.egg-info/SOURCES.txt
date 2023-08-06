@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/orcid2markdown/__init__.py
+src/orcid2markdown.egg-info/PKG-INFO
+src/orcid2markdown.egg-info/SOURCES.txt
+src/orcid2markdown.egg-info/dependency_links.txt
+src/orcid2markdown.egg-info/requires.txt
+src/orcid2markdown.egg-info/top_level.txt
