@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: synergos
+Version: 0.0.2
+Summary: Package of some useful ML functions and tools
+Home-page: https://github.com/PeterPirog/synergos
+Author: Peter Pirog
+Author-email: peterpirogtf@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas (>=1.0.0)
+Requires-Dist: scikit-learn
+Provides-Extra: dev
+Requires-Dist: pytest (>=3.7) ; extra == 'dev'
+Requires-Dist: tox (>=3.24.3) ; extra == 'dev'
+Requires-Dist: check-manifest ; extra == 'dev'
+Requires-Dist: openpyxl ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+
+# synergos
+set of tools to improve ML tasks in sklearn and tensorflow
+
+## Installation
+
+Run the following to install:
+```bash
+$ pip install synergos
+```
+
+## Usage
+
+```python
+from functions import say_hello
+
+# Generate "Hello World!
+say_hello()
+
+# Generate "Hello Everybody"
+say_hello("Everybody")
+```
+#Developing Hello World
+To install helloworld, along the tools you need to develop and run tests, run the following in your virtualenv:
+```bash
+$ pip install -e .[dev]
+```
+
+
