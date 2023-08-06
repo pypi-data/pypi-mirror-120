@@ -1,0 +1,4 @@
+paho-mqtt
+six
+requests
+pandas
