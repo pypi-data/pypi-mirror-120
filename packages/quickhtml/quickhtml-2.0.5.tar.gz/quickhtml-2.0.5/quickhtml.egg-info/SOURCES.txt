@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+quickhtml/__init__.py
+quickhtml/__main__.py
+quickhtml/quickhtml.py
+quickhtml.egg-info/PKG-INFO
+quickhtml.egg-info/SOURCES.txt
+quickhtml.egg-info/dependency_links.txt
+quickhtml.egg-info/top_level.txt
