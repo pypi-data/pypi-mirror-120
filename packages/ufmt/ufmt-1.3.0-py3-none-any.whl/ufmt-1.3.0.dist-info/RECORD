@@ -1,0 +1,16 @@
+ufmt/__init__.py,sha256=3ywwCjBjuT8NpN2i7ybktj8gjGPQyT3aIlG5vhY0a5o,171
+ufmt/__main__.py,sha256=MSmt_5Xg84uHqzTN38JwgseJK8rsJn_11A8WD99VtEo,61
+ufmt/__version__.py,sha256=F5mW07pSyGrqDNY2Ehr-UpDzpBtN-FsYU0QGZWf6PJE,22
+ufmt/cli.py,sha256=6GA4ZUodnWCvIuK2E8N9k_udwjdbgygNlLIAOqxJ0tE,2411
+ufmt/config.py,sha256=HIH0jDQC1hEDoy76Y2pLoND1QtQ8yGonBWwX2UYSpyo,979
+ufmt/core.py,sha256=PusYWpBoXzQLFIAkVhEhxxs-H85LWcC-HCFTpD29f20,3029
+ufmt/tests/__init__.py,sha256=QBLefjihnr_OgKz_PJ81X1MeqnbumRoiknlYvu3pG-c,145
+ufmt/tests/__main__.py,sha256=mGqh948ulkUtSw8AP0X7SInV99gxwup2do-NzlbrmdA,232
+ufmt/tests/cli.py,sha256=vhdKN49xsWRey_7S2zgxybfmC6cQCnaBp-JIkRVGfro,7218
+ufmt/tests/config.py,sha256=npe4ejc7J_MoFYBu9-TPRbKFbkMvuoeZK7dozwtmeKM,2584
+ufmt/tests/core.py,sha256=Le9DKrgl4cnSODFFI7ixQfXFwvsDju3E8YWDrZ1lBxM,7782
+ufmt-1.3.0.dist-info/entry_points.txt,sha256=XQI7XGOyySV-XgdKQnYnNdsQuw8t_17p4u68fPQaDTo,38
+ufmt-1.3.0.dist-info/LICENSE,sha256=myuwMfErbKRPnlZItrKqzujUQDoa-vTPyNtxDZFkmgE,1067
+ufmt-1.3.0.dist-info/WHEEL,sha256=VUbF57hf4yRZWWrOOjp25Fr4BQX9EtnVSbnP2vNxHDM,81
+ufmt-1.3.0.dist-info/METADATA,sha256=qmbNCMgqpVEYWAay5E8J45H1qnAxZ6KnKFYuCzvpmD8,4006
+ufmt-1.3.0.dist-info/RECORD,,
