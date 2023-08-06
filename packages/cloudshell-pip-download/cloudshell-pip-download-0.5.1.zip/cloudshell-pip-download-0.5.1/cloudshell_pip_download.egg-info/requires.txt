@@ -1,0 +1,5 @@
+click~=8.0
+pip-tools~=6.2
+pip<22,>=20.3
+tqdm~=4.53
+packaging<22,>=20.4
