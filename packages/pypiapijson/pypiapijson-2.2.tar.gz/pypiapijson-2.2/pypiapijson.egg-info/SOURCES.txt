@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+testfile.py
+pypiapijson/__init__.py
+pypiapijson/asyncs.py
+pypiapijson/testfile.py
+pypiapijson.egg-info/PKG-INFO
+pypiapijson.egg-info/SOURCES.txt
+pypiapijson.egg-info/dependency_links.txt
+pypiapijson.egg-info/requires.txt
+pypiapijson.egg-info/top_level.txt
