@@ -1,0 +1,9 @@
+README.md
+setup.py
+dbbs_catalogue/__init__.py
+dbbs_catalogue.egg-info/PKG-INFO
+dbbs_catalogue.egg-info/SOURCES.txt
+dbbs_catalogue.egg-info/dependency_links.txt
+dbbs_catalogue.egg-info/entry_points.txt
+dbbs_catalogue.egg-info/requires.txt
+dbbs_catalogue.egg-info/top_level.txt
