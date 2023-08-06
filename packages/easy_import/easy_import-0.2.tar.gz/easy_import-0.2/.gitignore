@@ -1,0 +1,4 @@
+flit/
+__pycache__/
+tests/
+*.json
