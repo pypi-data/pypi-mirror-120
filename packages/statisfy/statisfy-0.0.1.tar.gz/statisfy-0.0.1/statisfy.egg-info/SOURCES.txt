@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+statisfy/__init__.py
+statisfy/twitch.py
+statisfy.egg-info/PKG-INFO
+statisfy.egg-info/SOURCES.txt
+statisfy.egg-info/dependency_links.txt
+statisfy.egg-info/top_level.txt
