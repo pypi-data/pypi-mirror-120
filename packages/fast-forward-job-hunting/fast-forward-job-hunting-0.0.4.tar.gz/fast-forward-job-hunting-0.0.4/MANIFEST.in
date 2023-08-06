@@ -1,0 +1,85 @@
+include src/zamestnani/cv.db
+
+include src/zamestnani/zamestnani.db
+
+include src/zamestnani/*.pdf
+
+include src/zamestnani/*.glade
+
+include src/zamestnani/*.png
+
+include src/zamestnani/*.mp3
+
+#global-include *.glade *.pdf *.db *.fdf
+
+#exclude litigation/*from_script*.pdf
+
+#exclude litigation/*Claim?Form?N1.pdf
+
+#exclude litigation/*_orig.*
+
+#exclude litigation/grafpromennych_litigation.py
+
+#exclude litigation/data_ostra
+
+#recursive-exclude litigation/nepouzivane* *
+
+#recursive-exclude litigation/appeal* *
+
+#recursive-exclude litigation/evidentiary* *
+
+#recursive-exclude litigation/forms* *
+
+#recursive-exclude litigation *from_script*.pdf
+
+
+#Command
+
+#Description
+
+#include pat1 pat2 ...
+
+#Add all files matching any of the listed patterns
+
+#exclude pat1 pat2 ...
+
+#Remove all files matching any of the listed patterns
+
+#recursive-include dir-pattern pat1 pat2 ...
+
+#Add all files under directories matching dir-pattern that match any of the listed patterns
+
+#recursive-exclude dir-pattern pat1 pat2 ...
+
+#Remove all files under directories matching dir-pattern that match any of the listed patterns
+
+#global-include pat1 pat2 ...
+
+#Add all files anywhere in the source tree matching any of the listed patterns
+
+#global-exclude pat1 pat2 ...
+
+#Remove all files anywhere in the source tree matching any of the listed patterns
+
+#graft dir-pattern
+
+#Add all files under directories matching dir-pattern
+
+#prune dir-pattern
+
+#Remove all files under directories matching dir-pattern
+
+
+
+
+#The patterns here are glob-style patterns: * matches zero or more regular filename characters (on #Unix, everything except forward slash; on Windows, everything except backslash and colon); ? #matches #a single regular filename character, and [chars] matches any one of the characters between #the #square brackets (which may contain character ranges, e.g., [a-z] or [a-fA-F0-9]). Setuptools #also #has undocumented support for ** matching zero or more characters including forward slash, #backslash, #and colon.
+
+#Directory patterns are relative to the root of the project directory; e.g., graft example* will #include a directory named examples in the project root but will not include docs/examples/.
+
+#File & directory names in MANIFEST.in should be /-separated; setuptools will automatically convert #the slashes to the local platform’s appropriate directory separator.
+
+#Commands are processed in the order they appear in the MANIFEST.in file. For example, given the #commands:
+
+#graft tests
+#global-exclude *.py[cod]
+#the contents of the directory tree tests will first be added to the sdist, and then after that all #files in the sdist with a .pyc, .pyo, or .pyd extension will be removed from the sdist. If the #commands were in the opposite order, then *.pyc files etc. would be only be removed from what was #already in the sdist before adding tests, and if tests happened to contain any *.pyc files, they #would end up included in the sdist because the exclusion happened before they were included.

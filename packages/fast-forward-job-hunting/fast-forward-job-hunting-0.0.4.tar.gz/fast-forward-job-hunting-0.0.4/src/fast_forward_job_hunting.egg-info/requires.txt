@@ -1,0 +1,6 @@
+PyGObject
+keyring
+nltk
+pyperclip
+selenium
+scikit-learn
