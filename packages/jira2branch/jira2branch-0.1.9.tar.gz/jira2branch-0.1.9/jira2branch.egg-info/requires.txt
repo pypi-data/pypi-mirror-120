@@ -1,0 +1,5 @@
+click
+jira
+halo
+unidecode
+GitPython
