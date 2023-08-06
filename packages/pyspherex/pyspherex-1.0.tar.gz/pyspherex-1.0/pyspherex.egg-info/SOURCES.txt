@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+pyspherex/__init__.py
+pyspherex/calculus.py
+pyspherex/core.py
+pyspherex.egg-info/PKG-INFO
+pyspherex.egg-info/SOURCES.txt
+pyspherex.egg-info/dependency_links.txt
+pyspherex.egg-info/requires.txt
+pyspherex.egg-info/top_level.txt
