@@ -1,0 +1,9 @@
+LICENSE,sha256=ACwmltkrXIz5VsEQcrqljq-fat6ZXAMepjXGoe40KtE,1069
+pytest_watcher/__init__.py,sha256=llSv4tD1pO7oU4Te89VMQA-ztzVA5pkuYUvSRUI53dU,67
+pytest_watcher/__main__.py,sha256=T1I_TktTfhAby6q-z5IWn5fdEHeJpOjF6QmQAqa3noY,81
+pytest_watcher/watcher.py,sha256=o8xZOGjhgkPfWhbE3jUDX3ryrEgfcbL7JUFznSDT54Y,2536
+pytest_watcher-0.2.1.dist-info/entry_points.txt,sha256=VuWUyILuGaHz5yQK7izpd5qJtD8u-lSFNhZSTFpvxG0,76
+pytest_watcher-0.2.1.dist-info/LICENSE,sha256=ACwmltkrXIz5VsEQcrqljq-fat6ZXAMepjXGoe40KtE,1069
+pytest_watcher-0.2.1.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+pytest_watcher-0.2.1.dist-info/METADATA,sha256=f2hA50F1s1Guhv5jmUZasQif76c7JeifxzF6QneXzAM,1868
+pytest_watcher-0.2.1.dist-info/RECORD,,

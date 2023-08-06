@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: pytest-watcher
+Version: 0.2.1
+Summary: Continiously runs pytest on changes in *.py files
+Home-page: https://github.com/olzhasar/pytest-watcher
+License: MIT
+Keywords: pytest,watch,watcher
+Author: Olzhas Arystanov
+Author-email: o.arystanov@gmail.com
+Requires-Python: >=3.6.2,<4.0.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Utilities
+Requires-Dist: watchdog (>=2.0.0)
+Project-URL: Repository, https://github.com/olzhasar/pytest-watcher
+Description-Content-Type: text/markdown
+
+# A simple watcher for pytest
+
+![PyPI](https://img.shields.io/pypi/v/pytest-watcher)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pytest-watcher)
+![GitHub](https://img.shields.io/github/license/olzhasar/pytest-watcher)
+
+## Overview
+
+**pytest-watcher** is a tool to automatically rerun `pytest` when your code changes.
+It looks for `*.py` files changes in a directory that you specify. `pytest` will be automatically invoked when you create new files and modify or delete existing.
+
+## Install pytest-watcher
+
+```
+pip install pytest-watcher
+```
+
+## Usage
+
+Specify the path that you want to watch:
+
+```
+ptw .
+```
+or 
+```
+ptw /home/repos/project
+```
+
+Any additional arguments will be forwarded to `pytest`:
+```
+ptw . -x --lf --nf
+```
+
+## Compatibility
+
+The utility is OS independent and should work on any platform.
+
+Code is tested for Python versions 3.6+
+
