@@ -1,0 +1,23 @@
+.jp-Ksmm {
+    color: var(--jp-ui-font-color1);
+    background: var(--jp-layout-color1);
+    display: flex;
+    overflow: auto;
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+.ksmm-button-disabled {
+    color: var(--jp-brand-color1);
+    opacity: 0.3;
+}
+
+.ksmm-button-enabled {
+    color: var(--jp-brand-color1);;
+}
+
+div.card{
+    margin: 12px;
+
+}
