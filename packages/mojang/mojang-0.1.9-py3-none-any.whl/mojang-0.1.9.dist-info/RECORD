@@ -1,0 +1,9 @@
+mojang/__init__.py,sha256=MkwLs3VPRkG_crkvfumbCi-7PJP0mOmpFg99ES6dw14,27
+mojang/api.py,sha256=xWNTq9Vrkdm-EjT4O26N3IxfK7d801pn7UqAg7Z2i5E,14274
+mojang/exceptions.py,sha256=AU9pURD6cbIuGNfdHtDCP-m8__Sr5Q743v_hmJo-_7w,1494
+mojang/models.py,sha256=UyXStbWlUT3WviLY1PQo0b5sn1UZCoQfZuxa1dC74o8,2103
+mojang-0.1.9.dist-info/LICENSE,sha256=ZxDyBUn-sXFvPBbMk8O_l2aHdqCCpvEZz6HHE_sgM0M,1063
+mojang-0.1.9.dist-info/METADATA,sha256=_dQNueKHCVclTNOuXlM2_w5G-CdBltEUPdsMP1lyME4,2749
+mojang-0.1.9.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+mojang-0.1.9.dist-info/top_level.txt,sha256=ipOms0ANkimiuuZ6aWJTZhGEpE4NFPxSMi8cl2ed-XI,7
+mojang-0.1.9.dist-info/RECORD,,
