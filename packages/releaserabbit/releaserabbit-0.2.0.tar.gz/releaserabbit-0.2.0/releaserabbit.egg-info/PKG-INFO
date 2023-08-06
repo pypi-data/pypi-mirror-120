@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: releaserabbit
+Version: 0.2.0
+Summary: Bump release versions and make releases quickly
+Home-page: https://github.com/closeio/releaserabbit
+Author: Vyacheslav Tverskoy
+Author-email: v@close.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Requires-Python: >=3.6
+License-File: LICENSE
+
+UNKNOWN
+
