@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: NeonLightEffect
+Version: 0.0.4
+Summary: Neon light effect
+Home-page: UNKNOWN
+Author: Avlis
+Author-email: gonca2000100@gmail.com
+License: MIT
+Keywords: Neon Light
+Platform: UNKNOWN
+Requires-Dist: Numpy
+Requires-Dist: opencv-python
+Requires-Dist: colour
+Requires-Dist: comtypes
+
+Neon light effect using pyhton and photoshop
+
+
