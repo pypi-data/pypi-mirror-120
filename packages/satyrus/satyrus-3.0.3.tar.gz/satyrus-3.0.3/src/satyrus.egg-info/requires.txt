@@ -1,0 +1,14 @@
+ply>=3.11.0
+cstream>=1.0.2
+tabulate
+numpy
+
+[all]
+dwave-neal
+gurobipy
+
+[dwave]
+dwave-neal
+
+[gurobi]
+gurobipy
