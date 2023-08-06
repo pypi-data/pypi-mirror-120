@@ -1,0 +1,4 @@
+IPython
+numpy
+pandas
+Faker

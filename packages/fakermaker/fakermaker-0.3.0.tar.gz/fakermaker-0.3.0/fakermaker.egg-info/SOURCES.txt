@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+fakermaker/__init__.py
+fakermaker/faker_maker.py
+fakermaker.egg-info/PKG-INFO
+fakermaker.egg-info/SOURCES.txt
+fakermaker.egg-info/dependency_links.txt
+fakermaker.egg-info/requires.txt
+fakermaker.egg-info/top_level.txt
