@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: RedGram
+Version: 0.9.0
+Summary: A Simple yet Powerfull TelegramBotApi Lib!
+Home-page: UNKNOWN
+Author: Alirezadigi
+License: MIT
+Description: # RedGram
+        A Simple yet Powerfull TelegramBotApi Lib!
+        
+        # Installation
+        - By Pip
+        ```bash
+        pip3 install redgram
+        ```
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown

@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+RedGram.egg-info/PKG-INFO
+RedGram.egg-info/SOURCES.txt
+RedGram.egg-info/dependency_links.txt
+RedGram.egg-info/requires.txt
+RedGram.egg-info/top_level.txt
+redgram/RedGram.py
+redgram/__init__.py
