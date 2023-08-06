@@ -1,0 +1,11 @@
+README.md
+setup.py
+dankmemes/__init__.py
+dankmemes/ptdefs.py
+dankmemes/ptjsonlib.py
+dankmemes/ptmisclib.py
+dankmemes.egg-info/PKG-INFO
+dankmemes.egg-info/SOURCES.txt
+dankmemes.egg-info/dependency_links.txt
+dankmemes.egg-info/requires.txt
+dankmemes.egg-info/top_level.txt
