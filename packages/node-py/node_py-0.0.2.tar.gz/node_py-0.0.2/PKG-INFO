@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: node-py
+Version: 0.0.2
+Summary: Easy to use, package that brings aspects of node.js to python, but improvised and with new features.
+Author: Ryan Cundiff
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
