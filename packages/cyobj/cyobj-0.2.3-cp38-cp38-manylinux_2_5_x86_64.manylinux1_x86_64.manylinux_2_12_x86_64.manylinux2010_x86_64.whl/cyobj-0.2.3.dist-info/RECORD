@@ -1,0 +1,8 @@
+cyobj/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cyobj/io.py,sha256=noesebVv2NSFulxXcvqC4zLoEHZzspw3CrEULgQZBBo,1205
+cyobj/detail/io.cpython-38-x86_64-linux-gnu.so,sha256=IdtFM4uIUZAjLT6gTfub2aGlbhX_rCzp-DUeBVz6Pvg,1542136
+cyobj-0.2.3.dist-info/WHEEL,sha256=RiwktpmF40OphKd3_aIG01PzIOQlJ7dpBn3cFSc9vak,217
+cyobj-0.2.3.dist-info/top_level.txt,sha256=yc-N5ZBcvsGLf5z0w4luM64BGVz9URlJPkkGvMlaOUI,6
+cyobj-0.2.3.dist-info/LICENSE,sha256=HiQ8Q_Q_LyPT2IPrLivmY7pwJNZ9Tuio9nVJ4HQkXsU,1052
+cyobj-0.2.3.dist-info/RECORD,,
+cyobj-0.2.3.dist-info/METADATA,sha256=B4Jyled3zaCyVyCTYT7QW5YRVmYFqxEVB0-cRrwIIGo,272
