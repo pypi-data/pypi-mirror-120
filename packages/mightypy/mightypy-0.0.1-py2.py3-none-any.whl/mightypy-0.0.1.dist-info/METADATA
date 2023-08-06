@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: mightypy
+Version: 0.0.1
+Summary: Add a short description here!
+Home-page: https://mightypy.readthedocs.io/
+Author: Nishant Baheti
+Author-email: nishantbaheti.it19@gmail.com
+License: MIT
+Project-URL: Documentation, https://mightypy.readthedocs.io/
+Project-URL: Source, https://github.com/NishantBaheti/mightypy
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Information Technology
+Description-Content-Type: text/x-rst; charset=UTF-8
+License-File: LICENSE.txt
+License-File: AUTHORS.rst
+Requires-Dist: numpy
+Requires-Dist: importlib-metadata ; python_version < "3.8"
+Provides-Extra: testing
+Requires-Dist: setuptools ; extra == 'testing'
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+
+========
+mightypy
+========
+
+TODO
+
+
+Description
+===========
+
+TODO
+
+
+
+For Developers
+===============
+
+
