@@ -1,0 +1,12 @@
+wrapup/__init__.py,sha256=dvdOMpYUDEi1Gbqp3_4toBv15jlJy_nJKggo7-xOhu4,91
+wrapup/checker.py,sha256=GOD2xinvHKCbv1m1hlAoKNnJowSfVuhWE1KMvn6PxDc,678
+wrapup/filepath.py,sha256=5l394BJBuFspe2S6F-4lj1GsPL-VBDFmGDS6o5g3i6E,803
+wrapup/helpers.py,sha256=OuIgeTBnx_chrZFDlPO_x_xPdxgE3FSB9KCjwQdE7eA,1213
+wrapup/master.py,sha256=fph_cFrFDQA9VtYg754YWwqTcR58v8Sjtgyky_xEJiU,4269
+wrapup/python_file_error.py,sha256=47Sr1JTeHsqoKO7dub8XoWBQT4pAXbwTtm14wzzEqJ8,274
+wrapup/workers.py,sha256=9FqAWLTGjvFv9jTkRIqcW0rVJQoTzxhA0qTIiaTXuO4,11188
+wrapup-1.0.0.dist-info/LICENSE.txt,sha256=tF03H8YjpqbZuU5NemK66DbcoaU5NIny2CXHg8SVlw4,1095
+wrapup-1.0.0.dist-info/METADATA,sha256=NuhZM7vnD346x9kIw2DTdo29Dm2EbjbL4Olwgh02utM,3617
+wrapup-1.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+wrapup-1.0.0.dist-info/top_level.txt,sha256=3HjKb0cU-srRRy2Q0zD7FzMpUsynDxLI7xmlSwtyQYs,7
+wrapup-1.0.0.dist-info/RECORD,,
