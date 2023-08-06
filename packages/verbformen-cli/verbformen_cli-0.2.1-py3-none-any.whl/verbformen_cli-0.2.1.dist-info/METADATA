@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: verbformen-cli
+Version: 0.2.1
+Summary: Verbformen CLI
+Home-page: https://github.com/millern/verbformen-cli
+Author: Nicholas Miller
+Author-email: njmiller6@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: beautifulsoup4 (>=4.9.3,<5.0.0)
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: loguru (>=0.5.3,<0.6.0)
+Requires-Dist: pydantic (>=1.8.2,<2.0.0)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Requires-Dist: rich (>=10.7.0,<11.0.0)
+Requires-Dist: xextract (>=0.1.8,<0.2.0)
+Project-URL: Repository, https://github.com/millern/verbformen-cli
+Description-Content-Type: text/markdown
+
+## Verbformen CLI
+
+Unofficial python client for the German-English dictionary at verbformen.com. Verbformen provides detailed conjugations and declensions of German words, along with a useful summary card that includes: 
+
+- verb endings,
+- noun gender,
+- noun endings,
+- adjective endings, and
+- definitions
+
+### Installation
+
+```bash
+pip install verbformen-cli
+```
+
+### Usage
+From the terminal:
+```
+$ verbformen Wörterbuch 
+           ╭────────── Wörterbuch ───────────╮
+           │ A1 • Neutral • Endings: es/ü-er │
+           │         das Wörterbuch          │
+           │  Wörterbuch(e)s • Wörterbücher  │
+           │                                 │
+           │  dictionary, lexicon, wordbook  │
+           ╰─────────────────────────────────╯
+
+$ verbformen nachschlagen
+   ╭───────────────── nachschlagen ──────────────────╮
+   │ B1 • irregular • haben (also, sein)             │
+   │                  nachschlagen                   │
+   │ schlägt nach • schlug nach • hat nachgeschlagen │
+   │                                                 │
+   │                     look up                     │
+   ╰─────────────────────────────────────────────────╯
+
+```
+
+or, in code:
+```python
+from verbformen_cli import Client, PartOfSpeech
+
+client = Client.default_client()
+client.search("essen")
+# {
+#   "search": "essen",
+#   "definitions": [
+#     "eat",
+#     "consume"
+#   ],
+#   "part_of_speech": "verb",
+#   "text": "essen",
+#   "behavior": "irregular",
+#   "present": "isst",
+#   "imperfect": "aß",
+#   "perfect": "hat gegessen",
+#   "auxiliary_verb": "haben",
+#   "flection": "Active",
+#   "use": "Main",
+#   "level": "A1"
+# }
+```
+

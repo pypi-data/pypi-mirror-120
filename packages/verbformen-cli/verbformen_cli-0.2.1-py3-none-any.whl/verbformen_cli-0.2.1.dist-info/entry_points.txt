@@ -1,0 +1,3 @@
+[console_scripts]
+verbformen=verbformen_cli.cli:lookup
+

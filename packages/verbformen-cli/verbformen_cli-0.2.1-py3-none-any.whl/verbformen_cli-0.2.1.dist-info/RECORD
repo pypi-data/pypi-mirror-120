@@ -1,0 +1,15 @@
+LICENSE,sha256=ScWXiSlEbMUWt1MY9bhYCWVX7VL5DlVOw_Ytxdh-cd8,1068
+verbformen_cli/.gitignore,sha256=-Calw6HbxXrAZlgfeLchH4TbKfik12PJNecRMEc3YTA,26
+verbformen_cli/__init__.py,sha256=6YH03OaqJKGnChoSbST2q7Iq19kjKAsrGpA9z_xy3e0,412
+verbformen_cli/cli.py,sha256=1WpkRIrmLon8fnZydaiG4i3RGjphegWjeYLlGpDptJ4,908
+verbformen_cli/clients.py,sha256=o7EpFPs1QmAOXnnRqHmpaqgHAlVwBTCh-tW8EBfRvtI,988
+verbformen_cli/display.py,sha256=j4FtayytG4YdMAFfF6cyy7-ZJIPwgbnfVaRsWUrtL9E,3612
+verbformen_cli/downloaders.py,sha256=E6UC6AaOkrgTsmffInD9R2dNsh43pWUPeMDlDYeIBpw,1390
+verbformen_cli/models.py,sha256=XoJc15mP0nXNmVz9f8lS8nAlPSS0W_-RThuMQjAj1jU,2652
+verbformen_cli/parsers.py,sha256=zXP71PLR8lPUiz869PWGW4tZ56Gu7fWsBQkrWt6YBp0,10156
+verbformen_cli/settings.py,sha256=6S8vXTQ3IQ8zwWA9JjW3pkGDIHGUFlhUye5zm-ZQdGo,181
+verbformen_cli-0.2.1.dist-info/entry_points.txt,sha256=kAJ20Ijfa932MRG4ljynn95N-hYUojijd86zULd6hvw,56
+verbformen_cli-0.2.1.dist-info/LICENSE,sha256=ScWXiSlEbMUWt1MY9bhYCWVX7VL5DlVOw_Ytxdh-cd8,1068
+verbformen_cli-0.2.1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+verbformen_cli-0.2.1.dist-info/METADATA,sha256=bH850sy8gPx51xKUgwYww3_GHDTFFL-QoERyfIo9lUk,2709
+verbformen_cli-0.2.1.dist-info/RECORD,,
