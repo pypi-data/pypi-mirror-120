@@ -1,0 +1,669 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>power_cogs.config.torch package &#8212; power_cogs 0.1.0 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="power_cogs.config.tune package" href="power_cogs.config.tune.html" />
+    <link rel="prev" title="power_cogs.config.base package" href="power_cogs.config.base.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="hydra-boiler-config-torch-package">
+<h1>power_cogs.config.torch package<a class="headerlink" href="#hydra-boiler-config-torch-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-power_cogs.config.torch.torch_config">
+<span id="hydra-boiler-config-torch-torch-config-module"></span><h2>power_cogs.config.torch.torch_config module<a class="headerlink" href="#module-power_cogs.config.torch.torch_config" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="power_cogs.config.torch.torch_config.AdamConf">
+<em class="property">class </em><code class="descclassname">power_cogs.config.torch.torch_config.</code><code class="descname">AdamConf</code><span class="sig-paren">(</span><em>_target_: str = 'torch.optim.adam.Adam'</em>, <em>params: Any = '???'</em>, <em>lr: Any = 0.001</em>, <em>betas: Any = (0.9</em>, <em>0.999)</em>, <em>eps: Any = 1e-08</em>, <em>weight_decay: Any = 0</em>, <em>amsgrad: Any = False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/config/torch/torch_config.html#AdamConf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.config.torch.torch_config.AdamConf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.AdamConf.amsgrad">
+<code class="descname">amsgrad</code><em class="property"> = False</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.AdamConf.amsgrad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.AdamConf.betas">
+<code class="descname">betas</code><em class="property"> = (0.9, 0.999)</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.AdamConf.betas" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.AdamConf.eps">
+<code class="descname">eps</code><em class="property"> = 1e-08</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.AdamConf.eps" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.AdamConf.lr">
+<code class="descname">lr</code><em class="property"> = 0.001</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.AdamConf.lr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.AdamConf.params">
+<code class="descname">params</code><em class="property"> = '???'</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.AdamConf.params" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.AdamConf.weight_decay">
+<code class="descname">weight_decay</code><em class="property"> = 0</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.AdamConf.weight_decay" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="power_cogs.config.torch.torch_config.ChainDatasetConf">
+<em class="property">class </em><code class="descclassname">power_cogs.config.torch.torch_config.</code><code class="descname">ChainDatasetConf</code><span class="sig-paren">(</span><em>_target_: str = 'torch.utils.data.dataset.ChainDataset'</em>, <em>datasets: Any = '???'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/config/torch/torch_config.html#ChainDatasetConf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.config.torch.torch_config.ChainDatasetConf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.ChainDatasetConf.datasets">
+<code class="descname">datasets</code><em class="property"> = '???'</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.ChainDatasetConf.datasets" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="power_cogs.config.torch.torch_config.ConcatDatasetConf">
+<em class="property">class </em><code class="descclassname">power_cogs.config.torch.torch_config.</code><code class="descname">ConcatDatasetConf</code><span class="sig-paren">(</span><em>_target_: str = 'torch.utils.data.dataset.ConcatDataset'</em>, <em>datasets: Any = '???'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/config/torch/torch_config.html#ConcatDatasetConf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.config.torch.torch_config.ConcatDatasetConf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.ConcatDatasetConf.datasets">
+<code class="descname">datasets</code><em class="property"> = '???'</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.ConcatDatasetConf.datasets" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="power_cogs.config.torch.torch_config.CosineAnnealingLRConf">
+<em class="property">class </em><code class="descclassname">power_cogs.config.torch.torch_config.</code><code class="descname">CosineAnnealingLRConf</code><span class="sig-paren">(</span><em>_target_: str = 'torch.optim.lr_scheduler.CosineAnnealingLR'</em>, <em>optimizer: Any = '???'</em>, <em>T_max: Any = '???'</em>, <em>eta_min: Any = 0</em>, <em>last_epoch: Any = -1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/config/torch/torch_config.html#CosineAnnealingLRConf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.config.torch.torch_config.CosineAnnealingLRConf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.CosineAnnealingLRConf.T_max">
+<code class="descname">T_max</code><em class="property"> = '???'</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.CosineAnnealingLRConf.T_max" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.CosineAnnealingLRConf.eta_min">
+<code class="descname">eta_min</code><em class="property"> = 0</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.CosineAnnealingLRConf.eta_min" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.CosineAnnealingLRConf.last_epoch">
+<code class="descname">last_epoch</code><em class="property"> = -1</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.CosineAnnealingLRConf.last_epoch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.CosineAnnealingLRConf.optimizer">
+<code class="descname">optimizer</code><em class="property"> = '???'</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.CosineAnnealingLRConf.optimizer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="power_cogs.config.torch.torch_config.CosineAnnealingWarmRestartsConf">
+<em class="property">class </em><code class="descclassname">power_cogs.config.torch.torch_config.</code><code class="descname">CosineAnnealingWarmRestartsConf</code><span class="sig-paren">(</span><em>_target_: str = 'torch.optim.lr_scheduler.CosineAnnealingWarmRestarts'</em>, <em>optimizer: Any = '???'</em>, <em>T_0: Any = '???'</em>, <em>T_mult: Any = 1</em>, <em>eta_min: Any = 0</em>, <em>last_epoch: Any = -1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/config/torch/torch_config.html#CosineAnnealingWarmRestartsConf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.config.torch.torch_config.CosineAnnealingWarmRestartsConf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.CosineAnnealingWarmRestartsConf.T_0">
+<code class="descname">T_0</code><em class="property"> = '???'</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.CosineAnnealingWarmRestartsConf.T_0" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.CosineAnnealingWarmRestartsConf.T_mult">
+<code class="descname">T_mult</code><em class="property"> = 1</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.CosineAnnealingWarmRestartsConf.T_mult" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.CosineAnnealingWarmRestartsConf.eta_min">
+<code class="descname">eta_min</code><em class="property"> = 0</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.CosineAnnealingWarmRestartsConf.eta_min" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.CosineAnnealingWarmRestartsConf.last_epoch">
+<code class="descname">last_epoch</code><em class="property"> = -1</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.CosineAnnealingWarmRestartsConf.last_epoch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.CosineAnnealingWarmRestartsConf.optimizer">
+<code class="descname">optimizer</code><em class="property"> = '???'</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.CosineAnnealingWarmRestartsConf.optimizer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="power_cogs.config.torch.torch_config.CyclicLRConf">
+<em class="property">class </em><code class="descclassname">power_cogs.config.torch.torch_config.</code><code class="descname">CyclicLRConf</code><span class="sig-paren">(</span><em>_target_: str = 'torch.optim.lr_scheduler.CyclicLR'</em>, <em>optimizer: Any = '???'</em>, <em>base_lr: Any = '???'</em>, <em>max_lr: Any = '???'</em>, <em>step_size_up: Any = 2000</em>, <em>step_size_down: Any = None</em>, <em>mode: Any = 'triangular'</em>, <em>gamma: Any = 1.0</em>, <em>scale_fn: Any = None</em>, <em>scale_mode: Any = 'cycle'</em>, <em>cycle_momentum: Any = True</em>, <em>base_momentum: Any = 0.8</em>, <em>max_momentum: Any = 0.9</em>, <em>last_epoch: Any = -1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/config/torch/torch_config.html#CyclicLRConf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.config.torch.torch_config.CyclicLRConf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.CyclicLRConf.base_lr">
+<code class="descname">base_lr</code><em class="property"> = '???'</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.CyclicLRConf.base_lr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.CyclicLRConf.base_momentum">
+<code class="descname">base_momentum</code><em class="property"> = 0.8</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.CyclicLRConf.base_momentum" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.CyclicLRConf.cycle_momentum">
+<code class="descname">cycle_momentum</code><em class="property"> = True</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.CyclicLRConf.cycle_momentum" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.CyclicLRConf.gamma">
+<code class="descname">gamma</code><em class="property"> = 1.0</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.CyclicLRConf.gamma" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.CyclicLRConf.last_epoch">
+<code class="descname">last_epoch</code><em class="property"> = -1</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.CyclicLRConf.last_epoch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.CyclicLRConf.max_lr">
+<code class="descname">max_lr</code><em class="property"> = '???'</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.CyclicLRConf.max_lr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.CyclicLRConf.max_momentum">
+<code class="descname">max_momentum</code><em class="property"> = 0.9</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.CyclicLRConf.max_momentum" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.CyclicLRConf.mode">
+<code class="descname">mode</code><em class="property"> = 'triangular'</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.CyclicLRConf.mode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.CyclicLRConf.optimizer">
+<code class="descname">optimizer</code><em class="property"> = '???'</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.CyclicLRConf.optimizer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.CyclicLRConf.scale_fn">
+<code class="descname">scale_fn</code><em class="property"> = None</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.CyclicLRConf.scale_fn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.CyclicLRConf.scale_mode">
+<code class="descname">scale_mode</code><em class="property"> = 'cycle'</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.CyclicLRConf.scale_mode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.CyclicLRConf.step_size_down">
+<code class="descname">step_size_down</code><em class="property"> = None</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.CyclicLRConf.step_size_down" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.CyclicLRConf.step_size_up">
+<code class="descname">step_size_up</code><em class="property"> = 2000</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.CyclicLRConf.step_size_up" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="power_cogs.config.torch.torch_config.DataLoaderConf">
+<em class="property">class </em><code class="descclassname">power_cogs.config.torch.torch_config.</code><code class="descname">DataLoaderConf</code><span class="sig-paren">(</span><em>_target_: str = 'torch.utils.data.dataloader.DataLoader'</em>, <em>dataset: Any = '???'</em>, <em>batch_size: Any = 1</em>, <em>shuffle: Any = False</em>, <em>sampler: Any = None</em>, <em>batch_sampler: Any = None</em>, <em>num_workers: Any = 0</em>, <em>collate_fn: Any = None</em>, <em>pin_memory: Any = False</em>, <em>drop_last: Any = False</em>, <em>timeout: Any = 0</em>, <em>worker_init_fn: Any = None</em>, <em>multiprocessing_context: Any = None</em>, <em>generator: Any = None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/config/torch/torch_config.html#DataLoaderConf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.config.torch.torch_config.DataLoaderConf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.DataLoaderConf.batch_sampler">
+<code class="descname">batch_sampler</code><em class="property"> = None</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.DataLoaderConf.batch_sampler" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.DataLoaderConf.batch_size">
+<code class="descname">batch_size</code><em class="property"> = 1</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.DataLoaderConf.batch_size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.DataLoaderConf.collate_fn">
+<code class="descname">collate_fn</code><em class="property"> = None</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.DataLoaderConf.collate_fn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.DataLoaderConf.dataset">
+<code class="descname">dataset</code><em class="property"> = '???'</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.DataLoaderConf.dataset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.DataLoaderConf.drop_last">
+<code class="descname">drop_last</code><em class="property"> = False</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.DataLoaderConf.drop_last" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.DataLoaderConf.generator">
+<code class="descname">generator</code><em class="property"> = None</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.DataLoaderConf.generator" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.DataLoaderConf.multiprocessing_context">
+<code class="descname">multiprocessing_context</code><em class="property"> = None</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.DataLoaderConf.multiprocessing_context" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.DataLoaderConf.num_workers">
+<code class="descname">num_workers</code><em class="property"> = 0</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.DataLoaderConf.num_workers" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.DataLoaderConf.pin_memory">
+<code class="descname">pin_memory</code><em class="property"> = False</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.DataLoaderConf.pin_memory" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.DataLoaderConf.sampler">
+<code class="descname">sampler</code><em class="property"> = None</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.DataLoaderConf.sampler" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.DataLoaderConf.shuffle">
+<code class="descname">shuffle</code><em class="property"> = False</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.DataLoaderConf.shuffle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.DataLoaderConf.timeout">
+<code class="descname">timeout</code><em class="property"> = 0</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.DataLoaderConf.timeout" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.DataLoaderConf.worker_init_fn">
+<code class="descname">worker_init_fn</code><em class="property"> = None</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.DataLoaderConf.worker_init_fn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="power_cogs.config.torch.torch_config.DatasetConf">
+<em class="property">class </em><code class="descclassname">power_cogs.config.torch.torch_config.</code><code class="descname">DatasetConf</code><span class="sig-paren">(</span><em>_target_: str = 'torch.utils.data.dataset.Dataset'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/config/torch/torch_config.html#DatasetConf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.config.torch.torch_config.DatasetConf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="power_cogs.config.torch.torch_config.ExponentialLRConf">
+<em class="property">class </em><code class="descclassname">power_cogs.config.torch.torch_config.</code><code class="descname">ExponentialLRConf</code><span class="sig-paren">(</span><em>_target_: str = 'torch.optim.lr_scheduler.ExponentialLR'</em>, <em>optimizer: Any = '???'</em>, <em>gamma: Any = 0.9999</em>, <em>last_epoch: Any = -1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/config/torch/torch_config.html#ExponentialLRConf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.config.torch.torch_config.ExponentialLRConf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.ExponentialLRConf.gamma">
+<code class="descname">gamma</code><em class="property"> = 0.9999</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.ExponentialLRConf.gamma" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.ExponentialLRConf.last_epoch">
+<code class="descname">last_epoch</code><em class="property"> = -1</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.ExponentialLRConf.last_epoch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.ExponentialLRConf.optimizer">
+<code class="descname">optimizer</code><em class="property"> = '???'</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.ExponentialLRConf.optimizer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="power_cogs.config.torch.torch_config.IterableDatasetConf">
+<em class="property">class </em><code class="descclassname">power_cogs.config.torch.torch_config.</code><code class="descname">IterableDatasetConf</code><span class="sig-paren">(</span><em>_target_: str = 'torch.utils.data.dataset.IterableDataset'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/config/torch/torch_config.html#IterableDatasetConf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.config.torch.torch_config.IterableDatasetConf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="power_cogs.config.torch.torch_config.LambdaLRConf">
+<em class="property">class </em><code class="descclassname">power_cogs.config.torch.torch_config.</code><code class="descname">LambdaLRConf</code><span class="sig-paren">(</span><em>_target_: str = 'torch.optim.lr_scheduler.LambdaLR'</em>, <em>optimizer: Any = '???'</em>, <em>lr_lambda: Any = '???'</em>, <em>last_epoch: Any = -1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/config/torch/torch_config.html#LambdaLRConf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.config.torch.torch_config.LambdaLRConf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.LambdaLRConf.last_epoch">
+<code class="descname">last_epoch</code><em class="property"> = -1</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.LambdaLRConf.last_epoch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.LambdaLRConf.lr_lambda">
+<code class="descname">lr_lambda</code><em class="property"> = '???'</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.LambdaLRConf.lr_lambda" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.LambdaLRConf.optimizer">
+<code class="descname">optimizer</code><em class="property"> = '???'</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.LambdaLRConf.optimizer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="power_cogs.config.torch.torch_config.MultiStepLRConf">
+<em class="property">class </em><code class="descclassname">power_cogs.config.torch.torch_config.</code><code class="descname">MultiStepLRConf</code><span class="sig-paren">(</span><em>_target_: str = 'torch.optim.lr_scheduler.MultiStepLR'</em>, <em>optimizer: Any = '???'</em>, <em>milestones: Any = '???'</em>, <em>gamma: Any = 0.1</em>, <em>last_epoch: Any = -1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/config/torch/torch_config.html#MultiStepLRConf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.config.torch.torch_config.MultiStepLRConf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.MultiStepLRConf.gamma">
+<code class="descname">gamma</code><em class="property"> = 0.1</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.MultiStepLRConf.gamma" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.MultiStepLRConf.last_epoch">
+<code class="descname">last_epoch</code><em class="property"> = -1</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.MultiStepLRConf.last_epoch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.MultiStepLRConf.milestones">
+<code class="descname">milestones</code><em class="property"> = '???'</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.MultiStepLRConf.milestones" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.MultiStepLRConf.optimizer">
+<code class="descname">optimizer</code><em class="property"> = '???'</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.MultiStepLRConf.optimizer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="power_cogs.config.torch.torch_config.MultiplicativeLRConf">
+<em class="property">class </em><code class="descclassname">power_cogs.config.torch.torch_config.</code><code class="descname">MultiplicativeLRConf</code><span class="sig-paren">(</span><em>_target_: str = 'torch.optim.lr_scheduler.MultiplicativeLR'</em>, <em>optimizer: Any = '???'</em>, <em>lr_lambda: Any = '???'</em>, <em>last_epoch: Any = -1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/config/torch/torch_config.html#MultiplicativeLRConf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.config.torch.torch_config.MultiplicativeLRConf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.MultiplicativeLRConf.last_epoch">
+<code class="descname">last_epoch</code><em class="property"> = -1</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.MultiplicativeLRConf.last_epoch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.MultiplicativeLRConf.lr_lambda">
+<code class="descname">lr_lambda</code><em class="property"> = '???'</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.MultiplicativeLRConf.lr_lambda" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.MultiplicativeLRConf.optimizer">
+<code class="descname">optimizer</code><em class="property"> = '???'</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.MultiplicativeLRConf.optimizer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="power_cogs.config.torch.torch_config.OneCycleLRConf">
+<em class="property">class </em><code class="descclassname">power_cogs.config.torch.torch_config.</code><code class="descname">OneCycleLRConf</code><span class="sig-paren">(</span><em>_target_: str = 'torch.optim.lr_scheduler.OneCycleLR'</em>, <em>optimizer: Any = '???'</em>, <em>max_lr: Any = '???'</em>, <em>total_steps: Any = None</em>, <em>epochs: Any = None</em>, <em>steps_per_epoch: Any = None</em>, <em>pct_start: Any = 0.3</em>, <em>anneal_strategy: Any = 'cos'</em>, <em>cycle_momentum: Any = True</em>, <em>base_momentum: Any = 0.85</em>, <em>max_momentum: Any = 0.95</em>, <em>div_factor: Any = 25.0</em>, <em>final_div_factor: Any = 10000.0</em>, <em>last_epoch: Any = -1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/config/torch/torch_config.html#OneCycleLRConf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.config.torch.torch_config.OneCycleLRConf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.OneCycleLRConf.anneal_strategy">
+<code class="descname">anneal_strategy</code><em class="property"> = 'cos'</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.OneCycleLRConf.anneal_strategy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.OneCycleLRConf.base_momentum">
+<code class="descname">base_momentum</code><em class="property"> = 0.85</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.OneCycleLRConf.base_momentum" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.OneCycleLRConf.cycle_momentum">
+<code class="descname">cycle_momentum</code><em class="property"> = True</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.OneCycleLRConf.cycle_momentum" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.OneCycleLRConf.div_factor">
+<code class="descname">div_factor</code><em class="property"> = 25.0</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.OneCycleLRConf.div_factor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.OneCycleLRConf.epochs">
+<code class="descname">epochs</code><em class="property"> = None</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.OneCycleLRConf.epochs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.OneCycleLRConf.final_div_factor">
+<code class="descname">final_div_factor</code><em class="property"> = 10000.0</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.OneCycleLRConf.final_div_factor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.OneCycleLRConf.last_epoch">
+<code class="descname">last_epoch</code><em class="property"> = -1</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.OneCycleLRConf.last_epoch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.OneCycleLRConf.max_lr">
+<code class="descname">max_lr</code><em class="property"> = '???'</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.OneCycleLRConf.max_lr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.OneCycleLRConf.max_momentum">
+<code class="descname">max_momentum</code><em class="property"> = 0.95</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.OneCycleLRConf.max_momentum" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.OneCycleLRConf.optimizer">
+<code class="descname">optimizer</code><em class="property"> = '???'</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.OneCycleLRConf.optimizer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.OneCycleLRConf.pct_start">
+<code class="descname">pct_start</code><em class="property"> = 0.3</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.OneCycleLRConf.pct_start" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.OneCycleLRConf.steps_per_epoch">
+<code class="descname">steps_per_epoch</code><em class="property"> = None</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.OneCycleLRConf.steps_per_epoch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.OneCycleLRConf.total_steps">
+<code class="descname">total_steps</code><em class="property"> = None</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.OneCycleLRConf.total_steps" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="power_cogs.config.torch.torch_config.ReduceLROnPlateauConf">
+<em class="property">class </em><code class="descclassname">power_cogs.config.torch.torch_config.</code><code class="descname">ReduceLROnPlateauConf</code><span class="sig-paren">(</span><em>_target_: str = 'torch.optim.lr_scheduler.ReduceLROnPlateau'</em>, <em>optimizer: Any = '???'</em>, <em>mode: Any = 'min'</em>, <em>factor: Any = 0.1</em>, <em>patience: Any = 10</em>, <em>verbose: Any = False</em>, <em>threshold: Any = 0.0001</em>, <em>threshold_mode: Any = 'rel'</em>, <em>cooldown: Any = 0</em>, <em>min_lr: Any = 0</em>, <em>eps: Any = 1e-08</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/config/torch/torch_config.html#ReduceLROnPlateauConf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.config.torch.torch_config.ReduceLROnPlateauConf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.ReduceLROnPlateauConf.cooldown">
+<code class="descname">cooldown</code><em class="property"> = 0</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.ReduceLROnPlateauConf.cooldown" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.ReduceLROnPlateauConf.eps">
+<code class="descname">eps</code><em class="property"> = 1e-08</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.ReduceLROnPlateauConf.eps" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.ReduceLROnPlateauConf.factor">
+<code class="descname">factor</code><em class="property"> = 0.1</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.ReduceLROnPlateauConf.factor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.ReduceLROnPlateauConf.min_lr">
+<code class="descname">min_lr</code><em class="property"> = 0</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.ReduceLROnPlateauConf.min_lr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.ReduceLROnPlateauConf.mode">
+<code class="descname">mode</code><em class="property"> = 'min'</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.ReduceLROnPlateauConf.mode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.ReduceLROnPlateauConf.optimizer">
+<code class="descname">optimizer</code><em class="property"> = '???'</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.ReduceLROnPlateauConf.optimizer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.ReduceLROnPlateauConf.patience">
+<code class="descname">patience</code><em class="property"> = 10</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.ReduceLROnPlateauConf.patience" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.ReduceLROnPlateauConf.threshold">
+<code class="descname">threshold</code><em class="property"> = 0.0001</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.ReduceLROnPlateauConf.threshold" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.ReduceLROnPlateauConf.threshold_mode">
+<code class="descname">threshold_mode</code><em class="property"> = 'rel'</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.ReduceLROnPlateauConf.threshold_mode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.ReduceLROnPlateauConf.verbose">
+<code class="descname">verbose</code><em class="property"> = False</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.ReduceLROnPlateauConf.verbose" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="power_cogs.config.torch.torch_config.StepLRConf">
+<em class="property">class </em><code class="descclassname">power_cogs.config.torch.torch_config.</code><code class="descname">StepLRConf</code><span class="sig-paren">(</span><em>_target_: str = 'torch.optim.lr_scheduler.StepLR'</em>, <em>optimizer: Any = '???'</em>, <em>step_size: Any = 0.1</em>, <em>gamma: Any = 0.1</em>, <em>last_epoch: Any = -1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/config/torch/torch_config.html#StepLRConf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.config.torch.torch_config.StepLRConf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.StepLRConf.gamma">
+<code class="descname">gamma</code><em class="property"> = 0.1</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.StepLRConf.gamma" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.StepLRConf.last_epoch">
+<code class="descname">last_epoch</code><em class="property"> = -1</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.StepLRConf.last_epoch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.StepLRConf.optimizer">
+<code class="descname">optimizer</code><em class="property"> = '???'</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.StepLRConf.optimizer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.StepLRConf.step_size">
+<code class="descname">step_size</code><em class="property"> = 0.1</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.StepLRConf.step_size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="power_cogs.config.torch.torch_config.SubsetConf">
+<em class="property">class </em><code class="descclassname">power_cogs.config.torch.torch_config.</code><code class="descname">SubsetConf</code><span class="sig-paren">(</span><em>_target_: str = 'torch.utils.data.dataset.Subset'</em>, <em>dataset: Any = '???'</em>, <em>indices: Any = '???'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/config/torch/torch_config.html#SubsetConf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.config.torch.torch_config.SubsetConf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.SubsetConf.dataset">
+<code class="descname">dataset</code><em class="property"> = '???'</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.SubsetConf.dataset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.SubsetConf.indices">
+<code class="descname">indices</code><em class="property"> = '???'</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.SubsetConf.indices" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="power_cogs.config.torch.torch_config.TensorDatasetConf">
+<em class="property">class </em><code class="descclassname">power_cogs.config.torch.torch_config.</code><code class="descname">TensorDatasetConf</code><span class="sig-paren">(</span><em>_target_: str = 'torch.utils.data.dataset.TensorDataset'</em>, <em>tensors: Any = '???'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/config/torch/torch_config.html#TensorDatasetConf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.config.torch.torch_config.TensorDatasetConf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="power_cogs.config.torch.torch_config.TensorDatasetConf.tensors">
+<code class="descname">tensors</code><em class="property"> = '???'</em><a class="headerlink" href="#power_cogs.config.torch.torch_config.TensorDatasetConf.tensors" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-power_cogs.config.torch">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-power_cogs.config.torch" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">power_cogs</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="readme.html">power_cogs</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">power_cogs</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="power_cogs.html">power_cogs package</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">power_cogs</a><ul>
+  <li><a href="power_cogs.html">power_cogs package</a><ul>
+  <li><a href="power_cogs.config.html">power_cogs.config package</a><ul>
+      <li>Previous: <a href="power_cogs.config.base.html" title="previous chapter">power_cogs.config.base package</a></li>
+      <li>Next: <a href="power_cogs.config.tune.html" title="next chapter">power_cogs.config.tune package</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Shyam Sudhakaran.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/power_cogs.config.torch.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

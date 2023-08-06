@@ -1,0 +1,3 @@
+model_config:
+    hidden_dims: [32]
+    normal_std: 1.0

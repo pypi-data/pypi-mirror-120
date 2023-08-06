@@ -1,0 +1,300 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>power_cogs.tune package &#8212; power_cogs 0.1.0 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="power_cogs.utils package" href="power_cogs.utils.html" />
+    <link rel="prev" title="power_cogs.trainer package" href="power_cogs.trainer.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="hydra-boiler-tune-package">
+<h1>power_cogs.tune package<a class="headerlink" href="#hydra-boiler-tune-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-power_cogs.tune.tune_wrapper">
+<span id="hydra-boiler-tune-tune-wrapper-module"></span><h2>power_cogs.tune.tune_wrapper module<a class="headerlink" href="#module-power_cogs.tune.tune_wrapper" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="power_cogs.tune.tune_wrapper.CustomMLflowLoggerCallback">
+<em class="property">class </em><code class="descclassname">power_cogs.tune.tune_wrapper.</code><code class="descname">CustomMLflowLoggerCallback</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/tune/tune_wrapper.html#CustomMLflowLoggerCallback"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.tune.tune_wrapper.CustomMLflowLoggerCallback" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ray.tune.integration.mlflow.MLflowLoggerCallback</span></code></p>
+<dl class="method">
+<dt id="power_cogs.tune.tune_wrapper.CustomMLflowLoggerCallback.on_trial_save">
+<code class="descname">on_trial_save</code><span class="sig-paren">(</span><em>iteration: int, trials: List[ray.tune.trial.Trial], trial: ray.tune.trial.Trial, **info</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/tune/tune_wrapper.html#CustomMLflowLoggerCallback.on_trial_save"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.tune.tune_wrapper.CustomMLflowLoggerCallback.on_trial_save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called after receiving a checkpoint from a trial.</p>
+<dl class="docutils">
+<dt>Arguments:</dt>
+<dd>iteration (int): Number of iterations of the tuning loop.
+trials (List[Trial]): List of trials.
+trial (Trial): Trial that just saved a checkpoint.
+<a href="#id1"><span class="problematic" id="id2">**</span></a>info: Kwargs dict for forward compatibility.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="power_cogs.tune.tune_wrapper.TuneTrainer">
+<em class="property">class </em><code class="descclassname">power_cogs.tune.tune_wrapper.</code><code class="descname">TuneTrainer</code><span class="sig-paren">(</span><em>config=None</em>, <em>logger_creator=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/tune/tune_wrapper.html#TuneTrainer"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.tune.tune_wrapper.TuneTrainer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ray.tune.trainable.Trainable</span></code></p>
+<dl class="method">
+<dt id="power_cogs.tune.tune_wrapper.TuneTrainer.load_checkpoint">
+<code class="descname">load_checkpoint</code><span class="sig-paren">(</span><em>tmp_checkpoint_dir</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/tune/tune_wrapper.html#TuneTrainer.load_checkpoint"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.tune.tune_wrapper.TuneTrainer.load_checkpoint" title="Permalink to this definition">¶</a></dt>
+<dd><p>Subclasses should override this to implement restore().</p>
+<dl class="docutils">
+<dt>Warning:</dt>
+<dd>In this method, do not rely on absolute paths. The absolute
+path of the checkpoint_dir used in <code class="docutils literal notranslate"><span class="pre">Trainable.save_checkpoint</span></code>
+may be changed.</dd>
+</dl>
+<p>If <code class="docutils literal notranslate"><span class="pre">Trainable.save_checkpoint</span></code> returned a prefixed string, the
+prefix of the checkpoint string returned by
+<code class="docutils literal notranslate"><span class="pre">Trainable.save_checkpoint</span></code> may be changed.
+This is because trial pausing depends on temporary directories.</p>
+<p>The directory structure under the checkpoint_dir provided to
+<code class="docutils literal notranslate"><span class="pre">Trainable.save_checkpoint</span></code> is preserved.</p>
+<p>See the example below.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Example</span><span class="p">(</span><span class="n">Trainable</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">save_checkpoint</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">checkpoint_path</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">checkpoint_path</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">checkpoint_path</span><span class="p">,</span> <span class="s2">&quot;my/check/point&quot;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">load_checkpoint</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">checkpoint</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">checkpoint</span><span class="p">)</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">trainer</span> <span class="o">=</span> <span class="n">Example</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">obj</span> <span class="o">=</span> <span class="n">trainer</span><span class="o">.</span><span class="n">save_to_object</span><span class="p">()</span>  <span class="c1"># This is used when PAUSED.</span>
+<span class="o">&lt;</span><span class="n">logdir</span><span class="o">&gt;/</span><span class="n">tmpc8k_c_6hsave_to_object</span><span class="o">/</span><span class="n">checkpoint_0</span><span class="o">/</span><span class="n">my</span><span class="o">/</span><span class="n">check</span><span class="o">/</span><span class="n">point</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">trainer</span><span class="o">.</span><span class="n">restore_from_object</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>  <span class="c1"># Note the different prefix.</span>
+<span class="o">&lt;</span><span class="n">logdir</span><span class="o">&gt;/</span><span class="n">tmpb87b5axfrestore_from_object</span><span class="o">/</span><span class="n">checkpoint_0</span><span class="o">/</span><span class="n">my</span><span class="o">/</span><span class="n">check</span><span class="o">/</span><span class="n">point</span>
+</pre></div>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.8.7.</span></p>
+</div>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd><dl class="first last docutils">
+<dt>checkpoint (str|dict): If dict, the return value is as</dt>
+<dd>returned by <cite>save_checkpoint</cite>. If a string, then it is
+a checkpoint path that may have a different prefix than that
+returned by <cite>save_checkpoint</cite>. The directory structure
+underneath the <cite>checkpoint_dir</cite> <cite>save_checkpoint</cite> is preserved.</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.tune.tune_wrapper.TuneTrainer.save_checkpoint">
+<code class="descname">save_checkpoint</code><span class="sig-paren">(</span><em>tmp_checkpoint_dir</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/tune/tune_wrapper.html#TuneTrainer.save_checkpoint"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.tune.tune_wrapper.TuneTrainer.save_checkpoint" title="Permalink to this definition">¶</a></dt>
+<dd><p>Subclasses should override this to implement <code class="docutils literal notranslate"><span class="pre">save()</span></code>.</p>
+<dl class="docutils">
+<dt>Warning:</dt>
+<dd>Do not rely on absolute paths in the implementation of
+<code class="docutils literal notranslate"><span class="pre">Trainable.save_checkpoint</span></code> and <code class="docutils literal notranslate"><span class="pre">Trainable.load_checkpoint</span></code>.</dd>
+</dl>
+<p>Use <code class="docutils literal notranslate"><span class="pre">validate_save_restore</span></code> to catch <code class="docutils literal notranslate"><span class="pre">Trainable.save_checkpoint</span></code>/
+<code class="docutils literal notranslate"><span class="pre">Trainable.load_checkpoint</span></code> errors before execution.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ray.tune.utils</span> <span class="kn">import</span> <span class="n">validate_save_restore</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">validate_save_restore</span><span class="p">(</span><span class="n">MyTrainableClass</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">validate_save_restore</span><span class="p">(</span><span class="n">MyTrainableClass</span><span class="p">,</span> <span class="n">use_object_store</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.8.7.</span></p>
+</div>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd><dl class="first last docutils">
+<dt>tmp_checkpoint_dir (str): The directory where the checkpoint</dt>
+<dd>file must be stored. In a Tune run, if the trial is paused,
+the provided path may be temporary and moved.</dd>
+</dl>
+</dd>
+<dt>Returns:</dt>
+<dd>A dict or string. If string, the return value is expected to be
+prefixed by <cite>tmp_checkpoint_dir</cite>. If dict, the return value will
+be automatically serialized by Tune and
+passed to <code class="docutils literal notranslate"><span class="pre">Trainable.load_checkpoint()</span></code>.</dd>
+<dt>Examples:</dt>
+<dd><div class="first highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">trainable1</span><span class="o">.</span><span class="n">save_checkpoint</span><span class="p">(</span><span class="s2">&quot;/tmp/checkpoint_1&quot;</span><span class="p">))</span>
+<span class="go">&quot;/tmp/checkpoint_1/my_checkpoint_file&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">trainable2</span><span class="o">.</span><span class="n">save_checkpoint</span><span class="p">(</span><span class="s2">&quot;/tmp/checkpoint_2&quot;</span><span class="p">))</span>
+<span class="go">{&quot;some&quot;: &quot;data&quot;}</span>
+</pre></div>
+</div>
+<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">trainable</span><span class="o">.</span><span class="n">save_checkpoint</span><span class="p">(</span><span class="s2">&quot;/tmp/bad_example&quot;</span><span class="p">)</span>
+<span class="go">&quot;/tmp/NEW_CHECKPOINT_PATH/my_checkpoint_file&quot; # This will error.</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.tune.tune_wrapper.TuneTrainer.setup">
+<code class="descname">setup</code><span class="sig-paren">(</span><em>config</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/tune/tune_wrapper.html#TuneTrainer.setup"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.tune.tune_wrapper.TuneTrainer.setup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Subclasses should override this for custom initialization.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.8.7.</span></p>
+</div>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd><dl class="first last docutils">
+<dt>config (dict): Hyperparameters and other configs given.</dt>
+<dd>Copy of <cite>self.config</cite>.</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.tune.tune_wrapper.TuneTrainer.step">
+<code class="descname">step</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/tune/tune_wrapper.html#TuneTrainer.step"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.tune.tune_wrapper.TuneTrainer.step" title="Permalink to this definition">¶</a></dt>
+<dd><p>Subclasses should override this to implement train().</p>
+<p>The return value will be automatically passed to the loggers. Users
+can also return <cite>tune.result.DONE</cite> or <cite>tune.result.SHOULD_CHECKPOINT</cite>
+as a key to manually trigger termination or checkpointing of this
+trial. Note that manual checkpointing only works when subclassing
+Trainables.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.8.7.</span></p>
+</div>
+<dl class="docutils">
+<dt>Returns:</dt>
+<dd>A dict that describes training progress.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="power_cogs.tune.tune_wrapper.TuneWrapper">
+<em class="property">class </em><code class="descclassname">power_cogs.tune.tune_wrapper.</code><code class="descname">TuneWrapper</code><span class="sig-paren">(</span><em>config: Any</em>, <em>trainer_config: Any</em>, <em>trainer_overrides: Any</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/tune/tune_wrapper.html#TuneWrapper"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.tune.tune_wrapper.TuneWrapper" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="power_cogs.tune.tune_wrapper.TuneWrapper.tune">
+<code class="descname">tune</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/tune/tune_wrapper.html#TuneWrapper.tune"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.tune.tune_wrapper.TuneWrapper.tune" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="power_cogs.tune.tune_wrapper.create_stopper">
+<code class="descclassname">power_cogs.tune.tune_wrapper.</code><code class="descname">create_stopper</code><span class="sig-paren">(</span><em>config</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/tune/tune_wrapper.html#create_stopper"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.tune.tune_wrapper.create_stopper" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-power_cogs.tune">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-power_cogs.tune" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">power_cogs</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="readme.html">power_cogs</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">power_cogs</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="power_cogs.html">power_cogs package</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">power_cogs</a><ul>
+  <li><a href="power_cogs.html">power_cogs package</a><ul>
+      <li>Previous: <a href="power_cogs.trainer.html" title="previous chapter">power_cogs.trainer package</a></li>
+      <li>Next: <a href="power_cogs.utils.html" title="next chapter">power_cogs.utils package</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Shyam Sudhakaran.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/power_cogs.tune.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

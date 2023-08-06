@@ -1,0 +1,533 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>power_cogs.base package &#8212; power_cogs 0.1.0 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="power_cogs.config package" href="power_cogs.config.html" />
+    <link rel="prev" title="power_cogs package" href="power_cogs.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="hydra-boiler-base-package">
+<h1>power_cogs.base package<a class="headerlink" href="#hydra-boiler-base-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-power_cogs.base.base_torch_dataset">
+<span id="hydra-boiler-base-base-torch-dataset-module"></span><h2>power_cogs.base.base_torch_dataset module<a class="headerlink" href="#module-power_cogs.base.base_torch_dataset" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="power_cogs.base.base_torch_dataset.BaseTorchDataset">
+<em class="property">class </em><code class="descclassname">power_cogs.base.base_torch_dataset.</code><code class="descname">BaseTorchDataset</code><a class="reference internal" href="_modules/power_cogs/base/base_torch_dataset.html#BaseTorchDataset"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.base_torch_dataset.BaseTorchDataset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.utils.data.dataset.Dataset</span></code></p>
+<dl class="method">
+<dt id="power_cogs.base.base_torch_dataset.BaseTorchDataset.sample">
+<code class="descname">sample</code><span class="sig-paren">(</span><em>batch_size: int</em><span class="sig-paren">)</span> &#x2192; Dict[str, Any]<a class="reference internal" href="_modules/power_cogs/base/base_torch_dataset.html#BaseTorchDataset.sample"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.base_torch_dataset.BaseTorchDataset.sample" title="Permalink to this definition">¶</a></dt>
+<dd><p>Random sample from dataset</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>batch_size (int): batch size to sample</dd>
+<dt>Returns:</dt>
+<dd>typing.Dict[str, typing.Any]: dict of outputs, ex:
+{“data”: subset, “targets”:targets}</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.base_torch_dataset.BaseTorchDataset.to_device">
+<code class="descname">to_device</code><span class="sig-paren">(</span><em>device: torch.device</em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/power_cogs/base/base_torch_dataset.html#BaseTorchDataset.to_device"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.base_torch_dataset.BaseTorchDataset.to_device" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-power_cogs.base.base_torch_model">
+<span id="hydra-boiler-base-base-torch-model-module"></span><h2>power_cogs.base.base_torch_model module<a class="headerlink" href="#module-power_cogs.base.base_torch_model" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="power_cogs.base.base_torch_model.BaseTorchModel">
+<em class="property">class </em><code class="descclassname">power_cogs.base.base_torch_model.</code><code class="descname">BaseTorchModel</code><a class="reference internal" href="_modules/power_cogs/base/base_torch_model.html#BaseTorchModel"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.base_torch_model.BaseTorchModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="method">
+<dt id="power_cogs.base.base_torch_model.BaseTorchModel.summary">
+<code class="descname">summary</code><span class="sig-paren">(</span><em>input_shape</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_model.html#BaseTorchModel.summary"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.base_torch_model.BaseTorchModel.summary" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-power_cogs.base.base_torch_trainer">
+<span id="hydra-boiler-base-base-torch-trainer-module"></span><h2>power_cogs.base.base_torch_trainer module<a class="headerlink" href="#module-power_cogs.base.base_torch_trainer" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="power_cogs.base.base_torch_trainer.BaseTorchTrainer">
+<em class="property">class </em><code class="descclassname">power_cogs.base.base_torch_trainer.</code><code class="descname">BaseTorchTrainer</code><span class="sig-paren">(</span><em>name: Optional[str] = None</em>, <em>pretrained_path: Optional[str] = None</em>, <em>visualize_output: bool = False</em>, <em>use_cuda: bool = False</em>, <em>device_id: int = 0</em>, <em>early_stoppage: bool = False</em>, <em>loss_threshold: float = -inf</em>, <em>batch_size: int = 32</em>, <em>epochs: int = 100</em>, <em>checkpoint_interval: int = 100</em>, <em>num_samples: Optional[int] = None</em>, <em>model_config: Dict[str</em>, <em>Any] = {}</em>, <em>dataset_config: Dict[str</em>, <em>Any] = {}</em>, <em>optimizer_config: Dict[str</em>, <em>Any] = {}</em>, <em>scheduler_config: Dict[str</em>, <em>Any] = {}</em>, <em>logging_config: Dict[str</em>, <em>Any] = {}</em>, <em>dataloader_config: Dict[str</em>, <em>Any] = {}</em>, <em>tune_config: Dict[str</em>, <em>Any] = {}</em>, <em>config: Dict[str</em>, <em>Any] = {}</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.base_torch_trainer.BaseTorchTrainer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="classmethod">
+<dt id="power_cogs.base.base_torch_trainer.BaseTorchTrainer.from_config">
+<em class="property">classmethod </em><code class="descname">from_config</code><span class="sig-paren">(</span><em>config_path: Optional[str] = None</em>, <em>config: Dict[str</em>, <em>Any] = {}</em><span class="sig-paren">)</span> &#x2192; power_cogs.base.base_torch_trainer.BaseTorchTrainer<a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.from_config"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.base_torch_trainer.BaseTorchTrainer.from_config" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.base_torch_trainer.BaseTorchTrainer.load">
+<code class="descname">load</code><span class="sig-paren">(</span><em>pretrained_path</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.load"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.base_torch_trainer.BaseTorchTrainer.load" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.base_torch_trainer.BaseTorchTrainer.load_model">
+<code class="descname">load_model</code><span class="sig-paren">(</span><em>checkpoint_path: str</em>, <em>load_optimizer_and_scheduler: bool = True</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.load_model"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.base_torch_trainer.BaseTorchTrainer.load_model" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.base_torch_trainer.BaseTorchTrainer.log_epoch">
+<code class="descname">log_epoch</code><span class="sig-paren">(</span><em>train_metrics</em>, <em>epoch</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.log_epoch"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.base_torch_trainer.BaseTorchTrainer.log_epoch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.base_torch_trainer.BaseTorchTrainer.make_checkpoint">
+<code class="descname">make_checkpoint</code><span class="sig-paren">(</span><em>path: str</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.make_checkpoint"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.base_torch_trainer.BaseTorchTrainer.make_checkpoint" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.base_torch_trainer.BaseTorchTrainer.post_dataset_setup">
+<code class="descname">post_dataset_setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.post_dataset_setup"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.base_torch_trainer.BaseTorchTrainer.post_dataset_setup" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.base_torch_trainer.BaseTorchTrainer.post_model_setup">
+<code class="descname">post_model_setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.post_model_setup"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.base_torch_trainer.BaseTorchTrainer.post_model_setup" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.base_torch_trainer.BaseTorchTrainer.post_optimizer_setup">
+<code class="descname">post_optimizer_setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.post_optimizer_setup"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.base_torch_trainer.BaseTorchTrainer.post_optimizer_setup" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.base_torch_trainer.BaseTorchTrainer.post_setup">
+<code class="descname">post_setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.post_setup"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.base_torch_trainer.BaseTorchTrainer.post_setup" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.base_torch_trainer.BaseTorchTrainer.post_train">
+<code class="descname">post_train</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.post_train"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.base_torch_trainer.BaseTorchTrainer.post_train" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.base_torch_trainer.BaseTorchTrainer.post_train_iter">
+<code class="descname">post_train_iter</code><span class="sig-paren">(</span><em>train_output: Dict[Any, Any]</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.post_train_iter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.base_torch_trainer.BaseTorchTrainer.post_train_iter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.base_torch_trainer.BaseTorchTrainer.pre_dataset_setup">
+<code class="descname">pre_dataset_setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.pre_dataset_setup"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.base_torch_trainer.BaseTorchTrainer.pre_dataset_setup" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.base_torch_trainer.BaseTorchTrainer.pre_model_setup">
+<code class="descname">pre_model_setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.pre_model_setup"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.base_torch_trainer.BaseTorchTrainer.pre_model_setup" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.base_torch_trainer.BaseTorchTrainer.pre_optimizer_setup">
+<code class="descname">pre_optimizer_setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.pre_optimizer_setup"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.base_torch_trainer.BaseTorchTrainer.pre_optimizer_setup" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.base_torch_trainer.BaseTorchTrainer.pre_train">
+<code class="descname">pre_train</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.pre_train"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.base_torch_trainer.BaseTorchTrainer.pre_train" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.base_torch_trainer.BaseTorchTrainer.pre_train_iter">
+<code class="descname">pre_train_iter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.pre_train_iter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.base_torch_trainer.BaseTorchTrainer.pre_train_iter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.base_torch_trainer.BaseTorchTrainer.save">
+<code class="descname">save</code><span class="sig-paren">(</span><em>base_path: Optional[str] = None</em>, <em>step: Optional[int] = None</em>, <em>path_name: Optional[str] = None</em><span class="sig-paren">)</span> &#x2192; str<a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.save"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.base_torch_trainer.BaseTorchTrainer.save" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.base_torch_trainer.BaseTorchTrainer.save_config">
+<code class="descname">save_config</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span> &#x2192; str<a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.save_config"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.base_torch_trainer.BaseTorchTrainer.save_config" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.base_torch_trainer.BaseTorchTrainer.setup">
+<code class="descname">setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.setup"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.base_torch_trainer.BaseTorchTrainer.setup" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.base_torch_trainer.BaseTorchTrainer.setup_dataloader">
+<code class="descname">setup_dataloader</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.setup_dataloader"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.base_torch_trainer.BaseTorchTrainer.setup_dataloader" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.base_torch_trainer.BaseTorchTrainer.setup_dataset">
+<code class="descname">setup_dataset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.setup_dataset"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.base_torch_trainer.BaseTorchTrainer.setup_dataset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.base_torch_trainer.BaseTorchTrainer.setup_device">
+<code class="descname">setup_device</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.setup_device"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.base_torch_trainer.BaseTorchTrainer.setup_device" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.base_torch_trainer.BaseTorchTrainer.setup_logging_and_checkpoints">
+<code class="descname">setup_logging_and_checkpoints</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.setup_logging_and_checkpoints"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.base_torch_trainer.BaseTorchTrainer.setup_logging_and_checkpoints" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.base_torch_trainer.BaseTorchTrainer.setup_model">
+<code class="descname">setup_model</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.setup_model"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.base_torch_trainer.BaseTorchTrainer.setup_model" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.base_torch_trainer.BaseTorchTrainer.setup_optimizer">
+<code class="descname">setup_optimizer</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.setup_optimizer"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.base_torch_trainer.BaseTorchTrainer.setup_optimizer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.base_torch_trainer.BaseTorchTrainer.setup_trainer">
+<code class="descname">setup_trainer</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.setup_trainer"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.base_torch_trainer.BaseTorchTrainer.setup_trainer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.base_torch_trainer.BaseTorchTrainer.to_device">
+<code class="descname">to_device</code><span class="sig-paren">(</span><em>device</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.to_device"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.base_torch_trainer.BaseTorchTrainer.to_device" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.base_torch_trainer.BaseTorchTrainer.train">
+<code class="descname">train</code><span class="sig-paren">(</span><em>batch_size=None</em>, <em>epochs=None</em>, <em>checkpoint_interval=None</em>, <em>visualize=None</em><span class="sig-paren">)</span> &#x2192; Dict[str, Any]<a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.train"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.base_torch_trainer.BaseTorchTrainer.train" title="Permalink to this definition">¶</a></dt>
+<dd><p>Main training function, should call train_iter</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.base_torch_trainer.BaseTorchTrainer.train_iter">
+<code class="descname">train_iter</code><span class="sig-paren">(</span><em>batch_size: int</em>, <em>iteration: Optional[int] = None</em><span class="sig-paren">)</span> &#x2192; Dict[Any, Any]<a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.train_iter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.base_torch_trainer.BaseTorchTrainer.train_iter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Training iteration, specify learning process here</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.base_torch_trainer.BaseTorchTrainer.tune">
+<code class="descname">tune</code><span class="sig-paren">(</span><em>tune_config: Dict[str</em>, <em>Any] = {}</em>, <em>trainer_overrides: Dict[str</em>, <em>Any] = {}</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.tune"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.base_torch_trainer.BaseTorchTrainer.tune" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.base_torch_trainer.BaseTorchTrainer.visualize">
+<code class="descname">visualize</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.visualize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.base_torch_trainer.BaseTorchTrainer.visualize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Visualize output</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-power_cogs.base">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-power_cogs.base" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="power_cogs.base.BaseTorchDataset">
+<em class="property">class </em><code class="descclassname">power_cogs.base.</code><code class="descname">BaseTorchDataset</code><a class="reference internal" href="_modules/power_cogs/base/base_torch_dataset.html#BaseTorchDataset"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.BaseTorchDataset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.utils.data.dataset.Dataset</span></code></p>
+<dl class="method">
+<dt id="power_cogs.base.BaseTorchDataset.sample">
+<code class="descname">sample</code><span class="sig-paren">(</span><em>batch_size: int</em><span class="sig-paren">)</span> &#x2192; Dict[str, Any]<a class="reference internal" href="_modules/power_cogs/base/base_torch_dataset.html#BaseTorchDataset.sample"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.BaseTorchDataset.sample" title="Permalink to this definition">¶</a></dt>
+<dd><p>Random sample from dataset</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>batch_size (int): batch size to sample</dd>
+<dt>Returns:</dt>
+<dd>typing.Dict[str, typing.Any]: dict of outputs, ex:
+{“data”: subset, “targets”:targets}</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.BaseTorchDataset.to_device">
+<code class="descname">to_device</code><span class="sig-paren">(</span><em>device: torch.device</em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/power_cogs/base/base_torch_dataset.html#BaseTorchDataset.to_device"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.BaseTorchDataset.to_device" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="power_cogs.base.BaseTorchModel">
+<em class="property">class </em><code class="descclassname">power_cogs.base.</code><code class="descname">BaseTorchModel</code><a class="reference internal" href="_modules/power_cogs/base/base_torch_model.html#BaseTorchModel"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.BaseTorchModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="method">
+<dt id="power_cogs.base.BaseTorchModel.summary">
+<code class="descname">summary</code><span class="sig-paren">(</span><em>input_shape</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_model.html#BaseTorchModel.summary"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.BaseTorchModel.summary" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="power_cogs.base.BaseTorchTrainer">
+<em class="property">class </em><code class="descclassname">power_cogs.base.</code><code class="descname">BaseTorchTrainer</code><span class="sig-paren">(</span><em>name: Optional[str] = None</em>, <em>pretrained_path: Optional[str] = None</em>, <em>visualize_output: bool = False</em>, <em>use_cuda: bool = False</em>, <em>device_id: int = 0</em>, <em>early_stoppage: bool = False</em>, <em>loss_threshold: float = -inf</em>, <em>batch_size: int = 32</em>, <em>epochs: int = 100</em>, <em>checkpoint_interval: int = 100</em>, <em>num_samples: Optional[int] = None</em>, <em>model_config: Dict[str</em>, <em>Any] = {}</em>, <em>dataset_config: Dict[str</em>, <em>Any] = {}</em>, <em>optimizer_config: Dict[str</em>, <em>Any] = {}</em>, <em>scheduler_config: Dict[str</em>, <em>Any] = {}</em>, <em>logging_config: Dict[str</em>, <em>Any] = {}</em>, <em>dataloader_config: Dict[str</em>, <em>Any] = {}</em>, <em>tune_config: Dict[str</em>, <em>Any] = {}</em>, <em>config: Dict[str</em>, <em>Any] = {}</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.BaseTorchTrainer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="classmethod">
+<dt id="power_cogs.base.BaseTorchTrainer.from_config">
+<em class="property">classmethod </em><code class="descname">from_config</code><span class="sig-paren">(</span><em>config_path: Optional[str] = None</em>, <em>config: Dict[str</em>, <em>Any] = {}</em><span class="sig-paren">)</span> &#x2192; power_cogs.base.base_torch_trainer.BaseTorchTrainer<a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.from_config"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.BaseTorchTrainer.from_config" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.BaseTorchTrainer.load">
+<code class="descname">load</code><span class="sig-paren">(</span><em>pretrained_path</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.load"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.BaseTorchTrainer.load" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.BaseTorchTrainer.load_model">
+<code class="descname">load_model</code><span class="sig-paren">(</span><em>checkpoint_path: str</em>, <em>load_optimizer_and_scheduler: bool = True</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.load_model"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.BaseTorchTrainer.load_model" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.BaseTorchTrainer.log_epoch">
+<code class="descname">log_epoch</code><span class="sig-paren">(</span><em>train_metrics</em>, <em>epoch</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.log_epoch"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.BaseTorchTrainer.log_epoch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.BaseTorchTrainer.make_checkpoint">
+<code class="descname">make_checkpoint</code><span class="sig-paren">(</span><em>path: str</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.make_checkpoint"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.BaseTorchTrainer.make_checkpoint" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.BaseTorchTrainer.post_dataset_setup">
+<code class="descname">post_dataset_setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.post_dataset_setup"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.BaseTorchTrainer.post_dataset_setup" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.BaseTorchTrainer.post_model_setup">
+<code class="descname">post_model_setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.post_model_setup"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.BaseTorchTrainer.post_model_setup" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.BaseTorchTrainer.post_optimizer_setup">
+<code class="descname">post_optimizer_setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.post_optimizer_setup"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.BaseTorchTrainer.post_optimizer_setup" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.BaseTorchTrainer.post_setup">
+<code class="descname">post_setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.post_setup"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.BaseTorchTrainer.post_setup" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.BaseTorchTrainer.post_train">
+<code class="descname">post_train</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.post_train"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.BaseTorchTrainer.post_train" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.BaseTorchTrainer.post_train_iter">
+<code class="descname">post_train_iter</code><span class="sig-paren">(</span><em>train_output: Dict[Any, Any]</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.post_train_iter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.BaseTorchTrainer.post_train_iter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.BaseTorchTrainer.pre_dataset_setup">
+<code class="descname">pre_dataset_setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.pre_dataset_setup"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.BaseTorchTrainer.pre_dataset_setup" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.BaseTorchTrainer.pre_model_setup">
+<code class="descname">pre_model_setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.pre_model_setup"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.BaseTorchTrainer.pre_model_setup" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.BaseTorchTrainer.pre_optimizer_setup">
+<code class="descname">pre_optimizer_setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.pre_optimizer_setup"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.BaseTorchTrainer.pre_optimizer_setup" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.BaseTorchTrainer.pre_train">
+<code class="descname">pre_train</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.pre_train"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.BaseTorchTrainer.pre_train" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.BaseTorchTrainer.pre_train_iter">
+<code class="descname">pre_train_iter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.pre_train_iter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.BaseTorchTrainer.pre_train_iter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.BaseTorchTrainer.save">
+<code class="descname">save</code><span class="sig-paren">(</span><em>base_path: Optional[str] = None</em>, <em>step: Optional[int] = None</em>, <em>path_name: Optional[str] = None</em><span class="sig-paren">)</span> &#x2192; str<a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.save"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.BaseTorchTrainer.save" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.BaseTorchTrainer.save_config">
+<code class="descname">save_config</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span> &#x2192; str<a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.save_config"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.BaseTorchTrainer.save_config" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.BaseTorchTrainer.setup">
+<code class="descname">setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.setup"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.BaseTorchTrainer.setup" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.BaseTorchTrainer.setup_dataloader">
+<code class="descname">setup_dataloader</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.setup_dataloader"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.BaseTorchTrainer.setup_dataloader" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.BaseTorchTrainer.setup_dataset">
+<code class="descname">setup_dataset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.setup_dataset"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.BaseTorchTrainer.setup_dataset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.BaseTorchTrainer.setup_device">
+<code class="descname">setup_device</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.setup_device"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.BaseTorchTrainer.setup_device" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.BaseTorchTrainer.setup_logging_and_checkpoints">
+<code class="descname">setup_logging_and_checkpoints</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.setup_logging_and_checkpoints"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.BaseTorchTrainer.setup_logging_and_checkpoints" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.BaseTorchTrainer.setup_model">
+<code class="descname">setup_model</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.setup_model"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.BaseTorchTrainer.setup_model" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.BaseTorchTrainer.setup_optimizer">
+<code class="descname">setup_optimizer</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.setup_optimizer"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.BaseTorchTrainer.setup_optimizer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.BaseTorchTrainer.setup_trainer">
+<code class="descname">setup_trainer</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.setup_trainer"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.BaseTorchTrainer.setup_trainer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.BaseTorchTrainer.to_device">
+<code class="descname">to_device</code><span class="sig-paren">(</span><em>device</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.to_device"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.BaseTorchTrainer.to_device" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.BaseTorchTrainer.train">
+<code class="descname">train</code><span class="sig-paren">(</span><em>batch_size=None</em>, <em>epochs=None</em>, <em>checkpoint_interval=None</em>, <em>visualize=None</em><span class="sig-paren">)</span> &#x2192; Dict[str, Any]<a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.train"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.BaseTorchTrainer.train" title="Permalink to this definition">¶</a></dt>
+<dd><p>Main training function, should call train_iter</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.BaseTorchTrainer.train_iter">
+<code class="descname">train_iter</code><span class="sig-paren">(</span><em>batch_size: int</em>, <em>iteration: Optional[int] = None</em><span class="sig-paren">)</span> &#x2192; Dict[Any, Any]<a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.train_iter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.BaseTorchTrainer.train_iter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Training iteration, specify learning process here</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.BaseTorchTrainer.tune">
+<code class="descname">tune</code><span class="sig-paren">(</span><em>tune_config: Dict[str</em>, <em>Any] = {}</em>, <em>trainer_overrides: Dict[str</em>, <em>Any] = {}</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.tune"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.BaseTorchTrainer.tune" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="power_cogs.base.BaseTorchTrainer.visualize">
+<code class="descname">visualize</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/power_cogs/base/base_torch_trainer.html#BaseTorchTrainer.visualize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#power_cogs.base.BaseTorchTrainer.visualize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Visualize output</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">power_cogs</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="readme.html">power_cogs</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">power_cogs</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="power_cogs.html">power_cogs package</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">power_cogs</a><ul>
+  <li><a href="power_cogs.html">power_cogs package</a><ul>
+      <li>Previous: <a href="power_cogs.html" title="previous chapter">power_cogs package</a></li>
+      <li>Next: <a href="power_cogs.config.html" title="next chapter">power_cogs.config package</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Shyam Sudhakaran.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/power_cogs.base.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
