@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+autoquant/autoquant.egg-info/PKG-INFO
+autoquant/autoquant.egg-info/SOURCES.txt
+autoquant/autoquant.egg-info/dependency_links.txt
+autoquant/autoquant.egg-info/top_level.txt

@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: autoquant
+Version: 0.0.1
+Summary: Auto Quant
+Home-page: https://github.com/Marcnuth/AutoQuant
+Author: Marcnuth
+Author-email: hxianxian@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Marcnuth/AutoQuant/issues
+Platform: UNKNOWN
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# AutoQuant
+Auto Quant
+
+
