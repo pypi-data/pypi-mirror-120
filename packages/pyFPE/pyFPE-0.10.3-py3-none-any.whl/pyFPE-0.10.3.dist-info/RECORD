@@ -1,0 +1,11 @@
+ff3/__init__.py,sha256=z-eyCEOVtFBNIAHW_gstHMYhHz5s2ylpulY-x1j4iCE,44
+ff3/ff3.py,sha256=12_0ziF5pugmPFXX1RO5l8KdGL6Hi4rGpO_ddQK0PN8,13913
+ff3/ff3_test.py,sha256=qWceJd2vg4DV0nnoJ9efsKiiKQXjdiKfGELiElNRJTg,7025
+pyfpe_ff3/__init__.py,sha256=m4-X9uPa6cmjvwmMxnn4MVhtR9okHmp5KqRlsknJZMc,99
+pyfpe_ff3/ff3.py,sha256=gJIQflvwRq9-rwyM8T27QKEqXHpGcSbM39OrZ59WA8k,15922
+pyfpe_ff3/utils.py,sha256=qBBowAc3C_prVuS6mn1wpq_FRwyAHgaGL4Em_qDFKD0,260
+pyFPE-0.10.3.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+pyFPE-0.10.3.dist-info/METADATA,sha256=PKqpPSDT65xYu9pEPlPebeN0ZtMyfcRWU3Zu2vw_v3w,8425
+pyFPE-0.10.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pyFPE-0.10.3.dist-info/top_level.txt,sha256=mNG8W7PbOpQCaLtUAUfrd7viysGP7V8NHtq7LfK3DLY,10
+pyFPE-0.10.3.dist-info/RECORD,,
