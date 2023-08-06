@@ -1,0 +1,15 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_lib.py,sha256=QMNmxtLChycmZ1GFwFTvYZ1KCmviNqj7HvxessnaD8s,8810
+tests/test_providers.py,sha256=WNoCvyg-04b3WamuSB8FmBIUn9CVVd4PuOseJwNwso4,5940
+xyzservices/__init__.py,sha256=QGsfcNb9_NWPg8RCXkl0pIJePpDGw-dCPvcAomGlhPc,179
+xyzservices/_version.py,sha256=Ncq_8h7Z-76J9TCgrfphRKRjSSwijBqfrviEUGwZxlk,501
+xyzservices/lib.py,sha256=jNoaF7TYLMQIHxwdgH_me8roza0DkqMf2o8BdAQtoFo,21626
+xyzservices/providers.py,sha256=5lTcyq3sQIzSqQhXMrbJLUU2InMUmiK-Vpf6E6Z6nVs,368
+xyzservices/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xyzservices/data/providers.json,sha256=WxvikiskI0JXT1MeQOBrAz0wAcueSptXabDsi-igGPc,147403
+xyzservices-2021.9.1.data/data/share/xyzservices/providers.json,sha256=WxvikiskI0JXT1MeQOBrAz0wAcueSptXabDsi-igGPc,147403
+xyzservices-2021.9.1.dist-info/LICENSE,sha256=2Ga4xsDnfmeyw_bSzKdx_8BfZbveFnTc8uDsVau2rWE,1517
+xyzservices-2021.9.1.dist-info/METADATA,sha256=9itaZucXP5L2FCnfeJv56DrfHoF1CrX8cOxsy-rJcdk,4001
+xyzservices-2021.9.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+xyzservices-2021.9.1.dist-info/top_level.txt,sha256=fQttHwvOS83bZRy3Ssc8B8r6ZePkKuwPfrxs-_-XcnA,18
+xyzservices-2021.9.1.dist-info/RECORD,,
