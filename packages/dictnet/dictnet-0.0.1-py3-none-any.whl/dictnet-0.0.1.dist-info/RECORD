@@ -1,0 +1,13 @@
+dictnet/__init__.py,sha256=dA_Ti7pLSXkzr1JSyvDnbrI2djxpzDf8-S-N9760MKg,53
+dictnet/__main__.py,sha256=zF5JqXkfvm0HwMz7D9TWMKcUSIdAJsPPwxLBCRkrj8k,75
+dictnet/_dictnet.py,sha256=Inkz0EqsXqF_3WbqfYI6olr03MRecq1tZuoykPU8-Xg,3966
+dictnet/senset.py,sha256=suyhDb1Pxc2OpOa0wZkIP9fshpGxzfHaNM9reepSYRA,1583
+dictnet/util.py,sha256=hJ9WeaJLDQHVZtuYBs2iVoP38tg4xzNXY6ef1a6n4_4,2931
+dictnet/cli/__init__.py,sha256=WO6u_UCrf7Ok-X3N10NRZ_9miKCh43zoxcqmpTGAsig,242
+dictnet/cli/_util.py,sha256=jy9Hk5w_i72Rzant4CCQcJHynTKybcHiPpVII_nPY4s,539
+dictnet/cli/download.py,sha256=kcFcXOPGMlZhifjSEunYlwz7y_Q7MN2MRf3SmVk7b5o,1555
+dictnet-0.0.1.dist-info/LICENSE,sha256=s-WAUxD6nQGiDgAwsXauqADvg9IC4tku4M8AXthVGu4,1065
+dictnet-0.0.1.dist-info/METADATA,sha256=VagDau-W7gTTJhptLUFEXQrEoElS3233Iy7NP8_ABU8,579
+dictnet-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+dictnet-0.0.1.dist-info/top_level.txt,sha256=gpGmMAUw5aBrw7WTrXxUir49bSFhnEGGukgNeT9nyNE,8
+dictnet-0.0.1.dist-info/RECORD,,
