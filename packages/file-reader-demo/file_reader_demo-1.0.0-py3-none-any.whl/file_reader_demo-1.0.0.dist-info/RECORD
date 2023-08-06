@@ -1,0 +1,12 @@
+file_reader/__init__.py,sha256=NzRHW-icKXntpNc54RC8lZ0q_uGnqKMQgXuwtixz6ec,29
+file_reader/__main__.py,sha256=uF_yGlnsrS1FSL90MjDmSi2L65i9UOOKhI_seXAsnzI,127
+file_reader/multireader.py,sha256=XHsFtOfLOx4WHPm6kat3hUTjW1r-B6iuyTTxj6TIHR4,520
+file_reader/compressed/__init__.py,sha256=0ufMnuskkgfUX3Vzz9_MSC9P6EYFHf4x_SuiZcbAFZE,197
+file_reader/compressed/bzipped.py,sha256=xHWDcZ1O-r477iuv_MecgGZegzsEs5EoSrTK7RIVYUY,256
+file_reader/compressed/gzipped.py,sha256=ljRthDR6wGVj-4OmHwhG9L_b2isMukYAYaq_toOaBAU,269
+file_reader/util/__init__.py,sha256=NzRHW-icKXntpNc54RC8lZ0q_uGnqKMQgXuwtixz6ec,29
+file_reader/util/writer.py,sha256=Er7y1gL2pyiGyYOjhrtkFQSObicRoIYx5dx00U9N2JQ,118
+file_reader_demo-1.0.0.dist-info/METADATA,sha256=Ey3RcLuP7Q4Dmz4LA1Pm-ZS-mkolInrfR3FU4LPxiso,211
+file_reader_demo-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+file_reader_demo-1.0.0.dist-info/top_level.txt,sha256=leWyMt9ICeK1cHGwSXjCFhEn3mq4Ve-14fqgkVE_rAA,12
+file_reader_demo-1.0.0.dist-info/RECORD,,
