@@ -1,0 +1,4 @@
+requests>=2
+joblib>=1
+numpy>=1
+cryptography>=3
