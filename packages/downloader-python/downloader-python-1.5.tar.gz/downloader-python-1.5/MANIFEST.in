@@ -1,0 +1,6 @@
+include downloader-python/sources/*
+include downloader-python/properties/*
+include downloader-python/static/css/*
+include downloader-python/static/fonts/*
+include downloader-python/static/js/*
+include downloader-python/templates/*
