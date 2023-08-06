@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: cartorio
+Version: 1.1.5
+Summary: Cartorio: A library for logging
+Home-page: https://github.com/hsteinshiromoto/cartorio
+Author: Humberto STEIN SHIROMOTO
+Author-email: h.stein.shiromoto@gmail.com
+License: MIT
+Description: # Cartorio
+        
+        A logging module for Python.
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
