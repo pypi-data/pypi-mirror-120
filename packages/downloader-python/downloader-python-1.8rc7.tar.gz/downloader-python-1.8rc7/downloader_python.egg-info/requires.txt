@@ -1,0 +1,5 @@
+turtle
+PyQt5
+requests
+bs4
+lxml
