@@ -1,0 +1,3 @@
+[console_scripts]
+pypi-helloworold = helloworld.helloworld:hello_world
+
