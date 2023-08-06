@@ -1,0 +1,17 @@
+hydro_api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hydro_api/ana/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hydro_api/ana/api_biuld.py,sha256=ohhXc6sKn2k5nP7iMPySTnCsZSVmrnHdoKz-RT4120U,1205
+hydro_api/ana/tests.py,sha256=qf33gnZJ0s-BSQ1ungEugkUV3Q7A1CjEl7SH4mgyols,2338
+hydro_api/ana/hidro/__init__.py,sha256=CKtrO5Obfiuta31FNdI0e9EgPtRAeqz0efrr8TkbUq0,228
+hydro_api/ana/hidro/basin.py,sha256=NTPAnCPbO-6qXQD6-pIrJxInbZi0mSVofBgckuWiaQw,2305
+hydro_api/ana/hidro/entities.py,sha256=nIfsBryvA0iBm8VMn5A0CY7YNqfDgS9OHU43Pi1NuiI,1363
+hydro_api/ana/hidro/serie_temporal.py,sha256=l_Yt76PuSir7rE_uS9ak31jNGp5O-108ZcgrbWXxzlM,2886
+hydro_api/ana/hidro/stations.py,sha256=jeWfScc-fgqVOJlklhqQe5ttau4a_4WBoVcPlKaw8cI,5459
+hydro_api/ana/sar/__init__.py,sha256=REIBpYhO7RVCI6MT_b6O9jOuesc_UUKTB0TCR7f6TUM,66
+hydro_api/ana/sar/reservoir.py,sha256=g7AH-y95HKyoVrlvLG1lthMKZ3q7LITf83DJGg7iaIQ,1933
+hydro_api/ana/sar/serie_temporal.py,sha256=b_UXkr3ES89_KlB2sk68kVvjq4LcGHE6yPyzym6YjWo,2438
+hydro_python_api-1.1.17.dist-info/LICENSE,sha256=EGIw30nEa4eqjRy1Vboa8_c1LTIJDRtINVlx5Mc1yNg,1083
+hydro_python_api-1.1.17.dist-info/METADATA,sha256=STjTwXt3z6oxPgmeGcPE3djvE6vdrKOjZ4pg9p6b3rY,916
+hydro_python_api-1.1.17.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+hydro_python_api-1.1.17.dist-info/top_level.txt,sha256=YtT88nsBT7g3LH-YGgKvXogh5PsONCVhmxWwZfp3Klw,10
+hydro_python_api-1.1.17.dist-info/RECORD,,
