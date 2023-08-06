@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: mc-mod-getter
+Version: 1.0.0
+Summary: Easy Download & Update Mods for Minecraft
+Home-page: https://github.com/mgutierrezz/mc-mod-getter
+Author: Michael Gutierrez
+Author-email: Michael.Gutierrez2@marist.edu
+License: MIT
+Project-URL: Bugs, https://github.com/mgutierrezz/mc-mod-getter/issues/
+Project-URL: Documentation, https://github.com/mgutierrezz/mc-mod-getter/
+Project-URL: Source Code, https://github.com/mgutierrezz/mc-mod-getter
+Description: # mc-mod-getter [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Package Pypi](https://img.shields.io/pypi/v/notyet.svg)](https://pypi.org/project/notyet)
+        
+        Utility to download minecraft mods from the internet
+        
+Keywords: Package
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Natural Language :: English
+Description-Content-Type: text/markdown
