@@ -1,0 +1,6 @@
+collective.transmogrifier
+plone.uuid
+Products.CMFPlone
+setuptools
+six
+zope.component
