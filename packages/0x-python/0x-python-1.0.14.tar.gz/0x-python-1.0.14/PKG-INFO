@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: 0x-python
+Version: 1.0.14
+Summary: 0x python wrapper
+Home-page: https://github.com/skeetzo/0x-python
+Author: Skeetzo
+Author-email: WebmasterSkeetzo@gmail.com
+License: UNKNOWN
+Keywords: 0x,api,python
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+
+# 0x Python Wrapper
+
+
+### API docs
+Can be found here: https://0x.org/docs/api
+
+### DEV environment
+
+Install test dependencies: `python3 setup.py install -e [.dev]`
+Run some tests: `python3 -m unittest tests.test_0x`
+Run all tests: `python3 -m unittest discover -s ./tests`
+
