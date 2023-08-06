@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+credentia/app.py
+credentia.egg-info/PKG-INFO
+credentia.egg-info/SOURCES.txt
+credentia.egg-info/dependency_links.txt
+credentia.egg-info/top_level.txt
