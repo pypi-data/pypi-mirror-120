@@ -1,0 +1,3 @@
+django-ajax-helpers
+django-nested-modals
+requests
