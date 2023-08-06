@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+wbfbd/__init__.py
+wbfbd.egg-info/PKG-INFO
+wbfbd.egg-info/SOURCES.txt
+wbfbd.egg-info/dependency_links.txt
+wbfbd.egg-info/entry_points.txt
+wbfbd.egg-info/top_level.txt
