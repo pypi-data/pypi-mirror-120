@@ -1,0 +1,3 @@
+[console_scripts]
+t5s = t5s.cli:main
+
