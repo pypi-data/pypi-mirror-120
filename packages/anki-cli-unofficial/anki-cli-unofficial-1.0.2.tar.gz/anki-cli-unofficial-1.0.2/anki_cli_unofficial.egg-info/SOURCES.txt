@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+./scripts/anki-cli-unofficial
+anki_cli_unofficial.egg-info/PKG-INFO
+anki_cli_unofficial.egg-info/SOURCES.txt
+anki_cli_unofficial.egg-info/dependency_links.txt
+anki_cli_unofficial.egg-info/requires.txt
+anki_cli_unofficial.egg-info/top_level.txt
+ankicli/__init__.py
+ankicli/cli.py
+ankicli/loader.py
