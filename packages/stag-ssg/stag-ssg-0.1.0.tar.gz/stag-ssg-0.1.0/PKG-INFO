@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: stag-ssg
+Version: 0.1.0
+Summary: Deadly simple static site generator
+Home-page: https://git.goral.net.pl/mgoral/stag
+Author: Michał Góral
+Author-email: dev@goral.net.pl
+License: GPLv3+
+Description: # stag
+        
+        Deadly simple, extensible static site generator.
+        
+        # Features
+        
+        - Markdown support
+        - Jinja2 templates support
+        - Everything is a plugin
+          - easy extensibility with plugins; all built-in plugins can be enabled,
+            disabled, reordered or mixed with custom user plugins
+          - plugins are either readers, generators or writers and are called in that
+            order
+        - generate nice urls:
+          - _foo/index.md_ → _foo/index.html_
+          - _bar.md_ → _bar/index.html_
+        
+Platform: linux
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP :: Site Management
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7,<3.10
+Description-Content-Type: text/markdown
