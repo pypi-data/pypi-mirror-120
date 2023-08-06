@@ -1,0 +1,16 @@
+understory/apps/micropub_server/__init__.py,sha256=sofbcfdhx1TXFM9z7cbh9V8KpGZdR_fyn65YQODD2Xw,25023
+understory/apps/micropub_server/templates/__init__.py,sha256=_6j6N4irzJi6pnDy-aT7L-GSkh_Pb6QTW7EdGFwusuk,79
+understory/apps/micropub_server/templates/activity.html,sha256=aUXmXmhOrqyCsVgrZsbe57_7KV-jc1P-F8IipWwVspA,654
+understory/apps/micropub_server/templates/card.html,sha256=bkzACbFNQMMFtCMD-uDRDYMVcW9pf6yeQ6NfN5HMP-k,1157
+understory/apps/micropub_server/templates/cards.html,sha256=VjFvON11miyEYi0rGuJZ-6uierYWrIFM-mT0Ol97bik,441
+understory/apps/micropub_server/templates/channel.html,sha256=i5rUD0k44QB6O4G9RQJCtzEGVWOgrH_1XABIA1a1teo,230
+understory/apps/micropub_server/templates/channels.html,sha256=xCfapwJjRKM0F5OlJ93n7P0khAq5f3Fr0wur-JxC7HE,631
+understory/apps/micropub_server/templates/entries.html,sha256=fKp6N09bhUlL7WPwqQi3Jz-GofNT7cL1Dsr6B5p0JmU,466
+understory/apps/micropub_server/templates/media.html,sha256=VATq7mzBqjxXaAG6hwIhW1IvEMuNeZ1cLK16gxi5QT0,498
+understory/apps/micropub_server/templates/render_dict.html,sha256=GjVAptn7T9ptnIwzX2wF7cb1tQgN2gMawADVjkQEed0,369
+understory/apps/micropub_server/templates/rooms.html,sha256=85ItSOE5atdI7Wvrhij7vKnndTrmOAq7L5NiewseTAs,223
+understory/apps/micropub_server/templates/syndication.html,sha256=3BaUtRB9TVgNNYXkS7rsGZCuELJbaZZDrN_893OKLw4,322
+understory_micropub_server-0.0.2.dist-info/LICENSE,sha256=ogEPNDSH0_dhiv_lT3ifVIdgIzHAqNA_SemnxUfPBJk,7048
+understory_micropub_server-0.0.2.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+understory_micropub_server-0.0.2.dist-info/METADATA,sha256=nhJ5QTw-h1QxgCemwxfczDACvzTNZqeEMHPh84TTYBI,708
+understory_micropub_server-0.0.2.dist-info/RECORD,,
