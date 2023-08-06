@@ -1,0 +1,15 @@
+calcs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+calcs/annotate.py,sha256=PmLXG7sUGKqwE9Y_jQHU4Jw8LkNEPMjUAOvcbQVbN5U,1672
+calcs/call_cstag.py,sha256=lj0JAi_kp4HY1z1fJd7WXsVBoCo8TE3iJ3nrg_PWczM,1254
+calcs/convert.py,sha256=vAYLRBFppF0DAyllHiU3acbnHUY4Cb6WrF98Bo50JgU,1700
+calcs/load.py,sha256=vKIm4z1ZivcgAFQgqCyJpN8CmEmXcBg_LlQh-rqPLGM,453
+calcs/main.py,sha256=F_SSt5_J8KNdEjCAVBbq78zBw4FdmIPpUJ985bMneiU,4817
+calcs/parse.py,sha256=qCETeYhru6NN5lRsVi5jqXK2kAqclyOCmgkZITnYtuI,1367
+calcs/tmp_main.py,sha256=B9dLH6UNhCmKvPk-d_xXqjfvvBxAvPunekJgm9g0IV0,7892
+calcs/trim.py,sha256=G9w8TDt4Oz_MOK8HTz-xpQh0Ao2dMRC6KSKvyv526yM,1332
+calcs-0.0.0.9999.dist-info/LICENSE,sha256=mNuqjmHG0acqpWyJLuKPYarB6amPTkcfLjgHcWJ7Kko,1069
+calcs-0.0.0.9999.dist-info/METADATA,sha256=KhBNcXoyjCXwn58wV8L0nIIv4JTNtWdWIFL3Db4YrHs,2283
+calcs-0.0.0.9999.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+calcs-0.0.0.9999.dist-info/entry_points.txt,sha256=KvnuA-heZAJ9Da6j5zlI8VRNej_duXbXKIUMvSyC-NA,43
+calcs-0.0.0.9999.dist-info/top_level.txt,sha256=bZgHu1HL7mqQ2RuHLjCNpIGP8v_NZB35W512DhVdpqo,6
+calcs-0.0.0.9999.dist-info/RECORD,,
