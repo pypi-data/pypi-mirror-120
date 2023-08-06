@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: pywinelevate
+Version: 0.0.7
+Summary: a symple python decorator that reloads the script with privileges if neccesary
+Home-page: https://github.com/ElCuboNegro/win_elevator
+Author: Juan José Albán
+Author-email: j.alban@uniandes.edu.co
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/ElCuboNegro/win_elevator/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pywinelevate
+a symple decorator that elevates a function rerunning the script as Admin if is not (in windows)
+
+```from import pywinelevate import elevate
+
+@elevate
+def function_to_elevate(args*, argv**):
+    foo = bar
+    return foo
+```
+
+it will run ALL THE SCRIPT not only the function. be aware...
+

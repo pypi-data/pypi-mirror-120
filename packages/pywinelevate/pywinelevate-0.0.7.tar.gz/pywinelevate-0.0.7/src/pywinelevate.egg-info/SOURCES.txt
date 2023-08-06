@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/pywinelevate.egg-info/PKG-INFO
+src/pywinelevate.egg-info/SOURCES.txt
+src/pywinelevate.egg-info/dependency_links.txt
+src/pywinelevate.egg-info/top_level.txt
