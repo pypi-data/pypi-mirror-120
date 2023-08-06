@@ -1,0 +1,9 @@
+rpcx/__init__.py,sha256=jt4X4PkWKzb-vAzllwUDmZnxQONNrL_Z3Ugu1J1z8DU,100
+rpcx/client.py,sha256=BJFvwuEfs75emuiSoFN8oNi3sylpirmATd6upjtH_ng,7439
+rpcx/manager.py,sha256=39WsWQaox5zG98MYAabk-ddrLSrYix_u7LkeMi7LqgM,4060
+rpcx/message.py,sha256=SM4Z4UzGkyNji1BatT8djPdBCKlDuy2VCRK5DSQPmA8,4653
+rpcx/server.py,sha256=151cYJE5RRCZtyY5WHBMuAb6ORCw5FwvIUBg8xJxZcc,4418
+rpcx/websockets.py,sha256=JSvRzWHp9VGoTt_w7OwkYeYta_35WL_1cvYmatXFNDo,1101
+rpcx-0.1.0.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+rpcx-0.1.0.dist-info/METADATA,sha256=K6IyXtqc7i_OXVuI2bPwPUikmnYEKQP9g6boEk4mFKA,3446
+rpcx-0.1.0.dist-info/RECORD,,
