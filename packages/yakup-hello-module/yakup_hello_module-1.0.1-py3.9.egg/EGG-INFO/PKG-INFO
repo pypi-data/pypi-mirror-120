@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: yakup-hello-module
+Version: 1.0.1
+Summary: Hello print eder.
+Home-page: UNKNOWN
+Author: Yakup Demirtaş
+Author-email: yakup.demirtas@metu.edu.tr
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.7
