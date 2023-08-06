@@ -1,0 +1,41 @@
+---
+- name: install epel-release
+  yum:
+    name: epel-release
+  become: True
+  when: ansible_distribution != 'Amazon'
+
+- name: get package list
+  yum:
+    list: epel-release
+  register: pkg_list
+  when: ansible_distribution == 'Amazon'
+- debug: var=pkg_list
+- name: install epel if not installed
+  shell: amazon-linux-extras install epel -y
+  when: ansible_distribution == 'Amazon' and (pkg_list.results | selectattr("yumstate", "match", "installed") | list | length == 0)
+
+- name: install ddclient
+  yum:
+    name: ddclient
+    # The repo is now powertools instead of PowerTools
+    # https://bugs.centos.org/view.php?id=17920
+    enablerepo: "{{ omit if ansible_distribution == 'Amazon' else 'PowerTools' if ansible_distribution_version is version('8.2', 'lt') else 'powertools' }}"
+
+- name: replace ddclient.conf
+  template:
+    src: ddclient.conf.j2
+    dest: /etc/ddclient.conf
+
+- name: replace ddclient.service
+  copy:
+    src: ddclient.service
+    dest: /usr/lib/systemd/system/ddclient.service
+
+- name: start ddclient
+  systemd:
+    name: ddclient
+    state: started
+    daemon_reload: yes
+    enabled: yes
+  become: yes
