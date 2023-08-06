@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: auto_uncertainties
+Version: 0.0.0
+Summary: Linear Uncertainty Propagation with Auto-Differentiation
+Home-page: https://github.com/varchasgopalaswamy/AutoUncertainties
+Author: Varchas Gopalaswamy
+Author-email: vgop@lle.rochester.edu
+License: GPLv3
+Download-URL: https://github.com/varchasgopalaswamy/AutoUncertainties/archive/refs/tags/0.1.1.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
