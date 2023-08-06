@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.cfg
+cgtnfeed.egg-info/PKG-INFO
+cgtnfeed.egg-info/SOURCES.txt
+cgtnfeed.egg-info/dependency_links.txt
+cgtnfeed.egg-info/requires.txt
+cgtnfeed.egg-info/top_level.txt
