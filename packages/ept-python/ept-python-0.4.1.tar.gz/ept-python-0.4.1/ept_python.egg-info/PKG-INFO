@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: ept-python
+Version: 0.4.1
+Summary: UNKNOWN
+Home-page: https://github.com/hobu/ept-python
+Author: Howard Butler
+Author-email: howard@hobu.co
+Maintainer: Howard Butler
+Maintainer-email: howard@hobu.co
+License: BSD
+Description: # ept-python
+        
+        Python library for making queries against [Entwine Point Tile](https://entwine.io/) data.
+        
+        ## Install
+        
+        Using git and pip:
+        
+        ```bash
+        git clone https://github.com/hobu/ept-python.git
+        cd ept-python
+        pip install .
+        ```
+        
+        Using just pip:
+        
+        ```bash
+        pip install git+https://github.com/hobu/ept-python.git
+        ```
+        
+        ## Usage
+        
+        Example query and output to LasData object:
+        
+        ```python
+        import ept
+        
+        url = 'https://na-c.entwine.io/red-rocks'
+        bounds = ept.Bounds(
+            482298, #xmin
+            4390602, #ymin
+            1762, #zmin
+            482421, #xmax
+            4390690, #ymax
+            2113 #zmax
+        )
+        
+        query = ept.EPT(url, bounds=bounds)
+        las = query.as_laspy()
+        print(las)
+        ```
+        ```
+        <LasData(1.2, point fmt: <PointFormat(3, 4 bytes of extra dims)>, 98050 points, 4 vlrs)>
+        ```
+        
+        
+        ## Uninstall
+        
+        ```
+        pip uninstall ept-python
+        ```
+        
+        
+        # Changelog
+        
+        ## Version 0.4.0
+        
+          * Updated to laspy 2.0
+          * Added lazrs to requirements
+          * Fixed a bug where existing task cache was getting overwritten [#2](https://github.com/hobu/ept-python/issues/2)
+          * Added version limits to requirements
+          * Minor PEP8 style changes
+        
+Keywords: point cloud data organization
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: GIS
+Description-Content-Type: text/markdown
