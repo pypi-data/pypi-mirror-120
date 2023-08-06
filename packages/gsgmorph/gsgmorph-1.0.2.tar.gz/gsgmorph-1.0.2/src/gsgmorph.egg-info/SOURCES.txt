@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/gsgmorph/__init__.py
+src/gsgmorph/matrix_form.py
+src/gsgmorph/pyqubo_form.py
+src/gsgmorph/utils.py
+src/gsgmorph.egg-info/PKG-INFO
+src/gsgmorph.egg-info/SOURCES.txt
+src/gsgmorph.egg-info/dependency_links.txt
+src/gsgmorph.egg-info/requires.txt
+src/gsgmorph.egg-info/top_level.txt
