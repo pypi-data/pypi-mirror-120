@@ -1,0 +1,12 @@
+aiohttp==3.7.4.post0
+attrs==21.2.0
+colorlog==6.4.1
+multidict==5.1.0
+pure25519==0.0.1
+
+[speedups]
+aiodns==3.0.0
+cchardet==2.1.7
+Brotli==1.0.9
+ciso8601==2.2.0
+ed25519==1.5
