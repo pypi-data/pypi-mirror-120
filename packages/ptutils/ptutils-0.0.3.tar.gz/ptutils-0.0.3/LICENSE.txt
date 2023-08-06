@@ -1,0 +1,33 @@
+############################################################################### 
+# 
+# TBD License and Disclaimer
+# 
+# Copyright (c) 2021 Principled Technologies Inc. and various years by 
+# anonymous others. All rights reserved by respective owners unless otherwise 
+# noted.
+# 
+# This repository and distribution is under development and licensing has not 
+# been fully specified yet. Some parts of the code may derive from other 
+# sources, and applicable licenses and disclaimers have not yet been added.
+# Until licensing information is fully applied and the repository is fully 
+# compliant with third party licensing obligations, assume the repository and 
+# it's source code are fully proprietary, belonging either to Principled 
+# Technologies or some other party, and no that no permission for reuse is 
+# granted.
+# 
+# This message will be updated with appropriate licensing information at a 
+# future date. Until then, know that any reuse of this source code may 
+# entail as yet undetermined legal obligations, and that by reusing this code
+# you accept responsibility for complying with all such legal terms and 
+# obligations and acknowledge that you may be bound under terms not described 
+# here or herein.
+# 
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+# 
+############################################################################### 

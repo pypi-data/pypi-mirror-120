@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: ptutils
+Version: 0.0.3
+Summary: A repository of oft used functions and utility classes.
+Home-page: https://www.principledtechnologies.com
+Author: Christopher Wolfe
+Author-email: cwolfe@principledtechnologies.com
+License: Proprietary
+Project-URL: Documentation, https://principled.technologies.gitlab.io/community/ptutils
+Project-URL: Bug Tracker, https://gitlab.com/principled.technologies/community/ptutils/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst; charset=UTF-8
+License-File: LICENSE.txt
+License-File: AUTHORS
+
+Principled Technologies Boilerplate Utilities
+=============================================
+
+.. cut-here
+
+Usage
+-----
+
+Add any usage instructions here...
+
+
+Title 1
+=======
+
+testing 123
+
+
+Title 2
+-------
+
+testing 123
+
+
+Title 3
+^^^^^^^
+
+testing 123
+
+
+
