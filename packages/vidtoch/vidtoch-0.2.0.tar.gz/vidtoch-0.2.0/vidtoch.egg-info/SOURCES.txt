@@ -1,0 +1,11 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+vidtoch/__init__.py
+vidtoch/__utils__.py
+vidtoch.egg-info/PKG-INFO
+vidtoch.egg-info/SOURCES.txt
+vidtoch.egg-info/dependency_links.txt
+vidtoch.egg-info/requires.txt
+vidtoch.egg-info/top_level.txt
