@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+fmo_manual_collector/__init__.py
+fmo_manual_collector/util_fmo_manual_collection.py
+fmo_manual_collector.egg-info/PKG-INFO
+fmo_manual_collector.egg-info/SOURCES.txt
+fmo_manual_collector.egg-info/dependency_links.txt
+fmo_manual_collector.egg-info/not-zip-safe
+fmo_manual_collector.egg-info/top_level.txt
