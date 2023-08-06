@@ -1,0 +1,4 @@
+holoviews[recommended]==1.14.1
+bokeh==2.2.3
+core-explore-common-app==1.16.*
+core-main-app==1.16.*
