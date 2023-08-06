@@ -1,0 +1,11 @@
+
+[develop]
+tox
+django
+pytest-django
+pytest
+
+[test]
+pytest-django
+pytest-cov
+pytest
