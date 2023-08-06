@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+autoauthnumber/__init__.py
+autoauthnumber/author_number.py
+autoauthnumber/auto_AUTHNumber.py
+autoauthnumber.egg-info/PKG-INFO
+autoauthnumber.egg-info/SOURCES.txt
+autoauthnumber.egg-info/dependency_links.txt
+autoauthnumber.egg-info/requires.txt
+autoauthnumber.egg-info/top_level.txt
+autoauthnumber.egg-info/zip-safe
+autoauthnumber/__pycache__/__init__.cpython-39.pyc
+autoauthnumber/__pycache__/author_number.cpython-39.pyc
+autoauthnumber/__pycache__/auto_AUTHNumber.cpython-39.pyc
