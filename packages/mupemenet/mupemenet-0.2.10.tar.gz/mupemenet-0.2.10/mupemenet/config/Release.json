@@ -1,0 +1,5 @@
+{
+    "API_KEY": "T4d2nZfjf7EkbISFLmT0UUqwu8KUL0PZ",
+    "BASE_URL": "https://us-central1-mupemenet-c50c1.cloudfunctions.net/apis",
+    "ENV": "release"
+}
