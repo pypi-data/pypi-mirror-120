@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+simpleoskali/__init__.py
+simpleoskali.egg-info/PKG-INFO
+simpleoskali.egg-info/SOURCES.txt
+simpleoskali.egg-info/dependency_links.txt
+simpleoskali.egg-info/top_level.txt
