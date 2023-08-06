@@ -1,0 +1,9 @@
+taggit_anywhere/__init__.py,sha256=lvTt9YQlu9tKq-cBWQvwI-tN1n6vbYA4X_VZTCgkqr8,54
+taggit_anywhere/admin.py,sha256=Lp1C4zp3T8tKFZKd8eVdNjYu4mpVS4u3C3f3f1-P9L0,1766
+taggit_anywhere/apps.py,sha256=7wCwkuoqWPv7ErIPXGJo7HR0-lXgrwhvAm0vwNLLRes,913
+taggit_anywhere/models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_taggit_anywhere-0.1.5.dist-info/LICENSE,sha256=CZPlYtPHeGvHL9aVHMypfIZUkaMmq_SWL4VfHXo5QSY,1069
+django_taggit_anywhere-0.1.5.dist-info/METADATA,sha256=Q4kjeH7hcUMsVeLZh3q9BhZ7tB3FSYMH2cz90YhAglU,3479
+django_taggit_anywhere-0.1.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+django_taggit_anywhere-0.1.5.dist-info/top_level.txt,sha256=9DnlkEafYMxckFk7DZojOxwHME87ZZ3PdBsCPHJTZPQ,16
+django_taggit_anywhere-0.1.5.dist-info/RECORD,,
