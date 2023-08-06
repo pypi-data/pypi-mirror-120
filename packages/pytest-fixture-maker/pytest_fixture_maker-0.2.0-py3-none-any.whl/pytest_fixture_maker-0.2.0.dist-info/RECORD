@@ -1,0 +1,7 @@
+pytest_fixture_maker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_fixture_maker/plugin.py,sha256=pIKimMOJFanDgJcYLkNmLUt-UWnwFXRi9WMdEhnVung,3637
+pytest_fixture_maker-0.2.0.dist-info/entry_points.txt,sha256=jVY4T2cMTakNu4BtSewluqguCOz0CCgwrllXDoN3kXY,54
+pytest_fixture_maker-0.2.0.dist-info/LICENSE,sha256=qMMyXhw10X-M5WtPZk3D9i_K0CU28jdiRW6zk958nVA,1083
+pytest_fixture_maker-0.2.0.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+pytest_fixture_maker-0.2.0.dist-info/METADATA,sha256=Gz7MpI-F29qwX3DZdnissWu0vPj1GMJwufdM9xug2nc,4186
+pytest_fixture_maker-0.2.0.dist-info/RECORD,,
