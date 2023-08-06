@@ -1,0 +1,10 @@
+README.md
+setup.py
+web_source_compiler.egg-info/PKG-INFO
+web_source_compiler.egg-info/SOURCES.txt
+web_source_compiler.egg-info/dependency_links.txt
+web_source_compiler.egg-info/entry_points.txt
+web_source_compiler.egg-info/requires.txt
+web_source_compiler.egg-info/top_level.txt
+wsc/__init__.py
+wsc/wsc.py
