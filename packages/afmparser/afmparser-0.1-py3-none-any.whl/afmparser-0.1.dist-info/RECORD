@@ -1,0 +1,14 @@
+afm-parser/AFMLexer.py,sha256=m2WhEwSlFXCCBafaG0YyjD3KrxrCFjTcPGX3KnPxKTI,13122
+afm-parser/AFMParser.py,sha256=1t3TdqJbGb0koLwomPcki1UVRv_PcL8QtI6_bgR8A4Y,79223
+afm-parser/__init__.py,sha256=8D5a8oKgqd6WA1RUkiKCn4l_PVemtyuckxQut0vDHXM,20
+afm-parser/main.py,sha256=M-mkHU5KBYiFyisV1M1lsvh-kdcZUnNxZdnJWX3Vwgc,331
+afmparser/AFMLexer.py,sha256=m2WhEwSlFXCCBafaG0YyjD3KrxrCFjTcPGX3KnPxKTI,13122
+afmparser/AFMParser.py,sha256=kRM4jp4p2VJi-uRCBHk_6QlTBHHCscPL1Tt6uYYtfQA,79226
+afmparser/__init__.py,sha256=8D5a8oKgqd6WA1RUkiKCn4l_PVemtyuckxQut0vDHXM,20
+afmparser/main.py,sha256=wE9P-fKeeJD7nxrzp-Ms8ZuNvIC-xw53A2geZW24kL4,308
+afmparser-0.1.dist-info/LICENSE,sha256=N0P3pKtRMvfb64jmgJdlerg3TnS0a2QC776AzPsbZIg,35128
+afmparser-0.1.dist-info/METADATA,sha256=9Omj1rIprLrE6EHotz--FkwQMUJR-vs9x9DKQvS6K98,654
+afmparser-0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+afmparser-0.1.dist-info/top_level.txt,sha256=OQF_27m0R_HGx1MBnHxRaGsI_2NH_FPbTdjp136csY0,10
+afmparser-0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+afmparser-0.1.dist-info/RECORD,,
