@@ -1,0 +1,4 @@
+include lcheapo_obspy/_examples/*.yaml
+include lcheapo_obspy/_examples/*.py
+graft lcheapo_obspy/data
+include ToDo.rst
