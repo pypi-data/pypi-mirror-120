@@ -1,0 +1,6 @@
+[console_scripts]
+pontos-changelog=pontos.changelog:main
+pontos-release=pontos.release:main
+pontos-update-header=pontos.updateheader:main
+pontos-version=pontos.version:main
+
