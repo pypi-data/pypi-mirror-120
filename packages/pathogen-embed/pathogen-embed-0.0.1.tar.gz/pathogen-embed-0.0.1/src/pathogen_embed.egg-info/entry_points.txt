@@ -1,0 +1,3 @@
+[console_scripts]
+embed = embed.__main__:main
+
