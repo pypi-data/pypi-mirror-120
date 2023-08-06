@@ -1,0 +1,3 @@
+[console_scripts]
+track = update_tracker.cli:track
+
