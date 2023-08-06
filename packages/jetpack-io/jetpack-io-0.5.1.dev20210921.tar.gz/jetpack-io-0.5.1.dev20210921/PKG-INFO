@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: jetpack-io
+Version: 0.5.1.dev20210921
+Summary: Python SDK for Jetpack.io
+Home-page: https://www.jetpack.io
+License: Jetpack Community License
+Author: jetpack.io
+Author-email: hello@jetpack.io
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: Free To Use But Restricted
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development
+Requires-Dist: cronitor (>=4.2.0,<5.0.0)
+Requires-Dist: grpcio (>=1.37.1,<2.0.0)
+Requires-Dist: jsonpickle (>=2.0.0,<3.0.0)
+Requires-Dist: protobuf (>=3.17.0,<4.0.0)
+Requires-Dist: redis (==3.0.1)
+Requires-Dist: redis-namespace (>=3.0.1,<4.0.0)
+Requires-Dist: schedule (>=1.1.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+
+## Build SDK
+
+Run `./devtools/scripts/sdk/python/build.sh`.
+
+This will produce SDK distributions in `sdk/python/dist`.
+
+## Run tests
+
+```
+# Pre-requisite: build the SDK using the command above.
+
+cd sdk/python/tests
+poetry run pytest
+```
+
+## Update Version
+
+Step 1: Prepare PR and land it
+
+- grep for the existing version (see sdk/python/pyproject.toml) and update all files in axiom that use it
+  - this will cover some sdk version tests, requirements.txt in examples/ projects
+- build the SDK (see the Build SDK section above)
+
+Step 2:
+- run `./devtools/scripts/sdk/python/publish.sh`
+
