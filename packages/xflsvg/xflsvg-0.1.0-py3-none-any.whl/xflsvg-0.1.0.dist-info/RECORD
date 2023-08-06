@@ -1,0 +1,8 @@
+src/xflsvg/__init__.py,sha256=2f_fUR-upQ_MzeFKcSH1YBxoWXe2Ll2hKmpwE9Muqkg,134
+src/xflsvg/recorder.py,sha256=g323pb18KqhcRZu3p_BKchdV9XW-pBPShT3ErMd0J5I,4330
+src/xflsvg/renderer.py,sha256=uIMEicUsAkfO4RNMNVl0EgyZhW4hlcuAmOGpFr0y2G8,5060
+src/xflsvg/xflsvg.py,sha256=P9DlVMhIh8y1JcHvWGQ7NGXrYo8hk-5cBe023ng4zZc,21254
+xflsvg-0.1.0.dist-info/METADATA,sha256=Ean9SB9Jn4usmsk8R9-V9jeaEl1GZ985I1PCMzvDMFQ,3156
+xflsvg-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+xflsvg-0.1.0.dist-info/top_level.txt,sha256=dA4kOL0Wm2ZcNwqUes7L750QfpKEM-s2kqmrbAty108,11
+xflsvg-0.1.0.dist-info/RECORD,,
