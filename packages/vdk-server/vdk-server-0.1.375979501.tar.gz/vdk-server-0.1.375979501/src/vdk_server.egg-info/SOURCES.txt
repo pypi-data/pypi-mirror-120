@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+src/vdk/internal/configmap-local-registry-hosting-template.yaml
+src/vdk/internal/ingress-nginx-deploy.yaml
+src/vdk/internal/installer.py
+src/vdk/internal/kind-cluster-config-template.yaml
+src/vdk/internal/server_plugin.py
+src/vdk_server.egg-info/PKG-INFO
+src/vdk_server.egg-info/SOURCES.txt
+src/vdk_server.egg-info/dependency_links.txt
+src/vdk_server.egg-info/entry_points.txt
+src/vdk_server.egg-info/requires.txt
+src/vdk_server.egg-info/top_level.txt
