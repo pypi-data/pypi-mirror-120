@@ -1,0 +1,16 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+pdfsplitter/__init__.py
+pdfsplitter/_nbdev.py
+pdfsplitter/core.py
+pdfsplitter.egg-info/PKG-INFO
+pdfsplitter.egg-info/SOURCES.txt
+pdfsplitter.egg-info/dependency_links.txt
+pdfsplitter.egg-info/entry_points.txt
+pdfsplitter.egg-info/not-zip-safe
+pdfsplitter.egg-info/requires.txt
+pdfsplitter.egg-info/top_level.txt

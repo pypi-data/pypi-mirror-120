@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: pdfsplitter
+Version: 0.0.1
+Summary: Turn PDFs into image files for use in machine learning projects
+Home-page: https://github.com/strickvl/pdfsplitter/tree/main/
+Author: Alex Strick van Linschoten
+Author-email: contact@alexstrick.com
+License: Apache Software License 2.0
+Keywords: some keywords
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# Project name here
+> Summary description here.
+
+
+This file will become your README and also the index of your documentation.
+
+## Install
+
+`pip install pdfsplitter`
+
+## How to use
+
+Fill me in please! Don't forget code examples:
+
+```python
+1+1
+```
+
+
+
+
+    2
+
+
+
+
