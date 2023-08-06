@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: dwnld
+Version: 0.1.2
+Summary: A multiprotocol downloader
+Home-page: https://github.com/4thel00z/dwnld
+License: GPL-3
+Author: 4thel00z
+Author-email: 4thel00z@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: plumbum (>=1.7.0,<2.0.0)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Requires-Dist: scp (>=0.13.6,<0.14.0)
+Description-Content-Type: text/markdown
+
+# dwnld
+
+![dwnld.png](https://raw.githubusercontent.com/4thel00z/logos/master/dwnld.png)
+
+## Motivation
+
+A library to download stuff given urls with different protocols, like `ftp://...` or `ssh://...`.
+
+## Usage
+
+There is only one interesting module level function in this repo, it can download (or move) stuff from A to B:
+
+```python
+from dwnld import download
+
+download("file://stuff.txt", "somewhere_else.txt")
+download("ssh://some-remote-server:/home/reptile/stuff.txt", "here.txt")
+download("https://cool.com/nice.pdf", "here.pdf")
+download("http://cool.com/nice.pdf", "here.pdf")
+```
+
+## Todos
+
+- Support ftp/sftp
+- Support torrent
+
+## License
+
+This project is licensed under the GPL-3 license.
+
