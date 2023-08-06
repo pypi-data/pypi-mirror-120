@@ -1,0 +1,55 @@
+# Releases
+
+## peodd 0.3.0 - (2021-09-20)
+
+**New features:**
+
+ * Add support for exporting non-dev dependencies\
+   Add possibility to export only non-dev dependencies to a txt file with
+   the `--non-dev` flag, and remove the default filename, forcing the
+   user to provide one with the `-o`, `--output` flag. Usage: ``` $ peodd
+   --non-dev -o requirements.txt ```
+
+
+## peodd 0.2.2 - (2021-08-03)
+
+**Bug fixes:**
+
+ * Skip export of git url dependency\
+   The exporting of git url dependency is not supported yet. This is
+   causing TypeError Exception. This change adds a condition to skip it,
+   avoiding the exception.
+
+
+## peodd 0.2.1 - (2021-07-19)
+
+**Bug fixes:**
+
+ * Fix bug related to version conditions\
+   The version conditions had a bug which caused errors converting the
+   `bar = ">=1.2.2"` type of dependency. This fixes the bug by using the
+   version instead of v key.
+
+
+## peodd 0.2.0 - (2021-07-11)
+
+**Performance improvements:**
+
+ * Use tomli instead of tomlkit\
+   tomli is 14x as fast as tomlkit. This change replaces existing tomlkit
+   code with the tomli methods. It also adds a condition to validate the
+   pyproject.toml file.
+
+
+## peodd 0.1.0 - (2021-07-07)
+
+**New features:**
+
+ * Add script for exporting poetry dev-dependencies to a txt file\
+   Poetry has an option to export the dependencies to a txt file. If you
+   need the dev dependencies too, then you need add `dev` flag with the
+   export command. But, there is no support to export only the dev-
+   dependencies. This script is a workaround & quick-solution to this
+   problem.  It can export the dev-dependencies to a requirements-dev.txt
+   file. Usage: ``` $ peodd -o requirements-dev.txt ```
+
