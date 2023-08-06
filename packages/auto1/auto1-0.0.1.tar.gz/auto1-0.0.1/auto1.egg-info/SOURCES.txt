@@ -1,0 +1,10 @@
+README.md
+setup.py
+auto1/__init__.py
+auto1/etl.py
+auto1.egg-info/PKG-INFO
+auto1.egg-info/SOURCES.txt
+auto1.egg-info/dependency_links.txt
+auto1.egg-info/top_level.txt
+auto1/helper/__init__.py
+auto1/helper/helper.py

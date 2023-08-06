@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: auto1
+Version: 0.0.1
+Summary: AUTO1 ETL Pipeline
+Home-page: UNKNOWN
+Author: Abdul Salam
+Author-email: salamsol96@gmail.com
+License: UNKNOWN
+Description: 
+        # Auto1 ETL
+        Auto1 ETL is simple etl Pipeline, which extracts the data from given source dataFile and returns the transformed data.
+        
+        
+        
+        ## Directory Structure
+            
+            │   .gitignore
+            │   challenge_me.txt
+            │   README.md
+            │   sample.py
+            │   setup.py
+            │
+            ├───.vscode
+            │       launch.json
+            │
+            └───auto1
+                │   etl.py
+                │   __init__.py
+                │
+                ├───helper
+                │   │   helper.py
+        
+        
+        
+        - auto1/etl.py: Etl script
+        - helper/helper.py: helper script with mapper and utility functions required for etl process.
+        - challenge_me.txt: input dataFile to perform transformation
+        - sample.py: sampy script to import etl class as module
+        
+        
+        
+        ## Instructions
+        
+        - install the package as `pip install auto1`
+        - import `auto1.Etl` in your python file
+        - Initialize the `Etl` constructor with source dataFile path
+        - Invoke the methods in order as below
+        
+            ```python
+            from auto1.etl import Etl
+            etl = Etl('challenge_me.txt')
+            etl.load(etl.dataFile)
+            output = etl.transform(etl.dataFile)
+            print(output)
+            ```
+        
+        - load method creates a temporary dataFile, which is prepared for transformation.
+        - transformation methods returns the transformed records as nested list and deletes the temporary dataFile created by load method.
+        
+Platform: UNKNOWN
+Requires-Python: >=3.7, <4
+Description-Content-Type: text/markdown
