@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: standard-bumpkin
+Version: 2021.8
+Summary: Automatic versioning and changelog generation from git commits.
+Home-page: https://github.com/fredheidrich/bumpkin
+Author: Fred Heidrich
+Author-email: fredheidrich@gmail.com
+License: UNKNOWN
+Description: 
+        [![codecov](https://codecov.io/gh/fredheidrich/bumpkin/branch/main/graph/badge.svg?token=WCM92TNZCA)](https://codecov.io/gh/fredheidrich/bumpkin)
+        
+        # Standard Bumpkin
+        
+        # Usage
+        
+        ```bash
+        git config --global user.email "foo@bar.com"
+        git config --global user.name "Autoversion"
+        python -m bumpkin
+        ```
+        
+        # What is it?
+        
+        A utility that parses git commit history, formulates a changelog and creates a git release. It currently only does one thing and contain plenty of bugs. Use at your own risk.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Pre-processors
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Code Generators
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
