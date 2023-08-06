@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+aqualogicwireless/__init__.py
+aqualogicwireless/cli.py
+aqualogicwireless/core.py
+aqualogicwireless/keys.py
+aqualogicwireless/states.py
+aqualogicwireless/web.py
+aqualogicwireless.egg-info/PKG-INFO
+aqualogicwireless.egg-info/SOURCES.txt
+aqualogicwireless.egg-info/dependency_links.txt
+aqualogicwireless.egg-info/requires.txt
+aqualogicwireless.egg-info/top_level.txt
