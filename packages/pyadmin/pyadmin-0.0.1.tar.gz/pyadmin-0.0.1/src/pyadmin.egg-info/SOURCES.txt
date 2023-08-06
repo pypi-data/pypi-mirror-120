@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pyadmin/__init__.py
+src/pyadmin/example.py
+src/pyadmin.egg-info/PKG-INFO
+src/pyadmin.egg-info/SOURCES.txt
+src/pyadmin.egg-info/dependency_links.txt
+src/pyadmin.egg-info/top_level.txt
