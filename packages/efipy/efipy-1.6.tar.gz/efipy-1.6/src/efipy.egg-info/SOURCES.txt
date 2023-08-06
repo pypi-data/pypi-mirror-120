@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/efipy/__init__.py
+src/efipy/_efipy.py
+src/efipy.egg-info/PKG-INFO
+src/efipy.egg-info/SOURCES.txt
+src/efipy.egg-info/dependency_links.txt
+src/efipy.egg-info/requires.txt
+src/efipy.egg-info/top_level.txt
