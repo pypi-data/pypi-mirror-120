@@ -1,0 +1,4 @@
+Flask
+PyYAML==5.3
+pyvim==3.0.2
+pyvmomi==7.0
