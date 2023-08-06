@@ -1,0 +1,11 @@
+taxidTools/Lineage.py,sha256=MwV1EUoUFsS-hxa8CP1L157ApX7NloiGYZKMC3oJwIw,3850
+taxidTools/Node.py,sha256=TtHQrEtMWL7XbM3h9af9xZvK8CtRVpyK-lM8RQWwfhY,9866
+taxidTools/Taxonomy.py,sha256=MfLaOY7bHiM80KVSKQp5L8Ptfntzc4Qd74nqNhlvNz4,24580
+taxidTools/__init__.py,sha256=VLl-Y3JdNNn8bHOodkRfvlmvv2pZDAQPXwkGbISXK2M,612
+taxidTools/__version__.py,sha256=hAs2NCV-h5BvuoD-HuGMjK_o9Zgst1_9K0ksFHJHW0c,254
+taxidTools/utils.py,sha256=aw_wDk1J5u92ooBVRrUXsSMFEItiPdEmaeujTA-3ypE,605
+taxidTools-2.2.2.dist-info/LICENSE,sha256=EriOrMPZ4qjszAZVDB5OYjRu-rA6WAkWVN36V82_NwI,1501
+taxidTools-2.2.2.dist-info/METADATA,sha256=eUrA25dasW8GmQVZTPvQMTLl3w3u8VochTYd6NGHckQ,2506
+taxidTools-2.2.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+taxidTools-2.2.2.dist-info/top_level.txt,sha256=Ee1wHT5d8e7tkIVRESi9rQY-raWRV-LU2221YKdn_bI,11
+taxidTools-2.2.2.dist-info/RECORD,,
