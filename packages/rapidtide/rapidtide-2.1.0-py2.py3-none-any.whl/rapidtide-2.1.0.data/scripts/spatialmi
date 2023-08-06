@@ -1,0 +1,246 @@
+#!python
+# -*- coding: latin-1 -*-
+#
+#   Copyright 2016-2021 Blaise Frederick
+#
+#   Licensed under the Apache License, Version 2.0 (the "License");
+#   you may not use this file except in compliance with the License.
+#   You may obtain a copy of the License at
+#
+#       http://www.apache.org/licenses/LICENSE-2.0
+#
+#   Unless required by applicable law or agreed to in writing, software
+#   distributed under the License is distributed on an "AS IS" BASIS,
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and
+#   limitations under the License.
+#
+#
+import argparse
+import sys
+
+import matplotlib as mpl
+import numpy as np
+
+import rapidtide.correlate as tide_corr
+import rapidtide.io as tide_io
+import rapidtide.miscmath as tide_math
+
+mpl.use("Agg")
+import matplotlib.pyplot as plt
+
+
+def _get_parser():
+    """
+    Argument parser for pixelcomp
+    """
+    parser = argparse.ArgumentParser(
+        prog="spatialmi",
+        description=("Calculate the localized spatial mutual information between two images"),
+        usage="%(prog)s inputfile1 maskfile1 inputfile2 maskfile2 outputfile [options]",
+    )
+
+    # Required arguments
+    parser.add_argument(
+        "inputfilename1", type=str, help="The name of the first input image nifti file."
+    )
+    parser.add_argument(
+        "maskfilename1", type=str, help="The name of the first input mask nifti file."
+    )
+    parser.add_argument(
+        "inputfilename2", type=str, help="The name of the second input image nifti file."
+    )
+    parser.add_argument(
+        "maskfilename2", type=str, help="The name of the second input mask nifti file."
+    )
+    parser.add_argument("outputroot", type=str, help="The root name of the output files.")
+
+    # add optional arguments
+    parser.add_argument(
+        "--noprebin",
+        dest="prebin",
+        action="store_false",
+        help=("Dynamically calculate histogram bins for each voxel (slower)."),
+        default=True,
+    )
+    parser.add_argument(
+        "--nonorm",
+        dest="norm",
+        action="store_false",
+        help=("Do not normalize neighborhood by the variance."),
+        default=True,
+    )
+    parser.add_argument(
+        "--radius",
+        action="store",
+        type=int,
+        metavar="RADIUS",
+        help=(
+            "Radius of the comparison, in voxels.  Comparison neighborhood is (2 * RADIUS - 1)^3."
+            "Must be 2 or greater.  Default is 3"
+        ),
+        default=3,
+    )
+    parser.add_argument(
+        "--debug",
+        dest="debug",
+        action="store_true",
+        help="Print additional internal information.",
+        default=False,
+    )
+    return parser
+
+
+def bland_altman_plot(data1, data2, *args, **kwargs):
+    data1 = np.asarray(data1)
+    data2 = np.asarray(data2)
+    mean = np.mean([data1, data2], axis=0)
+    diff = data1 - data2  # Difference between data1 and data2
+    md = np.mean(diff)  # Mean of the difference
+    sd = np.std(diff, axis=0)  # Standard deviation of the difference
+
+    plt.scatter(mean, diff, *args, **kwargs)
+    plt.axhline(md, color="gray", linestyle="--")
+    plt.axhline(md + 2 * sd, color="gray", linestyle="--")
+    plt.axhline(md - 2 * sd, color="gray", linestyle="--")
+
+
+def getneighborhood(indata, xloc, yloc, zloc, xsize, ysize, zsize, radius):
+    return indata[
+        np.max([0, xloc - radius + 1]) : np.min([xsize - 1, xloc + radius]),
+        np.max([0, yloc - radius + 1]) : np.min([ysize - 1, yloc + radius]),
+        np.max([0, zloc - radius + 1]) : np.min([zsize - 1, zloc + radius]),
+    ].flatten()
+
+
+def getMI(x, y, norm=True, bins=-1, init=False, prebin=True, sigma=0.25, debug=False):
+    global thebins
+
+    if norm:
+        normx = tide_math.stdnormalize(x)
+        normy = tide_math.stdnormalize(y)
+    else:
+        normx = x
+        normy = y
+
+    # see if we are using the default number of bins
+    if bins < 1:
+        bins = np.max([int(np.sqrt(len(x) / 5)), 3])
+        if debug:
+            print(f"cross_mutual_info: bins set to {bins}")
+
+    if init or thebins is None:
+        # find the bin locations
+        if prebin:
+            bins0 = np.linspace(-2.0, 2.0, bins, True)
+            if debug:
+                print(bins0, bins1)
+            bins2d = (1.0 * bins0, 1.0 * bins0)
+        else:
+            bins2d = (bins + 0, bins + 0)
+        thebins = bins2d
+
+    if prebin:
+        fast = True
+    else:
+        fast = False
+
+    if debug:
+        print(f"fast: {fast}")
+        print(f"thebins: {thebins}")
+        print(f"bins: {bins}")
+        print(f"norm: {norm}")
+        print(
+            f"normx min, max, mean, std: {np.min(normx)}, {np.max(normx)}, {np.mean(normx)}, {np.std(normx)}"
+        )
+        print(
+            f"normy min, max, mean, std: {np.min(normy)}, {np.max(normy)}, {np.mean(normy)}, {np.std(normy)}"
+        )
+
+    return tide_corr.mutual_info_2d(
+        normx,
+        normy,
+        bins=thebins,
+        normalized=norm,
+        fast=fast,
+        sigma=sigma,
+        debug=debug,
+    )
+
+
+def main():
+    global thebins
+    thebins = None
+
+    # read the arguments
+    try:
+        args = _get_parser().parse_args()
+    except SystemExit:
+        _get_parser().print_help()
+        raise
+
+    input1_img, input1_data, input1_hdr, thedims1, thesizes1 = tide_io.readfromnifti(
+        args.inputfilename1
+    )
+    (
+        mask1_img,
+        mask1_data,
+        mask1_hdr,
+        themaskdims1,
+        themasksizes1,
+    ) = tide_io.readfromnifti(args.maskfilename1)
+
+    if not tide_io.checkspacedimmatch(thedims1, themaskdims1):
+        print("input image 1 dimensions do not match mask")
+        exit()
+
+    input2_img, input2_data, input2_hdr, thedims2, thesizes2 = tide_io.readfromnifti(
+        args.inputfilename2
+    )
+    (
+        mask2_img,
+        mask2_data,
+        mask2_hdr,
+        themaskdims2,
+        themasksizes2,
+    ) = tide_io.readfromnifti(args.maskfilename2)
+
+    if not tide_io.checkspacedimmatch(thedims2, themaskdims2):
+        print("input image 2 dimensions do not match mask")
+        exit()
+
+    if not tide_io.checkspacedimmatch(thedims1, thedims2):
+        print("input images 1 and 2 dimensions do not match")
+        exit()
+
+    totalmask = mask1_data * mask2_data
+    print(f"totalmask.shape = {totalmask.shape}")
+    xsize, ysize, numslices, timepoints = tide_io.parseniftidims(thedims1)
+    outputdata = input1_data * 0
+
+    # loop over all voxels
+    for zloc in range(numslices):
+        print("processing slice ", zloc)
+        for yloc in range(ysize):
+            for xloc in range(xsize):
+                if totalmask[xloc, yloc, zloc] > 0.5:
+                    neighborhood1 = getneighborhood(
+                        input1_data, xloc, yloc, zloc, xsize, ysize, numslices, args.radius
+                    )
+                    neighborhood2 = getneighborhood(
+                        input2_data, xloc, yloc, zloc, xsize, ysize, numslices, args.radius
+                    )
+                    outputdata[xloc, yloc, zloc] = getMI(
+                        neighborhood1,
+                        neighborhood2,
+                        norm=args.norm,
+                        prebin=args.prebin,
+                        debug=args.debug,
+                    )
+
+    print("made it to here")
+    tide_io.savetonifti(np.nan_to_num(outputdata), input1_hdr, f"{args.outputroot}_result")
+
+
+if __name__ == "__main__":
+    main()

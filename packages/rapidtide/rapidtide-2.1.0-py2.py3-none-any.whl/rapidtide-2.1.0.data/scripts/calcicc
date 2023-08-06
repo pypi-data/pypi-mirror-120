@@ -1,0 +1,297 @@
+#!python
+import argparse
+import copy
+import sys
+import time
+
+import numpy as np
+from scipy.linalg import pinv
+
+import rapidtide.filter as tide_filt
+import rapidtide.io as tide_io
+import rapidtide.util as tide_util
+from rapidtide.workflows.parser_funcs import is_float, is_valid_file
+
+
+def fast_ICC_rep_anova(Y, nocache=False):
+    """
+    the data Y are entered as a 'table' ie subjects are in rows and repeated
+    measures in columns
+    One Sample Repeated measure ANOVA
+    Y = XB + E with X = [FaTor / Subjects]
+
+    This is a hacked up (but fully compatible) version of ICC_rep_anova from nipype that caches some very expensive
+    operations that depend only on the input array shape - if you're going to run the routine multiple times (like,
+    on every voxel of an image), this gives you a HUGE speed boost for large input arrays.  If you change the
+    dimensions of Y, it will reinitialize automatially.  Set nocache to True to get the original, much slower behavior.
+    No, actually, don't do that.
+    """
+    global icc_inited
+    global current_Y_shape
+    global dfc, dfe, dfr
+    global nb_subjects, nb_conditions
+    global x, x0, X
+    global centerbit
+
+    try:
+        current_Y_shape
+        if nocache or (current_Y_shape != Y.shape):
+            icc_inited = False
+    except NameError:
+        icc_inited = False
+
+    if not icc_inited:
+        [nb_subjects, nb_conditions] = Y.shape
+        current_Y_shape = Y.shape
+        dfc = nb_conditions - 1
+        dfe = (nb_subjects - 1) * dfc
+        dfr = nb_subjects - 1
+
+    # Compute the repeated measure effect
+    # ------------------------------------
+
+    # Sum Square Total
+    mean_Y = np.mean(Y)
+    SST = ((Y - mean_Y) ** 2).sum()
+
+    # create the design matrix for the different levels
+    if not icc_inited:
+        x = np.kron(np.eye(nb_conditions), np.ones((nb_subjects, 1)))  # sessions
+        x0 = np.tile(np.eye(nb_subjects), (nb_conditions, 1))  # subjects
+        X = np.hstack([x, x0])
+        centerbit = np.dot(np.dot(X, pinv(np.dot(X.T, X))), X.T)
+
+    # Sum Square Error
+    predicted_Y = np.dot(centerbit, Y.flatten("F"))
+    residuals = Y.flatten("F") - predicted_Y
+    SSE = (residuals ** 2).sum()
+
+    residuals.shape = Y.shape
+
+    MSE = SSE / dfe
+
+    # Sum square session effect - between columns/sessions
+    SSC = ((np.mean(Y, 0) - mean_Y) ** 2).sum() * nb_subjects
+    MSC = SSC / dfc / nb_subjects
+
+    session_effect_F = MSC / MSE
+
+    # Sum Square subject effect - between rows/subjects
+    SSR = SST - SSC - SSE
+    MSR = SSR / dfr
+
+    # ICC(3,1) = (mean square subjeT - mean square error) / (mean square subjeT + (k-1)*-mean square error)
+    ICC = np.nan_to_num((MSR - MSE) / (MSR + dfc * MSE))
+
+    e_var = MSE  # variance of error
+    r_var = (MSR - MSE) / nb_conditions  # variance between subjects
+
+    icc_inited = True
+
+    return ICC, r_var, e_var, session_effect_F, dfc, dfe
+
+
+def _get_parser():
+    parser = argparse.ArgumentParser(
+        prog="calcicc",
+        description="Calculate per-voxel ICC(3,1) on a set of nifti files.",
+        usage="%(prog)s datafile outputroot [options]",
+    )
+
+    # Required arguments
+    parser.add_argument(
+        "datafile",
+        type=lambda x: is_valid_file(parser, x),
+        help="The name of the 4 dimensional nifti file.",
+    )
+    parser.add_argument("outputroot", help="The root name for the output nifti files.")
+
+    # Optional arguments
+    parser.add_argument(
+        "--dmask",
+        dest="datamaskname",
+        type=lambda x: is_valid_file(parser, x),
+        action="store",
+        metavar="DATAMASK",
+        help=("Use DATAMASK to specify which voxels in the data to use."),
+        default=None,
+    )
+    parser.add_argument(
+        "--smooth",
+        dest="sigma",
+        type=lambda x: is_float(parser, x),
+        action="store",
+        metavar="SIGMA",
+        help=("Spatially smooth the input data with a SIGMA mm kernel."),
+        default=0.0,
+    )
+    parser.add_argument(
+        "--demedian",
+        dest="demedian",
+        action="store_true",
+        help=("Subtract the median value from each map prior to ICC calculation."),
+        default=False,
+    )
+    parser.add_argument(
+        "--nocache",
+        dest="nocache",
+        action="store_true",
+        help=(
+            "Disable caching for the ICC calculation.  This is a terrible idea.  Don't do this."
+        ),
+        default=False,
+    )
+
+    return parser
+
+
+def main():
+    try:
+        args = _get_parser().parse_args()
+    except SystemExit:
+        _get_parser().print_help()
+        raise
+
+    nummeas = 2
+    datafile = args.datafile
+
+    # read in data
+    print("reading in data arrays")
+    (
+        datafile_img,
+        datafile_data,
+        datafile_hdr,
+        datafiledims,
+        datafilesizes,
+    ) = tide_io.readfromnifti(datafile)
+    print("done reading in data array")
+
+    xsize, ysize, numslices, timepoints = tide_io.parseniftidims(datafiledims)
+    xdim, ydim, slicethickness, tr = tide_io.parseniftisizes(datafilesizes)
+
+    # smooth the data
+    if args.sigma > 0.0:
+        print("smoothing data")
+        for i in range(timepoints):
+            datafile_data[:, :, :, i] = tide_filt.ssmooth(
+                xdim, ydim, slicethickness, args.sigma, datafile_data[:, :, :, i]
+            )
+
+    if args.datamaskname is not None:
+        print("reading in mask array")
+        (
+            datamask_img,
+            datamask_data,
+            datamask_hdr,
+            datamaskdims,
+            datamasksizes,
+        ) = tide_io.readfromnifti(args.datamaskname)
+        if not tide_io.checkspacematch(datafile_hdr, datamask_hdr):
+            print("Data and mask dimensions do not match - exiting.")
+            sys.exit()
+        print("done reading in mask array")
+    else:
+        datamask_data = datafile_data[:, :, :, 0] * 0.0 + 1.0
+
+    # now reformat from x, y, z, time to voxelnumber, measurement, subject
+    numvoxels = int(xsize) * int(ysize) * int(numslices)
+    numsubjs = int(timepoints // nummeas)
+
+    print("reshaping to voxel by timepoint")
+    data_in_voxacq = datafile_data.reshape((numvoxels, timepoints))
+    mask_in_vox = datamask_data.reshape((numvoxels))
+
+    print("finding valid voxels")
+    validvoxels = np.where(mask_in_vox > 0)[0]
+    numvalid = int(len(validvoxels))
+    valid_in_voxacq = data_in_voxacq[validvoxels, :]
+
+    print("reshaping to validvox by nummeas by numsubjects")
+    validinvms = valid_in_voxacq.reshape((numvalid, numsubjs, nummeas))
+    print(validinvms.shape)
+
+    ICC_in_valid = np.zeros((numvalid), dtype=float)
+    r_var_in_valid = np.zeros((numvalid), dtype=float)
+    e_var_in_valid = np.zeros((numvalid), dtype=float)
+    session_effect_F_in_valid = np.zeros((numvalid), dtype=float)
+
+    # remove median from each map, if requested
+    if args.demedian:
+        mediandiffs = np.zeros((numsubjs), dtype=np.float64)
+        print("removing median difference values")
+        for thesubj in range(numsubjs):
+            mediandiffs[thesubj] = np.median(validinvms[:, thesubj, 1] - validinvms[:, thesubj, 0])
+            validinvms[:, thesubj, 1] -= mediandiffs[thesubj]
+        print("done removing median values")
+
+        # write out results
+        print("writing median corrected data")
+        tide_io.writenpvecs(mediandiffs, f"{args.outputroot}_mediandiffs.txt")
+        outarray_in_voxacq = data_in_voxacq * 0.0
+        outarray_in_voxacq[validvoxels, :] = valid_in_voxacq[:, :]
+        tide_io.savetonifti(
+            outarray_in_voxacq.reshape(xsize, ysize, numslices, timepoints),
+            datafile_hdr,
+            f"{args.outputroot}_demediandiffed",
+        )
+        print("done writing median corrected data")
+
+    print("calculating ICC")
+    reportstep = 100
+    starttime = time.time()
+    for voxel in range(numvalid):
+        if voxel % reportstep == 0 or voxel == numvalid - 1:
+            tide_util.progressbar(
+                voxel + 1,
+                numvalid,
+                label="Percent complete",
+            )
+
+        # get the voxel data matrix
+        Y = validinvms[voxel, :, :]
+
+        # calculate ICC(3,1)
+        (
+            ICC_in_valid[voxel],
+            r_var_in_valid[voxel],
+            e_var_in_valid[voxel],
+            session_effect_F_in_valid[voxel],
+            dfc,
+            dfe,
+        ) = fast_ICC_rep_anova(Y, nocache=args.nocache)
+    duration = time.time() - starttime
+
+    print(f"\ndfc: {dfc}, dfe: {dfe}")
+
+    print(
+        f"ICC calculation time: {1000.0 * duration / numvalid:.3f} ms per voxel.  nocache={args.nocache}"
+    )
+
+    outarray_in_vox = mask_in_vox * 0.0
+
+    theheader = copy.deepcopy(datafile_hdr)
+    theheader["dim"][0] = 3
+    theheader["dim"][4] = 1
+
+    outarray_in_vox[validvoxels] = ICC_in_valid[:]
+    tide_io.savetonifti(
+        outarray_in_vox.reshape(xsize, ysize, numslices), theheader, f"{args.outputroot}_ICC"
+    )
+    outarray_in_vox[validvoxels] = r_var_in_valid[:]
+    tide_io.savetonifti(
+        outarray_in_vox.reshape(xsize, ysize, numslices), theheader, f"{args.outputroot}_r_var"
+    )
+    outarray_in_vox[validvoxels] = e_var_in_valid[:]
+    tide_io.savetonifti(
+        outarray_in_vox.reshape(xsize, ysize, numslices), theheader, f"{args.outputroot}_e_var"
+    )
+    outarray_in_vox[validvoxels] = session_effect_F_in_valid[:]
+    tide_io.savetonifti(
+        outarray_in_vox.reshape(xsize, ysize, numslices),
+        theheader,
+        f"{args.outputroot}_session_effect_F",
+    )
+
+
+if __name__ == "__main__":
+    main()
