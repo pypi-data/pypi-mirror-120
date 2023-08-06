@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pulumi_remote_stack.egg-info/PKG-INFO
+src/pulumi_remote_stack.egg-info/SOURCES.txt
+src/pulumi_remote_stack.egg-info/dependency_links.txt
+src/pulumi_remote_stack.egg-info/top_level.txt
+src/remote_stack/__init__.py
+src/remote_stack/config.py
+src/remote_stack/remote_config.py
+src/remote_stack/remote_stack.py
+src/remote_stack/subprocess_run.py
