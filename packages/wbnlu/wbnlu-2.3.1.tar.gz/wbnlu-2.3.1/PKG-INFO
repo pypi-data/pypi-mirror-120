@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: wbnlu
+Version: 2.3.1
+Summary: Weibo nlp tool
+Home-page: https://github.com/user/reponame
+Author: Weibo NLP
+Author-email: your.email@domain.com
+License: MIT
+Download-URL: http://git.intra.weibo.com/us-nlp/wbnlu2.0/-/archive/wbnlu2.0/wbnlu2.0-wbnlu2.0.tar.gz
+Description: UNKNOWN
+Keywords: SOME,MEANINGFULL,KEYWORDS
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
