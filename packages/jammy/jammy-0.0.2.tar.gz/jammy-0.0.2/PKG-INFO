@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: jammy
+Version: 0.0.2
+Summary: Personal ToolBox
+License: MIT
+Author: Qin
+Author-email: qsh.zh27@gmail.com
+Requires-Python: >=3.7,<3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: GitPython (>=3.1.17,<4.0.0)
+Requires-Dist: attrs (>=20.3.0,<21.0.0)
+Requires-Dist: einops (>=0.3.0,<0.4.0)
+Requires-Dist: gpustat (>=0.6.0,<0.7.0)
+Requires-Dist: h5py (>=3.4.0,<4.0.0)
+Requires-Dist: hydra-core (>=1.1.0,<2.0.0)
+Requires-Dist: ipdb (>=0.13.8,<0.14.0)
+Requires-Dist: lmdb (>=1.2.1,<2.0.0)
+Requires-Dist: loguru (>=0.5.3,<0.6.0)
+Requires-Dist: matplotlib (>=3.3.0,<4.0.0)
+Requires-Dist: numpy (>=1.20.3,<2.0.0)
+Requires-Dist: python-memcached (>=1.59,<2.0)
+Requires-Dist: scipy (>=1.6.3,<2.0.0)
+Requires-Dist: torch (>=1.9.0,<2.0.0)
+Requires-Dist: torchvision (>=0.10.0,<0.11.0)
+Requires-Dist: tornado (>=6.1,<7.0)
+Requires-Dist: tqdm (>=4.11.0,<5.0.0)
+Requires-Dist: wandb (>=0.10.31,<0.11.0)
+Project-URL: Documentation, https://jammy.readthedocs.io/en/latest/
+Description-Content-Type: text/markdown
+
+# Jammy (Jam)
+
+**Jammy** is a personal toolkit.
+
+
+### Etymology
+* The naming is inspired from [Jyutping](https://en.wikipedia.org/wiki/Jyutping) of [Qin](https://en.wiktionary.org/wiki/%E6%AC%BD).
+
+## MICS
+
+* The package and framework are inspired from [Jacinle](https://github.com/vacancy/Jacinle) by [vacancy](https://github.com/vacancy), from which I learn and take utility functions shamelessly.
+
