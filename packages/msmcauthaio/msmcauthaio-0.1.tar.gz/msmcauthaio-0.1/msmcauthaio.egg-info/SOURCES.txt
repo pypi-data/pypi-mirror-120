@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+msmcauthaio/__init__.py
+msmcauthaio/client.py
+msmcauthaio/constants.py
+msmcauthaio/errors.py
+msmcauthaio/http.py
+msmcauthaio/models.py
+msmcauthaio.egg-info/PKG-INFO
+msmcauthaio.egg-info/SOURCES.txt
+msmcauthaio.egg-info/dependency_links.txt
+msmcauthaio.egg-info/requires.txt
+msmcauthaio.egg-info/top_level.txt
+msmcauthaio/helpers/__init__.py
+msmcauthaio/helpers/microsoft.py
+msmcauthaio/helpers/xbox.py
