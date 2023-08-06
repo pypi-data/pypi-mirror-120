@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+src/calcs/__init__.py
+src/calcs/annotate.py
+src/calcs/call_cstag.py
+src/calcs/convert.py
+src/calcs/load.py
+src/calcs/main.py
+src/calcs/parse.py
+src/calcs/tmp_main.py
+src/calcs/trim.py
+src/calcs.egg-info/PKG-INFO
+src/calcs.egg-info/SOURCES.txt
+src/calcs.egg-info/dependency_links.txt
+src/calcs.egg-info/entry_points.txt
+src/calcs.egg-info/top_level.txt
