@@ -1,0 +1,17 @@
+LICENSE
+NOTICE
+README.md
+setup.py
+mappertrac/__init__.py
+mappertrac/cli.py
+mappertrac.egg-info/PKG-INFO
+mappertrac.egg-info/SOURCES.txt
+mappertrac.egg-info/dependency_links.txt
+mappertrac.egg-info/entry_points.txt
+mappertrac.egg-info/requires.txt
+mappertrac.egg-info/top_level.txt
+mappertrac/subscripts/__init__.py
+mappertrac/subscripts/s1_freesurfer.py
+mappertrac/subscripts/s2_bedpostx.py
+mappertrac/subscripts/s3_probtrackx.py
+mappertrac/subscripts/utilities.py
