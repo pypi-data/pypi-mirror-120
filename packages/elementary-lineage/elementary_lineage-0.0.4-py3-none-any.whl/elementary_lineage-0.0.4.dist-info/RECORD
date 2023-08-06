@@ -1,0 +1,15 @@
+lineage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lineage/dbt_utils.py,sha256=11_KIH8V8fPIiULAfTl2PhjmbFDNQ69FBa-vqvCzucY,447
+lineage/lineage_graph.py,sha256=Esf-AF4fGyRKAU7kMgwc2kvpjCcFNMSFk4vZ3KRheM8,8689
+lineage/main.py,sha256=lc1dyGlkcndMjFRLNla5XwxyQwgzG-upE1gok9zebbQ,4617
+lineage/query_history.py,sha256=8v9cTtnCpqUP1z3ZVgrrcq7PNCLxvb1XtW_Suy-OGGQ,1800
+lineage/query_history_factory.py,sha256=ssNhnZ8qOI9W-gRaXbUY_3VmsYZ1zP9QRZ56JDcI6K4,1443
+lineage/snowflake_query_history.py,sha256=LfV54MtiHGmQ7jfbXauSz1SA8WfVdmRAF8ph7Jg18Zg,4305
+lineage/utils.py,sha256=BbGaTXf7xWvK_ElcblqxIEa3Z0w7KoFb3XZpNsVQKck,1125
+elementary_lineage-0.0.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+elementary_lineage-0.0.4.dist-info/METADATA,sha256=4tvIFWVWM6p49QQa0NRTmvoZXGeHs4XBsKyXb3si54U,3663
+elementary_lineage-0.0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+elementary_lineage-0.0.4.dist-info/dependency_links.txt,sha256=NthAYaztf5ZTh25oV3-V6lNBtaXb0jhV9Z6DF7TZlWw,97
+elementary_lineage-0.0.4.dist-info/entry_points.txt,sha256=-6jgoMz6iYV-AoaBBeVfdxlq9MiwedQO09b5i4w9GBM,61
+elementary_lineage-0.0.4.dist-info/top_level.txt,sha256=4L38VKFKYPutIm0rsgZs3AoQ3elRUxwwEwyBJftLzEo,8
+elementary_lineage-0.0.4.dist-info/RECORD,,
