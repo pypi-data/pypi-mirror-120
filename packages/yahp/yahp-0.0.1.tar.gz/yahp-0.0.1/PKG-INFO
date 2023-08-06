@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: yahp
+Version: 0.0.1
+Summary: Yet Another Hyperparameter Framework
+Home-page: https://github.com/mosaicml/hparams
+Author: MosaicML
+Author-email: team@mosaicml.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: junitparser
+Provides-Extra: coverage
+Provides-Extra: pytest
+Provides-Extra: yapf
+Provides-Extra: isort
+Provides-Extra: yamllint
+Provides-Extra: all
+License-File: LICENSE
+
+# hparams
+hyperparameter management
+
+
