@@ -1,0 +1,16 @@
+from .web import template as web
+from .env import template as env
+from .cmd import template as cmd
+from .migrate import template as migrate
+from .config import template as config
+from .setting import template as setting
+from .pipfile import template as pipfile
+from .requirements_txt import template as requirements_txt
+from .readme import template as readme
+from .bin import template as bin
+from .app.api import template as app_api
+from .app.cmd import template as app_cmd
+from .app.migrations import template as app_migrations
+from .app.config import template as app_config
+from .app.view import template as app_view
+from .app.models import template as app_models
