@@ -1,0 +1,11 @@
+MANIFEST.in
+setup.py
+tracardi_plugin_scaffold/__init__.py
+tracardi_plugin_scaffold/create_plugin.py
+tracardi_plugin_scaffold/plugin_scaffold.zip
+tracardi_scaffold.egg-info/PKG-INFO
+tracardi_scaffold.egg-info/SOURCES.txt
+tracardi_scaffold.egg-info/dependency_links.txt
+tracardi_scaffold.egg-info/entry_points.txt
+tracardi_scaffold.egg-info/requires.txt
+tracardi_scaffold.egg-info/top_level.txt
