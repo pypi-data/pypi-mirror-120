@@ -1,0 +1,17 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+numbasom/__init__.py
+numbasom/_nbdev.py
+numbasom/core.py
+numbasom/viz.py
+numbasom.egg-info/PKG-INFO
+numbasom.egg-info/SOURCES.txt
+numbasom.egg-info/dependency_links.txt
+numbasom.egg-info/entry_points.txt
+numbasom.egg-info/not-zip-safe
+numbasom.egg-info/requires.txt
+numbasom.egg-info/top_level.txt
