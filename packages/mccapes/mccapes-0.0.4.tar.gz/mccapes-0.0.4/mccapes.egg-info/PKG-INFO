@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: mccapes
+Version: 0.0.4
+Summary: simple minecraft cape viewer! view other players cape
+Home-page: UNKNOWN
+Author: Overnice.exe
+Author-email: silkepilon2009@gmail.com
+License: MIT
+Description: simple minecraft cape viewer! view other players cape
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
