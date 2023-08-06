@@ -1,0 +1,3 @@
+[console_scripts]
+nisanyan_crawler = nisanyan_crawler.__main__:cli
+

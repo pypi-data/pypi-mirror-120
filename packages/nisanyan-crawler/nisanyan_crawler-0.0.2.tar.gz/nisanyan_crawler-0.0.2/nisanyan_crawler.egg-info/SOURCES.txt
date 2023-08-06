@@ -1,0 +1,14 @@
+.gitignore
+README.MD
+requirements.txt
+setup.py
+ss.png
+nisanyan_crawler/__init__.py
+nisanyan_crawler/__main__.py
+nisanyan_crawler/crawler.py
+nisanyan_crawler.egg-info/PKG-INFO
+nisanyan_crawler.egg-info/SOURCES.txt
+nisanyan_crawler.egg-info/dependency_links.txt
+nisanyan_crawler.egg-info/entry_points.txt
+nisanyan_crawler.egg-info/requires.txt
+nisanyan_crawler.egg-info/top_level.txt
