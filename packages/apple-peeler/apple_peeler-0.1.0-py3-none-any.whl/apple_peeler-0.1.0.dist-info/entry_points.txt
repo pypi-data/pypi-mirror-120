@@ -1,0 +1,3 @@
+[console_scripts]
+apple-peeler=apple_peeler.extract:main
+
