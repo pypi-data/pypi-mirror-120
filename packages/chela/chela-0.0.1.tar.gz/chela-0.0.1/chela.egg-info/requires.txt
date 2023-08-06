@@ -1,0 +1,4 @@
+mendeleev
+numpy
+pandas
+pytest

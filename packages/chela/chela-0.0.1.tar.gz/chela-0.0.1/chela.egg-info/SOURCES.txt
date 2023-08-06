@@ -1,0 +1,8 @@
+README.md
+setup.py
+chela.egg-info/PKG-INFO
+chela.egg-info/SOURCES.txt
+chela.egg-info/dependency_links.txt
+chela.egg-info/entry_points.txt
+chela.egg-info/requires.txt
+chela.egg-info/top_level.txt
