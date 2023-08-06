@@ -1,0 +1,4 @@
+[console_scripts]
+widen = widen.cli.cli:app
+widen2 = widen.cli.cli:app
+
