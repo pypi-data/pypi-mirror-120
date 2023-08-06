@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: py-data
+Version: 0.0.5
+Summary: Manage saving local data.
+Home-page: https://github.com/LordzShadow/py-data
+Author: Kustav Prants
+Author-email: kustav.prants@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# py-data
+Data saving package for Python because I'm too lazy to google one.
+
+``` 
+pip install -i https://test.pypi.org/simple/ py-data==0.0.1
+```
+
+
