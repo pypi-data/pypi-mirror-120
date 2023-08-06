@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: cuddle
+Version: 0.1.0
+Summary: A Python library for the KDL Document Language.
+Home-page: https://github.com/djmattyg007/python-cuddle
+License: MIT
+Author: Matthew Gamble
+Author-email: git@matthewgamble.net
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: regex (>=2021.8.28,<2022.0.0)
+Requires-Dist: tatsu (>=5.6.1,<6.0.0)
+Project-URL: Issues, https://github.com/djmattyg007/python-cuddle/issues
+Project-URL: Repository, https://github.com/djmattyg007/python-cuddle
+Project-URL: Source, https://github.com/djmattyg007/python-cuddle
+Description-Content-Type: text/markdown
+
+# python-cuddle
+
+A Python library for the [KDL Document Language](https://github.com/kdl-org/kdl).
+
+## Install
+
+    pip install cuddle
+
+Cuddle supports Python 3.9 and above. 
+
+## Usage
+
+```py
+from cuddle import parse, Document, Node
+print(parse('''// Nodes can be separated into multiple lines
+title \
+  "Some title"
+
+// Nested nodes are fully supported
+contents {
+  section "First section" {
+    paragraph "This is the first paragraph"
+    paragraph "This is the second paragraph"
+  }
+}
+
+// Files must be utf8 encoded!
+smile "😁"
+
+// Instead of anonymous nodes, nodes and properties can be wrapped
+// in "" for arbitrary node names.
+"!@#$@$%Q#$%~@!40" "1.2.3" "!!!!!"=true
+
+// The following is a legal bare identifier:
+foo123~!@#$%^&*.:'|/?+ "weeee"
+
+// And you can also use unicode!
+ノード　お名前="☜(ﾟヮﾟ☜)"
+
+// kdl specifically allows properties and values to be
+// interspersed with each other, much like CLI commands.
+foo bar=true "baz" quux=false 1 2 3
+'''))
+
+# Creating documents from scratch is currently very gross
+print()
+doc = Document()
+doc.append(Node(name='simple-name', properties=None, arguments=[123], children=[Node(name='complex name here!', properties=None, arguments=None, children=None)]))
+print(doc)
+```
+
+```
+title "Some title"
+smile "😁"
+!@#$@$%Q#$%~@!40 !!!!!=true "1.2.3"
+foo123~!@#$%^&*.:'|/?+ "weeee"
+ノード お名前="☜(ﾟヮﾟ☜)"
+foo bar=true quux=false "baz" 1 2 3
+
+simple-name 123 {
+        "complex name here!"
+}
+```
+
+## License
+
+The code is available under the [MIT license](LICENSE). The example above is
+made available from https://github.com/kdl-org/kdl under
+[Creative Commons Attribution-ShareAlike 4.0 International](https://github.com/kdl-org/kdl/blob/main/LICENSE.md).
+

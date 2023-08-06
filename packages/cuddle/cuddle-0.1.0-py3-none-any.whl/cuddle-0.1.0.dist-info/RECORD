@@ -1,0 +1,11 @@
+cuddle/__init__.py,sha256=n-U6RZaKRTOnzNyLJ01tAvyXHo5SgTUl5JAtdYKYPK4,327
+cuddle/_escaping.py,sha256=JAFA80OOBf5aD5C2qBBhy7uEmfElVwQ4wd2ncgmWChA,240
+cuddle/formatter.py,sha256=S-LePgbZNsaU73YuhW_AKWJWkfyx_7Db9bXD3oHPn7g,1849
+cuddle/grammar.py,sha256=ice76PjU1Yk9aOZG9m1_ZGNa0v7IXuaCpnKW5OwHuyc,19209
+cuddle/grammar.tatsu,sha256=YuPLr1H7OoQWs3qITBmyHqSi3AYlugNbNY7SsUZt9kQ,1986
+cuddle/parser.py,sha256=E6iobYFaKq5UuUjBTn2cKxhBl66q7upWzAZDX3XT5Yw,4933
+cuddle/structure.py,sha256=2o0e4owJghCsgwJ99a8p1dW3v9qVNiU3Kk6b8ZCa2Rk,2307
+cuddle-0.1.0.dist-info/LICENSE.txt,sha256=xwtg6R8GkyBg-cpp74e3_u3aixdTYwVxaXrBRGWOhQQ,1108
+cuddle-0.1.0.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+cuddle-0.1.0.dist-info/METADATA,sha256=nqL_AwL2j12HSoeLq--YscsFIVTPin9mVth6yPGhEFM,2634
+cuddle-0.1.0.dist-info/RECORD,,
