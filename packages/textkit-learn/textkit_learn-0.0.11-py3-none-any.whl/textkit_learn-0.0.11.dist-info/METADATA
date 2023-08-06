@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: textkit-learn
+Version: 0.0.11
+Summary: Helps computers to understand human languages.
+Home-page: https://github.com/ysenarath/textkit-learn
+Author: Yasas Senarath
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas (~=1.1.2)
+Requires-Dist: reutils (~=0.1.0)
+Requires-Dist: scikit-learn (~=0.24.2)
+Requires-Dist: numpy (~=1.19.2)
+Requires-Dist: torch (~=1.6.0)
+Requires-Dist: transformers (~=4.6.1)
+Requires-Dist: gensim (~=4.0.1)
+Requires-Dist: six (~=1.15.0)
+Requires-Dist: wordfreq (~=2.3.2)
+Requires-Dist: networkx (~=2.5.1)
+Requires-Dist: nltk (~=3.5)
+Requires-Dist: emoji (~=1.2.0)
+Requires-Dist: hatebase (~=0.6)
+Requires-Dist: setuptools (~=57.1.0)
+
+# textkit-learn
+
+Simple and efficient tools for text modeling. 
+
+Extend existing tools for 'machine learning', 'text analysis' and 'deep learning' for NLP tasks.
+
+How to install
+--------------
+
+`pip install textkit-learn`
+
+
