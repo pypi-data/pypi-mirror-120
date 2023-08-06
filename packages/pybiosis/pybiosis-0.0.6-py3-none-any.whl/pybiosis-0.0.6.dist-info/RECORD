@@ -1,0 +1,14 @@
+pybiosis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pybiosis/__main__.py,sha256=I6NiAPpPdZtEC8KD380hJreTe_wdFhlNys9uv1GvuBU,289
+pybiosis/compiler.py,sha256=malwWzbgjv_hBadgOEvPOkumm8SgvOIWIfmarTASD7I,8452
+pybiosis/loader.py,sha256=PtfoS--0K7Cs6L3qHShBu7gOGg-hf2ZxcNT_lB6r-UE,611
+pybiosis/applications/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pybiosis/applications/monitors.py,sha256=burb8Mm6kJc2VmtRT7eya4zopkNXOSxdf2qbFVeuhC4,2898
+pybiosis/applications/virtualdesktop.py,sha256=wpWUYikU7KZOs5uosqlqJakf2qmQNhOZ5rcYs_Lkyqg,9045
+pybiosis/applications/ControlMyMonitor/ControlMyMonitor.exe,sha256=dJ5qHc5QW0eIMy5hC7uI_6ubaVf8_XnQvO4MVNaR_fw,113016
+pybiosis/applications/VirtualDesktop/VirtualDesktop.exe,sha256=pBtz5qfbZ8jELH4qM6-55uC_ZwVTpkm1u2XSDgjG8j8,50688
+pybiosis-0.0.6.dist-info/LICENSE.txt,sha256=jz5LIVNzSZApbppLaGhlIXxj1TLq6B9VUtikcxkyTOg,1084
+pybiosis-0.0.6.dist-info/METADATA,sha256=TN1A__0khwnzzO45-pqMGWaYbHj-YWUA93zEdDqpepc,3629
+pybiosis-0.0.6.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pybiosis-0.0.6.dist-info/top_level.txt,sha256=mTZaf11n6Idm76RR8rwZiOp298dhhGFXcPvia2WX1RA,9
+pybiosis-0.0.6.dist-info/RECORD,,
