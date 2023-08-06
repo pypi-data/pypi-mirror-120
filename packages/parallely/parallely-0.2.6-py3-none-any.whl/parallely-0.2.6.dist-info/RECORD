@@ -1,0 +1,12 @@
+LICENSE,sha256=UOZ1F5fFDe3XXvG4oNnkL1-Ecun7zpHzRxjp-XsMeAo,11324
+README.md,sha256=78viVxxL3yLq0V1Z_MgfdGW3o5M6oYy9JPVjODjlvh0,5445
+parallely/__init__.py,sha256=QDGrHsO3sV8BF1gKeBnHJaWnEaRbc9sLyM8fPDKSiHw,144
+parallely/base.py,sha256=Bv64vqPIoir3RJ-YtZHE44IWrF4VrhAf22MMpV7n9Uw,1125
+parallely/coroutines.py,sha256=qLGJzf2yvYO7_ofsa8A9MiuOIo8963gWurJbB6ZzFA0,2526
+parallely/processes.py,sha256=oPon0zYJJb-pnufNFEuKQcZBu8UwaR-qgDRZTRlD1GM,1374
+parallely/threads.py,sha256=wNHTHE-0FKxke6Skm80IQWv5Gpdmp1IcSCgW4SZCO6w,2256
+parallely/utils.py,sha256=JbYRotnjfxonFOTCTjwaC_Pa1b11z7A6uqsQ4Kp4Zvs,1566
+parallely-0.2.6.dist-info/LICENSE,sha256=UOZ1F5fFDe3XXvG4oNnkL1-Ecun7zpHzRxjp-XsMeAo,11324
+parallely-0.2.6.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+parallely-0.2.6.dist-info/METADATA,sha256=cVfiRie7m-6fu24Gw9MmwXicct_HOrkmvU_K1-SzN8M,6348
+parallely-0.2.6.dist-info/RECORD,,
