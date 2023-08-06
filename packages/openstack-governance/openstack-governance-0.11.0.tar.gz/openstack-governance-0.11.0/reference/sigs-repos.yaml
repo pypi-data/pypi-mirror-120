@@ -1,0 +1,103 @@
+---
+# List of repositories owned by SIGs
+Ansible:
+  - repo: openstack/ansible-collections-openstack
+  - repo: openstack/ansible-plugin-container-connection
+API:
+  - repo: openstack/api-sig
+Automation:
+  - repo: openstack/auto-scaling-sig
+  - repo: openstack/self-healing-sig
+Hardware Vendor:
+  - repo: openstack/python-dracclient
+i18n:
+  - repo: openstack/i18n
+    extra-atcs:
+    - name: Andreas Jaeger
+      email: jaegerandi@gmail.com
+      expires-in: Oct 2021
+      comment: jaegerandi (de)
+    - name: Robert Holling
+      email: r.holling@protonmail.ch
+      expires-in: Oct 2021
+      comment: r6t (de)
+    - name: Andi Chandler
+      email: andi@gowling.com
+      expires-in: Oct 2021
+      comment: andibing (en-GB)
+    - name: suhartono
+      email: cloudsuhartono@gmail.com
+      expires-in: Feb 2022
+      comment: suhartono (id)
+    - name: Ian Y. Choi
+      email: ianyrchoi@gmail.com
+      expires-in: Oct 2021
+      comment: ianychoi (ko-KR)
+    - name: KEONWOO LEE
+      email: lkeonw0o@naver.com
+      expires-in: Oct 2021
+      comment: keonwoo_lee (ko-KR)
+    - name: Dong-won Jang
+      email: dohan0930@gmail.com
+      expires-in: Oct 2021
+      comment: revival0n (ko-KR)
+    - name: Roman Gorshunov
+      email: roman.gorshunov@att.com
+      expires-in: Oct 2021
+      comment: gorshunovr (ru)
+    - name: Dmitriy Rabotyagov
+      email: noonedeadpunk@ya.ru
+      expires-in: Oct 2021
+      comment: noonedeadpunk (ru)
+    - name: Alberto Molina Coballes
+      email: alb.molina@gmail.com
+      expires-in: Feb 2022
+      comment: albertomolina (es)
+Meta:
+  - repo: openstack/governance-sigs
+Multi-Arch:
+  - repo: openstack/multi-arch-sig
+Operation Docs and Tooling:
+  - repo: openstack/arch-design
+  - repo: openstack/ha-guide
+  - repo: openstack/operations-guide
+  - repo: openstack/osops
+Packaging:
+  - repo: openstack/rpm-packaging
+  - repo: openstack/rpm-packaging-tools
+  - repo: openstack/pymod2pkg
+  - repo: openstack/renderspec
+PowerVMStackers:
+  - repo: openstack/ceilometer-powervm
+  - repo: openstack/networking-powervm
+  - repo: openstack/nova-powervm
+Public Cloud SIG:
+  - repo: openstack/publiccloud-sig
+Security:
+  - repo: openstack/ossa
+  - repo: openstack/security-analysis
+  - repo: openstack/security-doc
+  - repo: openstack/security-specs
+Technical Writing:
+  - repo: openstack/api-site
+  - repo: openstack/constellations
+  - repo: openstack/contributor-guide
+  - repo: openstack/openstack-manuals
+  - repo: openstack/training-labs
+  - repo: openstack/training-guides
+  - repo: openstack/upstream-institute-virtual-environment
+Testing and Collaboration Tools:
+  - repo: openstack/bugdaystats
+  - repo: openstack/devstack-gate
+    deprecated: xena
+  - repo: openstack/diskimage-builder
+  - repo: openstack/logstash-filters
+  - repo: openstack/nose-html-output
+  - repo: openstack/openstack-nose
+  - repo: openstack/openstack-planet
+  - repo: openstack/openstack-zuul-jobs
+  - repo: openstack/openstack-zuul-roles
+  - repo: openstack/project-config
+  - repo: openstack/ptgbot
+  - repo: openstack/reviewday
+  - repo: openstack/reviewstats
