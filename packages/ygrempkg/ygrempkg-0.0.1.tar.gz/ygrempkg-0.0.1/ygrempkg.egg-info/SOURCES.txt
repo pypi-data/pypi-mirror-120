@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+ygrempkg/__init__.py
+ygrempkg/ygrempkg.py
+ygrempkg.egg-info/PKG-INFO
+ygrempkg.egg-info/SOURCES.txt
+ygrempkg.egg-info/dependency_links.txt
+ygrempkg.egg-info/requires.txt
+ygrempkg.egg-info/top_level.txt

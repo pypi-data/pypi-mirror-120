@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ygrempkg
+Version: 0.0.1
+Summary: A package to convert your Jupyter Notebook
+Home-page: https://github.com/ygnotebooktoall/ygnotebook
+Author: Ygrem Bekele
+Author-email: ygremb@gmail.com
+License: UNKNOWN
+Description: # ygnotebook #ygnoteboo
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown
