@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+dxy/__init__.py
+dxy/__main__.py
+dxy/torch.py
+dxy.egg-info/PKG-INFO
+dxy.egg-info/SOURCES.txt
+dxy.egg-info/dependency_links.txt
+dxy.egg-info/requires.txt
+dxy.egg-info/top_level.txt
+dxy.egg-info/zip-safe

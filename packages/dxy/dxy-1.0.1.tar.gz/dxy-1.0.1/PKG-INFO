@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: dxy
+Version: 1.0.1
+Summary: It summarizes some data science functions
+Home-page: https://github.com/wwwxqq/dxy
+Author: Xueyuan Du
+Author-email: aaa@aaa.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+
+# dxy Square
+It takes an integer as an input and prints it square.
+
+## Installation
+```pip install dxy```
+
+## How to use it?
+Open terminal and type square and then input the integer
+
+## License
+
+© 2020 Xueyuan Du
+
+This repository is licensed under the MIT license. See LICENSE for details.
+
