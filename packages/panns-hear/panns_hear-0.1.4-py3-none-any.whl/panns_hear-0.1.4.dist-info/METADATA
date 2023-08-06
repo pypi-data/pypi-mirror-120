@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: panns-hear
+Version: 0.1.4
+Summary: PANNs embeddings for HEAR 2021 Challenge.
+Home-page: https://github.com/qiuqiangkong/HEAR2021_Challenge_PANNs
+Author: Yin Cao
+Author-email: yin.k.cao@gmail.com
+License: Apache License 2.0
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: torchlibrosa
+
+# PANNs_Hear
+
+
