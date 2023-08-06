@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: opsvis
+Version: 0.94.3
+Summary: OpenSeesPy (OpenSees) Python postprocessing and visualization module
+Home-page: https://github.com/sewkokot/ops_vis
+Author: Seweryn Kokot
+Author-email: sewkokot@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/sewkokot/ops_vis/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# ops_vis-pip
+
+OpenSeesPy (OpenSees) postprocessing and visualization module
+
+
