@@ -1,0 +1,16 @@
+Metadata-Version: 1.0
+Name: mtup
+Version: 1.7
+Summary: upload file/folders through cli
+Home-page: UNKNOWN
+Author: madhavth
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: cli to upload file /folder
+        
+        usage:-
+        
+        mtup "FILE_NAME" 
+        mtup "FOLDER_NAME"
+        
+Platform: UNKNOWN
