@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+vigenpy/__init__.py
+vigenpy.egg-info/PKG-INFO
+vigenpy.egg-info/SOURCES.txt
+vigenpy.egg-info/dependency_links.txt
+vigenpy.egg-info/requires.txt
+vigenpy.egg-info/top_level.txt
+vigenpy/video/__init__.py
+vigenpy/video/stack_video.py
+vigenpy/video/__init__.py
+vigenpy/video/stack_video.py
