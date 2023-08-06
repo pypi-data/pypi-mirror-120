@@ -1,0 +1,13 @@
+jupyterhub_moss/__init__.py,sha256=HHSlNHhRZvh7JH6Fvryf-wL8cJXPcQR5mQCo1b69lFo,542
+jupyterhub_moss/auth.py,sha256=hFfuOWTc-yj6mqZapTM8koZZjNkAy5wPtO0zDGfFgBc,874
+jupyterhub_moss/batch_script.sh,sha256=6fa2KzF2aWg_yupBUBFgRl1bVLOGuNn0kcgQLHeDGDE,745
+jupyterhub_moss/spawner.py,sha256=nMAoFwvzu30ajRxKysFJrQkWEHkwva1op8WdpuTTqn4,7449
+jupyterhub_moss/utils.py,sha256=2jPyRSF2m6s6Yzl4i_Xxwy-Tow9qp0gPrMPNe-qcWB0,297
+jupyterhub_moss/form/option_form.css,sha256=Lcd4E0Vl-LI7Az6E0iSo8hnPgX90HAWlPGghp-TZ1KQ,1631
+jupyterhub_moss/form/option_form.js,sha256=UWrbLPIy8nAtlJolVJpSppj-rhjvOM1M256-84_eZfc,7920
+jupyterhub_moss/templates/option_form.html,sha256=WQ20Rg29XO1M4bHKJhqBWocadGcQWXo7PIi9w0u30VU,7900
+jupyterhub_moss-1.1.1.dist-info/LICENSE,sha256=fZ0KbL1Ka-mZASN55Axi99CMo1YZWwAdFTJin6vJqzY,1108
+jupyterhub_moss-1.1.1.dist-info/METADATA,sha256=bbbckbJKRwlEpMGhNQglJEyV1gwjWGtCFduC6hb9oSk,9034
+jupyterhub_moss-1.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+jupyterhub_moss-1.1.1.dist-info/top_level.txt,sha256=seIZDpXkZQHd5PTUasMj7k5SlK269EmnNpVNOmrG8so,16
+jupyterhub_moss-1.1.1.dist-info/RECORD,,
