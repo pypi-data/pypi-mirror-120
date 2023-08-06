@@ -1,0 +1,12 @@
+numpy
+scipy
+scikit-learn
+scikit-image
+pillow
+matplotlib
+opencv-python-headless
+pandas
+seaborn
+pyinstrument
+asyncio
+websockets
