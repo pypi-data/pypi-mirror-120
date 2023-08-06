@@ -1,0 +1,13 @@
+PyPDF2
+pyppeteer
+reportlab
+requests
+svglib
+
+[docs]
+sphinx
+myst-parser
+
+[test]
+pytest
+pytest-asyncio
