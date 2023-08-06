@@ -1,0 +1,217 @@
+Metadata-Version: 2.1
+Name: kinopoisk-api-unofficial-client
+Version: 0.9.4
+Summary: API Client for the unofficial Kinopoisk api
+Home-page: https://github.com/masterWeber/kinopoisk-api-unofficial-client
+Author: Master Weber
+Author-email: master.weber@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests (<=2.26.0)
+
+<div align="center">
+    <h1>Kinopoisk API Unofficial client</h1>
+    <p>Python-модуль для взаимодействия с неофициальным <a href="https://kinopoiskapiunofficial.tech/">API КиноПоиска</a></p>
+    <img align="center" src="https://img.shields.io/github/repo-size/masterWeber/kinopoisk-api-unofficial-client" alt="GitHub repo size">
+    <img align="center" src="https://img.shields.io/github/stars/masterWeber/kinopoisk-api-unofficial-client" alt="GitHub Repo stars">
+    <img align="center" src="https://img.shields.io/github/watchers/masterWeber/kinopoisk-api-unofficial-client" alt="GitHub watchers">
+    <img align="center" src="https://img.shields.io/github/last-commit/masterWeber/kinopoisk-api-unofficial-client" alt="GitHub last commit">
+    <img align="center" src="https://img.shields.io/github/languages/top/masterWeber/kinopoisk-api-unofficial-client" alt="GitHub top language">
+    <img align="center" src="https://img.shields.io/website?down_message=Down&label=Kinopoisk%20Api%20Unofficial&up_message=Up&url=https%3A%2F%2Fkinopoiskapiunofficial.tech%2F" alt="API Uptime">
+</div>
+
+### Установка
+
+```
+$ pip install kinopoisk-api-unofficial-client
+```
+
+### Получение токена KinopoiskAPI
+
+Для получения токена необходима регистрация на сайте
+<a href="https://kinopoiskapiunofficial.tech/signup">kinopoiskapiunofficial.tech</a>. После регистрации перейдите в
+настройки своего <a href="https://kinopoiskapiunofficial.tech/user">профиля</a> и сохраните токен.
+<div align="center">
+    <img src="https://i.imgur.com/uRY1rRF.png" alt="Регистрация">
+</div>
+
+## films
+
+Набор методов для работы с данными о фильмах
+
+### Получить данные о фильме по kinopoisk id
+
+* `Эндпоинт`: /api/v2.2/films/{id}
+* `Метод`: send_film_request(request: FilmRequest) -> FilmResponse
+
+```python
+
+```
+
+### Получить данные о сезонах для сериала по kinopoisk film id
+
+* `Эндпоинт`: /api/v2.2/films/{id}/seasons
+* `Метод`: send_seasons_request(request: SeasonsRequest) -> SeasonsResponse
+
+```python
+
+```
+
+### Получить данные о фактах и ошибках в фильме по kinopoisk film id
+
+* `Эндпоинт`: /api/v2.2/films/{id}/facts
+* `Метод`: send_facts_request(request: FactsRequest) -> FactsResponse
+
+```python
+
+```
+
+### Получить данные о прокате фильма по kinopoisk film id
+
+* `Эндпоинт`: /api/v2.2/films/{id}/distributions
+* `Метод`: send_distributions_request(request: DistributionsRequest) -> DistributionsResponse
+
+```python
+
+```
+
+### Получить данные о бюджете и сборах фильма по kinopoisk film id
+
+* `Эндпоинт`: /api/v2.2/films/{id}/box_office
+* `Метод`: send_box_office_request(request: BoxOfficeRequest) -> BoxOfficeResponse
+
+```python
+
+```
+
+### Получить кадры из фильма по kinopoisk film id
+
+* `Эндпоинт`: /api/v2.1/films/{id}/frames
+* `Метод`: send_film_frame_request(request: FilmFrameRequest) -> FilmFrameResponse
+
+```python
+
+```
+
+### Получить трейлеры,тизеры,видео для фильма по kinopoisk film id
+
+* `Эндпоинт`: /api/v2.2/films/{id}/videos
+* `Метод`: send_film_video_request(request: FilmVideoRequest) -> FilmVideoResponse
+
+```python
+
+```
+
+### Получить сиквелы и приквелы для фильма по kinopoisk film id
+
+* `Эндпоинт`: /api/v2.1/films/{id}/sequels_and_prequels
+* `Метод`: send_film_sequels_and_prequels_request(request: FilmSequelsAndPrequelsRequest) -> FilmSequelsAndPrequelsResponse
+
+```python
+
+```
+
+### Получить список фильмов по ключевым словам
+
+* `Эндпоинт`: /api/v2.1/films/search-by-keyword
+* `Метод`: send_search_by_keyword_request(request: SearchByKeywordRequest) -> SearchByKeywordResponse
+
+```python
+
+```
+
+### Получить id стран и жанров для использования в /api/v2.1/films/search-by-filters
+
+* `Эндпоинт`: /api/v2.1/films/filters
+* `Метод`: send_filters_request(request: FiltersRequest) -> FiltersResponse
+
+```python
+
+```
+
+### Получить список фильмов по различным фильтрам
+
+* `Эндпоинт`: /api/v2.1/films/search-by-filters
+* `Метод`: send_film_search_by_filters_request(request: FilmSearchByFiltersRequest) -> FilmSearchByFiltersResponse
+
+```python
+
+```
+
+### Получить список фильмов из различных топов или коллекций. Например https://www.kinopoisk.ru/top/lists/58/
+
+* `Эндпоинт`: /api/v2.2/films/top
+* `Метод`: send_film_top_request(request: FilmTopRequest) -> FilmTopResponse
+
+```python
+
+```
+
+### Получить список похожих фильмов по kinopoisk film id
+
+* `Эндпоинт`: /api/v2.2/films/{id}/similars
+* `Метод`: send_related_film_request(request: RelatedFilmRequest) -> RelatedFilmResponse
+
+```python
+
+```
+
+### Получить список цифровых релизов
+
+* `Эндпоинт`: /api/v2.1/films/releases
+* `Метод`: send_digital_release_request(request: DigitalReleaseRequest) -> DigitalReleaseResponse
+
+```python
+
+```
+
+## reviews
+
+Набор методов для работы с ревью о фильмах
+
+### Получить рецензии зрителей
+
+* `Эндпоинт`: /api/v1/reviews
+* `Метод`: send_reviews_request(request: ReviewsRequest) -> ReviewsResponse
+
+```python
+
+```
+
+### Получить полную рецензию по kinopoisk review id
+
+* `Эндпоинт`: /api/v1/reviews/details
+* `Метод`: send_review_details_request(request: ReviewDetailsRequest) -> ReviewDetailsResponse
+
+```python
+
+```
+
+## staff
+
+Набор методов для работы с данными об актерах, режиссерах и т.д.
+
+### Получить данные об актерах, режисерах и т.д. по kinopoisk film id
+
+* `Эндпоинт`: /api/v1/staff
+* `Метод`: send_staff_request(request: StaffRequest) -> StaffResponse
+
+```python
+
+```
+
+### Получить данные о конкретном человеке по kinopoisk person id
+
+* `Эндпоинт`: /api/v1/staff/{id}
+* `Метод`: send_person_request(request: PersonRequest) -> PersonResponse
+
+```python
+
+```
+
