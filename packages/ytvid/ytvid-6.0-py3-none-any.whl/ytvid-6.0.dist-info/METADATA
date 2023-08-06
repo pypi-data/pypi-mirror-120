@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ytvid
+Version: 6.0
+Summary: Youtube video downloader
+Home-page: https://github.com/mickeydarrenlau/ytvid
+Author: Darren Lau Wei Jie
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: youtube-dl
+
+This is a lib to simplify downloading youtube vids. Just import ytvid and use ytvid.download(your yt vid url)
+
+
