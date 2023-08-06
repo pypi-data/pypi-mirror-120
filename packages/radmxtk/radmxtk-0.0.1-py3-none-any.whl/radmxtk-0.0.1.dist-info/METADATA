@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: radmxtk
+Version: 0.0.1
+Summary: A PyRadiomics utility package
+Home-page: https://github.com/geraghbj/radmxtk
+Author: Benjamin Geraghty
+Author-email: geraghbj@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyradiomics
+Requires-Dist: SimpleITK
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: PyYAML
+Requires-Dist: six
+
+UNKNOWN
+
