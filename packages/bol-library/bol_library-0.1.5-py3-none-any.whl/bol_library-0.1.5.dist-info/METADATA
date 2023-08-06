@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: bol-library
+Version: 0.1.5
+Summary: Speech to Text Library plus addons
+Home-page: https://github.com/harveenchadha/bol/
+Author: Harveen Singh Chadha
+Author-email: harveensinghchadha@gmail.com
+License: MIT
+Platform: linux
+Platform: unix
+Requires-Python: >3.5.2
+Requires-Dist: torch (>=1.8)
+Requires-Dist: torchaudio (>=0.8)
+Requires-Dist: python-Levenshtein
+Requires-Dist: joblib
+
+UNKNOWN
+
+
