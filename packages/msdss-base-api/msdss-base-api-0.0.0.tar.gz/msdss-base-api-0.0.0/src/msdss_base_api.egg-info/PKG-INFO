@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: msdss-base-api
+Version: 0.0.0
+Summary: Base API for the Modular Spatial Decision Support Systems (mSDSS) framework
+Home-page: https://github.com/rrwen/msdss-base-api
+Author: Richard Wen
+Author-email: rrwen.dev@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/rrwen/msdss-base-api/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# msdss-base-api
+
+Base API for the Modular Spatial Decision Support Systems (MSDSS) framework.
+
+* [Documentation](https://rrwen.github.io/msdss-base-api/)
+* [Developer Notes](DEVELOPER.md)
+
+## Contact
+
+Richard Wen rrwen.dev@gmail.com
+
