@@ -1,0 +1,8 @@
+appdirs
+arrow>=0.15
+docopt
+emborg>=1.27
+inform>=1.26
+matplotlib
+nestedtext
+quantiphy

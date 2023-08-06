@@ -1,0 +1,9 @@
+README.rst
+borg-space
+setup.py
+borg_space.egg-info/PKG-INFO
+borg_space.egg-info/SOURCES.txt
+borg_space.egg-info/dependency_links.txt
+borg_space.egg-info/requires.txt
+borg_space.egg-info/top_level.txt
+borg_space.egg-info/zip-safe
