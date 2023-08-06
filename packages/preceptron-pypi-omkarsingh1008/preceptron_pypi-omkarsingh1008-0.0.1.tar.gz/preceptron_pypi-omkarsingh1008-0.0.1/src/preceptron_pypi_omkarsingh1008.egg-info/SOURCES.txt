@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/preceptron_pypi_omkarsingh1008.egg-info/PKG-INFO
+src/preceptron_pypi_omkarsingh1008.egg-info/SOURCES.txt
+src/preceptron_pypi_omkarsingh1008.egg-info/dependency_links.txt
+src/preceptron_pypi_omkarsingh1008.egg-info/requires.txt
+src/preceptron_pypi_omkarsingh1008.egg-info/top_level.txt
+src/synapses/__init__.py
+src/synapses/perceptron.py
