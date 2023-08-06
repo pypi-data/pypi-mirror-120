@@ -1,0 +1,2 @@
+# @package _group_
+_target_: pytorch.recipes.data.modules.vision.mnist_data_module.MNISTDataModule

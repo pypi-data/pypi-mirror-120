@@ -1,0 +1,19 @@
+# @package _group_
+_target_: classy_vision.fb.models.build_model
+model_config:
+  name: resnext
+  num_blocks:
+    - 3
+    - 4
+    - 23
+    - 3
+  base_width_and_cardinality:
+    - 4
+    - 32
+  small_input: false
+  heads:
+    - name: fully_connected
+      unique_id: default_head
+      num_classes: 1000
+      fork_block: block3-2
+      in_plane: 2048

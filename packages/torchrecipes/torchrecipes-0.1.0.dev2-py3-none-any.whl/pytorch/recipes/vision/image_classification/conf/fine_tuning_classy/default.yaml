@@ -1,0 +1,5 @@
+# @package _group_
+pretrained_classy_checkpoint_path: "manifold://cv_services/tree/checkpoints/183045944/checkpoint.torch"
+pretrained_checkpoint_load_strict: false
+reset_heads: true
+freeze_trunk: true

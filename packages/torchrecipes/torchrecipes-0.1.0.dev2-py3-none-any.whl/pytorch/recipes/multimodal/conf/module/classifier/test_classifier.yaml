@@ -1,0 +1,7 @@
+# @package _group_
+- input_fusion_name: "fusion"
+  task_name: "single_task"
+  in_features: 64
+  out_features: 2
+  loss:
+    _target_: torch.nn.CrossEntropyLoss

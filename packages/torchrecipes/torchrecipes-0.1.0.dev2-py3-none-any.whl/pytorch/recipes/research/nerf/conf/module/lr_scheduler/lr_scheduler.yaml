@@ -1,0 +1,4 @@
+# @package _group_
+# was under cfg.optimizer
+step_size: 5000
+gamma: 0.1

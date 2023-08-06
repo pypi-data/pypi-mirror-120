@@ -1,0 +1,7 @@
+# @package _group_
+_target_: "stl.lightning.optim.lr_schedulers.cosine_with_warmup.CosineWithWarmup"
+final_lr: 0
+max_iters: 196
+warmup_iters: 34
+warmup_start_lr: 0.01
+last_epoch: -1

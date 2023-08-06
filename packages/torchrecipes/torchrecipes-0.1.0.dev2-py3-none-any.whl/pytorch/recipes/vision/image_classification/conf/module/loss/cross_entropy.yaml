@@ -1,0 +1,4 @@
+# @package _group_
+_target_: classy_vision.losses.build_loss
+config:
+  name: CrossEntropyLoss

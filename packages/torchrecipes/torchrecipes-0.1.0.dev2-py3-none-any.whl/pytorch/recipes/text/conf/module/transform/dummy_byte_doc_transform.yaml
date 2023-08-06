@@ -1,0 +1,7 @@
+# @package _group_
+_target_: pytext.contrib.pytext_lib.transforms.fb_byte_doc_transform.ByteDocTransform
+lower: true
+max_seq_len: 512
+label_names:
+- '0'
+- '1'

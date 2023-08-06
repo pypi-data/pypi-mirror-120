@@ -1,0 +1,8 @@
+# @package _group_
+namespace: "aml"
+table_name: "test_classy_lightning_hive_callback"
+oncall: "pt_lightning"
+output_columns:
+  - column_name: "output"
+    output_key: "output"
+    column_type: "ARRAY<REAL>"

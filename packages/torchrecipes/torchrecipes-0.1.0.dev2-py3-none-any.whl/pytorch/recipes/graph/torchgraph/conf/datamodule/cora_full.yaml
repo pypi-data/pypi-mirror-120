@@ -1,0 +1,5 @@
+# @package _group_
+_target_: pytorch.recipes.graph.torchgraph.datamodule.csv_module.CSVDataModule
+nodes_content_file: data/cora-full-content.csv
+edges_list_file: data/cora-full.edgelist.csv
+undirected_graph: true

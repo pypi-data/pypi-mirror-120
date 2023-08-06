@@ -1,0 +1,7 @@
+# @package _group_
+- fusion_name: "fusion"
+  input_encoder_names: ["modality_1", "modality_2"]
+  fusion_args:
+    _target_: faim.fusion.non_temporal.ConcatFusion
+    fusion_model_name: "fusion"
+    projection_dims: [128, 64]

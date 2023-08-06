@@ -1,0 +1,4 @@
+# @package _group_
+- name: average_precision
+  config:
+    _target_: torchmetrics.AveragePrecision

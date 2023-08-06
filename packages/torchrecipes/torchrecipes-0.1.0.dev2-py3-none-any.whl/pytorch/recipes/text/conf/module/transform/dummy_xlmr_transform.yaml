@@ -1,0 +1,7 @@
+# @package _group_
+_target_: pytext.contrib.pytext_lib.transforms.fb_roberta.XlmrTransform
+label_names:
+- '0'
+- '1'
+vocab_path: manifold://nlp_technologies/tree/pytext/public/vocabs/vocab_dummy.txt
+sp_model_path: manifold://nlp_technologies/tree/xlm/models/xlm_r/sp_model

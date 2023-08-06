@@ -1,0 +1,3 @@
+# @package _group_
+has_user_data: false
+ttl_days: 30

@@ -1,0 +1,115 @@
+# @package _group_
+
+# The full path (including the group name `dataset`)
+# is needed for config node interpolation
+dataset:
+  params:
+    name: auto_on_box_hive
+    batchsize_per_replica: 32
+    phases_per_epoch: 1
+    num_threads: 2
+    namespace: aml
+    label_column: label_id
+    hive_column: image_id
+    blob_column: blob
+    partition_column: partition_no
+    partition_column_values:
+      start_offset: 0
+      num_partitions: 1000
+    mean:
+    - 0.485
+    - 0.456
+    - 0.406
+    std:
+    - 0.229
+    - 0.224
+    - 0.225
+    num_workers: 1
+    num_classes: 1000
+
+  eval_transforms:
+    - name: image_decode_index
+      config:
+        color_space: RGB
+        num_classes: ${datamodule.dataset.params.num_classes}
+        single_label: true
+      transforms:
+        - name: Resize
+          size: 256
+        - name: CenterCrop
+          size: 224
+        - name: ToTensor
+        - name: Normalize
+          mean: ${datamodule.dataset.params.mean}
+          std: ${datamodule.dataset.params.std}
+
+  train_transforms:
+    - name: image_decode_index
+      config:
+        color_space: RGB
+        num_classes: ${datamodule.dataset.params.num_classes}
+        single_label: true
+      transforms:
+        - name: RandomResizedCrop
+          size: 224
+        - name: RandomHorizontalFlip
+        - name: ToTensor
+        - name: Normalize
+          mean: ${datamodule.dataset.params.mean}
+          std: ${datamodule.dataset.params.std}
+
+  train:
+    _target_: classy_vision.fb.dataset.build_dataset
+    dataset_config:
+      name: ${datamodule.dataset.params.name}
+      split: train
+      batchsize_per_replica: ${datamodule.dataset.params.batchsize_per_replica}
+      num_samples: 1281167
+      phases_per_epoch: ${datamodule.dataset.params.phases_per_epoch}
+      use_shuffle: true
+      num_threads: ${datamodule.dataset.params.num_threads}
+      transforms: ${datamodule.dataset.train_transforms}
+      hive_config:
+        namespace: ${datamodule.dataset.params.namespace}
+        table_name: imagenet_1k_shuffled_train
+        label_column: ${datamodule.dataset.params.label_column}
+        hive_column: ${datamodule.dataset.params.hive_column}
+        blob_column: ${datamodule.dataset.params.blob_column}
+        partition_column: ${datamodule.dataset.params.partition_column}
+        partition_column_values: ${datamodule.dataset.params.partition_column_values}
+  val:
+    _target_: classy_vision.fb.dataset.build_dataset
+    dataset_config:
+      name: ${datamodule.dataset.params.name}
+      split: val
+      batchsize_per_replica: ${datamodule.dataset.params.batchsize_per_replica}
+      num_samples: 50000
+      use_shuffle: false
+      num_threads: ${datamodule.dataset.params.num_threads}
+      transforms: ${datamodule.dataset.eval_transforms}
+      hive_config:
+        namespace: ${datamodule.dataset.params.namespace}
+        table_name: imagenet_1k_shuffled_val
+        label_column: ${datamodule.dataset.params.label_column}
+        hive_column: ${datamodule.dataset.params.hive_column}
+        blob_column: ${datamodule.dataset.params.blob_column}
+        partition_column: ${datamodule.dataset.params.partition_column}
+        partition_column_values: ${datamodule.dataset.params.partition_column_values}
+  test:
+    _target_: classy_vision.fb.dataset.build_dataset
+    dataset_config:
+      name: ${datamodule.dataset.params.name}
+      split: val
+      batchsize_per_replica: ${datamodule.dataset.params.batchsize_per_replica}
+      num_samples: 50000
+      use_shuffle: false
+      num_threads: ${datamodule.dataset.params.num_threads}
+      transforms: ${datamodule.dataset.eval_transforms}
+      hive_config:
+        namespace: ${datamodule.dataset.params.namespace}
+        table_name: imagenet_1k_shuffled_val
+        label_column: ${datamodule.dataset.params.label_column}
+        hive_column: ${datamodule.dataset.params.hive_column}
+        blob_column: ${datamodule.dataset.params.blob_column}
+        partition_column: ${datamodule.dataset.params.partition_column}
+        partition_column_values: ${datamodule.dataset.params.partition_column_values}

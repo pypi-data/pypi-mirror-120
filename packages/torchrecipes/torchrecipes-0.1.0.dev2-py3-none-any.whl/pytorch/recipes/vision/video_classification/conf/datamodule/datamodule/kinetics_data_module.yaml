@@ -1,0 +1,7 @@
+# @package _group_
+clip_sampling_type_map:
+  train: random
+  val: uniform
+  test: constant_clips_per_video
+data_path: manifold://fair_vision_data/tree/PySlowFast/kinetics/k400
+video_path_prefix: everstore://fair/cv/

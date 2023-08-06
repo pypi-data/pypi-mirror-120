@@ -1,0 +1,6 @@
+# @package _group_
+accuracy:
+  _target_: pytorch.recipes.graph.torchgraph.module.metrics.classification.Accuracy
+  labels:
+    - 0
+    - 1

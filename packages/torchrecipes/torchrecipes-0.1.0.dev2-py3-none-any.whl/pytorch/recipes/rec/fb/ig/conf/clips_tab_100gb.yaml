@@ -1,0 +1,1162 @@
+num_tasks: 6
+task_names:
+  - liked
+  - video_complete
+  - reshare_button_tap
+  - profile_visit
+  - skip
+  - clean_video_loop
+num_dense_embeddings: 1
+projection_dim: 128
+dense_embedding_dim: 128
+dense_projection_dim: 2048
+# dense arch params
+shared_mlp: [512, 2048]
+dense_gating_arch: [128]
+# attentionFM and deepFM params
+attention_fm_arch: [128]
+cat_embedding_arch: [128, 128]
+# dotcompresspp params
+dc_compress_dim: 30
+dc_weights_arch: [128, 512]
+dc_resnet_arch: [128, 512]
+# task arch params
+task_gating_arch: [512]
+task_mlp: [512, 128]
+# specailized module config
+specialized_arch:
+  compression:
+    embedding_num: 1
+    projection_dim: 128
+pooled_embedding_groups:
+  default:
+    - ENTITY_FEATURE ENTITY_TYPE(USER) KEY(AUTHOR_ID) TRAIT(USER_RID)
+    - ENTITY_FEATURE ENTITY_TYPE(USER) KEY(VIEWER_ID) TRAIT(XRAY_CLUSTERS_100K_30D_VIEWER)
+    - ENTITY_FEATURE ENTITY_TYPE(USER) KEY(AUTHOR_ID) TRAIT(XRAY_CLUSTERS_100K_30D_AUTHOR)
+    - ENTITY_FEATURE ENTITY_TYPE(USER_XRAY) KEY(VIEWER_ID) TRAIT(VIEWER_CLIPS_TOP_LIKED_XRAY2020_FCC_CONCEPTS_56D_IDF)
+    - ENTITY_FEATURE ENTITY_TYPE(USER_XRAY) KEY(VIEWER_ID) TRAIT(VIEWER_CLIPS_TOP_LIKED_XRAY2020_VIDEO_PHRASE_CONCEPTS_56D_IDF)
+    - ENTITY_FEATURE ENTITY_TYPE(USER_XRAY) KEY(VIEWER_ID) TRAIT(VIEWER_CLIPS_TOP_PROFILE_VISIT_XRAY2020_FCC_CONCEPTS_56D_IDF)
+    - EXPLORE_VIEWER_LAST_N_ENGAGED_AUTHORS VIEWER INF ONLINE { EVENT_TYPE=explore_home_click }
+    - EXPLORE_VIEWER_LAST_N_ENGAGED_AUTHORS VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_like }
+    - EXPLORE_VIEWER_LAST_N_ENGAGED_AUTHORS VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_brand_profile }
+    - EXPLORE_VIEWER_LAST_N_VPVD_10SEC_AUTHORS VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_vpvd_imp }
+    - EXPLORE_VIEWER_LAST_N_VIDEO_15SEC_AUTHORS VIEWER INF ONLINE { EVENT_TYPE=video_session_summary_delta }
+    - EXPLORE_VIEWER_LAST_N_VIDEO_LESS_THAN_3SEC_AUTHORS VIEWER INF ONLINE { EVENT_TYPE=video_session_summary_delta }
+    - EXPLORE_VIEWER_LAST_N_ENGAGED_AUTHOR_CLUSTER_V2 VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_impression }
+    - EXPLORE_VIEWER_LAST_N_ENGAGED_AUTHOR_CLUSTER_V2 VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_like }
+    - EXPLORE_VIEWER_LAST_N_ENGAGED_AUTHOR_CLUSTER_V2 VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_sub_impression }
+    - FEATURE_STORE CLIPS_XRAY_VIDEO_2020A_FCC_CONCEPTS GROUP(2669945043107329) NAME(concepts) ID(40251140) STATIC_CONTEXT( concept_group=fcc, version=xrayvideo2020a, vue_client_id=INSTAGRAM_FIREBALL ) DYNAMIC_CONTEXT ( video_id=MEDIA_FBID )
+    - FEATURE_STORE CLIPS_XRAY_VIDEO_2020A_VP_CONCEPTS GROUP(2669945043107329) NAME(concepts) ID(40251140) STATIC_CONTEXT( concept_group=vp, version=xrayvideo2020a, vue_client_id=INSTAGRAM_FIREBALL ) DYNAMIC_CONTEXT ( video_id=MEDIA_FBID )
+    - TAO_ENTITY_FEATURE ENTITY_TYPE(MEDIA) KEY(MEDIA_ID) TRAIT(CLIPS_AUDIO_ORIGINAL_SOUND_MEDIA_ID)
+    - VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_impression }
+    - VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR VIEWER INF ONLINE { EVENT_TYPE=direct_reshare_button_tap }
+    - VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR VIEWER INF ONLINE { EVENT_TYPE=instagram_clips_swipe_forward }
+    - VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_like }
+    - VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_vpvd_imp }
+    - VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR VIEWER INF ONLINE { EVENT_TYPE=instagram_clips_swipe_back }
+    - VIEWER_CLIPS_LAST_N_VIDEO_VIEW_15SEC_AUTHORS VIEWER INF ONLINE { EVENT_TYPE=video_session_summary_delta }
+    - VIEWER_CLIPS_LAST_N_EXPLORE_GRID_CLICKED_AUTHOR VIEWER INF ONLINE { EVENT_TYPE=explore_home_click }
+    - VIEWER_CLIPS_ONLINE_LAST_N_VIDEO_VIEW_WITH_SOUND_ON_LOOP_AUTHOR VIEWER INF ONLINE { EVENT_TYPE=video_session_summary_delta }
+    - VIEWER_CLIPS_ONLINE_LAST_N_VIDEO_VIEW_WITH_SOUND_ON_DOUBLE_LOOP_AUTHOR VIEWER INF ONLINE { EVENT_TYPE=video_session_summary_delta }
+    - VIEWER_CLIPS_LAST_N_SKIPPED_AUTHOR VIEWER INF ONLINE { EVENT_TYPE=video_session_summary_delta }
+    - VIEWER_CLIPS_LAST_N_LOOP_T6_AUTHORS VIEWER INF ONLINE { EVENT_TYPE=video_session_summary_delta }
+    - author_id_sparse
+    - REQUEST CLIENT_FEATURE EXPLORE_CLIENT_FEATURES TYPE(ID_LIST){ BARKEEP_KEY=looped_author_ids_in_session }
+    - REQUEST CLIENT_FEATURE EXPLORE_CLIENT_FEATURES TYPE(ID_LIST){ BARKEEP_KEY=skipped_author_ids_in_session }
+    - VIEWER_CLIPS_LAST_N_ENGAGED_MEDIA VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_vpvd_imp }
+    - VIEWER_CLIPS_LAST_N_ENGAGED_MEDIA VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_impression }
+    - VIEWER_CLIPS_LAST_N_ENGAGED_MEDIA VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_like }
+    - VIEWER_CLIPS_LAST_N_ENGAGED_MEDIA VIEWER INF ONLINE { EVENT_TYPE=instagram_clips_swipe_forward }
+    - VIEWER_CLIPS_LAST_N_ENGAGED_MEDIA VIEWER INF ONLINE { EVENT_TYPE=instagram_clips_swipe_back }
+    - VIEWER_CLIPS_LAST_N_EXPLORE_GRID_CLICKED_MEDIA VIEWER INF ONLINE { EVENT_TYPE=explore_home_click }
+    - VIEWER_CLIPS_LAST_N_VIDEO_VIEW_15SEC_MEDIA VIEWER INF ONLINE { EVENT_TYPE=video_session_summary_delta }
+    - VIEWER_CLIPS_LAST_N_FULL_EXPLORE_VIDEO_VIEW VIEWER INF ONLINE { EVENT_TYPE=video_session_summary_delta }
+    - VIEWER_CLIPS_LAST_N_SKIPPED_MEDIA VIEWER INF ONLINE { EVENT_TYPE=video_session_summary_delta }
+    - media_id_sparse
+    - REQUEST CLIENT_FEATURE EXPLORE_CLIENT_FEATURES TYPE(ID_LIST){ BARKEEP_KEY=looped_media_ids_in_session }
+    - REQUEST CLIENT_FEATURE EXPLORE_CLIENT_FEATURES TYPE(ID_LIST){ BARKEEP_KEY=skipped_media_ids_in_session }
+    - VIEWER_CLIPS_LAST_N_ENGAGED_MUSIC VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_like }
+    - VIEWER_CLIPS_LAST_N_ENGAGED_MUSIC VIEWER INF ONLINE { EVENT_TYPE=instagram_clips_swipe_forward }
+    - VIEWER_CLIPS_LAST_N_ENGAGED_MUSIC VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_vpvd_imp }
+    - VIEWER_CLIPS_LAST_N_ENGAGED_MUSIC VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_impression }
+    - VIEWER_CLIPS_LAST_N_ENGAGED_MUSIC VIEWER INF ONLINE { EVENT_TYPE=instagram_clips_swipe_back }
+    - VIEWER_CLIPS_LAST_N_15SEC_MUSIC_WITH_SOUND_ON VIEWER INF ONLINE { EVENT_TYPE=video_session_summary_delta }
+    - VIEWER_CLIPS_LAST_N_LESS_THAN_3SEC_MUSIC_WITH_SOUND_ON VIEWER INF ONLINE { EVENT_TYPE=video_session_summary_delta }
+    - VIEWER_CLIPS_LAST_N_LOOP_MUSIC_WITH_SOUND_ON VIEWER INF ONLINE { EVENT_TYPE=video_session_summary_delta }
+    - TAO_ENTITY_FEATURE ENTITY_TYPE(MEDIA) KEY(MEDIA_ID) TRAIT(CLIPS_AUDIO_ID_ID_LIST)
+    - VIEWER_CLIPS_LAST_N_SKIPPED_AUTHOR_CLUSTER_V1_REFRESH VIEWER INF ONLINE { EVENT_TYPE=video_session_summary_delta }
+    - mez_recommender_type_hashed_sparse
+  compression:
+    - VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR_CLUSTER_V2 VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_vpvd_imp }     # VIEWER_ID -> AUTHOR_CLUSTER
+    - VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR_CLUSTER_V2 VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_brand_profile }
+    - VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR_CLUSTER_V2 VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_impression }
+    - VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR_CLUSTER_V2 VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_like }
+    - VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR_CLUSTER_V2 VIEWER INF ONLINE { EVENT_TYPE=instagram_clips_viewer_entry }
+    - VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR_CLUSTER_V1_REFRESH VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_brand_profile }
+    - VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR_CLUSTER_V1_REFRESH VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_vpvd_imp }
+    - VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR_CLUSTER_V1_REFRESH VIEWER INF ONLINE { EVENT_TYPE=instagram_clips_viewer_entry }
+    - VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR_CLUSTER_V1_REFRESH VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_impression }
+    - VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR_CLUSTER_V1_REFRESH VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_like }
+    - ENTITY_FEATURE ENTITY_TYPE(IUU_USER) KEY(VIEWER_ID) TRAIT(IUU_FIT_MATCHA_REELS_LIKE_30D)    # VIEWER_ID -> IUU_FIT
+    - ENTITY_FEATURE ENTITY_TYPE(IUU_USER) KEY(VIEWER_ID) TRAIT(IUU_FIT_MATCHA_REELS_PROFILE_VISIT_30D)
+    - ENTITY_FEATURE ENTITY_TYPE(IUU_USER) KEY(VIEWER_ID) TRAIT(IUU_FIT_MATCHA_REELS_LOOP_7D)
+    - ENTITY_FEATURE ENTITY_TYPE(IUU_USER) KEY(VIEWER_ID) TRAIT(IUU_FIT_MATCHA_REELS_VIDEO_COMPLETE_30D)
+    - ENTITY_FEATURE ENTITY_TYPE(USER_XRAY) KEY(VIEWER_ID) TRAIT(VIEWER_CLIPS_TOP_RESHARE_XRAY2020_FCC_CONCEPTS_56D_IDF)    # VIEWER_ID -> USER_XRAY
+    - ENTITY_FEATURE ENTITY_TYPE(USER_XRAY) KEY(VIEWER_ID) TRAIT(VIEWER_CLIPS_TOP_PROFILE_VISIT_XRAY2020_VIDEO_PHRASE_CONCEPTS_56D_IDF)
+    - ENTITY_FEATURE ENTITY_TYPE(USER_XRAY) KEY(VIEWER_ID) TRAIT(VIEWER_CLIPS_TOP_RESHARE_XRAY2020_VIDEO_PHRASE_CONCEPTS_56D_IDF)
+    - ENTITY_FEATURE ENTITY_TYPE(USER) KEY(VIEWER_ID) TRAIT(VIEWER_EXPLORE_TOP_N_MTV_REC_AUTHORS)    # VIEWER_ID ->
+    - ENTITY_FEATURE ENTITY_TYPE(USER) KEY(VIEWER_ID) TRAIT(HYKI_TOP_ACCTS_FOLLOW_HOME_COUNTRY)
+    - ENTITY_FEATURE ENTITY_TYPE(USER) KEY(VIEWER_ID) TRAIT(HYKI_TOP_ACCTS_REELS_HOME_COUNTRY)
+    - ENTITY_FEATURE ENTITY_TYPE(USER) KEY(AUTHOR_ID) TRAIT(AUTHOR_CLUSTER_ID_LONG)    # AUTHOR_ID ->
+    - ENTITY_FEATURE ENTITY_TYPE(USER) KEY(AUTHOR_ID) TRAIT(AUTHOR_CLUSTER_ID_V1_REFRESH)
+    - ENTITY_FEATURE ENTITY_TYPE(USER) KEY(AUTHOR_ID) TRAIT(USER_HOME_PREDICTION_SPARSE_CITY)
+    - EXPLORE_VIEWER_LAST_N_ENGAGED_AUTHOR_CLUSTER_V2 VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_vpvd_imp }
+embedding_tables:
+  table_0:
+    num_embeddings: 10001
+    embedding_dim: 32
+    compute_kernel: BATCHED
+    location: HBM
+    weighted: NONE
+    pooling: SUM
+    sharding: TABLE_ROW_WISE
+    data_type: FP32
+    features:
+      - ENTITY_FEATURE ENTITY_TYPE(USER) KEY(AUTHOR_ID) TRAIT(AUTHOR_CLUSTER_ID_LONG)
+  table_1:
+    num_embeddings: 10001
+    embedding_dim: 32
+    compute_kernel: BATCHED
+    location: HBM
+    weighted: NONE
+    pooling: SUM
+    sharding: TABLE_ROW_WISE
+    data_type: FP32
+    features:
+      - VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR_CLUSTER_V1_REFRESH VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_brand_profile }
+  table_2:
+    num_embeddings: 10001
+    embedding_dim: 32
+    compute_kernel: BATCHED
+    location: HBM
+    weighted: NONE
+    pooling: SUM
+    sharding: TABLE_ROW_WISE
+    data_type: FP32
+    features:
+      - VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR_CLUSTER_V1_REFRESH VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_vpvd_imp }
+  table_3:
+    num_embeddings: 10001
+    embedding_dim: 32
+    compute_kernel: BATCHED
+    location: HBM
+    weighted: NONE
+    pooling: SUM
+    sharding: TABLE_ROW_WISE
+    data_type: FP32
+    features:
+      - VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR_CLUSTER_V1_REFRESH VIEWER INF ONLINE { EVENT_TYPE=instagram_clips_viewer_entry }
+  table_4:
+    num_embeddings: 10001
+    embedding_dim: 32
+    compute_kernel: BATCHED
+    location: HBM
+    weighted: NONE
+    pooling: SUM
+    sharding: TABLE_ROW_WISE
+    data_type: FP32
+    features:
+      - VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR_CLUSTER_V1_REFRESH VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_impression }
+  table_5:
+    num_embeddings: 10001
+    embedding_dim: 32
+    compute_kernel: BATCHED
+    location: HBM
+    weighted: NONE
+    pooling: SUM
+    sharding: TABLE_ROW_WISE
+    data_type: FP32
+    features:
+      - VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR_CLUSTER_V1_REFRESH VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_like }
+  table_6:
+    num_embeddings: 10001
+    embedding_dim: 128
+    compute_kernel: BATCHED
+    location: HBM
+    weighted: NONE
+    pooling: SUM
+    sharding: TABLE_ROW_WISE
+    data_type: FP32
+    features:
+      - VIEWER_CLIPS_LAST_N_SKIPPED_AUTHOR_CLUSTER_V1_REFRESH VIEWER INF ONLINE { EVENT_TYPE=video_session_summary_delta }
+  table_7:
+    num_embeddings: 10001
+    embedding_dim: 32
+    compute_kernel: BATCHED
+    location: HBM
+    weighted: NONE
+    pooling: SUM
+    sharding: TABLE_ROW_WISE
+    data_type: FP32
+    features:
+      - ENTITY_FEATURE ENTITY_TYPE(USER) KEY(AUTHOR_ID) TRAIT(AUTHOR_CLUSTER_ID_V1_REFRESH)
+  table_8:
+    num_embeddings: 10000000
+    embedding_dim: 128
+    compute_kernel: BATCHED
+    location: HBM
+    weighted: NONE
+    pooling: SUM
+    sharding: TABLE_ROW_WISE
+    data_type: FP32
+    features:
+      - VIEWER_CLIPS_LAST_N_ENGAGED_MUSIC VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_like }
+      - VIEWER_CLIPS_LAST_N_ENGAGED_MUSIC VIEWER INF ONLINE { EVENT_TYPE=instagram_clips_swipe_forward }
+      - VIEWER_CLIPS_LAST_N_ENGAGED_MUSIC VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_vpvd_imp }
+      - VIEWER_CLIPS_LAST_N_ENGAGED_MUSIC VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_impression }
+      - VIEWER_CLIPS_LAST_N_ENGAGED_MUSIC VIEWER INF ONLINE { EVENT_TYPE=instagram_clips_swipe_back }
+      - VIEWER_CLIPS_LAST_N_15SEC_MUSIC_WITH_SOUND_ON VIEWER INF ONLINE { EVENT_TYPE=video_session_summary_delta }
+      - VIEWER_CLIPS_LAST_N_LESS_THAN_3SEC_MUSIC_WITH_SOUND_ON VIEWER INF ONLINE { EVENT_TYPE=video_session_summary_delta }
+      - VIEWER_CLIPS_LAST_N_LOOP_MUSIC_WITH_SOUND_ON VIEWER INF ONLINE { EVENT_TYPE=video_session_summary_delta }
+      - TAO_ENTITY_FEATURE ENTITY_TYPE(MEDIA) KEY(MEDIA_ID) TRAIT(CLIPS_AUDIO_ID_ID_LIST)
+  table_17:
+    num_embeddings: 10000000
+    embedding_dim: 128
+    compute_kernel: BATCHED
+    location: HBM
+    weighted: NONE
+    pooling: SUM
+    sharding: TABLE_ROW_WISE
+    data_type: FP32
+    features:
+      - TAO_ENTITY_FEATURE ENTITY_TYPE(MEDIA) KEY(MEDIA_ID) TRAIT(CLIPS_AUDIO_ORIGINAL_SOUND_MEDIA_ID)
+  table_18:
+    num_embeddings: 10001
+    embedding_dim: 32
+    compute_kernel: BATCHED
+    location: HBM
+    weighted: NONE
+    pooling: SUM
+    sharding: TABLE_ROW_WISE
+    data_type: FP32
+    features:
+      - EXPLORE_VIEWER_LAST_N_ENGAGED_AUTHOR_CLUSTER_V2 VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_vpvd_imp }
+  table_19:
+    num_embeddings: 10001
+    embedding_dim: 128
+    compute_kernel: BATCHED
+    location: HBM
+    weighted: NONE
+    pooling: SUM
+    sharding: TABLE_ROW_WISE
+    data_type: FP32
+    features:
+      - EXPLORE_VIEWER_LAST_N_ENGAGED_AUTHOR_CLUSTER_V2 VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_sub_impression }
+  table_20:
+    num_embeddings: 10001
+    embedding_dim: 128
+    compute_kernel: BATCHED
+    location: HBM
+    weighted: NONE
+    pooling: SUM
+    sharding: TABLE_ROW_WISE
+    data_type: FP32
+    features:
+      - EXPLORE_VIEWER_LAST_N_ENGAGED_AUTHOR_CLUSTER_V2 VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_like }
+  table_21:
+    num_embeddings: 10001
+    embedding_dim: 128
+    compute_kernel: BATCHED
+    location: HBM
+    weighted: NONE
+    pooling: SUM
+    sharding: TABLE_ROW_WISE
+    data_type: FP32
+    features:
+      - EXPLORE_VIEWER_LAST_N_ENGAGED_AUTHOR_CLUSTER_V2 VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_impression }
+  table_22:
+    num_embeddings: 10001
+    embedding_dim: 32
+    compute_kernel: BATCHED
+    location: HBM
+    weighted: NONE
+    pooling: SUM
+    sharding: TABLE_ROW_WISE
+    data_type: FP32
+    features:
+      - VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR_CLUSTER_V2 VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_vpvd_imp }
+  table_23:
+    num_embeddings: 10001
+    embedding_dim: 32
+    compute_kernel: BATCHED
+    location: HBM
+    weighted: NONE
+    pooling: SUM
+    sharding: TABLE_ROW_WISE
+    data_type: FP32
+    features:
+      - VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR_CLUSTER_V2 VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_brand_profile }
+  table_24:
+    num_embeddings: 10001
+    embedding_dim: 32
+    compute_kernel: BATCHED
+    location: HBM
+    weighted: NONE
+    pooling: SUM
+    sharding: TABLE_ROW_WISE
+    data_type: FP32
+    features:
+      - VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR_CLUSTER_V2 VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_impression }
+  table_25:
+    num_embeddings: 10001
+    embedding_dim: 32
+    compute_kernel: BATCHED
+    location: HBM
+    weighted: NONE
+    pooling: SUM
+    sharding: TABLE_ROW_WISE
+    data_type: FP32
+    features:
+      - VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR_CLUSTER_V2 VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_like }
+  table_26:
+    num_embeddings: 10001
+    embedding_dim: 32
+    compute_kernel: BATCHED
+    location: HBM
+    weighted: NONE
+    pooling: SUM
+    sharding: TABLE_ROW_WISE
+    data_type: FP32
+    features:
+      - VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR_CLUSTER_V2 VIEWER INF ONLINE { EVENT_TYPE=instagram_clips_viewer_entry }
+  table_27:
+    num_embeddings: 10000000
+    embedding_dim: 32
+    compute_kernel: BATCHED
+    location: HBM
+    weighted: SCORE
+    pooling: SUM
+    sharding: TABLE_ROW_WISE
+    data_type: FP32
+    features:
+      - ENTITY_FEATURE ENTITY_TYPE(USER) KEY(VIEWER_ID) TRAIT(VIEWER_EXPLORE_TOP_N_MTV_REC_AUTHORS)
+  table_28:
+    num_embeddings: 10000000
+    embedding_dim: 128
+    compute_kernel: BATCHED
+    location: HBM
+    weighted: NONE
+    pooling: SUM
+    sharding: TABLE_ROW_WISE
+    data_type: FP32
+    features:
+      - EXPLORE_VIEWER_LAST_N_ENGAGED_AUTHORS VIEWER INF ONLINE { EVENT_TYPE=explore_home_click }
+      - EXPLORE_VIEWER_LAST_N_ENGAGED_AUTHORS VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_like }
+      - EXPLORE_VIEWER_LAST_N_ENGAGED_AUTHORS VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_brand_profile }
+      - EXPLORE_VIEWER_LAST_N_VPVD_10SEC_AUTHORS VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_vpvd_imp }
+      - EXPLORE_VIEWER_LAST_N_VIDEO_15SEC_AUTHORS VIEWER INF ONLINE { EVENT_TYPE=video_session_summary_delta }
+      - EXPLORE_VIEWER_LAST_N_VIDEO_LESS_THAN_3SEC_AUTHORS VIEWER INF ONLINE { EVENT_TYPE=video_session_summary_delta }
+  table_34:
+    num_embeddings: 10000000
+    embedding_dim: 128
+    compute_kernel: BATCHED
+    location: HBM
+    weighted: NONE
+    pooling: SUM
+    sharding: TABLE_ROW_WISE
+    data_type: FP32
+    features:
+      - VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_impression }
+      - VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR VIEWER INF ONLINE { EVENT_TYPE=direct_reshare_button_tap }
+      - VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR VIEWER INF ONLINE { EVENT_TYPE=instagram_clips_swipe_forward }
+      - VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_like }
+      - VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_vpvd_imp }
+      - VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR VIEWER INF ONLINE { EVENT_TYPE=instagram_clips_swipe_back }
+      - VIEWER_CLIPS_LAST_N_VIDEO_VIEW_15SEC_AUTHORS VIEWER INF ONLINE { EVENT_TYPE=video_session_summary_delta }
+      - VIEWER_CLIPS_LAST_N_EXPLORE_GRID_CLICKED_AUTHOR VIEWER INF ONLINE { EVENT_TYPE=explore_home_click }
+      - VIEWER_CLIPS_ONLINE_LAST_N_VIDEO_VIEW_WITH_SOUND_ON_LOOP_AUTHOR VIEWER INF ONLINE { EVENT_TYPE=video_session_summary_delta }
+      - VIEWER_CLIPS_ONLINE_LAST_N_VIDEO_VIEW_WITH_SOUND_ON_DOUBLE_LOOP_AUTHOR VIEWER INF ONLINE { EVENT_TYPE=video_session_summary_delta }
+      - VIEWER_CLIPS_LAST_N_SKIPPED_AUTHOR VIEWER INF ONLINE { EVENT_TYPE=video_session_summary_delta }
+      - VIEWER_CLIPS_LAST_N_LOOP_T6_AUTHORS VIEWER INF ONLINE { EVENT_TYPE=video_session_summary_delta }
+      - author_id_sparse
+      - REQUEST CLIENT_FEATURE EXPLORE_CLIENT_FEATURES TYPE(ID_LIST){ BARKEEP_KEY=looped_author_ids_in_session }
+      - REQUEST CLIENT_FEATURE EXPLORE_CLIENT_FEATURES TYPE(ID_LIST){ BARKEEP_KEY=skipped_author_ids_in_session }
+  table_47:
+    num_embeddings: 10000000
+    embedding_dim: 128
+    compute_kernel: BATCHED
+    location: HBM
+    weighted: NONE
+    pooling: SUM
+    sharding: TABLE_ROW_WISE
+    data_type: FP32
+    features:
+      - ENTITY_FEATURE ENTITY_TYPE(USER) KEY(AUTHOR_ID) TRAIT(USER_RID)
+  table_48:
+    num_embeddings: 10000000
+    embedding_dim: 32
+    compute_kernel: BATCHED
+    location: HBM
+    weighted: NONE
+    pooling: SUM
+    sharding: TABLE_ROW_WISE
+    data_type: FP32
+    features:
+      - ENTITY_FEATURE ENTITY_TYPE(USER) KEY(VIEWER_ID) TRAIT(HYKI_TOP_ACCTS_FOLLOW_HOME_COUNTRY)
+      - ENTITY_FEATURE ENTITY_TYPE(USER) KEY(VIEWER_ID) TRAIT(HYKI_TOP_ACCTS_REELS_HOME_COUNTRY)
+  table_50:
+    num_embeddings: 10000000
+    embedding_dim: 128
+    compute_kernel: BATCHED
+    location: HBM
+    weighted: NONE
+    pooling: SUM
+    sharding: TABLE_ROW_WISE
+    data_type: FP32
+    features:
+      - VIEWER_CLIPS_LAST_N_ENGAGED_MEDIA VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_vpvd_imp }
+      - VIEWER_CLIPS_LAST_N_ENGAGED_MEDIA VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_impression }
+      - VIEWER_CLIPS_LAST_N_ENGAGED_MEDIA VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_like }
+      - VIEWER_CLIPS_LAST_N_ENGAGED_MEDIA VIEWER INF ONLINE { EVENT_TYPE=instagram_clips_swipe_forward }
+      - VIEWER_CLIPS_LAST_N_ENGAGED_MEDIA VIEWER INF ONLINE { EVENT_TYPE=instagram_clips_swipe_back }
+      - VIEWER_CLIPS_LAST_N_EXPLORE_GRID_CLICKED_MEDIA VIEWER INF ONLINE { EVENT_TYPE=explore_home_click }
+      - VIEWER_CLIPS_LAST_N_VIDEO_VIEW_15SEC_MEDIA VIEWER INF ONLINE { EVENT_TYPE=video_session_summary_delta }
+      - VIEWER_CLIPS_LAST_N_FULL_EXPLORE_VIDEO_VIEW VIEWER INF ONLINE { EVENT_TYPE=video_session_summary_delta }
+      - VIEWER_CLIPS_LAST_N_SKIPPED_MEDIA VIEWER INF ONLINE { EVENT_TYPE=video_session_summary_delta }
+      - media_id_sparse
+      - REQUEST CLIENT_FEATURE EXPLORE_CLIENT_FEATURES TYPE(ID_LIST){ BARKEEP_KEY=looped_media_ids_in_session }
+      - REQUEST CLIENT_FEATURE EXPLORE_CLIENT_FEATURES TYPE(ID_LIST){ BARKEEP_KEY=skipped_media_ids_in_session }
+  table_60:
+    num_embeddings: 100
+    embedding_dim: 128
+    compute_kernel: BATCHED
+    location: HBM
+    weighted: NONE
+    pooling: SUM
+    sharding: TABLE_ROW_WISE
+    data_type: FP32
+    features:
+      - mez_recommender_type_hashed_sparse
+  table_61:
+    num_embeddings: 1000000
+    embedding_dim: 128
+    compute_kernel: BATCHED
+    location: HBM
+    weighted: NONE
+    pooling: SUM
+    sharding: TABLE_ROW_WISE
+    data_type: FP32
+    features:
+      - ENTITY_FEATURE ENTITY_TYPE(USER) KEY(VIEWER_ID) TRAIT(XRAY_CLUSTERS_100K_30D_VIEWER)
+      - ENTITY_FEATURE ENTITY_TYPE(USER) KEY(AUTHOR_ID) TRAIT(XRAY_CLUSTERS_100K_30D_AUTHOR)
+  table_63:
+    num_embeddings: 100000
+    embedding_dim: 32
+    compute_kernel: BATCHED
+    location: HBM
+    weighted: SCORE
+    pooling: SUM
+    sharding: TABLE_ROW_WISE
+    data_type: FP32
+    features:
+      - ENTITY_FEATURE ENTITY_TYPE(IUU_USER) KEY(VIEWER_ID) TRAIT(IUU_FIT_MATCHA_REELS_LIKE_30D)
+      - ENTITY_FEATURE ENTITY_TYPE(IUU_USER) KEY(VIEWER_ID) TRAIT(IUU_FIT_MATCHA_REELS_PROFILE_VISIT_30D)
+      - ENTITY_FEATURE ENTITY_TYPE(IUU_USER) KEY(VIEWER_ID) TRAIT(IUU_FIT_MATCHA_REELS_LOOP_7D)
+      - ENTITY_FEATURE ENTITY_TYPE(IUU_USER) KEY(VIEWER_ID) TRAIT(IUU_FIT_MATCHA_REELS_VIDEO_COMPLETE_30D)
+  table_67:
+    num_embeddings: 10000
+    embedding_dim: 32
+    compute_kernel: BATCHED
+    location: HBM
+    weighted: NONE
+    pooling: SUM
+    sharding: TABLE_ROW_WISE
+    data_type: FP32
+    features:
+      - ENTITY_FEATURE ENTITY_TYPE(USER) KEY(AUTHOR_ID) TRAIT(USER_HOME_PREDICTION_SPARSE_CITY)
+  table_68:
+    num_embeddings: 100000
+    embedding_dim: 128
+    compute_kernel: BATCHED
+    location: HBM
+    weighted: SCORE
+    pooling: SUM
+    sharding: TABLE_ROW_WISE
+    data_type: FP32
+    features:
+      - FEATURE_STORE CLIPS_XRAY_VIDEO_2020A_FCC_CONCEPTS GROUP(2669945043107329) NAME(concepts) ID(40251140) STATIC_CONTEXT( concept_group=fcc, version=xrayvideo2020a, vue_client_id=INSTAGRAM_FIREBALL ) DYNAMIC_CONTEXT ( video_id=MEDIA_FBID )
+  table_69:
+    num_embeddings: 100000
+    embedding_dim: 128
+    compute_kernel: BATCHED
+    location: HBM
+    weighted: NONE
+    pooling: SUM
+    sharding: TABLE_ROW_WISE
+    data_type: FP32
+    features:
+      - ENTITY_FEATURE ENTITY_TYPE(USER_XRAY) KEY(VIEWER_ID) TRAIT(VIEWER_CLIPS_TOP_PROFILE_VISIT_XRAY2020_FCC_CONCEPTS_56D_IDF)
+  table_70:
+    num_embeddings: 100000
+    embedding_dim: 32
+    compute_kernel: BATCHED
+    location: HBM
+    weighted: NONE
+    pooling: SUM
+    sharding: TABLE_ROW_WISE
+    data_type: FP32
+    features:
+      - ENTITY_FEATURE ENTITY_TYPE(USER_XRAY) KEY(VIEWER_ID) TRAIT(VIEWER_CLIPS_TOP_RESHARE_XRAY2020_FCC_CONCEPTS_56D_IDF)
+  table_71:
+    num_embeddings: 100000
+    embedding_dim: 128
+    compute_kernel: BATCHED
+    location: HBM
+    weighted: NONE
+    pooling: SUM
+    sharding: TABLE_ROW_WISE
+    data_type: FP32
+    features:
+      - ENTITY_FEATURE ENTITY_TYPE(USER_XRAY) KEY(VIEWER_ID) TRAIT(VIEWER_CLIPS_TOP_LIKED_XRAY2020_FCC_CONCEPTS_56D_IDF)
+  table_72:
+    num_embeddings: 100000
+    embedding_dim: 128
+    compute_kernel: BATCHED
+    location: HBM
+    weighted: SCORE
+    pooling: SUM
+    sharding: TABLE_ROW_WISE
+    data_type: FP32
+    features:
+      - FEATURE_STORE CLIPS_XRAY_VIDEO_2020A_VP_CONCEPTS GROUP(2669945043107329) NAME(concepts) ID(40251140) STATIC_CONTEXT( concept_group=vp, version=xrayvideo2020a, vue_client_id=INSTAGRAM_FIREBALL ) DYNAMIC_CONTEXT ( video_id=MEDIA_FBID )
+  table_73:
+    num_embeddings: 100000
+    embedding_dim: 32
+    compute_kernel: BATCHED
+    location: HBM
+    weighted: NONE
+    pooling: SUM
+    sharding: TABLE_ROW_WISE
+    data_type: FP32
+    features:
+      - ENTITY_FEATURE ENTITY_TYPE(USER_XRAY) KEY(VIEWER_ID) TRAIT(VIEWER_CLIPS_TOP_PROFILE_VISIT_XRAY2020_VIDEO_PHRASE_CONCEPTS_56D_IDF)
+  table_74:
+    num_embeddings: 100000
+    embedding_dim: 128
+    compute_kernel: BATCHED
+    location: HBM
+    weighted: NONE
+    pooling: SUM
+    sharding: TABLE_ROW_WISE
+    data_type: FP32
+    features:
+      - ENTITY_FEATURE ENTITY_TYPE(USER_XRAY) KEY(VIEWER_ID) TRAIT(VIEWER_CLIPS_TOP_LIKED_XRAY2020_VIDEO_PHRASE_CONCEPTS_56D_IDF)
+  table_75:
+    num_embeddings: 100000
+    embedding_dim: 32
+    compute_kernel: BATCHED
+    location: HBM
+    weighted: NONE
+    pooling: SUM
+    sharding: TABLE_ROW_WISE
+    data_type: FP32
+    features:
+      - ENTITY_FEATURE ENTITY_TYPE(USER_XRAY) KEY(VIEWER_ID) TRAIT(VIEWER_CLIPS_TOP_RESHARE_XRAY2020_VIDEO_PHRASE_CONCEPTS_56D_IDF)
+inputs:
+  id_list_features:
+    ENTITY_FEATURE ENTITY_TYPE(USER) KEY(AUTHOR_ID) TRAIT(AUTHOR_CLUSTER_ID_LONG):
+      hash_size: 10001
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 0.9896068057942303
+      pooling_factor_std: 0.10141585536774168
+      unique_n: 0.0
+    ENTITY_FEATURE ENTITY_TYPE(USER) KEY(AUTHOR_ID) TRAIT(AUTHOR_CLUSTER_ID_V1_REFRESH):
+      hash_size: 10001
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 0.9895369668590239
+      pooling_factor_std: 0.10175243524587681
+      unique_n: 0.0
+    ENTITY_FEATURE ENTITY_TYPE(USER) KEY(AUTHOR_ID) TRAIT(USER_HOME_PREDICTION_SPARSE_CITY):
+      hash_size: 10000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 0.9988653674423491
+      pooling_factor_std: 0.03366519221109558
+      unique_n: 0.0
+    ENTITY_FEATURE ENTITY_TYPE(USER) KEY(AUTHOR_ID) TRAIT(USER_RID):
+      hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 0.9990100481018168
+      pooling_factor_std: 0.0314479235152733
+      unique_n: 0.0
+    ENTITY_FEATURE ENTITY_TYPE(USER) KEY(AUTHOR_ID) TRAIT(XRAY_CLUSTERS_100K_30D_AUTHOR):
+      hash_size: 1000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 88.45453850521666
+      pooling_factor_std: 22.306648967350768
+      unique_n: 0.0
+    ENTITY_FEATURE ENTITY_TYPE(USER) KEY(VIEWER_ID) TRAIT(HYKI_TOP_ACCTS_FOLLOW_HOME_COUNTRY):
+      hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 19.739409020528946
+      pooling_factor_std: 2.267861245963933
+      unique_n: 0.0
+    ENTITY_FEATURE ENTITY_TYPE(USER) KEY(VIEWER_ID) TRAIT(HYKI_TOP_ACCTS_REELS_HOME_COUNTRY):
+      hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 19.739360693586676
+      pooling_factor_std: 2.267937289215203
+      unique_n: 0.0
+    ENTITY_FEATURE ENTITY_TYPE(USER) KEY(VIEWER_ID) TRAIT(XRAY_CLUSTERS_100K_30D_VIEWER):
+      hash_size: 1000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 88.57642715814066
+      pooling_factor_std: 27.553677464859078
+      unique_n: 0.0
+    ENTITY_FEATURE ENTITY_TYPE(USER_XRAY) KEY(VIEWER_ID) TRAIT(VIEWER_CLIPS_TOP_LIKED_XRAY2020_FCC_CONCEPTS_56D_IDF):
+      hash_size: 100000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 86.32614862786004
+      pooling_factor_std: 28.77675499831794
+      unique_n: 0.0
+    ENTITY_FEATURE ENTITY_TYPE(USER_XRAY) KEY(VIEWER_ID) TRAIT(VIEWER_CLIPS_TOP_LIKED_XRAY2020_VIDEO_PHRASE_CONCEPTS_56D_IDF):
+      hash_size: 100000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 91.8755445160677
+      pooling_factor_std: 25.19622210221821
+      unique_n: 0.0
+    ENTITY_FEATURE ENTITY_TYPE(USER_XRAY) KEY(VIEWER_ID) TRAIT(VIEWER_CLIPS_TOP_PROFILE_VISIT_XRAY2020_FCC_CONCEPTS_56D_IDF):
+      hash_size: 100000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 84.04636004572549
+      pooling_factor_std: 30.76672738387057
+      unique_n: 0.0
+    ? ENTITY_FEATURE ENTITY_TYPE(USER_XRAY) KEY(VIEWER_ID) TRAIT(VIEWER_CLIPS_TOP_PROFILE_VISIT_XRAY2020_VIDEO_PHRASE_CONCEPTS_56D_IDF)
+    : hash_size: 100000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 89.57706501374517
+      pooling_factor_std: 28.173985142534384
+      unique_n: 0.0
+    ENTITY_FEATURE ENTITY_TYPE(USER_XRAY) KEY(VIEWER_ID) TRAIT(VIEWER_CLIPS_TOP_RESHARE_XRAY2020_FCC_CONCEPTS_56D_IDF):
+      hash_size: 100000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 58.14852780425087
+      pooling_factor_std: 42.47507350090233
+      unique_n: 0.0
+    ? ENTITY_FEATURE ENTITY_TYPE(USER_XRAY) KEY(VIEWER_ID) TRAIT(VIEWER_CLIPS_TOP_RESHARE_XRAY2020_VIDEO_PHRASE_CONCEPTS_56D_IDF)
+    : hash_size: 100000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 68.5480417332663
+      pooling_factor_std: 43.65984400288721
+      unique_n: 0.0
+    EXPLORE_VIEWER_LAST_N_ENGAGED_AUTHORS VIEWER INF ONLINE { EVENT_TYPE=explore_home_click }:
+      hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 69.0999910450076
+      pooling_factor_std: 40.38874659871062
+      unique_n: 0.0
+    EXPLORE_VIEWER_LAST_N_ENGAGED_AUTHORS VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_brand_profile }:
+      hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 35.81304897480345
+      pooling_factor_std: 34.143837549621544
+      unique_n: 0.0
+    EXPLORE_VIEWER_LAST_N_ENGAGED_AUTHORS VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_like }:
+      hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 45.597269277622274
+      pooling_factor_std: 41.97666141971333
+      unique_n: 0.0
+    EXPLORE_VIEWER_LAST_N_ENGAGED_AUTHOR_CLUSTER_V2 VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_impression }:
+      hash_size: 10001
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 94.60342861145088
+      pooling_factor_std: 20.314985986007212
+      unique_n: 0.0
+    EXPLORE_VIEWER_LAST_N_ENGAGED_AUTHOR_CLUSTER_V2 VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_like }:
+      hash_size: 10001
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 34.89518596617614
+      pooling_factor_std: 40.60087695533599
+      unique_n: 0.0
+    EXPLORE_VIEWER_LAST_N_ENGAGED_AUTHOR_CLUSTER_V2 VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_sub_impression }:
+      hash_size: 10001
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 54.38142534462963
+      pooling_factor_std: 39.427605552187366
+      unique_n: 0.0
+    EXPLORE_VIEWER_LAST_N_ENGAGED_AUTHOR_CLUSTER_V2 VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_vpvd_imp }:
+      hash_size: 10001
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 94.66914464814134
+      pooling_factor_std: 20.321825634424073
+      unique_n: 0.0
+    EXPLORE_VIEWER_LAST_N_VIDEO_15SEC_AUTHORS VIEWER INF ONLINE { EVENT_TYPE=video_session_summary_delta }:
+      hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 93.13224902883357
+      pooling_factor_std: 21.7846031551187
+      unique_n: 0.0
+    EXPLORE_VIEWER_LAST_N_VIDEO_LESS_THAN_3SEC_AUTHORS VIEWER INF ONLINE { EVENT_TYPE=video_session_summary_delta }:
+      hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 97.48942755586239
+      pooling_factor_std: 13.268026164418167
+      unique_n: 0.0
+    EXPLORE_VIEWER_LAST_N_VPVD_10SEC_AUTHORS VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_vpvd_imp }:
+      hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 95.93274680634454
+      pooling_factor_std: 17.282907430762346
+      unique_n: 0.0
+    TAO_ENTITY_FEATURE ENTITY_TYPE(MEDIA) KEY(MEDIA_ID) TRAIT(CLIPS_AUDIO_ID_ID_LIST):
+      hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 0.9965485758310259
+      pooling_factor_std: 0.05864735151889075
+      unique_n: 0.0
+    TAO_ENTITY_FEATURE ENTITY_TYPE(MEDIA) KEY(MEDIA_ID) TRAIT(CLIPS_AUDIO_ORIGINAL_SOUND_MEDIA_ID):
+      hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 0.9965485758310259
+      pooling_factor_std: 0.05864735151889075
+      unique_n: 0.0
+    VIEWER_CLIPS_LAST_N_15SEC_MUSIC_WITH_SOUND_ON VIEWER INF ONLINE { EVENT_TYPE=video_session_summary_delta }:
+      hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 90.7446666516583
+      pooling_factor_std: 24.664321614663567
+      unique_n: 0.0
+    VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR VIEWER INF ONLINE { EVENT_TYPE=direct_reshare_button_tap }:
+      hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 18.99833136973863
+      pooling_factor_std: 29.186820431723557
+      unique_n: 0.0
+    VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR VIEWER INF ONLINE { EVENT_TYPE=instagram_clips_swipe_back }:
+      hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 75.00363462630416
+      pooling_factor_std: 34.948319913415524
+      unique_n: 0.0
+    VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR VIEWER INF ONLINE { EVENT_TYPE=instagram_clips_swipe_forward }:
+      hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 96.58138812387907
+      pooling_factor_std: 16.391396878111955
+      unique_n: 0.0
+    VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_impression }:
+      hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 97.33076660238083
+      pooling_factor_std: 14.051042946407177
+      unique_n: 0.0
+    VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_like }:
+      hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 42.13281144237913
+      pooling_factor_std: 42.057167695169305
+      unique_n: 0.0
+    VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_vpvd_imp }:
+      hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 97.3739766920058
+      pooling_factor_std: 14.047729515219709
+      unique_n: 0.0
+    VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR_CLUSTER_V1_REFRESH VIEWER INF ONLINE { EVENT_TYPE=instagram_clips_viewer_entry }:
+      hash_size: 10001
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 78.34952996295435
+      pooling_factor_std: 32.413140070191446
+      unique_n: 0.0
+    VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR_CLUSTER_V1_REFRESH VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_brand_profile }:
+      hash_size: 10001
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 27.625686520235032
+      pooling_factor_std: 30.236946222819473
+      unique_n: 0.0
+    VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR_CLUSTER_V1_REFRESH VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_impression }:
+      hash_size: 10001
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 97.25616711316559
+      pooling_factor_std: 14.223669191203843
+      unique_n: 0.0
+    VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR_CLUSTER_V1_REFRESH VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_like }:
+      hash_size: 10001
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 41.42249854293769
+      pooling_factor_std: 41.98353556835773
+      unique_n: 0.0
+    VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR_CLUSTER_V1_REFRESH VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_vpvd_imp }:
+      hash_size: 10001
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 97.30200686882937
+      pooling_factor_std: 14.220731823162565
+      unique_n: 0.0
+    VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR_CLUSTER_V2 VIEWER INF ONLINE { EVENT_TYPE=instagram_clips_viewer_entry }:
+      hash_size: 10001
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 72.61919179942818
+      pooling_factor_std: 34.51590807613404
+      unique_n: 0.0
+    VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR_CLUSTER_V2 VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_brand_profile }:
+      hash_size: 10001
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 21.822602300782687
+      pooling_factor_std: 26.098830302076813
+      unique_n: 0.0
+    VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR_CLUSTER_V2 VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_impression }:
+      hash_size: 10001
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 96.72283027787992
+      pooling_factor_std: 15.449102308999018
+      unique_n: 0.0
+    VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR_CLUSTER_V2 VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_like }:
+      hash_size: 10001
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 37.47451634286114
+      pooling_factor_std: 41.22681945776932
+      unique_n: 0.0
+    VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR_CLUSTER_V2 VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_vpvd_imp }:
+      hash_size: 10001
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 96.80003001673433
+      pooling_factor_std: 15.404689462437409
+      unique_n: 0.0
+    VIEWER_CLIPS_LAST_N_ENGAGED_MEDIA VIEWER INF ONLINE { EVENT_TYPE=instagram_clips_swipe_back }:
+      hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 75.00355328095414
+      pooling_factor_std: 34.94853591886297
+      unique_n: 0.0
+    VIEWER_CLIPS_LAST_N_ENGAGED_MEDIA VIEWER INF ONLINE { EVENT_TYPE=instagram_clips_swipe_forward }:
+      hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 96.58222469026482
+      pooling_factor_std: 16.38877956370749
+      unique_n: 0.0
+    VIEWER_CLIPS_LAST_N_ENGAGED_MEDIA VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_impression }:
+      hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 97.33139485263034
+      pooling_factor_std: 14.048192480071554
+      unique_n: 0.0
+    VIEWER_CLIPS_LAST_N_ENGAGED_MEDIA VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_like }:
+      hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 42.132530485745804
+      pooling_factor_std: 42.05710293887278
+      unique_n: 0.0
+    VIEWER_CLIPS_LAST_N_ENGAGED_MEDIA VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_vpvd_imp }:
+      hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 97.37477163518662
+      pooling_factor_std: 14.045337841935638
+      unique_n: 0.0
+    VIEWER_CLIPS_LAST_N_ENGAGED_MUSIC VIEWER INF ONLINE { EVENT_TYPE=instagram_clips_swipe_back }:
+      hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 74.88910897825538
+      pooling_factor_std: 34.99079291009808
+      unique_n: 0.0
+    VIEWER_CLIPS_LAST_N_ENGAGED_MUSIC VIEWER INF ONLINE { EVENT_TYPE=instagram_clips_swipe_forward }:
+      hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 96.56617724381343
+      pooling_factor_std: 16.424381401095914
+      unique_n: 0.0
+    VIEWER_CLIPS_LAST_N_ENGAGED_MUSIC VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_impression }:
+      hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 97.31552560552508
+      pooling_factor_std: 14.087224823079504
+      unique_n: 0.0
+    VIEWER_CLIPS_LAST_N_ENGAGED_MUSIC VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_like }:
+      hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 42.05309430007229
+      pooling_factor_std: 42.04822889638603
+      unique_n: 0.0
+    VIEWER_CLIPS_LAST_N_ENGAGED_MUSIC VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_vpvd_imp }:
+      hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 97.35857040299967
+      pooling_factor_std: 14.086822748620172
+      unique_n: 0.0
+    VIEWER_CLIPS_LAST_N_EXPLORE_GRID_CLICKED_AUTHOR VIEWER INF ONLINE { EVENT_TYPE=explore_home_click }:
+      hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 36.37034286614788
+      pooling_factor_std: 39.540449403171245
+      unique_n: 0.0
+    VIEWER_CLIPS_LAST_N_EXPLORE_GRID_CLICKED_MEDIA VIEWER INF ONLINE { EVENT_TYPE=explore_home_click }:
+      hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 36.37038208801407
+      pooling_factor_std: 39.54053994016632
+      unique_n: 0.0
+    VIEWER_CLIPS_LAST_N_FULL_EXPLORE_VIDEO_VIEW VIEWER INF ONLINE { EVENT_TYPE=video_session_summary_delta }:
+      hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 48.529512503220545
+      pooling_factor_std: 42.753880024754245
+      unique_n: 0.0
+    VIEWER_CLIPS_LAST_N_LESS_THAN_3SEC_MUSIC_WITH_SOUND_ON VIEWER INF ONLINE { EVENT_TYPE=video_session_summary_delta }:
+      hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 41.235747429191775
+      pooling_factor_std: 40.64161716968141
+      unique_n: 0.0
+    VIEWER_CLIPS_LAST_N_LOOP_MUSIC_WITH_SOUND_ON VIEWER INF ONLINE { EVENT_TYPE=video_session_summary_delta }:
+      hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 62.65505839505524
+      pooling_factor_std: 36.73078679851162
+      unique_n: 0.0
+    VIEWER_CLIPS_LAST_N_LOOP_T6_AUTHORS VIEWER INF ONLINE { EVENT_TYPE=video_session_summary_delta }:
+      hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 92.06435517801174
+      pooling_factor_std: 24.09264942475558
+      unique_n: 0.0
+    VIEWER_CLIPS_LAST_N_SKIPPED_AUTHOR VIEWER INF ONLINE { EVENT_TYPE=video_session_summary_delta }:
+      hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 94.16370156362171
+      pooling_factor_std: 20.079043901548463
+      unique_n: 0.0
+    VIEWER_CLIPS_LAST_N_SKIPPED_AUTHOR_CLUSTER_V1_REFRESH VIEWER INF ONLINE { EVENT_TYPE=video_session_summary_delta }:
+      hash_size: 10001
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 93.83894000905505
+      pooling_factor_std: 20.537151673976055
+      unique_n: 0.0
+    VIEWER_CLIPS_LAST_N_SKIPPED_MEDIA VIEWER INF ONLINE { EVENT_TYPE=video_session_summary_delta }:
+      hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 94.16465579560605
+      pooling_factor_std: 20.077730552615538
+      unique_n: 0.0
+    VIEWER_CLIPS_LAST_N_VIDEO_VIEW_15SEC_AUTHORS VIEWER INF ONLINE { EVENT_TYPE=video_session_summary_delta }:
+      hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 91.84260375159151
+      pooling_factor_std: 23.325894019195307
+      unique_n: 0.0
+    VIEWER_CLIPS_LAST_N_VIDEO_VIEW_15SEC_MEDIA VIEWER INF ONLINE { EVENT_TYPE=video_session_summary_delta }:
+      hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 91.8434772385605
+      pooling_factor_std: 23.324904293595583
+      unique_n: 0.0
+    ? VIEWER_CLIPS_ONLINE_LAST_N_VIDEO_VIEW_WITH_SOUND_ON_DOUBLE_LOOP_AUTHOR VIEWER INF ONLINE { EVENT_TYPE=video_session_summary_delta }
+    : hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 62.7588661678886
+      pooling_factor_std: 36.72300832003306
+      unique_n: 0.0
+    ? VIEWER_CLIPS_ONLINE_LAST_N_VIDEO_VIEW_WITH_SOUND_ON_LOOP_AUTHOR VIEWER INF ONLINE { EVENT_TYPE=video_session_summary_delta }
+    : hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 93.58463513408725
+      pooling_factor_std: 21.07724232360011
+      unique_n: 0.0
+    author_id_sparse:
+      hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 1.0
+      pooling_factor_std: 0.0
+      unique_n: 0.0
+    media_id_sparse:
+      hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 1.0
+      pooling_factor_std: 0.0
+      unique_n: 0.0
+    mez_recommender_type_hashed_sparse:
+      hash_size: 100
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 1.0
+      pooling_factor_std: 0.0
+      unique_n: 0.0
+    REQUEST CLIENT_FEATURE EXPLORE_CLIENT_FEATURES TYPE(ID_LIST){ BARKEEP_KEY=looped_media_ids_in_session }:
+      hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 12.232705833502177
+      pooling_factor_std: 19.662076707649724
+      unique_n: 0.0
+    REQUEST CLIENT_FEATURE EXPLORE_CLIENT_FEATURES TYPE(ID_LIST){ BARKEEP_KEY=looped_author_ids_in_session }:
+      hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 11.162045340277205
+      pooling_factor_std: 18.185550372122865
+      unique_n: 0.0
+    REQUEST CLIENT_FEATURE EXPLORE_CLIENT_FEATURES TYPE(ID_LIST){ BARKEEP_KEY=skipped_media_ids_in_session }:
+      hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 8.883231101338996
+      pooling_factor_std: 17.015661442482635
+      unique_n: 0.0
+    REQUEST CLIENT_FEATURE EXPLORE_CLIENT_FEATURES TYPE(ID_LIST){ BARKEEP_KEY=skipped_author_ids_in_session }:
+      hash_size: 10000000
+      truncation_size: 0
+      position_weighted: false
+      pooling_factor_mean: 8.543969763142952
+      pooling_factor_std: 16.577369733606037
+      unique_n: 0.0
+  id_score_list_features:
+    ENTITY_FEATURE ENTITY_TYPE(IUU_USER) KEY(VIEWER_ID) TRAIT(IUU_FIT_MATCHA_REELS_LIKE_30D):
+      hash_size: 100000
+      pooling_factor_mean: 23.532793232226968
+      pooling_factor_std: 21.21039675836586
+      unique_n: 0.0
+    ENTITY_FEATURE ENTITY_TYPE(IUU_USER) KEY(VIEWER_ID) TRAIT(IUU_FIT_MATCHA_REELS_LOOP_7D):
+      hash_size: 100000
+      pooling_factor_mean: 45.61825077480695
+      pooling_factor_std: 12.31644537359618
+      unique_n: 0.0
+    ENTITY_FEATURE ENTITY_TYPE(IUU_USER) KEY(VIEWER_ID) TRAIT(IUU_FIT_MATCHA_REELS_PROFILE_VISIT_30D):
+      hash_size: 100000
+      pooling_factor_mean: 15.095104120547205
+      pooling_factor_std: 16.500754807299327
+      unique_n: 0.0
+    ENTITY_FEATURE ENTITY_TYPE(IUU_USER) KEY(VIEWER_ID) TRAIT(IUU_FIT_MATCHA_REELS_VIDEO_COMPLETE_30D):
+      hash_size: 100000
+      pooling_factor_mean: 47.09909944794223
+      pooling_factor_std: 10.32449399172595
+      unique_n: 0.0
+    ENTITY_FEATURE ENTITY_TYPE(USER) KEY(VIEWER_ID) TRAIT(VIEWER_EXPLORE_TOP_N_MTV_REC_AUTHORS):
+      hash_size: 10000000
+      pooling_factor_mean: 159.54506487366706
+      pooling_factor_std: 72.1275703565236
+      unique_n: 0.0
+    ? FEATURE_STORE CLIPS_XRAY_VIDEO_2020A_FCC_CONCEPTS GROUP(2669945043107329) NAME(concepts) ID(40251140) STATIC_CONTEXT( concept_group=fcc, version=xrayvideo2020a, vue_client_id=INSTAGRAM_FIREBALL ) DYNAMIC_CONTEXT ( video_id=MEDIA_FBID )
+    : hash_size: 100000
+      pooling_factor_mean: 18.382554874342446
+      pooling_factor_std: 5.3289217212771325
+      unique_n: 0.0
+    ? FEATURE_STORE CLIPS_XRAY_VIDEO_2020A_VP_CONCEPTS GROUP(2669945043107329) NAME(concepts) ID(40251140) STATIC_CONTEXT( concept_group=vp, version=xrayvideo2020a, vue_client_id=INSTAGRAM_FIREBALL ) DYNAMIC_CONTEXT ( video_id=MEDIA_FBID )
+    : hash_size: 100000
+      pooling_factor_mean: 93.27575853538347
+      pooling_factor_std: 25.110023380601106
+      unique_n: 0.0
+  unary_features: {}
+  embedding_features:
+    candidate_xray2020_pretrained_embedding:
+      dimension: 100
+    viewer_xray2020_liked_pretrained_embedding:
+      dimension: 100
+    viewer_xray2020_15s_pretrained_embedding:
+      dimension: 100
+    viewer_xray2020_skip_pretrained_embedding:
+      dimension: 100
+# # VIEWER_ID -> IUU_FIT
+#  - ENTITY_FEATURE ENTITY_TYPE(IUU_USER) KEY(VIEWER_ID) TRAIT(IUU_FIT_MATCHA_REELS_PROFILE_VISIT_30D) # 63
+#  - ENTITY_FEATURE ENTITY_TYPE(IUU_USER) KEY(VIEWER_ID) TRAIT(IUU_FIT_MATCHA_REELS_LIKE_30D)
+#  - ENTITY_FEATURE ENTITY_TYPE(IUU_USER) KEY(VIEWER_ID) TRAIT(IUU_FIT_MATCHA_REELS_LOOP_7D)
+#  - ENTITY_FEATURE ENTITY_TYPE(IUU_USER) KEY(VIEWER_ID) TRAIT(IUU_FIT_MATCHA_REELS_VIDEO_COMPLETE_30D)
+# VIEWER_ID -> AUTHOR_CLUSTER
+#  - VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR_CLUSTER_V2 VIEWER INF ONLINE { EVENT_TYPE=instagram_clips_viewer_entry } # 26
+#  - VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR_CLUSTER_V2 VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_like } # 25
+#  - VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR_CLUSTER_V2 VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_brand_profile } # 23
+#  - VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR_CLUSTER_V2 VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_vpvd_imp } # 22
+#  - VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR_CLUSTER_V2 VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_impression } # 24
+#  - VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR_CLUSTER_V1_REFRESH VIEWER INF ONLINE { EVENT_TYPE=instagram_clips_viewer_entry } # 3
+#  - VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR_CLUSTER_V1_REFRESH VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_like } # 5
+#  - VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR_CLUSTER_V1_REFRESH VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_brand_profile } # 1
+#  - VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR_CLUSTER_V1_REFRESH VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_vpvd_imp } # 2
+#  - VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR_CLUSTER_V1_REFRESH VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_impression } # 4
+# VIEWER_ID -> USER_XRAY
+#  - ENTITY_FEATURE ENTITY_TYPE(USER_XRAY) KEY(VIEWER_ID) TRAIT(VIEWER_CLIPS_TOP_RESHARE_XRAY2020_FCC_CONCEPTS_56D_IDF) # 70
+#  - ENTITY_FEATURE ENTITY_TYPE(USER_XRAY) KEY(VIEWER_ID) TRAIT(VIEWER_CLIPS_TOP_RESHARE_XRAY2020_VIDEO_PHRASE_CONCEPTS_56D_IDF) # 75
+#  - ENTITY_FEATURE ENTITY_TYPE(USER_XRAY) KEY(VIEWER_ID) TRAIT(VIEWER_CLIPS_TOP_PROFILE_VISIT_XRAY2020_VIDEO_PHRASE_CONCEPTS_56D_IDF) # 73
+# VIEWER_ID ->
+#  - ENTITY_FEATURE ENTITY_TYPE(USER) KEY(VIEWER_ID) TRAIT(VIEWER_EXPLORE_TOP_N_MTV_REC_AUTHORS) # 27
+#  - ENTITY_FEATURE ENTITY_TYPE(USER) KEY(VIEWER_ID) TRAIT(XRAY_CLUSTERS_100K_30D_VIEWER) ## 61
+#  - ENTITY_FEATURE ENTITY_TYPE(USER) KEY(VIEWER_ID) TRAIT(HYKI_TOP_ACCTS_FOLLOW_HOME_COUNTRY) # 48
+#  - ENTITY_FEATURE ENTITY_TYPE(USER) KEY(VIEWER_ID) TRAIT(HYKI_TOP_ACCTS_REELS_HOME_COUNTRY) # 48
+# AUTHOR_ID ->
+#  - ENTITY_FEATURE ENTITY_TYPE(USER) KEY(AUTHOR_ID) TRAIT(AUTHOR_CLUSTER_ID_V1_REFRESH) # 7
+#  - ENTITY_FEATURE ENTITY_TYPE(USER) KEY(AUTHOR_ID) TRAIT(AUTHOR_CLUSTER_ID_LONG) # 0
+#  - ENTITY_FEATURE ENTITY_TYPE(USER) KEY(AUTHOR_ID) TRAIT(USER_HOME_PREDICTION_SPARSE_CITY) # 67
+# VIEWER_ID -> LAST_N_ENGAGED
+#  - VIEWER_CLIPS_LAST_N_EXPLORE_GRID_CLICKED_AUTHOR VIEWER INF ONLINE { EVENT_TYPE=explore_home_click } ## 34
+#  - VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_impression } ## 34
+#  - VIEWER_CLIPS_LAST_N_ENGAGED_AUTHOR VIEWER INF ONLINE { EVENT_TYPE=instagram_clips_swipe_back } ## 34
+#  - VIEWER_CLIPS_LAST_N_ENGAGED_MUSIC VIEWER INF ONLINE { EVENT_TYPE=instagram_clips_swipe_back } ## 8
+#  - VIEWER_CLIPS_LAST_N_ENGAGED_MUSIC VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_vpvd_imp } ## 8
+#  - EXPLORE_VIEWER_LAST_N_ENGAGED_AUTHORS VIEWER INF ONLINE { EVENT_TYPE=explore_home_click } ## 28
+#  - EXPLORE_VIEWER_LAST_N_VIDEO_15SEC_AUTHORS VIEWER INF ONLINE { EVENT_TYPE=video_session_summary_delta } ## 28
+#  - EXPLORE_VIEWER_LAST_N_ENGAGED_AUTHOR_CLUSTER_V2 VIEWER INF ONLINE { EVENT_TYPE=instagram_organic_vpvd_imp } # 18
+#  - mez_recommender_type_hashed_sparse ## 60
