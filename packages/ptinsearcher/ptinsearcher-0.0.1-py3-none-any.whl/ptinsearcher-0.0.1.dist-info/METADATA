@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ptinsearcher
+Version: 0.0.1
+Summary: Web sources information extractor
+Home-page: https://www.penterep.com/
+Author: Penterep
+Author-email: info@penterep.com
+License: GPLv3+
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Environment :: Console
+Requires-Python: >=3.6
+Requires-Dist: bs4
+Requires-Dist: lxml
+Requires-Dist: ptlibs
+Requires-Dist: pyexiftool
+Requires-Dist: requests
+Requires-Dist: tldextract
+
+UNKNOWN
+
+
