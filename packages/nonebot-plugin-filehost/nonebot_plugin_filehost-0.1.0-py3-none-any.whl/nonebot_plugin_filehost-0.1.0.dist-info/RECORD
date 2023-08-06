@@ -1,0 +1,7 @@
+src/plugins/nonebot_plugin_filehost/__init__.py,sha256=q5XdXFr4-Kqe0xzduiWbQP5uIODDOcJrH0K2myso_Ak,5201
+src/plugins/nonebot_plugin_filehost/config.py,sha256=JJgJuerDIXKA96AyXgGNY8Fi2IxVjj6eRH-HqorJWZQ,549
+src/plugins/nonebot_plugin_filehost/models.py,sha256=UFbNstZjFt5uhi94fCjxVNpRdRun3mCo3ZrWSFPZaXE,1365
+nonebot_plugin_filehost-0.1.0.dist-info/LICENSE,sha256=9igum5cIpgfAWrLVTKWcuQbW5LxhsUWdszaBa3yntsY,1063
+nonebot_plugin_filehost-0.1.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+nonebot_plugin_filehost-0.1.0.dist-info/METADATA,sha256=KKg_N2DFPRr_eiAQLhkcGBjprcbate_P-PlMpdO8HyY,2114
+nonebot_plugin_filehost-0.1.0.dist-info/RECORD,,
