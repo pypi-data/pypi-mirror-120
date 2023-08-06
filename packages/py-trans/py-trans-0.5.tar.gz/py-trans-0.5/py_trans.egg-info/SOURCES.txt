@@ -1,0 +1,11 @@
+README.md
+setup.py
+py_trans/__init__.py
+py_trans/async_translator.py
+py_trans/language_codes.py
+py_trans/translator.py
+py_trans.egg-info/PKG-INFO
+py_trans.egg-info/SOURCES.txt
+py_trans.egg-info/dependency_links.txt
+py_trans.egg-info/requires.txt
+py_trans.egg-info/top_level.txt
