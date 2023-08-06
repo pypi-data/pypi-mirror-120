@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+phruzz_matcher/__init__.py
+phruzz_matcher/phrase_matcher.py
+phruzz_matcher.egg-info/PKG-INFO
+phruzz_matcher.egg-info/SOURCES.txt
+phruzz_matcher.egg-info/dependency_links.txt
+phruzz_matcher.egg-info/top_level.txt
