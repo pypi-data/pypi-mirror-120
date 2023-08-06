@@ -1,0 +1,11 @@
+mainwrapper/__init__.py,sha256=OoFQMT-p6L1fXMBt8jIPpPHDZMxtLg0ZC94RUv4Q6NU,5756
+mainwrapper/__main__.py,sha256=QEf0QcSJJkd8bmqMN0M2anG2kabwhB0Ntl_fTx6uQF4,230
+mainwrapper/version.py,sha256=Ok7XR8wZrOp38SaOYinpYmIxf_sT0PLyMemjrG3VZsI,142
+mainwrapper/tests/__init__.py,sha256=sz2LpJqi_6FlZLoxJ2DMdNifgVrLxhn1_vxc-Jw7rNI,83
+mainwrapper/tests/test_mainwrapper.py,sha256=wKOcShXANytfjnPfAz7lVsYD5JqIxI1q_OB_vcf0nsg,2614
+main_wrapper-0.1.1.dist-info/LICENSE,sha256=TQB2hl5wQbApX26FyvttNUVV0qERhdlTY4GsCwSzNt8,1081
+main_wrapper-0.1.1.dist-info/METADATA,sha256=8wATf2KNzjauI2Oc6-rmC2zpquDD1rH8urP80OYl6Es,5287
+main_wrapper-0.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+main_wrapper-0.1.1.dist-info/entry_points.txt,sha256=mHkrbHJf-fUe6KYAVSehNJEb5-lr5kGIER6N1S42nbU,58
+main_wrapper-0.1.1.dist-info/top_level.txt,sha256=YeYYR0XdXgjwJxlXdHIVfI_nXeolZxsUoFIafzLAgJI,12
+main_wrapper-0.1.1.dist-info/RECORD,,
