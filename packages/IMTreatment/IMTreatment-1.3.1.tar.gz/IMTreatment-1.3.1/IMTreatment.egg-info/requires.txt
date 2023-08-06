@@ -1,0 +1,28 @@
+numpy
+matplotlib
+scipy
+unum
+imageio
+multiprocess
+psutil
+
+[Color in console]
+colorama
+
+[Davis format support]
+ReadIM
+
+[Export to VTK format]
+pyvtk
+
+[Mean trajectories clustering]
+networkx
+
+[Modal decomposition]
+modred
+
+[Pivmat format support]
+h5py
+
+[Point clustering]
+sklearn
