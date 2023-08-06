@@ -1,0 +1,17 @@
+datasketches.cpython-310-x86_64-linux-gnu.so,sha256=5OCIg5LBFaMdNFrqhS-M9HSlvBLTv2NKfqAo4fTRWMw,1049008
+src/__init__.py,sha256=hAfMmQ80SmaLjImDDHOosfAySwqCqqhEfmNcscU0kFg,23
+datasketches-3.2.0.dist-info/WHEEL,sha256=jPy-dqleMqHkyK9acYMEx0fp4u4-3a1IKs99O_G8qyY,152
+datasketches-3.2.0.dist-info/NOTICE,sha256=AwxAHdZ1-7qM0ghQXevsjppgLZO4Ce7s6xJScEkMaZo,362
+datasketches-3.2.0.dist-info/top_level.txt,sha256=0feIrpEZSHJQQybBt9flvHjiKuaTrYZzRA6K-ctU0HE,23
+datasketches-3.2.0.dist-info/LICENSE,sha256=4aVw8uaQZyoyTHdoek4M1qFOi5YKCLLQGEoGrs0NDVE,16374
+datasketches-3.2.0.dist-info/RECORD,,
+datasketches-3.2.0.dist-info/METADATA,sha256=MT3Hav9oifhQo5YmBzXQpaeI5luGY59ZX3pKz-GELmY,4046
+tests/vector_of_kll_test.py,sha256=qW8TMFlElHNlGGbOjh-WeyC0l6KazlsipiZcf4q_gwo,6033
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/req_test.py,sha256=7he1soPmZEVZ-zXxk7DPlO6Iznp1HotEbJnqik807wo,5023
+tests/fi_test.py,sha256=9-OvQ97KJkJgw_Z0cDgoNPrLeaww9z718Nmpavz8NeM,4372
+tests/hll_test.py,sha256=lsb_FjpR74tqJtLk6-wGMWa71SJlkFFbatlAOtXnmfg,5251
+tests/vo_test.py,sha256=ANaeuwjwmKUd8x8rAi8Ay6oCNBIrJfziIuqm5_L58Qc,3812
+tests/cpc_test.py,sha256=3X5AYxkVmtRN7LNZJhFshCTs68xZLftznXMBHsHvu5g,2589
+tests/theta_test.py,sha256=-8IfE7yUlHx7oDMCaQuBUuamxj0P1MhVYTQb86aHAAE,5645
+tests/kll_test.py,sha256=kf1VVLelXucVfkMbf-jv6Td_gO8E6mMZbai4cbqK3zM,4726
