@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: amino-rus
+Version: 1.2
+Summary: Асинхронная русскоязычная библиотека для взаимодействия с API Amino
+Home-page: https://github.com/D4rkwat3r/amino-rus
+Author: Darkwater
+Author-email: ktoya170214@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/D4rkwat3r/amino-rus/archive/refs/heads/main.zip
+Description: 
+        Асинхронная библиотека для взаимодействия с https://aminoapps.com/api и https://service.narvii.com/api/v1, собранная в одном файле. Все функции имеют русскоязычные имена.
+        
+Keywords: aminoapps,amino,amino-rus,amino_rus,amino-bot,amino_bot,amino-py,amino_py,amino.py,narvii,api
+Platform: UNKNOWN
