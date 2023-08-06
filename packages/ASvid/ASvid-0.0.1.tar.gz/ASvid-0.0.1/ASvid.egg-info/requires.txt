@@ -1,0 +1,7 @@
+datetime
+cv2
+glob
+shutil
+os
+PIL
+speech_recognition

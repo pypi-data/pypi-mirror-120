@@ -1,0 +1,9 @@
+README.md
+setup.py
+ASvid/ASvid.py
+ASvid/__init__.py
+ASvid.egg-info/PKG-INFO
+ASvid.egg-info/SOURCES.txt
+ASvid.egg-info/dependency_links.txt
+ASvid.egg-info/requires.txt
+ASvid.egg-info/top_level.txt
