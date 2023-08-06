@@ -1,0 +1,3 @@
+RPLCD
+cbpi>=4.0.0.33
+smbus2
