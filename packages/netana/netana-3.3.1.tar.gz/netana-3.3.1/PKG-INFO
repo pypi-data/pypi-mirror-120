@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: netana
+Version: 3.3.1
+Summary: Electronic Network Analyzer
+Home-page: https://github.com/jrbainter/netana.git
+Author: James Bainter
+Author-email: bainter8326@gmail.com
+Maintainer: James Bainter
+License: UNKNOWN
+Keywords: network circuit node mash analysis
+Platform: Linux
+Platform: MSWindows
+Platform: OSX
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+
+This program solves electronic AC & DC Mash and Node network equations using matrix algebra.
+
