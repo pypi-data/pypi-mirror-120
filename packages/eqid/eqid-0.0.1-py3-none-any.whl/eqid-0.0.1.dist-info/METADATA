@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: eqid
+Version: 0.0.1
+Summary: Python package to retrieve the most recent earthquake information in Indonesia
+Home-page: https://github.com/stevelukis/eqid/
+Author: Steve Lukis
+Author-email: stevelukis88@gmail.com
+License: UNKNOWN
+Project-URL: Blog, https://medium.com/@stevelukis
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: beautifulsoup4 (==4.10.0)
+Requires-Dist: requests (==2.26.0)
+
+# eqid
+
+Python package to retrieve the most recent earthquake information in Indonesia.
+
+# How does it work?
+
+This package collect data from BMKG, the official government-run agency for meteorology, climatology, and geophysics.
+
+# How to use
+
+Call the function
+
+```
+import eqid
+
+result = eqid.get_data()
+```
+
+The variable result will contain a dictionary with the detail of the latest earthquake.
+
+```
+{'date': '15 September 2021', 
+ 'time': '07:49:47 WIB', 
+ 'magnitude': 5.4, 
+ 'depth': 20,
+ 'location': {'lat': 1.28, 'long': 122.16}, 
+ 'center_description': 'Pusat gempa berada di laut 85 km BaratLaut Boalemo',
+ 'affected_description': 'Dirasakan (Skala MMI): III Boalemo, II - III Buol, 
+ II Manado, II Bone Bolango, II Gorontalo, II Toli-toli'}
+```
+
