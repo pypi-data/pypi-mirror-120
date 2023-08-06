@@ -1,0 +1,3 @@
+baseobjects>=1.4.3
+numpy
+scipy
