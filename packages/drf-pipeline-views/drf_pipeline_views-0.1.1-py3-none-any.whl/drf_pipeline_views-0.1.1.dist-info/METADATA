@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: drf-pipeline-views
+Version: 0.1.1
+Summary: Django REST framework views using the pipeline pattern.
+Author: Matti Lamppu
+Author-email: lamppu.matti.akseli@gmail.com
+Requires-Python: >=3.9,<4
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Django (>=3.2.6,<4.0.0)
+Requires-Dist: djangorestframework (>=3.12.4,<4.0.0)
