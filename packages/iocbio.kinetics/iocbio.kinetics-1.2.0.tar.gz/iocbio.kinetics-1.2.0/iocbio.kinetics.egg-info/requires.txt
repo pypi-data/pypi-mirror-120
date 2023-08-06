@@ -1,0 +1,16 @@
+PyQt5
+h5py
+scipy
+numpy
+pyqtgraph
+keyring
+psycopg2-binary
+XlsxWriter
+records
+SQLAlchemy<1.4.0
+tablib
+tabulate
+msgpack
+attrdict
+netCDF4
+python-dateutil
