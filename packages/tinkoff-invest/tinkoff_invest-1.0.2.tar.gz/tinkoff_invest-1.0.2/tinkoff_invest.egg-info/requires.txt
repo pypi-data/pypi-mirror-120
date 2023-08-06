@@ -1,0 +1,6 @@
+prettytable
+iso8601
+requests
+ujson
+urllib3
+websocket-client
