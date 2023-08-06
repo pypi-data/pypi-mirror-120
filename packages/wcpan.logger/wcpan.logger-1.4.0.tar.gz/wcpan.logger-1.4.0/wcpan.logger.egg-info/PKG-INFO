@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: wcpan.logger
+Version: 1.4.0
+Summary: A RAII style logging module
+Home-page: https://github.com/legnaleurc/wcpan.logger
+Author: Wei-Cheng Pan
+Author-email: legnaleurc@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## wcpan.logger
+
+A RAII style logging module.
+
+```python
+from wcpan.logger import setup, DEBUG
+
+setup([
+    'module_name_1',
+    'module_name_2',
+], '/var/log/your.log')
+
+DEBUG(__name__) << 'message'
+```
+
+
