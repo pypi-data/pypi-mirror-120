@@ -1,0 +1,3 @@
+pandas
+nfp==0.1.4
+tqdm
