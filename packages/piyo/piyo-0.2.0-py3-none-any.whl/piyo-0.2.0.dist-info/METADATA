@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: piyo
+Version: 0.2.0
+Summary: esa API v1 client library, written in python
+Home-page: https://github.com/argonism/piyo
+Author: k-ush
+Author-email: argoooooon@gmail.com
+License: MIT
+Keywords: esa api client esa.io python
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# piyo
+esa API v1 client library, written in Python
+
+### installation
+
+install this library using pip
+``` shell
+pip install piyo
+```
+
+### Usage
+
+``` python
+from piyo import Client
+
+client = Client(access_token="<access_token>", current_team='<team_name>')
+# Client will look up environment variables  access token
+
+client.user
+#=> GET /v1/user
+
+client.team
+#=> GET /v1/teams
+
+client.team("<team_name>")
+#=> GET /v1/teams/team_name
+
+client.stats
+#=> GET /v1/teams/bar/stats
+
+...
+
+```
+
