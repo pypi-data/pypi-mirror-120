@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: djtesting
+Version: 0.0.3
+Summary: automated interface testing for business
+Home-page: UNKNOWN
+Author: chinablue
+Author-email: chinablue@163.com
+License: MIT
+Platform: win10
+Requires-Dist: requests (>=2.26.0) ; python_version >= "3"
+Requires-Dist: Faker (>=8.13.2) ; python_version >= "3"
+Requires-Dist: allure-pytest (>=2.9.43) ; python_version >= "3"
+Requires-Dist: objectpath (>=0.6.1) ; python_version >= "3"
+
+UNKNOWN
+
