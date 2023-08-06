@@ -1,0 +1,16 @@
+alfabet/__init__.py,sha256=i1OTn1AdngdvNxFCdH3rIUEtMcHkWARFlEpONKBbGMI,73
+alfabet/_version.py,sha256=ooAS9w_KGmHIJH8wqhd8eCx6QYD-3QHmlR6iZRmTsz8,497
+alfabet/drawing.py,sha256=eiHNPQIBKmScs1WUszibZiRO_DvttaSV7ew9DmiXWds,2765
+alfabet/fragment.py,sha256=H0dkqFqnqyGz3XRlb9IOHp3GD_p70m4wTSfKDd7LwPU,4628
+alfabet/model.py,sha256=O5OL_2MUKq7wNTiYSlWlqf9L1lNOxSeTQNVUUZjg7mg,1667
+alfabet/neighbors.py,sha256=3rUk4HOO-AJtpoapurvvffagGJ61jN9jrgnvswd3jPU,1331
+alfabet/prediction.py,sha256=NKttojM0d5GSBsuawE2xD050Spz7iE0Vyryz9jdjR7A,3666
+alfabet/model_files/20201012_bond_embedding_nbrs.p.z,sha256=ry1G8rs5w8wRC3ca1hMxj0h_fL2UsNlcVOnBtEvFNCg,53233200
+alfabet/model_files/20201012_bonds_for_neighbors.csv.gz,sha256=eCw9BKUFmK6r08Z3M-KPgdknTyrOooWSCofxQcr7tfI,17477960
+alfabet/model_files/best_model.hdf5,sha256=hOQ6zpYix8ucQ90yQYUlluDQlbSQNZvNa1VGDGjXYPk,20229232
+alfabet/model_files/preprocessor.json,sha256=Wmwh4upAtTmrisevgRASKn0N8IHXP_xrA8YH6mPPqCA,20964
+alfabet-0.1.0.dist-info/LICENSE,sha256=99Qq8ZgyyUHg7rEA-nXEyqhfDsUWpBUFV6drvPZDaGA,1733
+alfabet-0.1.0.dist-info/METADATA,sha256=1lbD4H-C0Lum7ojGf4elg8mtgLUSekOwRp92ExpgoOQ,3462
+alfabet-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+alfabet-0.1.0.dist-info/top_level.txt,sha256=fBWsikTA7Qv4VxGzNIhcYweGlYR-WNaYAQa3IMtzw5A,8
+alfabet-0.1.0.dist-info/RECORD,,
