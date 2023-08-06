@@ -1,0 +1,16 @@
+teedoc_plugin_search/__init__.py,sha256=THpQqlQuUEX-BhRomDT_TOZKaWHj5ojZpOx7YrfdHL4,11568
+teedoc_plugin_search/trans_finish.py,sha256=h7vuEN-lE6na7vWW_WTN-k1oXXmpI1s4e1GI5F4pK-Q,256
+teedoc_plugin_search/trans_prepare.py,sha256=lRCkYFrOCCIQtDeQWeIgu3rKV_cVVntjsIdkDUfD328,712
+teedoc_plugin_search/assets/close.svg,sha256=ADgsHgQM4AS9zQpb4XRPm5T0z60aSZIslCaHwxjJ1m4,971
+teedoc_plugin_search/assets/search.svg,sha256=-tp2esODV9F6S6BtvJKdGtI5tMFLGLYxWKFSPhpgqkk,1078
+teedoc_plugin_search/assets/search_main.js,sha256=wrT22m-me3wYcwNdYSawJNd__6fz1RkTP_n_e7z_WCw,11181
+teedoc_plugin_search/assets/style.css,sha256=qj08SGhRCf30bQDUi5vlLtVbblUrXzGvOdG6k2so8R8,4981
+teedoc_plugin_search/locales/ja/LC_MESSAGES/messages.mo,sha256=dNZSz7oPReewvK96992O1BJNHmj-DKKik0Zdbmq42us,1037
+teedoc_plugin_search/locales/ja/LC_MESSAGES/messages.po,sha256=5HLrcVRo-_hy3pHw6Mz8ilfG1YzYBJ57v00UTPj4DNM,1370
+teedoc_plugin_search/locales/zh_CN/LC_MESSAGES/messages.mo,sha256=Bs3RwIFMxxWOhdiEf61EFTPy9thLCwdy9Qg3RGm8qWQ,870
+teedoc_plugin_search/locales/zh_CN/LC_MESSAGES/messages.po,sha256=0VwDOOMsiRGl6XhdSFcab28ZHUvEeAUYHpQT9T_gEEg,1222
+teedoc_plugin_search-1.4.2.dist-info/LICENSE,sha256=itfTUbYSK2wDTmMTQSt_NJRKp97sgfjl_JbehrFi7sc,1085
+teedoc_plugin_search-1.4.2.dist-info/METADATA,sha256=ORjMW0KGOZhEZ6QJyL2ziQS3tY2alVlPRxSUZFBgx-Q,587
+teedoc_plugin_search-1.4.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+teedoc_plugin_search-1.4.2.dist-info/top_level.txt,sha256=XWDEA8hOSyrUkp25807pcg720nzQSRmJ6ZKRO7xK17I,21
+teedoc_plugin_search-1.4.2.dist-info/RECORD,,
