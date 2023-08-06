@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: tf_multilabelloss
+Version: 0.0.2
+Summary: it's implimentation of preceptron
+Home-page: https://github.com/omkarsingh1008/multi_label_loss_pypi
+Author: omkarsingh1008
+Author-email: omkarsinghrajpurohit363@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/omkarsingh1008/multi_label_loss_pypi/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# multi_label_loss_pypi
+multi_label_loss_pypi
+
+
