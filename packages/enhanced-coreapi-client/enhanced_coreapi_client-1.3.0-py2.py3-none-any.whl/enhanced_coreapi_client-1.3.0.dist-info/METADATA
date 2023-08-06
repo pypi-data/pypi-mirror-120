@@ -1,0 +1,107 @@
+Metadata-Version: 2.1
+Name: enhanced-coreapi-client
+Version: 1.3.0
+Summary: Enhanced CoreAPI client
+Home-page: https://gitlab.com/murchik/enhanced-coreapi-client
+Author: murchik
+Author-email: murchik@protonmail.com
+License: GNU General Public License v3 (GPLv3)
+Keywords: enhanced-coreapi-client
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: coreapi (>=2.3)
+Provides-Extra: dev
+Requires-Dist: ipython ; extra == 'dev'
+
+#######################
+Enhanced CoreAPI client
+#######################
+
+Wrapper around ``coreapi.Client`` for more convenient usage.
+
+#####
+Usage
+#####
+
+Initialize client:
+
+.. code-block:: python
+
+    from enhanced_coreapi_client import Client
+    conf = {
+        'SCHEMA_URL': 'https://example.com/api/schema/',
+        'AUTH_USERNAME': 'client-example',
+        'AUTH_PASSWORD': 'password-example',
+    }
+   client = Client(conf)
+
+
+Access API endpoints in accordance with the schema, e.g.:
+
+.. code-block:: python
+
+   users = client.api.users.list()
+   project = client.api.users.projects.read(id=7)
+   new_project = client.api.users.projects.create(name='xxx', user_id=3)
+
+
+1.3.0 (2021-09-21)
+------------------
+
+- Decouple with Django.
+
+
+1.2.0 (2021-03-19)
+------------------
+
+- A more general and flexible way of configuring the client.
+
+
+1.1.0 (2017-08-20)
+------------------
+
+- Loosening Django version.
+
+
+1.0.1 (2017-08-11)
+------------------
+
+- Performance improvement.
+
+
+1.0.0 (2017-08-11)
+------------------
+
+- Releasing v1.0.0 to PyPi.
+
+
+0.2.1 (2017-08-11)
+------------------
+
+- README.
+
+
+0.2.0 (2017-08-11)
+------------------
+
+- Syntactic sugar.
+
+
+0.1.0 (2017-08-10)
+------------------
+
+- Django CoreAPI client v0.1.0 released.
+
+
