@@ -1,0 +1,14 @@
+setuptools_rust
+colorama
+deprecation
+pytest-benchmark
+scikit-optimize
+numpy
+flask
+prometheus_client
+parallel-ssh
+pydantic
+requests
+gorilla
+gevent
+xxhash==v2.0.2
