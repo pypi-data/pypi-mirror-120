@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: CoreNLG
+Version: 2.2.0
+Summary: UNKNOWN
+Home-page: https://github.com/societe-generale/core-nlg.git
+Author: Fabien Giely
+License: Apache v2
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: lxml
+
+# CoreNLG
+
+## General Information
+
+CoreNLG is an easy to use and productivity oriented Python library for Natural Language Generation.\
+It aims to provide the essential tools for developers to structure and write NLG projects.\
+Auto-agreement tools based on extra-resources are <b>not provided</b> in this library.
+
+[Have a look at our documentation](https://societe-generale.github.io/core-nlg/)
+
+
+Happy coding !
+
+
