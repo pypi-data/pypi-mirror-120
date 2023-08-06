@@ -1,0 +1,6 @@
+implement a @neverdeactivate method to indicate that the grain should not be 
+GC'd
+
+While not a garentee (server failures do occur), avoid deallocating the grain. 
+this should be used for performance and not becuase code is not persisting 
+itself to the database

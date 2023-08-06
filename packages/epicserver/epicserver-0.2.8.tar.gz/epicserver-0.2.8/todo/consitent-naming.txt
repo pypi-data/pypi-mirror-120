@@ -1,0 +1,13 @@
+Check documentation to ensure that concepts are named identically across all instances
+
+The development process of epic man server has been long with many features
+coming and going and forming 'Eras', this has lead to different terms for the
+same thing and the same term referring to different things depending on where
+the code is in its lifecycle. attention needs to be paid to this to make it
+easier and less confusing to newcomers when reading the documentation.
+
+Goals:
+* Consistent terminology across all documentation
+* Updated Glossary page
+* Links to glossary page where approriate
+* Updated Concepts page

@@ -1,0 +1,19 @@
+implement a @cache decorator
+
+some functions are slow, or called enough times that network round trip may be 
+a limiting factor, where the values are always the same they can be cached to 
+avoid issues
+
+Caveats:
+should this be cached at the caller or callee
+
+
+Ideas:
+there is a functools.lru_cache that may be used to implement the cache
+while not fast it should speed implementation and not be replaced until
+there is proven need for optimisation
+perhaps the cache can be implemented as pool objects (pool.Cache[key]) to put 
+the value on a seperate machien to the one doing the generation
+if implementing a write through, then have cache call the concrete 
+implementation to avoid having to handle invalidation and inserting things in 
+the cache

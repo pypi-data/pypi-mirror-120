@@ -1,0 +1,20 @@
+mesure latency and calcuate/display rollback rather than accept arbitary rollback
+
+https://lpc.opengameart.org/
+
+https://engineering.riotgames.com/news/determinism-league-legends-implementation
+
+   We also encountered numerous places where sub-frame timings were being used
+   in ways that could affect gameplay state. Since we were optimizing for
+   per-frame quantization of state anyways, calls to acquire instantaneous
+   process time had to be mostly eliminated.
+
+
+Hi bug-bash, The Linux kernel supports creating pipes in a mode (enabled by passing the
+O_DIRECT flag, and known sometimes as a "packetized pipe") that
+groups.google.com/d/topic/gnu.bash.bug/lYAYQ1p9F4c
+
+ /proc/sys/net/core/busy_poll microsecodns to busy poll for SO_BUSY_POLL
+https://netdevconf.org/2.1/papers/Overlapping-Ring-Monitoring_v3.pdf
+https://netdevconf.org/2.1/papers/BusyPollingNextGen.pdf
+https://netdevconf.org/2.1/papers/netdev.pdf

@@ -1,0 +1,155 @@
+site_name: "EpicMan Server Docs"
+site_description: "Documentation for the server behind the EpicMan MMO"
+site_author: "Blitz_Works"
+copyright: "Blitz_Works - 2021"
+site_url: "http://docs.epic-man.com"
+repo_url: "http://code.epic-man.com"
+repo_name: "Source Code"
+docs_dir: 'docs/'
+# lore.epic-man.com
+extra_css:
+    - css/social-colors.css
+
+
+theme:
+    name: material
+    custom_dir: docs/overrides
+    logo: imgs/logo.png
+    palette:
+        - media: "(prefers-color-scheme: dark)"
+          scheme: slate
+          toggle:
+            icon: material/lightbulb-outline
+            name: Switch to Light mode
+          primary: teal
+          accent: indigo
+        - media: "(prefers-color-scheme: light)"
+          scheme: default
+          toggle:
+            icon: material/lightbulb
+            name: Switch to Dark mode
+          primary: teal
+          accent: deep purple
+    features:
+        - navigation.instant
+        - navigation.tracking
+        - navigation.top
+        - toc.integrate
+        - search.suggest
+        - search.highlight
+        - search.share
+extra:
+    social:
+        - icon: fontawesome/brands/twitter
+          name: EpicMan on Twitter
+          css_id: social-twitter
+          link: https://twitter.com/Epic_Man_Game
+        - icon: fontawesome/brands/twitch
+          name: Streaming Game Dev on Twitch
+          css_id: social-twitch
+          link: http://twitch.blitz.works
+        - icon: fontawesome/brands/youtube
+          name: EpicMan Game Dev Archives
+          css_id: social-youtube
+          link: http://youtube.blitz.works/
+        - icon: fontawesome/regular/comments
+          name: Live EpicMan Chat
+          link: http://chat.epic-man.com
+        - icon: fontawesome/solid/blog
+          css_id: social-blog
+          name: Stay up to date with the latest news
+          link: http://news.epic-man.com
+        - icon: fontawesome/solid/gamepad
+          name: Play EpicMan in your browser
+          css_id: social-play
+          link: http://play.epic-man.com
+
+markdown_extensions:
+    - toc:
+        permalink: True
+    - pymdownx.emoji:
+        emoji_index: !!python/name:materialx.emoji.twemoji
+        emoji_generator: !!python/name:materialx.emoji.to_svg
+    - attr_list
+    - pymdownx.tabbed
+    - pymdownx.details
+    - pymdownx.superfences
+    - pymdownx.highlight:
+        linenums: True
+    - admonition
+    - abbr
+    - pymdownx.snippets
+
+plugins:
+ - search
+ - coverage:
+    page_name: coverage
+    html_report_dir: build/htmlcov
+ - minify:
+    # TODO: confirm this works
+    minify_html: True
+    minify_js: True
+    htmlmin_opts:
+        remove_comments: True
+
+nav:
+ - "Intro":
+    - "What is it?": index.md
+    - "Getting Started": intro_quick_start.md
+    - "Feature and Requests": features.md
+    - "Try it out": "http://play.epic-man.com"
+ - "Managing a Cluster":
+    - "Installation": install.md
+    - "CLI Arguments": cli.md
+    - "Deployment Considerations": deployment.md
+    - "Cluster Managment": cluster.md
+    - "Application Deployment": app_deployment.md
+    - "Tuning": tuning.md
+ - "Server Development":
+    - "Makefile Commands": makefile.md
+    - "Patterns": common_patterns.md
+    - "Testing": '/testing/'
+    - "Reference":
+        - "The Main Loop": mainloop.md
+        - "Tasks": tasks.md
+        - "Syscalls": syscalls.md
+    - "Security":
+        - "Bandit Audits": bandit.md
+    - "Future Work":
+        - "Roadmap": roadmap.md
+        - "Todo": todo.md
+        - "Bugs": bugs.md
+    - "Coverage report": coverage.md
+ - "APP/Game Development":
+    - "Getting Started": app_quick_start.md
+    - "Tutorial": tutorial.md
+    - "Examples":
+        - "Ping Pong Benchmark": ping_pong.md
+    - "Concurrency": concurrency.md
+    - "Reference":
+        - "Concepts": concepts.md
+        - "Entities": entities.md
+        - "Checkpointing": checkpoint.md
+        - "Files": handling_files.md
+        - "Subprocesses and Pipes": asyncpipe.md
+        - "Sockets": asyncsocket.md
+        - "DNS": dns.md
+        - "Logging": logging.md
+ - "Reference":
+    - "Glossary": glossary.md
+    - "Testing": testing.md
+    - "Application":
+        - "Entities": entities.md
+        - "Files": handling_files.md
+        - "Subprocesses and Pipes": asyncpipe.md
+        - "Sockets": asyncsocket.md
+        - "DNS": dns.md
+        - "Logging": logging.md
+    - "Server Main Loop":
+        - "The Main Loop": mainloop.md
+        - "Tasks": tasks.md
+        - "Syscalls": syscalls.md
+ - "About":
+    - "Release Notes": release_notes.md
+    - "License": license.md
+    - "Branding": branding.md

@@ -1,0 +1,21 @@
+Implement request retry and request cancellation with timeouts
+
+requests should not be around forever, in most cases we expect a fast reply 
+(and the server to be ont he same subnet with < 1mS latency), slow requests 
+indicate an overloaded or failed host (the overloaded being worse than failed 
+hosts)
+
+Caveats
+this is all vaguely thought out (propsoal and anwser) and may be several sub 
+items. discussion may need to be required to tease these out as well as some 
+use cases
+
+implementation has partial timer/request timeout already for certin parts of 
+the rpc state machine. these should not dictate teh final solution but should 
+be revisitied as in most cases the default values where chosen at random.
+
+Ideas
+should this be user configurable? or admiistrativly set globally, for known 
+'slow' request  it may be important to set this on a per call basis however for 
+calling slow becuase cpu intensive tasks, there should perhaps be another 
+cluster to handle this

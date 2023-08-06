@@ -1,0 +1,9 @@
+implement a @onlyifactive decorator
+
+do not activate the grain if it has not been loaded, think of this as an 
+optional send
+
+Caveats:
+is this only for messaging, or should we return a value
+
+should the return value be None, user defined or a raised exception?

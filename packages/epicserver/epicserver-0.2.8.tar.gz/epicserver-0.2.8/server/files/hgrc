@@ -1,0 +1,8 @@
+[web]
+description = Multi-process execution framework based off Microsoft's 'Orleans' project
+
+[hooks]
+changegroup = wget --method=POST {{ build_notfiy_url }}
+
+[extensions]
+zeroconf=

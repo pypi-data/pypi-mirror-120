@@ -1,0 +1,9 @@
+Implment an @stateless decorator
+
+some grains may be stateless and not rely on grain state, these can be 
+activated anywhere ont eh cluster and instanciated multiple times, indicate 
+this with an @stateless method or class decroator so we can identify this state
+
+Ideas:
+implement a instance value of _epic_features so that the pool object can 
+identify this feature and react ocordingly

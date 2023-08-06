@@ -1,0 +1,45 @@
+man 7 socket: SO_INCOMING_CPU
+man 7 socket: SO_PRIORITY
+man 7 socket: SO_RCVBUF
+man 7 socket: SO_SNDBUF
+man 7 socket: SO_TIMESTAMP
+man 7 socket: SO_BUSYPOLL
+
+man 7 tcp: TCP_CONGESTION
+man 7 tcp: TCP_DEFER_ACCEPT
+man 7 tcp: TCP_NODELAY
+man 7 tcp: TCP_QUICKACK
+man 7 tcp: SIOCINQ
+man 7 tcp: SIOCOUTQ
+
+#define TCP_NOTSENT_LOWAT       25  # limit ammoutn of sent bytes in snd buffer
+
+recvmmsg
+sendmmsg
+
+https://www.kernel.org/doc/html/v5.13-rc4/networking/tcp-thin.html
+
+ethtool: interupt coellescing
+tx queue length
+sys.net.core.netdev_max_backlog=2000 # recive queue equivlent
+net.ipv4.tcp_sack=0 # disable sack (same reasons for quickack)
+
+offloads (specifically GRO) ethtook -k <if>
+
+disable ethernet flow control:
+sudo ethtool -A eth2 autoneg off rx off tx off
+
+https://blog.cloudflare.com/how-to-achieve-low-latency/
+https://www.mmoapi.com/post/tcp-congestion-control-in-linux
+https://github.com/bagder/I-D/blob/gh-pages/httpbis-tcp/draft.md
+https://dropbox.tech/infrastructure/optimizing-web-servers-for-high-throughput-and-low-latency  
+
+io_uring: pypi: liburing
+
+   
+
+URL: https://lwn.net/Articles/560082/                                      |
+Title: tcp: TCP_NOTSENT_LOWAT socket option [LWN.net]                      |
+
+https://access.redhat.com/articles/65410
+write(/dev/cpu_dma_latency, '0')

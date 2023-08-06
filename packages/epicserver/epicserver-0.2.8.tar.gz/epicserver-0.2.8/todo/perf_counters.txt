@@ -1,0 +1,10 @@
+Implement perf counters that can be updated by the app being run
+
+there is a need for a standrard way to set perf counters just like there is a 
+standard logging system that can have multiplle implmentations. Future 
+consumers of this may export the stats via http or an alternate system (or 
+possibly internal for implementing throttling events)
+
+Possible Issues:
+using an await/yield from may be too costly for implementation and introduce 
+necessary switching, updating a global dictionary may be a work around

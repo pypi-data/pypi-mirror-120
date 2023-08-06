@@ -1,0 +1,24 @@
+It would be nice to have a standard way to implement cross cluster transactions
+
+Transactional support at the cluster level (not backend services) may be useful 
+for implemeting certin things (eg databases). this may be expesially relevent 
+for cohosted services (game code and db code int he same clsuter) where the two 
+can seemlysless blend
+
+this seems like an intresting idea, if it is needed in practice is open to 
+debate
+
+Caveats:
+the non error code may be easy, but the error case is hard and has many sharp 
+corners including uncontactable nodes and processes that are not persisting to 
+the db
+
+Ideas:
+2 phase commit: expensive but there is sufficent infrastructure to recycle for 
+taking care of the 'annoying' parts of 2pc and may suffice int eh simple case
+
+another method is epochs, whereby there are counter operations for every 
+forward operation you commit that are recordded to a log, on failure these 
+counter operations are used to negate the forward operations. these need to 
+have some very specific properties including ideoptency but can be low overhead 
+and low cordination

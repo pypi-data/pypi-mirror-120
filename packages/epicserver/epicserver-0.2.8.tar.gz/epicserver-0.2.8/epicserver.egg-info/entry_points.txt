@@ -1,0 +1,11 @@
+[console_scripts]
+epic-server = epicman.server:main
+epic-server-startup = epicman.server.startup:main
+
+[epicman.server.db.backends]
+dbm = epicman.server.db.dbm:create_db
+default = epicman.server.db.dict:create_db
+dict = epicman.server.db.dict:create_db
+lmbd = epicman.server.db.lmdb:create_db [lmdb]
+sqlite = epicman.server.db.sqlite:create_db
+

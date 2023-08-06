@@ -1,0 +1,12 @@
+Give all rpc messages a unique id for idempotency
+
+in some cases we may have to transmit a message multiple times 
+(eg seralisation errors or non comm). while we could handle the
+idempotent id generation to user space, it is likley it will
+be ignored until it pops up in production. at this point the 
+scope of a proper fix is likley too large
+
+it would be sifnificanlty easier for all parities involved to 
+solve this once and amke it transperent to the app, taking care
+of yet another error case for them. this can also help with the
+propsed transaction support
