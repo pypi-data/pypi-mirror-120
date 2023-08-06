@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+BetterString/BetterString.py
+BetterString/Color.py
+BetterString/Exceptions.py
+BetterString/__init__.py
+BetterString/__main__.py
+BetterString/constants.py
+BetterString.egg-info/PKG-INFO
+BetterString.egg-info/SOURCES.txt
+BetterString.egg-info/dependency_links.txt
+BetterString.egg-info/requires.txt
+BetterString.egg-info/top_level.txt
