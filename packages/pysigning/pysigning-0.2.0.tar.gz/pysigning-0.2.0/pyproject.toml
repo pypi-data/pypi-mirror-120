@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "pysigning"
+version = "0.2.0"
+readme = "README.md"
+homepage = "https://github.com/shawwn/pysigning"
+description = "Python library and CLI scripts for signing and verifying data"
+authors = ["Shawn Presser"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+argh = "^0.26.2"
+pycryptodome = "^3.10.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["setuptools", "poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.urls]
+"Shawn's Website" = "https://www.shawwn.com"
+"Support me on Patreon" = "https://www.patreon.com/shawwn"
+"@theshawwn on Twitter" = "https://www.twitter.com/theshawwn"
+"sillysaurusx on Hacker News" = "https://news.ycombinator.com/threads?id=sillysaurusx"
+
+[tool.poetry.scripts]
+pysigning = "pysigning.__main__:cli"
