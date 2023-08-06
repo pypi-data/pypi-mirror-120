@@ -1,0 +1,6 @@
+google_api_utils/__init__.py,sha256=ryAfvAaW7VM8g1gnCrFCPrXmcbbm99Xw44aLkwGZzaI,23
+google_api_utils/Drive.py,sha256=7muWOUP742LBu90RrM_Td2cGfXFU4R4rzlOJfEyL7mc,8515
+google_api_utils/Sheets.py,sha256=YHcwC7yniC0q7wesFa67qs6YXlo3zyKy_152746aNWs,4528
+google_api_utils-0.2.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+google_api_utils-0.2.0.dist-info/METADATA,sha256=npmqB1x4wjjZgGeUFuIKir2Noz5BFSPM5Cgk2D_STLI,773
+google_api_utils-0.2.0.dist-info/RECORD,,
