@@ -1,0 +1,3 @@
+[console_scripts]
+neil_vst_chain = neil_vst.cli_script:main
+
