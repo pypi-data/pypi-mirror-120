@@ -1,0 +1,9 @@
+repo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+repo/ticket1.py,sha256=Y_iyJf1CRHw2BvDBeEkN2cXFhD0HsYOusL8qJcZRqV8,1940
+setup/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+setup/ticket1.py,sha256=MRyn3Byu14R344CsT04e9KD43O1NUTg9LInYqdRGCa4,1148
+helm_farrukh90-0.0.5.dist-info/LICENSE,sha256=rgqp22wmEeeJ8dkEFGqvlPwcz6U0Gq_YrwKM-CFBIbo,1074
+helm_farrukh90-0.0.5.dist-info/METADATA,sha256=-dhqC-dQg7JxPogRUnC6K9C5r-cVyI5o1_ejgZr-aUw,787
+helm_farrukh90-0.0.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+helm_farrukh90-0.0.5.dist-info/top_level.txt,sha256=0ADDk0CjSox2vNvCaLlQdWGPU6g4aBC2yG4mh5UE0f8,11
+helm_farrukh90-0.0.5.dist-info/RECORD,,
