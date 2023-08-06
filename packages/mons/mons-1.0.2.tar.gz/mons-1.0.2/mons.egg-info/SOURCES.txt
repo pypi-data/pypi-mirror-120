@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+mons.egg-info/PKG-INFO
+mons.egg-info/SOURCES.txt
+mons.egg-info/dependency_links.txt
+mons.egg-info/entry_points.txt
+mons.egg-info/requires.txt
+mons.egg-info/top_level.txt
