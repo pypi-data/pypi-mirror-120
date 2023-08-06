@@ -1,0 +1,14 @@
+log21/Argparse.py,sha256=eHMmkECms-HnF3EiRUlNOQP-DKEenHODzgGl0F9sIu0,1033
+log21/Colors.py,sha256=YiXCSfYJX_xb2BpR7SX6zjNK80B1j2SpONyL0Qr9sNw,8086
+log21/FileHandler.py,sha256=syYaZU-EWkFNtaacfzb1sGLBts3LE7C0K0YG5EIYB3c,608
+log21/Formatters.py,sha256=O9BhAbCtniA34yQtelBfMtrKKKv0tG2h7mX-N-zay6s,6282
+log21/Levels.py,sha256=dinCkQnxgoorZCkeds0YrBg1VE3aW3wHuyBXzIzPdd8,330
+log21/Logger.py,sha256=B_eZRGJO8cZFVmk5oOpJBhXBZmlHpXcOyjxJijRQv-M,4159
+log21/Manager.py,sha256=H_SX9lMsziqwmwLcEK8eJ6r1YCh2lQxk8qXq3sJQ3jw,1214
+log21/StreamHandler.py,sha256=XBkS__7pTsm-YYrrGl_QqV6_b1S3yQCxH6pKj-W0_EQ,5816
+log21/__init__.py,sha256=JGmD3JCkc82DrJjIPzvFpJ2yRFjKA1zH0SEY3m-ln3M,3258
+log21-1.4.8.dist-info/LICENSE.txt,sha256=Fhj4jEyKktjjx-6c5EunVYd0wu3klS2dS6KpcXSyZ8E,11346
+log21-1.4.8.dist-info/METADATA,sha256=_7SdgCQQfNYObN3Jyo98iwnu3x1GWRko0Z4pdudnBQE,17009
+log21-1.4.8.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+log21-1.4.8.dist-info/top_level.txt,sha256=n7tyzxvAeFX7iU6OQurEFuuY_f3P-ZjpJGZ-hePT8rw,6
+log21-1.4.8.dist-info/RECORD,,
