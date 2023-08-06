@@ -1,0 +1,28 @@
+Metadata-Version: 1.1
+Name: atlassian-httptest
+Version: 0.9
+Summary: A real live HTTP server to use in tests
+Home-page: https://bitbucket.org/atlassian/httptest
+Author: Bitbucket Team
+Author-email: bitbucket-dev@atlassian.com
+License: MIT
+Description: ==========
+         httptest
+        ==========
+        
+        httptest is a real live HTTP server to use in tests. See httptest.py for more
+        information.
+        
+Keywords: functional http test
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Server
+Classifier: Topic :: Software Development :: Testing
