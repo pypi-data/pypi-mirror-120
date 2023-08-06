@@ -1,0 +1,3 @@
+[mkdocs.plugins]
+doxygen-snippets = doxygen_snippets.plugin:DoxygenSnippets
+
