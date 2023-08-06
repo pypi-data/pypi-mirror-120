@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: CLI-processor
+Version: 1.0.0
+Summary: Command line preprocessing includes input dataset, data Description, handling Null Values, encoding, feature scaling and download the preprocessed data in csv format.
+Home-page: https://github.com/yashb007/CLI-Package
+Author: Yash
+Author-email: yyashpal_be18@thapar.edu
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
