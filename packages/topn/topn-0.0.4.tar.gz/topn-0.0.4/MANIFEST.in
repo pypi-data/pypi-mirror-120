@@ -1,0 +1,4 @@
+include README.md
+recursive-include topn *.pyx
+recursive-include topn *.h
+recursive-include topn *.pxd
