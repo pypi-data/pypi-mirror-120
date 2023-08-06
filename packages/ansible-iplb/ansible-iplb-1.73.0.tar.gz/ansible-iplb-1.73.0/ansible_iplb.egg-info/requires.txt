@@ -1,0 +1,3 @@
+ansible
+ovh
+six>=1.12.0
