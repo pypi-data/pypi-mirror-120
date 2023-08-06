@@ -1,0 +1,16 @@
+discourtesy/__init__.py,sha256=9589owzbrOeXQiHDZLxhBUOPhoQ_f96lTHwqLAWFmbo,111
+discourtesy/application.py,sha256=8gKakW1LVvBWkS-UJcS6l6AFxJm9czGsd4NU7udYFJA,1073
+discourtesy/command.py,sha256=D0E7SErVZXu6rL_wYB7Y52EMLHiXhd4tiaaqH5SZAr4,316
+discourtesy/component.py,sha256=_k0rreP_RkfbHZb5cR_MONJL3lyMpcKiwnjWSL-kDGU,307
+discourtesy/dispatch.py,sha256=dG9EDNTP1AJBfqAO3eDTxhxSTVm-X1POsbpxb-rZ0Is,3247
+discourtesy/routes/__init__.py,sha256=QIwUqwIzoiqDBvntw9Nh5-uwS6K6WaY0NRdm5m2OQmE,74
+discourtesy/routes/index.py,sha256=NOHvgtt0aLBHgmzP2O2LPx9CW7K2Fm7B305IbkRjXrs,332
+discourtesy/routes/interaction.py,sha256=3piuViTWwhC-mlAxl07VPUCA8PE2BaYCMe3as1bUmrI,2138
+discourtesy/utils/__init__.py,sha256=-trrjrrJgcRRmduamGnSTgHKxTm0bzJ8QGkX3Hvtqjg,217
+discourtesy/utils/format.py,sha256=gtXOWlQpIl2Xi1910V_kgq6SPE2jHxS3lg-VuNZVXwE,446
+discourtesy/utils/options.py,sha256=haP_5B1bsYWzS2SFhS9j7gZvyWnrW1QQPOsHa2Tz8T0,736
+discourtesy/utils/response.py,sha256=QujiN7iPwWKSbXIEKzMsy6ZaPa81bnvqT7MmhJSTPWA,116
+discourtesy-0.1.0.dist-info/LICENSE,sha256=fnByKN9U2wc_SRwgfdvToRUsxLXwwQ-7404qTrxfiI4,758
+discourtesy-0.1.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+discourtesy-0.1.0.dist-info/METADATA,sha256=e_RQMCnpsdXw3TW4GsOvRGcoVLzWy85aJnIGjWznLW0,533
+discourtesy-0.1.0.dist-info/RECORD,,
