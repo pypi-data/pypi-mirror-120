@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/OneNeuron/__init__.py
+src/OneNeuron/perceptron.py
+src/keithferns98_OneNeuron.egg-info/PKG-INFO
+src/keithferns98_OneNeuron.egg-info/SOURCES.txt
+src/keithferns98_OneNeuron.egg-info/dependency_links.txt
+src/keithferns98_OneNeuron.egg-info/requires.txt
+src/keithferns98_OneNeuron.egg-info/top_level.txt
