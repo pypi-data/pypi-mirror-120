@@ -1,0 +1,12 @@
+triarray/__init__.py,sha256=WAcQiKMsQ8zOPYtM3AWMSyecKAiZFkI1a7ySndB-ZhQ,471
+triarray/convert.py,sha256=QaA5FqOs0g6GU0juKsl9q5sESrUPvZGpwhUrAwwnLUM,4307
+triarray/index.py,sha256=0utT9VgQ4lKn84d4VZc_CKeM-BKdbK1Q12yTo-O2wyY,3485
+triarray/io.py,sha256=5lbMNQmD97iDxBfdcE8w_DPQA70OWOi2sTgm7Sd6kxk,6599
+triarray/math.py,sha256=R9rmnQKUoaYewhUscxmfqtKX_I-FRmGTgpnB_eoOjMU,1766
+triarray/matrix.py,sha256=ccnIcS1wV4waYDNv9aS_U1oCVxLRAILc7WbTi97MWQA,17702
+triarray/util.py,sha256=KCt66ku7Ot-m2E7azOnrwjMYfcxNxnATE5HLqmcZgmc,626
+triarray-0.2.1.dist-info/LICENSE,sha256=pfSRsGfdnFVTe1MMaXFpAaqQYLmvZSY7nZVxG8tKKjE,1076
+triarray-0.2.1.dist-info/METADATA,sha256=Gt1sl1nI8XjhWT4uktsBvyC6W2yRdYkItrhKU6ZH7FQ,2072
+triarray-0.2.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+triarray-0.2.1.dist-info/top_level.txt,sha256=EUlmM6JS_YOBu3D7wL-a_1YdRGpZhi1QdNz6Rgwam70,9
+triarray-0.2.1.dist-info/RECORD,,
