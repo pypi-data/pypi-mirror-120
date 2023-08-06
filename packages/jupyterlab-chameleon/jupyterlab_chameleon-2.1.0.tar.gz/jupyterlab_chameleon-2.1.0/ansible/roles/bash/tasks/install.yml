@@ -1,0 +1,5 @@
+---
+- ansible.builtin.pip:
+    name: bash_kernel
+
+- ansible.builtin.shell: "python -m bash_kernel.install"
