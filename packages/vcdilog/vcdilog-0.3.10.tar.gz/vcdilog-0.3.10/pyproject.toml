@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "vcdilog"
+packages = [
+    { include = "vcdilog" },
+]
+version = "v0.3.10"
+authors = [ "Robert Lechte <robert.lechte@dpc.vic.gov.au>",]
+license = "Unlicense"
+readme = "README.md"
+description = "best practice low-config python logging"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pyyaml = "*"
+logging_tree = "*"
+python-json-logger = "*"
+pendulum = "^2.1.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+pytest-cov = "*"
+tox = "*"
+flake8 = "*"
+isort = "*"
+black = "*"
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.semantic_release]
+version_variable = [
+    'pyproject.toml:version',
+]
+branch = "main"
+upload_to_pypi = false
+patch_without_tag = true
+version_source = "tag"
+
+
+[tool.black]
+line-length = 92
