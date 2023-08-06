@@ -1,0 +1,13 @@
+ingester3/Country.py,sha256=acgV6NIHf-8od_v2ebLn7ku-IFsLtUaltAH43RdndxM,5167
+ingester3/DBWriter.py,sha256=gx37FAOHJUfNozX3WbuAn9KK-I_6m-cfqpZVIwWrSCc,21556
+ingester3/Priogrid.py,sha256=QO6COzv90cDA3uhczR99DDG4QAllpw4iY0aH4UghfHU,5339
+ingester3/ViewsMonth.py,sha256=lLzYNaqBbMtzSkle837FLG7LwU17_KGK_c8dgh6bZns,1415
+ingester3/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ingester3/config.py,sha256=XrN7kgUXdpwiCyV8RUBrm809DFQSyucyuj8zRo0U0Vw,2524
+ingester3/extensions.py,sha256=_6gN-F5BpCZkhQD286XfpOar2M1iCmzDi8bwIDHY8hM,33288
+ingester3/log.py,sha256=-Hygb0zvzwkixkXFD5BEpmRAZaQzXvKUAy745cHQoL4,2683
+ingester3/scratch.py,sha256=m4zUp0Gvids9WZEPY9icMJ9BRnlJGFsJKoJfepjmIf0,8519
+ingester3/timestamp.cache,sha256=UZ6X0Px-UgK2z2YVYy-Kggo2pdABsBWBDanyzfVNckc,10
+ingester3-0.2.4.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+ingester3-0.2.4.dist-info/METADATA,sha256=Td3kSFZtU4pKrE_XzeVCKg7rr-3XJ0kXEiQ2-CiSLwY,789
+ingester3-0.2.4.dist-info/RECORD,,
