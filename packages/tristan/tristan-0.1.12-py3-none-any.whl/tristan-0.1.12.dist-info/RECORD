@@ -1,0 +1,15 @@
+tristan/__init__.py,sha256=I2-TiDQaJp8bWKFy5C1DcNTxFSMatQ3hgH25tAwjAE8,566
+tristan/binning.py,sha256=MWwb__8HRDLVWn_FXYTsHe4IrM9OdD2jM-I9kBjYaXA,4834
+tristan/data.py,sha256=uvvHzAliehUMekx48ujv4hoZFPWTViq7XarXLE9Vem8,8958
+tristan/vds.py,sha256=1g2RKXFnD9CVTQIiRLWB6pyedDNBDEKC2cwGQjmU0rc,8918
+tristan/command_line/__init__.py,sha256=RAubquFqMEITBGGwTUa9fHV5nxnURfdjFlJso9xKxNQ,13255
+tristan/command_line/apply_flat_field.py,sha256=RWfR47zsm_TlVlwCR_YQaQkgNnaU5ea9Wn1drvVnT5o,3658
+tristan/command_line/cues.py,sha256=XOV7j8btO-cVRIOrbBQL3IsnjLAX9JaH-vK_84qtLr4,2017
+tristan/command_line/images.py,sha256=J-QA-oFkXhPALa9lEFZ_lEA5laigdSpzEoKn1yNJzPI,22750
+tristan/command_line/vds.py,sha256=TFbZcmkkieQ6Jmyo77b1rAXtzP_3Qprs8thKVCwu1k8,1595
+tristan-0.1.12.dist-info/LICENCE,sha256=924IzZZ9ZMRT68o-0_4rGN0bvS_CpWcVmo2n_qJMpLE,1081
+tristan-0.1.12.dist-info/METADATA,sha256=6_HV277oBC6ebZt4ABXFPHnTJGMLo1vTG8LKkI4luJc,1362
+tristan-0.1.12.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+tristan-0.1.12.dist-info/entry_points.txt,sha256=XSnwNYB5Xua_wF1S3ZN94a-scXxX7yxjZ7lGNurH2KA,197
+tristan-0.1.12.dist-info/top_level.txt,sha256=dpruQAaEPnKAEtYJBRH3MLsFlXqBuvmhgtGw1BHZm5s,8
+tristan-0.1.12.dist-info/RECORD,,
