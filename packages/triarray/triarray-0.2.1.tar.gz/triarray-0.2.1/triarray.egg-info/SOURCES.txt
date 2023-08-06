@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+triarray/__init__.py
+triarray/convert.py
+triarray/index.py
+triarray/io.py
+triarray/math.py
+triarray/matrix.py
+triarray/util.py
+triarray.egg-info/PKG-INFO
+triarray.egg-info/SOURCES.txt
+triarray.egg-info/dependency_links.txt
+triarray.egg-info/requires.txt
+triarray.egg-info/top_level.txt
