@@ -1,0 +1,10 @@
+Metadata-Version: 1.2
+Name: polygonscan-python
+Version: 1.0.0
+Summary: A minimal, complete, python API for polygonscan.com.
+Home-page: https://github.com/tarsil/polygonscan-python
+Author: Tiago A. Silva
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
