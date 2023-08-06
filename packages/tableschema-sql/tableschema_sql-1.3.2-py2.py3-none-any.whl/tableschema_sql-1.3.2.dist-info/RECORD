@@ -1,0 +1,10 @@
+tableschema_sql/VERSION,sha256=MxWJcqU4d7Qhz-JZi42TyrFpljpJZLRe6InoU0mXkBg,6
+tableschema_sql/__init__.py,sha256=TBFG4C7GSjJ3y9qwmA-1IJBROE2oaA2F1Lva-HqEvZA,383
+tableschema_sql/mapper.py,sha256=NFrNgJClm-QrpTDoOIR1u3W4Fe_TUDKF6z47s_Y9BP0,11284
+tableschema_sql/storage.py,sha256=HK0wHAQ7YTpW63DTZLQeJp5RblWc_nFbOFQqwtW1EWY,10230
+tableschema_sql/writer.py,sha256=kWDTW-g7Ln4BXYnoRelh8UMlWPavIsM5HpK94gMkhmw,4059
+tableschema_sql-1.3.2.dist-info/LICENSE.md,sha256=njBRH60GHXL1vp2BrHKG_-vpSPJX9LVh2jkgS2dkALM,1082
+tableschema_sql-1.3.2.dist-info/METADATA,sha256=TDtoHPyrndjOIKQ1tr2tRiyJuj3PIEJX8NMW7BDaOlQ,6325
+tableschema_sql-1.3.2.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+tableschema_sql-1.3.2.dist-info/top_level.txt,sha256=T_fpYWcpSHByjLgNpK7GaIbAhWGFXJK3ex7Aqebvaks,16
+tableschema_sql-1.3.2.dist-info/RECORD,,
