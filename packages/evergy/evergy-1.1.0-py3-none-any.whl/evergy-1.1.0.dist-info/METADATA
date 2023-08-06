@@ -1,0 +1,197 @@
+Metadata-Version: 2.1
+Name: evergy
+Version: 1.1.0
+Summary: A utility that reads electric utility meter data from Evergy.com
+Home-page: https://github.com/lawrencefoley/evergy
+Author: Lawrence Foley
+Author-email: lawrencefoley@live.com
+License: UNKNOWN
+Project-URL: Documentation, https://evergy.readthedocs.io/en/latest/
+Project-URL: Source, https://github.com/lawrencefoley/evergy/
+Project-URL: Tracker, https://github.com/lawrencefoley/evergy/issues
+Project-URL: Maintainer, https://lawrencefoley.com
+Keywords: evergy kcpl kansas-city electricity-consumption electricity-meter api
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: beautifulsoup4 (==4.10.0)
+Requires-Dist: requests (==2.26.0)
+
+# ⚡Evergy Client
+
+[![Latest Version on PyPi](https://badge.fury.io/py/evergy.svg)](https://pypi.org/project/evergy/)
+
+[![Supported Python Versions](https://img.shields.io/pypi/pyversions/evergy.svg)](https://pypi.org/project/evergy/)
+
+[![Documentation Status](https://readthedocs.org/projects/evergy/badge/?version=latest)](https://evergy.readthedocs.io/en/latest/)
+
+[![Requriements Status](https://requires.io/github/lawrencefoley/evergy/requirements.svg?branch=master)](https://requires.io/github/lawrencefoley/evergy/requirements/?branch=master)
+
+
+
+A simple utility that you can use to login to your Evergy account and retrieve you meter readings.
+
+- **[Documentation](https://evergy.readthedocs.io/en/latest/)**
+
+- **[Source Code](https://github.com/lawrencefoley/evergy)**
+
+> **Note: This is an unofficial utility that uses Evergy's non-public API.**
+
+
+
+> Previously known as "KCPL"
+
+
+
+## Install
+
+```
+
+pip install evergy
+
+```
+
+
+
+## Usage
+
+```python
+
+# Import the package
+
+from evergy import Evergy
+
+
+
+# Login
+
+evergy = Evergy("username", "password")
+
+evergy.login()
+
+
+
+# Get a list of daily readings
+
+# Note, there is more data available such as 'cost' and 'avgTemp'
+
+data = evergy.get_usage()
+
+logging.info("Last usage reading: " + str(data[-1]))
+
+logging.info("Last usage reading: " + str(data[-1]["usage"]))
+
+
+
+# End your session by logging out
+
+evergy.logout()
+
+```
+
+
+
+## Development
+
+### Setup
+
+```powershell
+
+python -m pip install --upgrade virtualenv
+
+virtualenv venv
+
+.\venv\Scripts\activate.ps1
+
+```
+
+
+
+### Code Formatting
+
+Install the dev dependencies and run `isort` and `flake8` to properly format the code.
+
+```bash
+
+
+
+pip install -r requirements_dev.txt
+
+isort evergy/
+
+flake8 evergy/
+
+```
+
+
+
+### Build Docs
+
+Windows PowerShell:
+
+```powershell
+
+pip install -r docs/requirements_docs.txt
+
+docs\make.bat clean; docs\make.bat html
+
+```
+
+
+
+### Release New Version
+
+- Bump `__version__` in `evergy/__init__.py` 
+
+```bash
+
+git commit -m "Bump version"
+
+git tag -a v1.0.1 -m "v1.0.1"
+
+git push --tags
+
+```
+
+
+
+### Build Wheel
+
+> The `--no-isolation` flag tells it to use the existing virtual env
+
+```bash
+
+python -m build --no-isolation --wheel
+
+```
+
+
+
+### Upload to PyPi
+
+#### Test
+
+```bash
+
+twine upload --verbose -u "username" -p "password" --repository testpypi dist/*
+
+```
+
+
+
+#### Prod
+
+```bash
+
+twine upload --verbose -u "username" -p "password" --repository pypi dist/*
+
+```
+
+
+
