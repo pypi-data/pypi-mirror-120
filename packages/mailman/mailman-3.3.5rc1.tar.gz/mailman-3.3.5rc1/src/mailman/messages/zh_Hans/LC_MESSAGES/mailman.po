@@ -1,0 +1,2679 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-21 12:09-0700\n"
+"PO-Revision-Date: 2021-08-26 12:09+0000\n"
+"Last-Translator: Eric <spice2wolf@gmail.com>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"gnu-mailman/mailman/zh_Hans/>\n"
+"Language: zh_Hans\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.8.1-dev\n"
+
+#: src/mailman/app/bounces.py:76 src/mailman/app/moderator.py:85
+#: src/mailman/chains/hold.py:162 src/mailman/handlers/acknowledge.py:56
+#: src/mailman/handlers/subject_prefix.py:45
+#: src/mailman/handlers/subject_prefix.py:91 src/mailman/runners/digest.py:87
+msgid "(no subject)"
+msgstr "（没有主题）"
+
+#: src/mailman/app/bounces.py:78
+msgid "[No bounce details are available]"
+msgstr "[没有回复信息]"
+
+#: src/mailman/app/bounces.py:230
+msgid "$mlist.display_name mailing list probe message"
+msgstr "$mlist.display_name 邮件列表检测消息"
+
+#: src/mailman/app/bounces.py:266
+msgid "Uncaught bounce notification"
+msgstr "未捕获的回报信息"
+
+#: src/mailman/app/membership.py:141
+msgid "$mlist.display_name unsubscription notification"
+msgstr "$mlist.display_name 取消订阅通知"
+
+#: src/mailman/app/moderator.py:97
+msgid ""
+"The content of this message was lost. It was probably cross-posted to\n"
+"multiple lists and previously handled on another list.\n"
+msgstr ""
+
+#: src/mailman/app/moderator.py:132
+msgid "Posting of your message titled \"$subject\""
+msgstr "以 \"$subject\" 为标题发布你的消息"
+
+#: src/mailman/app/moderator.py:133 src/mailman/app/moderator.py:258
+#: src/mailman/rest/sub_moderation.py:112
+msgid "[No reason given]"
+msgstr "[没有给出原因]"
+
+#: src/mailman/app/moderator.py:184
+msgid "Forward of moderated message"
+msgstr "转发转发的邮件"
+
+#: src/mailman/app/moderator.py:225
+msgid "New unsubscription request from $mlist.display_name by $email"
+msgstr "新的退订请求来自 $email 通过 $mlist.display_name"
+
+#: src/mailman/app/moderator.py:257
+msgid "Unsubscription request"
+msgstr "退订请求"
+
+#: src/mailman/app/moderator.py:298
+msgid "Original Message"
+msgstr "原始消息"
+
+#: src/mailman/app/moderator.py:301
+msgid "Request to mailing list \"$display_name\" rejected"
+msgstr "对邮件列表 \"$display_name\" 的请求被拒绝"
+
+#: src/mailman/app/notifications.py:94
+msgid " (Digest mode)"
+msgstr " （摘要模式）"
+
+#: src/mailman/app/notifications.py:98
+#, python-brace-format
+msgid "Welcome to the \"$mlist.display_name\" mailing list${digmode}"
+msgstr "欢迎加入 \"$mlist.display_name\" 邮件列表 ${digmode}"
+
+#: src/mailman/app/notifications.py:122
+msgid "You have been unsubscribed from the $mlist.display_name mailing list"
+msgstr "你已经退订 $mlist.display_name 邮件列表"
+
+#: src/mailman/app/notifications.py:140
+msgid "$mlist.display_name subscription notification"
+msgstr "$mlist.display_name 订阅通知"
+
+#: src/mailman/app/notifications.py:164
+msgid "$member's subscription disabled on $mlist.display_name"
+msgstr "$member 成员的 $mlist.display_name 的订阅已经被关闭"
+
+#: src/mailman/app/notifications.py:192
+msgid "$member's bounce score incremented on $mlist.display_name"
+msgstr ""
+
+#: src/mailman/app/notifications.py:218
+#, python-brace-format
+msgid "$member unsubscribed from ${mlist.display_name} mailing list due to bounces"
+msgstr "由于退回而导致 $member 成员退订 ${mlist.display_name}"
+
+#: src/mailman/app/notifications.py:245
+#, python-brace-format
+msgid "Your subscription for ${mlist.display_name} mailing list has been disabled"
+msgstr "你对 ${mlist.display_name} 邮件列表的订阅已关闭"
+
+#: src/mailman/app/subscriptions.py:325
+msgid "New subscription request to $self.mlist.display_name from $self.address.email"
+msgstr "新的来自 $self.address.email 对 $self.mlist.display_name 的订阅请求"
+
+#: src/mailman/app/subscriptions.py:493
+msgid "New unsubscription request to $self.mlist.display_name from $self.address.email"
+msgstr "新的来自 $self.address.email 对 $self.mlist.display_name 的取消订阅的请求"
+
+#: src/mailman/app/subscriptions.py:624
+msgid "You have been invited to join the $event.mlist.fqdn_listname mailing list."
+msgstr "你已被邀请加入 $event.mlist.fqdn_listname 邮件列表。"
+
+#: src/mailman/app/subscriptions.py:627
+msgid "Your confirmation is needed to leave the $event.mlist.fqdn_listname mailing list."
+msgstr "你需要确认离开 $event.mlist.fqdn_listname 邮件列表。"
+
+#: src/mailman/app/subscriptions.py:631
+msgid "Your confirmation is needed to join the $event.mlist.fqdn_listname mailing list."
+msgstr "你需要确认加入 $event.mlist.fqdn_listname 邮件列表。"
+
+#: src/mailman/bin/mailman.py:102 src/mailman/bin/master.py:518
+#: src/mailman/bin/runner.py:96
+msgid ""
+"    Configuration file to use.  If not given, the environment variable\n"
+"    MAILMAN_CONFIG_FILE is consulted and used if set.  If neither are given, a\n"
+"    default configuration file is loaded."
+msgstr ""
+"    要使用的配置文件。如果没有给出，会查找是否设置了\n"
+"    MAILMAN_CONFIG_FILE 环境变量。如果都没有，\n"
+"    加载默认配置文件。"
+
+#: src/mailman/bin/mailman.py:110
+msgid ""
+"    Running mailman commands as root is not recommended and mailman will\n"
+"    refuse to run as root unless this option is specified."
+msgstr ""
+
+#: src/mailman/bin/mailman.py:129
+msgid "    If you are sure you want to run as root, specify --run-as-root."
+msgstr ""
+
+#: src/mailman/bin/master.py:157
+msgid ""
+"The master lock could not be acquired because it appears as though another\n"
+"master is already running."
+msgstr ""
+"无法获取主机锁因为另外一个\n"
+"主机已经在运行。"
+
+#: src/mailman/bin/master.py:163
+msgid ""
+"The master lock could not be acquired.  It appears as though there is a stale\n"
+"master lock.  Try re-running $program with the --force flag."
+msgstr ""
+"无法获取主机锁。似乎有一个过时的主机锁。\n"
+"可以尝试重新用 --force 选项运行 $program 。"
+
+#: src/mailman/bin/master.py:169
+msgid ""
+"The master lock could not be acquired, because it appears as if some process\n"
+"on some other host may have acquired it.  We can't test for stale locks across\n"
+"host boundaries, so you'll have to clean this up manually.\n"
+"\n"
+"Lock file: $config.LOCK_FILE\n"
+"Lock host: $hostname\n"
+"\n"
+"Exiting."
+msgstr ""
+"无法获取主锁，因为似乎其他主机上的某个进程可能已获取了主锁。\n"
+"我们无法跨主机边界测试过时的锁，\n"
+"因此您必须手动清理。\n"
+"\n"
+"锁定的文件：$config.LOCK_FILE\n"
+"锁定的主机：$hostname\n"
+"\n"
+"正在退出。"
+
+#: src/mailman/bin/master.py:182
+msgid ""
+"For unknown reasons, the master lock could not be acquired.\n"
+"\n"
+"Lock file: $config.LOCK_FILE\n"
+"Lock host: $hostname\n"
+"\n"
+"Exiting."
+msgstr ""
+"由于某些未知原因，无法获取主锁。\n"
+"\n"
+"锁定的文件：$config.LOCK_FILE\n"
+"锁定的主机：$hostname\n"
+"\n"
+"正在退出。"
+
+#: src/mailman/bin/master.py:494
+msgid ""
+"    Master subprocess watcher.\n"
+"\n"
+"    Start and watch the configured runners, ensuring that they stay alive and\n"
+"    kicking.  Each runner is forked and exec'd in turn, with the master waiting\n"
+"    on their process ids.  When it detects a child runner has exited, it may\n"
+"    restart it.\n"
+"\n"
+"    The runners respond to SIGINT, SIGTERM, SIGUSR1 and SIGHUP.  SIGINT,\n"
+"    SIGTERM and SIGUSR1 all cause a runner to exit cleanly.  The master will\n"
+"    restart runners that have exited due to a SIGUSR1 or some kind of other\n"
+"    exit condition (say because of an uncaught exception).  SIGHUP causes the\n"
+"    master and the runners to close their log files, and reopen then upon the\n"
+"    next printed message.\n"
+"\n"
+"    The master also responds to SIGINT, SIGTERM, SIGUSR1 and SIGHUP, which it\n"
+"    simply passes on to the runners.  Note that the master will close and\n"
+"    reopen its own log files on receipt of a SIGHUP.  The master also leaves\n"
+"    its own process id in the file specified in the configuration file but you\n"
+"    normally don't need to use this PID directly."
+msgstr ""
+"    主子流程观察者。\n"
+"\n"
+"    启动并观看已配置的跑步者，确保他们保持活力并保持\n"
+"    踢。每个跑步者依次分叉并执行，主人等待\n"
+"    在他们的进程ID上。当检测到儿童赛跑者退出时，它可能\n"
+"    重新启动它。\n"
+"\n"
+"    跑步者对SIGINT，SIGTERM，SIGUSR1和SIGHUP做出响应。 SIGINT，\n"
+"    SIGTERM和SIGUSR1都使跑步者干净退出。主人会\n"
+"    重新启动由于SIGUSR1或其他某种原因而退出的跑步者\n"
+"    退出条件（例如由于未捕获的异常）。 SIGHUP导致\n"
+"    大师和跑步者关闭他们的日志文件，然后重新打开\n"
+"    下一条打印的消息。\n"
+"\n"
+"    主机还响应SIGINT，SIGTERM，SIGUSR1和SIGHUP，\n"
+"    简单地传递给跑步者。请注意，主控器将关闭并\n"
+"    收到SIGHUP后重新打开其自己的日志文件。师父也离开\n"
+"    在配置文件中指定的文件中它自己的进程ID，但是您\n"
+"    通常不需要直接使用此PID。"
+
+#: src/mailman/bin/master.py:525
+msgid ""
+"    Don't restart the runners when they exit because of an error or a SIGUSR1.\n"
+"    Use this only for debugging."
+msgstr ""
+"    当跑步者由于错误或SIGUSR1而退出时，请勿重新启动跑步者。\n"
+"    仅将此用于调试。"
+
+#: src/mailman/bin/master.py:531
+msgid ""
+"    If the master watcher finds an existing master lock, it will normally exit\n"
+"    with an error message.  With this option,the master will perform an extra\n"
+"    level of checking.  If a process matching the host/pid described in the\n"
+"    lock file is running, the master will still exit, requiring you to manually\n"
+"    clean up the lock.  But if no matching process is found, the master will\n"
+"    remove the apparently stale lock and make another attempt to claim the\n"
+"    master lock."
+msgstr ""
+"    如果主观察者发现现有的主锁，则通常会退出\n"
+"    并显示错误消息。使用此选项，主控器将执行额外的操作。\n"
+"    检查级别。如果某个进程与主机/ pid中描述的匹配，\n"
+"    锁定文件正在运行，主服务器仍会退出，要求您手动进行\n"
+"    清理锁。但是，如果找不到匹配的过程，则母版将\n"
+"    删除看似过时的锁，然后再次尝试声明\n"
+"    主锁。"
+
+#: src/mailman/bin/master.py:544
+msgid ""
+"    Override the default set of runners that the master will invoke, which is\n"
+"    typically defined in the configuration file.  Multiple -r options may be\n"
+"    given.  The values for -r are passed straight through to bin/runner."
+msgstr ""
+"    覆盖主服务器将调用的默认运行程序集，即\n"
+"    通常在配置文件中定义。多个-r选项可能是\n"
+"    给定的。 -r的值直接传递到bin / runner。"
+
+#: src/mailman/bin/master.py:551 src/mailman/bin/runner.py:133
+msgid "Display more debugging information to the log file."
+msgstr "在日志文件中显示更多调试信息。"
+
+#: src/mailman/bin/runner.py:50
+msgid "Undefined runner name: $name"
+msgstr "未定义的跑步者名称：$ name"
+
+#: src/mailman/bin/runner.py:58
+msgid "Cannot import runner module: $class_path"
+msgstr "无法导入运行器模块：$ class_path"
+
+#: src/mailman/bin/runner.py:76
+msgid ""
+"    Start a runner.\n"
+"\n"
+"    The runner named on the command line is started, and it can either run\n"
+"    through its main loop once (for those runners that support this) or\n"
+"    continuously.  The latter is how the master runner starts all its\n"
+"    subprocesses.\n"
+"\n"
+"    -r is required unless -l or -h is given, and its argument must be one of\n"
+"    the names displayed by the -l switch.\n"
+"\n"
+"    Normally, this script should be started from `mailman start`.  Running it\n"
+"    separately or with -o is generally useful only for debugging.  When run\n"
+"    this way, the environment variable $MAILMAN_UNDER_MASTER_CONTROL will be\n"
+"    set which subtly changes some error handling behavior.\n"
+"    "
+msgstr ""
+"    开始跑步。\n"
+"\n"
+"    命令行上指定的运行程序已启动，并且可以运行\n"
+"    通过其主循环一次（对于支持此功能的跑步者）或\n"
+"    不断地。后者是大师赛跑者如何开始一切的方式\n"
+"    子流程。\n"
+"\n"
+"    除非指定-l或-h，否则-r是必需的，并且其参数必须为以下之一\n"
+"    -l开关显示的名称。\n"
+"\n"
+"    通常，此脚本应从“ mailman start”启动。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。运行它\n"
+"    通常，单独使用或与-o一起使用仅对调试有用。运行时\n"
+"    这样，环境变量$ MAILMAN_UNDER_MASTER_CONTROL将为\n"
+"    设置它可以巧妙地改变一些错误处理行为。\n"
+"    "
+
+#: src/mailman/bin/runner.py:103
+msgid "List the available runner names and exit."
+msgstr "列出可用的跑步者名称并退出。"
+
+#: src/mailman/bin/runner.py:107
+msgid ""
+"    Run the named runner exactly once through its main loop.  Otherwise, the\n"
+"    runner runs indefinitely until the process receives a signal.  This is not\n"
+"    compatible with runners that cannot be run once."
+msgstr ""
+"    在其主循环中仅运行一次指定的运行程序。否则，\n"
+"    运行程序无限期运行，直到该过程收到信号为止。这不是\n"
+"    与无法运行一次的跑步者兼容。"
+
+#: src/mailman/bin/runner.py:115
+msgid ""
+"\n"
+"    Start the named runner, which must be one of the strings returned by the -l\n"
+"    option.\n"
+"\n"
+"    For runners that manage a queue directory, optional `slice:range` if given\n"
+"    is used to assign multiple runner processes to that queue.  range is the\n"
+"    total number of runners for the queue while slice is the number of this\n"
+"    runner from [0..range).  For runners that do not manage a queue, slice and\n"
+"    range are ignored.\n"
+"\n"
+"    When using the `slice:range` form, you must ensure that each runner for the\n"
+"    queue is given the same range value.  If `slice:runner` is not given, then\n"
+"    1:1 is used.\n"
+"    "
+msgstr ""
+"\n"
+"    启动命名运行程序，该运行程序必须是-l返回的字符串之一\n"
+"    选项。\n"
+"\n"
+"    对于管理队列目录的跑步者，如果提供了可选的`slice：range`\n"
+"    用于将多个运行器进程分配给该队列。范围是\n"
+"    队列的总跑步人数，而slice是此人数\n"
+"    [0..range）的跑步者。对于不管理队列的跑步者，请切片和\n"
+"    范围将被忽略。\n"
+"\n"
+"    使用`slice：range`表格时，必须确保\n"
+"    队列被赋予相同的范围值。如果没有给出`slice：runner`，那么\n"
+"    使用1：1。\n"
+"    "
+
+#: src/mailman/bin/runner.py:157
+msgid "No runner name given."
+msgstr "没有给出跑步者的名字。"
+
+#: src/mailman/bin/runner.py:181
+msgid "$name runs $classname"
+msgstr "$ name运行$ classname"
+
+#: src/mailman/chains/accept.py:39
+msgid "Accept a message."
+msgstr "接受一条消息。"
+
+#: src/mailman/chains/builtin.py:38
+msgid "The built-in moderation chain."
+msgstr "内置的审核链。"
+
+#: src/mailman/chains/discard.py:37
+msgid "Discard a message and stop processing."
+msgstr "丢弃消息并停止处理。"
+
+#: src/mailman/chains/dmarc.py:30
+msgid "Process DMARC reject or discard mitigations"
+msgstr "进程DMARC拒绝或丢弃缓解措施"
+
+#: src/mailman/chains/headers.py:121
+msgid "Header \"{}\" matched a header rule"
+msgstr "标头“ {}”与标头规则匹配"
+
+#: src/mailman/chains/headers.py:136
+msgid "The built-in header matching chain"
+msgstr "内置标题匹配链"
+
+#: src/mailman/chains/hold.py:58
+msgid "N/A"
+msgstr "不适用"
+
+#: src/mailman/chains/hold.py:117
+msgid "Last autoresponse notification for today"
+msgstr "今天的最后一次自动回复通知"
+
+#: src/mailman/chains/hold.py:132
+msgid "Hold a message and stop processing."
+msgstr "保留一条消息并停止处理。"
+
+#: src/mailman/chains/hold.py:198
+msgid "Your message to $mlist.fqdn_listname awaits moderator approval"
+msgstr "您发给$ mlist.fqdn_listname的消息正在等待主持人批准"
+
+#: src/mailman/chains/hold.py:226
+msgid "$mlist.fqdn_listname post from $msg.sender requires approval"
+msgstr "$ msg.sender中的$ mlist.fqdn_listname帖子需要批准"
+
+#: src/mailman/chains/hold.py:236
+msgid ""
+"If you reply to this message, keeping the Subject: header intact, Mailman will\n"
+"discard the held message.  Do this if the message is spam.  If you reply to\n"
+"this message and include an Approved: header with the list password in it, the\n"
+"message will be approved for posting to the list.  The Approved: header can\n"
+"also appear in the first line of the body of the reply."
+msgstr ""
+"如果您回复此消息，则保持Subject：标头不变，Mailman将\n"
+"丢弃保留的消息。如果邮件是垃圾邮件，请执行此操作。如果您回覆\n"
+"此消息，并在其中包含带有列表密码的Approved：标头，\n"
+"邮件将被批准发布到列表中。 Approved：标头可以\n"
+"也将出现在回复正文的第一行。"
+
+#: src/mailman/chains/moderation.py:51
+msgid "Moderation chain"
+msgstr "缓和链"
+
+#: src/mailman/chains/owner.py:38
+msgid "The built-in -owner posting chain."
+msgstr "内置的所有者发布链。"
+
+#: src/mailman/chains/reject.py:44
+msgid "Reject/bounce a message and stop processing."
+msgstr "拒绝/退回邮件并停止处理。"
+
+#: src/mailman/commands/cli_addmembers.py:68
+#: src/mailman/commands/cli_syncmembers.py:116
+msgid "Cannot parse as valid email address (skipping): $line"
+msgstr "无法解析为有效的电子邮件地址（跳过）：$ line"
+
+#: src/mailman/commands/cli_addmembers.py:99
+msgid "Already subscribed (skipping): $email"
+msgstr "已订阅（跳过）：$ email"
+
+#: src/mailman/commands/cli_addmembers.py:101
+#: src/mailman/commands/cli_syncmembers.py:82
+msgid "Membership is banned (skipping): $email"
+msgstr "成员资格被禁止（跳过）：$ email"
+
+#: src/mailman/commands/cli_addmembers.py:104
+#: src/mailman/commands/cli_syncmembers.py:85
+msgid "Subscription already pending (skipping): $email"
+msgstr ""
+
+#: src/mailman/commands/cli_addmembers.py:110
+msgid ""
+"    Add all member addresses in FILENAME with delivery mode as specified\n"
+"    with -d/--delivery.  FILENAME can be '-' to indicate standard input.\n"
+"    Blank lines and lines that start with a '#' are ignored.\n"
+"    "
+msgstr ""
+"    按照指定的发送方式添加FILENAME中的所有成员地址\n"
+"    -d /-交付。 FILENAME可以为“-”以表示标准输入。\n"
+"    空行和以“＃”开头的行将被忽略。\n"
+"    "
+
+#: src/mailman/commands/cli_addmembers.py:118
+msgid ""
+"    Set the added members delivery mode to 'regular', 'mime', 'plain',\n"
+"    'summary' or 'disabled'.  I.e., one of regular, three modes of digest\n"
+"    or no delivery.  If not given, the default is regular.  Ignored for invited\n"
+"    members."
+msgstr ""
+"    将添加的成员传送模式设置为“常规”，“哑剧”，“普通”，“\n"
+"    “摘要”或“已禁用”。即常规的三种消化模式之一\n"
+"    或没有交货。如果未给出，则默认值为常规。忽略邀请\n"
+"    成员。"
+
+#: src/mailman/commands/cli_addmembers.py:126
+msgid ""
+"    Send the added members an invitation rather than immediately adding them.\n"
+"    "
+msgstr ""
+"    向添加的成员发送邀请，而不是立即添加他们。\n"
+"    "
+
+#: src/mailman/commands/cli_addmembers.py:131
+msgid "    Override the list's setting for send_welcome_message."
+msgstr "    覆盖send_welcome_message的列表设置。"
+
+#: src/mailman/commands/cli_addmembers.py:140 src/mailman/commands/cli_import.py:68
+#: src/mailman/commands/cli_inject.py:75 src/mailman/commands/cli_members.py:192
+#: src/mailman/commands/cli_syncmembers.py:199
+#: src/mailman/commands/cli_withlist.py:292 src/mailman/commands/cli_withlist.py:299
+msgid "No such list: $listspec"
+msgstr "没有这样的列表：$ listspec"
+
+#: src/mailman/commands/cli_aliases.py:33
+msgid "Regenerate the aliases appropriate for your MTA."
+msgstr "重新生成适合您的MTA的别名。"
+
+#: src/mailman/commands/cli_aliases.py:38
+msgid "An alternative directory to output the various MTA files to."
+msgstr "将各种MTA文件输出到的备用目录。"
+
+#: src/mailman/commands/cli_changeaddress.py:34
+msgid ""
+"    Change a user's email address from old_address to possibly case-preserved\n"
+"    new_address.\n"
+"    "
+msgstr ""
+
+#: src/mailman/commands/cli_changeaddress.py:45
+msgid "Address {} not found."
+msgstr ""
+
+#: src/mailman/commands/cli_changeaddress.py:47
+msgid "Address {} is not a valid email address."
+msgstr ""
+
+#: src/mailman/commands/cli_changeaddress.py:50
+msgid "Addresses are not different.  Nothing to change."
+msgstr ""
+
+#: src/mailman/commands/cli_changeaddress.py:53
+msgid "Address {} already exists; can't change."
+msgstr ""
+
+#: src/mailman/commands/cli_changeaddress.py:58
+msgid "Address changed from {} to {}."
+msgstr ""
+
+#: src/mailman/commands/cli_conf.py:53
+msgid "Print the Mailman configuration."
+msgstr "打印Mailman配置。"
+
+#: src/mailman/commands/cli_conf.py:57
+msgid ""
+"    File to send the output to.  If not given, or if '-' is given, standard\n"
+"    output is used."
+msgstr ""
+"    将输出发送到的文件。如果未给出，或者如果给出“-”，则为标准\n"
+"    使用输出。"
+
+#: src/mailman/commands/cli_conf.py:62
+msgid ""
+"    Section to use for the lookup.  If no key is given, all the key-value pairs\n"
+"    of the given section will be displayed."
+msgstr ""
+"    用于查找的部分。如果没有给出键，则所有键值对\n"
+"    将显示给定部分的。"
+
+#: src/mailman/commands/cli_conf.py:67
+msgid ""
+"    Key to use for the lookup.  If no section is given, all the key-values pair\n"
+"    from any section matching the given key will be displayed."
+msgstr ""
+"    用于查找的键。如果没有给出任何部分，则所有键值对\n"
+"    将显示与给定键匹配的任何部分中的内容。"
+
+#: src/mailman/commands/cli_control.py:42
+msgid "Start the Mailman master and runner processes."
+msgstr "启动Mailman主进程和运行进程。"
+
+#: src/mailman/commands/cli_control.py:46
+msgid ""
+"    If the master watcher finds an existing master lock, it will normally exit\n"
+"    with an error message.  With this option, the master will perform an extra\n"
+"    level of checking.  If a process matching the host/pid described in the\n"
+"    lock file is running, the master will still exit, requiring you to manually\n"
+"    clean up the lock.  But if no matching process is found, the master will\n"
+"    remove the apparently stale lock and make another attempt to claim the\n"
+"    master lock."
+msgstr ""
+"    如果主观察者发现现有的主锁，则通常会退出\n"
+"    并显示错误消息。使用此选项，主控器将执行额外的操作。\n"
+"    检查级别。如果某个进程与主机/ pid中描述的匹配，\n"
+"    锁定文件正在运行，主服务器仍会退出，要求您手动进行\n"
+"    清理锁。但是，如果找不到匹配的过程，则母版将\n"
+"    删除看似过时的锁，然后再次尝试声明\n"
+"    主锁。"
+
+#: src/mailman/commands/cli_control.py:57
+msgid ""
+"    Generate the MTA alias files upon startup. Some MTA, like postfix, can't\n"
+"    deliver email if alias files mentioned in its configuration are not\n"
+"    present. In some situations, this could lead to a deadlock at the first\n"
+"    start of mailman3 server. Setting this option to true will make this\n"
+"    script create the files and thus allow the MTA to operate smoothly."
+msgstr ""
+"    启动时生成MTA别名文件。某些MTA，例如后缀，不能\n"
+"    如果配置中未提及别名文件，则发送电子邮件\n"
+"    展示。在某些情况下，这可能会导致一开始的死锁\n"
+"    mailman3服务器的启动。将此选项设置为true将使\n"
+"    脚本创建文件，从而使MTA平稳运行。"
+
+#: src/mailman/commands/cli_control.py:66
+msgid ""
+"    Normally, this script will refuse to run if the user id and group id are\n"
+"    not set to the 'mailman' user and group (as defined when you configured\n"
+"    Mailman).  If run as root, this script will change to this user and group\n"
+"    before the check is made.\n"
+"\n"
+"    This can be inconvenient for testing and debugging purposes, so the -u flag\n"
+"    means that the step that sets and checks the uid/gid is skipped, and the\n"
+"    program is run as the current user and group.  This flag is not recommended\n"
+"    for normal production environments.\n"
+"\n"
+"    Note though, that if you run with -u and are not in the mailman group, you\n"
+"    may have permission problems, such as being unable to delete a list's\n"
+"    archives through the web.  Tough luck!"
+msgstr ""
+"    通常，如果用户标识和组标识为\n"
+"    未设置为“ mailman”用户和组（配置时定义）\n"
+"    邮递员）。如果以超级用户身份运行，则此脚本将更改为该用户和组\n"
+"    在进行检查之前。\n"
+"\n"
+"    这对于测试和调试目的可能很不方便，因此-u标志\n"
+"    表示将跳过设置和检查uid / gid的步骤，并且\n"
+"    程序以当前用户和组身份运行。不建议使用此标志\n"
+"    用于正常的生产环境。\n"
+"\n"
+"    但是请注意，如果您使用-u运行并且不在mailman组中，则您\n"
+"    可能有权限问题，例如无法删除列表的\n"
+"    通过网络存档。倒霉！"
+
+#: src/mailman/commands/cli_control.py:83 src/mailman/commands/cli_control.py:170
+#: src/mailman/commands/cli_control.py:192 src/mailman/commands/cli_control.py:214
+msgid ""
+"    Don't print status messages.  Error messages are still printed to standard\n"
+"    error."
+msgstr ""
+"    不要打印状态消息。错误消息仍按标准打印\n"
+"    错误。"
+
+#: src/mailman/commands/cli_control.py:93
+msgid "GNU Mailman is already running"
+msgstr "GNU Mailman已经在运行"
+
+#: src/mailman/commands/cli_control.py:97
+msgid "A previous run of GNU Mailman did not exit cleanly ({}).  Try using --force"
+msgstr "以前的GNU Mailman运行未完全退出（{}）。尝试使用--force"
+
+#: src/mailman/commands/cli_control.py:105
+msgid "Starting Mailman's master runner"
+msgstr "启动Mailman的主跑步者"
+
+#: src/mailman/commands/cli_control.py:108
+msgid "Generating MTA alias maps"
+msgstr "生成MTA别名映射"
+
+#: src/mailman/commands/cli_control.py:149
+msgid "PID unreadable in: $config.PID_FILE"
+msgstr "无法在以下位置读取PID：$ config.PID_FILE"
+
+#: src/mailman/commands/cli_control.py:151
+msgid "Is the master even running?"
+msgstr "主人还在运行吗？"
+
+#: src/mailman/commands/cli_control.py:158
+msgid "No child with pid: $pid"
+msgstr "没有pid的孩子：$ pid"
+
+#: src/mailman/commands/cli_control.py:160
+msgid "Stale pid file removed."
+msgstr "过时的pid文件已删除。"
+
+#: src/mailman/commands/cli_control.py:166
+msgid "Stop the Mailman master and runner processes."
+msgstr "停止Mailman主进程和运行进程。"
+
+#: src/mailman/commands/cli_control.py:175
+msgid "Shutting down Mailman's master runner"
+msgstr "关闭Mailman的主要跑步者"
+
+#: src/mailman/commands/cli_control.py:188
+msgid "Signal the Mailman processes to re-open their log files."
+msgstr "通知Mailman进程重新打开其日志文件。"
+
+#: src/mailman/commands/cli_control.py:197
+msgid "Reopening the Mailman runners"
+msgstr "重新打开邮递员赛跑者"
+
+#: src/mailman/commands/cli_control.py:210
+msgid "Stop and restart the Mailman runner subprocesses."
+msgstr "停止并重新启动Mailman运行程序子进程。"
+
+#: src/mailman/commands/cli_control.py:219
+msgid "Restarting the Mailman runners"
+msgstr "重新启动邮递员赛跑者"
+
+#: src/mailman/commands/cli_delmembers.py:48
+msgid "Member not subscribed (skipping): $email"
+msgstr "成员未订阅（跳过）：$ email"
+
+#: src/mailman/commands/cli_delmembers.py:54
+msgid "    Delete members from a mailing list."
+msgstr "    从邮件列表中删除成员。"
+
+#: src/mailman/commands/cli_delmembers.py:58
+msgid ""
+"    The list to operate on.  Required unless --fromall is specified.\n"
+"    "
+msgstr ""
+"    要操作的列表。除非指定--fromall，否则为必需。\n"
+"    "
+
+#: src/mailman/commands/cli_delmembers.py:64
+msgid ""
+"    Delete list members whose addresses are in FILENAME in addition to those\n"
+"    specified with -m/--member if any.  FILENAME can be '-' to indicate\n"
+"    standard input.  Blank lines and lines that start with a '#' are ignored.\n"
+"    "
+msgstr ""
+"    删除地址除FILENAME外还位于FILENAME中的列表成员\n"
+"    用-m /-member指定（如果有）。 FILENAME可以是'-'来表示\n"
+"    标准输入。空行和以“＃”开头的行将被忽略。\n"
+"    "
+
+#: src/mailman/commands/cli_delmembers.py:71
+msgid ""
+"    Delete the list member whose address is ADDRESS in addition to those\n"
+"    specified with -f/--file if any.  This option may be repeated for\n"
+"    multiple addresses.\n"
+"    "
+msgstr ""
+"    除了删除那些地址为ADDRESS的列表成员\n"
+"    用-f /-file指定（如果有）。此选项可能会重复执行\n"
+"    多个地址。\n"
+"    "
+
+#: src/mailman/commands/cli_delmembers.py:79
+msgid ""
+"    Delete all the members of the list.  If specified, none of -f/--file,\n"
+"    -m/--member or --fromall may be specified.\n"
+"    "
+msgstr ""
+"    删除列表中的所有成员。如果指定，则-f /-file都不存在，\n"
+"    可以指定-m /-member或--fromall。\n"
+"    "
+
+#: src/mailman/commands/cli_delmembers.py:86
+msgid ""
+"    Delete the member(s) specified by -m/--member and/or -f/--file from all\n"
+"    lists in the installation.  This may not be specified together with\n"
+"    -a/--all or -l/--list.\n"
+"    "
+msgstr ""
+"    从所有目录中删除-m /-member和/或-f /-file指定的成员\n"
+"    安装中列出。可能无法与\n"
+"    -a /-全部或-l /-列表。\n"
+"    "
+
+#: src/mailman/commands/cli_delmembers.py:93
+#: src/mailman/commands/cli_syncmembers.py:177
+msgid ""
+"    Override the list's setting for send_goodbye_message to\n"
+"    deleted members."
+msgstr ""
+"    覆盖send_goodbye_message的列表设置为\n"
+"    删除的成员。"
+
+#: src/mailman/commands/cli_delmembers.py:98
+#: src/mailman/commands/cli_syncmembers.py:182
+msgid "    Override the list's setting for admin_notify_mchanges."
+msgstr "    覆盖列表的admin_notify_mchanges设置。"
+
+#: src/mailman/commands/cli_delmembers.py:123
+msgid "No such list: $_list"
+msgstr "没有这样的列表：$ _list"
+
+#: src/mailman/commands/cli_digests.py:36
+msgid "Operate on digests."
+msgstr "操作摘要。"
+
+#: src/mailman/commands/cli_digests.py:39
+msgid ""
+"    Operate on this mailing list.  Multiple --list options can be given.  The\n"
+"    argument can either be a List-ID or a fully qualified list name.  Without\n"
+"    this option, operate on the digests for all mailing lists."
+msgstr ""
+"    在此邮件列表上进行操作。可以给出多个--list选项。这\n"
+"    参数可以是List-ID或完全限定的列表名称。没有\n"
+"    此选项将对所有邮件列表的摘要进行操作。"
+
+#: src/mailman/commands/cli_digests.py:46
+msgid ""
+"    Send any collected digests right now, even if the size threshold has not\n"
+"    yet been met."
+msgstr ""
+"    立即发送所有收集的摘要，即使大小阈值尚未达到\n"
+"    尚未遇见。"
+
+#: src/mailman/commands/cli_digests.py:52
+msgid ""
+"    Increment the digest volume number and reset the digest number to one.  If\n"
+"    given with --send, the volume number is incremented before any current\n"
+"    digests are sent."
+msgstr ""
+"    增加摘要卷号，并将摘要号重置为1。如果\n"
+"    用--send给出，卷号在任何当前值之前增加\n"
+"    摘要已发送。"
+
+#: src/mailman/commands/cli_digests.py:59 src/mailman/commands/cli_notify.py:50
+msgid ""
+"    Don't actually do anything, but in conjunction with --verbose, show what\n"
+"    would happen."
+msgstr ""
+"    实际上不执行任何操作，而是与--verbose一起显示\n"
+"    会发生。"
+
+#: src/mailman/commands/cli_digests.py:65 src/mailman/commands/cli_notify.py:56
+msgid "Print some additional status."
+msgstr "打印一些其他状态。"
+
+#: src/mailman/commands/cli_digests.py:69
+msgid ""
+"    Send any collected digests for the List only if their digest_send_periodic\n"
+"    is set to True."
+msgstr ""
+"    仅当摘要摘要发送时，才发送列表的所有摘要\n"
+"    设置为True。"
+
+#: src/mailman/commands/cli_digests.py:77
+msgid "--send and --periodic flags cannot be used together"
+msgstr "--send和--periodic标志不能一起使用"
+
+#: src/mailman/commands/cli_digests.py:90 src/mailman/commands/cli_notify.py:69
+msgid "No such list found: $spec"
+msgstr "找不到这样的列表：$ spec"
+
+#: src/mailman/commands/cli_digests.py:98
+#, python-brace-format
+msgid "$mlist.list_id is at volume $mlist.volume, number ${mlist.next_digest_number}"
+msgstr "$ mlist.list_id的数量为$ mlist.volume，编号为$ {mlist.next_digest_number}"
+
+#: src/mailman/commands/cli_digests.py:104
+#, python-brace-format
+msgid "$mlist.list_id bumped to volume $mlist.volume, number ${mlist.next_digest_number}"
+msgstr "$ mlist.list_id升至音量$ mlist.volume，编号为[{mlist.next_digest_number}"
+
+#: src/mailman/commands/cli_digests.py:110 src/mailman/commands/cli_digests.py:119
+#, python-brace-format
+msgid "$mlist.list_id sent volume $mlist.volume, number ${mlist.next_digest_number}"
+msgstr "$ mlist.list_id已发送卷$ mlist.volume，编号$ {mlist.next_digest_number}"
+
+#: src/mailman/commands/cli_findmember.py:66
+msgid ""
+"    Display all memberships for a user or users with address matching a\n"
+"    pattern.\n"
+"    "
+msgstr ""
+
+#: src/mailman/commands/cli_findmember.py:74
+msgid ""
+"    Display only memberships with the given role.  If not given, 'all' role,\n"
+"    i.e. all roles, is the default."
+msgstr ""
+
+#: src/mailman/commands/cli_findmember.py:98
+msgid "Email: {}"
+msgstr ""
+
+#: src/mailman/commands/cli_findmember.py:102
+msgid "List: {}"
+msgstr ""
+
+#: src/mailman/commands/cli_findmember.py:105
+msgid "{}"
+msgstr ""
+
+#: src/mailman/commands/cli_gatenews.py:169
+msgid "Poll the NNTP server for messages to be gatewayed to mailing lists."
+msgstr "轮询NNTP服务器以获取要发送到邮件列表的邮件。"
+
+#: src/mailman/commands/cli_gatenews.py:176
+msgid ""
+"    The gatenews command is run periodically by the nntp runner.\n"
+"    If you are running it via cron, you should remove it from the crontab.\n"
+"    If you want to run it manually, set _MAILMAN_GATENEWS_NNTP in the\n"
+"    environment."
+msgstr ""
+
+#: src/mailman/commands/cli_help.py:32
+msgid "Show this help message and exit."
+msgstr "显示此帮助消息并退出。"
+
+#: src/mailman/commands/cli_import.py:51
+msgid ""
+"    Import Mailman 2.1 list data.  Requires the fully-qualified name of the\n"
+"    list to import and the path to the Mailman 2.1 pickle file."
+msgstr ""
+"    导入Mailman 2.1列表数据。需要名称的全限定名称\n"
+"    导入列表以及Mailman 2.1 pickle文件的路径。"
+
+#: src/mailman/commands/cli_import.py:56
+msgid ""
+"    Specify the encoding of strings in PICKLE_FILE if not utf-8 or a subset\n"
+"    thereof. This will normally be the Mailman 2.1 charset of the list's\n"
+"    preferred_language."
+msgstr ""
+"    如果不是utf-8或子集，请在PICKLE_FILE中指定字符串的编码\n"
+"    其。这通常是列表的Mailman 2.1字符集\n"
+"    首选语言。"
+
+#: src/mailman/commands/cli_import.py:82
+msgid "Not a Mailman 2.1 configuration file: $pickle_file"
+msgstr "不是Mailman 2.1配置文件：$ pickle_file"
+
+#: src/mailman/commands/cli_import.py:85
+msgid "Ignoring non-dictionary: {0!r}"
+msgstr "忽略非字典：{0！r}"
+
+#: src/mailman/commands/cli_info.py:36
+msgid "Information about this Mailman instance."
+msgstr "有关此Mailman实例的信息。"
+
+#: src/mailman/commands/cli_info.py:40
+msgid "    File to send the output to.  If not given, standard output is used."
+msgstr "    将输出发送到的文件。如果未给出，则使用标准输出。"
+
+#: src/mailman/commands/cli_info.py:45
+msgid ""
+"    A more verbose output including the file system paths that Mailman is\n"
+"    using."
+msgstr ""
+"    更详细的输出，包括Mailman所在的文件系统路径\n"
+"    使用。"
+
+#: src/mailman/commands/cli_inject.py:45
+msgid "Inject a message from a file into a mailing list's queue."
+msgstr "将文件中的消息注入到邮件列表的队列中。"
+
+#: src/mailman/commands/cli_inject.py:48
+msgid ""
+"    The name of the queue to inject the message to.  QUEUE must be one of the\n"
+"    directories inside the queue directory.  If omitted, the incoming queue is\n"
+"    used."
+msgstr ""
+"    要将消息注入到的队列的名称。 QUEUE必须是以下一项\n"
+"    队列目录中的目录。如果省略，则传入队列为\n"
+"    用过的。"
+
+#: src/mailman/commands/cli_inject.py:56
+msgid "Show a list of all available queue names and exit."
+msgstr "显示所有可用队列名称的列表，然后退出。"
+
+#: src/mailman/commands/cli_inject.py:60
+msgid ""
+"    Name of file containing the message to inject.  If not given, or\n"
+"    '-' (without the quotes) standard input is used."
+msgstr ""
+"    包含要注入的消息的文件名。如果没有给出，或者\n"
+"    使用标准输入“-”（不带引号）。"
+
+#: src/mailman/commands/cli_inject.py:66
+msgid ""
+"    Additional metadata key/value pairs to add to the message metadata\n"
+"    dictionary.  Use the format key=value.  Multiple -m options are\n"
+"    allowed."
+msgstr ""
+"    要添加到消息元数据中的其他元数据键/值对\n"
+"    字典。使用格式键=值。多个-m选项是\n"
+"    允许的。"
+
+#: src/mailman/commands/cli_inject.py:79
+msgid "No such queue: $queue"
+msgstr "没有这样的队列：$ queue"
+
+#: src/mailman/commands/cli_lists.py:49
+msgid "List all mailing lists."
+msgstr "列出所有邮件列表。"
+
+#: src/mailman/commands/cli_lists.py:53
+msgid "List only those mailing lists that are publicly advertised"
+msgstr "仅列出那些公开发布的邮件列表"
+
+#: src/mailman/commands/cli_lists.py:57
+msgid "Show also the list names"
+msgstr "同时显示列表名称"
+
+#: src/mailman/commands/cli_lists.py:61
+msgid "Show also the list descriptions"
+msgstr "同时显示列表说明"
+
+#: src/mailman/commands/cli_lists.py:65
+msgid "Less verbosity"
+msgstr "较少的冗长"
+
+#: src/mailman/commands/cli_lists.py:69
+msgid ""
+"    List only those mailing lists hosted on the given domain, which\n"
+"    must be the email host name.  Multiple -d options may be given.\n"
+"    "
+msgstr ""
+"    仅列出在给定域中托管的那些邮件列表，其中\n"
+"    必须是电子邮件主机名。可以给出多个-d选项。\n"
+"    "
+
+#: src/mailman/commands/cli_lists.py:87
+msgid "No matching mailing lists found"
+msgstr "找不到匹配的邮件列表"
+
+#: src/mailman/commands/cli_lists.py:91
+msgid "$count matching mailing lists found:"
+msgstr "找到$ count个匹配的邮件列表："
+
+#: src/mailman/commands/cli_lists.py:122
+msgid ""
+"    Create a mailing list.\n"
+"\n"
+"    The 'fully qualified list name', i.e. the posting address of the mailing\n"
+"    list is required.  It must be a valid email address and the domain must be\n"
+"    registered with Mailman.  List names are forced to lower case."
+msgstr ""
+"    创建一个邮件列表。\n"
+"\n"
+"    “完全限定的列表名称”，即邮件的邮寄地址\n"
+"    列表是必需的。它必须是一个有效的电子邮件地址，并且域必须是\n"
+"    向Mailman注册。列表名称被强制小写。"
+
+#: src/mailman/commands/cli_lists.py:130
+msgid ""
+"    Set the list's preferred language to CODE, which must be a registered two\n"
+"    letter language code."
+msgstr ""
+"    将列表的首选语言设置为CODE，该语言必须是已注册的两个\n"
+"    字母语言代码。"
+
+#: src/mailman/commands/cli_lists.py:136
+msgid ""
+"    Specify a list owner email address.  If the address is not currently\n"
+"    registered with Mailman, the address is registered and linked to a user.\n"
+"    Mailman will send a confirmation message to the address, but it will also\n"
+"    send a list creation notice to the address.  More than one owner can be\n"
+"    specified."
+msgstr ""
+"    指定列表所有者的电子邮件地址。如果该地址当前不是\n"
+"    向Mailman注册后，该地址即被注册并链接到用户。\n"
+"    Mailman会向该地址发送确认消息，但也会\n"
+"    将列表创建通知发送到该地址。可以有多个所有者\n"
+"    指定的。"
+
+#: src/mailman/commands/cli_lists.py:145
+msgid ""
+"    Notify the list owner by email that their mailing list has been\n"
+"    created."
+msgstr ""
+"    通过电子邮件通知列表所有者他们的邮件列表已经被\n"
+"    创建。"
+
+#: src/mailman/commands/cli_lists.py:151
+msgid "Print less output."
+msgstr "打印较少的输出。"
+
+#: src/mailman/commands/cli_lists.py:155
+msgid ""
+"    Register the mailing list's domain if not yet registered.  This is\n"
+"    the default behavior, but these options are provided for backward\n"
+"    compatibility.  With -D do not register the mailing list's domain."
+msgstr ""
+"    如果尚未注册，请注册邮件列表的域。这是\n"
+"    默认行为，但是提供这些选项是为了向后\n"
+"    兼容性。使用-D时，不要注册邮件列表的域。"
+
+#: src/mailman/commands/cli_lists.py:166
+msgid "Invalid language code: $language_code"
+msgstr "无效的语言代码：$ language_code"
+
+#: src/mailman/commands/cli_lists.py:182
+msgid "Illegal owner addresses: $invalid"
+msgstr "非法所有者地址：$ invalid"
+
+#: src/mailman/commands/cli_lists.py:186
+msgid "Illegal list name: $fqdn_listname"
+msgstr "非法列表名称：$ fqdn_listname"
+
+#: src/mailman/commands/cli_lists.py:188
+msgid "List already exists: $fqdn_listname"
+msgstr "列表已存在：$ fqdn_listname"
+
+#: src/mailman/commands/cli_lists.py:190
+msgid "Undefined domain: $domain"
+msgstr "未定义的域：$ domain"
+
+#: src/mailman/commands/cli_lists.py:198
+msgid "Created mailing list: $mlist.fqdn_listname"
+msgstr "创建的邮件列表：$ mlist.fqdn_listname"
+
+#: src/mailman/commands/cli_lists.py:213
+msgid "Your new mailing list: $fqdn_listname"
+msgstr "您的新邮件列表：$ fqdn_listname"
+
+#: src/mailman/commands/cli_lists.py:227
+msgid "Remove a mailing list."
+msgstr "删除邮件列表。"
+
+#: src/mailman/commands/cli_lists.py:231
+msgid "Suppress status messages"
+msgstr "禁止状态消息"
+
+#: src/mailman/commands/cli_lists.py:237
+msgid "No such list matching spec: $listspec"
+msgstr "没有这样的列表匹配规范：$ listspec"
+
+#: src/mailman/commands/cli_lists.py:242
+msgid "Removed list: $listspec"
+msgstr "已删除列表：$ listspec"
+
+#: src/mailman/commands/cli_members.py:84
+msgid "$mlist.list_id has no members"
+msgstr "$mlist.列表_id没有成员"
+
+#: src/mailman/commands/cli_members.py:108
+msgid ""
+"    Display, add or delete a mailing list's members.\n"
+"    Filtering along various criteria can be done when displaying.\n"
+"    With no options given, displaying mailing list members\n"
+"    to stdout is the default mode.\n"
+"    "
+msgstr ""
+"    显示，添加或删除邮件列表的成员。\n"
+"    显示时，可以按照各种条件进行过滤。\n"
+"    没有给出任何选项，显示邮件列表成员\n"
+"    到stdout是默认模式。\n"
+"    "
+
+#: src/mailman/commands/cli_members.py:117
+msgid ""
+"    [MODE] Add all member addresses in FILENAME.  This option is removed.\n"
+"    Use 'mailman addmembers' instead."
+msgstr ""
+
+#: src/mailman/commands/cli_members.py:123
+msgid ""
+"    [MODE] Delete all member addresses found in FILENAME.\n"
+"    This option is removed. Use 'mailman delmembers' instead."
+msgstr ""
+
+#: src/mailman/commands/cli_members.py:129
+msgid ""
+"    [MODE] Synchronize all member addresses of the specified mailing list\n"
+"    with the member addresses found in FILENAME.\n"
+"    This option is removed. Use 'mailman syncmembers' instead."
+msgstr ""
+
+#: src/mailman/commands/cli_members.py:136
+msgid ""
+"    [MODE] Display output to FILENAME instead of stdout.  FILENAME\n"
+"    can be '-' to indicate standard output."
+msgstr ""
+"    [MODE]显示输出到FILENAME而不是stdout。文件名\n"
+"    可以为“-”以表示标准输出。"
+
+#: src/mailman/commands/cli_members.py:143
+msgid ""
+"    [output filter] Display only members with a given ROLE.\n"
+"    The role may be 'any', 'member', 'nonmember', 'owner', 'moderator',\n"
+"    or 'administrator' (i.e. owners and moderators).\n"
+"    If not given, then delivery members are used. "
+msgstr ""
+"    [输出过滤器]仅显示具有给定ROLE的成员。\n"
+"    角色可以是“任何”，“成员”，“非成员”，“所有者”，“主持人”，\n"
+"    或“管理员”（即所有者和主持人）。\n"
+"    如果未给出，则使用交付成员。 "
+
+#: src/mailman/commands/cli_members.py:151
+msgid "    [output filter] Display only regular delivery members."
+msgstr "    [输出过滤器]只显示常规的交付成员。"
+
+#: src/mailman/commands/cli_members.py:162
+#: src/mailman/commands/cli_syncmembers.py:187
+msgid ""
+"    Don't actually make the changes.  Instead, print out what would be\n"
+"    done to the list."
+msgstr ""
+"    实际上不要进行更改。相反，打印出会是什么\n"
+"    完成列表。"
+
+#: src/mailman/commands/cli_members.py:169
+msgid ""
+"    [output filter] Display only digest members of kind.\n"
+"    'any' means any digest type, 'plaintext' means only plain text (rfc 1153)\n"
+"    type digests, 'mime' means MIME type digests."
+msgstr ""
+"    [输出过滤器]仅显示同类摘要成员。\n"
+"    'any'表示任何摘要类型，'plaintext'表示仅纯文本（rfc 1153）\n"
+"    类型摘要，“ mime”表示MIME类型摘要。"
+
+#: src/mailman/commands/cli_members.py:177
+msgid ""
+"    [output filter] Display only members with a given delivery status.\n"
+"    'enabled' means all members whose delivery is enabled, 'any' means\n"
+"    members whose delivery is disabled for any reason, 'byuser' means\n"
+"    that the member disabled their own delivery, 'bybounces' means that\n"
+"    delivery was disabled by the automated bounce processor,\n"
+"    'byadmin' means delivery was disabled by the list\n"
+"    administrator or moderator, and 'unknown' means that delivery was disabled\n"
+"    for unknown (legacy) reasons."
+msgstr ""
+"    [输出过滤器]仅显示具有给定交付状态的成员。\n"
+"    “已启用”是指已启用递送的所有成员，“任何”是指\n"
+"    因任何原因被禁用的会员，“ byuser”表示\n"
+"    该成员禁用了自己的分娩，“跳动”表示\n"
+"    传送被自动退回处理器禁用，\n"
+"    “ byadmin”表示该列表禁止了传递\n"
+"    管理员或主持人，“未知”表示已禁用传递\n"
+"    出于未知（传统）原因。"
+
+#: src/mailman/commands/cli_notify.py:40
+msgid "Notify list owners/moderators of pending requests."
+msgstr "通知列表所有者/主持人未决的请求。"
+
+#: src/mailman/commands/cli_notify.py:43
+msgid ""
+"    Operate on this mailing list.  Multiple --list options can be given.  The\n"
+"    argument can either be a List-ID or a fully qualified list name.  Without\n"
+"    this option, operate on the requests for all mailing lists."
+msgstr ""
+"    在此邮件列表上进行操作。可以给出多个--list选项。这\n"
+"    参数可以是List-ID或完全限定的列表名称。没有\n"
+"    此选项，对所有邮件列表的请求进行操作。"
+
+#: src/mailman/commands/cli_notify.py:80 src/mailman/commands/cli_notify.py:141
+msgid "The {} list has {} moderation requests waiting."
+msgstr "{}列表中有{}个审核请求正在等待。"
+
+#: src/mailman/commands/cli_notify.py:111
+msgid ""
+"\n"
+"Held Subscriptions:\n"
+msgstr ""
+"\n"
+"持有的订阅：\n"
+
+#: src/mailman/commands/cli_notify.py:113 src/mailman/commands/cli_notify.py:117
+msgid "User: {}\n"
+msgstr "用户：{}\n"
+
+#: src/mailman/commands/cli_notify.py:115
+msgid ""
+"\n"
+"Held Unsubscriptions:\n"
+msgstr ""
+"\n"
+"取消订阅：\n"
+
+#: src/mailman/commands/cli_notify.py:119
+msgid ""
+"\n"
+"Held Messages:\n"
+msgstr ""
+"\n"
+"持有的信息。\n"
+
+#: src/mailman/commands/cli_notify.py:126
+msgid "Sender: {}\n"
+msgstr "发件人：{}\n"
+
+#: src/mailman/commands/cli_notify.py:128 src/mailman/commands/cli_notify.py:131
+msgid "Subject: {}\n"
+msgstr "主题： {}\n"
+
+#: src/mailman/commands/cli_notify.py:132
+msgid ""
+"Reason: {}\n"
+"\n"
+msgstr ""
+"原因： {}\n"
+"\n"
+
+#: src/mailman/commands/cli_notify.py:135
+msgid ""
+"Missing data for request {}\n"
+"\n"
+msgstr ""
+
+#: src/mailman/commands/cli_qfile.py:38
+msgid "Get information out of a queue file."
+msgstr "从队列文件中获取信息。"
+
+#: src/mailman/commands/cli_qfile.py:42
+msgid ""
+"    Don't attempt to pretty print the object.  This is useful if there is some\n"
+"    problem with the object and you just want to get an unpickled\n"
+"    representation.  Useful with 'mailman qfile -i <file>'.  In that case, the\n"
+"    list of unpickled objects will be left in a variable called 'm'."
+msgstr ""
+"    不要试图漂亮地打印对象。如果有的话这很有用\n"
+"    对象的问题，而您只想去掉\n"
+"    表示。与“ mailman qfile -i <文件>”一起使用。在这种情况下，\n"
+"    未选择的对象列表将保留在名为“ m”的变量中。"
+
+#: src/mailman/commands/cli_qfile.py:50
+msgid ""
+"    Start an interactive Python session, with a variable called 'm'\n"
+"    containing the list of unpickled objects."
+msgstr ""
+"    使用名为“ m”的变量启动交互式Python会话\n"
+"    包含未腌制对象的列表。"
+
+#: src/mailman/commands/cli_qfile.py:67
+msgid "[----- start pickle -----]"
+msgstr "[-----开始泡菜-----]"
+
+#: src/mailman/commands/cli_qfile.py:70
+msgid "<----- start object $count ----->"
+msgstr "<-----起始对象$ count ----->"
+
+#: src/mailman/commands/cli_qfile.py:75
+msgid "[----- end pickle -----]"
+msgstr "[-----泡菜-----]"
+
+#: src/mailman/commands/cli_qfile.py:77
+msgid "Number of objects found (see the variable 'm'): $count"
+msgstr "找到的对象数（请参见变量“ m”）：$ count"
+
+#: src/mailman/commands/cli_status.py:34
+msgid "Show the current running status of the Mailman system."
+msgstr "显示Mailman系统的当前运行状态。"
+
+#: src/mailman/commands/cli_status.py:38
+msgid "GNU Mailman is not running"
+msgstr "GNU Mailman没有运行"
+
+#: src/mailman/commands/cli_status.py:41
+msgid "GNU Mailman is running (master pid: $pid)"
+msgstr "GNU Mailman 正在运行 (master pid: $pid)"
+
+#: src/mailman/commands/cli_status.py:44
+msgid "GNU Mailman is stopped (stale pid: $pid)"
+msgstr "GNU Mailman已停止（过期pid：$ pid）"
+
+#: src/mailman/commands/cli_status.py:50
+msgid "GNU Mailman is in an unexpected state ($hostname != $fqdn_name)"
+msgstr "GNU Mailman处于意外状态（$ hostname！= $ fqdn_name）"
+
+#: src/mailman/commands/cli_syncmembers.py:131
+#, python-format
+msgid "[ADD] %s"
+msgstr "[添加] %s"
+
+#: src/mailman/commands/cli_syncmembers.py:141
+#, python-format
+msgid "[DEL] %s"
+msgstr "[DEL] %s"
+
+#: src/mailman/commands/cli_syncmembers.py:150
+msgid "Nothing to do"
+msgstr "没事做"
+
+#: src/mailman/commands/cli_syncmembers.py:155
+msgid ""
+"    Add and delete members as necessary to syncronize a list's membership\n"
+"    with an input file.  FILENAME is the file containing the new membership,\n"
+"    one member per line.  Blank lines and lines that start with a '#' are\n"
+"    ignored.  Addresses in FILENAME which are not current list members\n"
+"    will be added to the list with delivery mode as specified with\n"
+"    -d/--delivery.  List members whose addresses are not in FILENAME will\n"
+"    be removed from the list.  FILENAME can be '-' to indicate standard input.\n"
+"    "
+msgstr ""
+"    根据需要添加和删除成员以同步列表的成员资格\n"
+"    与输入文件。 FILENAME是包含新成员资格的文件，\n"
+"    每行一个成员。空行和以'＃'开头的行是\n"
+"    忽略了。 FILENAME中不是当前列表成员的地址\n"
+"    将使用指定的投放方式添加到列表中\n"
+"    -d /-交货。列出地址不在FILENAME中的成员将\n"
+"    从列表中删除。 FILENAME可以为“-”以表示标准输入。\n"
+"    "
+
+#: src/mailman/commands/cli_syncmembers.py:167
+msgid ""
+"    Set the added members delivery mode to 'regular', 'mime', 'plain',\n"
+"    'summary' or 'disabled'.  I.e., one of regular, three modes of digest\n"
+"    or no delivery.  If not given, the default is regular."
+msgstr ""
+"    将添加的成员传送模式设置为“常规”，“哑剧”，“普通”，“\n"
+"    “摘要”或“已禁用”。即常规的三种消化模式之一\n"
+"    或没有交货。如果未给出，则默认值为常规。"
+
+#: src/mailman/commands/cli_syncmembers.py:173
+msgid "    Override the list's setting for send_welcome_message to added members."
+msgstr "    将列表的send_welcome_message设置替换为已添加的成员。"
+
+#: src/mailman/commands/cli_unshunt.py:33
+msgid "Unshunt messages."
+msgstr "取消分流消息。"
+
+#: src/mailman/commands/cli_unshunt.py:37
+msgid ""
+"    Discard all shunted messages instead of moving them back to their original\n"
+"    queue."
+msgstr ""
+"    丢弃所有被分流的邮件，而不是将其移回原始邮件\n"
+"    队列。"
+
+#: src/mailman/commands/cli_unshunt.py:50
+msgid ""
+"Cannot unshunt message $filebase, skipping:\n"
+"$error"
+msgstr ""
+"无法卸载信息$filebase，跳过。\n"
+"$error"
+
+#: src/mailman/commands/cli_version.py:32
+msgid "Display Mailman's version."
+msgstr "显示Mailman的版本。"
+
+#: src/mailman/commands/cli_withlist.py:76
+msgid "ipython is not available, set use_ipython to no"
+msgstr "ipython不可用，将use_ipython设置为no"
+
+#: src/mailman/commands/cli_withlist.py:85
+msgid "readline not available"
+msgstr "readline不可用"
+
+#: src/mailman/commands/cli_withlist.py:133
+msgid "Invalid value for [shell]use_python: {}"
+msgstr "[shell] use_python的值无效：{}"
+
+#: src/mailman/commands/cli_withlist.py:149
+msgid ""
+"This script provides you with a general framework for interacting with a\n"
+"mailing list."
+msgstr ""
+"该脚本为您提供了与\n"
+"邮件列表。"
+
+#: src/mailman/commands/cli_withlist.py:153
+msgid ""
+"There are two ways to use this script: interactively or programmatically.\n"
+"Using it interactively allows you to play with, examine and modify a mailing\n"
+"list from Python's interactive interpreter.  When running interactively, the\n"
+"variable 'm' will be available in the global namespace.  It will reference the\n"
+"mailing list object."
+msgstr ""
+"有两种使用此脚本的方式：交互方式或编程方式。\n"
+"以交互方式使用它可以使您玩，检查和修改邮件\n"
+"Python的交互式解释器中的列表。交互式运行时，\n"
+"变量“ m”将在全局名称空间中可用。它将引用\n"
+"邮件列表对象。"
+
+#: src/mailman/commands/cli_withlist.py:160
+msgid ""
+"Programmatically, you can write a function to operate on a mailing list, and\n"
+"this script will take care of the housekeeping (see below for examples).  In\n"
+"that case, the general usage syntax is:\n"
+"\n"
+"% mailman withlist [options] -l listspec [args ...]\n"
+"\n"
+"where `listspec` is either the posting address of the mailing list\n"
+"(e.g. ant@example.com), or the List-ID (e.g. ant.example.com)."
+msgstr ""
+"通过编程，您可以编写一个对邮件列表进行操作的功能，并且\n"
+"该脚本将负责整理工作（请参见下面的示例）。在\n"
+"在这种情况下，一般用法语法为：\n"
+"\n"
+"％mailman withlist [选项] -l listspec [参数...]\n"
+"\n"
+"其中“ listspec”是邮件列表的投递地址\n"
+"（例如ant@example.com）或列表ID（例如ant.example.com）。"
+
+#: src/mailman/commands/cli_withlist.py:170
+msgid ""
+"Here's an example of how to use the --run option.  Say you have a file in the\n"
+"Mailman installation directory called 'listaddr.py', with the following two\n"
+"functions:\n"
+"\n"
+"def listaddr(mlist):\n"
+"    print(mlist.posting_address)\n"
+"\n"
+"def requestaddr(mlist):\n"
+"    print(mlist.request_address)\n"
+"\n"
+"Run methods take at least one argument, the mailing list object to operate\n"
+"on.  Any additional arguments given on the command line are passed as\n"
+"positional arguments to the callable.\n"
+"\n"
+"If -l is not given then you can run a function that takes no arguments.\n"
+msgstr ""
+"这是有关如何使用--run选项的示例。假设您在\n"
+"Mailman安装目录称为“ listaddr.py”，其中以下两个目录\n"
+"职能：\n"
+"\n"
+"def listaddr（mlist）：\n"
+"    打印（mlist.posting_address）\n"
+"\n"
+"def requestaddr（mlist）：\n"
+"    打印（mlist.request_address）\n"
+"\n"
+"运行方法至少需要一个参数，即邮件列表对象才能运行\n"
+"上。命令行上给出的任何其他参数都将作为\n"
+"可调用对象的位置参数。\n"
+"\n"
+"如果未给出-l，则可以运行不带参数的函数。\n"
+
+#: src/mailman/commands/cli_withlist.py:188
+msgid ""
+"You can print the list's posting address by running the following from the\n"
+"command line:\n"
+"\n"
+"% mailman withlist -r listaddr -l ant@example.com\n"
+"Importing listaddr ...\n"
+"Running listaddr.listaddr() ...\n"
+"ant@example.com"
+msgstr ""
+"您可以通过运行以下命令来打印列表的发布地址：\n"
+"命令行：\n"
+"\n"
+"％mailman withlist -r listaddr -l ant@example.com\n"
+"导入listaddr ...\n"
+"运行listaddr.listaddr（）...\n"
+"ant@example.com"
+
+#: src/mailman/commands/cli_withlist.py:197
+msgid ""
+"And you can print the list's request address by running:\n"
+"\n"
+"% mailman withlist -r listaddr.requestaddr -l ant@example.com\n"
+"Importing listaddr ...\n"
+"Running listaddr.requestaddr() ...\n"
+"ant-request@example.com"
+msgstr ""
+"您可以通过运行以下命令来打印列表的请求地址：\n"
+"\n"
+"％mailman withlist -r listaddr.requestaddr -l ant@example.com\n"
+"导入listaddr ...\n"
+"运行listaddr.requestaddr（）...\n"
+"ant-request@example.com"
+
+#: src/mailman/commands/cli_withlist.py:205
+msgid ""
+"As another example, say you wanted to change the display name for a particular\n"
+"mailing list.  You could put the following function in a file called\n"
+"`change.py`:\n"
+"\n"
+"def change(mlist, display_name):\n"
+"    mlist.display_name = display_name\n"
+"\n"
+"and run this from the command line:\n"
+"\n"
+"% mailman withlist -r change -l ant@example.com 'My List'\n"
+"\n"
+"Note that you do not have to explicitly commit any database transactions, as\n"
+"Mailman will do this for you (assuming no errors occured)."
+msgstr ""
+"再举一个例子，假设您想更改特定显示器的显示名称\n"
+"邮件列表。您可以将以下函数放在一个名为\n"
+"`change.py`：\n"
+"\n"
+"def change（mlist，display_name）：\n"
+"    mlist.display_name = display_name\n"
+"\n"
+"并从命令行运行此命令：\n"
+"\n"
+"％mailman withlist -r change -l ant@example.com'我的列表'\n"
+"\n"
+"请注意，您不必显式提交任何数据库事务，例如\n"
+"Mailman将为您执行此操作（假设没有发生任何错误）。"
+
+#: src/mailman/commands/cli_withlist.py:224
+msgid ""
+"    Operate on a mailing list.\n"
+"\n"
+"    For detailed help, see --details\n"
+"    "
+msgstr ""
+"    在邮件列表上进行操作。\n"
+"\n"
+"    有关详细帮助，请参见--details\n"
+"    "
+
+#: src/mailman/commands/cli_withlist.py:232
+msgid ""
+"    Leaves you at an interactive prompt after all other processing is complete.\n"
+"    This is the default unless the --run option is given."
+msgstr ""
+"    其他所有处理完成后，将在交互式提示下显示您。\n"
+"    除非指定了--run选项，否则这是默认设置。"
+
+#: src/mailman/commands/cli_withlist.py:237
+msgid ""
+"\n"
+"    Run a script.  The argument is the module path to a callable.  This\n"
+"    callable will be imported and then, if --listspec/-l is also given, is\n"
+"    called with the mailing list as the first argument.  If additional\n"
+"    arguments are given at the end of the command line, they are passed as\n"
+"    subsequent positional arguments to the callable.  For additional help, see\n"
+"    --details.\n"
+"\n"
+"    If no --listspec/-l argument is given, the script function being called is\n"
+"    called with no arguments.\n"
+"    "
+msgstr ""
+"\n"
+"    运行脚本。参数是可调用对象的模块路径。这\n"
+"    callable将被导入，然后，如果还给出了--listspec / -l，则为\n"
+"    以邮件列表作为第一个参数调用。如果额外\n"
+"    参数在命令行末尾给出，它们作为\n"
+"    可调用对象的后续位置参数。有关其他帮助，请参见\n"
+"     - 细节。\n"
+"\n"
+"    如果未给出--listspec / -l参数，则调用的脚本函数为\n"
+"    没有参数调用。\n"
+"    "
+
+#: src/mailman/commands/cli_withlist.py:253
+msgid "Print detailed instructions and exit."
+msgstr "打印详细说明并退出。"
+
+#: src/mailman/commands/cli_withlist.py:257
+msgid ""
+"    A specification of the mailing list to operate on.  This may be the posting\n"
+"    address of the list, or its List-ID.  The argument can also be a Python\n"
+"    regular expression, in which case it is matched against both the posting\n"
+"    address and List-ID of all mailing lists.  To use a regular expression,\n"
+"    LISTSPEC must start with a ^ (and the matching is done with re.match().\n"
+"    LISTSPEC cannot be a regular expression unless --run is given."
+msgstr ""
+"    邮件列表的规范。这可能是发布\n"
+"    列表的地址或其列表ID。参数也可以是Python\n"
+"    正则表达式，在这种情况下，它与两个发布都匹配\n"
+"    所有邮件列表的地址和列表ID。要使用正则表达式，\n"
+"    LISTSPEC必须以^开头（并且匹配是通过re.match（）完成的。\n"
+"    除非给出--run，否则LISTSPEC不能为正则表达式。"
+
+#: src/mailman/commands/cli_withlist.py:273
+msgid "Regular expression requires --run"
+msgstr "正则表达式需要--run"
+
+#: src/mailman/commands/cli_withlist.py:300
+msgid "The variable 'm' is the $listspec mailing list"
+msgstr "变量“ m”是$ listspec邮件列表"
+
+#: src/mailman/commands/eml_confirm.py:40
+msgid "Confirm a subscription or held message request."
+msgstr ""
+
+#: src/mailman/commands/eml_confirm.py:47
+msgid "No confirmation token found"
+msgstr "没有找到确认令牌"
+
+#: src/mailman/commands/eml_confirm.py:60 src/mailman/commands/eml_confirm.py:95
+msgid "Confirmation token did not match"
+msgstr "确认令牌不匹配"
+
+#: src/mailman/commands/eml_confirm.py:91
+msgid "Confirmed"
+msgstr "已确认"
+
+#: src/mailman/commands/eml_confirm.py:108
+msgid "Invalid Approved: password"
+msgstr ""
+
+#: src/mailman/commands/eml_confirm.py:111
+msgid "Message $message"
+msgstr ""
+
+#: src/mailman/commands/eml_echo.py:36
+msgid "Echo back your arguments."
+msgstr "回应你的论点。"
+
+#: src/mailman/commands/eml_end.py:33
+msgid "Stop processing commands."
+msgstr "停止处理命令。"
+
+#: src/mailman/commands/eml_end.py:47
+msgid "An alias for 'end'."
+msgstr "是 \"结束 \"的别名。"
+
+#: src/mailman/commands/eml_help.py:38
+msgid "Get help about available email commands."
+msgstr "获得有关可用的电子邮件命令的帮助。"
+
+#: src/mailman/commands/eml_help.py:51
+msgid "n/a"
+msgstr "不适用"
+
+#: src/mailman/commands/eml_help.py:59
+msgid "$self.name: no such command: $command_name"
+msgstr "$self.name: 没有这样的命令。$command_name"
+
+#: src/mailman/commands/eml_help.py:70
+msgid "$self.name: too many arguments: $printable_arguments"
+msgstr "$self.name: 太多的参数。$printable_arguments"
+
+#: src/mailman/commands/eml_membership.py:65
+msgid ""
+"You will be asked to confirm your subscription request and you may be issued a\n"
+"provisional password.\n"
+"\n"
+"By using the 'digest' option, you can specify whether you want digest delivery\n"
+"or not.  If not specified, the mailing list's default delivery mode will be\n"
+"used.  You can use the 'address' option to request subscription of an address\n"
+"other than the sender of the command.\n"
+msgstr ""
+"你将被要求确认你的订阅请求，你可能会得到一个\n"
+"临时密码。\n"
+"\n"
+"通过使用 \"摘要 \"选项，你可以指定你是否需要摘要发送\n"
+"或不发送。  如果没有指定，邮件列表的默认发送模式将被\n"
+"使用。  您可以使用'地址'选项来请求订阅命令发送者以外的地址\n"
+"您可以使用'地址'选项来请求订阅一个地址，而不是命令的发送者。\n"
+
+#: src/mailman/commands/eml_membership.py:74
+msgid "Join this mailing list."
+msgstr "加入这个邮件列表。"
+
+#: src/mailman/commands/eml_membership.py:97
+msgid "$self.name: No valid address found to subscribe"
+msgstr "$self.name: 没有找到可供订阅的有效地址"
+
+#: src/mailman/commands/eml_membership.py:125
+msgid "$person has a pending subscription for $listname"
+msgstr "$person 尚未订阅 $listname"
+
+#: src/mailman/commands/eml_membership.py:128
+msgid "Confirmation email sent to $person"
+msgstr "发送给$人的确认电子邮件"
+
+#: src/mailman/commands/eml_membership.py:145
+#: src/mailman/commands/eml_membership.py:155
+msgid "bad argument: $argument"
+msgstr "错误的参数：$argument"
+
+#: src/mailman/commands/eml_membership.py:168
+msgid "An alias for 'join'."
+msgstr "连接 \"的一个别名。"
+
+#: src/mailman/commands/eml_membership.py:179
+msgid ""
+"Leave this mailing list.\n"
+"\n"
+"You may be asked to confirm your request."
+msgstr ""
+"离开这个邮件列表。\n"
+"\n"
+"您可能会被要求确认您的请求。"
+
+#: src/mailman/commands/eml_membership.py:182
+msgid "Leave this mailing list."
+msgstr "离开这个邮件列表。"
+
+#: src/mailman/commands/eml_membership.py:188
+msgid "$self.name: No valid email address found to unsubscribe"
+msgstr "$self.name: 没有找到有效的电子邮件地址来取消订阅"
+
+#: src/mailman/commands/eml_membership.py:194
+msgid "No registered user for email address: $email"
+msgstr "没有注册用户的电子邮件地址。$email"
+
+#: src/mailman/commands/eml_membership.py:201
+msgid "Invalid or unverified email address: $email"
+msgstr "无效或未经验证的电子邮件地址。$email"
+
+#: src/mailman/commands/eml_membership.py:220
+msgid "$self.name: $email is not a member of $mlist.fqdn_listname"
+msgstr "$self.name: $email不是$mlist.fqdn_listname的成员"
+
+#: src/mailman/commands/eml_membership.py:231
+msgid "$person left $mlist.fqdn_listname"
+msgstr "$person 离开了 $mlist.fqdn_listname"
+
+#: src/mailman/commands/eml_membership.py:233
+msgid "Confirmation email sent to $person to leave $mlist.fqdn_listname"
+msgstr "发送给$人的确认邮件，以离开$mlist.fqdn_listname"
+
+#: src/mailman/commands/eml_membership.py:243
+msgid "An alias for 'leave'."
+msgstr "是 \"离开 \"的别名。"
+
+#: src/mailman/commands/eml_who.py:42
+msgid ""
+"Produces a list of member names and email addresses.\n"
+"\n"
+"The optional delivery= and mode= arguments can be used to limit the report\n"
+"to those members with matching delivery status and/or delivery mode.  If\n"
+"either delivery= or mode= is specified more than once, only the last occurrence\n"
+"is used.\n"
+msgstr ""
+"产生一份会员姓名和电子邮件地址的清单。\n"
+"\n"
+"可选的交付=和模式=参数可以用来限制报告的范围\n"
+"限于那些具有匹配的交付状态和/或交付模式的成员。  如果\n"
+"如果交付=或模式=被指定一次以上，只使用最后出现的\n"
+"会被使用。\n"
+
+#: src/mailman/commands/eml_who.py:50
+msgid "Get a list of the list members."
+msgstr "获取列表中的成员名单。"
+
+#: src/mailman/commands/eml_who.py:63
+msgid "You are not authorized to see the membership list."
+msgstr "你无权查看成员名单。"
+
+#: src/mailman/commands/eml_who.py:78
+msgid ""
+"Unrecognized or invalid argument(s):\n"
+"{}"
+msgstr ""
+"未被识别或无效的参数。\n"
+"{}"
+
+#: src/mailman/commands/eml_who.py:101
+msgid ""
+"Members of the {} mailing list:\n"
+"{}"
+msgstr ""
+"{}邮件列表的成员。\n"
+"{}"
+
+#: src/mailman/handlers/acknowledge.py:40
+msgid "Send an acknowledgment of a posting."
+msgstr "发送发帖确认函。"
+
+#: src/mailman/handlers/acknowledge.py:75
+msgid "$display_name post acknowledgment"
+msgstr "$display_name 发布致谢"
+
+#: src/mailman/handlers/after_delivery.py:33
+msgid "Perform some bookkeeping after a successful post."
+msgstr "在成功任职后进行一些记账工作。"
+
+#: src/mailman/handlers/arc_sign.py:65
+msgid "Perform ARC auth checks and attach resulting headers"
+msgstr "执行ARC认证检查，并附上结果头文件"
+
+#: src/mailman/handlers/avoid_duplicates.py:44
+msgid "Suppress some duplicates of the same message."
+msgstr "抑制一些重复的相同信息。"
+
+#: src/mailman/handlers/cleanse.py:42
+msgid "Cleanse certain headers from all messages."
+msgstr "从所有邮件中清理某些头信息。"
+
+#: src/mailman/handlers/cleanse_dkim.py:42
+msgid "Remove DomainKeys headers."
+msgstr "删除DomainKeys头文件。"
+
+#: src/mailman/handlers/cook_headers.py:169
+msgid "Modify message headers."
+msgstr "修改信息标题。"
+
+#: src/mailman/handlers/decorate.py:260
+msgid "Decorate a message with headers and footers."
+msgstr "用页眉和页脚来装饰信息。"
+
+#: src/mailman/handlers/dmarc.py:127
+msgid "$realname via $mlist.display_name"
+msgstr "$realname通过$mlist.display_name"
+
+#: src/mailman/handlers/dmarc.py:228
+msgid "Apply DMARC mitigations."
+msgstr "应用DMARC缓解措施。"
+
+#: src/mailman/handlers/file_recipients.py:35
+msgid "Get the normal delivery recipients from an include file."
+msgstr "从一个包含文件中获取正常的交付对象。"
+
+#: src/mailman/handlers/member_recipients.py:42
+msgid "Calculate the regular recipients of the message."
+msgstr "计算出信息的常规接收者。"
+
+#: src/mailman/handlers/member_recipients.py:77
+msgid ""
+"Your urgent message to the $mlist.display_name mailing list was not authorized\n"
+"for delivery.  The original message as received by Mailman is attached.\n"
+msgstr ""
+"你给$mlist.display_name邮件列表的紧急信息没有被授权发送。\n"
+"递送。  Mailman收到的原始信息附在后面。\n"
+
+#: src/mailman/handlers/mime_delete.py:62
+msgid ""
+"The attached message matched the $mlist.display_name mailing list's content\n"
+"filtering rules and was prevented from being forwarded on to the list\n"
+"membership.  You are receiving the only remaining copy of the discarded\n"
+"message.\n"
+"\n"
+msgstr ""
+"所附信息符合$mlist.display_name邮件列表的内容过滤规则，并被阻止转发到列表中。\n"
+"过滤规则，因此被阻止转发到列表的\n"
+"会员。  您收到的是被丢弃的邮件的唯一剩余副本。\n"
+"邮件的唯一副本。\n"
+"\n"
+
+#: src/mailman/handlers/mime_delete.py:69
+msgid "Content filter message notification"
+msgstr "内容过滤信息通知"
+
+#: src/mailman/handlers/mime_delete.py:97
+msgid ""
+"\n"
+"___________________________________________\n"
+"Mailman's content filtering has removed the\n"
+"following MIME parts from this message.\n"
+msgstr ""
+
+#: src/mailman/handlers/mime_delete.py:110
+msgid "The message's content type was explicitly disallowed"
+msgstr "信息的内容类型被明确地禁止了"
+
+#: src/mailman/handlers/mime_delete.py:115
+msgid "The message's content type was not explicitly allowed"
+msgstr "该信息的内容类型没有被明确允许"
+
+#: src/mailman/handlers/mime_delete.py:124
+msgid "The message's file extension was explicitly disallowed"
+msgstr "该邮件的文件扩展名被明确禁止"
+
+#: src/mailman/handlers/mime_delete.py:128
+msgid "The message's file extension was not explicitly allowed"
+msgstr "信息的文件扩展名没有被明确允许"
+
+#: src/mailman/handlers/mime_delete.py:140
+msgid "After content filtering, the message was empty"
+msgstr "在内容过滤后，该信息是空的"
+
+#: src/mailman/handlers/mime_delete.py:152 src/mailman/handlers/mime_delete.py:291
+msgid ""
+"\n"
+"Replaced multipart/alternative part with first alternative.\n"
+msgstr ""
+
+#: src/mailman/handlers/mime_delete.py:239 src/mailman/handlers/mime_delete.py:246
+#: src/mailman/handlers/mime_delete.py:255 src/mailman/handlers/mime_delete.py:261
+msgid "Name: $fname\n"
+msgstr ""
+
+#: src/mailman/handlers/mime_delete.py:374
+msgid "Filter the MIME content of messages."
+msgstr "过滤邮件的MIME内容。"
+
+#: src/mailman/handlers/owner_recipients.py:34
+msgid "Calculate the owner and moderator recipients."
+msgstr "计算所有者和主持人的收件人。"
+
+#: src/mailman/handlers/replybot.py:44
+msgid "Send automatic responses."
+msgstr "发送自动回复。"
+
+#: src/mailman/handlers/replybot.py:97
+msgid "Auto-response for your message to the \"$display_name\" mailing list"
+msgstr "自动回复您给\"$display_name \"邮件列表的信息"
+
+#: src/mailman/handlers/replybot.py:110
+msgid "The Mailman Replybot"
+msgstr "邮递员回复机器人"
+
+#: src/mailman/handlers/rfc_2369.py:128
+msgid "Add the RFC 2369 List-* headers."
+msgstr "添加RFC 2369 List-*头。"
+
+#: src/mailman/handlers/subject_prefix.py:158
+msgid "Add a list-specific prefix to the Subject header value."
+msgstr "在主题头值中添加一个特定的列表前缀。"
+
+#: src/mailman/handlers/tagger.py:173
+msgid "Tag messages with topic matches."
+msgstr "用主题匹配来标记信息。"
+
+#: src/mailman/handlers/to_archive.py:34
+msgid "Add the message to the archives."
+msgstr "将信息添加到档案馆。"
+
+#: src/mailman/handlers/to_digest.py:36
+msgid "Add the message to the digest, possibly sending it."
+msgstr "将信息添加到摘要中，可能会发送。"
+
+#: src/mailman/handlers/to_outgoing.py:38
+msgid "Send the message to the outgoing queue."
+msgstr "将信息发送至外发队列。"
+
+#: src/mailman/handlers/to_usenet.py:39
+msgid "Move the message to the outgoing news queue."
+msgstr "将信息移到外发新闻队列中。"
+
+#: src/mailman/handlers/validate_authenticity.py:120
+msgid "Perform auth checks and attach Authentication-Results header."
+msgstr "执行认证检查并附加认证结果头。"
+
+#: src/mailman/interfaces/pipeline.py:53
+msgid "[No details are available]"
+msgstr "[没有详细资料]"
+
+#: src/mailman/interfaces/pipeline.py:54
+msgid "[No reasons given]"
+msgstr "[没有给出理由]"
+
+#: src/mailman/pipelines/builtin.py:30
+msgid "The built-in owner pipeline."
+msgstr "内置的所有者管道。"
+
+#: src/mailman/pipelines/builtin.py:43
+msgid "The built-in posting pipeline."
+msgstr "内置的发帖管道。"
+
+#: src/mailman/pipelines/virgin.py:32
+msgid "The virgin queue pipeline."
+msgstr "处女队列管道。"
+
+#: src/mailman/rest/sub_moderation.py:114
+msgid "Subscription request"
+msgstr "订阅请求"
+
+#: src/mailman/rules/administrivia.py:52
+msgid "Catch mis-addressed email commands."
+msgstr "捕捉错误的电子邮件指令。"
+
+#: src/mailman/rules/administrivia.py:96
+msgid "Message contains administrivia"
+msgstr "信息中包含管理方面的问题"
+
+#: src/mailman/rules/any.py:32
+msgid "Look for any previous rule hit."
+msgstr "寻找任何以前的规则打击。"
+
+#: src/mailman/rules/approved.py:45
+msgid "The message has a matching Approve or Approved header."
+msgstr "该信息有一个匹配的批准或核准头。"
+
+#: src/mailman/rules/banned_address.py:33
+msgid "Match messages sent by banned addresses."
+msgstr "匹配被禁止的地址所发送的信息。"
+
+#: src/mailman/rules/banned_address.py:45
+msgid "Message sender {} is banned from this list"
+msgstr "信息发送者{}被禁止出现在此列表中"
+
+#: src/mailman/rules/digests.py:42
+msgid "Catch messages with digest Subject or boilerplate quote."
+msgstr ""
+
+#: src/mailman/rules/digests.py:57
+msgid "Message has a digest subject"
+msgstr ""
+
+#: src/mailman/rules/digests.py:88
+msgid "Message quotes digest boilerplate"
+msgstr ""
+
+#: src/mailman/rules/dmarc.py:307
+msgid "Find DMARC policy of From: domain."
+msgstr "找到From: domain的DMARC策略。"
+
+#: src/mailman/rules/dmarc.py:327
+msgid "DMARC moderation"
+msgstr "DMARC节制"
+
+#: src/mailman/rules/dmarc.py:333
+#, python-brace-format
+msgid "You are not allowed to post to this mailing list From: a domain which publishes a DMARC policy of reject or quarantine, and your message has been automatically rejected.  If you think that your messages are being rejected in error, contact the mailing list owner at ${listowner}."
+msgstr "您不允许在此邮件列表中发布来自：一个公布了拒绝或隔离的DMARC政策的域名，您的邮件已被自动拒绝。  如果您认为您的邮件被错误地拒绝，请联系邮件列表的所有者：${listowner}。"
+
+#: src/mailman/rules/emergency.py:34
+msgid ""
+"The mailing list is in emergency hold and this message was not\n"
+"        pre-approved by the list administrator.\n"
+"        "
+msgstr ""
+"该邮件列表处于紧急搁置状态，并且该邮件未被\n"
+"        列表管理员预先批准的。\n"
+"        "
+
+#: src/mailman/rules/emergency.py:47
+msgid "Emergency moderation is in effect for this list"
+msgstr "该列表处于紧急审核状态"
+
+#: src/mailman/rules/implicit_dest.py:37
+msgid "Catch messages with implicit destination."
+msgstr "捕捉有隐含目的地的信息。"
+
+#: src/mailman/rules/implicit_dest.py:95
+msgid "Message has implicit destination"
+msgstr "信息有隐含的目的地"
+
+#: src/mailman/rules/loop.py:32
+msgid "Look for a posting loop."
+msgstr "寻找一个张贴的循环。"
+
+#: src/mailman/rules/loop.py:45
+msgid "Message has already been posted to this list"
+msgstr "信息已经被发布到这个列表中"
+
+#: src/mailman/rules/max_recipients.py:33
+msgid "Catch messages with too many explicit recipients."
+msgstr "捕捉有太多明确收件人的信息。"
+
+#: src/mailman/rules/max_recipients.py:49
+msgid "Message has more than {} recipients"
+msgstr "信息有超过{}个收件人"
+
+#: src/mailman/rules/max_size.py:37
+msgid "Catch messages that are bigger than a specified maximum."
+msgstr "捕捉大于指定最大值的信息。"
+
+#: src/mailman/rules/max_size.py:68
+msgid "The message is larger than the {} KB maximum size"
+msgstr "该信息大于{}KB的最大尺寸"
+
+#: src/mailman/rules/moderation.py:64
+msgid "Match messages sent by moderated members."
+msgstr "匹配的信息是由受约束的成员发送的。"
+
+#: src/mailman/rules/moderation.py:92
+msgid "The message comes from a moderated member"
+msgstr "该信息来自于一个经过审核的会员"
+
+#: src/mailman/rules/moderation.py:110
+msgid "Match messages sent by nonmembers."
+msgstr "匹配非会员发送的信息。"
+
+#: src/mailman/rules/moderation.py:125
+msgid "No sender was found in the message."
+msgstr "在信息中没有发现发件人。"
+
+#: src/mailman/rules/moderation.py:170
+msgid "The sender is in the nonmember {} list"
+msgstr "发件人在非成员的{}列表中"
+
+#: src/mailman/rules/moderation.py:185
+msgid "The message is not from a list member"
+msgstr "该信息不是来自列表中的成员"
+
+#: src/mailman/rules/news_moderation.py:34
+msgid ""
+"Match all messages posted to a mailing list that gateways to a\n"
+"        moderated newsgroup.\n"
+"        "
+msgstr ""
+"匹配所有发布到邮件列表中的信息，该邮件列表是通往一个\n"
+"        的新闻组。\n"
+"        "
+
+#: src/mailman/rules/news_moderation.py:46
+msgid "Post to a moderated newsgroup gateway"
+msgstr "发布到一个有节制的新闻组网关"
+
+#: src/mailman/rules/no_senders.py:32
+msgid "Match messages with no valid senders."
+msgstr "匹配没有有效发件人的信息。"
+
+#: src/mailman/rules/no_senders.py:44
+msgid "The message has no valid senders"
+msgstr "该信息没有有效的发送者"
+
+#: src/mailman/rules/no_subject.py:32
+msgid "Catch messages with no, or empty, Subject headers."
+msgstr "捕捉没有或空的主题标题的邮件。"
+
+#: src/mailman/rules/no_subject.py:45
+msgid "Message has no subject"
+msgstr "信息没有主题"
+
+#: src/mailman/rules/suspicious.py:38
+msgid "Catch messages with suspicious headers."
+msgstr "捕捉有可疑标题的信息。"
+
+#: src/mailman/rules/suspicious.py:97
+msgid "Header \"{}\" matched a bounce_matching_header line"
+msgstr "标题 \"{}\" 匹配了一个 bounce_matching_header 行"
+
+#: src/mailman/rules/truth.py:32
+msgid "A rule which always matches."
+msgstr "一个总是匹配的规则。"
+
+#: src/mailman/runners/command.py:103
+msgid "Ignoring non-text/plain MIME parts"
+msgstr "忽略非文本/平原MIME部分"
+
+#: src/mailman/runners/command.py:143
+msgid "The results of your email command are provided below.\n"
+msgstr "你的电子邮件命令的结果在下面提供。\n"
+
+#: src/mailman/runners/command.py:187
+msgid "- Original message details:"
+msgstr "- 原始信息详情："
+
+#: src/mailman/runners/command.py:191
+msgid "    From: $from_"
+msgstr "    来自：$from_"
+
+#: src/mailman/runners/command.py:192
+msgid "    Subject: $subject"
+msgstr "    主题：$subject"
+
+#: src/mailman/runners/command.py:193
+msgid "    Date: $date"
+msgstr "    日期：$date"
+
+#: src/mailman/runners/command.py:194
+msgid "    Message-ID: $message_id"
+msgstr "    消息编号：$message_id"
+
+#: src/mailman/runners/command.py:195
+msgid ""
+"\n"
+"- Results:"
+msgstr ""
+"\n"
+"- 结果："
+
+#: src/mailman/runners/command.py:209
+msgid "No such command: $command_name"
+msgstr "没有这样的命令。$command_name"
+
+#: src/mailman/runners/command.py:223
+msgid ""
+"\n"
+"- Unprocessed:"
+msgstr ""
+"\n"
+"- 未处理："
+
+#: src/mailman/runners/command.py:228
+msgid ""
+"\n"
+"- Ignored:"
+msgstr ""
+"\n"
+"- 已忽略："
+
+#: src/mailman/runners/command.py:231
+msgid ""
+"\n"
+"- Done."
+msgstr ""
+"\n"
+"- 完成了。"
+
+#: src/mailman/runners/command.py:237
+msgid "The results of your email commands"
+msgstr "你的电子邮件命令的结果"
+
+#: src/mailman/runners/digest.py:55
+msgid "$mlist.display_name Digest, Vol $volume, Issue $digest_number"
+msgstr "$mlist.display_name 摘要，卷 $volume, 期号 $digest_number"
+
+#: src/mailman/runners/digest.py:83
+msgid "Today's Topics:\n"
+msgstr "今天的话题。\n"
+
+#: src/mailman/runners/digest.py:152
+msgid "Digest Header"
+msgstr "文摘标题"
+
+#: src/mailman/runners/digest.py:172
+msgid "Today's Topics ($count messages)"
+msgstr "今日话题 ($count messages)"
+
+#: src/mailman/runners/digest.py:194 src/mailman/runners/digest.py:269
+msgid "Digest Footer"
+msgstr "文摘页脚"
+
+#: src/mailman/runners/digest.py:201 src/mailman/runners/digest.py:276
+msgid "End of "
+msgstr "结束 "
+
+#: src/mailman/styles/base.py:55
+msgid "[$mlist.display_name] "
+msgstr "[$mlist.display_name] "
+
+#: src/mailman/styles/default.py:37
+msgid "Ordinary discussion mailing list style."
+msgstr "普通讨论邮件列表风格。"
+
+#: src/mailman/styles/default.py:57
+msgid "Announce only mailing list style."
+msgstr "只公布邮件列表样式。"
+
+#: src/mailman/styles/default.py:77
+msgid "Discussion mailing list style with private archives."
+msgstr "带有私人档案的讨论邮件列表风格。"
+
+#: src/mailman/utilities/options.py:47
+msgid "slice and range must be integers: $value"
+msgstr "slice和range必须是整数：$value"
+
+#: src/mailman/utilities/options.py:50
+msgid "Bad runner spec: $value"
+msgstr "坏的运行器规格。$value"
+
+#: src/mailman/utilities/scrubber.py:48 src/mailman/utilities/scrubber.py:49
+msgid "not available"
+msgstr ""
+
+#: src/mailman/utilities/scrubber.py:50
+msgid ""
+"A message part incompatible with plain text digests has been removed ...\n"
+"Name: $filename\n"
+"Type: $ctype\n"
+"Size: $size bytes\n"
+"Desc: $desc\n"
+msgstr ""
+
+#: src/mailman/utilities/scrubber.py:58
+msgid "-------------- next part --------------\n"
+msgstr ""
+
+msgid "domain:admin:notice:new-list.txt"
+msgstr ""
+"刚刚为您创建了邮件列表 '$listname'   \n"
+"以下是关于您的邮件列表的一些基本信息。\n"
+"\n"
+"您的列表有一个面向用户(而不是管理员)的基于电子邮件的界面；\n"
+"您可以通过发送一封邮件获得使用它的信息，\n"
+"该邮件的主题或正文只需包含单词 'help' 即可，收件人为：\n"
+"\n"
+"    $request_email\n"
+"\n"
+"请将所有问题发送到 $site_email。"
+
+msgid "help.txt"
+msgstr ""
+"对$listname邮件列表的帮助\n"
+"\n"
+"这是$版本的GNU Mailman列表管理器的电子邮件命令 \"帮助\"。\n"
+"管理器的$版本。  下面描述了你可以发送的命令，以获得\n"
+"信息和控制您在这个站点的邮件列表的订阅。\n"
+"命令可以在主题行或邮件正文中出现。\n"
+"\n"
+"命令应发送至${listname}-request@${domain}地址。\n"
+"\n"
+"关于描述--在\"<>\"中的词表示必填项目，在\"[]\"中的词表示必填项目。\n"
+"[]\"中的词表示可选项目。  当你使用\"<>\"或\"[]\"时，请不要包括\"<>\"或\n"
+"\"[]\"，当你使用这些命令时。\n"
+"\n"
+"以下命令是有效的。\n"
+"\n"
+"    $commands\n"
+"\n"
+"需要注意的问题和疑虑应发送至。\n"
+"\n"
+"    $administrator"
+
+msgid "list:admin:action:post.txt"
+msgstr ""
+"作为列表管理员，我们要求您授权给\n"
+"以下邮件列表的发布。\n"
+"\n"
+"    列表。    $listname\n"
+"    发件人: $sender_email\n"
+"    主题：$subject\n"
+"\n"
+"该信息被保留是因为。\n"
+"\n"
+"$reasons\n"
+"\n"
+"在您方便的时候，请访问您的仪表板以批准或拒绝该\n"
+"请求。"
+
+msgid "list:admin:action:subscribe.txt"
+msgstr ""
+"申请订阅邮件列表需要您的授权\n"
+"批准。\n"
+"\n"
+"    对于。  $member\n"
+"    列表。$listname"
+
+msgid "list:admin:action:unsubscribe.txt"
+msgstr ""
+"退订邮件列表需要您的授权\n"
+"请求批准。\n"
+"\n"
+"    对于。  $member\n"
+"    列表。$listname"
+
+msgid "list:admin:notice:disable.txt"
+msgstr ""
+"$member 的订阅在 $listname 上被禁，理由是\n"
+"退信分数超出了该邮件列表的 bounce_score_threshold。\n"
+"\n"
+"如可用，则附加触发传送状态通知。"
+
+msgid "list:admin:notice:increment.txt"
+msgstr ""
+
+msgid "list:admin:notice:pending.txt"
+msgstr ""
+
+msgid "list:admin:notice:removal.txt"
+msgstr "由于退信过多，$member已经从$listname退订了。"
+
+msgid "list:admin:notice:subscribe.txt"
+msgstr "$member已经成功订阅了$display_name。"
+
+msgid "list:admin:notice:unrecognized.txt"
+msgstr ""
+"所附的信息是以反弹形式收到的，但要么是反弹的格式不被识别\n"
+"不被识别，或者无法从中提取出任何成员地址。  这个\n"
+"邮件列表已被配置为将所有未被识别的反弹信息发送至\n"
+"列表管理员。"
+
+msgid "list:admin:notice:unsubscribe.txt"
+msgstr "$member已从$display_name中删除。"
+
+msgid "list:member:digest:header.txt"
+msgstr ""
+
+msgid "list:member:digest:masthead.txt"
+msgstr ""
+"将$display_name邮件列表提交到\n"
+"\t$listname\n"
+"\n"
+"要通过电子邮件订阅或取消订阅，请发送一个带有主题或正文的信息\n"
+"'帮助'到\n"
+"\t$request_email\n"
+"\n"
+"你可以通过以下方式联系管理该列表的人\n"
+"\t$owner_email\n"
+"\n"
+"在回复时，请编辑您的主题行，使其比以下内容更具体\n"
+"\"Re: $display_name digest的内容...\""
+
+msgid "list:member:generic:footer.txt"
+msgstr ""
+"_______________________________________________\n"
+"$display_name 邮件列表 --$listname\n"
+"要取消订阅，请发送电子邮件至 ${short_listname}-leave@${domain}"
+
+msgid "list:member:regular:header.txt"
+msgstr ""
+
+msgid "list:user:action:invite.txt"
+msgstr ""
+"您的地址\"$user_email \"已被邀请加入$short_listname\n"
+"邮件列表的所有者邀请您加入$domain的邮件列表。\n"
+"您可以通过简单地回复此消息来接受邀请。\n"
+"\n"
+"或者你应该包括以下一行 -- 并且只包括以下一行\n"
+"行 -- 在给$request_email的信息中。\n"
+"\n"
+"    确认 $token\n"
+"\n"
+"请注意，只需向该邮件发送一个 \"回复\"，就可以在大多数邮件阅读器中发挥作用。\n"
+"大多数邮件阅读者都能做到。\n"
+"\n"
+"如果你想拒绝这个邀请，请直接忽略这个\n"
+"信息。  如果你有任何问题，请发送至\n"
+"$owner_email。"
+
+msgid "list:user:action:subscribe.txt"
+msgstr ""
+"电子邮件地址注册确认\n"
+"\n"
+"你好，这里是$domain的GNU Mailman服务器。\n"
+"\n"
+"我们已经收到了一个电子邮件地址的注册请求\n"
+"\n"
+"    $user_email\n"
+"\n"
+"在您开始使用本网站的 GNU Mailman 之前，您必须首先确认\n"
+"这是您的电子邮件地址。  您可以通过回复这条信息来实现。\n"
+"\n"
+"或者您应该在给$request_email的邮件中加入以下一行--并且只加入以下一行\n"
+"行 -- 在给 $request_email 的信息中。\n"
+"\n"
+"    确认 $token\n"
+"\n"
+"请注意，只需向该邮件发送一个 \"回复\"，就可以在大多数邮件阅读器中发挥作用。\n"
+"大多数邮件阅读者都能做到。\n"
+"\n"
+"如果你不希望注册这个电子邮件地址，只需忽略这个\n"
+"信息。  如果你认为你被恶意订阅到这个名单，或者\n"
+"有任何其他问题，你可以联系\n"
+"\n"
+"    $owner_email"
+
+msgid "list:user:action:unsubscribe.txt"
+msgstr ""
+"电子邮件地址退订确认\n"
+"\n"
+"你好，这里是$domain的GNU Mailman服务器。\n"
+"\n"
+"我们收到了一个电子邮件地址的退订请求\n"
+"\n"
+"    $user_email\n"
+"\n"
+"在GNU Mailman取消您的订阅之前，您必须首先确认您的请求。\n"
+"您可以通过简单地回复这条消息来做到这一点。\n"
+"\n"
+"或者您应该在给$request_email的邮件中加入以下一行--并且只加入以下一行\n"
+"行 -- 在给 $request_email 的信息中。\n"
+"\n"
+"    确认 $token\n"
+"\n"
+"请注意，只需向这一消息发送一个 \"回复\"，就可以在大多数邮件阅读器中发挥作用。\n"
+"大多数邮件阅读者都能做到。\n"
+"\n"
+"如果你不希望退订这个电子邮件地址，只要不理会这个\n"
+"信息。  如果你认为你被恶意地从列表中取消订阅。\n"
+"或有任何其他问题，你可以联系\n"
+"\n"
+"    $owner_email"
+
+msgid "list:user:notice:goodbye.txt"
+msgstr ""
+
+msgid "list:user:notice:hold.txt"
+msgstr ""
+"您给'$listname'的邮件，主题是\n"
+"\n"
+"    $subject\n"
+"\n"
+"将被扣留，直到列表管理人审核通过。\n"
+"\n"
+"该信息被保留是因为。\n"
+"\n"
+"$reasons\n"
+"\n"
+"该信息将被发布到列表中，或者你将收到\n"
+"通知版主的决定。"
+
+msgid "list:user:notice:no-more-today.txt"
+msgstr ""
+"我们收到来自您的地址<$sender_email>的信息，要求从$listname邮件列表中获得自动回复。\n"
+"从$listname邮件列表中自动回复。\n"
+"\n"
+"我们今天看到的数量：$count。  为了避免问题，如\n"
+"邮件机器人之间的邮件循环，我们不会再向您发送任何进一步的\n"
+"回复。  请明天再试。\n"
+"\n"
+"如果您认为此信息有误，或者您有任何疑问，请\n"
+"联系列表的所有者：$owner_email。"
+
+msgid "list:user:notice:post.txt"
+msgstr ""
+"您的信息题为\n"
+"\n"
+"    主题：$subject\n"
+"\n"
+"已被$display_name邮件列表成功接收。"
+
+msgid "list:user:notice:probe.txt"
+msgstr ""
+"这是一个探测信息。  你可以忽略这个消息。\n"
+"\n"
+"$listname邮件列表收到了一些来自你的退信。\n"
+"表明可能有问题的信息传递到$sender_email。  A\n"
+"以下是一个样本。  请检查此信息，以确保您的电子邮件地址没有\n"
+"你的电子邮件地址没有问题。  你可能想向你的邮件\n"
+"管理员寻求更多帮助。\n"
+"\n"
+"你不需要做任何事情来保持邮件列表的启用成员。\n"
+"\n"
+"如果您有任何疑问或问题，您可以联系邮件列表的所有者\n"
+"在\n"
+"\n"
+"    $owner_email"
+
+msgid "list:user:notice:refuse.txt"
+msgstr ""
+"您对$listname邮件列表的请求\n"
+"\n"
+"    $request\n"
+"\n"
+"已被列表管理人拒绝。  版主给出了\n"
+"以下是拒绝你的请求的原因。\n"
+"\n"
+"\"$reason\"\n"
+"\n"
+"任何问题或意见都应该直接提交给列表管理员\n"
+"at:\n"
+"\n"
+"    $owner_email"
+
+msgid "list:user:notice:rejected.txt"
+msgstr ""
+"您给$listname邮件列表的信息被拒绝，原因如下\n"
+"原因。\n"
+"\n"
+"$reasons\n"
+"\n"
+"附上Mailman收到的原始信息。"
+
+msgid "list:user:notice:warning.txt"
+msgstr ""
+"您在$listname邮件列表中的订阅已被禁用，因为它已\n"
+"收到许多退信，表明可能有问题\n"
+"邮件的问题。您可能想和您的邮件管理员确认\n"
+"寻求更多帮助。\n"
+"\n"
+"如果你有任何疑问或问题，你可以通过以下方式联系邮件列表的所有者\n"
+"\n"
+"    $owner_email"
+
+msgid "list:user:notice:welcome.txt"
+msgstr ""
+"欢迎来到\"$display_name \"邮件列表!\n"
+"\n"
+"要发布到这个列表，请将您的电子邮件发送到。\n"
+"\n"
+"  $listname\n"
+"\n"
+"您可以通过电子邮件取消订阅或对您的选项进行调整，请发送\n"
+"消息到。\n"
+"\n"
+"  $request_email\n"
+"\n"
+"并在主题或正文中写上 \"帮助 \"一词（不要包括引号），然后\n"
+"你会收到一条带有说明的信息。  你将需要你的密码来\n"
+"改变你的选项，但为了安全起见，这个密码不包括在\n"
+"这里。  如果你忘记了你的密码，你将需要通过\n"
+"网络用户界面重新设置。"
+
+#~ msgid "Already subscribed (skipping): $display_name <$email>"
+#~ msgstr "已订阅（跳过）：$ display_name <$ email>"
+
+#~ msgid "Member not subscribed (skipping): $display_name <$email>"
+#~ msgstr "成员未订阅（跳过）：$ display_name <$ email>"
+
+#~ msgid ""
+#~ "    [MODE] Add all member addresses in FILENAME.  FILENAME can be '-' to\n"
+#~ "    indicate standard input.  Blank lines and lines that start with a\n"
+#~ "    '#' are ignored.  This option is deprecated in favor of 'mailman\n"
+#~ "    addmembers'."
+#~ msgstr ""
+#~ "    [MODE]在FILENAME中添加所有成员地址。 FILENAME可以是“-”\n"
+#~ "    指示标准输入。空行和以a开头的行\n"
+#~ "    '＃'被忽略。不推荐使用此选项，而推荐使用'mailman\n"
+#~ "    addmembers'。"
+
+#~ msgid ""
+#~ "    [MODE] Delete all member addresses found in FILENAME\n"
+#~ "    from the specified list. FILENAME can be '-' to indicate standard input.\n"
+#~ "    Blank lines and lines that start with a '#' are ignored.\n"
+#~ "    This option is deprecated in favor of 'mailman delmembers'."
+#~ msgstr ""
+#~ "    [MODE]删除在FILENAME中找到的所有成员地址\n"
+#~ "    从指定列表中。 FILENAME可以为“-”以表示标准输入。\n"
+#~ "    空行和以“＃”开头的行将被忽略。\n"
+#~ "    不推荐使用此选项，而推荐使用“ mailman delmembers”。"
+
+#~ msgid ""
+#~ "    [MODE] Synchronize all member addresses of the specified mailing list\n"
+#~ "    with the member addresses found in FILENAME.\n"
+#~ "    FILENAME can be '-' to indicate standard input.\n"
+#~ "    Blank lines and lines that start with a '#' are ignored.\n"
+#~ "    This option is deprecated in favor of 'mailman syncmembers'."
+#~ msgstr ""
+#~ "    [MODE]同步指定邮件列表的所有成员地址\n"
+#~ "    以及在FILENAME中找到的成员地址。\n"
+#~ "    FILENAME可以为“-”以表示标准输入。\n"
+#~ "    空行和以“＃”开头的行将被忽略。\n"
+#~ "    不推荐使用此选项，而推荐使用“ mailman syncmembers”。"
+
+#~ msgid ""
+#~ "The {} list has {} moderation requests waiting.\n"
+#~ "\n"
+#~ "{}\n"
+#~ "Please attend to this at your earliest convenience.\n"
+#~ msgstr ""
+#~ "{}列表中有{}个审核请求正在等待。\n"
+#~ "\n"
+#~ "{}\n"
+#~ "请尽早参加此会议。\n"
+
+#~ msgid "Confirm a subscription request."
+#~ msgstr "确认订阅请求。"

@@ -1,0 +1,4 @@
+$member 的订阅在 $listname 上被禁，理由是
+退信分数超出了该邮件列表的 bounce_score_threshold。
+
+如可用，则附加触发传送状态通知。
