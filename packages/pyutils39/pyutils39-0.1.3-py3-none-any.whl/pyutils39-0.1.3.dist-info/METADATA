@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: pyutils39
+Version: 0.1.3
+Summary: A utilities package
+Home-page: https://github.com/Enderbyte-Programs/pyutils39
+Author: Enderbyte09
+Author-email: enderbyte09@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Enderbyte-Programs/pyutils39/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+A small utilities package
+
+**Features:**
+
+Consoleask(message)
+Ask a question via the console
+
+reverse(text)
+Reverse a text string
+
+error(message,title)
+Show an error message (tk, but without root window)
+
+toplevelerror(message,title)
+same as error, but it stays on top.
+
+question(message,title) and toplevelquestion(message,title)
+same as error and toplevel error, but as a yes no question
+returns True for yes or False for no
+
+
