@@ -1,0 +1,15 @@
+unimi_dl/__init__.py,sha256=k4GIE_6TgB8ZEhYf8cymC6Ta-EFT72RLc8VyHl3XZh4,820
+unimi_dl/__main__.py,sha256=I1CcwZEZuJm8bG9Rn01cxK5AJAqE8nyvzTbOf3-xLvs,790
+unimi_dl/cmd.py,sha256=fXIvZpnVKowVfX64ecn3kCUEWziSfFFzQ2WjTh2xBzc,13027
+unimi_dl/multi_select.py,sha256=2z8I7O6URaWrlsoBCLcAyoXFt_ekrkXIpW0TDER_wz0,1111
+unimi_dl/platform/__init__.py,sha256=3Zm08smpziRuvUUTE5-7H6vnDYbp9GD6ZtzpDonbnmw,879
+unimi_dl/platform/ariel.py,sha256=rPqIXunt3rV1NUyIrhB79mEF49FP_G1jxZY_yCN1Xlk,2159
+unimi_dl/platform/getPlatform.py,sha256=KNSjYgV8bwnsTI4kcINn-ck2GzRiUVJCaOxKJxQ3M2I,1162
+unimi_dl/platform/panopto.py,sha256=nnpbXLYbXW7LFLrhEKp2O6S6z4uQDNIIRX4vkiZ9OMc,2528
+unimi_dl/platform/platform.py,sha256=2MH7pf-lVZ__MmTesVvwDpHuaIO7Wl3DHq-j_VX8C0U,1118
+unimi_dl-0.3.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+unimi_dl-0.3.1.dist-info/METADATA,sha256=2wQIG42alOMVzQWhlAbf-1cPmKMd4sffUaZ4LQbtADo,10028
+unimi_dl-0.3.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+unimi_dl-0.3.1.dist-info/entry_points.txt,sha256=R9wVdiHdWu-hhJGnp8NSGOnAcSsYKeHC-6dtn5Dt1Hs,48
+unimi_dl-0.3.1.dist-info/top_level.txt,sha256=r4wPY66QUeERI4Cn3REAFAI5Xovj-UCWcc7kObDDUBc,9
+unimi_dl-0.3.1.dist-info/RECORD,,
