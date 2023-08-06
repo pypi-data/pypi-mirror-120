@@ -1,0 +1,17 @@
+neil_vst_gui/__init__.py,sha256=YUx4_9_scuVAMbtKS_N5spULAFUKotPskdcH7FNsin4,25
+neil_vst_gui/job.py,sha256=xpwcWXqZdmJcupkGgOJTLyxhY5Uoe2I8r4kfrilBvL4,3944
+neil_vst_gui/main.py,sha256=GPqSdatGpdYBdYVAkpv47Tb9-5-Te5gOjjZlGEBsryM,30969
+neil_vst_gui/main.ui,sha256=XvXk9uUz6R-3XUH71sB3WrKg-CFMeqwUkJxq3elSgqw,83348
+neil_vst_gui/main_worker.py,sha256=GZdmSDEEJ5cClW6iy4qYz-F7JtsmndQhoMh5miWvJTc,4626
+neil_vst_gui/play_chain.py,sha256=ONlQo5eNTJZVAGks-qn2HlUc8lWV4Y9Q-Ioc9a35u8M,5159
+neil_vst_gui/rects_animate.py,sha256=zKMS028sXryD385ArbsBprnj2iVcVmi2JWTAECbkz5o,5998
+neil_vst_gui/resources.py,sha256=rzVFei6H7cfURYitD2DXZNId5oh24gWfyZKaDxxq-E8,5878070
+neil_vst_gui/tag_write.py,sha256=UyajFtZLkqGSt0DiFatOeYxnHZUGTEAANQ5LOICccVY,4981
+neil_vst_gui/ui_logging.py,sha256=RmNiq98pdaAxNJ8IMj2zuha9zEqj7ahD26naa2NvxD0,1387
+neil_vst_gui/ui_settings.py,sha256=tO_QStevxTzhMUPuELGiDVVhdoLmeiBxlXr42uJwFbg,742
+neil_vst_gui-0.5.7.dist-info/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+neil_vst_gui-0.5.7.dist-info/METADATA,sha256=dm9HzjLNSI7fcW7aFLmh_Q2cx9dzEAZd-RTQXqlrJ4U,2214
+neil_vst_gui-0.5.7.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+neil_vst_gui-0.5.7.dist-info/entry_points.txt,sha256=kE-xkqK-v1qRVSUfc3ov6QOknsFSscdKg6No9U2YMVA,57
+neil_vst_gui-0.5.7.dist-info/top_level.txt,sha256=y2soPN7XQAvdESPV0ydyp6v9yfoPwBfD7LRS8u3WM5k,13
+neil_vst_gui-0.5.7.dist-info/RECORD,,

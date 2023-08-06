@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: neil-vst-gui
+Version: 0.5.7
+Summary: GUI application based on py-neil-vst package
+Home-page: https://github.com/LeftRadio/py-neil-vst-gui
+Author: Vladislav Kamenev
+Author-email: vladislav@inorbit.com
+License: MIT
+Keywords: vst,plugin
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Requires-Dist: neil-vst (>=0.2.7)
+Requires-Dist: SoundFile (>=0.10.3.post1)
+Requires-Dist: sounddevice (>=0.4.2)
+Requires-Dist: numpy (==1.19.0)
+Requires-Dist: PyQt5
+
+# py-neil-vst-gui
+
+GUI application based on py-neil-vst package (Cython-based simple VST 2.4 Host and VST Plugins wrapper)
+
+- Supported platforms: **Windows 64bit**
+- Supported python versions: **3.7**, **3.8**, **3.9**
+- Supported VST Plugins: only **64-bit/VST2**
+
+- Multiply files work on the one click.
+- VST 64-bit plugin chain support - add, remove, change "on the fly".
+- VST Plugins self GUI on separate windows.
+- Multithreading support for proccessing, one file - one thread.
+- Fast work with minimum memory required for the one working thread.
+- Play any file with VST plugin chain "as is" - some as the output result.
+- ASIO, WASAPI, WDM audio streams support
+- Save/Open projects files in readable json format
+- Optional log window with four levels (DEBUG, INFO, WARNING, ERROR)
+- GUI based on PyQt5
+- Full open source project
+
+
+![alt text](https://github.com/LeftRadio/py-neil-vst-gui/blob/master/img/0_1.png?raw=true)
+
+![alt text](https://github.com/LeftRadio/py-neil-vst-gui/blob/master/img/0_2.png?raw=true)
+
+![alt text](https://github.com/LeftRadio/py-neil-vst-gui/blob/master/img/0_3.png?raw=true)
+
+![alt text](https://github.com/LeftRadio/py-neil-vst-gui/blob/master/img/1.png?raw=true)
+
+![alt text](https://github.com/LeftRadio/py-neil-vst-gui/blob/master/img/1_1.png?raw=true)
+
+![alt text](https://github.com/LeftRadio/py-neil-vst-gui/blob/master/img/2.png?raw=true)
+
+

@@ -1,0 +1,3 @@
+[console_scripts]
+neil_vst_gui = neil_vst_gui.main:main
+
