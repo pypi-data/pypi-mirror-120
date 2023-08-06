@@ -1,0 +1,10 @@
+coloredlogs
+urllib3
+pyeventbus3
+opencv_python
+tflite_runtime
+numpy
+websockets
+Pillow
+smbus
+tinydb
