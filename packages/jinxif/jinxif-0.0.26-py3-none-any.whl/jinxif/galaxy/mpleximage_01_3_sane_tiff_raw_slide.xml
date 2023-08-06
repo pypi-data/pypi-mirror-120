@@ -1,0 +1,27 @@
+<tool id="sane_tiff_raw" name="sane_tiff_raw" version="0.0.1" profile="21.09">
+
+    <description>check tiff_raw file names</description>
+
+    <requirements>
+        <requirement type="package">jinxif</requirement>
+    </requirements>
+
+    <command detect_errors="exit_code"><![CDATA[
+        mkdir input &&
+
+        #for $tiff in $tiff_raw:
+            ln -s $tiff input/ &&
+	#end for
+
+	python $__tool_directory__/mpleximage_01_3_sane_tiff_raw_slide.py > $stdout
+    ]]></command>
+
+    <inputs>
+        <param name="tiff_raw" type="data_collection" format="tiff" collection_type="list"  label="tiff_raw_files_input"/>
+    </inputs>
+    <outputs>
+	    <data format="tabular" name="stdout" label="sane_tiff_raw_output"/>
+    </outputs>
+
+    <help>the beatles ~ help!</help>
+</tool>

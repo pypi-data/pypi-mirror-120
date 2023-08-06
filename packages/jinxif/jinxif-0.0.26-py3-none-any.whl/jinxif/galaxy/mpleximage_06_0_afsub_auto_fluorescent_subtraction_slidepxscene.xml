@@ -1,0 +1,50 @@
+<tool id="afsub_auto_fluorescent_subtraction" name="afsub_auto_fluorescent_subtraction" version="0.0.1" profile="21.09">
+
+    <description>autofluorescent subtraction on registered images</description>
+
+    <requirements>
+        <requirement type="package">jinxif</requirement>
+    </requirements>
+
+    <command detect_errors="exit_code"><![CDATA[
+	#import re
+
+	mkdir input_tiff_reg &&
+        mkdir input_csv_exposuretime &&
+        mkdir output_tiff_afsub &&
+
+	#for $tiff in $tiff_reg:
+	    #set $filename = re.sub('[^\w\-\.\s]', '_', str($tiff.element_identifier))
+            ln -s $tiff input_tiff_reg/$filename &&
+        #end for
+
+	#set $filename = re.sub('[^\w\-\.\s]', '_', str($csv_exposuretime.element_identifier))
+	ln -s $csv_exposuretime input_csv_exposuretime/${filename}.csv &&
+
+	ln -s $json_crop_dictionary ddd_crop.json &&
+	ln -s $json_early_dictionary ds_early.json &&
+	ln -s $json_late_dictionary ds_late.json &&
+
+	python $__tool_directory__/mpleximage_06_0_afsub_auto_fluorescent_subtraction_slidepxscene.py --xcolor $exclude_color --xmarker $exclude_marker --bit8 $bit8
+    ]]></command>
+
+    <inputs>
+	<param name="tiff_reg" type="data_collection" format="tiff" collection_type="list"  label="tiff_reg_files_input" />
+        <param name="csv_exposuretime" type="data" format="csv" label="csv_exposuretime_file_input" />
+	<param name="json_crop_dictionary" type="data" format="json" label="json_crop_dictionary_file_input" help="this dictionary is needed, because it maps microscopy scenes to the smaller 20000px * 20000px cropped scenes" />
+	<param name="json_early_dictionary" type="data" format="json" label="json_early_dictionary_file_input" help="early round quenching marker used for af subtraction" />
+	<param name="json_late_dictionary" type="data" format="json" label="json_late_dictionary_file_input" help="late round quenching marker used for af subtraction" />
+        <param name="exclude_color" type="text" value="c1 c5" label="exclude_color_input" help="space separated list of microscopy channel identifier that should be excluded from af subtraction, because there is no af, because of the wave length of this channels." />
+	<param name="exclude_marker" type="text" value="" label="exclude_marker_input" help="space separated list of markers that should be excluded from af subtraction." />
+        <param name="bit8" type="boolean" label="8[bit] images" checked="false" truevalue="true" falsevalue="false" help="by default the generated images are like the input images 16[bit] but for presentation itis sometimes nice to have an 8[bit] af subtracted image. set true to generating 8[bit] images instead of 16[bit] images." />
+    </inputs>
+
+    <outputs>
+        <collection type="list"  name="tiff_afsub_slidepxscene_output">
+            <discover_datasets pattern="__designation_and_ext__" directory="output_tiff_afsub" format="tiff" visible="false" />
+        </collection>
+    </outputs>
+
+    <help>the beatles ~ help!</help>
+</tool>
+
