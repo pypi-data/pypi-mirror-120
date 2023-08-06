@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: apple-peeler
+Version: 0.1.0
+Summary: Extract XML from the OS X dictionaries.
+Home-page: https://github.com/solarmist/apple-peeler
+License: MIT
+Keywords: osx,dictionary,xml
+Author: Joshua Olson
+Author-email: joshua+github@solarmist.net
+Maintainer: Joshua Olson
+Maintainer-email: joshua+github@solarmist.net
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: beautifulsoup4 (>=4.10.0,<5.0.0)
+Requires-Dist: click (>=8.0.1,<9.0.0)
+Requires-Dist: lxml (>=4.6.3,<5.0.0)
+Description-Content-Type: text/markdown
+
+This is inspired by
+https://fmentzer.github.io/posts/2020/dictionary/
+And the discussion on Hacker News
+https://news.ycombinator.com/item?id=28505406
+https://josephg.com/blog/reverse-engineering-apple-dictionaries/
+https://josephg.com/blog/apple-dictionaries-part-2/
+
