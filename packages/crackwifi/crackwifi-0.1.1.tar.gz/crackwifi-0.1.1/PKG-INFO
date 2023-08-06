@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: crackwifi
+Version: 0.1.1
+Summary: Automate cracking wifis using reaver
+Home-page: https://github.com/4thel00z/crackwifi
+License: GPL-3
+Author: 4thel00z
+Author-email: 4thel00z@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: plumbum (>=1.7.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+# crackwifi
+
+![crackwifi.png](https://raw.githubusercontent.com/4thel00z/logos/master/crackwifi.png)
+
+## Motivation
+
+I am stupid hägger and do not want to have to remember reaver specific commands to hack noobs.
+
+## Installation
+
+```shell
+pip install crackwifi
+```
+
+## Usage
+
+```python
+from crackwifi import dump_networks, monitor
+
+if __name__ == '__main__':
+    with monitor("wlx6cfdb9b29a25"):
+        networks = dump_networks(10)
+	first = list(networks.values())[0]
+	for progress in first.attack():
+		print(progress)
+```
+
+## License
+
+This project is licensed under the GPL-3 license.
+
