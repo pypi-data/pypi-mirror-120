@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+github2pypi/__init__.py
+github2pypi/replace_url.py
+screenshot_manager/__init__.py
+screenshot_manager/cli.py
+screenshot_manager.egg-info/PKG-INFO
+screenshot_manager.egg-info/SOURCES.txt
+screenshot_manager.egg-info/dependency_links.txt
+screenshot_manager.egg-info/entry_points.txt
+screenshot_manager.egg-info/top_level.txt
