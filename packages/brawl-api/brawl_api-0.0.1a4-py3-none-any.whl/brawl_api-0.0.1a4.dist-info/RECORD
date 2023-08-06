@@ -1,0 +1,8 @@
+brawl_api/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+brawl_api/core.py,sha256=F2KJin6wM33ZLR4Te3KisWI9CT6A7oS3wpOoFKiMTXo,5578
+brawl_api/models.py,sha256=QDeOgIfxPbKuQ79WD0q6uD7YQMZR3snw7ho9CoZgO0s,3223
+brawl_api/utils.py,sha256=sgQksj39XfdDzYpIB7C55phjiLaBrsoSDjV7xF_xlr0,315
+brawl_api-0.0.1a4.dist-info/LICENSE,sha256=uCCvqLvFaqHVsHNwDhGtdgtJLNi5w896TmQiPua5pko,1074
+brawl_api-0.0.1a4.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+brawl_api-0.0.1a4.dist-info/METADATA,sha256=yrRkvuWW4nbW2CRA6gFmJnsk8EF8c3BhJExpPAD8ZCA,747
+brawl_api-0.0.1a4.dist-info/RECORD,,
