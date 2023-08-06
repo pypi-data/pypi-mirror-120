@@ -1,0 +1,9 @@
+django_from_excel/__init__.py,sha256=ryAfvAaW7VM8g1gnCrFCPrXmcbbm99Xw44aLkwGZzaI,23
+django_from_excel/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_from_excel/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_from_excel/management/commands/buildfrom.py,sha256=AuyUEXPYJWcZWCLRUkjAqE4hwJ9Xj-fW4a4s9L8KfZ8,5799
+django_from_excel/tests.py,sha256=-hPT64cMLRGBnpNkZjUVI9Zi83_vDvcSiHYAg1bp61c,135
+django_from_excel-0.1.0.dist-info/LICENSE,sha256=xiCj9l_kswGl7D5o3OXj9aJbHctNjP021q318rz4XqQ,1087
+django_from_excel-0.1.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+django_from_excel-0.1.0.dist-info/METADATA,sha256=u5_R81hdS6AgRidc0VrxMOuULmc6vCGXGOplBrjLdus,509
+django_from_excel-0.1.0.dist-info/RECORD,,
