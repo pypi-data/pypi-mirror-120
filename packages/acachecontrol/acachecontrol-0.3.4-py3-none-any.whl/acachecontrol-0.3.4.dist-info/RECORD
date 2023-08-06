@@ -1,0 +1,10 @@
+acachecontrol/__init__.py,sha256=gM68mnhyIepyEQxOwd2l4wuUaDzBDEALLIBSVDvAHi8,115
+acachecontrol/acachecontrol.py,sha256=TRmSnP_1W2cEwotsQW5hrQXSJXmaGiz-bW5jz8iSekU,1564
+acachecontrol/cache.py,sha256=WdXU7BCBvBdOxTvmoybcVwTNa51pjpRwseff_SlLzl4,6480
+acachecontrol/constants.py,sha256=xUmxhaiVDnyEGRu3qg4jd5TDsZQGQ57t4Dplptj4Z8Q,304
+acachecontrol/exceptions.py,sha256=p5h5Rku5OpvWBCl49YPwZ8SAYXblHK2bGkKLgTZSjzw,178
+acachecontrol/request_context_manager.py,sha256=O4zpxURVt4VrjKyBIydweA16SrO5XxdlYkDnDlbgKDY,1899
+acachecontrol-0.3.4.dist-info/METADATA,sha256=Kotkcm7OuCZTv6jOPQyyh5DR2nbHGEtVRt1FOzpYQYg,4662
+acachecontrol-0.3.4.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+acachecontrol-0.3.4.dist-info/top_level.txt,sha256=K-Hj0cCcK1_hGXKQoADrsOfU9s-NvaAngR8JBpKzpqQ,14
+acachecontrol-0.3.4.dist-info/RECORD,,
