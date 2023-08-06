@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+papermerge/storage/__init__.py
+papermerge/storage/s3.py
+papermerge/storage/s3storage.py
+papermerge/storage/tasks.py
+papermerge_s3.egg-info/PKG-INFO
+papermerge_s3.egg-info/SOURCES.txt
+papermerge_s3.egg-info/dependency_links.txt
+papermerge_s3.egg-info/requires.txt
+papermerge_s3.egg-info/top_level.txt
