@@ -1,0 +1,14 @@
+mkdocs_rss_plugin/__about__.py,sha256=VzpzmshSN9pAUs5ui1lKyXnWZjbhT6Y96j1_YNWj4jo,1347
+mkdocs_rss_plugin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mkdocs_rss_plugin/customtypes.py,sha256=WSqZzoVZOOV4aJuJ1SyhgLZ6ee-FmC3JR7Z3FH4EmA4,818
+mkdocs_rss_plugin/plugin.py,sha256=1SxMYH5CnaZHaZYrjXEYG4wEKcXgnWo75T5ZqVDj9Lc,12066
+mkdocs_rss_plugin/util.py,sha256=x--bum6nPf--iC2yd9mEwFEs1PNp877I0aKqXRsf230,18779
+mkdocs_rss_plugin/git_manager/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mkdocs_rss_plugin/git_manager/ci.py,sha256=tkSAJDK9yukL7P8s1A3aMHTUhQFvgtSFBAjxMK9Jn00,3923
+mkdocs_rss_plugin/templates/rss.xml.jinja2,sha256=BfOsnfvU6Zo-qKmjLZJiHl-3Me7kBIwghGKVWE6RgCo,2441
+mkdocs_rss_plugin-0.18.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+mkdocs_rss_plugin-0.18.0.dist-info/METADATA,sha256=x3mBd626AIocy1yNxytemUdv6FtR2Gn8NhQErja3Hy8,4799
+mkdocs_rss_plugin-0.18.0.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+mkdocs_rss_plugin-0.18.0.dist-info/entry_points.txt,sha256=rrVlmS5GvU8x-x3lJMkIkPc3_3u-tVOawuCMpTfZjYk,62
+mkdocs_rss_plugin-0.18.0.dist-info/top_level.txt,sha256=fzHtHBGkT2q2TlSb9dBK6DHMLew5SnmsuBsPpM09vX8,18
+mkdocs_rss_plugin-0.18.0.dist-info/RECORD,,
