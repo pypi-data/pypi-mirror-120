@@ -1,0 +1,4 @@
+azure-servicebus
+xmltodict
+cryptography
+tqdm
