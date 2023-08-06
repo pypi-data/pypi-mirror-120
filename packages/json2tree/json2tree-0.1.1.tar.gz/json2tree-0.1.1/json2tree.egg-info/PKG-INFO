@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: json2tree
+Version: 0.1.1
+Summary: Python package to create html tree view for json files.
+Home-page: https://github.com/abhaykatheria/json2tree
+Author: Abhay Katheria and Mithilesh Tiwari
+Author-email: abhay.katheria1998@gmail.com
+License: MIT
+Description: A python library to create HTML tree view from JSON files.
+        This can also be used as a command line tool for the same purpose.
+        
+        
+        
+        Change Log
+        ============
+        0.0.1(23/09/2021)
+        -----------------
+        - First Release
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License

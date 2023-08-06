@@ -1,0 +1,3 @@
+[console_scripts]
+json2tree = json2tree.__main__:main
+
