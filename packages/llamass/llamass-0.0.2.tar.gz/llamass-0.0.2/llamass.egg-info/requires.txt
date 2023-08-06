@@ -1,0 +1,10 @@
+pip
+packaging
+joblib
+tqdm
+torch
+numpy
+python-prctl==1.8.1
+lmdb
+
+[dev]
