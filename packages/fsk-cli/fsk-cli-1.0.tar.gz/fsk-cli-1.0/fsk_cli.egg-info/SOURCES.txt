@@ -1,0 +1,10 @@
+README.md
+setup.py
+fsk/__init__.py
+fsk/__main__.py
+fsk_cli.egg-info/PKG-INFO
+fsk_cli.egg-info/SOURCES.txt
+fsk_cli.egg-info/dependency_links.txt
+fsk_cli.egg-info/entry_points.txt
+fsk_cli.egg-info/requires.txt
+fsk_cli.egg-info/top_level.txt
