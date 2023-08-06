@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: modern-logic-client
+Version: 1.0.0
+Summary: Modern Logic Api
+Home-page: https://github.com/latourette359/modern_logic_client
+Author: UNKNOWN
+Author-email: info@usemodernlogic.com
+License: MIT
+Download-URL: https://github.com/latourette359/modern_logic_client/archive/refs/tags/1.0.0.tar.gz
+Description:     Manage and version your customer decision logic outside of your codebase  # noqa: E501
+            
+Keywords: Swagger,Modern Logic Api
+Platform: UNKNOWN
