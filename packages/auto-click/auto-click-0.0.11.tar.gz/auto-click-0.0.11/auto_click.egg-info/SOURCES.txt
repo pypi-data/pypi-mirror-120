@@ -1,0 +1,12 @@
+README.md
+setup.py
+auto_click.egg-info/PKG-INFO
+auto_click.egg-info/SOURCES.txt
+auto_click.egg-info/dependency_links.txt
+auto_click.egg-info/entry_points.txt
+auto_click.egg-info/requires.txt
+auto_click.egg-info/top_level.txt
+autoclick/__init__.py
+autoclick/auto.py
+autoclick/click_class.py
+autoclick/command.py
