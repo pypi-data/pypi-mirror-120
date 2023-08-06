@@ -1,0 +1,17 @@
+jupyter
+pandas
+lxml
+bson
+tqdm
+urllib3
+pytools
+numpy==1.19.0
+beautifulsoup4
+pyjnius
+torch
+torchtext
+transformers
+sentence-transformers
+sentencepiece
+thrift==0.13.0
+spacy==2.2.3
