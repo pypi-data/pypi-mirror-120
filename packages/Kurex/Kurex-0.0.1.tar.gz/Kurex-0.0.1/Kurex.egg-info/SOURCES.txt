@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+Kurex/__init__.py
+Kurex/execeptions.py
+Kurex.egg-info/PKG-INFO
+Kurex.egg-info/SOURCES.txt
+Kurex.egg-info/dependency_links.txt
+Kurex.egg-info/not-zip-safe
+Kurex.egg-info/top_level.txt

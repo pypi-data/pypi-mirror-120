@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: Kurex
+Version: 0.0.1
+Summary: test package bottom text.
+Home-page: https://github.com/Sai-AungKhant/
+Author: SaiAungKhant
+Author-email: saiaungkhantthu60@gmail.com
+License: MIT
+Description: # TestPackage
+        Test Package
+        
+Keywords: core package
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
