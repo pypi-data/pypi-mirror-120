@@ -1,0 +1,57 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "seedbank"
+author = "Michael Ekstrand"
+author-email = "michaelekstrand@boisestate.edu"
+home-page = "https://seedbank.lenskit.org"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Operating System :: OS Independent",
+]
+requires-python = ">= 3.7"
+description-file = "README.md"
+requires = [
+    "numpy >=1.17"
+]
+
+[tool.flit.metadata.urls]
+Documentation = "https://seedbank.lenskit.org/en/latest/"
+GitHub = "https://github.com/lenskit/seedbank"
+
+[tool.flit.metadata.requires-extra]
+dev = [
+    "flit",
+    "flake8",
+    "ipython",
+    "sphinx-autobuild",
+]
+test = [
+    "pytest >= 6",
+    "pytest-doctestplus",
+    "pytest-cov"
+    # "hypothesis",
+]
+doc = [
+    "sphinx >=4",
+    "furo",
+]
+numba = ["numba"]
+torch = ["torch"]
+# cupy = ["cupy"]
+tf = ["tensorflow >=2,<3"]
+
+[tool.envtool.conda]
+name = "seedbank"
+channels = [
+    "conda-forge"
+]
+
+[tool.envtool.conda.overrides]
+torch = "pytorch"
