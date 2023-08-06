@@ -1,0 +1,13 @@
+AUTHORS,sha256=1bL94y0aG-lR1X6gDOBbU3CgpaEVdyde_AKz-IQKq9A,51
+LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+NEWS,sha256=kXDuyme_y5gL5Wz7KDxzeFifpjyhTNDs1hJY6lDljM0,768
+README.md,sha256=igZRT8WCjpwF9aYnCy98XGD8Fj2vO9W-RP7E22R1kNI,3365
+perceval/__init__.py,sha256=2c05JjsL1Zm_-MeD4wq48StUj-XcaqMm-Qlk9jSa3x4,821
+perceval/_version.py,sha256=zxQxBmDA4Cf4VkN_nNkLMA6-QA2lSQ031MMBdAGr8ys,86
+perceval/backends/__init__.py,sha256=2c05JjsL1Zm_-MeD4wq48StUj-XcaqMm-Qlk9jSa3x4,821
+perceval/backends/zulip/__init__.py,sha256=2c05JjsL1Zm_-MeD4wq48StUj-XcaqMm-Qlk9jSa3x4,821
+perceval/backends/zulip/zulip.py,sha256=W-WisiTOSKIhlcNu8o1ohOSLXQz3OdnlVOiNhd0p1MU,7790
+perceval_zulip-0.1.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+perceval_zulip-0.1.1.dist-info/WHEEL,sha256=DRf8A_Psd1SF2kVqTQOOFU1Xzl3-A2qljAxBMTOusUs,83
+perceval_zulip-0.1.1.dist-info/METADATA,sha256=vpVeux05r36wiWS8_fBvDioUZERqtOQL8LV9Ey5DTdg,4400
+perceval_zulip-0.1.1.dist-info/RECORD,,
