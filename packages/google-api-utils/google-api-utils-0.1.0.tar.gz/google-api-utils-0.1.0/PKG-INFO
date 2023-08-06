@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: google-api-utils
+Version: 0.1.0
+Summary: Google API services for python
+Home-page: https://github.com/loft-br/finance-google-utils
+Author: LucasCiziks
+Author-email: lucas.ciziks@loft.com.br
+Requires-Python: >=3.7.1,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: google-api-python-client (==2.4.0)
+Requires-Dist: oauth2client (==4.1.3)
+Requires-Dist: pandas (==1.3.3)
+Project-URL: Repository, https://github.com/loft-br/finance-google-utils
+Description-Content-Type: text/markdown
+
+# finance-google-utils
+
+Finance repository intended to store Classes and Functions related to Google Services such as Drive, Sheets, Docs...
