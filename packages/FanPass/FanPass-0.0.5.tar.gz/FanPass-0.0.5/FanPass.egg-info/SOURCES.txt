@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+FanPass.egg-info/PKG-INFO
+FanPass.egg-info/SOURCES.txt
+FanPass.egg-info/dependency_links.txt
+FanPass.egg-info/top_level.txt
+fpass/__init__.py
