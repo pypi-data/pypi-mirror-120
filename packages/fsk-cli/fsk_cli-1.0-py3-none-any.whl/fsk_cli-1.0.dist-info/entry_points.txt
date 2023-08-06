@@ -1,0 +1,3 @@
+[console_scripts]
+fsk = fsk.cli.scripts.main:cli
+
