@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "gcrc"
+version = "1.0.4"
+description = "Google Container Registry Cleanup utility"
+authors = ["Janne Enberg <janne.enberg@lietu.net>"]
+readme = "README.md"
+license = "BSD-3-Clause"
+homepage = "https://github.com/lietu/gcrc"
+repository = "https://github.com/lietu/gcrc"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+typer = {extras = ["colorama"], version = "^0.3.2"}
+pydantic = {extras = ["dotenv"], version = "^1.8.2"}
+python-dateutil = "^2.8.2"
+requests = "^2.26.0"
+colorama = "^0.4.4"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+gcrc = "gcrc.main:app"
