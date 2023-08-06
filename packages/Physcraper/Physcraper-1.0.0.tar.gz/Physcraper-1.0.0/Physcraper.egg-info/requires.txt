@@ -1,0 +1,12 @@
+argparse
+biopython==1.76
+configparser
+DendroPy
+DateTime
+opentree
+pandas
+requests
+sh
+urllib3>=1.23
+numpy
+wget
