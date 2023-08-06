@@ -1,0 +1,80 @@
+.review {
+  @include md() {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  position: relative;
+
+  .review-container {
+    position: relative;
+
+    .review-logo-company {
+      margin-left: auto;
+      margin-right: auto;
+      height: 2rem;
+      max-width: 100%;
+      display: block;
+    }
+
+    .bl-revieee {
+      margin-top: 2.5rem;
+
+      .blockquote-container {
+        max-width: 48rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+
+        p {
+          line-height: 2.25rem;
+          font-size: 1.5rem;
+        }
+      }
+
+      footer {
+        margin-top: 2rem;
+
+        .footer-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          img {
+            margin-left: auto;
+            margin-right: auto;
+            width: 2.5rem;
+          }
+
+          .text-author {
+            margin-left: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include theme($themes) {
+              color: t('colorP');
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .review-arrows {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+
+    button {
+      cursor: pointer;
+      background-color: transparent;
+      background-image: none;
+      border: 0 solid;
+      outline: none;
+    }
+
+    svg {
+      stroke: rgb(229, 231, 235);
+      height: 2.5rem;
+    }
+  }
+}

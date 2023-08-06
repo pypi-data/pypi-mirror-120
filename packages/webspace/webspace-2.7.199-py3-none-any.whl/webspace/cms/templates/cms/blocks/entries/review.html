@@ -1,0 +1,70 @@
+{% extends 'cms/blocks/_block.html' %}
+{% load wagtailcore_tags wagtailimages_tags my %}
+
+{% block block_content %}
+    <div class="review">
+        <div x-data="{ activeSlide: 1, slides: [{% for slide in value.testimonials %}{
+                id: {{ forloop.counter }},
+                testimonial: '{{ slide.testimonial|truncatechars:175|escapejs }}',
+                person_full_name: '{{ slide.person_full_name|escapejs }}',
+                person_title: '{{ slide.person_title|escapejs }}',
+                logo_company: '{% image slide.logo_company fill-180x180 as img %}{{ img.url }}',
+                person_image: '{% image slide.person_image fill-40x40 as img %}{{ img.url }}'
+             }{% if not forloop.last %},{% endif %}{% endfor %}] }"
+        >
+            <template x-for="slide in slides" :key="slide.id">
+                <div x-cloak x-show="activeSlide === slide.id">
+                    <div class="review-container">
+                        <img x-show="slide.logo_company" width="auto" height="100%" class="review-logo-company"
+                             :src="slide.logo_company"
+                             alt="Logo">
+                        <div class="bl-revieee">
+                            <div class="blockquote-container">
+                                <p x-text="slide.testimonial"></p>
+                            </div>
+                            <footer>
+                                <div class="footer-container">
+                                    <div>
+                                        <img x-show="slide.person_image" width="40" height="40"
+                                             :src="slide.person_image" alt="Person">
+                                    </div>
+                                    <div class="text-author">
+                                        <div x-text="slide.person_full_name"></div>
+                                        <div>&nbsp;•&nbsp;</div>
+                                        <div x-text="slide.person_title"></div>
+                                    </div>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+
+            </template>
+
+            <div class="review-arrows">
+                <button aria-label="Previous slide"
+                        class="focus:outline-none"
+                        x-on:click="activeSlide = activeSlide === 1 ? slides.length : activeSlide - 1">
+                    <svg height="100" preserveaspectratio="xMidYMid meet"
+                         viewbox="0 0 100 100" width="100" x="0" xmlns="http://www.w3.org/2000/svg" y="0">
+                        <path d="M43.3,73.5,19.8,50m0,0L43.3,26.5M19.8,50H80.2" fill="none"
+                              stroke-linecap="round" stroke-linejoin="round" stroke-width="8">
+                        </path>
+                    </svg>
+                </button>
+
+                <button aria-label="Next slide"
+                        class="focus:outline-none"
+                        x-on:click="activeSlide = activeSlide === slides.length ? 1 : activeSlide + 1">
+                    <svg height="100" preserveaspectratio="xMidYMid meet"
+                         viewbox="0 0 100 100" width="100" x="0" xmlns="http://www.w3.org/2000/svg" y="0">
+                        <path d="M56.8,26.4,80.4,50m0,0L56.8,73.6M80.4,50H19.6" fill="none"
+                              stroke-linecap="round" stroke-linejoin="round" stroke-width="8">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+{% endblock %}
