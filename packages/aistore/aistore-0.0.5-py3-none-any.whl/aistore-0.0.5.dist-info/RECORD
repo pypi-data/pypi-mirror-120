@@ -1,0 +1,15 @@
+aistore/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aistore/client/__init__.py,sha256=D-SqAqOBE0QeNyPRyLAAV9pVb9y0xbtAJJ0-Fo-ejtw,24
+aistore/client/api.py,sha256=bIqlTURR9glML-4a3A5hoZoj7bg70Q1bmRMjIOnh-nU,3475
+aistore/pytorch/__init__.py,sha256=qrtzCd7XlXUcQFpUxL4Zsua6twIzn59IP2Dc6ma15GA,29
+aistore/pytorch/dataset.py,sha256=gnci7w87AmRgcu8aiNssih54t79k8WqP9YayBVFfqLA,1942
+aistore/tf/__init__.py,sha256=kS8ZpZyz0IPwDu3ax-VptDDbcScbMjGlynuA0CdkMHE,52
+aistore/tf/dataset.py,sha256=n_UN-zjPD65ZKJdkIy6iFHsmASXdiO_0PQLdnTEcCmk,13149
+aistore/tf/downloadworker.py,sha256=X3wAJDfTntRmOP9cJ6e9rOtFqR4kqUwEWLAa0JuSNqE,1724
+aistore/tf/messages.py,sha256=Dsa_xuw4KtjpWQMXhFB3ZIn6kDkE55W4ypb52ptUa08,579
+aistore/tf/ops.py,sha256=BqmponzSJIjuz_2_j8sMWhgFkmQriXQkmJS_cK4vjcM,7515
+aistore/tf/tarutils.py,sha256=pEr8-H64J6_AIj3wPu78gZiFNpS0idN-qVPW7WhEwcs,1155
+aistore-0.0.5.dist-info/METADATA,sha256=VBqvj7y696VQMhoi3RINaKriLcDl_zlpkUNEKgjsBqg,2761
+aistore-0.0.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+aistore-0.0.5.dist-info/top_level.txt,sha256=c3H8DxQKEf856pO3TXY1rOM83JkDSahS-CHrUhCKaJE,8
+aistore-0.0.5.dist-info/RECORD,,
