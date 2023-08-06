@@ -1,0 +1,8 @@
+datatable
+pandas
+scipy
+numpy
+polars
+catboost
+xgboost
+lightgbm
