@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+dateinterval/__init__.py
+dateinterval.egg-info/PKG-INFO
+dateinterval.egg-info/SOURCES.txt
+dateinterval.egg-info/dependency_links.txt
+dateinterval.egg-info/top_level.txt
