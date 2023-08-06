@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: bioformats_jar
+Version: 6.7.0.post1
+Summary: bioformats_package.jar, with type stubs and simple jpype wrapper
+Home-page: https://github.com/tlambert03/bioformats_jar
+Author: Talley Lambert
+Author-email: talley.lambert@gmail.com
+License: GPL-2.0
+Project-URL: Source Code, https://github.com/tlambert03/bioformats_jar
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: testing
+License-File: LICENSE
+
+# bioformats_jar
+
+[![License](https://img.shields.io/pypi/l/bioformats_jar.svg?color=green)](https://github.com/tlambert03/bioformats_jar/raw/master/LICENSE)
+[![PyPI](https://img.shields.io/pypi/v/bioformats_jar.svg?color=green)](https://pypi.org/project/bioformats_jar)
+[![Python Version](https://img.shields.io/pypi/pyversions/bioformats_jar.svg?color=green)](https://python.org)
+[![CI](https://github.com/tlambert03/bioformats_jar/workflows/ci/badge.svg)](https://github.com/tlambert03/bioformats_jar/actions)
+[![codecov](https://codecov.io/gh/tlambert03/bioformats_jar/branch/master/graph/badge.svg)](https://codecov.io/gh/tlambert03/bioformats_jar)
+
+type stubs and simple jpype wrapper for bioformats_package.jar
+
+
