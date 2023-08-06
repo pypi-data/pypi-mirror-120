@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: kaen
+Version: 1.0.1.29
+Summary: kaen is a friendly open source toolkit to help you train and deploy PyTorch deep learning models in public clouds
+Home-page: https://github.com/CounterFactualAI/kaenai
+Author: CounterFactual.AI LLC
+Author-email: kaen@counterfactual.ai
+License: GPL v3.0
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Provides-Extra: all
+Requires-Dist: click ; extra == 'all'
+Requires-Dist: python-dotenv ; extra == 'all'
+Requires-Dist: optuna ; extra == 'all'
+Requires-Dist: sklearn ; extra == 'all'
+Requires-Dist: plotly ; extra == 'all'
+Requires-Dist: kaleido ; extra == 'all'
+Requires-Dist: fsspec ; extra == 'all'
+Requires-Dist: pandas ; extra == 'all'
+Requires-Dist: s3fs ; extra == 'all'
+Requires-Dist: numpy ; extra == 'all'
+Requires-Dist: scipy ; extra == 'all'
+Requires-Dist: mlflow ; extra == 'all'
+Requires-Dist: docker ; extra == 'all'
+Provides-Extra: cli
+Requires-Dist: click ; extra == 'cli'
+Requires-Dist: python-dotenv ; extra == 'cli'
+Provides-Extra: docker
+Requires-Dist: docker ; extra == 'docker'
+Provides-Extra: latest
+Provides-Extra: mlflow
+Requires-Dist: mlflow ; extra == 'mlflow'
+Provides-Extra: optuna
+Requires-Dist: optuna ; extra == 'optuna'
+Requires-Dist: sklearn ; extra == 'optuna'
+Requires-Dist: plotly ; extra == 'optuna'
+Requires-Dist: kaleido ; extra == 'optuna'
+Provides-Extra: osds
+Requires-Dist: fsspec ; extra == 'osds'
+Requires-Dist: pandas ; extra == 'osds'
+Requires-Dist: s3fs ; extra == 'osds'
+Provides-Extra: spark
+Requires-Dist: numpy ; extra == 'spark'
+Requires-Dist: pandas ; extra == 'spark'
+Requires-Dist: scipy ; extra == 'spark'
+Provides-Extra: stable
+
+UNKNOWN
+
+
