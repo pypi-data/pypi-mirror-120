@@ -1,0 +1,11 @@
+waifulabs/__init__.py,sha256=xKL2_fKFMr_8P8wvyEgDTtvyWPdTJsWmoVJgWIiw2Z4,453
+waifulabs/asynchronous.py,sha256=ntnv9fTGNFmeGaeIassw-cwQdWsnfE_g2GvYfk7jCqQ,1680
+waifulabs/exception.py,sha256=wavdQ1zE8pY7e1DVJeymLVYedlYuCGwEDqHE96AcGWk,525
+waifulabs/func.py,sha256=5e17yAqgNVLhOfm2Pnf3JA7MK1OIeRYOxissnqRzwtw,1224
+waifulabs/sync.py,sha256=368moHmknJ4R8b5vlN_MjzR69ijTUtTVpAVKXVoVqJE,1576
+waifulabs/waifu.py,sha256=axcD9h2ArsRZ8e-Ns9-PQvq4rzvW3ZhG2Sre4vLWzgU,5108
+Waifulabs-1.1.1.dist-info/LICENSE,sha256=dnMNbPXKoEdOlslHNy7g3X8aXVqzUr8MrEL_WAh0cKo,1114
+Waifulabs-1.1.1.dist-info/METADATA,sha256=NJJPu68cBOwTcKkmkkpcPyz2Y3nNZ3vFl6wFbpg4ekg,2983
+Waifulabs-1.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+Waifulabs-1.1.1.dist-info/top_level.txt,sha256=BlTw6fH0WIkJC7jlStgroCZmHNEUrZcnJ03GQc15jiQ,10
+Waifulabs-1.1.1.dist-info/RECORD,,
