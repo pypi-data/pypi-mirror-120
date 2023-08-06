@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: stock-chart-tools
+Version: 0.1.0
+Summary: Tools for creating data series that can be charted
+Home-page: https://github.com/philfoster/stock_chart_tools
+Author: Philip Foster
+Author-email: phil@the-fosters.net
+License: GPL v3
+Keywords: technical-analysis,macd,ema,sma,stocks
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: yfinance
+Requires-Dist: pandas
+Requires-Dist: pandas-datareader
+
+Tools for creating data series that can be charted
+
+
