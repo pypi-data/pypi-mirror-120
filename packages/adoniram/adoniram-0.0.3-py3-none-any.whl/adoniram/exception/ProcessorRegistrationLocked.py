@@ -1,0 +1,2 @@
+class ProcessorRegistrationLocked(Exception):
+    pass

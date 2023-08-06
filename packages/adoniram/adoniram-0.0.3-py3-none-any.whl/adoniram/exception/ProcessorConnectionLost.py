@@ -1,0 +1,2 @@
+class ProcessorConnectionLost(Exception):
+    pass
