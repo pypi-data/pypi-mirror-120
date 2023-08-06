@@ -1,0 +1,210 @@
+Metadata-Version: 1.2
+Name: xml2rfc
+Version: 3.10.0
+Summary: Xml2rfc generates RFCs and IETF drafts from document source in XML according to the IETF xml2rfc v2 and v3 vocabularies.
+Home-page: https://tools.ietf.org/tools/xml2rfc/trac/
+Author: Henrik Levkowetz
+Author-email: tools-discuss@ietf.org
+Maintainer: Henrik Levkowetz
+Maintainer-email: henrik@levkowetz.com
+License: BSD-3-Clause
+Download-URL: https://pypi.python.org/pypi/xml2rfc
+Description: Introduction
+        ============
+        
+        The IETF_ uses a specific format for the standards and other documents it
+        publishes as RFCs_, and for the draft documents which are produced when
+        developing documents for publications.  There exists a number of different
+        tools to facilitate the formatting of drafts and RFCs according to the
+        existing rules, and this tool, **xml2rfc**, is one of them.  It takes as input
+        an xml file which contains the text and meta-information about author names
+        etc., and transforms it into suitably formatted output.  The input xml file
+        should follow the grammars in RFC7749_ (for v2 documents) or RFC7991_ (for 
+        v3 documents). Note that the grammar for v3 is still being refined, and 
+        changes will eventually be captured in the `bis draft for 7991`_. 
+        Changes not yet captured can be seen in the xml2rfc source `v3.rng`_,
+        or in the `documentation xml2rfc produces`_ with its --doc flag.
+        
+        **xml2rfc** provides a variety of output formats. See the command line
+        help for a full list of formats. It also provides conversion from v2 to
+        v3, and can run the preptool_ on its input.
+        
+        .. _IETF: https://www.ietf.org/
+        .. _RFCs: https://www.rfc-editor.org/
+        .. _RFC7749: https://tools.ietf.org/html/rfc7749
+        .. _RFC7991: https://tools.ietf.org/html/rfc7991
+        .. _bis draft for 7991: https://tools.ietf.org/html/draft-iab-rfc7991bis
+        .. _v3.rng: https://trac.tools.ietf.org/tools/xml2rfc/trac/browser/trunk/cli/xml2rfc/data/v3.rng
+        .. _documentation xml2rfc produces: https://xml2rfc.tools.ietf.org/xml2rfc-doc.html
+        .. _preptool: https://tools.ietf.org/html/rfc7998
+        
+        Installation
+        ============
+        
+        Installation of the python package is done as usual with 'pip install xml2rfc',
+        using appropriate switches and/or sudo.
+        
+        Installation of support libraries for the PDF-formatter
+        -------------------------------------------------------
+        
+        In order to generate PDFs, xml2rfc uses the WeasyPrint module, which
+        depends on external libaries that must be installed as native packages
+        on your platform, separately from the xml2rfc install.
+        
+        First, install the Cairo, Pango, and GDK-PixBuf library files on your
+        system.  See installation instructions on the WeasyPrint Docs:
+        
+            https://weasyprint.readthedocs.io/en/stable/install.html
+        
+        (On some OS X systems with System Integrity Protection active, you may
+        need to create a symlink from your home directory to the library installation
+        directory (often /opt/local/lib):
+        
+            ln -s /opt/local/lib ~/lib
+        
+        in order for weasyprint to find the installed cairo and pango libraries.
+        Whether this is needed or not depends on whether you used macports or homebrew
+        to install cairo and pango, and the homebrew / macport version.)
+        
+        Next, install the pycairo and weasyprint python modules using pip.
+        Depending on your system, you may need to use 'sudo' or install in
+        user-specific directories, using the --user switch.  On OS X in
+        particular, you may also need to install a newer version of setuptools
+        using --user before weasyprint can be installed.  If you install with 
+        the --user switch, you may need to also set PYTHONPATH, e.g.,
+        
+            PYTHONPATH=/Users/henrik/Library/Python/3.6/lib/python/site-packages
+        
+        for Python 3.6.
+        
+        The basic pip commands (modify as needed according to the text above)
+        are:
+        
+            pip install 'pycairo>=1.18' 'weasyprint<=0.42.3'
+        
+        With these installed and available to xml2rfc, the --pdf switch will be
+        enabled.
+        
+        For PDF output, you also need to install the Noto font set.  Download the full
+        set from https://noto-website-2.storage.googleapis.com/pkgs/Noto-unhinted.zip,
+        and install as appropriate for your platform.
+        
+        Usage
+        =====
+        
+        xml2rfc accepts a single XML document as input and outputs to one or more conversion formats.
+        
+        **Basic Usage**: ``xml2rfc SOURCE [options] FORMATS...``
+        
+        Run ``xml2rfc --help`` for a full listing of command-line options.
+        
+        
+        
+        Changelog
+        =========
+        
+        
+        Version 3.10.0 (21 Sep 2021)
+        ------------------------------------------------
+        
+        
+          * Merged in [4043] from krathnayake@ietf.org:
+            Fixes Python compatibility issues in bin/uglifycall. 
+        
+          * Merged in [4042] and [4045] from krathnayake@ietf.org:
+            Updates docker/run command to support Apple M1. Fixes  #675.
+        
+          * Merged in [4041] from krathnayake@ietf.org:
+            Adds missing line joiner settings for <ol> and <ul>. Fixes #673.
+        
+          * Merged in [4040] from jennifer@painless-security.com:
+            Fix Makefile rule precedence and repair canonical.xml test to 
+            work with yestest. Fixes #671.
+        
+          * Merged in [4037] from krathnayake@ietf.org:
+            Changes RFC regression test to be a seperate test.
+        
+          * Merged in [4036] from krathnayake@ietf.org:
+            Adds RFC regression tests. Fixes #667.
+        
+          * Merged in [4016] from krathnayake@ietf.org:
+            Fix for bad PDF breaks.
+        
+          * pin weasyprint<53 for tox tests
+        
+          * Merged in [4020] from krathnayake@ietf.org:
+            Sort class values in HTML output. Fixes #553.
+        
+          * Merged in [4018] and [4019] from jennifer@painless-security.com:
+            Keep pns from incoming xml when present; handle case that an author 
+            does not have an after-next element. Fixes #664.
+        
+          * Merged in [4012] from krathnayake@ietf.org:
+            Remove quotes from the text rendering of <tt>. Fixes #600 and #647.
+        
+          * Merged in [4011] from krathnayake@ietf.org:
+            Fix info block runoff issue in PDFs. Fixes #606.
+        
+          * Merged in [4010] from krathnayake@ietf.org:
+            Remove unicode entity replacement step from v2v3 conversion. Fixes #641.
+        
+          * Merged in [4009] from krathnayake@ietf.org:
+            Cache XML XInclude files with referencegroup. Fixes #653.
+        
+        
+        
+        
+        
+        
+        Version 3.9.1 (25 Jun 2021)
+        ------------------------------------------------
+        
+        
+          * This is a cosmetic release, only to correct issues with the
+            changelog formatting in 3.9.0
+        
+        
+        
+        
+        
+        
+        Version 3.9.0 (25 Jun 2021)
+        ------------------------------------------------
+        
+        
+          * Merged in [3981] from krathnayake@ietf.org:
+            Stop stripping CDATA with v2v3 option. Fixes #601.
+        
+          * Merged in [3980] from krathnayake@ietf.org:
+            Implement bare attribute rendering in HTML and PDF. Fixes #609.
+        
+          * Merged in [3978] from krathnayake@ietf.org:
+            Add https://datatracker.ietf.org/doc/html/ as default id-base-url 
+            and id-reference-base-url. Fixes #618.
+        
+          * Merged in [3977] from jennifer@painless-security.com:
+            Use 'appendix-A.1' format for section ids in HTML output. Use 
+            'section-appendix-...' as XML id both for all appendixes, not just 
+            top level. Fixes #581.
+        
+          * Merged in [3975] from jennifer@painless-security.com:
+            Define entities in v2v3 output instead of referencing an external DTD. 
+            Fixes #548.
+        
+          * Properly reflect the updates to headers and boilerplate reflecting 
+            erratum 5258. Fixes #648.
+        
+        
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: Markup :: XML
+Classifier: License :: OSI Approved :: BSD License
