@@ -1,0 +1,11 @@
+hbrsamplemodule/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hbrsamplemodule/add.py,sha256=ZGR9lzGzIhKc6IAeySETYQ4KbWHjE-h_Ka7VR3vXD2w,29
+hbrsamplemodule/subtract.py,sha256=H0kAFcvVBqvnIxk7MgebDuoydyHpp53vMnddM84RUFQ,35
+hbrsamplemodule/extras/__init__.py,sha256=daEdpEyAJIa8b2VkCqSKcw8PaExcB6Qro80XNes_sHA,2
+hbrsamplemodule/extras/divide.py,sha256=zmHyt-LtmQCO4aK-7T82YOzX-83y3OvCLVFYTtDyCNE,32
+hbrsamplemodule/extras/multiply.py,sha256=KDVTj9HnrLG0cvmEw495P6WJ2bQzmLvRU-Wb3o6kmYo,36
+hbrsamplemodule-0.0.3.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+hbrsamplemodule-0.0.3.dist-info/METADATA,sha256=KVAn09W40NFGi9UL-ZYTqOKT_h_38V53b1caNlwAx5c,758
+hbrsamplemodule-0.0.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+hbrsamplemodule-0.0.3.dist-info/top_level.txt,sha256=8maBb6t-gHQux52OPlJ2S5DUejjCfEKKQUvhrvwDhLg,16
+hbrsamplemodule-0.0.3.dist-info/RECORD,,
