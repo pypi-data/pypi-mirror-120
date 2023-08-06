@@ -1,0 +1,7 @@
+README.md
+setup.py
+sego.egg-info/PKG-INFO
+sego.egg-info/SOURCES.txt
+sego.egg-info/dependency_links.txt
+sego.egg-info/requires.txt
+sego.egg-info/top_level.txt
