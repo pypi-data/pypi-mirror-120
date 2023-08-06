@@ -1,0 +1,84 @@
+[build-dependencies]
+cc = "1.0.46"
+
+[dependencies]
+atomic_float = "0.1.0"
+counter = "0.5.2"
+crossbeam = "0.8.0"
+derive-getters = "0.1.0"
+env_logger = "0.7.1"
+glob = "0.3.0"
+is_sorted = "0.1.1"
+iter-set = "2.0.1"
+itertools = "0.10.0"
+keyed_priority_queue = "0.3.2"
+linked_hash_set = "0.1.4"
+log = "0.4.8"
+memchr = "2.4.1"
+num-traits = "0.2.14"
+num_cpus = "1.13.0"
+permutation = "0.2.5"
+rayon = "1.1"
+serde = "1.0.130"
+v_htmlescape = "0.13.1"
+validator = "0.14.0"
+
+[dependencies.arbitrary]
+features = ["derive"]
+version = "0.4.5"
+
+[dependencies.atoi_radix10]
+git = "https://github.com/gilescope/atoi_radix10"
+
+[dependencies.bitvec]
+features = ["atomic"]
+version = "0.22"
+
+[dependencies.elias_fano_rust]
+git = "https://github.com/zommiommy/elias_fano_rust"
+
+[dependencies.indicatif]
+features = ["rayon"]
+version = "0.16.0"
+
+[dependencies.rand]
+features = ["small_rng"]
+version = "0.7"
+
+[dependencies.roaring]
+branch = "master"
+git = "https://github.com/zommiommy/roaring-rs"
+
+[dependencies.tags]
+path = "../tags"
+
+[dependencies.vec_rand]
+branch = "master"
+git = "https://github.com/zommiommy/vec_rand"
+
+[dev-dependencies]
+criterion = "0.3"
+linecount = "0.1.0"
+
+[lib]
+name = "graph"
+
+[package]
+authors = ["LucaCappelletti94 <cappelletti.luca94@gmail.com>", "Tommaso Fontana <tommaso.fontana.96@gmail.com>"]
+edition = "2018"
+name = "graph"
+version = "0.6.0"
+[profile.release]
+debug = false
+debug-assertions = true
+lto = "fat"
+opt-level = 3
+overflow-checks = true
+
+[profile.test]
+debug = false
+debug-assertions = true
+opt-level = 3
+overflow-checks = true
+[target."cfg(unix)".dependencies]
+nix = "0.22.0"
