@@ -1,0 +1,14 @@
+jsonschema>=3.0
+torch>=1.0
+torchvision
+numpy
+matplotlib
+pandas
+ipykernel
+jupyter
+Pillow
+pyyaml
+scipy
+tensorboard
+torchattacks
+tqdm
