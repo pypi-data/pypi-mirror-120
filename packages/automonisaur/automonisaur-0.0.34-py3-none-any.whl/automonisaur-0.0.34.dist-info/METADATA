@@ -1,0 +1,103 @@
+Metadata-Version: 2.1
+Name: automonisaur
+Version: 0.0.34
+Summary: Core libraries for automonisaur
+Home-page: https://github.com/TheShellLand/automonisaur
+Author: naisanza
+Author-email: naisanza@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Flask-Login (>=0.5.0)
+Requires-Dist: Flask-WTF (>=0.15.1)
+Requires-Dist: Flask (>=2.0.1)
+Requires-Dist: bcrypt (>3.1.7)
+Requires-Dist: coverage (>=5.4)
+Requires-Dist: elasticsearch (>=7.14.0)
+Requires-Dist: jupyterlab (>=3.1.9)
+Requires-Dist: minio (>=7.1.0)
+Requires-Dist: neo4j-driver (>=4.3.4)
+Requires-Dist: nest-asyncio (>=1.5.1)
+Requires-Dist: numpy (>=1.21.2)
+Requires-Dist: pandas (>=1.3.2)
+Requires-Dist: psutil (>=5.8.0)
+Requires-Dist: pytest-cov (>=2.12.1)
+Requires-Dist: pytest (>=6.2.4)
+Requires-Dist: python-keystoneclient (>=4.2.0)
+Requires-Dist: python-swiftclient (>=3.12.0)
+Requires-Dist: pytz (>=2021.1)
+Requires-Dist: requests (>=2.26.0)
+Requires-Dist: selenium (>=3.141.0)
+Requires-Dist: slackclient (>=2.9.3)
+Requires-Dist: splunk-sdk (>=1.6.16)
+Requires-Dist: urllib3 (>=1.26.6)
+Requires-Dist: xmltodict (>=0.12.0)
+
+![](https://github.com/TheShellLand/automonisaur/raw/master/docs/images/sauruspark.gif)
+
+# Automonisaur: Core Libraries
+
+**[about](#about)** | 
+**[pypi](https://pypi.org/project/automonisaur/)** | 
+**[integrations](#integrations)** | 
+**[install](#install)** | 
+**[build](#build)** | 
+**[unittest in docker](#unittest-in-docker')** | 
+**[unittest locally](#unittest-locally)** | 
+**[codecov](https://codecov.io/gh/TheShellLand/automonisaur)**
+
+
+[![master](https://github.com/TheShellLand/automonisaur/actions/workflows/main.yml/badge.svg)](https://github.com/TheShellLand/automonisaur/actions)
+[![codecov](https://codecov.io/gh/TheShellLand/automonisaur/branch/master/graph/badge.svg)](https://codecov.io/gh/TheShellLand/automonisaur)
+
+
+
+#### about
+
+This library adds some easier-to-use wrappers around common services used in cyber security and threat intelligence.
+
+Provides easier clients and configuration options, as well as any additional helpers to get things up and running.
+
+Github issues and feature requests welcomed.
+
+
+###### integrations
+
+- airport
+- elasticsearch
+- flask
+- minio
+- neo4j
+- selenium
+- slack
+- snmp
+- splunk
+- swift
+- vds
+
+
+#### install library
+```shell script
+/bin/bash install.sh
+```
+
+#### build docker
+```shell script
+/bin/bash docker/build.sh
+```
+
+#### unittest in docker
+```shell script
+/bin/bash docker/test.sh
+```
+
+#### unittest locally
+```shell script
+/bin/bash unittests.sh
+```
+
+
