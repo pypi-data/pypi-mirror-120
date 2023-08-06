@@ -1,0 +1,9 @@
+sphinx
+ipywidgets
+ipython
+scikit-image
+Pillow
+setuptools
+scipy
+Shapely
+numpy
