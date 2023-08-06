@@ -1,0 +1,11 @@
+MANIFEST.in
+README.rst
+setup.py
+abcpy1801/__init__.py
+abcpy1801/example.py
+abcpy1801.egg-info/PKG-INFO
+abcpy1801.egg-info/SOURCES.txt
+abcpy1801.egg-info/dependency_links.txt
+abcpy1801.egg-info/not-zip-safe
+abcpy1801.egg-info/requires.txt
+abcpy1801.egg-info/top_level.txt
