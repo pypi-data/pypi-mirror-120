@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: iqradre
+Version: 0.2.0
+Summary: UNKNOWN
+Home-page: https://github.com/nunenuh/iqradre
+Author: Lalu Erfandi Maula Yusnu
+Author-email: nunenuh@gmail.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/nunenuh/iqradre/issues
+Project-URL: Source, https://github.com/nunenuh/iqradre/
+Description: # iqradre
+Keywords: pytorch deep learning machine learning
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: test
