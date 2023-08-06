@@ -1,0 +1,37 @@
+[tool]
+[tool.poetry]
+name = "policy-scaffolding-python"
+version = "0.2.11"
+description = "Scaffolding project to support Rialtic Insight Engine development in Python."
+authors = ["Rialtic <engines.data@rialtic.io>"]
+
+license = "Apache-2.0"
+readme = "README.md"
+homepage = "https://rialtic.io"
+repository = "https://github.com/rialtic-community/policy-scaffolding-python"
+keywords = ["rialtic", "insight", "engines", "scaffolding"]
+classifiers = [
+    "Environment :: Console",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+packages = [
+    { include = "testcases" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+insight-engine-schema-python = "^0.1.7"
+rialtic-data-dev-py = "^0.11.6"
+
+
+
+[tool.poetry.dev-dependencies]
+pytest = ">= 6.2.2"
+mypy = ">= 0.800"
+pytest-mypy = ">= 0.8.0"
+wheel = "*"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,6 @@
+pytest >= 5.4.3
+wheel >= 0.35.1
+mypy >= 0.781
+pytest-mypy >= 0.6.2
+fhir.resources >= 6.0.0
+git+ssh://git@github.com:/rialtic-runtime/insight-engine-schema-python.git@953d9af0821005550966cf11086c976e7b2fef8e#egg=insight_engine_schema_python >= 0.8.4
