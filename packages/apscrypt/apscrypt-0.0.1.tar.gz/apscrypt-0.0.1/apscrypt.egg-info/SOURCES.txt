@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+apscrypt/__init__.py
+apscrypt/crypt.py
+apscrypt.egg-info/PKG-INFO
+apscrypt.egg-info/SOURCES.txt
+apscrypt.egg-info/dependency_links.txt
+apscrypt.egg-info/top_level.txt
