@@ -1,0 +1,11 @@
+pygitgrab/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pygitgrab/__main__.py,sha256=AJNnsX0RI9AeuMnQ2Yw8HwFVCHWvDNQbFYRsz3zt7_8,8237
+pygitgrab/configreader.py,sha256=Yaj7KlEHgRbe5RsSPncojlMNyzpdUI13T1G43e8U8RU,1656
+pygitgrab/extract.py,sha256=W_jar4K3A-G5mnaJlen0zyrK4rkEstY4JCxZONjcJHE,427
+pygitgrab/gitgrab.py,sha256=iV0ntLIsmFjfhlzYDi0RLPHs3lNusA-JoQnW8d1jMPI,3399
+pygitgrab/readuserinfo.py,sha256=_lRt4Ds6RWkPn6BrUWv6LKXEHMW6z2d_BBcUkfsS2ag,498
+pygitgrab-0.0.18.dist-info/LICENSE,sha256=c9G8gTIk1rPqhLCmwAkA-IJX9isy9zoA46eixzM_UfQ,1158
+pygitgrab-0.0.18.dist-info/METADATA,sha256=2xEYsY38GSsWwj-_GZQTJjjiqyjr2iOpiurtwG80wfI,6556
+pygitgrab-0.0.18.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pygitgrab-0.0.18.dist-info/top_level.txt,sha256=j-Wm4k3d4Pui2P0LtuL34lKw-GoPKzt_4iULMBo1plc,10
+pygitgrab-0.0.18.dist-info/RECORD,,
