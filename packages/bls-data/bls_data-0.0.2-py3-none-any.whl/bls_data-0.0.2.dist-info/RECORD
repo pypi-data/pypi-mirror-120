@@ -1,0 +1,10 @@
+bls_data/__init__.py,sha256=ALt3iSVijo9YRwngCQc8T8C6jI3LQGf51xoqHqZnIRo,1105
+bls_data/bls.py,sha256=KU-BDGgzS24Ox6TK7veRHn0sor4S1IZY2ljT6iCG1GE,13284
+bls_data/data/area_titles.csv,sha256=0skMs0QVlOS-zc9rJw-K_vMYPKmiC8SHx46qmaPcq4c,171729
+bls_data/data/la_area.csv,sha256=4wRWIUtcEyb7NVuhY5Ml58-cq9CQAaZsrP-PJuYEyFw,463221
+bls_data/data/oes_areas.csv,sha256=ZxTDuNTj3-6NloTnGmMFuMhb2pGWqBu5J8QSqotqXKE,23329
+bls_data-0.0.2.dist-info/LICENSE.txt,sha256=Qv2ilebwoUtMJnRsZwRy729xS5JZQzLauJ0tQzkAkTA,1088
+bls_data-0.0.2.dist-info/METADATA,sha256=x4g1llLw4iui5AsqznouyAjSUDy1-m7QT2TOUH6AyQc,6788
+bls_data-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+bls_data-0.0.2.dist-info/top_level.txt,sha256=0UUcqB5BEs8ncM6tIbsqFSbOCog-1arIYwE5qZk8qUA,9
+bls_data-0.0.2.dist-info/RECORD,,
