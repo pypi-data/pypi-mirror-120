@@ -1,0 +1,111 @@
+Metadata-Version: 2.1
+Name: streamlit-imagegrid
+Version: 0.0.4
+Summary: Streamlit imagegrid
+Home-page: UNKNOWN
+Author: mharikum
+Author-email: midhunharikumar@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: streamlit (>=0.83)
+
+## Streamlit ImageGrid plugin
+
+# Setup
+
+```bash
+
+pip install streamlit-imagegrid
+
+```
+
+
+# Example Usage
+
+`zoom` allows for increasing and decreasing the height of image grid images.
+`urls` takes in html or disk urls with absolute path.
+`height` Height of IFrame.
+
+
+```python
+import streamlit as st
+from streamlit_imagegrid import streamlit_imagegrid
+import requests
+from PIL import Image
+from io import BytesIO
+
+st.title('Image grid test')
+zoom_val = st.sidebar.slider('Zoom',40,240)
+
+urls = [
+        {
+          "width": 1000,
+          "height": 666,
+          "src": "https://as2.ftcdn.net/jpg/02/25/53/52/1000_F_225535263_n14yO9cXk18X90qQYxBf5Vcf00uOtAhW.jpg"
+        },
+        {
+          "width": 1000,
+          "height": 422,
+          "src": "https://as2.ftcdn.net/jpg/02/81/07/83/1000_F_281078312_PcISs3yKL9r70nCqvDkgOR17UBGIw97C.jpg"
+        },
+        {
+          "width": 1000,
+          "height": 666,
+          "src": "https://as2.ftcdn.net/jpg/02/96/35/64/1000_F_296356423_f6IEidPVRWzaqj2MJQ2VLJJTYGRAtY4P.jpg"
+        }
+      ]
+
+return_value = streamlit_imagegrid(urls=just_urls,zoom=zoom,height=1000)
+
+
+if return_value is not None:
+    response = requests.get(return_value)
+    st.sidebar.markdown('<img src={} width=240px></img>'.format(return_value),unsafe_allow_html=True)
+
+```
+
+## Supported URL's Format
+
+
+URL's can be on disk files with absolute path or any http/https image urls. if you would like video support contact the developer.
+
+### Case 1
+
+In this case if `width` and `height` are NOT provided auto align and resize and nice image flow will not work. (Yet)
+
+urls = [
+  {
+    "width": 1000,
+    "height": 666,
+    "src": "https://as2.ftcdn.net/jpg/02/25/53/52/1000_F_225535263_n14yO9cXk18X90qQYxBf5Vcf00uOtAhW.jpg"
+  },
+  {
+    "width": 1000,
+    "height": 422,
+    "src": "https://as2.ftcdn.net/jpg/02/81/07/83/1000_F_281078312_PcISs3yKL9r70nCqvDkgOR17UBGIw97C.jpg"
+  },
+  {
+    "width": 1000,
+    "height": 666,
+    "src": "https://as2.ftcdn.net/jpg/02/96/35/64/1000_F_296356423_f6IEidPVRWzaqj2MJQ2VLJJTYGRAtY4P.jpg"
+  }
+  ]
+
+### Case 2
+
+Single url list. This works but no auto align with nice image flow. Resiging does not fix the page. Next version of
+streamlit-imagegrid will support automatic resizing of url-only inputs.
+
+urls = ["https://as1.ftcdn.net/jpg/01/41/02/26/500_F_141022623_Wi0PLc8Xi1K4FcPKF4UJAjNu6vuYjha5.jpg",
+        "https://t4.ftcdn.net/jpg/02/65/19/21/240_F_265192146_GkxdiHss4XhAPPHkW2C6nBkrfrc4DxrJ.jpg",
+        "https://t4.ftcdn.net/jpg/01/18/41/79/240_F_118417934_BYUeBM4c2TTFcbl9xkKT7KnJjvbKAIaB.jpg",
+        "https://t3.ftcdn.net/jpg/00/71/63/34/240_F_71633411_20afo12ENX4SvYssbZZAQGjE6LlUWMOO.jpg",
+        "https://t4.ftcdn.net/jpg/01/18/41/79/240_F_118417934_BYUeBM4c2TTFcbl9xkKT7KnJjvbKAIaB.jpg",
+        "https://t4.ftcdn.net/jpg/01/18/41/79/240_F_118417934_BYUeBM4c2TTFcbl9xkKT7KnJjvbKAIaB.jpg"]
+
+
+
+
