@@ -1,0 +1,10 @@
+pyotritonclient/__init__.py,sha256=Tkbl58PPhPuh0CajL9FrMWFqfNnI_nLcE5OmFBFjiHY,2976
+pyotritonclient/http/__init__.py,sha256=gVSwBSFSq2kfnVufXvEE4sHhN4kns6OdUM9GGcHqDNU,59086
+pyotritonclient/http/pyohttpclient.py,sha256=jVl18sWa4nmpHo-TQXYIwdsZd2Xs8Dbgvt0EqSZykqQ,2930
+pyotritonclient/utils/__init__.py,sha256=BFzBEuaz-58xGq3pk9Rz6rDEzjLJbF4qAzDvQtP8bT8,8090
+pyotritonclient-0.1.0rc5.data/data/LICENSE.txt,sha256=NMqy92YzgvtkIas9IW34i27ARqi_sCunXDu-t-EqxL8,1533
+pyotritonclient-0.1.0rc5.dist-info/LICENSE.txt,sha256=NMqy92YzgvtkIas9IW34i27ARqi_sCunXDu-t-EqxL8,1533
+pyotritonclient-0.1.0rc5.dist-info/METADATA,sha256=flhKvuIIdI-wDvC99ckq-ccL_Z1KRX2acEqoPW_7ViM,3752
+pyotritonclient-0.1.0rc5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pyotritonclient-0.1.0rc5.dist-info/top_level.txt,sha256=Axe-xkU0Ef8eihQhOvc4AjMTYHF2U44YwYrlRkyFVlk,16
+pyotritonclient-0.1.0rc5.dist-info/RECORD,,
