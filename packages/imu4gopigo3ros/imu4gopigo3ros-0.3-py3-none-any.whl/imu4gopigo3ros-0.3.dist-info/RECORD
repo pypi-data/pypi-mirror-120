@@ -1,0 +1,12 @@
+rosBNO055.py,sha256=pUQAzlmPhk3tZQuCoVOifMCvOjEetX_CkF_yLkPh2yE,23259
+ros_inertial_measurement_unit.py,sha256=NOeiuxFnwXaEoTMeLbvF3PAbTArFAP9X2xL1NXyPSJM,5349
+ros_safe_inertial_measurement_unit.py,sha256=fHiYrot6s3267JM29bmcLFk8qwNXCSIyt4FAO3F2soo,31465
+imu4gopigo3ros-0.3.data/scripts/calibrateIMU,sha256=B9y2inUcLASz1ITzWO4QBnsT98TEfRMjYz_VMWfL9A4,2618
+imu4gopigo3ros-0.3.data/scripts/readIMU,sha256=YPcnwfPTQyCLNg7r2-ajc1i5i1AznzW7ZBL7CoobjUY,6463
+imu4gopigo3ros-0.3.data/scripts/resetIMU,sha256=LnOd1yzDD7LIZQzlkMXaH2k3YDoYkzYYpU44orAxPLI,1710
+imu4gopigo3ros-0.3.data/scripts/startIMU,sha256=QcBSk13akBQ5OHzWtpXCkgO7C1-Y-DIV5yhbvBISsWo,3126
+imu4gopigo3ros-0.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+imu4gopigo3ros-0.3.dist-info/METADATA,sha256=wW-aE9Ln2nhr35H0Y3kdA9xbF_XtIEGUUg_Tzdhqa2U,5367
+imu4gopigo3ros-0.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+imu4gopigo3ros-0.3.dist-info/top_level.txt,sha256=UJDg2Sw_BEIxlluhqIzVyv2FnLDKKrzJnpOvkoIRdt4,75
+imu4gopigo3ros-0.3.dist-info/RECORD,,
