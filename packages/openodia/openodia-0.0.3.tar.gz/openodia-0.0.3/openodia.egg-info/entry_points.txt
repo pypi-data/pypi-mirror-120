@@ -1,0 +1,3 @@
+[console_scripts]
+realpython = openodia.__main__:main
+
