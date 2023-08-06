@@ -1,0 +1,3 @@
+[console_scripts]
+tureng = turengcli.__main__:cli
+
