@@ -1,0 +1,8 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+circa/circa.egg-info/PKG-INFO
+circa/circa.egg-info/SOURCES.txt
+circa/circa.egg-info/dependency_links.txt
+circa/circa.egg-info/top_level.txt
