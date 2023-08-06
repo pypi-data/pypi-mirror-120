@@ -1,0 +1,8 @@
+synonym_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+synonym_cli/__main__.py,sha256=9mSx5SXx9pypfu4bR5ExNnHJEOlOMckPMlxhWRJc-Ag,556
+synonym_cli/cli.py,sha256=eQR2XxNmPlEXcyyOSejHkS2kU8aa8JgjIPmT7O8karQ,4379
+synonym_cli-0.0.2.dist-info/METADATA,sha256=AoJknDlXfhuK0Pe4jCo-dmV4MSXkFX5Dsy5PF6BljS8,925
+synonym_cli-0.0.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+synonym_cli-0.0.2.dist-info/entry_points.txt,sha256=iMNdGs5XDp6T0JROgWZZpVpf5JUqTkNVOptqptOIDTA,50
+synonym_cli-0.0.2.dist-info/top_level.txt,sha256=GA-RGh8rvkfchg44q-8RfwzO-ea_8uQKQaDNNqZRKcs,12
+synonym_cli-0.0.2.dist-info/RECORD,,
