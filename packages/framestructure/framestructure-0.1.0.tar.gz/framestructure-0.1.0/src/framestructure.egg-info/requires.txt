@@ -1,0 +1,7 @@
+baseobjects>=1.4.3
+dspobjects
+numpy
+scipy
+
+[dev]
+pytest>=6.2.3

@@ -1,0 +1,96 @@
+Metadata-Version: 2.1
+Name: framestructure
+Version: 0.1.0
+Summary: Objects for organizing data in frame structures.
+Home-page: https://github.com/fonganthonym/python-framestructure
+Author: Anthony Michael Fong
+Author-email: FongAnthonyM@gmail.com
+License: MIT
+Project-URL: Documentation, https://python-framestructure.readthedocs.io/
+Project-URL: Changelog, https://python-framestructure.readthedocs.io/en/latest/changelog.html
+Project-URL: Issue Tracker, https://github.com/fonganthonym/python-framestructure/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Provides-Extra: dev
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+========
+Overview
+========
+
+
+
+Objects for organizing data in frame structures.
+
+* Free software: BSD 2-Clause License
+
+Installation
+============
+
+::
+
+    pip install framestructure
+
+You can also install the in-development version with::
+
+    pip install https://github.com/fonganthonym/python-framestructure/archive/master.zip
+
+
+Documentation
+=============
+
+
+https://python-framestructure.readthedocs.io/
+
+
+Development
+===========
+
+To run all the tests run::
+
+    tox
+
+Note, to combine the coverage data from all the tox environments run:
+
+.. list-table::
+    :widths: 10 90
+    :stub-columns: 1
+
+    - - Windows
+      - ::
+
+            set PYTEST_ADDOPTS=--cov-append
+            tox
+
+    - - Other
+      - ::
+
+            PYTEST_ADDOPTS=--cov-append tox
+
+
+Changelog
+=========
+
+0.1.0 (2021-08-23)
+------------------
+
+* First release on PyPI.
+
+
