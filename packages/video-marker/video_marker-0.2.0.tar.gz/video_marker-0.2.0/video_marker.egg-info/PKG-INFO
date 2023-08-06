@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: video-marker
+Version: 0.2.0
+Summary: OpenCV based video Marker utility
+Home-page: https://github.com/peppelinux/video-marker
+Author: Giuseppe De Marco
+Author-email: demarcog83@gmail.com
+License: License :: OSI Approved :: European Union Public Licence 1.2 (EUPL 1.2)
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: European Union Public Licence 1.2 (EUPL 1.2)
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Video Marker
+------------
+
+Video Marker is a python application based on OpenCV that can automate:
+
+- a video record from a webcam and save to a file
+- prepend a video before your video record starts
+- append a video after your video record end
+- add a watermark image
+
+## Setup
+
+````
+pip install video-marker
+````
+
+## Documentation
+````
+video_marker -h
+````
+
+## Example
+````
+video_marker --watermark-fpath 'assets/logo.png' --monitor --pre-media assets/intro.mp4  --post-media assets/intro.mp4  --watermark-size 50
+````
+
+## License
+
+ses [LICENSE](LICENSE) file.
+
+## Author
+
+Giuseppe De Marco
+
+
