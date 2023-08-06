@@ -1,0 +1,8 @@
+README.md
+setup.py
+winning_ticket/src/model_utils.py
+winning_ticket/src/winningticket.egg-info/PKG-INFO
+winning_ticket/src/winningticket.egg-info/SOURCES.txt
+winning_ticket/src/winningticket.egg-info/dependency_links.txt
+winning_ticket/src/winningticket.egg-info/requires.txt
+winning_ticket/src/winningticket.egg-info/top_level.txt
