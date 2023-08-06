@@ -1,0 +1,127 @@
+Metadata-Version: 2.1
+Name: sharpshooter
+Version: 0.0.1
+Summary: Shorthand for creating files and folders.
+Home-page: https://github.com/byteface/sharpshooter
+Author: @byteface
+Author-email: byteface@gmail.com
+License: MIT
+Download-URL: https://github.com/byteface/sharpshooter/archive/0.0.1 .tar.gz
+Description: #tree (sharpshooter)
+        
+        #WARNING - probs don't use this until about 0.0.5... just setting up and adding poc
+        
+        Shorthand templates for creating (or destroying) file-systems.
+        
+        tree could be written for any language.
+        
+        ```
+        pip install sharpshooter
+        ```
+        
+        ##syntax
+        
+        To create a plain empty file just type a word i.e.
+        
+        ```
+        file
+        ```
+        
+        to create or access a dir use +
+        
+        ```
+        +dir
+        ```
+        
+        To create a file inside a dir use a 4 spaces (or tab)
+        
+        ```
+        +dir
+            file
+        ```
+        
+        putting it all together…
+        
+        ```
+        +dir
+            file
+            +plugins
+            +mail
+                +vendor
+        	    index.html
+                    +something
+        		file.py
+        		file.py
+        ```
+        
+        ##usage
+        
+        ```
+        from sharpshooter import tree
+        
+        tree('''
+        +dir
+            file < some text
+            +plugins
+                +mail
+                    +vendor
+        	       index.html
+                       +something
+        		  file.py
+        		  file.py
+        ''')
+        ```
+        
+        tree doesn't wait to be told. Your files are now there.
+        
+        
+        for future feature goals see TODO.md
+        
+        
+        NOTES:
+        
+        came up with the idea while mucking around with a lexer. 
+        
+        https://www.dabeaz.com/ply/
+        
+        https://github.com/dabeaz/ply
+        
+        so am using this to do it.
+        
+        
+        - remember it executes from where your python thinks is the current dir
+        - if you're unsure set it first. i.e.
+        
+        import os
+        os.chdir(os.path.dirname(os.path.abspath(__file__)))
+        
+        
+        ## WARNING
+        
+        DON'T leave trailing negative space on lines. I use space to change dirs.
+        
+        uses 4 spaces not tabs. (I've not tested with tabs as my editor converts them to 4 spaces). will sort later.
+        
+        this is a work in progress. it creates files on your hard drive. so be careful.
+        
+        if using a comment. don't leave space before the #
+        
+Keywords: shorthand,files,folders,filesytems,tree,template
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Other Audience
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development
+Classifier: Topic :: Terminals
+Classifier: Topic :: Utilities
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
