@@ -1,0 +1,4 @@
+Jinja2
+mkdocs
+mkdocs>=1.0.4
+pprint
