@@ -1,0 +1,14 @@
+Metadata-Version: 2.0
+Name: avalon-sdk-py
+Version: 0.1
+Summary: Avalon SDK for Direct Mode
+Home-page: https://github.com/hyperledger/avalon_sdk_py
+Author: Hyperledger Avalon 
+Author-email: swati.kasera@wipro.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: jsonschema
+
+UNKNOWN
+
+
