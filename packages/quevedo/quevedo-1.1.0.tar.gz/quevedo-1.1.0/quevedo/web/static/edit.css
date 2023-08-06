@@ -1,0 +1,106 @@
+@import 'common.css';
+
+header select {
+    margin-left: 3em;
+}
+
+h2 {
+    margin-bottom: 1ex;
+}
+
+.MetaEditor, .GraphemeList {
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    margin-bottom: 1.5em;
+}
+
+.MetaEditor table {
+    margin-left: 1.5em;
+    flex: 1;
+}
+
+.MetaEditor td {
+    width: 100%;
+}
+
+.MetaEditor th {
+    text-align: right;
+    padding-right: 1ex;
+}
+
+.MetaEditor textarea {
+    font-family: monospace;
+    padding: 0.5ex;
+    width: 100%;
+}
+
+.MetaEditor .flag {
+    font-size: 150%;
+    margin-right: 1em;
+}
+
+.GraphemeList div:nth-child(2) {
+    flex: 1;
+    display: inline-block;
+}
+
+.GraphemeList table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.GraphemeList td {
+    padding: 2px;
+}
+
+.GraphemeList tbody th {
+    text-align: right;
+    padding-right: 1em;
+}
+
+.GraphemeEntry.editing {
+    background-color: #aaf;
+}
+
+.GraphemeEntry td:nth-child(1),
+.GraphemeEntry td:nth-last-child(1) {
+    width: 0;
+}
+
+.GraphemeEntry td:first-child{
+    padding-left: 2vw;
+}
+
+.GraphemeEntry input[type="text"] { width: 100%; }
+
+.Annotation {
+    display: inline-block;
+    position: sticky;
+    top: 10px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.Annotation img {
+    max-width: 50vw;
+    max-height: 40vw;
+}
+
+.BBox {
+    display: block;
+    position: absolute;
+    pointer-events: none;
+    border: 2px solid black;
+}
+
+.BBox.editing {
+    outline: 100vw solid rgba(0,0,0,0.2);
+}
+
+pre {
+    margin: 2em 0;
+    padding: 1ex 0;
+    border-top: 1px solid gray;
+    color: gray;
+}
