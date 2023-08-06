@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: tess-coadds
+Version: 1.0.0
+Summary: Cutouts from coadded TESS images
+Home-page: https://github.com/Caltech-IPAC/TESSCoadds
+Author: John Good
+Author-email: jcg@ipac.caltech.edu
+License: LICENSE.txt
+Keywords: astronomy,images
+Platform: UNKNOWN
+Requires-Dist: astropy
+Requires-Dist: MontagePy
+
+UNKNOWN
+
+
