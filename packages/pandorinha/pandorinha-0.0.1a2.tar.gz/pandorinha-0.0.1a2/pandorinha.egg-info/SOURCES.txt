@@ -1,0 +1,11 @@
+setup.py
+pandorinha/__init__.py
+pandorinha/auth.py
+pandorinha/exceptions.py
+pandorinha/search.py
+pandorinha/util.py
+pandorinha.egg-info/PKG-INFO
+pandorinha.egg-info/SOURCES.txt
+pandorinha.egg-info/dependency_links.txt
+pandorinha.egg-info/requires.txt
+pandorinha.egg-info/top_level.txt
