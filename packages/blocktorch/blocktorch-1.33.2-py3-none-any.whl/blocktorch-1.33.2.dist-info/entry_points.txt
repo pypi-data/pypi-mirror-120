@@ -1,0 +1,3 @@
+[console_scripts]
+blocktorch = blocktorch.__main__:cli
+
