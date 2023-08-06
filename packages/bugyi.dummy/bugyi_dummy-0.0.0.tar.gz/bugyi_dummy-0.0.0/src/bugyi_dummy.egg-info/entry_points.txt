@@ -1,0 +1,3 @@
+[console_scripts]
+bugyi_dummy = bugyi_dummy.cli:main
+

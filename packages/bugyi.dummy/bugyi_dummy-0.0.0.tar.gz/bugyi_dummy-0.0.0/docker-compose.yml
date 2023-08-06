@@ -1,0 +1,20 @@
+---
+version: '3.7'
+services:
+  bugyi_dummy:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/bugyi_dummy:delegated
+      - build:/bugyi_dummy/build
+      - venv:/bugyi_dummy/.venv
+      - docker-python-cache:/root/.cache/
+    working_dir: /bugyi_dummy
+    environment:
+      - CC_REPO_URL
+volumes:
+  docker-python-cache:
+    external: true
+  build:
+  venv:

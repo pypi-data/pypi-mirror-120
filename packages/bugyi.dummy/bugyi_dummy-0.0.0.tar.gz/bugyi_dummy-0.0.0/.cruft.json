@@ -1,0 +1,15 @@
+{
+  "template": "https://github.com/bbugyi200/cc-python",
+  "commit": "457c8564676467a307bdebd92771a18d99d81c24",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "git_repo_name": "dummy",
+      "package_name": "bugyi_dummy",
+      "package_description": "Dummy python project used to test the cc-python cookiecutter.",
+      "package_type": "application",
+      "_template": "https://github.com/bbugyi200/cc-python"
+    }
+  },
+  "directory": null
+}
