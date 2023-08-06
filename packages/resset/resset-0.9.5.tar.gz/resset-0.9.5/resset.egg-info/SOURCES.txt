@@ -1,0 +1,12 @@
+setup.py
+resset/__init__.py
+resset/config.py
+resset/login.py
+resset/secret.py
+resset.egg-info/PKG-INFO
+resset.egg-info/SOURCES.txt
+resset.egg-info/dependency_links.txt
+resset.egg-info/requires.txt
+resset.egg-info/top_level.txt
+resset/stock/__init__.py
+resset/stock/stockdata.py
