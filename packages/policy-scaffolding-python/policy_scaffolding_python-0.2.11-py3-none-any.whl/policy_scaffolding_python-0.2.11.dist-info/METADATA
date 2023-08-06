@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: policy-scaffolding-python
+Version: 0.2.11
+Summary: Scaffolding project to support Rialtic Insight Engine development in Python.
+Home-page: https://rialtic.io
+License: Apache-2.0
+Keywords: rialtic,insight,engines,scaffolding
+Author: Rialtic
+Author-email: engines.data@rialtic.io
+Requires-Python: >=3.7,<4.0
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: insight-engine-schema-python (>=0.1.7,<0.2.0)
+Requires-Dist: rialtic-data-dev-py (>=0.11.6,<0.12.0)
+Project-URL: Repository, https://github.com/rialtic-community/policy-scaffolding-python
+Description-Content-Type: text/markdown
+
+# Engine development scaffolding (Python)
+
+Scaffolding project to support engine development in Python.
+
+This subproject provides a Python library to facilitate test-driven development
+of engines.
+
+## Test cases generation
+
+In order to develop an engine and to be able to check if the engine
+works as expected, a test-driven development approach proved to be
+valuable. Test cases might be very well understood by both the content
+designer and engine developer.
+
+This project contains DSL (domain-specific language) written in Python 
+to help generate test cases. 
+
+Before starting using Python it's recommended to create a virtual environment 
+to avoid conflicts.
+
+```sh
+python3 -m venv .venv-local
+```
+This command will create a new virtual environment in the folder `.venv-local`.
+Then in a new terminal it needs to be activated:
+
+```sh
+source .venv-local/bin/activate
+```
+
+To generate test cases for ambulance:
+
+```sh
+python ambulance.py
+```
+

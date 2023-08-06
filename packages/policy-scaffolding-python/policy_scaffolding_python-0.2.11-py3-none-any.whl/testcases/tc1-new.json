@@ -1,0 +1,57 @@
+{
+  "insight_engine_request": {
+    "claim": {
+      "created": {
+        "origval": "2020-06-30",
+        "date": "2020-06-30"
+      },
+      "insurance": [
+        {
+          "coverage": {
+            "id": "medicaid"
+          },
+          "focal": false,
+          "sequence": 1
+        }
+      ],
+      "item": [
+        {
+          "productOrService": {
+            "coding": [
+              {
+                "code": "0028U"
+              }
+            ]
+          },
+          "sequence": 10
+        },
+        {
+          "productOrService": {
+            "coding": [
+              {
+                "code": "0001U"
+              }
+            ]
+          },
+          "sequence": 11
+        }
+      ],
+      "patient": {
+        "id": "member1234"
+      },
+      "priority": {
+        "id": "high"
+      },
+      "provider": {
+        "id": "somebody"
+      },
+      "status": "good",
+      "type": {
+        "id": "something"
+      },
+      "use": "claim",
+      "id": "1"
+    }
+  },
+  "insight_engine_response": {}
+}

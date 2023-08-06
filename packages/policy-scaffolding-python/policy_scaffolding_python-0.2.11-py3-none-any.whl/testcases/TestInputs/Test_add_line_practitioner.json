@@ -1,0 +1,131 @@
+{
+  "insight_engine_request": {
+    "claim": {
+      "id": "860150",
+      "text": {
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">A human-readable rendering of the Claim</div>",
+        "status": "generated"
+      },
+      "careTeam": [
+      ],
+      "created": "2014-08-16",
+      "diagnosis": [
+        {
+          "diagnosisCodeableConcept": {
+            "coding": [
+              {
+                "code": "654456"
+              }
+            ]
+          },
+          "sequence": 1
+        }
+      ],
+      "identifier": [
+        {
+          "system": "http://happydocs.com/claim",
+          "value": "20210501ABCD"
+        }
+      ],
+      "insurance": [
+
+      ],
+      "insurer": {
+        "reference": "Organization/2"
+      },
+      "item": [
+        {
+          "careTeamSequence": [
+            1
+          ],
+          "diagnosisSequence": [
+            1
+          ],
+          "locationCodeableConcept": {
+            "coding": [
+              {
+                "code": "11",
+                "system": "https://www.cms.gov/medicare/coding/place-of-service-codes/place_of_service_code_set.html"
+              }
+            ]
+          },
+          "net": {
+            "currency": "USD",
+            "value": 75.0
+          },
+          "productOrService": {
+            "coding": [
+              {
+                "code": "99212",
+                "system": "http://hl7.org/fhir/ex-serviceproduct"
+              }
+            ]
+          },
+          "quantity": {
+            "value": 1
+          },
+          "sequence": 1,
+          "servicedPeriod": {
+            "end": "2021-06-03T00:00:00",
+            "start": "2021-06-03T00:00:00"
+          },
+          "unitPrice": {
+            "currency": "USD",
+            "value": 75.0
+          }
+        }
+      ],
+      "patient": {
+        "reference": "Patient-1"
+      },
+      "payee": {
+        "type": {
+          "coding": [
+            {
+              "code": "provider"
+            }
+          ]
+        }
+      },
+      "priority": {
+        "coding": [
+          {
+            "code": "normal"
+          }
+        ]
+      },
+      "provider": {
+        "reference": "Organization/1"
+      },
+      "status": "active",
+      "type": {
+        "coding": [
+          {
+            "code": "professional",
+            "system": "http://hl7.org/fhir/ValueSet/claim-type"
+          }
+        ]
+      },
+      "use": "claim",
+      "resourceType": "Claim"
+    },
+    "history": [],
+    "referenceData": [],
+    "resourceType": "InsightEngineRequest"
+  },
+  "insight_engine_response": {
+    "insights": [
+      {
+        "id": "860150",
+        "type": "Not Applicable",
+        "description": "Policy is only applicable to procedure codes 99100, 99116, 99135, 99140.",
+        "claimLineSequenceNum": 0,
+        "errorCode": 0,
+        "resourceType": "Insight"
+      }
+    ],
+    "resourceType": "InsightEngineResponse"
+  },
+  "name": "",
+  "resourceType": "InsightEngineTestCase"
+}
