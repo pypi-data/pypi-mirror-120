@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: gitlabds
+Version: 1.0.3
+Summary: Gitlab Data Science and Modeling Tools
+Home-page: https://gitlab.com/gitlab-data/gitlabds
+Author: Kevin Dietz
+Author-email: kdietz@gitlab.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+
+UNKNOWN
+
