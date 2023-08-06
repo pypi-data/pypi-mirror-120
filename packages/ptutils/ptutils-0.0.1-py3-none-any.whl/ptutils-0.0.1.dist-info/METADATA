@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ptutils
+Version: 0.0.1
+Summary: A repository of oft used functions and utility classes.
+Home-page: https://www.principledtechnologies.com
+Author: Christopher Wolfe
+Author-email: cwolfe@principledtechnologies.com
+License: Proprietary
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+License-File: LICENSE.txt
+License-File: AUTHORS
+
+UNKNOWN
+
