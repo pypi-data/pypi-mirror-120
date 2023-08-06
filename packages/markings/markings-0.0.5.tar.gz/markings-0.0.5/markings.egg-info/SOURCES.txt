@@ -1,0 +1,17 @@
+README.md
+requirements-dev.txt
+requirements-test.txt
+requirements.txt
+setup.py
+markings/__init__.py
+markings/__version__.py
+markings/markings.py
+markings.egg-info/PKG-INFO
+markings.egg-info/SOURCES.txt
+markings.egg-info/dependency_links.txt
+markings.egg-info/requires.txt
+markings.egg-info/top_level.txt
+tests/__init__.py
+tests/conftest.py
+tests/test_example.py
+tests/test_sanity.py
