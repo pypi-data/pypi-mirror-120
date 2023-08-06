@@ -1,0 +1,76 @@
+[tool.poetry]
+name = "augly_jp"
+version = "2021.9.17"
+description = "Data Augmentation for Japanese Text"
+authors = ["chck <shimekiri.today@gmail.com>"]
+repository = "https://github.com/chck/AugLy-jp"
+readme = "README.md"
+license = "MIT"
+
+[tool.taskipy.tasks]
+lint = { cmd = "pysen run lint", help = "execute linter" }
+fmt = { cmd = "pysen run format", help = "format code" }
+#test = { cmd = "task lint && task fmt && pytest -s", help = "run all test" }
+test = { cmd = "task fmt && pytest -s", help = "run all test" }
+
+[tool.poetry.dependencies]
+python = "^3.7.1"
+numpy = "^1.21.0"
+augly = "^0.1.6"
+chikkarpy = "^0.1.0"
+gensim = "^4.0.1"
+tqdm = "^4.62.2"
+python-Levenshtein = "^0.12.2"
+ginza = "^5.0.1"
+ja-ginza-electra = "^5.0.0"
+transformers = "<4.10.0"
+fugashi = {extras = ["unidic-lite"], version = "^1.1.1"}
+python-magic-bin = { version = "^0.4.14", markers = "sys_platform == 'win32' or sys_platform == 'darwin'" }
+tenacity = "^8.0.1"
+dartsclone = "^0.9.0"
+
+[tool.poetry.dev-dependencies]
+pysen = {extras = ["lint"], version = "^0.9.1"}
+absl-py = ">=0.9,<0.13"
+pytest = "^6.2.4"
+pytest-xdist = "^2.3.0"
+taskipy = "^1.8.1"
+jupyterlab = "^3.1.7"
+ipywidgets = "^7.6.4"
+pytest-cov = "^2.12.1"
+pytest-mock = "^3.6.1"
+pytest-asyncio = "^0.15.1"
+scikit-learn = "^0.24.2"
+pandas = "^1.3.2"
+torch = "^1.9.0"
+tensorboard = "^2.6.0"
+
+[tool.pysen]
+version = "0.9"
+
+[tool.pysen.lint]
+enable_black = true
+enable_flake8 = true
+enable_isort = true
+enable_mypy = true
+line_length = 120
+py_version = "py38"
+mypy_preset = "strict"
+[[tool.pysen.lint.mypy_targets]]
+  paths = ["augly_jp"]
+
+[tool.pysen.lint.source]
+  includes = ["augly_jp"]
+  exclude_globs = ["**/*_test.py"]
+
+[tool.pytest.ini_options]
+addopts = """
+-rx \
+--cov-report term-missing:skip-covered \
+--cov augly_jp \
+--cov tests \
+-n auto"""
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
