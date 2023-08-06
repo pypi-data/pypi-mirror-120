@@ -1,0 +1,12 @@
+cochar/__init__.py,sha256=njwGGE9tpld2m4dVvLtHsxCTxrd1UWKH6aRnqvsOgN8,138
+cochar/__main__.py,sha256=j1ZAOk75ZTfFM19B8tx1-q8Ov_FvEKUKlTzYYky6hxs,126
+cochar/cochar.py,sha256=hQQinl0BNRs120g0psI1kXZzneGAdSUuS8QPEy2GNdY,29708
+cochar/errors.py,sha256=rJ19epJ1fxptzXDAdRsXwA-3jZOkXEtw0pXTeYqlS_g,15
+cochar/utils.py,sha256=6r7SL4Pw0uY3T4zjlvQCRe83_-8eRNQWlvo2ClECiSQ,12890
+cochar/data/popPiramid.json,sha256=3HdCTQ-KUMP2Mt6lqAvxHAuBuBEPM2OY2FV8TLv4KNc,8915
+cochar-0.0.6.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+cochar-0.0.6.dist-info/METADATA,sha256=VJ2KO6E7kzdCfs112ftL9IMtxZndNZSOug3JjGyK278,625
+cochar-0.0.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cochar-0.0.6.dist-info/entry_points.txt,sha256=EwAupTEN00jQOtPI62v-lu0-ma34_iU2sdbF2XeYCS4,49
+cochar-0.0.6.dist-info/top_level.txt,sha256=R15stMjQiB0OSUD362ekbQegDo9ON9C64gqsSn48T9c,7
+cochar-0.0.6.dist-info/RECORD,,
