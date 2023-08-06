@@ -1,0 +1,10 @@
+setup.py
+udacityTestDistributionsxx/Binomialdistribution.py
+udacityTestDistributionsxx/Gaussiandistribution.py
+udacityTestDistributionsxx/Generaldistribution.py
+udacityTestDistributionsxx/__init__.py
+udacityTestDistributionsxx.egg-info/PKG-INFO
+udacityTestDistributionsxx.egg-info/SOURCES.txt
+udacityTestDistributionsxx.egg-info/dependency_links.txt
+udacityTestDistributionsxx.egg-info/not-zip-safe
+udacityTestDistributionsxx.egg-info/top_level.txt
