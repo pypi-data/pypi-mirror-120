@@ -1,0 +1,13 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+cape.py
+setup.py
+test.py
+getcapes/__init__.py
+mccapes.egg-info/PKG-INFO
+mccapes.egg-info/SOURCES.txt
+mccapes.egg-info/dependency_links.txt
+mccapes.egg-info/requires.txt
+mccapes.egg-info/top_level.txt
