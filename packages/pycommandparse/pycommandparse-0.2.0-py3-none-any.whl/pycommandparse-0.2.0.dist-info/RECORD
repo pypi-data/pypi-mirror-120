@@ -1,0 +1,8 @@
+pycommandparse/__init__.py,sha256=aNOYpgIIcsxwyINcAV5Tj6fhDUP8ZI5jCaD6YHxdHuI,108
+pycommandparse/command.py,sha256=qjck62pyrtmp6XjJA7oU_T3riTQzWSDswQcV6wactcI,565
+pycommandparse/errors.py,sha256=9gCJVfBrVzU3XTTCUTnN3azUtiGkMHPNH6cMM21JOnA,86
+pycommandparse/parsers/__init__.py,sha256=kMlkybIThtFROG6yHpKGD6vvYTAb9_lo7ZG7VzL8RvE,35
+pycommandparse/parsers/baseparser.py,sha256=mmUil3xoPYlhnr2bA-PEVaqKDBO0BMl6VmCwzijI4j4,4474
+pycommandparse-0.2.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+pycommandparse-0.2.0.dist-info/METADATA,sha256=NHosIQaKNnuW_JrbXPdKV3PW6Sj8NpsfVhPjkshGQ7I,2050
+pycommandparse-0.2.0.dist-info/RECORD,,
