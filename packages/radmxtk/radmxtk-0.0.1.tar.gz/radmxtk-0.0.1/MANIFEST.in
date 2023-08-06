@@ -1,0 +1,3 @@
+include radmxtk/examples
+include radmxtk/examples/*.py
+include radmxtk/examples/*.yaml

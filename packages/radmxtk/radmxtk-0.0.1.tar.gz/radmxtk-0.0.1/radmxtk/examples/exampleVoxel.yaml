@@ -1,0 +1,21 @@
+imageType:
+  Original: {}
+
+setting:
+  force2D: true
+  binWidth: 25.0
+  resampledPixelSpacing: [1.0, 1.0, 1.0]
+
+voxelSetting:
+  maskedKernel: true
+  kernelRadius: 2
+  initValue: nan
+
+featureClass:
+  glcm:
+    - JointEntropy
+
+
+# meta-parameters (DO NOT EDIT)
+# voxelBased: true
+# downSampling: true
