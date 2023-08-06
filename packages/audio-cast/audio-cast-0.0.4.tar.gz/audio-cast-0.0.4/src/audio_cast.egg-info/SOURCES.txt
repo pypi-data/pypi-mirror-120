@@ -1,0 +1,15 @@
+COPYING
+README.md
+pyproject.toml
+setup.cfg
+src/audio_cast/__init__.py
+src/audio_cast/discover_devices.py
+src/audio_cast/discover_media.py
+src/audio_cast/endpoints.py
+src/audio_cast/player.py
+src/audio_cast/webapp.py
+src/audio_cast.egg-info/PKG-INFO
+src/audio_cast.egg-info/SOURCES.txt
+src/audio_cast.egg-info/dependency_links.txt
+src/audio_cast.egg-info/requires.txt
+src/audio_cast.egg-info/top_level.txt
