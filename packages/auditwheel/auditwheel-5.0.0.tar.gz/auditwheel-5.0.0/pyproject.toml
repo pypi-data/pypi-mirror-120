@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=42", "wheel", "pbr"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+target-version = ["py36", "py37", "py38", "py39"]
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+follow_imports = "silent"
+ignore_missing_imports = true
+warn_unused_ignores = true
+
+[[tool.mypy.overrides]]
+module = "auditwheel._vendor.*"
+follow_imports = "skip"
+ignore_errors = true

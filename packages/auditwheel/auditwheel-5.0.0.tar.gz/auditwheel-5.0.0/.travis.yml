@@ -1,0 +1,31 @@
+os: linux
+dist: focal
+language: python
+python: "3.8"
+arch: arm64-graviton2
+
+jobs:
+  include:
+  - arch: arm64-graviton2
+    virt: vm
+    group: edge
+  - arch: ppc64le
+  - arch: s390x
+  allow_failures:
+  - arch: ppc64le
+
+services:
+  - docker
+
+notifications:
+  email: false
+
+install:
+  - pip install nox
+
+script:
+  - nox -s tests-3.8
+
+cache:
+  directories:
+    - $HOME/.cache/auditwheel_tests

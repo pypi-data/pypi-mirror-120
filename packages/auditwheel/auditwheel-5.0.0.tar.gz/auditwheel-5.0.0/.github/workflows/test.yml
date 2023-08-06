@@ -1,0 +1,38 @@
+name: Test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    name: CPython ${{ matrix.python }}
+    runs-on: ubuntu-20.04
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - python: "3.6"
+          - python: "3.7"
+          - python: "3.8"
+          - python: "3.9"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup cache
+        uses: actions/cache@v2
+        with:
+          path: ~/.cache/auditwheel_tests
+          key: python${{ matrix.python }}-${{ hashFiles('**/test_manylinux.py') }}
+          restore-keys: python${{ matrix.python }}-
+
+      - name: Install CPython ${{ matrix.python }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python }}
+          architecture: x64
+
+      - name: Run tests
+        run: pipx run nox -s tests-${{ matrix.python }}
