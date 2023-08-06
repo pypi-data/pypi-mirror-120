@@ -1,0 +1,10 @@
+setup.py
+uda-zarnas-distro/Binomialdistribution.py
+uda-zarnas-distro/Gaussiandistribution.py
+uda-zarnas-distro/Generaldistribution.py
+uda-zarnas-distro/__init__.py
+uda_zarnas_distro.egg-info/PKG-INFO
+uda_zarnas_distro.egg-info/SOURCES.txt
+uda_zarnas_distro.egg-info/dependency_links.txt
+uda_zarnas_distro.egg-info/not-zip-safe
+uda_zarnas_distro.egg-info/top_level.txt
