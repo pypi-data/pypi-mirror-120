@@ -1,0 +1,11 @@
+LICENSE,sha256=7PiJdoeHzGfeWRC-TiOxbtGdss6xwyjfrcnsxQhFz8I,1067
+kaskade/__init__.py,sha256=9uC2yup4LeFpAkWZk6TgEZ2bZ8CKZAEorKCBQlWnmzw,86
+kaskade/__main__.py,sha256=BDinhTrBPhFPB66bRrIY4FoRWEgm9edDbbaIwlzOsds,36
+kaskade/cli.py,sha256=wxZrLoMhNHhnWn3BxViuFsrIkcYFKL_RjaiO3VKP7Tg,368
+kaskade/kafka.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kaskade/kaskade.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kaskade-0.0.0.dist-info/entry_points.txt,sha256=wzcm2HO0cZ4Rbq1zOuN1mcqktsUJNED6K1gMF610u6M,44
+kaskade-0.0.0.dist-info/LICENSE,sha256=7PiJdoeHzGfeWRC-TiOxbtGdss6xwyjfrcnsxQhFz8I,1067
+kaskade-0.0.0.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+kaskade-0.0.0.dist-info/METADATA,sha256=9SCOBSE3zD-P9NHgjM9nFUnOMHSC3par9dE6LaJdzn8,2753
+kaskade-0.0.0.dist-info/RECORD,,
