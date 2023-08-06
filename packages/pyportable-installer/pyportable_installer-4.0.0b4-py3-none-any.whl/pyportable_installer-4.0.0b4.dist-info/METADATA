@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pyportable-installer
+Version: 4.0.0b4
+Summary: Build and distribute portable Python application by all-in-one configuration file.
+License: MIT
+Author: Likianta
+Author-email: likianta@foxmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: cython
+Requires-Dist: embed-python-manager (>=0.2.5)
+Requires-Dist: lk-logger (>=4.0.3)
+Requires-Dist: lk-utils (>=2.0.0b1)
+Requires-Dist: pyarmor
+Requires-Dist: pyportable-crypto (>=0.2.1)
