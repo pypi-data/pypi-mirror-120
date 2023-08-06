@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: ptinsearcher
+Version: 0.0.1
+Summary: Web sources information extractor
+Home-page: https://www.penterep.com/
+Author: Penterep
+Author-email: info@penterep.com
+License: GPLv3+
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Environment :: Console
+Requires-Python: >=3.6
