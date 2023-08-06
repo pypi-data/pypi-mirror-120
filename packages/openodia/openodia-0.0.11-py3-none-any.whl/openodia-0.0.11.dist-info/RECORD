@@ -1,0 +1,13 @@
+openodia/__init__.py,sha256=-hhEEzsqeNqfk0K3-rvZfHnejKgPNfb4BQl88aC74qY,162
+openodia/__main__.py,sha256=WyUKo1IeFbp4T0r4hHcw3cUUAT1FhHpNquO-Tgp7rWQ,126
+openodia/constants.py,sha256=M9hApOtiUAzP1WjgvhtdfPWvp6ytIU8dcllmVcPumCY,30461
+openodia/language_detector.py,sha256=d4HeHBxKuFGhGSk2emJOzZjUPClSRnrFJZiRYWvvQq0,52
+openodia/letters.py,sha256=XPvF6Plzt4H_XdozibfvZoHLZT9wKhx9czkg512pZDI,2617
+openodia/names.py,sha256=8xIh_759n2QV3nKYlAAC3-pWl5E9jCaPLciRkEk19_M,2188
+openodia/tokenizer.py,sha256=gRMnwCCfSiivCuzAbJv_kGxJFAaXCny33vtGZm7HAe0,238
+openodia-0.0.11.dist-info/LICENSE,sha256=W4x7ZKqxn_-LOIuh-3nuwQOvbUDbORrtt8R9GfAdQa0,1078
+openodia-0.0.11.dist-info/METADATA,sha256=ME3CPptAhAYh10t7k8mjos8F9T7ktMFi2MzFb2vLFCE,4182
+openodia-0.0.11.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+openodia-0.0.11.dist-info/entry_points.txt,sha256=n3_YEDH_qjtiquj2BGBeKeoM3hta-3BzeMZtL1OpxqE,53
+openodia-0.0.11.dist-info/top_level.txt,sha256=tp9V79c5kL87P5tUsGsZQ8GsYtu0gW40je3w0unkeNI,9
+openodia-0.0.11.dist-info/RECORD,,
