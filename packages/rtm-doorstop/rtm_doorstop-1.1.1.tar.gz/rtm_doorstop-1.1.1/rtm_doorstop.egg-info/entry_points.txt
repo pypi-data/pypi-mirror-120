@@ -1,0 +1,3 @@
+[console_scripts]
+rtm_doorstop = rtm_doorstop:main
+

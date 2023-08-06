@@ -1,0 +1,3 @@
+doorstop>=2.0.0
+rapidtables>=0.1
+fire>=0.3
