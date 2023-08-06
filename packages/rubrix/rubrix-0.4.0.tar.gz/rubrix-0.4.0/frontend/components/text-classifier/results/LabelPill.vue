@@ -1,0 +1,179 @@
+<!--
+  - coding=utf-8
+  - Copyright 2021-present, the Recognai S.L. team.
+  -
+  - Licensed under the Apache License, Version 2.0 (the "License");
+  - you may not use this file except in compliance with the License.
+  - You may obtain a copy of the License at
+  -
+  -     http://www.apache.org/licenses/LICENSE-2.0
+  -
+  - Unless required by applicable law or agreed to in writing, software
+  - distributed under the License is distributed on an "AS IS" BASIS,
+  - WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  - See the License for the specific language governing permissions and
+  - limitations under the License.
+  -->
+
+<template>
+  <div>
+    <svgicon
+      v-if="predicted"
+      :class="['icon__predicted', predicted]"
+      width="20"
+      height="20"
+      :name="predicted ? 'predicted-ko' : 'predicted-ok'"
+    ></svgicon>
+    <p
+      v-for="label in labels"
+      :key="label.index"
+      :class="['pill', isAnnotated(label) ? 'active' : '']"
+      :title="label.class"
+    >
+      <span class="pill__text">{{ label.class }} </span>
+      <span v-if="showScore" class="pill__score">
+        <ReNumeric
+          class="radio-data__score"
+          :value="decorateScore(label.score)"
+          type="%"
+          :decimals="2"
+        ></ReNumeric>
+      </span>
+    </p>
+  </div>
+</template>
+
+<script>
+import "assets/icons/predicted-ok";
+import "assets/icons/predicted-ko";
+export default {
+  props: {
+    labels: {
+      type: Array,
+      required: true,
+    },
+    predicted: {
+      type: String,
+      default: undefined,
+    },
+    showScore: {
+      type: Boolean,
+      default: false,
+    },
+    annotationLabels: {
+      type: Array,
+      default: () => [],
+    },
+  },
+  methods: {
+    decorateScore(score) {
+      return score * 100;
+    },
+    isAnnotated(label) {
+      return label.score > 0.5 ? true : false;
+    },
+  },
+};
+</script>
+
+<style lang="scss" scoped>
+%pill {
+  display: inline-flex;
+  width: auto;
+  background: transparent;
+  color: $lighter-color;
+  border-radius: 3px;
+  padding: 0.2em 1em;
+  @include font-size(14px);
+  margin-top: 0;
+  margin-bottom: 0;
+  border: 1px solid transparent;
+  margin-right: 0.5em;
+}
+.annotations {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  height: 100%;
+  overflow: auto;
+  text-align: right;
+  padding: 1em;
+  .pill {
+    text-align: left;
+    display: inline-block;
+    background: palette(grey, bg);
+    border: none;
+    display: inline-block;
+    border-radius: 10px;
+    &__text {
+      word-break: break-all;
+      white-space: break-spaces;
+    }
+  }
+}
+.predictions {
+  margin-top: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -0.8em;
+  margin-left: -0.8em;
+  .pill {
+    height: 40px;
+    line-height: 40px;
+    display: flex;
+    width: 240px;
+    align-items: center;
+    margin-left: 0.8em;
+    margin-right: 0.8em;
+    margin-bottom: 1.6em;
+    font-weight: bold;
+    border: 1px solid palette(grey, smooth);
+    border-radius: 5px;
+    &__score {
+      margin-right: 0;
+      margin-left: auto;
+    }
+  }
+}
+.pill {
+  @extend %pill;
+  border: 1px solid $line-medium-color;
+  color: $font-medium-color;
+  margin-bottom: 0.5em;
+  line-height: 1.4em;
+  &__container {
+    display: flex;
+    margin-bottom: 1em;
+  }
+  &__text {
+    display: inline-block;
+    max-width: 200px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  &__score {
+    font-weight: bold;
+    margin-left: 1em;
+  }
+  &.active {
+    border-color: $secondary-color;
+  }
+}
+.icon {
+  &__predicted {
+    display: block;
+    text-align: right;
+    margin-right: 0;
+    margin-left: auto;
+    margin-bottom: 1em;
+    &.ko {
+      fill: $error;
+    }
+    &.ok {
+      fill: $success;
+    }
+  }
+}
+</style>
