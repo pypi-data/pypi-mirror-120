@@ -1,0 +1,11 @@
+LICENSE.txt
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+ordained.egg-info/PKG-INFO
+ordained.egg-info/SOURCES.txt
+ordained.egg-info/dependency_links.txt
+ordained.egg-info/not-zip-safe
+ordained.egg-info/requires.txt
+ordained.egg-info/top_level.txt

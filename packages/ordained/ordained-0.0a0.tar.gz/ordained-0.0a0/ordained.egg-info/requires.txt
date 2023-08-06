@@ -1,0 +1,7 @@
+wheel
+cookiecutter
+
+[doc]
+sphinx
+sphinx_rtd_theme
+towncrier
