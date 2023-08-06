@@ -1,0 +1,3 @@
+include PyQRibbon/i18n/*
+include PyQRibbon/qss/*
+include PyQRibbon/theme/*
