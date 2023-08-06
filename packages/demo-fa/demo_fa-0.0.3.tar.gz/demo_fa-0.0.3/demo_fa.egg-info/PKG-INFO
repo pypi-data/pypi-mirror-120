@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: demo-fa
+Version: 0.0.3
+Summary: Solar Filaments data augmentation demo package
+Home-page: https://bitbucket.org/gsudmlab/bbso_fa/src/master/
+Author: Shreejaa Talla
+Author-email: shreejaa.talla@gmail.com
+License: UNKNOWN
+Project-URL: Source, https://bitbucket.org/gsudmlab/bbso_fa/src/master/
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# BBSO Filament Augmentation v0.0.2
+
+### A Data augmentation toolkit for Big Bear Solar Observatory Solar Filament images
+
+
+
