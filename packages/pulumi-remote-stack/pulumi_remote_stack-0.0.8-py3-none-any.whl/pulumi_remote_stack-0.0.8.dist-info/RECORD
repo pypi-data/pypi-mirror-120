@@ -1,0 +1,10 @@
+remote_stack/__init__.py,sha256=gzMXgwwokJmI921x-y1WVJXDO1cm-vxG1BNH15x282o,111
+remote_stack/config.py,sha256=RVOqLqVvqQz9P0QYteOYHtW1w-a9F5rKttqABDLSpxE,819
+remote_stack/remote_config.py,sha256=65x3XWezc1DG1iiqqj1Fv-xml0BC1KsS3Ukr2cYH6J4,6793
+remote_stack/remote_stack.py,sha256=uB2PAOz62-xVkW2q4xtXZBuRTC8ZIyREgfrDbWzCQ2A,10142
+remote_stack/subprocess_run.py,sha256=Z7NuqgH9S_13zcTULMfFTp-kL8VMLSOAdYbJPIm6W-o,682
+pulumi_remote_stack-0.0.8.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pulumi_remote_stack-0.0.8.dist-info/METADATA,sha256=WcZQ6JOiywJ9mOyapqFQbts9XkJJH0BihJNvbRBeRqY,555
+pulumi_remote_stack-0.0.8.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pulumi_remote_stack-0.0.8.dist-info/top_level.txt,sha256=gaNj9Ip6kL5PpaWtyHolWfOVjgV41MsoniVmXhVjnV4,13
+pulumi_remote_stack-0.0.8.dist-info/RECORD,,
