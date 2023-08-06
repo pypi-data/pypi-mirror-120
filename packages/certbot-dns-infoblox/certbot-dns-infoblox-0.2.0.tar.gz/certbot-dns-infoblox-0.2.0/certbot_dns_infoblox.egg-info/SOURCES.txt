@@ -1,0 +1,15 @@
+.gitignore
+LICENSE.txt
+MANIFEST.in
+README.md
+infoblox.sample.ini
+setup.cfg
+setup.py
+certbot_dns_infoblox/__init__.py
+certbot_dns_infoblox/dns_infoblox.py
+certbot_dns_infoblox.egg-info/PKG-INFO
+certbot_dns_infoblox.egg-info/SOURCES.txt
+certbot_dns_infoblox.egg-info/dependency_links.txt
+certbot_dns_infoblox.egg-info/entry_points.txt
+certbot_dns_infoblox.egg-info/requires.txt
+certbot_dns_infoblox.egg-info/top_level.txt
