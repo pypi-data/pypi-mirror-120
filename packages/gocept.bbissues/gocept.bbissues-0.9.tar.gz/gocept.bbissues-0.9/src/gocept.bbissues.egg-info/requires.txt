@@ -1,0 +1,8 @@
+jinja2
+python-dateutil
+requests
+setuptools
+six
+
+[test]
+mock
