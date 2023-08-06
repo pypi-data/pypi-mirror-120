@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+ai2_tango.egg-info/PKG-INFO
+ai2_tango.egg-info/SOURCES.txt
+ai2_tango.egg-info/dependency_links.txt
+ai2_tango.egg-info/top_level.txt
+tango/__init__.py
+tango/version.py

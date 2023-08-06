@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: ai2-tango
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/allenai/tango
+Author: Allen Institute for Artificial Intelligence
+Author-email: contact@allenai.org
+License: Apache
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.6.1
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# tango
+
+## Team
+
+**tango** is developed and maintained by the AllenNLP team, backed by [the Allen Institute for Artificial Intelligence (AI2)](https://allenai.org/).
+AI2 is a non-profit institute with the mission to contribute to humanity through high-impact AI research and engineering.
+To learn more about who specifically contributed to this codebase, see [our contributors](https://github.com/allenai/tango/graphs/contributors) page.
+
+
