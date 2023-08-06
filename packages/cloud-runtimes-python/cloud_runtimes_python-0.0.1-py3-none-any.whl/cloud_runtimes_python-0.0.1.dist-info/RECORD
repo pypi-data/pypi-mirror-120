@@ -1,0 +1,11 @@
+api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+api/cloud_runtimes.py,sha256=YBV1tBRBhAFYngdpF4jW8iSJxnwDXqoDyAtkjqXi6k4,273
+api/domain/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+api/domain/configuration_runtimes.py,sha256=FBU7xpIesxJ3161AjwuMhRw5NgPl2fQC4Cx2H44kxGI,649
+api/domain/logging_runtimes.py,sha256=TY0HK2Eelwwi2xyPy6EeJIRSlHfZ-Qohx4-_Bp1clos,179
+api/domain/pubsub_runtimes.py,sha256=FazfuqaYUCcN5RzMKFDNGAHao_widx96-cgM096dHGM,206
+cloud_runtimes_python-0.0.1.dist-info/LICENSE,sha256=t7r2NmwrWpJ_DzagY8MVCwELcas2vaXsmKKMLgSVZrE,1091
+cloud_runtimes_python-0.0.1.dist-info/METADATA,sha256=X0RcY4E0g0Ap64A_LOQuqRWG_QD2V35QinEQnA5WYLU,540
+cloud_runtimes_python-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+cloud_runtimes_python-0.0.1.dist-info/top_level.txt,sha256=0XF5TFwfelCuuPcFarhKT7zW-9WUsZmb3a790D78BZE,4
+cloud_runtimes_python-0.0.1.dist-info/RECORD,,
