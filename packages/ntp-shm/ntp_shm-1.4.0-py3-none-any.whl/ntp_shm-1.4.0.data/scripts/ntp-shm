@@ -1,0 +1,4 @@
+#!python -u
+
+from ntp_shm import main
+main.main()
