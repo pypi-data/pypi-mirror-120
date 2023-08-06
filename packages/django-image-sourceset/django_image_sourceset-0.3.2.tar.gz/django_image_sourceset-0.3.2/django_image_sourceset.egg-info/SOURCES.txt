@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+django_image_sourceset/__init__.py
+django_image_sourceset/conf.py
+django_image_sourceset/utils.py
+django_image_sourceset.egg-info/PKG-INFO
+django_image_sourceset.egg-info/SOURCES.txt
+django_image_sourceset.egg-info/dependency_links.txt
+django_image_sourceset.egg-info/not-zip-safe
+django_image_sourceset.egg-info/requires.txt
+django_image_sourceset.egg-info/top_level.txt
+django_image_sourceset/templates/django_image_sourceset/picture_tag.html
+django_image_sourceset/templatetags/__init__.py
+django_image_sourceset/templatetags/django_image_sourceset.py

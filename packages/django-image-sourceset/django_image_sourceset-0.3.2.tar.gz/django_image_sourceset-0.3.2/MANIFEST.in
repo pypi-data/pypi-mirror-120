@@ -1,0 +1,4 @@
+setup.cfg
+setup.py
+recursive-include django_image_sourceset *
+recursive-include django_image_sourceset/templates *
