@@ -1,0 +1,7 @@
+mylogging>=3.0.3
+numpy
+pandas
+requests
+scipy
+sklearn
+wfdb
