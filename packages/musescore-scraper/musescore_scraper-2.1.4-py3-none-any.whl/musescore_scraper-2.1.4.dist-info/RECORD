@@ -1,0 +1,10 @@
+musescore_scraper/MuseScraper.py,sha256=ttJd9adxjus_JjDZmRiQNndyuHIJN4jLrTkwt3PYjFE,10625
+musescore_scraper/__init__.py,sha256=fxKOp9FrGXaD-33iD3pRdSki7lKRBNwu6WId9Jp4-JY,2812
+musescore_scraper/helper.py,sha256=WAW04nx_wV4yJFf8qoAhodCHf2W-xnHIWamVJC-d_0o,245
+musescore_scraper/script.js,sha256=Gu_ppqn9e87i_a-fmNoQp-aOkw0LldlB0vXZyAUmKPM,2181
+musescore_scraper-2.1.4.dist-info/LICENSE,sha256=k-GRty0kuhf8c7cQ3Lv3MqCwiVAfDAOrZsEDpYQOd04,1066
+musescore_scraper-2.1.4.dist-info/METADATA,sha256=2BZRg-xwzDykpKppBc4omD2TUusfhdqQs_nmjGP4Kq4,3041
+musescore_scraper-2.1.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+musescore_scraper-2.1.4.dist-info/entry_points.txt,sha256=Xu1Ru1AW_gpE3dh3xtngqiJeBJt0ccAzwcif93Kjcro,57
+musescore_scraper-2.1.4.dist-info/top_level.txt,sha256=2Dq6W4sHpuVdRkZIsEvkeOBAF6AyY0D1llk0b38wYEo,18
+musescore_scraper-2.1.4.dist-info/RECORD,,
