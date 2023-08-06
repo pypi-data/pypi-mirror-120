@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+
+build/
+dist/
+
+.ipynb_checkpoints
+Untitled*.ipynb
+*.egg-info
+*.DS_Store
+
+.vscode
+node_modules/
+_build/
+generated/
+gallery/
