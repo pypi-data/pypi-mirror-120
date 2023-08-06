@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: foreverbull-core
+Version: 0.0.9
+Summary: Core Python functionality for Foreverbull
+Home-page: UNKNOWN
+Author: Henrik Nilsson
+Author-email: henrik@lhjnilsson.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pydantic (<2.0.0,>=1.8.2)
+Requires-Dist: pynng (<1.0.0,>=0.7.1)
+
+UNKNOWN
+
