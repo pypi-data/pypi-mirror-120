@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: slash_help
+Version: 1.0.0
+Summary: Slash commands help for discord-interactions
+Home-page: https://github.com/Toricane/SlashHelp
+Author: Toricane
+Author-email: prjwl028@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# SlashHelp
+discord-interactions v3 slash command help
+
+## Usage:
+```py
+from discord_slash import SlashCommand
+from discord.ext import commands
+from slash_help import SlashHelp
+
+bot = commands.Bot("/")
+slash = SlashCommand(bot, sync_commands=True)  # sync_commands=True preferred
+slash_help = SlashHelp(bot)
+# and its done!
+```
+## Install:
+```
+pip install -U slash_help
+```
+
+# WILL UPDATE LATER
+
