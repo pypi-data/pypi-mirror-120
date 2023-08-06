@@ -1,0 +1,13 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+src/prototypes/__init__.py
+src/prototypes/exceptions.py
+src/prototypes/prototypes.py
+src/prototypes/py.typed
+src/prototypes.egg-info/PKG-INFO
+src/prototypes.egg-info/SOURCES.txt
+src/prototypes.egg-info/dependency_links.txt
+src/prototypes.egg-info/requires.txt
+src/prototypes.egg-info/top_level.txt
