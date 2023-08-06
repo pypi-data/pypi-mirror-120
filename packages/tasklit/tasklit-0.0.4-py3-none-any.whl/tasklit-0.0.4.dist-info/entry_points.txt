@@ -1,0 +1,3 @@
+[console_scripts]
+tasklit = tasklit.__main__:run
+
