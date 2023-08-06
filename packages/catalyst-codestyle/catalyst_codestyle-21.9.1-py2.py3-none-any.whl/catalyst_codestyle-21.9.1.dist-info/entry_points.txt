@@ -1,0 +1,4 @@
+[console_scripts]
+catalyst-codestyle-flake8 = codestyle._flake8:main
+catalyst-codestyle-isort = codestyle._isort:main
+
