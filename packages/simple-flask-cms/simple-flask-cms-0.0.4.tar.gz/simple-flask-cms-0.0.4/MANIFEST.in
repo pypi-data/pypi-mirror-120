@@ -1,0 +1,2 @@
+include simple_flask_cms/templates/cms/*
+include simple_flask_cms/static/*
