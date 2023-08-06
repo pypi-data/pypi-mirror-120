@@ -1,0 +1,16 @@
+yt_idefix/__init__.py,sha256=Bu2f-VW7OPVc2vuYqsDcaZmqqz1Y37FqcPd4hpD_7pU,166
+yt_idefix/api.py,sha256=cjg6-YVCiIDFQs5os7tRKCKDgDG2lwog9Nv2W1XXdmo,253
+yt_idefix/data_structures.py,sha256=wlOP2OsDhesJ7kobvpJx3PbYA-Be7iYrdkXgaeGogmA,9117
+yt_idefix/definitions.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yt_idefix/fields.py,sha256=1Bf6f9cDCZ2RgrAVOnD9zq7ce7SeTPw9jChKOIsTvsg,1004
+yt_idefix/io.py,sha256=NY6064NnzHPCRTZqyi2b2IqUoip_SCLYw9o0M8hTXPA,2277
+yt_idefix/misc.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yt_idefix/_io/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yt_idefix/_io/commons.py,sha256=BR8LjSl_EBIDZl4JWeo38iEa32CsTuw06cVANIktBC0,674
+yt_idefix/_io/dmp_io.py,sha256=Kl5z6q3JiNkUZXYtNkNJvs2X4jWFrQdUwqKsN9bQAbI,5926
+yt_idefix/_io/vtk_io.py,sha256=Yb5c4QEwLGkwqHBDU3JK_eNXBzNNwpU4IS7r2ShFWyA,296
+yt_idefix-0.4.0.post1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+yt_idefix-0.4.0.post1.dist-info/METADATA,sha256=97MtLjCckJOwi7pYdgIHCDfn3smWyjmuuCY_AdyVwvs,3657
+yt_idefix-0.4.0.post1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+yt_idefix-0.4.0.post1.dist-info/top_level.txt,sha256=pGTn90arNahaN-VNtohSJIVPXRWrgYcXwEeRGzd7g8o,10
+yt_idefix-0.4.0.post1.dist-info/RECORD,,
