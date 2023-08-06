@@ -1,0 +1,6 @@
+flexstore/__init__.py,sha256=D0F9_8eaaJCsQx2VJh_sQffG8WgB-ymQH86yj1RJO-k,1308
+flexstore/storage_providers/__init__.py,sha256=YP7R0Cz6f-abMze2Uak6hPmyLm8d-GnswzhTJLy8tSs,2663
+flexstore/storage_providers/example_provider.py.txt,sha256=q5c1oiAQuns5DVh9Io8cT56jyazkxMv0y3pR_OkhxoI,475
+flexstore-0.0.1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+flexstore-0.0.1.dist-info/METADATA,sha256=-fJF3QS5_7quxDYjjxxI-j-Jd-LRje-PRz6v0B0P5E8,321
+flexstore-0.0.1.dist-info/RECORD,,
