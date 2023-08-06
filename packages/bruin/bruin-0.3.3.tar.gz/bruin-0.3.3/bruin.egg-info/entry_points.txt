@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        bruin=bruin.__main__:main
+    

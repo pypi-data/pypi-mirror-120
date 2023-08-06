@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+bruin/__init__.py
+bruin/__main__.py
+bruin/calendar_tool.py
+bruin/meal.py
+bruin/tasks.py
+bruin.egg-info/PKG-INFO
+bruin.egg-info/SOURCES.txt
+bruin.egg-info/dependency_links.txt
+bruin.egg-info/entry_points.txt
+bruin.egg-info/requires.txt
+bruin.egg-info/top_level.txt
+bruin/secret/client_secret.json
