@@ -1,0 +1,3 @@
+[console_scripts]
+subtitle-editor = subtitle_editor.cli:cli
+
