@@ -1,0 +1,10 @@
+setup.py
+chrs_dist/Binomialdistribution.py
+chrs_dist/Gaussiandistribution.py
+chrs_dist/Generaldistribution.py
+chrs_dist/__init__.py
+chrs_dist.egg-info/PKG-INFO
+chrs_dist.egg-info/SOURCES.txt
+chrs_dist.egg-info/dependency_links.txt
+chrs_dist.egg-info/not-zip-safe
+chrs_dist.egg-info/top_level.txt
