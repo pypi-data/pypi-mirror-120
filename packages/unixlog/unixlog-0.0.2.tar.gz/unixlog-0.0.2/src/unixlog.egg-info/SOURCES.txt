@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/unixlog/__init__.py
+src/unixlog/ulog.py
+src/unixlog.egg-info/PKG-INFO
+src/unixlog.egg-info/SOURCES.txt
+src/unixlog.egg-info/dependency_links.txt
+src/unixlog.egg-info/requires.txt
+src/unixlog.egg-info/top_level.txt
