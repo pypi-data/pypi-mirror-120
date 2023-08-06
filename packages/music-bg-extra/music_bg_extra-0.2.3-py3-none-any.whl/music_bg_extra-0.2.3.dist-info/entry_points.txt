@@ -1,0 +1,9 @@
+[mbg_processors]
+box_blur=music_bg_extra.processors.blur:box_blur
+circle=music_bg_extra.processors.circle:circle
+gaussian_blur=music_bg_extra.processors.blur:gaussian_blur
+pop_filter=music_bg_extra.processors.pop:pop_filter
+
+[mbg_variables]
+uuid4=music_bg_extra.variables.uuid_gen:uuid4
+
