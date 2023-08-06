@@ -1,0 +1,14 @@
+baobaxia/__init__.py,sha256=DzUCuyLR0DySsp1Zpv0unZ5m_Xa-dYEghpv4D5bud88,259
+baobaxia/acervo.py,sha256=Ncl9_9_0-QRaEGGOb4s8BMa8nkIjWWfDq35qw8waowE,6541
+baobaxia/install.py,sha256=0a8MhxTNjrCU-t-3ALoeHIfoE1xlcBKIc7Ms7Q5t-pE,4903
+baobaxia/rest.py,sha256=Mbi7ih0IHJyBnWkGZM510Bbc4k-s10MLV8hLxe8KT1E,14949
+baobaxia/root.py,sha256=SS_p10iw7at1yv86cijiJcib5XRai9bwH01ipWzp6Z0,20240
+baobaxia/saberes.py,sha256=tbo7fPVfe3bK_XAoSNhpUWsWzYcz809BxFegNeJnE28,10070
+baobaxia/sankofa.py,sha256=kUbtUhs63i8YyTcYGyY8qS-vUVZsaj6FyswBT7zJHRw,7865
+baobaxia/util.py,sha256=g2KaqkqVCdegBUlOOvNDhLHXwmCvQgkADuySSUM6Uzs,239
+baobaxia-0.1.7.dist-info/LICENSE,sha256=F7VC-9J9EElCIgqBPlONVnYLg47T5wCQ3a8H_dcTlGQ,35059
+baobaxia-0.1.7.dist-info/METADATA,sha256=nTJXPYojEVXSWDF6SDlGY3guT6u6kDxHbimJlZb2C2E,5355
+baobaxia-0.1.7.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+baobaxia-0.1.7.dist-info/entry_points.txt,sha256=P73sL7kK6OJm8MmNCuc4-EXPFvTX4od2bMR1F4kLorA,60
+baobaxia-0.1.7.dist-info/top_level.txt,sha256=x48ofppQXS43A-dooAcjHSgPym9rqOYUFXT2mwdCQfk,9
+baobaxia-0.1.7.dist-info/RECORD,,
