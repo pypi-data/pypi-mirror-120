@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: RTMLCore
+Version: 0.0.2
+Summary: For generating Resource Tag objects.
+Home-page: https://github.com/DeadMeme5441/RTMLCore
+Author: DeadMeme
+Author-email: deadunderscorememe@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# RTMLCore
+
+RTML stands for **Resource Tagging Markup Language**. Core is the primary compiler package that enables usage at a very basic level. It is meant to be used as a class based compiler for creating Resource Objects that are indexed within a file.
+
+
+## Installation
+
+Works with python3 only.
+
+```bash
+pip install RTMLCore
+```
+
+
+## Contributing
+
+Pull requests are welcome. Feel free to open an issue if you need help using the package and also to suggest changes.
+
+
+## License
+
+[MIT](LICENSE)
+
+
