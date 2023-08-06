@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: mtup
+Version: 1.7
+Summary: upload file/folders through cli
+Home-page: UNKNOWN
+Author: madhavth
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pyclip
+
+cli to upload file /folder
+
+usage:-
+
+mtup "FILE_NAME" 
+mtup "FOLDER_NAME"
+
+
