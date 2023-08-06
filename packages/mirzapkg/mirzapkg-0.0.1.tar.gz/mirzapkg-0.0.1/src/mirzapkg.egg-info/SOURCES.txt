@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/mirzapkg/__init__.py
+src/mirzapkg/anbar.py
+src/mirzapkg/instaNoche.py
+src/mirzapkg/mirza.py
+src/mirzapkg/netnoche.py
+src/mirzapkg/noche.py
+src/mirzapkg.egg-info/PKG-INFO
+src/mirzapkg.egg-info/SOURCES.txt
+src/mirzapkg.egg-info/dependency_links.txt
+src/mirzapkg.egg-info/top_level.txt
