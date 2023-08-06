@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+
+__title__ = 'cryptolyzer'
+__version__ = '0.7.1'
+__description__ = 'Fast and flexible cryptographic protocol analyzer'
+__author__ = 'Szilárd Pfeiffer'
+__author_email__ = 'coroner@pfeifferszilard.hu'
+__url__ = 'https://gitlab.com/coroner/cryptolyzer'
+__license__ = 'MPL-2.0'
