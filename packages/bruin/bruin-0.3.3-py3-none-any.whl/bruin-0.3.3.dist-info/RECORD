@@ -1,0 +1,13 @@
+bruin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bruin/__main__.py,sha256=IiqMGL93tk5lMQa7YUJOwJZ8gdLr9_zOFfnmpxWxRjM,2763
+bruin/calendar_tool.py,sha256=lQ-inhFFcD5amqyB91cglP6TVCXAvEqURYCTG8RuBUY,2634
+bruin/meal.py,sha256=beXO4ItK0gqVOXdmVO9Cbud2CJePao4JDw7XnxKKd3w,5784
+bruin/tasks.py,sha256=R06UwqkTsvQwWnh--xdAYRi0iLuOq_DthuBRI06kFws,8349
+bruin/secret/client_secret.json,sha256=Ds5UhMx8nYcE2-LSAk26AxFtLEZXiEaX5Q-fwBJ31EE,415
+bruin-0.3.3.dist-info/LICENSE,sha256=MzJH0ajiMYScFLRSkujAQEJxDVqyhSWYXZTUOgojzFs,1073
+bruin-0.3.3.dist-info/METADATA,sha256=3VqkPGfiwtbk1bOTAM9_vlJCpZKr1mpG9SocpIaup-4,3433
+bruin-0.3.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+bruin-0.3.3.dist-info/dependency_links.txt,sha256=EtVL4-fOG-RBB9YnQ1CtXSYNi4Tt6c7ked3Eh2EICew,842
+bruin-0.3.3.dist-info/entry_points.txt,sha256=hGBEGcRC86rFnuzQ37TdUdHLSnAxnyMxc3bCG5KI4RY,65
+bruin-0.3.3.dist-info/top_level.txt,sha256=4K7VcZ5sA35ian1fqshdFJ8ZDpv88T5TrSKinGpfrxE,6
+bruin-0.3.3.dist-info/RECORD,,
