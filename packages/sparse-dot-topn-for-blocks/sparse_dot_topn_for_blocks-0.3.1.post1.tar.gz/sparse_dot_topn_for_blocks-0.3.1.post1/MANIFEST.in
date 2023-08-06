@@ -1,0 +1,4 @@
+include README.md
+recursive-include sparse_dot_topn_for_blocks *.pyx
+recursive-include sparse_dot_topn_for_blocks *.h
+recursive-include sparse_dot_topn_for_blocks *.pxd

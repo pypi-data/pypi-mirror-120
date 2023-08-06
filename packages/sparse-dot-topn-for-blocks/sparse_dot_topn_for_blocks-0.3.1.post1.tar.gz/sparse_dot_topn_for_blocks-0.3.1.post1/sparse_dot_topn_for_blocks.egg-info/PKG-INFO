@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: sparse-dot-topn-for-blocks
+Version: 0.3.1.post1
+Summary: This package is intended for matrix blocks, boosting a sparse matrix multiplication followed by selecting the top-n multiplication
+Home-page: https://github.com/ParticularMiner/sparse_dot_topn_for_blocks
+Author: Particular Miner
+Author-email: particularminer@fake.com
+License: Apache 2.0
+Description: # sparse\_dot\_topn\_for\_blocks: 
+        
+        **sparse\_dot\_topn\_for\_blocks** is a slight variation of [**sparse\_dot\_topn**](https://github.com/ing-bank/sparse_dot_topn) which provides a fast way to perform sparse matrix multiplication followed by top-n selection and sorting in each row.
+        
+        It has the same interface as [**sparse\_dot\_topn**](https://github.com/ing-bank/sparse_dot_topn) but additionally allows an array to be passed which will be updated with the maximum number of nonzero elements of each row of the result matrix with values above the given lower bound.  This is suitable for block-matrix multiplication.  That's all!
+Keywords: cosine-similarity sparse-matrix scipy cython
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
