@@ -1,0 +1,5 @@
+setuptools
+openpmd-api~=0.14.0
+jsonschema
+urllib3
+requests
