@@ -1,0 +1,6 @@
+requests
+pandas
+datetime
+json
+hashlib
+shutil
