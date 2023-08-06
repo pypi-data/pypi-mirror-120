@@ -1,0 +1,10 @@
+setup.py
+dsnd_probability_alela/Binomialdistribution.py
+dsnd_probability_alela/Gaussiandistribution.py
+dsnd_probability_alela/Generaldistribution.py
+dsnd_probability_alela/__init__.py
+dsnd_probability_alela.egg-info/PKG-INFO
+dsnd_probability_alela.egg-info/SOURCES.txt
+dsnd_probability_alela.egg-info/dependency_links.txt
+dsnd_probability_alela.egg-info/not-zip-safe
+dsnd_probability_alela.egg-info/top_level.txt
