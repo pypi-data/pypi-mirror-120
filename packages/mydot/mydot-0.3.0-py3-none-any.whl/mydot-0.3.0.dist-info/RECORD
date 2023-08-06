@@ -1,0 +1,11 @@
+mydot/__init__.py,sha256=6CUvOoGLLXYi-XSJ1N-bMGtXUuo3A3LeYaHTAT72xfw,127
+mydot/__main__.py,sha256=mmJPim8K55-jQ0ScQ59DeoxLYZSG5veW5cfVP7cNQ_0,2556
+mydot/console.py,sha256=A90OY6JVTkDgdR_oeqUy-bf-uMJ5JqRbsj17AMQidYI,818
+mydot/dotfiles.py,sha256=nJi2D-1RLX48qqUDe3fkEh2Vrw0nBJS3AQfFAAfndL8,10971
+mydot/exceptions.py,sha256=brlh5bjTHblLL0kD-d0Inh81cnsx4hDvDmx3OdjalQo,98
+mydot/system_funcs.py,sha256=7WXD6K8HzTvWQ7i2uhRFxRo-ixTGaeCVC7ifH3979ng,390
+mydot-0.3.0.dist-info/LICENSE.md,sha256=HpUKMjWJEodvzT6gvdl1yeqKeCLt3DzaZigXw6vpmxw,7642
+mydot-0.3.0.dist-info/METADATA,sha256=7ByMBGVTFhOMBta42DmZKrlTdo7sAweR0630oebo1Pk,2412
+mydot-0.3.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+mydot-0.3.0.dist-info/top_level.txt,sha256=J0Bpvn-s_co_DUtT1qJSZu_f7MA28fkA3mLAuFU4s_E,6
+mydot-0.3.0.dist-info/RECORD,,
