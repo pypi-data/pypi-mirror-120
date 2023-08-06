@@ -1,0 +1,3 @@
+[console_scripts]
+imovel-scraper=imovel_scraper.__main__:main
+
