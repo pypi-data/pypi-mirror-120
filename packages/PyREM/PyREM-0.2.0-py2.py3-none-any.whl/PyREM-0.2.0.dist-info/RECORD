@@ -1,0 +1,9 @@
+pyrem/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyrem/host.py,sha256=3HYRTBWvtxYPlbLsAdnqsmKEav03KTYQuTgb4i0a2yA,4218
+pyrem/task.py,sha256=sg8lJPMyb_TCMxHNwOMy08WOzNksjVGE_LC568MzOGE,17088
+pyrem/utils.py,sha256=mMEC2BvKk2IHAoCgQy8X2nEMJRLO8vT4YXbbaXLVYoY,614
+PyREM-0.2.0.dist-info/LICENSE.txt,sha256=ZP9rbjGZ--1ShN0PaJ7Nxm0-ALMOCh-Q35l3igbtDSY,1099
+PyREM-0.2.0.dist-info/METADATA,sha256=pCZeMoCg-CF_WOYNpcH6UCKsgBrYC60EMg8a5oWGMG8,2502
+PyREM-0.2.0.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+PyREM-0.2.0.dist-info/top_level.txt,sha256=q5uM-7FtC5YTKWobdYr1x_2X4Dzme1KSnAjIwumdUFo,6
+PyREM-0.2.0.dist-info/RECORD,,
