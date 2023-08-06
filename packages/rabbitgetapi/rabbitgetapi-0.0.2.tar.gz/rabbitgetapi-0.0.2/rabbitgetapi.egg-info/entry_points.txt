@@ -1,0 +1,6 @@
+[console_scripts]
+rabbitgetapi = rabbitgetapi.__main__:main
+
+[rabbitgetapi.registered_commands]
+getqueue = rabbitgetapi.commands.get_queue:main
+
