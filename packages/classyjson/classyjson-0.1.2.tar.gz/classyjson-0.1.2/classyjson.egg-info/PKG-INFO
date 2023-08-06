@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: classyjson
+Version: 0.1.2
+Summary: Wrap jsonschema in python classes
+Home-page: https://github.com/earthastronaut/classyjson
+Author: Dylan Gregersen
+Author-email: an.email0101@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Classy Json
+
+Classy json is the best friend to invite to the party. He knows how to check all the other json that comes in and class them up.
+
+
+# Quick Start
+
+`pip install classyjson`
+
+
+Create your objects with jsonschema definitions.
+
+
+``` python
+from classyjson import ClassyObject
+
+class Config(ClassyObject):
+    schema = {
+        "properties": {
+            "version": {"type": "string"},
+            "verbosity": {"type": "integer"},
+            "items": {"type": "array"}
+        }
+    }
+
+
+config = Config({
+    "version": "v1.0",
+    "verbosity": 1,
+    "items": [
+        1, 2, 3
+    ]
+})
+```
+
+
