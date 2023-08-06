@@ -1,0 +1,6 @@
+isort
+pylint
+pytest
+sphinx
+myst-parser
+twine
