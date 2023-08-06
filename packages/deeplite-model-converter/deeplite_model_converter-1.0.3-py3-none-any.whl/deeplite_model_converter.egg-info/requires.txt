@@ -1,0 +1,14 @@
+deeplite-profiler==1.1.9
+
+[all]
+torch<=1.8.1,>=1.4
+tensorflow==2.5
+onnx-tf==1.8.0
+
+[tf]
+tensorflow==2.5
+onnx-tf==1.8.0
+
+[torch]
+torch<=1.8.1,>=1.4
+onnx

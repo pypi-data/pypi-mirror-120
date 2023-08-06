@@ -1,0 +1,111 @@
+<p align="center">
+  <img src="https://docs.deeplite.ai/neutrino/_static/content/deeplite-logo-color.png" />
+</p>
+
+<!-- [![Build Status](https://travis-ci.com/Deeplite/deeplite-profiler.svg?token=KrazyWqBHDFfVzGZSU9X&branch=master)](https://travis-ci.com/Deeplite/deeplite-profiler) [![codecov](https://codecov.io/gh/Deeplite/deeplite-profiler/branch/master/graph/badge.svg?token=D1RMWA1TDC)](https://codecov.io/gh/Deeplite/deeplite-profiler) -->
+
+
+# Deeplite Model Converter
+
+Collaboration is one of the biggest challenge is designing deep learning based solutions. There are multiple formats available using which a deep learning mdoel can be expressed: PyTorch, Tensorflow, ONNX, TFLite. This open source converter library aims to convert convert deep learning models from one format to another.
+
+* [Installation](#Installation)
+    * [Install using pip](#Install-using-pip)
+    * [Install from source](#Install-from-source)
+    * [Install in Dev mode](#Install-in-dev-mode)
+* [How to Use](#How-to-Use)
+    * [PyTorch2ONNX](#PyTorch2ONNX)
+    * [TF2TFLite](#TF2TFLite)
+* [Examples](#Examples)
+* [Supported Converters](#Supported-Converters)
+* [Contribute a Converter](#Contribute-a-Converter)
+
+
+## Install using pip
+
+Use following command to install the package from our internal PyPI repository. 
+
+```console
+$ pip install --upgrade pip
+$ pip install deeplite-model-converter
+```
+
+## Install from source
+
+```console
+$ git clone https://github.com/Deeplite/deeplite-model-converter.git
+$ pip install .
+```
+
+## Install in Dev mode
+
+```console
+$ git clone https://github.com/Deeplite/deeplite-model-converter.git
+$ pip install -e .
+$ pip install -r requirements-test.txt
+```
+
+To test the installation, one can run the basic tests using `pytest` command in the root folder.
+
+> **_NOTE:_**  Currently, we support Tensorflow 2.4+ versions, and onnxruntime 1.8. We _do not_ support all the OPSET versions of ONNX, yet.
+
+# How to Use
+
+## PyTorch2ONNX
+
+```python
+# Step 1: Define native pytorch dataloaders and model
+data_splits = /* ... load iterable data loaders ... */
+model = /* ... load native deep learning model ... */
+
+# Step 2: Instantiate a converter object
+pytorch2onnx = PyTorch2ONNX(model=model)
+pytorch2onnx.set_config(precision='fp32', device=Device.CPU)
+
+# Step 3: Convert the format and save
+dataloader = TorchProfiler.enable_forward_pass_data_splits(data_splits)
+rval = pytorch2onnx.convert(dataloader, dynamic_input='bchw', path="model.onnx")
+```
+
+## TF2TFLite
+
+```python
+# Step 1: Define native Tensorflow model
+model_conc_functions = /* ... load TF native model as concrete functions ... */
+
+# Step 2: Instantiate a converter object
+tf2tflite = TF2TFLite(model=model_conc_functions)
+
+# Step 3: Convert the format and save
+tflite_model, rval = tf2tflite.convert()
+tf2tflite.save(tflite_model, "model.tflite")
+```
+
+# Examples
+
+To run an example, 
+```
+pip install deeplite-torch-zoo
+python examples/converters/pytorch2tflite.py
+```
+
+# Supported Converters
+
+The following converters are supported till now, 
+
+* pytorch2onnx
+* pytorch2jit
+* onnx2tf
+* tf2tflite
+
+# Contribute a Converter
+
+We always welcome community contributions to expand the scope of `deeplite-model-converter` and also to have additional new converters. In general, we follow the `fork-and-pull` Git workflow.
+
+1. **Fork** the repo on GitHub
+2. **Clone** the project to your own machine
+3. **Commit** changes to your own branch
+4. **Push** your work back up to your fork
+5. Submit a **Pull request** so that we can review your changes
+
+**NOTE**: Be sure to merge the latest from "upstream" before making a pull request!
