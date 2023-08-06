@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+discord_ws.egg-info/PKG-INFO
+discord_ws.egg-info/SOURCES.txt
+discord_ws.egg-info/dependency_links.txt
+discord_ws.egg-info/requires.txt
+discord_ws.egg-info/top_level.txt
+discordws/__init__.py
+discordws/events.py
+discordws/gateway.py
+discordws/intents.py
