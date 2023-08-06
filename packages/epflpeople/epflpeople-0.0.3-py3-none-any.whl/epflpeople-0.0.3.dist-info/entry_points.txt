@@ -1,0 +1,3 @@
+[console_scripts]
+epflpeople = epflpeople.__main__:main
+
