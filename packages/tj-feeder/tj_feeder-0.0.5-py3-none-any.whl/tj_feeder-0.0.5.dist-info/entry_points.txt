@@ -1,0 +1,3 @@
+[console_scripts]
+tj_feed = tj_feeder.tj_feed:main
+
