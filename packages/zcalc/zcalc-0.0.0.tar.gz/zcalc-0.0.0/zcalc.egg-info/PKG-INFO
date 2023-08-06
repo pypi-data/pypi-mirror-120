@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: zcalc
+Version: 0.0.0
+Summary: A fun RPN calculator
+Home-page: https://github.com/blackchip-org/zcalc
+Author: Mike McGann
+Author-email: mike.mcgann@blackchip.org
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/blackchip-org/zcalc/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# zcalc
+
+[![Build Status](https://app.travis-ci.com/blackchip-org/zcalc.svg?branch=main)](https://app.travis-ci.com/blackchip-org/zcalc)
+
+A fun RPN calculator.
+
+Work in progress.
+
+To run:
+
+```bash
+pip3 install -e .
+zcalc
+```
+
+## License
+
+MIT
+
+

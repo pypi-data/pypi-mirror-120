@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+zcalc/__init__.py
+zcalc/__main__.py
+zcalc/cmd.py
+zcalc/env.py
+zcalc/lib.py
+zcalc.egg-info/PKG-INFO
+zcalc.egg-info/SOURCES.txt
+zcalc.egg-info/dependency_links.txt
+zcalc.egg-info/entry_points.txt
+zcalc.egg-info/top_level.txt
