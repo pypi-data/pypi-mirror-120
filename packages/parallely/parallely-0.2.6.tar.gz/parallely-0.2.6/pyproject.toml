@@ -1,0 +1,75 @@
+[tool.poetry]
+name = "parallely"
+version = "0.2.6"
+description = "The simplest way to utilize multiple threads, processes, and async functions in Python"
+authors = ["Mikkel Vilstrup <mikkel@vilstrup.dk>"]
+readme = "README.md"
+license = "Apache-2.0"
+include = ["LICENSE", "README.md", "docs", "tests", ]
+classifiers=[
+   "Programming Language :: Python :: 3",
+   "License :: OSI Approved :: Apache Software License",
+   "Operating System :: OS Independent",
+   "Environment :: Console",
+   "Intended Audience :: Developers",
+   "Natural Language :: English",
+   "Topic :: Software Development :: Libraries",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.7,<3.11"
+asyncio = "^3.4.3"
+nest-asyncio = "^1.5.1"
+pathos = "^0.2.8"
+
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = "^21.8b0"
+pylint = "^2.10.2"
+wrapt = "^1.12.1"
+Sphinx = "^4.1.2"
+sphinx-rtd-theme = "^0.5.2"
+mypy = "^0.910"
+isort = "^5.9.3"
+safety = "^1.10.3"
+coverage = "^5.5"
+pytest-testdox = "^2.0.1"
+tox = "^3.24.3"
+toml = "^0.10.2"
+coveralls = "^3.2.0"
+sphinx-autoapi = "^1.8.4"
+pre-commit = "^2.15.0"
+m2r2 = "^0.3.1"
+jupyter = "^1.0.0"
+ipykernel = "^6.4.1"
+
+[tool.black]
+line-length = 132
+target-version = ['py37', 'py38']
+include = '(src\/scripts\/.*$|\.pyi?$)'
+exclude = '''
+/(
+    \.git
+  | __pycache__
+  | \.tox
+  | \.venv
+  | build
+  | dist
+  | docs
+  | notes
+)/
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 132
+skip_glob = [ "docs", "notes" ]
+
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
