@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+faceunlock/__init__.py
+faceunlock/face_recognition.py
+faceunlock/face_training.py
+faceunlock/facedatacollect.py
+faceunlock/facedetection.py
+faceunlock/haarcascade_eye.xml
+faceunlock/haarcascade_frontalface_default.xml
+faceunlock.egg-info/PKG-INFO
+faceunlock.egg-info/SOURCES.txt
+faceunlock.egg-info/dependency_links.txt
+faceunlock.egg-info/requires.txt
+faceunlock.egg-info/top_level.txt
