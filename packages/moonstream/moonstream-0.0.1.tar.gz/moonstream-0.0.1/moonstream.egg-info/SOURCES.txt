@@ -1,0 +1,10 @@
+README.md
+setup.py
+moonstream/__init__.py
+moonstream/client.py
+moonstream/test_client.py
+moonstream.egg-info/PKG-INFO
+moonstream.egg-info/SOURCES.txt
+moonstream.egg-info/dependency_links.txt
+moonstream.egg-info/requires.txt
+moonstream.egg-info/top_level.txt

@@ -1,0 +1,16 @@
+requests
+
+[:python_version == "3.6"]
+dataclasses
+
+[dev]
+black
+mypy
+wheel
+types-requests
+types-dataclasses
+
+[distribute]
+setuptools
+twine
+wheel
