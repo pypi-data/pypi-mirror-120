@@ -1,0 +1,3 @@
+[console_scripts]
+fastapi-cli=fastapi_project.manage:app
+
