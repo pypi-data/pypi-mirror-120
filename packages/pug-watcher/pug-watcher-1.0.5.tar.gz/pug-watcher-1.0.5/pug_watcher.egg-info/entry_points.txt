@@ -1,0 +1,3 @@
+[console_scripts]
+pug_watcher = pug_watcher.main:main
+
