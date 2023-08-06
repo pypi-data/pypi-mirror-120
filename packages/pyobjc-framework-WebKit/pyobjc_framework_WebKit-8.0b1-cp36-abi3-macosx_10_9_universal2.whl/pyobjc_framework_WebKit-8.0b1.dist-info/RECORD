@@ -1,0 +1,11 @@
+JavaScriptCore/__init__.py,sha256=lTMMep-pKTy2Y0nF8QXcYzmC133IMwy38ys9Bo6ZQEk,822
+JavaScriptCore/_metadata.py,sha256=OcMp0TTT75QWG6M1XlghrUns6weYqloCxgKcTZLxFx0,21855
+JavaScriptCore/_util.py,sha256=xyQJap8o9xMqhV7JY1ajTuvy803I0RqrHXlFHr6ATeE,737
+WebKit/_WebKit.abi3.so,sha256=UsX7bCgu-pC1NyY6_tLtf0vzGPHYTBy2AsVPbCp5sRE,185167
+WebKit/__init__.py,sha256=ENdBI-Yed0aBH4ovt4lSnj_1zS5oOYqt9n6nRonsc9U,770
+WebKit/_metadata.py,sha256=qmkQy2oJ1m3qGOBvieO0TwD1dEIsZT7LAl66O84SiDA,115611
+pyobjc_framework_WebKit-8.0b1.dist-info/LICENSE.txt,sha256=bQy16YGNJXQQ3BtHL_-Bhq4gzQT1ZN2et9H0-27d3aE,1249
+pyobjc_framework_WebKit-8.0b1.dist-info/METADATA,sha256=DR5nxDDT2KjnMVL64NCcamVtakN2EfQ3QvPhc64CJDA,2278
+pyobjc_framework_WebKit-8.0b1.dist-info/WHEEL,sha256=d-7HeWEmp7bzhJFAbiDvb71dBQkQBmQG23EHPreBDg4,113
+pyobjc_framework_WebKit-8.0b1.dist-info/top_level.txt,sha256=rpU7x31arX71utmEFWwLKLiKAUMPqy6Wiktahg_HAW0,22
+pyobjc_framework_WebKit-8.0b1.dist-info/RECORD,,
