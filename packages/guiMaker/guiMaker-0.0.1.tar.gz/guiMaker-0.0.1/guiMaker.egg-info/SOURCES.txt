@@ -1,0 +1,11 @@
+setup.py
+guiMaker/__init__.py
+guiMaker/dialogs.py
+guiMaker/errors.py
+guiMaker/widgets.py
+guiMaker/windows.py
+guiMaker/x_widgets.py
+guiMaker.egg-info/PKG-INFO
+guiMaker.egg-info/SOURCES.txt
+guiMaker.egg-info/dependency_links.txt
+guiMaker.egg-info/top_level.txt
