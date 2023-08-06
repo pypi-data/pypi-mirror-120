@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: fmo-manual-collector
+Version: 0.0.6
+Summary: Collect FMO from EDGAR filinigs
+Home-page: https://github.com/exilespacer/fmo_manual_collector
+Author: Chia-Yi Yen
+Author-email: yen.chiayi@gmail.com
+License: MIT
+Keywords: fmo,edgar
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+License-File: LICENSE
+
+UNKNOWN
+
