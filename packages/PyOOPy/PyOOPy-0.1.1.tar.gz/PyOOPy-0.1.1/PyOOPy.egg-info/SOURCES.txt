@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+PyOOPy/PyOOPy.py
+PyOOPy/__init__.py
+PyOOPy.egg-info/PKG-INFO
+PyOOPy.egg-info/SOURCES.txt
+PyOOPy.egg-info/dependency_links.txt
+PyOOPy.egg-info/top_level.txt
