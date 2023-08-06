@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+pickle_db/__init__.py
+pickle_db/pickle_db.py
+pickle_db.egg-info/PKG-INFO
+pickle_db.egg-info/SOURCES.txt
+pickle_db.egg-info/dependency_links.txt
+pickle_db.egg-info/not-zip-safe
+pickle_db.egg-info/top_level.txt
