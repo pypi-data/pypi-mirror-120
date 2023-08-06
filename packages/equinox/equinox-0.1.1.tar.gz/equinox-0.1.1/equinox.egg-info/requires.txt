@@ -1,0 +1,2 @@
+jax>=0.2.18
+typing_extensions
