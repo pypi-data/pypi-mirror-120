@@ -1,0 +1,9 @@
+setup.py
+mxsearchstorage/__init__.py
+mxsearchstorage/blob.py
+mxsearchstorage/schema.py
+mxsearchstorage.egg-info/PKG-INFO
+mxsearchstorage.egg-info/SOURCES.txt
+mxsearchstorage.egg-info/dependency_links.txt
+mxsearchstorage.egg-info/requires.txt
+mxsearchstorage.egg-info/top_level.txt

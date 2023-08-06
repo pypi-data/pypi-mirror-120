@@ -1,0 +1,14 @@
+azure-core
+azure-storage-blob
+certifi
+charset-normalizer
+cryptography
+idna
+isodate
+msrest
+oauthlib
+pycparser
+requests
+requests-oauthlib
+six
+urllib3
