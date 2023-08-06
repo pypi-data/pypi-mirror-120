@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: mrfastmark
+Version: 0.3
+Summary: Markdown renderer for python
+Home-page: https://github.com/MarkReedZ/mrfastmark
+Author: Mark Reed
+Author-email: MarkReedZ@mail.com
+License: MIT License
+Download-URL: https://github.com/MarkReedZ/mrfastmark/archive/v1.0.0.tar.gz
+Description: # MrFastMark
+        MrFastMark is a python renderer for FastMark a simpler, faster version of CommonMark. The goal of the project is to optimize rendering time.
+        
+        
+        
+Keywords: mrfastmark
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: C
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown
