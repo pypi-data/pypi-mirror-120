@@ -1,0 +1,1 @@
+from text_alignment_tool.find_wordlist_for_alignment import find_wordlist_for_alignment
