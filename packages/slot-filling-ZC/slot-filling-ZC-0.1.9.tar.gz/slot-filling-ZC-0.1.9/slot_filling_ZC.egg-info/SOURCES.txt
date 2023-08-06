@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+slot_ZC/Bi_model.py
+slot_ZC/__init__.py
+slot_ZC/config.json
+slot_ZC/run.py
+slot_filling_ZC.egg-info/PKG-INFO
+slot_filling_ZC.egg-info/SOURCES.txt
+slot_filling_ZC.egg-info/dependency_links.txt
+slot_filling_ZC.egg-info/top_level.txt

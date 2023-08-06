@@ -1,0 +1,13 @@
+{
+    "total_epoch":50,
+    "max_len":50,
+    "batch":16,
+    "learning_rate":0.001,
+    "DROPOUT":0.2,
+    "embedding_size":300,
+    "lstm_hidden_size":200,
+    "train_file":"train_dev",
+    "test_file":"test",
+    "vocab_intent_file":"vocab.intent",
+    "vocab_slot_file":"vocab.slot"
+}
