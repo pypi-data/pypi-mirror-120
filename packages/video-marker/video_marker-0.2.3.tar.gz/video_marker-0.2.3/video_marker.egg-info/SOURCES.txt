@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+bin/video_marker
+video_marker/__init__.py
+video_marker/utils.py
+video_marker/video_marker.py
+video_marker.egg-info/PKG-INFO
+video_marker.egg-info/SOURCES.txt
+video_marker.egg-info/dependency_links.txt
+video_marker.egg-info/requires.txt
+video_marker.egg-info/top_level.txt
+video_marker/__pycache__/__init__.cpython-38.pyc
+video_marker/__pycache__/utils.cpython-38.pyc
+video_marker/__pycache__/video_marker.cpython-38.pyc
