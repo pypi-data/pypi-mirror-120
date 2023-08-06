@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/ldlite/__init__.py
+src/ldlite.egg-info/PKG-INFO
+src/ldlite.egg-info/SOURCES.txt
+src/ldlite.egg-info/dependency_links.txt
+src/ldlite.egg-info/requires.txt
+src/ldlite.egg-info/top_level.txt
