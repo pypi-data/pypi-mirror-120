@@ -1,0 +1,3 @@
+include ../LICENSE LICENSE
+include ../README.md README.md
+recursive-include jointbox_cli/esphome_ext/packages/resources/ *
