@@ -1,0 +1,5 @@
+[run]
+omit =
+    fcutils/plot/*
+    fcutils/video.py
+    fcutils/_video.py
