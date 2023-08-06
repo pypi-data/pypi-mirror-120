@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pycom-ota-client
+Version: 0.0.1
+Summary: Pycom OTA firmware client
+Home-page: https://github.com/snebot-bg/pycom-ota-client
+Author: snebot
+Author-email: snebot@bitgrup.com
+License: UNKNOWN
+Description: # Pycom OTA frimware update
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
