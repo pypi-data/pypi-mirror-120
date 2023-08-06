@@ -1,0 +1,12 @@
+naughtty/__init__.py,sha256=ilvCZ6Vd52VG7EErWuFp3rpFWXYdQq7Ta0agaZfJEhM,68
+naughtty/__main__.py,sha256=gz7HFIa52sqYM-o1SnAKs6o-GK6DfwAldfz7Tvb5fMc,145
+naughtty/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+naughtty/version/VERSION,sha256=gQqpxeFE0SNu9yhe2Bj3145cU7etcGGy0DTusCkoPCE,8
+naughtty/version/__init__.py,sha256=1Hi8CuB5fIa1HiBTzV-FRyG7AAA4QmCNdAcHpv_bQgg,207
+naughtty/version/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+naughtty-1.0.0a0.dist-info/LICENSE,sha256=jecwHNG8OzeBOT_VaopmQWpty9muYzuw03tmWBQRwPs,1073
+naughtty-1.0.0a0.dist-info/METADATA,sha256=841VFJL365UBtthACZGfIRivnfV2MVi3fO5rQIdDnhA,784
+naughtty-1.0.0a0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+naughtty-1.0.0a0.dist-info/entry_points.txt,sha256=yNqjGs1PRAVcep1yWeffpHRcHCIkr-8N8yl_KtB35FA,58
+naughtty-1.0.0a0.dist-info/top_level.txt,sha256=N6yy6AnBbaFDGljFltLoHF7bkaeMq5RvbG99-ON3ulg,9
+naughtty-1.0.0a0.dist-info/RECORD,,
