@@ -1,0 +1,17 @@
+ognajd/__init__.py,sha256=t91q9ysiMvotIBPTyMTzy8BqrS-nxo6UZ7IfFsfm3cc,1541
+ognajd/admin/__init__.py,sha256=t91q9ysiMvotIBPTyMTzy8BqrS-nxo6UZ7IfFsfm3cc,1541
+ognajd/apps/__init__.py,sha256=ogUe_45X1GGUoQha13Eijsh8hcnWP22tmbPuj8A1TgA,1575
+ognajd/apps/config.py,sha256=8IlvGRr6RqeqK-mChWo9XhlDUNOG8AR3Xh6DE2lkG7U,3106
+ognajd/migrations/0001_initial.py,sha256=GaJQYzI9CLQUzMUBUL-Dp-21Gro39_D-VQYfgU51CJo,2814
+ognajd/migrations/__init__.py,sha256=t91q9ysiMvotIBPTyMTzy8BqrS-nxo6UZ7IfFsfm3cc,1541
+ognajd/models/__init__.py,sha256=TG01hmOTJxYblz0bIYkkVzNUet5I9cXcRIbigOScA1Y,1665
+ognajd/models/meta.py,sha256=5r-N60SUoBIg1TzY9bstbtKOTlrY49h0005fUOLFR5c,1655
+ognajd/models/version.py,sha256=LZQSxKfiQnDMhUYh3lVe-8yIGrGkobw0z6UQDThA92I,7018
+ognajd/src/__init__.py,sha256=iGrrSxqucuP-ZnZCZVPnjPncs8uGnc8_ZIELJgGXBuw,1541
+ognajd/src/exceptions.py,sha256=jbiyHxBN6i3YFEvewcBBTIPnuC6GrZk-RnpRHO-2xtc,1585
+ognajd/tests/__init__.py,sha256=t91q9ysiMvotIBPTyMTzy8BqrS-nxo6UZ7IfFsfm3cc,1541
+django_ognajd-0.1.2.dist-info/LICENSE,sha256=ILBn-G3jdarm2w8oOrLmXeJNU3czuJvVhDLBASWdhM8,34522
+django_ognajd-0.1.2.dist-info/METADATA,sha256=tHaHnVidOiuadHijBAJq6HQmQSSA95zszrPgTrz5mVE,6060
+django_ognajd-0.1.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+django_ognajd-0.1.2.dist-info/top_level.txt,sha256=wIBKBanIdZ9YqKgTG85RObxLGqcG4u4aQql6s8bru-w,7
+django_ognajd-0.1.2.dist-info/RECORD,,
