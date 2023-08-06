@@ -1,0 +1,8 @@
+mssspy/__init__.py,sha256=ZF7b7OzJ6jbvphpWfKQjJ9BaiW0jEjxE_zud8IqXbjk,11386
+mssspy/faster_reader.py,sha256=mFLwC5NTuMQ9ZiHIBEy8tOTMi8yLfYZOBm7L5L4eC4E,3507
+mssspy/slow_reader.py,sha256=nTwYiSNpbaRYqJWyF6eyD9TAenrNL6w2Goxc5pLSiVE,5894
+mssspy/utils.py,sha256=EFoCprcFnDefeAJXAqHSagQyTH635mhautVZlynGfqw,4345
+mssspy-0.1.0b0.dist-info/METADATA,sha256=GotVMR5d7fhAh60vOa911p8nZ5_QAk8kVlE8TuWfz9o,3168
+mssspy-0.1.0b0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mssspy-0.1.0b0.dist-info/top_level.txt,sha256=dyptUvkuXfk9xRrxUNFFwAbxuM-vVPlBuPOGLZ2XvAA,7
+mssspy-0.1.0b0.dist-info/RECORD,,

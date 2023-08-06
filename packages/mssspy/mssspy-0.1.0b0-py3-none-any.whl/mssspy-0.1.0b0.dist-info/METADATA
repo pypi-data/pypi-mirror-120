@@ -1,0 +1,100 @@
+Metadata-Version: 2.1
+Name: mssspy
+Version: 0.1.0b0
+Summary: A Python reader (and eventually writer) for ms files
+Home-page: https://gitlab.com/mlgenetics/mssspy
+Author: E. Madison Bray
+Maintainer-email: embray@lri.fr
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+
+msssPy
+======
+
+An `ms`/`msms` file reader for Python.
+
+> Pronounced “Mississippi”
+
+This reader is enhanced over basic ms file readers, in that it keeps a cache
+indices for each file it reads, which significantly speeds of random access
+to individual samples within a multiple-replicate ms file.
+
+This can be especially useful for machine learnings tasks, during which ms
+files need to be randomly accessed multiple times.  Files already seen (by
+the same process) are read much more quickly than the first time they are
+accessed within that process.  A future version will also add cache
+persistence.
+
+Additionally, `mssspy` adds the ability to plug in different "reader"
+implementations that use different parsing algorithms.  Currently two
+built-in readers are included, the "slow" reader which is more
+fault-tolerant and provides better error reporting, and a "faster" reader
+which assumes correctly formatted ms files, while sacrificing more careful
+validation.
+
+Basic Usage
+-----------
+
+To read an ms file, the main high-level interface is the `MSFile` class.
+Simply open a file like:
+
+```python
+>>> import mssspy
+>>> msf = MSFile('path/to/simulations.ms')
+```
+
+You can then access the individual replicates in the file, or "samples"
+using index notation:
+
+```python
+>>> msf[0]
+Sample(haplotypes=array([[0, 1, 1, 0, 0],
+       [1, 0, 0, 1, 1]], dtype=uint8), positions=array([0.283, 0.55 , 0.589, 0.715, 0.988]))
+```
+
+This is the case even if there is only one sample in the file, `msf[0]`.
+
+If you intend to read multiple samples from the same file while it's open,
+it is also more efficient to use `MSFile` in a `with` statement, e.g.:
+
+```python
+>>> with MSFile('path/to/simulations.ms') as msf:
+...     all_samples = list(msf)
+```
+
+**Note:** The is currently not a way to get the length of the file in
+samples.  E.g. `len(msf)` does not work.  This is because it would require
+scanning through the entire file to count the number of samples, which would
+be inefficient.  However, this capability will be added in a future release.
+
+In the meantime, you can still iterate over the `MSFile` which will try each
+possible index starting from `0` until an `IndexError` is raised.  In other
+words, that's why `list(msf)` works.
+
+And that's basically it!
+
+Advanced Usage
+--------------
+
+TODO
+
+TODO List for Future Releases
+-----------------------------
+
+* Add "fast" reader written in C(ython) and compare its performance to
+  the existing "faster" reader.
+
+* More thorough parsing (e.g. support for `time:` and tree data parsing).
+
+* Support for writing.
+
+* More thorough documentation including API documentation.
+
+
