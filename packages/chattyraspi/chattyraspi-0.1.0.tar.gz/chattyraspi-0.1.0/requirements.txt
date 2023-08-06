@@ -1,0 +1,5 @@
+click==7.0
+PyYAML==5.4
+requests==2.23.0
+websocket-client==1.2.1
+# RPi.GPIO
