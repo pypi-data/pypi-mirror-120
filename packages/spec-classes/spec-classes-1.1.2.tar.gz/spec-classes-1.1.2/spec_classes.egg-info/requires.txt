@@ -1,0 +1,14 @@
+cached-property
+inflect
+lazy-object-proxy
+
+[test]
+black
+flake8
+flake8-docstrings>=0.2.7
+pydocstyle==3.0.0
+pyflakes
+pylint==2.8.1
+pytest
+pytest-cov
+tox
