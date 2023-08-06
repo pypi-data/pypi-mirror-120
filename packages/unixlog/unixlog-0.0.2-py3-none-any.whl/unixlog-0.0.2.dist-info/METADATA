@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: unixlog
+Version: 0.0.2
+Summary: Python program prints unix style logging on terminal
+Home-page: https://github.com/raahoolkumeriya/unixlog
+Author: Raahool Kumeriya
+Author-email: rahul.kumeriya@outlook.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/raahoolkumeriya/unixlog/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: colorama
+
+A simple unix style logging in color format. Light weight library for Color formating.
+
+## Features
+- Include warning, error, info, debug, success, trace
+- Light weight import
+- unix style format
+
+## Installation
+```pip install unixlog```
+
+## Examples 
+
+```>>> from unixlog import error, warning, info, success, trace, debug```
+
+```>>> print(error("This error text"))```
+
+```[  ERROR  ] This error text```
+
+```>>> error("This error text")```
+
+```'\x1b[91m[  ERROR  ] This error text\x1b[0m'```
+
+
