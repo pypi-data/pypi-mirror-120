@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: mumuzi
+Version: 0.1.3
+Summary: ctf全栈全自动解题姬mumuzi
+Home-page: https://blog.csdn.net/qq_42880719/
+Author: mumuzi_fans
+Author-email: mumuzi@mumuzi.mumuzi
+License: UNKNOWN
+Project-URL: Bug Tracker, https://blog.csdn.net/qq_42880719/
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+description
+======
+------
+套娃之神mumuzi，在misc题基础上创造性地融入了围棋和套娃元素，开创了musc新分类，他出的题被亲切地称为“一题顶过去五题”，做完之后腰酸了，背疼了，跳楼也有劲了。
+
+
+更新记录
+=======
+-------
+v0.0.1 beta版本
+
+v0.1.0 更新txt文档的套娃功能
+
+v0.1.1 更新套神必须先说话再套娃的功能
+
+v0.1.2 更新套神语录（117条）
+
+v0.1.3 更新txt文档的解套功能；更新压缩文件的加套功能;拆分套神语录。
+
