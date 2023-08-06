@@ -1,0 +1,3 @@
+[console_scripts]
+bugyi.release_tools = bugyi.release_tools.cli:main
+

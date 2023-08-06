@@ -1,0 +1,21 @@
+---
+version: '3.7'
+services:
+  bugyi.release_tools:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/bugyi/release_tools:delegated
+      - build:/bugyi/release_tools/build
+      - venv:/bugyi/release_tools/.venv
+      - docker-python-cache:/root/.cache/
+    working_dir: /bugyi/release_tools
+    environment:
+      - BETTER_EXCEPTIONS
+      - CC_REPO_URL
+volumes:
+  docker-python-cache:
+    external: true
+  build:
+  venv:
