@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: mkdocs-expose-page-metadata
+Version: 0.0.2
+Summary: This plug-in exposing all pages metadata in a single path!
+Home-page: https://github.com/herberton/mkdocs-expose-page-metadata
+Author: Herberton Candido Souza
+Author-email: herberton@gmail.com
+License: Apache-2.0
+Keywords: mkdocs metadata
+Platform: UNKNOWN
+Requires-Python: >=3
+License-File: LICENSE
+
+See https://github.com/herberton/mkdocs-expose-page-metadata for more details.
+
