@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pyndv
+Version: 1.0.1
+Summary: get database vunerabilities JSON stream feed from NDV
+Home-page: https://github.com/vit0r/pyndv
+Author: Vitor
+Author-email: vitornascimentoaraujo@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+see file README.md
+

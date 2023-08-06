@@ -1,0 +1,3 @@
+[console_scripts]
+pyndv = pyndv.__main__:main
+
