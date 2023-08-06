@@ -1,0 +1,13 @@
+
+[NAS5G]
+CryptoMobile
+
+[NASLTE]
+CryptoMobile
+
+[corenet]
+pysctp
+CryptoMobile
+
+[diameter_dict]
+lxml
