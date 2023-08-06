@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: tzk
+Version: 0.1.3
+Summary: Build tool for TiddlyWiki Zettelkasten
+Home-page: https://github.com/sobjornstad/tzk
+Author: Soren I. Bjornstad
+Author-email: zettelkasten@sorenbjornstad.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+[![Documentation Status](https://readthedocs.org/projects/tzk/badge/?version=latest)](https://tzk.readthedocs.io/en/latest/?badge=latest)
+
+**tzk** (*TiddlyZettelKasten*)
+    is a TiddlyWiki edition and associated CLI
+    for maintaining personal notes
+    in something approaching the Zettelkasten method.
+It’s updated periodically from whatever tooling I’m currently using
+    [in my own Zettelkasten](https://zettelkasten.sorenbjornstad.com).
+As such, it’s currently considered alpha-quality;
+    while it ought to be very stable and there’s no meaningful risk of data loss,
+    updating to a newer version might be difficult
+    and I’m unlikely to accept patches
+    unless they’re something I want in my own Zettelkasten.
+This is intended primarily as a nice starting platform
+    on which to build your own tooling.
+
+Some basic knowledge of [TiddlyWiki](https://tiddlywiki.com)
+    is necessary and assumed.
+
+
+Documentation / Installation
+============================
+
+Find a live version of the edition on the web with further instructions
+    at https://sobjornstad.github.io/tzk/.
+You can find the documentation for the CLI
+    (which handles creating the wiki,
+     versioning with Git,
+     and creating public and other derivative versions of the wiki)
+    at https://tzk.readthedocs.io/en/latest/.
+
+
