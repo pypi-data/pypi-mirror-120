@@ -1,0 +1,12 @@
+# Bandit Security Audit
+
+{% for result in results %}
+## "__{{ result.test_name}}__" - {{ result.filename }}:{{ result.line_number }}
+
+!!! {{ {'LOW': 'warning', 'MEDIUM': 'failure', 'HIGH': 'danger'}[result.issue_severity] }} "{{ result.issue_text }}"
+    ``` python linenums="{{ result.line_number }}"
+    {{ "    ".join(result.code.splitlines(True)) }}
+    ```
+    
+See [{{ result.test_id }}]({{ result.more_info }}) for more information
+{% endfor %}

@@ -1,0 +1,95 @@
+#!/usr/bin/env python3
+
+from argparse import ArgumentParser, ONE_OR_MORE
+from collections import namedtuple
+from textwrap import indent
+from jinja2 import Template
+from pathlib import Path
+import sys
+import re
+
+find_todo = re.compile(r'#\s*[tT][oO][dD][oO]\s*:?\s(.*)').search
+find_bug = re.compile(r'#\s*[bB][uU][gG]\s*:?\s(.*)').search
+
+ITEM_TEMPLATE = Template("""
+# {{ title }}
+
+{%- for file, entries in section.items() %}
+## "{{ file }}"
+{%- for entry in entries %}
+=== "{{ entry.line }}"
+    ``` python linenums="{{ entry.lineno }}"
+{{ indent(entry.src, '    ') }}
+    ```
+{%- endfor %}
+{%- endfor %}
+""")
+
+Entry = namedtuple('Entry', 'lineno line src')
+
+def get_annotations(src_dir, matcher=find_todo):
+    src_dir = Path(src_dir)
+    results = {}
+    
+    for path in src_dir.rglob('*.py'):
+        matched = False
+        if path.is_file() and not path.is_symlink():
+            txt = path.read_text()
+            txt = txt.splitlines()
+            for lineno, line in enumerate(txt, 1):
+                match = matcher(line)
+                if match:
+                    results.setdefault(path, []).append((lineno, match.groups()[0]))
+    return results
+
+
+def display_items(title, dirs, filter=find_todo):
+    items = {}
+    for dir in dirs:
+        for file, lines in get_annotations(dir, filter).items():
+            src = file.read_text().splitlines()
+            for lineno, line in lines:
+                src_frag = "\n".join(src[lineno-1:lineno+4])
+                entry = Entry(lineno, line, src_frag)
+                items.setdefault(file, []).append(entry)
+    print(ITEM_TEMPLATE.render(title=title, section=items, indent=indent))
+
+def display_todo(dirs):
+    display_items('Todo', dirs)
+
+def display_bug(dirs):
+    display_items('Bugs', dirs, find_bug)
+
+def display_plan(dirs):
+    pass
+
+def main(args=sys.argv[1:]):
+    args = ArgumentParser()
+    args.add_argument('-f', '--force', 
+        action='store_true', default=False,
+        dest='color',
+        help="Force color on output")
+    args.set_defaults(func=None)
+    sub_cmds = args.add_subparsers(dest='cmd')
+    todo = sub_cmds.add_parser('todo', help="Search dirs for # TODO items")
+    todo.set_defaults(func=display_todo)
+    
+    bugs = sub_cmds.add_parser('bugs', help="Search dirs for # BUG items")
+    bugs.set_defaults(func=display_bug)
+
+    plan = sub_cmds.add_parser('plan', help="Search plan dir for long term items")
+    plan.set_defaults(func=display_plan)
+
+    for x in (todo, bugs, plan):
+        x.add_argument('src', nargs=ONE_OR_MORE, metavar='DIR', type=Path,
+            help="Directories to check for items")
+
+    options = args.parse_args()
+
+    if not options.func:
+        args.error("No command specified")
+
+    options.func(options.src)
+
+if __name__ == "__main__":
+    main()

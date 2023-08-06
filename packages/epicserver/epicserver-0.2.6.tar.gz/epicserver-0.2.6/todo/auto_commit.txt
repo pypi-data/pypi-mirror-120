@@ -1,0 +1,10 @@
+Implement an @autocommit decorator for methods (or objects)
+
+It is currenly up for debate for autocommit should be the default with ways to 
+disable it or if all auto commiting funcitons should be manually annotated
+
+ethier way the implementation of an autocommit dcorator can be used as the 
+basis of ethier method and should be implemented
+
+
+def autocommit(func) -: func:

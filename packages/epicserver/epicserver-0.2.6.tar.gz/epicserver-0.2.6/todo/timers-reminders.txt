@@ -1,0 +1,23 @@
+Implement an api to callback a grain on a regular basis
+
+there is need for reccurent events (eg server 'ticks') and a standrd way to 
+implement them should be implemented
+
+
+Caveats:
+wide array of ways to implement this, some are more robust to network failures 
+than others and this may need to be investigated
+
+is this callback based? 'event stream', blocking call (sleep syscall) based?
+
+there is need for 2 types of timers (hence timers/reminders) that do/do not 
+activate the grain being called
+
+how do we handle cleanup if a non activating timer goes off and the grain is 
+not there (ie a game that has finihed or a player that has logged out), does it 
+get registered? or cleaned up implicitly?
+
+Ideas:
+timers do not activate a grain while reminders will
+implement as a decorator?
+what is the backend? a remote grain? a timerfd? reusing the sleep mechanism?

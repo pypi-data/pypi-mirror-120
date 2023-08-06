@@ -1,0 +1,17 @@
+Should we limit concurrency? the amount of method calls in flight to a single 
+grain at a time
+
+for safety of the code being called there may be a reason to limit the amount 
+of method calls active at any one time, this matches the Orleans concurrency 
+model but is at odds with the asyncio model. it does simplify the implementation 
+of the called code as no locking is required and __could__ simplify the 
+scheduler (despite the complexity being written already) at the cost of 
+performance (interleaving of requests and execution of other methods on blocking 
+behavior)
+
+Caveats:
+Other propsals and features rely on specific aspects of the concurrency model 
+and as such any implementation will need some disciossion before implementation
+
+Ideas:
+implement this at a class decorator level and make it opt in

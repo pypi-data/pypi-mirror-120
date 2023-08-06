@@ -1,0 +1,28 @@
+syntax: glob
+**.pyc
+vendor/
+
+# Cache dirs
+*.egg-info/
+.mypy_cache/
+.pip-cache/
+.pytest_cache/
+tmp/
+
+# Tooling
+venv
+.venv/
+dist/
+build
+.coverage*
+
+# Auto generated as part of build/install
+epicman/version.py
+
+# auto-generated with 'make help'
+docs/makefile.md
+docs/bugs.md
+docs/bandit.md
+docs/roadmap.md
+docs/todo.md
+docs/cli_output.md

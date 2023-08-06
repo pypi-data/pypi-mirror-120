@@ -1,0 +1,92 @@
+# Epic Server
+
+EpicMan Server is a SANS-IO Async application server that runs your code over 
+multiple 'Nodes'. This has the added effect of not being limited to a single 
+core for running your code and mitigating some of the effects of the GIL in 
+the cpython (and others) implementation
+
+While this is an Async Server this is NOT AsyncIO compatible and brings its 
+own abstractions for File, Network and locking in order to meet the latency 
+requirements imposed by its primary use case (Game engine that runs atop this 
+framework)
+
+*** NOTE: this is a Technology preview/Alpha release ***
+
+Only a single instance is likley to work at this time or 2 node clusters with 
+caveats
+
+Internal and External APIs are in heavy flux
+
+## Features
+
+* Pluggable IO engines
+* Automatic Persistence of game features
+* Transparent Inter-process messaging abstraction
+* python3 codebase
+* Uses async/await (but is not AsyncIO compatible)
+* pypy3 compatible for versions supporting the python3.8 spec
+
+## Getting Started
+
+The Full documentation is available [here](http://docs.epic-man.com). The
+examples below should give you a quick feel for management of a cluster and
+what programming for epic server looks like.
+
+### Requirements
+
+* Python 3.6 or newer
+* Linux 5.x or newer (io_uring)
+  * liburing-dev (debian)
+  * liburing1 (debian)
+* 64bit CPU if using lmdb backend
+* Kernel headers may be required to compile the python io_uring module
+
+### Examples
+Starting a single or multiple node cluster is relatively simple as shown below.
+All that is required is a simple script to bootstrap the Initial Entities. In 
+this example we use a simple test script called 'cluster.py' that is looked up
+on PYTHONPATH. if using a script in your current directory then prepending 
+PYTHONPATH=. to the epic-server commands will ensure that this script can be
+found correctly.
+
+    $ python3 -m venv venv
+    $ venv/bin/pip install epicman-server
+    $ venv/bin/epic-server -vvv -l '[::1]:3030'
+    $ venv/bin/epic-server-start -vvv -b '[::1]:3030' cluster:start
+
+## Programming for epicman.server
+The following is taken from 'cluster:start' from the above example and simply
+sends a value, has it incremented then passes the incremented value on to the 
+next entity to confirm that the RPC like interface works
+
+    from epicman.objects import EntityProxy, Entity, remote_spawn, remote_call
+    from epicman.syscalls import THREAD_SLEEP
+    from epicman.logging import log
+    import sys
+
+    TOTAL_COUNT = 1000
+
+    class _Test(Entity):
+        @remote_call
+        async def test(self, val):
+            return val + 1
+    # this is a temporary work around pickle limitations and
+    # issues pickle has with things that are renamed
+    Test = EntityProxy(_Test)
+
+    async def start():
+        count = 0
+        for i in range(TOTAL_COUNT):
+            count = await Test[i].test(count)
+
+        log.info('Value: {count}', count=count)
+        sys.exit()
+
+
+## Stay up to date
+* [Twitter](https://twitter.com/Epic_Man_Game)
+* [XMPP](xmpp://epicman@rooms.pocketnix.org)
+* [Web Chat](http://chat.epic-man.com)
+* [Docs](http://docs.epic-man.com)
+* [SRC](http://code.epic-man.com/)
+* [News](http://www.epic-man.com/)

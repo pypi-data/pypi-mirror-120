@@ -1,0 +1,12 @@
+Implement garbage collection of grains based on memory or number of items
+
+Currently there is no garbage colelciton of grains to reduce memory usage, some 
+simple policies should be implemented.
+
+Some suggested policies:
+* Memory usage
+* Time to last message
+* Number of items
+
+Caveats:
+Mesuring grain memory usage may be difficult

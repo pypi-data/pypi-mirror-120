@@ -1,0 +1,15 @@
+Implement __activate__ and __deactivate__ for when a grain comes into being, or 
+destroyed
+
+there may be reasons for a grain to do things on creation/destruction (eg 
+opening a socket to a cluster, flushing data) while not encouraged there are 
+cases where this functionality will be required.
+
+Caveats
+the __deactivate__ has similar issues to __del__ and as such, __del__ and its 
+issues should be investigated before implementing this functionality
+
+
+Ideas
+def __activate__(self):
+def __deactivate__(self):

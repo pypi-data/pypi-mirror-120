@@ -1,0 +1,10 @@
+Add context vars to mainloop to allow logging module to determine context
+
+this will aid in debugging by making the current executing tasks information
+av liable as part of the logging output and not having to be explicitly passed
+through (currently impossible as a task does not know its own identity at time
+of writing)
+
+
+caveats:
+* possible speed loss

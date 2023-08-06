@@ -1,0 +1,5 @@
+dnspython>="2.0.0"
+blessed
+
+[lmdb]
+lmdb

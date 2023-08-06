@@ -1,0 +1,18 @@
+3rd party frameworks or plugins may like to extend the 'syscalls', come up 
+with an inerface for this
+
+the current cmd interface uses isinstance to difrentatie between commands, this
+is fairly easy to extend to arbitrary cmds and handler methods, an api for 
+registration and calling the implementation need to be toughtout about and 
+implemented
+
+Caveats:
+there are some stylisitic issues here and soem performance ones, this code 
+needs to be eyeballed by others before being merged
+
+Ideas:
+Implement the registry as a dict and provide a decorator for implemetnation, 
+reuse the entry system used in config/cli to indicate loadable moduels entry 
+points (and hoist module loading to the server in a standardised way rather 
+than user code import) and then implement the dispatch as iteration of the dict 
+with sucsessive `isinstance` calls

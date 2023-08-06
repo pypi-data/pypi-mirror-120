@@ -1,0 +1,14 @@
+implment a @oneway/messaging decorator
+
+Indicates that we are sending a message/event to a grain and not expecting a 
+reply from the recipent
+
+
+Caveats
+should this return once scheduled to go out, on recipet of the msg, handling of 
+the msg by the remote host?
+
+how should errors be handled?
+
+how should non delivery be handled?
+

@@ -1,0 +1,7 @@
+jinja2
+mkdocs
+mkdocs-coverage
+mkdocs-material
+mkdocs-minify-plugin
+pymdown-extensions
+twine[markdown]

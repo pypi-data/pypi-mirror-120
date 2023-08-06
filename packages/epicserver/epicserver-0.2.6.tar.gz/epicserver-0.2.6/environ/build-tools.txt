@@ -1,0 +1,11 @@
+# Pytest is depricating out of tree builds in 21.3 so lets 
+# ensure we are testing this
+--use-feature=in-tree-build
+# since we use entry points we need to have these dummied up
+# at least once. so we do an install and override the src
+# later with PYTHONPATH hacks
+.
+build
+flake8
+pylint
+twine

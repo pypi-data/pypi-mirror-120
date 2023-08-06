@@ -1,0 +1,22 @@
+- name: Set up server
+  hosts: all
+  remote_user: root
+  
+  tasks:
+  # hostname
+  # /etc/hosts
+  # packages
+  # - nginx
+  - name: Set up users
+    ansible.builtin.user:
+      name: '{{ item }}'
+    loop:
+    - repo
+    - build
+  - name: Set up build access
+    ansible.posix.authorized_key:
+      user: "repo"
+      state: present
+      key: "{{ item }}"
+    with_file:
+    - pub_keys/blitz_works.pub

@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: epicserver
+Version: 0.2.6
+Summary: A managed runtime aimed at running games distributed over multiple nodes
+Home-page: http://blitz.works/epic/epic-server/
+Author: Blitz_Works
+Author-email: code@blitz.works
+License: MIT 3 clause
+Project-URL: Source, http://code.epic-man.com/
+Project-URL: Documentation, http://docs.epic-man.com/
+Project-URL: Play the Game, http://play.epic-man.com/
+Keywords: async,io_uring,runtime,distributed,game,engine
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Games/Entertainment :: Multi-User Dungeons (MUD)
+Classifier: Topic :: Games/Entertainment :: Simulation
+Classifier: Topic :: Games/Entertainment :: Real Time Strategy
+Classifier: Topic :: Games/Entertainment :: Role-Playing
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Version Control :: Mercurial
+Classifier: Topic :: System :: Distributed Computing
+Classifier: Topic :: System :: Clustering
+Requires-Python: >"3.8"
+Description-Content-Type: text/markdown
+Provides-Extra: lmdb
+License-File: LICENSE
+
+UNKNOWN
+

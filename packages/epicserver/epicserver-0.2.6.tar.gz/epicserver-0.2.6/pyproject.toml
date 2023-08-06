@@ -1,0 +1,21 @@
+[build-system]
+requires = [
+  "setuptools >= 40.9.0",
+  "setuptools_scm[toml]>=3.4",
+  "wheel",
+  ]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+write_to = "epicman/version.py"
+
+[tool.pytest.ini_options]
+norecursedirs = "venv env .tox __pycache__"
+testpaths = "tests"
+markers = ["todo", "bug"]
+addopts = '-l --capture=sys'
+
+[tool.coverage.run]
+omit = ["*/__main__.py"]
+source = ["tests"]
+source_pkgs = ["epicman"]
