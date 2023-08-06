@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: fkart
+Version: 0.0.1
+Summary: Flipkart search results
+Home-page: UNKNOWN
+Author: Prasad Rao Jammuna (JP) 
+Author-email: devpy.jp@gmail.com
+License: UNKNOWN
+Description: It will scrap the flipkart search results, you need give a seach term like mobiles, fan etc.
+Keywords: python,flipkart,flipkart search,web scraping
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown

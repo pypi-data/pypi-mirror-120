@@ -1,0 +1,8 @@
+setup.py
+fkart/__init__.py
+fkart/flipkart.py
+fkart.egg-info/PKG-INFO
+fkart.egg-info/SOURCES.txt
+fkart.egg-info/dependency_links.txt
+fkart.egg-info/requires.txt
+fkart.egg-info/top_level.txt
