@@ -1,0 +1,16 @@
+numpy
+networkx
+silx
+
+[dev]
+pytest
+matplotlib
+black
+flake8
+
+[doc]
+sphinx
+
+[test]
+pytest
+matplotlib
