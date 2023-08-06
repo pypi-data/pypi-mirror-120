@@ -1,0 +1,10 @@
+virgil/__init__.py,sha256=miSsqPy2PFJ18TW9kocQJLcv4HFpkfQhcTzgAO-GTVE,22
+virgil/__main__.py,sha256=nwAsZtWdEpOQGySbAVN5U67ppk5hg2z9xBAajzoNIeg,250
+virgil/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+virgil/core/distributions.py,sha256=27niVZ5vzadiqgl3HaSvj0jWON5cuU_On-maTCr1fdE,633
+virgil-0.0.2.dist-info/LICENSE,sha256=4q5S4vrcpnghrvGAEKME3EqYVrWZxCoJkAp0HcNrUZI,1076
+virgil-0.0.2.dist-info/METADATA,sha256=Ig8gQM3zDunzQy9Pu88aA2uzdFC4EFsrmWeixvPdrds,918
+virgil-0.0.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+virgil-0.0.2.dist-info/entry_points.txt,sha256=m0x0fK_tYlYYYuIbTvKMAvozM19s2TsPa6IOG1Ksfww,48
+virgil-0.0.2.dist-info/top_level.txt,sha256=qHfEzm2hRDRAs0zzYvpdX1-G4UK4JuNmu2u9SDRnQNE,7
+virgil-0.0.2.dist-info/RECORD,,
