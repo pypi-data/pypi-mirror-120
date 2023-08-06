@@ -1,0 +1,3 @@
+[console_scripts]
+uol_auto_vpn = uol_auto_vpn.run:cli
+
