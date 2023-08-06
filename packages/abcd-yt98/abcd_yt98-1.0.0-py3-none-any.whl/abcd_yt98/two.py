@@ -1,0 +1,7 @@
+import matplotlib.pyplot as plt 
+
+def draw():
+	plt.plot([1,2,3,4])
+	plt.ylabel('some number')
+	plt.show()
+
