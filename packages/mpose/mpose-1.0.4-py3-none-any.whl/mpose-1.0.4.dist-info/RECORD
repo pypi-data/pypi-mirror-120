@@ -1,0 +1,9 @@
+mpose/__init__.py,sha256=yRMBuWNy8dFwu5z6pp9lT99NRVYsYgR_blFjnx-DaeY,57
+mpose/config.yaml,sha256=4GNttFy84mNvDojAPwbWdgUCyUAlh6iKCwUSKuM3SdM,1628
+mpose/mpose.py,sha256=_aUMA7n2qoI0Hq5Ex_rgeF8ZS_vaGohoaVtJauDpZSo,9385
+mpose/transforms.py,sha256=9YJTm3rAh9jQZ0ozPJ_U_QUyIlp3y2TaW94MahkOhoI,21
+mpose/utils.py,sha256=jtAzekNWGg2GkmQUbMgFDYi_ZlSSkmAV14Y34IzVHJU,2039
+mpose-1.0.4.dist-info/METADATA,sha256=ZDeegRWZo-vb9mAXzr0HO_UKvoFCAyms9Gh5yiVcKdc,313
+mpose-1.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mpose-1.0.4.dist-info/top_level.txt,sha256=CMdLIUEDRv0w7TZqzk1eLcc_pW1FK32uZ1YCsLFykLk,6
+mpose-1.0.4.dist-info/RECORD,,
