@@ -1,0 +1,5 @@
+[console_scripts]
+resample_streamq = resample_streamq.resample_streamq:main
+resample_tseries = resample_streamq.resample_tseries:main
+streamq_statistics = resample_streamq.streamq_statistics:main
+
