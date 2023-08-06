@@ -1,0 +1,11 @@
+README.md
+setup.py
+./pycord18n/__init__.py
+./pycord18n/extension.py
+./pycord18n/i18n.py
+./pycord18n/language.py
+Pycord18n.egg-info/PKG-INFO
+Pycord18n.egg-info/SOURCES.txt
+Pycord18n.egg-info/dependency_links.txt
+Pycord18n.egg-info/requires.txt
+Pycord18n.egg-info/top_level.txt
