@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: Oneneuron-pypi-divyakolapan97
+Version: 0.0.2
+Summary: its an implimentation of Perceptron
+Home-page: https://github.com/divyakolapan97/Oneneuron_pypi
+Author: divyakolapan97
+Author-email: divyakolapan97@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/divyakolapan97/Oneneuron_pypi/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: tqdm
+
+# Oneneuron_pypi
+
