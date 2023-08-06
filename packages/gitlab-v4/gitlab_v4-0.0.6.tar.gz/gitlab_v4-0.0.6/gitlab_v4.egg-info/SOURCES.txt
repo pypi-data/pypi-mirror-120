@@ -1,0 +1,11 @@
+README.md
+setup.py
+gitlab_client/__init__.py
+gitlab_client/config.py
+gitlab_client/exceptions.py
+gitlab_client/gitlab_client.py
+gitlab_v4.egg-info/PKG-INFO
+gitlab_v4.egg-info/SOURCES.txt
+gitlab_v4.egg-info/dependency_links.txt
+gitlab_v4.egg-info/requires.txt
+gitlab_v4.egg-info/top_level.txt
