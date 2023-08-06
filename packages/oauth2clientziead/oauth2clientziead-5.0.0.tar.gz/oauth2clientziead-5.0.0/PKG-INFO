@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: oauth2clientziead
+Version: 5.0.0
+Summary: client library
+Home-page: https://github.com/zieadshabkalieh/oauth2clientziead
+Author: ZSK
+Author-email: zshabkalieh@gmail.com
+License: UNKNOWN
+Keywords: google oauth 2.0 http client
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Development Status :: 7 - Inactive
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX
+Classifier: Topic :: Internet :: WWW/HTTP
+License-File: LICENSE
+
+
+oauth2clientziead is a client library for OAuth 2.0.
+
+Note: oauth2clientziead is now deprecated. No more features will be added to the
+    libraries and the core team is turning down support. We recommend you use
+    `google-auth <https://google-auth.readthedocs.io>`__ and
+    `oauthlib <http://oauthlib.readthedocs.io/>`__.
+
+
