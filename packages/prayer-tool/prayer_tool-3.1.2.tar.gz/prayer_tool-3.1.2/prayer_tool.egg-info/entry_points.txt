@@ -1,0 +1,3 @@
+[console_scripts]
+prayer_tool = prayer_tool.voice_assist:main
+
