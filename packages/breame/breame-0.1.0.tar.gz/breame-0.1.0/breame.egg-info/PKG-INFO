@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: breame
+Version: 0.1.0
+Summary: Breame is a lightweight Python package with a number of utility tools to aid in the detection of words that have dual spellings and meanings in British and American English.
+Home-page: https://github.com/cdpierse/breame
+Author: Charles Pierse
+Author-email: charlespierse@gmail.com
+License: Apache-2.0
+Description: # Breame
+        
+        ( **Br**itish **E**nglish and **Am**erican **E**nglish Language Tools)
+        
+        Breame is a lightweight Python package with a number of utility tools to aid in the detection of words that have dual spellings in British and American English. Breame can also be used to detect and provide definitions for words that have different meanings in both British English and American English. Additionally, Breame includes some tooling to detect and define words and phrases that are specific to British English or American English i.e. "strop" in British English or "mailman" in American English.
+        
+        
+        
+        
+Keywords: text processing,natural language proessing,utility library,spelling,search engine
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown

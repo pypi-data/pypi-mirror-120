@@ -1,0 +1,11 @@
+README.md
+setup.py
+breame/__init__.py
+breame/meanings.py
+breame/spelling.py
+breame/terminology.py
+breame/utils.py
+breame.egg-info/PKG-INFO
+breame.egg-info/SOURCES.txt
+breame.egg-info/dependency_links.txt
+breame.egg-info/top_level.txt
