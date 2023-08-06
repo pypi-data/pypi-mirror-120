@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: knitkit
+Version: 0.2
+Summary: KnitKit is a framework that can help to build project easier.
+Home-page: https://github.com/colin4124
+Author: Leway Colin
+Author-email: colinlin@gmail.com
+License: Apache-2.0 License
+Keywords: verilog,knitkit,rtl
+Platform: UNKNOWN
+Requires-Python: >=3.6
+License-File: LICENSE
+
+UNKNOWN
+
