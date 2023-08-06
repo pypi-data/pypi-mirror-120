@@ -1,0 +1,23 @@
+package:
+  description: Jointbox Standard Library
+  author: Jointbox Team <support@jointbox.org>
+  license: MIT
+  tags: [ jointbox, std ]
+
+  macros:
+    action_with_fallback:
+      params:
+        default_action:
+          required: true
+        fallback_action:
+          required: false
+      body:
+        - ~if: "macro.params.fallback_action is none"
+          ~then: "{{ macro.params.default_action }}"
+          ~else:
+            - if:
+                condition:
+                  api.connected:
+                then: "{{ macro.params.fallback_action }}"
+                else: "{{ macro.params.default_action }}"
+          ~replace: true
