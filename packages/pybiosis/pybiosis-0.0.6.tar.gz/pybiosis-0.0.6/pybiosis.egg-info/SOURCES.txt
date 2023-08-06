@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+pybiosis/__init__.py
+pybiosis/__main__.py
+pybiosis/compiler.py
+pybiosis/loader.py
+pybiosis.egg-info/PKG-INFO
+pybiosis.egg-info/SOURCES.txt
+pybiosis.egg-info/dependency_links.txt
+pybiosis.egg-info/top_level.txt
+pybiosis/applications/__init__.py
+pybiosis/applications/monitors.py
+pybiosis/applications/virtualdesktop.py
+pybiosis/applications/ControlMyMonitor/ControlMyMonitor.exe
+pybiosis/applications/VirtualDesktop/VirtualDesktop.exe
