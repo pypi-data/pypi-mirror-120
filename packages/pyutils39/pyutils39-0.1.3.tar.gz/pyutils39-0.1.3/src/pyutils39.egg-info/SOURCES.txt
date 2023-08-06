@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/pyutils39.egg-info/PKG-INFO
+src/pyutils39.egg-info/SOURCES.txt
+src/pyutils39.egg-info/dependency_links.txt
+src/pyutils39.egg-info/top_level.txt
