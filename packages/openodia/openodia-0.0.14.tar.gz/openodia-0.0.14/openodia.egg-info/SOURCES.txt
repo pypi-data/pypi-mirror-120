@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+openodia/__init__.py
+openodia/__main__.py
+openodia/_letters.py
+openodia/_odianames.py
+openodia/_translate.py
+openodia/_understandData.py
+openodia/constants.py
+openodia.egg-info/PKG-INFO
+openodia.egg-info/SOURCES.txt
+openodia.egg-info/dependency_links.txt
+openodia.egg-info/entry_points.txt
+openodia.egg-info/requires.txt
+openodia.egg-info/top_level.txt
