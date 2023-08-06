@@ -1,0 +1,13 @@
+augly_jp/__init__.py,sha256=HExVgO2gAGiWkJUOkbf8ToBUjckSPi7p5UXadYczPOQ,183
+augly_jp/text/__init__.py,sha256=yiOpvA7SzWiVEelp7x9Rca456GOzo3oOQF5za0Rg0A4,383
+augly_jp/text/augmenters/__init__.py,sha256=S28W0qJk7CvBZTtKY-Ua1LzGrgNGeZo64HALq2TwbM8,97
+augly_jp/text/augmenters/utils.py,sha256=dU_aJ0O6GoFX0ZnPWebDzm96Ur54HeSzQnsA-2VWEl4,4658
+augly_jp/text/augmenters/word.py,sha256=4iQ1zAzel6KalcauT2W8HxE8r0KVS_GdyyfDS69NGJk,7356
+augly_jp/text/functional/__init__.py,sha256=TzuzHOFbndFQmWviXams2G1HxW9LPAeJG4rXaMlUQ4A,112
+augly_jp/text/functional/word.py,sha256=M16XKmx55AbkpeGQynmGJWvQpa4z2CIQ2Mx-LtpWxik,1888
+augly_jp/text/transforms/__init__.py,sha256=6XJ1ZfDGKAcqISuzfzuRJc1wlPRqCCDXaUPGwSJueyY,106
+augly_jp/text/transforms/word.py,sha256=rmyCJf-kpVB1EnNrXcvLWxgeomVr2HiFVt9E5iIwc2Y,2643
+augly_jp-2021.9.17.dist-info/LICENSE,sha256=6rMv4aLSGRsQ03-9xF7772k6lIwv__bSrd3OqcaPy9E,1064
+augly_jp-2021.9.17.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+augly_jp-2021.9.17.dist-info/METADATA,sha256=pCPbPLxaCExx52Oeb4vOxYlmWKE4WZ2FUlHHd-g-8NU,3950
+augly_jp-2021.9.17.dist-info/RECORD,,
