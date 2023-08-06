@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: hydroanalysis
+Version: 0.0.0
+Summary: Framework for calculating hydrological signatures
+Home-page: https://hydroanalysis.readthedocs.io/en/latest/
+Author: Marco Dal Molin
+Author-email: marco.dalmolin.1991@gmail.com
+License: LGPL
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Description-Content-Type: text/markdown
