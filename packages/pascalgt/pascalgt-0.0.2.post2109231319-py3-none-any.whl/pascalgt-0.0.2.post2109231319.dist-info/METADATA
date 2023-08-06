@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: pascalgt
+Version: 0.0.2-2109231319
+Summary: Tool for transform Pascal-VOC xml files and AWS Ground Truth manifest file.
+Home-page: https://github.com/DaikiTanak/pascalgt
+Author: Daiki Tanaka
+Author-email: daiki.yosky@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: certifi (==2021.5.30)
+Requires-Dist: lxml (==4.6.3)
+Requires-Dist: pkginfo (==1.7.1)
+Requires-Dist: readme-renderer (==29.0)
+Requires-Dist: requests-toolbelt (==0.9.1)
+Requires-Dist: rfc3986 (==1.5.0)
+Requires-Dist: twine (==3.4.2)
+Requires-Dist: webencodings (==0.5.1)
+Requires-Dist: wheel (==0.37.0)
+Requires-Dist: pyparsing (==2.4.7) ; python_version >= "2.6" and python_version not in "3.0, 3.1, 3.2, 3.3"
+Requires-Dist: six (==1.16.0) ; python_version >= "2.7" and python_version not in "3.0, 3.1, 3.2, 3.3"
+Requires-Dist: tqdm (==4.62.3) ; python_version >= "2.7" and python_version not in "3.0, 3.1, 3.2, 3.3"
+Requires-Dist: colorama (==0.4.4) ; python_version >= "2.7" and python_version not in "3.0, 3.1, 3.2, 3.3, 3.4"
+Requires-Dist: docutils (==0.17.1) ; python_version >= "2.7" and python_version not in "3.0, 3.1, 3.2, 3.3, 3.4"
+Requires-Dist: urllib3 (==1.26.7) ; python_version >= "2.7" and python_version not in "3.0, 3.1, 3.2, 3.3, 3.4" and python_version < "4"
+Requires-Dist: requests (==2.26.0) ; python_version >= "2.7" and python_version not in "3.0, 3.1, 3.2, 3.3, 3.4, 3.5"
+Requires-Dist: charset-normalizer (==2.0.6) ; python_version >= "3"
+Requires-Dist: idna (==3.2) ; python_version >= "3"
+Requires-Dist: pygments (==2.10.0) ; python_version >= "3.5"
+Requires-Dist: bleach (==4.1.0) ; python_version >= "3.6"
+Requires-Dist: importlib-metadata (==4.8.1) ; python_version >= "3.6"
+Requires-Dist: keyring (==23.2.1) ; python_version >= "3.6"
+Requires-Dist: packaging (==21.0) ; python_version >= "3.6"
+Requires-Dist: zipp (==3.5.0) ; python_version >= "3.6"
+
+# pascalgt
+Transform manifest file of AWS Ground Truth and Pascal VOC xml files mutually.
+
+## usage
+### install
+`pip install pascalgt`
+
+### Pascal VOC to AWS Ground Truth manifest
+```python
+from pascalgt.transformer import Pascal2GT
+
+# transform Pascal VOC xml files into a manifest file of AWS Ground Truth
+pascal2gt = Pascal2GT(project_name="test-project", s3_path="s3://test-project/images")
+pascal2gt.run("./output.manifest", "./xml/")
+```
+
+### AWS Ground Truth manifest to Pascal VOC
+```python
+from pascalgt.transformer import GT2Pascal
+
+# transform a manifest file of AWS Ground Truth into Pascal VOC xml files
+gt2pascal = GT2Pascal()
+gt2pascal.run("./output.manifest", "./xml")
+```
+
+## license
+The source code is licensed MIT.
+
+
