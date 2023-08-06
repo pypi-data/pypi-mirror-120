@@ -1,0 +1,3 @@
+[console_scripts]
+marwan = marwan.main:main
+
