@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+raritygems/__init__.py
+raritygems/__main__.py
+raritygems/raritygems.py
+raritygems.egg-info/PKG-INFO
+raritygems.egg-info/SOURCES.txt
+raritygems.egg-info/dependency_links.txt
+raritygems.egg-info/entry_points.txt
+raritygems.egg-info/top_level.txt
+raritygems/helper/__init__.py
+raritygems/helper/config.py
+raritygems/helper/helper.py
+raritygems/helper/notification.py
