@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: demerzel
+Version: 0.1.0
+Summary: Simple workflow scheduling and monitoring
+Home-page: https://github.com/waydegg/demerzel
+Author: Wayde Gilliam
+Author-email: waydegilliam@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: uvloop (>=0.16.0)
+Requires-Dist: croniter (>=1.0.13)
+Requires-Dist: pytz (>=2021.1)
+Provides-Extra: build
+Requires-Dist: twine (==3.4.2) ; extra == 'build'
+Requires-Dist: wheel (==0.37.0) ; extra == 'build'
+Provides-Extra: quality
+Requires-Dist: black (==21.9b0) ; extra == 'quality'
+Requires-Dist: mypy (==0.910) ; extra == 'quality'
+Requires-Dist: autoflake (==1.4) ; extra == 'quality'
+Requires-Dist: isort (==5.9.3) ; extra == 'quality'
+Requires-Dist: flake8 (==3.9.2) ; extra == 'quality'
+
+# demerzel
+
+Simple workflow scheduling and monitoring.
+
+
