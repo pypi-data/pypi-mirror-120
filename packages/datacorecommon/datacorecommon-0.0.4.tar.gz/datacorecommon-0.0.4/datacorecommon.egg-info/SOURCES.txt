@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+datacorecommon/__init__.py
+datacorecommon/inout.py
+datacorecommon.egg-info/PKG-INFO
+datacorecommon.egg-info/SOURCES.txt
+datacorecommon.egg-info/dependency_links.txt
+datacorecommon.egg-info/not-zip-safe
+datacorecommon.egg-info/requires.txt
+datacorecommon.egg-info/top_level.txt
