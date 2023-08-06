@@ -1,0 +1,3 @@
+[console_scripts]
+moviepy = moviepy_cli:main
+
