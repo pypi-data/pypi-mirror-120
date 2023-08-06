@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: openta-lib
+Version: 0.0.5
+Summary: library for openta
+Home-page: https://github.com/opentaproject/openta-lib
+Author: Stellan Ostlund
+Author-email: stellan.ostlund@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/opentaproject/openta-lib/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+####
+Readme here
+
+
+
