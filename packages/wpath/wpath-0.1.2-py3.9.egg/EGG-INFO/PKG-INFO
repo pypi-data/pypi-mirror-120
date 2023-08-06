@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: wpath
+Version: 0.1.2
+Summary: package help find the project root folder.
+Home-page: https://github.com/aeneashe/wpath
+Author: Aeneas
+Author-email: aeneas.he@gmail.com
+License: MIT
+Description: # wpath
+        
+        wpath: a package help you find the project workspace  
+        
+        python开发的一系列小工具,核心功能：
+        
+        - 自动将当前项目的工作目录添加到python搜索包  
+            工作目录的定义是：该目录下面有常见的项目级文件：.env,.gitignore,package.json,go.mod,go.sum,tsconfig.json
+        - 彩色print  
+            红：print_r，绿：print_r,蓝:print_b,黄：print_y,粉：print_m,黑:print_k,白:print_w
+        - 彩色日志处理模块
+        - 字典格式打印
+        - 时间处理模块
+        
+        ## Install
+        
+        ```bash
+        git clone https://github.com/cofepy/wpath
+        cd wpath
+        python setup.py install
+        ```
+        
+        or
+        
+        ```bash
+        pip install wpath
+        ```
+        
+        ## Env file
+        
+        add one of flags [".env",".gitignore",".git","package.json"]  into your project workspace.
+        
+        ## Useage
+        
+        ``` python
+        import wpath
+        # this will add your workspace to python path
+        # by default, wpath will search parent folder which has an '.env' file as workspace flag
+        
+        # show project workspace, 
+        # if not found the flag, wpath.workspace() will return None
+        print(wpath.workspace())
+        
+        # change default flag
+        wpath.reset(['.gitignore'])
+        print(wpath.workspace())
+        
+        ```
+        
+Keywords: project root folder workspace
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
