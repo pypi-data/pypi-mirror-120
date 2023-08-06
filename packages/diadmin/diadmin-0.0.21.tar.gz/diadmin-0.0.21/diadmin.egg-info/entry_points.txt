@@ -1,0 +1,4 @@
+[console_scripts]
+dipmonitor = diadmin.dipmonitor:main
+dipolicy = diadmin.dipolicy:main
+
