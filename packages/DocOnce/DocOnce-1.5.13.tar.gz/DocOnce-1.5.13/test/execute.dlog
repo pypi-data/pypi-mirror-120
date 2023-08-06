@@ -1,0 +1,3936 @@
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 15.4 s (accumulated time: 15.4)
+
+
+...doconce format used 16.4 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+
+...doconce translation: insertion of verbatim and latex blocks 15.3 s (accumulated time: 15.3)
+
+
+...doconce format used 16.3 s to translate the document (597 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+
+...doconce translation: insertion of verbatim and latex blocks 15.4 s (accumulated time: 15.4)
+
+
+...doconce format used 16.4 s to translate the document (597 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 15.3 s (accumulated time: 15.4)
+
+
+...doconce format used 16.4 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 15.3 s (accumulated time: 15.3)
+
+
+...doconce format used 16.4 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+
+...doconce translation: insertion of verbatim and latex blocks 15.4 s (accumulated time: 15.5)
+
+
+...doconce format used 16.5 s to translate the document (597 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+
+...doconce translation: insertion of verbatim and latex blocks 15.5 s (accumulated time: 15.5)
+
+
+...doconce format used 16.5 s to translate the document (597 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 20.7 s (accumulated time: 20.7)
+
+
+...doconce format used 21.7 s to translate the document (933 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 15.3 s (accumulated time: 15.3)
+
+
+...doconce format used 16.3 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 15.1 s (accumulated time: 15.2)
+
+
+...doconce format used 16.2 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+
+...doconce translation: insertion of verbatim and latex blocks 15.6 s (accumulated time: 15.6)
+
+
+...doconce format used 16.6 s to translate the document (597 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 16.2 s (accumulated time: 16.3)
+
+
+...doconce format used 17.3 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+
+...doconce translation: insertion of verbatim and latex blocks 15.7 s (accumulated time: 15.7)
+
+
+...doconce format used 16.7 s to translate the document (597 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+
+...doconce translation: insertion of verbatim and latex blocks 15.7 s (accumulated time: 15.7)
+
+
+...doconce format used 16.7 s to translate the document (597 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 15.2 s (accumulated time: 15.3)
+
+
+...doconce format used 16.3 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 15.9 s (accumulated time: 15.9)
+
+
+...doconce format used 16.9 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+
+...doconce translation: insertion of verbatim and latex blocks 15.8 s (accumulated time: 15.9)
+
+
+...doconce format used 16.9 s to translate the document (597 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 15.1 s (accumulated time: 15.2)
+
+
+...doconce format used 16.2 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 16.4 s (accumulated time: 16.4)
+
+
+...doconce format used 17.4 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+
+
+...doconce format used 15.1 s to translate the document (597 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 15.8 s (accumulated time: 15.8)
+
+
+...doconce format used 16.9 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 15.5 s (accumulated time: 15.6)
+
+
+...doconce format used 16.6 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+
+...doconce translation: insertion of verbatim and latex blocks 20.3 s (accumulated time: 20.4)
+
+
+...doconce format used 21.4 s to translate the document (590 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+
+...doconce translation: insertion of verbatim and latex blocks 15.5 s (accumulated time: 15.6)
+
+
+...doconce format used 16.6 s to translate the document (597 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 15.0 s (accumulated time: 15.1)
+
+
+...doconce format used 16.1 s to translate the document (933 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+
+...doconce translation: insertion of verbatim and latex blocks 15.3 s (accumulated time: 15.3)
+
+
+...doconce format used 16.3 s to translate the document (597 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 15.3 s (accumulated time: 15.4)
+
+
+...doconce format used 16.4 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 15.6 s (accumulated time: 15.6)
+
+
+...doconce format used 16.6 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+
+
+...doconce format used 15.1 s to translate the document (597 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 15.0 s (accumulated time: 15.1)
+
+
+...doconce format used 16.1 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+
+...doconce translation: insertion of verbatim and latex blocks 15.0 s (accumulated time: 15.1)
+
+
+...doconce format used 16.1 s to translate the document (597 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 15.2 s (accumulated time: 15.2)
+
+
+...doconce format used 16.2 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+
+...doconce translation: insertion of verbatim and latex blocks 15.9 s (accumulated time: 16.0)
+
+
+...doconce format used 17.0 s to translate the document (597 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 15.6 s (accumulated time: 15.7)
+
+
+...doconce format used 16.7 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+
+...doconce format used 15.0 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 15.4 s (accumulated time: 15.5)
+
+
+...doconce format used 16.5 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 15.4 s (accumulated time: 15.4)
+
+
+...doconce format used 16.4 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+
+
+...doconce format used 15.0 s to translate the document (597 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+
+...doconce format used 15.0 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 15.4 s (accumulated time: 15.5)
+
+
+...doconce format used 16.5 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 15.4 s (accumulated time: 15.5)
+
+
+...doconce format used 16.5 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 15.4 s (accumulated time: 15.4)
+
+
+...doconce format used 16.4 s to translate the document (933 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+
+
+...doconce format used 15.0 s to translate the document (597 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 15.6 s (accumulated time: 15.7)
+
+
+...doconce format used 16.7 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 15.3 s (accumulated time: 15.4)
+
+
+...doconce format used 16.4 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 15.3 s (accumulated time: 15.3)
+
+
+...doconce format used 16.3 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+
+...doconce translation: insertion of verbatim and latex blocks 15.3 s (accumulated time: 15.3)
+
+
+...doconce format used 16.3 s to translate the document (597 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+
+...doconce translation: insertion of verbatim and latex blocks 15.3 s (accumulated time: 15.4)
+
+
+...doconce format used 16.4 s to translate the document (597 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 15.4 s (accumulated time: 15.4)
+
+
+...doconce format used 16.4 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+
+...doconce translation: insertion of verbatim and latex blocks 15.2 s (accumulated time: 15.2)
+
+
+...doconce format used 16.3 s to translate the document (597 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+
+...doconce translation: insertion of verbatim and latex blocks 15.3 s (accumulated time: 15.4)
+
+
+...doconce format used 16.4 s to translate the document (597 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 15.0 s (accumulated time: 15.1)
+
+
+...doconce format used 16.1 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 15.0 s (accumulated time: 15.1)
+
+
+...doconce format used 16.1 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+
+...doconce translation: insertion of verbatim and latex blocks 15.8 s (accumulated time: 15.9)
+
+
+...doconce format used 16.9 s to translate the document (597 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+
+...doconce translation: insertion of verbatim and latex blocks 15.5 s (accumulated time: 15.6)
+
+
+...doconce format used 16.6 s to translate the document (597 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 15.6 s (accumulated time: 15.7)
+
+
+...doconce format used 16.7 s to translate the document (933 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 15.3 s (accumulated time: 15.3)
+
+
+...doconce format used 16.3 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 15.1 s (accumulated time: 15.1)
+
+
+...doconce format used 16.1 s to translate the document (933 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+
+...doconce format used 15.1 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 15.3 s (accumulated time: 15.3)
+
+
+...doconce format used 16.3 s to translate the document (933 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+
+...doconce translation: insertion of verbatim and latex blocks 15.2 s (accumulated time: 15.3)
+
+
+...doconce format used 16.3 s to translate the document (597 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+
+...doconce translation: insertion of verbatim and latex blocks 15.3 s (accumulated time: 15.3)
+
+
+...doconce format used 16.3 s to translate the document (597 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 15.4 s (accumulated time: 15.5)
+
+
+...doconce format used 16.5 s to translate the document (933 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 15.3 s (accumulated time: 15.4)
+
+
+...doconce format used 16.4 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 15.0 s (accumulated time: 15.1)
+
+
+...doconce format used 16.1 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+
+
+...doconce format used 15.0 s to translate the document (594 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+
+...doconce format used 15.0 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-8-a44ff87f9cbe>", line 2
+    1/0: You cannot divide by zero
+             ^
+SyntaxError: invalid syntax
+
+*** error: Error in code block:
+      File "<ipython-input-12-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+
+...doconce translation: insertion of verbatim and latex blocks 15.0 s (accumulated time: 15.1)
+
+
+...doconce format used 16.1 s to translate the document (984 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-8-a44ff87f9cbe>", line 2
+    1/0: You cannot divide by zero
+             ^
+SyntaxError: invalid syntax
+
+*** error: Error in code block:
+      File "<ipython-input-12-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+
+...doconce translation: insertion of verbatim and latex blocks 15.0 s (accumulated time: 15.1)
+
+
+...doconce format used 16.1 s to translate the document (984 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-8-a44ff87f9cbe>", line 2
+    1/0: You cannot divide by zero
+             ^
+SyntaxError: invalid syntax
+
+*** error: Error in code block:
+      File "<ipython-input-12-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-8-a44ff87f9cbe>", line 2
+    1/0: You cannot divide by zero
+             ^
+SyntaxError: invalid syntax
+
+*** error: Error in code block:
+      File "<ipython-input-12-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc pyhid", but pyhid is not a standard predefined code environment
+*** error: Error in code block:
+      File "<ipython-input-8-a44ff87f9cbe>", line 2
+    1/0: You cannot divide by zero
+             ^
+SyntaxError: invalid syntax
+
+*** error: Error in code block:
+      File "<ipython-input-12-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+
+
+...doconce format used 15.0 s to translate the document (607 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+*** error: Error in code block:
+      File "<ipython-input-7-a44ff87f9cbe>", line 2
+    1/0: You cannot divide by zero
+             ^
+SyntaxError: invalid syntax
+
+*** error: Error in code block:
+      File "<ipython-input-11-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc pyhid", but pyhid is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc pyhid", but pyhid is not a standard predefined code environment
+*** error: Error in code block:
+      File "<ipython-input-8-a44ff87f9cbe>", line 2
+    1/0: You cannot divide by zero
+             ^
+SyntaxError: invalid syntax
+
+*** error: Error in code block:
+      File "<ipython-input-12-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+
+...doconce translation: insertion of verbatim and latex blocks 15.5 s (accumulated time: 15.6)
+
+
+...doconce format used 16.6 s to translate the document (604 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-8-a44ff87f9cbe>", line 2
+    1/0: You cannot divide by zero
+             ^
+SyntaxError: invalid syntax
+
+*** error: Error in code block:
+      File "<ipython-input-12-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-8-a44ff87f9cbe>", line 2
+    1/0: You cannot divide by zero
+             ^
+SyntaxError: invalid syntax
+
+*** error: Error in code block:
+      File "<ipython-input-12-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-8-a44ff87f9cbe>", line 2
+    1/0: You cannot divide by zero
+             ^
+SyntaxError: invalid syntax
+
+***
+*** error: Error in code block:
+      File "<ipython-input-12-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc pyhid", but pyhid is not a standard predefined code environment
+*** error: Error in code block:
+      File "<ipython-input-8-a44ff87f9cbe>", line 2
+    1/0: You cannot divide by zero
+             ^
+SyntaxError: invalid syntax
+
+***
+*** error: Error in code block:
+      File "<ipython-input-12-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+*** error: Error in code block:
+      File "<ipython-input-7-a44ff87f9cbe>", line 2
+    1/0: You cannot divide by zero
+             ^
+SyntaxError: invalid syntax
+
+*** error: Error in code block:
+      File "<ipython-input-11-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc pyhid", but pyhid is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc pyhid", but pyhid is not a standard predefined code environment
+*** error: Error in code block:
+      File "<ipython-input-8-a44ff87f9cbe>", line 2
+    1/0: You cannot divide by zero
+             ^
+SyntaxError: invalid syntax
+
+***
+*** error: Error in code block:
+      File "<ipython-input-12-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+
+...doconce format used 15.0 s to translate the document (607 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-8-a44ff87f9cbe>", line 2
+    1/0: You cannot divide by zero
+             ^
+SyntaxError: invalid syntax
+
+***
+*** error: Error in code block:
+      File "<ipython-input-12-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-8-a44ff87f9cbe>", line 2
+    1/0: You cannot divide by zero
+             ^
+SyntaxError: invalid syntax
+
+***
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-8-a44ff87f9cbe>", line 2
+    1/0: You cannot divide by zero
+             ^
+SyntaxError: invalid syntax
+
+***
+*** error: Error in code block:
+      File "<ipython-input-12-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** error: Error in code block:
+      File "<ipython-input-8-a44ff87f9cbe>", line 2
+    1/0: You cannot divide by zero
+             ^
+SyntaxError: invalid syntax
+
+***
+*** error: Error in code block:
+      File "<ipython-input-12-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 15.9 s (accumulated time: 16.0)
+
+
+...doconce format used 17.0 s to translate the document (604 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+*** error: Error in code block:
+      File "<ipython-input-9-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** error: Error in code block:
+      File "<ipython-input-8-a44ff87f9cbe>", line 2
+    1/0: You cannot divide by zero
+             ^
+SyntaxError: invalid syntax
+
+***
+*** error: Error in code block:
+      File "<ipython-input-12-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 15.4 s (accumulated time: 15.4)
+
+
+...doconce format used 16.5 s to translate the document (607 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-8-a44ff87f9cbe>", line 2
+    1/0: You cannot divide by zero
+             ^
+SyntaxError: invalid syntax
+
+***
+*** error: Error in code block:
+      File "<ipython-input-12-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 15.8 s (accumulated time: 15.8)
+
+
+...doconce format used 16.8 s to translate the document (984 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-8-a44ff87f9cbe>", line 2
+    1/0: You cannot divide by zero
+             ^
+SyntaxError: invalid syntax
+
+***
+*** error: Error in code block:
+      File "<ipython-input-12-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 15.3 s (accumulated time: 15.3)
+
+
+...doconce format used 16.3 s to translate the document (984 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** error: Error in code block:
+      File "<ipython-input-8-a44ff87f9cbe>", line 2
+    1/0: You cannot divide by zero
+             ^
+SyntaxError: invalid syntax
+
+***
+*** error: Error in code block:
+      File "<ipython-input-12-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 15.4 s (accumulated time: 15.5)
+
+
+...doconce format used 16.5 s to translate the document (607 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+*** error: Error in code block:
+      File "<ipython-input-9-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** error: Error in code block:
+      File "<ipython-input-8-a44ff87f9cbe>", line 2
+    1/0: You cannot divide by zero
+             ^
+SyntaxError: invalid syntax
+
+***
+*** error: Error in code block:
+      File "<ipython-input-12-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+
+...doconce format used 15.0 s to translate the document (607 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-8-a44ff87f9cbe>", line 2
+    1/0: You cannot divide by zero
+             ^
+SyntaxError: invalid syntax
+
+***
+*** error: Error in code block:
+      File "<ipython-input-12-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-8-a44ff87f9cbe>", line 2
+    1/0: You cannot divide by zero
+             ^
+SyntaxError: invalid syntax
+
+***
+*** error: Error in code block:
+      File "<ipython-input-12-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** error: Error in code block:
+      File "<ipython-input-8-a44ff87f9cbe>", line 2
+    1/0: You cannot divide by zero
+             ^
+SyntaxError: invalid syntax
+
+***
+*** error: Error in code block:
+      File "<ipython-input-12-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 15.7 s (accumulated time: 15.7)
+
+
+...doconce format used 16.7 s to translate the document (607 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+*** error: Error in code block:
+      File "<ipython-input-9-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-8-a44ff87f9cbe>", line 2
+    1/0: You cannot divide by zero
+             ^
+SyntaxError: invalid syntax
+
+***
+*** error: Error in code block:
+      File "<ipython-input-12-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 15.3 s (accumulated time: 15.4)
+
+
+...doconce format used 16.4 s to translate the document (984 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** error: Error in code block:
+      File "<ipython-input-8-a44ff87f9cbe>", line 2
+    1/0: You cannot divide by zero
+             ^
+SyntaxError: invalid syntax
+
+***
+*** error: Error in code block:
+      File "<ipython-input-12-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 15.8 s (accumulated time: 15.8)
+
+
+...doconce format used 16.8 s to translate the document (607 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+*** error: Error in code block:
+      File "<ipython-input-9-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** error: Error in code block:
+      File "<ipython-input-8-a44ff87f9cbe>", line 2
+    1/0: You cannot divide by zero
+             ^
+SyntaxError: invalid syntax
+
+***
+*** error: Error in code block:
+      File "<ipython-input-12-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 15.2 s (accumulated time: 15.2)
+
+
+...doconce format used 16.2 s to translate the document (607 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-8-a44ff87f9cbe>", line 2
+    1/0: You cannot divide by zero
+             ^
+SyntaxError: invalid syntax
+
+***
+*** error: Error in code block:
+      File "<ipython-input-12-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 15.2 s (accumulated time: 15.2)
+
+
+...doconce format used 16.2 s to translate the document (984 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-8-a44ff87f9cbe>", line 2
+    1/0: You cannot divide by zero
+             ^
+SyntaxError: invalid syntax
+
+***
+*** error: Error in code block:
+      File "<ipython-input-12-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** error: Error in code block:
+      File "<ipython-input-8-a44ff87f9cbe>", line 2
+    1/0: You cannot divide by zero
+             ^
+SyntaxError: invalid syntax
+
+***
+*** error: Error in code block:
+      File "<ipython-input-12-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+*** error: Error in code block:
+      File "<ipython-input-9-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** error: Error in code block:
+      File "<ipython-input-8-a44ff87f9cbe>", line 2
+    1/0: You cannot divide by zero
+             ^
+SyntaxError: invalid syntax
+
+***
+*** error: Error in code block:
+      File "<ipython-input-12-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-8-a44ff87f9cbe>", line 2
+    1/0: You cannot divide by zero
+             ^
+SyntaxError: invalid syntax
+
+***
+*** error: Error in code block:
+      File "<ipython-input-12-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-8-a44ff87f9cbe>", line 2
+    1/0: You cannot divide by zero
+             ^
+SyntaxError: invalid syntax
+
+***
+*** error: Error in code block:
+      File "<ipython-input-12-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** error: Error in code block:
+      File "<ipython-input-8-a44ff87f9cbe>", line 2
+    1/0: You cannot divide by zero
+             ^
+SyntaxError: invalid syntax
+
+***
+*** error: Error in code block:
+      File "<ipython-input-12-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+*** error: Error in code block:
+      File "<ipython-input-9-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** error: Error in code block:
+      File "<ipython-input-8-a44ff87f9cbe>", line 2
+    1/0: You cannot divide by zero
+             ^
+SyntaxError: invalid syntax
+
+***
+*** error: Error in code block:
+      File "<ipython-input-12-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 15.1 s (accumulated time: 15.1)
+
+
+...doconce format used 16.1 s to translate the document (607 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-8-a44ff87f9cbe>", line 2
+    1/0: You cannot divide by zero
+             ^
+SyntaxError: invalid syntax
+
+***
+*** error: Error in code block:
+      File "<ipython-input-12-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 15.2 s (accumulated time: 15.3)
+
+
+...doconce format used 16.3 s to translate the document (984 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-8-a44ff87f9cbe>", line 2
+    1/0: You cannot divide by zero
+             ^
+SyntaxError: invalid syntax
+
+***
+*** error: Error in code block:
+      File "<ipython-input-12-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** error: Error in code block:
+      File "<ipython-input-8-a44ff87f9cbe>", line 2
+    1/0: You cannot divide by zero
+             ^
+SyntaxError: invalid syntax
+
+***
+*** error: Error in code block:
+      File "<ipython-input-12-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 15.2 s (accumulated time: 15.3)
+
+
+...doconce format used 16.3 s to translate the document (607 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+*** error: Error in code block:
+      File "<ipython-input-9-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** error: Error in code block:
+      File "<ipython-input-8-a44ff87f9cbe>", line 2
+    1/0: You cannot divide by zero
+             ^
+SyntaxError: invalid syntax
+
+***
+*** error: Error in code block:
+      File "<ipython-input-12-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-8-a44ff87f9cbe>", line 2
+    1/0: You cannot divide by zero
+             ^
+SyntaxError: invalid syntax
+
+***
+*** error: Error in code block:
+      File "<ipython-input-12-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 15.1 s (accumulated time: 15.1)
+
+
+...doconce format used 16.1 s to translate the document (984 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-8-a44ff87f9cbe>", line 2
+    1/0: You cannot divide by zero
+             ^
+SyntaxError: invalid syntax
+
+***
+*** error: Error in code block:
+      File "<ipython-input-12-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** error: Error in code block:
+      File "<ipython-input-8-a44ff87f9cbe>", line 2
+    1/0: You cannot divide by zero
+             ^
+SyntaxError: invalid syntax
+
+***
+*** error: Error in code block:
+      File "<ipython-input-12-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+*** error: Error in code block:
+      File "<ipython-input-9-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** error: Error in code block:
+      File "<ipython-input-8-a44ff87f9cbe>", line 2
+    1/0: You cannot divide by zero
+             ^
+SyntaxError: invalid syntax
+
+***
+*** error: Error in code block:
+      File "<ipython-input-12-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 15.0 s (accumulated time: 15.1)
+
+
+...doconce format used 16.1 s to translate the document (607 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-8-a44ff87f9cbe>", line 2
+    1/0: You cannot divide by zero
+             ^
+SyntaxError: invalid syntax
+
+***
+*** error: Error in code block:
+      File "<ipython-input-12-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 15.5 s (accumulated time: 15.6)
+
+
+...doconce format used 16.6 s to translate the document (984 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 15.2 s (accumulated time: 15.3)
+
+
+...doconce format used 16.3 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+
+...doconce translation: insertion of verbatim and latex blocks 15.2 s (accumulated time: 15.3)
+
+
+...doconce format used 16.3 s to translate the document (594 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+
+...doconce translation: insertion of verbatim and latex blocks 15.1 s (accumulated time: 15.1)
+
+
+...doconce format used 16.2 s to translate the document (597 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 15.1 s (accumulated time: 15.1)
+
+
+...doconce format used 16.1 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 15.2 s (accumulated time: 15.2)
+
+
+...doconce format used 16.3 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+*** error: Error in code block:
+      File "<ipython-input-9-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 15.2 s (accumulated time: 15.2)
+
+
+...doconce format used 16.3 s to translate the document (597 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 15.3 s (accumulated time: 15.4)
+
+
+...doconce format used 16.4 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 15.4 s (accumulated time: 15.5)
+
+
+...doconce format used 16.5 s to translate the document (594 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+*** error: Error in code block:
+      File "<ipython-input-9-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 15.4 s (accumulated time: 15.5)
+
+
+...doconce format used 16.5 s to translate the document (597 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 15.5 s (accumulated time: 15.6)
+
+
+...doconce format used 16.6 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+*** error: Error in code block:
+      File "<ipython-input-9-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 15.8 s (accumulated time: 15.8)
+
+
+...doconce format used 16.8 s to translate the document (933 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+*** error: Error in code block:
+      File "<ipython-input-9-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+*** error: Error in code block:
+      File "<ipython-input-9-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 15.8 s (accumulated time: 15.9)
+
+
+...doconce format used 16.9 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 16.1 s (accumulated time: 16.1)
+
+
+...doconce format used 17.1 s to translate the document (597 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+*** error: Error in code block:
+      File "<ipython-input-9-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 16.6 s (accumulated time: 16.7)
+
+
+...doconce format used 17.7 s to translate the document (597 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 16.6 s (accumulated time: 16.7)
+
+
+...doconce format used 17.7 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 15.8 s (accumulated time: 15.8)
+
+
+...doconce format used 16.8 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 16.2 s (accumulated time: 16.3)
+
+
+...doconce format used 17.3 s to translate the document (597 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+*** error: Error in code block:
+      File "<ipython-input-9-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 15.5 s (accumulated time: 15.6)
+
+
+...doconce format used 16.6 s to translate the document (597 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 15.9 s (accumulated time: 16.0)
+
+
+...doconce format used 17.0 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 15.0 s (accumulated time: 15.1)
+
+
+...doconce format used 16.1 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 15.6 s (accumulated time: 15.6)
+
+
+...doconce format used 16.6 s to translate the document (597 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+*** error: Error in code block:
+      File "<ipython-input-9-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 15.1 s (accumulated time: 15.2)
+
+
+...doconce format used 16.2 s to translate the document (597 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 15.0 s (accumulated time: 15.1)
+
+
+...doconce format used 16.1 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 15.3 s (accumulated time: 15.3)
+
+
+...doconce format used 16.3 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+
+...doconce format used 15.0 s to translate the document (594 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+*** error: Error in code block:
+      File "<ipython-input-9-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 15.5 s (accumulated time: 15.5)
+
+
+...doconce format used 16.5 s to translate the document (597 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 16.5 s (accumulated time: 16.5)
+
+
+...doconce format used 17.5 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 15.5 s (accumulated time: 15.6)
+
+
+...doconce format used 16.6 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 15.1 s (accumulated time: 15.2)
+
+
+...doconce format used 16.2 s to translate the document (597 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+*** error: Error in code block:
+      File "<ipython-input-9-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 15.7 s (accumulated time: 15.7)
+
+
+...doconce format used 16.7 s to translate the document (597 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 15.7 s (accumulated time: 15.8)
+
+
+...doconce format used 16.8 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 15.6 s (accumulated time: 15.6)
+
+
+...doconce format used 16.6 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 15.6 s (accumulated time: 15.7)
+
+
+...doconce format used 16.7 s to translate the document (597 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+*** error: Error in code block:
+      File "<ipython-input-9-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 15.7 s (accumulated time: 15.8)
+
+
+...doconce format used 16.8 s to translate the document (597 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 15.6 s (accumulated time: 15.7)
+
+
+...doconce format used 16.7 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 18.2 s (accumulated time: 18.3)
+
+
+...doconce format used 19.3 s to translate the document (936 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 18.3 s (accumulated time: 18.3)
+
+
+...doconce format used 19.3 s to translate the document (597 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+*** error: Error in code block:
+      File "<ipython-input-9-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 17.7 s (accumulated time: 17.7)
+
+
+...doconce format used 18.7 s to translate the document (597 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** error: Error in code block:
+      File "<ipython-input-10-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 17.9 s (accumulated time: 18.0)
+
+
+...doconce format used 19.0 s to translate the document (936 lines)
+
+output in execute.html
