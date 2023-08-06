@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: lplangid
+Version: 0.1.2
+Summary: LivePerson language detection package using a Reciprocal Rank Classifier
+Home-page: https://github.com/LivePersonInc/lplangid
+Author: Dominic Widdows, Chris Brew
+Author-email: dwiddows@gmail.com,christopher.brew@gmail.com
+License: UNKNOWN
+Description: This package is a python implementation of the classifier described in the paper 
+        "Language Identification with a Reciprocal Rank Classifier".
+Keywords: language detection,language classification,reciprocal rank classifier,lplangid
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
