@@ -1,0 +1,10 @@
+aws_cdk/cx_api/__init__.py,sha256=2wHSmeDDtNrenr23Bd8f7G6NqbpdYPgZniQiLp4DOnI,94821
+aws_cdk/cx_api/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/cx_api/_jsii/__init__.py,sha256=XX5FoEAibsIxLtU7LnsgRg7Du7BB6kyTXAhg0DrIxlQ,364
+aws_cdk/cx_api/_jsii/cx-api@2.0.0-rc.22.jsii.tgz,sha256=RrM8YGMlVEjb5dJa8JwgVptOz-Nsu8ZNET1kRtwB-rc,112609
+aws_cdk.cx_api-2.0.0rc22.dist-info/LICENSE,sha256=PPdRlpoLCV1CRrCV1eKpp3m0lNjchFAP4a9zfc8tRLo,11391
+aws_cdk.cx_api-2.0.0rc22.dist-info/METADATA,sha256=pqf72nwb4JpAmAarmRA28NfVjEjKJQPzEhAeZfiiwZ8,1390
+aws_cdk.cx_api-2.0.0rc22.dist-info/NOTICE,sha256=672ZeqDhdBPO9d97KIUvfxtBXUtIn2-5IJBZM0_E-YQ,2700
+aws_cdk.cx_api-2.0.0rc22.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+aws_cdk.cx_api-2.0.0rc22.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.cx_api-2.0.0rc22.dist-info/RECORD,,
