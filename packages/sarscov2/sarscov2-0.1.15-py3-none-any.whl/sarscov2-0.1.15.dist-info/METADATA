@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: sarscov2
+Version: 0.1.15
+Summary: SARS-COV-2 related models, etc
+Home-page: https://github.com/erikvw/sarscov2
+Author: Erik van Widenfelt
+Author-email: ew2789@gmail.com
+License: GPL license, see LICENSE
+Keywords: django EDC SARS-COV-2
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.7
+
+|pypi| |travis| |codecov| 
+
+
+sarscov2
+========
+
+Add to an EDC_, for example the meta_edc_ for the META Trial.
+
+Add to ``INSTALLED_APPS``:
+
+.. code-block:: python
+
+    INSTALLED_APPS = [
+        ...
+        "sarscov2.apps.AppConfig",
+        ...
+        ]
+
+Add the CRF to the visit schedule as a PRN, for example:
+
+.. code-block:: python
+
+    crfs_prn = FormsCollection(
+        ...
+        Crf(show_order=70, model="meta_subject.coronakap"),
+        name="prn",
+    )
+
+.. code-block:: bash
+
+    python manage.py makemigrations
+    python manage.py migrate
+
+To include in a screening or subject listboard:
+
+.. code-block:: html
+
+        {% if perms.sarscov2 %}
+            {% if result.coronavirus_kap %}
+            <a class="btn btn-sm btn-success" title="Edit Coronavirus KAP"
+               href="{% url 'sarscov2_admin:sarscov2_coronaviruskap_change' result.coronavirus_kap.id %}?next=meta_dashboard:screening_listboard_url">Edit</a>
+            {% else %}
+            <a class="btn btn-sm btn-warning" title="Add Coronavirus KAP"
+               href="{% url 'sarscov2_admin:sarscov2_coronaviruskap_add' %}?screening_identifier={{result.screening_identifier}}&next=meta_dashboard:screening_listboard_url">Add</a>
+            {% endif %}
+        {% endif %}
+
+
+.. _EDC: https://github.com/clinicedc
+
+.. _meta_edc: https://meta-trial/meta_edc
+
+.. |pypi| image:: https://img.shields.io/pypi/v/sarscov2.svg
+    :target: https://pypi.python.org/pypi/sarscov2
+
+.. |travis| image:: https://travis-ci.com/erikvw/sarscov2.svg?branch=develop
+    :target: https://travis-ci.com/erikvw/sarscov2
+
+.. |codecov| image:: https://codecov.io/gh/erikvw/sarscov2/branch/develop/graph/badge.svg
+  :target: https://codecov.io/gh/erikvw/sarscov2
+
+
