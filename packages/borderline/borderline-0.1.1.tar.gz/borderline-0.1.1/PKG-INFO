@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: borderline
+Version: 0.1.1
+Summary: Tests that new imports within a module respect the public API boundary.
+Home-page: https://github.com/ctk3b/borderline
+License: MIT
+Author: Christoph Klein
+Author-email: ckleinemail@gmail.com
+Requires-Python: >=3.6.2,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
