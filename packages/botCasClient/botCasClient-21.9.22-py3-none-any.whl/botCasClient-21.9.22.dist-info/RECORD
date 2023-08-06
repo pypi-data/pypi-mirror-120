@@ -1,0 +1,12 @@
+botCasSP/CasSP.py,sha256=DK1g63qaNzXSSs1-gf4DNTyeoPmqcQ-zDVzCIiT7bBw,15532
+botCasSP/__init__.py,sha256=bg1487hvVlakkFjd4_RyZ06Jb98-oV5jQjO_s2QUueU,25
+botCasSP/casv2xml.py,sha256=H7_eOQIRvmiJxRX1r77jXFtM0AAXvK0hEsBsEztW0As,5257
+botCasSP/casv3xml.py,sha256=C1QN714fCXm9Ghs5-2zLx2K_x1nZCFJ3I7PGypdrGmc,7473
+botCasSP/example/__init__.py,sha256=W4o89J3U7ifzceB_M7R-A6JR2vSdEPBfcxTerySQMcw,27
+botCasSP/example/cas_client.py,sha256=tXbL1Yr8bo80UE6JB4Yyf3VnMVEgZIL3UqlkWA1Gu_s,1364
+botCasSP/views/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+botCasSP/views/v3_cas_saml_request.xml,sha256=56BhKNu33Zxm3cEIzZoJ3sCaSArTA-NgIcK0UTwAJ5Q,453
+botCasClient-21.9.22.dist-info/METADATA,sha256=y4RP7oKsyDG9q9UUg9KYAxUNo2SBk7dJ2IM2BPjuCYs,9731
+botCasClient-21.9.22.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+botCasClient-21.9.22.dist-info/top_level.txt,sha256=e83m0GEk5EvM4fb9IRFVbOVRLXR71_W7OfZ4bmCfj88,9
+botCasClient-21.9.22.dist-info/RECORD,,
