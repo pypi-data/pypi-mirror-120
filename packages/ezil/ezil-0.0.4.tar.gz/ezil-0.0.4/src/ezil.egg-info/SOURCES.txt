@@ -1,0 +1,10 @@
+LICENCE
+README.md
+pyproject.toml
+setup.py
+src/ezil/__init__.py
+src/ezil/ezil.py
+src/ezil.egg-info/PKG-INFO
+src/ezil.egg-info/SOURCES.txt
+src/ezil.egg-info/dependency_links.txt
+src/ezil.egg-info/top_level.txt

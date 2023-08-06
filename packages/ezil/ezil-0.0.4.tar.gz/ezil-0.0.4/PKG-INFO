@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: ezil
+Version: 0.0.4
+Summary: Ezil.me mining pool API wrapper
+Home-page: https://github.com/derki-source/py-ezil
+Author: Marek Derer
+Author-email: marek.derer@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/derki-source/py-ezil/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# Ezil Pool API Wrapper
+
+Simple API wrapper for Ezil.me mining pool. All methods returns dict or None
+
+## Installation
+```
+pip install ezil
+```
+
+## Usage
+### Initialization
+```
+import Ezil from ezil
+
+ezil = Ezil()
+```
+### Stats
+```
+ezil.pool_stats(WALLET_ADDRESS)
+```
+### History
+```
+ezil.pool_history(WALLET_ADDRESS)
+```
+### Balance
+```
+ezil.pool_balance(WALLET_ADDRESS)
+```
+### Forecast
+```
+ezil.pool_forecast(WALLET_ADDRESS)
+```
+
