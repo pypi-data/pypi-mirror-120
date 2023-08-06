@@ -1,0 +1,9 @@
+gsgmorph/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gsgmorph/matrix_form.py,sha256=UyQ4AAsERWCzypShvBuelIEa0r6DtNKaZIh3VEh1Pu0,18239
+gsgmorph/pyqubo_form.py,sha256=trh0S-bEXo_T1YQzLgkdJ0uVO4lK31huNgbZuFPB1eM,13479
+gsgmorph/utils.py,sha256=11HfPec9v7psF9enBOms0y6xQKl-_iEcSpAWJbIRvh4,407
+gsgmorph-1.0.2.dist-info/LICENSE,sha256=t5kc2d4Q-agfjL-VQfCjrgRcgbAP4Y7O319If99-XLM,35181
+gsgmorph-1.0.2.dist-info/METADATA,sha256=d2vnzwciJWGSTP7UH0JXf-6W2cQsmjPtbFTOux6IV_I,6095
+gsgmorph-1.0.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+gsgmorph-1.0.2.dist-info/top_level.txt,sha256=EHpjCTCwBADtDjpZ6A7qHJyfMA7w9RYJqcjnVf6ye8w,9
+gsgmorph-1.0.2.dist-info/RECORD,,
