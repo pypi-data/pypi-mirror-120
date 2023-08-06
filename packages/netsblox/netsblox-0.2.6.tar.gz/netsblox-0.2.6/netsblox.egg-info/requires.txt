@@ -1,0 +1,6 @@
+jedi
+parso
+pillow
+requests
+turtle
+websocket-client
