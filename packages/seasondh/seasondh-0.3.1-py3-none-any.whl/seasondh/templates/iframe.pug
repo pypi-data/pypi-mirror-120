@@ -1,0 +1,12 @@
+mixin content()
+    .page
+        {$ view | safe $}
+
+    style.
+        html,
+        body {
+            overflow: auto;
+        }
+
+include component/layout
++layout
