@@ -1,0 +1,94 @@
+
+  2020-01-08 : Consider the possibility of seralization using
+ ............: the Protocol Buffers for direct communication
+  ~ Useful ~ : through UDP and when using encryption, in order
+ ............: to reduce the size of transmitted messages.
+
+  2020-01-11 : In "SERVER" mode of the class PyLayerIRC, it is
+ ............: need to implement three variants of port binding:
+ ~ Must be ~ : 1. only on IPv4 address, 2. only on IPv6 address,
+ ............: 3. on both addresses (Dual Stack)
+
+  2020-01-17 : In the case when one of the modes of automatic
+ ............: loading of dynamic modules is selected, provide
+ ~ Must be ~ : for their automatic unloading by timeout.
+
+  2020-02-08 : There is some warnings in the 'twofish' module:
+ ............: PendingDeprecationWarning: import 'imp' module;
+  Figure out : ResourceWarning: unclosed file 'BufferedReader'
+
+  2020-03-12 : It would be useful to implement another transport
+ ............: level of the IRC-IoT protocol based on the Modbus-
+  ~ Useful ~ : TCP which would allow interconnect infrastructures
+
+  2020-03-22 : The JSON module included in the installation of
+ ............: the Python language does not support the "bytes"
+ ~ Problem ~ : data type. It may be need to use another module.
+
+  2020-03-23 : It would be useful to implement another transport
+ ............: type of the IRC-IoT protocol based on the HTTP/x
+  ~ Useful ~ : protocols as it is done for the SOAP or XML-RPC.
+
+  2020-03-25 : The protocol JMAP (JSON Meta Application protocol)
+ ............: can be encapsulated into the IRC-IoT transport, so
+  ~ Useful ~ : its API may be submitted to the Global Dictionary.
+
+  2020-05-01 : For protection services from flood, both directly
+ ............: and through the IRC-IoT routers, using an assigned
+  ~ Useful ~ : task can be used, for example, how it is done in
+ ............: the HashCache. Also, Embedded Languages may used.
+
+  2020-05-08 : The PyBasic package is being developed on the net
+ ............: under GNU GPL license, it is the BASIC interpreter
+  ~ Useful ~ : written in the Python language, it will be useful
+ ............: to connect it to the PyLayerIRCIoT_EL_ class.
+
+  2020-05-14 : Since encryption algorithms with a Secret Key are
+ ............: faster than Symmetric algorithms, it is necessary
+ ~ Must be ~ : to implement a two-stage encryption mechanism,
+ ............: for example: RSA + AES and RSA + Twofish, etc.
+
+  2020-05-16 : When IRC-IoT nodes exchanging messages thru IRC
+ ............: with a maximum fixed MTU, problems with trimming
+ ~ Urgent! ~ : the tails of messages appears, this depends on
+ ............: the length of the Nickname, the hostname and on
+ the server settings. The MTU negotiation algorithm is required.
+ To workaround problem, the default MTU is reduced to 440 bytes.
+
+  2020-06-12 : It would be useful to add to the PyIRCIoT library
+ ............: support for the "MAGMA" encryption algorithm in
+  ~ Useful ~ : accordance with the Russian standard GOST 28147-89
+
+  2020-07-01 : It will be useful to implement PEP 257 "Doctring
+ ............: Conventions" recomendations from official Python
+  ~ Useful ~ : Developer's Guide for PyIRCIoT demo library code.
+
+  2020-07-09 : It is need to create a set of functions to start
+ ............: working in the Docker environment when using the
+ ~ Must be ~ : PyLayerIRCIoT_EL_ class.
+
+  2020-08-19 : It would be useful to create or use an existing
+ ............: library to implement the IRC client and IRC-IoT
+  ~ Useful ~ : protocol stack on Arduino and Atmel controllers
+
+  2020-10-02 : It would be nice to create an data collecting
+ ............: module for the Telegraf and Dashboard for the
+  ~ Useful ~ : Grafana systems, displaying data from IRC-IoT
+
+  2020-12-27 : It would be great to provide in IRC-IoT endpoint
+ ............: robots implementing interaction over different IoT
+  ~ Useful ~ : protocols, such as MQTT, CoAP, KNX, Z-Wave, etc.
+ ............: a kind of "anti-virus" that checks the connected
+ IoT devices for vulnerabilities to known exploints, so that int-
+ ruders through such devices can not affect the IRC-IoT network.
+
+  2021-02-25 : It's reasonable to implement zigbee2irciot gateway
+ ............: by analogy with zigbee2mqtt gateway for similar
+  ~ Useful ~ : radio module firmwares without using MQTT protocol
+ ............: It would also be useful to implement this function
+ for the ESP8266/ESP32 modules, as it is done in the SLS project.
+
+  2021-04-22 : It is necessary to debug the PyIRCIoT library to
+ ............: work under Ubuntu Touch (UBports) system and
+ ~ Must be ~ : Termux sandbox under Android OS
+
