@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ncafs/__init__.py
+ncafs/base.py
+ncafs/core.py
+ncafs.egg-info/PKG-INFO
+ncafs.egg-info/SOURCES.txt
+ncafs.egg-info/dependency_links.txt
+ncafs.egg-info/requires.txt
+ncafs.egg-info/top_level.txt

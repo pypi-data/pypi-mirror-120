@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: ncafs
+Version: 0.1
+Summary: Neighborhood Component Analysis Feature Selection
+Home-page: https://gitlab.com/pedro.paiva/ncafs
+Author: Pedro Paiva
+Author-email: paiva@ita.br
+License: BSD 3-Clause
+Download-URL: https://gitlab.com/pedro.paiva/ncafs/-/archive/v0.1/ncafs-v0.1.tar.gz
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Intended Audience :: Science/Research
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# NCAFS
+
+Neighborhood Component Analysis Feature Selection
+
+## Getting started
+
+### Classification
+```python
+from ncafs import NCAFSC
+from sklearn import datasets
+
+X, y = datasets.make_classification(
+    n_samples=1000,
+    n_classes=5,
+    n_features=20,
+    n_informative=100,
+    n_redundant=0,
+    n_repeated=0,
+    flip_y=0.1,
+    class_sep=0.5,
+    shuffle=False,
+    random_state=0
+)
+
+fs_clf = NCAFSC()
+fs_clf.fit(X, y)
+w = fs_clf.weights_
+```
+
+### Regression
+```python
+from ncafs import NCAFSR
+from sklearn import datasets
+
+X, y, coef = datasets.make_regression(
+    n_samples=1000,
+    n_features=100,
+    n_informative=20,
+    bias=0,
+    noise=1e-3,
+    coef=True,
+    shuffle=False,
+    random_state=0
+)
+
+fs_reg = NCAFSR()
+fs_reg.fit(X, y)
+w = fs_reg.weights_
+```
+
+## References
+
+1. Yang, W., Wang, K., & Zuo, W. (2012). Neighborhood component feature selection for high-dimensional data. J. Comput., 7(1), 161-168.
+2. Amankwaa-Kyeremeh, B., Greet, C., Zanin, M., Skinner, W., & Asamoah, R. K. Selecting Key Predictor Parameters for Regression Analysis using Modified Neighbourhood Component Analysis (NCA) Algorithm.
+
+
