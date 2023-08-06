@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: twmap
+Version: 0.2.0
+Summary: Python bindings for the crate twmap
+Author: Patiga <dev@patiga.eu>
+Author-email: Patiga <dev@patiga.eu>
+License: LGPL-3.0-only
+Project-URL: Source Code, https://gitlab.com/Patiga/twmap-py
