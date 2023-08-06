@@ -1,0 +1,10 @@
+Metadata-Version: 1.2
+Name: sek
+Version: 0.0.16
+Summary: Live Cloud Resource Security Configuration Scanning.
+Home-page: https://github.com/njgibbon/sek
+Author: Nick Gibbon
+License: UNKNOWN
+Description: Live Cloud Resource Security Configuration Scanning.
+Platform: UNKNOWN
+Requires-Python: >=3.7
