@@ -1,0 +1,3 @@
+[console_scripts]
+hypercatgui=hypercatgui:main
+
