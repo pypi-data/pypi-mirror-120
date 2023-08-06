@@ -1,0 +1,10 @@
+setup.py
+locapip/__init__.py
+locapip/__main__.py
+locapip/_app.py
+locapip/_explorer.py
+locapip.egg-info/PKG-INFO
+locapip.egg-info/SOURCES.txt
+locapip.egg-info/dependency_links.txt
+locapip.egg-info/requires.txt
+locapip.egg-info/top_level.txt
