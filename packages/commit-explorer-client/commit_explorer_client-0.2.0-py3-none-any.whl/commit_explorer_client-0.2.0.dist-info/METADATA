@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: commit-explorer-client
+Version: 0.2.0
+Summary: Client for Commit Explorer
+License: Apache 2.0
+Author: hlib
+Author-email: hlibbabii@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: appdirs (>=1.4.4,<2.0.0)
+Requires-Dist: requests-cache (>=0.7.1,<0.8.0)
