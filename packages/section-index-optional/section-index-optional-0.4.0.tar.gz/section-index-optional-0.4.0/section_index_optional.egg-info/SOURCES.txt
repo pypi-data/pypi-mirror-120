@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+section_index_optional/__init__.py
+section_index_optional/plugin.py
+section_index_optional/rewrites.py
+section_index_optional.egg-info/PKG-INFO
+section_index_optional.egg-info/SOURCES.txt
+section_index_optional.egg-info/dependency_links.txt
+section_index_optional.egg-info/entry_points.txt
+section_index_optional.egg-info/requires.txt
+section_index_optional.egg-info/top_level.txt
