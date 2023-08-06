@@ -1,0 +1,11 @@
+[tool]
+[tool.poetry]
+name = "asyncgram"
+version = "0.0.4"
+description = "A lightweight, asynchronous telegram logging client"
+authors = ["sumermalhotra"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3"
+requests = "*"
