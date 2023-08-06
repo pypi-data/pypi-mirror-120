@@ -1,0 +1,2 @@
+pyobjc-core>=8.0b1
+pyobjc-framework-Intents>=8.0b1
