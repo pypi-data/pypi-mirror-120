@@ -1,0 +1,8 @@
+flask_keycloak/__init__.py,sha256=lKDIUH6y0Gcr6no7JfUV4xmEbkCJIeQ9U_UCU0qNOcQ,31
+flask_keycloak/core.py,sha256=ydYWZvd8pbfhgGL9dgpfhpfeaq3a5Q2xC8XNJ_Zh0kc,10960
+flask_keycloak/examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flask_keycloak/examples/dash_example.py,sha256=MYUjvWQuYUI9ag9B3i1HKIHKNMtjyLUKJjEZzcunHwg,892
+dash_keycloak-0.0.24.dist-info/METADATA,sha256=6jikGq8AGGTsRMt3VYsMjKOwNgI60-0CAKEOPR_GEug,1552
+dash_keycloak-0.0.24.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+dash_keycloak-0.0.24.dist-info/top_level.txt,sha256=RCfz5zs8R0g1pUATmpQJdjej6vmRsgpvwbWJLIDXhF0,15
+dash_keycloak-0.0.24.dist-info/RECORD,,
