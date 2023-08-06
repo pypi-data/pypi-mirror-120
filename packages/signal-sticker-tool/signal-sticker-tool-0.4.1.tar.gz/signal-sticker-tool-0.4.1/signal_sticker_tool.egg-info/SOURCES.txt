@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+signal-sticker-tool
+signal_sticker_tool.egg-info/PKG-INFO
+signal_sticker_tool.egg-info/SOURCES.txt
+signal_sticker_tool.egg-info/dependency_links.txt
+signal_sticker_tool.egg-info/requires.txt
+signal_sticker_tool.egg-info/top_level.txt
+signal_sticker_tool.egg-info/zip-safe
