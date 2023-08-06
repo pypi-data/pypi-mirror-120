@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: ura-token-pkg-chengguan
+Version: 0.0.1
+Summary: A small example to obtain URA API token.
+Home-page: https://github.com/pypa/ura_token
+Author: Teo Cheng Guan
+Author-email: chengguan.teo@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# URA Token Package
+
+This is a small example to obtain URA API token. 
+
+## Register for your access key with [URA] (https://www.ura.gov.sg/maps/api/reg.html)
+
+## Example:
+```python
+import requests
+import json
+
+import ura_token
+
+u=ura_token.ura_token('<place your ura token here>')
+
+url="https://www.ura.gov.sg/uraDataService/invokeUraDS?service=Car_Park_Availability"
+myobj = {'AccessKey': u.get_accesskey(), 'token': u.get_token(), 'User-Agent': 'Mozilla/5.0'}
+resp = requests.post(url, headers=myobj)
+
+print(json.dumps(resp.json()['Result'], indent=4))
+```
+
+Questions or bugs, please write to chengguan.teo@gmail.com.
+
+
