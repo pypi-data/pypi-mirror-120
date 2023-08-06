@@ -1,0 +1,10 @@
+docs/EXAMPLES.md,sha256=DhHjrsKdo28a5j8kCzfniU5RYEDrBMQQUebcYVoDEag,837
+docs/FORECAST_METHODS.md,sha256=HVSFq9QYOcdg_FbBIHws37MdiEeEV1eEIwxU1qzstO8,1510
+tablespoon/__init__.py,sha256=GD2_G-FAOELVXEKvbJWASIQ67Cm4wqaN0E3OrnaRb6o,84
+tablespoon/forecasters.py,sha256=4RqZ23QxZ37a-nMNEi2Dd_52DucRqhOefI573m-yd30,9186
+tablespoon/stan/mean.stan,sha256=kmV-cGhmHfjIsYyQEEJiCO5-K82Ps-yBduwy6cNETmw,298
+tablespoon/stan/naive.stan,sha256=wxr4axqMN4kJoJUHy1A9lsmsy5lh6NH4QX6fqyryxg4,330
+tablespoon/stan/snaive.stan,sha256=DvMUuNhLOxRPJs-F1rP6T-0PkuAA6SncflnVZFLAdHk,356
+tablespoon-0.1.4.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+tablespoon-0.1.4.dist-info/METADATA,sha256=lMJH6rJd2e7g3MpcqFlggDTw0ydLttUjnmPEzuH3PX0,6970
+tablespoon-0.1.4.dist-info/RECORD,,
