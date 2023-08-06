@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/jsonrpc2_objects.egg-info/PKG-INFO
+src/jsonrpc2_objects.egg-info/SOURCES.txt
+src/jsonrpc2_objects.egg-info/dependency_links.txt
+src/jsonrpc2_objects.egg-info/requires.txt
+src/jsonrpc2_objects.egg-info/top_level.txt
+src/jsonrpcobjects/__init__.py
+src/jsonrpcobjects/errors.py
+src/jsonrpcobjects/jsontypes.py
+src/jsonrpcobjects/objects.py
