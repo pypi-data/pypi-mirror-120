@@ -1,0 +1,9 @@
+oneNeuron/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oneNeuron/perceptron.py,sha256=9Se1ZoVYOQi6XhAQuCxeJYJI_ltGl7x9_JUlS0bAhN0,1562
+utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utils/all_utils.py,sha256=UVBZes-GyZtee_Q4z5_cF_7nwPH4_5gQebvz-OaOB4Q,2555
+oneNeuron_pypi_sameer203-0.0.3.dist-info/LICENSE,sha256=Wu4nGZs95wqcwyyQeHO-XXuGg3iIbEUu83tarAnzY2Y,1066
+oneNeuron_pypi_sameer203-0.0.3.dist-info/METADATA,sha256=gxVAYkL924fcAVITOikc3BR9CMTaa0U9LAdyNou95co,576
+oneNeuron_pypi_sameer203-0.0.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+oneNeuron_pypi_sameer203-0.0.3.dist-info/top_level.txt,sha256=_XZ4fARX4dA9sWnggbzCTAHjkD8vm771ea31OgJO4KA,16
+oneNeuron_pypi_sameer203-0.0.3.dist-info/RECORD,,
