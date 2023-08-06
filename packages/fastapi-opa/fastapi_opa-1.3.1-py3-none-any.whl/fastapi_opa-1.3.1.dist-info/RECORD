@@ -1,0 +1,15 @@
+fastapi_opa/__init__.py,sha256=mwr1RZc-JiunHYvgjZANRXwkzmt6uo3S1W2hT9TkIOU,122
+fastapi_opa/auth/__init__.py,sha256=6wRAuz9mKFSCrkNZwP17490kVf5yR7pakFRgwz9gkjQ,124
+fastapi_opa/auth/auth_interface.py,sha256=P5LC1CnbKDycjdYyNFzUrujhics2F8Qa_q-LMcck1ck,709
+fastapi_opa/auth/auth_oidc.py,sha256=pH2S-OnBJuVzlmxpJHTKRBhEPnfkKu5s83c1PmIjd0A,8155
+fastapi_opa/auth/auth_saml.py,sha256=XYfoyu3coScloss9S5mS7wl6ytFAYU5aNGkgGLy-ojE,5435
+fastapi_opa/auth/exceptions.py,sha256=FYy0YPiDp2mOfKPldcWqKzsuXWhEvXU-U9ziG7UzZSA,328
+fastapi_opa/opa/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_opa/opa/enrichment/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_opa/opa/enrichment/graphql_enrichment.py,sha256=lm3b2ijrD-fiLP33QOYgSqMxEiHXiawxj5oBtGAj4b8,3609
+fastapi_opa/opa/opa_config.py,sha256=ZHFK6_pzLgQE3wBvnf9ps89-S7JeeF7JmTtNnLssIfM,720
+fastapi_opa/opa/opa_middleware.py,sha256=P47CQrJ6j73LAQJBSUoj164dWlndxfVDdNj3-q1iV70,3578
+fastapi_opa-1.3.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+fastapi_opa-1.3.1.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+fastapi_opa-1.3.1.dist-info/METADATA,sha256=imB2DXhozAZZoV7o0eWZM4T0irqNJqBNcqc9xqu2nvY,7322
+fastapi_opa-1.3.1.dist-info/RECORD,,
