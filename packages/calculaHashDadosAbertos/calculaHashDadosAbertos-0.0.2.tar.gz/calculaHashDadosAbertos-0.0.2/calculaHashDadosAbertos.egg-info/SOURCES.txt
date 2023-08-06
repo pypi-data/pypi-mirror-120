@@ -1,0 +1,8 @@
+README.md
+setup.py
+calculaHashDadosAbertos/CalculaHashCamara.py
+calculaHashDadosAbertos.egg-info/PKG-INFO
+calculaHashDadosAbertos.egg-info/SOURCES.txt
+calculaHashDadosAbertos.egg-info/dependency_links.txt
+calculaHashDadosAbertos.egg-info/requires.txt
+calculaHashDadosAbertos.egg-info/top_level.txt
