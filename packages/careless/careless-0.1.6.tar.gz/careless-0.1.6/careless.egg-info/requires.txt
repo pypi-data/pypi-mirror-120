@@ -1,0 +1,5 @@
+reciprocalspaceship<=0.9.15,>=0.9.8
+tqdm
+tensorflow==2.5.1
+tensorflow-probability==0.13.0
+matplotlib
