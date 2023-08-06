@@ -1,0 +1,10 @@
+cmd2==2.2.0
+python-dateutil==2.8.2
+python-tvmaze==1.0.1
+ratelimit==2.2.1
+terminaltables==3.1.0
+tinydb==4.5.1
+typing-extensions==3.10.0.0
+
+[test]
+tox
