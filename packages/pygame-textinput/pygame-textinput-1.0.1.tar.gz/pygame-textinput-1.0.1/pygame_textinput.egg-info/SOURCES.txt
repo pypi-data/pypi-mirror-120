@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+pygame_textinput/__init__.py
+pygame_textinput/pygame_textinput.py
+pygame_textinput.egg-info/PKG-INFO
+pygame_textinput.egg-info/SOURCES.txt
+pygame_textinput.egg-info/dependency_links.txt
+pygame_textinput.egg-info/requires.txt
+pygame_textinput.egg-info/top_level.txt
