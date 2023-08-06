@@ -1,0 +1,11 @@
+setup.py
+calc_plot_distributions/Binomialdistribution.py
+calc_plot_distributions/Gaussiandistribution.py
+calc_plot_distributions/Generaldistribution.py
+calc_plot_distributions/__init__.py
+calc_plot_distributions/test.py
+calc_plot_distributions.egg-info/PKG-INFO
+calc_plot_distributions.egg-info/SOURCES.txt
+calc_plot_distributions.egg-info/dependency_links.txt
+calc_plot_distributions.egg-info/not-zip-safe
+calc_plot_distributions.egg-info/top_level.txt
