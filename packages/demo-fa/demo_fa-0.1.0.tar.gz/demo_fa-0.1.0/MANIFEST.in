@@ -1,0 +1,10 @@
+include petdata/2015/08/01/*.jpg
+include petdata/2015/08/02/*.jpg
+include petdata/2015/08/03/*.jpg
+include petdata/2015/08/04/*.jpg
+include petdata/2015/08/05/*.jpg
+include petdata/2015/08/06/*.jpg
+include petdata/2015/08/07/*.jpg
+include petdata/2015/08/08/*.jpg
+include petdata/2015/08/09/*.jpg
+include petdata/bbso_json_data/2015_chir_data.json
