@@ -1,0 +1,10 @@
+kovol_language_tools/__init__.py,sha256=JOl41NviMN-qDV0Z8ZPmhNIxvgyauGGJHdB4A-8MhqM,93
+kovol_language_tools/_version.py,sha256=BZXTNv1QReLC2ozOTTJzy2s8znfysmMS0IrXOb81hlY,497
+kovol_language_tools/facts.py,sha256=_n3LGXLkCdE-mDo-OPhtdhkzILGknY_lIBJmYsivOSk,513
+kovol_language_tools/phonemics.py,sha256=Zzlhf0U_HeSG2JZQfWHVnrTCzsrJcpqbU4tXO_y64vQ,5147
+kovol_language_tools/verbs.py,sha256=fLxDQCb1ub8MvAQaGYy-3HKZw6ibgSw5B7a6BGXE3wk,18868
+kovol_language_tools-0.0.8.dist-info/LICENSE,sha256=5X8cMguM-HmKfS_4Om-eBqM6A1hfbgZf6pfx2G24QFI,35150
+kovol_language_tools-0.0.8.dist-info/METADATA,sha256=eIXLdjUqtdIF6WVpA2JfWMrIIISRy4_15jT_w7WnkXo,741
+kovol_language_tools-0.0.8.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+kovol_language_tools-0.0.8.dist-info/top_level.txt,sha256=wpDX7ON9n9Jd4eYw_2R7iS9-qG0Sf3qfYDhKpn2QQG8,21
+kovol_language_tools-0.0.8.dist-info/RECORD,,

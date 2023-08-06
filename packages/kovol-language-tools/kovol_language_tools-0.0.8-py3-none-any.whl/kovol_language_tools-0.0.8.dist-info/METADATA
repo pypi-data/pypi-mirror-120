@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: kovol-language-tools
+Version: 0.0.8
+Summary: Classes and functions for manipulating data in the Kovol langauge of Papua New Guinea.
+Home-page: https://github.com/stevetasticsteve/kovol-language-tools
+Author: Steve Stanley
+Author-email: stevetasticsteve@gmail.com
+License: GNU GPLv3 
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tabulate
+Requires-Dist: versioneer
+
+# Kovol language tools
+
+Classes and functions for handing kovol language data.
+
+## inlcudes
+- phonemics
+- verb prediction
+
+
