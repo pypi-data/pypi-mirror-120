@@ -1,0 +1,4 @@
+markdown2>=2.3.2
+tinydb>=3.6.0
+jinja2
+pygments
