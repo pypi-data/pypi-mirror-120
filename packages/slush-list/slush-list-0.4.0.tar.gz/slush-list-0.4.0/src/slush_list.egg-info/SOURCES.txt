@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/slush_list/__init__.py
+src/slush_list/main.py
+src/slush_list/slush_list.py
+src/slush_list/test_slush.py
+src/slush_list.egg-info/PKG-INFO
+src/slush_list.egg-info/SOURCES.txt
+src/slush_list.egg-info/dependency_links.txt
+src/slush_list.egg-info/top_level.txt
