@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: copier_python_dummy
+Version: 0.0.1
+Summary: Short description of your project.
+Author-email: Blake Naccarato <dummy@dummy.dummy>
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: fire~=0.4
+Project-URL: Home, https://github.com/blakeNaccarato/tooling
+
+# copier_python_dummy
+
+Long description of your project.
+
