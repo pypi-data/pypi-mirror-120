@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/pymdt/__init__.py
+src/pymdt/py.typed
+src/pymdt/wd.py
+src/pymdt.egg-info/PKG-INFO
+src/pymdt.egg-info/SOURCES.txt
+src/pymdt.egg-info/dependency_links.txt
+src/pymdt.egg-info/not-zip-safe
+src/pymdt.egg-info/requires.txt
+src/pymdt.egg-info/top_level.txt
