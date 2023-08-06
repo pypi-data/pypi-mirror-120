@@ -1,0 +1,2 @@
+b_cfn_custom_userpool_authorizer
+b_cfn_custom_userpool_authorizer_test
