@@ -1,0 +1,9 @@
+LICENSE
+setup.py
+wikionary/__init__.py
+wikionary/wikionary.py
+wikionary.egg-info/PKG-INFO
+wikionary.egg-info/SOURCES.txt
+wikionary.egg-info/dependency_links.txt
+wikionary.egg-info/requires.txt
+wikionary.egg-info/top_level.txt
