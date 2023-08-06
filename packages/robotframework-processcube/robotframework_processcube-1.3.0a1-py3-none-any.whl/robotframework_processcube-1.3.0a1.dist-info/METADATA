@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: robotframework-processcube
+Version: 1.3.0a1
+Summary: Robot Framework Keywords for processcube workflow engine.
+Home-page: https://github.com/atlas-engine-contrib/robotframework-processcube
+Author: 5Minds IT-Solutions GmbH & Co. KG
+Author-email: processcube@5minds.de
+License: MIT Licence
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Robot Framework
+Description-Content-Type: text/markdown
+Requires-Dist: atlas-engine-client (==2.0.0)
+Requires-Dist: docker (==5.0.0)
+Requires-Dist: requests (==2.24.0)
+Requires-Dist: robotframework (>=4.0.0)
+Requires-Dist: six (==1.16.0)
+
+# Verwendung des Robot Framework mit der 5Minds-Engine
+
+- [Voraussetzung](#voraussetzung)
+- [Verwendung](#verwendung)
+  * [BPMN-Datei veröffentlichen](#bpmn-datei-veroffentlichen)
+  * [Prozessmodell starten](#prozessmodell-starten)
+  * [Ergebnisse von beendeten Prozessen abfragen](#ergebnisse-von-beendeten-prozessen-abfragen)
+  * [Umgang mit External-Tasks](#umgang-mit-external-tasks)
+  * [Umgang mit Benutzer-Task (User-Task)](#umgang-mit-benutzer-task-user-task)
+  * [Umgang mit Ereignissen (Events)](#umgang-mit-ereignissen-events)
+    + [Signale](#signale)
+    + [Nachrichten (Messages)](#nachrichten-messages)
+## Voraussetzung
+
+## Verwendung
+
+### BPMN-Datei veröffentlichen
+
+```robotframework
+Library         ProcessCubeLibrary     engine_url=http://localhost:56100
+
+*** Tasks ***
+
+Successfully deploy
+    Deploy Processmodel    examples/hello_robot_framework.bpmn
+```
+
+### Prozessmodell starten
+
+### Ergebnisse von beendeten Prozessen abfragen
+
+### Umgang mit External-Tasks
+
+### Umgang mit Benutzer-Task (User-Task)
+
+### Umgang mit Ereignissen (Events)
+
+#### Signale
+
+#### Nachrichten (Messages)
+
+
+
