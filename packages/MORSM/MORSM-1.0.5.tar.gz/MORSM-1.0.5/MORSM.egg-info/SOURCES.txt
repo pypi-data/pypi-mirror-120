@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+MORSM.egg-info/PKG-INFO
+MORSM.egg-info/SOURCES.txt
+MORSM.egg-info/dependency_links.txt
+MORSM.egg-info/requires.txt
+MORSM.egg-info/top_level.txt
