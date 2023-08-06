@@ -1,0 +1,3 @@
+[console_scripts]
+pykwalify_webform = pykwalify_webform.__main__:main
+
