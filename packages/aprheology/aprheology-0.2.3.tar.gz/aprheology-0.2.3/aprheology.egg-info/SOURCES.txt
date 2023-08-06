@@ -1,0 +1,10 @@
+README.md
+setup.py
+aprheology/__init__.py
+aprheology/gui.py
+aprheology/relaxation.py
+aprheology.egg-info/PKG-INFO
+aprheology.egg-info/SOURCES.txt
+aprheology.egg-info/dependency_links.txt
+aprheology.egg-info/requires.txt
+aprheology.egg-info/top_level.txt
