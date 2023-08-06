@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: vraxion
+Version: 0.1.2
+Summary: Vraxion is a Python Web Framework built for learning purposes.
+Home-page: UNKNOWN
+Author: Michael Karotsieris
+Author-email: michael.karotsieris@gmail.com
+License: MIT
+Description: Vraxion is a Python Web Framework built for learning purposes.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
