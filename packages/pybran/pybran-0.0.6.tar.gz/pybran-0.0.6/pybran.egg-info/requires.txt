@@ -1,0 +1,6 @@
+
+[test]
+pytest
+pylint
+coverage
+bandit
