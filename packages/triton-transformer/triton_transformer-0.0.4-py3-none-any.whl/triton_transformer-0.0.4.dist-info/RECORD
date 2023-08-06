@@ -1,0 +1,8 @@
+triton_transformer/__init__.py,sha256=YUrS-aXvLUX1fyCnpJdZpiX0ns1z6-lms8mOCKURWkQ,62
+triton_transformer/autoregressive_wrapper.py,sha256=vSzRXgAGWffRULbr_s8o6yinsDgDyaiuZIS1QNAiGXI,2059
+triton_transformer/triton_transformer.py,sha256=187LwzQ1RoMEzWwc7MX0TDJ7dvrruotE7kobpqzkxO8,14071
+triton_transformer-0.0.4.dist-info/LICENSE,sha256=_nRlQFj-K6BpgI2_Nt79biB7r4hZ82NmpqPOrlqm7MU,1066
+triton_transformer-0.0.4.dist-info/METADATA,sha256=YCZHS3TprMrcCrXQecPVZm8SNDoHSxlcE423dfyWToA,681
+triton_transformer-0.0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+triton_transformer-0.0.4.dist-info/top_level.txt,sha256=OMPh7Xul1ocfq6jGGzRLDVzhukNXZjXrWZ_rnMXIhAQ,19
+triton_transformer-0.0.4.dist-info/RECORD,,
