@@ -1,0 +1,8 @@
+Cython
+Pillow
+beautifulsoup4
+colorama
+lxml
+numpy
+psutil
+requests
