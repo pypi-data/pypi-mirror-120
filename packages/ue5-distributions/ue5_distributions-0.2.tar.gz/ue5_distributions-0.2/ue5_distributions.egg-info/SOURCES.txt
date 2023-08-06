@@ -1,0 +1,10 @@
+setup.py
+ue5_distributions/Binomialdistribution.py
+ue5_distributions/Gaussiandistribution.py
+ue5_distributions/Generaldistribution.py
+ue5_distributions/__init__.py
+ue5_distributions.egg-info/PKG-INFO
+ue5_distributions.egg-info/SOURCES.txt
+ue5_distributions.egg-info/dependency_links.txt
+ue5_distributions.egg-info/not-zip-safe
+ue5_distributions.egg-info/top_level.txt
