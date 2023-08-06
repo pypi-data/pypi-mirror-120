@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: pymcuboot
+Version: 0.0.0.3
+Summary: A Python driver for a MCU bootloader
+Home-page: https://github.com/microchip-pic-avr-tools/pymcuboot
+Author: Microchip Technology
+Author-email: support@microchip.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Embedded Systems
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: mock ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+
+# pymcuboot
+pymcuboot is a Python driver for a MCU bootloader
+
+## Usage
+The remainder of this package is intentionally blank
+
+
