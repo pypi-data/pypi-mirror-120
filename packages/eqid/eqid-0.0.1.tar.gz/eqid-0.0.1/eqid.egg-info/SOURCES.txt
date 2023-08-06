@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+eqid/__init__.py
+eqid.egg-info/PKG-INFO
+eqid.egg-info/SOURCES.txt
+eqid.egg-info/dependency_links.txt
+eqid.egg-info/requires.txt
+eqid.egg-info/top_level.txt
