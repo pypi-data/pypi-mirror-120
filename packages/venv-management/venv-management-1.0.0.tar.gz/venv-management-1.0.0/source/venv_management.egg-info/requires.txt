@@ -1,0 +1,8 @@
+
+[dev]
+black
+bump2version
+
+[test]
+hypothesis
+pytest
