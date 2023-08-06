@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ukb_loader
+Version: 0.0.2
+Summary: Package for fast loading of UK Biobank phenotype and genotype datasets
+Home-page: https://github.com/alex-medvedev-msc/ukb_loader
+Author: Aleksandr Medvedev
+Author-email: aleksandr.medvedev@skoltech.ru
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/alex-medvedev-msc/ukb_loader/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# UK Biobank data loader
+
+It has tools to load selected phenotypes from UK Biobank main dataset very fast. 
+
