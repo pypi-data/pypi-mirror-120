@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: tornado-middleware
+Version: 1.1.8
+Summary: Middleware support for Tornado Framework
+Home-page: https://gitlab.com/everest-code/libraries/tornado-middlewares
+Author: Sebastian Gaviria Tangarife
+Author-email: sgt.911@outlook.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://gitlab.com/everest-code/libraries/tornado-middlewares/-/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Tornado Middlewares
+
+Middleware support for Tornado Framework
+
