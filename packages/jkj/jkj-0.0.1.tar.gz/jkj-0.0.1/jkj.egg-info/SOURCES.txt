@@ -1,0 +1,8 @@
+MANIFEST.in
+README.txt
+setup.py
+jkj.egg-info/PKG-INFO
+jkj.egg-info/SOURCES.txt
+jkj.egg-info/dependency_links.txt
+jkj.egg-info/requires.txt
+jkj.egg-info/top_level.txt

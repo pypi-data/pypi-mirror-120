@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: jkj
+Version: 0.0.1
+Summary: A very ip lookup
+Home-page: UNKNOWN
+Author: itay Kao
+Author-email: adirbavel@gmail.com
+License: MIT
+Keywords: ipLookup
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+
+This is a very simple IP Lookup.
+
+Change Log
+==========
+
+0.0.1 (20/09/2021)
+------------------
+- First Release
+
