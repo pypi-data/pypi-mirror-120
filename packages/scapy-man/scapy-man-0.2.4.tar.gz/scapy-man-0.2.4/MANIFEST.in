@@ -1,0 +1,2 @@
+include README.md LICENSE
+include scapy/data/worker.js
