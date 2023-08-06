@@ -1,0 +1,3 @@
+boto3~=1.16.55
+typer~=0.4.0
+parallelpipe~=0.2.6
