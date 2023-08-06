@@ -1,0 +1,11 @@
+README.md
+setup.py
+tikzfeynwrap/__init__.py
+tikzfeynwrap/container.py
+tikzfeynwrap/folder.py
+tikzfeynwrap.egg-info/PKG-INFO
+tikzfeynwrap.egg-info/SOURCES.txt
+tikzfeynwrap.egg-info/dependency_links.txt
+tikzfeynwrap.egg-info/not-zip-safe
+tikzfeynwrap.egg-info/requires.txt
+tikzfeynwrap.egg-info/top_level.txt
