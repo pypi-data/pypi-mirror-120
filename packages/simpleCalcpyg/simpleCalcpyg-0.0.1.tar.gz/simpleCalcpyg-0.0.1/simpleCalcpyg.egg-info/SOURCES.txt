@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+simpleCalcpyg.egg-info/PKG-INFO
+simpleCalcpyg.egg-info/SOURCES.txt
+simpleCalcpyg.egg-info/dependency_links.txt
+simpleCalcpyg.egg-info/top_level.txt

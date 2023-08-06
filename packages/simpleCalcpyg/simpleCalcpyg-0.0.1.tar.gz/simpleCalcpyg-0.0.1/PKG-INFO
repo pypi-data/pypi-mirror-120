@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: simpleCalcpyg
+Version: 0.0.1
+Summary: A very basic calculator
+Home-page: UNKNOWN
+Author: yunes fatahi
+Author-email: panahikaren91@gmail.com
+License: MIT
+Description: simple calculator for you
+        
+        change log
+        ==========
+        0.0.1(21/09/2021)
+        --------------------
+        
+        - First Release
+Keywords: calculator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Unix
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
