@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: taca
+Version: 0.9.3
+Summary: Tool for the Automation of Cleanup and Analyses
+Home-page: http://taca.readthedocs.org/en/latest/
+Author: NGI-stockholm
+Author-email: ngi_pipeline_operators@scilifelab.se
+License: MIT
+Keywords: bioinformatics
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: click (==7.1.2)
+Requires-Dist: requests
+Requires-Dist: pyyaml
+Requires-Dist: flowcell-parser
+Requires-Dist: soupsieve (<2.0)
+Requires-Dist: beautifulsoup4
+Requires-Dist: python-crontab
+
+This package contains a set of functionalities that are useful in the day-to-day tasks of bioinformatitians in National Genomics Infrastructure in Stockholm, Sweden.
+

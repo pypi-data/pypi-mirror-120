@@ -1,0 +1,11 @@
+[console_scripts]
+taca = taca.cli:cli
+
+[taca.subcommands]
+analysis = taca.analysis.cli:analysis
+backup = taca.backup.cli:backup
+bioinfo_deliveries = taca.utils.cli:bioinfo_deliveries
+cleanup = taca.cleanup.cli:cleanup
+create_env = taca.testing.cli:uppmax_env
+server_status = taca.server_status.cli:server_status
+
