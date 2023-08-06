@@ -1,0 +1,16 @@
+amodule.py,sha256=BZqDpYOT-0ULheccGDr_Px-kCwCiYnwPldwnpHEICBg,130
+grafanarmadillo/__init__.py,sha256=Y4TU4KZVvxxhQXAJgbnD_rJYKHr0jjVCxVSpzsf1ws4,71
+grafanarmadillo/_util.py,sha256=HN4OGtPgiCfzOlbiXoMNK2fQjrwo0TbcQ34V4ftNxSs,340
+grafanarmadillo/find.py,sha256=vp-jgQpY5dqzHOK1Xg_ZLvBTZPoFupgHNVUm9Hz8dH4,2816
+grafanarmadillo/util.py,sha256=Z7gxeowC-tLs9_hF_56pJV4GBI7h3vJmtBlwagw1i4E,183
+sampleproject/__init__.py,sha256=AOxmoXYQUUdKQ6wZMMqmPXE-kF3YTGQJoIbR-AYnVV0,69
+sampleproject/__main__.py,sha256=_uek7E9Cf7mZRfck8M6CxRYdfMoSKqequX26g1Y40d8,148
+sampleproject/cli_int1.py,sha256=nWmDa0il12Ri3_qJ41zG7jlBDMuIPpRdWAiu5VgD0NM,148
+sampleproject/libs/__init__.py,sha256=ZnUGWoV6CxS4ZYFmobZDzWcwuZNF_-s2rdkI7NAsXWk,41
+sampleproject/libs/samplemodule.py,sha256=Vl9_1paYCECVgKm_2CJUgOxeDdobGTBTkRtW4Dm7MR4,501
+grafanarmadillo-0.0.3.dist-info/LICENSE,sha256=qeJGUfWV-uExm6mNULVnu4An54hmL5UQjeEp7RgxPpM,4002
+grafanarmadillo-0.0.3.dist-info/METADATA,sha256=4HZbOG-hBGDjn4BWHcsIV7hR-8fpw7YV6zT2RjeVY58,2779
+grafanarmadillo-0.0.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+grafanarmadillo-0.0.3.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+grafanarmadillo-0.0.3.dist-info/top_level.txt,sha256=4Lghq01XEUC_yN_Mzjej-huJYDnPpjyUl1J7slDh3e4,16
+grafanarmadillo-0.0.3.dist-info/RECORD,,
