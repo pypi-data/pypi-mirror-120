@@ -1,0 +1,14 @@
+httpx>=0.17
+
+[build]
+bump2version
+
+[example]
+asgi-tools
+asgi-sessions
+uvicorn
+
+[tests]
+pytest
+pytest-aio[trio]
+pytest-mypy

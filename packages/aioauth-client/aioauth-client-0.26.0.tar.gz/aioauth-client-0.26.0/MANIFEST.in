@@ -1,0 +1,9 @@
+include AUTHORS.rst
+include Changelog
+include LICENSE
+include README.rst
+include aioauth_client/py.typed
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+recursive-exclude * *.orig
