@@ -1,0 +1,1 @@
+from sus2.sus import amogus, toSus
