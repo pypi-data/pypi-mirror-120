@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+colchian/__init__.py
+colchian/_version.py
+colchian/colchian.py
+colchian.egg-info/PKG-INFO
+colchian.egg-info/SOURCES.txt
+colchian.egg-info/dependency_links.txt
+colchian.egg-info/top_level.txt
+test/test_colchian.py
