@@ -1,0 +1,13 @@
+LICENCE
+README.md
+pyproject.toml
+setup.cfg
+src/acctext/__init__.py
+src/acctext/core.py
+src/acctext/graphql.py
+src/acctext/transforms.py
+src/acctext.egg-info/PKG-INFO
+src/acctext.egg-info/SOURCES.txt
+src/acctext.egg-info/dependency_links.txt
+src/acctext.egg-info/requires.txt
+src/acctext.egg-info/top_level.txt
