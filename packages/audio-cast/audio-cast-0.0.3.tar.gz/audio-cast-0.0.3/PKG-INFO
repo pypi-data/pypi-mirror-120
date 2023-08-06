@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: audio-cast
+Version: 0.0.3
+Summary: A system to cast audio input to chromecast devices.
+Home-page: https://github.com/juancamilo87/linux-cast
+Author: Juan Camilo Garcia
+Author-email: scythedev@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/juancamilo87/linux-cast/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: COPYING
+
+# Application to cast streams to chromecast
+
+## Usage
+
+- When using VS Code, just run the debugger.
+- When starting from termimal.
+  1. Set environment variable for `FLASK_APP`.
+     - Linux/osX: `export set FLASK_APP=src.audio_cast.webapp`
+     - Windows: `set FLASK_APP=src.audio_cast.webapp`
+  2. Launch the server with `python -m flask run`.
+
+
