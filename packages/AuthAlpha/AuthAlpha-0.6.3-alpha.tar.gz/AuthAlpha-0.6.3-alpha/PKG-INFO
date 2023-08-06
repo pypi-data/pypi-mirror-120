@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: AuthAlpha
+Version: 0.6.3-alpha
+Summary: A python cryptography package to manage authentication and to ensure integrity of files.
+Home-page: https://github.com/Theorist-Git/AuthAlpha
+Author: Mayank Vats
+Author-email: testpass.py@gmail.com
+License: GNU GPLv3
+Download-URL: https://github.com/Theorist-Git/AuthAlpha/archive/refs/tags/v0.6.3-alpha.tar.gz
+Description: UNKNOWN
+Keywords: AUTHENTICATION,CRYPTOGRAPHY,HASHING
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.9
