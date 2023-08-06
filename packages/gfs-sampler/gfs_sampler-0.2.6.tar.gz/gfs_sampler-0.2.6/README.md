@@ -1,0 +1,105 @@
+# GFS Sampler
+### A Bayesian Approach to Linking Data Without Unique Identifiers
+
+Existing file linkage methods may produce sub-optimal results because they consider neither the interactions between different pairs of matched records nor relationships be- tween variables that are exclusive to one of the files. In addition, many of the current methods fail to address the uncertainty in the linkage, which may result in overly precise estimates of relationships between variables that are exclusive to one of the files. Bayesian methods for record linkage can reduce the bias in the estimation of scientific relationships of interest and provide interval estimates that account for the uncertainty in the linkage; however, implementation of these methods can often be complex and computationally intensive. The linking procedure implemented in `sample` method samples from the joint posterior distribution of model parameters and the linking permutations. The algorithm approaches file linkage as a missing data problem and generates multiple linked data sets. For computational efficiency, only the linkage permutations are stored and multiple analyses are performed using each of the permutations separately. This implementation reduces the computational complexity of the linking process and the expertise required of researchers analyzing linked data sets. The accompanying [article](https://arxiv.org/abs/2012.00601) describes the algorithm implemented in the GFS package and its statistical basis, and demonstrates its use on a sample data set.
+
+The following is an example of how to use the `sample` funtion to sample permutations and perform an analysis on the result. The data in this example can be found [here](https://github.com/edwinfarley/GFSdata/tree/main/example).
+
+```
+import gfs_sampler as gfs
+
+df1 = pd.read_csv("df1.csv")
+df2 = pd.read_csv("df2.csv")
+
+df1
+    Unnamed: 0        x1        x2        x3  block
+0            0  0.394733 -0.916155  0.898750      0
+1            1 -0.424413 -0.031617  1.480408      0
+2            2 -1.258595  0.205968 -0.081770      1
+3            3 -0.735767 -0.484754  0.640762      1
+4            4 -1.893178  0.130316 -0.448746      1
+5            5 -0.562399 -1.394054  0.347471      1
+6            6 -2.077640 -0.151079  0.788683      2
+7            7 -0.079236 -0.623254  0.436277      2
+8            8 -0.134996  0.374739  0.365238      2
+9            9 -1.182588 -0.847098 -0.409076      2
+10          10 -1.208469 -0.148028  0.553797      3
+11          11  0.752511 -0.134799 -1.249679      3
+12          12 -0.213216  0.210439 -0.645887      3
+13          13  1.446243 -0.038883 -1.185393      4
+14          14 -0.108149  2.320337 -1.287081      4
+15          15 -0.937489  1.572783  0.646608      5
+16          16 -0.142403 -0.002152  0.135443      5
+17          17 -0.606363 -0.497108  0.551527      5
+df2
+    Unnamed: 0   X         y        y1  block  y2
+0            1   0  0.347471  0.898750      0   0
+1            2   1 -0.448746  1.480408      0   0
+2            3   2  0.640762 -0.081770      1   1
+3            4   3 -0.081770  0.640762      1   0
+4            5   4 -4.885880 -0.448746      1   1
+5            6   5 -4.010329  0.347471      1   1
+6            7   6 -6.382151  0.788683      2   0
+7            8   7 -0.966081  0.436277      2   1
+8            9   8 -1.230198  0.365238      2   1
+9           10   9 -3.034150 -0.409076      2   1
+10          11  10 -5.344446  0.553797      2   0
+11          12  11  4.156361 -1.249679      2   0
+12          13  12  1.104526 -0.645887      3   1
+13          14  13  4.757351 -1.185393      3   0
+14          15  14  2.845133 -1.287081      4   1
+15          16  15 -3.095188  0.646608      4   1
+16          17  16 -1.713077  0.135443      5   0
+17          18  17 -3.105004  0.551527      5   1
+18          19  18  3.212516 -0.145264      5   0
+>>> 
+```
+Initialize sampling parameters to suit your data. Larger data sets will require more iterations for sampling regression coefficients, but the parameters that will have the greatest impact on the performance of the sampled permutations in estimating population statistics will be the number of burn-in iterations and the sampling interval:
+
+```
+# N: number of samples
+N = 5
+# I: number of iterations for sampling regression coefficients
+I = 50
+# t: Metropolis-Hastings samples multiplier
+t = 5
+# burnin: number of burn-in samples
+burnin = 200
+# interval: number of iterations between samples, after burn-in
+interval = 20
+```
+To sample permutations, a model must be specified between the variables in both data sets to construct a likelihood function over permutations. `sample` function supports models from the Normal, Logistic, and Poisson families of distributions, and joint models combining multiple families. A model is specified with a string in the format of R regression models in the `formula` argument and the name of the family of the model in the `family` argument. A joint model is specified equivalently with a vector of formulas and a vector of family names. Run the sampling function and save the resulting data frame containing the permutation results to a variable:
+```
+P = gfs.sample(df1, df2, ["y1~x1+x2+x3", "y2~x1+x2"], ["Normal", "Logistic"], N, I, t, burnin, interval )
+```
+With the permutation results, we can calculate statistics over the combined data set using the `average_stat` function. For the sake of example, say we want to understand the correlation structure between the "y" variables and the "x" variables across `df1` and `df2`.
+The average_stat function takes in a function to be applied to the data set that returns the desired statistic.
+We define some functions to be applied to the completed data set:
+```
+cor_x1y1 = lambda df: np.correlate(df["x1"], df["y1"])
+cor_x2y1 = lambda df: np.correlate(df["x2"], df["y1"])
+cor_x1y2 = lambda df: np.correlate(df["x1"], df["y2"])
+cor_x2y2 = lambda df: np.correlate(df["x2"], df["y2"])
+```
+Passing this function to the `stat` argument of the `average_stat` function will return the estimate, its variance (the function documentation gives more information about between- and within-imputation variance), and a confidence interval according to the given confidence level (default input `a = 0.95`).
+```
+x1y1 = gfs.average_stat(df1, df2, P_1, cor_x1y1)
+x2y1 = gfs.average_stat(df1, df2, P_1, cor_x2y1)
+x1y2 = gfs.average_stat(df1, df2, P_1, cor_x1y2)
+x2y2 = gfs.average_stat(df1, df2, P_1, cor_x2y2)
+```
+Here is one example of how to visualize the results for the correlation realtionships we examined:
+```
+from matplotlib import pyplot as plt
+from scipy.stats import norm
+
+all_estimates = [x1y1, x2y1, x1y2, x2y2]
+alpha = 0.95
+Z = norm.ppf(alpha + ((1-alpha)/2))
+plt.errorbar(
+    [i for i in range(0, len(all_estimates))],
+    [info["estimate"] for info in all_estimates],
+    yerr=np.transpose([np.sqrt(info["total_variance"]) * Z for info in all_estimates]),
+    marker='o', linestyle = '', capsize=5
+)
+```
