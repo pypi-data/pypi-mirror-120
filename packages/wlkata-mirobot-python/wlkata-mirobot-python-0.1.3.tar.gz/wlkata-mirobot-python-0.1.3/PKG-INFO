@@ -1,0 +1,96 @@
+Metadata-Version: 2.1
+Name: wlkata-mirobot-python
+Version: 0.1.3
+Summary: WKlata Mirobot Python SDK
+Home-page: https://github.com/mushroom-x/wlkata-mirobot-python
+Author: Shunkai Xing
+Author-email: xingshunkai@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: 
+Classifier:                  Development Status :: 4 - Beta
+Classifier:                  Programming Language :: Python :: 3 :: Only
+Classifier:                  Programming Language :: Python :: 3.6
+Classifier:                  Programming Language :: Python :: 3.7
+Classifier:                  Programming Language :: Python :: 3.8
+Classifier:                  Programming Language :: Python :: 3.9
+Classifier:                  License :: OSI Approved :: MIT License
+Classifier:                  Operating System :: OS Independent
+Classifier:                  Operating System :: Microsoft :: Windows
+Classifier:                  Operating System :: POSIX
+Classifier:                  Operating System :: Unix
+Classifier:                  Operating System :: MacOS
+Classifier:                  Topic :: Scientific/Engineering
+Classifier:                  Topic :: Education
+Classifier:                  Topic :: Documentation
+Classifier:                  Topic :: Home Automation
+Classifier:                  Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier:                  Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)
+Classifier:                  Topic :: Scientific/Engineering :: Image Recognition
+Classifier:                  Topic :: Software Development :: Embedded Systems
+Classifier:                  Topic :: Software Development :: Version Control :: Git
+Classifier:                  Topic :: Terminals :: Serial
+Classifier:                  Intended Audience :: Education
+Classifier:                  Intended Audience :: Science/Research
+Classifier:                  Intended Audience :: Manufacturing
+Classifier:                  Intended Audience :: Developers
+Classifier:                  
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+wlkata-mirobot-python
+=====================
+
+Wlkata Mirobot (6DoF Robot Arm) Python  SDK
+
+Install Package
+---------------
+
+**Windows**
+
+.. code-block:: bash
+
+   pip install wlkata-mirobot-python
+
+**Ubuntu**
+
+.. code-block:: bash
+
+   pip3 install wlkata-mirobot-python
+
+Quick Start
+-----------
+
+.. code-block:: python
+
+   '''
+   Set robot arm wrist pose by P2P trajectory plan
+   P2P: point to point
+   '''
+   from wlkata_mirobot import WlkataMirobot
+   import time
+   # Create Robot Arm Object
+   # Remember to change portname.
+   # - Windows: COM + ID, exp: 'COM15'
+   # - Linux: /dev/ttyUSB + ID, exp: '/dev/ttyUSB0'
+   arm = WlkataMirobot(portname='COM15', debug=True)
+   # Robot Arm Homing
+   arm.home_simultaneous()
+
+   print("Move to point A (x, y, z)")
+   arm.set_wrist_pose(200,  20, 230)
+   print(f"Current robot arm end pose:  {arm.pose}")
+   time.sleep(1)
+
+   print("Move to point B (x, y, z)")
+   arm.set_wrist_pose(200,  20, 150)
+   print(f"Current robot arm end pose: {arm.pose}")
+   time.sleep(1)
+
+   print("Move to point C (x, y, z, roll, pitch, yaw)")
+   arm.set_wrist_pose(150,  -20,  230, roll=30.0, pitch=0, yaw=45.0)
+   print(f"Current robot arm end pose {arm.pose}")
+
+
