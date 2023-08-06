@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+ebadscalculator/__init__.py
+ebadscalculator.egg-info/PKG-INFO
+ebadscalculator.egg-info/SOURCES.txt
+ebadscalculator.egg-info/dependency_links.txt
+ebadscalculator.egg-info/top_level.txt

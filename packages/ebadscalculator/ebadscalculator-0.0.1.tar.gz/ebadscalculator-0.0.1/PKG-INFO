@@ -1,0 +1,26 @@
+Metadata-Version: 1.1
+Name: ebadscalculator
+Version: 0.0.1
+Summary: A very basic calculator
+Home-page: UNKNOWN
+Author: Muhammad Ebaad Ullah Khan
+Author-email: ebadullah371@gmail.com
+License: MIT
+Description: This is a simple calculator for checking purpose
+        
+        Change Log
+        
+        ==========
+        
+        0.0.1 (23/09/2021)
+        ------------------
+        
+        - First Release
+        
+Keywords: calculator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
