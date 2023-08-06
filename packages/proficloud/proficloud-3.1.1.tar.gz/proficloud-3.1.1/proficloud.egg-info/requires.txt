@@ -1,0 +1,13 @@
+bokeh
+jsonpickle
+kaa-sdk
+matplotlib
+ntplib
+numpy
+paho-mqtt
+pandas
+py_linq
+requests
+sklearn
+somoclu
+streamz
