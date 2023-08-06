@@ -1,0 +1,11 @@
+[build-system]
+requires = [
+    'setuptools',
+    'wheel',
+    'oc_ocdm', 
+    'rdflib', 
+    'rdflib-jsonld', 
+    'SPARQLWrapper', 
+    'tqdm'
+]
+build-backend = "setuptools.build_meta"

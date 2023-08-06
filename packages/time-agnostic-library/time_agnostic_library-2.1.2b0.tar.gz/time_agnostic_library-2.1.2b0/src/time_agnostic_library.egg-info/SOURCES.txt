@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/time_agnostic_library/__init__.py
+src/time_agnostic_library/agnostic_entity.py
+src/time_agnostic_library/agnostic_query.py
+src/time_agnostic_library/prov_entity.py
+src/time_agnostic_library/sparql.py
+src/time_agnostic_library/support.py
+src/time_agnostic_library.egg-info/PKG-INFO
+src/time_agnostic_library.egg-info/SOURCES.txt
+src/time_agnostic_library.egg-info/dependency_links.txt
+src/time_agnostic_library.egg-info/top_level.txt
