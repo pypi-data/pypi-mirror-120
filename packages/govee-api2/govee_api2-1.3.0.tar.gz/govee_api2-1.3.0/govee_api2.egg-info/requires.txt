@@ -1,0 +1,5 @@
+Click>=7.0
+AWSIoTPythonSDK
+colour
+requests
+PyJWT==1.7.1
