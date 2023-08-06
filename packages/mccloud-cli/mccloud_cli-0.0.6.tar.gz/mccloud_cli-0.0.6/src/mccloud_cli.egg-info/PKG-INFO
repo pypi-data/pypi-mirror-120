@@ -1,0 +1,132 @@
+Metadata-Version: 2.1
+Name: mccloud-cli
+Version: 0.0.6
+Summary: A command line to assist McCloud users.
+Home-page: UNKNOWN
+Author: Chan Zuckerberg Science
+Author-email: mccloud@chanzuckerberg.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Intro
+
+`mccloud_cli` is a command line interface to the McCloud service. McCloud provides
+a simple means to start a [Shasta](https://github.com/chanzuckerberg/shasta) assembly
+in the cloud. `mccloud_cli` provides an easy means to generate presigned URLs for use with the
+McCloud web UI, and the capability to submit McCloud jobs directly from the command line.
+
+To use `mccloud_cli`, you must have the [AWS command line](https://aws.amazon.com/cli/) set up and working
+correctly with your AWS account. Please refer to the [AWS CLI User Guide](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) for more information on this prerequisite.
+
+# Quick start
+
+1. Ensure you have the AWS CLI installed and working correctly with your account.
+   A good test is the ability to successfully move data in and out of your own
+   S3 bucket, eg, `aws --profile your-aws-profile-name s3 ls s3://your-bucket-name/`
+2. [optional] We highly suggest you run all python programs in a
+   [virtual environment](https://docs.python.org/3/tutorial/venv.html). Set up
+   and activate a virtual environment.
+3. `pip install mccloud-cli`
+4. `mccloud_cli --help`
+
+# Presigned URLs example
+
+`mccloud_cli` will generate AWS presigned URLs. This is useful when you want to store your
+data in _your own_ AWS S3 bucket (ie, privately), but want to temporarily grant McCloud
+access to read input data, and write results back to your bucket.
+
+IMPORTANT: AWS S3 presigned URLs are a standard way to share data, but make the assumption
+that you will not share the URL with anyone else (ie, it will remain a secret between you
+and McCloud). For more information on presigned URLs, please read the
+[AWS S3 User Guide](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-presigned-url.html).
+
+Usage:
+
+```
+$ mccloud_cli generate-s3-presigned-url --help
+Usage: mccloud_cli generate-s3-presigned-url [OPTIONS]
+
+Options:
+  --profile TEXT             Use a specific profile from your AWS credential file.
+  --no-confirmation BOOLEAN  Perform requested actions without user confirmation.
+  -i, --input-url TEXT       S3 URL which will be presigned to allow READ (input) access.
+  -o, --output-url TEXT      S3 URL which will be presigned to allow WRITE (output) access.
+  --expires-in INTEGER       Number of seconds until the pre-signed URLs expire.  [default: 172800]
+  --help                     Show this message and exit.
+```
+
+For example:
+
+```
+$ mccloud_cli generate-s3-presigned-url --profile my-aws-profile -i s3://my-bucket/reads.fasta.gz -o s3://my-bucket/results.tar.gz
+
+This action will generate AWS S3 presigned URLs for the input and output URLs you have specified, with an expiration time 172800 seconds [2 days] from now.
+
+Read (input) URLs:
+------------------
+s3://my-bucket/reads.fasta.gz
+
+Write (output) URLs:
+--------------------
+s3://my-bucket/results.tar.gz
+
+Do you wish to proceed? [y/N]: Y
+
+Your presigned URLs will expire in 8 hours.
+
+Please launch the McCloud job with these URLs.
+
+Presigned INPUT URLs:
+---------------------
+https://s3.amazonaws.com/my-bucket/reads.fasta.gz?AWSAccessKeyId=...
+
+Presigned OUTPUT URLs:
+----------------------
+https://s3.amazonaws.com/my-bucket/results.tar.gz?AWSAccessKeyId=...
+```
+
+# Job submission example
+
+`mccloud_cli` will also submit jobs directly from the command line. Input and output URLs must
+be `https` URLs or `s3` URLs in a bucket you have access to.
+
+Usage:
+
+```
+$ mccloud_cli submit-job --help
+Usage: mccloud_cli submit-job [OPTIONS]
+
+Options:
+  --mcat TEXT                     McCloud Access Token, ie, MCAT-****.  [required]
+  --email EMAIL ADDRESS           Email address for job notifications.  [required]
+  -i, --input-url TEXT            S3 URL which will be presigned to allow READ (input) access.  [required]
+  -o, --output-url TEXT           A single S3 URL which will be presigned to allow WRITE (output) access.  [required]
+  --shasta-version TEXT           [required]
+  --shasta-config TEXT            [required]
+  --shasta-cli-opts TEXT
+  --I-have-read-and-agree-to-McCloud-terms-of-use
+                                  Confirm that you have read, and agree to, the McCloud terms of use, available at
+                                  https://mccloud.czi.technology/terms-of-use
+  --tail-job-log                  After job is submitted, print out job log messages.
+  --profile TEXT                  Use a specific profile from your AWS credential file.
+  --help                          Show this message and exit.
+```
+
+For example:
+
+```
+$ mccloud_cli submit-job --mcat 'MCAT-XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX' --email my@email.com --profile my-aws-profile -i s3://my-bucket/reads.fasta.gz -o s3://my-bucket/output.tar.gz --shasta-version 0.7.0 --shasta-config Nanopore-Sep2020
+I have read and agree to mccloud terms of use [y/N]: Y
+Starting McCloud job, id = ec39baa4-ea68-4c1e-8040-40277b2a48a0
+You can view logs at https://mccloud.czi.technology/jobs/ec39baa4-ea68-4c1e-8040-40277b2a48a0/monitor
+```
+
+
