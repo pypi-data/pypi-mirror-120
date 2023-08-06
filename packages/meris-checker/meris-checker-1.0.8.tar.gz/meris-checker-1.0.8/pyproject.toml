@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "meris-checker"
+version = "1.0.8"
+readme = "README.md"
+description = "A script which checks the qrator database to see if any of your IPs is listed as part of the Meris botnet."
+authors = ["Don Spaulding <don@bloono.com>"]
+license = "MIT"
+repository = "https://hg.sr.ht/~donspaulding/meris-checker/browse"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+meris-checker = 'meris_checker.checker:main'
