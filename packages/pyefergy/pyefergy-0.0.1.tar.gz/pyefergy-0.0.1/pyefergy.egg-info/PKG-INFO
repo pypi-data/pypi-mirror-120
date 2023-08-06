@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pyefergy
+Version: 0.0.1
+Summary: An API library for Efergy energy meters.
+Home-page: https://github.com/tkdrob/pyefergy
+Author: Robert Hillis
+Author-email: tkdrob4390@yahoo.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# An API library for Efergy energy meters
+
+
