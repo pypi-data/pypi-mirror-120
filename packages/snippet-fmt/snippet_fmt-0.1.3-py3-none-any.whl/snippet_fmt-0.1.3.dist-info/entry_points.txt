@@ -1,0 +1,2 @@
+[console_scripts]
+snippet-fmt = snippet_fmt.__main__:main
