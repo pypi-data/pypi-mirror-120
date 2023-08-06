@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+./mcaapi/APItoken.py
+./mcaapi/__init__.py
+./mcaapi/inputs.py
+./mcaapi/mcaapi.py
+./mcaapi/tests.py
+./mcaapi/datasets/__init__.py
+./mcaapi/datasets/residential_10k.csv
+./mcaapi/datasets/residential_10k.rst
+mcaapi.egg-info/PKG-INFO
+mcaapi.egg-info/SOURCES.txt
+mcaapi.egg-info/dependency_links.txt
+mcaapi.egg-info/requires.txt
+mcaapi.egg-info/top_level.txt
+mcaapi/datasets/residential_10k.csv
