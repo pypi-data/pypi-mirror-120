@@ -1,0 +1,8 @@
+ibis-framework
+numba<0.54
+pandas
+pyomnisci>=0.27.0
+pyomniscidb>=5.5.2
+pyarrow
+rbc-project>=0.4.0
+sqlalchemy<1.4
