@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: doitintl-docops
+Version: 1.0.0
+Summary: Python library and CLI tools for doing DocOps at DoiT
+Home-page: https://github.com/doitintl/docops
+Keywords: ci-cd,docs,docops,glossaries,nlp,qa-automation
+Author: DoiT International
+Author-email: engineering@doit-intl.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: License :: OSI Approved :: MIT License
+Classifier: License :: Other/Proprietary License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: Indexing
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: Topic :: Utilities
+Requires-Dist: api-client (>=1.3.1,<2.0.0)
+Requires-Dist: appdirs (>=1.4.4,<2.0.0)
+Requires-Dist: charset-normalizer (>=2.0.4,<3.0.0)
+Requires-Dist: docopt (>=0.6.2,<0.7.0)
+Requires-Dist: inflect (>=5.3.0,<6.0.0)
+Requires-Dist: inflection (>=0.5.1,<0.6.0)
+Requires-Dist: nltk (>=3.6.2,<4.0.0)
+Requires-Dist: pastel (>=0.2.1,<0.3.0)
+Requires-Dist: tabulate (>=0.8.9,<0.9.0)
+Project-URL: Repository, https://github.com/doitintl/docops-python
+Description-Content-Type: text/markdown
+
+# DoiT DocOps Python Package
+
+_Python library and CLI tools for doing DocOps at DoiT_
+
+**Table of contents:**
+
+- [Install](#install)
+- [Documentation](#documentation)
+  - [Users](#users)
+  - [Developers](#developers)
+
+## Install
+
+You can install the [doit-docops][pypi-project] package using [Pip][pip]:
+
+```console
+$ pip install doit-docops
+Collecting doit-docops
+  Downloading doit_docops-0.0.0-py3-none-any.whl (175 kB)
+[...]
+Successfully installed doit-docops-0.0.0
+```
+
+The [project releases][releases] page has a complete list of all releases and
+the corresponding release notes. If you prefer to install the package manually,
+each release page has links to multiple release assets.
+
+## Documentation
+
+> 📝 **Note**
+>
+> Documentation is sparse at the moment because this project is still in the
+> early stages of development.
+
+### Users
+
+- [Glossary utilities][user-gloss]
+- [GitBook client][user-gitbook]
+
+### Developers
+
+- [Python development][dev-python]
+
+<!-- Link references go below this line, sorted ascending --->
+
+[dev-python]: https://github.com/doitintl/docops-python/blob/main/docs/dev/python.md
+[pip]: https://pip.pypa.io/en/stable/
+[pypi-project]: https://pypi.org/project/ddoit-docops
+[releases]: https://github.com/doitintl/docops-python/releases
+[user-gitbook]: https://github.com/doitintl/docops-python/blob/main/docs/user/gitbook.md
+[user-gloss]: https://github.com/doitintl/docops-python/blob/main/docs/user/gloss.md
+
