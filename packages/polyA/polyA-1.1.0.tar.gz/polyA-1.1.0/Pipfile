@@ -1,0 +1,21 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+black = "*"
+flit = "*"
+ipython = "*"
+m2r2 = "*"
+mypy = "*"
+pylint = ">=2.4.4,<3.0.0"
+pytest = ">=5.3.5,<6.0.0"
+rope = "*"
+scalene = "*"
+sphinx = "*"
+
+[packages]
+
+[pipenv]
+allow_prereleases = true
