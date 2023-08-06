@@ -1,0 +1,9 @@
+Pillow
+coloredlogs
+numpy
+opencv_python
+pyeventbus3
+smbus
+tinydb
+urllib3
+websockets
