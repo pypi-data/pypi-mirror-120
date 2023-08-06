@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: instaresizer
+Version: 0.0.5
+Summary: Returns a PIL Image object of instagram compatible aspect ratio when supplied with an image URL or an image object.
+Home-page: https://github.com/roshanpty/instaresizer
+Author: Roshan Thomas
+Author-email: roshan@secvibe.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/roshanpty/instaresizer
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Pillow
+Requires-Dist: requests
+Requires-Dist: python-resize-image
+
+### Instaresizer
+
+#### Description
+
+Instagram only allows images between aspect rations 16:9 (landscape) and 4:5 (portrait) mode to be uploaded. Images that are wider than 16:9 or taller than 4:5 are not supported by Instagram for uploads. Instaresizer is an image resizer that can be used to convert images of any aspect ratio to instagram supported aspect ratios. This resizer converts the image to optimal dimensions depending on the original image's orientation. If the image is too wide, it fills transparent pixels on top and bottom to bring the image to the supported aspect ratio of 16:9. Similarly if the image is too tall, it fills in the left and right of the image with transparent pizels to bring the aspect ratio to 4:5. 
+
+#### Usage
+
+##### Installation
+
+```
+pip install instaresizer
+```
+
+##### Example
+
+###### Importing the library
+```
+#!/usr/bin/env python3
+from instaresizer import instasize
+```
+###### Usage - resizing remote image file supplied via a URL. 
+
+This is useful if the image is publicly accessible with no additional authentication requirements. 
+```
+image_url = 'https://s3.amazonaws.com/images.seroundtable.com/30th-anniversary-of-the-world-wide-web-google-1552390014.gif'
+img = instasize.resize_remote(image_url)
+img.save('resized_file.png', 'PNG')
+```
+###### Usage - resizing local image file. 
+```
+image = Image.open("test_image.jpeg")
+img = instasize.resize_image(image)
+img.save('resized_file.png', 'PNG')
+```
+
+
