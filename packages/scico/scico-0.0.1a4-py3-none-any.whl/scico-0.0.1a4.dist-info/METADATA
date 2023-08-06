@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: scico
+Version: 0.0.1a4
+Summary: Scientific Computational Imaging COde: A Python package for scientific imaging problems
+Home-page: https://github.com/bwohlberg/scico
+Author: SCICO Developers
+Author-email: brendt@ieee.org
+License: BSD
+Keywords: Computational Imaging,Inverse Problems,Optimization,ADMM,PGM
+Platform: Any
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >3.8
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: imageio
+Requires-Dist: jax
+Provides-Extra: docs
+Requires-Dist: sphinx (>=3.5.2) ; extra == 'docs'
+Requires-Dist: numpydoc ; extra == 'docs'
+Requires-Dist: sphinxcontrib-bibtex ; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-runner ; extra == 'tests'
+
+SCICO is a Python package for solving imaging inverse problems, with an emphasis on problems arising in scientific imaging applications. One of the primary focuses of the package is providing methods for solving ill-posed inverse problems with the use of an appropriate prior model of the reconstruction space.
+
+
