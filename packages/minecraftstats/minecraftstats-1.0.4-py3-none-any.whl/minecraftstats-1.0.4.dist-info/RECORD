@@ -1,0 +1,10 @@
+minecraftstats/__init__.py,sha256=WJEEJi8QTZm2U2BaN5aeiOBsPGXh1HVB0cM-y7Dbpsg,284
+minecraftstats/bedwarsstats.py,sha256=LlcfUedt_4k_gGKugJiq0VpQw3AvqxRLvAJ-ru2l7g0,2048
+minecraftstats/duelstats.py,sha256=ll0fy-fxETk4q8_7lBO5d68Fmjgasd6RedZiTeasldo,5887
+minecraftstats/errors.py,sha256=d0IIa4P_le_ZYpQN3klyvCgNXRdEKhvY47jkYpS0I6o,436
+minecraftstats/minecraftstats.py,sha256=PsHysE9ZMh83xQktq5cZkarkJABAzOA0SYy4224mMNY,1387
+minecraftstats-1.0.4.dist-info/LICENSE,sha256=IXUCEz55926itm8GAqwIAAyppFjEPh_9DnfOsfQDXTo,1081
+minecraftstats-1.0.4.dist-info/METADATA,sha256=7ayVr7-NGJZ1pHB2_LBi3Q86Vt0AcWOvZApvtakmYr4,4300
+minecraftstats-1.0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+minecraftstats-1.0.4.dist-info/top_level.txt,sha256=7qj6qPRefKt6cvsRUzLuBuqQSR6Glb_f-Uj-ATI6ofs,15
+minecraftstats-1.0.4.dist-info/RECORD,,
