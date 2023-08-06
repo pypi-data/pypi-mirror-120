@@ -1,0 +1,6 @@
+pytest
+pytesseract
+mypy
+flit
+flake8
+pre-commit
