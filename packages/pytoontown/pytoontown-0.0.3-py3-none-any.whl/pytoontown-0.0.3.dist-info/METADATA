@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pytoontown
+Version: 0.0.3
+Summary: A Python API wrapper for the Toontown Rewritten and Corporate Clash APIs
+Home-page: https://github.com/Koalacards/pytoontown
+Author: Koalacards
+Author-email: deanglhayd@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Koalacards/pytoontown/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pytoontown
+A Python API Wrapper for popular toontown games (Toontown Rewritten, Toontown: Corporate Clash)
+
+
