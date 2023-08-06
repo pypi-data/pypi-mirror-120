@@ -1,0 +1,11 @@
+uol_auto_vpn/__init__.py,sha256=OOlcQTpXGYbxky1bXnuRZc74THavbanUONNf7PrV-_c,73
+uol_auto_vpn/driver.py,sha256=rDuH91JOhOYin4b2gAc0lQmQ7ZjWmEekkElbtyiZoTU,1800
+uol_auto_vpn/env.py,sha256=T7-SKoEhDtl8y87N0xtCFNfgwQSp9h29Gbb1DD9A-gY,1979
+uol_auto_vpn/run.py,sha256=vRnb5y5GCqYhWr0IRsYVMBKU_omlBZVeWDrvHb1He0A,1524
+uol_auto_vpn/version.py,sha256=guA0U_U5egfjOQ8qYZ6khHexcK51R8QyBGAp2nbgxYk,18
+uol_auto_vpn-0.0.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+uol_auto_vpn-0.0.5.dist-info/METADATA,sha256=YH9JfwBgDGOVPWg6_EFc7Ny7Z3CAQ64uSVVxv84qUKI,1371
+uol_auto_vpn-0.0.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+uol_auto_vpn-0.0.5.dist-info/entry_points.txt,sha256=XUrj41J1TKnn521PhEq3P3G1O5vUfSahApe9QcWMTnY,55
+uol_auto_vpn-0.0.5.dist-info/top_level.txt,sha256=CLRMbpt40_b8NKbjdHoHKc2d8m6mXC3fru-3W2IMnb0,13
+uol_auto_vpn-0.0.5.dist-info/RECORD,,

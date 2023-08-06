@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: uol-auto-vpn
+Version: 0.0.5
+Summary: Auto connect to UoL VPN by Raymond Tunstill.
+Home-page: https://raymondkirk.github.io/uol_auto_vpn/
+Author: Raymond Tunstill
+Author-email: ray.tunstill@gmail.com
+License: GNU GPLv3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: selenium (==3.141.0)
+Requires-Dist: keyring (==23.2.1)
+
+# UoL Auto VPN
+
+![](https://github.com/RaymondKirk/uol_auto_vpn/workflows/build/badge.svg)
+
+Automatically extract a VPN cookie from remote.lincoln.ac.uk and connect. For faster access fill in env.json.
+
+## Documentation
+
+Please refer to the [documentation](https://raymondkirk.github.io/uol_auto_vpn/) for installation instructions and API usage.
+
+## Usage
+
+### Method One (Pip)
+
+```bash 
+python3 -m pip install uol_auto_vpn
+uol_auto_vpn
+```
+
+### Method Two (Bash)
+
+One line installer. 
+
+```bash 
+wget -qO - https://raw.githubusercontent.com/RaymondKirk/uol_auto_vpn/main/run.sh | bash -s 1
+```
+
+This will install the repo to `~/projects/uol_auto_vpn"`. Where you can add to the configuration.
+
+
+### Method Three (Source)
+
+```bash
+sudo apt install python3 python3-venv openconnect
+git clone https://github.com/uol_auto_vpn --depth 1
+cd uol_auto_vpn
+./run.sh  # or pip install -e . && uol_auto_vpn
+```
+
+
