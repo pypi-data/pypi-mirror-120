@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+vnpy_bitstamp/__init__.py
+vnpy_bitstamp/bitstamp_gateway.py
+vnpy_bitstamp.egg-info/PKG-INFO
+vnpy_bitstamp.egg-info/SOURCES.txt
+vnpy_bitstamp.egg-info/dependency_links.txt
+vnpy_bitstamp.egg-info/not-zip-safe
+vnpy_bitstamp.egg-info/requires.txt
+vnpy_bitstamp.egg-info/top_level.txt
