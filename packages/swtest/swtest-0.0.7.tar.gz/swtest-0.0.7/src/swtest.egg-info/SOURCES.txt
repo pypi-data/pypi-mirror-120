@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/swqt/__init__.py
+src/swqt/swqt.py
+src/swqt/test.py
+src/swqt/utils.py
+src/swtest.egg-info/PKG-INFO
+src/swtest.egg-info/SOURCES.txt
+src/swtest.egg-info/dependency_links.txt
+src/swtest.egg-info/top_level.txt
