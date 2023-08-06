@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+tbparse/tbparse.egg-info/PKG-INFO
+tbparse/tbparse.egg-info/SOURCES.txt
+tbparse/tbparse.egg-info/dependency_links.txt
+tbparse/tbparse.egg-info/requires.txt
+tbparse/tbparse.egg-info/top_level.txt
