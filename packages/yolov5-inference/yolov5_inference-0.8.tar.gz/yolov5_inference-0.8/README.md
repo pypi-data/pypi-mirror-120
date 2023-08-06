@@ -1,0 +1,16 @@
+Package dung de inference model yolov5 voi custom object
+# Install
+```bash
+pip install yolov5-inference==0.6
+```
+
+# Use
+```bash
+from yolov5_inference.infer import DetectObject
+class_name = {0: 'text', 1: 'title', 2: 'list', 3: 'table', 4: 'figure'}
+model = DetectObject(weights='../path/of/weights', classes=class_name)
+img_path = '../path/of/img'
+img = cv2.imread(img_path)
+rs = model.detect(img)
+# [x_min, y_min, x_max, y_max, cls]
+```
