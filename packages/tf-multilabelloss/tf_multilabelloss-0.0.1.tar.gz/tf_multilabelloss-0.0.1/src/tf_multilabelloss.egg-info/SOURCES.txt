@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/multi_label_loss/__init__.py
+src/multi_label_loss/multilabelloss.py
+src/tf_multilabelloss.egg-info/PKG-INFO
+src/tf_multilabelloss.egg-info/SOURCES.txt
+src/tf_multilabelloss.egg-info/dependency_links.txt
+src/tf_multilabelloss.egg-info/top_level.txt
