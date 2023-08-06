@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+fgroups/__init__.py
+fgroups/group_structure.py
+finite_groups.egg-info/PKG-INFO
+finite_groups.egg-info/SOURCES.txt
+finite_groups.egg-info/dependency_links.txt
+finite_groups.egg-info/requires.txt
+finite_groups.egg-info/top_level.txt

@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: finite-groups
+Version: 0.0.1
+Summary: Finite Groups Computations
+Home-page: https://github.com/CrisLeaf/finite-groups
+Author: Cris Torres
+Author-email: cristobal_javier@hotmail.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE
+
+UNKNOWN
+
