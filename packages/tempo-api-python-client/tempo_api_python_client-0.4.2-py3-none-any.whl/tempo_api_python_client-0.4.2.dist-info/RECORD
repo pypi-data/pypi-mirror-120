@@ -1,0 +1,10 @@
+tempoapiclient/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tempoapiclient/client.py,sha256=g3DKY91ybzkkN6FaH7mF5yVtUMNW1DnHEo_6qIhUYg0,8954
+tempoapiclient/rest_client.py,sha256=IQZ33XQDfzwTVp1s6AlNsc1CvMd0IroqEv99fguu0I4,5524
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_client.py,sha256=BKut_U3LMo2CtoMgOvNdkH_O8IlWSLiZDApMCRCrMgY,2276
+tempo_api_python_client-0.4.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+tempo_api_python_client-0.4.2.dist-info/METADATA,sha256=KWxnlG6tarRaaalmVwqT0FvX_pXDskNmK7XQ27kAbas,1474
+tempo_api_python_client-0.4.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+tempo_api_python_client-0.4.2.dist-info/top_level.txt,sha256=D3-MJjJeW9DeKnhkA35Nsgl8dxyjhX0DzJuVUnRQFOo,21
+tempo_api_python_client-0.4.2.dist-info/RECORD,,
