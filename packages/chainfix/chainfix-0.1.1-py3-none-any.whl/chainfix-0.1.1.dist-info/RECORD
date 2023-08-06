@@ -1,0 +1,11 @@
+chainfix/__init__.py,sha256=8nVuQjMsYmL1xyDKzQamVCaWpN0E9J4M9-_17xkjPa8,1000
+chainfix/binary.py,sha256=VDLsh6T8XYFusrjDfVZdsah54Z9J3likl9cHajKOJy8,1745
+chainfix/context.py,sha256=zq__rtR2T4nTJtm5dDVvN-qZ5y-1trCWdCzH_kByCmQ,3654
+chainfix/decimal.py,sha256=ry_JZVF0oY_cv_VQa9LBRmxr7ove8UL8S4hKfs9joE4,1831
+chainfix/fixed_point.py,sha256=GZQ4jMDcApckcebvbsVseKr9VYx5e_QykyLNfhdQxjo,6806
+chainfix/helpers.py,sha256=0z_1m9fHMd8SjU2Jk_t5r_DYcB5lRsiZw2BXroPb90I,2062
+chainfix-0.1.1.dist-info/LICENSE.txt,sha256=cjvq47f7Cki-zMTyoFr8lKxsXXpRfYCPseLvW18Bmcc,2787
+chainfix-0.1.1.dist-info/METADATA,sha256=MxgmzxQuTH1HPbmPrmhy1rWirDCXdpwJMfVKJqiEpos,4876
+chainfix-0.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+chainfix-0.1.1.dist-info/top_level.txt,sha256=BSdDLd2yyol9rjXv-ggoL6hzjnKWH-ajPqxJU8A_dKs,9
+chainfix-0.1.1.dist-info/RECORD,,
