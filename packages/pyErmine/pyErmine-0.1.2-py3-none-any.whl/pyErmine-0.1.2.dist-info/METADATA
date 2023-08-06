@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: pyErmine
+Version: 0.1.2
+Summary: Estimate Reaction-rates by Markov-based Investigation of Nanoscopy Experiments (ermine) using Python.
+Home-page: https://github.com/SMLMS/pyErmine
+Author: Sebastian Malkusch
+Author-email: malkusch@med.uni-frankfurt.de
+License: GNU General Public License v3 (GPLv3)
+Keywords: hidden markov model,unsupervised learning,single particle tracking,biophysics
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: hmmlearn (>=0.2.4)
+Requires-Dist: numpy (>=1.19.2)
+Requires-Dist: pandas (>=1.1.5)
+Requires-Dist: scikit-learn (>=0.23.2)
+
+# pyErmine
+Estimate Reaction-rates by Markov-based Investigation of Nanoscopy Experiments (ermine) using Python.
+
+## Author
+Sebastian Malkusch  
+
+Data Science | Clinical Pharmacology  
+Institute for clinical pharmacology  
+Goethe-University-Hospital  
+Frankfurt am Main  
+Germany
+
+## Abstarct
+The python package pyErmine analyzes the mobility of laterally diffusing molecules, such as membrane receptors, using hidden Markov models. It maps the movements of individual receptors to discrete diffusion states, all of which are Brownian in nature. The model is trained with single-particle tracking data.
+
+## Requirements
+* hmmlearn >= 0.2.4
+* numpy >= 1.19.2
+* pandas >= 1.1.5
+* scikit-learn >= 0.23.2
+
+## Reference
+Publication in progress.
+
+## Tutorial
+A tutorial including a test data set can be found on Github at the following repository: https://github.com/SMLMS/ermine-tutorial
+
+
+
