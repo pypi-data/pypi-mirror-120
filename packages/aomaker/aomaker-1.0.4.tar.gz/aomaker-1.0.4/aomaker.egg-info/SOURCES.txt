@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+aomaker/__init__.py
+aomaker/cli.py
+aomaker/make.py
+aomaker/make_testcase.py
+aomaker/scaffold.py
+aomaker/swagger2yaml.py
+aomaker.egg-info/PKG-INFO
+aomaker.egg-info/SOURCES.txt
+aomaker.egg-info/dependency_links.txt
+aomaker.egg-info/entry_points.txt
+aomaker.egg-info/requires.txt
+aomaker.egg-info/top_level.txt

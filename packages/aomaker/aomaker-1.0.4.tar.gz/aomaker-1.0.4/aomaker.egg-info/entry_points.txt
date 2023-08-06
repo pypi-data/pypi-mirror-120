@@ -1,0 +1,5 @@
+[console_scripts]
+amake = aomaker.cli:main_make_alias
+aomaker = aomaker.cli:main
+arun = aomaker.cli:main_arun_alias
+
