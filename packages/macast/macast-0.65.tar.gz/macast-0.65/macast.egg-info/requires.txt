@@ -1,0 +1,6 @@
+requests
+appdirs
+cherrypy
+lxml
+rumps
+pyperclip
