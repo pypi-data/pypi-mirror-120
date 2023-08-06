@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+kungfu_pandas/__init__.py
+kungfu_pandas/kungfu.py
+kungfu_pandas.egg-info/PKG-INFO
+kungfu_pandas.egg-info/SOURCES.txt
+kungfu_pandas.egg-info/dependency_links.txt
+kungfu_pandas.egg-info/requires.txt
+kungfu_pandas.egg-info/top_level.txt
