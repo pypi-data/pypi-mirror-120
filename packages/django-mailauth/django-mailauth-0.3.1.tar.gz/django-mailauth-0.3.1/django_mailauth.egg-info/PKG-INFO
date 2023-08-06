@@ -1,0 +1,57 @@
+Metadata-Version: 1.2
+Name: django-mailauth
+Version: 0.3.1
+Summary: A Django app to support email-based authentication.
+Home-page: https://www.example.com/
+Author: Eyob Tariku
+Author-email: hello@eyob.tech
+License: BSD-2-Clause
+Description: ===============
+        Django Mailauth
+        ===============
+        
+        Mailauth is a Django authentication app to replace the default
+        username-based authentication with an email-based authentication.
+        
+        Note: Mailauth should installed & setup before any migration is created.
+        
+        Quick start
+        -----------
+        0. Install the ``django-mailauth`` authentication using pip from PyPi::
+           
+              pip install django-mailauth
+        
+        1. Add "mailauth" to your INSTALLED_APPS setting like this::
+        
+              INSTALLED_APPS = [
+                ...
+                'mailauth',
+              ]
+        
+        2. Replace your default "User" model with with Mailauth's custom user model
+           In your ``settings.py`` module, add or update the following line::
+           
+              AUTH_USER_MODEL = 'mailauth.User'
+        
+        3. Run ``python manage.py makemigrations`` to create your first migrations.
+        4. Run ``python manage.py migrate`` to apply the changes to your database tables.
+        
+        5. Start the development server and visit http://127.0.0.1:8000/admin/
+           to add new users (you'll need the Admin app enabled).
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.6
