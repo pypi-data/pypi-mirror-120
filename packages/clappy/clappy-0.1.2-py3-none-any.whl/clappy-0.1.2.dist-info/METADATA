@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: clappy
+Version: 0.1.2
+Summary: Command line argument parser for pythonic code
+Home-page: https://github.com/yoko72/clappy
+Author: Toshiyuki Yokoyama
+Author-email: yokoyamacode@gmail.com
+License: UNKNOWN
+Keywords: command line argument parser
+Platform: UNKNOWN
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Development Status :: 4 - Beta
+License-File: LICENSE
+
+Command Line Argument Parser for PYthonic code.
+
+    given_kwarg1 = clappy.parse("--kwarg1")
+    given_kwarg2 = clappy.parse("--kwarg2")
+    
+You can directly get each given arg.
+
