@@ -1,0 +1,16 @@
+.flake8
+.hgtags
+CHANGELOG
+COPYRIGHT
+MANIFEST.in
+README
+setup.py
+tox.ini
+mt940/MT940-optional.txt
+mt940/MT940.txt
+mt940/__init__.py
+mt940/test.py
+mt940.egg-info/PKG-INFO
+mt940.egg-info/SOURCES.txt
+mt940.egg-info/dependency_links.txt
+mt940.egg-info/top_level.txt
