@@ -1,0 +1,11 @@
+epflpeople/VERSION,sha256=zB0CuD59wiXTB4TyqnZ2-bf39oY5trlB9bcyQlkC92M,6
+epflpeople/__init__.py,sha256=2TyvkT5aoLB0wIHUys5aZxoCZLjErhLsBF6sde152lk,133
+epflpeople/__main__.py,sha256=CJ6y8jCV7zGXPNwGKETY5Sm69Dsi_tpIbg99yS_slzU,505
+epflpeople/epflpeople.py,sha256=akkHhzszzVNVm-mMmHUsutHKzppbHUFou2VW5z5y6ow,5309
+epflpeople/errors.py,sha256=2ALyU4pybwBgX7gt__bgk3kD519VmqR_Pd-zldFECFI,448
+epflpeople-0.0.4.dist-info/LICENSE,sha256=Oum4MU7u-viog1nibUGAj-MhcQCX_i69FBkME-G9N0A,1069
+epflpeople-0.0.4.dist-info/METADATA,sha256=4tv9DJgcLN3CiePt5YSZ1k7hFx3O_Qx4Q_AL7vBeYng,2508
+epflpeople-0.0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+epflpeople-0.0.4.dist-info/entry_points.txt,sha256=OLNeNPFuA_T09Cs3CKsob-I7427c-KTHpC3I87MtzZ0,114
+epflpeople-0.0.4.dist-info/top_level.txt,sha256=fJN3Gd-7ZUQXNc8UVqTL3Ek8lht833fUFgVCBZIUdKw,11
+epflpeople-0.0.4.dist-info/RECORD,,
