@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+swaggerjmx_diff/__init__.py
+swaggerjmx_diff/diff.py
+swaggerjmx_diff/tools.py
+swaggerjmx_diff.egg-info/PKG-INFO
+swaggerjmx_diff.egg-info/SOURCES.txt
+swaggerjmx_diff.egg-info/dependency_links.txt
+swaggerjmx_diff.egg-info/entry_points.txt
+swaggerjmx_diff.egg-info/requires.txt
+swaggerjmx_diff.egg-info/top_level.txt
+swaggerjmx_diff/cli/__init__.py
+swaggerjmx_diff/cli/cli.py
+swaggerjmx_diff/cli/plugin.py
+swaggerjmx_diff/cli/scaffold.py
