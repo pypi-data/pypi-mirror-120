@@ -1,0 +1,17 @@
+#!/usr/bin/env python
+
+import sys
+from asciinema_clip.clipper import AsciinemaClipper
+
+if __name__ == "__main__":
+    if len(sys.argv) < 4:
+        print("Usage: asciinema-clip input_filename output_filename cutoff")
+
+    _, input_filename, output_filename, cutoff = sys.argv
+
+    c = AsciinemaClipper(
+        input_filename=input_filename,
+        output_filename=output_filename,
+        cutoff=float(cutoff),
+    )
+    c.execute()
