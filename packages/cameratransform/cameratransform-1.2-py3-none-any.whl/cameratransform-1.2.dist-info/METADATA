@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: cameratransform
+Version: 1.2
+Summary: Projects coordinates from 2D to 3D and can fit camera parameters
+Home-page: UNKNOWN
+Author: Richard Gerum
+Author-email: richard.gerum@fau.de
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: tqdm
+Provides-Extra: exif_extraction
+Requires-Dist: pillow ; extra == 'exif_extraction'
+Requires-Dist: requests ; extra == 'exif_extraction'
+Provides-Extra: projecting_top_view
+Requires-Dist: cv2 ; extra == 'projecting_top_view'
+Requires-Dist: matplotlib ; extra == 'projecting_top_view'
+
+UNKNOWN
+

@@ -1,0 +1,17 @@
+cameratransform/QtShortCuts.py,sha256=KGcvFNguXcuyEZ2wgXmgZCwFN4lLRRyFwQq4OdaV8Hs,20436
+cameratransform/__init__.py,sha256=ASsNymh84iGr6YjbdJrP9Bot0iromE2ZXArQpLvM53A,853
+cameratransform/camera.py,sha256=KE9AZ5C6fNBxhIoDN26MODSHIOSKTr6zdAtbJCag-k4,63819
+cameratransform/gps.py,sha256=QAOlHKYHqBWPLLqUYyknChDZkjXrBg58ZVoR4Q2b5CQ,15871
+cameratransform/gui_demonstrator.py,sha256=-NJwfwxKKB-aKtFsG28Kfn2-GE8YnGwg-_9GPTHXJqU,7310
+cameratransform/lens_distortion.py,sha256=dT8yqJS9P-g7CLqKktrL-eJURJVRCGGhJ8D7TAyX77s,10477
+cameratransform/parameter_set.py,sha256=8E3dv21oRy4AwunVTZU-nun8EiqcSWeRXEgSgY21DSw,13975
+cameratransform/projection.py,sha256=aLhY__uCRB9nw-D4mg0uiLpEKCms0GVpfbKfJ_y6J-4,22157
+cameratransform/ray.py,sha256=2kFNQ2MLsZ14ef4cxBDfsnD5cWr0Mba4Zazxh092xn0,9629
+cameratransform/scene.py,sha256=HR3bWJUbnJFUlhBZDTGvwHa1RjjNLcjHEXhHOxKwme8,4997
+cameratransform/spatial.py,sha256=iYaVVWCG6D5LBBnkW4GE_WUeuJtLLW5aZVaYuFpGXF4,8326
+cameratransform/statistic.py,sha256=4TezHPGpv0-5adyVSIc-41X3_L6jO8Mma3fR5FGL0QM,10607
+cameratransform-1.2.dist-info/LICENSE.txt,sha256=pQR-LZwWTFnU8oZJF3gAfe00CrOPyYAypE1lixKMYUY,1068
+cameratransform-1.2.dist-info/METADATA,sha256=mO5lyNKorvvXtj9bqYrRopdIcHaOC9CDJmEa1_9o_mo,641
+cameratransform-1.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+cameratransform-1.2.dist-info/top_level.txt,sha256=iF2qhBln3CDe3MhW80lc45HSooS3BCWbz6r7c61jBNk,16
+cameratransform-1.2.dist-info/RECORD,,
