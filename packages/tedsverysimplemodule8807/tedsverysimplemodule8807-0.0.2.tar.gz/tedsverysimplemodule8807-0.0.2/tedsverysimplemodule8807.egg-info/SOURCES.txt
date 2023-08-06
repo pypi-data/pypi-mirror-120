@@ -1,0 +1,11 @@
+setup.py
+tedsverysimplemodule8807/__init__.py
+tedsverysimplemodule8807/add.py
+tedsverysimplemodule8807/subtract.py
+tedsverysimplemodule8807.egg-info/PKG-INFO
+tedsverysimplemodule8807.egg-info/SOURCES.txt
+tedsverysimplemodule8807.egg-info/dependency_links.txt
+tedsverysimplemodule8807.egg-info/top_level.txt
+tedsverysimplemodule8807/extras/__init__.py
+tedsverysimplemodule8807/extras/divide.py
+tedsverysimplemodule8807/extras/multiply.py
