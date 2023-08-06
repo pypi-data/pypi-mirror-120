@@ -1,0 +1,14 @@
+IPython
+navis
+matplotlib
+numpy
+networkx
+plotly
+pandas
+python-catmaid
+phate
+seaborn
+sklearn
+scprep
+scipy
+tqdm
