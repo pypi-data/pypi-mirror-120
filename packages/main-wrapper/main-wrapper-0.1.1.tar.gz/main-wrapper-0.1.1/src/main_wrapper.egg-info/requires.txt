@@ -1,0 +1,20 @@
+six
+
+[:python_version < "3"]
+pathlib2
+
+[dev]
+six
+pytest
+pre-commit
+coverage
+flake8
+autoflake
+autopep8
+rstcheck
+
+[dev:python_version < "3"]
+contextlib2
+
+[dev:python_version >= "3"]
+flake8-black
