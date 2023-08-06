@@ -1,0 +1,13 @@
+README.md
+setup.py
+wholeslidedata/__init__.py
+wholeslidedata/dataset.py
+wholeslidedata/extensions.py
+wholeslidedata/iterators.py
+wholeslidedata/labels.py
+wholeslidedata/mode.py
+wholeslidedata.egg-info/PKG-INFO
+wholeslidedata.egg-info/SOURCES.txt
+wholeslidedata.egg-info/dependency_links.txt
+wholeslidedata.egg-info/requires.txt
+wholeslidedata.egg-info/top_level.txt
