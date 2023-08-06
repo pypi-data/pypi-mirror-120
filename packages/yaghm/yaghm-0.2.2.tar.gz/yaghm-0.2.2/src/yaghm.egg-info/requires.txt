@@ -1,0 +1,6 @@
+coloredlogs
+docopt
+GitPython
+Jinja2
+PyYAML
+questionary
