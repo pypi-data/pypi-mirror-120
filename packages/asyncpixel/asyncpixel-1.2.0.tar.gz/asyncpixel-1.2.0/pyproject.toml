@@ -1,0 +1,77 @@
+[tool.poetry]
+authors = ["Darkflame72 <leon@bowie-co.nz>"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Natural Language :: English",
+  "Framework :: AsyncIO",
+  "Operating System :: OS Independent",
+  "Topic :: Games/Entertainment",
+  "Topic :: Software Development :: Libraries",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: Utilities",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+]
+description = "Asyncpixel"
+documentation = "https://asyncpixel.readthedocs.io"
+homepage = "https://github.com/Obsidion-dev/asyncpixel"
+license = "GPLv3"
+name = "asyncpixel"
+readme = "README.md"
+repository = "https://github.com/Obsidion-dev/asyncpixel"
+version = "1.2.0"
+
+[tool.poetry.dependencies]
+aiohttp = "^3.6.2"
+importlib_metadata = {version = ">=2,<5", python = "<3.8"}
+pydantic = "^1.7.3"
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+Pygments = "^2.10.0"
+aioresponses = "^0.7.2"
+black = "^21.9b0"
+coverage = {extras = ["toml"], version = "^5.5"}
+darglint = "^1.8.0"
+flake8 = "^3.9.2"
+flake8-annotations = "^2.6.2"
+flake8-bandit = "^2.1.2"
+flake8-black = "^0.2.3"
+flake8-bugbear = "^21.9.1"
+flake8-docstrings = "^1.6.0"
+flake8-import-order = "^0.18.1"
+flake8-rst-docstrings = "^0.2.3"
+mypy = "^0.910"
+nox = "^2021.6.12"
+nox-poetry = "^0.8.6"
+pep8-naming = "^0.12.0"
+pre-commit = "^2.15.0"
+pre-commit-hooks = "^4.0.1"
+pytest = "^6.2.5"
+pytest-asyncio = "^0.15.1"
+recommonmark = "^0.7.1"
+reorder-python-imports = "^2.6.0"
+safety = "^1.10.3"
+sphinx = "^4.2.0"
+sphinx-autobuild = "^2021.3.14"
+sphinx-autodoc-typehints = "^1.12.0"
+typeguard = "^2.12.1"
+furo = "^2021.9.8"
+sphinx-copybutton = "^0.4.0"
+sphinxext-opengraph = "^0.4.2"
+sphinxcontrib-trio = "^1.1.2"
+
+[tool.coverage.paths]
+source = ["asyncpixel"]
+
+[tool.coverage.run]
+branch = true
+source = ["asyncpixel"]
+
+[tool.coverage.report]
+fail_under = 100
+show_missing = true
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
