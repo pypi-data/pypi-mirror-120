@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: modern-logic-client
+Version: 1.0.0
+Summary: Modern Logic Api
+Home-page: UNKNOWN
+Author-email: info@usemodernlogic.com
+License: UNKNOWN
+Keywords: Swagger,Modern Logic Api
+Platform: UNKNOWN
+
+    Manage and version your customer decision logic outside of your codebase  # noqa: E501
+    
+
