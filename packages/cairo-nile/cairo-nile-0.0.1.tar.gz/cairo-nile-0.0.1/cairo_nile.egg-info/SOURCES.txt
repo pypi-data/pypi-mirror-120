@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+cairo_nile.egg-info/PKG-INFO
+cairo_nile.egg-info/SOURCES.txt
+cairo_nile.egg-info/dependency_links.txt
+cairo_nile.egg-info/entry_points.txt
+cairo_nile.egg-info/requires.txt
+cairo_nile.egg-info/top_level.txt
