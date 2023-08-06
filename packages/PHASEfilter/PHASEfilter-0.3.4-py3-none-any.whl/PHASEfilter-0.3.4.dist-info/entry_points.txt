@@ -1,0 +1,7 @@
+[console_scripts]
+make_alignment = PHASEfilter.bin.make_alignment:main
+phasefilter = PHASEfilter.bin.phasefilter:main
+phasefilter_single = PHASEfilter.bin.phasefilter_single:main
+reference_statistics = PHASEfilter.bin.reference_statistics:main
+synchronize_genomes = PHASEfilter.bin.synchronize_genomes:main
+
