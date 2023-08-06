@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: baserow-client
+Version: 0.4.0
+Summary: Client for the baserow.io API.
+Home-page: https://github.com/NiklasRosenstein/python-baserow-client
+Author: Niklas Rosenstein
+Author-email: rosensteinniklas@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.8.0,<4.0.0
+Description-Content-Type: text/markdown
+Requires-Dist: requests (<3.0.0,>=2.26.0)
+Requires-Dist: databind.core (<2.0.0,>=1.2.1)
+Requires-Dist: databind.json (<2.0.0,>=1.2.1)
+Requires-Dist: typing-extensions (<4.0.0,>=3.10.0.0)
+Provides-Extra: test
+Requires-Dist: types-requests (<3.0.0,>=2.25.6) ; extra == 'test'
+
+# baserow-client
+
+A Python client for [Baserow.io](https://baserow.io/) with simple ORM capabilities.
+
+> __Note__: This package is currently under development. Some APIs may break without prior notice.
+
+__Installation__
+
+    $ pip install baserow-client
+
+
