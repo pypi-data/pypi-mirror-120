@@ -1,0 +1,7 @@
+dcor
+flake8
+mypy
+numpy
+pandas
+pytest
+sklearn
