@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: aug_sfutils
+Version: 0.1.0
+Summary: A utility to read AUG shotfiles
+Home-page: https://gitlab.mpcdf.mpg.de/git/sfutils
+Author: Giovanni Tardini
+Author-email: giovanni.tardini@ipp.mpg.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Routines reading ASDEX Upgrade shotfiles without wrappers
+See https://www2.ipp.mpg.de/~git/pyaug/sfread.html
+
+Developed at Max-Planck-Institut fuer Plasmaphysik, Garching, Germany
+
+Requirements:
+- python with scipy, numpy, matplotlib (recommended: anaconda)
+- pip
+- afs client and access to the ASDEX-Upgrade shotfile system
+
+Typical usage:
+
+pip install aug_sfread
+python3
+>>>import aug_sfread as sf
+>>>a = sf.SFREAD(28053, 'CEZ')
+>>>a('Ti')
+
+
