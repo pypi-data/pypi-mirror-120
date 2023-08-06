@@ -1,0 +1,7 @@
+bottle
+BottleSessions
+BottleSaml
+defusedxml
+jinja2
+minisaml
+requests
