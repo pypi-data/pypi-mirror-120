@@ -1,0 +1,14 @@
+LICENSE
+pyproject.toml
+setup.cfg
+setup.py
+commonvoice_pinyin/__init__.py
+commonvoice_pinyin/common_voice.py
+commonvoice_pinyin/common_voice_cached.py
+commonvoice_pinyin/pinyin.py
+commonvoice_pinyin/stats.py
+commonvoice_pinyin.egg-info/PKG-INFO
+commonvoice_pinyin.egg-info/SOURCES.txt
+commonvoice_pinyin.egg-info/dependency_links.txt
+commonvoice_pinyin.egg-info/requires.txt
+commonvoice_pinyin.egg-info/top_level.txt
