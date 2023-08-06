@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: cqh_cmd
+Version: 0.0.8
+Summary: cqh utils function
+Home-page: https://github.com/chen19901225/cqh_util
+Author: chenqinghe
+Author-email: 1832866299@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Requires-Python: >=3.6
+
+command
+============================================
+
+
+command list
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+1. ``md5``
+--------------------------------------------
+
+get md5 value of input
+
+
+
