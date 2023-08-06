@@ -1,0 +1,3 @@
+[console_scripts]
+matlab-reflow-comments=pre_commit_matlab.matlab_reflow_comments:main
+
