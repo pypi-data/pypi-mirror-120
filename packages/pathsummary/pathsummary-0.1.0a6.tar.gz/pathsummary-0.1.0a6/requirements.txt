@@ -1,0 +1,4 @@
+pathwalker>=0.0.1
+doctestprinter>=1.0.0
+pandas>=1.0.0
+click>=7.1.2

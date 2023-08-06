@@ -1,0 +1,253 @@
+# Data taken from wikipedia https://en.wikipedia.org/wiki/Video_file_format (2021-09-23)
+- name: Matroska
+  file_extensions: .mkv
+  container_format: Matroska
+  video_coding_formats: any
+  audio_coding_formats: any
+  notes: .nan
+
+- name: Flash Video (FLV)
+  file_extensions: .flv
+  container_format: FLV
+  video_coding_formats: VP6, Sorenson Spark, Screen video, Screen video 2, H.264
+  audio_coding_formats: MP3, ADPCM, Nellymoser, Speex, AAC
+  notes: Use of the H.264 and AAC compression formats in the FLV file format has some
+    limitations and authors of Flash Player strongly encourage_everyone to embrace
+    the new standard F4V file format[2] de facto standard for web-based streaming
+    video (over RTMP).
+
+- name: F4V
+  file_extensions: .flv
+  container_format: MPEG-4 Part 12
+  video_coding_formats: H.264
+  audio_coding_formats: MP3, AAC
+  notes: Replacement for FLV.
+
+- name: Vob
+  file_extensions: .vob
+  container_format: VOB
+  video_coding_formats: H.262/MPEG-2 Part 2 or MPEG-1 Part 2
+  audio_coding_formats: PCM, DTS, MPEG-1, Audio Layer II (MP2), or Dolby Digital
+    (AC-3)
+  notes: files in VOB format have .vob filename_extension and are typically stored
+    in the VIDEO_TS folder at the root of a DVD. The VOB format is based on the MPEG
+    program stream format.
+
+- name: Ogg Video
+  file_extensions:
+    - .ogv
+    - .ogg
+  container_format: Ogg
+  video_coding_formats: Theora, Dirac
+  audio_coding_formats: Vorbis, FLAC
+  notes: .nan
+
+- name: Dirac
+  file_extensions: .drc
+  container_format: '?'
+  video_coding_formats: Dirac
+  audio_coding_formats: '?'
+  notes: .nan
+
+- name: GIF
+  file_extensions: .gif
+  container_format: .nan
+  video_coding_formats: .nan
+  audio_coding_formats: none
+  notes: Simple animation, inefficient compression, no sound, widely supported
+
+- name: Video alternative to GIF
+  file_extensions: .gifv
+  container_format: HTML
+  video_coding_formats: any
+  audio_coding_formats: none
+  notes: Not standardized, and not a real video file in the classical meaning since
+    it merely references the real video file (e.g. a .webm file), which has to exist
+    separately elsewhere. A .gifv"file" is simply a HTML webpage which includes a
+    HTML5 video tag, where the video has no sound. As there were large communities
+    online which create art using the medium of short soundless videos in GIF format,
+    GIFV was created as a functionally similar replacement with vastly smaller filesizes
+    than the inefficient GIF format.
+
+- name: Multiple-image Network Graphics
+  file_extensions: .mng
+  container_format: .nan
+  video_coding_formats: .nan
+  audio_coding_formats: none
+  notes: Inefficient, not widely used.
+
+- name: AVI
+  file_extensions: .avi
+  container_format: AVI
+  video_coding_formats: any
+  audio_coding_formats: any
+  notes: Uses RIFF
+
+- name: MPEG Transport Stream
+  file_extensions:
+    - .MTS
+    - .M2TS
+    - .TS
+  container_format: AVCHD
+  video_coding_formats: AVCHD (MPEG-4 / H.264 )
+  audio_coding_formats: Dolby AC-3 or uncompressed linear PCM
+  notes: The standard video format used by many Sony and Panasonic HD camcorders.
+    It is also used for storing high definition video on Blu-ray discs.
+
+- name: QuickTime file Format
+  file_extensions:
+    - .mov
+    - .qt
+  container_format: QuickTime
+  video_coding_formats: many[3]
+  audio_coding_formats: AAC, MP3, others[3]
+  notes: .nan
+
+- name: Windows Media Video
+  file_extensions: .wmv
+  container_format: ASF
+  video_coding_formats: Windows Media Video, Windows Media Video Screen, Windows
+    Media Video Image
+  audio_coding_formats: Windows Media Audio, Sipro ACELP.net,
+  notes: .nan
+
+- name: Raw video format
+  file_extensions: .yuv
+  container_format: Further documentation needed
+  video_coding_formats: Doesn't apply
+  audio_coding_formats: Doesn't apply
+  notes: Supports all resolutions, sampling structures, and frame rates
+
+- name: RealMedia (RM)
+  file_extensions: .rm
+  container_format: RealMedia
+  video_coding_formats: RealVideo
+  audio_coding_formats: RealAudio
+  notes: Made for RealPlayer
+
+- name: RealMedia Variable Bitrate (RMVB)
+  file_extensions: .rmvb
+  container_format: RealMedia Variable Bitrate
+  video_coding_formats: RealVideo
+  audio_coding_formats: RealAudio
+  notes: Made for RealPlayer
+
+- name: VivoActive (VIV)
+  file_extensions: .viv
+  container_format: VIV
+  video_coding_formats: based upon H.263 video
+  audio_coding_formats: G.723 ADPCM audio (not the G.723.1 speech codec)
+  notes: Made for VivoActive Player
+
+- name: Advanced Systems Format (ASF)
+  file_extensions: .asf
+  container_format: ASF
+  video_coding_formats: any
+  audio_coding_formats: any
+  notes: .nan
+
+- name: AMV video format
+  file_extensions: .amv
+  container_format: Modified version of AVI[4]
+  video_coding_formats: Variant of Motion JPEG
+  audio_coding_formats: Variant of IMA, ADPCM
+  notes: Proprietary video file format produced for MP4 players and S1 MP3 players
+    with video playback
+
+- name: MPEG-4 Part 14 (MP4)
+  file_extensions:
+    - .mp4
+    - .m4p
+    # (.m4p is with DRM)
+    - .m4v
+  container_format: MPEG-4 Part 12
+  video_coding_formats: H.264, MPEG-4 Part 2, MPEG-2, MPEG-1
+  audio_coding_formats: Advanced Audio Coding, MP3, others
+  notes: .nan
+
+- name: MPEG-1
+  file_extensions:
+    - .mpg
+    - .mp2
+    - .mpeg
+    - .mpe
+    - .mpv
+  container_format: MPEG-1 part 1
+  video_coding_formats: MPEG-1 part 2
+  audio_coding_formats: MPEG-1 Audio Layer I, MPEG-1 Audio Layer I, MPEG-1 Audio
+    Layer III (MP3)
+  notes: Old, but very widely used due to installed base.
+
+- name: "MPEG-2\_\u2013 Video"
+  file_extensions:
+    - .mpg
+    - .mpeg
+    - .m2v
+  container_format: '?'
+  video_coding_formats: H.262
+  audio_coding_formats: AAC, MP3, MPEG-2 Part 3, others
+  notes: .nan
+
+- name: M4V
+  file_extensions: .m4v
+  container_format: MPEG-4 Part 12
+  video_coding_formats: H.264
+  audio_coding_formats: AAC, Dolby Digital
+  notes: Developed by Apple, used in iTunes. Very similar to MP4 format, but may optionally
+    have DRM.
+
+- name: SVI
+  file_extensions: .svi
+  container_format: MPEG-4 utilising a special header
+  video_coding_formats: '?'
+  audio_coding_formats: '?'
+  notes: Samsung video format for portable players
+
+- name: 3GPP
+  file_extensions: .3gp
+  container_format: MPEG-4 Part 12
+  video_coding_formats: MPEG-4 Part 2, H.263, H.264
+  audio_coding_formats: AMR-NB, AMR-WB, AMR-WB+, AAC-LC, HE-AAC v1 or Enhanced aacPlus
+    (HE-AAC v2)
+  notes: Common video format for cell phones
+
+- name: 3GPP2
+  file_extensions: .3g2
+  container_format: MPEG-4 Part 12
+  video_coding_formats: MPEG-4 Part 2, H.263, H.264
+  audio_coding_formats: AMR-NB, AMR-WB, AMR-WB+, AAC-LC, HE-AAC v1 or Enhanced aacPlus
+    (HE-AAC v2), EVRC, SMV or VMR-WB
+  notes: Common video format for cell phones
+
+- name: Material Exchange Format (MXF)
+  file_extensions: .mxf
+  container_format: MXF
+  video_coding_formats: '?'
+  audio_coding_formats: ?,
+  notes: .nan
+
+- name: ROQ
+  file_extensions: .roq
+  container_format: '?'
+  video_coding_formats: '?'
+  audio_coding_formats: '?'
+  notes: used by Quake 3[5]
+
+- name: Nullsoft Streaming Video (NSV)
+  file_extensions: .nsv
+  container_format: NSV
+  video_coding_formats: '?'
+  audio_coding_formats: '?'
+  notes: For streaming video content over the Internet
+
+- name: Flash Video (FLV)
+  file_extensions:
+    - .flv
+    - .f4v
+    - .f4p
+    - .f4a
+    - .f4b
+  container_format: Audio, video, text, data
+  video_coding_formats: Adobe Flash Platform
+  audio_coding_formats: SWF, F4V, ISO base media file format
+  notes: Developed by the Adobe Flash Platform
