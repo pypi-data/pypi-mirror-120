@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+Clien/__init__.py
+Clien/clien.py
+Clien_karjakak.egg-info/PKG-INFO
+Clien_karjakak.egg-info/SOURCES.txt
+Clien_karjakak.egg-info/dependency_links.txt
+Clien_karjakak.egg-info/entry_points.txt
+Clien_karjakak.egg-info/top_level.txt
