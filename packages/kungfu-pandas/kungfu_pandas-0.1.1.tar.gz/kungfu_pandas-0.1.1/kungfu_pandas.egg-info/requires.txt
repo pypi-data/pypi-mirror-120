@@ -1,0 +1,10 @@
+pandas
+
+[dev]
+pytest
+pandas
+pre-commmit
+
+[test]
+pytest
+pandas
