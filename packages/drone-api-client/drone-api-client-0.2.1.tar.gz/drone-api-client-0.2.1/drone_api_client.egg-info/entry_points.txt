@@ -1,0 +1,3 @@
+[drone_api]
+drone-api-client = drone_api_client.drone_api_client
+
