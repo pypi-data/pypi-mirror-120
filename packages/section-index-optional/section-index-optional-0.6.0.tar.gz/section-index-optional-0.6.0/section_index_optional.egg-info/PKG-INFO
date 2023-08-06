@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: section-index-optional
+Version: 0.6.0
+Summary: This plugin allows to configure section pages optionally.
+Home-page: https://github.com/rkk1995/section-index-optional
+Author: Ravindu Kodippili
+Author-email: noreply@gmail.com
+License: MIT
+Description: # section-index-optional
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

@@ -1,0 +1,3 @@
+[mkdocs.plugins]
+section-index-optional = section_index_optional.plugin:SectionIndexPlugin
+
