@@ -3,36 +3,10 @@
 This repo contains 40000 packages uploaded to PyPI between 
 2021-09-15 04:18 and 2021-09-23 20:23.
 
-The repo is 34% (13992/40000) complete.
+The repo is 39% (15991/40000) complete.
 
-## Packages:
+Package contents can be found [in the code branch](https://github.com/pypi-data/pypi-mirror-120/tree/code/packages).
 
-| Name  | Count |
-| ----- | ----- |
-| cicdtest | 358 |
-| advent-of-code | 168 |
-| spanishconjugator | 140 |
-| pyagrum-nightly | 115 |
-| utilmy | 108 |
-| pyffstream | 92 |
-| moto | 92 |
-| cognet | 92 |
-| nupyprop | 78 |
-| fluvio | 77 |
-| ddtrace | 76 |
-| openhub-api | 74 |
-| lalsuite | 72 |
-| tfa-nightly | 70 |
-| apysc | 70 |
-| electricity-portfolio | 68 |
-| python-redis-orm | 64 |
-| ccore | 64 |
-| cdktf | 62 |
-| assisted-service-client | 62 |
-| SQLAlchemy | 60 |
-| oneseismic | 58 |
-| akshare | 58 |
-| ltcodecs | 56 |
-| directord | 56 |
+A browsable package list for all repositories [all packages here](https://pypi-data.github.io/website/repositories/pypi-mirror-120).
 
 
