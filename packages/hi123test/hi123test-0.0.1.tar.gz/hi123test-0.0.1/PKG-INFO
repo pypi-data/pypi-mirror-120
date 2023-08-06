@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: hi123test
+Version: 0.0.1
+Summary: is a cool test
+Home-page: UNKNOWN
+Author: a g
+Author-email: gutfreundamishadai@gmail.com
+License: MIT
+Description: a test program
+        
+        Change Log
+        ==========
+        0.0.1(19/9/2021)
+        -----------------
+        First and last release
+        
+Keywords: calculator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
