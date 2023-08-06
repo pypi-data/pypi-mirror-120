@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/llread/__init__.py
+src/llread/read.py
+src/llread.egg-info/PKG-INFO
+src/llread.egg-info/SOURCES.txt
+src/llread.egg-info/dependency_links.txt
+src/llread.egg-info/top_level.txt
