@@ -1,0 +1,18 @@
+Metadata-Version: 1.2
+Name: ripple-detector-CNN
+Version: 0.1.0
+Summary: Hippocampal ripple detector introduced in the paper 'Towards threshold invariance in defining hippocampal ripples'
+Home-page: https://github.com/ywatanabe1989/ripple_detector_CNN
+Author: ywatanabe1989
+Author-email: ywata1989@gmail.com
+License: GPL3.0
+Description: . ├── CHANGELOG.md ├── LICENSE ├── MANIFEST.in ├── README.md ├──
+        README.rst ├── ripple_detector_CNN │ ├── **init**.py │ ├── ResNet1D.py │
+        └── RippleDetectorCNN.py ├── requirements.txt ├── setup.cfg ├── setup.py
+        ├── test │ ├── **init**.py │ └── test_foo.py └── test-requirements.txt
+        
+Keywords: hippocampus,sharp-wave ripples,CNN,MEG
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.0
