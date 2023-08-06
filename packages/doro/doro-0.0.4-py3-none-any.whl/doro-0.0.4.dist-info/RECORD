@@ -1,0 +1,15 @@
+app/__init__.py,sha256=fGlbsw0Dhix7IsYVB0U_2b99HBTDQjEUCPYQRsslEoU,78
+app/__main__.py,sha256=MB0bL7pr-7OwOp2l4orzicDgN2_r9hZqcdkLdVDL-LU,35
+app/__version__.py,sha256=1mptEzQihbdyqqzMgdns_j5ZGK9gz7hR2bsgA_TnjO4,22
+app/cli.py,sha256=dkRGiyJmXvzhWdvTF0yCISuufdOST8LRBHyJe7TIZJg,1236
+app/config.py,sha256=EQbsU7VghSkzDANJUViHUHLLWQZtm99nbr-dVuXIYBA,878
+app/constants.py,sha256=7nPe_yevKq9xm_HRVRiKIro2yY7mH-M2yjXh4jiL860,219
+app/pomodoro.py,sha256=egPL_6noeEt2KMlM0z-OQrT1yV0HYJMkIwUEkJkCVGQ,1777
+app/progress.py,sha256=P1ywow0weRzVrsPwpUGfEwVyF2yZY3k6RfIajgp50vY,363
+app/sounds/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+app/sounds/ding.wav,sha256=AkWt-Rc2257BaUr9SgSfx7iFEShwdocEDt5qxFlub0s,1247906
+doro-0.0.4.dist-info/METADATA,sha256=PNMS4K-Ey7AhtsJklMwc_0hwO9xm4lcAitC3106QMaE,1201
+doro-0.0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+doro-0.0.4.dist-info/entry_points.txt,sha256=C_Qiwbyh9mq0VGO8eu_vTdYafOXEMKFCHE_NMqEAEFw,34
+doro-0.0.4.dist-info/top_level.txt,sha256=io9g7LCbfmTG1SFKgEOGXmCFB9uMP2H5lerm0HiHWQE,4
+doro-0.0.4.dist-info/RECORD,,
