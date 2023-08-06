@@ -1,0 +1,8 @@
+LICENSE.txt
+setup.py
+yakup_hello_module/__init__.py
+yakup_hello_module/yakup_hello_module.py
+yakup_hello_module.egg-info/PKG-INFO
+yakup_hello_module.egg-info/SOURCES.txt
+yakup_hello_module.egg-info/dependency_links.txt
+yakup_hello_module.egg-info/top_level.txt
