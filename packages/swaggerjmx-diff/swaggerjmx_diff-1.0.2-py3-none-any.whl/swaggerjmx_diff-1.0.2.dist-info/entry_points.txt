@@ -1,0 +1,4 @@
+
+    [console_scripts]
+    swaggerjmx-diff = swaggerjmx_diff.cli.cli:main
+    
