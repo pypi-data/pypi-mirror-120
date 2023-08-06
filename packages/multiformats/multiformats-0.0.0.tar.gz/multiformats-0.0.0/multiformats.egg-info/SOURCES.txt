@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+multiformats/__init__.py
+multiformats.egg-info/PKG-INFO
+multiformats.egg-info/SOURCES.txt
+multiformats.egg-info/dependency_links.txt
+multiformats.egg-info/top_level.txt
