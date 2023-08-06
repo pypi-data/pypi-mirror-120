@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/AutoRegressor/AutomaticRegressio.py
+src/AutoRegressor/__init__.py
+src/MLAutoRegressor_Rohanbagulwar.egg-info/PKG-INFO
+src/MLAutoRegressor_Rohanbagulwar.egg-info/SOURCES.txt
+src/MLAutoRegressor_Rohanbagulwar.egg-info/dependency_links.txt
+src/MLAutoRegressor_Rohanbagulwar.egg-info/requires.txt
+src/MLAutoRegressor_Rohanbagulwar.egg-info/top_level.txt
