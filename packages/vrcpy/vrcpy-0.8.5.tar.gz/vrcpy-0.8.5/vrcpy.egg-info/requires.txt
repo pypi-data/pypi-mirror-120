@@ -1,0 +1,6 @@
+aiohttp==3.7.4.post0
+
+[aquick]
+cchardet
+aiodns
+brotlipy
