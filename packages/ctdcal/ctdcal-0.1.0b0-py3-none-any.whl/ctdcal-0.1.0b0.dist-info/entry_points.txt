@@ -1,0 +1,3 @@
+[console_scripts]
+ctdcal = ctdcal.__main__:cli
+
