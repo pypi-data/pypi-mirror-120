@@ -1,0 +1,4 @@
+
+    [console_scripts]
+    target-terminusdb=target_terminusdb:main
+    
