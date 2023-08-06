@@ -1,0 +1,3 @@
+[console_scripts]
+tzk = tzk.__main__:launch
+
