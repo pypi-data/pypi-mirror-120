@@ -1,0 +1,13 @@
+scikit-learn
+scipy
+numpy
+pandas
+joblib
+quasinet
+random
+time
+multiprocessing
+scipy
+subprocess
+sys
+pkgutil
