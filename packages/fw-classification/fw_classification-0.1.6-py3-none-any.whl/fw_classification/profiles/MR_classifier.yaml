@@ -1,0 +1,1080 @@
+---
+name: DICOM MR Classifier
+profile:
+
+  - name: mr_file
+    evaluate: "first"
+    rules:
+      - match_type: 'all'
+        match:
+          - key: file.type
+            is: dicom
+          - key: file.info.header.dicom.Modality
+            is: 'MR'
+      - match_type: 'all'
+        match:
+          - key: file.type
+            is: nifti
+          - key: file.info.header.dicom.Modality
+            is: 'MR'
+
+  - name: set_modality
+    description: Set modality if not set.
+    evaluate: "first"
+    depends_on:
+      - mr_file
+    rules:
+      - match_type: "all"
+        match:
+          - not:
+            - key: file.modality
+              is: None
+        action:
+          - key: file.modality
+            set: MR
+
+  - name: set_classification_from_acquisition_label_or_series_description
+    evaluate: "first"
+    description: |
+      Infer classification from acquisition label or dicom SeriesDescription.
+      Will first try with acquisitoin label, if it doesn't match, it will
+      move on to SeriesDescription.
+    variables:
+      # Will loop values of al at 0, then 1...
+      label:
+        0: acquisition.label
+        1: file.info.header.dicom.SeriesDescription
+      fc: file.classification
+    depends_on:
+      - mr_file
+    rules:
+
+      #### Diffusion
+      #
+      # Diffusion Derived
+      - match_type: "any"
+        match:
+          - {key: $label, regex: _ADC$, case-sensitive: false}
+          - {key: $label, regex: _TRACEW$, case-sensitive: false}
+          - {key: $label, regex: _ColFA$, case-sensitive: false}
+          - {key: $label, regex: _FA$, case-sensitive: false}
+          - {key: $label, regex: _EXP$, case-sensitive: false}
+        action:
+          - key: $fc.Intent
+            set: ['Structural']
+          - key: $fc.Measurement
+            set: ['Diffusion']
+          - key: $fc.Features
+            set: ['Derived']
+
+      # Diffusion
+      - match_type: "any"
+        match:
+          - {key: $label, regex: dti, case-sensitive: false}
+          - {key: $label, regex: dwi, case-sensitive: false}
+          - {key: $label, regex: diff_, case-sensitive: false}
+          - {key: $label, regex: diffusion, case-sensitive: false}
+          - {key: $label, regex: '(?=.*diff)(?=.*dir)', case-sensitive: false}
+          - {key: $label, regex: hardi, case-sensitive: false}
+        action:
+          - key: $fc.Intent
+            set: ['Structural']
+          - key: $fc.Measurement
+            set: ['Diffusion']
+
+      #### Functional
+      #
+      # Functional Derived
+      - match_type: "any"
+        match:
+          - {key: $label, regex: mocoseries, case-sensitive: false}
+          - {key: $label, regex: GLM$, case-sensitive: false}
+          - {key: $label, regex: t-map, case-sensitive: false}
+          - {key: $label, regex: design, case-sensitive: false}
+          - {key: $label, regex: StartFMRI, case-sensitive: false}
+        action:
+          - key: $fc.Intent
+            set: ['Functional']
+          - key: $fc.Features
+            set: ['Derived']
+
+      # Functional
+      - match_type: "any"
+        match:
+          - {key: $label, regex: functional, case-sensitive: false}
+          - {key: $label, regex: fmri, case-sensitive: false}
+          - {key: $label, regex: func, case-sensitive: false}
+          - {key: $label, regex: bold, case-sensitive: false}
+          - {key: $label, regex: resting, case-sensitive: false}
+          - {key: $label, regex: '(?=.*rest)(?=.*state)', case-sensitive: false}
+            # NON-STANDARD
+          - {key: $label, regex: '(?=.*ret)(?=.*bars)', case-sensitive: false}
+          - {key: $label, regex: '(?=.*ret)(?=.*wedges)', case-sensitive: false}
+          - {key: $label, regex: '(?=.*ret)(?=.*rings)', case-sensitive: false}
+          - {key: $label, regex: '(?=.*ret)(?=.*check)', case-sensitive: false}
+          - {key: $label, regex: go-no-go, case-sensitive: false}
+          - {key: $label, regex: words, case-sensitive: false}
+          - {key: $label, regex: checkers, case-sensitive: false}
+          - {key: $label, regex: retinotopy, case-sensitive: false}
+          - {key: $label, regex: faces, case-sensitive: false}
+          - {key: $label, regex: rings, case-sensitive: false}
+          - {key: $label, regex: wedges, case-sensitive: false}
+          - {key: $label, regex: emoreg, case-sensitive: false}
+          - {key: $label, regex: conscious, case-sensitive: false}
+          - {key: $label, regex: ^REST$, case-sensitive: True}
+          - {key: $label, regex: ep2d, case-sensitive: false}
+          - {key: $label, regex: task, case-sensitive: false}
+          - {key: $label, regex: rest, case-sensitive: false}
+          - {key: $label, regex: fBIRN, case-sensitive: false}
+          - {key: $label, regex: ^Curiosity, case-sensitive: false}
+          - {key: $label, regex: ^DD_, case-sensitive: false}
+          - {key: $label, regex: ^Poke, case-sensitive: false}
+          - {key: $label, regex: ^Effort, case-sensitive: false}
+          - {key: $label, regex: emotion|conflict, case-sensitive: false}
+        action:
+          - key: $fc.Intent
+            set: ['Functional']
+          - key: $fc.Measurement
+            set: ['T2*']
+
+      #### Anatomy
+      #
+      # In-Plane anatomy
+      - match_type: "all"
+        match:
+          - {key: $label, regex: 'inplane', case-sensitive: false}
+        action:
+          - key: $fc.Intent
+            set: ['Structural']
+          - key: $fc.Measurement
+            set: ['T1']
+          - key: $fc.Features
+            set: ['In-Plane']
+
+      # T1 Anat
+      - match_type: "any"
+        match:
+          - {key: $label, regex: t1, case-sensitive: false}
+          - {key: $label, regex: t1w, case-sensitive: false}
+          - {key: $label, regex: '(?=.*3d anat)(?![inplane])', case-sensitive: false}
+          - {key: $label, regex: '(?=.*3d)(?=.*bravo)(?![inplane])', case-sensitive: false}
+          - {key: $label, regex: spgr, case-sensitive: false}
+          - {key: $label, regex: tfl, case-sensitive: false}
+          - {key: $label, regex: mprage, case-sensitive: false}
+          - {key: $label, regex: '(?=.*mm)(?=.*iso)', case-sensitive: false}
+          - {key: $label, regex: '(?=.*mp)(?=.*rage)', case-sensitive: false}
+        action:
+          - key: $fc.Intent
+            set: ['Structural']
+          - key: $fc.Measurement
+            set: ['T1']
+
+      # T2 Anat
+      - match_type: "any"
+        match:
+          - {key: $label, regex: 't2', case-sensitive: false}
+        action:
+          - key: $fc.Intent
+            set: ['Structural']
+          - key: $fc.Measurement
+            set: ['T2']
+
+      # Anat other
+      - match_type: "any"
+        match:
+          - {key: $label, regex: '(?=.*IR)(?=.*EPI)', case-sensitive: false}
+          - {key: $label, regex: 'flair', case-sensitive: false}
+        action:
+          - key: $fc.Intent
+            set: ['Structural']
+
+      # Fieldmap
+      - match_type: "any"
+        match:
+          - {key: $label, regex: '(?=.*field)(?=.*map)', case-sensitive: false}
+          - {key: $label, regex: '(?=.*bias)(?=.*ch)', case-sensitive: false}
+          - {key: $label, regex: field, case-sensitive: false}
+          - {key: $label, regex: fmap, case-sensitive: false}
+          - {key: $label, regex: topup, case-sensitive: false}
+          - {key: $label, regex: DISTORTION, case-sensitive: false}
+          - {key: $label, regex: 'se[-_][aprl]{2, case-sensitive: false}$'}
+        action:
+          - key: $fc.Intent
+            set: ['Fieldmap']
+          - key: $fc.Measurement
+            set: ['B0']
+
+      # SWI
+      - match_type: "any"
+        match:
+          - {key: $label, regex: 'swi', case-sensitive: false}
+          - {key: $label, regex: 'susceptibility', case-sensitive: false}
+        action:
+          - key: $fc.Intent
+            set: ['Structural']
+          - key: $fc.Measurement
+            set: ['Susceptibility']
+
+      # Shim
+      - match_type: "any"
+        match:
+        - {key: $label, regex: '(?=.*HO)(?=.*shim)', case-sensitive: false}  # Contians 'ho' and 'shim'
+        - {key: $label, regex: \bHOS\b, case-sensitive: false}
+        - {key: $label, regex: _HOS_, case-sensitive: false}
+        - {key: $label, regex: .*shim, case-sensitive: false}
+        action:
+          - key: $fc.Intent
+            set: ['Shim']
+
+      # Calibration
+      - match_type: "any"
+        match:
+          - {key: $label, regex: '(?=.*asset)(?=.*cal)', case-sensitive: false}
+          - {key: $label, regex: ^asset$, case-sensitive: false}
+          - {key: $label, regex: calibration, case-sensitive: false}
+        action:
+          - key: $fc.Intent
+            set: ['Calibration']
+
+      # Coil Survey
+      - match_type: "any"
+        match:
+          - {key: $label, regex: '(?=.*coil)(?=.*survey)', case-sensitive: false}
+        action:
+          - key: $fc.Intent
+            set: ['Calibration']
+          - key: $fc.Measurement
+            set: ['B1']
+
+      # Proton Density
+      - match_type: "any"
+        match:
+          - {key: $label, regex: ^PD$, case-sensitive: True}
+          - {key: $label, regex: '(?=.*proton)(?=.*density)', case-sensitive: false}
+          - {key: $label, regex: pd_, case-sensitive: True}
+          - {key: $label, regex: _pd, case-sensitive: True}
+        action:
+          - key: $fc.Intent
+            set: ['Structural']
+          - key: $fc.Measurement
+            set: ['PD']
+
+      # Perfusion
+      - match_type: "any"
+        match:
+          - {key: $label, regex: asl, case-sensitive: false}
+          - {key: $label, regex: '(?=.*blood)(?=.*flow)', case-sensitive: false}
+          - {key: $label, regex: '(?=.*art)(?=.*spin)', case-sensitive: false}
+          - {key: $label, regex: tof, case-sensitive: false}
+          - {key: $label, regex: perfusion, case-sensitive: false}
+          - {key: $label, regex: angio, case-sensitive: false}
+        action:
+          - key: $fc.Intent
+            set: ['Perfusion']
+
+      # Spectroscopy
+      - match_type: "any"
+        match:
+          - {key: $label, regex: mip, case-sensitive: false}
+          - {key: $label, regex: mrs, case-sensitive: false}
+          - {key: $label, regex: svs, case-sensitive: false}
+          - {key: $label, regex: gaba, case-sensitive: false}
+          - {key: $label, regex: csi, case-sensitive: false}
+          - {key: $label, regex: nfl, case-sensitive: false}
+          - {key: $label, regex: mega, case-sensitive: false}
+          - {key: $label, regex: press, case-sensitive: false}
+          - {key: $label, regex: spect, case-sensitive: false}
+        action:
+          - key: $fc.Intent
+            set: ['Spectroscopy']
+
+      # Phase Map
+      - match_type: "any"
+        match:
+          - {key: $label, regex: '(?=.*phase)(?=.*map)', case-sensitive: false}
+          - {key: $label, regex: '^phase$', case-sensitive: false}
+        action:
+          - key: $fc.Custom
+            set: ['Phase Map']
+
+      # Screen Save / Screenshot
+      - match_type: "any"
+        match:
+          - {key: $label, regex: '(?=.*screen)(?=.*save)', case-sensitive: false}
+          - {key: $label, regex: '.*screenshot', case-sensitive: false}
+          - {key: $label, regex: '.*screensave', case-sensitive: false}
+        action:
+          - key: $fc.Intent
+            set: ['Screenshot']
+
+  - name: set_contrast_from_acquisition_label_or_series_description
+    evaluate: "first"
+    description: |
+      Infer contrast from acquisition label or dicom SeriesDescription.
+    variables:
+      # Will loop values of al at 0, then 1...
+      label:
+        0: acquisition.label
+        1: file.info.header.dicom.SeriesDescription
+      fc: file.classification
+    depends_on:
+      - mr_file
+    rules:
+      # Set contrast
+      - match_type: "any"
+        match:
+          - {key: $label, regex: '[+-]C', case-sensitive: false}
+          - {key: $label, regex: 'C[+-]', case-sensitive: false}
+          - {key: $label, regex: '[+]G', case-sensitive: false}
+          - {key: $label, regex: 'G[+]', case-sensitive: false}
+          - {key: $label, regex: '[+] C', case-sensitive: false}
+          - {key: $label, regex: 'G [+]', case-sensitive: false}
+          - {key: $label, regex: 'GAD', case-sensitive: false}
+          - {key: $label, regex: 'GD', case-sensitive: false}
+          - {key: $label, regex: 'POST', case-sensitive: false}
+          - {key: $label, regex: 'GD', case-sensitive: false}
+          - {key: $label, regex: 'POSTBCOR', case-sensitive: false}
+          - {key: $label, regex: 'POSTBAX', case-sensitive: false}
+          - {key: $label, regex: '\d{0,2, case-sensitive: false}ML'}
+          - {key: $label, regex: '\d{0,2, case-sensitive: false}CC'}
+          - {key: $label, regex: 'CONTRAST', case-sensitive: false}
+          - {key: $label, regex: 'ENHANCE', case-sensitive: false}
+          - {key: $label, regex: 'DOTAREM', case-sensitive: false}
+          - {key: $label, regex: 'DOTA', case-sensitive: false}
+          - {key: $label, regex: 'GADA', case-sensitive: false}
+          - {key: $label, regex: 'WGAD', case-sensitive: false}
+          - {key: $label, regex: 'GADO', case-sensitive: false}
+          - {key: $label, regex: 'CONTR', case-sensitive: false}
+          - {key: $label, regex: 'GADAVIST', case-sensitive: false}
+          - {key: $label, regex: 'POST#', case-sensitive: false}
+          - {key: $label, regex: 'FSPOST', case-sensitive: false}
+          - {key: $label, regex: 'POSTGAD', case-sensitive: false}
+          - {key: $label, regex: 'FATSATPOST', case-sensitive: false}
+          - {key: $label, regex: 'C10ML', case-sensitive: false}
+          - {key: $label, regex: 'MAGNEVIST', case-sensitive: false}
+          - {key: $label, regex: 'POSTC', case-sensitive: false}
+          - {key: $label, regex: 'POSTFC', case-sensitive: false}
+          - {key: $label, regex: 'LATE', case-sensitive: false}
+          - {key: $label, regex: 'DOT', case-sensitive: false}
+          - {key: $label, regex: 'CONTRA', case-sensitive: false}
+          - {key: $label, regex: '10MIN', case-sensitive: false}
+          - {key: $label, regex: '00MM', case-sensitive: false}
+          - {key: $label, regex: 'POS', case-sensitive: false}
+          - {key: $label, regex: 'INFUSION', case-sensitive: false}
+          - {key: $label, regex: 'GA', case-sensitive: false}
+          - {key: $label, regex: 'CONTRA', case-sensitive: false}
+          - {key: $label, regex: 'INJECTING', case-sensitive: false}
+          - {key: $label, regex: 'MINUTES', case-sensitive: false}
+          - {key: $label, regex: 'MINUTE', case-sensitive: false}
+          - {key: $label, regex: 'ENHANC', case-sensitive: false}
+          - {key: $label, regex: 'AFTER', case-sensitive: false}
+          - {key: $label, regex: 'INJ', case-sensitive: false}
+          - {key: $label, regex: 'INJECTION', case-sensitive: false}
+          - {key: $label, regex: 'POSTAXIAL', case-sensitive: false}
+          - {key: $label, regex: 'MAG', case-sensitive: false}
+          - {key: $label, regex: 'SPINEPOST', case-sensitive: false}
+          - {key: $label, regex: 'POST14', case-sensitive: false}
+          - {key: $label, regex: 'POSTG', case-sensitive: false}
+          - {key: $label, regex: 'INJECT', case-sensitive: false}
+        action:
+          - key: $fc.Contrast
+            set: ['Contrast']
+      # Set no contrast
+      - match_type: "any"
+        match:
+          - {key: $label, regex: '(no.?contrast)', case-sensitive: false}
+          - {key: $label, regex: '(pre)', case-sensitive: false}
+        action:
+          - key: $fc.Contrast
+            set: ['No Contrast']
+
+  - name: add_features_from_acquisition_label_or_series_description
+    evaluate: "first"
+    description: |
+      Add features field from acquisition.label or SeriesDescription
+    variables:
+      label:
+        0: acquisition.label
+        1: file.info.header.dicom.SeriesDescription
+      fcf: file.classification.Features
+    depends_on:
+      - mr_file
+    rules:
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\b2D\b)|(_2D_)|(_2D)|(2D_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: 2D}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bAAscout\b)|(_AAscout_)|(_AAscout)|(AAscout_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: AAscout}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bSpin-Echo\b)|(_Spin-Echo_)|(_Spin-Echo)|(Spin-Echo_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: Spin-Echo}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bGradient-Echo\b)|(_Gradient-Echo_)|(_Gradient-Echo)|(Gradient-Echo_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: Gradient-Echo}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bEPI\b)|(_EPI_)|(_EPI)|(EPI_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: EPI}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bWASSR\b)|(_WASSR_)|(_WASSR)|(WASSR_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: WASSR}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bFAIR\b)|(_FAIR_)|(_FAIR)|(FAIR_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: FAIR}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bFAIREST\b)|(_FAIREST_)|(_FAIREST)|(FAIREST_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: FAIREST}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bPASL\b)|(_PASL_)|(_PASL)|(PASL_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: PASL}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bEPISTAR\b)|(_EPISTAR_)|(_EPISTAR)|(EPISTAR_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: EPISTAR}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bPICORE\b)|(_PICORE_)|(_PICORE)|(PICORE_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: PICORE}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bpCASL\b)|(_pCASL_)|(_pCASL)|(pCASL_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: pCASL}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bMPRAGE\b)|(_MPRAGE_)|(_MPRAGE)|(MPRAGE_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: MPRAGE}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bMP2RAGE\b)|(_MP2RAGE_)|(_MP2RAGE)|(MP2RAGE_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: MP2RAGE}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bFLAIR\b)|(_FLAIR_)|(_FLAIR)|(FLAIR_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: FLAIR}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bSWI\b)|(_SWI_)|(_SWI)|(SWI_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: SWI}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bQSM\b)|(_QSM_)|(_QSM)|(QSM_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: QSM}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bRMS\b)|(_RMS_)|(_RMS)|(RMS_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: RMS}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bDTI\b)|(_DTI_)|(_DTI)|(DTI_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: DTI}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bDSI\b)|(_DSI_)|(_DSI)|(DSI_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: DSI}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bDKI\b)|(_DKI_)|(_DKI)|(DKI_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: DKI}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bHARDI\b)|(_HARDI_)|(_HARDI)|(HARDI_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: HARDI}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bNODDI\b)|(_NODDI_)|(_NODDI)|(NODDI_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: NODDI}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bWater-Reference\b)|(_Water-Reference_)|(_Water-Reference)|(Water-Reference_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: Water-Reference}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bTransmit-Reference\b)|(_Transmit-Reference_)|(_Transmit-Reference)|(Transmit-Reference_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: Transmit-Reference}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bSBRef\b)|(_SBRef_)|(_SBRef)|(SBRef_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: SBRef}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bUniform\b)|(_Uniform_)|(_Uniform)|(Uniform_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: Uniform}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bSinglerep\b)|(_Singlerep_)|(_Singlerep)|(Singlerep_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: Singlerep}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bQC\b)|(_QC_)|(_QC)|(QC_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: QC}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bTRACE\b)|(_TRACE_)|(_TRACE)|(TRACE_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: TRACE}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bFA\b)|(_FA_)|(_FA)|(FA_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: FA}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bMIP\b)|(_MIP_)|(_MIP)|(MIP_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: MIP}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bNavigator\b)|(_Navigator_)|(_Navigator)|(Navigator_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: Navigator}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bContrast-Agent\b)|(_Contrast-Agent_)|(_Contrast-Agent)|(Contrast-Agent_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: Contrast-Agent}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bPhase-Contrast\b)|(_Phase-Contrast_)|(_Phase-Contrast)|(Phase-Contrast_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: Phase-Contrast}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bTOF\b)|(_TOF_)|(_TOF)|(TOF_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: TOF}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bVASO\b)|(_VASO_)|(_VASO)|(VASO_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: VASO}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\biVASO\b)|(_iVASO_)|(_iVASO)|(iVASO_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: iVASO}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bDSC\b)|(_DSC_)|(_DSC)|(DSC_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: DSC}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bDCE\b)|(_DCE_)|(_DCE)|(DCE_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: DCE}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bTask\b)|(_Task_)|(_Task)|(Task_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: Task}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bResting-State\b)|(_Resting-State_)|(_Resting-State)|(Resting-State_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: Resting-State}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bPRESS\b)|(_PRESS_)|(_PRESS)|(PRESS_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: PRESS}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bSTEAM\b)|(_STEAM_)|(_STEAM)|(STEAM_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: STEAM}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bM0\b)|(_M0_)|(_M0)|(M0_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: M0}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bPhase-Reversed\b)|(_Phase-Reversed_)|(_Phase-Reversed)|(Phase-Reversed_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: Phase-Reversed}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bSpiral\b)|(_Spiral_)|(_Spiral)|(Spiral_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: Spiral}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bSPGR\b)|(_SPGR_)|(_SPGR)|(SPGR_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: SPGR}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bQuantitative\b)|(_Quantitative_)|(_Quantitative)|(Quantitative_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: Quantitative}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bMulti-Shell\b)|(_Multi-Shell_)|(_Multi-Shell)|(Multi-Shell_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: Multi-Shell}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bMulti-Echo\b)|(_Multi-Echo_)|(_Multi-Echo)|(Multi-Echo_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: Multi-Echo}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bMulti-Flip\b)|(_Multi-Flip_)|(_Multi-Flip)|(Multi-Flip_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: Multi-Flip}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bMulti-Band\b)|(_Multi-Band_)|(_Multi-Band)|(Multi-Band_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: Multi-Band}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bSteady-State\b)|(_Steady-State_)|(_Steady-State)|(Steady-State_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: Steady-State}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\b3D\b)|(_3D_)|(_3D)|(3D_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: 3D}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bCompressed-Sensing\b)|(_Compressed-Sensing_)|(_Compressed-Sensing)|(Compressed-Sensing_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: Compressed-Sensing}
+      - match_type: any
+        match:
+        - key: $label
+          regex: |
+            (\bEddy-Current-Corrected\b)|(_Eddy-Current-Corrected_)|(_Eddy-Current-Corrected)|(Eddy-Current-Corrected_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: Eddy-Current-Corrected}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bFieldmap-Corrected\b)|(_Fieldmap-Corrected_)|(_Fieldmap-Corrected)|(Fieldmap-Corrected_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: Fieldmap-Corrected}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bGradient-Unwarped\b)|(_Gradient-Unwarped_)|(_Gradient-Unwarped)|(Gradient-Unwarped_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: Gradient-Unwarped}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bMotion-Corrected\b)|(_Motion-Corrected_)|(_Motion-Corrected)|(Motion-Corrected_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: Motion-Corrected}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bPhysio-Corrected\b)|(_Physio-Corrected_)|(_Physio-Corrected)|(Physio-Corrected_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: Physio-Corrected}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bDerived\b)|(_Derived_)|(_Derived)|(Derived_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: Derived}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bIn-Plane\b)|(_In-Plane_)|(_In-Plane)|(In-Plane_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: In-Plane}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bPhase\b)|(_Phase_)|(_Phase)|(Phase_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: Phase}
+      - match_type: any
+        match:
+        - key: $label
+          regex: (\bMagnitude\b)|(_Magnitude_)|(_Magnitude)|(Magnitude_)
+          case-sensitive: false
+        action:
+        - {key: $fcf, add: Magnitude}
+
+  - name: add_measurement_from_acquisition_label_or_series_description
+    evaluate: "first"
+    description: |
+      Add measurement field from acquisition.label or SeriesDescription
+    variables:
+      label:
+        0: acquisition.label
+        1: file.info.header.dicom.SeriesDescription
+      fcf: file.classification.Measurement
+    depends_on:
+      - mr_file
+    rules:
+      - match_type: any
+        match:
+        - key: label
+          regex: (\bMRA\b)|(_MRA_)|(_MRA)|(MRA_)
+          case-sensitive: false
+        action:
+        - {key: Measurement, add: MRA}
+      - match_type: any
+        match:
+        - key: label
+          regex: (\bCEST\b)|(_CEST_)|(_CEST)|(CEST_)
+          case-sensitive: false
+        action:
+        - {key: Measurement, add: CEST}
+      - match_type: any
+        match:
+        - key: label
+          regex: (\bT1rho\b)|(_T1rho_)|(_T1rho)|(T1rho_)
+          case-sensitive: false
+        action:
+        - {key: Measurement, add: T1rho}
+      - match_type: any
+        match:
+        - key: label
+          regex: (\bSVS\b)|(_SVS_)|(_SVS)|(SVS_)
+          case-sensitive: false
+        action:
+        - {key: Measurement, add: SVS}
+      - match_type: any
+        match:
+        - key: label
+          regex: (\bCSI\b)|(_CSI_)|(_CSI)|(CSI_)
+          case-sensitive: false
+        action:
+        - {key: Measurement, add: CSI}
+      - match_type: any
+        match:
+        - key: label
+          regex: (\bEPSI\b)|(_EPSI_)|(_EPSI)|(EPSI_)
+          case-sensitive: false
+        action:
+        - {key: Measurement, add: EPSI}
+      - match_type: any
+        match:
+        - key: label
+          regex: (\bBOLD\b)|(_BOLD_)|(_BOLD)|(BOLD_)
+          case-sensitive: false
+        action:
+        - {key: Measurement, add: BOLD}
+      - match_type: any
+        match:
+        - key: label
+          regex: (\bPhoenix\b)|(_Phoenix_)|(_Phoenix)|(Phoenix_)
+          case-sensitive: false
+        action:
+        - {key: Measurement, add: Phoenix}
+      - match_type: any
+        match:
+        - key: label
+          regex: (\bB0\b)|(_B0_)|(_B0)|(B0_)
+          case-sensitive: false
+        action:
+        - {key: Measurement, add: B0}
+      - match_type: any
+        match:
+        - key: label
+          regex: (\bB1\b)|(_B1_)|(_B1)|(B1_)
+          case-sensitive: false
+        action:
+        - {key: Measurement, add: B1}
+      - match_type: any
+        match:
+        - key: label
+          regex: (\bT1\b)|(_T1_)|(_T1)|(T1_)
+          case-sensitive: false
+        action:
+        - {key: Measurement, add: T1}
+      - match_type: any
+        match:
+        - key: label
+          regex: (\b(?!T2\*)T2\b)|(_(?!T2\*)T2_)|(_(?!T2\*)T2)|((?!T2\*)T2_)
+          case-sensitive: false
+        action:
+        - {key: Measurement, add: T2}
+      - match_type: any
+        match:
+        - key: label
+          regex: (\bT2\*\b)|(_T2\*_)|(_T2\*)|(T2\*_)|(T2\*)|(t2star)
+          case-sensitive: false
+        action:
+        - {key: Measurement, add: T2*}
+      - match_type: any
+        match:
+        - key: label
+          regex: (\bPD\b)|(_PD_)|(_PD)|(PD_)
+          case-sensitive: false
+        action:
+        - {key: Measurement, add: PD}
+      - match_type: any
+        match:
+        - key: label
+          regex: (\bMT\b)|(_MT_)|(_MT)|(MT_)
+          case-sensitive: false
+        action:
+        - {key: Measurement, add: MT}
+      - match_type: any
+        match:
+        - key: label
+          regex: (\bPerfusion\b)|(_Perfusion_)|(_Perfusion)|(Perfusion_)
+          case-sensitive: false
+        action:
+        - {key: Measurement, add: Perfusion}
+      - match_type: any
+        match:
+        - key: label
+          regex: (\bDiffusion\b)|(_Diffusion_)|(_Diffusion)|(Diffusion_)
+          case-sensitive: false
+        action:
+        - {key: Measurement, add: Diffusion}
+      - match_type: any
+        match:
+        - key: label
+          regex: (\bSusceptibility\b)|(_Susceptibility_)|(_Susceptibility)|(Susceptibility_)
+          case-sensitive: false
+        action:
+        - {key: Measurement, add: Susceptibility}
+      - match_type: any
+        match:
+        - key: label
+          regex: (\bFingerprinting\b)|(_Fingerprinting_)|(_Fingerprinting)|(Fingerprinting_)
+          case-sensitive: false
+        action:
+        - {key: Measurement, add: Fingerprinting}
+
+  - name: add_intent_from_acquisition_label_or_series_description
+    evaluate: "first"
+    description: |
+      Add intent field from acquisition.label or SeriesDescription
+    variables:
+      label:
+        0: acquisition.label
+        1: file.info.header.dicom.SeriesDescription
+      fcf: file.classification.Intent
+    depends_on:
+      - mr_file
+    rules:
+      - match_type: any
+        match:
+        - key: label
+          regex: (\bLocalizer\b)|(_Localizer_)|(_Localizer)|(Localizer_)
+          case-sensitive: false
+        action:
+        - {key: Measurement, add: Localizer}
+      - match_type: any
+        match:
+        - key: label
+          regex: (\bShim\b)|(_Shim_)|(_Shim)|(Shim_)
+          case-sensitive: false
+        action:
+        - {key: Measurement, add: Shim}
+      - match_type: any
+        match:
+        - key: label
+          regex: (\bCalibration\b)|(_Calibration_)|(_Calibration)|(Calibration_)
+          case-sensitive: false
+        action:
+        - {key: Measurement, add: Calibration}
+      - match_type: any
+        match:
+        - key: label
+          regex: (\bFieldmap\b)|(_Fieldmap_)|(_Fieldmap)|(Fieldmap_)
+          case-sensitive: false
+        action:
+        - {key: Measurement, add: Fieldmap}
+      - match_type: any
+        match:
+        - key: label
+          regex: (\bStructural\b)|(_Structural_)|(_Structural)|(Structural_)
+          case-sensitive: false
+        action:
+        - {key: Measurement, add: Structural}
+      - match_type: any
+        match:
+        - key: label
+          regex: (\bFunctional\b)|(_Functional_)|(_Functional)|(Functional_)
+          case-sensitive: false
+        action:
+        - {key: Measurement, add: Functional}
+      - match_type: any
+        match:
+        - key: label
+          regex: (\bScreenshot\b)|(_Screenshot_)|(_Screenshot)|(Screenshot_)
+          case-sensitive: false
+        action:
+        - {key: Measurement, add: Screenshot}
+      - match_type: any
+        match:
+        - key: label
+          regex: (\bNon-Image\b)|(_Non-Image_)|(_Non-Image)|(Non-Image_)
+          case-sensitive: false
+        action:
+        - {key: Measurement, add: Non-Image}
+      - match_type: any
+        match:
+        - key: label
+          regex: (\bSpectroscopy\b)|(_Spectroscopy_)|(_Spectroscopy)|(Spectroscopy_)
+          case-sensitive: false
+        action:
+        - {key: Measurement, add: Spectroscopy}

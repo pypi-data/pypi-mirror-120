@@ -1,0 +1,142 @@
+---
+name: OPTHA classifier
+profile:
+
+  - name: dicom_file
+    evaluate: "first"
+    rules:
+      - match_type: 'all'
+        match:
+          - key: file.type
+            is: dicom
+
+  - name: needs_update
+    depends_on:
+      - dicom_file
+    variables:
+      fihd: file.info.header.dicom
+    evaluate: "first"
+    rules:
+      - match_type: 'any'
+        match:
+          - key: $fihd.Columns
+            exists: true
+          - key: acquisition.label
+            startswith: 'OCT'
+          - key: acquisition.label
+            regex: '^OP?T?_'
+
+  - name: opt_classify
+    description: |
+      Set FP/OCT modality and classifications based on ProtocolName
+    evaluate: "first"
+    variables:
+      fihd: file.info.header.dicom
+      fc: file.classification
+    depends_on:
+      - needs_update
+
+    rules:
+
+      - match_type: "all"
+        match:
+          - key: $fihd.ProtocolName
+            is: 'FA'
+        action:
+          - key: file.modality
+            set: 'FP'
+          - key: $fc.Type
+            set: ['Fluorescein Angiography']
+          - key: $fc.Sub-Type
+            set: ['Standard Field']
+
+      - match_type: "all"
+        match:
+          - key: $fihd.ProtocolName
+            is: 'FA-4W Sweep'
+        action:
+          - key: file.modality
+            set: 'FP'
+          - key: $fc.Type
+            set: ['Fluorescein Angiography']
+          - key: $fc.Sub-Type
+            set: ['Wide Field']
+
+      # ... other rules
+
+  - name: cleanup_modality
+    description: |
+      Set modality if not set based on StudyDescription and
+      AcquisitionDevideTypeCodeSequence CodeValue
+    depends_on:
+      - needs_update
+    variables:
+      fihd: file.info.header.dicom
+      fc: file.classification
+    evaluate: "first"
+
+    rules:
+
+      - match_type: "any"
+        match:
+          - key: $fihd.AcquisitionDeviceTypeCodeSequence.$.CodeValue
+            is: "A-00FBE"
+          - key: acquisition.label
+            regex: 'OCT'
+          - key: acquisition.label
+            regex: '^OP?T?_'
+        action:
+          - key: file.modality
+            set: 'OCT'
+
+      - match_type: "all"
+        match:
+          - key: $fihd.AcquisitionDeviceTypeCodeSequence.$.CodeValue
+            exists: true
+          - key: $fihd.StudyDescription
+            is: 'CF'
+        action:
+          - key: file.modality
+            set: 'FP'
+          - key: $fc.Type
+            set: 'Color'
+
+  - name: set_laterality
+    description: |
+      Determine laterality from ImageLaterality or acquisition label
+    depends_on:
+      - needs_update
+    evaluate: "first"
+    aliases:
+      fihd: file.info.header.dicom
+      fc: file.classification
+
+    rules:
+
+      - match_type: "any"
+        match:
+          - key: $fihd.ImageLaterality
+            in: ['R', 'OD']
+          - key: acquisition.label
+            regex: '(^|[^a-zA-Z])(R|RE)([^a-zA-Z]|$)'
+          - key: acquisition.label
+            regex: '(^|[^a-zA-Z])(OD)([^a-zA-Z]|$)'
+          - key: acquisition.label
+            regex: 'RIGHT'
+        action:
+          - key: $fc.Laterality
+            set: 'RIGHT'
+
+      - match_type: "any"
+        match:
+          - key: acquisition.label
+            regex: '(^|[^a-zA-Z])(L|LE)([^a-zA-Z]|$)'
+          - key: acquisition.label
+            regex: '(^|[^a-zA-Z])(OS)([^a-zA-Z]|$)'
+          - key: acquisition.label
+            regex: 'LEFT'
+          - key: $fihd.ImageLaterality
+            in: ['L', 'OS']
+        action:
+          - key: $fc.Laterality
+            set: 'LEFT'

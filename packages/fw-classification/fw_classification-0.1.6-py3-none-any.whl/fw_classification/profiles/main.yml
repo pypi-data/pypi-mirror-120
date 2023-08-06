@@ -1,0 +1,4 @@
+---
+name: DICOM MR Classifier
+includes:
+  - MR_classifier.yaml
