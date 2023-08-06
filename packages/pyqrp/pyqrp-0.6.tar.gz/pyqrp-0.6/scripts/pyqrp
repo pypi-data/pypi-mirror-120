@@ -1,0 +1,6 @@
+#!/usr/bin/python3
+
+import sys
+import subprocess
+
+subprocess.run([sys.executable, "-m", "pyqrp"])

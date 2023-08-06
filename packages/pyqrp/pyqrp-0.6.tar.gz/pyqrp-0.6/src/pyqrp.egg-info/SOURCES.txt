@@ -1,0 +1,15 @@
+LICENSE.md
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+scripts/pyqrp
+src/pyqrp/__init__.py
+src/pyqrp/__main__.py
+src/pyqrp/qrautomata.py
+src/pyqrp/qrxls.py
+src/pyqrp.egg-info/PKG-INFO
+src/pyqrp.egg-info/SOURCES.txt
+src/pyqrp.egg-info/dependency_links.txt
+src/pyqrp.egg-info/requires.txt
+src/pyqrp.egg-info/top_level.txt
