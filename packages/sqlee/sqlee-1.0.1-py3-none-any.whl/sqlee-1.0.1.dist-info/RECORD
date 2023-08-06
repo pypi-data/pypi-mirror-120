@@ -1,0 +1,10 @@
+sqlee/__init__.py,sha256=eEgYuWVBlaSaLyvmqXzaGLkdKH89ElPLNG8OHcf9EAI,106
+sqlee/sqlee.py,sha256=0fY2Zr3R36t3ht9M9OUVPYY0ahc4zt8Bm37b7mHa6Z8,6184
+sqlee/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqlee/utils/backend.py,sha256=cguiLiLIa-VsZWRfC1kX4WiyXacOPoN4ZWZGP-5AlAc,6916
+sqlee/utils/gitee.py,sha256=K44Gb4oMjlT4P-Gm7VChOi6Wcw0O8z2ESdFXO9kw8No,7914
+sqlee-1.0.1.dist-info/LICENSE,sha256=Qv2ilebwoUtMJnRsZwRy729xS5JZQzLauJ0tQzkAkTA,1088
+sqlee-1.0.1.dist-info/METADATA,sha256=LFCqkv6rEOhanx9vZ6Dp7UfNzYWPWLxAe6_2b5wK9YY,608
+sqlee-1.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+sqlee-1.0.1.dist-info/top_level.txt,sha256=DkI1xnl-Q6aKvSbeJOS7rF1kEVA-hAUDj6gkyxuGG0c,6
+sqlee-1.0.1.dist-info/RECORD,,
