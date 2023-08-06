@@ -1,0 +1,2 @@
+pydantic
+ga4gh.vrsatile.pydantic
