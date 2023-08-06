@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: commonvoice-pinyin
+Version: 1.1.2
+Summary: Common Voice Chinese dataset for PyTorch, Pinyin, and TTS
+Home-page: https://github.com/rongcuid/commonvoice_pinyin
+Author: Rongcui Dong
+Author-email: rongcuid@outlook.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/rongcuid/commonvoice_pinyin
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
+License-File: LICENSE
+Requires-Dist: torch
+Requires-Dist: torchaudio
+Requires-Dist: pandas
+Requires-Dist: diskcache
+Requires-Dist: librosa
+Requires-Dist: pypinyin
+
+UNKNOWN
+
