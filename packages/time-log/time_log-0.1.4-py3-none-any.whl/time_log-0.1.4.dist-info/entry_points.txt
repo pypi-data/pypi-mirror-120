@@ -1,0 +1,3 @@
+[console_scripts]
+tl=time_log:main
+
