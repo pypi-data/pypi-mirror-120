@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/OscarTimeTest.egg-info/PKG-INFO
+src/OscarTimeTest.egg-info/SOURCES.txt
+src/OscarTimeTest.egg-info/dependency_links.txt
+src/OscarTimeTest.egg-info/top_level.txt
+src/TimeV2/__init__.py
+src/TimeV2/time2.py
