@@ -1,0 +1,3 @@
+[console_scripts]
+iictl = iictl.main:entrypoint
+
