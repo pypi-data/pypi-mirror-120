@@ -1,0 +1,4 @@
+[console_scripts]
+antennass-cli = Antennass.antennass_cli:main
+antennass-gui = Antennass.antennass_gui:main
+

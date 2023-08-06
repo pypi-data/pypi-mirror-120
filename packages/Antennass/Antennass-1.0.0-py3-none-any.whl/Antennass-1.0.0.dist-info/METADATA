@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: Antennass
+Version: 1.0.0
+Summary: A class project that plots far field antenna array patterns
+Home-page: UNKNOWN
+Author: Monsieur de Villefort
+Author-email: ethanmross92@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: cycler (==0.10.0)
+Requires-Dist: kiwisolver (==1.3.1)
+Requires-Dist: matplotlib (==3.4.2)
+Requires-Dist: numpy (==1.20.3)
+Requires-Dist: pandas (==1.2.4)
+Requires-Dist: Pillow (==8.2.0)
+Requires-Dist: pkg-resources (==0.0.0)
+Requires-Dist: pyparsing (==2.4.7)
+Requires-Dist: python-dateutil (==2.8.1)
+Requires-Dist: pytz (==2021.1)
+Requires-Dist: scipy (==1.6.3)
+Requires-Dist: six (==1.16.0)
+
+# Far-field Antenna Patterns
+A set of classes that define the far-field pattern of antenna
+arrays and methods to plot them.
+
+## Installation
+You can install the module using pip
+
+    pip install Antennass
+
+## How to use
+You can access the class definition by importing the arrays module:
+
+    from arrays import *
+
+You could also use the provided command line interface to generate the plots:
+
+    antennass-cli
+
+
+
