@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: abcpy1801
+Version: 0.2
+Summary: A sudo Package
+Home-page: http://github.com/jonh-doe
+Author: Rute Souza
+Author-email: rute.s.abreu@gmail.com
+License: ['MIT']
+Description: test
+Keywords: automl
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Text Processing :: Linguistic
+Description-Content-Type: text/x-rst;
