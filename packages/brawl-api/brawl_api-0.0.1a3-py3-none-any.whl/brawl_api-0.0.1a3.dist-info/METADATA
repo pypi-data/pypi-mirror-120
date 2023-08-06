@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: brawl-api
+Version: 0.0.1a3
+Summary: Python wrapper for the Brawl Stars API
+Home-page: https://github.com/sebastianmarines/brawl_api
+License: MIT
+Author: Sebastian Marines
+Author-email: sebastian0marines@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aiohttp (>=3.7.4,<4.0.0)
+Requires-Dist: pydantic (>=1.8.2,<2.0.0)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Project-URL: Repository, https://github.com/sebastianmarines/brawl_api
+Description-Content-Type: text/markdown
+
+# Brawl API
+
+Python wrapper for the Brawl Stars API
+
+## Installation
+
+`pip install brawl-api`
