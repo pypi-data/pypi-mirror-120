@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: easysmi
+Version: 0.0.1
+Summary: smi 자막을 파싱하고 간편하게 다룰 수 있는 라이브러리 입니다. 특정 텍스트 위치를 찾아서 그 부분부터 싱크 조절이 가능합니다.
+Home-page: https://github.com/pgh268400/easysmi
+Author: pgh268400
+Author-email: pgh268400@naver.com
+License: UNKNOWN
+Download-URL: https://github.com/pgh268400/easysmi/archive/refs/heads/main.zip
+Keywords: smi sync
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3
+Requires-Dist: chardet
+
+UNKNOWN
+
+
