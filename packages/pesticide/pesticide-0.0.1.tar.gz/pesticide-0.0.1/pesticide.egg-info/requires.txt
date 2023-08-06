@@ -1,0 +1,8 @@
+plotly
+arborize>=2.0.1
+
+[dev]
+sphinx
+pre-commit
+black>=20.8b1
+sphinxcontrib-contentui

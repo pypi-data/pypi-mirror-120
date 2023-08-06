@@ -1,0 +1,8 @@
+README.md
+setup.py
+pesticide/__init__.py
+pesticide.egg-info/PKG-INFO
+pesticide.egg-info/SOURCES.txt
+pesticide.egg-info/dependency_links.txt
+pesticide.egg-info/requires.txt
+pesticide.egg-info/top_level.txt
