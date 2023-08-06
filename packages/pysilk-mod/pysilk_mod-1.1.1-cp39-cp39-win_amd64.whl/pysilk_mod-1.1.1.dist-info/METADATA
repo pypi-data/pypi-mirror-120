@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pysilk-mod
+Version: 1.1.1
+Summary: Python silk decode/encoder bindings using pybind11
+Home-page: https://github.com/DCZYewen/Python-Silk-Module
+Author: DCZYewen
+Author-email: contact@basicws.net
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+UNKNOWN
+

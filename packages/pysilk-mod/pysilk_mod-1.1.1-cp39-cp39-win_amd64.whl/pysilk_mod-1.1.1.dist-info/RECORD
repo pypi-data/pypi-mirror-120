@@ -1,0 +1,12 @@
+_pysilk.cp39-win_amd64.pyd,sha256=yPk4sUiUc8txrMWG4ti1T1W9kJsV2ytrkOrUoLPExZ8,294400
+pysilk/__init__.py,sha256=rfdtgC0wS32qso0CArBFfikacCbiL3OyA3huYdbx-E0,329
+pysilk/pysilk.py,sha256=X6o0KZjz8iKGkRTVOhPN0jmSshGoimUIYagQkZYBLNY,1736
+pysilk/utils.py,sha256=Bd6RHrt3qTTYq0kczPS2rE2oAgkv_On884cU8Pr6NhE,539
+src/pysilk/__init__.py,sha256=Y-augy3v9PsnG8l2ThfDxliavPwMPZsgvQdtMEsFTdM,149
+src/pysilk/pysilk.py,sha256=lkmQNwl1-I0HVZADAuFLqF5-tkg0feKXVuGLPG7MwnQ,848
+src/pysilk/utils.py,sha256=Bd6RHrt3qTTYq0kczPS2rE2oAgkv_On884cU8Pr6NhE,539
+pysilk_mod-1.1.1.dist-info/LICENSE,sha256=aA2NL8qu8wAdpw3AG3CrVF58EvprgCkWYCZkWJQbfk8,6392
+pysilk_mod-1.1.1.dist-info/METADATA,sha256=k-b_Q7Kao9vNnocwpWS63Qcp74mItafoBs9bY6nMSoM,351
+pysilk_mod-1.1.1.dist-info/WHEEL,sha256=jr7ubY0Lkz_yXH9FfFe9PTtLhGOsf62dZkNvTYrJINE,100
+pysilk_mod-1.1.1.dist-info/top_level.txt,sha256=-J8orNDGKlLylJ0uhOt_eF2Qk__t_slJNf8CAfBo7aQ,15
+pysilk_mod-1.1.1.dist-info/RECORD,,
