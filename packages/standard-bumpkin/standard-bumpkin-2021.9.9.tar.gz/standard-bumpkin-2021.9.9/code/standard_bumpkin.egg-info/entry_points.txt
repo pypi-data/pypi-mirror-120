@@ -1,0 +1,5 @@
+[console_scripts]
+bumpkin = bumpkin:console_entry
+bumpkin-3.9 = bumpkin:console_entry
+bumpkin3 = bumpkin:console_entry
+
