@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ADS1115-mic-py
+Version: 1.0.2
+Summary: A MicroPython module for the 16-bit, 4-channel ADS1115 ADC
+Home-page: https://github.com/wollewald/ADS1115_mpy
+Author: Wolfgang Ewald
+Author-email: wolfgang.ewald@wolles-elektronikkiste.de
+License: MIT
+Keywords: ADS1115 micropython
+Platform: UNKNOWN
+
+This is a MicroPython module for the ADS1115 A/D converter. It has implemented all features of the ADS1115 including alerts. You find examples on my GitHub page.
+
