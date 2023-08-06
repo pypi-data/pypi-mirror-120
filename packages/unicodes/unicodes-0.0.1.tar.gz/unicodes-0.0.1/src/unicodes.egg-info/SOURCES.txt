@@ -1,0 +1,16 @@
+.pypyreadme
+MANIFEST.in
+README.md
+VERSION
+setup.cfg
+setup.py
+bin/unicodes
+src/unicodes.egg-info/PKG-INFO
+src/unicodes.egg-info/SOURCES.txt
+src/unicodes.egg-info/dependency_links.txt
+src/unicodes.egg-info/top_level.txt
+src/unicodes_api/__init__.py
+src/unicodes_api/ascii.py
+src/unicodes_api/cli.py
+src/unicodes_api/parser.py
+src/unicodes_api/screen.py
