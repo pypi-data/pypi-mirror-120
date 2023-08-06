@@ -1,0 +1,28 @@
+datetime
+matplotlib
+numpy
+pandas
+plotly
+scikit-learn
+scipy
+pytest
+
+# TO INSTALL PROPHET:
+Cython>=0.22
+cmdstanpy==0.9.5
+pystan==2.19.1.1            # pystan 3 don't support windows anymore
+LunarCalendar>=0.0.9
+convertdate>=2.1.2
+holidays>=0.10.2
+setuptools-git>=1.2
+python-dateutil>=2.8.0
+tqdm>=4.36.1
+# prophet
+
+
+# IN CASE OF ISSUES WHEN INSTALLING PROPHET YOU CAN INSTALL IT IN THE MANUAL WAY USING CONDA:
+# https://pystan2.readthedocs.io/en/latest/windows.html#windows
+# 1. install c++ compiler: conda install libpython m2w64-toolchain -c msys2
+# 2. conda install numpy cython matplotlib scipy pandas pystan -c conda-forge
+# 3. install all dependencies: pip install -r requirements.txt
+# 4. install prophet: pip install prophet
