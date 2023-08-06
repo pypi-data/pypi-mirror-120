@@ -1,0 +1,10 @@
+setuptools
+Zope2<4
+dataflake.fakeldap
+python-ldap<3
+
+[cmfldap]
+Products.CMFDefault>=2.1.0
+
+[exportimport]
+Products.GenericSetup<1.9,>=1.4.0

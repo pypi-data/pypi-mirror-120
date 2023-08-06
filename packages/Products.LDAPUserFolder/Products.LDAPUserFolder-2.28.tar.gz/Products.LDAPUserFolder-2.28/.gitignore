@@ -1,0 +1,13 @@
+.installed.cfg
+.eggs/
+bin/
+develop-eggs/
+dist/
+include/
+lib/
+parts/
+*.egg
+*.egg-info
+*.pyc
+default.profraw
+pyvenv.cfg
