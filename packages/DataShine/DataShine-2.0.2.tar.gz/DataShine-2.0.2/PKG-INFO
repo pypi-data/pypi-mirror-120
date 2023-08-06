@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: DataShine
+Version: 2.0.2
+Summary: A lamp in asynchronous environment to shine data. It will notify any watcher that data is freshed.
+Home-page: https://github.com/monk-after-90s/DataShine
+Author: Antas
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+A lamp in asynchronous environment to shine data. It will notify any watcher that data is freshed. For more information,
+refer to method documents.
+
+# Attention! This module has bugs thus is abandoned. Refer to https://pypi.org/project/AsyncGear/
+

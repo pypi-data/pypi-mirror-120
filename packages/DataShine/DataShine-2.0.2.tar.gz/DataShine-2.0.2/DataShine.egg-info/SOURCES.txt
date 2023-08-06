@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+DataShine/DataShine.py
+DataShine/__init__.py
+DataShine.egg-info/PKG-INFO
+DataShine.egg-info/SOURCES.txt
+DataShine.egg-info/dependency_links.txt
+DataShine.egg-info/requires.txt
+DataShine.egg-info/top_level.txt
