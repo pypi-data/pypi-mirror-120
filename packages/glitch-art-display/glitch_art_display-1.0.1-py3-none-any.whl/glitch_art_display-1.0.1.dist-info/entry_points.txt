@@ -1,0 +1,3 @@
+[console_scripts]
+glitch-art-display=glitch_art_display.main:main
+
