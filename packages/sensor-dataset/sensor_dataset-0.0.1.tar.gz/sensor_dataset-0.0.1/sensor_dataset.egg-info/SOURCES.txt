@@ -1,0 +1,16 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+sensor_dataset/__init__.py
+sensor_dataset/_nbdev.py
+sensor_dataset/outlier_detection.py
+sensor_dataset.egg-info/PKG-INFO
+sensor_dataset.egg-info/SOURCES.txt
+sensor_dataset.egg-info/dependency_links.txt
+sensor_dataset.egg-info/entry_points.txt
+sensor_dataset.egg-info/not-zip-safe
+sensor_dataset.egg-info/requires.txt
+sensor_dataset.egg-info/top_level.txt
