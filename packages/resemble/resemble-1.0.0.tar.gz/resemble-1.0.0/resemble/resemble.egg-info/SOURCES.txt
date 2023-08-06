@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+resemble/resemble.egg-info/PKG-INFO
+resemble/resemble.egg-info/SOURCES.txt
+resemble/resemble.egg-info/dependency_links.txt
+resemble/resemble.egg-info/top_level.txt
