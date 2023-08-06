@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ingradient-library-temp
+Version: 0.1.1
+Summary: Medical Deep Learning Framework
+Home-page: https://github.com/LiamSeon/Ingradient_library
+Author: seungyeob.seon
+Author-email: liamseon@gmail.com
+License: UNKNOWN
+Keywords: pypi deploy
+Platform: UNKNOWN
+Requires-Dist: SimpleITK
+
+UNKNOWN
+
+
