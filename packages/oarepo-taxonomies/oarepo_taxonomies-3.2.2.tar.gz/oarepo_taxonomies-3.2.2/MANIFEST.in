@@ -1,0 +1,2 @@
+recursive-include oarepo_taxonomies *.json
+recursive-include oarepo_taxonomies *.json5
