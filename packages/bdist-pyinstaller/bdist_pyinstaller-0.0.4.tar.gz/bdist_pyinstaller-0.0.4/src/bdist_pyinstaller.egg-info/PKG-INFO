@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: bdist-pyinstaller
+Version: 0.0.4
+Summary: A side-car distutils command to automate creation of the pyinstaller packages in a non-intrusive way
+Home-page: https://github.com/AmadeusITGroup/bdist_pyinstaller
+Author: Waldek Herka
+Author-email: wherka-ama@users.noreply.github.com
+Maintainer: Waldek Herka
+Maintainer-email: wherka-ama@users.noreply.github.com
+License: Apache-2.0
+Project-URL: Issue Tracker, https://github.com/AmadeusITGroup/bdist_pyinstaller/issues
+Keywords: PyInstaller,packaging
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: System :: Archiving :: Packaging
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: !=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,>=2.7
+Description-Content-Type: text/markdown
+Provides-Extra: test
+License-File: LICENSE
+
+### Overview
+bdist_pyinstaller is a side-car distutils command to automate creation of the pyinstaller packages in a non-intrusive way.
+
+#### The problem dist_pyinstaller is trying to solve
+The application written in Python is never directly executed natively. Similarly to Java, Python code is compiled into a byte code(opcode) and it's running on a *Python VM*.
+As a consequence, to run anything written in Python one needs to have an *installation of Python* compiler+VM.
+It usually comes as OS-dependent package(rpm, deb etc.) or it can be compiled from source.  
+Furthermore, despite having a very rich core libraries at their disposal, Python programs often need to pull some *3rd party packages* in. Some packages require libraries which have to be pre-installed on the OS level.
+
+This would require the combination of:
+
+  * Internet connection or setting up the equivalent repositories holding the packages
+  * Priviledge escalation if the installation of python and/or extra packages is to be treated as a system-wide one
+  * An extra care when dealing with version upgrades(both python itself as well as the packages) as various applications often come with conflicting requirements which are not straight forward to solve on a shared platform. 
+
+There are solutions to all these problems, but they all come with the extra complexity, reduced reliability and maintanance cost when the aim is to have simple and stable way of executing a given program/utility.
+
+*bdist_installer* offers a very simple path from a well defined Python utility to a single binary with all the required bits frozen-in. That includes the Python runtime. Thanks to pyinstaller used behind the scenes it is very powerful, yet still very simple in non-trivial use-cases.
+
+
+### Table of Contents
+
+  * [Getting started](./GETTINGSTARTED.md)
+  * [Contributing](./CONTRIBUTING.md)
+  * [Help wanted](./HELPWANTED.md)
+  * [Glossary](./GLOSSARY.md)
+
