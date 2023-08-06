@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: ldlite
+Version: 0.0.9
+Summary: Lightweight analytics tool for Okapi-based services
+Home-page: https://github.com/library-data-platform/ldlite
+Author: Nassib Nassar
+Author-email: nassib@indexdata.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/library-data-platform/ldlite/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: duckdb (==0.2.9)
+Requires-Dist: pandas (==1.3.3)
+Requires-Dist: psycopg2 (==2.9.1)
+Requires-Dist: requests (==2.26.0)
+Requires-Dist: tqdm (==4.62.2)
+
+LDLite
+======
+
+Copyright (C) 2021 The Open Library Foundation
+
+This software is distributed under the terms of the Apache License,
+Version 2.0.  See the file
+[LICENSE](https://github.com/library-data-platform/ldlite/blob/master/LICENSE)
+for more information.
+
+LDLite is a lightweight, open source reporting tool for Okapi-based
+services.  It is part of the Library Data Platform project and
+provides basic LDP functions without requiring the server to be
+installed.
+
+
+Features
+--------
+
+* Queries Okapi-based modules and transforms the data for easier
+  reporting
+
+* Full SQL query support on transformed data, using an embedded
+  database
+
+* No LDP server needed; only Python, and Okapi access to send CQL
+  queries
+
+* Easy installation (`pip install ldlite`)
+
+* Supports DuckDB, PostgreSQL, and Redshift database systems
+
+* PostgreSQL/Redshift support enables:
+  * Sharing the data in a multiuser database
+  * Querying the data from within the LDP query builder app
+  * Storing the data in an existing LDP database if available
+
+
+Examples
+--------
+
+[An example running in Jupyter
+Notebook](https://github.com/library-data-platform/ldlite/blob/main/examples/example.md)
+
+[Load sample data from
+folio-snapshot](https://github.com/library-data-platform/ldlite/blob/main/examples/snapshot.py)
+
+
+Documentation
+-------------
+
+[API reference documentation](https://library-data-platform.github.io/ldlite/ldlite.html)
+
+
+
+Installing
+----------
+
+To install LDLite or upgrade to the latest version:
+
+```
+python3 -m pip install --upgrade ldlite
+```
+
+
+Issues
+------
+
+[Bug reports](https://github.com/library-data-platform/ldlite/issues)
+
+
+
+

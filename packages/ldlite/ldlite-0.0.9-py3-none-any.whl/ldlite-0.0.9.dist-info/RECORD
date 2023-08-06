@@ -1,0 +1,11 @@
+ldlite/__init__.py,sha256=1Er7MttMnyKgKHdhaUEVFGiaPCbd1FjpChr3xzPky_Y,9220
+ldlite/_camelcase.py,sha256=i_K3R8pOiqGd9GbjUVQJvx40UNYXMlM7RK1VneJJ4xA,2274
+ldlite/_csv.py,sha256=HyJgpHglNLschsTn1w_0o-0v_crh0_l7Blcb7g1YePk,614
+ldlite/_jsonx.py,sha256=y2TqxmJOl0p4E364owu79gKV5RIiPooCSIjpmh_R6uc,5930
+ldlite/_select.py,sha256=CvBL_Q8bNg9rWal77GQA0FDB_qs0S8B2k5dyou_gEP0,3025
+ldlite/_sqlx.py,sha256=DqUI0GftoNFe0H_pGx05jzGQQSmJ1qA7f_vlLASzOAw,299
+ldlite-0.0.9.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ldlite-0.0.9.dist-info/METADATA,sha256=Kyv5qil4unrw861EHKwNZPe6MV4uUZWiVK2jk4pPCgc,2381
+ldlite-0.0.9.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+ldlite-0.0.9.dist-info/top_level.txt,sha256=c8L0Z_Pghuei7m3XndPt7ky-UfAy_GRPrvL1WE-HW40,7
+ldlite-0.0.9.dist-info/RECORD,,
