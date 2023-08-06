@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+next1api/__init__.py
+next1api/next1api.py
+next1api.egg-info/PKG-INFO
+next1api.egg-info/SOURCES.txt
+next1api.egg-info/dependency_links.txt
+next1api.egg-info/requires.txt
+next1api.egg-info/top_level.txt
