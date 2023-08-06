@@ -1,0 +1,5 @@
+aiosql
+SQLAlchemy
+alembic
+typer
+pydantic[dotenv]
