@@ -1,0 +1,4 @@
+numpy>=1.16
+boto3>=1.17
+black>=21.4b
+pytest
