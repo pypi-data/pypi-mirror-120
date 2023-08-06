@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: demerzel
+Version: 0.1.0
+Summary: Simple workflow scheduling and monitoring
+Home-page: https://github.com/waydegg/demerzel
+Author: Wayde Gilliam
+Author-email: waydegilliam@gmail.com
+License: MIT
+Description: # demerzel
+        
+        Simple workflow scheduling and monitoring.
+        
+Platform: UNKNOWN
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: quality
+Provides-Extra: build
