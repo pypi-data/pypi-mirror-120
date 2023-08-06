@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: proto2pb2
+Version: 0.0.1
+Summary: Uses protoc to convert a given directory of .proto files to _pb2.py files
+Home-page: UNKNOWN
+Author: https://github.com/supriyopaul
+Author-email: paul.supriyo.paul@gmail.com
+License: MIT
+Keywords: proto2pb2
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE
+
+UNKNOWN
+

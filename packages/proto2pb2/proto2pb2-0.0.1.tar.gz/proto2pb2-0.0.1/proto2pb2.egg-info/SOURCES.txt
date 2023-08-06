@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+proto2pb2/__init__.py
+proto2pb2/command.py
+proto2pb2/converter.py
+proto2pb2.egg-info/PKG-INFO
+proto2pb2.egg-info/SOURCES.txt
+proto2pb2.egg-info/dependency_links.txt
+proto2pb2.egg-info/entry_points.txt
+proto2pb2.egg-info/requires.txt
+proto2pb2.egg-info/top_level.txt

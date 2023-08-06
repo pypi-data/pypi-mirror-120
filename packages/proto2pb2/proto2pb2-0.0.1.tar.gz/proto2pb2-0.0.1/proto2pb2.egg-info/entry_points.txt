@@ -1,0 +1,3 @@
+[console_scripts]
+proto2pb2 = proto2pb2:main
+
