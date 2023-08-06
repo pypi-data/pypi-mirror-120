@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: squeakpy
+Version: 0.7.4
+Summary: Squeak library
+Home-page: UNKNOWN
+Author: Jonathan Zernik
+Author-email: UNKNOWN
+License: UNKNOWN
+Keywords: squeak
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Dist: cryptography (>=3.4.0)
+Requires-Dist: python-bitcoinlib (>=0.11.0)
+Requires-Dist: ECPy (>=1.2.0)
+
+UNKNOWN
+
+
