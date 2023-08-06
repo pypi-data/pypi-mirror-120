@@ -1,0 +1,16 @@
+CHANGELOG.md
+MANIFEST.in
+setup.py
+maxminddb-stubs/METADATA.toml
+maxminddb-stubs/__init__.pyi
+maxminddb-stubs/compat.pyi
+maxminddb-stubs/const.pyi
+maxminddb-stubs/decoder.pyi
+maxminddb-stubs/errors.pyi
+maxminddb-stubs/extension.pyi
+maxminddb-stubs/reader.pyi
+types_maxminddb.egg-info/PKG-INFO
+types_maxminddb.egg-info/SOURCES.txt
+types_maxminddb.egg-info/dependency_links.txt
+types_maxminddb.egg-info/requires.txt
+types_maxminddb.egg-info/top_level.txt
