@@ -1,0 +1,8 @@
+praatio~=4.1
+numpy
+tqdm
+pyyaml
+librosa
+requests
+sklearn
+joblib

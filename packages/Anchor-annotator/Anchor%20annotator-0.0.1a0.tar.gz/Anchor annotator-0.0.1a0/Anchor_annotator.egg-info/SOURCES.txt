@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+Anchor_annotator.egg-info/PKG-INFO
+Anchor_annotator.egg-info/SOURCES.txt
+Anchor_annotator.egg-info/dependency_links.txt
+Anchor_annotator.egg-info/entry_points.txt
+Anchor_annotator.egg-info/requires.txt
+Anchor_annotator.egg-info/top_level.txt
+anchor/__init__.py
+anchor/command_line.py
+anchor/main.py
+anchor/player.py
+anchor/qrc_resources.py
+anchor/widgets.py
+anchor/workers.py

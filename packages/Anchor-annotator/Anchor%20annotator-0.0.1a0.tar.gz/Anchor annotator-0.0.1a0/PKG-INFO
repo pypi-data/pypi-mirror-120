@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: Anchor annotator
+Version: 0.0.1a0
+Summary: Anchor annotator is a program for inspecting corpora for the Montreal Forced Aligner and correcting transcriptions and pronunciations.
+Home-page: https://github.com/MontrealCorpusTools/Anchor-annotator
+Author: Montreal Corpus Tools
+Author-email: michael.e.mcauliffe@gmail.com
+License: UNKNOWN
+Keywords: speech corpus annotation transcription
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Text Processing :: Linguistic
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Anchor-annotator
+Anchor annotator is a program for inspecting corpora for the Montreal Forced Aligner and correcting transcriptions and pronunciations
+
+
