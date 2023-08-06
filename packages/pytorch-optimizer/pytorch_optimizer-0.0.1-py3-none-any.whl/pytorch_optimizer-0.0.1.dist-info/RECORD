@@ -1,0 +1,17 @@
+pytorch_optimizer/__init__.py,sha256=PohVFTieegOsiVAoswB8R2_Zxxj_-ET9mf_y675CVs4,22
+pytorch_optimizer/adamp.py,sha256=QNmeIH7LuX_c_twKhMXLOJk8S2gMBrFWn5ffn9ljzp0,4172
+pytorch_optimizer/agc.py,sha256=oAD-tLwH8huUO0jRljGtKCWwCJKnLjOYDnTvLin8hY0,634
+pytorch_optimizer/chebyshev_schedule.py,sha256=NTNu8-ta8kU2QmcLx1tVbu3tTSqD0vOfVDYrJp0I1bk,1067
+pytorch_optimizer/gc.py,sha256=PPqHPA7jtxZbGMdSkkuvhfIYqk80RkA1GxxHtdwJdi8,546
+pytorch_optimizer/lookahead.py,sha256=URgQcV3hPCbJjHOB4f5vMpFuuIw5lQfjJ6ObD9vRYJo,2662
+pytorch_optimizer/radam.py,sha256=U4pyjhb_00P_qmpOeL0o1HPvFPEWHBCI74rHVxznLKo,5667
+pytorch_optimizer/ranger.py,sha256=MUxkM9HZNt7km8cCvjQ21RsrUcQj5PRAzgnTJ6sMhsE,5932
+pytorch_optimizer/ranger21.py,sha256=_PXWGSVkbJ_LQuyhYLOMrGXVnMsmRWSkY0T3F8nAQzs,22334
+pytorch_optimizer/sgdp.py,sha256=hNY2EfoY0K6Q4RtBHrGh1OaBk39eKbas5ulRz2S7FnQ,3719
+pytorch_optimizer/utils.py,sha256=FSFwAXM5ZapOAoITpMWkEPuQFt33wtXlPP6DpKGuoRc,1065
+pytorch_optimizer-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pytorch_optimizer-0.0.1.dist-info/METADATA,sha256=tNkx4_W_avzZKpJOc3iSiOsgrnazi7Dr_6xJb5JTX6o,5227
+pytorch_optimizer-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pytorch_optimizer-0.0.1.dist-info/top_level.txt,sha256=R8jhpCXt7bM7qQONzLdBmDPHUyKCTyxKFHD9C14iFPA,18
+pytorch_optimizer-0.0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pytorch_optimizer-0.0.1.dist-info/RECORD,,
