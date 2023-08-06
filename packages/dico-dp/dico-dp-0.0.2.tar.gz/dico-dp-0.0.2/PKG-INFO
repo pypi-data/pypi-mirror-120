@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: dico-dp
+Version: 0.0.2
+Summary: Simple debugger and tester for dico-command.
+Home-page: https://github.com/dico-api/dico-dp
+Author: eunwoo1104
+Author-email: sions04@naver.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# dp
+Simple debugger and tester for dico-command.
+
+## Installation
+```
+pip install -U dico-dp
+```
+
+## Usage
+
+```py
+bot = dico_command.Bot(...)
+...
+bot.load_module("dp")
+```
+
+## Commands
+
+### dp
+Base command.
+
+- dp py [code] - Executes python code.
+
+### dpe
+Base command but with embed UI.
+
+
