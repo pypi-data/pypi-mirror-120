@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: FuncNotify
+Version: 1.0.4
+Summary: Get notified when your functions finish running
+Home-page: https://github.com/kevinfjiang/FuncNotify
+Author: kevinfjiang
+Author-email: kevin.jiang016@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown
+Requires-Dist: twilio
+Requires-Dist: slackclient
+Requires-Dist: python-dotenv
+
+# Birthday Notify Bot
+### **Premise:**
+Sometimes, functions take a long time. I wanted to create something that automatically notifies you when they're completed or of any errors, training ML. The advantage over other decorator nontifiers is that there's an added option to hide your api tokens and emails so they aren't accidentally pushed to a public repo. 
+
+#### This is a super lean ReadMe, check out the github linked [here](https://github.com/kevinfjiang/FuncNotify)
+
+#### Use case
+```python
+@time_func(dot_env=True, NotifyMethod="Text", cellphone="8001234567")
+def wait_func():
+    do_something()
+
+@time_text
+def wait_func2():
+    do_something()
+```
+Both accomplish the same objective of nootifying the user after wait_func() completes, one does so with the phone number saved as a .env variable so it never accidentally gets exposed.
+
+#### Installation
+```$ pip install funcNotify```
+###### Create .env in current working directory and fill out information that you wanna use
+
+[template.env](https://raw.githubusercontent.com/kevinfjiang/FuncNotify/master/template.env)
+
+
