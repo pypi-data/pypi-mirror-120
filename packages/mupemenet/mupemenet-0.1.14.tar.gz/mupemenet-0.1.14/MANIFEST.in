@@ -1,0 +1,3 @@
+include mupemenet/config/*.json
+include mupemenet/resources/certificates/*.pem
+include mupemenet/resources/models/*
