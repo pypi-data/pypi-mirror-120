@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+LibPythonPro/__init__.py
+LibPythonPro/github_api.py
+libpythonpro_braga.egg-info/PKG-INFO
+libpythonpro_braga.egg-info/SOURCES.txt
+libpythonpro_braga.egg-info/dependency_links.txt
+libpythonpro_braga.egg-info/not-zip-safe
+libpythonpro_braga.egg-info/requires.txt
+libpythonpro_braga.egg-info/top_level.txt
