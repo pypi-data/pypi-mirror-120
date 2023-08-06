@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/OpenEMG.egg-info/PKG-INFO
+src/OpenEMG.egg-info/SOURCES.txt
+src/OpenEMG.egg-info/dependency_links.txt
+src/OpenEMG.egg-info/requires.txt
+src/OpenEMG.egg-info/top_level.txt
+src/pyomyo/__init__.py
+src/pyomyo/pyomyo.py
