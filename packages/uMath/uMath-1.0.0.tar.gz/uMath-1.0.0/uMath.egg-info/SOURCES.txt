@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+UsmanMath/__init__.py
+UsmanMath/math.py
+uMath.egg-info/PKG-INFO
+uMath.egg-info/SOURCES.txt
+uMath.egg-info/dependency_links.txt
+uMath.egg-info/top_level.txt
