@@ -1,0 +1,7 @@
+/dist
+/htmlcov
+/public
+.coverage
+*.pyc
+*.swp
+docs/index.md
