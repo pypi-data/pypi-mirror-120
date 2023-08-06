@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: sudhanshucalculator
+Version: 0.0.1
+Summary: Scientific measurement library for instruments, experiments, and live-plotting
+Home-page: UNKNOWN
+Author: sudhanshu
+Author-email: sudhanshu.vainayak@gmail.com
+License: MIT
+Keywords: calculator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Programming Language :: Python :: 3 
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENCE.txt
+
+this is a very simple calculator.
+
+CHANGE LOG
+====================
+0.0.1 ( /  / )
+--------------------
+FIRST RELEASE
+

@@ -1,0 +1,10 @@
+CHANGEBLOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+basicCalculator/__init__.py
+sudhanshucalculator.egg-info/PKG-INFO
+sudhanshucalculator.egg-info/SOURCES.txt
+sudhanshucalculator.egg-info/dependency_links.txt
+sudhanshucalculator.egg-info/top_level.txt
