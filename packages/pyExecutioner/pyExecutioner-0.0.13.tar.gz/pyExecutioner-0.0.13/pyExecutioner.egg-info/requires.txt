@@ -1,0 +1,5 @@
+setuptools>=42
+wheel
+deepmerge>=0.1.0
+PyYAML>=5.4.1
+tabulate
