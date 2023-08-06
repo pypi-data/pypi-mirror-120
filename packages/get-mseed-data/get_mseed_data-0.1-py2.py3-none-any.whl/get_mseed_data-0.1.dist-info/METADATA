@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: get-mseed-data
+Version: 0.1
+Summary: Python code to download mseed data from differente services
+Home-page: https://github.com/awacero/get_mseed_data
+Author: Wilson Acero
+Author-email: acerowilson@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: obspy (>=1.1.0)
+
+# get_mseed_data
+
