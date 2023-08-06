@@ -1,0 +1,4 @@
+PyYAML<6.0.0,>=5.4.1
+databind.json<2.0.0,>=1.2.3
+nr.refreshable<1.0.0,>=0.0.2
+typing-extensions<4.0.0,>=3.10.0.0
