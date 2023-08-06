@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/Oneneuron_pypi_divyakolapan97.egg-info/PKG-INFO
+src/Oneneuron_pypi_divyakolapan97.egg-info/SOURCES.txt
+src/Oneneuron_pypi_divyakolapan97.egg-info/dependency_links.txt
+src/Oneneuron_pypi_divyakolapan97.egg-info/requires.txt
+src/Oneneuron_pypi_divyakolapan97.egg-info/top_level.txt
+src/oneNeuron/__init__.py
+src/oneNeuron/perceptron.py
