@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: trddatetime
+Version: 0.0.0
+Summary: TradeDatetime
+Home-page: https://github.com/innovata/trddatetime
+Author: innovata sambong
+Author-email: iinnovata@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# trddatetime (Trade Datetime)
+
+### ============================================================
+### Overview.
+### ============================================================
+
+TimeZone 설정값에 따라 그 나라의 거래소 거래일시를 사용할 수 있다.
+
+한국거래소: STOCK_TZ={+9, UTC+9}
+미국거래소: STOCK_TZ={-4, ET}
+영국거래소: STOCK_TZ={0, CET}
+
+### ============================================================
+### 사용법.
+### ============================================================
+
+
+##### ============================================================
+### 주의사항 !!
+##### ============================================================
+
+
+### ============================================================
+### Configuration
+### ============================================================
+
+
