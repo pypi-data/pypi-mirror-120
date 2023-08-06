@@ -1,0 +1,7 @@
+dask_lsf/__init__.py,sha256=rtZbYzxBXn9ZjfDDtteG7bFegxaZgSVQoHCRMJi0leY,447
+dask_lsf/dask_lsf.py,sha256=vxbMMP-Ty35yQjOC8Wd2qTtpeoxWvKcFkjvklXJdkJo,4545
+dask_lsf-1.0.0.dist-info/LICENSE,sha256=U1--10DHmyKitswnQ9SS8Czvik4S4x596rZW_zUJ_ZU,586
+dask_lsf-1.0.0.dist-info/METADATA,sha256=9ZiTtU44JVOZ_zBYqaYAxIZBa9O6FXP0KmB9KA0z4ro,1697
+dask_lsf-1.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+dask_lsf-1.0.0.dist-info/top_level.txt,sha256=0BsYCTAqPMlmpHmPFFAv9G6ndUeaxniQXi7_5UBbm9U,9
+dask_lsf-1.0.0.dist-info/RECORD,,
