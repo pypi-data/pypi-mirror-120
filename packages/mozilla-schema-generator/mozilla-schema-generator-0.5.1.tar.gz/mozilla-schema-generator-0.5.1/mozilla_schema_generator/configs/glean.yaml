@@ -1,0 +1,91 @@
+metrics:
+  boolean:
+    match:
+      send_in_pings:
+        not:
+          - glean_ping_info
+      type: boolean
+  counter:
+    match:
+      send_in_pings:
+        not:
+          - glean_ping_info
+      type: counter
+  custom_distribution:
+    match:
+      send_in_pings:
+        not:
+          - glean_ping_info
+      type: custom_distribution
+  datetime:
+    match:
+      send_in_pings:
+        not:
+          - glean_ping_info
+      type: datetime
+  memory_distribution:
+    match:
+      send_in_pings:
+        not:
+          - glean_ping_info
+      type: memory_distribution
+  quantity:
+    match:
+      send_in_pings:
+        not:
+          - glean_ping_info
+      type: quantity      
+  rate:
+    match:
+      send_in_pings:
+        not:
+          - glean_ping_info
+      type: rate
+  string:
+    match:
+      send_in_pings:
+        not:
+          - glean_ping_info
+      type: string
+  string_list:
+    match:
+      send_in_pings:
+        not:
+          - glean_ping_info
+      type: string_list
+  timespan:
+    match:
+      send_in_pings:
+        not:
+          - glean_ping_info
+      type: timespan
+  timing_distribution:
+    match:
+      send_in_pings:
+        not:
+          - glean_ping_info
+      type: timing_distribution
+  uuid:
+    match:
+      send_in_pings:
+        not:
+          - glean_ping_info
+      type: uuid
+  labeled_boolean:
+    match:
+      send_in_pings:
+        not:
+          - glean_ping_info
+      type: labeled_boolean
+  labeled_counter:
+    match:
+      send_in_pings:
+        not:
+          - glean_ping_info
+      type: labeled_counter
+  labeled_string:
+    match:
+      send_in_pings:
+        not:
+          - glean_ping_info
+      type: labeled_string
