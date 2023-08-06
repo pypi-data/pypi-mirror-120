@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+py_dto/__init__.py
+py_dto.egg-info/PKG-INFO
+py_dto.egg-info/SOURCES.txt
+py_dto.egg-info/dependency_links.txt
+py_dto.egg-info/requires.txt
+py_dto.egg-info/top_level.txt
