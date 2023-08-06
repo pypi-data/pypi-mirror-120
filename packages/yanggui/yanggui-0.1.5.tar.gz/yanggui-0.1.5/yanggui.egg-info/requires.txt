@@ -1,0 +1,4 @@
+wxPython>=4.1
+yangson>=1.4.9
+rstr>=2.2
+PyPubSub>=4
