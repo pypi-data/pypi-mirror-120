@@ -1,0 +1,11 @@
+numpy
+attrdict
+tqdm
+scipy
+matplotlib
+setuptools
+pytest
+h5py
+
+[:python_version < "3.7"]
+dataclasses
