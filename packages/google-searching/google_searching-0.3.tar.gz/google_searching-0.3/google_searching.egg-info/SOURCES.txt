@@ -1,0 +1,10 @@
+LICENSE
+README.md
+google_searching.py
+setup.py
+google_searching.egg-info/PKG-INFO
+google_searching.egg-info/SOURCES.txt
+google_searching.egg-info/dependency_links.txt
+google_searching.egg-info/not-zip-safe
+google_searching.egg-info/requires.txt
+google_searching.egg-info/top_level.txt
