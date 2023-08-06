@@ -1,0 +1,62 @@
+[tool.poetry]
+name = "hypermodern-py"
+version = "0.1.1"
+authors = ["Andri Danusasmita <andridsasmita@gmail.com>"]
+description = "My hypermodern Python project"
+license = "Unlicense"
+readme = "README.md"
+homepage = "https://github.com/andridns/hypermodern-py"
+repository = "https://github.com/andridns/hypermodern-py"
+keywords = ["hypermodern"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+black = "^21.8b0"
+click = "^8.0.1"
+matplotlib = "^3.4.3"
+opencv-python = "^4.5.3"
+requests = "^2.26.0"
+desert = "^2020.11.18"
+marshmallow = "^3.13.0"
+nox = "^2021.6.12"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+coverage = { extras = ["toml"], version = "^5.5" }
+pytest-cov = "^2.12.1"
+pytest-mock = "^3.6.1"
+black = "^21.9b0"
+flake8 = "^3.9.2"
+flake8-bandit = "^2.1.2"
+flake8-black = "^0.2.3"
+flake8-bugbear = "^21.9.1"
+flake8-import-order = "^0.18.1"
+safety = "^1.10.3"
+mypy = "^0.910"
+rope = "^0.20.1"
+flake8-annotations = "^2.6.2"
+flake8-docstrings = "^1.6.0"
+darglint = "^1.8.0"
+Sphinx = "^4.2.0"
+sphinx-autodoc-typehints = "^1.12.0"
+codecov = "^2.1.12"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+hypermodern-py = "hypermodern_py.console:main"
+
+[tool.coverage.paths]
+source = ["src", "*/site-packages"]
+
+[tool.coverage.run]
+branch = true
+source = ["hypermodern_py"]
+
+[tool.coverage.repo]
+show_missing = true
+
+[tool.coverage.report]
+fail_under = 10

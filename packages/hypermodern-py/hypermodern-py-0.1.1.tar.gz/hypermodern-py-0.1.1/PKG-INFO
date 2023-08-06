@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: hypermodern-py
+Version: 0.1.1
+Summary: My hypermodern Python project
+Home-page: https://github.com/andridns/hypermodern-py
+License: Unlicense
+Keywords: hypermodern
+Author: Andri Danusasmita
+Author-email: andridsasmita@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: black (>=21.8b0,<22.0)
+Requires-Dist: click (>=8.0.1,<9.0.0)
+Requires-Dist: desert (>=2020.11.18,<2021.0.0)
+Requires-Dist: marshmallow (>=3.13.0,<4.0.0)
+Requires-Dist: matplotlib (>=3.4.3,<4.0.0)
+Requires-Dist: nox (>=2021.6.12,<2022.0.0)
+Requires-Dist: opencv-python (>=4.5.3,<5.0.0)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Project-URL: Repository, https://github.com/andridns/hypermodern-py
+Description-Content-Type: text/markdown
+
+[![Tests](https://github.com/andridns/hypermodern-py/workflows/Tests/badge.svg)](https://github.com/andridns/hypermodern-py/actions?workflow=Tests)
+
+[![codecov](https://codecov.io/gh/andridns/hypermodern-py/branch/main/graph/badge.svg?token=16D51BG5O3)](https://codecov.io/gh/andridns/hypermodern-py)
+
+[![PyPI](https://img.shields.io/pypi/v/hypermodern-py.svg)](https://pypi.org/project/hypermodern-py/)
+
+# hypermodern-py
+
+My hypermodern python project.
+
