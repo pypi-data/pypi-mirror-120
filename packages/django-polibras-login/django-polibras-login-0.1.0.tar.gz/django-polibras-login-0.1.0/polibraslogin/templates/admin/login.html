@@ -1,0 +1,146 @@
+{% extends "admin/base_site.html" %}
+{% load socialaccount %}
+{% load i18n static %}
+{% block extrastyle %}{{ block.super }}<link rel="stylesheet" type="text/css" href="{% static "admin/css/login.css" %}">
+{{ form.media }}
+{% endblock %}
+
+{% block bodyclass %}{{ block.super }} login{% endblock %}
+
+{% block usertools %}{% endblock %}
+
+{% block nav-global %}{% endblock %}
+
+{% block nav-sidebar %}{% endblock %}
+
+{% block content_title %}{% endblock %}
+
+{% block breadcrumbs %}{% endblock %}
+
+{% block content %}
+{% if form.errors and not form.non_field_errors %}
+<p class="errornote">
+{% if form.errors.items|length == 1 %}{% endif %}
+</p>
+{% endif %}
+<style>
+    .logo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .logo img {
+        max-height: 150px;
+    }
+
+    .google-btn {
+      margin: auto;
+      width: 194px;
+      height: 42px;
+      background-color: #4285f4;
+      border-radius: 2px;
+      box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+      transition: 0.2s;
+    }
+    .google-btn .google-icon-wrapper {
+      position: absolute;
+      margin-top: 1px;
+      margin-left: 1px;
+      width: 40px;
+      height: 40px;
+      border-radius: 2px;
+      background-color: #fff;
+    }
+    .google-btn .google-icon {
+      margin-top: 11px;
+      width: 18px;
+      height: 18px;
+    }
+    .google-btn .btn-text {
+      float: right;
+      margin: 11px 11px 0 0;
+      color: #fff;
+      font-size: 14px;
+      letter-spacing: 0.2px;
+    }
+    .google-btn:hover {
+      cursor: pointer;
+      box-shadow: 0 0 8px #4285f4;
+      transition: 0.2s;
+    }
+    .google-btn:active {
+      background: #1669f2;
+    }
+
+    span.underscore {
+      border-bottom: 2px solid #cccccc9c;
+      flex-grow: 1;
+      height: 0.85em;
+      margin: 0 5px;
+    }
+    .wrapper {
+      display: flex;
+    }
+</style>
+
+<div class="row logo">
+    <img src="http://accounts.polisuite.com.br/polibras_logo.png" />
+</div>
+{% if form.non_field_errors %}
+{% for error in form.non_field_errors %}
+<p class="errornote">
+    {{ error }}
+</p>
+{% endfor %}
+{% endif %}
+
+
+<div id="content-main">
+
+{% if user.is_authenticated %}
+<p class="errornote">
+    You are authenticated as {{ username }}, but are not authorized to
+    access this page. Would you like to login to a different account?
+</p>
+{% endif %}
+
+<form action="{{ app_path }}" method="post" id="login-form">{% csrf_token %}
+  <div class="form-row">
+    {{ form.username.errors }}
+    {{ form.username.label_tag }} {{ form.username }}
+  </div>
+  <div class="form-row">
+    {{ form.password.errors }}
+    {{ form.password.label_tag }} {{ form.password }}
+    <input type="hidden" name="next" value="{{ next }}">
+  </div>
+  {% url 'admin_password_reset' as password_reset_url %}
+  {% if password_reset_url %}
+  <div class="password-reset-link">
+    <a href="{{ password_reset_url }}"></a>
+  </div>
+  {% endif %}
+  <div class="submit-row">
+    <input type="submit"  value="Login"/>
+      <div class="wrapper">
+          <span class="underscore"></span><p>ou</p><span class="underscore"></span>
+      </div>
+      <span href="{% provider_login_url 'google' %}">
+        <div class="google-btn">
+          <div class="google-icon-wrapper">
+            <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"/>
+          </div>
+          <p class="btn-text"><b>Entrar com o Google</b></p>
+      </span>
+  </div>
+</form>
+
+</div>
+<script>
+   var div = document.getElementsByClassName('google-btn')[0];
+
+    div.addEventListener('click', function (event) {
+        window.location.href = "{% provider_login_url 'google' %}";
+    });
+</script>
+{% endblock %}

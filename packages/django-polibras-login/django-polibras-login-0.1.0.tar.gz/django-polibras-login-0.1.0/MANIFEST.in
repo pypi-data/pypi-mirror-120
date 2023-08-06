@@ -1,0 +1,6 @@
+include LICENSE
+include README.rst
+recursive-include polibraslogin/static *
+recursive-include polibraslogin/templates *
+recursive-include docs *
+include requirements.txt
