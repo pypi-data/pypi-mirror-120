@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: slicesampling
+Version: 0.1.1
+Summary: Set of Markov chain Monte Carlo (MCMC) sampling methods based on slice_sampler sampling
+Home-page: https://code.ornl.gov/2kv/slicesampler
+Author: Kris Villez
+Author-email: villezk@ornl.gov
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+# slicesampler
+
+Set of Markov chain Monte Carlo (MCMC) sampling methods based on slice sampling
+
+## Available methods
+
+The package includes the following methods:
+1. Univariate slice sampler, as described in [1]
+2. Multivariate slice sampler based on univariate updates along eigenvectors, as described in [2]
+3. Multivariate slice sampler based on combination of hit-and-run and univariate slice sampler, named hybrid slice sampler in [3]
+
+## Examples
+
+1. example1_univariate.py illustrates how to use the package for univariate slice sampling
+2. example2_bivariate.py illustrates how to use the package for multivariate slice sampling
+
+

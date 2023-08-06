@@ -1,0 +1,12 @@
+slicesampler/__init__.py,sha256=jIlvMRsRbcJrgVqqHAZexupyCl_eyj8VS7S3TtJFMHE,57
+slicesampler/sampler.py,sha256=mhkcB4gfuRZ3rySrIJeGszTmjxfKJkVjkMY8viYXybg,7192
+slicesampler/univariate_sampler.py,sha256=GbbREjgjTbggQErtyQaO5p6_mhdiJcSRWO4CCXZ_ajQ,12074
+slicesampler/version.py,sha256=GKBj3M2PoAozjs-aH7J63hMeZZh_w7wUVFypiTlRrU4,217
+slicesampling/__init__.py,sha256=jIlvMRsRbcJrgVqqHAZexupyCl_eyj8VS7S3TtJFMHE,57
+slicesampling/sampler.py,sha256=mhkcB4gfuRZ3rySrIJeGszTmjxfKJkVjkMY8viYXybg,7192
+slicesampling/univariate_sampler.py,sha256=GbbREjgjTbggQErtyQaO5p6_mhdiJcSRWO4CCXZ_ajQ,12074
+slicesampling/version.py,sha256=ekpaWt_-KjHhz4sRw39-lyT8rUkpCbEO82dkvE63VQU,217
+slicesampling-0.1.1.dist-info/METADATA,sha256=N0xCvZkjv_gFy5dCi3eYx__yzjAf2XT_WvEGLmCdZlw,1008
+slicesampling-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+slicesampling-0.1.1.dist-info/top_level.txt,sha256=gbsypLQWfnGUKWzfwt5EPH_4F0Uk6qoeVAulJItsPak,14
+slicesampling-0.1.1.dist-info/RECORD,,
