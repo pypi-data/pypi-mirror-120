@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+scripts/__init__.py
+scripts/test_aws_eks.py
+sek.egg-info/PKG-INFO
+sek.egg-info/SOURCES.txt
+sek.egg-info/dependency_links.txt
+sek.egg-info/entry_points.txt
+sek.egg-info/requires.txt
+sek.egg-info/top_level.txt
+tests/__init__.py
+tests/test_main.py
