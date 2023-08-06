@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.cfg
+setup.py
+i_need_an_image.egg-info/PKG-INFO
+i_need_an_image.egg-info/SOURCES.txt
+i_need_an_image.egg-info/dependency_links.txt
+i_need_an_image.egg-info/requires.txt
+i_need_an_image.egg-info/top_level.txt
+need_an_image/__init__.py
