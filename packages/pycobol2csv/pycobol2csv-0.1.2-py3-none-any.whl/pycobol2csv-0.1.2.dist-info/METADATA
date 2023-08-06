@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: pycobol2csv
+Version: 0.1.2
+Summary: A Python library to convert COBOL ebcdic file to CSV format
+Home-page: https://github.com/jasonli-lijie/pycobol2csv
+Author: Jason Li
+Author-email: niomobileapp@gmail.com
+License: MIT
+Download-URL: https://github.com/user/reponame/archive/v_01.tar.gz
+Project-URL: Bug Tracker, https://github.com/jasonli-lijie/pycobol2csv/issues
+Keywords: COBOL,EBCDIC,CSV
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ebcdic
+
+# pycobol2csv
+pycobol2csv is a Python library to convert COBOL ebcdic file to CSV format. The package is built to cater for advanced features in COBOL copybooks such as *OCCURES x TIMES*. 
+
+The CSV file is RDBMS friendly and all headers are ready to be used as database column names.
+CSV conversion is controlled by config file in *csv_config.json*
+
+Install the python module:
+
+`pip install pycobol2csv`
+
+To use the module:
+
+```
+from pycobol2csv import convert_cobol_file
+
+convert_cobol_file(copybook_file, data_file, output_file, config_file, codepage)
+
+```
+
+- copybook_file: copybook filename
+- data_file: data filename 
+- output_file: output csv filename
+- config_file: csv configuration filename, refer to csv_config.json
+- codepage: codepage for edibic, refer to https://docs.python.org/3.7/library/codecs.html#standard-encodings for details
+
+Repo: https://github.com/jasonli-lijie/pycobol2csv
+
+
