@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+rich_LogConsole/__init__.py
+rich_LogConsole.egg-info/PKG-INFO
+rich_LogConsole.egg-info/SOURCES.txt
+rich_LogConsole.egg-info/dependency_links.txt
+rich_LogConsole.egg-info/requires.txt
+rich_LogConsole.egg-info/top_level.txt
