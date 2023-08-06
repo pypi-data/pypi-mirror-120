@@ -1,0 +1,9 @@
+LICENSE,sha256=Nbq7yYTTspSY7zH5jjmRRUD0yoaMsryaYtolXTCP4d0,1072
+grepy/__init__.py,sha256=V2-jRqS7287V4_9VdSKJasYUt-OMt6DZc7DPu4uIo9Y,302
+grepy/__main__.py,sha256=43oRTjvjNcxgNIz1YExjr8-P4NSohr-S0SgEs0X1SOc,97
+grepy/core.py,sha256=cQL-F-PxoYaXXGi0rThYjSFCN6Z4wf28OTQQz8NNYTA,911
+grepy-0.2.0.dist-info/entry_points.txt,sha256=Q6M0U-qMqAPnA0MYDqPpk5xkWUYFZDXHr6pBE7h6Sj8,36
+grepy-0.2.0.dist-info/LICENSE,sha256=Nbq7yYTTspSY7zH5jjmRRUD0yoaMsryaYtolXTCP4d0,1072
+grepy-0.2.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+grepy-0.2.0.dist-info/METADATA,sha256=2plflOt1lJG3qgt3NGPpAPQMqgVHXnWl2Z-45n5dDfM,1861
+grepy-0.2.0.dist-info/RECORD,,
