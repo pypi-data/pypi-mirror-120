@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: openfisca-uk-data
+Version: 0.1.6
+Summary: A Python package to manage OpenFisca-UK-compatible microdata
+Home-page: http://github.com/ubicenter/openfisca-uk-data
+Author: Nikhil Woodruff
+Author-email: nikhil.woodruff@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pandas
+Requires-Dist: pathlib
+Requires-Dist: tqdm
+Requires-Dist: h5py
+Requires-Dist: tables
+Requires-Dist: google-cloud-storage
+Requires-Dist: jupyter-book (>=0.11.1)
+Requires-Dist: sphinxcontrib-bibtex (>=1.0.0)
+
+UNKNOWN
+
+
