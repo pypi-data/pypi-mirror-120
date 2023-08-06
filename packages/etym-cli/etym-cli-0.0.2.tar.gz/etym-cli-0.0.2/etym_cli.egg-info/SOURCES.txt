@@ -1,0 +1,15 @@
+.gitignore
+README.MD
+requirements.txt
+setup.py
+etym_cli/__init__.py
+etym_cli/__main__.py
+etym_cli/cli.py
+etym_cli.egg-info/PKG-INFO
+etym_cli.egg-info/SOURCES.txt
+etym_cli.egg-info/dependency_links.txt
+etym_cli.egg-info/entry_points.txt
+etym_cli.egg-info/requires.txt
+etym_cli.egg-info/top_level.txt
+imgs/output.png
+imgs/ss.png
