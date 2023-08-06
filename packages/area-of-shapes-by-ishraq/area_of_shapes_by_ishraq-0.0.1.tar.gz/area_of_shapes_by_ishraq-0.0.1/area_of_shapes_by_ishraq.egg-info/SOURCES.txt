@@ -1,0 +1,7 @@
+setup.py
+area_of_shapes_by_ishraq/__init__.py
+area_of_shapes_by_ishraq/area.py
+area_of_shapes_by_ishraq.egg-info/PKG-INFO
+area_of_shapes_by_ishraq.egg-info/SOURCES.txt
+area_of_shapes_by_ishraq.egg-info/dependency_links.txt
+area_of_shapes_by_ishraq.egg-info/top_level.txt
