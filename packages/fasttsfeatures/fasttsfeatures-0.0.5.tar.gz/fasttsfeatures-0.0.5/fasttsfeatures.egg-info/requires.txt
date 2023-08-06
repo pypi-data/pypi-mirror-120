@@ -1,0 +1,9 @@
+pip
+packaging
+pandas
+pyarrow
+python-dotenv
+requests
+s3fs
+
+[dev]
