@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+chemix/__init__.py
+chemix/solution.py
+chemix.egg-info/PKG-INFO
+chemix.egg-info/SOURCES.txt
+chemix.egg-info/dependency_links.txt
+chemix.egg-info/requires.txt
+chemix.egg-info/top_level.txt
+tests/__init__.py
+tests/test_chemix.py
