@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+smalldoc/__init__.py
+smalldoc/main.py
+smalldoc/parser.py
+smalldoc/writer.py
+smalldocpy.egg-info/PKG-INFO
+smalldocpy.egg-info/SOURCES.txt
+smalldocpy.egg-info/dependency_links.txt
+smalldocpy.egg-info/entry_points.txt
+smalldocpy.egg-info/requires.txt
+smalldocpy.egg-info/top_level.txt
