@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: knex
+Version: 0.1.5
+Summary: Python library for building composable text parsers
+Home-page: https://github.com/clay584/knex
+License: GNU GPLv3
+Author: Clay Curtis
+Author-email: clay584@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Text Processing :: General
+Requires-Dist: regex (>=2021.8.28,<2022.0.0)
+Project-URL: Repository, https://github.com/clay584/knex
+Description-Content-Type: text/markdown
+
+# knex
+
+Python library for creating chainable text parsers
+
