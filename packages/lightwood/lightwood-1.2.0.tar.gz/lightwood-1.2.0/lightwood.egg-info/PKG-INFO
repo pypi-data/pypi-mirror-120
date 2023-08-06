@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: lightwood
+Version: 1.2.0
+Summary: Lightwood is a toolkit for automatic machine learning model building
+Home-page: https://github.com/mindsdb/lightwood
+Author: MindsDB Inc
+Author-email: community@mindsdb.com
+License: GPL-3.0
+Download-URL: https://pypi.org/project/lightwood
+Description: <h1 align="center">
+        	<img width="500" src="https://github.com/mindsdb/mindsdb-docs/blob/master/mindsdb-docs/docs/assets/MindsDBLightwood@3x.png" alt="Lightwood">
+        	<br>
+        	<br>
+        </h1>
+        
+        ## Beta Version -- Stayed tuned for the final release and the new documentation
+        
+        ### Current contributors 
+        
+        <a href="https://github.com/mindsdb/lightwood/graphs/contributors">
+          <img src="https://contributors-img.web.app/image?repo=mindsdb/lightwood" />
+        </a>
+        
+        Made with [contributors-img](https://contributors-img.web.app).
+        
+        ## License ![PyPI - License](https://img.shields.io/pypi/l/lightwood)
+        
+        * [Lightwood License](https://github.com/mindsdb/lightwood/blob/master/LICENSE)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
