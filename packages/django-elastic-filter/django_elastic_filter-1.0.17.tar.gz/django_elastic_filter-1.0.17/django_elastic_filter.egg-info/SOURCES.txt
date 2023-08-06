@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+django_elastic_filter/__init__.py
+django_elastic_filter/dynamic.py
+django_elastic_filter/elastic_filter.py
+django_elastic_filter/sub_serializer.py
+django_elastic_filter/utils.py
+django_elastic_filter.egg-info/PKG-INFO
+django_elastic_filter.egg-info/SOURCES.txt
+django_elastic_filter.egg-info/dependency_links.txt
+django_elastic_filter.egg-info/requires.txt
+django_elastic_filter.egg-info/top_level.txt
