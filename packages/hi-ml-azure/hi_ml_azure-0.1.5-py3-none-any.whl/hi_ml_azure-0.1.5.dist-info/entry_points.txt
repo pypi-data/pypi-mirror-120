@@ -1,0 +1,4 @@
+[console_scripts]
+himl-download = health.azure.himl_download:main
+himl-tb = health.azure.himl_tensorboard:main
+
