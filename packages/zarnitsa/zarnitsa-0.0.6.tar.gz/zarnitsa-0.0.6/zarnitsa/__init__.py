@@ -1,0 +1,5 @@
+from .nlp.DataAugmenter import AbstractDataAugmenter
+from .stats.DataAugmenterInternally import DataAugmenterInternally
+from .stats.DataAugmenterExternally import DataAugmenterExternally
+from .nlp.DataAugmenterNLP import DataAugmenterNLP
+from .series.DataAugmenterTimeSeries import DataAugmenterTimeSeries
