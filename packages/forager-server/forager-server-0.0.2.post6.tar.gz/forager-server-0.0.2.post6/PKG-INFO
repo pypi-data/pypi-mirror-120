@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: forager-server
+Version: 0.0.2.post6
+Summary: A web-based data exploration system for rapid task definition.
+Home-page: UNKNOWN
+Author: Forager Research Team
+Author-email: faitpoms@gmail.com
+License: UNKNOWN
+Keywords: Interactive,Interpreter,Shell,Web
+Platform: Linux
+Platform: Mac OS X
+Platform: Windows
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.8
+License-File: LICENSE
+
+
+Forager is a system for rapidly exploring a corpus of data, and
+annotating this data with user-defined tags.
+    
+
