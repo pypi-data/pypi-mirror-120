@@ -1,0 +1,2 @@
+itchat
+wechaty_puppet_itchat
