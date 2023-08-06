@@ -1,0 +1,57 @@
+[tool.poetry]
+name = "nubium-dude"
+version = "0.3.0a2"
+description = "CLI tool for automating various development tasks"
+authors = ["RedHat Marketing Operations Data Engineering <mkt-ops-de@redhat.com>"]
+license = "MIT"
+packages = [
+    { include="dude", from="." },
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+click = "^8.0.1"
+black = {version = "^21.6b0", allow-prereleases = true}
+virtualenv = "^20.4.7"
+virtualenv-api = "^2.1.18"
+confluent-kafka = {extras = ["avro"], version = "^1.7.0"}
+nubium-schemas = "^1.1.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.2"
+pytest-cov = "^2.11.1"
+coverage = {extras = ["toml"], version = "^5.5"}
+pylint = "^2.10.2"
+
+[tool.poetry.scripts]
+dude = "dude.__main__:main"
+
+[tool.black]
+line-length = 120
+extend-exclude = """
+^/tests/fixtures/formatting/
+"""
+
+[tool.coverage.report]
+exclude_lines = [
+    "if __name__ == .__main__.:",
+]
+
+[tool.pylint.format]
+max-line-length = "120"
+
+[tool.pylint.messages_control]
+disable = """
+fixme,
+missing-class-docstring,
+missing-function-docstring,
+missing-module-docstring,
+"""
+
+[tool.pytest.ini_options]
+addopts = "-v --cov=dude --cov-report term-missing --cov-branch --no-cov-on-fail"
+testpaths = ["tests"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
