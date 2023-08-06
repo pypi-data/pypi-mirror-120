@@ -1,0 +1,8 @@
+click
+
+[google-cloud-storage]
+google-cloud-storage
+google-oauth
+
+[test]
+pytest
