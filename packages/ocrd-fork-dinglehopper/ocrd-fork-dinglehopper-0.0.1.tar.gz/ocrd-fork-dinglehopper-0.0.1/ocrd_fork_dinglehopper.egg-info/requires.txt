@@ -1,0 +1,11 @@
+MarkupSafe
+attrs
+click
+colorama
+jinja2
+lxml
+multimethod==1.3
+numpy
+ocrd>=2.20.1
+tqdm
+uniseg
