@@ -1,0 +1,17 @@
+LICENSE.md
+MANIFEST.in
+README.md
+build.sh
+requirements.txt
+setup.py
+tracardi_fullcontact_webhook/plugin.py
+tracardi_fullcontact_webhook.egg-info/PKG-INFO
+tracardi_fullcontact_webhook.egg-info/SOURCES.txt
+tracardi_fullcontact_webhook.egg-info/dependency_links.txt
+tracardi_fullcontact_webhook.egg-info/requires.txt
+tracardi_fullcontact_webhook.egg-info/top_level.txt
+tracardi_fullcontact_webhook/model/configuration.py
+tracardi_fullcontact_webhook/model/full_contact_source_configuration.py
+tracardi_fullcontact_webhook/model/__pycache__/configuration.cpython-38.pyc
+tracardi_fullcontact_webhook/model/__pycache__/full_contact_source_configuration.cpython-38.pyc
+tracardi_fullcontact_webhook/test/manual_test.py

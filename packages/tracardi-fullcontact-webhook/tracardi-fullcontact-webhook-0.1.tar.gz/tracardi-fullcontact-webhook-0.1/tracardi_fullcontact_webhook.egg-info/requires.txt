@@ -1,0 +1,5 @@
+tracardi-plugin-sdk
+tracardi
+tracardi_dot_notation
+pydantic
+python-fullcontact
