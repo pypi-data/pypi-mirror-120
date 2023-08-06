@@ -1,0 +1,6 @@
+pyyaml
+numpy
+colour
+pendulum
+twine
+cn2an
