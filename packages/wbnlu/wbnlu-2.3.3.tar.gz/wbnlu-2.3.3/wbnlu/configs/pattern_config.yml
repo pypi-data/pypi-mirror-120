@@ -1,0 +1,23 @@
+relation:
+  - patterns.json, filters.json, normalization.json
+  - alias_head, alias_tail
+
+segmentation:
+  - patterns.json
+
+entity:
+  - patterns.json, time.filter
+  - DATE, TIME, MONEY, stock, effect, ingredient, pub, other
+
+sentiment:
+  - patterns.json
+  - pos, neg, neu
+
+timex:
+  - patterns.json
+  - minus24h, minus12h, plus1h, plus12h, forever, forever2, forever3
+
+user_pattern:
+  - patterns.json
+  - Test_pattern 
+

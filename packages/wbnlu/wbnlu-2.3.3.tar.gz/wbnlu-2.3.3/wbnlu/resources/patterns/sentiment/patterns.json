@@ -1,0 +1,36 @@
+[
+
+  {"pos":
+    [
+      [{"TEXT": {"IN": ["不","无","没","没有", "毫无", "全无", "去"]}}, {"IS_PUNCT": false, "TEXT":{"NOT_IN": ["能","可能"]}, "OP": "?"}, {"_": {"features": {"IN": ["n","neg"]}}}],
+      [{"TEXT": "["},{"TEXT": {"IN": ["心"]}},{"TEXT": "]"}]
+    ],
+
+    "注释": "带否定词的正例",
+    "测试用例": "中肯又不偏激"
+  },
+
+  {"neg":
+    [
+
+      [{"TEXT": {"IN": ["不","不够","无","没","没有", "缺乏", "毫无", "全无", "才能", "不是","不再"]}}, {"IS_PUNCT": false, "OP": "?"}, {"_": {"features": {"IN": ["p","pos"]}}}]
+
+    ],
+
+    "注释": "带否定词的负例",
+    "测试用例": "不漂亮"
+  },
+
+  {"neu":
+    [
+
+      [{"TEXT": {"IN":["必须","应该","需要","需","希望","想","如果"]}}, {"IS_PUNCT": false, "OP": "?"}, {"_": {"features": {"IN": ["p","pos","neg"]}}}],
+      [{"TEXT": "@"}, {"IS_PUNCT": false}, {"IS_PUNCT": false, "OP": "?"}, {"IS_PUNCT": false, "OP": "?"}, {"TEXT": "_", "OP": "?"}, {"IS_PUNCT": false, "OP": "?"}, {"IS_PUNCT": false, "OP": "?"}, {"IS_PUNCT": false, "OP": "?"}, {"IS_PUNCT": false, "OP": "?"},{"IS_PUNCT": false, "OP": "?"}, {"TEXT": {"IN": [":", "："]}}],
+      [{"TEXT": "@"}, {"IS_PUNCT": false}, {"IS_PUNCT": false, "OP": "?"},  {"IS_PUNCT": false, "OP": "?"}, {"IS_SPACE": true}]
+
+    ],
+
+    "注释": "虚拟语态",
+    "测试用例": "必须当机立断; "
+  }
+]

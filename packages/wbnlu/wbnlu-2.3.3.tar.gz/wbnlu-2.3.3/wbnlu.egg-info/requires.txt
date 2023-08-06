@@ -1,0 +1,7 @@
+spacyWB
+wbjieba
+PyYAML
+OpenCC
+emoji
+pkuseg
+jsonschema
