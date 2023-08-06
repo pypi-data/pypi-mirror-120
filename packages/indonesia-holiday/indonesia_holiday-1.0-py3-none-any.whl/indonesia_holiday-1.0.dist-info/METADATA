@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: indonesia-holiday
+Version: 1.0
+Summary: python module to check indonesia holiday calendar
+Home-page: https://github.com/ahmadcahyana/indonesia_holiday
+Author: ahmadcahyana
+Author-email: ahmadcahyana@outlook.com
+License: MIT
+Keywords: holiday indonesia calendar
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: google-api-python-client (==2.20.0)
+Requires-Dist: google-auth-httplib2 (==0.1.0)
+Requires-Dist: google-auth-oauthlib (==0.4.6)
+Requires-Dist: pytz
+
+UNKNOWN
+
