@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: proxverter
+Version: 0.4.7
+Summary: Cross platform system wide proxy server & TLS Interception library for Python
+Home-page: https://github.com/hash3liZer/Proxverter
+Author: hash3liZer
+Author-email: admin@shellvoide.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/hash3liZer/Proxverter/issues
+Keywords: http, https, proxy, transparent proxy, web proxy, https proxy,python3 web proxy, python3 https
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console
+Classifier: Environment :: No Input/Output (Daemon)
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP :: Browsers
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content :: CGI Tools/Libraries
+Classifier: Topic :: System :: Networking :: Firewalls
+Classifier: Topic :: System :: Networking :: Monitoring
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: proxy.py
+Requires-Dist: pyopenssl
+
+![banner](https://user-images.githubusercontent.com/29171692/126787146-54fd3b6c-883b-4990-8cef-ba8816584bc4.png)
+
+<h1 align="center">Proxverter</h1>
+Cross platform system wide proxy server & TLS Interception library for Python. Basically a wrapper around proxy.py and PyOpenSSL allowing easy integration and certificate generation on command.
+
+Refer to complete documentation: https://github.com/hash3liZer/Proxverter
+
+
