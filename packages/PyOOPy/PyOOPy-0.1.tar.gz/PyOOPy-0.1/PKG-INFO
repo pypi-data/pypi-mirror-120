@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: PyOOPy
+Version: 0.1
+Summary: Object-oriented programming in Python
+Home-page: https://gitlab.com/baton96/PyOOP
+Author: Bartosz Paulewicz
+Author-email: podolce0@gmail.com
+License: MIT
+Download-URL: https://gitlab.com/baton96/PyOOP/-/archive/0.1.1/PyOOP-0.1.1.tar.gz
+Description: UNKNOWN
+Keywords: OOP,Object-oriented programming
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
