@@ -1,0 +1,5 @@
+matplotlib
+ipython
+rebound>=3.17.4
+numpy
+astropy>=4.3.1

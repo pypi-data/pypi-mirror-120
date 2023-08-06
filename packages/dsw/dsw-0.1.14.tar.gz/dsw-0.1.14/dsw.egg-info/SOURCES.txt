@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+dsw/__init__.py
+dsw/orbits.py
+dsw.egg-info/PKG-INFO
+dsw.egg-info/SOURCES.txt
+dsw.egg-info/dependency_links.txt
+dsw.egg-info/requires.txt
+dsw.egg-info/top_level.txt
+dsw/cepheid/__init__.py
+dsw/cepheid/cepheid_template.py
+dsw/cepheid/data/long_struc.fits
+dsw/cepheid/data/short_struc.fits
