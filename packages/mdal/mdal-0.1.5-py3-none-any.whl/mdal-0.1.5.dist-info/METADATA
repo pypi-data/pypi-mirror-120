@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: mdal
+Version: 0.1.5
+Summary: mdal(My Data Analytics Library)
+Home-page: https://github.com/ynny-github/mdal
+License: MIT
+Author: Yuya Nagai
+Author-email: ynny.opem@gmail.com
+Requires-Python: >=3.7,<3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: matplotlib (>=3.4.2,<4.0.0)
+Requires-Dist: pmdarima (>=1.8.2,<2.0.0)
+Requires-Dist: scikit-posthocs (>=0.6.7,<0.7.0)
+Requires-Dist: scipy (>=1.7.1,<2.0.0)
+Project-URL: Repository, https://github.com/ynny-github/mdal
