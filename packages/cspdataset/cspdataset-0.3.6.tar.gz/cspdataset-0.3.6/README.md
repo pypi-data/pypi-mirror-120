@@ -1,0 +1,50 @@
+# 图像处理工具包
+- 处理 COCO, VOC 格式的数据集
+- 包含数据集互转、切分、检查
+- 对coco格式数据进行评估（基于漏检率、错检率）
+
+# 数据集格式说明
+
+## VOC
+```
+VOC  
+  |  
+  |---------Annotations  
+                |-------xxx.xml  
+  |---------ImageSets  
+                |  
+                |-------Main    
+                         |-------trainval.txt  
+  |---------JPEGImages  
+                |-------xxx.jpg
+  |---------labels.txt
+  
+# ImageSets 非必须
+```
+
+
+
+## COCO
+```
+COCO
+  |  
+  |---------Annotations  
+                |-------train.json
+  |---------train  
+                |-------xxx.jpg
+```
+
+
+
+# 使用方法
+- pip 安装
+
+```
+pip install cspdataset
+```
+
+- [datatools](doc/cspdatatools.md) 数据工具使用文档
+- [evatools](doc/cspevatools.md) 评估工具使用文档
+
+
+
