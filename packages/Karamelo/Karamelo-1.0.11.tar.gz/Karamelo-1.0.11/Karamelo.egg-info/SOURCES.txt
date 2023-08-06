@@ -1,0 +1,8 @@
+setup.py
+Karamelo.egg-info/PKG-INFO
+Karamelo.egg-info/SOURCES.txt
+Karamelo.egg-info/dependency_links.txt
+Karamelo.egg-info/requires.txt
+Karamelo.egg-info/top_level.txt
+karamelo/__init__.py
+karamelo/module1.py
