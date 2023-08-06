@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/App_ANN_Project_Praveenku32k.egg-info/PKG-INFO
+src/App_ANN_Project_Praveenku32k.egg-info/SOURCES.txt
+src/App_ANN_Project_Praveenku32k.egg-info/dependency_links.txt
+src/App_ANN_Project_Praveenku32k.egg-info/requires.txt
+src/App_ANN_Project_Praveenku32k.egg-info/top_level.txt
+src/Perceptron/__init__.py
+src/Perceptron/perceptron.py
