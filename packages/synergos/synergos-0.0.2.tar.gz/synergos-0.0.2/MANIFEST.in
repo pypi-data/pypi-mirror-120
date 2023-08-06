@@ -1,0 +1,9 @@
+include *.py
+include *.txt
+recursive-include synergos *.py
+recursive-include tests *.py
+recursive-include tests *.xlsx
+
+include LICENSE
+include README.md
+include tox.ini
