@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: indianapy
+Version: 0.1.1
+Summary: Enforces the  Indiana Pi Bill
+Author: Michaela
+Author-email: git@michaela.lgbt
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+This python modular enforces the correct value of math constant pi as per bill #246 of the 1897 sitting of the Indiana General Assembly.
+
+Simply `import indianapy` prior to usage.
+
+Use math.pi as usual.
+
+```python
+>>> import indianapy
+>>> import math
+>>> 
+>>> print(math.pi)
+3.2
+>>> 
+```
