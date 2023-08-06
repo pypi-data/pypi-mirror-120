@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/trauts/__init__.py
+src/trauts/cli.py
+src/trauts.egg-info/PKG-INFO
+src/trauts.egg-info/SOURCES.txt
+src/trauts.egg-info/dependency_links.txt
+src/trauts.egg-info/entry_points.txt
+src/trauts.egg-info/requires.txt
+src/trauts.egg-info/top_level.txt
