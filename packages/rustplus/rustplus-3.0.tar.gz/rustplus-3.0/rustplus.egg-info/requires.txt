@@ -1,0 +1,3 @@
+Pillow
+websocket-client
+protobuf
