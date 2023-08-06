@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: hisock
+Version: 0.0.1.post2
+Summary: A higher-level extension of the socket module, with simpler and more efficient usages
+Home-page: https://github.com/SSS-Says-Snek/hisock
+Author: SSS-Says-Snek
+Author-email: bmcomi2018@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

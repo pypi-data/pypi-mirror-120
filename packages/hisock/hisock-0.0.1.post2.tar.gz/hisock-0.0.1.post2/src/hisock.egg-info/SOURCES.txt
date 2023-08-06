@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/hisock/__init__.py
+src/hisock/client.py
+src/hisock/constants.py
+src/hisock/server.py
+src/hisock/utils.py
+src/hisock.egg-info/PKG-INFO
+src/hisock.egg-info/SOURCES.txt
+src/hisock.egg-info/dependency_links.txt
+src/hisock.egg-info/requires.txt
+src/hisock.egg-info/top_level.txt
