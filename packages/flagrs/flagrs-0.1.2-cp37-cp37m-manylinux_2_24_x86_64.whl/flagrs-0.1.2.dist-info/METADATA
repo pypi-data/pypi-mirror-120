@@ -1,0 +1,147 @@
+Metadata-Version: 2.1
+Name: flagrs
+Version: 0.1.2
+Summary: Rust Number Theory
+Home-Page: https://gitlab.com/franksh/flagrs/
+Author: Frank S. Hestvik
+License: BSD-3-Clause
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Source Code, https://gitlab.com/franksh/flagrs/
+
+
+# flagrs
+
+Parts of my `flagmining` library rewritten as CPython extension code in Rust.
+
+Due to some lacking functionality in `rust-cpython==0.6.0` it depends on my own
+fork of said project.
+
+
+# ZZ
+
+The integers.
+
+
+`n.inv_mod(m) -> r`
+: Returns $1/n \pmod m$.
+
+## Arithmetic Operations
+
+`x+y`, `x-y`, `x*y`
+: Addition, subtraction, and multiplication.
+
+`x//y -> q`, `x%y -> r`, `divmod(x,y) -> (q,r)`
+: Euclidean integer division.
+
+`x**e`, `pow(x,e)`
+: Exponentiation. `e` must be positive.
+
+`pow(x,e,m)`
+: Exponentiation under a modulus. `e` can be negative if `gcd(x,m) == 1`.
+
+`x.__bool__() -> bool`
+: `True` if `x != 0`.
+
+`n.sqrt() -> (w,r)`
+: Floored integer square root with remainder. `w*w + r == n`.
+
+`n.root(d) -> (w,r)`
+: Floored integer `d`th root with remainder. `w**d + r == n`.
+
+### Sign
+
+`-x`
+: Negation.
+
+`abs(x)`
+: Absolute value.
+
+`x.sign() -> s`
+: The sign of `x` (-1, 0, or 1).
+
+## Bitwise Operations
+
+`x|y`, `x&y`, `x^y`
+: Bitwise OR, AND, and XOR.
+
+`~x`
+: Bitwise negation, acting as if the integer had infinite width.
+: Equivalent to `-x-1`.
+
+`x<<i`, `x>>i`
+: Bit shifts (can be negative).
+
+`n.nbits() -> c`
+: Number of bits needed to represent the absolute value of `n`.
+: Equivalent to `n.bit_length()`.
+
+`n.weight() -> c`
+: Number of bits set in the absolute value of `n`.
+
+`n.truncate(bits, [signed=False])`
+: Truncate `n` to the given number of bits. Negative numbers are treated as if
+  they're in two's-complement form for the given bit width.
+: If `signed` is `True` the resulting bits will be re-interpreted as a signed
+  value and so the result might be negative.
+
+`n.next_bit() -> b`
+: Next power-of-two bigger than `n`.
+
+Integers also function implicitly as a list of bits:
+
+`n[i] -> bool`
+: Checks bit `i` (0-indexed).
+
+`n[i:j] -> v`
+: Returns a number with the bits set in the slice.
+: Morally equivalent to `(n>>i) % (1<<j-i)` but supports full slice syntax, including negative numbers.
+
+
+## Representation
+
+`str(x) -> str`, `x.__repr__()`
+: Number in base-10 as a text string.
+
+`x.nbytes() -> l`
+: Number of bytes needed to represent the number. For positive numbers this is
+  equivalent to `(x.nbits() + 7)//8`. Negative numbers might require an extra
+  bit (see `x.bytes()`).
+
+`x.bytes([order='big']) -> bytes`
+: Interprets the number as base-256 and returns the digits as a bytestring.
+: Negative numbers are treated as if they're in two's complement representation
+  of the minimum bit width that will successfully represent them, so `-128`
+  gives `b'\x80'` and `-129` gives `b'\xff\x7f'`.
+
+`x.digits(base) -> [d...]`
+: Yields a list of digits in base `base`. The base can be negative, but must have a magnitude of 2 or more.
+
+## Factors
+
+`n.gcd(m...) -> g`
+: Returns the GCD of `n` with all arguments.
+
+`n.egcd(m) -> (g,x,y)`
+: Extended GCD yielding Bézout coefficients. `x*n + m*y == g`.
+
+`n.lcm(m...) -> m`
+: Returns the LCM of `n` with all arguments.
+
+`n.is_prime([reps=25]) -> bool`
+: Trivial divisors, then Baille-PSW, then $(reps-24)$ sounds of Miller-Rabin.
+
+`n.next_prime() -> p`
+: Returns the next prime larger than `n`.
+
+`n.make_odd() -> (q,e)`
+: Returns the odd part and exponent of 2 in `n`. `2**e * q == n`
+
+`n.small_factors([upto=0x100000]) -> (q,[(p,e)...])`
+: Factors out all primes smaller than `upto`.
+: Returns the remaining factor `q` and a list of primes and their multiplicity.
+
+`x.factor_pollard(upto)`
+: ...
+`x.factor_fermat(s, e)`
+: ...
+
