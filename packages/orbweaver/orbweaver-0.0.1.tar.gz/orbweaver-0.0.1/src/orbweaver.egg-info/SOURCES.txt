@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/orbweaver/__init__.py
+src/orbweaver/speciesclassification.py
+src/orbweaver.egg-info/PKG-INFO
+src/orbweaver.egg-info/SOURCES.txt
+src/orbweaver.egg-info/dependency_links.txt
+src/orbweaver.egg-info/top_level.txt
