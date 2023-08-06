@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pkgs/ipylib/__init__.py
+pkgs/ipylib/ifile.py
+pkgs/ipylib/ijson.py
+pkgs/ipylib/ilist.py
+pkgs/ipylib/imath.py
+pkgs/ipylib/inumber.py
+pkgs/ipylib/istr.py
+pkgs/ipylib/temp.py
+pkgs/ipylib.egg-info/PKG-INFO
+pkgs/ipylib.egg-info/SOURCES.txt
+pkgs/ipylib.egg-info/dependency_links.txt
+pkgs/ipylib.egg-info/top_level.txt
