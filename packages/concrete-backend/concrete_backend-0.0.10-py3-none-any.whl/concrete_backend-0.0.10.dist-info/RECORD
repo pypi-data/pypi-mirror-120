@@ -1,0 +1,9 @@
+concrete_backend-0.0.10-py3.9-nspkg.pth,sha256=49aY5UL-7inz-l1YHHT6jvcH4VoQTR2abblwztFBvQI,549
+concrete/backend/__init__.py,sha256=0VD7FZA6s_cwAI7vhMXFXjps6XHRMHI7swIEc5_6HcA,36
+concrete/backend/file.py,sha256=PMD2lq4iJ4GQedeacxvZvhk2CDLn5j1qHyzlf9Ya7Ms,142
+concrete_backend-0.0.10.dist-info/LICENSE,sha256=eXiWHp2qyZ9Tx5PiKmVshKzyBvDdsMFo-w10EknTVVU,2666
+concrete_backend-0.0.10.dist-info/METADATA,sha256=jCb7rk5VS1N5fvCx6ctU1ZXgiEmIRRn1YSLLOB31rsE,1181
+concrete_backend-0.0.10.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+concrete_backend-0.0.10.dist-info/namespace_packages.txt,sha256=MRgnRegRkyoRGjOp1ctJ_YQ2KBbT65-5Kv37ILn0kYo,9
+concrete_backend-0.0.10.dist-info/top_level.txt,sha256=MRgnRegRkyoRGjOp1ctJ_YQ2KBbT65-5Kv37ILn0kYo,9
+concrete_backend-0.0.10.dist-info/RECORD,,
