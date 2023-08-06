@@ -1,0 +1,32 @@
+<tool id="sane_visualize_raw_images" name="sane_visualize_raw_images" version="0.0.1" profile="21.09">
+
+    <description>check tiff_raw file names</description>
+
+    <requirements>
+        <requirement type="package">jinxif</requirement>
+    </requirements>
+
+    <command detect_errors="exit_code"><![CDATA[
+        mkdir input &&
+        mkdir output &&
+
+        #for $tiff in $tiff_raw:
+            ln -s $tiff input/ &&
+	#end for
+
+	python $__tool_directory__/mpleximage_01_4_sane_visualize_raw_images_slide.py $color
+    ]]></command>
+
+    <inputs>
+        <param name="color" type="text" value="c1" label="color_channel_input"/>
+        <param name="tiff_raw" type="data_collection" format="tiff" collection_type="list"  label="tiff_raw_files_input"/>
+    </inputs>
+
+    <outputs>
+        <collection type="list"  name="sane_visualize_raw_images_output">
+            <discover_datasets pattern="__designation_and_ext__" directory="output" format="png" visible="false"/>
+        </collection>
+    </outputs>
+
+    <help>the beatles ~ help!</help>
+</tool>
