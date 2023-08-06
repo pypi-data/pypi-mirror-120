@@ -1,0 +1,41 @@
+{% load i18n fb_tags fb_compat %}
+
+{% for fileobject in page.object_list %}
+
+    <tr class="{% cycle 'row1' 'row2' %}{% if fileobject.is_folder %} fb_folder{% endif %}">
+        <!-- FILEICON -->
+        <td>
+            {% if fileobject.filetype %}
+                <span class="fb_type {{ fileobject.filetype|lower }}">{% trans fileobject.filetype %}</span>
+            {% else %}
+                <span class="fb_type none">&mdash;</span>
+            {% endif %}
+        </td>
+
+        <!-- FILENAME -->
+        {% if fileobject.is_folder %}
+            <td><a href="{% url 'filebrowser:fb_browse' %}{% query_string "" "q,dir,p" %}&amp;dir={{ fileobject.path_relative_directory|urlencode }}"><strong>{{ fileobject.filename }}</strong></a></td>
+        {% else %}
+            <td>
+                <a href="{{ fileobject.url }}">{{ fileobject.filename }}</a>            
+            </td>
+        {% endif %}
+
+        <!-- FOLDER -->
+        {% if query.q and settings_var.SEARCH_TRAVERSE %}
+            <td><a href="{% url 'filebrowser:fb_browse' %}{% query_string "" "dir,p" %}&amp;dir={{ fileobject.folder|urlencode }}"><strong>{{ fileobject.folder }}</strong></a></td>
+        {% endif %}
+
+        <!-- SIZE -->
+        <td>{% if fileobject.filesize %}{{ fileobject.filesize|filesizeformat }}{% else %}&mdash;{% endif %}</td>
+
+        <!-- DATE -->
+        <td>{{ fileobject.datetime|date:"N j, Y" }}</td>
+
+        <!-- EDIT -->
+        <td>
+            <a href="{% url 'filebrowser:fb_detail' %}{% query_string "" "p" %}&amp;filename={{ fileobject.filename|urlencode }}" class="changelink">{% trans "Change" %}</a>
+        </td>
+
+    </tr>
+{% endfor %}
