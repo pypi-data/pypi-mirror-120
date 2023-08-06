@@ -1,0 +1,5 @@
+[console_scripts]
+amass_split_dirs = llamass.core:console_split_dirs
+amass_to_lmdb = llamass.core:console_amass_to_lmdb
+fast_amass_unpack = llamass.core:fast_amass_unpack
+
