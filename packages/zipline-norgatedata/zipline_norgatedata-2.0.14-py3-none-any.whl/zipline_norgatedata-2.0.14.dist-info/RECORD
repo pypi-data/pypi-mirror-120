@@ -1,0 +1,12 @@
+zipline_norgatedata/CHANGES.txt,sha256=YKDmc7BB4Ay1tUGefxN_uyg8FdRza8O-dA3CxZ3i120,7350
+zipline_norgatedata/LICENSE.txt,sha256=6MW6JFLECMi-sugOZe7rA9yWqgm5caDNktT3JeQ1tDg,16020
+zipline_norgatedata/README-Zipline130.md,sha256=J3VMxfnQjkZf7Npf0OpFZEQpbpTVacD7d0F5JTGSox0,31390
+zipline_norgatedata/__init__.py,sha256=aXR_wp3lXNQD_L3LDXvl1kyVAtUfO7QCqvGxO2PexNA,62
+zipline_norgatedata/pipelines.py,sha256=o09sGLxug1aywUzrQ6kFxpR8pSoZCU8YPjO7QwPrKdk,10990
+zipline_norgatedata/version.py,sha256=eVTfMTHI1jNmT9jy9H6S7t-2W-1YwaGFRXpKirXOjmI,24
+zipline_norgatedata/zipline_norgatedata.py,sha256=zzfzqSP-wikmB73VDqOuCNaN9Nw4iEc9yRdDUTlIwf8,39816
+zipline_norgatedata-2.0.14.dist-info/LICENSE.TXT,sha256=6MW6JFLECMi-sugOZe7rA9yWqgm5caDNktT3JeQ1tDg,16020
+zipline_norgatedata-2.0.14.dist-info/METADATA,sha256=CsWTlhnot4fi7gab72p_jQy3vlE1Ent25k0aHE3ZhgY,25223
+zipline_norgatedata-2.0.14.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+zipline_norgatedata-2.0.14.dist-info/top_level.txt,sha256=qBcvLFeVd6HtMgLdZ1Lemg-vrIP3TOnR2jWn2IH1SwM,20
+zipline_norgatedata-2.0.14.dist-info/RECORD,,
