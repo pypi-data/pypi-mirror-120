@@ -1,0 +1,12 @@
+valorant/__init__.py,sha256=QSrgdMGKW_or_QEjigE_2SIJG0Mu1Wo_-F7SfY9SlKw,188
+valorant/caller.py,sha256=DZhCb1fwesEf1M4lFVMFXw3GrQRnM-iFcGcvGzj1YyE,1814
+valorant/client.py,sha256=LJCgmdC7iFE8oqITqzT0vgsOWhg6zwTYrGV2H3gQ7xo,5409
+valorant/local.py,sha256=KtQKhrHn75E7d65ktlXORDZOE6qIrgzhNkDfa1_8jw4,1291
+valorant/objects.py,sha256=UwPu_J0BisyIc-IQuuTq017dnZqKUElcPHcZT-1U60w,2545
+valorant/threads.py,sha256=u4EqIVd0GYtXP5TRn0U7YTFyl0iMr5MZZK00IT88XvM,4245
+valorant/values.py,sha256=uu-6gNTWAJ_IkguPgc880mbif5liDtHHiyiv-oRY5Eo,1522
+valorant-0.5.0.dist-info/LICENSE,sha256=Lw7_9NJEBCr1IOMOOPQvW1HQvlwY6z2k-HXCDqZ4wa0,1063
+valorant-0.5.0.dist-info/METADATA,sha256=z-XQ04CYOaaCskJLALczQAkxoIelO2cTLDb6UKzJUY0,3830
+valorant-0.5.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+valorant-0.5.0.dist-info/top_level.txt,sha256=LzGapvvnKS0cumCq33s7NpaI0qA5ILlnc4laH8IU4kc,9
+valorant-0.5.0.dist-info/RECORD,,
