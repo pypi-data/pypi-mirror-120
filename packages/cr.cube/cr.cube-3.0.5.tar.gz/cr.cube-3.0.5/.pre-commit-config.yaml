@@ -1,0 +1,22 @@
+repos:
+
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v1.4.0-1
+    hooks:
+    -   id: flake8
+    -   id: end-of-file-fixer
+    -   id: trailing-whitespace
+
+-   repo: https://github.com/ambv/black
+    rev: 21.7b0
+    hooks:
+    - id: black
+
+-   repo:  https://github.com/milin/giticket
+    rev: v1.2
+    hooks:
+    - id: giticket
+      args:
+       - '--regex=\d{8,}'
+       - '--mode=regex_match'
+       - '--format=[{ticket}]: {commit_msg}'
