@@ -1,0 +1,10 @@
+hisock/__init__.py,sha256=EEiQjCcd0esDb3THf9DZjawVR6_v1KiHKP88Fo0Queg,464
+hisock/client.py,sha256=l9sbz7O5uYkEvEYM-2h4GWHxVqYuGc646ubQyzHAiHg,18505
+hisock/constants.py,sha256=xNL22IRPkWC0yj5lkSib-c5b6JOkLlTqe2z9kqClJPI,1359
+hisock/server.py,sha256=2iNA9kqoBBObBJFHm-vjQTRtOdEiuCniWdB84O0W0Kg,37547
+hisock/utils.py,sha256=QFVNZiUGKmK9dYlC-2jWpMPcL1QlgKy1yXQns-9ZfSc,5388
+hisock-0.0.1.post5.dist-info/LICENSE,sha256=EoimtN2aZjDoB31KgD5H4nXbO6A-ao_hbbjR2scaulc,1099
+hisock-0.0.1.post5.dist-info/METADATA,sha256=aoAGdyUGNOLlGNJA5sHYk6LzJncuJU2zvp_QCTtf-CU,4199
+hisock-0.0.1.post5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+hisock-0.0.1.post5.dist-info/top_level.txt,sha256=cwEUqgC_KAGAJYDLBbizVRQ5JDbWH3sZHuBJUPF94nc,7
+hisock-0.0.1.post5.dist-info/RECORD,,
