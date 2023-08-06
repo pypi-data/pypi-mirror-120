@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: belette
+Version: 0.0.1.dev1
+Summary: Generates licensing information for dependencies for Conan projects
+License: MIT
+Author: Alazar Technologies Inc.
+Author-email: support@alazartech.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: conan (>=1.35.1,<2.0.0)
+Requires-Dist: docopt (>=0.6.2,<0.7.0)
