@@ -1,0 +1,16 @@
+regexapp/__init__.py,sha256=oA2x5AmQXuirWnybNOdT2S8yP9Tq3nRp1lDqAB-7by0,1372
+regexapp/__main__.py,sha256=7odiLrk1tRQ_D_whKXWt2Jm7NcASoeiWNYNfpjG3s04,67
+regexapp/application.py,sha256=NH_roMb_lvZVF3y_3w5JFLLjSOb5BM2_4qtlxAGnaH4,54811
+regexapp/collection.py,sha256=79DfbK2DCgGLz8cdmXjti7jf4W_MlnLif_uI3sDCihw,77262
+regexapp/config.py,sha256=gOtTCjJb5XMYhfZALzg7oghHAUpIEKiGVV8FkuaoLI4,3418
+regexapp/core.py,sha256=s9rat4rqVqfNygIno6_S1GoKGPlQvKdlevCteRkY7Yc,38131
+regexapp/exceptions.py,sha256=ovcwWznOemiLKhOZ7Ok8wALqR9MWoobF8wx6qw8VB-0,992
+regexapp/main.py,sha256=Ms-yg_UKDYn4MY5s4DuH4VPaSO844VNVn2LZb1PvEDQ,1986
+regexapp/symbols.yaml,sha256=SxyKA3xYOmbP4gL3XPpvLqV0ahp8k4KWtQuv1xFmC2Y,1348
+regexapp/system_references.yaml,sha256=5LtiZr_ggvAFdrLLlPJbDBto4Fa3HJu5uwrFowrYS6Q,11758
+regexapp-0.3.1.dist-info/LICENSE,sha256=qnliEXg2fq5rHbfkl0FhKj8hnoGk_gHGYyhNpv8-wmk,1559
+regexapp-0.3.1.dist-info/METADATA,sha256=fKoeA_aon7wyGBImqBJm1J3o88klAgZTGK2JMrQ49yg,1190
+regexapp-0.3.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+regexapp-0.3.1.dist-info/entry_points.txt,sha256=9zueTJYfZMsURhfQFRuPZQCAPL2pZ8Pviz0AEAuyO04,60
+regexapp-0.3.1.dist-info/top_level.txt,sha256=_JLaE6BSEPQ9-exIITNxFzGO5BRF_wo-ZIrVR_qeodM,9
+regexapp-0.3.1.dist-info/RECORD,,
