@@ -1,0 +1,3 @@
+[console_scripts]
+tracardi = tracardi_cli.create_plugin:cli
+
