@@ -1,0 +1,15 @@
+ChangeLog.md
+LICENSE
+MANIFEST.in
+README-CN.md
+README.md
+setup.cfg
+setup.py
+alibabacloud_ailab_vision_public20210709/__init__.py
+alibabacloud_ailab_vision_public20210709/client.py
+alibabacloud_ailab_vision_public20210709/models.py
+alibabacloud_ailab_vision_public20210709.egg-info/PKG-INFO
+alibabacloud_ailab_vision_public20210709.egg-info/SOURCES.txt
+alibabacloud_ailab_vision_public20210709.egg-info/dependency_links.txt
+alibabacloud_ailab_vision_public20210709.egg-info/requires.txt
+alibabacloud_ailab_vision_public20210709.egg-info/top_level.txt
