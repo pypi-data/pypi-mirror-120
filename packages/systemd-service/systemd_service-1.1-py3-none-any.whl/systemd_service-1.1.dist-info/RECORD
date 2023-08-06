@@ -1,0 +1,5 @@
+systemd_service/__init__.py,sha256=S4CtODAYQLL9qYf2IxOxSp0nTV8MGgjzeuW6A4LEsHY,2539
+systemd_service-1.1.dist-info/METADATA,sha256=04JxD6OXav8eCWCnu8R9ZOV8JYHMoT7-Bfgfwz-6Wqc,390
+systemd_service-1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+systemd_service-1.1.dist-info/top_level.txt,sha256=KntmrClWlH_m09vs-YItm3VVi9FgpYl2FX8AD-JyoNY,16
+systemd_service-1.1.dist-info/RECORD,,
