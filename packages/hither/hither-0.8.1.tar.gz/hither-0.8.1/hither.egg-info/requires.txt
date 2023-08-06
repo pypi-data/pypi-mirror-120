@@ -1,0 +1,6 @@
+click
+inquirer
+pyyaml
+dockerfile-parse
+kachery_client
+docker

@@ -1,0 +1,1 @@
+raise Exception('Use "import hither2" instead of "import hither"')
