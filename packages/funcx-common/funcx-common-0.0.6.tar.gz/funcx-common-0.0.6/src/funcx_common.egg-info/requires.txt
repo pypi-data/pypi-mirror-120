@@ -1,0 +1,9 @@
+
+[dev]
+pytest-cov<3
+pytest-xdist<3
+pytest<7
+types-redis
+
+[redis]
+redis<4,>=3.5.3
