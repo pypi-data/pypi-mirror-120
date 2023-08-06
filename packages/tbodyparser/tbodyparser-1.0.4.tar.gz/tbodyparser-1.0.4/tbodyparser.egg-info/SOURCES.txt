@@ -1,0 +1,10 @@
+README.md
+setup.py
+tbodyparser/__init__.py
+tbodyparser/base.py
+tbodyparser/core.py
+tbodyparser.egg-info/PKG-INFO
+tbodyparser.egg-info/SOURCES.txt
+tbodyparser.egg-info/dependency_links.txt
+tbodyparser.egg-info/requires.txt
+tbodyparser.egg-info/top_level.txt
