@@ -1,0 +1,13 @@
+mailman_web/__init__.py,sha256=sTwzgDawQld00yTQUQghIHi-bQSV0ZM6h6lel2njpkY,51
+mailman_web/manage.py,sha256=KNAu7gS3AAjB7OCEvV0XY_HWoLzFAkZEza1yHdVbOjA,989
+mailman_web/urls.py,sha256=DIYl3RFtSA3p2foBq7J2-GmXFzj8crhPNwYVdENQiRE,1289
+mailman_web/wsgi.py,sha256=Yq6fnYbIqS7INmrzPYAc90SrIzLiM100Nfb6Ynmawq8,362
+mailman_web/settings/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mailman_web/settings/base.py,sha256=J4kEO8cLpwutk8tAB1koWj6JYxo8jHRFhYUwf4nlxDs,9515
+mailman_web/settings/mailman.py,sha256=NtRzvtWkDNPldQueI7VCeKye__XyNzihMCKLUoQNjL8,3733
+mailman_web-0.0.5.dist-info/LICENSE.txt,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+mailman_web-0.0.5.dist-info/METADATA,sha256=bQ63FLAopexOPkqdOQw5PXQlvtDn2rfGhXppwOKN_88,1687
+mailman_web-0.0.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+mailman_web-0.0.5.dist-info/entry_points.txt,sha256=PLsOOrwwjqYtS6_38AB0OnMIOFVGX8RIR1suFzZ-vPk,57
+mailman_web-0.0.5.dist-info/top_level.txt,sha256=1OCMRn92KDr-tV4aoaGbfn_7XKA713PCWrvtOA2ZUzs,12
+mailman_web-0.0.5.dist-info/RECORD,,
