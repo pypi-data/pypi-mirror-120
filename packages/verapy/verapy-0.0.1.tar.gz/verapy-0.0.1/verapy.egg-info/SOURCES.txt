@@ -1,0 +1,12 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+vera/__init__.py
+vera/cradle.py
+vera/vera.gif
+verapy.egg-info/PKG-INFO
+verapy.egg-info/SOURCES.txt
+verapy.egg-info/dependency_links.txt
+verapy.egg-info/not-zip-safe
+verapy.egg-info/top_level.txt
