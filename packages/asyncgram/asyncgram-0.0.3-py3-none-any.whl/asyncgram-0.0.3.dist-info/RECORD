@@ -1,0 +1,5 @@
+asyncgram/__init__.py,sha256=lzuGLqNNOKnrNyfQA6jdLD6OtD1Zaf-AmT1lfFSZEK0,38
+asyncgram/client.py,sha256=9c9a_M7Bfk91A4BpXAIFI6036tsW7lUQO7b2f0lFMB4,1797
+asyncgram-0.0.3.dist-info/WHEEL,sha256=DRf8A_Psd1SF2kVqTQOOFU1Xzl3-A2qljAxBMTOusUs,83
+asyncgram-0.0.3.dist-info/METADATA,sha256=nQPkFj84gET2-hMW8bB1dn1KUmLPPpaPzseGn81PP0Y,1824
+asyncgram-0.0.3.dist-info/RECORD,,
