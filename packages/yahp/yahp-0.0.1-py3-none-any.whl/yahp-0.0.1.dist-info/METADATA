@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: yahp
+Version: 0.0.1
+Summary: Yet Another Hyperparameter Framework
+Home-page: https://github.com/mosaicml/hparams
+Author: MosaicML
+Author-email: team@mosaicml.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyYAML (==5.4.1)
+Requires-Dist: ruamel.yaml (==0.17.10)
+Provides-Extra: all
+Requires-Dist: junitparser (==2.1.1) ; extra == 'all'
+Requires-Dist: yamllint (==1.26.2) ; extra == 'all'
+Requires-Dist: isort (==5.9.3) ; extra == 'all'
+Requires-Dist: yapf (==0.31.0) ; extra == 'all'
+Requires-Dist: pytest (==6.2.4) ; extra == 'all'
+Requires-Dist: coverage (==5.5) ; extra == 'all'
+Provides-Extra: coverage
+Requires-Dist: coverage (==5.5) ; extra == 'coverage'
+Provides-Extra: isort
+Requires-Dist: isort (==5.9.3) ; extra == 'isort'
+Provides-Extra: junitparser
+Requires-Dist: junitparser (==2.1.1) ; extra == 'junitparser'
+Provides-Extra: pytest
+Requires-Dist: pytest (==6.2.4) ; extra == 'pytest'
+Provides-Extra: test
+Requires-Dist: junitparser (==2.1.1) ; extra == 'test'
+Requires-Dist: yamllint (==1.26.2) ; extra == 'test'
+Requires-Dist: isort (==5.9.3) ; extra == 'test'
+Requires-Dist: yapf (==0.31.0) ; extra == 'test'
+Requires-Dist: pytest (==6.2.4) ; extra == 'test'
+Requires-Dist: coverage (==5.5) ; extra == 'test'
+Provides-Extra: yamllint
+Requires-Dist: yamllint (==1.26.2) ; extra == 'yamllint'
+Provides-Extra: yapf
+Requires-Dist: yapf (==0.31.0) ; extra == 'yapf'
+
+# hparams
+hyperparameter management
+
+
