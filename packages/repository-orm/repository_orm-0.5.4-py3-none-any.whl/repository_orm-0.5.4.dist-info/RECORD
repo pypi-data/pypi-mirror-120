@@ -1,0 +1,17 @@
+repository_orm/__init__.py,sha256=HPHEQ8fqOYGz0iLzh2LcfiPSPM9mgimbe-hgnTjHXcw,729
+repository_orm/config.py,sha256=bcef-2N_i5ImXat4pFR7zH2s7AJMyx14XpmOhmD8DOA,52
+repository_orm/exceptions.py,sha256=KBrBQl4UZ4eOkBI1zqf83DmY_nuzHNBZ4WaZz54PCxs,362
+repository_orm/model.py,sha256=qLJC0huWr61sqgce0jaklb_DM2d6t3G3pMRIV_9PXJY,1889
+repository_orm/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+repository_orm/services.py,sha256=uxDzKTXOSwqffrRoEneqaLhJ4PBBGnz2Oy7pdUxhIt0,1199
+repository_orm/version.py,sha256=SYsF1rMyz6m_vkJNagn2p9PDGP_f95lXaliU0No2Je8,511
+repository_orm/adapters/__init__.py,sha256=mwGJ5jTGsNoNmQmIVxn0zeLdj8r4RjXYQTUxLcHL4Io,725
+repository_orm/adapters/abstract.py,sha256=vhNzBY9sqGLTFE_OAS0kd-zRi6hUUxT2_9gRmD53leQ,7143
+repository_orm/adapters/fake.py,sha256=HwIMXTwAQ1kjaAn9kJVJXrjLCSf8kRiAugrl-UXfdMY,8238
+repository_orm/adapters/pypika.py,sha256=avhZ8IkHq-Q0WobpwxwZ0fNJfkSsPf7ZSUSj886WM-I,9913
+repository_orm/adapters/tinydb.py,sha256=kKsmNEdzSiPImxxEDUafDC-LVGA9cxqc-rEZqawhne0,12330
+repository_orm-0.5.4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+repository_orm-0.5.4.dist-info/METADATA,sha256=tQE9sjrA2RkLH2saf8NoEUqO68NttvCK4PsS0XaviF0,2571
+repository_orm-0.5.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+repository_orm-0.5.4.dist-info/top_level.txt,sha256=1JiQ2yXkI4k-siW6KzsFRs8q8LawX5nsnOjb7kg8HO4,15
+repository_orm-0.5.4.dist-info/RECORD,,
