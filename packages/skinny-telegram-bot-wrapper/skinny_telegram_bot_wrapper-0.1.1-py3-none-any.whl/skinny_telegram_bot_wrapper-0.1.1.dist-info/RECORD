@@ -1,0 +1,12 @@
+skinny_telegram_bot_wrapper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+skinny_telegram_bot_wrapper/bot.py,sha256=YHYwE5vciP4FOvdbmm8DUXwHdykROuaIFCYYEtuA4kk,1984
+skinny_telegram_bot_wrapper/main.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+skinny_telegram_bot_wrapper/request_handler.py,sha256=7BUEna26VBwKuSfHloLOutUx2r1NzPAvIRyeGYjEGXs,2182
+skinny_telegram_bot_wrapper/telegram_update_handlers.py,sha256=Zw5TTjVpbBHnVHoriiALe_LXw0nX335fPEH0FqRxDFE,3881
+skinny_telegram_bot_wrapper/update_handler.py,sha256=1v93i8xRErC8Qbl9BjMVh_Q1K79fmcS1rX_8822pO-E,1235
+skinny_telegram_bot_wrapper/utilities.py,sha256=kTqIQlemYBfBZ1L1Y5X2dPV5c8OUZ46K044pEJMGpw0,228
+skinny_telegram_bot_wrapper-0.1.1.dist-info/LICENSE.txt,sha256=I8qzyrAFmo-OV4w51wM9sqMpunJOZGmyJMrNnHy0s1k,1053
+skinny_telegram_bot_wrapper-0.1.1.dist-info/METADATA,sha256=PAk1Q90Z3NEAmlnPqV3jTnDvQ7ebHRl4qWDX9JsTyjM,270
+skinny_telegram_bot_wrapper-0.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+skinny_telegram_bot_wrapper-0.1.1.dist-info/top_level.txt,sha256=xiLllcZbNDtX6K8B2o6UA42VMjO5-GKvt_P4YNqu-V0,28
+skinny_telegram_bot_wrapper-0.1.1.dist-info/RECORD,,

@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: skinny-telegram-bot-wrapper
+Version: 0.1.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6, <4
+License-File: LICENSE.txt
+Requires-Dist: flask
+Requires-Dist: requests
+Requires-Dist: requires
+
+UNKNOWN
+
