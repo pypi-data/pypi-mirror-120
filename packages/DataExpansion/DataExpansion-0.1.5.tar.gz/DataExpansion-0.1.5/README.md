@@ -1,0 +1,2 @@
+# DataExpansion
+DataExpansionはsqlを管理するためのPythonライブラリです。

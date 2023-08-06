@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: DataExpansion
+Version: 0.1.5
+Summary: SQLを利用してクラスを保存します
+Home-page: https://github.com/TangentMochi/DataExpansion
+Author: TangentMochi
+Author-email: yu180609@gmail.com
+License: Apache License
+Description: # DataExpansion
+        DataExpansionはsqlを管理するためのPythonライブラリです。
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Database
+Classifier: Natural Language :: Japanese
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Development Status :: 1 - Planning

@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+src/test.py
+src/DataExpansion/__init__.py
+src/DataExpansion/sqlite_class.py
+src/DataExpansion.egg-info/PKG-INFO
+src/DataExpansion.egg-info/SOURCES.txt
+src/DataExpansion.egg-info/dependency_links.txt
+src/DataExpansion.egg-info/not-zip-safe
+src/DataExpansion.egg-info/top_level.txt
