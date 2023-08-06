@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: approxeng.task
+Version: 0.1.1
+Summary: Simple Python task framework for robots
+Home-page: https://github.com/ApproxEng/approxeng.task/
+Author: Tom Oinn
+Author-email: tomoinn@gmail.com
+License: ASL2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+
+UNKNOWN
+
