@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: simpleSound
+Version: 1.1.0a0
+Summary: A very very very simple sound playing library for windows.
+Home-page: https://github.com/nekumelon/simpleSound
+Author: nekumelon
+Author-email: nekumelon@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+
+# simpleSound
+A very very very simple sound playing library for Windows, Linux, and Mac OS.
+
+Documentation:
+```
+play(fileName); -> fileName has to be a wav for linux based systems.
+```
+
+Installation:
+```
+pip/3 install simpleSound
+
+example:
+pip install simpleSound
+pip3 install simpleSound
+```
+
+Example Usage:
+```Python
+from simpleSound import play
+
+play("Sound.mp3");
+```
+

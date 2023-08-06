@@ -1,0 +1,7 @@
+README.md
+setup.py
+simpleSound/__init__.py
+simpleSound.egg-info/PKG-INFO
+simpleSound.egg-info/SOURCES.txt
+simpleSound.egg-info/dependency_links.txt
+simpleSound.egg-info/top_level.txt
