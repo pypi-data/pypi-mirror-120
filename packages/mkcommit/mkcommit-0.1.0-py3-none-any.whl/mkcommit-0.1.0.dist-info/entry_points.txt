@@ -1,0 +1,4 @@
+[console_scripts]
+mkcommit = mkcommit.main:main
+mkcommitconfig = mkcommit.main:configurator
+
