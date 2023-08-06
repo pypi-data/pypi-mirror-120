@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+requirements.txt
+setup.py
+Caribe/__init__.py
+Caribe.egg-info/PKG-INFO
+Caribe.egg-info/SOURCES.txt
+Caribe.egg-info/dependency_links.txt
+Caribe.egg-info/top_level.txt
