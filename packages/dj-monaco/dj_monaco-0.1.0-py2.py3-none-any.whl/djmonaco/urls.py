@@ -1,0 +1,10 @@
+# -*- coding: utf-8 -*-
+from django.urls import path
+
+from . import views
+
+
+app_name = 'djmonaco'
+urlpatterns = [
+    path('djmonaco/editor/', views.MonacoView.as_view()),
+]
