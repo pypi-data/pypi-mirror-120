@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: mydog
+Version: 1.0.4
+Summary: prints the contents of the file
+Home-page: https://github.com/Brijeshkrishna/mydog
+Author: Brijesh krishna
+Author-email: brijesh.krishna@gmail.com
+License: MIT
+Keywords: mydog,cat,dog,console print,python print,python,colour print
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: click
+Requires-Dist: termcolor
+
+<p align="center">
+  <img width="auto" height="auto" src="https://raw.githubusercontent.com/Brijeshkrishna/mydog/main/mydog.png">
+</p>
+
+
+
+![Version](https://img.shields.io/badge/version-1.0.0-blue) ![Python-Version](https://img.shields.io/badge/python-3.9-blue) ![issues](https://img.shields.io/github/issues/Brijeshkrishna/gunlink)  ![License](https://img.shields.io/github/license/brijeshkrishna/gunlink) 
+
+#### A package that allows outputs the contents of the file
+  
+##  Installation
+mydog is available on PyPI <img align="center" alt="python" width="40px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png" />:
+
+```bash
+$ python setup.py install mydog
+```
+
+
+or
+```bash
+$ python -m pip install mydog
+```
+
+			
+or ,simply 
+
+```bash
+$ pip install mydog
+```
+
+mydog officially supports Python 2.7 & 3.6+.
+
+## Cloning the repository
+
+``
+git clone https://github.com/Brijeshkrishna/mydog.git
+``  
+
+## How to use:
+
+```bash
+$ mydog requirements.txt
+(requirements.txt)
+click
+termcolor
+
+```
+```bash
+$ mydog requirements.txt docs
+(requirements.txt)
+click
+termcolor
+(docs)
+This is the content of the file :)
+```
+	
+## License
+
+mydog is licensed and distributed under the MIT license.  [Contact me](mailto:brijeshkrishnaga@gmail.com)  if you're looking for an exception to the terms. 
+
+## Contributors 
+####  If want to Contributor to mydog contact me .
+
+
+
