@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+flask_pydantic_docs/__init__.py
+flask_pydantic_docs/converters.py
+flask_pydantic_docs/spec.py
+flask_pydantic_docs/utils.py
+flask_pydantic_docs.egg-info/PKG-INFO
+flask_pydantic_docs.egg-info/SOURCES.txt
+flask_pydantic_docs.egg-info/dependency_links.txt
+flask_pydantic_docs.egg-info/not-zip-safe
+flask_pydantic_docs.egg-info/requires.txt
+flask_pydantic_docs.egg-info/top_level.txt
+flask_pydantic_docs/templates/redoc.html
+flask_pydantic_docs/templates/swagger.html
