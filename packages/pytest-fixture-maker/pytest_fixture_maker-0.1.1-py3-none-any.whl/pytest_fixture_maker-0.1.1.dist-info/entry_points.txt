@@ -1,0 +1,3 @@
+[pytest11]
+fixture_maker=pytest_fixture_maker.plugin
+
