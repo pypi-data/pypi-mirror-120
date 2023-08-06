@@ -1,0 +1,10 @@
+<ul>
+    {% for page in pages %}
+        <li><a href="{{ url_for("simple_flask_cms.editor", path=page.path) }}">{{ page.title }}</a></li>
+        {% if page.subpages %}
+            {% with pages=page.subpages %}
+                {% include 'cms/recursive_nav.html' %}
+            {% endwith %}
+        {% endif %}
+    {% endfor %}
+</ul>
