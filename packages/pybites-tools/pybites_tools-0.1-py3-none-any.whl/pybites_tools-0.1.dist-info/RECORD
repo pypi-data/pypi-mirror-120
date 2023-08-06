@@ -1,0 +1,10 @@
+pybites_tools/__init__.py,sha256=q3eWsleqvpNVgPh8eRyCOEc53MVke6ZThU1-QN473K0,58
+pybites_tools/aws.py,sha256=Q6kly5giRbJ1EdXU7BJ0PWmir7FphLFX9AJp_ZJvqto,1201
+pybites_tools/email.py,sha256=t_HURR_UUKtcvKsyJB5TjJusk-z2aTLRK7AGmchn4yQ,1458
+pybites_tools/license.py,sha256=p2IM1ARlr4Gi-rbYk4tp_wcqZMl-pkToEAs8Rfp324I,504
+pybites_tools/zen.py,sha256=dj88uuGZNHZgDIAxb-H4XO35C861v-FtOrzrX6Np0UM,540
+pybites_tools-0.1.dist-info/entry_points.txt,sha256=WiNt-zQsOMwiVosuUnNPywOw_e0DLXa7yVw8QCaJmbg,103
+pybites_tools-0.1.dist-info/LICENSE,sha256=VNUhKIEsX76-GU5r1THF0peix_IqOV7p9Gwx4ddlrL0,1065
+pybites_tools-0.1.dist-info/WHEEL,sha256=VUbF57hf4yRZWWrOOjp25Fr4BQX9EtnVSbnP2vNxHDM,81
+pybites_tools-0.1.dist-info/METADATA,sha256=jkbNt9u7h1OpnHRbBLhzCGM4z-XQZxtkxC0gSUWG_C8,3014
+pybites_tools-0.1.dist-info/RECORD,,
