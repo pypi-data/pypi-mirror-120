@@ -1,0 +1,13 @@
+plot3d/__init__.py,sha256=U-cLlI59mtJit4qNNcJNCcyalOsTDZMdxzHXFxNSxW4,469
+plot3d/block.py,sha256=nBJYBSmD0QGyKet8Z6jN8YGcJggvtlnE4kg9XumXfQU,7926
+plot3d/connectivity.py,sha256=YxnwTZ0fvetdtceFY3HQPytjefO53EwVg-jXUfM7470,25884
+plot3d/differencing.py,sha256=VIjPapEmE0_OPFAs-VS6rlCGIIf0LrOA_iCT1OD_7OU,5038
+plot3d/face.py,sha256=IbY7zKNHMrqj615j-XwKE26_7Hfk1eN3w7W1crz0E0A,15138
+plot3d/periodicity.py,sha256=Uag0cuh3umtseNE0pYFx7nJFkYjjeGYtvckF8X2tpXg,16135
+plot3d/point_match.py,sha256=e8a_uH-t-Nt5mByQlftmSxr8rF8kWP2tUW1YoDOk9V0,1015
+plot3d/read.py,sha256=wotTmIPwEuM6dKDHrKM-UY2koTqhDtEnkrL9lcTthGc,4976
+plot3d/split_block.py,sha256=JsgCvS8sfnxseKOflTWGXkdh3QyDmfTbM_PZ8SetKMI,11730
+plot3d/write.py,sha256=i_DJyUnEpN1qEGSs4edFfF7UdqH9WUhdzF4GXHuV_FA,2689
+plot3d-1.3.5.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+plot3d-1.3.5.dist-info/METADATA,sha256=AqPx6rxI5LPUIodO-2BB82vVU6Xnr8DeBPK_859fmzA,526
+plot3d-1.3.5.dist-info/RECORD,,
