@@ -1,0 +1,8 @@
+argh
+IPython
+matplotlib
+numpy
+packaging
+pandas
+scipy
+soundfile
