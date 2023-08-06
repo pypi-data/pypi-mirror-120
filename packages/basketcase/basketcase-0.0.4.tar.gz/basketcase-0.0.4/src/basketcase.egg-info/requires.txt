@@ -1,0 +1,3 @@
+requests~=2.26.0
+yt-dlp==2021.09.02
+Pillow~=8.3.2
