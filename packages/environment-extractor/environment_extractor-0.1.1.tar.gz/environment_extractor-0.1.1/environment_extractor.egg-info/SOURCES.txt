@@ -1,0 +1,10 @@
+README.md
+setup.py
+environment_extractor/__init__.py
+environment_extractor/environment_extractor.py
+environment_extractor.egg-info/PKG-INFO
+environment_extractor.egg-info/SOURCES.txt
+environment_extractor.egg-info/dependency_links.txt
+environment_extractor.egg-info/entry_points.txt
+environment_extractor.egg-info/requires.txt
+environment_extractor.egg-info/top_level.txt
