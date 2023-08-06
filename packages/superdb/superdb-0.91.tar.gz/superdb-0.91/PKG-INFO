@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: superdb
+Version: 0.91
+Summary: A very easy way to use databases!
+Home-page: https://replit.com/@GGforGaming1/super-db
+Author: GGforGaming
+Author-email: ggforgamingplayer@gmail.com
+License: UNKNOWN
+Description: # superdb
+        A database that is easy to manage, supports having multiple databases in one project.
+        ## Creating the database
+        ### Normal use
+        ```py
+        # file name would be db.json
+        from superdb import Database
+        db = Database()
+        ```
+        ### Custom file name
+        ```py
+        # file name would be usersdb.json
+        from superdb import Database
+        db = Database("usersdb.json")
+        ```
+        ### Bigger projects
+        ```py
+        from superdb import Database
+        db = Database("database.json",autosave=False) # Manual saving with db.save()
+        ```
+        ### Start with initial data
+        ```py
+        # Default data will be only used if database file does not exist, or when db.resetDefault() runs
+        from superdb import Database
+        db = Database("database.json",data={
+          "accounts":[
+            {
+              "name":"GGforGaming",
+              "id":1,
+              "owner":True
+            }
+          ]
+        })
+        ```
+        ## Managing the database
+        ### Setting values
+        ```py
+        from superdb import Database
+        db = Database()
+        db.set("user1","password123")
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
