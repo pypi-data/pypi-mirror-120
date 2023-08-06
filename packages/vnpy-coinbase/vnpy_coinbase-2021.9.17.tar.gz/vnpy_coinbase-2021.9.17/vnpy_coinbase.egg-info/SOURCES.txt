@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+vnpy_coinbase/__init__.py
+vnpy_coinbase/coinbase_gateway.py
+vnpy_coinbase.egg-info/PKG-INFO
+vnpy_coinbase.egg-info/SOURCES.txt
+vnpy_coinbase.egg-info/dependency_links.txt
+vnpy_coinbase.egg-info/not-zip-safe
+vnpy_coinbase.egg-info/requires.txt
+vnpy_coinbase.egg-info/top_level.txt
