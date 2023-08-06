@@ -1,0 +1,7 @@
+click==7.1.2
+requests
+pyyaml
+flowcell_parser
+soupsieve<2.0
+beautifulsoup4
+python-crontab
