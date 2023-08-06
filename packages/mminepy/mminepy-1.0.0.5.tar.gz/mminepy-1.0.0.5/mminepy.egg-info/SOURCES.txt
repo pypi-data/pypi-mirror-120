@@ -1,0 +1,7 @@
+setup.py
+mminepy/__init__.py
+mminepy/mminepy.py
+mminepy.egg-info/PKG-INFO
+mminepy.egg-info/SOURCES.txt
+mminepy.egg-info/dependency_links.txt
+mminepy.egg-info/top_level.txt
