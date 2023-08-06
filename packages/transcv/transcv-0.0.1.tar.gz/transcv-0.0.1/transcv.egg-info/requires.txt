@@ -1,0 +1,7 @@
+pip
+packaging
+fastai
+timm
+transformers[sentencepiece]
+
+[dev]
