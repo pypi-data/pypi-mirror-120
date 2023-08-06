@@ -1,0 +1,4 @@
+jsonschema>=3.2
+protobuf
+numpy<1.19.4,>=1.19.0
+opencv-python
