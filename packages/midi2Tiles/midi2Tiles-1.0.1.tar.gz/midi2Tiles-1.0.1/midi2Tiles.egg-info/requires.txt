@@ -1,0 +1,5 @@
+urllib3<1.25,>=1.21.1
+requests
+tqdm
+matplotlib
+miditoolkit
