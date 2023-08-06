@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: imu4gopigo3ros
+Version: 0.1
+Summary: Safe BNO055 IMU interface and utilities for ROS on GoPiGo3
+Home-page: https://github.com/slowrunner/rosbot-on-gopigo3/tree/main/imu4gopigo3ros
+Author: Cyclical_Obsessive
+Author-email: tovli@hotmail.com
+License: MIT
+Keywords: robot,gopigo,gopigo3,dexter industries,modular robotics,ros,bno055
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: di-sensors
+
+Error - Contact Author
+
