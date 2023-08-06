@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: TimeV2
+Version: 0.0.9
+Summary: A replacemet for the 'time' module
+Home-page: https://github.com/Oscar-Hogben/Time-V2
+Author: Oscar Hogben
+Author-email: oscarhogben@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Oscar-Hogben/Time-V2/issues
+Description: || TimeV2 ||
+        
+        | About |
+        
+        TimeV2 is a replacement for the common time module on python. I also allows users to create asynchronous timers (the program keeps running in the backgroud)
+        
+        | How to install |
+        
+        type 'pip install timev2' in your shell
+        
+        | Features |
+        
+        Go to the github page to see all the commands and features!
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
