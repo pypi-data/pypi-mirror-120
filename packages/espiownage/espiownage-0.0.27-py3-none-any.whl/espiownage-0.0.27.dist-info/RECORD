@@ -1,0 +1,12 @@
+espiownage/__init__.py,sha256=XJ5NZRv5ahaSlYm7_PUNTixULma76xIxwxi2Yy6Eb8w,23
+espiownage/_nbdev.py,sha256=jn7EMPYnlpyo_d_vI5WZq_Q7-qGE9DKbmqxANy0UlNs,653
+espiownage/core.py,sha256=HNL-HgMxqtewc1lCNJ83ZASHhthJsuquxprc_5ofn4g,5539
+espiownage/ellipse_editor.py,sha256=EMjg5qwrhnyU8XcyRynqTkXW5VP3OYreJ1iTbwJ_APU,18997
+espiownage/gen_bboxes.py,sha256=wjz5So9IVyELQB6xorZfcrXzuADDYUbRevpgeRV-0Hs,6367
+espiownage/gen_masks.py,sha256=sher5Yl5NUhRob3pPhiv71TFykj46a2ss9yH2q11BDM,3419
+espiownage-0.0.27.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+espiownage-0.0.27.dist-info/METADATA,sha256=YCAepHQOASyBweWJwdGZYfGvt36xNjuqBOdt_rB1dYI,4372
+espiownage-0.0.27.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+espiownage-0.0.27.dist-info/entry_points.txt,sha256=ik-N7mwvITVcUz8UTZ7Vf5xfV1CtZFACYZUuGdp6h24,166
+espiownage-0.0.27.dist-info/top_level.txt,sha256=Y-N-wpcW3IEEIMg8vFGOu9a3_I-mja4trZPX_IaEdS0,11
+espiownage-0.0.27.dist-info/RECORD,,
