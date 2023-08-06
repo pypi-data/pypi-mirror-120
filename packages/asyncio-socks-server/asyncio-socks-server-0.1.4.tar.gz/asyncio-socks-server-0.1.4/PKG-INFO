@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: asyncio-socks-server
+Version: 0.1.4
+Summary: A socks server implemented with asyncio.
+Home-page: https://github.com/Amaindex/asyncio-socks-server
+License: MIT
+Keywords: asynchronous,asyncio,proxy,socks
+Author: Amaindex
+Author-email: amaindex@outlook.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: Proxy Servers
+Project-URL: Repository, https://github.com/Amaindex/asyncio-socks-server
