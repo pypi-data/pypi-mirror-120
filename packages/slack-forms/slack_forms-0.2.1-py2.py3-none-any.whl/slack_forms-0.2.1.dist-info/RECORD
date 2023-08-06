@@ -1,0 +1,15 @@
+slack_forms/__init__.py,sha256=PmcQ2PI2oP8irnLtJLJby2YfW6sBvLAmL-VpABzTqwc,22
+slack_forms/forms/__init__.py,sha256=LpXdvn5kRiVktHUcjZcdaxeT0smymWqsN-PknN4man0,266
+slack_forms/forms/blocks.py,sha256=EtK-0j_Y7m4VaAdS0s0wQR-TzS6QHVMiJr66m8JV5wE,7043
+slack_forms/forms/exceptions.py,sha256=XKjZ9MaadKi8IOyv7fTSsLjfOI8xB0Puuxx9WQaUxEs,38
+slack_forms/forms/fields.py,sha256=jevQlAKmBm-5KGHLgwnRILcxFrvrEW9L0D-WZWO54Ww,6182
+slack_forms/forms/forms.py,sha256=68eZre35kyY9UBflZWus_lG1WxSB4cSHA-aqVFIoIdY,2873
+slack_forms/logging/__init__.py,sha256=QKA6eAHEr7pb2iiumWsDFwhNd2M6wk3GbOXsTj1MkuU,45
+slack_forms/logging/logging.py,sha256=IpxMFhQRNVJnKEoXE4yt7GwdJkFvclLIKb7Tc6yQgN8,267
+slack_forms/views/__init__.py,sha256=ge3vhKgk2OEhfzGIrQwefgmPG124o4aYhhvuTacuDk0,59
+slack_forms/views/views.py,sha256=gBQE3rVukXUXURfeTv9cwu_QRjF76GkN-UjVjF3YvlU,3426
+slack_forms-0.2.1.dist-info/LICENSE,sha256=CdzHkNfeZkDZ_iLxPQBnms-VRgW-nX2HhgRA9249Bvc,744
+slack_forms-0.2.1.dist-info/METADATA,sha256=HG5ec-db42icliTxkkH_TrnZvQk9u4V2ff3URsUj37k,1634
+slack_forms-0.2.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+slack_forms-0.2.1.dist-info/top_level.txt,sha256=nxFcz8LSKmda3GhGo4Si1i0gzy58z9ObhRo1jT42Ulk,12
+slack_forms-0.2.1.dist-info/RECORD,,
