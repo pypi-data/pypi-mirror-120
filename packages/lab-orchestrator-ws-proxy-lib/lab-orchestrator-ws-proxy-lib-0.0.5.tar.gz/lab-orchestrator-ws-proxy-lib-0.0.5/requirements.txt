@@ -1,0 +1,4 @@
+lab-orchestrator-lib-auth==0.0.5
+setuptools==51.0.0
+websockets==10.0
+asyncio==3.4.3
