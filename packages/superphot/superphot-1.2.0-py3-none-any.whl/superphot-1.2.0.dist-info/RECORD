@@ -1,0 +1,14 @@
+superphot/__init__.py,sha256=PiUSiFLCm0YX5rbHS4xOLGdqdPDC8j3etV3nmEaelzI,92
+superphot/_version.py,sha256=4jH0Ibk85mNwmi0QspDMPG_GXdrGIZAD_vgSXP9aXl0,497
+superphot/classify.py,sha256=t7Ab4FPpH9ZiGaHFUmY-V15hkUXkI78QXJGHq1da1yo,37763
+superphot/extract.py,sha256=GfxV60jwape8rj42ACnISjwji1ffwRGTxZpOQfd2fW0,22311
+superphot/fit.py,sha256=GdtR8XC9tP2wZSAG7IV4YO3BLRmCHBviR4-3053qChc,26883
+superphot/optimize.py,sha256=K1YnK_V4bX1b-O-VC3Oan2s1iBOC7X7AP0zWmZRadAg,10624
+superphot/util.py,sha256=FQmK9LWHex2FB-H2wmIf0tX2-Nhrdp8Np3t6gjzbQhw,5674
+superphot-1.2.0.dist-info/AUTHORS.rst,sha256=ZKmzqt4ApCX1i39WFAoRd9Y_4esGrMuKSryy2Eks3K4,142
+superphot-1.2.0.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+superphot-1.2.0.dist-info/METADATA,sha256=C1x9ZX8n5ea9qJ4yK_5SSKC7Y_jz6oZZH1rnmBqBERA,1070
+superphot-1.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+superphot-1.2.0.dist-info/entry_points.txt,sha256=yPI1bRmSL2PFYtxhS-VG47OfOVFIiTv9pszk49A7Hlk,597
+superphot-1.2.0.dist-info/top_level.txt,sha256=pFjjI8UFNyl3AcrbOt8_JWX9Asd73ARDQjRmrk6tikE,10
+superphot-1.2.0.dist-info/RECORD,,
