@@ -1,0 +1,19 @@
+CHANGES
+=======
+
+1.0.0
+-----
+
+* Ready to release
+* Packaged to use pypi
+* Added pypi Setup
+* Prepared package to pypi
+* First app version
+* Add tests and code checks
+* Add LICENSE
+* Refactor code of r2f plugin
+* Some code refactor
+* Update gitignore
+* Remove files
+* First version
+* Initial commit
