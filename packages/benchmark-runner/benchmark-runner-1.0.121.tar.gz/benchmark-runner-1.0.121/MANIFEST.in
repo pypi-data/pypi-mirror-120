@@ -1,0 +1,8 @@
+include benchmark_runner/benchmark_operator/workload_flavors/func_ci/*
+include benchmark_runner/benchmark_operator/workload_flavors/perf_ci/*
+include benchmark_runner/grafana/*
+include tests/integrations/benchmark_runner/templates/*
+
+
+
+
