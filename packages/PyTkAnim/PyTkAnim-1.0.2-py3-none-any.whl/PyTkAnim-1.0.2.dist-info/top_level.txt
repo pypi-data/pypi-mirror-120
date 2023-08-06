@@ -1,0 +1,5 @@
+pytkanim
+pytkanim/Animations
+pytkanim/CustomAnimations
+pytkanim/__easingfunctionsX__
+pytkanim/__easingfunctionsY__
