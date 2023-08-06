@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+./pylogcq/__init__.py
+./pylogcq/cq.py
+./pylogcq/log_convert.py
+./tests/__init__.py
+./tests/test_cq.py
+./tests/test_log-convert.py
+pylogcq.egg-info/PKG-INFO
+pylogcq.egg-info/SOURCES.txt
+pylogcq.egg-info/dependency_links.txt
+pylogcq.egg-info/entry_points.txt
+pylogcq.egg-info/requires.txt
+pylogcq.egg-info/top_level.txt
