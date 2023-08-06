@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: research-utils
+Version: 2021.9.22.2
+Summary: some utils for my research
+Author: Rainforest Cheng
+Author-email: r08521610@ntu.edu.tw
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pytorch-lightning (>=1.2.2,<2.0.0)
+Requires-Dist: sqlite-utils (>=3.6,<4.0)
+Requires-Dist: torchvision (>=0.8.2,<0.9.0)
