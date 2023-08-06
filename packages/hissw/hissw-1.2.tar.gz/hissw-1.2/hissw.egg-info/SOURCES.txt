@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+hissw/__init__.py
+hissw/environment.py
+hissw/read_config.py
+hissw/util.py
+hissw.egg-info/PKG-INFO
+hissw.egg-info/SOURCES.txt
+hissw.egg-info/dependency_links.txt
+hissw.egg-info/requires.txt
+hissw.egg-info/top_level.txt
+hissw/templates/parent.pro
+hissw/templates/procedure.pro
+hissw/templates/startup.sh
