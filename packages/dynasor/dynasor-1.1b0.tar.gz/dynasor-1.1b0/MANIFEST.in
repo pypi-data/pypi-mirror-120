@@ -1,0 +1,8 @@
+recursive-include dsf *
+recursive-include src *
+include LICENSE
+include MANIFEST.in
+include README.rst
+include config.py
+include dynasor
+include setup.py
