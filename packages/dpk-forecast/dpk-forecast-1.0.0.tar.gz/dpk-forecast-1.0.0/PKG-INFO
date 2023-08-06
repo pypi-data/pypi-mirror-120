@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: dpk-forecast
+Version: 1.0.0
+Summary: Make long-term probabilistic forecasts using the Deep Probabilistic Koopman framework
+Home-page: https://github.com/AlexTMallen/dpk
+Author: Alex Mallen; built on code from Henning Lange
+Author-email: atmallen@uw.edu
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
