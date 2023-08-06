@@ -1,0 +1,3 @@
+[console_scripts]
+neuro-bump-version=neuro_bump_version.main:main
+
