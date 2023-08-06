@@ -1,0 +1,3 @@
+[console_scripts]
+querybulletin = querybulletin.cli:main
+
