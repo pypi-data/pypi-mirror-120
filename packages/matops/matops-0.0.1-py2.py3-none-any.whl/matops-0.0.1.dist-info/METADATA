@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: matops
+Version: 0.0.1
+Summary: Matrix Operations
+Author-email: Sarmad Gulzar <sarmadgulzar@hotmail.com>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Project-URL: Home, https://github.com/matops/matops-python
+
+# matops-python
+
+Matrix Operations in Python
+
