@@ -1,0 +1,17 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/mccloud_cli/__init__.py
+src/mccloud_cli/_version.py
+src/mccloud_cli/cli.py
+src/mccloud_cli/jobs.py
+src/mccloud_cli/s3_utils.py
+src/mccloud_cli/urls.py
+src/mccloud_cli.egg-info/PKG-INFO
+src/mccloud_cli.egg-info/SOURCES.txt
+src/mccloud_cli.egg-info/dependency_links.txt
+src/mccloud_cli.egg-info/entry_points.txt
+src/mccloud_cli.egg-info/requires.txt
+src/mccloud_cli.egg-info/top_level.txt
