@@ -1,0 +1,10 @@
+aws_cdk/aws_appflow/__init__.py,sha256=esIGtLOFuj2gnP4PPkEstmqII9mVYP8DvKYqL6bEuas,279612
+aws_cdk/aws_appflow/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_appflow/_jsii/__init__.py,sha256=FTZcD5w6K3zekKSSjpNzR-DAKIAoRrmX_K6sdJm9xgg,349
+aws_cdk/aws_appflow/_jsii/aws-appflow@1.123.0.jsii.tgz,sha256=vBUL-zgSR5m0NRils6KIA_k6lcjazxoJ0VAnn8Xw13U,90699
+aws_cdk.aws_appflow-1.123.0.dist-info/LICENSE,sha256=PPdRlpoLCV1CRrCV1eKpp3m0lNjchFAP4a9zfc8tRLo,11391
+aws_cdk.aws_appflow-1.123.0.dist-info/METADATA,sha256=5G1r0N0aSj-WKpbYuM4fljP1gvCVct56ObUO-CqyeIM,1698
+aws_cdk.aws_appflow-1.123.0.dist-info/NOTICE,sha256=xo56krus2e5ShfXqz_B7vuvGcMn_D0F7TjjpfTz8YMw,113
+aws_cdk.aws_appflow-1.123.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+aws_cdk.aws_appflow-1.123.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_appflow-1.123.0.dist-info/RECORD,,
