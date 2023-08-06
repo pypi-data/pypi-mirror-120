@@ -1,0 +1,23 @@
+fastapi<0.68,>=0.65
+geojson-pydantic
+jinja2<3.0.0,>=2.11.2
+morecantile
+numpy
+pydantic
+rasterio
+rio-tiler<2.2,>=2.1
+simplejson
+
+[:python_version < "3.7"]
+async_exit_stack<2.0.0,>=1.0.1
+async_generator<2.0.0,>=1.10
+dataclasses
+
+[:python_version < "3.9"]
+importlib_resources>=1.1.0
+
+[test]
+pytest
+pytest-cov
+pytest-asyncio
+requests
