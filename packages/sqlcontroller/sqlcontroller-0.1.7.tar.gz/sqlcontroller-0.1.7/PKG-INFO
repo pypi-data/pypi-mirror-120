@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: sqlcontroller
+Version: 0.1.7
+Summary: Controller class to handle sqlite3 databases.
+Home-page: https://github.com/RedKnight91/sqlcontroller
+Author: Michael Cazzarolli
+Author-email: mikecazzarolli@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/RedKnight91/sqlcontroller/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+UNKNOWN
+
