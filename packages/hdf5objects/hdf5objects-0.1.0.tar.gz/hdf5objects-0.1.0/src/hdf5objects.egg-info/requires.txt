@@ -1,0 +1,12 @@
+baseobjects>=1.4.3
+classversioning
+dspobjects
+h5py>=3.2.1
+numpy
+multipledispatch
+pytz
+tzlocal
+bidict
+
+[dev]
+pytest>=6.2.3
