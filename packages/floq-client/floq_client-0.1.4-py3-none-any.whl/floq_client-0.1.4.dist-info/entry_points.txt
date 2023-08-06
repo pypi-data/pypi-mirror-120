@@ -1,0 +1,3 @@
+[console_scripts]
+floq-client = scripts.cli:main
+
