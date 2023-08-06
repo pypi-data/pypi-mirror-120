@@ -1,0 +1,12 @@
+oscar_pg_search/__init__.py,sha256=rpLEm4CWW-D_z8XpVysfJCV7hvVIm-ODFYNMNRIzQzw,78
+oscar_pg_search/apps.py,sha256=82aVfIXQGUQbZi6wX_312WK96UAj5z4TYX9eRGIvzUk,1009
+oscar_pg_search/filter_options.py,sha256=p_ChMBQlAO1ZXIxWxAundNxw77zYaELNxpOJsKNDDls,11743
+oscar_pg_search/forms.py,sha256=2RlfiIJhtSGlUDynbJOVUhVPu9CoAOILP0QyXqseGJ8,3638
+oscar_pg_search/order_by_options.py,sha256=jSHJfQbQT0GKeVnJjjib8xp80ENuIZlhPPwOvUon_mg,2442
+oscar_pg_search/postgres_search_handler.py,sha256=44BdwV9EA9O0m6VS0O7IyUZQkR0mIdY4WqzCD38A1yM,8627
+oscar_pg_search/utils.py,sha256=ytMcCUMPK8MG6Nli7QxBMQYOYPgMWoJWh_Qam9d5Zwc,1644
+oscar_pg_search/views.py,sha256=Zk2rJNoyifl3b8mW-t8E9X58m_w7rZRcYGcFS3rDZP8,1181
+django_oscar_pg_search-0.8.0.dist-info/METADATA,sha256=3lFJvHaTcjtsvgAli0L2mciv6K_mGeQEgjlJREQQqJY,3058
+django_oscar_pg_search-0.8.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+django_oscar_pg_search-0.8.0.dist-info/top_level.txt,sha256=kPY0KlawAsWIoBpQEUNb1OL-hzJJZlYyRjFa7Y8Ynls,16
+django_oscar_pg_search-0.8.0.dist-info/RECORD,,
