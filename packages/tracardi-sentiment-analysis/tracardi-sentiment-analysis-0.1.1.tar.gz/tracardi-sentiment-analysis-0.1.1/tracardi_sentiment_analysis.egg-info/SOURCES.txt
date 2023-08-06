@@ -1,0 +1,12 @@
+LICENSE.md
+MANIFEST.in
+README.md
+setup.py
+tracardi_sentiment_analysis/plugin.py
+tracardi_sentiment_analysis.egg-info/PKG-INFO
+tracardi_sentiment_analysis.egg-info/SOURCES.txt
+tracardi_sentiment_analysis.egg-info/dependency_links.txt
+tracardi_sentiment_analysis.egg-info/requires.txt
+tracardi_sentiment_analysis.egg-info/top_level.txt
+tracardi_sentiment_analysis/model/configuration.py
+tracardi_sentiment_analysis/model/__pycache__/configuration.cpython-38.pyc
