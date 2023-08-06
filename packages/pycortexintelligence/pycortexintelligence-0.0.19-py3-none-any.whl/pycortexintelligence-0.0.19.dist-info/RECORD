@@ -1,0 +1,14 @@
+pycortexintelligence/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycortexintelligence/functions.py,sha256=5EG1xrnI2-9yZP66M73Th1tc5cZytN2YR3DaLMYMy7I,11237
+pycortexintelligence/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycortexintelligence/core/config.py,sha256=YbfKVpXOLC5JzJ6oqtZxLyDRPPOYt5VzRl3QP9eGXyI,508
+pycortexintelligence/core/funcs_env.py,sha256=MCgWtiuR1VdVeXWbZIrzY97spSCoIhFmjiCc-XDmhMA,2277
+pycortexintelligence/core/funcs_mail.py,sha256=9UxekQKI8CUASynJnXz58yNkDsfjE2uV4GE7TTwuFGo,1871
+pycortexintelligence/core/funcs_startproject.py,sha256=BzGgc71L-JkaCQS7LBct8Sg_dfSBInLTF0s9-5050W4,7565
+pycortexintelligence/core/messages.py,sha256=zFyv7ZvXThY8lRQM59AoHmQEp1VUT2CoPEGNHclp22k,876
+pycortexintelligence-0.0.19.data/scripts/cortex.py,sha256=CUxSYqgoJb02SnuJT3njTSIB8-7hgcKOIyQ39s7Qmjg,1522
+pycortexintelligence-0.0.19.dist-info/LICENSE,sha256=tjKZqL6NtOoD1Vqri6Uzv6V3UZaA-W8yPAtoIBP7bHE,1094
+pycortexintelligence-0.0.19.dist-info/METADATA,sha256=_hC2YerAtIzxervWCPn65kjNnsO8iEBZtUhbBY8ZzyU,3752
+pycortexintelligence-0.0.19.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pycortexintelligence-0.0.19.dist-info/top_level.txt,sha256=7yAXb7mVR9f1GBrXUCSQ7rhgv71IVQrjI7X6dYrLCIM,21
+pycortexintelligence-0.0.19.dist-info/RECORD,,
