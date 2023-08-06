@@ -1,0 +1,8 @@
+[console_scripts]
+analyze=scripts.tests:analyze
+licensegh=licensegh.cli:main
+multi-version-tests=scripts.tests:multi_version_tests
+styles=scripts.styles:main
+tests=scripts.tests:main
+tests-coverage=scripts.tests:tests_coverage
+

@@ -1,0 +1,10 @@
+LICENSE,sha256=7PiJdoeHzGfeWRC-TiOxbtGdss6xwyjfrcnsxQhFz8I,1067
+licensegh/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+licensegh/__main__.py,sha256=Z91nWUgPCUKNgKCazgs9bXhPqtu7lKqq7enZtp15i38,38
+licensegh/cli.py,sha256=iQ5FWLfhL7GZIHN2fDBdkC87b59SY_t9YMkkOxnVC8c,1151
+licensegh/licensegh.py,sha256=-gehU---pfWw_vWPWpYTLa24sZLqr7qE0ZRv7YsdgWQ,4566
+licensegh-0.1.0.dist-info/entry_points.txt,sha256=5KRaFaLrfl9xaK14BtHJuwOCVzEdooNQcoPMwEzhMUE,228
+licensegh-0.1.0.dist-info/LICENSE,sha256=7PiJdoeHzGfeWRC-TiOxbtGdss6xwyjfrcnsxQhFz8I,1067
+licensegh-0.1.0.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+licensegh-0.1.0.dist-info/METADATA,sha256=ctQZdCKo5AZPIfuprR0CZ9EcYXKWFI7OrYOESYcFqoI,2493
+licensegh-0.1.0.dist-info/RECORD,,
