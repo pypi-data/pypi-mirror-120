@@ -1,0 +1,112 @@
+CHANGES
+=======
+
+v0.0.14
+-------
+
+* Bump version: 0.0.13 → 0.0.14
+* Added introspection and undefined modules to the docs
+
+v0.0.13
+-------
+
+* Bump version: 0.0.12 → 0.0.13
+* Added introspection lib
+* Removed useless cat and prefixed log dump in ops.sh
+* Fixed log file name in ops script
+
+v0.0.12
+-------
+
+* Bump version: 0.0.11 → 0.0.12
+* Added ops utility script
+
+v0.0.11
+-------
+
+* Bump version: 0.0.10 → 0.0.11
+* Added undefined module
+
+v0.0.10
+-------
+
+* Bump version: 0.0.9 → 0.0.10
+* Fixed style error
+
+v0.0.9
+------
+
+* Bump version: 0.0.8 → 0.0.9
+* Fixed style errors
+
+v0.0.8
+------
+
+* Bump version: 0.0.7 → 0.0.8
+* Split testing into quick/full versions in gitlab-ci.yml
+
+v0.0.7
+------
+
+* Bump version: 0.0.6 → 0.0.7
+* Added requirements install to pypi publish script in gitlab-ci.yml
+
+v0.0.6
+------
+
+* Bump version: 0.0.5 → 0.0.6
+* Fixed spurious only condition in gitlab-ci.yml
+* Updated CI to add pypi publishing step. changed only conditions to newer rules standard and fixed
+* Updated api docs to include ptutils.time
+
+v0.0.5
+------
+
+* Bump version: 0.0.4 → 0.0.5
+* Imported time functions
+* updated license file
+
+v0.0.4
+------
+
+* Bump version: 0.0.3 → 0.0.4
+* Testing README formatting on pypi
+
+v0.0.3
+------
+
+* Bump version: 0.0.2 → 0.0.3
+* Testing README formatting on pypi
+
+v0.0.2
+------
+
+* Bump version: 0.0.1 → 0.0.2
+* Fixed some doc things and spurious test in bumpversion.cfg
+* Removed now-broken sphinxcontrib-blockdiag plugin due to incompatibility with python3
+* pinning funclibparser used by sphinx to 0.3.5 or lower on all python
+* pinning funclibparser used by sphinx to 0.3.5 or lower on python 3.8 or higher
+* Enabled color in ci tox run
+* Fixed style tests, removed some debugging information. reinstated ci image change detection. Added DIND service to release-ci-image. Fixed some erroneous documentation. removed now-spurious comments in gitlab-ci.yml
+* updated requirements to remove version pinning
+* Removed bdist as prereq for CI image
+* Added python-distutils as prereq for CI image
+* Fixed typo in CI image dockerfile
+* Updated CI image dockerfile
+* Debugging CI: Trying stack overflow solution
+* Debugging CI: Trying again w/ localhost
+* Debugging CI: monir changes to script structure. On runner configured network
+* Debugging CI: changed port to 2376
+* Debugging CI: removed alias, added ip address display
+* Debugging CI: removed dig calls
+* Debugging CI: adding service alias
+* Debugging CI: added some debugging output to lookup docker hostname
+* Debugging CI: changed DOCKER\_HOST to localhost
+* Debugging CI: celaring DOCKER\_HOST, setting driver to overlay2
+* Debugging CI: pull DOCKER\_HOST from the DOCKER\_PORT variable
+* Debugging CI: disabled specifying the docker driver and url
+* Added some output to debug ci build
+* Updated CI image build step runner image
+* Updated CI conditions to ensure image is built at least once
+* Updated CI build tags to allow building on gw runner
+* Initial commit
