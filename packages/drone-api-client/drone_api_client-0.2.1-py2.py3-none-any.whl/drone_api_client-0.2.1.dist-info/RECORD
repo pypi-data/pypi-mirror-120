@@ -1,0 +1,15 @@
+drone_api_client/__init__.py,sha256=Myupfp18EVZacE4Tp7qYqYpimE8TWJJr-zQjrBwIJiA,20
+drone_api_client/category.py,sha256=aw85iFXA_vfCnLnAR6BV1bKvcXBGrGhqbhZyppJubb0,7071
+drone_api_client/drone_api_client.py,sha256=kP8tMmlor-UtUkK0oB8Ogw_YauOmXvXCbSOunh3acn0,357
+drone_api_client/session.py,sha256=voHG8bhX3Efk7qnJAoD_wSsOVnu4bnGRCkVLgrC0fnw,1100
+drone_api_client/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drone_api_client/model/cron.py,sha256=AMaN_pCaLXlwJS1t5qyJad3X1AToF3JEZg_0-oZa6Bg,1286
+drone_api_client/model/secrets.py,sha256=CFaWWMrcv0b4N4ot8o9xzPGbZrIwSwtgengBwSaTxqY,1063
+drone_api_client/model/user.py,sha256=Wfm2imjn0jc7X8TscUZWkceGsP7R2ahM1_zqNUnapu0,2016
+drone_api_client/model/users.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drone_api_client-0.2.1.dist-info/LICENSE,sha256=3_qcpyzMSP7ojeZ5_Agle5UW4gGkPBrFiYdle4XJ828,1075
+drone_api_client-0.2.1.dist-info/METADATA,sha256=Rb2Ww8ZEoxvAN6-qLUiwHaeeqTiKBQg4wDUYBb_ikAc,1161
+drone_api_client-0.2.1.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+drone_api_client-0.2.1.dist-info/entry_points.txt,sha256=Oj8MoHpw9wPhDjXoCzqRyGVFPR7YF02j8tkqRe83tOU,66
+drone_api_client-0.2.1.dist-info/top_level.txt,sha256=s5ooFRHbP_6nlJmCJ2vpBLPSLjofthT32fHtPH-Yhtk,17
+drone_api_client-0.2.1.dist-info/RECORD,,
