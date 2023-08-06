@@ -1,0 +1,4 @@
+include license.txt
+include README.MD
+include requirements.txt
+include veritastool/config/*.ini
