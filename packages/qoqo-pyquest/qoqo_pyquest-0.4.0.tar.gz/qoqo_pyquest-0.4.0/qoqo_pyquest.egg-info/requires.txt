@@ -1,0 +1,4 @@
+qoqo>=0.6.0
+pyquest_cffi>=3.1.0
+qoqo_calculator_pyo3
+numpy
