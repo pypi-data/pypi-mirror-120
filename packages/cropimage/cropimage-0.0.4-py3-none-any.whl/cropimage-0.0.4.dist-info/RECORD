@@ -1,0 +1,8 @@
+cropimage/__init__.py,sha256=4p1l7G4ljXA3_vjGyENLBjg_oGMdEW1xVrjnlAxdzow,168
+cropimage/constants.py,sha256=AS7hyLKIc8R5PEvpZUnj6B0HuituDG8mPQtTFgl4rzY,411
+cropimage/cropper.py,sha256=xBkBTNlc2smoROhoiCv88nmlombhUERcQzkpSlX6tHc,7928
+cropimage-0.0.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+cropimage-0.0.4.dist-info/METADATA,sha256=WQGv2T2uZ4oglq64XvbRaj6lI9GwQuO8tImiC4V60Qw,1600
+cropimage-0.0.4.dist-info/WHEEL,sha256=S6zePDbUAjzMmpYOg2cHDxuYFWw7WiOXt6ogM6hIB5Q,92
+cropimage-0.0.4.dist-info/top_level.txt,sha256=PeqA-5e4X_HfvBc1NmkthYXVUyNpUM1mI-qgNdu32SA,10
+cropimage-0.0.4.dist-info/RECORD,,
