@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: nd2
+Version: 0.0.1rc0
+Summary: Yet another nd2 (Nikon NIS Elements) file reader.
+Home-page: https://github.com/tlambert03/nd2
+Author: Talley Lambert
+Author-email: talley.lambert@gmail.com
+License: BSD license
+Project-URL: Source Code, https://github.com/tlambert03/nd2
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: ipython ; extra == 'dev'
+Requires-Dist: jedi (<0.18.0) ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: flake8-docstrings ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: pydocstyle ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Provides-Extra: testing
+Requires-Dist: tox ; extra == 'testing'
+Requires-Dist: tox-conda ; extra == 'testing'
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+
+# nd2
+
+[![License](https://img.shields.io/pypi/l/nd2.svg?color=green)](https://github.com/tlambert03/nd2/raw/master/LICENSE)
+[![PyPI](https://img.shields.io/pypi/v/nd2.svg?color=green)](https://pypi.org/project/nd2)
+[![Python Version](https://img.shields.io/pypi/pyversions/nd2.svg?color=green)](https://python.org)
+[![CI](https://github.com/tlambert03/nd2/workflows/ci/badge.svg)](https://github.com/tlambert03/nd2/actions)
+[![codecov](https://codecov.io/gh/tlambert03/nd2/branch/master/graph/badge.svg)](https://codecov.io/gh/tlambert03/nd2)
+
+Yet another nd2 (Nikon NIS Elements) file reader.
+
+
