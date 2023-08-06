@@ -1,0 +1,13 @@
+README.md
+license.txt
+setup.cfg
+setup.py
+Probability_Distributions_LB/Binomialdistribution.py
+Probability_Distributions_LB/Gaussiandistribution.py
+Probability_Distributions_LB/Generaldistribution.py
+Probability_Distributions_LB/__init__.py
+Probability_Distributions_LB.egg-info/PKG-INFO
+Probability_Distributions_LB.egg-info/SOURCES.txt
+Probability_Distributions_LB.egg-info/dependency_links.txt
+Probability_Distributions_LB.egg-info/not-zip-safe
+Probability_Distributions_LB.egg-info/top_level.txt
