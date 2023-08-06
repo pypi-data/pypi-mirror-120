@@ -1,0 +1,14 @@
+floret_pybind.cpython-38-darwin.so,sha256=UA30v89dKJev1AE6n-mclBPWxQSVeoB_X1Fj1VQhr04,1135216
+floret/__init__.py,sha256=EpDfVTrUroBXCVMktSZuqqghUAArTvq2lkRPTQRIh6s,639
+floret/floret.py,sha256=1RGR8mja2SeSPBpAqHDd9DTJJ2mBSdKb4CpLue-erE0,19654
+floret/tests/__init__.py,sha256=ZPhveAlC5DS82TnSoi7tKNqbahDbkD2TFxE7ZCofyjE,475
+floret/tests/test_configurations.py,sha256=HoYuPWny09g7MsT9BwtdKf2R0P1X8O9Nt-ARNGz3Gjg,7060
+floret/tests/test_script.py,sha256=VsFuB9nMBe3b79AKF-Ml3Lxihn6xB7-D8U9BmV-Bq_g,21765
+floret/tests/test_tokenize.py,sha256=4wXfcUugKQxiGMUIBugxYg41hxSXdp877kvV-kY5OF4,96
+floret/util/__init__.py,sha256=U6XiNbgpIfh1pANEup5w6Z-D-vQe4P2RJczc2qSsm6A,472
+floret/util/util.py,sha256=kEk7DQLIdlKQr51-_FsMH6WQgFB0l9MVS0voqsj6zDc,7490
+floret-0.10.0.dev0.dist-info/LICENSE,sha256=Mnl1aSvA8O5scRvbAsaoMVagH442sSf59mKdkKZzt7E,1111
+floret-0.10.0.dev0.dist-info/METADATA,sha256=q4x63gIbm7unfxup8RyWePOiuZDrki_UXFLEku83JhQ,3060
+floret-0.10.0.dev0.dist-info/WHEEL,sha256=Y6DCQ3Bm4-5AV1R_L7I4hUecRLaEZjYai5fltRB5z5g,110
+floret-0.10.0.dev0.dist-info/top_level.txt,sha256=HhkQl8RLJROs_xOrLLdU_ZJYIpzTvdLh13jRodqqfpk,21
+floret-0.10.0.dev0.dist-info/RECORD,,
