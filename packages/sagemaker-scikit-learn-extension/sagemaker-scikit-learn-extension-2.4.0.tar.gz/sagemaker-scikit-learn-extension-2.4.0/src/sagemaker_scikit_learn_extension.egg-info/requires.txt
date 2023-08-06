@@ -1,0 +1,9 @@
+
+[taei]
+torch==1.7.1
+
+[test]
+tox
+tox-conda==0.7.3
+pytest
+coverage
