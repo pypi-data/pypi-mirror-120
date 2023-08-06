@@ -1,0 +1,9 @@
+__title__ = 'xmind2testcase2021'
+__description__ = 'xmind2testcase2021基于Python实现，提供了一个高效测试用例设计的解决方案！'
+__keywords__ = 'xmind2testcase2021, testcase, test, testing, xmind, 思维导图, XMind思维导图',
+__url__ = 'https://github.com/lovpuss/xmind2testcase2021'
+__author__ = 'Devin'
+__author_email__ = '123456@qq.com'
+__version__ = '1.0.2'
+__license__ = 'MIT'
+__cake__ = u'\u2728 \U0001f370 \u2728'
