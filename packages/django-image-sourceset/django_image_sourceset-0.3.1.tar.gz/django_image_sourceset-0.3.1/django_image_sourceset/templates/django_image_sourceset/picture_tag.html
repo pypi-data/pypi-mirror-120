@@ -1,0 +1,9 @@
+<picture>
+    {% for image in images %}
+        {% if not forloop.last %}
+            <source srcset="{{ image.url }}" media="(max-width: {{ image.size }}px)">
+        {% else %}
+            <img srcset="{{ image.url }}" class="{% if class %} {{ class }}{% endif %}"{% if alt %} alt="{{ alt }}"{% endif %}{% if title %} title="{{ title }}{% endif %}">
+        {% endif %}
+    {% endfor %}
+</picture>
