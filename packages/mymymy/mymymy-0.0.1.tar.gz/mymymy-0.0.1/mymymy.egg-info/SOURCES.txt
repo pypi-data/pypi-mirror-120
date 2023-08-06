@@ -1,0 +1,10 @@
+README.md
+setup.py
+mymymy/__init__.py
+mymymy/_version.py
+mymymy/mymymy.py
+mymymy.egg-info/PKG-INFO
+mymymy.egg-info/SOURCES.txt
+mymymy.egg-info/dependency_links.txt
+mymymy.egg-info/requires.txt
+mymymy.egg-info/top_level.txt
