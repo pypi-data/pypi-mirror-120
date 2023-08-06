@@ -1,0 +1,16 @@
+memoizit/__init__.py,sha256=m4EnDLRQi7SXUAC5UAcNp7vAkuL1oZsyOSdax2eo2dE,31
+memoizit/memoizer.py,sha256=x9Q18hgerYRIfllrYMExi3Jcu5QkOlu4z-BGATOZs1g,6364
+memoizit/storage/__init__.py,sha256=LfgsPat7RYLFMBg5xliIiMF9n9aI7iAqQW_VLdpS_ZQ,118
+memoizit/storage/backend.py,sha256=8pcxd--8Jz71LDJxKm0ouaahSnKb47ImPrGnC94VMnQ,413
+memoizit/storage/python_backend.py,sha256=tIzKLIWkLjWOYJhjxocUezQhRfkoliu71AOQcFQQdp0,1363
+memoizit/storage/redis_backend.py,sha256=XHM53UjCH0dKbXFQWHxIqUxGj-5VE_mZkaV4YgIG5Jk,1015
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/storage_test_case.py,sha256=9CwFqsrtBMtFed9iEjMLv3A_oowgpPCDXcqHkccdjes,1404
+tests/test_memoizer.py,sha256=X1XbD_rJNTjlEM3nYnJzprgapMzUuyeWz1XBcll5LYI,1784
+tests/test_python_storage.py,sha256=3WiXyiOEIvDSVtBwPI07qzodgHWt-3BgVvW7v2N275g,214
+tests/test_redis_storage.py,sha256=uW0w1mKuzC-NHXCf3qfVEnP7_fweSWYBfPBtEk3bPy4,410
+memoizit-1.0.0.dist-info/LICENSE,sha256=ygM0WTiiqHcFsx5bvWlDsaNoH40ws5VaTa8jqvfOCzM,1084
+memoizit-1.0.0.dist-info/METADATA,sha256=-vvhV1xgDFdUMQfH4wggS3v_UVANEA1LffdU6VPEPBg,6144
+memoizit-1.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+memoizit-1.0.0.dist-info/top_level.txt,sha256=U1H9N3ZlkisDxmnjGSXc2tT4d6n46mI3aEQYsVb0gLE,15
+memoizit-1.0.0.dist-info/RECORD,,
