@@ -1,0 +1,9 @@
+sigauth/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sigauth/helpers.py,sha256=q8KBnAzIMFKcEWJhzOQeNXeUi0WBx--JwQKjB06AHlc,5548
+sigauth/middleware.py,sha256=FopB3wvZaGxR6kF8B7TKC_tY_35AG0asgmdGGft95LQ,915
+sigauth/permissions.py,sha256=lmPePeQxdkAQu16CnGSE8GEN6sobBZQgaiEM79d-CwU,434
+sigauth-5.1.1.dist-info/LICENSE,sha256=y-ArErAQz98OorLek2xntwEp9bo3ZcqfQMtAIcjBdvQ,1091
+sigauth-5.1.1.dist-info/METADATA,sha256=Yj-GivLucaYMHOdb3yqmXfUXnsQm9yAgBhS5Cfm6DH0,6512
+sigauth-5.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+sigauth-5.1.1.dist-info/top_level.txt,sha256=mGlNBeKJK-HbIfvTKK_jrdMOtW4K3QcZNoGYTRSzhUc,8
+sigauth-5.1.1.dist-info/RECORD,,
