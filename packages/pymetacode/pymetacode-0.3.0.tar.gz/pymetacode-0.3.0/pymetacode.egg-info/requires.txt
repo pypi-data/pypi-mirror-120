@@ -1,0 +1,15 @@
+appdirs
+jinja2
+oyaml
+
+[deployment]
+twine
+wheel
+
+[dev]
+prospector
+
+[docs]
+sphinx
+sphinx-multiversion
+sphinx-rtd-theme
