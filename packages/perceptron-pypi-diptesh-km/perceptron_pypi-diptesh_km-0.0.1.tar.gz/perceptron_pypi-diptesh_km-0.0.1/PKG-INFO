@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: perceptron_pypi-diptesh_km
+Version: 0.0.1
+Summary: its an implementation of Perceptron
+Home-page: https://github.com/diptesh_km/perceptron_pypi
+Author: diptesh_km
+Author-email: diptesh.km@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/diptesh_km/perceptron_pypi/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# perceptron_pypi
+perceptron_pypi
+
+# Reference -
+[official python docs](https://packaging.python.org/tutorials/packaging-projects/)
+
+[github docs for github actions](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python#publishing-to-package-registries)
+
