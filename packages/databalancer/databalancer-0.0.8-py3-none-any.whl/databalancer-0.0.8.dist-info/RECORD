@@ -1,0 +1,9 @@
+databalancer/__init__.py,sha256=vkYV2TAUovj4jPrVKvEef03Hesx42ryIKREAlzeK9lQ,115
+databalancer/databalancer.py,sha256=tIC2dbYcyUeF6pPVDmDYOxlcjGl5Dh6Nd14A9A0ThHs,4619
+databalancer/paraphraseGeneratorClient.py,sha256=MC6Qox9Kg_8M0J9yA9lFgnvxyfoRQTgY6t3VaqkWnD4,2774
+databalancer/paraphraseInputGeneratorClient.py,sha256=LdyZMfmnd935psdgNQEXicLJ5oQEel1iS8Ibjp5Cxck,734
+databalancer-0.0.8.dist-info/LICENSE,sha256=SjreCDICHleAJP8ecyLvhe2wvy1ShSTEsBQFRPSKN40,11338
+databalancer-0.0.8.dist-info/METADATA,sha256=WXucnwcC9AuvySb4TyVaRMcYaEajg8HP4HQ89KyZAJo,3562
+databalancer-0.0.8.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+databalancer-0.0.8.dist-info/top_level.txt,sha256=0qFMQWeHEYZCgxBjAiY1MdcxFk3PHCwKRa-0WBexqqo,13
+databalancer-0.0.8.dist-info/RECORD,,
