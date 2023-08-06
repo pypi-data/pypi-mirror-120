@@ -1,0 +1,14 @@
+simpleverse/__init__.py,sha256=OJfIG0Ss6pkGHCTILeHbg_pjltNjjXO2fznw7UfBLng,176
+simpleverse/base.py,sha256=2qrnHmJlDf32km5xUvI57daPeQWIv6x7q09r_Aoqtag,1106
+simpleverse/create_user.py,sha256=40QSgHofdGy4RweK7jauWeUNp6IesMUOuYHSN_zFznc,1294
+simpleverse/get_post.py,sha256=Rs7EirS3u1o4_c64zC-bBlJAG3-5tay0HYq4njlA8Mo,1224
+simpleverse/get_user.py,sha256=RqwB874681QqIfBiVBF6JmCHwxAFBFd0KqrRiTwUgnQ,538
+simpleverse/main.py,sha256=jc0A7fsQ6_ni3ugO0E_lTe1xJqyJYaW1a9w-fwzfTHs,3367
+simpleverse/schemas.py,sha256=0NtkCURNN5vu9_gu-P4-JLUhar0g3uujbSmZficVPR4,675
+simpleverse/submit_post.py,sha256=gd2i5-70hzwkNzYDm8x_lFtc0cVYuJqe_G6FOKvOraU,1050
+simpleverse-0.1.dist-info/LICENSE,sha256=cMGA4ZFKplEl_zKM76coZ2XDHGVKlsim83F8v-aJPOs,1063
+simpleverse-0.1.dist-info/METADATA,sha256=Sc6N-oZJPnSJGNX1uNcLxk8BKuvfvIQU9s-bz4jioFQ,1225
+simpleverse-0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+simpleverse-0.1.dist-info/entry_points.txt,sha256=Lk8S2C9gbZfYIeJ3ExWEbdH9K6YkIG1o5SNlW6nADE0,48
+simpleverse-0.1.dist-info/top_level.txt,sha256=MpY_1zYnIdDwqcsXvS-H_ESB4Kw76FM3Q765ZqqsOpM,12
+simpleverse-0.1.dist-info/RECORD,,
