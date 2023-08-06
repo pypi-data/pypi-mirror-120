@@ -1,0 +1,3 @@
+[console_scripts]
+stadtradeln-data-manager = stadtradeln_data_manager.__main__:cli
+
