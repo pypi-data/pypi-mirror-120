@@ -1,0 +1,26 @@
+#!python
+
+import subprocess
+import re
+import sys
+from Beautifier.Beautifier import Beautifier
+
+VFLAGS = ["--leak-check=full", "--track-origins=yes", "--show-reachable=yes"]
+
+
+def call_valgrind(exec, flags=VFLAGS):
+    valgrind = subprocess.Popen(["valgrind", *flags, *exec],
+                                stdin=sys.stdin,
+                                stdout=sys.stdout,
+                                stderr=subprocess.PIPE)
+    _, out = valgrind.communicate()
+    return out.decode("utf-8")
+
+def valgreen():
+    output = call_valgrind(sys.argv[1:])
+    beautifier = Beautifier()
+    colored_output = beautifier.process(output)
+    print(colored_output)
+
+if __name__ == "__main__":
+    valgreen()
