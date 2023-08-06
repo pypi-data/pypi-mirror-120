@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: demobyzhoulin
+Version: 0.0.1
+Summary: A small example package
+Home-page: https://github.com/bigone1/py_code
+Author: jiademandu
+Author-email: 727340437@qq.com
+License: UNKNOWN
+Description: ===========
+        package_test
+        ===========
+        
+        This project provides a demo for packaging and distributing python application.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
