@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+twitter_to_sqlite/__init__.py
+twitter_to_sqlite/archive.py
+twitter_to_sqlite/cli.py
+twitter_to_sqlite/migrations.py
+twitter_to_sqlite/utils.py
+twitter_to_sqlite.egg-info/PKG-INFO
+twitter_to_sqlite.egg-info/SOURCES.txt
+twitter_to_sqlite.egg-info/dependency_links.txt
+twitter_to_sqlite.egg-info/entry_points.txt
+twitter_to_sqlite.egg-info/requires.txt
+twitter_to_sqlite.egg-info/top_level.txt

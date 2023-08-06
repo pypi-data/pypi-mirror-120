@@ -1,0 +1,6 @@
+sqlite-utils>=2.4.2
+requests-oauthlib~=1.2.0
+python-dateutil
+
+[test]
+pytest
