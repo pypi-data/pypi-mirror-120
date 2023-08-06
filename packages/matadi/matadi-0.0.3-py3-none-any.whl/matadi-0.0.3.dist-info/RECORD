@@ -1,0 +1,14 @@
+matadi/__about__.py,sha256=4GZKi13lDTD25YBkGakhZyEQZWTER_OWQMNPoH_UM2c,22
+matadi/__init__.py,sha256=NMVrdDohRIpCNlFi6KK3mYUUGj1d59LGqJvgvySjl0w,91
+matadi/apply.py,sha256=TVHvUnOx55q9Ja6CnyR863nF6-WED2PYGJETSx_5SaM,1157
+matadi/material.py,sha256=rpomCdM0fT0Xmy6IWbykkyQbEmlKm_z7ClpR_caSETQ,2857
+matadi/math.py,sha256=CtO8Gdc8rsy0HJNw3r9y5R4LeFt8P82afH8MWsUIZrQ,396
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_eigvals_grad.py,sha256=yjZf4P46q7OVq-Zfq3qlL6YbPwbRyFHUyMSwlj6ivjE,1941
+tests/test_modify.py,sha256=_FUcJmA-6FBq4d-W0fCWb5ihnWpmylYSmgIo2veutEc,1134
+tests/test_scalar.py,sha256=N_vT0-1byiNpNqEyfKMlZAjOAI2kojQ1xb4uj3tDsXk,3124
+matadi-0.0.3.dist-info/LICENSE,sha256=DE2TT5DDmWy7IzJbzMuY3mny9HqgxmaholYzDaalBgQ,35141
+matadi-0.0.3.dist-info/METADATA,sha256=iiKPKPiMrQrMSUx3Eg667QPXehMI2lSZabssADnMu_0,5228
+matadi-0.0.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+matadi-0.0.3.dist-info/top_level.txt,sha256=yp6LsUwrOxGw2muAPiNf-9WCTbTF8LiL3LnF7kOec68,13
+matadi-0.0.3.dist-info/RECORD,,
