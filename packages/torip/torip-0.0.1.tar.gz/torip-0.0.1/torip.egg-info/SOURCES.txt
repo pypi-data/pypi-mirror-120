@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+README.rst
+setup.py
+test/__init__.py
+test/test_torip.py
+torip/__init__.py
+torip/exceptions.py
+torip/ipapis.py
+torip/locator.py
+torip/utilities.py
+torip.egg-info/PKG-INFO
+torip.egg-info/SOURCES.txt
+torip.egg-info/dependency_links.txt
+torip.egg-info/requires.txt
+torip.egg-info/top_level.txt
