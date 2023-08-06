@@ -1,0 +1,8 @@
+helpers/SGA.py,sha256=MprSC5tog-9lV1Z0mRpRJzVo8WhYZvP3ecCWSOIQYHQ,6112
+helpers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+helpers/arbitraryNN.py,sha256=QmvBgPLXv7fm9wQIpambLQrPaC9pchCOBIqLavs8_6k,2979
+helpers/cross_validation.py,sha256=h6auG0qSzchXAHtPtD16EwDtIFzBETVGa2xI4LfrmHc,2436
+zangorth_helpers-1.3.4.dist-info/METADATA,sha256=fXv_eI7jUmPnUth6klieSS9sw2O140qrtSqZFMd_C4A,730
+zangorth_helpers-1.3.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+zangorth_helpers-1.3.4.dist-info/top_level.txt,sha256=_d3GKyOc-29K_yBxLbI4wnWCIZ2fb4UhBdnTvyoWvnE,8
+zangorth_helpers-1.3.4.dist-info/RECORD,,
