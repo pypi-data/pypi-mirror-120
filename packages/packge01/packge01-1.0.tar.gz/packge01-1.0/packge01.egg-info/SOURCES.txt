@@ -1,0 +1,9 @@
+README.md
+setup.py
+excise/__init__.py
+excise/list.py
+excise/tuple.py
+packge01.egg-info/PKG-INFO
+packge01.egg-info/SOURCES.txt
+packge01.egg-info/dependency_links.txt
+packge01.egg-info/top_level.txt
