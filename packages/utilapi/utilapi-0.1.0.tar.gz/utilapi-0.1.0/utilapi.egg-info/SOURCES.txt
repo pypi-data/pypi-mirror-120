@@ -1,0 +1,8 @@
+README.rst
+setup.py
+utilapi/__init__.py
+utilapi.egg-info/PKG-INFO
+utilapi.egg-info/SOURCES.txt
+utilapi.egg-info/dependency_links.txt
+utilapi.egg-info/requires.txt
+utilapi.egg-info/top_level.txt
