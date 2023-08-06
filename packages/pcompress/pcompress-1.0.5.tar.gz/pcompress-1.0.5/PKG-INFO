@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pcompress
+Version: 1.0.5
+Summary: Experimental, efficient, and performant binary representation of districting plans
+Home-page: https://github.com/InnovativeInventor/pcompress
+License: MIT
+Author: Max Fan
+Author-email: root@max.fan
+Requires-Python: >=3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: gerrychain (>=0.2.17,<0.3.0)
+Project-URL: Repository, https://github.com/InnovativeInventor/pcompress
