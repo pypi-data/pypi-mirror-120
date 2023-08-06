@@ -1,0 +1,12 @@
+pyserial
+pyserial-asyncio
+pint
+pandas
+scipy
+numpy
+opcua
+asyncua
+phidget22
+getmac
+lmfit
+nmrglue
