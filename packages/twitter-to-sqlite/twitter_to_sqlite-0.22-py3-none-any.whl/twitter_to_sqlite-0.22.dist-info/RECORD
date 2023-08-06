@@ -1,0 +1,11 @@
+twitter_to_sqlite/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+twitter_to_sqlite/archive.py,sha256=RvXHbK3C-BnQdc6iZXFL89ia_V4ujZ-OhRJ4BZREDPU,7546
+twitter_to_sqlite/cli.py,sha256=2Cye4nGilMhTMh1rQZwykC53UXI7beSNM4ZsfI13oek,27966
+twitter_to_sqlite/migrations.py,sha256=yOFAnzO_CpnkCi4NRzFIr4ng7DLCh_dryUqTvukUONY,691
+twitter_to_sqlite/utils.py,sha256=R0sLK1hMk8QfsA7MjeKaOglmoMAnd-s7Sy2rO7V2xNs,22847
+twitter_to_sqlite-0.22.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+twitter_to_sqlite-0.22.dist-info/METADATA,sha256=ejooWD-32el4P9AUR879AdEV5EC_V-5tbRT_j-jAOQ4,20226
+twitter_to_sqlite-0.22.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+twitter_to_sqlite-0.22.dist-info/entry_points.txt,sha256=rNUwATD-D5jl7fRzmVtpE53EZttkdx8WHHvpuuh40Po,83
+twitter_to_sqlite-0.22.dist-info/top_level.txt,sha256=PwLUhMtsDvyhVy3E4UYGe1Kaq_Kl1AwgrOTIqrOd4_4,18
+twitter_to_sqlite-0.22.dist-info/RECORD,,
