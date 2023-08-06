@@ -1,0 +1,7 @@
+requests<3.0.0,>=2.26.0
+databind.core<2.0.0,>=1.2.1
+databind.json<2.0.0,>=1.2.1
+typing-extensions<4.0.0,>=3.10.0.0
+
+[test]
+types-requests<3.0.0,>=2.25.6
