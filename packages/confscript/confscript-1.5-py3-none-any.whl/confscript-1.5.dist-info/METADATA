@@ -1,0 +1,106 @@
+Metadata-Version: 2.1
+Name: confscript
+Version: 1.5
+Summary: A configuration definition language
+Home-page: https://github.com/Whirlpool-Programmer/confscript
+Author: Whirlpool-Programmer
+Author-email: whirlpool.programmer@outlook.com
+License: GNU General Public License v3 (GPLv3)
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# confScript
+
+don't think it is another \*script language!!
+
+It can do a lot..
+
+<hr>
+
+install via pip
+```
+pip install confscript
+```
+
+<hr>
+
+let's get started!
+
+some basic concepts:
+
+1. headers have this syntax:
+```
+== name ==
+```
+header can be anything example: "C++" or "@(@(@(@(@!!!" anything!
+
+2. keyword and value have this syntax:
+```
+keyword : value
+```
+here, value can be a string or number or True or False..
+
+3. What about lists?
+
+lists values are separated by a ","
+
+example:
+```
+== header ==
+key : value1,value2,value3
+```
+
+4. what separates data headers?
+
+all headers are separated by a ---
+
+okay?
+now, look at this data:
+```
+== Python ==
+extensions : .py,.pyw,etc,etc
+command    : python (filepath)
+---
+== JavaC ==
+extensions : .java,
+command    : javac (filepath) && java (filebasename)
+```
+
+<hr>
+<hr>
+
+Example data:
+```
+== TestingData ==
+lucky word              	  : python
+lucky number                  : 10
+is lucky-number really lucky? : True
+---
+== Employee ==
+name: George
+age: 30
+country: United Kingdom
+email: george.the.great@cube.co.net.com
+```
+
+it will become:
+```python
+{'TestingData': {'lucky word': 'python', 'lucky number': 10, 'is lucky-number really lucky?': True}, 'Employee': {'name': 'George', 'age': 30, 'country': 'United Kingdom', 'email': 'george.the.great@cube.co.net.com', 'IPv6 address (lol)': 'C0BE:5BC6:F8F0:FAB4:EB59:482F:C4D3:4DFD'}}
+```
+
+<hr>
+
+## so what's in this module?
+
+there are 3 functions:
+```
+read(str)      : convert confscript data to python dict & return the dict
+readFile(str)  : read the given file which contains the data & return the dict
+dump(dict)     : convert dict to confscript & return confscript data
+```
+
+simple! isn't it?
+
