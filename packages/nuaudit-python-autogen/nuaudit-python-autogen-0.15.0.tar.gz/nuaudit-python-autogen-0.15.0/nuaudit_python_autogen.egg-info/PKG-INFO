@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: nuaudit-python-autogen
+Version: 0.15.0
+Summary: Nuaudit
+Home-page: UNKNOWN
+Author: Nuaudit Support
+Author-email: support@nuaudit.com
+License: UNKNOWN
+Description:     Nanaged Audit Trails for Cloud Applications.  # noqa: E501
+            
+Keywords: OpenAPI,OpenAPI-Generator,Nuaudit
+Platform: UNKNOWN
+Requires-Python: >=3.6
