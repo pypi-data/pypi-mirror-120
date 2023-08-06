@@ -1,0 +1,4 @@
+requests
+Faker
+allure-pytest
+objectpath
