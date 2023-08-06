@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: locapip
+Version: 0.1.2
+Summary: A scene data processing toolkit
+Home-page: https://locapidio.com/
+Author: sjtu_6547
+Author-email: 88172828@qq.com
+License: UNKNOWN
+Keywords: ITK VTK OpenCASCADE IGL CGAL USD OpenVDB
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Manufacturing
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Multimedia :: Graphics :: 3D Modeling
+Classifier: Topic :: Multimedia :: Graphics :: 3D Rendering
+Classifier: Topic :: Multimedia :: Graphics :: Viewers
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: uvicorn
+Requires-Dist: numpy
+
+locapip是一个支持远程调用的工具集，支持医学影像、工业设计等场景数据的管理和编辑。
+
+## contact
+
+email: <88172828@qq.com>
+
+## done
+
+- 基于fastapi和uvicorn，实现RESTful API远程调用Python方法
+- 基于vcpkg和pybind11，实现Python调用C++方法处理场景数据
+- 基于Unreal Engine，实现跨平台的次世代场景交互
+
+## todo
+
+- 基于Omniverse，实现物理模拟和影视渲染
+
