@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: slack-forms
+Version: 0.2.1
+Summary: Django forms icing on the Slack App cake
+Home-page: https://github.com/aspiration-labs/slack_forms
+Author: Rod Morison
+Author-email: rmorison@aspiration.com
+License: ISC license
+Keywords: slack_forms
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+License-File: LICENSE
+
+===========
+Slack Forms
+===========
+
+Forms icing on the Slack cake
+
+Dev Setup
+---------
+::
+
+    pipenv install --dev
+
+Lint and Test
+-------------
+::
+
+    pipenv run make lint test
+
+Package
+-------
+::
+
+    pipenv run make dist
+
+Run Sample App
+--------------
+::
+
+    cp env.sample .env
+    vi .env
+    pipenv run python -m sample_app.app
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2021-07-19)
+------------------
+
+* First release on PyPI.
+
+
