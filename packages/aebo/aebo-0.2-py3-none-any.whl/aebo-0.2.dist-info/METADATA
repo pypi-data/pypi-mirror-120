@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: aebo
+Version: 0.2
+Summary: This package is for ABG robot
+Home-page: http://www.aeroboticsglobal.com/
+Author: Aerobotics Global
+Author-email: lokeshkode@aeroboticsglobal.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: nltk
+Requires-Dist: scikit-learn (>=0.24)
+Requires-Dist: numpy (>=1.21)
+
+UNKNOWN
+
