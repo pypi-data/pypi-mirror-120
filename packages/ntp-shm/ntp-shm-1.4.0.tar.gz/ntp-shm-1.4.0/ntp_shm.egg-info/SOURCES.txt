@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+ntp_shm/__init__.py
+ntp_shm/__main__.py
+ntp_shm/data.py
+ntp_shm/main.py
+ntp_shm/memory.py
+ntp_shm/nmea.py
+ntp_shm/util.py
+ntp_shm.egg-info/PKG-INFO
+ntp_shm.egg-info/SOURCES.txt
+ntp_shm.egg-info/dependency_links.txt
+ntp_shm.egg-info/top_level.txt
+scripts/ntp-shm
