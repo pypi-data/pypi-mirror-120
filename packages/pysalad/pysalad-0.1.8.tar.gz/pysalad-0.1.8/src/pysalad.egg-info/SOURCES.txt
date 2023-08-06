@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/pysalad
+src/pysalad.egg-info/PKG-INFO
+src/pysalad.egg-info/SOURCES.txt
+src/pysalad.egg-info/dependency_links.txt
+src/pysalad.egg-info/top_level.txt
+src/salad/__init__.py
+src/salad/api.py
+src/salad/config.py
+src/salad/jira.py
+src/salad/template.py
+src/salad/test/__init__.py
+src/salad/test/test_api.py
