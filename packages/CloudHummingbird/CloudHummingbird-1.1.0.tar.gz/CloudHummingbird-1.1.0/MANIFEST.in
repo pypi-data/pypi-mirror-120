@@ -1,0 +1,15 @@
+include pyproject.toml
+
+include LICENSE.txt
+
+include Hummingbird/conf/examples/*
+
+include Hummingbird/AWS/*
+
+include Hummingbird/*.md
+
+include Hummingbird/*.conf
+
+include Hummingbird/plot/*
+
+include Hummingbird/Azure/*
