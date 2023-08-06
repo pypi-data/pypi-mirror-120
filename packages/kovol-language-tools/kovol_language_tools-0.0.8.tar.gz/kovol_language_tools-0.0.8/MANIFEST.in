@@ -1,0 +1,4 @@
+include versioneer.py
+include kovol_language_tools/_version.py
+include README.md
+include LICENSE
