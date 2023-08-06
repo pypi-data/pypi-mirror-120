@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: pydps
+Version: 0.1.3
+Summary: Small package contains Python implementations of frequently used design patterns.
+Home-page: https://github.com/hieupth/pydps
+Author: Hieu Pham
+Author-email: hieupt.ai@gmail.com
+License: MIT
+Download-URL: https://github.com/hieupth/pydps/archive/v_01.tar.gz
+Keywords: design patterns
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Python Design Patterns
+This small package contains Python implementations of design pattern which are frequently used in software engineering.
+## Installation
+This package can be installed via pip command:
+```shell
+$ pip install pydps
+```
+Or installed from source:
+```shell
+$ git clone https://github.com/hieupth/pydps.git
+$ cd pydps
+$ python setup.py install
+```
+## Maintainers
+* [Hieu Pham](https://github.com/hieupth) (author)
+
+*Please feel free to contact me if you have any question or interested in contributing to my open source projects or 
+research*
+## License
+[MIT License](https://github.com/hieupth/pydps/blob/main/LICENSE) <br>
+Copyright (c) 2021, [Hieu Pham](https://github.com/hieupth). All rights reserved
+

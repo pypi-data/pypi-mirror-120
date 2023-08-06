@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+pydps/__init__.py
+pydps.egg-info/PKG-INFO
+pydps.egg-info/SOURCES.txt
+pydps.egg-info/dependency_links.txt
+pydps.egg-info/top_level.txt
+pydps/behaviours/__init__.py
+pydps/behaviours/command.py
+pydps/creation/__init__.py
+pydps/creation/singleton.py
+pydps/serializations/__init__.py
+pydps/serializations/json.py
+pydps/structures/__init__.py
+pydps/structures/tree.py
