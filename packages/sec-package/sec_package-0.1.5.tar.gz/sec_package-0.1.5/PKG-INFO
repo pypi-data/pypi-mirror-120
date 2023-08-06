@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: sec-package
+Version: 0.1.5
+Summary: 
+Author: sven
+Author-email: sven.lauenroth@icloud.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: black (>=21.9b0,<22.0)
+Requires-Dist: flake8 (>=3.9.2,<4.0.0)
