@@ -1,0 +1,6 @@
+[console_scripts]
+Swach = Swachh.Swachh:cli_launch_swachh
+Swachh = Swachh.Swachh:cli_launch_swachh
+swach = Swachh.Swachh:cli_launch_swachh
+swachh = Swachh.Swachh:cli_launch_swachh
+

@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: Swachh
+Version: 0.0.4
+Summary: Python based PC Cleaner & Tuner
+Home-page: https://github.com/ClointFusion/Swachh
+Author: Karthik Kallur
+Author-email: karthik@cloint.com
+License: GNU
+Project-URL: Date ❤️ with ClointFusion, https://lnkd.in/gh_r9YB
+Project-URL: WhatsApp Community, https://chat.whatsapp.com/DkY9QKmQkTZIv1CsOVrgWW
+Project-URL: Hackathon Website, https://tinyurl.com/ClointFusion
+Project-URL: Discord, https://discord.com/invite/tsMBN4PXKH
+Project-URL: Bug Reports, https://github.com/ClointFusion/Swachh/issues
+Project-URL: Source Code, https://github.com/ClointFusion/Swachh
+Project-URL: Automation/RPA, https://pypi.org/project/ClointFusion
+Keywords: ClointFusion,RPA,Python,Automation,BOT,Software BOT,ROBOT,PC Cleaner,Swachh
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Requires-Python: >=3.8, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: wheel (>=0.37.0)
+Requires-Dist: safety (>=1.10.3)
+Requires-Dist: click (>=8.0.1)
+Requires-Dist: rich (>=10.10.0)
+
+## Welcome to <img src="https://raw.githubusercontent.com/ClointFusion/Image_ICONS_GIFs/main/Cloint-LOGO-New.png" height="30"> , Made in India with &#10084;&#65039; 
+## SWACHH : ClointFusion's PC Cleaner
+
+<img src="https://raw.githubusercontent.com/ClointFusion/Image_ICONS_GIFs/main/Cloint-LOGO-New.png">
+
+## Deletes Junk Files/Folders, Broken Folders, Cache Files and Boosts your PC:
+
+1) Cleans the 3 temporary folders
+2) Empties Recycle Bin
+3) Performs Disk Cleanup for all the Hard Drives
+4) Deletes Temporary Internet Files
+5) Deletes Windows Error Reports and Feedback files
+6) Deletes Directx Shader Chache files
+7) Cleans all other cache files & Thumbnails
+9) Shows vulnerable Python Packages
+10) Deletes broken folders from Site-Packages
+
+# Easy to use: Just install this package:
+pip install -U Swachh
+
+# Run from Windows Command Prompt: 
+swachh
+
+## Access our Python based Automation (RPA) Platform : <a href="https://pypi.org/project/ClointFusion" target='_blank'>ClointFusion</a>
+
+## We love your contribution
+Please submit a pull requet
+
+# Contact us: 
+Drop a mail to ClointFusion@cloint.com
+
+
