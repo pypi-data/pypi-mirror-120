@@ -1,0 +1,21 @@
+{
+  "current": "0.2.0dev1",
+  "dev": {
+    "label": "dev",
+    "version": [
+      0,
+      2,
+      0,
+      1
+    ],
+    "prev": "0.2.0dev0"
+  },
+  "master": {
+    "version": [
+      0,
+      1,
+      20
+    ],
+    "prev": "0.1.19"
+  }
+}
