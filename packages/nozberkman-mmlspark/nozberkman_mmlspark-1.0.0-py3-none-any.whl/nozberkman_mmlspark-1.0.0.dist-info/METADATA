@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: nozberkman-mmlspark
+Version: 1.0.0
+Summary: Microsoft ML for Spark
+Home-page: https://github.com/Azure/mmlspark
+Author: Microsoft
+Author-email: mmlspark-support@microsoft.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+
+Microsoft ML for Apache Spark contains Microsoft's open source contributions to the Apache Spark ecosystem
+
+
