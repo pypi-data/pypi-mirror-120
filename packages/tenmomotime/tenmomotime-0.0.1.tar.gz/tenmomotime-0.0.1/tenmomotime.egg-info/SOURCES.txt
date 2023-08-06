@@ -1,0 +1,5 @@
+setup.py
+tenmomotime.egg-info/PKG-INFO
+tenmomotime.egg-info/SOURCES.txt
+tenmomotime.egg-info/dependency_links.txt
+tenmomotime.egg-info/top_level.txt
