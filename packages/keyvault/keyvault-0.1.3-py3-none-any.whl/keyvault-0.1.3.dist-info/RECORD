@@ -1,0 +1,7 @@
+tests/__init__.py,sha256=r6RuJ8EPfRmfFUPXHsdpmWzHWhg_nXD5vmLdna_6uJo,180
+tests/test_keyvault.py,sha256=wLhhjk4qhowt1fwd-Xfi3ihbRyN-ZTkY0KXvHBISA_I,1288
+keyvault-0.1.3.dist-info/LICENSE,sha256=RNnTva-LCQ8EQYlJb6Wi7ZmJ3KBDaxDFFqAkOejiof0,1060
+keyvault-0.1.3.dist-info/METADATA,sha256=DtyMfDXzXv2pP1P7YvEqKrn-EavscqFMsr1AqAoq_Hg,4114
+keyvault-0.1.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+keyvault-0.1.3.dist-info/top_level.txt,sha256=EdW7283x-lr_cbuivW8Ij7ANAP-ZJ9sLtILQseEPxXg,6
+keyvault-0.1.3.dist-info/RECORD,,
