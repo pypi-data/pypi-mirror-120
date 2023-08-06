@@ -1,0 +1,9 @@
+e3enrich/E3dict.csv,sha256=vvSP8-AobS8Pxt2k_EiFvs39pcRPAP3is4rJuLBYDFw,16325
+e3enrich/__init__.py,sha256=UyooycPudtQh6L5Sg0_db_dlo6p5NW9OmpuEGDVdCGw,30
+e3enrich/e3enrich.py,sha256=qamDBXPEGeq7G1Vg-NChGjMwO7HHHrUocQi2RMNYKok,15005
+e3enrich/unigenedict.csv,sha256=Z3W_ZW1p4S-14yRwlsZeHi6A3d01OSjz0f5mUi2_yfs,2577751
+e3enrich-1.0.0.dist-info/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+e3enrich-1.0.0.dist-info/METADATA,sha256=2FodmZfdWa7grjfq-RDvGQgi5zIXmVslUdl84kGg4cM,602
+e3enrich-1.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+e3enrich-1.0.0.dist-info/top_level.txt,sha256=63tF466uWDx1107IyuGziUKVsI3ABEQjQlB8gmTsYAI,9
+e3enrich-1.0.0.dist-info/RECORD,,
