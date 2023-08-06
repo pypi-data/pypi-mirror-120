@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: rankguru
+Version: 1.1
+Summary: This is a basic Wrapper for Test answer retrieval from https://rankguru.com
+Home-page: https://github.com/SwaminathShiju/rankguru
+Author: Swaminath Shiju
+Author-email: swaminathshhiju@gmail.com
+License: MIT
+Download-URL: https://github.com/SwaminathShiju/rankguru/archive/refs/tags/v1.1.tar.gz
+Description: UNKNOWN
+Keywords: Basic
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.7
