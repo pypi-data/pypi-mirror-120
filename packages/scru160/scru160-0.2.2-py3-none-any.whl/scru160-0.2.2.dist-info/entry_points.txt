@@ -1,0 +1,4 @@
+[console_scripts]
+scru160=scru160.cli:generate
+scru160-inspect=scru160.cli:inspect
+
