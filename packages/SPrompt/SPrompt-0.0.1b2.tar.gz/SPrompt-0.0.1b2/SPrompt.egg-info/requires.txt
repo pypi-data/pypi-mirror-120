@@ -1,0 +1,7 @@
+matplotlib
+numpy
+requests>=2.25.1
+keyboard>=0.13.5
+uiautomator2>=2.13.0
+webdriver-manager>=3.4.2
+robotframework-seleniumlibrary>=4.3.0

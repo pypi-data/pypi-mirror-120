@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+SPrompt.egg-info/PKG-INFO
+SPrompt.egg-info/SOURCES.txt
+SPrompt.egg-info/dependency_links.txt
+SPrompt.egg-info/requires.txt
+SPrompt.egg-info/top_level.txt
+src/SPrompt/__init__.py
+src/SPrompt/android.py
+src/SPrompt/api.py
+src/SPrompt/web.py
