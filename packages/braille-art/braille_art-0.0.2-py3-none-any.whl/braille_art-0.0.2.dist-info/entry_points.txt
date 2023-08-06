@@ -1,0 +1,3 @@
+[console_scripts]
+brailleart = brailleart:main
+

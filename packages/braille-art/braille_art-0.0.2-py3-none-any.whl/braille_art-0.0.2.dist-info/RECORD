@@ -1,0 +1,10 @@
+brailleart/__init__.py,sha256=nXlEpZTkQGdPSalYfDKKdYOAQLZLdgAkjTD6Brv4hww,47
+brailleart/__main__.py,sha256=schE67JzeF4uYozHtlKcYr0M1jCJWk6gBqdC4FvH-A8,62
+brailleart/cli.py,sha256=Hm5HltIb26YTadXdyVE6LZ6H1EI5expswu3w9KOcR_E,880
+brailleart/converter.py,sha256=aL-hyDy7okSwVhpEFP-IqlwLty0-7IUFeQKgBA_Gawk,3859
+braille_art-0.0.2.dist-info/LICENSE,sha256=9zSmSVbSuaqwyJq9By9HmDMsIoEQRW3TRGU5cSouF-w,1066
+braille_art-0.0.2.dist-info/METADATA,sha256=_Qv2-a2gekpLacuBy8AB5q90SC1x4H4z3wdrbubU2Tg,1147
+braille_art-0.0.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+braille_art-0.0.2.dist-info/entry_points.txt,sha256=ifiCaMXgniWg88t3knQ12C2b_KjtoJ4sAfVNdNrMohk,48
+braille_art-0.0.2.dist-info/top_level.txt,sha256=AnccOwfPgGpGZqxgnRELZJ9Fmp5TtAQpfkPPi9lo6Cs,11
+braille_art-0.0.2.dist-info/RECORD,,
