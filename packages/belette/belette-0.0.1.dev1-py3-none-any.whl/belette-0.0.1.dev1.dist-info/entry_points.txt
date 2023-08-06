@@ -1,0 +1,4 @@
+[console_scripts]
+belette=belette.weasel:main
+weasel=belette.weasel:main
+
