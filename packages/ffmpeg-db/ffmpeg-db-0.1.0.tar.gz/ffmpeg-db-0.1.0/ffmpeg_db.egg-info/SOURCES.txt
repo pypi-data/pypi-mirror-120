@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+ffmpeg_db/__init__.py
+ffmpeg_db/ffmpeg_db.py
+ffmpeg_db.egg-info/PKG-INFO
+ffmpeg_db.egg-info/SOURCES.txt
+ffmpeg_db.egg-info/dependency_links.txt
+ffmpeg_db.egg-info/top_level.txt
+ffmpeg_db/data/codec-info.json
+ffmpeg_db/data/ext-to-codecs.json

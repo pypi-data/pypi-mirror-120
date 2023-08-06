@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: ffmpeg-db
+Version: 0.1.0
+Summary: Dataset/library of parsed ffmpeg codec information
+Home-page: https://github.com/audo-ai/ffmpeg-db
+Author: Matthew D. Scholefield
+Author-email: matthew331199@gmail.com
+License: UNKNOWN
+Keywords: ffmpeg db
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE
+
+UNKNOWN
+
