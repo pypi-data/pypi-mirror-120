@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/pydic/__init__.py
+src/pydic_fdelgados.egg-info/PKG-INFO
+src/pydic_fdelgados.egg-info/SOURCES.txt
+src/pydic_fdelgados.egg-info/dependency_links.txt
+src/pydic_fdelgados.egg-info/requires.txt
+src/pydic_fdelgados.egg-info/top_level.txt
