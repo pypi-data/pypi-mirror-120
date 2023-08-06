@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: django-graphene-crud-generator
+Version: 1.0.5
+Summary: Yet another tool to generate GraphQL CRUD operations
+Home-page: https://github.com/Koldar/django-koldar-common-apps
+Author: Massimo Bono
+Author-email: massimobono1@gmail.com
+License: mit
+Keywords: django,graphql,crud,automatic generation
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=>=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+License-File: Makefile
+License-File: README.md
+License-File: make.bat
+License-File: setup.py
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: mock ; extra == 'test'
+
+
+Introduction
+============
+
+This pacakge allows you to generate CRUD operation in a compact way.
+It is extensible but has sane default (at leastfor my project :] )
+
+Installation
+============
+
+.. code-block::
+
+   pip install django-graphene-crud-generator
+
+Usage
+=====
+
+TLDR
+----
+
+.. code-block::
+
+   dff
+
+Guide
+-----
+
+The project is basically a factory that generates graphene types repersenting queries and mutations.
+Each step of the generation process is extensisible.
+
+
