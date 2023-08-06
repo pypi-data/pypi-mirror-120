@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+bdv/__init__.py
+bdv/config.py
+imglyb_bdv.egg-info/PKG-INFO
+imglyb_bdv.egg-info/SOURCES.txt
+imglyb_bdv.egg-info/dependency_links.txt
+imglyb_bdv.egg-info/requires.txt
+imglyb_bdv.egg-info/top_level.txt
