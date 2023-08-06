@@ -1,0 +1,3 @@
+[console_scripts]
+pathsummary = pathsummary:cli
+
