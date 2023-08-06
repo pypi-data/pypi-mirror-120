@@ -1,0 +1,4 @@
+invoke
+pypandoc
+appdirs
+matplotlib>=3.4
