@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "pulsar-cli"
+version = "0.1.0"
+description = ""
+authors = ["Casey Mau <cmau@overstock.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+click = "^8.0.1"
+requests = "^2.25.1"
+pulsar-client = "^2.8.0"
+fastavro = "^1.4.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+
+[tool.poetry.scripts]
+pulse = "pulse.main:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
