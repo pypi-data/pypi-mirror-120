@@ -1,0 +1,10 @@
+faceunlock/__init__.py,sha256=TovO3xMsqLyNHA_ZxOMDBLpknMljJW6Po7UVVChTW7s,304
+faceunlock/face_recognition.py,sha256=B6I04gKARNoOpG6yhv6boNpGjjSGA3luafIuxpiym-Q,1467
+faceunlock/face_training.py,sha256=XuvA3f1OWTBAk9bv57gqQT4aLgGfruV8empGOLEzzhg,1201
+faceunlock/facedatacollect.py,sha256=zuGW0dtO80TooAgPRelYYzoLiDGY0CkA-DFABohPJUs,1286
+faceunlock/facedetection.py,sha256=WNA9-loHFIEOCiWY_AbOIalihENGOJua6lDkOXmII7E,1556
+faceunlock-0.0.1.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+faceunlock-0.0.1.dist-info/METADATA,sha256=58WSXBB_qbxHV-G57SNWWHng-cFUtM-LmWqTebnErWQ,510
+faceunlock-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+faceunlock-0.0.1.dist-info/top_level.txt,sha256=OlJ6KLAEQ8DS4cryB--1hZ5Ax3crtClSPlHNxbqSa7Q,11
+faceunlock-0.0.1.dist-info/RECORD,,
