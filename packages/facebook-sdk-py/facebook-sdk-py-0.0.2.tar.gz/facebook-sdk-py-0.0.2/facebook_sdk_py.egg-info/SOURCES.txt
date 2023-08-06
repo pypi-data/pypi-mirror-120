@@ -1,0 +1,9 @@
+README.md
+setup.py
+facebook_sdk_py.egg-info/PKG-INFO
+facebook_sdk_py.egg-info/SOURCES.txt
+facebook_sdk_py.egg-info/dependency_links.txt
+facebook_sdk_py.egg-info/requires.txt
+facebook_sdk_py.egg-info/top_level.txt
+fbsdk/__init__.py
+fbsdk/fb.py

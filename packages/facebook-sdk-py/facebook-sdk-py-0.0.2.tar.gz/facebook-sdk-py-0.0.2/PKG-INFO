@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: facebook-sdk-py
+Version: 0.0.2
+Summary: This client library is designed to support the Facebook Graph API
+Home-page: https://github.com/Caivy/fb-sdk-py
+Author: Caivy
+Author-email: UNKNOWN
+License: Apache
+Description: ### Facebook SDK For Python
+        This library is designed to support the Offical Facebook Graph API, You can read more about Grpah API by accessing its offial documentation.
+        
+        
+Keywords: python,facebook,API,Faccebook Graph API,requests
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
