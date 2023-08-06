@@ -1,0 +1,10 @@
+redquery/__init__.py,sha256=TVvHYD2LjhQPAiRAzq4oEAYfhd4wc4DTjcZzXmGKtxM,39
+redquery/cli.py,sha256=eKGTGOgznvytXDlYmYtOVKbRV3BLMURi8YyS_jnL5kM,1457
+redquery/errors.py,sha256=cEeTbA5DfTru7mN3Y7o0J1l7-iHiV_xGCJPu1dgNfTg,351
+redquery/formatting.py,sha256=i_c2JiP4NeMTeWdTvlfZ7tXO3cxII-1EEdhq1niBkyw,781
+redquery/models.py,sha256=NjXEP2bhKkrlKl-IoQ0rCk1_l-4n2NMqWXb6fPJY4rM,92
+redquery/redshift.py,sha256=_mXyrB9TwbuNdI-1l3m_gvVNB5gWKgoBUO8LgW9Wvcs,3642
+redquery-0.1.0.dist-info/entry_points.txt,sha256=vlSVoOYV6VS8d7KIv-yZwVwXxQzlatgACtiBKoslxN8,45
+redquery-0.1.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+redquery-0.1.0.dist-info/METADATA,sha256=F4QV3wxdMRzRTINtD_gRf6WLFL3GeQqMSPvT-5VBG2Q,534
+redquery-0.1.0.dist-info/RECORD,,
