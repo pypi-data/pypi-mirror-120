@@ -1,0 +1,10 @@
+dag_cbor/__init__.py,sha256=IUSgsXYJVFik0uosuddmJchuflpGaFgVHyRFcu5bGc4,1623
+dag_cbor/decoding.py,sha256=Lvp1SSCLwZuUQ2YbnIs2tdbGKmQaKptWmq3ofLR0f0o,6784
+dag_cbor/encoding.py,sha256=_xTFUGSFvJr4Ja-WUeAVrBl3tX6RXJ8Yxm_bYDrISnE,5889
+dag_cbor/random.py,sha256=5p_8UOaRF8a1tZjTTFGvL8X8kgqorQs44FTYxj5LGuk,20249
+dag_cbor/utils.py,sha256=1uKLnCrT69pVOfBMNNHhvOeOFSlLACPljD94G8ayeOk,1950
+dag_cbor-0.0.5.dist-info/LICENSE,sha256=MuOBWp9UiM1wg8a22greQggnp5uDhSE-osj1KzWtD4s,1086
+dag_cbor-0.0.5.dist-info/METADATA,sha256=EBKZ4ZdhIcsphjPAjasK0XPBp1EVC1Pu3ZmIfv_hDx4,5202
+dag_cbor-0.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dag_cbor-0.0.5.dist-info/top_level.txt,sha256=U709kmNeh89gwaUCDPs1kpZOrovxMNMpghIuui-lkR0,9
+dag_cbor-0.0.5.dist-info/RECORD,,
