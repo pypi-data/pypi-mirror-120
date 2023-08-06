@@ -1,0 +1,8 @@
+LICENSE.txt
+README
+setup.py
+example_pkg/__init__.py
+example_pkg_chenbenhua.egg-info/PKG-INFO
+example_pkg_chenbenhua.egg-info/SOURCES.txt
+example_pkg_chenbenhua.egg-info/dependency_links.txt
+example_pkg_chenbenhua.egg-info/top_level.txt
