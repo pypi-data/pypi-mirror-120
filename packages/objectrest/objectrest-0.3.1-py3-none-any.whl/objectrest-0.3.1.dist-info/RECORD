@@ -1,0 +1,13 @@
+objectrest/__info__.py,sha256=bg4JqFNRqZCEpC8dw16yCkxbfp2K_uQ6Zy5j1h_r_Nk,496
+objectrest/__init__.py,sha256=jknpB4X4ZkAdCrvGD1-mT0P9xqwUU8kmUPL3oKPrb9Y,83
+objectrest/base_requests.py,sha256=D2fDSSiC2kmgPnBdY0t7RdiLbb0vak2pjQXtwjP41xs,3300
+objectrest/decorators.py,sha256=p1ADEEZfagvio2ILikvgJkZKpbhy0NOTouOkAOFaoxI,672
+objectrest/json_handler.py,sha256=TbDkLduOjAf9bhpH4hXOgoJWkY96heuhrIdvdvWsDfc,3219
+objectrest/object_handler.py,sha256=B-8-XgBxIX5qh3ZsXgmXgmo9YNh-IO6n9YN15tJJHec,6568
+objectrest/request_handler.py,sha256=wIKSER_6G_N2-Ls8NHTSI-dka2jSdd7yZL3WymBxMcM,18283
+objectrest/utils.py,sha256=D9tYDPvoVJTIR1syak5f4mYkCV4o4GRUNzbhf9s5jY4,266
+objectrest-0.3.1.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+objectrest-0.3.1.dist-info/METADATA,sha256=vlMhpcEo2HF0BdURpHmzFlBVSwPi9ox8H1SfDzu3PI0,3441
+objectrest-0.3.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+objectrest-0.3.1.dist-info/top_level.txt,sha256=F5ouwUaiN936KT3tcElvLjdx73BYnssscg_kYuOWxJA,11
+objectrest-0.3.1.dist-info/RECORD,,
