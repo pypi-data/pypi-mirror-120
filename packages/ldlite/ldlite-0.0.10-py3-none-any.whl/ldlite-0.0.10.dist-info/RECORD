@@ -1,0 +1,11 @@
+ldlite/__init__.py,sha256=WU0PyTAWJWRKVsofwxIdH9Mk9fKvJrtEW17nDqEzA_Y,9204
+ldlite/_camelcase.py,sha256=i_K3R8pOiqGd9GbjUVQJvx40UNYXMlM7RK1VneJJ4xA,2274
+ldlite/_csv.py,sha256=HyJgpHglNLschsTn1w_0o-0v_crh0_l7Blcb7g1YePk,614
+ldlite/_jsonx.py,sha256=9JIN8lR0LjnB4yF-yOfnX-aH8PDZmLAVICjiAo4QUHc,8492
+ldlite/_select.py,sha256=4WmizD7hhU7iF8wDcHkLPUPYgZrAn1K6ufsXm5DxHEA,3302
+ldlite/_sqlx.py,sha256=DqUI0GftoNFe0H_pGx05jzGQQSmJ1qA7f_vlLASzOAw,299
+ldlite-0.0.10.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ldlite-0.0.10.dist-info/METADATA,sha256=GJsvx_rZ0l8LhaO1M0I-XN_spdjLzKz_nw96n8EcZm0,2333
+ldlite-0.0.10.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+ldlite-0.0.10.dist-info/top_level.txt,sha256=c8L0Z_Pghuei7m3XndPt7ky-UfAy_GRPrvL1WE-HW40,7
+ldlite-0.0.10.dist-info/RECORD,,
