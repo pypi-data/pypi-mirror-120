@@ -1,0 +1,10 @@
+setup.py
+nexx_probability/Binomialdistribution.py
+nexx_probability/Gaussiandistribution.py
+nexx_probability/Generaldistribution.py
+nexx_probability/__init__.py
+nexx_probability.egg-info/PKG-INFO
+nexx_probability.egg-info/SOURCES.txt
+nexx_probability.egg-info/dependency_links.txt
+nexx_probability.egg-info/not-zip-safe
+nexx_probability.egg-info/top_level.txt
