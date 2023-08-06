@@ -1,0 +1,9 @@
+pyproject.toml
+setup.py
+idemsubassist/__init__.py
+idemsubassist/idemexceptions.py
+idemsubassist/idemreturns.py
+idemsubassist.egg-info/PKG-INFO
+idemsubassist.egg-info/SOURCES.txt
+idemsubassist.egg-info/dependency_links.txt
+idemsubassist.egg-info/top_level.txt
