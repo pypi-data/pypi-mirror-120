@@ -1,0 +1,3 @@
+[console_scripts]
+kenna=kenna.cli:cli
+
