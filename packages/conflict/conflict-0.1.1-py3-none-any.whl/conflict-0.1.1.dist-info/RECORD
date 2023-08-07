@@ -1,0 +1,6 @@
+something/__init__.py,sha256=o8h2NLpO84xTrvY9HaqzhvTRcWhrfwrcKIQ9LYbLkrg,54
+something/interesting.py,sha256=hAPU4A0HdkK9Ll5hkyIWND2BpXyb_vwa7Wj3nzk1dEY,67
+conflict-0.1.1.dist-info/METADATA,sha256=j71nZSSfvwAOtv81VudOjapB3S8yO82IV2yoMoVgGkk,491
+conflict-0.1.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+conflict-0.1.1.dist-info/top_level.txt,sha256=S8RTtTyz2RS0X0slApQjatuiwOCf9vA3k5Sefjn9TME,10
+conflict-0.1.1.dist-info/RECORD,,
