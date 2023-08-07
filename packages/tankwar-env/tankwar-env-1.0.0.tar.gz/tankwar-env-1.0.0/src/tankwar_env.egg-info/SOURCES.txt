@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/tankwar/__init__.py
+src/tankwar/agents/__init__.py
+src/tankwar/agents/human.py
+src/tankwar/agents/random_agent.py
+src/tankwar/agents/smart.py
+src/tankwar/envs/__init__.py
+src/tankwar/envs/base.py
+src/tankwar/envs/tank.py
+src/tankwar_env.egg-info/PKG-INFO
+src/tankwar_env.egg-info/SOURCES.txt
+src/tankwar_env.egg-info/dependency_links.txt
+src/tankwar_env.egg-info/requires.txt
+src/tankwar_env.egg-info/top_level.txt
