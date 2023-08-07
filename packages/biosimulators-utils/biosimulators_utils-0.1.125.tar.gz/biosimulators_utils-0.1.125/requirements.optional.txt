@@ -1,0 +1,39 @@
+#################################
+## Model languages
+[bngl]
+bionetgen >= 0.4.7
+
+[cellml]
+libcellml
+
+[lems]
+pylems
+pyneuroml
+pint
+
+[neuroml]
+libneuroml
+
+# [rba]
+# rba
+
+[sbml]
+python_libsbml
+
+[smoldyn]
+smoldyn >= 2.66
+
+#################################
+## Visualization formats
+[escher]
+bezier
+
+#################################
+## Docker images
+[containers]
+docker >= 4.4
+
+#################################
+## Console logging
+[logging]
+capturer
