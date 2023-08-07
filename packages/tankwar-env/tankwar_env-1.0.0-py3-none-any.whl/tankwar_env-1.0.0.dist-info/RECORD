@@ -1,0 +1,13 @@
+tankwar/__init__.py,sha256=BEYoTTQRKX0mp3o8XzOCP_lIKSlYgyrLSU3RvJaGkIU,120
+tankwar/agents/__init__.py,sha256=G9_JYqWPrL5EoD6BhQQjijJFCFG7bfHpi81eDgg7l3g,96
+tankwar/agents/human.py,sha256=YTu1SD9zoEeieFO1jlEZQkWU43Dn3O8z3XHd20n5KgM,1807
+tankwar/agents/random_agent.py,sha256=WuRS3CGq0ArNjsnSpnzLaBcCwNfWcDdXuGY9VwOnu1g,288
+tankwar/agents/smart.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tankwar/envs/__init__.py,sha256=ozs_wByUq6ErLfgX240AH69LhpRlsXzRcGr-MC0MYxE,41
+tankwar/envs/base.py,sha256=roVTJ1lhvvjqq3vKDL-5ZHrot5bmSF_352_S9ZzOLB0,9781
+tankwar/envs/tank.py,sha256=nv746obbLz6wrTbHHBT1FDeOw5UfTWjKifiiYWDjXP4,2606
+tankwar_env-1.0.0.dist-info/LICENSE,sha256=8QkQt8nm620K0YpjvpT1xiKUvES8NTAmFSlughS-5TI,1069
+tankwar_env-1.0.0.dist-info/METADATA,sha256=uxtWXmalCDy5snsU2Y6YreRqifF7ewCazkqF-soEPEo,5270
+tankwar_env-1.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+tankwar_env-1.0.0.dist-info/top_level.txt,sha256=_oPmkhcMe9baNfvDOHvTizMZ-ryQ1niJ-slUaNmf1Fs,8
+tankwar_env-1.0.0.dist-info/RECORD,,
