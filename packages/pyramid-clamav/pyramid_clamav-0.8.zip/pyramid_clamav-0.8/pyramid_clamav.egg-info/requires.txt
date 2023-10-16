@@ -1,0 +1,7 @@
+pyramid>=1.3
+mock
+clamd
+
+[test]
+pytest
+pytest-platform-markers

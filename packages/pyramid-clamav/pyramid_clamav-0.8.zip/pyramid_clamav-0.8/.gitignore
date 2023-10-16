@@ -1,0 +1,7 @@
+syntax:glob
+lib
+include
+bin
+*.egg-info
+.eggs
+venv
